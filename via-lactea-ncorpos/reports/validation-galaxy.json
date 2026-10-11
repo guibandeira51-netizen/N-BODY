@@ -1,0 +1,200 @@
+{
+  "dateUTC": "2026-10-11T03:24:28.569Z",
+  "qualification": "Short-time diagnostics of approximate Jeans initial conditions; not a proof of long-term collisionless equilibrium",
+  "runs": [
+    {
+      "withHalo": false,
+      "n": 2000,
+      "seed": 2026,
+      "physicalMyr": 20,
+      "algorithm": "barnes-hut",
+      "dt": 0.1,
+      "epsilon": 0.1,
+      "theta": 0.5,
+      "errorsFromExactEnergy": {
+        "energy": 0.00012959882649471658,
+        "momentum": 3.332061414682211e-18,
+        "angularMomentum": 0.00004547750513392274,
+        "mass": 0,
+        "energyApproximate": false
+      },
+      "initial": [
+        {
+          "component": 0,
+          "n": 500,
+          "halfMassRadius": 1.9778028987928071,
+          "medianHeight": 0.9497018746213924
+        },
+        {
+          "component": 1,
+          "n": 1500,
+          "halfMassRadius": 5.523264648912022,
+          "medianHeight": 0.1750352336712898
+        },
+        {
+          "component": 2,
+          "n": 0,
+          "halfMassRadius": null,
+          "medianHeight": null
+        }
+      ],
+      "final": [
+        {
+          "component": 0,
+          "n": 500,
+          "halfMassRadius": 2.3588724571138524,
+          "medianHeight": 0.9296099833635209
+        },
+        {
+          "component": 1,
+          "n": 1500,
+          "halfMassRadius": 5.697022967905961,
+          "medianHeight": 0.20420975830639143
+        },
+        {
+          "component": 2,
+          "n": 0,
+          "halfMassRadius": null,
+          "medianHeight": null
+        }
+      ],
+      "initialMeta": {
+        "seed": 2026,
+        "withHalo": false,
+        "counts": [
+          500,
+          1500,
+          0
+        ],
+        "masses": [
+          0.5,
+          6.8,
+          0
+        ],
+        "initialization": "Jeans + Satoh k=1, Gaussiana aproximada; pares antipodais",
+        "clippedStreaming": 0,
+        "unbound": 2,
+        "centerShift": [
+          0,
+          0,
+          0
+        ]
+      },
+      "finite": true
+    },
+    {
+      "withHalo": true,
+      "n": 2000,
+      "seed": 2026,
+      "physicalMyr": 20,
+      "algorithm": "barnes-hut",
+      "dt": 0.1,
+      "epsilon": 0.1,
+      "theta": 0.5,
+      "errorsFromExactEnergy": {
+        "energy": 0.00007892593064906391,
+        "momentum": 4.796382187530415e-18,
+        "angularMomentum": 0.000013032025371624559,
+        "mass": 0,
+        "energyApproximate": false
+      },
+      "initial": [
+        {
+          "component": 0,
+          "n": 300,
+          "halfMassRadius": 2.075399735382245,
+          "medianHeight": 0.9317351826532282
+        },
+        {
+          "component": 1,
+          "n": 900,
+          "halfMassRadius": 5.339197831638355,
+          "medianHeight": 0.17208026752091837
+        },
+        {
+          "component": 2,
+          "n": 800,
+          "halfMassRadius": 71.79455859801564,
+          "medianHeight": 27.190637335896202
+        }
+      ],
+      "final": [
+        {
+          "component": 0,
+          "n": 300,
+          "halfMassRadius": 3.0100582652065335,
+          "medianHeight": 1.123080477585164
+        },
+        {
+          "component": 1,
+          "n": 900,
+          "halfMassRadius": 5.828028049721205,
+          "medianHeight": 0.2751238171991968
+        },
+        {
+          "component": 2,
+          "n": 800,
+          "halfMassRadius": 71.70371056332199,
+          "medianHeight": 26.732019186260622
+        }
+      ],
+      "initialMeta": {
+        "seed": 2026,
+        "withHalo": true,
+        "counts": [
+          300,
+          900,
+          800
+        ],
+        "masses": [
+          0.5,
+          6.8,
+          97.6315764173288
+        ],
+        "initialization": "Jeans + Satoh k=1, Gaussiana aproximada; pares antipodais",
+        "clippedStreaming": 0,
+        "unbound": 8,
+        "centerShift": [
+          0,
+          0,
+          0
+        ]
+      },
+      "finite": true
+    }
+  ],
+  "forceComparison": [
+    {
+      "n": 1000,
+      "theta": 0.8,
+      "relativeRms": 0.014114633168880925
+    },
+    {
+      "n": 1000,
+      "theta": 0.5,
+      "relativeRms": 0.002577573825692624
+    },
+    {
+      "n": 1000,
+      "theta": 0.3,
+      "relativeRms": 0.0003358696688488869
+    },
+    {
+      "n": 1000,
+      "theta": 0.1,
+      "relativeRms": 0.000004637989966774384
+    }
+  ],
+  "rotationAtSolarRadius": [
+    {
+      "withHalo": false,
+      "Rkpc": 8.2,
+      "vcKpcPerMyr": 0.17899202895879407
+    },
+    {
+      "withHalo": true,
+      "Rkpc": 8.2,
+      "vcKpcPerMyr": 0.23465631688021077
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="pt-BR"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>Validação WebGPU real</title>
+<style>body{font:16px system-ui;background:#101a27;color:#e6efff;padding:24px;max-width:1100px;margin:auto}button{font:inherit;padding:12px;margin:5px}pre{white-space:pre-wrap;overflow-wrap:anywhere;background:#182538;padding:18px}canvas{width:640px;height:360px;max-width:100%;border:1px solid #688}</style>
+<h1>Validação WebGPU no navegador</h1>
+<p>O resultado registra o adaptador efetivamente exposto pelo navegador. O teste compara forças e passos KDK f32 da GPU com a referência Float64 CPU. São ensaios curtos e não substituem os diagnósticos de conservação de uma simulação longa.</p>
+<button id="capabilities">Detectar recursos</button><button id="run">Executar validação GPU</button>
+<button id="galaxy">Comparar galáxia CPU × GPU (10 Myr)</button><button id="benchmark">Benchmark GPU N=1000 e 10000</button>
+<button id="benchmark-large">Benchmark GPU N=100000 (ensaio curto)</button>
+<button id="render">Testar render com buffers compartilhados</button><button id="download">Baixar relatório JSON</button>
+<p id="status">Aguardando execução.</p><pre id="output">Nenhuma medição realizada.</pre><canvas id="canvas"></canvas>
+<script type="module">
+import { detectCapabilities, estimateResources, assessResources } from '../src/compute/capability.js';
+import { GPUBackend, compareCPUvsGPU, compareGalaxyCPUvsGPU, benchmarkGPU } from '../src/compute/gpu.js';
+import { GPURenderer } from '../src/render/gpu-renderer.js';
+const output=document.querySelector('#output'),status=document.querySelector('#status');
+const history=[];
+const show=result=>{output.textContent=JSON.stringify(result,null,2);window.lastGPUResult=result;if(result.status!=='running')history.push({dateUTC:new Date().toISOString(),...result});};
+document.querySelector('#capabilities').onclick=async()=>{status.textContent='Detectando recursos…';try{const caps=await detectCapabilities();show({capabilities:caps,resources1024:assessResources(1024,caps)});status.textContent='Recursos detectados.';}catch(e){show({status:'failed',reason:e.message});status.textContent='Falha de detecção.';}};
+document.querySelector('#run').onclick=async()=>{
+  document.querySelector('#run').disabled=true;const results=[];
+  try{
+    const capabilities=await detectCapabilities();
+    if(!capabilities.webgpu.available){show({status:'skipped',capabilities,reason:capabilities.webgpu.reason});status.textContent='WebGPU indisponível: nenhum resultado GPU calculado.';return;}
+    // An adapter permits a single requestDevice. Each independently disposed case gets a fresh adapter.
+    for(const n of [1,2,63,64,65,257,1024]){status.textContent=`Comparando CPU × GPU: N=${n}…`;const result=await compareCPUvsGPU(undefined,{n,steps:8});results.push(result);show({status:'running',capabilities,results});if(result.status==='failed')break;}
+    const passed=results.length===7&&results.every(r=>r.status==='passed');
+    show({status:passed?'passed':'failed',capabilities,results,resourceEstimate:estimateResources(1024)});
+    status.textContent=passed?'Validação GPU concluída e aprovada.':'A validação GPU encontrou falha.';
+  }catch(e){show({status:'failed',reason:e.message,results});status.textContent='Falha: '+e.message;}
+  finally{document.querySelector('#run').disabled=false;}
+};
+document.querySelector('#galaxy').onclick=async()=>{const button=document.querySelector('#galaxy');button.disabled=true;status.textContent='Comparando a mesma galáxia autogravitante por 100 passos de 0,1 Myr…';try{const result=await compareGalaxyCPUvsGPU();show({capabilities:await detectCapabilities(),...result});status.textContent='Comparação galáctica: '+result.status;}catch(e){show({status:'failed',reason:e.message});status.textContent='Falha: '+e.message;}finally{button.disabled=false;}};
+document.querySelector('#benchmark').onclick=async()=>{const button=document.querySelector('#benchmark');button.disabled=true;const results=[];try{for(const n of [1000,10000]){status.textContent=`Medindo GPU direta com N=${n}…`;results.push(await benchmarkGPU({n,steps:5}));}show({status:results.every(r=>r.status==='measured')?'measured':'failed',capabilities:await detectCapabilities(),results});status.textContent='Benchmark GPU concluído.';}catch(e){show({status:'failed',reason:e.message,results});status.textContent='Falha: '+e.message;}finally{button.disabled=false;}};
+document.querySelector('#benchmark-large').onclick=async()=>{const button=document.querySelector('#benchmark-large');button.disabled=true;status.textContent='Medindo três passos GPU diretos com 100.000 corpos físicos…';try{show({capabilities:await detectCapabilities(),...await benchmarkGPU({n:100000,steps:3})});status.textContent='Ensaio GPU de 100.000 concluído.';}catch(e){show({status:'failed',reason:e.message});status.textContent='Falha: '+e.message;}finally{button.disabled=false;}};
+document.querySelector('#download').onclick=()=>{const blob=new Blob([JSON.stringify({browser:navigator.userAgent,dateUTC:new Date().toISOString(),reports:history},null,2)],{type:'application/json'}),url=URL.createObjectURL(blob),link=document.createElement('a');link.href=url;link.download='validacao-webgpu.json';link.click();setTimeout(()=>URL.revokeObjectURL(url),1000);};
+let backend,renderer;
+document.querySelector('#render').onclick=async()=>{
+  try{
+    renderer?.dispose();backend?.dispose();
+    backend=await GPUBackend.create();const n=65,state={n,positions:new Float64Array(3*n),velocities:new Float64Array(3*n),accelerations:new Float64Array(3*n),masses:new Float64Array(n).fill(1/n),components:new Uint8Array(n)};
+    for(let i=0;i<n;i++){const phi=i*2*Math.PI/n;state.positions[3*i]=Math.cos(phi)*0.7;state.positions[3*i+1]=Math.sin(phi)*0.7;state.components[i]=i%3;}
+    await backend.initialize(state);renderer=new GPURenderer(document.querySelector('#canvas'),backend);await renderer.initialize();
+    renderer.draw(new Float32Array([1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1]),[true,true,true],7);
+    await backend.device.queue.onSubmittedWorkDone();
+    show({status:'submitted',n,method:'renderização instanciada dos buffers da computação, sem readback',requiresVisualVerification:true});status.textContent='Render submetido; verificar anel de pontos de três cores no canvas.';
+  }catch(e){show({status:'failed',reason:e.message});status.textContent='Falha de render: '+e.message;}
+};
+</script></html>

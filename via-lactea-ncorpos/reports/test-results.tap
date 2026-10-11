@@ -1,0 +1,208 @@
+TAP version 13
+# Subtest: admission distinguishes buffer limits, configured budget, and missing hardware
+ok 1 - admission distinguishes buffer limits, configured budget, and missing hardware
+  ---
+  duration_ms: 0.9629
+  type: 'test'
+  ...
+# Subtest: 2D dispatch admission uses actual adapter dimensions, not a fixed particle ceiling
+ok 2 - 2D dispatch admission uses actual adapter dimensions, not a fixed particle ceiling
+  ---
+  duration_ms: 0.1357
+  type: 'test'
+  ...
+# Subtest: resource estimate includes simultaneous CPU snapshot, f32 packing, GPU and staging
+ok 3 - resource estimate includes simultaneous CPU snapshot, f32 packing, GPU and staging
+  ---
+  duration_ms: 0.8463
+  type: 'test'
+  ...
+# Subtest: automatic policy requires a measured benchmark for the requested N and available resources
+ok 4 - automatic policy requires a measured benchmark for the requested N and available resources
+  ---
+  duration_ms: 0.2499
+  type: 'test'
+  ...
+# Subtest: runtime report is serializable and memory policy is explicitly bounded
+ok 5 - runtime report is serializable and memory policy is explicitly bounded
+  ---
+  duration_ms: 0.4175
+  type: 'test'
+  ...
+# Subtest: direct pair force follows the 3D Plummer law and Newton third law
+ok 6 - direct pair force follows the 3D Plummer law and Newton third law
+  ---
+  duration_ms: 1.0674
+  type: 'test'
+  ...
+# Subtest: single particle has zero self force and zero self potential
+ok 7 - single particle has zero self force and zero self potential
+  ---
+  duration_ms: 0.6507
+  type: 'test'
+  ...
+# Subtest: exact potential matches the gradient of softened pair energy
+ok 8 - exact potential matches the gradient of softened pair energy
+  ---
+  duration_ms: 0.1715
+  type: 'test'
+  ...
+# Subtest: coincident positions stay finite with softening and reject singular unsoftened force
+ok 9 - coincident positions stay finite with softening and reject singular unsoftened force
+  ---
+  duration_ms: 0.3748
+  type: 'test'
+  ...
+# Subtest: softening sensitivity follows its analytic acceleration ratio
+ok 10 - softening sensitivity follows its analytic acceleration ratio
+  ---
+  duration_ms: 0.1457
+  type: 'test'
+  ...
+# Subtest: direct force is invariant under translations and scales linearly with source mass
+ok 11 - direct force is invariant under translations and scales linearly with source mass
+  ---
+  duration_ms: 0.191
+  type: 'test'
+  ...
+# Subtest: KDK initializes acceleration and keeps physical time independent of batching
+ok 12 - KDK initializes acceleration and keeps physical time independent of batching
+  ---
+  duration_ms: 1.4119
+  type: 'test'
+  ...
+# Subtest: two-body circular orbit conserves energy, linear momentum and angular momentum over five periods
+ok 13 - two-body circular orbit conserves energy, linear momentum and angular momentum over five periods
+  ---
+  duration_ms: 5.7881
+  type: 'test'
+  ...
+# Subtest: global orbit error converges at second order when the timestep is halved
+ok 14 - global orbit error converges at second order when the timestep is halved
+  ---
+  duration_ms: 0.4047
+  type: 'test'
+  ...
+# Subtest: KDK is time reversible when velocities are reversed
+ok 15 - KDK is time reversible when velocities are reversed
+  ---
+  duration_ms: 0.3705
+  type: 'test'
+  ...
+# Subtest: component diagnostics measure mass and size without changing the physical state
+ok 16 - component diagnostics measure mass and size without changing the physical state
+  ---
+  duration_ms: 0.1803
+  type: 'test'
+  ...
+# Subtest: invalid input fails before integration
+ok 17 - invalid input fails before integration
+  ---
+  duration_ms: 0.3836
+  type: 'test'
+  ...
+# Subtest: real 3D octree with theta=0 agrees with the exact particle force and potential
+ok 18 - real 3D octree with theta=0 agrees with the exact particle force and potential
+  ---
+  duration_ms: 12.5021
+  type: 'test'
+  ...
+# Subtest: Barnes–Hut normalized RMS force error decreases with opening angle
+ok 19 - Barnes–Hut normalized RMS force error decreases with opening angle
+  ---
+  duration_ms: 18.2037
+  type: 'test'
+  ...
+# Subtest: octree duplicate leaves are finite and exclude self force and self potential
+ok 20 - octree duplicate leaves are finite and exclude self force and self potential
+  ---
+  duration_ms: 0.5465
+  type: 'test'
+  ...
+# Subtest: octree excludes targets inside accepted nodes, including zero-mass tracers
+ok 21 - octree excludes targets inside accepted nodes, including zero-mass tracers
+  ---
+  duration_ms: 2.482
+  type: 'test'
+  ...
+# Subtest: octree handles spatial subdivisions approaching machine precision
+ok 22 - octree handles spatial subdivisions approaching machine precision
+  ---
+  duration_ms: 0.2498
+  type: 'test'
+  ...
+# Subtest: Barnes–Hut forces are translation invariant and preserve masses and component labels
+ok 23 - Barnes–Hut forces are translation invariant and preserve masses and component labels
+  ---
+  duration_ms: 1.5479
+  type: 'test'
+  ...
+# Subtest: Barnes–Hut potential respects the same softening and is labeled approximate
+ok 24 - Barnes–Hut potential respects the same softening and is labeled approximate
+  ---
+  duration_ms: 5.3245
+  type: 'test'
+  ...
+# Subtest: Barnes–Hut KDK recalculates forces from evolving positions
+ok 25 - Barnes–Hut KDK recalculates forces from evolving positions
+  ---
+  duration_ms: 1.203
+  type: 'test'
+  ...
+# Subtest: unit conversion and nominal solar GM remain consistent
+ok 26 - unit conversion and nominal solar GM remain consistent
+  ---
+  duration_ms: 0.7171
+  type: 'test'
+  ...
+# Subtest: analytic acceleration is the negative potential gradient in full 3D
+ok 27 - analytic acceleration is the negative potential gradient in full 3D
+  ---
+  duration_ms: 0.3472
+  type: 'test'
+  ...
+# Subtest: rotation contributions add as v squared and disk formula is axisymmetric
+ok 28 - rotation contributions add as v squared and disk formula is axisymmetric
+  ---
+  duration_ms: 0.1307
+  type: 'test'
+  ...
+# Subtest: r200 is a derived mean density and NFW outer taper is finite and smooth
+ok 29 - r200 is a derived mean density and NFW outer taper is finite and smooth
+  ---
+  duration_ms: 0.1252
+  type: 'test'
+  ...
+# Subtest: NFW stable central series preserves small positive enclosed mass
+ok 30 - NFW stable central series preserves small positive enclosed mass
+  ---
+  duration_ms: 0.1096
+  type: 'test'
+  ...
+# Subtest: exact MN radial integration reproduces its vertical marginal
+ok 31 - exact MN radial integration reproduces its vertical marginal
+  ---
+  duration_ms: 7.1016
+  type: 'test'
+  ...
+# Subtest: spatial samplers follow cumulative profiles statistically
+ok 32 - spatial samplers follow cumulative profiles statistically
+  ---
+  duration_ms: 22.4078
+  type: 'test'
+  ...
+# Subtest: seed and masses are reproducible and remain fixed when N changes
+ok 33 - seed and masses are reproducible and remain fixed when N changes
+  ---
+  duration_ms: 799.8614
+  type: 'test'
+  ...
+1..33
+# tests 33
+# suites 0
+# pass 33
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 938.9351

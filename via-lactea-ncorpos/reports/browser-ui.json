@@ -1,0 +1,73 @@
+{
+  "dateUTC": "2026-10-11T04:22:39.076Z",
+  "url": "http://127.0.0.1:4173/dist/",
+  "checks": [
+    {
+      "check": "production static load",
+      "status": "Pronto para configurar."
+    },
+    {
+      "check": "GPU 10000 ready",
+      "status": "Preparado: 10.000 integradas e desenhadas · gpu. Simulação pausada.",
+      "count": "10.000",
+      "backend": "GPU WebGPU · f32"
+    },
+    {
+      "check": "reject insufficient budget before allocation",
+      "status": "Estimativa de memória excede o orçamento de segurança configurado.",
+      "count": "0"
+    },
+    {
+      "check": "auto backend at manual N100000",
+      "status": "Preparado: 100.000 integradas e desenhadas · gpu. Simulação pausada.",
+      "count": "100.000",
+      "backend": "GPU WebGPU · f32"
+    },
+    {
+      "check": "open sources while integrating",
+      "count": "100.000",
+      "status": "Integrando forças das partículas no seu dispositivo.",
+      "time": "7.00 Myr",
+      "visibility": "visible"
+    },
+    {
+      "check": "pause GPU100000 after real evolution",
+      "time": "14.90 Myr",
+      "status": "Simulação pausada.",
+      "energy": "3.19e-3 % (U árvore)"
+    },
+    {
+      "check": "stop releases state and clears live count",
+      "count": "0",
+      "backend": "—",
+      "status": "Cálculos encerrados e recursos liberados."
+    },
+    {
+      "check": "browser hidden through visibility capability",
+      "count": "10.000",
+      "status": "Integrando forças das partículas no seu dispositivo.",
+      "time": "0.80 Myr",
+      "visibility": "visible"
+    },
+    {
+      "check": "filters count differs from integrated count",
+      "integrated": "10.000",
+      "visualSelection": "Seleção visual: 6.000 corpos após filtros; a câmera pode recortar o campo."
+    },
+    {
+      "check": "mobile no horizontal overflow at requested 390px",
+      "contentWidth": 375,
+      "viewportWidth": 375
+    },
+    {
+      "check": "final paused capture",
+      "backend": "GPU WebGPU · f32",
+      "count": "100.000",
+      "pauseEnabled": false,
+      "status": "Simulação pausada.",
+      "time": "233.30 Myr",
+      "visualSelection": "Seleção visual: 100.000 corpos após filtros; a câmera pode recortar o campo."
+    }
+  ],
+  "qualification": "Observed UI of the static production build. The visibility capability did not set document.hidden, so a genuine tab-inactive event was not confirmed in this environment. Displayed energy and preview evolution do not validate equilibrium or long-term accuracy."
+}

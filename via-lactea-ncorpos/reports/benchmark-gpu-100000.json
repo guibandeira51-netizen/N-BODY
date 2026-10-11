@@ -1,0 +1,99 @@
+{
+  "capabilities": {
+    "hardwareConcurrency": 16,
+    "memoryGiB": 16,
+    "memoryHint": "deviceMemory é uma estimativa arredondada de RAM; não mede VRAM.",
+    "safetyBudgetBytes": 1073741824,
+    "wasm": true,
+    "wasmSIMD": true,
+    "worker": true,
+    "sharedArrayBuffer": true,
+    "crossOriginIsolated": true,
+    "secureContext": true,
+    "webgpu": {
+      "available": true,
+      "limits": {
+        "maxBufferSize": 2147483648,
+        "maxStorageBufferBindingSize": 2147483644,
+        "maxStorageBuffersPerShaderStage": 16,
+        "maxComputeWorkgroupSizeX": 1024,
+        "maxComputeInvocationsPerWorkgroup": 1024,
+        "maxComputeWorkgroupStorageSize": 32768,
+        "maxComputeWorkgroupsPerDimension": 65535,
+        "maxBindGroups": 4,
+        "maxUniformBufferBindingSize": 65536
+      },
+      "features": [
+        "depth32float-stencil8",
+        "rg11b10ufloat-renderable",
+        "texture-formats-tier1",
+        "bgra8unorm-storage",
+        "texture-compression-bc",
+        "dual-source-blending",
+        "core-features-and-limits",
+        "float32-filterable",
+        "indirect-first-instance",
+        "float32-blendable",
+        "subgroup-size-control",
+        "depth-clip-control",
+        "texture-compression-bc-sliced-3d",
+        "shader-f16",
+        "texture-formats-tier2",
+        "timestamp-query",
+        "clip-distances",
+        "primitive-index",
+        "texture-component-swizzle",
+        "subgroups"
+      ],
+      "info": {
+        "vendor": "amd",
+        "architecture": "rdna-3",
+        "device": "",
+        "description": ""
+      },
+      "reason": null,
+      "precision": "f32",
+      "algorithm": "direto O(N²); seleção automática depende de benchmark medido"
+    }
+  },
+  "status": "measured",
+  "n": 100000,
+  "steps": 3,
+  "dt": 0.1,
+  "epsilon": 0.1,
+  "seed": 2026,
+  "initialMs": 540.0250000003725,
+  "uploadAndInitialForceMs": 75.58499999903142,
+  "stepMs": 49.90499999995033,
+  "particlesPerSecond": 2003807.2337461084,
+  "physicalMyr": 0.4,
+  "finite": true,
+  "algorithm": "direct",
+  "precision": "f32",
+  "timing": "wall clock, incluindo submit e queue.onSubmittedWorkDone; sem extrapolação",
+  "effectiveParameters": {
+    "dt": 0.10000000149011612,
+    "epsilonSquared": 0.009999999776482582,
+    "G": 0.04498502239584923,
+    "precision": "f32"
+  },
+  "resources": {
+    "admissible": true,
+    "reasons": [],
+    "budgetBytes": 1073741824,
+    "estimate": {
+      "n": 100000,
+      "cpuStateBytes": 8100000,
+      "cpuCopies": 2,
+      "cpuScratchBytes": 3200000,
+      "gpuResidentBytes": 4800032,
+      "readbackBytes": 4800000,
+      "barnesHutBytes": 0,
+      "perStorageBufferBytes": 1600000,
+      "estimatedBytes": 29000032,
+      "approximate": true,
+      "includes": "duas cópias de estado CPU por padrão, packing f32, três buffers GPU, staging opcional; árvore BH estimada",
+      "excludes": "driver, canvas, navegador, fragmentação e outras aplicações"
+    }
+  }
+}
