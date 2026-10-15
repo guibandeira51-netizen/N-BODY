@@ -1,0 +1,841 @@
+{
+  "report": "legacy-controls.json",
+  "completedUTC": "2026-10-12T03:54:43.689Z",
+  "runs": [
+    {
+      "n": 2000,
+      "seed": 2026,
+      "mode": "fixed-analytic",
+      "dt": 0.1,
+      "epsilon": null,
+      "theta": null,
+      "bulgeR50": 0.1254024857224949,
+      "diskHeight": 0.006100093628174319,
+      "diskSigmaZ": 0.0023004503865495796,
+      "energy": 3.822219595202598e-8,
+      "momentum": 0,
+      "angularMomentum": 0.0004233315207545537,
+      "wallClockMs": 127.91690000000006
+    },
+    {
+      "n": 2000,
+      "seed": 2026,
+      "mode": "barnes-hut",
+      "dt": 0.1,
+      "epsilon": 0.1,
+      "theta": 0.5,
+      "bulgeR50": 0.43698319707595834,
+      "diskHeight": 0.5894364504122043,
+      "diskSigmaZ": 0.14485512351401497,
+      "energy": 0.00007892593069081472,
+      "momentum": 5.458184842256198e-18,
+      "angularMomentum": 0.000013032025371650949,
+      "wallClockMs": 3877.9345
+    },
+    {
+      "n": 2000,
+      "seed": 2027,
+      "mode": "fixed-analytic",
+      "dt": 0.1,
+      "epsilon": null,
+      "theta": null,
+      "bulgeR50": -0.0736584292672886,
+      "diskHeight": 0.06957616926509513,
+      "diskSigmaZ": -0.018685144771092843,
+      "energy": 3.735455176837167e-8,
+      "momentum": 0,
+      "angularMomentum": 0.000034937053540368456,
+      "wallClockMs": 123.21079999999984
+    },
+    {
+      "n": 2000,
+      "seed": 2027,
+      "mode": "barnes-hut",
+      "dt": 0.1,
+      "epsilon": 0.1,
+      "theta": 0.5,
+      "bulgeR50": -0.050959739502766,
+      "diskHeight": 0.29115701752388023,
+      "diskSigmaZ": 0.16740350154683914,
+      "energy": 0.00006864921188720717,
+      "momentum": 7.099866743601716e-18,
+      "angularMomentum": 0.00001423113793790547,
+      "wallClockMs": 3888.4700999999995
+    },
+    {
+      "n": 2000,
+      "seed": 2028,
+      "mode": "fixed-analytic",
+      "dt": 0.1,
+      "epsilon": null,
+      "theta": null,
+      "bulgeR50": -0.06537639575659693,
+      "diskHeight": 0.06191542839538089,
+      "diskSigmaZ": -0.0801412137092814,
+      "energy": 1.5754753273054896e-8,
+      "momentum": 0,
+      "angularMomentum": 0.00021165733472733398,
+      "wallClockMs": 140.71460000000116
+    },
+    {
+      "n": 2000,
+      "seed": 2028,
+      "mode": "barnes-hut",
+      "dt": 0.1,
+      "epsilon": 0.1,
+      "theta": 0.5,
+      "bulgeR50": -0.0796771040221117,
+      "diskHeight": 0.4221949295383529,
+      "diskSigmaZ": -0.007095911214418216,
+      "energy": 0.0001268480071876102,
+      "momentum": 5.322589143769604e-18,
+      "angularMomentum": 0.000027165943121278853,
+      "wallClockMs": 3778.7878
+    },
+    {
+      "n": 2000,
+      "seed": 2026,
+      "mode": "direct",
+      "dt": 0.1,
+      "epsilon": 0.1,
+      "theta": null,
+      "bulgeR50": 0.4354941152835241,
+      "diskHeight": 0.5862042382589376,
+      "diskSigmaZ": 0.14508471253389077,
+      "energy": 6.376848226958981e-7,
+      "momentum": 2.7471933616098806e-18,
+      "angularMomentum": 2.1334492939906939e-16,
+      "wallClockMs": 3078.6225000000013
+    },
+    {
+      "n": 2000,
+      "seed": 2026,
+      "mode": "barnes-hut",
+      "dt": 0.1,
+      "epsilon": 0.1,
+      "theta": 0.25,
+      "bulgeR50": 0.4356121377896165,
+      "diskHeight": 0.5858264869044503,
+      "diskSigmaZ": 0.14495942625262281,
+      "energy": 4.1639201827356226e-7,
+      "momentum": 4.786806114896787e-18,
+      "angularMomentum": 0.0000022010440389149223,
+      "wallClockMs": 5291.0280999999995
+    },
+    {
+      "n": 2000,
+      "seed": 2026,
+      "mode": "barnes-hut",
+      "dt": 0.05,
+      "epsilon": 0.1,
+      "theta": 0.5,
+      "bulgeR50": 0.4370107636332332,
+      "diskHeight": 0.5896559745162528,
+      "diskSigmaZ": 0.14488838518101943,
+      "energy": 0.0000798108067876521,
+      "momentum": 3.703748914302806e-18,
+      "angularMomentum": 0.000013023700145222937,
+      "wallClockMs": 7133.659
+    },
+    {
+      "n": 2000,
+      "seed": 2026,
+      "mode": "barnes-hut",
+      "dt": 0.1,
+      "epsilon": 0.3,
+      "theta": 0.5,
+      "bulgeR50": 0.4319186837140834,
+      "diskHeight": 0.6017350620799313,
+      "diskSigmaZ": 0.05321010242699997,
+      "energy": 0.00009684073468403366,
+      "momentum": 6.071901492100937e-18,
+      "angularMomentum": 0.000014048248736563764,
+      "wallClockMs": 3640.162199999999
+    },
+    {
+      "n": 10000,
+      "seed": 2026,
+      "mode": "fixed-analytic",
+      "dt": 0.1,
+      "epsilon": null,
+      "theta": null,
+      "bulgeR50": 0.05092157929209251,
+      "diskHeight": 0.0489923462827313,
+      "diskSigmaZ": 0.03304249193584474,
+      "energy": 8.056165211620625e-8,
+      "momentum": 0,
+      "angularMomentum": 0.00014776763764994154,
+      "wallClockMs": 538.6253000000033
+    },
+    {
+      "n": 10000,
+      "seed": 2027,
+      "mode": "fixed-analytic",
+      "dt": 0.1,
+      "epsilon": null,
+      "theta": null,
+      "bulgeR50": -0.12435232811955654,
+      "diskHeight": 0.05653475198139102,
+      "diskSigmaZ": 0.009680140177310781,
+      "energy": 1.9283864324757612e-8,
+      "momentum": 0,
+      "angularMomentum": 0.00010475642714737383,
+      "wallClockMs": 543.9521999999961
+    },
+    {
+      "n": 10000,
+      "seed": 2028,
+      "mode": "fixed-analytic",
+      "dt": 0.1,
+      "epsilon": null,
+      "theta": null,
+      "bulgeR50": -0.024387969213353622,
+      "diskHeight": 0.0946763834059583,
+      "diskSigmaZ": 0.007342618628229491,
+      "energy": 8.939150695878407e-8,
+      "momentum": 0,
+      "angularMomentum": 0.0000937322487877486,
+      "wallClockMs": 548.1866000000009
+    }
+  ],
+  "ensemble": [
+    {
+      "n": 2000,
+      "mode": "fixed-analytic",
+      "count": 3,
+      "quantities": {
+        "bulgeR50": {
+          "mean": -0.004544113100463543,
+          "sampleStandardDeviation": 0.11261321826947862,
+          "min": -0.0736584292672886,
+          "max": 0.1254024857224949
+        },
+        "diskHeight": {
+          "mean": 0.04586389709621678,
+          "sampleStandardDeviation": 0.03464883529575066,
+          "min": 0.006100093628174319,
+          "max": 0.06957616926509513
+        },
+        "diskSigmaZ": {
+          "mean": -0.032175302697941555,
+          "sampleStandardDeviation": 0.04284443097289245,
+          "min": -0.0801412137092814,
+          "max": 0.0023004503865495796
+        }
+      }
+    },
+    {
+      "n": 2000,
+      "mode": "barnes-hut",
+      "count": 3,
+      "quantities": {
+        "bulgeR50": {
+          "mean": 0.10211545118369354,
+          "sampleStandardDeviation": 0.2903592209409907,
+          "min": -0.0796771040221117,
+          "max": 0.43698319707595834
+        },
+        "diskHeight": {
+          "mean": 0.4342627991581458,
+          "sampleStandardDeviation": 0.1495054518367651,
+          "min": 0.29115701752388023,
+          "max": 0.5894364504122043
+        },
+        "diskSigmaZ": {
+          "mean": 0.10172090461547863,
+          "sampleStandardDeviation": 0.09491012534759426,
+          "min": -0.007095911214418216,
+          "max": 0.16740350154683914
+        }
+      }
+    },
+    {
+      "n": 10000,
+      "mode": "fixed-analytic",
+      "count": 3,
+      "quantities": {
+        "bulgeR50": {
+          "mean": -0.032606239346939216,
+          "sampleStandardDeviation": 0.08792548338126024,
+          "min": -0.12435232811955654,
+          "max": 0.05092157929209251
+        },
+        "diskHeight": {
+          "mean": 0.06673449389002688,
+          "sampleStandardDeviation": 0.024490485156917215,
+          "min": 0.0489923462827313,
+          "max": 0.0946763834059583
+        },
+        "diskSigmaZ": {
+          "mean": 0.016688416913795006,
+          "sampleStandardDeviation": 0.01421118675967029,
+          "min": 0.007342618628229491,
+          "max": 0.03304249193584474
+        }
+      }
+    }
+  ],
+  "forceComparisons": [
+    {
+      "n": 2000,
+      "seed": 2026,
+      "measured": "Barnes–Hut",
+      "reference": "direct-pair",
+      "epsilon": 0.1,
+      "theta": 0.5,
+      "errors": [
+        {
+          "component": -1,
+          "count": 2000,
+          "relativeRms": 0.005738258693467153,
+          "absoluteRms": 0.00007127062495428688,
+          "relativeMedian": 0.004245116911753664,
+          "relativeP95": 0.00954754559878272,
+          "relativeP99": 0.01410167610910897,
+          "relativeMaximum": 0.025836602228265896,
+          "absoluteP99": 0.0002344297977070304,
+          "absoluteMaximum": 0.00036788576399604723,
+          "zeroReferenceExcluded": 0
+        },
+        {
+          "component": 0,
+          "count": 300,
+          "relativeRms": 0.005621563670918842,
+          "absoluteRms": 0.00011390129198133766,
+          "relativeMedian": 0.004648946401241595,
+          "relativeP95": 0.011217828758509518,
+          "relativeP99": 0.017234989059796445,
+          "relativeMaximum": 0.0244931856909376,
+          "absoluteP99": 0.000308597045754795,
+          "absoluteMaximum": 0.00036788576399604723,
+          "zeroReferenceExcluded": 0
+        },
+        {
+          "component": 1,
+          "count": 900,
+          "relativeRms": 0.005775433650997396,
+          "absoluteRms": 0.00008118411925599721,
+          "relativeMedian": 0.004442748023077528,
+          "relativeP95": 0.0099865641975854,
+          "relativeP99": 0.01443607785910297,
+          "relativeMaximum": 0.025836602228265896,
+          "absoluteP99": 0.00023441187829466173,
+          "absoluteMaximum": 0.00029653319082238695,
+          "zeroReferenceExcluded": 0
+        },
+        {
+          "component": 2,
+          "count": 800,
+          "relativeRms": 0.006670592482876556,
+          "absoluteRms": 0.00002046880464295336,
+          "relativeMedian": 0.0038970217058954264,
+          "relativeP95": 0.008695713803039897,
+          "relativeP99": 0.012484864941877971,
+          "relativeMaximum": 0.01441194890748914,
+          "absoluteP99": 0.00007561038616214247,
+          "absoluteMaximum": 0.0002700660679908682,
+          "zeroReferenceExcluded": 0
+        }
+      ]
+    },
+    {
+      "n": 2000,
+      "seed": 2026,
+      "measured": "Barnes–Hut",
+      "reference": "direct-pair",
+      "epsilon": 0.1,
+      "theta": 0.25,
+      "errors": [
+        {
+          "component": -1,
+          "count": 2000,
+          "relativeRms": 0.0004124293380787161,
+          "absoluteRms": 0.0000051224767380768875,
+          "relativeMedian": 0.0005446103095275205,
+          "relativeP95": 0.001231161792801437,
+          "relativeP99": 0.0018044507904106117,
+          "relativeMaximum": 0.002543559381589414,
+          "absoluteP99": 0.00001619280942852034,
+          "absoluteMaximum": 0.000019860622629319477,
+          "zeroReferenceExcluded": 0
+        },
+        {
+          "component": 0,
+          "count": 300,
+          "relativeRms": 0.00029753621759494113,
+          "absoluteRms": 0.000006028528996410877,
+          "relativeMedian": 0.0003300907305113696,
+          "relativeP95": 0.0010558212658935409,
+          "relativeP99": 0.001829217566181317,
+          "relativeMaximum": 0.002022628701783271,
+          "absoluteP99": 0.00001834843790324321,
+          "absoluteMaximum": 0.00001871347207460103,
+          "zeroReferenceExcluded": 0
+        },
+        {
+          "component": 1,
+          "count": 900,
+          "relativeRms": 0.0004638254468560318,
+          "absoluteRms": 0.000006519901823306958,
+          "relativeMedian": 0.00048272881084583,
+          "relativeP95": 0.001112034411701353,
+          "relativeP99": 0.0013896152845736566,
+          "relativeMaximum": 0.0016192819401480987,
+          "absoluteP99": 0.00001676677588320156,
+          "absoluteMaximum": 0.000019860622629319477,
+          "zeroReferenceExcluded": 0
+        },
+        {
+          "component": 2,
+          "count": 800,
+          "relativeRms": 0.0006637277277217355,
+          "absoluteRms": 0.0000020366576476860396,
+          "relativeMedian": 0.0006603147447447677,
+          "relativeP95": 0.0014326530084077772,
+          "relativeP99": 0.001969782599041158,
+          "relativeMaximum": 0.002543559381589414,
+          "absoluteP99": 0.000010727124536170416,
+          "absoluteMaximum": 0.000012857325458403152,
+          "zeroReferenceExcluded": 0
+        }
+      ]
+    },
+    {
+      "n": 2000,
+      "seed": 2026,
+      "measured": "direct-pair softened",
+      "reference": "fixed analytic unsoftened",
+      "epsilon": 0.1,
+      "errors": [
+        {
+          "component": -1,
+          "count": 2000,
+          "relativeRms": 0.4190774623084914,
+          "absoluteRms": 0.00508149859310324,
+          "relativeMedian": 0.17197090419261693,
+          "relativeP95": 0.6980477958576,
+          "relativeP99": 1.5961451031145495,
+          "relativeMaximum": 6.07095264363016,
+          "absoluteP99": 0.017975766026766853,
+          "absoluteMaximum": 0.03828457060104166,
+          "zeroReferenceExcluded": 0
+        },
+        {
+          "component": 0,
+          "count": 300,
+          "relativeRms": 0.4259491829502396,
+          "absoluteRms": 0.008591586963086071,
+          "relativeMedian": 0.20056462325125973,
+          "relativeP95": 0.8375557081429628,
+          "relativeP99": 1.1521181359139667,
+          "relativeMaximum": 1.4591796591794612,
+          "absoluteP99": 0.030238736429362884,
+          "absoluteMaximum": 0.031098133210847773,
+          "zeroReferenceExcluded": 0
+        },
+        {
+          "component": 1,
+          "count": 900,
+          "relativeRms": 0.41825631187955736,
+          "absoluteRms": 0.005663584329580391,
+          "relativeMedian": 0.2497754411249532,
+          "relativeP95": 0.7726102746841359,
+          "relativeP99": 1.9245209858281935,
+          "relativeMaximum": 6.07095264363016,
+          "absoluteP99": 0.01642585180865251,
+          "absoluteMaximum": 0.03828457060104166,
+          "zeroReferenceExcluded": 0
+        },
+        {
+          "component": 2,
+          "count": 800,
+          "relativeRms": 0.3005109497729677,
+          "absoluteRms": 0.0008874663568958721,
+          "relativeMedian": 0.10019745201880606,
+          "relativeP95": 0.4075213459200701,
+          "relativeP99": 0.8691971509385612,
+          "relativeMaximum": 1.897794982581371,
+          "absoluteP99": 0.0021050118870019926,
+          "absoluteMaximum": 0.011624658681603253,
+          "zeroReferenceExcluded": 0
+        }
+      ]
+    },
+    {
+      "n": 2000,
+      "seed": 2027,
+      "measured": "Barnes–Hut",
+      "reference": "direct-pair",
+      "epsilon": 0.1,
+      "theta": 0.5,
+      "errors": [
+        {
+          "component": -1,
+          "count": 2000,
+          "relativeRms": 0.004483350848850047,
+          "absoluteRms": 0.000060036717635714626,
+          "relativeMedian": 0.0034661406873424073,
+          "relativeP95": 0.007887819422380307,
+          "relativeP99": 0.01146029802289675,
+          "relativeMaximum": 0.014669092899979566,
+          "absoluteP99": 0.00021026050446169354,
+          "absoluteMaximum": 0.0002422861322740085,
+          "zeroReferenceExcluded": 0
+        },
+        {
+          "component": 0,
+          "count": 300,
+          "relativeRms": 0.004355401573992284,
+          "absoluteRms": 0.00009203827266351364,
+          "relativeMedian": 0.004006749919968551,
+          "relativeP95": 0.008255717848574396,
+          "relativeP99": 0.012404632050226887,
+          "relativeMaximum": 0.013938552004536914,
+          "absoluteP99": 0.00023512951996497203,
+          "absoluteMaximum": 0.00023723824490855955,
+          "zeroReferenceExcluded": 0
+        },
+        {
+          "component": 1,
+          "count": 900,
+          "relativeRms": 0.004524428626101337,
+          "absoluteRms": 0.00006976329937372316,
+          "relativeMedian": 0.003475468868227781,
+          "relativeP95": 0.008293431534128539,
+          "relativeP99": 0.012042911939772962,
+          "relativeMaximum": 0.014669092899979566,
+          "absoluteP99": 0.00021127917506893966,
+          "absoluteMaximum": 0.0002422861322740085,
+          "zeroReferenceExcluded": 0
+        },
+        {
+          "component": 2,
+          "count": 800,
+          "relativeRms": 0.005183081276657977,
+          "absoluteRms": 0.000018949791981679166,
+          "relativeMedian": 0.0033046002465074026,
+          "relativeP95": 0.007454073246122956,
+          "relativeP99": 0.010157982519347651,
+          "relativeMaximum": 0.013640859855244228,
+          "absoluteP99": 0.00006249577091546274,
+          "absoluteMaximum": 0.00022396544515980812,
+          "zeroReferenceExcluded": 0
+        }
+      ]
+    },
+    {
+      "n": 2000,
+      "seed": 2027,
+      "measured": "Barnes–Hut",
+      "reference": "direct-pair",
+      "epsilon": 0.1,
+      "theta": 0.25,
+      "errors": [
+        {
+          "component": -1,
+          "count": 2000,
+          "relativeRms": 0.00036491971670917487,
+          "absoluteRms": 0.000004886653472010366,
+          "relativeMedian": 0.00044958444793309524,
+          "relativeP95": 0.0010823254732236233,
+          "relativeP99": 0.0014723442440898959,
+          "relativeMaximum": 0.0022020671215228767,
+          "absoluteP99": 0.00001329203311643249,
+          "absoluteMaximum": 0.00001854676349284482,
+          "zeroReferenceExcluded": 0
+        },
+        {
+          "component": 0,
+          "count": 300,
+          "relativeRms": 0.00029483477056848587,
+          "absoluteRms": 0.000006230443403039202,
+          "relativeMedian": 0.00033766811382527284,
+          "relativeP95": 0.0010408159813770853,
+          "relativeP99": 0.0013112806726003291,
+          "relativeMaximum": 0.0013207271467639556,
+          "absoluteP99": 0.000016970823706900582,
+          "absoluteMaximum": 0.000017889431229448984,
+          "zeroReferenceExcluded": 0
+        },
+        {
+          "component": 1,
+          "count": 900,
+          "relativeRms": 0.00039053179139513124,
+          "absoluteRms": 0.00000602170760764803,
+          "relativeMedian": 0.00042939869584932315,
+          "relativeP95": 0.0009921489941226165,
+          "relativeP99": 0.001438841102828969,
+          "relativeMaximum": 0.0022020671215228767,
+          "absoluteP99": 0.000013286005379495543,
+          "absoluteMaximum": 0.000017128709904519534,
+          "zeroReferenceExcluded": 0
+        },
+        {
+          "component": 2,
+          "count": 800,
+          "relativeRms": 0.0005703303741251485,
+          "absoluteRms": 0.0000020851770160690065,
+          "relativeMedian": 0.0005182719067772785,
+          "relativeP95": 0.0011796578630894313,
+          "relativeP99": 0.0015393014979589819,
+          "relativeMaximum": 0.0021877161821577435,
+          "absoluteP99": 0.000008284192350228531,
+          "absoluteMaximum": 0.00001854676349284482,
+          "zeroReferenceExcluded": 0
+        }
+      ]
+    },
+    {
+      "n": 2000,
+      "seed": 2027,
+      "measured": "direct-pair softened",
+      "reference": "fixed analytic unsoftened",
+      "epsilon": 0.1,
+      "errors": [
+        {
+          "component": -1,
+          "count": 2000,
+          "relativeRms": 0.5012970502665158,
+          "absoluteRms": 0.0060271627955111855,
+          "relativeMedian": 0.18174087521806198,
+          "relativeP95": 0.7610657897865106,
+          "relativeP99": 1.3654518859910025,
+          "relativeMaximum": 2.9729819511202553,
+          "absoluteP99": 0.02174696896487202,
+          "absoluteMaximum": 0.030714080035965555,
+          "zeroReferenceExcluded": 0
+        },
+        {
+          "component": 0,
+          "count": 300,
+          "relativeRms": 0.5346633629538515,
+          "absoluteRms": 0.010545396890117348,
+          "relativeMedian": 0.308803999304609,
+          "relativeP95": 0.8764194388975959,
+          "relativeP99": 2.3192560373482696,
+          "relativeMaximum": 2.9219276399799488,
+          "absoluteP99": 0.028539278232944644,
+          "absoluteMaximum": 0.030714080035965555,
+          "zeroReferenceExcluded": 0
+        },
+        {
+          "component": 1,
+          "count": 900,
+          "relativeRms": 0.4850016318122258,
+          "absoluteRms": 0.006533403941045339,
+          "relativeMedian": 0.25573233987619703,
+          "relativeP95": 0.8655314140466832,
+          "relativeP99": 1.5516210630358733,
+          "relativeMaximum": 2.9729819511202553,
+          "absoluteP99": 0.01885650607033555,
+          "absoluteMaximum": 0.02237658376853555,
+          "zeroReferenceExcluded": 0
+        },
+        {
+          "component": 2,
+          "count": 800,
+          "relativeRms": 0.3102614541036715,
+          "absoluteRms": 0.0010457854135644483,
+          "relativeMedian": 0.09366295474811981,
+          "relativeP95": 0.4516610602034517,
+          "relativeP99": 0.76156833188089,
+          "relativeMaximum": 1.4116548545583534,
+          "absoluteP99": 0.004646915371239832,
+          "absoluteMaximum": 0.009034403333092519,
+          "zeroReferenceExcluded": 0
+        }
+      ]
+    },
+    {
+      "n": 2000,
+      "seed": 2028,
+      "measured": "Barnes–Hut",
+      "reference": "direct-pair",
+      "epsilon": 0.1,
+      "theta": 0.5,
+      "errors": [
+        {
+          "component": -1,
+          "count": 2000,
+          "relativeRms": 0.004168369870656456,
+          "absoluteRms": 0.00006012434926492477,
+          "relativeMedian": 0.0038632033939434178,
+          "relativeP95": 0.00998861384528649,
+          "relativeP99": 0.01379234403953585,
+          "relativeMaximum": 0.024517236315112337,
+          "absoluteP99": 0.00018069635928323884,
+          "absoluteMaximum": 0.0002162052952092072,
+          "zeroReferenceExcluded": 0
+        },
+        {
+          "component": 0,
+          "count": 300,
+          "relativeRms": 0.0038655696298543125,
+          "absoluteRms": 0.0000846635397164473,
+          "relativeMedian": 0.0043037140399185166,
+          "relativeP95": 0.009396821050998743,
+          "relativeP99": 0.011661971222579453,
+          "relativeMaximum": 0.014964875785894375,
+          "absoluteP99": 0.0001940199561361216,
+          "absoluteMaximum": 0.00020168672535031236,
+          "zeroReferenceExcluded": 0
+        },
+        {
+          "component": 1,
+          "count": 900,
+          "relativeRms": 0.004266647458176796,
+          "absoluteRms": 0.0000730207074734729,
+          "relativeMedian": 0.004269720520811897,
+          "relativeP95": 0.011333911866648718,
+          "relativeP99": 0.01541874242718262,
+          "relativeMaximum": 0.024517236315112337,
+          "absoluteP99": 0.0001990971615211372,
+          "absoluteMaximum": 0.0002162052952092072,
+          "zeroReferenceExcluded": 0
+        },
+        {
+          "component": 2,
+          "count": 800,
+          "relativeRms": 0.005718769164388765,
+          "absoluteRms": 0.000018730954124520855,
+          "relativeMedian": 0.003407593296683337,
+          "relativeP95": 0.007334544512858611,
+          "relativeP99": 0.010248043519395058,
+          "relativeMaximum": 0.013604331864373174,
+          "absoluteP99": 0.0000927529306826482,
+          "absoluteMaximum": 0.00013504200759699195,
+          "zeroReferenceExcluded": 0
+        }
+      ]
+    },
+    {
+      "n": 2000,
+      "seed": 2028,
+      "measured": "Barnes–Hut",
+      "reference": "direct-pair",
+      "epsilon": 0.1,
+      "theta": 0.25,
+      "errors": [
+        {
+          "component": -1,
+          "count": 2000,
+          "relativeRms": 0.0004220110380283978,
+          "absoluteRms": 0.00000608706516729451,
+          "relativeMedian": 0.0005303998663326718,
+          "relativeP95": 0.0012022434427680381,
+          "relativeP99": 0.0015739339101483048,
+          "relativeMaximum": 0.002701446724234415,
+          "absoluteP99": 0.00001606690369894971,
+          "absoluteMaximum": 0.000019464364275739224,
+          "zeroReferenceExcluded": 0
+        },
+        {
+          "component": 0,
+          "count": 300,
+          "relativeRms": 0.0003396003169710729,
+          "absoluteRms": 0.0000074379115309538816,
+          "relativeMedian": 0.0003877631685750523,
+          "relativeP95": 0.0010155089309087143,
+          "relativeP99": 0.0015141697755524874,
+          "relativeMaximum": 0.001642290183506656,
+          "absoluteP99": 0.000017358296366389758,
+          "absoluteMaximum": 0.000017724043290556163,
+          "zeroReferenceExcluded": 0
+        },
+        {
+          "component": 1,
+          "count": 900,
+          "relativeRms": 0.00045213653239468813,
+          "absoluteRms": 0.000007738002680955245,
+          "relativeMedian": 0.0005458798898059635,
+          "relativeP95": 0.0012840456111249858,
+          "relativeP99": 0.0016721726871205954,
+          "relativeMaximum": 0.002701446724234415,
+          "absoluteP99": 0.000017104583847567316,
+          "absoluteMaximum": 0.000019464364275739224,
+          "zeroReferenceExcluded": 0
+        },
+        {
+          "component": 2,
+          "count": 800,
+          "relativeRms": 0.0006493650750998494,
+          "absoluteRms": 0.00000212689602991894,
+          "relativeMedian": 0.0005582955033601512,
+          "relativeP95": 0.0011723058446827925,
+          "relativeP99": 0.0014967265332746324,
+          "relativeMaximum": 0.002502561436992556,
+          "absoluteP99": 0.000009521880959320676,
+          "absoluteMaximum": 0.000011552918418456968,
+          "zeroReferenceExcluded": 0
+        }
+      ]
+    },
+    {
+      "n": 2000,
+      "seed": 2028,
+      "measured": "direct-pair softened",
+      "reference": "fixed analytic unsoftened",
+      "epsilon": 0.1,
+      "errors": [
+        {
+          "component": -1,
+          "count": 2000,
+          "relativeRms": 0.8520309157570046,
+          "absoluteRms": 0.010041161926413956,
+          "relativeMedian": 0.18222753135261965,
+          "relativeP95": 0.9687733850345162,
+          "relativeP99": 2.221773564890775,
+          "relativeMaximum": 7.601099699441623,
+          "absoluteP99": 0.035312603397134185,
+          "absoluteMaximum": 0.1380169588727477,
+          "zeroReferenceExcluded": 0
+        },
+        {
+          "component": 0,
+          "count": 300,
+          "relativeRms": 0.8516137562403943,
+          "absoluteRms": 0.01643143622610873,
+          "relativeMedian": 0.26450226492526707,
+          "relativeP95": 1.3510168461296872,
+          "relativeP99": 3.5870108417917326,
+          "relativeMaximum": 5.235746461086815,
+          "absoluteP99": 0.07860285937791862,
+          "absoluteMaximum": 0.11506019025639129,
+          "zeroReferenceExcluded": 0
+        },
+        {
+          "component": 1,
+          "count": 900,
+          "relativeRms": 0.862223324908998,
+          "absoluteRms": 0.011479270442867052,
+          "relativeMedian": 0.2679506465707159,
+          "relativeP95": 1.0677569338447956,
+          "relativeP99": 2.2170446852430232,
+          "relativeMaximum": 7.172797208312932,
+          "absoluteP99": 0.04854253666469676,
+          "absoluteMaximum": 0.1380169588727477,
+          "zeroReferenceExcluded": 0
+        },
+        {
+          "component": 2,
+          "count": 800,
+          "relativeRms": 0.5597336962268851,
+          "absoluteRms": 0.0016031031699077166,
+          "relativeMedian": 0.10635757915852972,
+          "relativeP95": 0.5402416733081988,
+          "relativeP99": 1.6878509275162346,
+          "relativeMaximum": 7.601099699441623,
+          "absoluteP99": 0.008181216518596572,
+          "absoluteMaximum": 0.01285393987649686,
+          "zeroReferenceExcluded": 0
+        }
+      ]
+    }
+  ],
+  "cautions": [
+    "Only three seeds, not an ensemble convergence certificate.",
+    "Fixed analytic versus softened self-gravitating fields differ in discreteness and softening.",
+    "Cylindrical velocity dispersion includes the full component; use radial profiles to separate mean rotation shear.",
+    "Macro particle masses differ by component; halo particles are much heavier than disk particles."
+  ]
+}

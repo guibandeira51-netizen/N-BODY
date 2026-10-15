@@ -1,0 +1,77 @@
+{
+  "dateUTC": "2026-10-14T19:45:25.745Z",
+  "tests": [
+    {
+      "name": "three unequal masses",
+      "inputMasses": [
+        0.5,
+        6.8,
+        97.6315764173288
+      ],
+      "gpuMasses": [
+        0.5,
+        6.800000190734863,
+        97.63157653808594
+      ],
+      "cpuAccelerations": [
+        0.13103314197251292,
+        0.1950959798779794,
+        0,
+        -0.06462702933472281,
+        0.2486595432113844,
+        0,
+        0.0038301873452438293,
+        -0.018318180955428795,
+        0
+      ],
+      "gpuAccelerations": [
+        0.13103315234184265,
+        0.1950959861278534,
+        0,
+        -0.0646270290017128,
+        0.24865955114364624,
+        0,
+        0.0038301877211779356,
+        -0.018318181857466698,
+        0
+      ],
+      "relativeRMS": 4.161490534102495e-8,
+      "passed": true,
+      "tolerance": 0.000002
+    },
+    {
+      "status": "passed",
+      "n": 1025,
+      "steps": 8,
+      "options": {
+        "dt": 0.05,
+        "epsilon": 0.1
+      },
+      "force": {
+        "rmsRelative": 7.231964893205934e-7,
+        "maxAbs": 3.4302131295994853e-9
+      },
+      "position": {
+        "rmsRelative": 7.974270777055365e-8,
+        "maxAbs": 0.0000019311309742420235
+      },
+      "velocity": {
+        "rmsRelative": 1.3524110711014576e-7,
+        "maxAbs": 2.7722954244746578e-8
+      },
+      "tolerance": {
+        "forceRmsRelative": 0.0005,
+        "positionRmsRelative": 0.00002,
+        "velocityRmsRelative": 0.0005
+      },
+      "gpuStepMs": 0.4862499999580905,
+      "cpuStepMs": 4.104374999995343,
+      "precision": {
+        "cpu": "Float64",
+        "gpu": "f32"
+      },
+      "scope": "Fixture determinística curta; inclui grupos parciais quando N não é múltiplo de 64. Não comprova estabilidade de longa duração."
+    }
+  ],
+  "passed": true
+}

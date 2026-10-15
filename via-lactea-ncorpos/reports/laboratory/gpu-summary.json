@@ -1,0 +1,289 @@
+{
+  "status": "completed",
+  "completedUTC": "2026-10-13T23:45:21.032Z",
+  "runs": [
+    {
+      "config": {
+        "n": 1000,
+        "seed": 2026,
+        "dt": 0.1,
+        "epsilon": 0.1,
+        "theta": 0.5,
+        "algorithm": "direct",
+        "withHalo": true
+      },
+      "energy": {
+        "cpu": -1.3611045696792859e-05,
+        "gpu": -1.3608040878813444e-05
+      },
+      "structuralDifferencesAt20Myr": [
+        {
+          "component": 0,
+          "relativeR50Difference": 1.084368516285377e-06,
+          "relativeHeightDifference": -2.3799204558997405e-06
+        },
+        {
+          "component": 1,
+          "relativeR50Difference": 6.524854281912101e-07,
+          "relativeHeightDifference": -7.056915507404373e-06
+        },
+        {
+          "component": 2,
+          "relativeR50Difference": 1.8283248625744957e-07,
+          "relativeHeightDifference": 9.936927191592649e-08
+        }
+      ]
+    },
+    {
+      "config": {
+        "n": 1000,
+        "seed": 2027,
+        "dt": 0.1,
+        "epsilon": 0.1,
+        "theta": 0.5,
+        "algorithm": "direct",
+        "withHalo": true
+      },
+      "energy": {
+        "cpu": 5.516825340820361e-07,
+        "gpu": 5.399196275733948e-07
+      },
+      "structuralDifferencesAt20Myr": [
+        {
+          "component": 0,
+          "relativeR50Difference": 1.4588063515662307e-07,
+          "relativeHeightDifference": -1.3326956153725548e-06
+        },
+        {
+          "component": 1,
+          "relativeR50Difference": -6.276286213675887e-07,
+          "relativeHeightDifference": 7.289007901972199e-07
+        },
+        {
+          "component": 2,
+          "relativeR50Difference": -7.876867209601644e-08,
+          "relativeHeightDifference": -2.39770047390316e-07
+        }
+      ]
+    },
+    {
+      "config": {
+        "n": 1000,
+        "seed": 2028,
+        "dt": 0.1,
+        "epsilon": 0.1,
+        "theta": 0.5,
+        "algorithm": "direct",
+        "withHalo": true
+      },
+      "energy": {
+        "cpu": 2.0519440368400665e-05,
+        "gpu": 2.0489025128290663e-05
+      },
+      "structuralDifferencesAt20Myr": [
+        {
+          "component": 0,
+          "relativeR50Difference": -3.638944875208717e-06,
+          "relativeHeightDifference": -7.511575446641121e-07
+        },
+        {
+          "component": 1,
+          "relativeR50Difference": 6.399919031994796e-07,
+          "relativeHeightDifference": 7.09052640183667e-06
+        },
+        {
+          "component": 2,
+          "relativeR50Difference": 1.120708512923063e-07,
+          "relativeHeightDifference": 2.2579165289475523e-07
+        }
+      ]
+    }
+  ],
+  "fixture": {
+    "status": "passed",
+    "n": 1024,
+    "steps": 8,
+    "options": {
+      "dt": 0.05,
+      "epsilon": 0.1
+    },
+    "force": {
+      "rmsRelative": 6.879452606540293e-07,
+      "maxAbs": 1.874525951779324e-09
+    },
+    "position": {
+      "rmsRelative": 7.911813940739653e-08,
+      "maxAbs": 1.9446605934447803e-06
+    },
+    "velocity": {
+      "rmsRelative": 1.359491740794445e-07,
+      "maxAbs": 2.5826713094534437e-08
+    },
+    "tolerance": {
+      "forceRmsRelative": 0.0005,
+      "positionRmsRelative": 2e-05,
+      "velocityRmsRelative": 0.0005
+    },
+    "gpuStepMs": 0.5831249998882413,
+    "cpuStepMs": 6.640625,
+    "precision": {
+      "cpu": "Float64",
+      "gpu": "f32"
+    },
+    "scope": "Fixture determin\u00c3\u00adstica curta; inclui grupos parciais quando N n\u00c3\u00a3o \u00c3\u00a9 m\u00c3\u00baltiplo de 64. N\u00c3\u00a3o comprova estabilidade de longa dura\u00c3\u00a7\u00c3\u00a3o."
+  },
+  "hardware": {
+    "vendor": "amd",
+    "architecture": "rdna-3",
+    "device": "",
+    "description": ""
+  },
+  "benchmarks": [
+    {
+      "status": "measured",
+      "n": 1000,
+      "steps": 3,
+      "dt": 0.1,
+      "epsilon": 0.1,
+      "seed": 2026,
+      "initialMs": 2,
+      "uploadAndInitialForceMs": 5.16499999910593,
+      "stepMs": 0.9950000010430813,
+      "sampleCount": 3,
+      "batchSize": 3,
+      "warmupSteps": 2,
+      "measuredSteps": 9,
+      "samples": [
+        {
+          "elapsedMs": 2.9899999983608723,
+          "stepMs": 0.9966666661202908,
+          "stepsStart": 2,
+          "stepsEnd": 5,
+          "timeStartMyr": 0.2,
+          "timeEndMyr": 0.5
+        },
+        {
+          "elapsedMs": 2.480000000447035,
+          "stepMs": 0.8266666668156782,
+          "stepsStart": 5,
+          "stepsEnd": 8,
+          "timeStartMyr": 0.5,
+          "timeEndMyr": 0.8
+        },
+        {
+          "elapsedMs": 2.985000003129244,
+          "stepMs": 0.9950000010430813,
+          "stepsStart": 8,
+          "stepsEnd": 11,
+          "timeStartMyr": 0.8,
+          "timeEndMyr": 1.1
+        }
+      ],
+      "finalStateSha256": "20b45bd4b499cd98d79fda4d5544f2736a179479edb730de473fa7702dc66599",
+      "particlesPerSecond": 1005025.1245745498,
+      "physicalMyr": 1.1,
+      "finite": true,
+      "algorithm": "direct",
+      "precision": "f32",
+      "timing": "mediana de amostras wall clock, incluindo submit e queue.onSubmittedWorkDone; sem extrapola\u00c3\u00a7\u00c3\u00a3o; gera\u00c3\u00a7\u00c3\u00a3o/readback/diagn\u00c3\u00b3stico/render exclu\u00c3\u00addos",
+      "effectiveParameters": {
+        "dt": 0.10000000149011612,
+        "epsilonSquared": 0.009999999776482582,
+        "G": 0.04498502239584923,
+        "precision": "f32"
+      },
+      "resources": {
+        "admissible": true,
+        "reasons": [],
+        "budgetBytes": 1073741824,
+        "estimate": {
+          "n": 1000,
+          "cpuStateBytes": 81000,
+          "cpuCopies": 2,
+          "cpuScratchBytes": 32000,
+          "gpuResidentBytes": 48032,
+          "readbackBytes": 48000,
+          "barnesHutBytes": 0,
+          "perStorageBufferBytes": 16000,
+          "estimatedBytes": 290032,
+          "approximate": true,
+          "includes": "duas c\u00c3\u00b3pias de estado CPU por padr\u00c3\u00a3o, packing f32, tr\u00c3\u00aas buffers GPU, staging opcional; \u00c3\u00a1rvore BH estimada",
+          "excludes": "driver, canvas, navegador, fragmenta\u00c3\u00a7\u00c3\u00a3o e outras aplica\u00c3\u00a7\u00c3\u00b5es"
+        }
+      }
+    },
+    {
+      "status": "measured",
+      "n": 10000,
+      "steps": 3,
+      "dt": 0.1,
+      "epsilon": 0.1,
+      "seed": 2026,
+      "initialMs": 13.714999999850988,
+      "uploadAndInitialForceMs": 9.17000000178814,
+      "stepMs": 2.8383333335320153,
+      "sampleCount": 3,
+      "batchSize": 3,
+      "warmupSteps": 2,
+      "measuredSteps": 9,
+      "samples": [
+        {
+          "elapsedMs": 8.695000000298023,
+          "stepMs": 2.8983333334326744,
+          "stepsStart": 2,
+          "stepsEnd": 5,
+          "timeStartMyr": 0.2,
+          "timeEndMyr": 0.5
+        },
+        {
+          "elapsedMs": 8.515000000596046,
+          "stepMs": 2.8383333335320153,
+          "stepsStart": 5,
+          "stepsEnd": 8,
+          "timeStartMyr": 0.5,
+          "timeEndMyr": 0.8
+        },
+        {
+          "elapsedMs": 8.175000000745058,
+          "stepMs": 2.7250000002483525,
+          "stepsStart": 8,
+          "stepsEnd": 11,
+          "timeStartMyr": 0.8,
+          "timeEndMyr": 1.1
+        }
+      ],
+      "finalStateSha256": "d67f4541abb74094c514be91d931291513d9308aca56c4a1cc8107d85c8d81e4",
+      "particlesPerSecond": 3523194.3626423976,
+      "physicalMyr": 1.1,
+      "finite": true,
+      "algorithm": "direct",
+      "precision": "f32",
+      "timing": "mediana de amostras wall clock, incluindo submit e queue.onSubmittedWorkDone; sem extrapola\u00c3\u00a7\u00c3\u00a3o; gera\u00c3\u00a7\u00c3\u00a3o/readback/diagn\u00c3\u00b3stico/render exclu\u00c3\u00addos",
+      "effectiveParameters": {
+        "dt": 0.10000000149011612,
+        "epsilonSquared": 0.009999999776482582,
+        "G": 0.04498502239584923,
+        "precision": "f32"
+      },
+      "resources": {
+        "admissible": true,
+        "reasons": [],
+        "budgetBytes": 1073741824,
+        "estimate": {
+          "n": 10000,
+          "cpuStateBytes": 810000,
+          "cpuCopies": 2,
+          "cpuScratchBytes": 320000,
+          "gpuResidentBytes": 480032,
+          "readbackBytes": 480000,
+          "barnesHutBytes": 0,
+          "perStorageBufferBytes": 160000,
+          "estimatedBytes": 2900032,
+          "approximate": true,
+          "includes": "duas c\u00c3\u00b3pias de estado CPU por padr\u00c3\u00a3o, packing f32, tr\u00c3\u00aas buffers GPU, staging opcional; \u00c3\u00a1rvore BH estimada",
+          "excludes": "driver, canvas, navegador, fragmenta\u00c3\u00a7\u00c3\u00a3o e outras aplica\u00c3\u00a7\u00c3\u00b5es"
+        }
+      }
+    }
+  ]
+}

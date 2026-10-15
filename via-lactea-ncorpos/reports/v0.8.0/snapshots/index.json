@@ -1,0 +1,256 @@
+{
+  "schema": "initial-snapshot-index-v1",
+  "count": 16,
+  "snapshots": [
+    {
+      "file": "legacy-10000-2026.json",
+      "sha256": "756d840addd89e3fc8277c9bed81bf46c083a3da59eba965be4edf4fe5f8fbb9",
+      "bytes": 1429903,
+      "label": "legacy",
+      "config": {
+        "n": 10000,
+        "seed": 2026,
+        "dt": 0.1,
+        "epsilon": 0.1,
+        "theta": 0.5,
+        "withHalo": true
+      },
+      "equilibriumValidated": false
+    },
+    {
+      "file": "legacy-10000-2027.json",
+      "sha256": "7a69eef29d473b8bd22d34da9833f6dec04e1323230450c2e82b33f55b4947c6",
+      "bytes": 1430277,
+      "label": "legacy",
+      "config": {
+        "n": 10000,
+        "seed": 2027,
+        "dt": 0.1,
+        "epsilon": 0.1,
+        "theta": 0.5,
+        "withHalo": true
+      },
+      "equilibriumValidated": false
+    },
+    {
+      "file": "legacy-50000-2026.json",
+      "sha256": "e7701567e900d6445a8f80b35ad00de56874decabcb447f398b2de963dcf2fcd",
+      "bytes": 7159050,
+      "label": "legacy",
+      "config": {
+        "n": 50000,
+        "seed": 2026,
+        "dt": 0.1,
+        "epsilon": 0.1,
+        "theta": 0.5,
+        "withHalo": true
+      },
+      "equilibriumValidated": false
+    },
+    {
+      "file": "legacy-50000-2027.json",
+      "sha256": "71a5056f034b3baa095d9d99502dc5e4c5a094f810f93ec9966387d98a837254",
+      "bytes": 7158522,
+      "label": "legacy",
+      "config": {
+        "n": 50000,
+        "seed": 2027,
+        "dt": 0.1,
+        "epsilon": 0.1,
+        "theta": 0.5,
+        "withHalo": true
+      },
+      "equilibriumValidated": false
+    },
+    {
+      "file": "iterative-candidate-10000-2026.json",
+      "sha256": "bdda3d91e21c142fada4df7010287623ff7033aa65088533019936f1784ba15d",
+      "bytes": 1435480,
+      "label": "iterative-candidate",
+      "config": {
+        "n": 10000,
+        "seed": 2026,
+        "dt": 0.1,
+        "epsilon": 0.1,
+        "theta": 0.5,
+        "withHalo": true
+      },
+      "equilibriumValidated": false
+    },
+    {
+      "file": "iterative-candidate-10000-2027.json",
+      "sha256": "a65de78e2e173276140e37e79d1362f54e07258a36f3658965350a11754c4565",
+      "bytes": 1435039,
+      "label": "iterative-candidate",
+      "config": {
+        "n": 10000,
+        "seed": 2027,
+        "dt": 0.1,
+        "epsilon": 0.1,
+        "theta": 0.5,
+        "withHalo": true
+      },
+      "equilibriumValidated": false
+    },
+    {
+      "file": "iterative-candidate-50000-2026.json",
+      "sha256": "20c0696a09f79a39a6ba03b59bfa5b74ad151de2a2ee65017862dd81d4cfd4b2",
+      "bytes": 7164336,
+      "label": "iterative-candidate",
+      "config": {
+        "n": 50000,
+        "seed": 2026,
+        "dt": 0.1,
+        "epsilon": 0.1,
+        "theta": 0.5,
+        "withHalo": true
+      },
+      "equilibriumValidated": false
+    },
+    {
+      "file": "iterative-candidate-50000-2027.json",
+      "sha256": "e38ecfde7f4432cf381465b9fd9ffc5814fb01e8f148d7d3d4e28d5f9ca61b5e",
+      "bytes": 7163544,
+      "label": "iterative-candidate",
+      "config": {
+        "n": 50000,
+        "seed": 2027,
+        "dt": 0.1,
+        "epsilon": 0.1,
+        "theta": 0.5,
+        "withHalo": true
+      },
+      "equilibriumValidated": false
+    },
+    {
+      "file": "halo-refined-fixed-baryons-26000-2026.json",
+      "sha256": "53a2b74ad4ce1dcfd838552936b8fc15d5b4a7019b29b1d8b1de8ed4062f6465",
+      "bytes": 3676994,
+      "label": "halo-refined-fixed-baryons",
+      "config": {
+        "n": 26000,
+        "counts": [
+          1500,
+          4500,
+          20000
+        ],
+        "seed": 2026,
+        "dt": 0.1,
+        "epsilon": 0.1,
+        "theta": 0.5,
+        "withHalo": true
+      },
+      "equilibriumValidated": false
+    },
+    {
+      "file": "softening-control-10000-2026.json",
+      "sha256": "9a6f57a7b4cdf85f08b188ac0588bf9b45ae4b58eb4de63ff9960db35ffb8726",
+      "bytes": 1429914,
+      "label": "softening-control",
+      "config": {
+        "n": 10000,
+        "seed": 2026,
+        "dt": 0.1,
+        "epsilon": 0.3,
+        "theta": 0.5,
+        "withHalo": true
+      },
+      "equilibriumValidated": false
+    },
+    {
+      "file": "halo-refined-fixed-baryons-26000-2027.json",
+      "sha256": "ff85621c34e142ba67199b3cba1af7cb81d3e7398479e285943ab19b644270e5",
+      "bytes": 3677692,
+      "label": "halo-refined-fixed-baryons",
+      "config": {
+        "n": 26000,
+        "counts": [
+          1500,
+          4500,
+          20000
+        ],
+        "seed": 2027,
+        "dt": 0.1,
+        "epsilon": 0.1,
+        "theta": 0.5,
+        "withHalo": true
+      },
+      "equilibriumValidated": false
+    },
+    {
+      "file": "softening-control-10000-2027.json",
+      "sha256": "ab89a56f315f23211cacbaae8086242c0e4fe2166d4d56ba952e5fe338e0784b",
+      "bytes": 1430288,
+      "label": "softening-control",
+      "config": {
+        "n": 10000,
+        "seed": 2027,
+        "dt": 0.1,
+        "epsilon": 0.3,
+        "theta": 0.5,
+        "withHalo": true
+      },
+      "equilibriumValidated": false
+    },
+    {
+      "file": "iterative-antipodal-10000-2026.json",
+      "sha256": "3c2838ad9ebc43c0195df522b6341930dbf4b728ca34f8f2646c02c7fb971ffc",
+      "bytes": 1435962,
+      "label": "iterative-antipodal",
+      "config": {
+        "n": 10000,
+        "seed": 2026,
+        "dt": 0.1,
+        "epsilon": 0.1,
+        "theta": 0.5,
+        "withHalo": true
+      },
+      "equilibriumValidated": false
+    },
+    {
+      "file": "iterative-antipodal-10000-2027.json",
+      "sha256": "3df048734db235d904fdeddcd5a4e52c0d13a8ffbed82810eb999def867481cf",
+      "bytes": 1436777,
+      "label": "iterative-antipodal",
+      "config": {
+        "n": 10000,
+        "seed": 2027,
+        "dt": 0.1,
+        "epsilon": 0.1,
+        "theta": 0.5,
+        "withHalo": true
+      },
+      "equilibriumValidated": false
+    },
+    {
+      "file": "iterative-antipodal-50000-2026.json",
+      "sha256": "f90ca957d4daf09158a96720ca7a62c4a0586bfd05b942c5fcf780244a008455",
+      "bytes": 7165937,
+      "label": "iterative-antipodal",
+      "config": {
+        "n": 50000,
+        "seed": 2026,
+        "dt": 0.1,
+        "epsilon": 0.1,
+        "theta": 0.5,
+        "withHalo": true
+      },
+      "equilibriumValidated": false
+    },
+    {
+      "file": "iterative-antipodal-50000-2027.json",
+      "sha256": "dc882037641225df816ce052ec0af182bfdbd9f661825dc89e5e09d1d30be28c",
+      "bytes": 7167061,
+      "label": "iterative-antipodal",
+      "config": {
+        "n": 50000,
+        "seed": 2027,
+        "dt": 0.1,
+        "epsilon": 0.1,
+        "theta": 0.5,
+        "withHalo": true
+      },
+      "equilibriumValidated": false
+    }
+  ]
+}

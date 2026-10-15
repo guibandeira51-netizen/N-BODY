@@ -1,0 +1,562 @@
+{
+  "dateUTC": "2026-10-14T19:48:38.520Z",
+  "sourceHashes": {
+    "constants.js": "4b1c2a1d96453b95c8e57a45f46443083e77d54e1714aadc7d060de0d9aa22ca",
+    "models.js": "2215cd8332d06b4d18b3ef707c5000992b5db730d104c654ef7ddba7ac9102f3",
+    "initial-legacy.js": "93ca8666ff188863b947dc8535ca23244d67c20ab2a177cb12e494cf566eeefa",
+    "initial-allocated.js": "f62b945334f7cfd062aa5eda6a3964aca59eb977985d7ffe73a8c8cce04ed378",
+    "mass-audit.js": "72ccf535f5e0beac80a1cc9d26d2e9da6b5d44aeb096b97ca750c498bd96070f",
+    "forces.js": "9532d4286c6481d49995ece96e48bd595145c2e2c8a22897520cafa45f862444",
+    "integrator.js": "433880162ae754dd3bada1fad9e2538239b42d3d43f20f96f7e1465135a1ce6f"
+  },
+  "realizations": [
+    {
+      "seed": 2026,
+      "schema": "mass-audit-v1",
+      "n": 10000,
+      "withHalo": true,
+      "components": [
+        {
+          "component": 0,
+          "name": "bojo",
+          "model": "Hernquist",
+          "count": 1500,
+          "targetMsun": 5000000000,
+          "sumMsun": 5000000000,
+          "relativeDifferencePercent": 0,
+          "uniform": true,
+          "particleMsun": {
+            "min": 3333333.333333333,
+            "max": 3333333.333333333,
+            "mean": 3333333.333333333
+          },
+          "particleKg": {
+            "min": 6.628032902326837e+36,
+            "max": 6.628032902326837e+36,
+            "mean": 6.628032902326837e+36
+          }
+        },
+        {
+          "component": 1,
+          "name": "disco",
+          "model": "Miyamoto–Nagai",
+          "count": 4500,
+          "targetMsun": 68000000000,
+          "sumMsun": 68000000000,
+          "relativeDifferencePercent": 0,
+          "uniform": true,
+          "particleMsun": {
+            "min": 15111111.11111111,
+            "max": 15111111.11111111,
+            "mean": 15111111.11111111
+          },
+          "particleKg": {
+            "min": 3.0047082490548327e+37,
+            "max": 3.0047082490548327e+37,
+            "mean": 3.0047082490548327e+37
+          }
+        },
+        {
+          "component": 2,
+          "name": "halo",
+          "model": "NFW com taper",
+          "count": 4000,
+          "targetMsun": 976315764173.288,
+          "sumMsun": 976315764173.288,
+          "relativeDifferencePercent": 0,
+          "uniform": true,
+          "particleMsun": {
+            "min": 244078941.04332203,
+            "max": 244078941.04332203,
+            "mean": 244078941.04332203
+          },
+          "particleKg": {
+            "min": 4.8532897560006915e+38,
+            "max": 4.8532897560006915e+38,
+            "mean": 4.8532897560006915e+38
+          }
+        }
+      ],
+      "haloToDiskParticleMassRatio": 16.152282863161016,
+      "totalMsun": 1049315764173.288,
+      "haloOuterRadiusKpc": 247.95095842704154,
+      "units": {
+        "massMsun": 10000000000,
+        "massKg": 1.988409870698051e+40,
+        "lengthMeters": 30856775814913670000,
+        "timeSeconds": 31557600000000,
+        "gyrToMyr": 1000,
+        "velocityMetersPerSecond": 977792.2216807891,
+        "kmSToInternal": 0.001022712165045695,
+        "accelerationMetersPerSecondSquared": 3.098436578449531e-8,
+        "energyJoules": 1.9010741942186524e+52,
+        "GInternal": 0.04498502151469553,
+        "kgRelativeStandardUncertainty": 0.000022474266964325848
+      },
+      "source": "PARAMETROS_E_FONTES.md: Gala MilkyWayPotential v1 reduzido; Marchetti (2021), tabela 2; valores não fornecidos numericamente no TCC",
+      "kgConvention": "(GM)_solar nominal IAU 2015 / G CODATA 2022; kg possui incerteza de G, sem modificar G interno",
+      "references": [
+        "https://doi.org/10.1093/mnras/stab599",
+        "https://arxiv.org/abs/1605.09788",
+        "https://physics.nist.gov/cuu/pdf/wall_2022.pdf"
+      ]
+    },
+    {
+      "seed": 2027,
+      "schema": "mass-audit-v1",
+      "n": 10000,
+      "withHalo": true,
+      "components": [
+        {
+          "component": 0,
+          "name": "bojo",
+          "model": "Hernquist",
+          "count": 1500,
+          "targetMsun": 5000000000,
+          "sumMsun": 5000000000,
+          "relativeDifferencePercent": 0,
+          "uniform": true,
+          "particleMsun": {
+            "min": 3333333.333333333,
+            "max": 3333333.333333333,
+            "mean": 3333333.333333333
+          },
+          "particleKg": {
+            "min": 6.628032902326837e+36,
+            "max": 6.628032902326837e+36,
+            "mean": 6.628032902326837e+36
+          }
+        },
+        {
+          "component": 1,
+          "name": "disco",
+          "model": "Miyamoto–Nagai",
+          "count": 4500,
+          "targetMsun": 68000000000,
+          "sumMsun": 68000000000,
+          "relativeDifferencePercent": 0,
+          "uniform": true,
+          "particleMsun": {
+            "min": 15111111.11111111,
+            "max": 15111111.11111111,
+            "mean": 15111111.11111111
+          },
+          "particleKg": {
+            "min": 3.0047082490548327e+37,
+            "max": 3.0047082490548327e+37,
+            "mean": 3.0047082490548327e+37
+          }
+        },
+        {
+          "component": 2,
+          "name": "halo",
+          "model": "NFW com taper",
+          "count": 4000,
+          "targetMsun": 976315764173.288,
+          "sumMsun": 976315764173.288,
+          "relativeDifferencePercent": 0,
+          "uniform": true,
+          "particleMsun": {
+            "min": 244078941.04332203,
+            "max": 244078941.04332203,
+            "mean": 244078941.04332203
+          },
+          "particleKg": {
+            "min": 4.8532897560006915e+38,
+            "max": 4.8532897560006915e+38,
+            "mean": 4.8532897560006915e+38
+          }
+        }
+      ],
+      "haloToDiskParticleMassRatio": 16.152282863161016,
+      "totalMsun": 1049315764173.288,
+      "haloOuterRadiusKpc": 247.95095842704154,
+      "units": {
+        "massMsun": 10000000000,
+        "massKg": 1.988409870698051e+40,
+        "lengthMeters": 30856775814913670000,
+        "timeSeconds": 31557600000000,
+        "gyrToMyr": 1000,
+        "velocityMetersPerSecond": 977792.2216807891,
+        "kmSToInternal": 0.001022712165045695,
+        "accelerationMetersPerSecondSquared": 3.098436578449531e-8,
+        "energyJoules": 1.9010741942186524e+52,
+        "GInternal": 0.04498502151469553,
+        "kgRelativeStandardUncertainty": 0.000022474266964325848
+      },
+      "source": "PARAMETROS_E_FONTES.md: Gala MilkyWayPotential v1 reduzido; Marchetti (2021), tabela 2; valores não fornecidos numericamente no TCC",
+      "kgConvention": "(GM)_solar nominal IAU 2015 / G CODATA 2022; kg possui incerteza de G, sem modificar G interno",
+      "references": [
+        "https://doi.org/10.1093/mnras/stab599",
+        "https://arxiv.org/abs/1605.09788",
+        "https://physics.nist.gov/cuu/pdf/wall_2022.pdf"
+      ]
+    },
+    {
+      "seed": 2026,
+      "schema": "mass-audit-v1",
+      "n": 50000,
+      "withHalo": true,
+      "components": [
+        {
+          "component": 0,
+          "name": "bojo",
+          "model": "Hernquist",
+          "count": 7500,
+          "targetMsun": 5000000000,
+          "sumMsun": 5000000000,
+          "relativeDifferencePercent": 0,
+          "uniform": true,
+          "particleMsun": {
+            "min": 666666.6666666667,
+            "max": 666666.6666666667,
+            "mean": 666666.6666666667
+          },
+          "particleKg": {
+            "min": 1.3256065804653674e+36,
+            "max": 1.3256065804653674e+36,
+            "mean": 1.3256065804653674e+36
+          }
+        },
+        {
+          "component": 1,
+          "name": "disco",
+          "model": "Miyamoto–Nagai",
+          "count": 22500,
+          "targetMsun": 68000000000,
+          "sumMsun": 68000000000,
+          "relativeDifferencePercent": 0,
+          "uniform": true,
+          "particleMsun": {
+            "min": 3022222.2222222225,
+            "max": 3022222.2222222225,
+            "mean": 3022222.2222222225
+          },
+          "particleKg": {
+            "min": 6.009416498109665e+36,
+            "max": 6.009416498109665e+36,
+            "mean": 6.009416498109665e+36
+          }
+        },
+        {
+          "component": 2,
+          "name": "halo",
+          "model": "NFW com taper",
+          "count": 20000,
+          "targetMsun": 976315764173.288,
+          "sumMsun": 976315764173.288,
+          "relativeDifferencePercent": 0,
+          "uniform": true,
+          "particleMsun": {
+            "min": 48815788.2086644,
+            "max": 48815788.2086644,
+            "mean": 48815788.2086644
+          },
+          "particleKg": {
+            "min": 9.706579512001382e+37,
+            "max": 9.706579512001382e+37,
+            "mean": 9.706579512001382e+37
+          }
+        }
+      ],
+      "haloToDiskParticleMassRatio": 16.152282863161016,
+      "totalMsun": 1049315764173.288,
+      "haloOuterRadiusKpc": 247.95095842704154,
+      "units": {
+        "massMsun": 10000000000,
+        "massKg": 1.988409870698051e+40,
+        "lengthMeters": 30856775814913670000,
+        "timeSeconds": 31557600000000,
+        "gyrToMyr": 1000,
+        "velocityMetersPerSecond": 977792.2216807891,
+        "kmSToInternal": 0.001022712165045695,
+        "accelerationMetersPerSecondSquared": 3.098436578449531e-8,
+        "energyJoules": 1.9010741942186524e+52,
+        "GInternal": 0.04498502151469553,
+        "kgRelativeStandardUncertainty": 0.000022474266964325848
+      },
+      "source": "PARAMETROS_E_FONTES.md: Gala MilkyWayPotential v1 reduzido; Marchetti (2021), tabela 2; valores não fornecidos numericamente no TCC",
+      "kgConvention": "(GM)_solar nominal IAU 2015 / G CODATA 2022; kg possui incerteza de G, sem modificar G interno",
+      "references": [
+        "https://doi.org/10.1093/mnras/stab599",
+        "https://arxiv.org/abs/1605.09788",
+        "https://physics.nist.gov/cuu/pdf/wall_2022.pdf"
+      ]
+    },
+    {
+      "seed": 2027,
+      "schema": "mass-audit-v1",
+      "n": 50000,
+      "withHalo": true,
+      "components": [
+        {
+          "component": 0,
+          "name": "bojo",
+          "model": "Hernquist",
+          "count": 7500,
+          "targetMsun": 5000000000,
+          "sumMsun": 5000000000,
+          "relativeDifferencePercent": 0,
+          "uniform": true,
+          "particleMsun": {
+            "min": 666666.6666666667,
+            "max": 666666.6666666667,
+            "mean": 666666.6666666667
+          },
+          "particleKg": {
+            "min": 1.3256065804653674e+36,
+            "max": 1.3256065804653674e+36,
+            "mean": 1.3256065804653674e+36
+          }
+        },
+        {
+          "component": 1,
+          "name": "disco",
+          "model": "Miyamoto–Nagai",
+          "count": 22500,
+          "targetMsun": 68000000000,
+          "sumMsun": 68000000000,
+          "relativeDifferencePercent": 0,
+          "uniform": true,
+          "particleMsun": {
+            "min": 3022222.2222222225,
+            "max": 3022222.2222222225,
+            "mean": 3022222.2222222225
+          },
+          "particleKg": {
+            "min": 6.009416498109665e+36,
+            "max": 6.009416498109665e+36,
+            "mean": 6.009416498109665e+36
+          }
+        },
+        {
+          "component": 2,
+          "name": "halo",
+          "model": "NFW com taper",
+          "count": 20000,
+          "targetMsun": 976315764173.288,
+          "sumMsun": 976315764173.288,
+          "relativeDifferencePercent": 0,
+          "uniform": true,
+          "particleMsun": {
+            "min": 48815788.2086644,
+            "max": 48815788.2086644,
+            "mean": 48815788.2086644
+          },
+          "particleKg": {
+            "min": 9.706579512001382e+37,
+            "max": 9.706579512001382e+37,
+            "mean": 9.706579512001382e+37
+          }
+        }
+      ],
+      "haloToDiskParticleMassRatio": 16.152282863161016,
+      "totalMsun": 1049315764173.288,
+      "haloOuterRadiusKpc": 247.95095842704154,
+      "units": {
+        "massMsun": 10000000000,
+        "massKg": 1.988409870698051e+40,
+        "lengthMeters": 30856775814913670000,
+        "timeSeconds": 31557600000000,
+        "gyrToMyr": 1000,
+        "velocityMetersPerSecond": 977792.2216807891,
+        "kmSToInternal": 0.001022712165045695,
+        "accelerationMetersPerSecondSquared": 3.098436578449531e-8,
+        "energyJoules": 1.9010741942186524e+52,
+        "GInternal": 0.04498502151469553,
+        "kgRelativeStandardUncertainty": 0.000022474266964325848
+      },
+      "source": "PARAMETROS_E_FONTES.md: Gala MilkyWayPotential v1 reduzido; Marchetti (2021), tabela 2; valores não fornecidos numericamente no TCC",
+      "kgConvention": "(GM)_solar nominal IAU 2015 / G CODATA 2022; kg possui incerteza de G, sem modificar G interno",
+      "references": [
+        "https://doi.org/10.1093/mnras/stab599",
+        "https://arxiv.org/abs/1605.09788",
+        "https://physics.nist.gov/cuu/pdf/wall_2022.pdf"
+      ]
+    },
+    {
+      "seed": 2026,
+      "allocation": "fixed baryons; halo refined x5",
+      "schema": "mass-audit-v1",
+      "n": 26000,
+      "withHalo": true,
+      "components": [
+        {
+          "component": 0,
+          "name": "bojo",
+          "model": "Hernquist",
+          "count": 1500,
+          "targetMsun": 5000000000,
+          "sumMsun": 5000000000,
+          "relativeDifferencePercent": 0,
+          "uniform": true,
+          "particleMsun": {
+            "min": 3333333.333333333,
+            "max": 3333333.333333333,
+            "mean": 3333333.333333333
+          },
+          "particleKg": {
+            "min": 6.628032902326837e+36,
+            "max": 6.628032902326837e+36,
+            "mean": 6.628032902326837e+36
+          }
+        },
+        {
+          "component": 1,
+          "name": "disco",
+          "model": "Miyamoto–Nagai",
+          "count": 4500,
+          "targetMsun": 68000000000,
+          "sumMsun": 68000000000,
+          "relativeDifferencePercent": 0,
+          "uniform": true,
+          "particleMsun": {
+            "min": 15111111.11111111,
+            "max": 15111111.11111111,
+            "mean": 15111111.11111111
+          },
+          "particleKg": {
+            "min": 3.0047082490548327e+37,
+            "max": 3.0047082490548327e+37,
+            "mean": 3.0047082490548327e+37
+          }
+        },
+        {
+          "component": 2,
+          "name": "halo",
+          "model": "NFW com taper",
+          "count": 20000,
+          "targetMsun": 976315764173.288,
+          "sumMsun": 976315764173.288,
+          "relativeDifferencePercent": 0,
+          "uniform": true,
+          "particleMsun": {
+            "min": 48815788.2086644,
+            "max": 48815788.2086644,
+            "mean": 48815788.2086644
+          },
+          "particleKg": {
+            "min": 9.706579512001382e+37,
+            "max": 9.706579512001382e+37,
+            "mean": 9.706579512001382e+37
+          }
+        }
+      ],
+      "haloToDiskParticleMassRatio": 3.230456572632203,
+      "totalMsun": 1049315764173.288,
+      "haloOuterRadiusKpc": 247.95095842704154,
+      "units": {
+        "massMsun": 10000000000,
+        "massKg": 1.988409870698051e+40,
+        "lengthMeters": 30856775814913670000,
+        "timeSeconds": 31557600000000,
+        "gyrToMyr": 1000,
+        "velocityMetersPerSecond": 977792.2216807891,
+        "kmSToInternal": 0.001022712165045695,
+        "accelerationMetersPerSecondSquared": 3.098436578449531e-8,
+        "energyJoules": 1.9010741942186524e+52,
+        "GInternal": 0.04498502151469553,
+        "kgRelativeStandardUncertainty": 0.000022474266964325848
+      },
+      "source": "PARAMETROS_E_FONTES.md: Gala MilkyWayPotential v1 reduzido; Marchetti (2021), tabela 2; valores não fornecidos numericamente no TCC",
+      "kgConvention": "(GM)_solar nominal IAU 2015 / G CODATA 2022; kg possui incerteza de G, sem modificar G interno",
+      "references": [
+        "https://doi.org/10.1093/mnras/stab599",
+        "https://arxiv.org/abs/1605.09788",
+        "https://physics.nist.gov/cuu/pdf/wall_2022.pdf"
+      ]
+    },
+    {
+      "seed": 2027,
+      "allocation": "fixed baryons; halo refined x5",
+      "schema": "mass-audit-v1",
+      "n": 26000,
+      "withHalo": true,
+      "components": [
+        {
+          "component": 0,
+          "name": "bojo",
+          "model": "Hernquist",
+          "count": 1500,
+          "targetMsun": 5000000000,
+          "sumMsun": 5000000000,
+          "relativeDifferencePercent": 0,
+          "uniform": true,
+          "particleMsun": {
+            "min": 3333333.333333333,
+            "max": 3333333.333333333,
+            "mean": 3333333.333333333
+          },
+          "particleKg": {
+            "min": 6.628032902326837e+36,
+            "max": 6.628032902326837e+36,
+            "mean": 6.628032902326837e+36
+          }
+        },
+        {
+          "component": 1,
+          "name": "disco",
+          "model": "Miyamoto–Nagai",
+          "count": 4500,
+          "targetMsun": 68000000000,
+          "sumMsun": 68000000000,
+          "relativeDifferencePercent": 0,
+          "uniform": true,
+          "particleMsun": {
+            "min": 15111111.11111111,
+            "max": 15111111.11111111,
+            "mean": 15111111.11111111
+          },
+          "particleKg": {
+            "min": 3.0047082490548327e+37,
+            "max": 3.0047082490548327e+37,
+            "mean": 3.0047082490548327e+37
+          }
+        },
+        {
+          "component": 2,
+          "name": "halo",
+          "model": "NFW com taper",
+          "count": 20000,
+          "targetMsun": 976315764173.288,
+          "sumMsun": 976315764173.288,
+          "relativeDifferencePercent": 0,
+          "uniform": true,
+          "particleMsun": {
+            "min": 48815788.2086644,
+            "max": 48815788.2086644,
+            "mean": 48815788.2086644
+          },
+          "particleKg": {
+            "min": 9.706579512001382e+37,
+            "max": 9.706579512001382e+37,
+            "mean": 9.706579512001382e+37
+          }
+        }
+      ],
+      "haloToDiskParticleMassRatio": 3.230456572632203,
+      "totalMsun": 1049315764173.288,
+      "haloOuterRadiusKpc": 247.95095842704154,
+      "units": {
+        "massMsun": 10000000000,
+        "massKg": 1.988409870698051e+40,
+        "lengthMeters": 30856775814913670000,
+        "timeSeconds": 31557600000000,
+        "gyrToMyr": 1000,
+        "velocityMetersPerSecond": 977792.2216807891,
+        "kmSToInternal": 0.001022712165045695,
+        "accelerationMetersPerSecondSquared": 3.098436578449531e-8,
+        "energyJoules": 1.9010741942186524e+52,
+        "GInternal": 0.04498502151469553,
+        "kgRelativeStandardUncertainty": 0.000022474266964325848
+      },
+      "source": "PARAMETROS_E_FONTES.md: Gala MilkyWayPotential v1 reduzido; Marchetti (2021), tabela 2; valores não fornecidos numericamente no TCC",
+      "kgConvention": "(GM)_solar nominal IAU 2015 / G CODATA 2022; kg possui incerteza de G, sem modificar G interno",
+      "references": [
+        "https://doi.org/10.1093/mnras/stab599",
+        "https://arxiv.org/abs/1605.09788",
+        "https://physics.nist.gov/cuu/pdf/wall_2022.pdf"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1900 @@
+{
+  "schemaVersion": 1,
+  "generatedUTC": "2026-10-12T02:33:53.032Z",
+  "scope": "Ensaios sintéticos autogravitantes executados novamente após a remoção dos módulos Gaia; não usa observações nem braços ou barra prescritos.",
+  "units": {
+    "length": "kpc",
+    "time": "Myr",
+    "mass": "1e10 Msun",
+    "velocity": "kpc/Myr"
+  },
+  "commands": [
+    {
+      "command": "node scripts/validate-galaxy.mjs",
+      "exitCode": 0,
+      "log": "../../work/nbody-validation-galaxy-current.log",
+      "reportDateUTC": "2026-10-12T02:30:42.694Z"
+    },
+    {
+      "command": "node scripts/audit-initial.mjs",
+      "exitCode": 0,
+      "log": "../../work/nbody-audit-initial-current.log"
+    }
+  ],
+  "executionOrder": "Sequencial, validate-galaxy seguido de audit-initial; nenhuma outra medição CPU/GPU coordenada durante esses ensaios.",
+  "archiveCommit": "0e963bd6004eb5cdeb9148c99097c998792a6b7e",
+  "physicalSourceComparison": [
+    {
+      "path": "src/physics/constants.js",
+      "currentSha256": "4b1c2a1d96453b95c8e57a45f46443083e77d54e1714aadc7d060de0d9aa22ca",
+      "archivedSha256": "4b1c2a1d96453b95c8e57a45f46443083e77d54e1714aadc7d060de0d9aa22ca",
+      "identicalBytes": true
+    },
+    {
+      "path": "src/physics/models.js",
+      "currentSha256": "2215cd8332d06b4d18b3ef707c5000992b5db730d104c654ef7ddba7ac9102f3",
+      "archivedSha256": "2215cd8332d06b4d18b3ef707c5000992b5db730d104c654ef7ddba7ac9102f3",
+      "identicalBytes": true
+    },
+    {
+      "path": "src/physics/initial.js",
+      "currentSha256": "93ca8666ff188863b947dc8535ca23244d67c20ab2a177cb12e494cf566eeefa",
+      "archivedSha256": "93ca8666ff188863b947dc8535ca23244d67c20ab2a177cb12e494cf566eeefa",
+      "identicalBytes": true
+    }
+  ],
+  "physicalParametersPreserved": true,
+  "implementationChanges": "Remoção dos módulos e funções de traçadoras; validação de buffers sobrepostos, velocidades CPU e épocas não finitas. Constantes, modelos de densidade e inicializador conservados byte a byte.",
+  "reportSources": {
+    "validation-galaxy.json": {
+      "sha256": "1a89489bd0af600c1f27c72221f483fcf574e7d20c9643d5aa3c792f0015fd47",
+      "bytes": 4570
+    },
+    "initial-audit.json": {
+      "sha256": "f1de7ed4bf2cf02e0080b5ae0060a7fd7a9e550c5e575659229ca5e915cb031c",
+      "bytes": 70476
+    },
+    "benchmark-cpu.json": {
+      "sha256": "db7ece69a5fc447b178bab08395a32e63e9bb735e0990c551d76005331ae27f6",
+      "bytes": 9767
+    }
+  },
+  "conservationDefinition": {
+    "sampling": "Erros de conservação abaixo são apenas do estado final versus o inicial; não são máximos ao longo da trajetória.",
+    "energy": "Energia calculada com potencial direto Plummer nas duas épocas, embora a integração use Barnes-Hut.",
+    "momentum": "Norma de delta P dividida pela soma inicial m|v|; não por |P inicial|, que é aproximadamente zero.",
+    "angularMomentum": "Norma de delta L dividida pela soma inicial |m r x v|.",
+    "symmetry": "A inicialização em pares antipodais torna muitas realizações centrosimétricas; P muito pequeno aqui não comprova conservação exata de BH para distribuições gerais."
+  },
+  "galaxyRuns": [
+    {
+      "n": 2000,
+      "seed": 2026,
+      "withHalo": false,
+      "timeMyr": 20,
+      "algorithm": "barnes-hut",
+      "dt": 0.1,
+      "epsilon": 0.1,
+      "theta": 0.5,
+      "finite": true,
+      "nominalComponentMasses": [
+        0.5,
+        6.8,
+        0
+      ],
+      "nominalTotalMass": 7.3,
+      "errorsFromExactEnergy": {
+        "energy": 0.00012959882649471658,
+        "momentum": 3.332061414682211e-18,
+        "angularMomentum": 0.00004547750513392274,
+        "mass": 0,
+        "energyApproximate": false
+      },
+      "structuralChanges": [
+        {
+          "component": 0,
+          "count": 500,
+          "values": {
+            "halfMassRadius": {
+              "initial": 1.9778028987928071,
+              "final": 2.3588724571138524,
+              "changePercent": 19.267317211115373
+            },
+            "medianHeight": {
+              "initial": 0.9497018746213924,
+              "final": 0.9296099833635209,
+              "changePercent": -2.1155998313556457
+            }
+          }
+        },
+        {
+          "component": 1,
+          "count": 1500,
+          "values": {
+            "halfMassRadius": {
+              "initial": 5.523264648912022,
+              "final": 5.697022967905961,
+              "changePercent": 3.1459350590445854
+            },
+            "medianHeight": {
+              "initial": 0.1750352336712898,
+              "final": 0.20420975830639143,
+              "changePercent": 16.667801118196795
+            }
+          }
+        },
+        {
+          "component": 2,
+          "count": 0,
+          "values": {
+            "halfMassRadius": {
+              "initial": null,
+              "final": null,
+              "changePercent": null
+            },
+            "medianHeight": {
+              "initial": null,
+              "final": null,
+              "changePercent": null
+            }
+          }
+        }
+      ],
+      "initialMeta": {
+        "seed": 2026,
+        "withHalo": false,
+        "counts": [
+          500,
+          1500,
+          0
+        ],
+        "masses": [
+          0.5,
+          6.8,
+          0
+        ],
+        "initialization": "Jeans + Satoh k=1, Gaussiana aproximada; pares antipodais",
+        "clippedStreaming": 0,
+        "unbound": 2,
+        "centerShift": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "n": 2000,
+      "seed": 2026,
+      "withHalo": true,
+      "timeMyr": 20,
+      "algorithm": "barnes-hut",
+      "dt": 0.1,
+      "epsilon": 0.1,
+      "theta": 0.5,
+      "finite": true,
+      "nominalComponentMasses": [
+        0.5,
+        6.8,
+        97.6315764173288
+      ],
+      "nominalTotalMass": 104.9315764173288,
+      "errorsFromExactEnergy": {
+        "energy": 0.00007892593064906391,
+        "momentum": 4.796382187530415e-18,
+        "angularMomentum": 0.000013032025371624559,
+        "mass": 0,
+        "energyApproximate": false
+      },
+      "structuralChanges": [
+        {
+          "component": 0,
+          "count": 300,
+          "values": {
+            "halfMassRadius": {
+              "initial": 2.075399735382245,
+              "final": 3.0100582652065335,
+              "changePercent": 45.03510884625531
+            },
+            "medianHeight": {
+              "initial": 0.9317351826532282,
+              "final": 1.123080477585164,
+              "changePercent": 20.536446245064717
+            }
+          }
+        },
+        {
+          "component": 1,
+          "count": 900,
+          "values": {
+            "halfMassRadius": {
+              "initial": 5.339197831638355,
+              "final": 5.828028049721205,
+              "changePercent": 9.155499262196285
+            },
+            "medianHeight": {
+              "initial": 0.17208026752091837,
+              "final": 0.2751238171991968,
+              "changePercent": 59.88109570189522
+            }
+          }
+        },
+        {
+          "component": 2,
+          "count": 800,
+          "values": {
+            "halfMassRadius": {
+              "initial": 71.79455859801564,
+              "final": 71.70371056332199,
+              "changePercent": -0.12653888604889477
+            },
+            "medianHeight": {
+              "initial": 27.190637335896202,
+              "final": 26.732019186260622,
+              "changePercent": -1.6866767187914606
+            }
+          }
+        }
+      ],
+      "initialMeta": {
+        "seed": 2026,
+        "withHalo": true,
+        "counts": [
+          300,
+          900,
+          800
+        ],
+        "masses": [
+          0.5,
+          6.8,
+          97.6315764173288
+        ],
+        "initialization": "Jeans + Satoh k=1, Gaussiana aproximada; pares antipodais",
+        "clippedStreaming": 0,
+        "unbound": 8,
+        "centerShift": [
+          0,
+          0,
+          0
+        ]
+      }
+    }
+  ],
+  "sensitivityRuns": [
+    {
+      "n": 2000,
+      "seed": 2026,
+      "withHalo": true,
+      "timeMyr": 20,
+      "dt": 0.1,
+      "epsilon": 0.1,
+      "theta": 0.5,
+      "elapsedMs": 3792.7544999999996,
+      "nominalComponentMasses": [
+        0.5,
+        6.8,
+        97.6315764173288
+      ],
+      "nominalTotalMass": 104.9315764173288,
+      "errorsFromExactEnergy": {
+        "energy": 0.00007892593064906391,
+        "momentum": 4.796382187530415e-18,
+        "angularMomentum": 0.000013032025371624559,
+        "mass": 0,
+        "energyApproximate": false
+      },
+      "structuralChanges": [
+        {
+          "component": 0,
+          "count": 300,
+          "values": {
+            "r50": {
+              "initial": 2.075399735382245,
+              "final": 3.0100582652065335,
+              "changePercent": 45.03510884625531
+            },
+            "R50": {
+              "initial": 1.6740492715839725,
+              "final": 2.527143136569819,
+              "changePercent": 50.95990180615507
+            },
+            "z50": {
+              "initial": 0.9317351826532282,
+              "final": 1.123080477585164,
+              "changePercent": 20.536446245064717
+            },
+            "z90": {
+              "initial": 13.78570280566691,
+              "final": 13.826456650775036,
+              "changePercent": 0.29562399307907206
+            }
+          }
+        },
+        {
+          "component": 1,
+          "count": 900,
+          "values": {
+            "r50": {
+              "initial": 5.339197831638355,
+              "final": 5.828028049721205,
+              "changePercent": 9.155499262196285
+            },
+            "R50": {
+              "initial": 5.3379442956998,
+              "final": 5.729997809949172,
+              "changePercent": 7.344653531982463
+            },
+            "z50": {
+              "initial": 0.17208026752091837,
+              "final": 0.2751238171991968,
+              "changePercent": 59.88109570189522
+            },
+            "z90": {
+              "initial": 0.6264702316563122,
+              "final": 0.8237653659566407,
+              "changePercent": 31.493137954648514
+            }
+          }
+        },
+        {
+          "component": 2,
+          "count": 800,
+          "values": {
+            "r50": {
+              "initial": 71.79455859801564,
+              "final": 71.70371056332199,
+              "changePercent": -0.12653888604889477
+            },
+            "R50": {
+              "initial": 48.1165291357929,
+              "final": 48.4104883555467,
+              "changePercent": 0.6109318877182364
+            },
+            "z50": {
+              "initial": 27.190637335896202,
+              "final": 26.732019186260622,
+              "changePercent": -1.6866767187914606
+            },
+            "z90": {
+              "initial": 110.3443854658238,
+              "final": 110.07035061150502,
+              "changePercent": -0.24834508177460451
+            }
+          }
+        }
+      ],
+      "structuralChangesAt10Myr": [
+        {
+          "component": 0,
+          "count": 300,
+          "values": {
+            "r50": {
+              "initial": 2.075399735382245,
+              "final": 2.425624541293049,
+              "changePercent": 16.875053029063828
+            },
+            "R50": {
+              "initial": 1.6740492715839725,
+              "final": 2.0188988863720674,
+              "changePercent": 20.59972909051839
+            },
+            "z50": {
+              "initial": 0.9317351826532282,
+              "final": 1.0274418337581273,
+              "changePercent": 10.271872618608525
+            },
+            "z90": {
+              "initial": 13.78570280566691,
+              "final": 14.668747666795182,
+              "changePercent": 6.405512098848367
+            }
+          }
+        },
+        {
+          "component": 1,
+          "count": 900,
+          "values": {
+            "r50": {
+              "initial": 5.339197831638355,
+              "final": 5.437903033488381,
+              "changePercent": 1.848689727605358
+            },
+            "R50": {
+              "initial": 5.3379442956998,
+              "final": 5.4373272424125885,
+              "changePercent": 1.8618206037266158
+            },
+            "z50": {
+              "initial": 0.17208026752091837,
+              "final": 0.1968561741969558,
+              "changePercent": 14.397877823513747
+            },
+            "z90": {
+              "initial": 0.6264702316563122,
+              "final": 0.6028692251039852,
+              "changePercent": -3.767298964857239
+            }
+          }
+        },
+        {
+          "component": 2,
+          "count": 800,
+          "values": {
+            "r50": {
+              "initial": 71.79455859801564,
+              "final": 71.43419206116097,
+              "changePercent": -0.5019412945657838
+            },
+            "R50": {
+              "initial": 48.1165291357929,
+              "final": 48.27300774768005,
+              "changePercent": 0.32520760474126564
+            },
+            "z50": {
+              "initial": 27.190637335896202,
+              "final": 26.88838326580914,
+              "changePercent": -1.1116108326303804
+            },
+            "z90": {
+              "initial": 110.3443854658238,
+              "final": 109.29767765979815,
+              "changePercent": -0.948582749912401
+            }
+          }
+        }
+      ],
+      "initialMeta": {
+        "seed": 2026,
+        "withHalo": true,
+        "counts": [
+          300,
+          900,
+          800
+        ],
+        "masses": [
+          0.5,
+          6.8,
+          97.6315764173288
+        ],
+        "initialization": "Jeans + Satoh k=1, Gaussiana aproximada; pares antipodais",
+        "clippedStreaming": 0,
+        "unbound": 8,
+        "centerShift": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "n": 2000,
+      "seed": 2026,
+      "withHalo": true,
+      "timeMyr": 20,
+      "dt": 0.1,
+      "epsilon": 0.3,
+      "theta": 0.5,
+      "elapsedMs": 3847.7993000000006,
+      "nominalComponentMasses": [
+        0.5,
+        6.8,
+        97.6315764173288
+      ],
+      "nominalTotalMass": 104.9315764173288,
+      "errorsFromExactEnergy": {
+        "energy": 0.00009684073471931372,
+        "momentum": 5.7001801855363945e-18,
+        "angularMomentum": 0.000014048248736541758,
+        "mass": 0,
+        "energyApproximate": false
+      },
+      "structuralChanges": [
+        {
+          "component": 0,
+          "count": 300,
+          "values": {
+            "r50": {
+              "initial": 2.075399735382245,
+              "final": 2.9397451511563393,
+              "changePercent": 41.647177699716735
+            },
+            "R50": {
+              "initial": 1.6740492715839725,
+              "final": 2.550960841623336,
+              "changePercent": 52.3826619039496
+            },
+            "z50": {
+              "initial": 0.9317351826532282,
+              "final": 1.1722093294631308,
+              "changePercent": 25.80928050018714
+            },
+            "z90": {
+              "initial": 13.78570280566691,
+              "final": 13.826453170646188,
+              "changePercent": 0.2955987486000834
+            }
+          }
+        },
+        {
+          "component": 1,
+          "count": 900,
+          "values": {
+            "r50": {
+              "initial": 5.339197831638355,
+              "final": 5.808100154239647,
+              "changePercent": 8.782261631564372
+            },
+            "R50": {
+              "initial": 5.3379442956998,
+              "final": 5.768232922696827,
+              "changePercent": 8.0609426243669
+            },
+            "z50": {
+              "initial": 0.17208026752091837,
+              "final": 0.275714339402003,
+              "changePercent": 60.22426241782005
+            },
+            "z90": {
+              "initial": 0.6264702316563122,
+              "final": 0.8332417215082073,
+              "changePercent": 33.00579650931155
+            }
+          }
+        },
+        {
+          "component": 2,
+          "count": 800,
+          "values": {
+            "r50": {
+              "initial": 71.79455859801564,
+              "final": 71.70371317590073,
+              "changePercent": -0.1265352470840609
+            },
+            "R50": {
+              "initial": 48.1165291357929,
+              "final": 48.41048920753977,
+              "changePercent": 0.6109336584051229
+            },
+            "z50": {
+              "initial": 27.190637335896202,
+              "final": 26.73206390879632,
+              "changePercent": -1.6865122410885462
+            },
+            "z90": {
+              "initial": 110.3443854658238,
+              "final": 110.07035077388149,
+              "changePercent": -0.24834493462034254
+            }
+          }
+        }
+      ],
+      "structuralChangesAt10Myr": [
+        {
+          "component": 0,
+          "count": 300,
+          "values": {
+            "r50": {
+              "initial": 2.075399735382245,
+              "final": 2.4206384798929546,
+              "changePercent": 16.63480719520878
+            },
+            "R50": {
+              "initial": 1.6740492715839725,
+              "final": 1.9694563762886754,
+              "changePercent": 17.646261058086477
+            },
+            "z50": {
+              "initial": 0.9317351826532282,
+              "final": 1.0868063406766837,
+              "changePercent": 16.643265265767006
+            },
+            "z90": {
+              "initial": 13.78570280566691,
+              "final": 14.668747460916174,
+              "changePercent": 6.405510605424267
+            }
+          }
+        },
+        {
+          "component": 1,
+          "count": 900,
+          "values": {
+            "r50": {
+              "initial": 5.339197831638355,
+              "final": 5.473311127093444,
+              "changePercent": 2.5118622625364635
+            },
+            "R50": {
+              "initial": 5.3379442956998,
+              "final": 5.47284947570556,
+              "changePercent": 2.5272871452487573
+            },
+            "z50": {
+              "initial": 0.17208026752091837,
+              "final": 0.20230014972481555,
+              "changePercent": 17.56150350023346
+            },
+            "z90": {
+              "initial": 0.6264702316563122,
+              "final": 0.6264790624546428,
+              "changePercent": 0.0014096118034588748
+            }
+          }
+        },
+        {
+          "component": 2,
+          "count": 800,
+          "values": {
+            "r50": {
+              "initial": 71.79455859801564,
+              "final": 71.4341929578221,
+              "changePercent": -0.5019400456394695
+            },
+            "R50": {
+              "initial": 48.1165291357929,
+              "final": 48.273008193443886,
+              "changePercent": 0.3252085311668543
+            },
+            "z50": {
+              "initial": 27.190637335896202,
+              "final": 26.888384861416117,
+              "changePercent": -1.1116049644083215
+            },
+            "z90": {
+              "initial": 110.3443854658238,
+              "final": 109.29767768751213,
+              "changePercent": -0.9485827247965056
+            }
+          }
+        }
+      ],
+      "initialMeta": {
+        "seed": 2026,
+        "withHalo": true,
+        "counts": [
+          300,
+          900,
+          800
+        ],
+        "masses": [
+          0.5,
+          6.8,
+          97.6315764173288
+        ],
+        "initialization": "Jeans + Satoh k=1, Gaussiana aproximada; pares antipodais",
+        "clippedStreaming": 0,
+        "unbound": 8,
+        "centerShift": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "n": 2000,
+      "seed": 2026,
+      "withHalo": true,
+      "timeMyr": 20,
+      "dt": 0.1,
+      "epsilon": 1,
+      "theta": 0.5,
+      "elapsedMs": 3614.2546,
+      "nominalComponentMasses": [
+        0.5,
+        6.8,
+        97.6315764173288
+      ],
+      "nominalTotalMass": 104.9315764173288,
+      "errorsFromExactEnergy": {
+        "energy": 0.000009974058086344506,
+        "momentum": 2.5310830857576358e-18,
+        "angularMomentum": 0.000014185502444801226,
+        "mass": 0,
+        "energyApproximate": false
+      },
+      "structuralChanges": [
+        {
+          "component": 0,
+          "count": 300,
+          "values": {
+            "r50": {
+              "initial": 2.075399735382245,
+              "final": 3.3979245545718033,
+              "changePercent": 63.7238598734801
+            },
+            "R50": {
+              "initial": 1.6740492715839725,
+              "final": 2.8210106590445037,
+              "changePercent": 68.51419530652673
+            },
+            "z50": {
+              "initial": 0.9317351826532282,
+              "final": 1.3231935602988028,
+              "changePercent": 42.013909631581114
+            },
+            "z90": {
+              "initial": 13.78570280566691,
+              "final": 13.82642815611773,
+              "changePercent": 0.2954172959109452
+            }
+          }
+        },
+        {
+          "component": 1,
+          "count": 900,
+          "values": {
+            "r50": {
+              "initial": 5.339197831638355,
+              "final": 6.045477908692457,
+              "changePercent": 13.228205796550851
+            },
+            "R50": {
+              "initial": 5.3379442956998,
+              "final": 6.010855654379686,
+              "changePercent": 12.606189225728286
+            },
+            "z50": {
+              "initial": 0.17208026752091837,
+              "final": 0.3115893253675713,
+              "changePercent": 81.07208331117567
+            },
+            "z90": {
+              "initial": 0.6264702316563122,
+              "final": 0.9389084077050535,
+              "changePercent": 49.872788882991635
+            }
+          }
+        },
+        {
+          "component": 2,
+          "count": 800,
+          "values": {
+            "r50": {
+              "initial": 71.79455859801564,
+              "final": 71.7037388415419,
+              "changePercent": -0.12649949835647456
+            },
+            "R50": {
+              "initial": 48.1165291357929,
+              "final": 48.4105077064478,
+              "changePercent": 0.6109721044617402
+            },
+            "z50": {
+              "initial": 27.190637335896202,
+              "final": 26.732672439956023,
+              "changePercent": -1.6842742238174349
+            },
+            "z90": {
+              "initial": 110.3443854658238,
+              "final": 110.07035243953831,
+              "changePercent": -0.2483434251127968
+            }
+          }
+        }
+      ],
+      "structuralChangesAt10Myr": [
+        {
+          "component": 0,
+          "count": 300,
+          "values": {
+            "r50": {
+              "initial": 2.075399735382245,
+              "final": 2.7033327020950475,
+              "changePercent": 30.256001097405488
+            },
+            "R50": {
+              "initial": 1.6740492715839725,
+              "final": 2.0692330331316677,
+              "changePercent": 23.60645939493617
+            },
+            "z50": {
+              "initial": 0.9317351826532282,
+              "final": 1.3057598010606537,
+              "changePercent": 40.142802952051824
+            },
+            "z90": {
+              "initial": 13.78570280566691,
+              "final": 14.668741021734144,
+              "changePercent": 6.405463896292922
+            }
+          }
+        },
+        {
+          "component": 1,
+          "count": 900,
+          "values": {
+            "r50": {
+              "initial": 5.339197831638355,
+              "final": 5.544505357338015,
+              "changePercent": 3.8452878535999235
+            },
+            "R50": {
+              "initial": 5.3379442956998,
+              "final": 5.544497768210097,
+              "changePercent": 3.8695321844533805
+            },
+            "z50": {
+              "initial": 0.17208026752091837,
+              "final": 0.21956697671417846,
+              "changePercent": 27.595673738412525
+            },
+            "z90": {
+              "initial": 0.6264702316563122,
+              "final": 0.7373737068617823,
+              "changePercent": 17.702912221743492
+            }
+          }
+        },
+        {
+          "component": 2,
+          "count": 800,
+          "values": {
+            "r50": {
+              "initial": 71.79455859801564,
+              "final": 71.43420053470875,
+              "changePercent": -0.5019294920727463
+            },
+            "R50": {
+              "initial": 48.1165291357929,
+              "final": 48.273012423381466,
+              "changePercent": 0.3252173221949201
+            },
+            "z50": {
+              "initial": 27.190637335896202,
+              "final": 26.888395513863113,
+              "changePercent": -1.1115657875149518
+            },
+            "z90": {
+              "initial": 110.3443854658238,
+              "final": 109.29767798032339,
+              "changePercent": -0.9485824594352463
+            }
+          }
+        }
+      ],
+      "initialMeta": {
+        "seed": 2026,
+        "withHalo": true,
+        "counts": [
+          300,
+          900,
+          800
+        ],
+        "masses": [
+          0.5,
+          6.8,
+          97.6315764173288
+        ],
+        "initialization": "Jeans + Satoh k=1, Gaussiana aproximada; pares antipodais",
+        "clippedStreaming": 0,
+        "unbound": 8,
+        "centerShift": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "n": 2000,
+      "seed": 2026,
+      "withHalo": true,
+      "timeMyr": 20,
+      "dt": 0.05,
+      "epsilon": 0.1,
+      "theta": 0.5,
+      "elapsedMs": 6950.085800000001,
+      "nominalComponentMasses": [
+        0.5,
+        6.8,
+        97.6315764173288
+      ],
+      "nominalTotalMass": 104.9315764173288,
+      "errorsFromExactEnergy": {
+        "energy": 0.00007981080671940059,
+        "momentum": 4.189017949916203e-18,
+        "angularMomentum": 0.000013023700145196537,
+        "mass": 0,
+        "energyApproximate": false
+      },
+      "structuralChanges": [
+        {
+          "component": 0,
+          "count": 300,
+          "values": {
+            "r50": {
+              "initial": 2.075399735382245,
+              "final": 3.009994948105104,
+              "changePercent": 45.03205800740484
+            },
+            "R50": {
+              "initial": 1.6740492715839725,
+              "final": 2.527555956424291,
+              "changePercent": 50.98456176458515
+            },
+            "z50": {
+              "initial": 0.9317351826532282,
+              "final": 1.1230420475834295,
+              "changePercent": 20.53232168237245
+            },
+            "z90": {
+              "initial": 13.78570280566691,
+              "final": 13.826456904308344,
+              "changePercent": 0.2956258321823205
+            }
+          }
+        },
+        {
+          "component": 1,
+          "count": 900,
+          "values": {
+            "r50": {
+              "initial": 5.339197831638355,
+              "final": 5.82795372637399,
+              "changePercent": 9.154107230105359
+            },
+            "R50": {
+              "initial": 5.3379442956998,
+              "final": 5.729921518651747,
+              "changePercent": 7.343224305801031
+            },
+            "z50": {
+              "initial": 0.17208026752091837,
+              "final": 0.27511464679774056,
+              "changePercent": 59.87576656010088
+            },
+            "z90": {
+              "initial": 0.6264702316563122,
+              "final": 0.8237918731633505,
+              "changePercent": 31.497369154372024
+            }
+          }
+        },
+        {
+          "component": 2,
+          "count": 800,
+          "values": {
+            "r50": {
+              "initial": 71.79455859801564,
+              "final": 71.70371070629713,
+              "changePercent": -0.12653868690408202
+            },
+            "R50": {
+              "initial": 48.1165291357929,
+              "final": 48.41048795674644,
+              "changePercent": 0.6109310588964831
+            },
+            "z50": {
+              "initial": 27.190637335896202,
+              "final": 26.732019895811796,
+              "changePercent": -1.6866741092491957
+            },
+            "z90": {
+              "initial": 110.3443854658238,
+              "final": 110.07035062636464,
+              "changePercent": -0.24834506830801734
+            }
+          }
+        }
+      ],
+      "structuralChangesAt10Myr": [
+        {
+          "component": 0,
+          "count": 300,
+          "values": {
+            "r50": {
+              "initial": 2.075399735382245,
+              "final": 2.4260048105838217,
+              "changePercent": 16.8933757301941
+            },
+            "R50": {
+              "initial": 1.6740492715839725,
+              "final": 2.0190395678991977,
+              "changePercent": 20.608132757573976
+            },
+            "z50": {
+              "initial": 0.9317351826532282,
+              "final": 1.0273725559596354,
+              "changePercent": 10.264437265754875
+            },
+            "z90": {
+              "initial": 13.78570280566691,
+              "final": 14.668747879474875,
+              "changePercent": 6.405513641603897
+            }
+          }
+        },
+        {
+          "component": 1,
+          "count": 900,
+          "values": {
+            "r50": {
+              "initial": 5.339197831638355,
+              "final": 5.437883941014611,
+              "changePercent": 1.848332136926533
+            },
+            "R50": {
+              "initial": 5.3379442956998,
+              "final": 5.437308263532581,
+              "changePercent": 1.8614650571162397
+            },
+            "z50": {
+              "initial": 0.17208026752091837,
+              "final": 0.1968736371693709,
+              "changePercent": 14.408025978596646
+            },
+            "z90": {
+              "initial": 0.6264702316563122,
+              "final": 0.6029106425862489,
+              "changePercent": -3.760687719793892
+            }
+          }
+        },
+        {
+          "component": 2,
+          "count": 800,
+          "values": {
+            "r50": {
+              "initial": 71.79455859801564,
+              "final": 71.43419214325758,
+              "changePercent": -0.5019411802164423
+            },
+            "R50": {
+              "initial": 48.1165291357929,
+              "final": 48.27300765007722,
+              "changePercent": 0.3252074018944878
+            },
+            "z50": {
+              "initial": 27.190637335896202,
+              "final": 26.888383127846573,
+              "changePercent": -1.1116113400203473
+            },
+            "z90": {
+              "initial": 110.3443854658238,
+              "final": 109.29767765675437,
+              "changePercent": -0.9485827526708379
+            }
+          }
+        }
+      ],
+      "initialMeta": {
+        "seed": 2026,
+        "withHalo": true,
+        "counts": [
+          300,
+          900,
+          800
+        ],
+        "masses": [
+          0.5,
+          6.8,
+          97.6315764173288
+        ],
+        "initialization": "Jeans + Satoh k=1, Gaussiana aproximada; pares antipodais",
+        "clippedStreaming": 0,
+        "unbound": 8,
+        "centerShift": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "n": 10000,
+      "seed": 2026,
+      "withHalo": true,
+      "timeMyr": 10,
+      "dt": 0.1,
+      "epsilon": 0.1,
+      "theta": 0.5,
+      "elapsedMs": 18212.433299999997,
+      "nominalComponentMasses": [
+        0.5,
+        6.8,
+        97.6315764173288
+      ],
+      "nominalTotalMass": 104.9315764173288,
+      "errorsFromExactEnergy": {
+        "energy": 0.000023526781768971876,
+        "momentum": 1.6886116566408459e-18,
+        "angularMomentum": 0.0000035756639107805308,
+        "mass": 0,
+        "energyApproximate": false
+      },
+      "structuralChanges": [
+        {
+          "component": 0,
+          "count": 1500,
+          "values": {
+            "r50": {
+              "initial": 2.4060939064899394,
+              "final": 2.5074571560854353,
+              "changePercent": 4.212771967132686
+            },
+            "R50": {
+              "initial": 1.7504433590395996,
+              "final": 1.8402022471123078,
+              "changePercent": 5.127780205464946
+            },
+            "z50": {
+              "initial": 1.0061578861278049,
+              "final": 0.8756186841434562,
+              "changePercent": -12.974027613770271
+            },
+            "z90": {
+              "initial": 10.033157564522591,
+              "final": 9.789007862570662,
+              "changePercent": -2.4334283637211773
+            }
+          }
+        },
+        {
+          "component": 1,
+          "count": 4500,
+          "values": {
+            "r50": {
+              "initial": 5.153011508420358,
+              "final": 5.149024504543437,
+              "changePercent": -0.07737230686183216
+            },
+            "R50": {
+              "initial": 5.119008974271129,
+              "final": 5.1124363629306595,
+              "changePercent": -0.12839616756884084
+            },
+            "z50": {
+              "initial": 0.16539367167333335,
+              "final": 0.18474097940773984,
+              "changePercent": 11.697731562921632
+            },
+            "z90": {
+              "initial": 0.5632940036235659,
+              "final": 0.5881325779698884,
+              "changePercent": 4.4095222364414655
+            }
+          }
+        },
+        {
+          "component": 2,
+          "count": 4000,
+          "values": {
+            "r50": {
+              "initial": 72.02121384113865,
+              "final": 71.6742607024206,
+              "changePercent": -0.4817374218148338
+            },
+            "R50": {
+              "initial": 53.1547856733623,
+              "final": 53.16569203716898,
+              "changePercent": 0.020518122062805
+            },
+            "z50": {
+              "initial": 28.050181025033357,
+              "final": 28.07637256135534,
+              "changePercent": 0.09337385843822803
+            },
+            "z90": {
+              "initial": 102.55036520797303,
+              "final": 102.93985404739543,
+              "changePercent": 0.3798024888868134
+            }
+          }
+        }
+      ],
+      "structuralChangesAt10Myr": [
+        {
+          "component": 0,
+          "count": 1500,
+          "values": {
+            "r50": {
+              "initial": 2.4060939064899394,
+              "final": 2.5074571560854353,
+              "changePercent": 4.212771967132686
+            },
+            "R50": {
+              "initial": 1.7504433590395996,
+              "final": 1.8402022471123078,
+              "changePercent": 5.127780205464946
+            },
+            "z50": {
+              "initial": 1.0061578861278049,
+              "final": 0.8756186841434562,
+              "changePercent": -12.974027613770271
+            },
+            "z90": {
+              "initial": 10.033157564522591,
+              "final": 9.789007862570662,
+              "changePercent": -2.4334283637211773
+            }
+          }
+        },
+        {
+          "component": 1,
+          "count": 4500,
+          "values": {
+            "r50": {
+              "initial": 5.153011508420358,
+              "final": 5.149024504543437,
+              "changePercent": -0.07737230686183216
+            },
+            "R50": {
+              "initial": 5.119008974271129,
+              "final": 5.1124363629306595,
+              "changePercent": -0.12839616756884084
+            },
+            "z50": {
+              "initial": 0.16539367167333335,
+              "final": 0.18474097940773984,
+              "changePercent": 11.697731562921632
+            },
+            "z90": {
+              "initial": 0.5632940036235659,
+              "final": 0.5881325779698884,
+              "changePercent": 4.4095222364414655
+            }
+          }
+        },
+        {
+          "component": 2,
+          "count": 4000,
+          "values": {
+            "r50": {
+              "initial": 72.02121384113865,
+              "final": 71.6742607024206,
+              "changePercent": -0.4817374218148338
+            },
+            "R50": {
+              "initial": 53.1547856733623,
+              "final": 53.16569203716898,
+              "changePercent": 0.020518122062805
+            },
+            "z50": {
+              "initial": 28.050181025033357,
+              "final": 28.07637256135534,
+              "changePercent": 0.09337385843822803
+            },
+            "z90": {
+              "initial": 102.55036520797303,
+              "final": 102.93985404739543,
+              "changePercent": 0.3798024888868134
+            }
+          }
+        }
+      ],
+      "initialMeta": {
+        "seed": 2026,
+        "withHalo": true,
+        "counts": [
+          1500,
+          4500,
+          4000
+        ],
+        "masses": [
+          0.5,
+          6.8,
+          97.6315764173288
+        ],
+        "initialization": "Jeans + Satoh k=1, Gaussiana aproximada; pares antipodais",
+        "clippedStreaming": 0,
+        "unbound": 70,
+        "centerShift": [
+          0,
+          0,
+          0
+        ]
+      }
+    }
+  ],
+  "forceComparison": [
+    {
+      "n": 1000,
+      "theta": 0.8,
+      "relativeRms": 0.014114633168880925
+    },
+    {
+      "n": 1000,
+      "theta": 0.5,
+      "relativeRms": 0.002577573825692624
+    },
+    {
+      "n": 1000,
+      "theta": 0.3,
+      "relativeRms": 0.0003358696688488869
+    },
+    {
+      "n": 1000,
+      "theta": 0.1,
+      "relativeRms": 0.000004637989966774384
+    }
+  ],
+  "analyticRotationAtSolarRadius": [
+    {
+      "withHalo": false,
+      "Rkpc": 8.2,
+      "vcKpcPerMyr": 0.17899202895879407,
+      "vcKmS": 175.0170136587714,
+      "interpretation": "Velocidade circular do campo analítico no plano; não é velocidade azimutal medida das partículas."
+    },
+    {
+      "withHalo": true,
+      "Rkpc": 8.2,
+      "vcKpcPerMyr": 0.23465631688021077,
+      "vcKmS": 229.44512141373252,
+      "interpretation": "Velocidade circular do campo analítico no plano; não é velocidade azimutal medida das partículas."
+    }
+  ],
+  "fixedAnalyticControls": [
+    {
+      "withHalo": false,
+      "field": "fixed unsoftened analytic field; diagnostic control only",
+      "timeMyr": 20,
+      "dt": 0.1,
+      "structuralChanges": [
+        {
+          "component": 0,
+          "count": 500,
+          "values": {
+            "r50": {
+              "initial": 1.9778028987928071,
+              "final": 2.407009827990248,
+              "changePercent": 21.701198307445907
+            },
+            "R50": {
+              "initial": 1.6087640892828223,
+              "final": 1.8416173211036186,
+              "changePercent": 14.4740446018161
+            },
+            "z50": {
+              "initial": 0.9497018746213924,
+              "final": 0.9243464148626471,
+              "changePercent": -2.669833601081761
+            },
+            "z90": {
+              "initial": 10.904043879204398,
+              "final": 10.259376015383307,
+              "changePercent": -5.912190660297753
+            }
+          }
+        },
+        {
+          "component": 1,
+          "count": 1500,
+          "values": {
+            "r50": {
+              "initial": 5.523264648912022,
+              "final": 5.521228722920463,
+              "changePercent": -0.036860916884731504
+            },
+            "R50": {
+              "initial": 5.386729135036487,
+              "final": 5.452394991507951,
+              "changePercent": 1.2190302282763605
+            },
+            "z50": {
+              "initial": 0.1750352336712898,
+              "final": 0.17050586215683705,
+              "changePercent": -2.58769130046055
+            },
+            "z90": {
+              "initial": 0.5527343895748229,
+              "final": 0.5928358323570435,
+              "changePercent": 7.255101824416541
+            }
+          }
+        },
+        {
+          "component": 2,
+          "count": 0,
+          "values": {
+            "r50": {
+              "initial": null,
+              "final": null,
+              "changePercent": null
+            },
+            "R50": {
+              "initial": null,
+              "final": null,
+              "changePercent": null
+            },
+            "z50": {
+              "initial": null,
+              "final": null,
+              "changePercent": null
+            },
+            "z90": {
+              "initial": null,
+              "final": null,
+              "changePercent": null
+            }
+          }
+        }
+      ],
+      "interpretation": "Controle diagnóstico em campo contínuo fixo; não substitui a simulação autogravitante."
+    },
+    {
+      "withHalo": true,
+      "field": "fixed unsoftened analytic field; diagnostic control only",
+      "timeMyr": 20,
+      "dt": 0.1,
+      "structuralChanges": [
+        {
+          "component": 0,
+          "count": 300,
+          "values": {
+            "r50": {
+              "initial": 2.075399735382245,
+              "final": 2.3179076273709156,
+              "changePercent": 11.684876308611743
+            },
+            "R50": {
+              "initial": 1.6740492715839725,
+              "final": 1.991192983401827,
+              "changePercent": 18.944705941526767
+            },
+            "z50": {
+              "initial": 0.9317351826532282,
+              "final": 0.9915258683205267,
+              "changePercent": 6.417132977316293
+            },
+            "z90": {
+              "initial": 13.78570280566691,
+              "final": 13.81655786609183,
+              "changePercent": 0.22381927755063227
+            }
+          }
+        },
+        {
+          "component": 1,
+          "count": 900,
+          "values": {
+            "r50": {
+              "initial": 5.339197831638355,
+              "final": 5.635406224028717,
+              "changePercent": 5.547807025151365
+            },
+            "R50": {
+              "initial": 5.3379442956998,
+              "final": 5.520625296205272,
+              "changePercent": 3.4223099827519357
+            },
+            "z50": {
+              "initial": 0.17208026752091837,
+              "final": 0.173474603199989,
+              "changePercent": 0.810282142838447
+            },
+            "z90": {
+              "initial": 0.6264702316563122,
+              "final": 0.6445420474472173,
+              "changePercent": 2.884704632034214
+            }
+          }
+        },
+        {
+          "component": 2,
+          "count": 800,
+          "values": {
+            "r50": {
+              "initial": 71.79455859801564,
+              "final": 71.70107599510696,
+              "changePercent": -0.13020847921372006
+            },
+            "R50": {
+              "initial": 48.1165291357929,
+              "final": 48.41166518131465,
+              "changePercent": 0.6133776704650241
+            },
+            "z50": {
+              "initial": 27.190637335896202,
+              "final": 26.7397276758803,
+              "changePercent": -1.65832692498394
+            },
+            "z90": {
+              "initial": 110.3443854658238,
+              "final": 110.07040411853038,
+              "changePercent": -0.24829659083858602
+            }
+          }
+        }
+      ],
+      "interpretation": "Controle diagnóstico em campo contínuo fixo; não substitui a simulação autogravitante."
+    }
+  ],
+  "initializerQuadrature": {
+    "diskCases": 35,
+    "maxAbsoluteRelativeSigmaSquaredError": 0.007533242482927657,
+    "maxAbsoluteRelativeStreamingSquaredError": 0.019185521708122683,
+    "sphericalCases": 16,
+    "maxAbsoluteRelativeSigmaSquaredErrorSpherical": 0.0004477647781843917,
+    "qualification": "Concordância local de momentos e quadratura; não valida uma função de distribuição de equilíbrio."
+  },
+  "virialBySoftening": [
+    {
+      "epsilon": 0.1,
+      "components": [
+        {
+          "component": 0,
+          "K": 0.008897371941423201,
+          "Wdiscrete": -0.017129485882704378,
+          "Wanalytic": -0.016722926251113136,
+          "forceError2": 0.022144609963281152,
+          "forceNorm2": 0.12205412351413272,
+          "virialDiscrete": 1.0388370091605454,
+          "virialAnalytic": 1.0640927081563802,
+          "relativeForceRms": 0.4259491829502395
+        },
+        {
+          "component": 1,
+          "K": 0.15129205036160545,
+          "Wdiscrete": -0.30018825099337626,
+          "Wanalytic": -0.30073774576312473,
+          "forceError2": 0.02886856871244174,
+          "forceNorm2": 0.1650213916052935,
+          "virialDiscrete": 1.0079811575633169,
+          "virialAnalytic": 1.0061394187663442,
+          "relativeForceRms": 0.4182563118795578
+        },
+        {
+          "component": 2,
+          "K": 1.7589939300610793,
+          "Wdiscrete": -3.5942232236696543,
+          "Wanalytic": -3.4628428028970872,
+          "forceError2": 0.0006300772276976275,
+          "forceNorm2": 0.006977071625533416,
+          "virialDiscrete": 0.9787894744418071,
+          "virialAnalytic": 1.0159247936923201,
+          "relativeForceRms": 0.30051094977296827
+        }
+      ],
+      "Usoftened": -3.913337831477491,
+      "K": 1.9191833523641073,
+      "twiceKOverNegativeU": 0.9808421531751653,
+      "twiceKOverNegativeW": 0.9812927292451742
+    },
+    {
+      "epsilon": 0.3,
+      "components": [
+        {
+          "component": 0,
+          "K": 0.008897371941423201,
+          "Wdiscrete": -0.01602176752687075,
+          "Wanalytic": -0.016722926251113136,
+          "forceError2": 0.016452886128053512,
+          "forceNorm2": 0.12205412351413272,
+          "virialDiscrete": 1.1106604719486861,
+          "virialAnalytic": 1.0640927081563802,
+          "relativeForceRms": 0.36715108654294765
+        },
+        {
+          "component": 1,
+          "K": 0.15129205036160545,
+          "Wdiscrete": -0.29084982828892825,
+          "Wanalytic": -0.30073774576312473,
+          "forceError2": 0.015541424686084382,
+          "forceNorm2": 0.1650213916052935,
+          "virialDiscrete": 1.0403447803401344,
+          "virialAnalytic": 1.0061394187663442,
+          "relativeForceRms": 0.3068847386263126
+        },
+        {
+          "component": 2,
+          "K": 1.7589939300610793,
+          "Wdiscrete": -3.59099835749082,
+          "Wanalytic": -3.4628428028970872,
+          "forceError2": 0.00045598685433227286,
+          "forceNorm2": 0.006977071625533416,
+          "virialDiscrete": 0.9796684681806213,
+          "virialAnalytic": 1.0159247936923201,
+          "relativeForceRms": 0.25564633476657733
+        }
+      ],
+      "Usoftened": -3.907950964755315,
+      "K": 1.9191833523641073,
+      "twiceKOverNegativeU": 0.9821941829222883,
+      "twiceKOverNegativeW": 0.9847344192363506
+    },
+    {
+      "epsilon": 1,
+      "components": [
+        {
+          "component": 0,
+          "K": 0.008897371941423201,
+          "Wdiscrete": -0.013107033101781239,
+          "Wanalytic": -0.016722926251113136,
+          "forceError2": 0.05043654105482034,
+          "forceNorm2": 0.12205412351413272,
+          "virialDiscrete": 1.3576485040255302,
+          "virialAnalytic": 1.0640927081563802,
+          "relativeForceRms": 0.6428304186023391
+        },
+        {
+          "component": 1,
+          "K": 0.15129205036160545,
+          "Wdiscrete": -0.2562507195649812,
+          "Wanalytic": -0.30073774576312473,
+          "forceError2": 0.04084043312889977,
+          "forceNorm2": 0.1650213916052935,
+          "virialDiscrete": 1.1808126870312272,
+          "virialAnalytic": 1.0061394187663442,
+          "relativeForceRms": 0.4974793372452307
+        },
+        {
+          "component": 2,
+          "K": 1.7589939300610793,
+          "Wdiscrete": -3.557237645837223,
+          "Wanalytic": -3.4628428028970872,
+          "forceError2": 0.00043189939352554436,
+          "forceNorm2": 0.006977071625533416,
+          "virialDiscrete": 0.9889662177164363,
+          "virialAnalytic": 1.0159247936923201,
+          "relativeForceRms": 0.24880248081734754
+        }
+      ],
+      "Usoftened": -3.877056939298479,
+      "K": 1.9191833523641073,
+      "twiceKOverNegativeU": 0.9900207205681986,
+      "twiceKOverNegativeW": 1.0030761826110048
+    }
+  ],
+  "cpuBenchmark": {
+    "dateUTC": "2026-10-12T02:27:54.523Z",
+    "method": "CPU Float64. Same freshly generated realization per N is cloned for each algorithm. Initial force and two real KDK warmup steps are excluded; stepMs is the median of three wall-clock samples, each containing three real KDK steps. Samples follow one evolving state; no timing is extrapolated.",
+    "config": {
+      "seed": 2026,
+      "withHalo": true,
+      "dt": 0.1,
+      "epsilon": 0.1,
+      "theta": 0.5
+    },
+    "warmupSteps": 2,
+    "sampleCount": 3,
+    "stepsPerSample": 3,
+    "results": [
+      {
+        "n": 1000,
+        "algorithm": "direct",
+        "status": "measured",
+        "stepMsMedian": 4.320900000000013,
+        "stepMsMean": 4.3635888888888985,
+        "stepMsMin": 4.248500000000017,
+        "stepMsMax": 4.521366666666665,
+        "samples": [
+          {
+            "sample": 1,
+            "steps": 3,
+            "elapsedMs": 13.564099999999996,
+            "stepMs": 4.521366666666665,
+            "stepsStart": 2,
+            "stepsEnd": 5,
+            "timeStartMyr": 0.2,
+            "timeEndMyr": 0.5
+          },
+          {
+            "sample": 2,
+            "steps": 3,
+            "elapsedMs": 12.74550000000005,
+            "stepMs": 4.248500000000017,
+            "stepsStart": 5,
+            "stepsEnd": 8,
+            "timeStartMyr": 0.5,
+            "timeEndMyr": 0.8
+          },
+          {
+            "sample": 3,
+            "steps": 3,
+            "elapsedMs": 12.96270000000004,
+            "stepMs": 4.320900000000013,
+            "stepsStart": 8,
+            "stepsEnd": 11,
+            "timeStartMyr": 0.8,
+            "timeEndMyr": 1.1
+          }
+        ],
+        "finite": true,
+        "tree": null,
+        "physicalMyr": 1.1
+      },
+      {
+        "n": 1000,
+        "algorithm": "barnes-hut",
+        "status": "measured",
+        "stepMsMedian": 6.381133333333348,
+        "stepMsMean": 6.37946666666667,
+        "stepMsMin": 6.2311999999999825,
+        "stepMsMax": 6.526066666666679,
+        "samples": [
+          {
+            "sample": 1,
+            "steps": 3,
+            "elapsedMs": 19.578200000000038,
+            "stepMs": 6.526066666666679,
+            "stepsStart": 2,
+            "stepsEnd": 5,
+            "timeStartMyr": 0.2,
+            "timeEndMyr": 0.5
+          },
+          {
+            "sample": 2,
+            "steps": 3,
+            "elapsedMs": 18.693599999999947,
+            "stepMs": 6.2311999999999825,
+            "stepsStart": 5,
+            "stepsEnd": 8,
+            "timeStartMyr": 0.5,
+            "timeEndMyr": 0.8
+          },
+          {
+            "sample": 3,
+            "steps": 3,
+            "elapsedMs": 19.143400000000042,
+            "stepMs": 6.381133333333348,
+            "stepsStart": 8,
+            "stepsEnd": 11,
+            "timeStartMyr": 0.8,
+            "timeEndMyr": 1.1
+          }
+        ],
+        "finite": true,
+        "tree": {
+          "nodeCount": 479,
+          "allocatedBytes": 117576,
+          "buildMs": 0.7352999999999383,
+          "leafBucket": 8
+        },
+        "physicalMyr": 1.1
+      },
+      {
+        "n": 10000,
+        "algorithm": "direct",
+        "status": "measured",
+        "stepMsMedian": 419.2925000000002,
+        "stepMsMean": 419.41138888888895,
+        "stepMsMin": 418.73810000000003,
+        "stepMsMax": 420.20356666666663,
+        "samples": [
+          {
+            "sample": 1,
+            "steps": 3,
+            "elapsedMs": 1260.6107,
+            "stepMs": 420.20356666666663,
+            "stepsStart": 2,
+            "stepsEnd": 5,
+            "timeStartMyr": 0.2,
+            "timeEndMyr": 0.5
+          },
+          {
+            "sample": 2,
+            "steps": 3,
+            "elapsedMs": 1256.2143,
+            "stepMs": 418.73810000000003,
+            "stepsStart": 5,
+            "stepsEnd": 8,
+            "timeStartMyr": 0.5,
+            "timeEndMyr": 0.8
+          },
+          {
+            "sample": 3,
+            "steps": 3,
+            "elapsedMs": 1257.8775000000005,
+            "stepMs": 419.2925000000002,
+            "stepsStart": 8,
+            "stepsEnd": 11,
+            "timeStartMyr": 0.8,
+            "timeEndMyr": 1.1
+          }
+        ],
+        "finite": true,
+        "tree": null,
+        "physicalMyr": 1.1
+      },
+      {
+        "n": 10000,
+        "algorithm": "barnes-hut",
+        "status": "measured",
+        "stepMsMedian": 176.17669999999998,
+        "stepMsMean": 176.1147111111112,
+        "stepMsMin": 175.96500000000015,
+        "stepMsMax": 176.20243333333352,
+        "samples": [
+          {
+            "sample": 1,
+            "steps": 3,
+            "elapsedMs": 528.5301,
+            "stepMs": 176.17669999999998,
+            "stepsStart": 2,
+            "stepsEnd": 5,
+            "timeStartMyr": 0.2,
+            "timeEndMyr": 0.5
+          },
+          {
+            "sample": 2,
+            "steps": 3,
+            "elapsedMs": 527.8950000000004,
+            "stepMs": 175.96500000000015,
+            "stepsStart": 5,
+            "stepsEnd": 8,
+            "timeStartMyr": 0.5,
+            "timeEndMyr": 0.8
+          },
+          {
+            "sample": 3,
+            "steps": 3,
+            "elapsedMs": 528.6073000000006,
+            "stepMs": 176.20243333333352,
+            "stepsStart": 8,
+            "stepsEnd": 11,
+            "timeStartMyr": 0.8,
+            "timeEndMyr": 1.1
+          }
+        ],
+        "finite": true,
+        "tree": {
+          "nodeCount": 4321,
+          "allocatedBytes": 1170576,
+          "buildMs": 2.317399999999907,
+          "leafBucket": 8
+        },
+        "physicalMyr": 1.1
+      },
+      {
+        "n": 100000,
+        "algorithm": "barnes-hut",
+        "status": "measured",
+        "stepMsMedian": 3033.5360333333324,
+        "stepMsMean": 3045.22721111111,
+        "stepMsMin": 3027.693299999999,
+        "stepMsMax": 3074.4522999999995,
+        "samples": [
+          {
+            "sample": 1,
+            "steps": 3,
+            "elapsedMs": 9223.356899999999,
+            "stepMs": 3074.4522999999995,
+            "stepsStart": 2,
+            "stepsEnd": 5,
+            "timeStartMyr": 0.2,
+            "timeEndMyr": 0.5
+          },
+          {
+            "sample": 2,
+            "steps": 3,
+            "elapsedMs": 9083.079899999997,
+            "stepMs": 3027.693299999999,
+            "stepsStart": 5,
+            "stepsEnd": 8,
+            "timeStartMyr": 0.5,
+            "timeEndMyr": 0.8
+          },
+          {
+            "sample": 3,
+            "steps": 3,
+            "elapsedMs": 9100.608099999998,
+            "stepMs": 3033.5360333333324,
+            "stepsStart": 8,
+            "stepsEnd": 11,
+            "timeStartMyr": 0.8,
+            "timeEndMyr": 1.1
+          }
+        ],
+        "finite": true,
+        "tree": {
+          "nodeCount": 42469,
+          "allocatedBytes": 8081856,
+          "buildMs": 35.79520000000048,
+          "leafBucket": 8
+        },
+        "physicalMyr": 1.1
+      }
+    ]
+  },
+  "conclusions": [
+    "Os parâmetros físicos e o inicializador coincidem byte a byte com a versão arquivada.",
+    "Baixo erro de conservação coexiste com reajuste do bojo e aquecimento do disco; equilíbrio estrutural prolongado não demonstrado.",
+    "Reduzir dt de 0,1 para 0,05 Myr em N=2000 não elimina o reajuste estrutural observado em 20 Myr.",
+    "Aumentar epsilon altera a força e o equilíbrio correspondente; erro menor de energia não autoriza escolhê-lo para esconder instabilidade.",
+    "Os casos N=2000 e N=10000 podem ser comparados estruturalmente em 10 Myr usando os percentis registrados; não comparar partículas pelo índice.",
+    "Os ensaios usam uma única seed e épocas curtas; não estabelecem convergência de ensemble ou estabilidade secular.",
+    "As caudas extensas das densidades podem dominar RMS global; percentis e seleções espaciais são necessários para avaliar a região central."
+  ]
+}

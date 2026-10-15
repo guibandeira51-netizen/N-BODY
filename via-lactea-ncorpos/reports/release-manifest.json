@@ -1,0 +1,947 @@
+{
+  "schemaVersion": 2,
+  "name": "via-lactea-ncorpos",
+  "version": "0.6.0",
+  "dateUTC": "2026-10-12T03:17:43.614049+00:00",
+  "scope": "Synthetic self-gravitating N-body application: Hernquist bulge, Miyamoto-Nagai disk and finite NFW halo; local CPU Float64 or direct WebGPU Float32 computation.",
+  "testResults": {
+    "command": "node --test --test-reporter=tap",
+    "exitCode": 0,
+    "nodeTotal": 42,
+    "nodePassed": 42,
+    "nodeFailed": 0,
+    "nodeSkipped": 0,
+    "report": "reports/test-results.tap",
+    "scope": "Controlled force/integrator/model/resource, export and camera/visual-transfer tests. No secular galaxy-equilibrium claim.",
+    "webgpuFixtures": {
+      "report": "reports/validation-webgpu.json",
+      "status": "passed",
+      "executedCases": 7,
+      "passedCases": 7,
+      "n": [
+        1,
+        2,
+        63,
+        64,
+        65,
+        257,
+        1024
+      ],
+      "stepsPerCase": 8,
+      "precision": {
+        "cpu": "Float64",
+        "gpu": "f32"
+      }
+    },
+    "webgpuGalaxy": {
+      "report": "reports/validation-galaxy-webgpu.json",
+      "status": "passed",
+      "n": 1000,
+      "steps": 100,
+      "physicalMyr": 10,
+      "forceRmsRelative": 5.563095661620491e-07,
+      "positionRmsRelative": 3.0147019082854593e-06,
+      "velocityRmsRelative": 1.2392857514512524e-06,
+      "qualification": "Same realization, short direct CPU/GPU comparison with separate conservation baselines per precision."
+    },
+    "sharedBufferRenderer": {
+      "report": "reports/validation-render-webgpu.json",
+      "status": "submitted",
+      "n": 65,
+      "visuallyVerified": true,
+      "visualObservation": "Anel de partículas com três estilos visíveis; GLSL não se aplica a esta página, pipeline WGSL compartilhado sem mensagens de erro.",
+      "qualification": "Controlled WGSL render submission and recorded visual inspection; not a full application or performance validation."
+    }
+  },
+  "benchmarks": {
+    "cpu": {
+      "report": "reports/benchmark-cpu.json",
+      "runtime": "v24.19.0",
+      "cpu": "AMD Ryzen 7 5700X 8-Core Processor             ",
+      "warmupSteps": 2,
+      "sampleCount": 3,
+      "stepsPerSample": 3,
+      "method": "CPU Float64. Same freshly generated realization per N is cloned for each algorithm. Initial force and two real KDK warmup steps are excluded; stepMs is the median of three wall-clock samples, each containing three real KDK steps. Samples follow one evolving state; no timing is extrapolated.",
+      "results": [
+        {
+          "n": 1000,
+          "algorithm": "direct",
+          "precision": "f64",
+          "status": "measured",
+          "stepMsMedian": 4.320900000000013,
+          "finite": true
+        },
+        {
+          "n": 1000,
+          "algorithm": "barnes-hut",
+          "precision": "f64",
+          "status": "measured",
+          "stepMsMedian": 6.381133333333348,
+          "finite": true
+        },
+        {
+          "n": 10000,
+          "algorithm": "direct",
+          "precision": "f64",
+          "status": "measured",
+          "stepMsMedian": 419.2925000000002,
+          "finite": true
+        },
+        {
+          "n": 10000,
+          "algorithm": "barnes-hut",
+          "precision": "f64",
+          "status": "measured",
+          "stepMsMedian": 176.17669999999998,
+          "finite": true
+        },
+        {
+          "n": 100000,
+          "algorithm": "barnes-hut",
+          "precision": "f64",
+          "status": "measured",
+          "stepMsMedian": 3033.5360333333324,
+          "finite": true
+        }
+      ]
+    },
+    "gpu": {
+      "reports": [
+        "reports/benchmark-gpu.json",
+        "reports/benchmark-gpu-100000.json"
+      ],
+      "adapterInfo": {
+        "vendor": "amd",
+        "architecture": "rdna-3",
+        "device": "",
+        "description": ""
+      },
+      "results": [
+        {
+          "n": 1000,
+          "algorithm": "direct",
+          "precision": "f32",
+          "status": "measured",
+          "batchSize": 1,
+          "warmupSteps": 2,
+          "sampleCount": 3,
+          "measuredSteps": 9,
+          "stepMsMedian": 2.4766666665673256,
+          "finite": true,
+          "physicalMyr": 1.0999999999999999
+        },
+        {
+          "n": 1000,
+          "algorithm": "direct",
+          "precision": "f32",
+          "status": "measured",
+          "batchSize": 3,
+          "warmupSteps": 2,
+          "sampleCount": 3,
+          "measuredSteps": 9,
+          "stepMsMedian": 0.7900000003476938,
+          "finite": true,
+          "physicalMyr": 1.1
+        },
+        {
+          "n": 10000,
+          "algorithm": "direct",
+          "precision": "f32",
+          "status": "measured",
+          "batchSize": 1,
+          "warmupSteps": 2,
+          "sampleCount": 3,
+          "measuredSteps": 9,
+          "stepMsMedian": 3.363333333283663,
+          "finite": true,
+          "physicalMyr": 1.0999999999999999
+        },
+        {
+          "n": 10000,
+          "algorithm": "direct",
+          "precision": "f32",
+          "status": "measured",
+          "batchSize": 3,
+          "warmupSteps": 2,
+          "sampleCount": 3,
+          "measuredSteps": 9,
+          "stepMsMedian": 2.781666667511066,
+          "finite": true,
+          "physicalMyr": 1.1
+        },
+        {
+          "n": 100000,
+          "algorithm": "direct",
+          "precision": "f32",
+          "status": "measured",
+          "batchSize": 3,
+          "warmupSteps": 2,
+          "sampleCount": 3,
+          "measuredSteps": 9,
+          "stepMsMedian": 47.36166666696469,
+          "finite": true,
+          "physicalMyr": 1.1
+        }
+      ],
+      "batchStateComparison": [
+        {
+          "n": 1000,
+          "bitIdenticalFinalState": true
+        },
+        {
+          "n": 10000,
+          "bitIdenticalFinalState": true
+        }
+      ],
+      "qualification": "Measured short wall-clock samples include submit and queue completion; generation/upload, readback, diagnostics and rendering excluded. API limits do not disclose installed VRAM."
+    },
+    "comparability": "CPU Barnes-Hut f64 and GPU direct f32 use different algorithms and precision. These timings do not establish a same-precision speedup or sustained browser interactivity."
+  },
+  "scientificValidation": {
+    "reports": [
+      "reports/validation-galaxy.json",
+      "reports/initial-audit.json",
+      "reports/validation-summary-current.json"
+    ],
+    "physicalParametersPreserved": true,
+    "physicalSourceComparison": [
+      {
+        "path": "src/physics/constants.js",
+        "currentSha256": "4b1c2a1d96453b95c8e57a45f46443083e77d54e1714aadc7d060de0d9aa22ca",
+        "archivedSha256": "4b1c2a1d96453b95c8e57a45f46443083e77d54e1714aadc7d060de0d9aa22ca",
+        "identicalBytes": true
+      },
+      {
+        "path": "src/physics/models.js",
+        "currentSha256": "2215cd8332d06b4d18b3ef707c5000992b5db730d104c654ef7ddba7ac9102f3",
+        "archivedSha256": "2215cd8332d06b4d18b3ef707c5000992b5db730d104c654ef7ddba7ac9102f3",
+        "identicalBytes": true
+      },
+      {
+        "path": "src/physics/initial.js",
+        "currentSha256": "93ca8666ff188863b947dc8535ca23244d67c20ab2a177cb12e494cf566eeefa",
+        "archivedSha256": "93ca8666ff188863b947dc8535ca23244d67c20ab2a177cb12e494cf566eeefa",
+        "identicalBytes": true
+      }
+    ],
+    "conservationSampling": "Final versus initial, not maximum over trajectory; galaxy audit uses direct Plummer energy despite Barnes-Hut integration.",
+    "structure": {
+      "seed": 2026,
+      "equilibriumDemonstrated": false,
+      "n2000Halo20Myr": {
+        "bulgeMedianRadiusChangePercent": 45.03510884625531,
+        "diskMedianAbsoluteHeightChangePercent": 59.88109570189522
+      },
+      "qualification": "Low conservation error coexists with structural adjustment. One seed and short N/dt/epsilon sensitivities do not demonstrate secular stability or ensemble convergence."
+    }
+  },
+  "preservedArchive": {
+    "branch": "archive/gaia-before-synthetic-cleanup",
+    "commit": "0e963bd6004eb5cdeb9148c99097c998792a6b7e",
+    "integrityReport": "reports/gaia-preservation-integrity.json",
+    "status": "passed",
+    "zip": {
+      "filename": "via-lactea-gaia-preservado.zip",
+      "bytes": 25341077,
+      "sha256": "edb65ac456a4db1b469044a8e708a490de89eea9ba46f1b6cb05f1ee6be0482c"
+    },
+    "bundle": {
+      "filename": "via-lactea-gaia-preservado.bundle",
+      "bytes": 25380938,
+      "sha256": "fe57ce88c29f408fceb582c5d1dfb3435ed23bbe4b28863a547151255e95614b"
+    },
+    "qualification": "Separate historical archive; no observed catalog or tracer implementation belongs to the current runtime."
+  },
+  "limits": [
+    "Approximate Jeans/Satoh local-Gaussian initialization; exact collisionless equilibrium and secular stability not demonstrated.",
+    "Directed Barnes-Hut approximation does not exactly preserve pair symmetry or general linear momentum.",
+    "GPU force is direct O(N^2) f32; no scalable GPU tree, FMM, particle mesh, Wasm gravity kernel or CPU force pool implemented.",
+    "The 100000-body GPU benchmark checks finite short-time state; no direct f64 reference or long structural audit at that N.",
+    "No validated million-body browser/GPU run or Gyr-precision result.",
+    "Hiding a component changes rendering only. Point colors and exposure weights do not represent physical luminosity.",
+    "Pause/hidden-tab behavior retains in-memory state; closing/reloading loses it. Persistent checkpoints are not implemented.",
+    "Local presentation and model comparisons do not constitute direct particle detection of dark matter."
+  ],
+  "pendingReleaseChecks": [],
+  "changes": {
+    "modified": [
+      "PARAMETROS_E_FONTES.md",
+      "README.md",
+      "index.html",
+      "package.json",
+      "reports/benchmark-cpu.json",
+      "reports/benchmark-gpu-100000.json",
+      "reports/browser-ui.json",
+      "reports/initial-audit.json",
+      "reports/preview-desktop.jpg",
+      "reports/preview-mobile.jpg",
+      "reports/release-manifest.json",
+      "reports/review-export-validation.json",
+      "reports/test-results.tap",
+      "reports/validation-galaxy.json",
+      "reports/validation-webgpu.json",
+      "scripts/benchmark.mjs",
+      "scripts/build.mjs",
+      "scripts/review-assets.mjs",
+      "src/compute/gpu.js",
+      "src/compute/worker.js",
+      "src/export/review.js",
+      "src/main.js",
+      "src/physics/forces.js",
+      "src/physics/integrator.js",
+      "src/render/camera.js",
+      "src/render/gpu-renderer.js",
+      "src/render/webgl-renderer.js",
+      "style.css",
+      "tests/browser-gpu.html",
+      "tests/core.test.mjs",
+      "tests/review-export.test.mjs"
+    ],
+    "removed": [
+      "COMPARACAO_OBSERVACIONAL.md",
+      "GAIA_DR3_METODOLOGIA.md",
+      "GAIA_DR3_SELECAO.md",
+      "VALIDACAO_GAIA.md",
+      "VALIDACAO_GAIA_CPU.md",
+      "data/gaia/checksums.json",
+      "data/gaia/chunks/cell-00.bin",
+      "data/gaia/chunks/cell-01.bin",
+      "data/gaia/chunks/cell-02.bin",
+      "data/gaia/chunks/cell-03.bin",
+      "data/gaia/chunks/cell-04.bin",
+      "data/gaia/chunks/cell-05.bin",
+      "data/gaia/chunks/cell-06.bin",
+      "data/gaia/chunks/cell-07.bin",
+      "data/gaia/chunks/cell-08.bin",
+      "data/gaia/chunks/cell-09.bin",
+      "data/gaia/chunks/cell-10.bin",
+      "data/gaia/chunks/cell-11.bin",
+      "data/gaia/chunks/cell-12.bin",
+      "data/gaia/chunks/cell-13.bin",
+      "data/gaia/chunks/cell-14.bin",
+      "data/gaia/chunks/cell-15.bin",
+      "data/gaia/chunks/cell-16.bin",
+      "data/gaia/chunks/cell-17.bin",
+      "data/gaia/chunks/cell-18.bin",
+      "data/gaia/chunks/cell-19.bin",
+      "data/gaia/chunks/cell-20.bin",
+      "data/gaia/chunks/cell-21.bin",
+      "data/gaia/chunks/cell-22.bin",
+      "data/gaia/chunks/cell-23.bin",
+      "data/gaia/chunks/cell-24.bin",
+      "data/gaia/chunks/cell-25.bin",
+      "data/gaia/chunks/cell-26.bin",
+      "data/gaia/chunks/cell-27.bin",
+      "data/gaia/chunks/cell-28.bin",
+      "data/gaia/chunks/cell-29.bin",
+      "data/gaia/chunks/cell-30.bin",
+      "data/gaia/chunks/cell-31.bin",
+      "data/gaia/chunks/cell-32.bin",
+      "data/gaia/chunks/cell-33.bin",
+      "data/gaia/chunks/cell-34.bin",
+      "data/gaia/chunks/cell-35.bin",
+      "data/gaia/chunks/cell-36.bin",
+      "data/gaia/chunks/cell-37.bin",
+      "data/gaia/chunks/cell-38.bin",
+      "data/gaia/chunks/cell-39.bin",
+      "data/gaia/chunks/cell-40.bin",
+      "data/gaia/chunks/cell-41.bin",
+      "data/gaia/chunks/cell-42.bin",
+      "data/gaia/chunks/cell-43.bin",
+      "data/gaia/chunks/cell-44.bin",
+      "data/gaia/chunks/cell-45.bin",
+      "data/gaia/chunks/cell-46.bin",
+      "data/gaia/chunks/cell-47.bin",
+      "data/gaia/excluded-category-c.json",
+      "data/gaia/excluded-selection.json",
+      "data/gaia/extraction-configuration.json",
+      "data/gaia/manifest.json",
+      "data/gaia/metadata/cell-00.json",
+      "data/gaia/metadata/cell-01.json",
+      "data/gaia/metadata/cell-02.json",
+      "data/gaia/metadata/cell-03.json",
+      "data/gaia/metadata/cell-04.json",
+      "data/gaia/metadata/cell-05.json",
+      "data/gaia/metadata/cell-06.json",
+      "data/gaia/metadata/cell-07.json",
+      "data/gaia/metadata/cell-08.json",
+      "data/gaia/metadata/cell-09.json",
+      "data/gaia/metadata/cell-10.json",
+      "data/gaia/metadata/cell-11.json",
+      "data/gaia/metadata/cell-12.json",
+      "data/gaia/metadata/cell-13.json",
+      "data/gaia/metadata/cell-14.json",
+      "data/gaia/metadata/cell-15.json",
+      "data/gaia/metadata/cell-16.json",
+      "data/gaia/metadata/cell-17.json",
+      "data/gaia/metadata/cell-18.json",
+      "data/gaia/metadata/cell-19.json",
+      "data/gaia/metadata/cell-20.json",
+      "data/gaia/metadata/cell-21.json",
+      "data/gaia/metadata/cell-22.json",
+      "data/gaia/metadata/cell-23.json",
+      "data/gaia/metadata/cell-24.json",
+      "data/gaia/metadata/cell-25.json",
+      "data/gaia/metadata/cell-26.json",
+      "data/gaia/metadata/cell-27.json",
+      "data/gaia/metadata/cell-28.json",
+      "data/gaia/metadata/cell-29.json",
+      "data/gaia/metadata/cell-30.json",
+      "data/gaia/metadata/cell-31.json",
+      "data/gaia/metadata/cell-32.json",
+      "data/gaia/metadata/cell-33.json",
+      "data/gaia/metadata/cell-34.json",
+      "data/gaia/metadata/cell-35.json",
+      "data/gaia/metadata/cell-36.json",
+      "data/gaia/metadata/cell-37.json",
+      "data/gaia/metadata/cell-38.json",
+      "data/gaia/metadata/cell-39.json",
+      "data/gaia/metadata/cell-40.json",
+      "data/gaia/metadata/cell-41.json",
+      "data/gaia/metadata/cell-42.json",
+      "data/gaia/metadata/cell-43.json",
+      "data/gaia/metadata/cell-44.json",
+      "data/gaia/metadata/cell-45.json",
+      "data/gaia/metadata/cell-46.json",
+      "data/gaia/metadata/cell-47.json",
+      "data/gaia/provenance/all-sky-pixel-00.adql",
+      "data/gaia/provenance/all-sky-pixel-00.csv",
+      "data/gaia/provenance/all-sky-pixel-00.request.json",
+      "data/gaia/provenance/all-sky-pixel-01.adql",
+      "data/gaia/provenance/all-sky-pixel-01.csv",
+      "data/gaia/provenance/all-sky-pixel-01.request.json",
+      "data/gaia/provenance/all-sky-pixel-02.adql",
+      "data/gaia/provenance/all-sky-pixel-02.csv",
+      "data/gaia/provenance/all-sky-pixel-02.request.json",
+      "data/gaia/provenance/all-sky-pixel-03.adql",
+      "data/gaia/provenance/all-sky-pixel-03.csv",
+      "data/gaia/provenance/all-sky-pixel-03.request.json",
+      "data/gaia/provenance/all-sky-pixel-04.adql",
+      "data/gaia/provenance/all-sky-pixel-04.csv",
+      "data/gaia/provenance/all-sky-pixel-04.request.json",
+      "data/gaia/provenance/all-sky-pixel-05.adql",
+      "data/gaia/provenance/all-sky-pixel-05.csv",
+      "data/gaia/provenance/all-sky-pixel-05.request.json",
+      "data/gaia/provenance/all-sky-pixel-06.adql",
+      "data/gaia/provenance/all-sky-pixel-06.csv",
+      "data/gaia/provenance/all-sky-pixel-06.request.json",
+      "data/gaia/provenance/all-sky-pixel-07.adql",
+      "data/gaia/provenance/all-sky-pixel-07.csv",
+      "data/gaia/provenance/all-sky-pixel-07.request.json",
+      "data/gaia/provenance/all-sky-pixel-08.adql",
+      "data/gaia/provenance/all-sky-pixel-08.csv",
+      "data/gaia/provenance/all-sky-pixel-08.request.json",
+      "data/gaia/provenance/all-sky-pixel-09.adql",
+      "data/gaia/provenance/all-sky-pixel-09.csv",
+      "data/gaia/provenance/all-sky-pixel-09.request.json",
+      "data/gaia/provenance/all-sky-pixel-10.adql",
+      "data/gaia/provenance/all-sky-pixel-10.csv",
+      "data/gaia/provenance/all-sky-pixel-10.request.json",
+      "data/gaia/provenance/all-sky-pixel-11.adql",
+      "data/gaia/provenance/all-sky-pixel-11.csv",
+      "data/gaia/provenance/all-sky-pixel-11.request.json",
+      "data/gaia/provenance/all-sky-pixel-12.adql",
+      "data/gaia/provenance/all-sky-pixel-12.csv",
+      "data/gaia/provenance/all-sky-pixel-12.request.json",
+      "data/gaia/provenance/all-sky-pixel-13.adql",
+      "data/gaia/provenance/all-sky-pixel-13.csv",
+      "data/gaia/provenance/all-sky-pixel-13.request.json",
+      "data/gaia/provenance/all-sky-pixel-14.adql",
+      "data/gaia/provenance/all-sky-pixel-14.csv",
+      "data/gaia/provenance/all-sky-pixel-14.request.json",
+      "data/gaia/provenance/all-sky-pixel-15.adql",
+      "data/gaia/provenance/all-sky-pixel-15.csv",
+      "data/gaia/provenance/all-sky-pixel-15.request.json",
+      "data/gaia/provenance/all-sky-pixel-16.adql",
+      "data/gaia/provenance/all-sky-pixel-16.csv",
+      "data/gaia/provenance/all-sky-pixel-16.request.json",
+      "data/gaia/provenance/all-sky-pixel-17.adql",
+      "data/gaia/provenance/all-sky-pixel-17.csv",
+      "data/gaia/provenance/all-sky-pixel-17.request.json",
+      "data/gaia/provenance/all-sky-pixel-18.adql",
+      "data/gaia/provenance/all-sky-pixel-18.csv",
+      "data/gaia/provenance/all-sky-pixel-18.request.json",
+      "data/gaia/provenance/all-sky-pixel-19.adql",
+      "data/gaia/provenance/all-sky-pixel-19.csv",
+      "data/gaia/provenance/all-sky-pixel-19.request.json",
+      "data/gaia/provenance/all-sky-pixel-20.adql",
+      "data/gaia/provenance/all-sky-pixel-20.csv",
+      "data/gaia/provenance/all-sky-pixel-20.request.json",
+      "data/gaia/provenance/all-sky-pixel-21.adql",
+      "data/gaia/provenance/all-sky-pixel-21.csv",
+      "data/gaia/provenance/all-sky-pixel-21.request.json",
+      "data/gaia/provenance/all-sky-pixel-22.adql",
+      "data/gaia/provenance/all-sky-pixel-22.csv",
+      "data/gaia/provenance/all-sky-pixel-22.request.json",
+      "data/gaia/provenance/all-sky-pixel-23.adql",
+      "data/gaia/provenance/all-sky-pixel-23.csv",
+      "data/gaia/provenance/all-sky-pixel-23.request.json",
+      "data/gaia/provenance/all-sky-pixel-24.adql",
+      "data/gaia/provenance/all-sky-pixel-24.csv",
+      "data/gaia/provenance/all-sky-pixel-24.request.json",
+      "data/gaia/provenance/all-sky-pixel-25.adql",
+      "data/gaia/provenance/all-sky-pixel-25.csv",
+      "data/gaia/provenance/all-sky-pixel-25.request.json",
+      "data/gaia/provenance/all-sky-pixel-26.adql",
+      "data/gaia/provenance/all-sky-pixel-26.csv",
+      "data/gaia/provenance/all-sky-pixel-26.request.json",
+      "data/gaia/provenance/all-sky-pixel-27.adql",
+      "data/gaia/provenance/all-sky-pixel-27.csv",
+      "data/gaia/provenance/all-sky-pixel-27.request.json",
+      "data/gaia/provenance/all-sky-pixel-28.adql",
+      "data/gaia/provenance/all-sky-pixel-28.csv",
+      "data/gaia/provenance/all-sky-pixel-28.request.json",
+      "data/gaia/provenance/all-sky-pixel-29.adql",
+      "data/gaia/provenance/all-sky-pixel-29.csv",
+      "data/gaia/provenance/all-sky-pixel-29.request.json",
+      "data/gaia/provenance/all-sky-pixel-30.adql",
+      "data/gaia/provenance/all-sky-pixel-30.csv",
+      "data/gaia/provenance/all-sky-pixel-30.request.json",
+      "data/gaia/provenance/all-sky-pixel-31.adql",
+      "data/gaia/provenance/all-sky-pixel-31.csv",
+      "data/gaia/provenance/all-sky-pixel-31.request.json",
+      "data/gaia/provenance/all-sky-pixel-32.adql",
+      "data/gaia/provenance/all-sky-pixel-32.csv",
+      "data/gaia/provenance/all-sky-pixel-32.request.json",
+      "data/gaia/provenance/all-sky-pixel-33.adql",
+      "data/gaia/provenance/all-sky-pixel-33.csv",
+      "data/gaia/provenance/all-sky-pixel-33.request.json",
+      "data/gaia/provenance/all-sky-pixel-34.adql",
+      "data/gaia/provenance/all-sky-pixel-34.csv",
+      "data/gaia/provenance/all-sky-pixel-34.request.json",
+      "data/gaia/provenance/all-sky-pixel-35.adql",
+      "data/gaia/provenance/all-sky-pixel-35.csv",
+      "data/gaia/provenance/all-sky-pixel-35.request.json",
+      "data/gaia/provenance/all-sky-pixel-36.adql",
+      "data/gaia/provenance/all-sky-pixel-36.csv",
+      "data/gaia/provenance/all-sky-pixel-36.request.json",
+      "data/gaia/provenance/all-sky-pixel-37.adql",
+      "data/gaia/provenance/all-sky-pixel-37.csv",
+      "data/gaia/provenance/all-sky-pixel-37.request.json",
+      "data/gaia/provenance/all-sky-pixel-38.adql",
+      "data/gaia/provenance/all-sky-pixel-38.csv",
+      "data/gaia/provenance/all-sky-pixel-38.request.json",
+      "data/gaia/provenance/all-sky-pixel-39.adql",
+      "data/gaia/provenance/all-sky-pixel-39.csv",
+      "data/gaia/provenance/all-sky-pixel-39.request.json",
+      "data/gaia/provenance/all-sky-pixel-40.adql",
+      "data/gaia/provenance/all-sky-pixel-40.csv",
+      "data/gaia/provenance/all-sky-pixel-40.request.json",
+      "data/gaia/provenance/all-sky-pixel-41.adql",
+      "data/gaia/provenance/all-sky-pixel-41.csv",
+      "data/gaia/provenance/all-sky-pixel-41.request.json",
+      "data/gaia/provenance/all-sky-pixel-42.adql",
+      "data/gaia/provenance/all-sky-pixel-42.csv",
+      "data/gaia/provenance/all-sky-pixel-42.request.json",
+      "data/gaia/provenance/all-sky-pixel-43.adql",
+      "data/gaia/provenance/all-sky-pixel-43.csv",
+      "data/gaia/provenance/all-sky-pixel-43.request.json",
+      "data/gaia/provenance/all-sky-pixel-44.adql",
+      "data/gaia/provenance/all-sky-pixel-44.csv",
+      "data/gaia/provenance/all-sky-pixel-44.request.json",
+      "data/gaia/provenance/all-sky-pixel-45.adql",
+      "data/gaia/provenance/all-sky-pixel-45.csv",
+      "data/gaia/provenance/all-sky-pixel-45.request.json",
+      "data/gaia/provenance/all-sky-pixel-46.adql",
+      "data/gaia/provenance/all-sky-pixel-46.csv",
+      "data/gaia/provenance/all-sky-pixel-46.request.json",
+      "data/gaia/provenance/all-sky-pixel-47.adql",
+      "data/gaia/provenance/all-sky-pixel-47.csv",
+      "data/gaia/provenance/all-sky-pixel-47.request.json",
+      "data/gaia/provenance/tap-schema-distance.adql",
+      "data/gaia/provenance/tap-schema-distance.csv",
+      "data/gaia/provenance/tap-schema-distance.request.json",
+      "data/gaia/provenance/tap-schema-gaia-source.adql",
+      "data/gaia/provenance/tap-schema-gaia-source.csv",
+      "data/gaia/provenance/tap-schema-gaia-source.request.json",
+      "data/gaia/provenance/verification-sources.adql",
+      "data/gaia/provenance/verification-sources.csv",
+      "data/gaia/provenance/verification-sources.request.json",
+      "data/rotation/dr3plus-2023.json",
+      "reports/experiment-browser-validation.json",
+      "reports/gaia-cpu-benchmark.json",
+      "reports/gaia-dop853-reference.json",
+      "reports/gaia-orbit-reference-input.json",
+      "reports/progressive-benchmark.json",
+      "reports/rotation-evidence.json",
+      "reports/rotation-fit-independent.json",
+      "reports/test-gaia-python.txt",
+      "reports/test-results-gaia.tap",
+      "reports/validation-gaia-data.json",
+      "reports/validation-gaia-preview.json",
+      "reports/validation-gaia-webgpu.json",
+      "scripts/benchmark-gaia.mjs",
+      "scripts/benchmark-progressive.mjs",
+      "scripts/prepare_gaia.py",
+      "scripts/requirements-gaia.txt",
+      "scripts/validate-gaia-orbits.mjs",
+      "scripts/validate_gaia_orbits.py",
+      "scripts/validate_rotation_fit.py",
+      "src/analysis/rotation-evidence.js",
+      "src/analysis/rotation-panel.js",
+      "src/compute/gaia-gpu.js",
+      "src/compute/gaia-validation.js",
+      "src/compute/gaia-worker.js",
+      "src/experiment/controller.js",
+      "src/experiment/engine.js",
+      "src/experiment/gpu-state.js",
+      "src/experiment/storage.js",
+      "src/experiment/worker.js",
+      "src/gaia/catalog.js",
+      "src/gaia/controller.js",
+      "src/physics/tracers.js",
+      "src/render/density-worker.js",
+      "src/render/density.js",
+      "src/render/gaia-renderer.js",
+      "src/render/structure.js",
+      "tests/browser-experiment.html",
+      "tests/browser-gaia-gpu.html",
+      "tests/experiment-browser.js",
+      "tests/experiment.test.mjs",
+      "tests/gaia-catalog.test.mjs",
+      "tests/gaia-gpu-validation.js",
+      "tests/gaia-render.test.mjs",
+      "tests/rotation-evidence.test.mjs",
+      "tests/test_gaia_data.py",
+      "tests/tracers.test.mjs"
+    ],
+    "added": [
+      "AUDITORIA_MOTOR.md",
+      "VALIDACAO_ATUAL.md",
+      "reports/benchmark-gpu.json",
+      "reports/build-validation.json",
+      "reports/cleanup-manifest.json",
+      "reports/gaia-preservation-integrity.json",
+      "reports/validation-galaxy-webgpu.json",
+      "reports/validation-render-webgpu.json",
+      "reports/validation-summary-current.json",
+      "src/compute/scheduling.js",
+      "src/render/particle-style.js",
+      "tests/render.test.mjs"
+    ]
+  },
+  "inventory": {
+    "algorithm": "SHA-256",
+    "fileCount": 61,
+    "totalBytes": 928165,
+    "excludes": [
+      ".git",
+      "dist",
+      "downloads",
+      "node_modules",
+      "__pycache__",
+      "reports/release-manifest.json"
+    ]
+  },
+  "files": [
+    {
+      "file": ".gitattributes",
+      "bytes": 8,
+      "sha256": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da"
+    },
+    {
+      "file": ".gitignore",
+      "bytes": 53,
+      "sha256": "466bbb43da931fb73f01cb88e8368abd9eb68f001c8246c63696739e9c85b78b"
+    },
+    {
+      "file": "assets/uems.png",
+      "bytes": 157824,
+      "sha256": "c76e47a6e54df98014906d0652f0c5a275f10fb3d17b228d2450ec40e0927c36"
+    },
+    {
+      "file": "AUDITORIA_MOTOR.md",
+      "bytes": 10779,
+      "sha256": "cae841119182a6c016a78e2a31b00691d029d62e52ea22de2e80e2a776335333"
+    },
+    {
+      "file": "index.html",
+      "bytes": 10441,
+      "sha256": "042dade64149192cb491b12c01fe92fcad56a563c6bd4d45793552c227474b2b"
+    },
+    {
+      "file": "INICIAR_WINDOWS.cmd",
+      "bytes": 351,
+      "sha256": "eac8cc56805f1f8ec9fbd1c50df83522e60291c8b4031c2a080fa588e5777d19"
+    },
+    {
+      "file": "package.json",
+      "bytes": 429,
+      "sha256": "401d263739881a898943a79207aa69e5b30a0770caecdb523711ce1d05f59de4"
+    },
+    {
+      "file": "PARAMETROS_E_FONTES.md",
+      "bytes": 18181,
+      "sha256": "b0249557ece9c895154bdeca7c3546b47d46b768ef0f4ae5c4aea588483000df"
+    },
+    {
+      "file": "README.md",
+      "bytes": 16108,
+      "sha256": "50ee2b21f4a30f6c2842048f51cca07554b37f2074ba3585ae5021f5d29877c1"
+    },
+    {
+      "file": "reports/benchmark-cpu.json",
+      "bytes": 9767,
+      "sha256": "db7ece69a5fc447b178bab08395a32e63e9bb735e0990c551d76005331ae27f6"
+    },
+    {
+      "file": "reports/benchmark-gpu-100000.json",
+      "bytes": 3831,
+      "sha256": "515aa59cd1609361145c0a4edc91333e2bfba7b4f319b0888378d2aa9d97e03f"
+    },
+    {
+      "file": "reports/benchmark-gpu.json",
+      "bytes": 11380,
+      "sha256": "3f7ecf8dbda2d04aa3d66ee316385cc4315d3a57932c48467d0bc6008ee1cb43"
+    },
+    {
+      "file": "reports/browser-ui.json",
+      "bytes": 2394,
+      "sha256": "69256c413d457a7245bc175c5f4396388ca3d13840bd5542d2afa238896d5a59"
+    },
+    {
+      "file": "reports/build-validation.json",
+      "bytes": 568,
+      "sha256": "4a435b340041440db8e78bd4a95d8001b22e874db51b4e9e4d805e69130ccedb"
+    },
+    {
+      "file": "reports/cleanup-manifest.json",
+      "bytes": 13923,
+      "sha256": "6c249cb4f2c969fe0408be5c4ff9591dcdfad1dbf182c61340e4b1bf050f2236"
+    },
+    {
+      "file": "reports/gaia-preservation-integrity.json",
+      "bytes": 2991,
+      "sha256": "b561ac03b65fcb053ea9a7b45ff6ac8b744990ce9a0fece35e2d2070f0cec7f5"
+    },
+    {
+      "file": "reports/initial-audit.json",
+      "bytes": 70476,
+      "sha256": "f1de7ed4bf2cf02e0080b5ae0060a7fd7a9e550c5e575659229ca5e915cb031c"
+    },
+    {
+      "file": "reports/preview-desktop.jpg",
+      "bytes": 100025,
+      "sha256": "069626b569fbede4730181ce6c89c16dd142e35e1d7d694c0b3def6b4744562d"
+    },
+    {
+      "file": "reports/preview-mobile.jpg",
+      "bytes": 170521,
+      "sha256": "ab1a7d58927dcd96a9bf43cbafcbf70ed99a15598b079e2ee2f89c295bb580d8"
+    },
+    {
+      "file": "reports/review-export-validation.json",
+      "bytes": 802,
+      "sha256": "b6e67da005c4bcfbde9a2ddfab3998fa392ca66db7037b0cb477bbffd96a7579"
+    },
+    {
+      "file": "reports/rotation-analytic.csv",
+      "bytes": 11842,
+      "sha256": "6058cb1993cff42f059b1a19377e04cdf8a3fabe7f2461bc6af11324e34ea09f"
+    },
+    {
+      "file": "reports/test-results.tap",
+      "bytes": 8978,
+      "sha256": "7f58a6099663de4473231471474f266d6113cf539545863113ac75c1c2e45423"
+    },
+    {
+      "file": "reports/validation-galaxy-webgpu.json",
+      "bytes": 11468,
+      "sha256": "151c8fc6cd2c0834b2795900302e573567249ee53ef2a5e2c0446803f7da89ae"
+    },
+    {
+      "file": "reports/validation-galaxy.json",
+      "bytes": 4570,
+      "sha256": "1a89489bd0af600c1f27c72221f483fcf574e7d20c9643d5aa3c792f0015fd47"
+    },
+    {
+      "file": "reports/validation-render-webgpu.json",
+      "bytes": 391,
+      "sha256": "d8aef753e6528fa49978dc8e6f4bdf7d1426b4ee2594ba02ff185b0e660f4691"
+    },
+    {
+      "file": "reports/validation-summary-current.json",
+      "bytes": 56442,
+      "sha256": "d2b687cca504f067e4d9ec578728b887748ccccea8b69a27ba68612814eee28b"
+    },
+    {
+      "file": "reports/validation-webgpu.json",
+      "bytes": 8819,
+      "sha256": "a38da1c262c11d82a6ae3d28e1614f7b99815ad02109098d1813aab59ba12c48"
+    },
+    {
+      "file": "scripts/audit-initial.mjs",
+      "bytes": 7632,
+      "sha256": "93393d98903f01b16d3ab7e7a5893375732dcff4a8368666f4a50cb9a944fd36"
+    },
+    {
+      "file": "scripts/benchmark.mjs",
+      "bytes": 5292,
+      "sha256": "369386cd2d1d627239a472444d05795427574c93f34cf04b0ed82a9dc8c897a0"
+    },
+    {
+      "file": "scripts/build.mjs",
+      "bytes": 820,
+      "sha256": "b418ade0237a3d61aae61f9abf4aa2a22e65a10b9f238c82d35a7ae1a0197b57"
+    },
+    {
+      "file": "scripts/review-assets.mjs",
+      "bytes": 1921,
+      "sha256": "2bf43a3bca98463831e7b795eedf6bc1d89f137b4c230a98e13d77969688111e"
+    },
+    {
+      "file": "scripts/serve.mjs",
+      "bytes": 1248,
+      "sha256": "e425396a6128201c901e8695f7180927b2040129c0d156bf67de946983150776"
+    },
+    {
+      "file": "scripts/validate-galaxy.mjs",
+      "bytes": 2589,
+      "sha256": "e2389e4a02a4484637aa6efbbfbe6ea921588991a3030d592df5cfbc41a24acf"
+    },
+    {
+      "file": "src/compute/capability.js",
+      "bytes": 6362,
+      "sha256": "637aa622654cb378ec9f5a4374481a62acd9f60744d5a8986c479d41de2fd46e"
+    },
+    {
+      "file": "src/compute/gpu.js",
+      "bytes": 27254,
+      "sha256": "c2feb955d4a4edb80cb694c9b6b92c31d71e1c1b3181700e20d3238ec443b39f"
+    },
+    {
+      "file": "src/compute/scheduling.js",
+      "bytes": 341,
+      "sha256": "60e7bd7f5f570229ce198c47c0b900913d3ad5317c56edf7b530542f8430d1c4"
+    },
+    {
+      "file": "src/compute/worker.js",
+      "bytes": 3532,
+      "sha256": "aa8a2ff0634a7ce64cee1bc0dafdff0e8fd7f14f7c13559b6fa7f1728014a66b"
+    },
+    {
+      "file": "src/export/review.js",
+      "bytes": 5684,
+      "sha256": "31b4d013555f4b60a0c4ed1ac95d3d6760d916d94c593d015dfcf1e2d8d9e606"
+    },
+    {
+      "file": "src/export/state.js",
+      "bytes": 592,
+      "sha256": "0ec67fb03f648f8a446e228cc152c6b9d2313e69ba2b66a7c4eb77afb2055f4c"
+    },
+    {
+      "file": "src/export/zip.js",
+      "bytes": 2489,
+      "sha256": "ecf658fc7efeaff9fde346092bbde4884959419a021b52ae159c4531ce3fa9db"
+    },
+    {
+      "file": "src/main.js",
+      "bytes": 24069,
+      "sha256": "d13a29f75f2e747a79f66d0cece73efe7857c65edc89b24b541ba7d266a56fd3"
+    },
+    {
+      "file": "src/physics/constants.js",
+      "bytes": 774,
+      "sha256": "4b1c2a1d96453b95c8e57a45f46443083e77d54e1714aadc7d060de0d9aa22ca"
+    },
+    {
+      "file": "src/physics/diagnostics.js",
+      "bytes": 3909,
+      "sha256": "dfea146e90de10fc1412e5c3dec9c0c2c231ff342ff06194db2d4f1e15902d5d"
+    },
+    {
+      "file": "src/physics/forces.js",
+      "bytes": 14253,
+      "sha256": "9532d4286c6481d49995ece96e48bd595145c2e2c8a22897520cafa45f862444"
+    },
+    {
+      "file": "src/physics/initial.js",
+      "bytes": 6554,
+      "sha256": "93ca8666ff188863b947dc8535ca23244d67c20ab2a177cb12e494cf566eeefa"
+    },
+    {
+      "file": "src/physics/integrator.js",
+      "bytes": 2379,
+      "sha256": "433880162ae754dd3bada1fad9e2538239b42d3d43f20f96f7e1465135a1ce6f"
+    },
+    {
+      "file": "src/physics/models.js",
+      "bytes": 3657,
+      "sha256": "2215cd8332d06b4d18b3ef707c5000992b5db730d104c654ef7ddba7ac9102f3"
+    },
+    {
+      "file": "src/render/camera.js",
+      "bytes": 5619,
+      "sha256": "faaa725427d1c78a3efbc0bd5ba63db2b4c31f7e0d121156f81f1032bb18cc83"
+    },
+    {
+      "file": "src/render/gpu-renderer.js",
+      "bytes": 6871,
+      "sha256": "0837ecd1dea9361f7de01641cd8985b37e747ad63712a0f321ba75bc8f86de33"
+    },
+    {
+      "file": "src/render/particle-style.js",
+      "bytes": 3335,
+      "sha256": "aa45e5469be99a31c1438b1fb05c3881b44cc8e015c016efb623a0acffacd6a5"
+    },
+    {
+      "file": "src/render/webgl-renderer.js",
+      "bytes": 8271,
+      "sha256": "856dad630b3ba50420d3be836dbf55af837983087ffa0f6d4ae747f8bfe58e80"
+    },
+    {
+      "file": "style.css",
+      "bytes": 17292,
+      "sha256": "ca9f6c435b0632f42c0eb4b5ea2589f08ff7a4b1ad3840e6e4882af1fcb42219"
+    },
+    {
+      "file": "tests/browser-gpu.html",
+      "bytes": 6869,
+      "sha256": "1bf64e544088d5bd4d2d69b622f0dad014deb99a13b3327bc6547e86d328d24f"
+    },
+    {
+      "file": "tests/capability.test.mjs",
+      "bytes": 2909,
+      "sha256": "1b3ea402cf54929db0500850bb4b14d2521ec680dcf98c0d817f721f7aaced04"
+    },
+    {
+      "file": "tests/core.test.mjs",
+      "bytes": 14887,
+      "sha256": "8a3c6d70a8ee2b26b6a35064ec004107c127ec0bfc10928eeef51570c38362e5"
+    },
+    {
+      "file": "tests/models.test.mjs",
+      "bytes": 3145,
+      "sha256": "89bfbea9bd61de31edcb287494a17cfbae8ea45b7d3d925ffba1020de80855bb"
+    },
+    {
+      "file": "tests/render.test.mjs",
+      "bytes": 3231,
+      "sha256": "2bbf0ee6340d7015d64845ff50e9b859221d1158844a9aa86a7fd46d72e16fa3"
+    },
+    {
+      "file": "tests/review-export.test.mjs",
+      "bytes": 1465,
+      "sha256": "27d47edfbdb3502a0078396450c44ac9a2e80f5a43752122a4126f3307bf8e6f"
+    },
+    {
+      "file": "VALIDACAO.md",
+      "bytes": 15135,
+      "sha256": "3f9a6b0752b63bcd0508bc80663fa1779e02e283453f6f9806a4e4664cf9c899"
+    },
+    {
+      "file": "VALIDACAO_ATUAL.md",
+      "bytes": 14171,
+      "sha256": "7ac1512c887372e12747b4c3e9c29730a1c502c78d030f589258d0aa2cb2c7f0"
+    },
+    {
+      "file": "vercel.json",
+      "bytes": 252,
+      "sha256": "fe60947332c6276ffd6809d7f635c8de5d2b54170426f4a2bd7d38a99f2b617c"
+    }
+  ],
+  "finalBrowserReport": "reports/browser-ui.json",
+  "exportValidation": "reports/review-export-validation.json",
+  "buildValidation": "reports/build-validation.json",
+  "publicDeployment": "Autor publicará manualmente; esta atualização foi executada e conferida localmente."
+}

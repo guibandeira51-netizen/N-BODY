@@ -1,0 +1,262 @@
+TAP version 13
+# Subtest: admission distinguishes buffer limits, configured budget, and missing hardware
+ok 1 - admission distinguishes buffer limits, configured budget, and missing hardware
+  ---
+  duration_ms: 1.0662
+  type: 'test'
+  ...
+# Subtest: 2D dispatch admission uses actual adapter dimensions, not a fixed particle ceiling
+ok 2 - 2D dispatch admission uses actual adapter dimensions, not a fixed particle ceiling
+  ---
+  duration_ms: 0.1814
+  type: 'test'
+  ...
+# Subtest: resource estimate includes simultaneous CPU snapshot, f32 packing, GPU and staging
+ok 3 - resource estimate includes simultaneous CPU snapshot, f32 packing, GPU and staging
+  ---
+  duration_ms: 0.913
+  type: 'test'
+  ...
+# Subtest: automatic policy requires a measured benchmark for the requested N and available resources
+ok 4 - automatic policy requires a measured benchmark for the requested N and available resources
+  ---
+  duration_ms: 0.2641
+  type: 'test'
+  ...
+# Subtest: runtime report is serializable and memory policy is explicitly bounded
+ok 5 - runtime report is serializable and memory policy is explicitly bounded
+  ---
+  duration_ms: 0.401
+  type: 'test'
+  ...
+# Subtest: direct pair force follows the 3D Plummer law and Newton third law
+ok 6 - direct pair force follows the 3D Plummer law and Newton third law
+  ---
+  duration_ms: 1.1402
+  type: 'test'
+  ...
+# Subtest: single particle has zero self force and zero self potential
+ok 7 - single particle has zero self force and zero self potential
+  ---
+  duration_ms: 0.6453
+  type: 'test'
+  ...
+# Subtest: exact potential matches the gradient of softened pair energy
+ok 8 - exact potential matches the gradient of softened pair energy
+  ---
+  duration_ms: 0.1716
+  type: 'test'
+  ...
+# Subtest: coincident positions stay finite with softening and reject singular unsoftened force
+ok 9 - coincident positions stay finite with softening and reject singular unsoftened force
+  ---
+  duration_ms: 0.3801
+  type: 'test'
+  ...
+# Subtest: softening sensitivity follows its analytic acceleration ratio
+ok 10 - softening sensitivity follows its analytic acceleration ratio
+  ---
+  duration_ms: 0.1519
+  type: 'test'
+  ...
+# Subtest: direct force is invariant under translations and scales linearly with source mass
+ok 11 - direct force is invariant under translations and scales linearly with source mass
+  ---
+  duration_ms: 0.1967
+  type: 'test'
+  ...
+# Subtest: KDK initializes acceleration and keeps physical time independent of batching
+ok 12 - KDK initializes acceleration and keeps physical time independent of batching
+  ---
+  duration_ms: 1.0391
+  type: 'test'
+  ...
+# Subtest: two-body circular orbit conserves energy, linear momentum and angular momentum over five periods
+ok 13 - two-body circular orbit conserves energy, linear momentum and angular momentum over five periods
+  ---
+  duration_ms: 6.4494
+  type: 'test'
+  ...
+# Subtest: global orbit error converges at second order when the timestep is halved
+ok 14 - global orbit error converges at second order when the timestep is halved
+  ---
+  duration_ms: 0.713
+  type: 'test'
+  ...
+# Subtest: KDK is time reversible when velocities are reversed
+ok 15 - KDK is time reversible when velocities are reversed
+  ---
+  duration_ms: 0.5076
+  type: 'test'
+  ...
+# Subtest: component diagnostics measure mass and size without changing the physical state
+ok 16 - component diagnostics measure mass and size without changing the physical state
+  ---
+  duration_ms: 0.3773
+  type: 'test'
+  ...
+# Subtest: invalid input fails before integration
+ok 17 - invalid input fails before integration
+  ---
+  duration_ms: 0.3908
+  type: 'test'
+  ...
+# Subtest: force output rejects overlapping views before changing any physical array
+ok 18 - force output rejects overlapping views before changing any physical array
+  ---
+  duration_ms: 0.592
+  type: 'test'
+  ...
+# Subtest: force output permits disjoint views in the same buffer
+ok 19 - force output permits disjoint views in the same buffer
+  ---
+  duration_ms: 0.6348
+  type: 'test'
+  ...
+# Subtest: KDK rejects nonfinite velocities and epochs without mutating the state
+ok 20 - KDK rejects nonfinite velocities and epochs without mutating the state
+  ---
+  duration_ms: 0.469
+  type: 'test'
+  ...
+# Subtest: GPU rejects a nonfinite epoch before accessing device resources
+ok 21 - GPU rejects a nonfinite epoch before accessing device resources
+  ---
+  duration_ms: 0.7661
+  type: 'test'
+  ...
+# Subtest: real 3D octree with theta=0 agrees with the exact particle force and potential
+ok 22 - real 3D octree with theta=0 agrees with the exact particle force and potential
+  ---
+  duration_ms: 13.3254
+  type: 'test'
+  ...
+# Subtest: Barnes–Hut normalized RMS force error decreases with opening angle
+ok 23 - Barnes–Hut normalized RMS force error decreases with opening angle
+  ---
+  duration_ms: 25.5609
+  type: 'test'
+  ...
+# Subtest: octree duplicate leaves are finite and exclude self force and self potential
+ok 24 - octree duplicate leaves are finite and exclude self force and self potential
+  ---
+  duration_ms: 0.5432
+  type: 'test'
+  ...
+# Subtest: octree excludes targets inside accepted nodes, including zero-mass tracers
+ok 25 - octree excludes targets inside accepted nodes, including zero-mass tracers
+  ---
+  duration_ms: 4.1324
+  type: 'test'
+  ...
+# Subtest: octree handles spatial subdivisions approaching machine precision
+ok 26 - octree handles spatial subdivisions approaching machine precision
+  ---
+  duration_ms: 0.3577
+  type: 'test'
+  ...
+# Subtest: Barnes–Hut forces are translation invariant and preserve masses and component labels
+ok 27 - Barnes–Hut forces are translation invariant and preserve masses and component labels
+  ---
+  duration_ms: 1.3567
+  type: 'test'
+  ...
+# Subtest: Barnes–Hut potential respects the same softening and is labeled approximate
+ok 28 - Barnes–Hut potential respects the same softening and is labeled approximate
+  ---
+  duration_ms: 5.9478
+  type: 'test'
+  ...
+# Subtest: Barnes–Hut KDK recalculates forces from evolving positions
+ok 29 - Barnes–Hut KDK recalculates forces from evolving positions
+  ---
+  duration_ms: 0.8186
+  type: 'test'
+  ...
+# Subtest: unit conversion and nominal solar GM remain consistent
+ok 30 - unit conversion and nominal solar GM remain consistent
+  ---
+  duration_ms: 0.716
+  type: 'test'
+  ...
+# Subtest: analytic acceleration is the negative potential gradient in full 3D
+ok 31 - analytic acceleration is the negative potential gradient in full 3D
+  ---
+  duration_ms: 0.2846
+  type: 'test'
+  ...
+# Subtest: rotation contributions add as v squared and disk formula is axisymmetric
+ok 32 - rotation contributions add as v squared and disk formula is axisymmetric
+  ---
+  duration_ms: 0.1292
+  type: 'test'
+  ...
+# Subtest: r200 is a derived mean density and NFW outer taper is finite and smooth
+ok 33 - r200 is a derived mean density and NFW outer taper is finite and smooth
+  ---
+  duration_ms: 0.1392
+  type: 'test'
+  ...
+# Subtest: NFW stable central series preserves small positive enclosed mass
+ok 34 - NFW stable central series preserves small positive enclosed mass
+  ---
+  duration_ms: 0.1049
+  type: 'test'
+  ...
+# Subtest: exact MN radial integration reproduces its vertical marginal
+ok 35 - exact MN radial integration reproduces its vertical marginal
+  ---
+  duration_ms: 7.8655
+  type: 'test'
+  ...
+# Subtest: spatial samplers follow cumulative profiles statistically
+ok 36 - spatial samplers follow cumulative profiles statistically
+  ---
+  duration_ms: 26.5174
+  type: 'test'
+  ...
+# Subtest: seed and masses are reproducible and remain fixed when N changes
+ok 37 - seed and masses are reproducible and remain fixed when N changes
+  ---
+  duration_ms: 790.8058
+  type: 'test'
+  ...
+# Subtest: visual exposure uses actual component counts without changing a realization
+ok 38 - visual exposure uses actual component counts without changing a realization
+  ---
+  duration_ms: 478.7106
+  type: 'test'
+  ...
+# Subtest: perspective display is bounded and zoom recovers individual point contrast
+ok 39 - perspective display is bounded and zoom recovers individual point contrast
+  ---
+  duration_ms: 0.2935
+  type: 'test'
+  ...
+# Subtest: camera views preserve the target, distance and physical particle coordinates
+ok 40 - camera views preserve the target, distance and physical particle coordinates
+  ---
+  duration_ms: 0.5603
+  type: 'test'
+  ...
+# Subtest: Review ZIP preserves CRC32, UTF-8, quoted CSV values and missing fields
+ok 41 - Review ZIP preserves CRC32, UTF-8, quoted CSV values and missing fields
+  ---
+  duration_ms: 1.9681
+  type: 'test'
+  ...
+# Subtest: Synthetic export copies are independent and CSV reports the actual massive state and epoch
+ok 42 - Synthetic export copies are independent and CSV reports the actual massive state and epoch
+  ---
+  duration_ms: 1.1948
+  type: 'test'
+  ...
+1..42
+# tests 42
+# suites 0
+# pass 42
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 959.6919

@@ -1,0 +1,41 @@
+{
+  "python": "3.12.14",
+  "numpy": "2.5.4",
+  "matplotlib": "3.11.2",
+  "inputSha256": "506e357eeee3e26926b6843828c5a0eaf31f6038259b4df7d705f0feb5cf5910",
+  "ensembles": [
+    {
+      "N": 1000,
+      "seeds": 3,
+      "diskHeightChangeMeanPercent": 63.94413501303916,
+      "sampleSDPercent": 9.092633996027986,
+      "exploratoryMean95TInterval": [
+        41.35678000351348,
+        86.53149002256484
+      ],
+      "assumption": "Independent seeds, approximate normal distribution of changes; three seeds insufficient to validate this assumption or global equilibrium."
+    },
+    {
+      "N": 2000,
+      "seeds": 3,
+      "diskHeightChangeMeanPercent": 42.79518839189543,
+      "sampleSDPercent": 14.890448570881784,
+      "exploratoryMean95TInterval": [
+        5.805263550698079,
+        79.78511323309277
+      ],
+      "assumption": "Independent seeds, approximate normal distribution of changes; three seeds insufficient to validate this assumption or global equilibrium."
+    },
+    {
+      "N": 4000,
+      "seeds": 3,
+      "diskHeightChangeMeanPercent": 27.8769428140719,
+      "sampleSDPercent": 3.825276385689622,
+      "exploratoryMean95TInterval": [
+        18.374429486154938,
+        37.37945614198886
+      ],
+      "assumption": "Independent seeds, approximate normal distribution of changes; three seeds insufficient to validate this assumption or global equilibrium."
+    }
+  ]
+}

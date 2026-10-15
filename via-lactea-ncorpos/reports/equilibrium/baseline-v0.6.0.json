@@ -1,0 +1,318 @@
+{
+  "schema": "nbody-equilibrium-baseline-v1",
+  "version": "0.6.0",
+  "sourceGitCommit": "51dd8cb1c7ee68187bc092b226369f2f920ad663",
+  "recordedUTC": "2026-10-12T03:50:14.249Z",
+  "purpose": "Fresh reproduction before physics modifications; historic reports preserved separately.",
+  "commands": [
+    "node --test",
+    "node scripts/validate-galaxy.mjs"
+  ],
+  "tests": {
+    "passed": 42,
+    "failed": 0,
+    "durationMs": 972.788,
+    "log": "baseline-v0.6.0-tests.tap"
+  },
+  "validation": {
+    "exitCode": 0,
+    "wallClockSeconds": 8.4655578,
+    "exactlyMatchesHistoricalReportExcludingDate": true,
+    "log": "baseline-v0.6.0-structural.log"
+  },
+  "sourceSha256": {
+    "src/physics/initial.js": "93ca8666ff188863b947dc8535ca23244d67c20ab2a177cb12e494cf566eeefa",
+    "src/physics/models.js": "2215cd8332d06b4d18b3ef707c5000992b5db730d104c654ef7ddba7ac9102f3",
+    "src/physics/constants.js": "4b1c2a1d96453b95c8e57a45f46443083e77d54e1714aadc7d060de0d9aa22ca",
+    "src/physics/forces.js": "9532d4286c6481d49995ece96e48bd595145c2e2c8a22897520cafa45f862444",
+    "src/physics/integrator.js": "433880162ae754dd3bada1fad9e2538239b42d3d43f20f96f7e1465135a1ce6f",
+    "src/physics/diagnostics.js": "dfea146e90de10fc1412e5c3dec9c0c2c231ff342ff06194db2d4f1e15902d5d",
+    "src/compute/gpu.js": "c2feb955d4a4edb80cb694c9b6b92c31d71e1c1b3181700e20d3238ec443b39f",
+    "src/compute/worker.js": "aa8a2ff0634a7ce64cee1bc0dafdff0e8fd7f14f7c13559b6fa7f1728014a66b",
+    "scripts/validate-galaxy.mjs": "e2389e4a02a4484637aa6efbbfbe6ea921588991a3030d592df5cfbc41a24acf"
+  },
+  "historicalFilesSha256": {
+    "AUDITORIA_MOTOR.md": "cae841119182a6c016a78e2a31b00691d029d62e52ea22de2e80e2a776335333",
+    "benchmark-cpu.json": "db7ece69a5fc447b178bab08395a32e63e9bb735e0990c551d76005331ae27f6",
+    "benchmark-gpu-100000.json": "515aa59cd1609361145c0a4edc91333e2bfba7b4f319b0888378d2aa9d97e03f",
+    "benchmark-gpu.json": "3f7ecf8dbda2d04aa3d66ee316385cc4315d3a57932c48467d0bc6008ee1cb43",
+    "browser-ui.json": "69256c413d457a7245bc175c5f4396388ca3d13840bd5542d2afa238896d5a59",
+    "build-validation.json": "4a435b340041440db8e78bd4a95d8001b22e874db51b4e9e4d805e69130ccedb",
+    "cleanup-manifest.json": "6c249cb4f2c969fe0408be5c4ff9591dcdfad1dbf182c61340e4b1bf050f2236",
+    "gaia-preservation-integrity.json": "b561ac03b65fcb053ea9a7b45ff6ac8b744990ce9a0fece35e2d2070f0cec7f5",
+    "initial-audit.json": "f1de7ed4bf2cf02e0080b5ae0060a7fd7a9e550c5e575659229ca5e915cb031c",
+    "PARAMETROS_E_FONTES.md": "b0249557ece9c895154bdeca7c3546b47d46b768ef0f4ae5c4aea588483000df",
+    "preview-desktop.jpg": "069626b569fbede4730181ce6c89c16dd142e35e1d7d694c0b3def6b4744562d",
+    "preview-mobile.jpg": "ab1a7d58927dcd96a9bf43cbafcbf70ed99a15598b079e2ee2f89c295bb580d8",
+    "README.md": "50ee2b21f4a30f6c2842048f51cca07554b37f2074ba3585ae5021f5d29877c1",
+    "release-manifest.json": "7c3ce5bbf4cabd908ec8b3b30045befb0812ba75545a5eb5dc336b6c5805eb0e",
+    "review-export-validation.json": "b6e67da005c4bcfbde9a2ddfab3998fa392ca66db7037b0cb477bbffd96a7579",
+    "rotation-analytic.csv": "6058cb1993cff42f059b1a19377e04cdf8a3fabe7f2461bc6af11324e34ea09f",
+    "test-results.tap": "7f58a6099663de4473231471474f266d6113cf539545863113ac75c1c2e45423",
+    "VALIDACAO_ATUAL.md": "7ac1512c887372e12747b4c3e9c29730a1c502c78d030f589258d0aa2cb2c7f0",
+    "validation-galaxy-webgpu.json": "151c8fc6cd2c0834b2795900302e573567249ee53ef2a5e2c0446803f7da89ae",
+    "validation-galaxy.json": "1a89489bd0af600c1f27c72221f483fcf574e7d20c9643d5aa3c792f0015fd47",
+    "validation-render-webgpu.json": "d8aef753e6528fa49978dc8e6f4bdf7d1426b4ee2594ba02ff185b0e660f4691",
+    "validation-summary-current.json": "d2b687cca504f067e4d9ec578728b887748ccccea8b69a27ba68612814eee28b",
+    "validation-webgpu.json": "a38da1c262c11d82a6ae3d28e1614f7b99815ad02109098d1813aab59ba12c48"
+  },
+  "measurements": {
+    "dateUTC": "2026-10-12T03:49:15.487Z",
+    "qualification": "Short-time diagnostics of approximate Jeans initial conditions; not a proof of long-term collisionless equilibrium",
+    "runs": [
+      {
+        "withHalo": false,
+        "n": 2000,
+        "seed": 2026,
+        "physicalMyr": 20,
+        "algorithm": "barnes-hut",
+        "dt": 0.1,
+        "epsilon": 0.1,
+        "theta": 0.5,
+        "errorsFromExactEnergy": {
+          "energy": 0.00012959882649471658,
+          "momentum": 3.332061414682211e-18,
+          "angularMomentum": 0.00004547750513392274,
+          "mass": 0,
+          "energyApproximate": false
+        },
+        "initial": [
+          {
+            "component": 0,
+            "n": 500,
+            "halfMassRadius": 1.9778028987928071,
+            "medianHeight": 0.9497018746213924
+          },
+          {
+            "component": 1,
+            "n": 1500,
+            "halfMassRadius": 5.523264648912022,
+            "medianHeight": 0.1750352336712898
+          },
+          {
+            "component": 2,
+            "n": 0,
+            "halfMassRadius": null,
+            "medianHeight": null
+          }
+        ],
+        "final": [
+          {
+            "component": 0,
+            "n": 500,
+            "halfMassRadius": 2.3588724571138524,
+            "medianHeight": 0.9296099833635209
+          },
+          {
+            "component": 1,
+            "n": 1500,
+            "halfMassRadius": 5.697022967905961,
+            "medianHeight": 0.20420975830639143
+          },
+          {
+            "component": 2,
+            "n": 0,
+            "halfMassRadius": null,
+            "medianHeight": null
+          }
+        ],
+        "initialMeta": {
+          "seed": 2026,
+          "withHalo": false,
+          "counts": [
+            500,
+            1500,
+            0
+          ],
+          "masses": [
+            0.5,
+            6.8,
+            0
+          ],
+          "initialization": "Jeans + Satoh k=1, Gaussiana aproximada; pares antipodais",
+          "clippedStreaming": 0,
+          "unbound": 2,
+          "centerShift": [
+            0,
+            0,
+            0
+          ]
+        },
+        "finite": true
+      },
+      {
+        "withHalo": true,
+        "n": 2000,
+        "seed": 2026,
+        "physicalMyr": 20,
+        "algorithm": "barnes-hut",
+        "dt": 0.1,
+        "epsilon": 0.1,
+        "theta": 0.5,
+        "errorsFromExactEnergy": {
+          "energy": 0.00007892593064906391,
+          "momentum": 4.796382187530415e-18,
+          "angularMomentum": 0.000013032025371624559,
+          "mass": 0,
+          "energyApproximate": false
+        },
+        "initial": [
+          {
+            "component": 0,
+            "n": 300,
+            "halfMassRadius": 2.075399735382245,
+            "medianHeight": 0.9317351826532282
+          },
+          {
+            "component": 1,
+            "n": 900,
+            "halfMassRadius": 5.339197831638355,
+            "medianHeight": 0.17208026752091837
+          },
+          {
+            "component": 2,
+            "n": 800,
+            "halfMassRadius": 71.79455859801564,
+            "medianHeight": 27.190637335896202
+          }
+        ],
+        "final": [
+          {
+            "component": 0,
+            "n": 300,
+            "halfMassRadius": 3.0100582652065335,
+            "medianHeight": 1.123080477585164
+          },
+          {
+            "component": 1,
+            "n": 900,
+            "halfMassRadius": 5.828028049721205,
+            "medianHeight": 0.2751238171991968
+          },
+          {
+            "component": 2,
+            "n": 800,
+            "halfMassRadius": 71.70371056332199,
+            "medianHeight": 26.732019186260622
+          }
+        ],
+        "initialMeta": {
+          "seed": 2026,
+          "withHalo": true,
+          "counts": [
+            300,
+            900,
+            800
+          ],
+          "masses": [
+            0.5,
+            6.8,
+            97.6315764173288
+          ],
+          "initialization": "Jeans + Satoh k=1, Gaussiana aproximada; pares antipodais",
+          "clippedStreaming": 0,
+          "unbound": 8,
+          "centerShift": [
+            0,
+            0,
+            0
+          ]
+        },
+        "finite": true
+      }
+    ],
+    "forceComparison": [
+      {
+        "n": 1000,
+        "theta": 0.8,
+        "relativeRms": 0.014114633168880925
+      },
+      {
+        "n": 1000,
+        "theta": 0.5,
+        "relativeRms": 0.002577573825692624
+      },
+      {
+        "n": 1000,
+        "theta": 0.3,
+        "relativeRms": 0.0003358696688488869
+      },
+      {
+        "n": 1000,
+        "theta": 0.1,
+        "relativeRms": 0.000004637989966774384
+      }
+    ],
+    "rotationAtSolarRadius": [
+      {
+        "withHalo": false,
+        "Rkpc": 8.2,
+        "vcKpcPerMyr": 0.17899202895879407
+      },
+      {
+        "withHalo": true,
+        "Rkpc": 8.2,
+        "vcKpcPerMyr": 0.23465631688021077
+      }
+    ]
+  },
+  "structuralChanges": [
+    {
+      "n": 2000,
+      "withHalo": false,
+      "physicalMyr": 20,
+      "components": [
+        {
+          "component": 0,
+          "n": 500,
+          "halfMassRadiusChangeFraction": 0.19267317211115365,
+          "medianHeightChangeFraction": -0.021155998313556412
+        },
+        {
+          "component": 1,
+          "n": 1500,
+          "halfMassRadiusChangeFraction": 0.03145935059044591,
+          "medianHeightChangeFraction": 0.1666780111819679
+        },
+        {
+          "component": 2,
+          "n": 0,
+          "halfMassRadiusChangeFraction": null,
+          "medianHeightChangeFraction": null
+        }
+      ]
+    },
+    {
+      "n": 2000,
+      "withHalo": true,
+      "physicalMyr": 20,
+      "components": [
+        {
+          "component": 0,
+          "n": 300,
+          "halfMassRadiusChangeFraction": 0.450351088462553,
+          "medianHeightChangeFraction": 0.2053644624506472
+        },
+        {
+          "component": 1,
+          "n": 900,
+          "halfMassRadiusChangeFraction": 0.09155499262196276,
+          "medianHeightChangeFraction": 0.5988109570189522
+        },
+        {
+          "component": 2,
+          "n": 800,
+          "halfMassRadiusChangeFraction": -0.0012653888604889918,
+          "medianHeightChangeFraction": -0.016866767187914578
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "These are final-minus-initial measurements after 20 Myr, not maximum trajectory errors or equilibrium certification.",
+    "The existing profile is number-median, equivalent to component half mass only because component particle masses are equal.",
+    "Antipodal pairing suppresses net momentum errors and does not certify generic Barnes–Hut momentum conservation.",
+    "GPU reports in the historical directory are archived measurements; WebGPU was not rerun for this CPU baseline.",
+    "No 50,000-body 178.8 Myr input snapshot was found or analyzed by this stage."
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "dateUTC": "2026-10-12T03:09:46.137Z",
+  "version": "0.6.0",
+  "scope": "Verificação funcional e visual da interface; não certifica equilíbrio secular.",
+  "cpu": {
+    "n": 10000,
+    "backend": "CPU Worker f64",
+    "algorithm": "Barnes-Hut theta=0.5",
+    "firstPause": {
+      "compute-time": "5.33 s",
+      "diagnostic-time": "Diagnóstico em 1.800 Myr.",
+      "status": "Simulação pausada.",
+      "steps": "18",
+      "time": "1.80 Myr"
+    },
+    "secondPause": {
+      "compute-time": "9.36 s",
+      "count": "10.000",
+      "diagnostic-time": "Diagnóstico em 3.400 Myr.",
+      "render-count": "Seleção visual: 6.000 corpos após filtros; a câmera pode recortar o campo.",
+      "steps": "34",
+      "time": "3.40 Myr"
+    },
+    "pausedClockRecheck": {
+      "steps": "34",
+      "time": "3.40 Myr"
+    },
+    "resumeContinuesState": true,
+    "pauseSnapshotAndDiagnosticSameEpoch": true,
+    "visibleCounts": 6000,
+    "haloHiddenAndGravitating": true
+  },
+  "gpu": {
+    "n": 10000,
+    "backend": "WebGPU direct f32",
+    "paused": {
+      "compute-time": "7.14 s",
+      "diagnostic-time": "Diagnóstico em 498.400 Myr.",
+      "error-angular": "1.31e-7",
+      "error-energy": "2.71e-2 % (U árvore)",
+      "error-momentum": "2.88e-8",
+      "steps": "4.984",
+      "time": "498.40 Myr"
+    },
+    "haloToggle": {
+      "integrated": 10000,
+      "selectedBefore": 6000,
+      "selectedAfter": 10000,
+      "timeUnchangedMyr": 0
+    },
+    "downloadedJSONIndependentCheck": true
+  },
+  "render": {
+    "webgl": true,
+    "webgpu": true,
+    "top": true,
+    "side": true,
+    "free": true,
+    "header": {
+      "uemsLogoWidth": 255,
+      "noHorizontalOverflow": true
+    },
+    "mobile": {
+      "width": 390,
+      "body": 375,
+      "viewport": 375,
+      "noHorizontalOverflow": true
+    }
+  },
+  "exports": {
+    "json": "downloaded and independently parsed",
+    "zip": "Downloaded actual ZIP: CRC all entries, 56 reference asset SHA256s, 10000 CSV rows, finite fields, counts 1500/4500/4000 and identical snapshot/diagnostic epoch independently passed"
+  },
+  "limitations": [
+    "UI run at 498.4 Myr is not an independent test of structural stability.",
+    "GPU energy displayed in main N=10000 run used the approximate tree diagnostic."
+  ],
+  "finalPreview": {
+    "n": 10000,
+    "backend": "gpu",
+    "timeMyr": 0,
+    "haloVisible": false
+  }
+}

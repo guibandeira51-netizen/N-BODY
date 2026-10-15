@@ -1,0 +1,5112 @@
+{
+  "schema": 1,
+  "createdAt": "2026-10-12T03:54:52.609Z",
+  "qualification": "Independent spatial audit of historical sampler and initial-state tails; no dynamical stability inference is drawn from spatial agreement.",
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1"
+  },
+  "inputSha256": "de7bad12785e6d05adba3f99dd01adad375da0d167250f408bf86ea44b8a5ce8",
+  "sourceSha256": {
+    "initial": "93ca8666ff188863b947dc8535ca23244d67c20ab2a177cb12e494cf566eeefa",
+    "models": "2215cd8332d06b4d18b3ef707c5000992b5db730d104c654ef7ddba7ac9102f3",
+    "constants": "4b1c2a1d96453b95c8e57a45f46443083e77d54e1714aadc7d060de0d9aa22ca"
+  },
+  "physicalParameters": {
+    "bulgeMass": 0.5,
+    "bulgeScale": 1,
+    "diskMass": 6.8,
+    "diskA": 3,
+    "diskB": 0.28,
+    "haloMassScale": 54,
+    "haloScale": 15.62
+  },
+  "units": {
+    "length": "kpc",
+    "time": "Myr",
+    "mass": "1e10 Msun",
+    "velocity": "kpc/Myr",
+    "energy": "1e10 Msun kpc^2/Myr^2",
+    "angularMomentum": "1e10 Msun kpc^2/Myr"
+  },
+  "derivation": {
+    "q": "sqrt(z^2+b^2)",
+    "A": "a+q",
+    "verticalDensity": "p(z)=b^2/(2 q^3)",
+    "conditionalRadialSurvival": "(a/A) A/sqrt(R^2+A^2) + (q/A) A^3/(R^2+A^2)^(3/2)",
+    "fullJoint": "p(z)*p(R|z)=2*pi*R*rho_MN(R,z)/M; azimuth is uniform",
+    "note": "Analytic identity is checked against independent two-dimensional density integration, not just marginal empirical CDFs."
+  },
+  "scientificNotes": [
+    "Hernquist and Miyamoto-Nagai spatial tails are untruncated; extreme radii are not discarded.",
+    "Number and mass fractions coincide within each original equal-mass component but not across components.",
+    "Per-particle potentials/virials in galaxyRealizations use the smooth analytic reference field, not a discrete softened N-body force. Half m Phi apportions continuum self energy; it is not a replacement for measured discrete conservation diagnostics.",
+    "Antipodal partners do not double the independent spatial sample size. Main generator COM recentering matters for odd component counts.",
+    "Global spatial moments can be dominated by heavy tails; quantile profiles and aperture-labelled measures are reported separately."
+  ],
+  "referenceSources": [
+    {
+      "title": "Miyamoto & Nagai (1975), Three-Dimensional Models for the Distribution of Mass in Galaxies",
+      "url": "https://doi.org/10.1093/pasj/27.4.533"
+    },
+    {
+      "title": "Hernquist (1990), An Analytical Model for Spherical Galaxies and Bulges",
+      "url": "https://doi.org/10.1086/168845"
+    }
+  ],
+  "diskJointIntegratedMassFraction": 1.0,
+  "diskJointRegions": [
+    {
+      "RRangeKpc": [
+        0,
+        1
+      ],
+      "absoluteZRangeKpc": [
+        0,
+        0.1
+      ],
+      "theoreticalMassFraction": 0.016944344688778513,
+      "estimatedQuadratureAbsoluteError": 1.881200161066689e-16,
+      "meanObservedFraction": 0.017336666666666667,
+      "seedStandardDeviation": 0.00011150485789118556,
+      "seedMeanT95": [
+        0.017059673244135813,
+        0.01761366008919752
+      ],
+      "pooledWilson95": [
+        0.016875749165249383,
+        0.017809944885268384
+      ]
+    },
+    {
+      "RRangeKpc": [
+        0,
+        1
+      ],
+      "absoluteZRangeKpc": [
+        0.1,
+        0.28
+      ],
+      "theoreticalMassFraction": 0.018565512493698876,
+      "estimatedQuadratureAbsoluteError": 2.06118594344705e-16,
+      "meanObservedFraction": 0.018443333333333336,
+      "seedStandardDeviation": 0.00022368132093076782,
+      "seedMeanT95": [
+        0.017887678128595087,
+        0.018998988538071585
+      ],
+      "pooledWilson95": [
+        0.017967997966363024,
+        0.018931001076421455
+      ]
+    },
+    {
+      "RRangeKpc": [
+        0,
+        1
+      ],
+      "absoluteZRangeKpc": [
+        0.28,
+        0.56
+      ],
+      "theoreticalMassFraction": 0.009175262804398381,
+      "estimatedQuadratureAbsoluteError": 1.0186588022429866e-16,
+      "meanObservedFraction": 0.009063333333333333,
+      "seedStandardDeviation": 0.00029280255007996947,
+      "seedMeanT95": [
+        0.008335971476583015,
+        0.00979069519008365
+      ],
+      "pooledWilson95": [
+        0.008730442770858216,
+        0.009408796488075258
+      ]
+    },
+    {
+      "RRangeKpc": [
+        0,
+        1
+      ],
+      "absoluteZRangeKpc": [
+        0.56,
+        1.12
+      ],
+      "theoreticalMassFraction": 0.0034831694885434166,
+      "estimatedQuadratureAbsoluteError": 3.8670949648527316e-17,
+      "meanObservedFraction": 0.0034333333333333334,
+      "seedStandardDeviation": 0.00014189197769195168,
+      "seedMeanT95": [
+        0.0030808541205539198,
+        0.003785812546112747
+      ],
+      "pooledWilson95": [
+        0.0032302823379490747,
+        0.003649101101892585
+      ]
+    },
+    {
+      "RRangeKpc": [
+        0,
+        1
+      ],
+      "absoluteZRangeKpc": [
+        1.12,
+        2.24
+      ],
+      "theoreticalMassFraction": 0.0008622198027992027,
+      "estimatedQuadratureAbsoluteError": 9.572562773554368e-18,
+      "meanObservedFraction": 0.0008066666666666668,
+      "seedStandardDeviation": 9.073771725877468e-05,
+      "seedMeanT95": [
+        0.0005812616813460059,
+        0.0010320716519873277
+      ],
+      "pooledWilson95": [
+        0.0007112664994083967,
+        0.0009148508744508195
+      ]
+    },
+    {
+      "RRangeKpc": [
+        0,
+        1
+      ],
+      "absoluteZRangeKpc": [
+        2.24,
+        4.48
+      ],
+      "theoreticalMassFraction": 0.00015738988838373563,
+      "estimatedQuadratureAbsoluteError": 1.7473787792680677e-18,
+      "meanObservedFraction": 0.00014000000000000001,
+      "seedStandardDeviation": 4e-05,
+      "seedMeanT95": [
+        4.0634491529986815e-05,
+        0.00023936550847001323
+      ],
+      "pooledWilson95": [
+        0.00010358264012142039,
+        0.00018921847333615998
+      ]
+    },
+    {
+      "RRangeKpc": [
+        0,
+        1
+      ],
+      "absoluteZRangeKpc": [
+        4.48,
+        8.96
+      ],
+      "theoreticalMassFraction": 2.149190940857983e-05,
+      "estimatedQuadratureAbsoluteError": 2.386081266856336e-19,
+      "meanObservedFraction": 2.666666666666667e-05,
+      "seedStandardDeviation": 1.5275252316519466e-05,
+      "seedMeanT95": [
+        -1.1279163669300926e-05,
+        6.461249700263426e-05
+      ],
+      "pooledWilson95": [
+        1.3512723226860634e-05,
+        5.262462596244173e-05
+      ]
+    },
+    {
+      "RRangeKpc": [
+        0,
+        1
+      ],
+      "absoluteZRangeKpc": [
+        8.96,
+        null
+      ],
+      "theoreticalMassFraction": 2.444295735544036e-06,
+      "estimatedQuadratureAbsoluteError": 2.7137134045940717e-20,
+      "meanObservedFraction": 0.0,
+      "seedStandardDeviation": 0.0,
+      "seedMeanT95": [
+        0.0,
+        0.0
+      ],
+      "pooledWilson95": [
+        0,
+        1.280469877323692e-05
+      ]
+    },
+    {
+      "RRangeKpc": [
+        1,
+        2
+      ],
+      "absoluteZRangeKpc": [
+        0,
+        0.1
+      ],
+      "theoreticalMassFraction": 0.03884836511686588,
+      "estimatedQuadratureAbsoluteError": 4.313034942178926e-16,
+      "meanObservedFraction": 0.03908333333333333,
+      "seedStandardDeviation": 0.0006504101270224277,
+      "seedMeanT95": [
+        0.03746762500869259,
+        0.04069904165797407
+      ],
+      "pooledWilson95": [
+        0.038395747037483066,
+        0.03978272342733606
+      ]
+    },
+    {
+      "RRangeKpc": [
+        1,
+        2
+      ],
+      "absoluteZRangeKpc": [
+        0.1,
+        0.28
+      ],
+      "theoreticalMassFraction": 0.042679010720759115,
+      "estimatedQuadratureAbsoluteError": 4.738322037041067e-16,
+      "meanObservedFraction": 0.04265333333333333,
+      "seedStandardDeviation": 0.0006206716791777551,
+      "seedMeanT95": [
+        0.04111149940847247,
+        0.04419516725819419
+      ],
+      "pooledWilson95": [
+        0.04193607009394746,
+        0.04338230894532243
+      ]
+    },
+    {
+      "RRangeKpc": [
+        1,
+        2
+      ],
+      "absoluteZRangeKpc": [
+        0.28,
+        0.56
+      ],
+      "theoreticalMassFraction": 0.021285160701074612,
+      "estimatedQuadratureAbsoluteError": 2.3631275493179576e-16,
+      "meanObservedFraction": 0.021096666666666666,
+      "seedStandardDeviation": 0.0001800925687898686,
+      "seedMeanT95": [
+        0.020649291924929765,
+        0.021544041408403568
+      ],
+      "pooledWilson95": [
+        0.02058852746590744,
+        0.021617070293275552
+      ]
+    },
+    {
+      "RRangeKpc": [
+        1,
+        2
+      ],
+      "absoluteZRangeKpc": [
+        0.56,
+        1.12
+      ],
+      "theoreticalMassFraction": 0.008265256791974557,
+      "estimatedQuadratureAbsoluteError": 9.176278394889612e-17,
+      "meanObservedFraction": 0.008043333333333333,
+      "seedStandardDeviation": 0.0001715614564327703,
+      "seedMeanT95": [
+        0.007617151049525877,
+        0.008469515617140789
+      ],
+      "pooledWilson95": [
+        0.007729939494095722,
+        0.008369325886423251
+      ]
+    },
+    {
+      "RRangeKpc": [
+        1,
+        2
+      ],
+      "absoluteZRangeKpc": [
+        1.12,
+        2.24
+      ],
+      "theoreticalMassFraction": 0.0021434502724504666,
+      "estimatedQuadratureAbsoluteError": 2.379707844613573e-17,
+      "meanObservedFraction": 0.0019533333333333334,
+      "seedStandardDeviation": 0.0001222020185321558,
+      "seedMeanT95": [
+        0.0016497666906455924,
+        0.0022568999760210744
+      ],
+      "pooledWilson95": [
+        0.001801585217829868,
+        0.0021178361239201616
+      ]
+    },
+    {
+      "RRangeKpc": [
+        1,
+        2
+      ],
+      "absoluteZRangeKpc": [
+        2.24,
+        4.48
+      ],
+      "theoreticalMassFraction": 0.00041774481724111913,
+      "estimatedQuadratureAbsoluteError": 4.637899145189185e-18,
+      "meanObservedFraction": 0.00046333333333333334,
+      "seedStandardDeviation": 1.1547005383792514e-05,
+      "seedMeanT95": [
+        0.0004346489818016703,
+        0.0004920176848649964
+      ],
+      "pooledWilson95": [
+        0.0003924574454893948,
+        0.0005470020542629789
+      ]
+    },
+    {
+      "RRangeKpc": [
+        1,
+        2
+      ],
+      "absoluteZRangeKpc": [
+        4.48,
+        8.96
+      ],
+      "theoreticalMassFraction": 6.060452563320353e-05,
+      "estimatedQuadratureAbsoluteError": 6.728453975446805e-19,
+      "meanObservedFraction": 4.6666666666666665e-05,
+      "seedStandardDeviation": 2.516611478423583e-05,
+      "seedMeanT95": [
+        -1.584942812709108e-05,
+        0.0001091827614604244
+      ],
+      "pooledWilson95": [
+        2.779971948047442e-05,
+        7.8337117520877e-05
+      ]
+    },
+    {
+      "RRangeKpc": [
+        1,
+        2
+      ],
+      "absoluteZRangeKpc": [
+        8.96,
+        null
+      ],
+      "theoreticalMassFraction": 7.1655266527901225e-06,
+      "estimatedQuadratureAbsoluteError": 7.955332673492824e-20,
+      "meanObservedFraction": 3.3333333333333337e-06,
+      "seedStandardDeviation": 5.773502691896258e-06,
+      "seedMeanT95": [
+        -1.1008842432498206e-05,
+        1.7675509099164873e-05
+      ],
+      "pooledWilson95": [
+        5.884154254530793e-07,
+        1.888286464979202e-05
+      ]
+    },
+    {
+      "RRangeKpc": [
+        2,
+        4
+      ],
+      "absoluteZRangeKpc": [
+        0,
+        0.1
+      ],
+      "theoreticalMassFraction": 0.07814281830397195,
+      "estimatedQuadratureAbsoluteError": 8.675595609016978e-16,
+      "meanObservedFraction": 0.07816,
+      "seedStandardDeviation": 0.0004504442251822061,
+      "seedMeanT95": [
+        0.07704103451318471,
+        0.07927896548681528
+      ],
+      "pooledWilson95": [
+        0.07720487006027389,
+        0.07912593300798708
+      ]
+    },
+    {
+      "RRangeKpc": [
+        2,
+        4
+      ],
+      "absoluteZRangeKpc": [
+        0.1,
+        0.28
+      ],
+      "theoreticalMassFraction": 0.08616355262476662,
+      "estimatedQuadratureAbsoluteError": 9.566076000751723e-16,
+      "meanObservedFraction": 0.08616333333333333,
+      "seedStandardDeviation": 0.0012263903674333576,
+      "seedMeanT95": [
+        0.08311681077226478,
+        0.08920985589440188
+      ],
+      "pooledWilson95": [
+        0.08516451088647314,
+        0.08717275388790946
+      ]
+    },
+    {
+      "RRangeKpc": [
+        2,
+        4
+      ],
+      "absoluteZRangeKpc": [
+        0.28,
+        0.56
+      ],
+      "theoreticalMassFraction": 0.04354609162885755,
+      "estimatedQuadratureAbsoluteError": 4.834587355879444e-16,
+      "meanObservedFraction": 0.043583333333333335,
+      "seedStandardDeviation": 0.0011619954102032122,
+      "seedMeanT95": [
+        0.040696776713966744,
+        0.046469889952699926
+      ],
+      "pooledWilson95": [
+        0.042858573069662606,
+        0.04431978215286757
+      ]
+    },
+    {
+      "RRangeKpc": [
+        2,
+        4
+      ],
+      "absoluteZRangeKpc": [
+        0.56,
+        1.12
+      ],
+      "theoreticalMassFraction": 0.017551189799806965,
+      "estimatedQuadratureAbsoluteError": 1.9485735025311885e-16,
+      "meanObservedFraction": 0.017703333333333335,
+      "seedStandardDeviation": 0.000609289203361862,
+      "seedMeanT95": [
+        0.01618977504589982,
+        0.01921689162076685
+      ],
+      "pooledWilson95": [
+        0.01723758644574442,
+        0.018181431547994252
+      ]
+    },
+    {
+      "RRangeKpc": [
+        2,
+        4
+      ],
+      "absoluteZRangeKpc": [
+        1.12,
+        2.24
+      ],
+      "theoreticalMassFraction": 0.004986924511598038,
+      "estimatedQuadratureAbsoluteError": 5.536598414843705e-17,
+      "meanObservedFraction": 0.00491,
+      "seedStandardDeviation": 0.00022113344387495948,
+      "seedMeanT95": [
+        0.004360674072740989,
+        0.005459325927259012
+      ],
+      "pooledWilson95": [
+        0.0046661344363931965,
+        0.005166544520238087
+      ]
+    },
+    {
+      "RRangeKpc": [
+        2,
+        4
+      ],
+      "absoluteZRangeKpc": [
+        2.24,
+        4.48
+      ],
+      "theoreticalMassFraction": 0.0011369166556452395,
+      "estimatedQuadratureAbsoluteError": 1.2622310481771754e-17,
+      "meanObservedFraction": 0.0011133333333333334,
+      "seedStandardDeviation": 8.144527815247075e-05,
+      "seedMeanT95": [
+        0.0009110120464307855,
+        0.0013156546202358812
+      ],
+      "pooledWilson95": [
+        0.0010002189827484297,
+        0.0012392238708955386
+      ]
+    },
+    {
+      "RRangeKpc": [
+        2,
+        4
+      ],
+      "absoluteZRangeKpc": [
+        4.48,
+        8.96
+      ],
+      "theoreticalMassFraction": 0.0001962349554680258,
+      "estimatedQuadratureAbsoluteError": 2.178645657968945e-18,
+      "meanObservedFraction": 0.00020666666666666666,
+      "seedStandardDeviation": 4.04145188432738e-05,
+      "seedMeanT95": [
+        0.00010627143630584589,
+        0.0003070618970274874
+      ],
+      "pooledWilson95": [
+        0.00016123285057677669,
+        0.00026489988892096724
+      ]
+    },
+    {
+      "RRangeKpc": [
+        2,
+        4
+      ],
+      "absoluteZRangeKpc": [
+        8.96,
+        null
+      ],
+      "theoreticalMassFraction": 2.6375724289305744e-05,
+      "estimatedQuadratureAbsoluteError": 2.9282936397152232e-19,
+      "meanObservedFraction": 1.6666666666666667e-05,
+      "seedStandardDeviation": 2.081665999466133e-05,
+      "seedMeanT95": [
+        -3.504478345875597e-05,
+        6.837811679208931e-05
+      ],
+      "pooledWilson95": [
+        7.119024135280933e-06,
+        3.9018581147996884e-05
+      ]
+    },
+    {
+      "RRangeKpc": [
+        4,
+        8
+      ],
+      "absoluteZRangeKpc": [
+        0,
+        0.1
+      ],
+      "theoreticalMassFraction": 0.08412801332529013,
+      "estimatedQuadratureAbsoluteError": 9.340085740970907e-16,
+      "meanObservedFraction": 0.08372333333333333,
+      "seedStandardDeviation": 0.0013191411347287043,
+      "seedMeanT95": [
+        0.08044640509343264,
+        0.08700026157323403
+      ],
+      "pooledWilson95": [
+        0.08273754067994805,
+        0.08471978658136457
+      ]
+    },
+    {
+      "RRangeKpc": [
+        4,
+        8
+      ],
+      "absoluteZRangeKpc": [
+        0.1,
+        0.28
+      ],
+      "theoreticalMassFraction": 0.09290608519521719,
+      "estimatedQuadratureAbsoluteError": 1.031464749115165e-15,
+      "meanObservedFraction": 0.09344000000000001,
+      "seedStandardDeviation": 0.0003629049462324794,
+      "seedMeanT95": [
+        0.09253849413728318,
+        0.09434150586271683
+      ],
+      "pooledWilson95": [
+        0.09240371660843484,
+        0.09448669514823162
+      ]
+    },
+    {
+      "RRangeKpc": [
+        4,
+        8
+      ],
+      "absoluteZRangeKpc": [
+        0.28,
+        0.56
+      ],
+      "theoreticalMassFraction": 0.047253141140680965,
+      "estimatedQuadratureAbsoluteError": 5.246152528024624e-16,
+      "meanObservedFraction": 0.047466666666666664,
+      "seedStandardDeviation": 0.0013928866907732779,
+      "seedMeanT95": [
+        0.044006544309921646,
+        0.05092678902341168
+      ],
+      "pooledWilson95": [
+        0.04671155394697731,
+        0.04823336849239238
+      ]
+    },
+    {
+      "RRangeKpc": [
+        4,
+        8
+      ],
+      "absoluteZRangeKpc": [
+        0.56,
+        1.12
+      ],
+      "theoreticalMassFraction": 0.019492234991348327,
+      "estimatedQuadratureAbsoluteError": 2.1640728088799052e-16,
+      "meanObservedFraction": 0.019473333333333332,
+      "seedStandardDeviation": 0.0006092892033618622,
+      "seedMeanT95": [
+        0.017959775045899816,
+        0.020986891620766848
+      ],
+      "pooledWilson95": [
+        0.018984984211307107,
+        0.0199739884537979
+      ]
+    },
+    {
+      "RRangeKpc": [
+        4,
+        8
+      ],
+      "absoluteZRangeKpc": [
+        1.12,
+        2.24
+      ],
+      "theoreticalMassFraction": 0.006015561057965528,
+      "estimatedQuadratureAbsoluteError": 6.678614392591795e-17,
+      "meanObservedFraction": 0.00627,
+      "seedStandardDeviation": 0.0003218695387886215,
+      "seedMeanT95": [
+        0.0054704317404315,
+        0.0070695682595685
+      ],
+      "pooledWilson95": [
+        0.005993794118479079,
+        0.0065588500093715415
+      ]
+    },
+    {
+      "RRangeKpc": [
+        4,
+        8
+      ],
+      "absoluteZRangeKpc": [
+        2.24,
+        4.48
+      ],
+      "theoreticalMassFraction": 0.0016994727259384945,
+      "estimatedQuadratureAbsoluteError": 1.886793750059395e-17,
+      "meanObservedFraction": 0.00162,
+      "seedStandardDeviation": 0.00011789826122551594,
+      "seedMeanT95": [
+        0.0013271244831399042,
+        0.0019128755168600956
+      ],
+      "pooledWilson95": [
+        0.001482330461199334,
+        0.0017704327503498775
+      ]
+    },
+    {
+      "RRangeKpc": [
+        4,
+        8
+      ],
+      "absoluteZRangeKpc": [
+        4.48,
+        8.96
+      ],
+      "theoreticalMassFraction": 0.00041398446702459673,
+      "estimatedQuadratureAbsoluteError": 4.5961508712788115e-18,
+      "meanObservedFraction": 0.00038333333333333334,
+      "seedStandardDeviation": 2.88675134594813e-05,
+      "seedMeanT95": [
+        0.0003116224545041756,
+        0.00045504421216249107
+      ],
+      "pooledWilson95": [
+        0.00031939221061850576,
+        0.0004600693378856717
+      ]
+    },
+    {
+      "RRangeKpc": [
+        4,
+        8
+      ],
+      "absoluteZRangeKpc": [
+        8.96,
+        null
+      ],
+      "theoreticalMassFraction": 7.899564209177231e-05,
+      "estimatedQuadratureAbsoluteError": 8.770278069533378e-19,
+      "meanObservedFraction": 8.333333333333333e-05,
+      "seedStandardDeviation": 2.081665999466133e-05,
+      "seedMeanT95": [
+        3.162188320791069e-05,
+        0.00013504478345875598
+      ],
+      "pooledWilson95": [
+        5.644879698421866e-05,
+        0.0001230204343392227
+      ]
+    },
+    {
+      "RRangeKpc": [
+        8,
+        16
+      ],
+      "absoluteZRangeKpc": [
+        0,
+        0.1
+      ],
+      "theoreticalMassFraction": 0.056260837782378836,
+      "estimatedQuadratureAbsoluteError": 6.246207749069791e-16,
+      "meanObservedFraction": 0.05633,
+      "seedStandardDeviation": 0.00037027017163147126,
+      "seedMeanT95": [
+        0.055410197903113995,
+        0.057249802096886
+      ],
+      "pooledWilson95": [
+        0.05551064120415478,
+        0.05716072091725465
+      ]
+    },
+    {
+      "RRangeKpc": [
+        8,
+        16
+      ],
+      "absoluteZRangeKpc": [
+        0.1,
+        0.28
+      ],
+      "theoreticalMassFraction": 0.06208294837586524,
+      "estimatedQuadratureAbsoluteError": 6.892591872350056e-16,
+      "meanObservedFraction": 0.062323333333333335,
+      "seedStandardDeviation": 0.0006658328118479344,
+      "seedMeanT95": [
+        0.06066931293570112,
+        0.06397735373096555
+      ],
+      "pooledWilson95": [
+        0.06146387873156607,
+        0.06319399657085407
+      ]
+    },
+    {
+      "RRangeKpc": [
+        8,
+        16
+      ],
+      "absoluteZRangeKpc": [
+        0.28,
+        0.56
+      ],
+      "theoreticalMassFraction": 0.03149139693101332,
+      "estimatedQuadratureAbsoluteError": 3.496247395042098e-16,
+      "meanObservedFraction": 0.03128333333333334,
+      "seedStandardDeviation": 0.0006426766942509536,
+      "seedMeanT95": [
+        0.029686835920681505,
+        0.03287983074598517
+      ],
+      "pooledWilson95": [
+        0.030666375718779212,
+        0.031912294499340785
+      ]
+    },
+    {
+      "RRangeKpc": [
+        8,
+        16
+      ],
+      "absoluteZRangeKpc": [
+        0.56,
+        1.12
+      ],
+      "theoreticalMassFraction": 0.012910927460275789,
+      "estimatedQuadratureAbsoluteError": 1.4334008935663378e-16,
+      "meanObservedFraction": 0.013083333333333334,
+      "seedStandardDeviation": 9.073771725877533e-05,
+      "seedMeanT95": [
+        0.012857928348012672,
+        0.013308738318653996
+      ],
+      "pooledWilson95": [
+        0.012682904671153196,
+        0.013496231638002143
+      ]
+    },
+    {
+      "RRangeKpc": [
+        8,
+        16
+      ],
+      "absoluteZRangeKpc": [
+        1.12,
+        2.24
+      ],
+      "theoreticalMassFraction": 0.003979845571805046,
+      "estimatedQuadratureAbsoluteError": 4.418516188270434e-17,
+      "meanObservedFraction": 0.00403,
+      "seedStandardDeviation": 0.00019287301521985926,
+      "seedMeanT95": [
+        0.003550876869313352,
+        0.0045091231306866476
+      ],
+      "pooledWilson95": [
+        0.0038095572099370225,
+        0.0042631442829641
+      ]
+    },
+    {
+      "RRangeKpc": [
+        8,
+        16
+      ],
+      "absoluteZRangeKpc": [
+        2.24,
+        4.48
+      ],
+      "theoreticalMassFraction": 0.0012203791689422436,
+      "estimatedQuadratureAbsoluteError": 1.3548930521325926e-17,
+      "meanObservedFraction": 0.0012166666666666665,
+      "seedStandardDeviation": 4.932882862316248e-05,
+      "seedMeanT95": [
+        0.0010941270632073995,
+        0.0013392062701259335
+      ],
+      "pooledWilson95": [
+        0.0010981499282517943,
+        0.0013479569457544277
+      ]
+    },
+    {
+      "RRangeKpc": [
+        8,
+        16
+      ],
+      "absoluteZRangeKpc": [
+        4.48,
+        8.96
+      ],
+      "theoreticalMassFraction": 0.0004117545277482099,
+      "estimatedQuadratureAbsoluteError": 4.571393571997205e-18,
+      "meanObservedFraction": 0.00041000000000000005,
+      "seedStandardDeviation": 6.244997998398397e-05,
+      "seedMeanT95": [
+        0.0002548656496237322,
+        0.0005651343503762678
+      ],
+      "pooledWilson95": [
+        0.0003436736719510577,
+        0.0004891205269691851
+      ]
+    },
+    {
+      "RRangeKpc": [
+        8,
+        16
+      ],
+      "absoluteZRangeKpc": [
+        8.96,
+        null
+      ],
+      "theoreticalMassFraction": 0.0001433991715045202,
+      "estimatedQuadratureAbsoluteError": 2.99490697877789e-15,
+      "meanObservedFraction": 0.00014000000000000001,
+      "seedStandardDeviation": 2.0000000000000005e-05,
+      "seedMeanT95": [
+        9.03172457649934e-05,
+        0.00018968275423500664
+      ],
+      "pooledWilson95": [
+        0.00010358264012142039,
+        0.00018921847333615998
+      ]
+    },
+    {
+      "RRangeKpc": [
+        16,
+        32
+      ],
+      "absoluteZRangeKpc": [
+        0,
+        0.1
+      ],
+      "theoreticalMassFraction": 0.030614231034788424,
+      "estimatedQuadratureAbsoluteError": 3.398862417601614e-16,
+      "meanObservedFraction": 0.030550000000000004,
+      "seedStandardDeviation": 0.0008328865468957934,
+      "seedMeanT95": [
+        0.028480995119246653,
+        0.03261900488075335
+      ],
+      "pooledWilson95": [
+        0.029940162950561722,
+        0.031171859381116464
+      ]
+    },
+    {
+      "RRangeKpc": [
+        16,
+        32
+      ],
+      "absoluteZRangeKpc": [
+        0.1,
+        0.28
+      ],
+      "theoreticalMassFraction": 0.033759305974827285,
+      "estimatedQuadratureAbsoluteError": 3.7480358788618867e-16,
+      "meanObservedFraction": 0.033236666666666664,
+      "seedStandardDeviation": 0.0006798774399355617,
+      "seedMeanT95": [
+        0.03154775747875446,
+        0.034925575854578866
+      ],
+      "pooledWilson95": [
+        0.03260117933721553,
+        0.033884107523881254
+      ]
+    },
+    {
+      "RRangeKpc": [
+        16,
+        32
+      ],
+      "absoluteZRangeKpc": [
+        0.28,
+        0.56
+      ],
+      "theoreticalMassFraction": 0.017078192807407255,
+      "estimatedQuadratureAbsoluteError": 1.8960602873771277e-16,
+      "meanObservedFraction": 0.017240000000000002,
+      "seedStandardDeviation": 0.00011357816691600482,
+      "seedMeanT95": [
+        0.01695785619233248,
+        0.017522143807667524
+      ],
+      "pooledWilson95": [
+        0.016780364639682927,
+        0.0177119985530766
+      ]
+    },
+    {
+      "RRangeKpc": [
+        16,
+        32
+      ],
+      "absoluteZRangeKpc": [
+        0.56,
+        1.12
+      ],
+      "theoreticalMassFraction": 0.006937117986325121,
+      "estimatedQuadratureAbsoluteError": 7.701748112959451e-17,
+      "meanObservedFraction": 0.0072633333333333334,
+      "seedStandardDeviation": 4.0414518843273944e-05,
+      "seedMeanT95": [
+        0.007162938102972512,
+        0.007363728563694155
+      ],
+      "pooledWilson95": [
+        0.006965719861371775,
+        0.007573565494477283
+      ]
+    },
+    {
+      "RRangeKpc": [
+        16,
+        32
+      ],
+      "absoluteZRangeKpc": [
+        1.12,
+        2.24
+      ],
+      "theoreticalMassFraction": 0.0020716358319431156,
+      "estimatedQuadratureAbsoluteError": 2.2999777992617382e-17,
+      "meanObservedFraction": 0.0019333333333333331,
+      "seedStandardDeviation": 0.0001975685535031659,
+      "seedMeanT95": [
+        0.001442545838920156,
+        0.0024241208277465103
+      ],
+      "pooledWilson95": [
+        0.0017823941651676893,
+        0.002097027688770291
+      ]
+    },
+    {
+      "RRangeKpc": [
+        16,
+        32
+      ],
+      "absoluteZRangeKpc": [
+        2.24,
+        4.48
+      ],
+      "theoreticalMassFraction": 0.0005918524777782987,
+      "estimatedQuadratureAbsoluteError": 6.570882480109161e-18,
+      "meanObservedFraction": 0.0005366666666666667,
+      "seedStandardDeviation": 4.7258156262526106e-05,
+      "seedMeanT95": [
+        0.00041927089850713557,
+        0.0006540624348261979
+      ],
+      "pooledWilson95": [
+        0.00045994133305184956,
+        0.000626182955344704
+      ]
+    },
+    {
+      "RRangeKpc": [
+        16,
+        32
+      ],
+      "absoluteZRangeKpc": [
+        4.48,
+        8.96
+      ],
+      "theoreticalMassFraction": 0.0002035009400214773,
+      "estimatedQuadratureAbsoluteError": 2.2593142914470712e-18,
+      "meanObservedFraction": 0.00019666666666666669,
+      "seedStandardDeviation": 3.2145502536643177e-05,
+      "seedMeanT95": [
+        0.00011681281155222548,
+        0.0002765205217811079
+      ],
+      "pooledWilson95": [
+        0.00015248270586018344,
+        0.000253650289731536
+      ]
+    },
+    {
+      "RRangeKpc": [
+        16,
+        32
+      ],
+      "absoluteZRangeKpc": [
+        8.96,
+        null
+      ],
+      "theoreticalMassFraction": 0.00012654328538271454,
+      "estimatedQuadratureAbsoluteError": 3.7212678873642195e-12,
+      "meanObservedFraction": 0.00014333333333333334,
+      "seedStandardDeviation": 3.785938897200183e-05,
+      "seedMeanT95": [
+        4.928539744415903e-05,
+        0.00023738126922250765
+      ],
+      "pooledWilson95": [
+        0.00010642052757937193,
+        0.00019304716718021667
+      ]
+    },
+    {
+      "RRangeKpc": [
+        32,
+        64
+      ],
+      "absoluteZRangeKpc": [
+        0,
+        0.1
+      ],
+      "theoreticalMassFraction": 0.015648812651840132,
+      "estimatedQuadratureAbsoluteError": 1.7373672114118368e-16,
+      "meanObservedFraction": 0.015656666666666666,
+      "seedStandardDeviation": 0.0002444040370643112,
+      "seedMeanT95": [
+        0.015049533381291185,
+        0.016263799952042145
+      ],
+      "pooledWilson95": [
+        0.015218595499101923,
+        0.016107141575203723
+      ]
+    },
+    {
+      "RRangeKpc": [
+        32,
+        64
+      ],
+      "absoluteZRangeKpc": [
+        0.1,
+        0.28
+      ],
+      "theoreticalMassFraction": 0.017252405565898004,
+      "estimatedQuadratureAbsoluteError": 1.9154017889431167e-16,
+      "meanObservedFraction": 0.017453333333333335,
+      "seedStandardDeviation": 0.00012503332889007455,
+      "seedMeanT95": [
+        0.01714273332581182,
+        0.01776393334085485
+      ],
+      "pooledWilson95": [
+        0.016990873422708934,
+        0.017928150973379124
+      ]
+    },
+    {
+      "RRangeKpc": [
+        32,
+        64
+      ],
+      "absoluteZRangeKpc": [
+        0.28,
+        0.56
+      ],
+      "theoreticalMassFraction": 0.008719315671393052,
+      "estimatedQuadratureAbsoluteError": 9.680385017355522e-17,
+      "meanObservedFraction": 0.008466666666666667,
+      "seedStandardDeviation": 0.00022007574453658722,
+      "seedMeanT95": [
+        0.0079199682102218,
+        0.009013365123111535
+      ],
+      "pooledWilson95": [
+        0.008145035562423157,
+        0.008800885643450855
+      ]
+    },
+    {
+      "RRangeKpc": [
+        32,
+        64
+      ],
+      "absoluteZRangeKpc": [
+        0.56,
+        1.12
+      ],
+      "theoreticalMassFraction": 0.003529114787875783,
+      "estimatedQuadratureAbsoluteError": 3.91810449404482e-17,
+      "meanObservedFraction": 0.00353,
+      "seedStandardDeviation": 0.0001757839583124694,
+      "seedMeanT95": [
+        0.003093328440035247,
+        0.003966671559964753
+      ],
+      "pooledWilson95": [
+        0.0033240332407268175,
+        0.0037486810568730803
+      ]
+    },
+    {
+      "RRangeKpc": [
+        32,
+        64
+      ],
+      "absoluteZRangeKpc": [
+        1.12,
+        2.24
+      ],
+      "theoreticalMassFraction": 0.0010380424924573343,
+      "estimatedQuadratureAbsoluteError": 1.152458675665418e-17,
+      "meanObservedFraction": 0.0010633333333333334,
+      "seedStandardDeviation": 6.110100926607781e-05,
+      "seedMeanT95": [
+        0.0009115500119894631,
+        0.0012151166546772038
+      ],
+      "pooledWilson95": [
+        0.0009529230903528775,
+        0.0011865210437609684
+      ]
+    },
+    {
+      "RRangeKpc": [
+        32,
+        64
+      ],
+      "absoluteZRangeKpc": [
+        2.24,
+        4.48
+      ],
+      "theoreticalMassFraction": 0.0002789828838512587,
+      "estimatedQuadratureAbsoluteError": 3.097332211279932e-18,
+      "meanObservedFraction": 0.00023333333333333333,
+      "seedStandardDeviation": 2.3094010767585014e-05,
+      "seedMeanT95": [
+        0.00017596463027000722,
+        0.00029070203639665945
+      ],
+      "pooledWilson95": [
+        0.00018470526787216026,
+        0.0002947601220416491
+      ]
+    },
+    {
+      "RRangeKpc": [
+        32,
+        64
+      ],
+      "absoluteZRangeKpc": [
+        4.48,
+        8.96
+      ],
+      "theoreticalMassFraction": 8.140029614427879e-05,
+      "estimatedQuadratureAbsoluteError": 9.037248299068466e-19,
+      "meanObservedFraction": 4.666666666666667e-05,
+      "seedStandardDeviation": 1.5275252316519466e-05,
+      "seedMeanT95": [
+        8.720836330699076e-06,
+        8.461249700263427e-05
+      ],
+      "pooledWilson95": [
+        2.779971948047442e-05,
+        7.8337117520877e-05
+      ]
+    },
+    {
+      "RRangeKpc": [
+        32,
+        64
+      ],
+      "absoluteZRangeKpc": [
+        8.96,
+        null
+      ],
+      "theoreticalMassFraction": 6.263501106757542e-05,
+      "estimatedQuadratureAbsoluteError": 9.833780912636685e-12,
+      "meanObservedFraction": 5.666666666666667e-05,
+      "seedStandardDeviation": 3.511884584284247e-05,
+      "seedMeanT95": [
+        -3.057338268468461e-05,
+        0.00014390671601801795
+      ],
+      "pooledWilson95": [
+        3.538184490807587e-05,
+        9.075473599930007e-05
+      ]
+    },
+    {
+      "RRangeKpc": [
+        64,
+        null
+      ],
+      "absoluteZRangeKpc": [
+        0,
+        0.1
+      ],
+      "theoreticalMassFraction": 0.015748974094242293,
+      "estimatedQuadratureAbsoluteError": 1.7484873653652915e-16,
+      "meanObservedFraction": 0.015826666666666666,
+      "seedStandardDeviation": 0.000336055550963428,
+      "seedMeanT95": [
+        0.014991858399275379,
+        0.01666147493405795
+      ],
+      "pooledWilson95": [
+        0.015386226940628493,
+        0.01627950578007957
+      ]
+    },
+    {
+      "RRangeKpc": [
+        64,
+        null
+      ],
+      "absoluteZRangeKpc": [
+        0.1,
+        0.28
+      ],
+      "theoreticalMassFraction": 0.017361563237358962,
+      "estimatedQuadratureAbsoluteError": 1.927520724960159e-16,
+      "meanObservedFraction": 0.017386666666666665,
+      "seedStandardDeviation": 0.0002779088579612626,
+      "seedMeanT95": [
+        0.016696302792175627,
+        0.018077030541157703
+      ],
+      "pooledWilson95": [
+        0.01692508746553702,
+        0.017860605304510873
+      ]
+    },
+    {
+      "RRangeKpc": [
+        64,
+        null
+      ],
+      "absoluteZRangeKpc": [
+        0.28,
+        0.56
+      ],
+      "theoreticalMassFraction": 0.0087718481285432,
+      "estimatedQuadratureAbsoluteError": 9.73870776082375e-17,
+      "meanObservedFraction": 0.008506666666666668,
+      "seedStandardDeviation": 0.000617845719685209,
+      "seedMeanT95": [
+        0.006971852814353117,
+        0.010041480518980218
+      ],
+      "pooledWilson95": [
+        0.008184268259145309,
+        0.008841651922352799
+      ]
+    },
+    {
+      "RRangeKpc": [
+        64,
+        null
+      ],
+      "absoluteZRangeKpc": [
+        0.56,
+        1.12
+      ],
+      "theoreticalMassFraction": 0.0035462978392660663,
+      "estimatedQuadratureAbsoluteError": 3.937181513331629e-17,
+      "meanObservedFraction": 0.003426666666666667,
+      "seedStandardDeviation": 0.00019502136635080107,
+      "seedMeanT95": [
+        0.002942206735917565,
+        0.003911126597415769
+      ],
+      "pooledWilson95": [
+        0.0032238182761921037,
+        0.00364223200104554
+      ]
+    },
+    {
+      "RRangeKpc": [
+        64,
+        null
+      ],
+      "absoluteZRangeKpc": [
+        1.12,
+        2.24
+      ],
+      "theoreticalMassFraction": 0.0010376970273169991,
+      "estimatedQuadratureAbsoluteError": 1.1520751323124125e-17,
+      "meanObservedFraction": 0.0010533333333333334,
+      "seedStandardDeviation": 0.00010408329997330662,
+      "seedMeanT95": [
+        0.0007947760827062203,
+        0.0013118905839604464
+      ],
+      "pooledWilson95": [
+        0.0009434714891262562,
+        0.0011759729010815654
+      ]
+    },
+    {
+      "RRangeKpc": [
+        64,
+        null
+      ],
+      "absoluteZRangeKpc": [
+        2.24,
+        4.48
+      ],
+      "theoreticalMassFraction": 0.00027196315144051834,
+      "estimatedQuadratureAbsoluteError": 3.019397525788818e-18,
+      "meanObservedFraction": 0.00035,
+      "seedStandardDeviation": 3.605551275463991e-05,
+      "seedMeanT95": [
+        0.00026043314104970394,
+        0.00043956685895029605
+      ],
+      "pooledWilson95": [
+        0.00028915942110117177,
+        0.00042363631438292385
+      ]
+    },
+    {
+      "RRangeKpc": [
+        64,
+        null
+      ],
+      "absoluteZRangeKpc": [
+        4.48,
+        8.96
+      ],
+      "theoreticalMassFraction": 7.052598274189735e-05,
+      "estimatedQuadratureAbsoluteError": 7.829956987437086e-19,
+      "meanObservedFraction": 6.666666666666667e-05,
+      "seedStandardDeviation": 2.081665999466133e-05,
+      "seedMeanT95": [
+        1.495521654124403e-05,
+        0.0001183781167920893
+      ],
+      "pooledWilson95": [
+        4.315881900334543e-05,
+        0.00010297750581005505
+      ]
+    },
+    {
+      "RRangeKpc": [
+        64,
+        null
+      ],
+      "absoluteZRangeKpc": [
+        8.96,
+        null
+      ],
+      "theoreticalMassFraction": 4.036525619696559e-05,
+      "estimatedQuadratureAbsoluteError": 1.7289048002464448e-11,
+      "meanObservedFraction": 5e-05,
+      "seedStandardDeviation": 2.6457513110645906e-05,
+      "seedMeanT95": [
+        -1.572410607728428e-05,
+        0.00011572410607728429
+      ],
+      "pooledWilson95": [
+        3.0302191781092006e-05,
+        8.250122652226759e-05
+      ]
+    }
+  ],
+  "quadratureChecks": [
+    {
+      "indices": [
+        0,
+        0
+      ],
+      "reference": 0.016944344688778513,
+      "tighter": 0.016944344688778513,
+      "difference": 0.0,
+      "errorEstimate": 1.881200161066689e-16
+    },
+    {
+      "indices": [
+        3,
+        2
+      ],
+      "reference": 0.047253141140680965,
+      "tighter": 0.047253141140680965,
+      "difference": 0.0,
+      "errorEstimate": 5.246152528024624e-16
+    },
+    {
+      "indices": [
+        6,
+        6
+      ],
+      "reference": 8.140029614427879e-05,
+      "tighter": 8.140029614427879e-05,
+      "difference": 0.0,
+      "errorEstimate": 9.037248299068466e-19
+    },
+    {
+      "indices": [
+        7,
+        7
+      ],
+      "reference": 4.036525619696559e-05,
+      "tighter": 4.036525619696559e-05,
+      "difference": 0.0,
+      "errorEstimate": 1.7289048002464448e-11
+    }
+  ],
+  "haloNormalization": {
+    "R200Kpc": 206.6257986892013,
+    "outerRadiusKpc": 247.95095842704154,
+    "independentIntegratedMass": 97.63121331395331,
+    "productionTableMass": 97.6315764173288,
+    "relativeTableError": 3.71913205998739e-06,
+    "R200DefinitionResidual": 4.263256414560601e-14
+  },
+  "seeds": [
+    {
+      "seed": 2026,
+      "component": 0,
+      "nIndependent": 100000,
+      "maximumRadiusKpc": 582841.1239793991,
+      "cdfComparisons": [
+        {
+          "radiusKpc": 0.1,
+          "expected": 0.008264462809917356,
+          "observed": 0.00827,
+          "difference": 5.537190082643972e-06,
+          "wilson95": [
+            0.007727278653201975,
+            0.008850499106498945
+          ]
+        },
+        {
+          "radiusKpc": 0.5,
+          "expected": 0.1111111111111111,
+          "observed": 0.11095,
+          "difference": -0.00016111111111111187,
+          "wilson95": [
+            0.10901833307515266,
+            0.1129115561677482
+          ]
+        },
+        {
+          "radiusKpc": 1,
+          "expected": 0.25,
+          "observed": 0.24982,
+          "difference": -0.00018000000000001348,
+          "wilson95": [
+            0.24714649771994684,
+            0.2525127226650652
+          ]
+        },
+        {
+          "radiusKpc": 2.414213562373095,
+          "expected": 0.4999999999999999,
+          "observed": 0.49979,
+          "difference": -0.00020999999999987695,
+          "wilson95": [
+            0.49669109269975725,
+            0.5028889234337501
+          ]
+        },
+        {
+          "radiusKpc": 4,
+          "expected": 0.6400000000000001,
+          "observed": 0.63911,
+          "difference": -0.0008900000000001684,
+          "wilson95": [
+            0.6361280892328371,
+            0.6420812234709798
+          ]
+        },
+        {
+          "radiusKpc": 8,
+          "expected": 0.7901234567901234,
+          "observed": 0.79002,
+          "difference": -0.00010345679012346842,
+          "wilson95": [
+            0.7874844953740492,
+            0.792533223484128
+          ]
+        },
+        {
+          "radiusKpc": 16,
+          "expected": 0.8858131487889274,
+          "observed": 0.88427,
+          "difference": -0.001543148788927362,
+          "wilson95": [
+            0.882272492423266,
+            0.8862379855631896
+          ]
+        },
+        {
+          "radiusKpc": 32,
+          "expected": 0.9403122130394859,
+          "observed": 0.93946,
+          "difference": -0.0008522130394859051,
+          "wilson95": [
+            0.9379649352134611,
+            0.9409213027336274
+          ]
+        },
+        {
+          "radiusKpc": 100,
+          "expected": 0.9802960494069208,
+          "observed": 0.97995,
+          "difference": -0.0003460494069208453,
+          "wilson95": [
+            0.9790626098649793,
+            0.9808005173882524
+          ]
+        },
+        {
+          "radiusKpc": 300,
+          "expected": 0.9933665191333428,
+          "observed": 0.99337,
+          "difference": 3.4808666571350955e-06,
+          "wilson95": [
+            0.9928477096791178,
+            0.9938543865661721
+          ]
+        },
+        {
+          "radiusKpc": 1000,
+          "expected": 0.9980029960049941,
+          "observed": 0.9981,
+          "difference": 9.70039950058954e-05,
+          "wilson95": [
+            0.9978102886465984,
+            0.9983514442106464
+          ]
+        },
+        {
+          "radiusKpc": 10000,
+          "expected": 0.9998000299960005,
+          "observed": 0.99977,
+          "difference": -3.0029996000435766e-05,
+          "wilson95": [
+            0.9996548776398531,
+            0.9998467269175959
+          ]
+        }
+      ],
+      "maxAbsoluteDifferenceAtGrid": 0.001543148788927362,
+      "dkw95UniformBound": 0.004294694083467375,
+      "note": "CDF checked at reported radii; this is not a computed full-sample Kolmogorov-Smirnov statistic."
+    },
+    {
+      "seed": 2026,
+      "component": 1,
+      "nIndependent": 100000,
+      "maximumRadiusKpc": 2953528.2465588935,
+      "empiricalJointProbabilities": [
+        [
+          0.01721,
+          0.01849,
+          0.00911,
+          0.00346,
+          0.00077,
+          0.0001,
+          4e-05,
+          0.0
+        ],
+        [
+          0.03911,
+          0.04295,
+          0.02118,
+          0.0082,
+          0.00206,
+          0.00047,
+          7e-05,
+          0.0
+        ],
+        [
+          0.07843,
+          0.0875,
+          0.04412,
+          0.01804,
+          0.00516,
+          0.00117,
+          0.00025,
+          0.0
+        ],
+        [
+          0.08223,
+          0.09357,
+          0.04648,
+          0.02017,
+          0.00601,
+          0.00149,
+          0.0004,
+          6e-05
+        ],
+        [
+          0.05623,
+          0.06199,
+          0.03058,
+          0.01307,
+          0.00425,
+          0.00116,
+          0.00034,
+          0.00016
+        ],
+        [
+          0.03134,
+          0.0325,
+          0.01737,
+          0.00722,
+          0.00172,
+          0.0005,
+          0.00021,
+          0.0001
+        ],
+        [
+          0.01539,
+          0.01731,
+          0.00846,
+          0.0036,
+          0.00105,
+          0.00026,
+          3e-05,
+          6e-05
+        ],
+        [
+          0.0159,
+          0.0177,
+          0.00814,
+          0.00362,
+          0.00097,
+          0.00038,
+          6e-05,
+          3e-05
+        ]
+      ],
+      "maximumAbsoluteRegionDifference": 0.0018980133252901321,
+      "pearsonChiSquared": 61.51351038736849,
+      "degreesOfFreedom": 59,
+      "pValue": 0.38614241991754206,
+      "sparseCellsPooled": 5,
+      "qualification": "No model parameters fitted to samples. A p-value is a consistency check, not proof of the entire distribution."
+    },
+    {
+      "seed": 2026,
+      "component": 2,
+      "nIndependent": 100000,
+      "maximumRadiusKpc": 244.86684344364087,
+      "cdfComparisons": [
+        {
+          "radiusKpc": 0.1,
+          "expected": 1.1238715726122093e-05,
+          "observed": 2e-05,
+          "difference": 8.761284273877908e-06,
+          "wilson95": [
+            5.484738516524055e-06,
+            7.292683754201227e-05
+          ]
+        },
+        {
+          "radiusKpc": 1,
+          "expected": 0.0010432458480203663,
+          "observed": 0.00122,
+          "difference": 0.00017675415197963363,
+          "wilson95": [
+            0.0010219641189429904,
+            0.0014563552656453465
+          ]
+        },
+        {
+          "radiusKpc": 5,
+          "expected": 0.01948373442102786,
+          "observed": 0.01939,
+          "difference": -9.373442102785998e-05,
+          "wilson95": [
+            0.018553634942585842,
+            0.02026328850949123
+          ]
+        },
+        {
+          "radiusKpc": 15.62,
+          "expected": 0.1068300535884707,
+          "observed": 0.10678,
+          "difference": -5.0053588470697075e-05,
+          "wilson95": [
+            0.10488094827424337,
+            0.10870926133401647
+          ]
+        },
+        {
+          "radiusKpc": 30,
+          "expected": 0.22908799603850366,
+          "observed": 0.22899,
+          "difference": -9.799603850366156e-05,
+          "wilson95": [
+            0.2263961674694034,
+            0.23160465320587886
+          ]
+        },
+        {
+          "radiusKpc": 60,
+          "expected": 0.43348123919518977,
+          "observed": 0.4324,
+          "difference": -0.0010812391951897649,
+          "wilson95": [
+            0.42933213321361813,
+            0.43547306023920324
+          ]
+        },
+        {
+          "radiusKpc": 100,
+          "expected": 0.6287962951697157,
+          "observed": 0.62757,
+          "difference": -0.0012262951697157298,
+          "wilson95": [
+            0.6245687413269454,
+            0.6305614579515102
+          ]
+        },
+        {
+          "radiusKpc": 150,
+          "expected": 0.8050154159255892,
+          "observed": 0.80301,
+          "difference": -0.0020054159255892268,
+          "wilson95": [
+            0.8005333023532555,
+            0.8054634185322569
+          ]
+        },
+        {
+          "radiusKpc": 206.6257986892013,
+          "expected": 0.9543851069885807,
+          "observed": 0.95288,
+          "difference": -0.001505106988580751,
+          "wilson95": [
+            0.9515491956557437,
+            0.9541760112834031
+          ]
+        },
+        {
+          "radiusKpc": 247.95095842704154,
+          "expected": 1.0,
+          "observed": 1.0,
+          "difference": 0.0,
+          "wilson95": [
+            0.999961586887417,
+            1
+          ]
+        }
+      ],
+      "maxAbsoluteDifferenceAtGrid": 0.0020054159255892268,
+      "dkw95UniformBound": 0.004294694083467375,
+      "note": "CDF checked at reported radii; this is not a computed full-sample Kolmogorov-Smirnov statistic."
+    },
+    {
+      "seed": 2027,
+      "component": 0,
+      "nIndependent": 100000,
+      "maximumRadiusKpc": 965810.7995361463,
+      "cdfComparisons": [
+        {
+          "radiusKpc": 0.1,
+          "expected": 0.008264462809917356,
+          "observed": 0.00811,
+          "difference": -0.00015446280991735645,
+          "wilson95": [
+            0.007572692855895242,
+            0.0086850971960017
+          ]
+        },
+        {
+          "radiusKpc": 0.5,
+          "expected": 0.1111111111111111,
+          "observed": 0.11083,
+          "difference": -0.000281111111111107,
+          "wilson95": [
+            0.10889925927944359,
+            0.1127906391826043
+          ]
+        },
+        {
+          "radiusKpc": 1,
+          "expected": 0.25,
+          "observed": 0.2503,
+          "difference": 0.00030000000000002247,
+          "wilson95": [
+            0.2476247623144196,
+            0.25299442119400445
+          ]
+        },
+        {
+          "radiusKpc": 2.414213562373095,
+          "expected": 0.4999999999999999,
+          "observed": 0.50052,
+          "difference": 0.000520000000000076,
+          "wilson95": [
+            0.49742106606070075,
+            0.5036188939896621
+          ]
+        },
+        {
+          "radiusKpc": 4,
+          "expected": 0.6400000000000001,
+          "observed": 0.64008,
+          "difference": 7.999999999985796e-05,
+          "wilson95": [
+            0.6370997998708423,
+            0.6430494383115364
+          ]
+        },
+        {
+          "radiusKpc": 8,
+          "expected": 0.7901234567901234,
+          "observed": 0.79047,
+          "difference": 0.00034654320987659304,
+          "wilson95": [
+            0.7879364662839339,
+            0.7929812180024423
+          ]
+        },
+        {
+          "radiusKpc": 16,
+          "expected": 0.8858131487889274,
+          "observed": 0.88581,
+          "difference": -3.148788927376245e-06,
+          "wilson95": [
+            0.8838239541500041,
+            0.8877664055240646
+          ]
+        },
+        {
+          "radiusKpc": 32,
+          "expected": 0.9403122130394859,
+          "observed": 0.94028,
+          "difference": -3.221303948586218e-05,
+          "wilson95": [
+            0.9387943064902119,
+            0.941731868459372
+          ]
+        },
+        {
+          "radiusKpc": 100,
+          "expected": 0.9802960494069208,
+          "observed": 0.97943,
+          "difference": -0.0008660494069208102,
+          "wilson95": [
+            0.9785316726143743,
+            0.9802914945884943
+          ]
+        },
+        {
+          "radiusKpc": 300,
+          "expected": 0.9933665191333428,
+          "observed": 0.99348,
+          "difference": 0.0001134808666571896,
+          "wilson95": [
+            0.992961864699826,
+            0.9939602230945792
+          ]
+        },
+        {
+          "radiusKpc": 1000,
+          "expected": 0.9980029960049941,
+          "observed": 0.99778,
+          "difference": -0.00022299600499409156,
+          "wilson95": [
+            0.9974685545547496,
+            0.9980532028868873
+          ]
+        },
+        {
+          "radiusKpc": 10000,
+          "expected": 0.9998000299960005,
+          "observed": 0.99976,
+          "difference": -4.002999600050128e-05,
+          "wilson95": [
+            0.9996428972381943,
+            0.9998387080875166
+          ]
+        }
+      ],
+      "maxAbsoluteDifferenceAtGrid": 0.0008660494069208102,
+      "dkw95UniformBound": 0.004294694083467375,
+      "note": "CDF checked at reported radii; this is not a computed full-sample Kolmogorov-Smirnov statistic."
+    },
+    {
+      "seed": 2027,
+      "component": 1,
+      "nIndependent": 100000,
+      "maximumRadiusKpc": 867167.3048377375,
+      "empiricalJointProbabilities": [
+        [
+          0.01742,
+          0.0182,
+          0.00875,
+          0.00328,
+          0.00074,
+          0.00014,
+          1e-05,
+          0.0
+        ],
+        [
+          0.03842,
+          0.04194,
+          0.02089,
+          0.00807,
+          0.00198,
+          0.00047,
+          5e-05,
+          0.0
+        ],
+        [
+          0.07841,
+          0.08509,
+          0.04438,
+          0.01807,
+          0.00483,
+          0.00115,
+          0.0002,
+          1e-05
+        ],
+        [
+          0.08473,
+          0.09303,
+          0.04906,
+          0.01904,
+          0.00617,
+          0.00165,
+          0.00035,
+          0.0001
+        ],
+        [
+          0.05674,
+          0.06189,
+          0.03184,
+          0.01318,
+          0.00395,
+          0.00125,
+          0.00043,
+          0.00012
+        ],
+        [
+          0.02968,
+          0.03337,
+          0.01719,
+          0.0073,
+          0.00197,
+          0.00052,
+          0.00016,
+          0.00016
+        ],
+        [
+          0.01587,
+          0.01754,
+          0.00825,
+          0.00333,
+          0.00101,
+          0.00022,
+          6e-05,
+          9e-05
+        ],
+        [
+          0.01612,
+          0.01717,
+          0.00922,
+          0.00323,
+          0.00102,
+          0.00036,
+          9e-05,
+          4e-05
+        ]
+      ],
+      "maximumAbsoluteRegionDifference": 0.001806858859319034,
+      "pearsonChiSquared": 56.765478309539425,
+      "degreesOfFreedom": 59,
+      "pValue": 0.5583329740548674,
+      "sparseCellsPooled": 5,
+      "qualification": "No model parameters fitted to samples. A p-value is a consistency check, not proof of the entire distribution."
+    },
+    {
+      "seed": 2027,
+      "component": 2,
+      "nIndependent": 100000,
+      "maximumRadiusKpc": 242.58702986576702,
+      "cdfComparisons": [
+        {
+          "radiusKpc": 0.1,
+          "expected": 1.1238715726122093e-05,
+          "observed": 1e-05,
+          "difference": -1.2387157261220924e-06,
+          "wilson95": [
+            1.7652477303783126e-06,
+            5.664709659040966e-05
+          ]
+        },
+        {
+          "radiusKpc": 1,
+          "expected": 0.0010432458480203663,
+          "observed": 0.0012,
+          "difference": 0.00015675415197963357,
+          "wilson95": [
+            0.0010037363591511638,
+            0.0014345845619616762
+          ]
+        },
+        {
+          "radiusKpc": 5,
+          "expected": 0.01948373442102786,
+          "observed": 0.02002,
+          "difference": 0.0005362655789721386,
+          "wilson95": [
+            0.019170120495321148,
+            0.02090675455623407
+          ]
+        },
+        {
+          "radiusKpc": 15.62,
+          "expected": 0.1068300535884707,
+          "observed": 0.10643,
+          "difference": -0.00040005358847070016,
+          "wilson95": [
+            0.10453372672452899,
+            0.10835650977290964
+          ]
+        },
+        {
+          "radiusKpc": 30,
+          "expected": 0.22908799603850366,
+          "observed": 0.22724,
+          "difference": -0.0018479960385036631,
+          "wilson95": [
+            0.22465326203256358,
+            0.22984769308861275
+          ]
+        },
+        {
+          "radiusKpc": 60,
+          "expected": 0.43348123919518977,
+          "observed": 0.43248,
+          "difference": -0.0010012391951897959,
+          "wilson95": [
+            0.42941206252702174,
+            0.4355531247797015
+          ]
+        },
+        {
+          "radiusKpc": 100,
+          "expected": 0.6287962951697157,
+          "observed": 0.63073,
+          "difference": 0.0019337048302843218,
+          "wilson95": [
+            0.6277338563101185,
+            0.6337161001974656
+          ]
+        },
+        {
+          "radiusKpc": 150,
+          "expected": 0.8050154159255892,
+          "observed": 0.80588,
+          "difference": 0.0008645840744108124,
+          "wilson95": [
+            0.8034168451918984,
+            0.8083196552023479
+          ]
+        },
+        {
+          "radiusKpc": 206.6257986892013,
+          "expected": 0.9543851069885807,
+          "observed": 0.95495,
+          "difference": 0.0005648930114192652,
+          "wilson95": [
+            0.9536468892372519,
+            0.9562181586716089
+          ]
+        },
+        {
+          "radiusKpc": 247.95095842704154,
+          "expected": 1.0,
+          "observed": 1.0,
+          "difference": 0.0,
+          "wilson95": [
+            0.999961586887417,
+            1
+          ]
+        }
+      ],
+      "maxAbsoluteDifferenceAtGrid": 0.0019337048302843218,
+      "dkw95UniformBound": 0.004294694083467375,
+      "note": "CDF checked at reported radii; this is not a computed full-sample Kolmogorov-Smirnov statistic."
+    },
+    {
+      "seed": 2028,
+      "component": 0,
+      "nIndependent": 100000,
+      "maximumRadiusKpc": 176611.66676464604,
+      "cdfComparisons": [
+        {
+          "radiusKpc": 0.1,
+          "expected": 0.008264462809917356,
+          "observed": 0.00833,
+          "difference": 6.5537190082645e-05,
+          "wilson95": [
+            0.007785262154987141,
+            0.008912510995140269
+          ]
+        },
+        {
+          "radiusKpc": 0.5,
+          "expected": 0.1111111111111111,
+          "observed": 0.11183,
+          "difference": 0.0007188888888888939,
+          "wilson95": [
+            0.10989156284850124,
+            0.1137982587873215
+          ]
+        },
+        {
+          "radiusKpc": 1,
+          "expected": 0.25,
+          "observed": 0.25234,
+          "difference": 0.0023400000000000087,
+          "wilson95": [
+            0.24965743573269764,
+            0.255041591050227
+          ]
+        },
+        {
+          "radiusKpc": 2.414213562373095,
+          "expected": 0.4999999999999999,
+          "observed": 0.50237,
+          "difference": 0.0023700000000000943,
+          "wilson95": [
+            0.49927102813206964,
+            0.5054687897897767
+          ]
+        },
+        {
+          "radiusKpc": 4,
+          "expected": 0.6400000000000001,
+          "observed": 0.64024,
+          "difference": 0.00023999999999990695,
+          "wilson95": [
+            0.6372600833039999,
+            0.643209142586183
+          ]
+        },
+        {
+          "radiusKpc": 8,
+          "expected": 0.7901234567901234,
+          "observed": 0.78902,
+          "difference": -0.0011034567901233583,
+          "wilson95": [
+            0.7864801321834909,
+            0.7915376635009117
+          ]
+        },
+        {
+          "radiusKpc": 16,
+          "expected": 0.8858131487889274,
+          "observed": 0.88511,
+          "difference": -0.0007031487889274102,
+          "wilson95": [
+            0.8831187302354211,
+            0.8870716832170051
+          ]
+        },
+        {
+          "radiusKpc": 32,
+          "expected": 0.9403122130394859,
+          "observed": 0.94044,
+          "difference": 0.0001277869605141868,
+          "wilson95": [
+            0.9389561441121944,
+            0.9418900185451936
+          ]
+        },
+        {
+          "radiusKpc": 100,
+          "expected": 0.9802960494069208,
+          "observed": 0.9802,
+          "difference": -9.604940692087283e-05,
+          "wilson95": [
+            0.9793179219219529,
+            0.9810451861247224
+          ]
+        },
+        {
+          "radiusKpc": 300,
+          "expected": 0.9933665191333428,
+          "observed": 0.99326,
+          "difference": -0.00010651913334280838,
+          "wilson95": [
+            0.9927335896629473,
+            0.9937485150332274
+          ]
+        },
+        {
+          "radiusKpc": 1000,
+          "expected": 0.9980029960049941,
+          "observed": 0.99801,
+          "difference": 7.003995005860908e-06,
+          "wilson95": [
+            0.9977140018025168,
+            0.9982677379690883
+          ]
+        },
+        {
+          "radiusKpc": 10000,
+          "expected": 0.9998000299960005,
+          "observed": 0.99977,
+          "difference": -3.0029996000435766e-05,
+          "wilson95": [
+            0.9996548776398531,
+            0.9998467269175959
+          ]
+        }
+      ],
+      "maxAbsoluteDifferenceAtGrid": 0.0023700000000000943,
+      "dkw95UniformBound": 0.004294694083467375,
+      "note": "CDF checked at reported radii; this is not a computed full-sample Kolmogorov-Smirnov statistic."
+    },
+    {
+      "seed": 2028,
+      "component": 1,
+      "nIndependent": 100000,
+      "maximumRadiusKpc": 10619351.034585005,
+      "empiricalJointProbabilities": [
+        [
+          0.01738,
+          0.01864,
+          0.00933,
+          0.00356,
+          0.00091,
+          0.00018,
+          3e-05,
+          0.0
+        ],
+        [
+          0.03972,
+          0.04307,
+          0.02122,
+          0.00786,
+          0.00182,
+          0.00045,
+          2e-05,
+          1e-05
+        ],
+        [
+          0.07764,
+          0.0859,
+          0.04225,
+          0.017,
+          0.00474,
+          0.00102,
+          0.00017,
+          4e-05
+        ],
+        [
+          0.08421,
+          0.09372,
+          0.04686,
+          0.01921,
+          0.00663,
+          0.00172,
+          0.0004,
+          9e-05
+        ],
+        [
+          0.05602,
+          0.06309,
+          0.03143,
+          0.013,
+          0.00389,
+          0.00124,
+          0.00046,
+          0.00014
+        ],
+        [
+          0.03063,
+          0.03384,
+          0.01716,
+          0.00727,
+          0.00211,
+          0.00059,
+          0.00022,
+          0.00017
+        ],
+        [
+          0.01571,
+          0.01751,
+          0.00869,
+          0.00366,
+          0.00113,
+          0.00022,
+          5e-05,
+          2e-05
+        ],
+        [
+          0.01546,
+          0.01729,
+          0.00816,
+          0.00343,
+          0.00117,
+          0.00031,
+          5e-05,
+          8e-05
+        ]
+      ],
+      "maximumAbsoluteRegionDifference": 0.0012960916288575486,
+      "pearsonChiSquared": 56.09266582405734,
+      "degreesOfFreedom": 59,
+      "pValue": 0.58335852812807,
+      "sparseCellsPooled": 5,
+      "qualification": "No model parameters fitted to samples. A p-value is a consistency check, not proof of the entire distribution."
+    },
+    {
+      "seed": 2028,
+      "component": 2,
+      "nIndependent": 100000,
+      "maximumRadiusKpc": 244.40350965713603,
+      "cdfComparisons": [
+        {
+          "radiusKpc": 0.1,
+          "expected": 1.1238715726122093e-05,
+          "observed": 1e-05,
+          "difference": -1.2387157261220924e-06,
+          "wilson95": [
+            1.7652477303783126e-06,
+            5.664709659040966e-05
+          ]
+        },
+        {
+          "radiusKpc": 1,
+          "expected": 0.0010432458480203663,
+          "observed": 0.0011,
+          "difference": 5.6754151979633745e-05,
+          "wilson95": [
+            0.0009128266794107122,
+            0.001325501924324645
+          ]
+        },
+        {
+          "radiusKpc": 5,
+          "expected": 0.01948373442102786,
+          "observed": 0.01971,
+          "difference": 0.0002262655789721374,
+          "wilson95": [
+            0.018866741857485658,
+            0.02059015701019936
+          ]
+        },
+        {
+          "radiusKpc": 15.62,
+          "expected": 0.1068300535884707,
+          "observed": 0.10615,
+          "difference": -0.0006800535884707026,
+          "wilson95": [
+            0.10425595414251848,
+            0.10807430386626318
+          ]
+        },
+        {
+          "radiusKpc": 30,
+          "expected": 0.22908799603850366,
+          "observed": 0.22821,
+          "difference": -0.0008779960385036645,
+          "wilson95": [
+            0.22561932168584137,
+            0.23082155891389655
+          ]
+        },
+        {
+          "radiusKpc": 60,
+          "expected": 0.43348123919518977,
+          "observed": 0.43303,
+          "difference": -0.0004512391951897454,
+          "wilson95": [
+            0.42996157876396035,
+            0.43610356628833913
+          ]
+        },
+        {
+          "radiusKpc": 100,
+          "expected": 0.6287962951697157,
+          "observed": 0.62696,
+          "difference": -0.0018362951697157293,
+          "wilson95": [
+            0.6239577697298426,
+            0.6299524764126103
+          ]
+        },
+        {
+          "radiusKpc": 150,
+          "expected": 0.8050154159255892,
+          "observed": 0.80436,
+          "difference": -0.0006554159255892644,
+          "wilson95": [
+            0.8018896472049436,
+            0.8068069699651649
+          ]
+        },
+        {
+          "radiusKpc": 206.6257986892013,
+          "expected": 0.9543851069885807,
+          "observed": 0.95372,
+          "difference": -0.0006651069885806882,
+          "wilson95": [
+            0.9524003469769627,
+            0.955004795428155
+          ]
+        },
+        {
+          "radiusKpc": 247.95095842704154,
+          "expected": 1.0,
+          "observed": 1.0,
+          "difference": 0.0,
+          "wilson95": [
+            0.999961586887417,
+            1
+          ]
+        }
+      ],
+      "maxAbsoluteDifferenceAtGrid": 0.0018362951697157293,
+      "dkw95UniformBound": 0.004294694083467375,
+      "note": "CDF checked at reported radii; this is not a computed full-sample Kolmogorov-Smirnov statistic."
+    }
+  ],
+  "tailDiagnostics": [
+    {
+      "seed": 2026,
+      "n": 100000,
+      "independentDrawsByComponent": [
+        7500,
+        22500,
+        20000
+      ],
+      "unboundByHistoricalAnalyticCriterion": 578,
+      "components": [
+        {
+          "id": 0,
+          "name": "bulge",
+          "count": 15000,
+          "mass": 0.4999999999999547,
+          "particleMass": {
+            "minimum": 3.3333333333333335e-05,
+            "maximum": 3.3333333333333335e-05
+          },
+          "r50": 2.3391042437631127,
+          "R50": 1.7745472119231982,
+          "medianAbsZ": 0.9709586409797164,
+          "massMedianAbsZ": 0.9696660095620394,
+          "percentiles": {
+            "spherical": {
+              "number": {
+                "0.01": 0.10773973908424551,
+                "0.1": 0.44857650733998317,
+                "0.25": 0.9831231468904112,
+                "0.5": 2.339239725801319,
+                "0.75": 6.367548508295354,
+                "0.9": 18.519533702420212,
+                "0.95": 36.461000018815916,
+                "0.99": 174.77380070143636,
+                "0.999": 1631.0930007035474
+              },
+              "mass": {
+                "0.01": 0.10729522606229916,
+                "0.1": 0.4484311365063165,
+                "0.25": 0.9827682306615165,
+                "0.5": 2.3391042437631127,
+                "0.75": 6.361987777512595,
+                "0.9": 18.51715889829036,
+                "0.95": 36.45253310982601,
+                "0.99": 174.76231505104835,
+                "0.999": 1631.0930007035474
+              },
+              "maximum": 46065.03469214005
+            },
+            "cylindrical": {
+              "number": {
+                "0.01": 0.061528410467074655,
+                "0.1": 0.3052612740562621,
+                "0.25": 0.7021895882258584,
+                "0.5": 1.775092385282918,
+                "0.75": 4.809066952056087,
+                "0.9": 14.183972583068178,
+                "0.95": 28.734901564097687,
+                "0.99": 137.41336112110986,
+                "0.999": 1586.8913642658158
+              },
+              "mass": {
+                "0.01": 0.059480236197470636,
+                "0.1": 0.3051835713472154,
+                "0.25": 0.70217216372201,
+                "0.5": 1.7745472119231982,
+                "0.75": 4.808147533635528,
+                "0.9": 14.183010952099826,
+                "0.95": 28.733832890560784,
+                "0.99": 137.36720486592714,
+                "0.999": 1586.8913642658158
+              },
+              "maximum": 36353.23679313246
+            },
+            "absoluteHeight": {
+              "number": {
+                "0.01": 0.009469569665286197,
+                "0.1": 0.10615999509794101,
+                "0.25": 0.3247384045173185,
+                "0.5": 0.9709586409797164,
+                "0.75": 2.948900858983119,
+                "0.9": 9.31938810594708,
+                "0.95": 19.86919420127139,
+                "0.99": 94.49564887083976,
+                "0.999": 633.3649268835843
+              },
+              "mass": {
+                "0.01": 0.009240804016863823,
+                "0.1": 0.10600867106744681,
+                "0.25": 0.3245400511927338,
+                "0.5": 0.9696660095620394,
+                "0.75": 2.9487142680383114,
+                "0.9": 9.3168550698248,
+                "0.95": 19.86667731931529,
+                "0.99": 94.49055925090065,
+                "0.999": 633.3649268835843
+              },
+              "maximum": 40044.14895027536
+            }
+          },
+          "tails": [
+            {
+              "radius": 30,
+              "count": 948,
+              "numberFraction": 0.0632,
+              "mass": 0.03159999999999986,
+              "massFraction": 0.06320000000000545,
+              "kinetic": 0.00034650117706644124,
+              "kineticFraction": 0.04044583662382768,
+              "potential": -0.000869269015498543,
+              "potentialFraction": 0.018132862716458874,
+              "angularMomentum": [
+                0.04024516954599803,
+                0.020812384429730782,
+                -0.0106177627048747
+              ],
+              "angularMomentumScale": 0.3416445397967804,
+              "angularMomentumMagnitudeFraction": 0.5540072714019654
+            },
+            {
+              "radius": 100,
+              "count": 270,
+              "numberFraction": 0.018,
+              "mass": 0.00899999999999996,
+              "massFraction": 0.01800000000000155,
+              "kinetic": 5.4262282630040855e-05,
+              "kineticFraction": 0.006333841162305105,
+              "potential": -0.00010125849826438704,
+              "potentialFraction": 0.0021122419126487282,
+              "angularMomentum": [
+                0.0387411730315007,
+                0.02000002001815708,
+                -0.015517151300670048
+              ],
+              "angularMomentumScale": 0.2115220532767896,
+              "angularMomentumMagnitudeFraction": 0.34300198576836644
+            },
+            {
+              "radius": 300,
+              "count": 90,
+              "numberFraction": 0.006,
+              "mass": 0.0029999999999999944,
+              "massFraction": 0.006000000000000533,
+              "kinetic": 6.604530495595112e-06,
+              "kineticFraction": 0.0007709230994926938,
+              "potential": -1.2569963735252171e-05,
+              "potentialFraction": 0.0002622081573118906,
+              "angularMomentum": [
+                0.029996799837354267,
+                0.02419008607652756,
+                -0.01942827095364941
+              ],
+              "angularMomentumScale": 0.12747646504832905,
+              "angularMomentumMagnitudeFraction": 0.20671452443349814
+            },
+            {
+              "radius": 1000,
+              "count": 28,
+              "numberFraction": 0.0018666666666666666,
+              "mass": 0.0009333333333333336,
+              "massFraction": 0.0018666666666668364,
+              "kinetic": 5.771943650658747e-07,
+              "kineticFraction": 6.737382304814485e-05,
+              "potential": -1.162121344744065e-06,
+              "potentialFraction": 2.424173233878026e-05,
+              "angularMomentum": [
+                0.013290004755904382,
+                0.02866240208311514,
+                -0.008716490660166703
+              ],
+              "angularMomentumScale": 0.06878704473228173,
+              "angularMomentumMagnitudeFraction": 0.11154436415873743
+            },
+            {
+              "radius": 10000,
+              "count": 4,
+              "numberFraction": 0.0002666666666666667,
+              "mass": 0.00013333333333333334,
+              "massFraction": 0.00026666666666669086,
+              "kinetic": 5.2106707367233e-09,
+              "kineticFraction": 6.082228611813903e-07,
+              "potential": -7.322906701623222e-09,
+              "potentialFraction": 1.5275508448879382e-07,
+              "angularMomentum": [
+                0.011943190368158597,
+                0.022707629645370556,
+                -0.0012012598143341822
+              ],
+              "angularMomentumScale": 0.02921142352163993,
+              "angularMomentumMagnitudeFraction": 0.04736894389887579
+            }
+          ],
+          "kinetic": 0.008567041900730729,
+          "potential": -0.04793887369530036,
+          "angularMomentum": [
+            0.03578375915729486,
+            0.018175447498469298,
+            -0.005397711910221056
+          ],
+          "angularMomentumScale": 0.616678800861617,
+          "virial": {
+            "kineticTensor": [
+              [
+                0.0028122811577007186,
+                1.6870374820256327e-05,
+                1.943986916016846e-05
+              ],
+              [
+                1.6870374820256307e-05,
+                0.002824333205913249,
+                1.133984350374887e-05
+              ],
+              [
+                1.9439869160168454e-05,
+                1.133984350374889e-05,
+                0.0029304275371167723
+              ]
+            ],
+            "forceTensor": [
+              [
+                -0.004930920868369535,
+                -3.2295856985637634e-05,
+                -4.5408940114303065e-05
+              ],
+              [
+                -3.2295856985637675e-05,
+                -0.0049850672132244755,
+                -8.030907079478535e-05
+              ],
+              [
+                -2.4142818978480898e-05,
+                -5.3111281147742294e-05,
+                -0.007171158179348591
+              ]
+            ],
+            "W": -0.017087146260942602,
+            "twiceKOverNegativeW": 1.0027469502397919,
+            "tensorResidual": [
+              [
+                0.000693641447031902,
+                1.4448926548750004e-06,
+                4.103858773944939e-06
+              ],
+              [
+                1.4448926548749598e-06,
+                0.0006635991986020228,
+                -4.403048896376608e-05
+              ],
+              [
+                4.1038587739449255e-06,
+                -4.403048896376604e-05,
+                -0.0013103031051150465
+              ]
+            ]
+          },
+          "velocity": {
+            "axes": [
+              "R",
+              "phi",
+              "z"
+            ],
+            "mass": 0.4999999999999547,
+            "mean": [
+              0.00037026866432842743,
+              -0.00010612059126563138,
+              2.7655625727852906e-19
+            ],
+            "covariance": [
+              [
+                0.01133098583411117,
+                0.00011366633729454245,
+                6.3531606947141046e-21
+              ],
+              [
+                0.00011366633729454254,
+                0.011215323259882923,
+                -4.8704394467126686e-21
+              ],
+              [
+                1.2970192004832649e-20,
+                1.9164120431630282e-20,
+                0.011721710148468173
+              ]
+            ],
+            "dispersion": [
+              0.10644710345571255,
+              0.10590242329561171,
+              0.10826684694987738
+            ],
+            "axisParticleCountExcluded": 0
+          }
+        },
+        {
+          "id": 1,
+          "name": "disk",
+          "count": 45000,
+          "mass": 6.8000000000038545,
+          "particleMass": {
+            "minimum": 0.0001511111111111111,
+            "maximum": 0.0001511111111111111
+          },
+          "r50": 5.2312090207440995,
+          "R50": 5.20657760521445,
+          "medianAbsZ": 0.16109632985917,
+          "massMedianAbsZ": 0.1611029383894361,
+          "percentiles": {
+            "spherical": {
+              "number": {
+                "0.01": 0.4930292396877188,
+                "0.1": 1.5081955780209255,
+                "0.25": 2.7122424841191233,
+                "0.5": 5.230585514537193,
+                "0.75": 11.659360748144262,
+                "0.9": 29.995183586242405,
+                "0.95": 60.123525425176496,
+                "0.99": 334.26302774867753,
+                "0.999": 3273.1183547606006
+              },
+              "mass": {
+                "0.01": 0.49302944842088264,
+                "0.1": 1.5082032297919181,
+                "0.25": 2.712283348737713,
+                "0.5": 5.2312090207440995,
+                "0.75": 11.65965517131773,
+                "0.9": 29.99877004069758,
+                "0.95": 60.40375561869929,
+                "0.99": 337.42737359789504,
+                "0.999": 3273.1183547606006
+              },
+              "maximum": 684341.6603603075
+            },
+            "cylindrical": {
+              "number": {
+                "0.01": 0.41222399699130774,
+                "0.1": 1.4672934029269689,
+                "0.25": 2.6718465838089505,
+                "0.5": 5.206547826292848,
+                "0.75": 11.641858544594077,
+                "0.9": 29.994101028773564,
+                "0.95": 60.12306257922655,
+                "0.99": 334.2627377002441,
+                "0.999": 3273.1183154692853
+              },
+              "mass": {
+                "0.01": 0.4122503131260822,
+                "0.1": 1.4673000583177378,
+                "0.25": 2.6718989886186626,
+                "0.5": 5.20657760521445,
+                "0.75": 11.642243887286,
+                "0.9": 29.998521810139252,
+                "0.95": 60.403633981316176,
+                "0.99": 337.4273633471354,
+                "0.999": 3273.1183154692853
+              },
+              "maximum": 684341.6603601653
+            },
+            "absoluteHeight": {
+              "number": {
+                "0.01": 0.0030499804566491598,
+                "0.1": 0.027269209278581445,
+                "0.25": 0.07141128971907351,
+                "0.5": 0.16109632985917,
+                "0.75": 0.31514596683835006,
+                "0.9": 0.566646274644536,
+                "0.95": 0.8261608682553169,
+                "0.99": 1.9314132830305457,
+                "0.999": 6.705640203171665
+              },
+              "mass": {
+                "0.01": 0.003050037958895603,
+                "0.1": 0.027270234063873487,
+                "0.25": 0.07141835795521766,
+                "0.5": 0.1611029383894361,
+                "0.75": 0.31517320804197557,
+                "0.9": 0.5667475236618033,
+                "0.95": 0.8266025186863832,
+                "0.99": 1.9327425587828884,
+                "0.999": 6.705640203171665
+              },
+              "maximum": 84.91733404276677
+            }
+          },
+          "tails": [
+            {
+              "radius": 30,
+              "count": 4498,
+              "numberFraction": 0.09995555555555556,
+              "mass": 0.6796977777777454,
+              "massFraction": 0.09995555555549414,
+              "kinetic": 0.011230169522079421,
+              "kineticFraction": 0.07348951354594614,
+              "potential": -0.018340967095553582,
+              "potentialFraction": 0.03234063741827623,
+              "angularMomentum": [
+                6.103162645883208e-05,
+                0.001729390147387582,
+                14.200574676269492
+              ],
+              "angularMomentumScale": 14.204331513274202,
+              "angularMomentumMagnitudeFraction": 0.6137883461332261
+            },
+            {
+              "radius": 100,
+              "count": 1362,
+              "numberFraction": 0.030266666666666667,
+              "mass": 0.20581333333332993,
+              "massFraction": 0.03026666666664901,
+              "kinetic": 0.001924619500995741,
+              "kineticFraction": 0.012594587340034128,
+              "potential": -0.002237739086737304,
+              "potentialFraction": 0.0039458065686416525,
+              "angularMomentum": [
+                0.001377254447955421,
+                0.004705894132018839,
+                9.458058116746248
+              ],
+              "angularMomentumScale": 9.460690252123106,
+              "angularMomentumMagnitudeFraction": 0.4088092014539902
+            },
+            {
+              "radius": 300,
+              "count": 504,
+              "numberFraction": 0.0112,
+              "mass": 0.07616000000000005,
+              "massFraction": 0.011199999999993658,
+              "kinetic": 0.0002935410293847358,
+              "kineticFraction": 0.001920913786105174,
+              "potential": -0.0002934725948027086,
+              "potentialFraction": 0.0005174803886440661,
+              "angularMomentum": [
+                0.00018976695023029951,
+                -1.5490510677056597e-05,
+                6.198371527897045
+              ],
+              "angularMomentumScale": 6.198373548468751,
+              "angularMomentumMagnitudeFraction": 0.2678400912760454
+            },
+            {
+              "radius": 1000,
+              "count": 150,
+              "numberFraction": 0.0033333333333333335,
+              "mass": 0.0226666666666667,
+              "massFraction": 0.0033333333333314488,
+              "kinetic": 2.577400437673168e-05,
+              "kineticFraction": 0.00016866344181653775,
+              "potential": -2.5772692049901296e-05,
+              "potentialFraction": 4.544500213845406e-05,
+              "angularMomentum": [
+                4.308611446241722e-05,
+                3.117659035857869e-05,
+                3.556750842612755
+              ],
+              "angularMomentumScale": 3.556750948186866,
+              "angularMomentumMagnitudeFraction": 0.1536920114864442
+            },
+            {
+              "radius": 10000,
+              "count": 18,
+              "numberFraction": 0.0004,
+              "mass": 0.0027199999999999998,
+              "massFraction": 0.0003999999999997732,
+              "kinetic": 2.8453153044795206e-07,
+              "kineticFraction": 1.8619561993247424e-06,
+              "potential": -2.845229878919322e-07,
+              "potentialFraction": 5.01699541831049e-07,
+              "angularMomentum": [
+                3.165986074831861e-05,
+                -7.752087407787473e-06,
+                1.4679448622367408
+              ],
+              "angularMomentumScale": 1.4679448634928665,
+              "angularMomentumMagnitudeFraction": 0.06343187985552458
+            }
+          ],
+          "kinetic": 0.15281322436647024,
+          "potential": -0.5671182932587716,
+          "angularMomentum": [
+            0.012431877648493798,
+            0.0018225213574327743,
+            23.013375815485706
+          ],
+          "angularMomentumScale": 23.142067787307052,
+          "virial": {
+            "kineticTensor": [
+              [
+                0.07474811717571851,
+                0.00029042728519249137,
+                -0.00021174708027328214
+              ],
+              [
+                0.00029042728519249094,
+                0.07271779219876442,
+                -0.0002488523871836099
+              ],
+              [
+                -0.00021174708027328214,
+                -0.0002488523871836099,
+                0.005347314991987645
+              ]
+            ],
+            "forceTensor": [
+              [
+                -0.14571527523918476,
+                0.00072585097128021,
+                0.00017509616402048357
+              ],
+              [
+                0.0007258509712802115,
+                -0.14923366040567027,
+                -0.0006466649652146863
+              ],
+              [
+                7.329073449383939e-05,
+                -0.00019085035289033962,
+                -0.010592750782615384
+              ]
+            ],
+            "W": -0.3055416864274704,
+            "twiceKOverNegativeW": 1.0002774165007111,
+            "tensorResidual": [
+              [
+                0.0037809591122522634,
+                0.0013067055416651936,
+                -0.00029930071128940277
+              ],
+              [
+                0.0013067055416651928,
+                -0.0037980760081414155,
+                -0.0009164624334197328
+              ],
+              [
+                -0.00029930071128940277,
+                -0.0009164624334197328,
+                0.00010187920135990708
+              ]
+            ]
+          },
+          "velocity": {
+            "axes": [
+              "R",
+              "phi",
+              "z"
+            ],
+            "mass": 6.8000000000038545,
+            "mean": [
+              -0.00041223186078131915,
+              0.19629327900747875,
+              7.835054762102278e-21
+            ],
+            "covariance": [
+              [
+                0.0015494608846940991,
+                2.2057385243676537e-06,
+                -1.424210384083141e-21
+              ],
+              [
+                2.205738524367684e-06,
+                0.0032916440833007598,
+                1.2553682237562363e-21
+              ],
+              [
+                -9.965093497103768e-22,
+                4.982546748551884e-22,
+                0.0015727397035249007
+              ]
+            ],
+            "dispersion": [
+              0.039363192003369074,
+              0.05737285144823081,
+              0.0396577823828426
+            ],
+            "axisParticleCountExcluded": 0
+          }
+        },
+        {
+          "id": 2,
+          "name": "halo",
+          "count": 40000,
+          "mass": 97.6315764172918,
+          "particleMass": {
+            "minimum": 0.00244078941043322,
+            "maximum": 0.00244078941043322
+          },
+          "r50": 71.62736608390057,
+          "R50": 52.475265399697214,
+          "medianAbsZ": 27.641699576985964,
+          "massMedianAbsZ": 27.640905550507906,
+          "percentiles": {
+            "spherical": {
+              "number": {
+                "0.01": 3.4996295942995683,
+                "0.1": 14.754014163051997,
+                "0.25": 32.53963706292174,
+                "0.5": 71.63848939936342,
+                "0.75": 132.07319298631228,
+                "0.9": 184.1642361159456,
+                "0.95": 204.76069924820672,
+                "0.99": 224.2188747812634,
+                "0.999": 235.77492965033767
+              },
+              "mass": {
+                "0.01": 3.498413805122678,
+                "0.1": 14.739974162413194,
+                "0.25": 32.53589132786134,
+                "0.5": 71.62736608390057,
+                "0.75": 132.0692095788557,
+                "0.9": 184.16291129026772,
+                "0.95": 204.75891318279585,
+                "0.99": 224.21879251614214,
+                "0.999": 235.77475199588505
+              },
+              "maximum": 245.17570226705922
+            },
+            "cylindrical": {
+              "number": {
+                "0.01": 2.037538568398184,
+                "0.1": 9.862805864685694,
+                "0.25": 22.81075788353464,
+                "0.5": 52.48316492270287,
+                "0.75": 101.46333631441567,
+                "0.9": 153.17230395197666,
+                "0.95": 177.88503273881736,
+                "0.99": 209.61798241645775,
+                "0.999": 227.58066247122173
+              },
+              "mass": {
+                "0.01": 2.0287878110846087,
+                "0.1": 9.86037707216667,
+                "0.25": 22.807531936306148,
+                "0.5": 52.475265399697214,
+                "0.75": 101.46313945876545,
+                "0.9": 153.16983356676306,
+                "0.95": 177.88194395316629,
+                "0.99": 209.61695035663428,
+                "0.999": 227.57974345327457
+              },
+              "maximum": 239.27482828099346
+            },
+            "absoluteHeight": {
+              "number": {
+                "0.01": 0.30554160531720514,
+                "0.1": 3.35183625363715,
+                "0.25": 10.061513178103187,
+                "0.5": 27.641699576985964,
+                "0.75": 62.739341301485524,
+                "0.9": 107.85474282482544,
+                "0.95": 137.0796330400016,
+                "0.99": 186.39905502832116,
+                "0.999": 214.7669155256762
+              },
+              "mass": {
+                "0.01": 0.3017845815162109,
+                "0.1": 3.3502842203275445,
+                "0.25": 10.060621683148685,
+                "0.5": 27.640905550507906,
+                "0.75": 62.7390077520277,
+                "0.9": 107.85463841723003,
+                "0.95": 137.0762424472723,
+                "0.99": 186.39342595878617,
+                "0.999": 214.76669732063635
+              },
+              "maximum": 226.90001953757277
+            }
+          },
+          "tails": [
+            {
+              "radius": 30,
+              "count": 30834,
+              "numberFraction": 0.77085,
+              "mass": 75.25930068130344,
+              "massFraction": 0.7708500000003489,
+              "kinetic": 1.0062635518803809,
+              "kineticFraction": 0.5880491933161823,
+              "potential": -1.7477658519180443,
+              "potentialFraction": 0.5596241956250642,
+              "angularMomentum": [
+                2.4137402555348713,
+                -2.681811401087855,
+                -1.0130573926286879
+              ],
+              "angularMomentumScale": 782.2512823482507,
+              "angularMomentumMagnitudeFraction": 0.9249914276905705
+            },
+            {
+              "radius": 100,
+              "count": 14728,
+              "numberFraction": 0.3682,
+              "mass": 35.94794643685909,
+              "massFraction": 0.3682000000001255,
+              "kinetic": 0.27809507427777796,
+              "kineticFraction": 0.16251565883377153,
+              "potential": -0.5445495209235033,
+              "potentialFraction": 0.17436150688628943,
+              "angularMomentum": [
+                -0.8727635680567168,
+                -2.362799938764007,
+                -4.294724481700279
+              ],
+              "angularMomentumScale": 454.9958520320692,
+              "angularMomentumMagnitudeFraction": 0.5380205469283785
+            },
+            {
+              "radius": 300,
+              "count": 0,
+              "numberFraction": 0,
+              "mass": 0,
+              "massFraction": 0,
+              "kinetic": 0,
+              "kineticFraction": 0,
+              "potential": 0,
+              "potentialFraction": 0,
+              "angularMomentum": [
+                0,
+                0,
+                0
+              ],
+              "angularMomentumScale": 0,
+              "angularMomentumMagnitudeFraction": 0
+            },
+            {
+              "radius": 1000,
+              "count": 0,
+              "numberFraction": 0,
+              "mass": 0,
+              "massFraction": 0,
+              "kinetic": 0,
+              "kineticFraction": 0,
+              "potential": 0,
+              "potentialFraction": 0,
+              "angularMomentum": [
+                0,
+                0,
+                0
+              ],
+              "angularMomentumScale": 0,
+              "angularMomentumMagnitudeFraction": 0
+            },
+            {
+              "radius": 10000,
+              "count": 0,
+              "numberFraction": 0,
+              "mass": 0,
+              "massFraction": 0,
+              "kinetic": 0,
+              "kineticFraction": 0,
+              "potential": 0,
+              "potentialFraction": 0,
+              "angularMomentum": [
+                0,
+                0,
+                0
+              ],
+              "angularMomentumScale": 0,
+              "angularMomentumMagnitudeFraction": 0
+            }
+          ],
+          "kinetic": 1.7111894095216162,
+          "potential": -3.123106301659996,
+          "angularMomentum": [
+            2.3947946571090712,
+            -3.2227852281448195,
+            -0.893808839471443
+          ],
+          "angularMomentumScale": 845.6848992658238,
+          "virial": {
+            "kineticTensor": [
+              [
+                0.5726777524605625,
+                -0.003737346189378048,
+                -0.013424245612146724
+              ],
+              [
+                -0.0037373461893780487,
+                0.563531008236149,
+                0.006536246021452518
+              ],
+              [
+                -0.01342424561214672,
+                0.006536246021452511,
+                0.5749806488249115
+              ]
+            ],
+            "forceTensor": [
+              [
+                -1.1243953885043976,
+                -0.006804473022975236,
+                -0.006257104362675112
+              ],
+              [
+                -0.006804473022975238,
+                -1.1363088223709268,
+                0.007921443038077956
+              ],
+              [
+                -0.005465502810864942,
+                0.006001794867436837,
+                -1.1534278380388499
+              ]
+            ],
+            "W": -3.4141320489141744,
+            "twiceKOverNegativeW": 1.002415480716887,
+            "tensorResidual": [
+              [
+                0.02096011641672746,
+                -0.014279165401731332,
+                -0.032709794811063474
+              ],
+              [
+                -0.014279165401731336,
+                -0.009246805898628807,
+                0.020034110995662432
+              ],
+              [
+                -0.03270979481106347,
+                0.020034110995662418,
+                -0.0034665403890268287
+              ]
+            ]
+          },
+          "velocity": {
+            "axes": [
+              "R",
+              "phi",
+              "z"
+            ],
+            "mass": 97.6315764172918,
+            "mean": [
+              -0.00044904014376348077,
+              0.00017890678987440132,
+              -1.9693516023662483e-20
+            ],
+            "covariance": [
+              [
+                0.011582732775996474,
+                -3.6041128928216006e-05,
+                -2.810962241738286e-21
+              ],
+              [
+                -3.604112892821605e-05,
+                0.011692469711582462,
+                4.68493706956381e-21
+              ],
+              [
+                3.088588142156882e-21,
+                -8.328777012557885e-21,
+                0.01177857963426423
+              ]
+            ],
+            "dispersion": [
+              0.10762310521443094,
+              0.10813172389073644,
+              0.10852916490171768
+            ],
+            "axisParticleCountExcluded": 0
+          }
+        }
+      ]
+    },
+    {
+      "seed": 2027,
+      "n": 100000,
+      "independentDrawsByComponent": [
+        7500,
+        22500,
+        20000
+      ],
+      "unboundByHistoricalAnalyticCriterion": 586,
+      "components": [
+        {
+          "id": 0,
+          "name": "bulge",
+          "count": 15000,
+          "mass": 0.4999999999999547,
+          "particleMass": {
+            "minimum": 3.3333333333333335e-05,
+            "maximum": 3.3333333333333335e-05
+          },
+          "r50": 2.351031413208455,
+          "R50": 1.8084686759005575,
+          "medianAbsZ": 0.9785019635520928,
+          "massMedianAbsZ": 0.9783790758661692,
+          "percentiles": {
+            "spherical": {
+              "number": {
+                "0.01": 0.10624064015689573,
+                "0.1": 0.45700088322410465,
+                "0.25": 0.9818480908961071,
+                "0.5": 2.351513675825256,
+                "0.75": 6.352403159411854,
+                "0.9": 18.610357311840087,
+                "0.95": 38.74626354617297,
+                "0.99": 179.44735065581062,
+                "0.999": 1336.4081202602902
+              },
+              "mass": {
+                "0.01": 0.10174846172700185,
+                "0.1": 0.45686300799627777,
+                "0.25": 0.9813125791120626,
+                "0.5": 2.351031413208455,
+                "0.75": 6.352217396613471,
+                "0.9": 18.60944201546098,
+                "0.95": 38.74461535224724,
+                "0.99": 179.42885929261334,
+                "0.999": 1336.4081202602902
+              },
+              "maximum": 12067.642490391432
+            },
+            "cylindrical": {
+              "number": {
+                "0.01": 0.06166676270339674,
+                "0.1": 0.30637472221432144,
+                "0.25": 0.7029318161019205,
+                "0.5": 1.8094421201305606,
+                "0.75": 4.91208495611028,
+                "0.9": 14.757187643203604,
+                "0.95": 30.113711184190194,
+                "0.99": 154.64110180266363,
+                "0.999": 1157.9624381702588
+              },
+              "mass": {
+                "0.01": 0.0610836621525016,
+                "0.1": 0.30571661688490687,
+                "0.25": 0.7017039991623629,
+                "0.5": 1.8084686759005575,
+                "0.75": 4.909191787513101,
+                "0.9": 14.754503690322977,
+                "0.95": 30.11260335216572,
+                "0.99": 154.5928519314115,
+                "0.999": 1157.9624381702588
+              },
+              "maximum": 11661.549482900302
+            },
+            "absoluteHeight": {
+              "number": {
+                "0.01": 0.009744697237289247,
+                "0.1": 0.11150366452889329,
+                "0.25": 0.3257679236885892,
+                "0.5": 0.9785019635520928,
+                "0.75": 2.877121666034904,
+                "0.9": 8.88260341254017,
+                "0.95": 18.71100090651015,
+                "0.99": 84.44046966664342,
+                "0.999": 416.0434821607598
+              },
+              "mass": {
+                "0.01": 0.009653771899803104,
+                "0.1": 0.11108616043389659,
+                "0.25": 0.3254092283710842,
+                "0.5": 0.9783790758661692,
+                "0.75": 2.8759860545024383,
+                "0.9": 8.881968240366076,
+                "0.95": 18.709409517727995,
+                "0.99": 84.4361483286167,
+                "0.999": 416.0434821607598
+              },
+              "maximum": 3104.232422639848
+            }
+          },
+          "tails": [
+            {
+              "radius": 30,
+              "count": 962,
+              "numberFraction": 0.06413333333333333,
+              "mass": 0.03206666666666657,
+              "massFraction": 0.06413333333333895,
+              "kinetic": 0.00038127414057145527,
+              "kineticFraction": 0.04525520188440583,
+              "potential": -0.0008730057802763864,
+              "potentialFraction": 0.018234369136821606,
+              "angularMomentum": [
+                -0.007729630376692883,
+                0.018834574800413804,
+                0.012257598537003894
+              ],
+              "angularMomentumScale": 0.3205099629356159,
+              "angularMomentumMagnitudeFraction": 0.5361710004618111
+            },
+            {
+              "radius": 100,
+              "count": 282,
+              "numberFraction": 0.0188,
+              "mass": 0.009399999999999957,
+              "massFraction": 0.018800000000001618,
+              "kinetic": 5.662104546971251e-05,
+              "kineticFraction": 0.006720615355128545,
+              "potential": -0.00010753435186260497,
+              "potentialFraction": 0.0022460573698960154,
+              "angularMomentum": [
+                -0.0007047823177300993,
+                0.01761843044774239,
+                0.007360509190186385
+              ],
+              "angularMomentumScale": 0.18227466406002216,
+              "angularMomentumMagnitudeFraction": 0.30492153221313345
+            },
+            {
+              "radius": 300,
+              "count": 76,
+              "numberFraction": 0.005066666666666666,
+              "mass": 0.0025333333333333306,
+              "massFraction": 0.00506666666666712,
+              "kinetic": 4.59174553856339e-06,
+              "kineticFraction": 0.0005450156442240062,
+              "potential": -1.002985939179749e-05,
+              "potentialFraction": 0.00020949249440542261,
+              "angularMomentum": [
+                0.005276520593729017,
+                0.013327375690530264,
+                0.003917078650709976
+              ],
+              "angularMomentumScale": 0.08417129695525227,
+              "angularMomentumMagnitudeFraction": 0.14080750590499297
+            },
+            {
+              "radius": 1000,
+              "count": 22,
+              "numberFraction": 0.0014666666666666667,
+              "mass": 0.0007333333333333336,
+              "massFraction": 0.0014666666666668,
+              "kinetic": 8.306376080829644e-07,
+              "kineticFraction": 9.859224281571645e-05,
+              "potential": -1.1048644800480809e-06,
+              "potentialFraction": 2.3077174550872918e-05,
+              "angularMomentum": [
+                0.003774449277643995,
+                0.011081657727307143,
+                0.004314655100655684
+              ],
+              "angularMomentumScale": 0.03947018311764676,
+              "angularMomentumMagnitudeFraction": 0.06602842350598234
+            },
+            {
+              "radius": 10000,
+              "count": 2,
+              "numberFraction": 0.00013333333333333334,
+              "mass": 6.666666666666667e-05,
+              "massFraction": 0.00013333333333334543,
+              "kinetic": 6.731287289621928e-10,
+              "kineticFraction": 7.989678103455978e-08,
+              "potential": -1.3038525111959626e-08,
+              "potentialFraction": 2.7233414172346105e-07,
+              "angularMomentum": [
+                -0.0005614535395131204,
+                -0.0006710568069080089,
+                -0.003248857521136507
+              ],
+              "angularMomentumScale": 0.0033646132775959014,
+              "angularMomentumMagnitudeFraction": 0.005628555351891128
+            }
+          ],
+          "kinetic": 0.008424979332659564,
+          "potential": -0.04787693907728788,
+          "angularMomentum": [
+            -0.007793942459565797,
+            0.02498697794628816,
+            0.008223982220637173
+          ],
+          "angularMomentumScale": 0.597775639972241,
+          "virial": {
+            "kineticTensor": [
+              [
+                0.0027215900428624977,
+                1.1701302974447737e-05,
+                3.159485181823199e-05
+              ],
+              [
+                1.1701302974447727e-05,
+                0.002802604676052453,
+                -1.85507820027886e-05
+              ],
+              [
+                3.1594851818231995e-05,
+                -1.8550782002788588e-05,
+                0.0029007846137446107
+              ]
+            ],
+            "forceTensor": [
+              [
+                -0.005057486851142717,
+                -3.7278157064079575e-05,
+                5.329044747992399e-05
+              ],
+              [
+                -3.727815706407956e-05,
+                -0.00504490102773929,
+                -0.0001060345715563321
+              ],
+              [
+                3.663562956326166e-05,
+                -6.262220375935235e-05,
+                -0.00704748352608443
+              ]
+            ],
+            "W": -0.017149871404966436,
+            "twiceKOverNegativeW": 0.9825122455693484,
+            "tensorResidual": [
+              [
+                0.0003856932345822784,
+                -1.3875551115184093e-05,
+                0.0001081527421580568
+              ],
+              [
+                -1.3875551115184113e-05,
+                0.0005603083243656158,
+                -0.00012142995166341942
+              ],
+              [
+                0.00010815274215805682,
+                -0.00012142995166341939,
+                -0.0012459142985952083
+              ]
+            ]
+          },
+          "velocity": {
+            "axes": [
+              "R",
+              "phi",
+              "z"
+            ],
+            "mass": 0.4999999999999547,
+            "mean": [
+              -0.0015741537872580702,
+              -0.00021962879492778208,
+              1.6474790824096142e-19
+            ],
+            "covariance": [
+              [
+                0.011080512378892236,
+                -7.20418197721282e-05,
+                4.248399626072735e-21
+              ],
+              [
+                -7.204181977212826e-05,
+                0.011013740299816013,
+                -6.048344638988286e-21
+              ],
+              [
+                1.1646703024747684e-20,
+                -5.0954325733271124e-21,
+                0.011603138454979517
+              ]
+            ],
+            "dispersion": [
+              0.10526401274363541,
+              0.10494636868332326,
+              0.10771786506879681
+            ],
+            "axisParticleCountExcluded": 0
+          }
+        },
+        {
+          "id": 1,
+          "name": "disk",
+          "count": 45000,
+          "mass": 6.8000000000038545,
+          "particleMass": {
+            "minimum": 0.0001511111111111111,
+            "maximum": 0.0001511111111111111
+          },
+          "r50": 5.267919123732075,
+          "R50": 5.2411635831730035,
+          "medianAbsZ": 0.16058819962503973,
+          "massMedianAbsZ": 0.16059004420536688,
+          "percentiles": {
+            "spherical": {
+              "number": {
+                "0.01": 0.5231784790923937,
+                "0.1": 1.5405279850599862,
+                "0.25": 2.711430892446406,
+                "0.5": 5.267295988617397,
+                "0.75": 11.799137217373191,
+                "0.9": 30.641865142077084,
+                "0.95": 61.910132502312294,
+                "0.99": 291.00792338232407,
+                "0.999": 3601.447832741115
+              },
+              "mass": {
+                "0.01": 0.523182837547025,
+                "0.1": 1.54055897823821,
+                "0.25": 2.7114325087368085,
+                "0.5": 5.267919123732075,
+                "0.75": 11.800386331247907,
+                "0.9": 30.650398909791225,
+                "0.95": 61.929153914749755,
+                "0.99": 292.3620085690943,
+                "0.999": 3601.447832741115
+              },
+              "maximum": 1571094.2261771536
+            },
+            "cylindrical": {
+              "number": {
+                "0.01": 0.4573458114521455,
+                "0.1": 1.4951683634763338,
+                "0.25": 2.6740951856581674,
+                "0.5": 5.2405312677370155,
+                "0.75": 11.782816129803635,
+                "0.9": 30.622770656812996,
+                "0.95": 61.91003057078557,
+                "0.99": 291.0079132059395,
+                "0.999": 3601.447832509217
+              },
+              "mass": {
+                "0.01": 0.45734689896910324,
+                "0.1": 1.4951830840826914,
+                "0.25": 2.6741020560024915,
+                "0.5": 5.2411635831730035,
+                "0.75": 11.784201889404013,
+                "0.9": 30.63101680834979,
+                "0.95": 61.929053814184925,
+                "0.99": 292.36195329184613,
+                "0.999": 3601.447832509217
+              },
+              "maximum": 1571094.22617715
+            },
+            "absoluteHeight": {
+              "number": {
+                "0.01": 0.002965386396220889,
+                "0.1": 0.027765414118255803,
+                "0.25": 0.07089852572501919,
+                "0.5": 0.16058819962503973,
+                "0.75": 0.3136706008511667,
+                "0.9": 0.5781757806220083,
+                "0.95": 0.8720498304295693,
+                "0.99": 1.9574913490108907,
+                "0.999": 6.120400133140686
+              },
+              "mass": {
+                "0.01": 0.0029656473339251758,
+                "0.1": 0.027765844200961193,
+                "0.25": 0.0709031247653132,
+                "0.5": 0.16059004420536688,
+                "0.75": 0.31376128557504335,
+                "0.9": 0.5781832564045651,
+                "0.95": 0.8724546046490905,
+                "0.99": 1.9591717636157309,
+                "0.999": 6.120400133140686
+              },
+              "maximum": 36.54356997603379
+            }
+          },
+          "tails": [
+            {
+              "radius": 30,
+              "count": 4612,
+              "numberFraction": 0.1024888888888889,
+              "mass": 0.696924444444411,
+              "massFraction": 0.10248888888882589,
+              "kinetic": 0.011575848201283863,
+              "kineticFraction": 0.07581665075122473,
+              "potential": -0.018890760039895805,
+              "potentialFraction": 0.03338729320518777,
+              "angularMomentum": [
+                0.0004211872863268848,
+                -0.005236052314322314,
+                14.679648795167397
+              ],
+              "angularMomentumScale": 14.683472697125827,
+              "angularMomentumMagnitudeFraction": 0.6220000708476853
+            },
+            {
+              "radius": 100,
+              "count": 1412,
+              "numberFraction": 0.031377777777777775,
+              "mass": 0.21336888888888503,
+              "massFraction": 0.03137777777775942,
+              "kinetic": 0.0021101377564821363,
+              "kineticFraction": 0.013820462616504893,
+              "potential": -0.0024466612128268136,
+              "potentialFraction": 0.004324198450136033,
+              "angularMomentum": [
+                0.0011225539370952478,
+                -0.0037647365330437743,
+                9.835364257888314
+              ],
+              "angularMomentumScale": 9.836275775138535,
+              "angularMomentumMagnitudeFraction": 0.41667011307285107
+            },
+            {
+              "radius": 300,
+              "count": 438,
+              "numberFraction": 0.009733333333333333,
+              "mass": 0.06618666666666641,
+              "massFraction": 0.009733333333327779,
+              "kinetic": 0.00025578473838558944,
+              "kineticFraction": 0.0016752761301347054,
+              "potential": -0.00025586763099054243,
+              "potentialFraction": 0.0004522172532791935,
+              "angularMomentum": [
+                0.0008405837394121496,
+                0.0002891928580926867,
+                6.089615019548003
+              ],
+              "angularMomentumScale": 6.089617366025411,
+              "angularMomentumMagnitudeFraction": 0.25795957885660936
+            },
+            {
+              "radius": 1000,
+              "count": 122,
+              "numberFraction": 0.002711111111111111,
+              "mass": 0.018435555555555556,
+              "massFraction": 0.0027111111111095742,
+              "kinetic": 1.9124055297462256e-05,
+              "kineticFraction": 0.0001252540458567862,
+              "potential": -1.9121018168704065e-05,
+              "potentialFraction": 3.379424854436753e-05,
+              "angularMomentum": [
+                0.0008098241492495411,
+                0.00031253759950592986,
+                3.745085901482552
+              ],
+              "angularMomentumScale": 3.745086461962781,
+              "angularMomentumMagnitudeFraction": 0.15864394566058798
+            },
+            {
+              "radius": 10000,
+              "count": 18,
+              "numberFraction": 0.0004,
+              "mass": 0.0027199999999999998,
+              "massFraction": 0.0003999999999997732,
+              "kinetic": 1.943653676831893e-07,
+              "kineticFraction": 1.2730066033636635e-06,
+              "potential": -1.943729490163435e-07,
+              "potentialFraction": 3.4353232089445716e-07,
+              "angularMomentum": [
+                0.0008358295152717573,
+                0.0003287685780493759,
+                2.0088895458707103
+              ],
+              "angularMomentumScale": 2.008890033401017,
+              "angularMomentumMagnitudeFraction": 0.08509769922105873
+            }
+          ],
+          "kinetic": 0.15268213626670746,
+          "potential": -0.5658068752024656,
+          "angularMomentum": [
+            -0.006953238213409135,
+            -0.006343586690025379,
+            23.485935670569717
+          ],
+          "angularMomentumScale": 23.606866599089987,
+          "virial": {
+            "kineticTensor": [
+              [
+                0.07317279795881192,
+                0.00019813495293681115,
+                0.00023820401776065108
+              ],
+              [
+                0.00019813495293681137,
+                0.07423572528073072,
+                0.00010084124635656337
+              ],
+              [
+                0.00023820401776065108,
+                0.00010084124635656336,
+                0.0052736130271625594
+              ]
+            ],
+            "forceTensor": [
+              [
+                -0.1486069470098314,
+                0.0006247403036846999,
+                -0.0006469756817878926
+              ],
+              [
+                0.0006247403036847006,
+                -0.1463701371023577,
+                -0.00010337893987731822
+              ],
+              [
+                -0.00014380707209874516,
+                -3.315110466342638e-05,
+                -0.010465083849893005
+              ]
+            ],
+            "W": -0.3054421679620821,
+            "twiceKOverNegativeW": 0.9997449748697538,
+            "tensorResidual": [
+              [
+                -0.0022613510922075697,
+                0.0010210102095583227,
+                8.101665857798327e-05
+              ],
+              [
+                0.001021010209558323,
+                0.0021013134591037486,
+                0.00013341747044275445
+              ],
+              [
+                8.101665857798327e-05,
+                0.0001334174704427544,
+                8.214220443211392e-05
+              ]
+            ]
+          },
+          "velocity": {
+            "axes": [
+              "R",
+              "phi",
+              "z"
+            ],
+            "mass": 6.8000000000038545,
+            "mean": [
+              -0.0005221655917840891,
+              0.19653842054944684,
+              1.1597072187993448e-20
+            ],
+            "covariance": [
+              [
+                0.0015234144048675545,
+                4.690792697009734e-05,
+                -1.8761946434236706e-21
+              ],
+              [
+                4.6907926970097344e-05,
+                0.0032044101977832824,
+                -3.742384050761687e-21
+              ],
+              [
+                2.3310071305938835e-23,
+                -3.548483183642749e-21,
+                0.0015510626550469262
+              ]
+            ],
+            "dispersion": [
+              0.03903094163439507,
+              0.05660751008287931,
+              0.039383532790329086
+            ],
+            "axisParticleCountExcluded": 0
+          }
+        },
+        {
+          "id": 2,
+          "name": "halo",
+          "count": 40000,
+          "mass": 97.6315764172918,
+          "particleMass": {
+            "minimum": 0.00244078941043322,
+            "maximum": 0.00244078941043322
+          },
+          "r50": 72.03076974569264,
+          "R50": 52.37485585453999,
+          "medianAbsZ": 27.75647727053679,
+          "massMedianAbsZ": 27.75044302738457,
+          "percentiles": {
+            "spherical": {
+              "number": {
+                "0.01": 3.4494550162392046,
+                "0.1": 14.69831549191408,
+                "0.25": 32.3730546844657,
+                "0.5": 72.03377888265398,
+                "0.75": 133.88426563620436,
+                "0.9": 184.9116266646359,
+                "0.95": 205.33054627084454,
+                "0.99": 224.89824673484944,
+                "0.999": 235.41395122492074
+              },
+              "mass": {
+                "0.01": 3.447266772027513,
+                "0.1": 14.696602482597008,
+                "0.25": 32.37122773139168,
+                "0.5": 72.03076974569264,
+                "0.75": 133.8826647856658,
+                "0.9": 184.91153921415304,
+                "0.95": 205.33009572274986,
+                "0.99": 224.89747035224983,
+                "0.999": 235.41392837353212
+              },
+              "maximum": 243.06786631698668
+            },
+            "cylindrical": {
+              "number": {
+                "0.01": 2.0305559342240755,
+                "0.1": 10.019392926372893,
+                "0.25": 22.459966063442327,
+                "0.5": 52.37640458986557,
+                "0.75": 102.42095833520725,
+                "0.9": 153.2874826735746,
+                "0.95": 179.54068482438163,
+                "0.99": 210.88695316671914,
+                "0.999": 227.9112827334541
+              },
+              "mass": {
+                "0.01": 2.0269864601400753,
+                "0.1": 10.017638194744034,
+                "0.25": 22.4594051008347,
+                "0.5": 52.37485585453999,
+                "0.75": 102.41878539088873,
+                "0.9": 153.28743976040553,
+                "0.95": 179.53960258380863,
+                "0.99": 210.88661523308517,
+                "0.999": 227.9110856852459
+              },
+              "maximum": 238.70452155244982
+            },
+            "absoluteHeight": {
+              "number": {
+                "0.01": 0.27813866863750486,
+                "0.1": 3.3741850439468957,
+                "0.25": 9.948279263932612,
+                "0.5": 27.75647727053679,
+                "0.75": 63.345799824980645,
+                "0.9": 109.86520464650384,
+                "0.95": 138.00437291908327,
+                "0.99": 184.80964378888166,
+                "0.999": 213.88915657021332
+              },
+              "mass": {
+                "0.01": 0.27786015071003084,
+                "0.1": 3.3731550970488824,
+                "0.25": 9.945633939164297,
+                "0.5": 27.75044302738457,
+                "0.75": 63.34305861072117,
+                "0.9": 109.85988548006297,
+                "0.95": 138.0041959586299,
+                "0.99": 184.80883365764612,
+                "0.999": 213.8883516498825
+              },
+              "maximum": 227.797701243911
+            }
+          },
+          "tails": [
+            {
+              "radius": 30,
+              "count": 30724,
+              "numberFraction": 0.7681,
+              "mass": 74.9908138461563,
+              "massFraction": 0.7681000000003531,
+              "kinetic": 0.9862259377721423,
+              "kineticFraction": 0.5815170119481577,
+              "potential": -1.7333078216179403,
+              "potentialFraction": 0.5544139080890955,
+              "angularMomentum": [
+                1.6765091037298148,
+                8.909382614703077,
+                3.2861818400351988
+              ],
+              "angularMomentumScale": 780.071059795888,
+              "angularMomentumMagnitudeFraction": 0.9248838616525074
+            },
+            {
+              "radius": 100,
+              "count": 14862,
+              "numberFraction": 0.37155,
+              "mass": 36.27501221785747,
+              "massFraction": 0.37155000000013017,
+              "kinetic": 0.2868347421400307,
+              "kineticFraction": 0.16912887380450164,
+              "potential": -0.5476664751592244,
+              "potentialFraction": 0.17517598838213333,
+              "angularMomentum": [
+                -0.9146449635785614,
+                4.853750549443351,
+                1.6682447631679773
+              ],
+              "angularMomentumScale": 465.6167084374648,
+              "angularMomentumMagnitudeFraction": 0.5520540391054283
+            },
+            {
+              "radius": 300,
+              "count": 0,
+              "numberFraction": 0,
+              "mass": 0,
+              "massFraction": 0,
+              "kinetic": 0,
+              "kineticFraction": 0,
+              "potential": 0,
+              "potentialFraction": 0,
+              "angularMomentum": [
+                0,
+                0,
+                0
+              ],
+              "angularMomentumScale": 0,
+              "angularMomentumMagnitudeFraction": 0
+            },
+            {
+              "radius": 1000,
+              "count": 0,
+              "numberFraction": 0,
+              "mass": 0,
+              "massFraction": 0,
+              "kinetic": 0,
+              "kineticFraction": 0,
+              "potential": 0,
+              "potentialFraction": 0,
+              "angularMomentum": [
+                0,
+                0,
+                0
+              ],
+              "angularMomentumScale": 0,
+              "angularMomentumMagnitudeFraction": 0
+            },
+            {
+              "radius": 10000,
+              "count": 0,
+              "numberFraction": 0,
+              "mass": 0,
+              "massFraction": 0,
+              "kinetic": 0,
+              "kineticFraction": 0,
+              "potential": 0,
+              "potentialFraction": 0,
+              "angularMomentum": [
+                0,
+                0,
+                0
+              ],
+              "angularMomentumScale": 0,
+              "angularMomentumMagnitudeFraction": 0
+            }
+          ],
+          "kinetic": 1.6959537167591314,
+          "potential": -3.126378679048928,
+          "angularMomentum": [
+            2.98285593923611,
+            9.35909541100039,
+            3.122580973714766
+          ],
+          "angularMomentumScale": 843.4259609656508,
+          "virial": {
+            "kineticTensor": [
+              [
+                0.5698939407644922,
+                0.0005135016390167562,
+                0.003632442847782056
+              ],
+              [
+                0.0005135016390167577,
+                0.5625116376434827,
+                3.701234426744256e-05
+              ],
+              [
+                0.003632442847782057,
+                3.701234426743828e-05,
+                0.5635481383511616
+              ]
+            ],
+            "forceTensor": [
+              [
+                -1.1217235039845017,
+                -0.0036369302406429327,
+                0.0012360872934797616
+              ],
+              [
+                -0.0036369302406429457,
+                -1.1343209739488826,
+                -0.011480518478207885
+              ],
+              [
+                0.001372169713724467,
+                -0.009882226209828614,
+                -1.1564781973941833
+              ]
+            ],
+            "W": -3.412522675327568,
+            "twiceKOverNegativeW": 0.9939589436406232,
+            "tensorResidual": [
+              [
+                0.018064377544482646,
+                -0.002609926962609427,
+                0.008569014199166227
+              ],
+              [
+                -0.002609926962609424,
+                -0.00929769866191732,
+                -0.010607347655483365
+              ],
+              [
+                0.008569014199166228,
+                -0.010607347655483372,
+                -0.029381920691860186
+              ]
+            ]
+          },
+          "velocity": {
+            "axes": [
+              "R",
+              "phi",
+              "z"
+            ],
+            "mass": 97.6315764172918,
+            "mean": [
+              -0.0007735648073745522,
+              0.00035062961640830394,
+              -9.020900888258299e-20
+            ],
+            "covariance": [
+              [
+                0.011649080876446092,
+                -0.00012219959396091786,
+                7.669415499063718e-21
+              ],
+              [
+                -0.0001221995939609178,
+                0.011547725054654496,
+                -5.2922437267294885e-21
+              ],
+              [
+                7.114163698226526e-22,
+                2.2730620596772558e-21,
+                0.011544382648139936
+              ]
+            ],
+            "dispersion": [
+              0.10793090788298823,
+              0.10746034177618502,
+              0.10744478883659242
+            ],
+            "axisParticleCountExcluded": 0
+          }
+        }
+      ]
+    },
+    {
+      "seed": 2028,
+      "n": 100000,
+      "independentDrawsByComponent": [
+        7500,
+        22500,
+        20000
+      ],
+      "unboundByHistoricalAnalyticCriterion": 624,
+      "components": [
+        {
+          "id": 0,
+          "name": "bulge",
+          "count": 15000,
+          "mass": 0.4999999999999547,
+          "particleMass": {
+            "minimum": 3.3333333333333335e-05,
+            "maximum": 3.3333333333333335e-05
+          },
+          "r50": 2.3432825645528466,
+          "R50": 1.782629654496417,
+          "medianAbsZ": 0.9733612142757516,
+          "massMedianAbsZ": 0.9732029827539431,
+          "percentiles": {
+            "spherical": {
+              "number": {
+                "0.01": 0.11504112023017395,
+                "0.1": 0.4609778816139921,
+                "0.25": 0.9773739896818576,
+                "0.5": 2.3438546698650056,
+                "0.75": 6.491449136948106,
+                "0.9": 19.10359087859897,
+                "0.95": 38.326006496706945,
+                "0.99": 193.7573930187436,
+                "0.999": 3103.379349454878
+              },
+              "mass": {
+                "0.01": 0.11277088708185228,
+                "0.1": 0.46082862618417625,
+                "0.25": 0.9772801021229218,
+                "0.5": 2.3432825645528466,
+                "0.75": 6.490704362864985,
+                "0.9": 19.10239986221591,
+                "0.95": 38.32170704251212,
+                "0.99": 193.66571343402873,
+                "0.999": 3103.379349454878
+              },
+              "maximum": 87683.1044638705
+            },
+            "cylindrical": {
+              "number": {
+                "0.01": 0.05671678486294395,
+                "0.1": 0.3088514218688932,
+                "0.25": 0.6913310453744582,
+                "0.5": 1.7827500834220364,
+                "0.75": 4.926647944193564,
+                "0.9": 15.059247648164932,
+                "0.95": 30.343952810042165,
+                "0.99": 151.35453307773415,
+                "0.999": 2027.294815740193
+              },
+              "mass": {
+                "0.01": 0.05597523312945405,
+                "0.1": 0.3087563046432259,
+                "0.25": 0.6913222026112154,
+                "0.5": 1.782629654496417,
+                "0.75": 4.92625266307141,
+                "0.9": 15.054487209391114,
+                "0.95": 30.343460353825296,
+                "0.99": 151.32502547116394,
+                "0.999": 2027.294815740193
+              },
+              "maximum": 85358.21698714705
+            },
+            "absoluteHeight": {
+              "number": {
+                "0.01": 0.009818875237036622,
+                "0.1": 0.11867333858051346,
+                "0.25": 0.32632612360868274,
+                "0.5": 0.9733612142757516,
+                "0.75": 2.994149443248536,
+                "0.9": 9.169092272240958,
+                "0.95": 18.489832368602745,
+                "0.99": 96.10841436199235,
+                "0.999": 1404.9277335095926
+              },
+              "mass": {
+                "0.01": 0.009704521649945615,
+                "0.1": 0.11863979197473398,
+                "0.25": 0.3260596681452854,
+                "0.5": 0.9732029827539431,
+                "0.75": 2.993505325879648,
+                "0.9": 9.168121313719745,
+                "0.95": 18.487818883187344,
+                "0.99": 96.10539388169445,
+                "0.999": 1404.9277335095926
+              },
+              "maximum": 43314.79133458017
+            }
+          },
+          "tails": [
+            {
+              "radius": 30,
+              "count": 948,
+              "numberFraction": 0.0632,
+              "mass": 0.03159999999999986,
+              "massFraction": 0.06320000000000545,
+              "kinetic": 0.00036035844169849925,
+              "kineticFraction": 0.041396574085411496,
+              "potential": -0.0008524507121342263,
+              "potentialFraction": 0.01781938876619812,
+              "angularMomentum": [
+                -0.005195418230631936,
+                -0.005321596962170639,
+                0.06688997917964065
+              ],
+              "angularMomentumScale": 0.40332725787040075,
+              "angularMomentumMagnitudeFraction": 0.5892985309074701
+            },
+            {
+              "radius": 100,
+              "count": 284,
+              "numberFraction": 0.018933333333333333,
+              "mass": 0.009466666666666623,
+              "massFraction": 0.01893333333333496,
+              "kinetic": 5.53477190754488e-05,
+              "kineticFraction": 0.006358130372542626,
+              "potential": -0.00010329072219679001,
+              "potentialFraction": 0.00215916006470079,
+              "angularMomentum": [
+                -0.00606492956847675,
+                -0.011042512176458274,
+                0.06143926929992085
+              ],
+              "angularMomentumScale": 0.27061014960456875,
+              "angularMomentumMagnitudeFraction": 0.39538652669457036
+            },
+            {
+              "radius": 300,
+              "count": 102,
+              "numberFraction": 0.0068,
+              "mass": 0.003399999999999992,
+              "massFraction": 0.0068000000000006,
+              "kinetic": 8.640485744821614e-06,
+              "kineticFraction": 0.0009925853452566406,
+              "potential": -1.2464686741270827e-05,
+              "potentialFraction": 0.0002605582888604664,
+              "angularMomentum": [
+                -0.0044381373983908515,
+                -0.015376103336235611,
+                0.06756050479869523
+              ],
+              "angularMomentumScale": 0.18143514231679309,
+              "angularMomentumMagnitudeFraction": 0.2650935703845483
+            },
+            {
+              "radius": 1000,
+              "count": 36,
+              "numberFraction": 0.0024,
+              "mass": 0.0012000000000000003,
+              "massFraction": 0.002400000000000218,
+              "kinetic": 7.447833311683827e-07,
+              "kineticFraction": 8.555780794525486e-05,
+              "potential": -1.1318492317747055e-06,
+              "potentialFraction": 2.365985645694479e-05,
+              "angularMomentum": [
+                -0.004760878670860133,
+                -0.021365418918986336,
+                0.04690545280753849
+              ],
+              "angularMomentumScale": 0.11659751744504149,
+              "angularMomentumMagnitudeFraction": 0.17035978698940196
+            },
+            {
+              "radius": 10000,
+              "count": 6,
+              "numberFraction": 0.0004,
+              "mass": 0.00020000000000000004,
+              "massFraction": 0.0004000000000000363,
+              "kinetic": 5.765045776196652e-09,
+              "kineticFraction": 6.62266002303859e-07,
+              "potential": -1.9475511140195998e-08,
+              "potentialFraction": 4.0711058069118014e-07,
+              "angularMomentum": [
+                0.002725728273382043,
+                -0.023065643566608292,
+                0.04510019096603393
+              ],
+              "angularMomentumScale": 0.061313035032507596,
+              "angularMomentumMagnitudeFraction": 0.08958403074692511
+            }
+          ],
+          "kinetic": 0.008705030540812135,
+          "potential": -0.047838381176758066,
+          "angularMomentum": [
+            -0.0059821796183411585,
+            -0.0010627429552185,
+            0.06961353266730094
+          ],
+          "angularMomentumScale": 0.6844192488471178,
+          "virial": {
+            "kineticTensor": [
+              [
+                0.002966114918350791,
+                -9.940544479125802e-06,
+                -6.460987528152308e-06
+              ],
+              [
+                -9.940544479125802e-06,
+                0.0029109420575948747,
+                2.4181386695492018e-05
+              ],
+              [
+                -6.460987528152289e-06,
+                2.418138669549203e-05,
+                0.002827973564866394
+              ]
+            ],
+            "forceTensor": [
+              [
+                -0.004894971333267105,
+                1.2366680064314229e-05,
+                -3.0632536560449094e-05
+              ],
+              [
+                1.236668006431425e-05,
+                -0.005054950277033734,
+                3.888783721166017e-05
+              ],
+              [
+                -1.4175399100563194e-05,
+                8.557169996898953e-06,
+                -0.007143667463005382
+              ]
+            ],
+            "W": -0.01709358907330622,
+            "twiceKOverNegativeW": 1.0185140760644738,
+            "tensorResidual": [
+              [
+                0.0010372585034344774,
+                -7.514408893937365e-06,
+                -3.532594288681076e-05
+              ],
+              [
+                -7.514408893937365e-06,
+                0.0007669338381560151,
+                7.20852769952636e-05
+              ],
+              [
+                -3.532594288681072e-05,
+                7.208527699526363e-05,
+                -0.001487720333272594
+              ]
+            ]
+          },
+          "velocity": {
+            "axes": [
+              "R",
+              "phi",
+              "z"
+            ],
+            "mass": 0.4999999999999547,
+            "mean": [
+              0.00029311328391147117,
+              0.002346078438898948,
+              -1.8804131429045468e-19
+            ],
+            "covariance": [
+              [
+                0.011866097859547753,
+                -0.00017228619587387602,
+                3.388131789017508e-21
+              ],
+              [
+                -0.00017228619587387594,
+                0.01163654004479846,
+                6.776263578035017e-21
+              ],
+              [
+                6.776263578035017e-21,
+                6.246867986001031e-21,
+                0.011311894259466618
+              ]
+            ],
+            "dispersion": [
+              0.10893162010889103,
+              0.1078727956659994,
+              0.10635738930354871
+            ],
+            "axisParticleCountExcluded": 0
+          }
+        },
+        {
+          "id": 1,
+          "name": "disk",
+          "count": 45000,
+          "mass": 6.8000000000038545,
+          "particleMass": {
+            "minimum": 0.0001511111111111111,
+            "maximum": 0.0001511111111111111
+          },
+          "r50": 5.352363505246614,
+          "R50": 5.327712025381745,
+          "medianAbsZ": 0.16447140610046893,
+          "massMedianAbsZ": 0.16448769508065858,
+          "percentiles": {
+            "spherical": {
+              "number": {
+                "0.01": 0.524691483809009,
+                "0.1": 1.5526638704384434,
+                "0.25": 2.7413595170818077,
+                "0.5": 5.352264786377896,
+                "0.75": 11.90599330452257,
+                "0.9": 30.518946056559674,
+                "0.95": 62.92524267939748,
+                "0.99": 315.2801544899842,
+                "0.999": 2171.285978021162
+              },
+              "mass": {
+                "0.01": 0.5246944570527252,
+                "0.1": 1.5526766705957187,
+                "0.25": 2.7417649238263846,
+                "0.5": 5.352363505246614,
+                "0.75": 11.90997490853442,
+                "0.9": 30.528259206257243,
+                "0.95": 62.935704804289365,
+                "0.99": 316.20133385019756,
+                "0.999": 2171.285978021162
+              },
+              "maximum": 40778.32482250264
+            },
+            "cylindrical": {
+              "number": {
+                "0.01": 0.4556379210671922,
+                "0.1": 1.507776419174645,
+                "0.25": 2.705345428650246,
+                "0.5": 5.327493122378183,
+                "0.75": 11.887296371629715,
+                "0.9": 30.51668941241302,
+                "0.95": 62.92521889213724,
+                "0.99": 315.27990228546,
+                "0.999": 2171.2859776984487
+              },
+              "mass": {
+                "0.01": 0.45564102577784604,
+                "0.1": 1.5078537224003532,
+                "0.25": 2.705465923299625,
+                "0.5": 5.327712025381745,
+                "0.75": 11.887919926697009,
+                "0.9": 30.528242466663137,
+                "0.95": 62.93552952536452,
+                "0.99": 316.2013333161843,
+                "0.999": 2171.2859776984487
+              },
+              "maximum": 40778.32482127076
+            },
+            "absoluteHeight": {
+              "number": {
+                "0.01": 0.0030287880147022526,
+                "0.1": 0.02880082190445904,
+                "0.25": 0.07331509824551224,
+                "0.5": 0.16447140610046893,
+                "0.75": 0.32295671718028396,
+                "0.9": 0.5845910860365571,
+                "0.95": 0.851909883119756,
+                "0.99": 1.984584812837387,
+                "0.999": 6.332130144743341
+              },
+              "mass": {
+                "0.01": 0.0030288650127950592,
+                "0.1": 0.028801196102994767,
+                "0.25": 0.07331909569297958,
+                "0.5": 0.16448769508065858,
+                "0.75": 0.3229575569588369,
+                "0.9": 0.5846033178432024,
+                "0.95": 0.8526121994693497,
+                "0.99": 1.9949056205572098,
+                "0.999": 6.332130144743341
+              },
+              "maximum": 39.90734194925322
+            }
+          },
+          "tails": [
+            {
+              "radius": 30,
+              "count": 4584,
+              "numberFraction": 0.10186666666666666,
+              "mass": 0.6926933333333002,
+              "massFraction": 0.10186666666660404,
+              "kinetic": 0.011448854866392988,
+              "kineticFraction": 0.07479176040285415,
+              "potential": -0.018575957483551467,
+              "potentialFraction": 0.032944920905373896,
+              "angularMomentum": [
+                0.004164470999611597,
+                -0.0016764530951679725,
+                13.36571130513359
+              ],
+              "angularMomentumScale": 13.369138411320376,
+              "angularMomentumMagnitudeFraction": 0.5965210368893519
+            },
+            {
+              "radius": 100,
+              "count": 1454,
+              "numberFraction": 0.03231111111111111,
+              "mass": 0.2197155555555513,
+              "massFraction": 0.032311111111092174,
+              "kinetic": 0.0021698937797503537,
+              "kineticFraction": 0.014175232158031736,
+              "potential": -0.0025409936220209426,
+              "potentialFraction": 0.004506515153938366,
+              "angularMomentum": [
+                0.0010458522552050757,
+                -0.0002626035066048953,
+                8.615262328967807
+              ],
+              "angularMomentumScale": 8.615337393241184,
+              "angularMomentumMagnitudeFraction": 0.38440996247119197
+            },
+            {
+              "radius": 300,
+              "count": 472,
+              "numberFraction": 0.01048888888888889,
+              "mass": 0.07132444444444434,
+              "massFraction": 0.010488888888882929,
+              "kinetic": 0.0002844118050816699,
+              "kineticFraction": 0.0018579726819537576,
+              "potential": -0.00028446331349893156,
+              "potentialFraction": 0.000504502735431065,
+              "angularMomentum": [
+                3.1241746832851144e-05,
+                -5.338870358336011e-05,
+                4.92018161673564
+              ],
+              "angularMomentumScale": 4.920185018862985,
+              "angularMomentumMagnitudeFraction": 0.21953500508711798
+            },
+            {
+              "radius": 1000,
+              "count": 128,
+              "numberFraction": 0.0028444444444444446,
+              "mass": 0.01934222222222223,
+              "massFraction": 0.002844444444442833,
+              "kinetic": 2.473035385954301e-05,
+              "kineticFraction": 0.00016155560727476262,
+              "potential": -2.472774419970513e-05,
+              "potentialFraction": 4.3855267086445394e-05,
+              "angularMomentum": [
+                -5.675664177775263e-05,
+                9.56952330036329e-06,
+                2.356005698212697
+              ],
+              "angularMomentumScale": 2.356005843478431,
+              "angularMomentumMagnitudeFraction": 0.10512323273421204
+            },
+            {
+              "radius": 10000,
+              "count": 12,
+              "numberFraction": 0.0002666666666666667,
+              "mass": 0.0018133333333333337,
+              "massFraction": 0.00026666666666651554,
+              "kinetic": 1.5608070744211547e-07,
+              "kineticFraction": 1.0196260683490066e-06,
+              "potential": -1.5608136734556706e-07,
+              "potentialFraction": 2.768141726506158e-07,
+              "angularMomentum": [
+                -3.898006525586258e-06,
+                5.340218231259588e-06,
+                0.6642695024568408
+              ],
+              "angularMomentumScale": 0.6642695025990275,
+              "angularMomentumMagnitudeFraction": 0.029639212361569904
+            }
+          ],
+          "kinetic": 0.15307641917673173,
+          "potential": -0.5638489021390063,
+          "angularMomentum": [
+            0.005972717811594128,
+            0.00945802251823908,
+            22.291234435661345
+          ],
+          "angularMomentumScale": 22.411847335738145,
+          "virial": {
+            "kineticTensor": [
+              [
+                0.07427215633660808,
+                0.00042387736190866636,
+                -6.19572337454589e-05
+              ],
+              [
+                0.0004238773619086658,
+                0.0735894424760049,
+                -0.00018214070183953464
+              ],
+              [
+                -6.195723374545882e-05,
+                -0.00018214070183953458,
+                0.005214820364118925
+              ]
+            ],
+            "forceTensor": [
+              [
+                -0.14693211112347745,
+                0.0012217276040194288,
+                -0.0001169303103754045
+              ],
+              [
+                0.0012217276040194314,
+                -0.14866163912102298,
+                0.00018091262457379994
+              ],
+              [
+                -0.00010202801411425503,
+                1.8006212854536046e-05,
+                -0.010529491871692236
+              ]
+            ],
+            "W": -0.30612324211619263,
+            "twiceKOverNegativeW": 1.00009668079126,
+            "tensorResidual": [
+              [
+                0.0016122015497387066,
+                0.002069482327836763,
+                -0.00023339362973574758
+              ],
+              [
+                0.0020694823278367617,
+                -0.0014827541690131951,
+                -0.0002648219849649013
+              ],
+              [
+                -0.00023339362973574741,
+                -0.0002648219849649012,
+                -9.985114345438528e-05
+              ]
+            ]
+          },
+          "velocity": {
+            "axes": [
+              "R",
+              "phi",
+              "z"
+            ],
+            "mass": 6.8000000000038545,
+            "mean": [
+              0.000713615614842429,
+              0.196998648276918,
+              5.955700410381799e-21
+            ],
+            "covariance": [
+              [
+                0.0015394371104645076,
+                -9.609866057750586e-06,
+                1.8059261065531097e-21
+              ],
+              [
+                -9.609866057750547e-06,
+                0.0031402917524762496,
+                -1.1005759694219523e-21
+              ],
+              [
+                2.6056379364480177e-22,
+                -1.0240009406569765e-21,
+                0.0015337706953282451
+              ]
+            ],
+            "dispersion": [
+              0.03923566120845305,
+              0.056038306117121794,
+              0.03916338462554335
+            ],
+            "axisParticleCountExcluded": 0
+          }
+        },
+        {
+          "id": 2,
+          "name": "halo",
+          "count": 40000,
+          "mass": 97.6315764172918,
+          "particleMass": {
+            "minimum": 0.00244078941043322,
+            "maximum": 0.00244078941043322
+          },
+          "r50": 72.38329815538361,
+          "R50": 52.668620187860576,
+          "medianAbsZ": 27.62947622858673,
+          "massMedianAbsZ": 27.629416289645473,
+          "percentiles": {
+            "spherical": {
+              "number": {
+                "0.01": 3.351965736017491,
+                "0.1": 14.565348961990646,
+                "0.25": 32.63496702607855,
+                "0.5": 72.39715826988004,
+                "0.75": 133.8793126753527,
+                "0.9": 184.6303002622068,
+                "0.95": 205.3673174478905,
+                "0.99": 225.2098246225871,
+                "0.999": 236.23264871595012
+              },
+              "mass": {
+                "0.01": 3.342094357962729,
+                "0.1": 14.555913037601357,
+                "0.25": 32.63031694465242,
+                "0.5": 72.38329815538361,
+                "0.75": 133.87612888139228,
+                "0.9": 184.63030016164697,
+                "0.95": 205.36698165632328,
+                "0.99": 225.20977516532685,
+                "0.999": 236.2326149924362
+              },
+              "maximum": 242.30150523007345
+            },
+            "cylindrical": {
+              "number": {
+                "0.01": 1.8954226654792725,
+                "0.1": 9.675929837658389,
+                "0.25": 23.19237268536079,
+                "0.5": 52.66944807766875,
+                "0.75": 102.42918670261693,
+                "0.9": 152.57831899835293,
+                "0.95": 178.54941452380007,
+                "0.99": 211.40830056013067,
+                "0.999": 228.51585657766876
+              },
+              "mass": {
+                "0.01": 1.8837095547248899,
+                "0.1": 9.671586321704318,
+                "0.25": 23.18727621676671,
+                "0.5": 52.668620187860576,
+                "0.75": 102.42603298286316,
+                "0.9": 152.57770185271474,
+                "0.95": 178.54869242240775,
+                "0.99": 211.4082205697599,
+                "0.999": 228.51583070255197
+              },
+              "maximum": 238.08644259159638
+            },
+            "absoluteHeight": {
+              "number": {
+                "0.01": 0.2934350645860373,
+                "0.1": 3.2639130052808087,
+                "0.25": 9.91237986355302,
+                "0.5": 27.62947622858673,
+                "0.75": 63.13494798002195,
+                "0.9": 109.97933911308974,
+                "0.95": 139.18437350740246,
+                "0.99": 185.78647221664548,
+                "0.999": 215.5742545456299
+              },
+              "mass": {
+                "0.01": 0.2920552410949353,
+                "0.1": 3.2609559556622325,
+                "0.25": 9.911824471645739,
+                "0.5": 27.629416289645473,
+                "0.75": 63.134628168816754,
+                "0.9": 109.97903154957567,
+                "0.95": 139.18300207769457,
+                "0.99": 185.78627588868872,
+                "0.999": 215.5742494468365
+              },
+              "maximum": 230.84326189949604
+            }
+          },
+          "tails": [
+            {
+              "radius": 30,
+              "count": 30810,
+              "numberFraction": 0.77025,
+              "mass": 75.20072173545316,
+              "massFraction": 0.7702500000003498,
+              "kinetic": 0.9991184634112282,
+              "kineticFraction": 0.5874982184902804,
+              "potential": -1.740156409577402,
+              "potentialFraction": 0.5577514907884944,
+              "angularMomentum": [
+                0.4976530625731199,
+                -6.269770560520698,
+                -1.3837523244325043
+              ],
+              "angularMomentumScale": 783.6503782388826,
+              "angularMomentumMagnitudeFraction": 0.9248524100449217
+            },
+            {
+              "radius": 100,
+              "count": 14882,
+              "numberFraction": 0.37205,
+              "mass": 36.323828006066186,
+              "massFraction": 0.37205000000013083,
+              "kinetic": 0.2831002924349075,
+              "kineticFraction": 0.16646766479695144,
+              "potential": -0.5495519039499026,
+              "potentialFraction": 0.17614128937303436,
+              "angularMomentum": [
+                2.1675078964613363,
+                -1.1241301422073815,
+                -3.3504685092721287
+              ],
+              "angularMomentumScale": 465.266154064601,
+              "angularMomentumMagnitudeFraction": 0.5491001291494402
+            },
+            {
+              "radius": 300,
+              "count": 0,
+              "numberFraction": 0,
+              "mass": 0,
+              "massFraction": 0,
+              "kinetic": 0,
+              "kineticFraction": 0,
+              "potential": 0,
+              "potentialFraction": 0,
+              "angularMomentum": [
+                0,
+                0,
+                0
+              ],
+              "angularMomentumScale": 0,
+              "angularMomentumMagnitudeFraction": 0
+            },
+            {
+              "radius": 1000,
+              "count": 0,
+              "numberFraction": 0,
+              "mass": 0,
+              "massFraction": 0,
+              "kinetic": 0,
+              "kineticFraction": 0,
+              "potential": 0,
+              "potentialFraction": 0,
+              "angularMomentum": [
+                0,
+                0,
+                0
+              ],
+              "angularMomentumScale": 0,
+              "angularMomentumMagnitudeFraction": 0
+            },
+            {
+              "radius": 10000,
+              "count": 0,
+              "numberFraction": 0,
+              "mass": 0,
+              "massFraction": 0,
+              "kinetic": 0,
+              "kineticFraction": 0,
+              "potential": 0,
+              "potentialFraction": 0,
+              "angularMomentum": [
+                0,
+                0,
+                0
+              ],
+              "angularMomentumScale": 0,
+              "angularMomentumMagnitudeFraction": 0
+            }
+          ],
+          "kinetic": 1.7006323286880873,
+          "potential": -3.11994936511481,
+          "angularMomentum": [
+            -0.7046319706497732,
+            -5.5431666841839,
+            -1.43415988989554
+          ],
+          "angularMomentumScale": 847.324794451062,
+          "virial": {
+            "kineticTensor": [
+              [
+                0.56512511213613,
+                -0.003276247172163142,
+                -0.005148091140033445
+              ],
+              [
+                -0.003276247172163144,
+                0.569035984128347,
+                0.001395031731788619
+              ],
+              [
+                -0.005148091140033444,
+                0.0013950317317886186,
+                0.5664712324236076
+              ]
+            ],
+            "forceTensor": [
+              [
+                -1.1171026710287288,
+                0.014720772341985506,
+                0.008065713654154745
+              ],
+              [
+                0.014720772341985499,
+                -1.1353180944945827,
+                -0.0015057673362795002
+              ],
+              [
+                0.009584784797731623,
+                -0.0028458478310504085,
+                -1.156684681102666
+              ]
+            ],
+            "W": -3.4091054466259774,
+            "twiceKOverNegativeW": 0.9977000449611898,
+            "tensorResidual": [
+              [
+                0.01314755324353123,
+                0.008168277997659217,
+                -0.0014709330541237062
+              ],
+              [
+                0.008168277997659214,
+                0.0027538737621113363,
+                0.0006142558799122838
+              ],
+              [
+                -0.0014709330541237027,
+                0.000614255879912283,
+                -0.02374221625545081
+              ]
+            ]
+          },
+          "velocity": {
+            "axes": [
+              "R",
+              "phi",
+              "z"
+            ],
+            "mass": 97.6315764172918,
+            "mean": [
+              -0.0006023592781972787,
+              -0.00031500633481747545,
+              -5.759824041329242e-20
+            ],
+            "covariance": [
+              [
+                0.011661811137678555,
+                -7.027217636026006e-05,
+                6.663021610046307e-21
+              ],
+              [
+                -7.027217636026004e-05,
+                0.0115712161631629,
+                1.2493165518836826e-21
+              ],
+              [
+                -1.0515080978354328e-20,
+                5.691330958581221e-21,
+                0.011604262743897982
+              ]
+            ],
+            "dispersion": [
+              0.10798986590267882,
+              0.10756958753831354,
+              0.10772308361673454
+            ],
+            "axisParticleCountExcluded": 0
+          }
+        }
+      ]
+    }
+  ],
+  "scopeLimits": [
+    "Three deterministic pseudorandom seeds quantify sampling scatter; no exhaustive statistical proof is claimed.",
+    "The independent sampler draws are not antipodally duplicated. Full-galaxy tails and moments separately use the historical paired initializer.",
+    "No halo/disk potential or density parameter is fitted or renormalized in this audit.",
+    "Potential and virial contributions of extreme particles use the fixed analytic reference field. Full discrete softened self-energy requires a separate force-engine evaluation.",
+    "Infinite-tail model spatial second moments need not exist; sample maxima and RMS radii vary strongly with N and seed."
+  ]
+}

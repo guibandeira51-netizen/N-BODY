@@ -1,0 +1,24 @@
+{
+  "dateUTC": "2026-10-12T03:13:49.225189+00:00",
+  "status": "passed",
+  "download": "C:\\Users\\PC\\Downloads\\revisao-ncorpos-tcc.zip",
+  "zipBytes": 3545299,
+  "sha256": "ba35abe71d39687f4172810135e234466dd8eca840d382ecb74e09e6c666d032",
+  "crcAllEntriesPassed": true,
+  "duplicateNames": 0,
+  "entries": 59,
+  "assetHashesPassed": 56,
+  "particleRows": 10000,
+  "componentCounts": {
+    "bojo": 1500,
+    "disco": 4500,
+    "halo": 4000
+  },
+  "timeMyr": 498.3999999999994,
+  "steps": 4984,
+  "diagnosticTimeMyr": 498.3999999999994,
+  "backend": "gpu",
+  "allMassiveBodiesIncludedDespiteHaloHidden": true,
+  "finiteParticleFields": true,
+  "scope": "Confere o download efetivo, CRC, hashes, CSV completo e mesma época de captura. Não certifica estabilidade estrutural."
+}

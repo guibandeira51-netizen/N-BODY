@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "checkedUTC": "2026-10-12T02:58:07.852438+00:00",
+  "purpose": "Archive preservation integrity only. No Gaia data or implementation is loaded by the synthetic application.",
+  "archiveCommitExpected": "0e963bd6004eb5cdeb9148c99097c998792a6b7e",
+  "archiveRef": "refs/heads/archive/gaia-before-synthetic-cleanup",
+  "zip": {
+    "filename": "via-lactea-gaia-preservado.zip",
+    "bytes": 25341077,
+    "sha256": "edb65ac456a4db1b469044a8e708a490de89eea9ba46f1b6cb05f1ee6be0482c",
+    "fileCount": 356,
+    "entryCount": 374,
+    "uncompressedBytes": 93331590,
+    "crc": {
+      "method": "Python zipfile.testzip over every ZIP entry",
+      "status": "passed",
+      "firstFailure": null
+    },
+    "duplicateEntryNames": [],
+    "gaiaChecksums": {
+      "document": "data/gaia/checksums.json",
+      "documentSha256": "6659024175a195d0d08f9c5e910e23a57d568002bedd7e5d3e449b7774d69f75",
+      "algorithm": "SHA-256",
+      "listedFiles": 253,
+      "verifiedFiles": 253,
+      "verifiedUncompressedBytes": 92020089,
+      "failures": [],
+      "unlistedGaiaFiles": [
+        "data/gaia/checksums.json"
+      ],
+      "coverageNote": "Every record is verified against ZIP member bytes and SHA256. The checksum document cannot list its own hash."
+    },
+    "preservedCatalog": {
+      "sourceCount": 21048,
+      "counts": {
+        "A": 9076,
+        "B": 11972,
+        "C": 13517
+      },
+      "release": "Gaia DR3"
+    }
+  },
+  "bundle": {
+    "filename": "via-lactea-gaia-preservado.bundle",
+    "bytes": 25380938,
+    "sha256": "fe57ce88c29f408fceb582c5d1dfb3435ed23bbe4b28863a547151255e95614b",
+    "verification": {
+      "command": "git bundle verify C:\\Users\\PC\\Documents\\Codex\\2026-10-10\\s-2\\outputs\\via-lactea-gaia-preservado.bundle",
+      "exitCode": 0,
+      "stdout": "The bundle contains this ref:\n0e963bd6004eb5cdeb9148c99097c998792a6b7e refs/heads/archive/gaia-before-synthetic-cleanup\nThe bundle records a complete history.\nThe bundle uses this hash algorithm: sha1",
+      "stderr": "C:/Users/PC/Documents/Codex/2026-10-10/s-2/outputs/via-lactea-gaia-preservado.bundle is okay"
+    },
+    "heads": {
+      "command": "git bundle list-heads C:\\Users\\PC\\Documents\\Codex\\2026-10-10\\s-2\\outputs\\via-lactea-gaia-preservado.bundle",
+      "exitCode": 0,
+      "stdout": "0e963bd6004eb5cdeb9148c99097c998792a6b7e refs/heads/archive/gaia-before-synthetic-cleanup",
+      "stderr": ""
+    }
+  },
+  "branchResolution": {
+    "command": "git rev-parse refs/heads/archive/gaia-before-synthetic-cleanup",
+    "exitCode": 0,
+    "stdout": "0e963bd6004eb5cdeb9148c99097c998792a6b7e",
+    "stderr": ""
+  },
+  "commitType": {
+    "command": "git cat-file -t 0e963bd6004eb5cdeb9148c99097c998792a6b7e",
+    "exitCode": 0,
+    "stdout": "commit",
+    "stderr": ""
+  },
+  "branchMatchesExpectedCommit": true,
+  "bundleAdvertisesExpectedRef": true,
+  "status": "passed"
+}

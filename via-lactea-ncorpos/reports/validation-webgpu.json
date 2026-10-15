@@ -1,0 +1,307 @@
+{
+  "status": "passed",
+  "capabilities": {
+    "hardwareConcurrency": 16,
+    "memoryGiB": 16,
+    "memoryHint": "deviceMemory é uma estimativa arredondada de RAM; não mede VRAM.",
+    "safetyBudgetBytes": 1073741824,
+    "wasm": true,
+    "wasmSIMD": true,
+    "worker": true,
+    "sharedArrayBuffer": true,
+    "crossOriginIsolated": true,
+    "secureContext": true,
+    "webgpu": {
+      "available": true,
+      "limits": {
+        "maxBufferSize": 2147483648,
+        "maxStorageBufferBindingSize": 2147483644,
+        "maxStorageBuffersPerShaderStage": 16,
+        "maxComputeWorkgroupSizeX": 1024,
+        "maxComputeInvocationsPerWorkgroup": 1024,
+        "maxComputeWorkgroupStorageSize": 32768,
+        "maxComputeWorkgroupsPerDimension": 65535,
+        "maxBindGroups": 4,
+        "maxUniformBufferBindingSize": 65536
+      },
+      "features": [
+        "depth32float-stencil8",
+        "rg11b10ufloat-renderable",
+        "texture-formats-tier1",
+        "bgra8unorm-storage",
+        "texture-compression-bc",
+        "dual-source-blending",
+        "core-features-and-limits",
+        "float32-filterable",
+        "indirect-first-instance",
+        "float32-blendable",
+        "subgroup-size-control",
+        "depth-clip-control",
+        "texture-compression-bc-sliced-3d",
+        "texture-formats-tier2",
+        "shader-f16",
+        "timestamp-query",
+        "clip-distances",
+        "primitive-index",
+        "texture-component-swizzle",
+        "subgroups"
+      ],
+      "info": {
+        "vendor": "amd",
+        "architecture": "rdna-3",
+        "device": "",
+        "description": ""
+      },
+      "reason": null,
+      "precision": "f32",
+      "algorithm": "direto O(N²); seleção automática depende de benchmark medido"
+    }
+  },
+  "results": [
+    {
+      "status": "passed",
+      "n": 1,
+      "steps": 8,
+      "options": {
+        "dt": 0.05,
+        "epsilon": 0.1
+      },
+      "force": {
+        "rmsRelative": 0,
+        "maxAbs": 0
+      },
+      "position": {
+        "rmsRelative": 2.4643762780683085e-7,
+        "maxAbs": 8.932035413522499e-7
+      },
+      "velocity": {
+        "rmsRelative": 1.9882182581381052e-8,
+        "maxAbs": 3.0267983605614113e-10
+      },
+      "tolerance": {
+        "forceRmsRelative": 0.0005,
+        "positionRmsRelative": 0.00002,
+        "velocityRmsRelative": 0.0005
+      },
+      "gpuStepMs": 0.3368750000372529,
+      "cpuStepMs": 0.011874999850988388,
+      "precision": {
+        "cpu": "Float64",
+        "gpu": "f32"
+      },
+      "scope": "Fixture determinística curta; inclui grupos parciais quando N não é múltiplo de 64. Não comprova estabilidade de longa duração."
+    },
+    {
+      "status": "passed",
+      "n": 2,
+      "steps": 8,
+      "options": {
+        "dt": 0.05,
+        "epsilon": 0.1
+      },
+      "force": {
+        "rmsRelative": 6.22233570023397e-8,
+        "maxAbs": 1.6275911608049087e-11
+      },
+      "position": {
+        "rmsRelative": 5.140236546997532e-8,
+        "maxAbs": 2.366442988233075e-7
+      },
+      "velocity": {
+        "rmsRelative": 1.8175712408855047e-7,
+        "maxAbs": 9.363690690877835e-9
+      },
+      "tolerance": {
+        "forceRmsRelative": 0.0005,
+        "positionRmsRelative": 0.00002,
+        "velocityRmsRelative": 0.0005
+      },
+      "gpuStepMs": 0.43000000016763806,
+      "cpuStepMs": 0.0031250002793967724,
+      "precision": {
+        "cpu": "Float64",
+        "gpu": "f32"
+      },
+      "scope": "Fixture determinística curta; inclui grupos parciais quando N não é múltiplo de 64. Não comprova estabilidade de longa duração."
+    },
+    {
+      "status": "passed",
+      "n": 63,
+      "steps": 8,
+      "options": {
+        "dt": 0.05,
+        "epsilon": 0.1
+      },
+      "force": {
+        "rmsRelative": 2.5689198003531725e-7,
+        "maxAbs": 8.06726288852741e-10
+      },
+      "position": {
+        "rmsRelative": 7.778599447632232e-8,
+        "maxAbs": 0.0000012943936198439587
+      },
+      "velocity": {
+        "rmsRelative": 1.6642236377984672e-7,
+        "maxAbs": 2.3902890770866048e-8
+      },
+      "tolerance": {
+        "forceRmsRelative": 0.0005,
+        "positionRmsRelative": 0.00002,
+        "velocityRmsRelative": 0.0005
+      },
+      "gpuStepMs": 0.2987500000745058,
+      "cpuStepMs": 0.07937500020489097,
+      "precision": {
+        "cpu": "Float64",
+        "gpu": "f32"
+      },
+      "scope": "Fixture determinística curta; inclui grupos parciais quando N não é múltiplo de 64. Não comprova estabilidade de longa duração."
+    },
+    {
+      "status": "passed",
+      "n": 64,
+      "steps": 8,
+      "options": {
+        "dt": 0.05,
+        "epsilon": 0.1
+      },
+      "force": {
+        "rmsRelative": 2.477790489013633e-7,
+        "maxAbs": 8.2438157428949e-10
+      },
+      "position": {
+        "rmsRelative": 7.855439420154223e-8,
+        "maxAbs": 0.0000014887284498499298
+      },
+      "velocity": {
+        "rmsRelative": 1.6567506162396774e-7,
+        "maxAbs": 2.3557767063475676e-8
+      },
+      "tolerance": {
+        "forceRmsRelative": 0.0005,
+        "positionRmsRelative": 0.00002,
+        "velocityRmsRelative": 0.0005
+      },
+      "gpuStepMs": 0.3000000002793968,
+      "cpuStepMs": 0.06749999988824129,
+      "precision": {
+        "cpu": "Float64",
+        "gpu": "f32"
+      },
+      "scope": "Fixture determinística curta; inclui grupos parciais quando N não é múltiplo de 64. Não comprova estabilidade de longa duração."
+    },
+    {
+      "status": "passed",
+      "n": 65,
+      "steps": 8,
+      "options": {
+        "dt": 0.05,
+        "epsilon": 0.1
+      },
+      "force": {
+        "rmsRelative": 2.6415243176815006e-7,
+        "maxAbs": 7.389790355159798e-10
+      },
+      "position": {
+        "rmsRelative": 8.32813532951051e-8,
+        "maxAbs": 0.0000015111376052701075
+      },
+      "velocity": {
+        "rmsRelative": 1.6242007078161298e-7,
+        "maxAbs": 2.7608698834058476e-8
+      },
+      "tolerance": {
+        "forceRmsRelative": 0.0005,
+        "positionRmsRelative": 0.00002,
+        "velocityRmsRelative": 0.0005
+      },
+      "gpuStepMs": 0.39812499983236194,
+      "cpuStepMs": 0.0400000000372529,
+      "precision": {
+        "cpu": "Float64",
+        "gpu": "f32"
+      },
+      "scope": "Fixture determinística curta; inclui grupos parciais quando N não é múltiplo de 64. Não comprova estabilidade de longa duração."
+    },
+    {
+      "status": "passed",
+      "n": 257,
+      "steps": 8,
+      "options": {
+        "dt": 0.05,
+        "epsilon": 0.1
+      },
+      "force": {
+        "rmsRelative": 3.679858872058535e-7,
+        "maxAbs": 7.505097156810039e-10
+      },
+      "position": {
+        "rmsRelative": 8.264824284284955e-8,
+        "maxAbs": 0.000001914730233032458
+      },
+      "velocity": {
+        "rmsRelative": 1.331142134620976e-7,
+        "maxAbs": 2.0927774284362766e-8
+      },
+      "tolerance": {
+        "forceRmsRelative": 0.0005,
+        "positionRmsRelative": 0.00002,
+        "velocityRmsRelative": 0.0005
+      },
+      "gpuStepMs": 0.29749999986961484,
+      "cpuStepMs": 0.24187500029802322,
+      "precision": {
+        "cpu": "Float64",
+        "gpu": "f32"
+      },
+      "scope": "Fixture determinística curta; inclui grupos parciais quando N não é múltiplo de 64. Não comprova estabilidade de longa duração."
+    },
+    {
+      "status": "passed",
+      "n": 1024,
+      "steps": 8,
+      "options": {
+        "dt": 0.05,
+        "epsilon": 0.1
+      },
+      "force": {
+        "rmsRelative": 6.879452606540293e-7,
+        "maxAbs": 1.874525951779324e-9
+      },
+      "position": {
+        "rmsRelative": 7.911813940739653e-8,
+        "maxAbs": 0.0000019446605934447803
+      },
+      "velocity": {
+        "rmsRelative": 1.359491740794445e-7,
+        "maxAbs": 2.5826713094534437e-8
+      },
+      "tolerance": {
+        "forceRmsRelative": 0.0005,
+        "positionRmsRelative": 0.00002,
+        "velocityRmsRelative": 0.0005
+      },
+      "gpuStepMs": 0.3712499998509884,
+      "cpuStepMs": 3.781874999869615,
+      "precision": {
+        "cpu": "Float64",
+        "gpu": "f32"
+      },
+      "scope": "Fixture determinística curta; inclui grupos parciais quando N não é múltiplo de 64. Não comprova estabilidade de longa duração."
+    }
+  ],
+  "resourceEstimate": {
+    "n": 1024,
+    "cpuStateBytes": 82944,
+    "cpuCopies": 2,
+    "cpuScratchBytes": 32768,
+    "gpuResidentBytes": 49184,
+    "readbackBytes": 49152,
+    "barnesHutBytes": 0,
+    "perStorageBufferBytes": 16384,
+    "estimatedBytes": 296992,
+    "approximate": true,
+    "includes": "duas cópias de estado CPU por padrão, packing f32, três buffers GPU, staging opcional; árvore BH estimada",
+    "excludes": "driver, canvas, navegador, fragmentação e outras aplicações"
+  }
+}

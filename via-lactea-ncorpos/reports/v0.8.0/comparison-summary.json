@@ -1,0 +1,518 @@
+{
+  "dateUTC": "2026-10-15T00:07:04.196Z",
+  "runCount": 16,
+  "runs": [
+    {
+      "label": "legacy",
+      "n": 10000,
+      "seed": 2026,
+      "epsilon": 0.1,
+      "changes": [
+        {
+          "component": 0,
+          "r50Percent": 25.265753516034085,
+          "R50Percent": 44.69635335756473,
+          "h50Percent": -2.439847173293171,
+          "sigmaZPercent": 13.518460289816506
+        },
+        {
+          "component": 1,
+          "r50Percent": 39.405019667001774,
+          "R50Percent": 38.74253343597524,
+          "h50Percent": 157.1049632502367,
+          "sigmaZPercent": 52.110821828250785
+        },
+        {
+          "component": 2,
+          "r50Percent": -1.3788148675403944,
+          "R50Percent": 1.278647546903865,
+          "h50Percent": -0.48716422316379177,
+          "sigmaZPercent": -0.9717985987817451
+        }
+      ],
+      "energyRelativeSigned": 0.00019085710032618283,
+      "initialDiskVz": 5.082197683525802e-20,
+      "finalDiskCenterZ": -0.0003232224441211044
+    },
+    {
+      "label": "legacy",
+      "n": 10000,
+      "seed": 2027,
+      "epsilon": 0.1,
+      "changes": [
+        {
+          "component": 0,
+          "r50Percent": 18.813362859727167,
+          "R50Percent": 33.71923058669047,
+          "h50Percent": -8.505575211553875,
+          "sigmaZPercent": 10.712760333242446
+        },
+        {
+          "component": 1,
+          "r50Percent": 13.210508146658793,
+          "R50Percent": 12.651499877897527,
+          "h50Percent": 178.02389199708514,
+          "sigmaZPercent": 23.905613121603565
+        },
+        {
+          "component": 2,
+          "r50Percent": 3.041804174205191,
+          "R50Percent": 1.0180928108688725,
+          "h50Percent": 4.4464223601563235,
+          "sigmaZPercent": -2.0005160242961457
+        }
+      ],
+      "energyRelativeSigned": 0.0005069356040713613,
+      "initialDiskVz": -5.421010862427522e-20,
+      "finalDiskCenterZ": -0.00039756485249381517
+    },
+    {
+      "label": "legacy",
+      "n": 50000,
+      "seed": 2026,
+      "epsilon": 0.1,
+      "changes": [
+        {
+          "component": 0,
+          "r50Percent": 4.168796120180997,
+          "R50Percent": 6.440497629584217,
+          "h50Percent": -14.769388046306997,
+          "sigmaZPercent": 13.747572693202253
+        },
+        {
+          "component": 1,
+          "r50Percent": 22.065421012478655,
+          "R50Percent": 22.133969299193286,
+          "h50Percent": 49.38418671552544,
+          "sigmaZPercent": 21.556179439621115
+        },
+        {
+          "component": 2,
+          "r50Percent": 1.1045009141110276,
+          "R50Percent": 1.6161456867541941,
+          "h50Percent": -0.20994988507678017,
+          "sigmaZPercent": 2.285291751974943
+        }
+      ],
+      "energyRelativeSigned": -0.00006664691004539753,
+      "initialDiskVz": 6.352747104407253e-20,
+      "finalDiskCenterZ": -0.000004651050084632756
+    },
+    {
+      "label": "legacy",
+      "n": 50000,
+      "seed": 2027,
+      "epsilon": 0.1,
+      "changes": [
+        {
+          "component": 0,
+          "r50Percent": -8.844067872176154,
+          "R50Percent": -0.591373508277959,
+          "h50Percent": -12.207320509546218,
+          "sigmaZPercent": 17.224231664863176
+        },
+        {
+          "component": 1,
+          "r50Percent": 10.182868942497981,
+          "R50Percent": 10.071068257633756,
+          "h50Percent": 57.815500166175596,
+          "sigmaZPercent": 26.25228490121918
+        },
+        {
+          "component": 2,
+          "r50Percent": -0.06548565053868845,
+          "R50Percent": 0.28425795276322624,
+          "h50Percent": -0.6306511495384083,
+          "sigmaZPercent": 3.889387532837411
+        }
+      ],
+      "energyRelativeSigned": 0.0003101965450914873,
+      "initialDiskVz": -6.818615225397118e-20,
+      "finalDiskCenterZ": 0.0000038612632061512466
+    },
+    {
+      "label": "iterative-candidate",
+      "n": 10000,
+      "seed": 2026,
+      "epsilon": 0.1,
+      "changes": [
+        {
+          "component": 0,
+          "r50Percent": 52.00386061248914,
+          "R50Percent": 71.0352803470542,
+          "h50Percent": 58.40985247038404,
+          "sigmaZPercent": 1.3948273860450262
+        },
+        {
+          "component": 1,
+          "r50Percent": 6.950674416381382,
+          "R50Percent": 3.1589190204716804,
+          "h50Percent": 450.91167422076967,
+          "sigmaZPercent": 40.63888845170874
+        },
+        {
+          "component": 2,
+          "r50Percent": -6.31312035630531,
+          "R50Percent": -3.158085493134487,
+          "h50Percent": -4.2582429926699,
+          "sigmaZPercent": 3.760578152335229
+        }
+      ],
+      "energyRelativeSigned": -0.00014948660894890855,
+      "initialDiskVz": 0.002319183662513855,
+      "finalDiskCenterZ": 0.5933726265674155
+    },
+    {
+      "label": "iterative-candidate",
+      "n": 10000,
+      "seed": 2027,
+      "epsilon": 0.1,
+      "changes": [
+        {
+          "component": 0,
+          "r50Percent": 70.47546014522965,
+          "R50Percent": 57.780427700151414,
+          "h50Percent": 157.9911736718507,
+          "sigmaZPercent": -6.225994810925129
+        },
+        {
+          "component": 1,
+          "r50Percent": 20.381291909564965,
+          "R50Percent": 11.721752852235685,
+          "h50Percent": 1157.1170293284038,
+          "sigmaZPercent": 29.561281617590986
+        },
+        {
+          "component": 2,
+          "r50Percent": 1.6351774769823468,
+          "R50Percent": -0.6659646791932953,
+          "h50Percent": 2.411663571513377,
+          "sigmaZPercent": -0.9847994621589781
+        }
+      ],
+      "energyRelativeSigned": 0.00019036698332174234,
+      "initialDiskVz": -0.00694907397409587,
+      "finalDiskCenterZ": -1.7358083955734511
+    },
+    {
+      "label": "iterative-candidate",
+      "n": 50000,
+      "seed": 2026,
+      "epsilon": 0.1,
+      "changes": [
+        {
+          "component": 0,
+          "r50Percent": 19.691943401617188,
+          "R50Percent": 23.824678129236336,
+          "h50Percent": 29.3363614994869,
+          "sigmaZPercent": -5.401651213881798
+        },
+        {
+          "component": 1,
+          "r50Percent": 5.189418375811526,
+          "R50Percent": 3.755970925129383,
+          "h50Percent": 305.09311425017205,
+          "sigmaZPercent": 12.345315448606668
+        },
+        {
+          "component": 2,
+          "r50Percent": -1.9737708482106413,
+          "R50Percent": -3.8341091422595714,
+          "h50Percent": 0.41748113638918355,
+          "sigmaZPercent": -1.3801686175439363
+        }
+      ],
+      "energyRelativeSigned": -0.00012872902066176083,
+      "initialDiskVz": -0.0013873426937160147,
+      "finalDiskCenterZ": 0.5122441361897023
+    },
+    {
+      "label": "iterative-candidate",
+      "n": 50000,
+      "seed": 2027,
+      "epsilon": 0.1,
+      "changes": [
+        {
+          "component": 0,
+          "r50Percent": 1.310395161775606,
+          "R50Percent": 2.5887062461806445,
+          "h50Percent": -2.2188588393878934,
+          "sigmaZPercent": 1.1955161206307054
+        },
+        {
+          "component": 1,
+          "r50Percent": 5.711087051680642,
+          "R50Percent": 5.477494722565736,
+          "h50Percent": 76.97082113112363,
+          "sigmaZPercent": 22.888099874930646
+        },
+        {
+          "component": 2,
+          "r50Percent": -2.983980180076289,
+          "R50Percent": -4.174927278529316,
+          "h50Percent": -6.007641381822414,
+          "sigmaZPercent": 3.366183342628219
+        }
+      ],
+      "energyRelativeSigned": 0.000028325211098416363,
+      "initialDiskVz": 0.004426911343810517,
+      "finalDiskCenterZ": 0.09145620739919029
+    },
+    {
+      "label": "halo-refined-fixed-baryons",
+      "n": 26000,
+      "seed": 2026,
+      "epsilon": 0.1,
+      "changes": [
+        {
+          "component": 0,
+          "r50Percent": 2.5339327025163527,
+          "R50Percent": 14.808784757759117,
+          "h50Percent": -13.906310893559318,
+          "sigmaZPercent": 17.50161998167715
+        },
+        {
+          "component": 1,
+          "r50Percent": 12.356232884119294,
+          "R50Percent": 12.314975115481642,
+          "h50Percent": 64.07854152311407,
+          "sigmaZPercent": 25.103680371227487
+        },
+        {
+          "component": 2,
+          "r50Percent": 1.2058050088195036,
+          "R50Percent": 1.7014536787619587,
+          "h50Percent": 1.2509765968752546,
+          "sigmaZPercent": 1.2049147972815115
+        }
+      ],
+      "energyRelativeSigned": 0.00014521925571132238,
+      "initialDiskVz": 5.082197683525802e-20,
+      "finalDiskCenterZ": 0.00001577360367809924
+    },
+    {
+      "label": "softening-control",
+      "n": 10000,
+      "seed": 2026,
+      "epsilon": 0.3,
+      "changes": [
+        {
+          "component": 0,
+          "r50Percent": 16.797564939264436,
+          "R50Percent": 35.54750457857084,
+          "h50Percent": -7.4515535661641055,
+          "sigmaZPercent": 13.768102463915909
+        },
+        {
+          "component": 1,
+          "r50Percent": 18.047726809747953,
+          "R50Percent": 17.190224797531574,
+          "h50Percent": 120.85828212001768,
+          "sigmaZPercent": 14.412580640946517
+        },
+        {
+          "component": 2,
+          "r50Percent": -1.3787884702230302,
+          "R50Percent": 0.9291648112290878,
+          "h50Percent": -0.46780210554178664,
+          "sigmaZPercent": -1.0962213412299018
+        }
+      ],
+      "energyRelativeSigned": 0.00013267334211528912,
+      "initialDiskVz": 5.082197683525802e-20,
+      "finalDiskCenterZ": 3.576322665627079e-8
+    },
+    {
+      "label": "halo-refined-fixed-baryons",
+      "n": 26000,
+      "seed": 2027,
+      "epsilon": 0.1,
+      "changes": [
+        {
+          "component": 0,
+          "r50Percent": 7.50548777172854,
+          "R50Percent": 15.355067472745704,
+          "h50Percent": -18.74995198725984,
+          "sigmaZPercent": 11.804557172830636
+        },
+        {
+          "component": 1,
+          "r50Percent": 23.45500023028746,
+          "R50Percent": 21.923985376718903,
+          "h50Percent": 108.50695000491761,
+          "sigmaZPercent": 23.013436397302655
+        },
+        {
+          "component": 2,
+          "r50Percent": 0.8861456889161694,
+          "R50Percent": 2.0269312485594577,
+          "h50Percent": 1.9817045935255937,
+          "sigmaZPercent": 0.5119445675513917
+        }
+      ],
+      "energyRelativeSigned": 0.00010311241411000076,
+      "initialDiskVz": -5.421010862427522e-20,
+      "finalDiskCenterZ": -0.00025008409726433436
+    },
+    {
+      "label": "softening-control",
+      "n": 10000,
+      "seed": 2027,
+      "epsilon": 0.3,
+      "changes": [
+        {
+          "component": 0,
+          "r50Percent": 16.595636759860625,
+          "R50Percent": 27.761763348046514,
+          "h50Percent": -5.092846341084065,
+          "sigmaZPercent": 5.186140914367559
+        },
+        {
+          "component": 1,
+          "r50Percent": 20.04332779617089,
+          "R50Percent": 19.23608520957945,
+          "h50Percent": 157.48869017470176,
+          "sigmaZPercent": 6.233809462882473
+        },
+        {
+          "component": 2,
+          "r50Percent": 3.0417754162940596,
+          "R50Percent": 0.8810226275642024,
+          "h50Percent": 4.405015249926938,
+          "sigmaZPercent": -1.7538821187238467
+        }
+      ],
+      "energyRelativeSigned": 0.00038266170091544874,
+      "initialDiskVz": -5.421010862427522e-20,
+      "finalDiskCenterZ": 2.677568958860807e-7
+    },
+    {
+      "label": "iterative-antipodal",
+      "n": 10000,
+      "seed": 2026,
+      "epsilon": 0.1,
+      "changes": [
+        {
+          "component": 0,
+          "r50Percent": 29.779102054532608,
+          "R50Percent": 32.96638208130859,
+          "h50Percent": 47.26982716535643,
+          "sigmaZPercent": -11.045510599167155
+        },
+        {
+          "component": 1,
+          "r50Percent": 6.364154884593384,
+          "R50Percent": 5.5502747967940325,
+          "h50Percent": 189.81184705162883,
+          "sigmaZPercent": 32.88823184865402
+        },
+        {
+          "component": 2,
+          "r50Percent": -5.609762052809897,
+          "R50Percent": 0.0049821709348630205,
+          "h50Percent": -5.455514922038202,
+          "sigmaZPercent": -5.598516357165343
+        }
+      ],
+      "energyRelativeSigned": 0.00017348693509688554,
+      "initialDiskVz": -2.6999175193730823e-20,
+      "finalDiskCenterZ": -0.00005205247191608799
+    },
+    {
+      "label": "iterative-antipodal",
+      "n": 10000,
+      "seed": 2027,
+      "epsilon": 0.1,
+      "changes": [
+        {
+          "component": 0,
+          "r50Percent": 9.42077317219402,
+          "R50Percent": 10.789177311599873,
+          "h50Percent": 14.432089722646127,
+          "sigmaZPercent": -13.12963938614004
+        },
+        {
+          "component": 1,
+          "r50Percent": 7.8565669707579975,
+          "R50Percent": 6.936771885098285,
+          "h50Percent": 218.4565257051877,
+          "sigmaZPercent": 44.17749627535712
+        },
+        {
+          "component": 2,
+          "r50Percent": -5.599923791452746,
+          "R50Percent": -3.1734672755812223,
+          "h50Percent": 4.695851419394123,
+          "sigmaZPercent": -2.0985477186417634
+        }
+      ],
+      "energyRelativeSigned": 0.000416656086903262,
+      "initialDiskVz": -1.6855955650360577e-19,
+      "finalDiskCenterZ": 0.0011507178972759804
+    },
+    {
+      "label": "iterative-antipodal",
+      "n": 50000,
+      "seed": 2026,
+      "epsilon": 0.1,
+      "changes": [
+        {
+          "component": 0,
+          "r50Percent": 4.214692150789821,
+          "R50Percent": 9.512550499425052,
+          "h50Percent": 5.385314983787631,
+          "sigmaZPercent": -3.880461263853902
+        },
+        {
+          "component": 1,
+          "r50Percent": 17.710786043251282,
+          "R50Percent": 17.125517220149327,
+          "h50Percent": 64.96654353377448,
+          "sigmaZPercent": 12.757791112867281
+        },
+        {
+          "component": 2,
+          "r50Percent": -4.732891875831189,
+          "R50Percent": -4.558930590112187,
+          "h50Percent": -0.6408409250019785,
+          "sigmaZPercent": 0.44456115645617494
+        }
+      ],
+      "energyRelativeSigned": -0.00017521682591637084,
+      "initialDiskVz": 3.7692966152816365e-20,
+      "finalDiskCenterZ": -0.0000019018110444045743
+    },
+    {
+      "label": "iterative-antipodal",
+      "n": 50000,
+      "seed": 2027,
+      "epsilon": 0.1,
+      "changes": [
+        {
+          "component": 0,
+          "r50Percent": 2.054606732352005,
+          "R50Percent": -0.6530641713643269,
+          "h50Percent": -0.1785755235992301,
+          "sigmaZPercent": 0.12801212448752247
+        },
+        {
+          "component": 1,
+          "r50Percent": 4.668491499869988,
+          "R50Percent": 4.516419624453521,
+          "h50Percent": 49.58698421024279,
+          "sigmaZPercent": 10.458547074758727
+        },
+        {
+          "component": 2,
+          "r50Percent": -5.771660934695304,
+          "R50Percent": -1.963880204323019,
+          "h50Percent": -11.968923031314809,
+          "sigmaZPercent": 5.811657137923304
+        }
+      ],
+      "energyRelativeSigned": 0.00016881901719857168,
+      "initialDiskVz": 9.423241538204091e-21,
+      "finalDiskCenterZ": 0.000013471718317466791
+    }
+  ]
+}

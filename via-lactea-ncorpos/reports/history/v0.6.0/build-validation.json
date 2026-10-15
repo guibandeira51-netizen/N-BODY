@@ -1,0 +1,13 @@
+{
+  "dateUTC": "2026-10-12T03:17:43.613044+00:00",
+  "status": "passed",
+  "command": "node scripts/build.mjs",
+  "output": "Build estático concluído: dist/index.html. A gravitação roda no navegador.",
+  "referenceAssetsVerifiedInSourceAndDist": 58,
+  "includesReviewPackageMetadata": [
+    "package.json",
+    "vercel.json",
+    "INICIAR_WINDOWS.cmd"
+  ],
+  "scope": "Build executado e cada arquivo de referência servido por dist conferido por tamanho e SHA256. Este relatório é acrescentado ao inventário e o build é repetido para incluí-lo."
+}

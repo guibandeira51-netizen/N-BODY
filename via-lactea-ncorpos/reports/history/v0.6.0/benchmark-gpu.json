@@ -1,0 +1,365 @@
+{
+  "dateUTC": "2026-10-12T02:51:05.131Z",
+  "status": "measured",
+  "capabilities": {
+    "hardwareConcurrency": 16,
+    "memoryGiB": 16,
+    "memoryHint": "deviceMemory é uma estimativa arredondada de RAM; não mede VRAM.",
+    "safetyBudgetBytes": 1073741824,
+    "wasm": true,
+    "wasmSIMD": true,
+    "worker": true,
+    "sharedArrayBuffer": true,
+    "crossOriginIsolated": true,
+    "secureContext": true,
+    "webgpu": {
+      "available": true,
+      "limits": {
+        "maxBufferSize": 2147483648,
+        "maxStorageBufferBindingSize": 2147483644,
+        "maxStorageBuffersPerShaderStage": 16,
+        "maxComputeWorkgroupSizeX": 1024,
+        "maxComputeInvocationsPerWorkgroup": 1024,
+        "maxComputeWorkgroupStorageSize": 32768,
+        "maxComputeWorkgroupsPerDimension": 65535,
+        "maxBindGroups": 4,
+        "maxUniformBufferBindingSize": 65536
+      },
+      "features": [
+        "depth32float-stencil8",
+        "rg11b10ufloat-renderable",
+        "bgra8unorm-storage",
+        "texture-formats-tier1",
+        "texture-compression-bc",
+        "dual-source-blending",
+        "core-features-and-limits",
+        "float32-filterable",
+        "indirect-first-instance",
+        "float32-blendable",
+        "subgroup-size-control",
+        "depth-clip-control",
+        "texture-compression-bc-sliced-3d",
+        "clip-distances",
+        "texture-formats-tier2",
+        "timestamp-query",
+        "shader-f16",
+        "primitive-index",
+        "texture-component-swizzle",
+        "subgroups"
+      ],
+      "info": {
+        "vendor": "amd",
+        "architecture": "rdna-3",
+        "device": "",
+        "description": ""
+      },
+      "reason": null,
+      "precision": "f32",
+      "algorithm": "direto O(N²); seleção automática depende de benchmark medido"
+    }
+  },
+  "results": [
+    {
+      "status": "measured",
+      "n": 1000,
+      "steps": 3,
+      "dt": 0.1,
+      "epsilon": 0.1,
+      "seed": 2026,
+      "initialMs": 422.5049999989569,
+      "uploadAndInitialForceMs": 6.769999999552965,
+      "stepMs": 2.4766666665673256,
+      "sampleCount": 3,
+      "batchSize": 1,
+      "warmupSteps": 2,
+      "measuredSteps": 9,
+      "samples": [
+        {
+          "elapsedMs": 8.160000000149012,
+          "stepMs": 2.7200000000496707,
+          "stepsStart": 2,
+          "stepsEnd": 5,
+          "timeStartMyr": 0.2,
+          "timeEndMyr": 0.5
+        },
+        {
+          "elapsedMs": 7.410000000149012,
+          "stepMs": 2.4700000000496707,
+          "stepsStart": 5,
+          "stepsEnd": 8,
+          "timeStartMyr": 0.5,
+          "timeEndMyr": 0.7999999999999999
+        },
+        {
+          "elapsedMs": 7.429999999701977,
+          "stepMs": 2.4766666665673256,
+          "stepsStart": 8,
+          "stepsEnd": 11,
+          "timeStartMyr": 0.7999999999999999,
+          "timeEndMyr": 1.0999999999999999
+        }
+      ],
+      "finalStateSha256": "20b45bd4b499cd98d79fda4d5544f2736a179479edb730de473fa7702dc66599",
+      "particlesPerSecond": 403768.5060727231,
+      "physicalMyr": 1.0999999999999999,
+      "finite": true,
+      "algorithm": "direct",
+      "precision": "f32",
+      "timing": "mediana de amostras wall clock, incluindo submit e queue.onSubmittedWorkDone; sem extrapolação; geração/readback/diagnóstico/render excluídos",
+      "effectiveParameters": {
+        "dt": 0.10000000149011612,
+        "epsilonSquared": 0.009999999776482582,
+        "G": 0.04498502239584923,
+        "precision": "f32"
+      },
+      "resources": {
+        "admissible": true,
+        "reasons": [],
+        "budgetBytes": 1073741824,
+        "estimate": {
+          "n": 1000,
+          "cpuStateBytes": 81000,
+          "cpuCopies": 2,
+          "cpuScratchBytes": 32000,
+          "gpuResidentBytes": 48032,
+          "readbackBytes": 48000,
+          "barnesHutBytes": 0,
+          "perStorageBufferBytes": 16000,
+          "estimatedBytes": 290032,
+          "approximate": true,
+          "includes": "duas cópias de estado CPU por padrão, packing f32, três buffers GPU, staging opcional; árvore BH estimada",
+          "excludes": "driver, canvas, navegador, fragmentação e outras aplicações"
+        }
+      }
+    },
+    {
+      "status": "measured",
+      "n": 1000,
+      "steps": 3,
+      "dt": 0.1,
+      "epsilon": 0.1,
+      "seed": 2026,
+      "initialMs": 2.7650000005960464,
+      "uploadAndInitialForceMs": 6.25,
+      "stepMs": 0.7900000003476938,
+      "sampleCount": 3,
+      "batchSize": 3,
+      "warmupSteps": 2,
+      "measuredSteps": 9,
+      "samples": [
+        {
+          "elapsedMs": 2.8850000016391277,
+          "stepMs": 0.9616666672130426,
+          "stepsStart": 2,
+          "stepsEnd": 5,
+          "timeStartMyr": 0.2,
+          "timeEndMyr": 0.5
+        },
+        {
+          "elapsedMs": 2.3700000010430813,
+          "stepMs": 0.7900000003476938,
+          "stepsStart": 5,
+          "stepsEnd": 8,
+          "timeStartMyr": 0.5,
+          "timeEndMyr": 0.8
+        },
+        {
+          "elapsedMs": 2.3599999994039536,
+          "stepMs": 0.7866666664679846,
+          "stepsStart": 8,
+          "stepsEnd": 11,
+          "timeStartMyr": 0.8,
+          "timeEndMyr": 1.1
+        }
+      ],
+      "finalStateSha256": "20b45bd4b499cd98d79fda4d5544f2736a179479edb730de473fa7702dc66599",
+      "particlesPerSecond": 1265822.7842530143,
+      "physicalMyr": 1.1,
+      "finite": true,
+      "algorithm": "direct",
+      "precision": "f32",
+      "timing": "mediana de amostras wall clock, incluindo submit e queue.onSubmittedWorkDone; sem extrapolação; geração/readback/diagnóstico/render excluídos",
+      "effectiveParameters": {
+        "dt": 0.10000000149011612,
+        "epsilonSquared": 0.009999999776482582,
+        "G": 0.04498502239584923,
+        "precision": "f32"
+      },
+      "resources": {
+        "admissible": true,
+        "reasons": [],
+        "budgetBytes": 1073741824,
+        "estimate": {
+          "n": 1000,
+          "cpuStateBytes": 81000,
+          "cpuCopies": 2,
+          "cpuScratchBytes": 32000,
+          "gpuResidentBytes": 48032,
+          "readbackBytes": 48000,
+          "barnesHutBytes": 0,
+          "perStorageBufferBytes": 16000,
+          "estimatedBytes": 290032,
+          "approximate": true,
+          "includes": "duas cópias de estado CPU por padrão, packing f32, três buffers GPU, staging opcional; árvore BH estimada",
+          "excludes": "driver, canvas, navegador, fragmentação e outras aplicações"
+        }
+      }
+    },
+    {
+      "status": "measured",
+      "n": 10000,
+      "steps": 3,
+      "dt": 0.1,
+      "epsilon": 0.1,
+      "seed": 2026,
+      "initialMs": 15.530000001192093,
+      "uploadAndInitialForceMs": 12,
+      "stepMs": 3.363333333283663,
+      "sampleCount": 3,
+      "batchSize": 1,
+      "warmupSteps": 2,
+      "measuredSteps": 9,
+      "samples": [
+        {
+          "elapsedMs": 11.33500000089407,
+          "stepMs": 3.7783333336313567,
+          "stepsStart": 2,
+          "stepsEnd": 5,
+          "timeStartMyr": 0.2,
+          "timeEndMyr": 0.5
+        },
+        {
+          "elapsedMs": 9.234999999403954,
+          "stepMs": 3.078333333134651,
+          "stepsStart": 5,
+          "stepsEnd": 8,
+          "timeStartMyr": 0.5,
+          "timeEndMyr": 0.7999999999999999
+        },
+        {
+          "elapsedMs": 10.089999999850988,
+          "stepMs": 3.363333333283663,
+          "stepsStart": 8,
+          "stepsEnd": 11,
+          "timeStartMyr": 0.7999999999999999,
+          "timeEndMyr": 1.0999999999999999
+        }
+      ],
+      "finalStateSha256": "d67f4541abb74094c514be91d931291513d9308aca56c4a1cc8107d85c8d81e4",
+      "particlesPerSecond": 2973240.8325513424,
+      "physicalMyr": 1.0999999999999999,
+      "finite": true,
+      "algorithm": "direct",
+      "precision": "f32",
+      "timing": "mediana de amostras wall clock, incluindo submit e queue.onSubmittedWorkDone; sem extrapolação; geração/readback/diagnóstico/render excluídos",
+      "effectiveParameters": {
+        "dt": 0.10000000149011612,
+        "epsilonSquared": 0.009999999776482582,
+        "G": 0.04498502239584923,
+        "precision": "f32"
+      },
+      "resources": {
+        "admissible": true,
+        "reasons": [],
+        "budgetBytes": 1073741824,
+        "estimate": {
+          "n": 10000,
+          "cpuStateBytes": 810000,
+          "cpuCopies": 2,
+          "cpuScratchBytes": 320000,
+          "gpuResidentBytes": 480032,
+          "readbackBytes": 480000,
+          "barnesHutBytes": 0,
+          "perStorageBufferBytes": 160000,
+          "estimatedBytes": 2900032,
+          "approximate": true,
+          "includes": "duas cópias de estado CPU por padrão, packing f32, três buffers GPU, staging opcional; árvore BH estimada",
+          "excludes": "driver, canvas, navegador, fragmentação e outras aplicações"
+        }
+      }
+    },
+    {
+      "status": "measured",
+      "n": 10000,
+      "steps": 3,
+      "dt": 0.1,
+      "epsilon": 0.1,
+      "seed": 2026,
+      "initialMs": 12.304999999701977,
+      "uploadAndInitialForceMs": 8.409999996423721,
+      "stepMs": 2.781666667511066,
+      "sampleCount": 3,
+      "batchSize": 3,
+      "warmupSteps": 2,
+      "measuredSteps": 9,
+      "samples": [
+        {
+          "elapsedMs": 9.29500000178814,
+          "stepMs": 3.09833333392938,
+          "stepsStart": 2,
+          "stepsEnd": 5,
+          "timeStartMyr": 0.2,
+          "timeEndMyr": 0.5
+        },
+        {
+          "elapsedMs": 8.345000002533197,
+          "stepMs": 2.781666667511066,
+          "stepsStart": 5,
+          "stepsEnd": 8,
+          "timeStartMyr": 0.5,
+          "timeEndMyr": 0.8
+        },
+        {
+          "elapsedMs": 8.154999997466803,
+          "stepMs": 2.718333332488934,
+          "stepsStart": 8,
+          "stepsEnd": 11,
+          "timeStartMyr": 0.8,
+          "timeEndMyr": 1.1
+        }
+      ],
+      "finalStateSha256": "d67f4541abb74094c514be91d931291513d9308aca56c4a1cc8107d85c8d81e4",
+      "particlesPerSecond": 3594967.045044127,
+      "physicalMyr": 1.1,
+      "finite": true,
+      "algorithm": "direct",
+      "precision": "f32",
+      "timing": "mediana de amostras wall clock, incluindo submit e queue.onSubmittedWorkDone; sem extrapolação; geração/readback/diagnóstico/render excluídos",
+      "effectiveParameters": {
+        "dt": 0.10000000149011612,
+        "epsilonSquared": 0.009999999776482582,
+        "G": 0.04498502239584923,
+        "precision": "f32"
+      },
+      "resources": {
+        "admissible": true,
+        "reasons": [],
+        "budgetBytes": 1073741824,
+        "estimate": {
+          "n": 10000,
+          "cpuStateBytes": 810000,
+          "cpuCopies": 2,
+          "cpuScratchBytes": 320000,
+          "gpuResidentBytes": 480032,
+          "readbackBytes": 480000,
+          "barnesHutBytes": 0,
+          "perStorageBufferBytes": 160000,
+          "estimatedBytes": 2900032,
+          "approximate": true,
+          "includes": "duas cópias de estado CPU por padrão, packing f32, três buffers GPU, staging opcional; árvore BH estimada",
+          "excludes": "driver, canvas, navegador, fragmentação e outras aplicações"
+        }
+      }
+    }
+  ],
+  "sameState": [
+    {
+      "n": 1000,
+      "bitIdenticalFinalState": true
+    },
+    {
+      "n": 10000,
+      "bitIdenticalFinalState": true
+    }
+  ]
+}
