@@ -1,0 +1,57 @@
+{
+  "dateUTC": "2026-10-15T04:53:34.555Z",
+  "tests": [
+    {
+      "softening": 0,
+      "forceRMS": 4.0608080321046465e-7,
+      "positionRMS": 0.00000642062164756442,
+      "velocityRMS": 0.000006921343245738141,
+      "cpuEnergyDrift": -9.66881478488512e-7,
+      "gpuEnergyDrift": -9.860961642339656e-7,
+      "passed": true
+    },
+    {
+      "softening": 0.1,
+      "forceRMS": 4.025994832142872e-7,
+      "positionRMS": 0.000006420597569798389,
+      "velocityRMS": 0.000005081589374262852,
+      "cpuEnergyDrift": -8.963500471418708e-7,
+      "gpuEnergyDrift": -8.864021063953619e-7,
+      "passed": true
+    }
+  ],
+  "liveKernel": {
+    "status": "passed",
+    "n": 1025,
+    "steps": 8,
+    "options": {
+      "dt": 0.05,
+      "epsilon": 0.1
+    },
+    "force": {
+      "rmsRelative": 7.231964893205934e-7,
+      "maxAbs": 3.4302131295994853e-9
+    },
+    "position": {
+      "rmsRelative": 7.974270777055365e-8,
+      "maxAbs": 0.0000019311309742420235
+    },
+    "velocity": {
+      "rmsRelative": 1.3524110711014576e-7,
+      "maxAbs": 2.7722954244746578e-8
+    },
+    "tolerance": {
+      "forceRmsRelative": 0.0005,
+      "positionRmsRelative": 0.00002,
+      "velocityRmsRelative": 0.0005
+    },
+    "gpuStepMs": 0.4100000001490116,
+    "cpuStepMs": 3.991249999962747,
+    "precision": {
+      "cpu": "Float64",
+      "gpu": "f32"
+    },
+    "scope": "Fixture determinística curta; inclui grupos parciais quando N não é múltiplo de 64. Não comprova estabilidade de longa duração."
+  },
+  "passed": true
+}

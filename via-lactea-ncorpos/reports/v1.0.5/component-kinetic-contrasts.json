@@ -1,0 +1,594 @@
+{
+  "schema": "component-kinetics-105",
+  "rows": [
+    {
+      "label": "E",
+      "seed": 2027,
+      "population": 0,
+      "K0": 0.014247064345757737,
+      "K200": 0.014217999763341687,
+      "deltaK": -0.000029064582416049936,
+      "Kz0": 0.005584501766757531,
+      "Kz200": 0.00559100685733945,
+      "deltaKz": 0.000006505090581919101,
+      "source": "reports/v1.0.5/runs/E-b2026-h2027-halo-E200.json",
+      "sourceSHA256": "839df4942f60ed723a4091d221543818fa6f4a6ddb576f0669af22fc6d356bb1"
+    },
+    {
+      "label": "E",
+      "seed": 2027,
+      "population": 1,
+      "K0": 0.09042902460423002,
+      "K200": 0.093219404229833,
+      "deltaK": 0.0027903796256029817,
+      "Kz0": 0.0026870964277466865,
+      "Kz200": 0.0035160324229614186,
+      "deltaKz": 0.0008289359952147321,
+      "source": "reports/v1.0.5/runs/E-b2026-h2027-halo-E200.json",
+      "sourceSHA256": "839df4942f60ed723a4091d221543818fa6f4a6ddb576f0669af22fc6d356bb1"
+    },
+    {
+      "label": "E",
+      "seed": 2027,
+      "population": 2,
+      "K0": 0.027057769540600712,
+      "K200": 0.027080465904285634,
+      "deltaK": 0.00002269636368492159,
+      "Kz0": 0.0019783671457550417,
+      "Kz200": 0.0020118171963609166,
+      "deltaKz": 0.00003345005060587493,
+      "source": "reports/v1.0.5/runs/E-b2026-h2027-halo-E200.json",
+      "sourceSHA256": "839df4942f60ed723a4091d221543818fa6f4a6ddb576f0669af22fc6d356bb1"
+    },
+    {
+      "label": "E",
+      "seed": 2027,
+      "population": 3,
+      "K0": 1.566030168088711,
+      "K200": 1.5737568390120316,
+      "deltaK": 0.007726670923320578,
+      "Kz0": 0.5270505556862278,
+      "Kz200": 0.5265508510903067,
+      "deltaKz": -0.00049970459592108,
+      "source": "reports/v1.0.5/runs/E-b2026-h2027-halo-E200.json",
+      "sourceSHA256": "839df4942f60ed723a4091d221543818fa6f4a6ddb576f0669af22fc6d356bb1"
+    },
+    {
+      "label": "E",
+      "seed": 2028,
+      "population": 0,
+      "K0": 0.014247064345757737,
+      "K200": 0.014781173660314404,
+      "deltaK": 0.0005341093145566668,
+      "Kz0": 0.005584501766757531,
+      "Kz200": 0.005342027132238405,
+      "deltaKz": -0.00024247463451912595,
+      "source": "reports/v1.0.5/runs/E-b2026-h2028-halo-E200.json",
+      "sourceSHA256": "9b81bad2fa9c11c7ad794c616194dade08def1c8c1f2ed0b82f8e8fb45fca65b"
+    },
+    {
+      "label": "E",
+      "seed": 2028,
+      "population": 1,
+      "K0": 0.09042902460423002,
+      "K200": 0.09097364776303245,
+      "deltaK": 0.0005446231588024236,
+      "Kz0": 0.0026870964277466865,
+      "Kz200": 0.003506122911813086,
+      "deltaKz": 0.0008190264840663994,
+      "source": "reports/v1.0.5/runs/E-b2026-h2028-halo-E200.json",
+      "sourceSHA256": "9b81bad2fa9c11c7ad794c616194dade08def1c8c1f2ed0b82f8e8fb45fca65b"
+    },
+    {
+      "label": "E",
+      "seed": 2028,
+      "population": 2,
+      "K0": 0.027057769540600712,
+      "K200": 0.026753823924504497,
+      "deltaK": -0.0003039456160962156,
+      "Kz0": 0.0019783671457550417,
+      "Kz200": 0.0020530964169206785,
+      "deltaKz": 0.00007472927116563676,
+      "source": "reports/v1.0.5/runs/E-b2026-h2028-halo-E200.json",
+      "sourceSHA256": "9b81bad2fa9c11c7ad794c616194dade08def1c8c1f2ed0b82f8e8fb45fca65b"
+    },
+    {
+      "label": "E",
+      "seed": 2028,
+      "population": 3,
+      "K0": 1.5747880450964278,
+      "K200": 1.5580125746631726,
+      "deltaK": -0.016775470433255224,
+      "Kz0": 0.5248021043234588,
+      "Kz200": 0.526386481524408,
+      "deltaKz": 0.001584377200949283,
+      "source": "reports/v1.0.5/runs/E-b2026-h2028-halo-E200.json",
+      "sourceSHA256": "9b81bad2fa9c11c7ad794c616194dade08def1c8c1f2ed0b82f8e8fb45fca65b"
+    },
+    {
+      "label": "E",
+      "seed": 2026,
+      "population": 0,
+      "K0": 0.014247064345757737,
+      "K200": 0.013952417478812934,
+      "deltaK": -0.00029464686694480324,
+      "Kz0": 0.005584501766757531,
+      "Kz200": 0.005090577349786779,
+      "deltaKz": -0.000493924416970752,
+      "source": "reports/v1.0.4/runs/FE-b2026-h2026-higher200.json",
+      "sourceSHA256": "182c173bffea204daad701f23c02b53ea508410aa5a5c2fc516fcafe10fdb3a8"
+    },
+    {
+      "label": "E",
+      "seed": 2026,
+      "population": 1,
+      "K0": 0.09042902460423002,
+      "K200": 0.0896641133688779,
+      "deltaK": -0.0007649112353521198,
+      "Kz0": 0.0026870964277466865,
+      "Kz200": 0.00344877977638698,
+      "deltaKz": 0.0007616833486402933,
+      "source": "reports/v1.0.4/runs/FE-b2026-h2026-higher200.json",
+      "sourceSHA256": "182c173bffea204daad701f23c02b53ea508410aa5a5c2fc516fcafe10fdb3a8"
+    },
+    {
+      "label": "E",
+      "seed": 2026,
+      "population": 2,
+      "K0": 0.027057769540600712,
+      "K200": 0.026527281631850325,
+      "deltaK": -0.0005304879087503871,
+      "Kz0": 0.0019783671457550417,
+      "Kz200": 0.0016388386639247198,
+      "deltaKz": -0.0003395284818303219,
+      "source": "reports/v1.0.4/runs/FE-b2026-h2026-higher200.json",
+      "sourceSHA256": "182c173bffea204daad701f23c02b53ea508410aa5a5c2fc516fcafe10fdb3a8"
+    },
+    {
+      "label": "E",
+      "seed": 2026,
+      "population": 3,
+      "K0": 1.5742827581056857,
+      "K200": 1.568167338833773,
+      "deltaK": -0.006115419271912836,
+      "Kz0": 0.5243116961497156,
+      "Kz200": 0.524266322653227,
+      "deltaKz": -0.000045373496488587683,
+      "source": "reports/v1.0.4/runs/FE-b2026-h2026-higher200.json",
+      "sourceSHA256": "182c173bffea204daad701f23c02b53ea508410aa5a5c2fc516fcafe10fdb3a8"
+    },
+    {
+      "label": "F",
+      "seed": 2026,
+      "population": 0,
+      "K0": 0.014247064345757737,
+      "K200": 0.015033570511596593,
+      "deltaK": 0.0007865061658388559,
+      "Kz0": 0.005584501766757531,
+      "Kz200": 0.00520131445869715,
+      "deltaKz": -0.00038318730806038113,
+      "source": "reports/v1.0.5/runs/F-b2026-h2026-halo-F200.json",
+      "sourceSHA256": "6e4a96bde43a566c83444afdcb9b666f06369dff91154a7fa0346123e2ac5a3f"
+    },
+    {
+      "label": "F",
+      "seed": 2026,
+      "population": 1,
+      "K0": 0.09042902460423002,
+      "K200": 0.0906026533447472,
+      "deltaK": 0.00017362874051717048,
+      "Kz0": 0.0026870964277466865,
+      "Kz200": 0.0034553473325444083,
+      "deltaKz": 0.0007682509047977218,
+      "source": "reports/v1.0.5/runs/F-b2026-h2026-halo-F200.json",
+      "sourceSHA256": "6e4a96bde43a566c83444afdcb9b666f06369dff91154a7fa0346123e2ac5a3f"
+    },
+    {
+      "label": "F",
+      "seed": 2026,
+      "population": 2,
+      "K0": 0.027057769540600712,
+      "K200": 0.026908150863170232,
+      "deltaK": -0.00014961867743048043,
+      "Kz0": 0.0019783671457550417,
+      "Kz200": 0.001906895986625694,
+      "deltaKz": -0.00007147115912934775,
+      "source": "reports/v1.0.5/runs/F-b2026-h2026-halo-F200.json",
+      "sourceSHA256": "6e4a96bde43a566c83444afdcb9b666f06369dff91154a7fa0346123e2ac5a3f"
+    },
+    {
+      "label": "F",
+      "seed": 2026,
+      "population": 3,
+      "K0": 1.572112340232008,
+      "K200": 1.5548632187068678,
+      "deltaK": -0.017249121525140243,
+      "Kz0": 0.5230962592813582,
+      "Kz200": 0.5224522497489875,
+      "deltaKz": -0.0006440095323706485,
+      "source": "reports/v1.0.5/runs/F-b2026-h2026-halo-F200.json",
+      "sourceSHA256": "6e4a96bde43a566c83444afdcb9b666f06369dff91154a7fa0346123e2ac5a3f"
+    },
+    {
+      "label": "F",
+      "seed": 2027,
+      "population": 0,
+      "K0": 0.014247064345757737,
+      "K200": 0.01403479359244421,
+      "deltaK": -0.00021227075331352666,
+      "Kz0": 0.005584501766757531,
+      "Kz200": 0.005007451821378345,
+      "deltaKz": -0.000577049945379186,
+      "source": "reports/v1.0.5/runs/F-b2026-h2027-halo-F200.json",
+      "sourceSHA256": "caace3c6dfc64c27cfd60b142f554d8254c0de0969ec84c7224cb34e10a69c0c"
+    },
+    {
+      "label": "F",
+      "seed": 2027,
+      "population": 1,
+      "K0": 0.09042902460423002,
+      "K200": 0.09205066851409799,
+      "deltaK": 0.0016216439098679647,
+      "Kz0": 0.0026870964277466865,
+      "Kz200": 0.0034026564554752252,
+      "deltaKz": 0.0007155600277285387,
+      "source": "reports/v1.0.5/runs/F-b2026-h2027-halo-F200.json",
+      "sourceSHA256": "caace3c6dfc64c27cfd60b142f554d8254c0de0969ec84c7224cb34e10a69c0c"
+    },
+    {
+      "label": "F",
+      "seed": 2027,
+      "population": 2,
+      "K0": 0.027057769540600712,
+      "K200": 0.026723365182670884,
+      "deltaK": -0.0003344043579298281,
+      "Kz0": 0.0019783671457550417,
+      "Kz200": 0.0018947971816265779,
+      "deltaKz": -0.00008356996412846383,
+      "source": "reports/v1.0.5/runs/F-b2026-h2027-halo-F200.json",
+      "sourceSHA256": "caace3c6dfc64c27cfd60b142f554d8254c0de0969ec84c7224cb34e10a69c0c"
+    },
+    {
+      "label": "F",
+      "seed": 2027,
+      "population": 3,
+      "K0": 1.5660297990389154,
+      "K200": 1.5605401094365712,
+      "deltaK": -0.005489689602344194,
+      "Kz0": 0.5254653689661206,
+      "Kz200": 0.5214153029394725,
+      "deltaKz": -0.004050066026648147,
+      "source": "reports/v1.0.5/runs/F-b2026-h2027-halo-F200.json",
+      "sourceSHA256": "caace3c6dfc64c27cfd60b142f554d8254c0de0969ec84c7224cb34e10a69c0c"
+    },
+    {
+      "label": "F",
+      "seed": 2028,
+      "population": 0,
+      "K0": 0.014247064345757737,
+      "K200": 0.01521837412146069,
+      "deltaK": 0.0009713097757029533,
+      "Kz0": 0.005584501766757531,
+      "Kz200": 0.005806427694228373,
+      "deltaKz": 0.00022192592747084187,
+      "source": "reports/v1.0.5/runs/F-b2026-h2028-halo-F200.json",
+      "sourceSHA256": "23d6999f477e024540c23f30faf28b5e32540a5699caccc73bb8d00181bd22f1"
+    },
+    {
+      "label": "F",
+      "seed": 2028,
+      "population": 1,
+      "K0": 0.09042902460423002,
+      "K200": 0.09278106239155398,
+      "deltaK": 0.0023520377873239573,
+      "Kz0": 0.0026870964277466865,
+      "Kz200": 0.0035868870352961314,
+      "deltaKz": 0.0008997906075494449,
+      "source": "reports/v1.0.5/runs/F-b2026-h2028-halo-F200.json",
+      "sourceSHA256": "23d6999f477e024540c23f30faf28b5e32540a5699caccc73bb8d00181bd22f1"
+    },
+    {
+      "label": "F",
+      "seed": 2028,
+      "population": 2,
+      "K0": 0.027057769540600712,
+      "K200": 0.02708332933496173,
+      "deltaK": 0.000025559794361019322,
+      "Kz0": 0.0019783671457550417,
+      "Kz200": 0.001910958788033015,
+      "deltaKz": -0.00006740835772202662,
+      "source": "reports/v1.0.5/runs/F-b2026-h2028-halo-F200.json",
+      "sourceSHA256": "23d6999f477e024540c23f30faf28b5e32540a5699caccc73bb8d00181bd22f1"
+    },
+    {
+      "label": "F",
+      "seed": 2028,
+      "population": 3,
+      "K0": 1.5634213574085027,
+      "K200": 1.5702882055555638,
+      "deltaK": 0.0068668481470610665,
+      "Kz0": 0.5234542455188717,
+      "Kz200": 0.5286749075048098,
+      "deltaKz": 0.00522066198593818,
+      "source": "reports/v1.0.5/runs/F-b2026-h2028-halo-F200.json",
+      "sourceSHA256": "23d6999f477e024540c23f30faf28b5e32540a5699caccc73bb8d00181bd22f1"
+    }
+  ],
+  "groups": [
+    {
+      "label": "E",
+      "population": 0,
+      "deltaK": {
+        "n": 3,
+        "values": [
+          -0.000029064582416049936,
+          0.0005341093145566668,
+          -0.00029464686694480324
+        ],
+        "mean": 0.00007013262173193788,
+        "sd": 0.0004231893974065366,
+        "CI95": [
+          -0.0009811281196397505,
+          0.0011213933631036264
+        ],
+        "assumption": "Independent realization means; Student t interval, small-n and approximate normality limitations. Epochs are not replicates."
+      },
+      "deltaKz": {
+        "n": 3,
+        "values": [
+          0.000006505090581919101,
+          -0.00024247463451912595,
+          -0.000493924416970752
+        ],
+        "mean": -0.0002432979869693196,
+        "sd": 0.00025021576976540694,
+        "CI95": [
+          -0.0008648684167543983,
+          0.00037827244281575913
+        ],
+        "assumption": "Independent realization means; Student t interval, small-n and approximate normality limitations. Epochs are not replicates."
+      }
+    },
+    {
+      "label": "E",
+      "population": 1,
+      "deltaK": {
+        "n": 3,
+        "values": [
+          0.0027903796256029817,
+          0.0005446231588024236,
+          -0.0007649112353521198
+        ],
+        "mean": 0.0008566971830177619,
+        "sd": 0.0017980728361054186,
+        "CI95": [
+          -0.0036099633578856667,
+          0.00532335772392119
+        ],
+        "assumption": "Independent realization means; Student t interval, small-n and approximate normality limitations. Epochs are not replicates."
+      },
+      "deltaKz": {
+        "n": 3,
+        "values": [
+          0.0008289359952147321,
+          0.0008190264840663994,
+          0.0007616833486402933
+        ],
+        "mean": 0.0008032152759738083,
+        "sd": 0.00003630737313311181,
+        "CI95": [
+          0.0007130227611540027,
+          0.0008934077907936139
+        ],
+        "assumption": "Independent realization means; Student t interval, small-n and approximate normality limitations. Epochs are not replicates."
+      }
+    },
+    {
+      "label": "E",
+      "population": 2,
+      "deltaK": {
+        "n": 3,
+        "values": [
+          0.00002269636368492159,
+          -0.0003039456160962156,
+          -0.0005304879087503871
+        ],
+        "mean": -0.00027057905372056035,
+        "sd": 0.00027809747469371564,
+        "CI95": [
+          -0.0009614114781899788,
+          0.0004202533707488581
+        ],
+        "assumption": "Independent realization means; Student t interval, small-n and approximate normality limitations. Epochs are not replicates."
+      },
+      "deltaKz": {
+        "n": 3,
+        "values": [
+          0.00003345005060587493,
+          0.00007472927116563676,
+          -0.0003395284818303219
+        ],
+        "mean": -0.00007711638668627008,
+        "sd": 0.00022819087245313637,
+        "CI95": [
+          -0.0006439739384573231,
+          0.000489741165084783
+        ],
+        "assumption": "Independent realization means; Student t interval, small-n and approximate normality limitations. Epochs are not replicates."
+      }
+    },
+    {
+      "label": "E",
+      "population": 3,
+      "deltaK": {
+        "n": 3,
+        "values": [
+          0.007726670923320578,
+          -0.016775470433255224,
+          -0.006115419271912836
+        ],
+        "mean": -0.005054739593949161,
+        "sd": 0.012285459445980822,
+        "CI95": [
+          -0.035573512711666505,
+          0.025464033523768186
+        ],
+        "assumption": "Independent realization means; Student t interval, small-n and approximate normality limitations. Epochs are not replicates."
+      },
+      "deltaKz": {
+        "n": 3,
+        "values": [
+          -0.00049970459592108,
+          0.001584377200949283,
+          -0.000045373496488587683
+        ],
+        "mean": 0.00034643303617987176,
+        "sd": 0.0010958939288511734,
+        "CI95": [
+          -0.0023759184007160804,
+          0.003068784473075824
+        ],
+        "assumption": "Independent realization means; Student t interval, small-n and approximate normality limitations. Epochs are not replicates."
+      }
+    },
+    {
+      "label": "F",
+      "population": 0,
+      "deltaK": {
+        "n": 3,
+        "values": [
+          0.0007865061658388559,
+          -0.00021227075331352666,
+          0.0009713097757029533
+        ],
+        "mean": 0.0005151817294094275,
+        "sd": 0.0006367326201158087,
+        "CI95": [
+          -0.0010665497846139523,
+          0.002096913243432807
+        ],
+        "assumption": "Independent realization means; Student t interval, small-n and approximate normality limitations. Epochs are not replicates."
+      },
+      "deltaKz": {
+        "n": 3,
+        "values": [
+          -0.00038318730806038113,
+          -0.000577049945379186,
+          0.00022192592747084187
+        ],
+        "mean": -0.0002461037753229084,
+        "sd": 0.0004167547630921035,
+        "CI95": [
+          -0.0012813799989318602,
+          0.0007891724482860434
+        ],
+        "assumption": "Independent realization means; Student t interval, small-n and approximate normality limitations. Epochs are not replicates."
+      }
+    },
+    {
+      "label": "F",
+      "population": 1,
+      "deltaK": {
+        "n": 3,
+        "values": [
+          0.00017362874051717048,
+          0.0016216439098679647,
+          0.0023520377873239573
+        ],
+        "mean": 0.0013824368125696974,
+        "sd": 0.0011087296876835266,
+        "CI95": [
+          -0.0013718004169024926,
+          0.004136674042041887
+        ],
+        "assumption": "Independent realization means; Student t interval, small-n and approximate normality limitations. Epochs are not replicates."
+      },
+      "deltaKz": {
+        "n": 3,
+        "values": [
+          0.0007682509047977218,
+          0.0007155600277285387,
+          0.0008997906075494449
+        ],
+        "mean": 0.0007945338466919019,
+        "sd": 0.00009488583356458674,
+        "CI95": [
+          0.0005588243692095217,
+          0.0010302433241742822
+        ],
+        "assumption": "Independent realization means; Student t interval, small-n and approximate normality limitations. Epochs are not replicates."
+      }
+    },
+    {
+      "label": "F",
+      "population": 2,
+      "deltaK": {
+        "n": 3,
+        "values": [
+          -0.00014961867743048043,
+          -0.0003344043579298281,
+          0.000025559794361019322
+        ],
+        "mean": -0.0001528210803330964,
+        "sd": 0.0001800034423889724,
+        "CI95": [
+          -0.0005999744198424579,
+          0.0002943322591762651
+        ],
+        "assumption": "Independent realization means; Student t interval, small-n and approximate normality limitations. Epochs are not replicates."
+      },
+      "deltaKz": {
+        "n": 3,
+        "values": [
+          -0.00007147115912934775,
+          -0.00008356996412846383,
+          -0.00006740835772202662
+        ],
+        "mean": -0.0000741498269932794,
+        "sd": 0.000008407188980455548,
+        "CI95": [
+          -0.00009503444219065692,
+          -0.000053265211795901874
+        ],
+        "assumption": "Independent realization means; Student t interval, small-n and approximate normality limitations. Epochs are not replicates."
+      }
+    },
+    {
+      "label": "F",
+      "population": 3,
+      "deltaK": {
+        "n": 3,
+        "values": [
+          -0.017249121525140243,
+          -0.005489689602344194,
+          0.0068668481470610665
+        ],
+        "mean": -0.005290654326807791,
+        "sd": 0.012059216790003994,
+        "CI95": [
+          -0.035247409530773814,
+          0.024666100877158235
+        ],
+        "assumption": "Independent realization means; Student t interval, small-n and approximate normality limitations. Epochs are not replicates."
+      },
+      "deltaKz": {
+        "n": 3,
+        "values": [
+          -0.0006440095323706485,
+          -0.004050066026648147,
+          0.00522066198593818
+        ],
+        "mean": 0.0001755288089731281,
+        "sd": 0.004689385011975193,
+        "CI95": [
+          -0.011473549344869535,
+          0.01182460696281579
+        ],
+        "assumption": "Independent realization means; Student t interval, small-n and approximate normality limitations. Epochs are not replicates."
+      }
+    }
+  ],
+  "units": "1e10 nominal Msun kpc^2/Myr^2",
+  "sumClosureChecked": true,
+  "qualification": "Independent endpoint sums from complete measured phase states. Kz includes coherent motion. These are kinetic changes, not a unique total energy transferred between components: potential interaction and density rearrangement also matter. Full new kinetic time series are separate."
+}

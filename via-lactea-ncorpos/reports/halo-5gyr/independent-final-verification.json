@@ -1,0 +1,119 @@
+{
+  "schema": "halo-5gyr-final-recomputation-v1",
+  "createdUTC": "2026-10-22T01:31:04.339Z",
+  "sourceRun": "reports/halo-5gyr/run-halo-x16-t50000-2026-10-22T01-30-29-445Z.json",
+  "requestedDurationMyr": 5000,
+  "thresholdRatio": 2,
+  "results": [
+    {
+      "id": "halo-x2",
+      "independentlyRecomputed": false,
+      "reason": "No final binary snapshot was captured for this early run. Original measured series retained; no reconstructed final phase substituted."
+    },
+    {
+      "id": "halo-x4",
+      "independentlyRecomputed": true,
+      "initialFile": "reports/halo-5gyr/initial-halo-x4.json",
+      "finalFile": "reports/halo-5gyr/state-halo-x4-s50000-2026-10-21T15-14-18-583Z.bin.gz",
+      "finalSHA256": "b692b50333fbb277e8026f091349d166eeedb28952410da0d9772fbeb14ec816",
+      "counts": [
+        4972,
+        14917,
+        53036
+      ],
+      "individualMassesAndComponentsUnchanged": true,
+      "initialMass": [
+        0.5000000145810191,
+        6.8000000909669325,
+        97.63157933810726
+      ],
+      "finalMass": [
+        0.5000000145810191,
+        6.8000000909669325,
+        97.63157933810726
+      ],
+      "globalSteps": 50000,
+      "effectiveDtMyr": 0.10000000149011612,
+      "timeMyr": 5000.000074505806,
+      "epochVerified": true,
+      "velocityEpoch": "full-step, after final KDK kick",
+      "h50InitialKpc": 0.16487250830671857,
+      "h50FinalKpc": 0.8229454824191673,
+      "ratio": 4.991405121878844,
+      "growthPercent": 399.14051218788444,
+      "phasesReproduceReportedH50": true,
+      "independentPass": false,
+      "qualification": "Actual saved initial and final phases, same disk-analysis routine evaluated independently of the experiment worker. Checks implementation consistency, not an independent definition of thickness or an equilibrium theorem."
+    },
+    {
+      "id": "halo-x8",
+      "independentlyRecomputed": true,
+      "initialFile": "reports/halo-5gyr/initial-halo-x8.json",
+      "finalFile": "reports/halo-5gyr/state-halo-x8-s50000-2026-10-21T16-09-45-098Z.bin.gz",
+      "finalSHA256": "22ea26fa7c6721e5403f49840d1e227f1b142e4da487a2a3d121d385eae815e3",
+      "counts": [
+        4972,
+        14917,
+        106072
+      ],
+      "individualMassesAndComponentsUnchanged": true,
+      "initialMass": [
+        0.5000000145810191,
+        6.8000000909669325,
+        97.63157933810726
+      ],
+      "finalMass": [
+        0.5000000145810191,
+        6.8000000909669325,
+        97.63157933810726
+      ],
+      "globalSteps": 50000,
+      "effectiveDtMyr": 0.10000000149011612,
+      "timeMyr": 5000.000074505806,
+      "epochVerified": true,
+      "velocityEpoch": "full-step, after final KDK kick",
+      "h50InitialKpc": 0.16487250830671857,
+      "h50FinalKpc": 0.6295209027799722,
+      "ratio": 3.8182284557037893,
+      "growthPercent": 281.82284557037895,
+      "phasesReproduceReportedH50": true,
+      "independentPass": false,
+      "qualification": "Actual saved initial and final phases, same disk-analysis routine evaluated independently of the experiment worker. Checks implementation consistency, not an independent definition of thickness or an equilibrium theorem."
+    },
+    {
+      "id": "halo-x16",
+      "independentlyRecomputed": true,
+      "initialFile": "reports/halo-5gyr/initial-halo-x16.bin.gz",
+      "finalFile": "reports/halo-5gyr/state-halo-x16-s50000-2026-10-22T01-30-26-913Z.bin.gz",
+      "finalSHA256": "7f8addef20c4eb1d0632bb35d433d35a63089ff0b3c19f47663e0aaac498e027",
+      "counts": [
+        4972,
+        14917,
+        212144
+      ],
+      "individualMassesAndComponentsUnchanged": true,
+      "initialMass": [
+        0.5000000145810191,
+        6.8000000909669325,
+        97.63157933810726
+      ],
+      "finalMass": [
+        0.5000000145810191,
+        6.8000000909669325,
+        97.63157933810726
+      ],
+      "globalSteps": 50000,
+      "effectiveDtMyr": 0.10000000149011612,
+      "timeMyr": 5000.000074505806,
+      "epochVerified": true,
+      "velocityEpoch": "full-step, after final KDK kick",
+      "h50InitialKpc": 0.16487250830671857,
+      "h50FinalKpc": 0.5218877004115472,
+      "ratio": 3.165401592851731,
+      "growthPercent": 216.5401592851731,
+      "phasesReproduceReportedH50": true,
+      "independentPass": false,
+      "qualification": "Actual saved initial and final phases, same disk-analysis routine evaluated independently of the experiment worker. Checks implementation consistency, not an independent definition of thickness or an equilibrium theorem."
+    }
+  ]
+}

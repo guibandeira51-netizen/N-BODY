@@ -1,0 +1,130 @@
+{
+  "config": {
+    "id": "C20-NFW-collisionless-v1",
+    "status": "candidate-not-validated",
+    "reference": "https://doi.org/10.1093/mnras/staa1017",
+    "branch": "Cautun et al. 2020 Table 2, uncontracted NFW column; reduced collisionless approximation, not a refit",
+    "units": {
+      "length": "kpc",
+      "velocity": "km/s",
+      "mass": "Msun"
+    },
+    "bulge": {
+      "mass": 9200000000,
+      "mass68": [
+        8400000000,
+        10300000000
+      ],
+      "r0": 0.075,
+      "cutoff": 2.1,
+      "alpha": 1.8,
+      "sphericalized": true
+    },
+    "disks": [
+      {
+        "name": "thin",
+        "mass": 39800000000,
+        "mass68": [
+          33100000000,
+          42400000000
+        ],
+        "radius": 2.43,
+        "referenceExponentialHeight": 0.3,
+        "dfHdisk": 0.3,
+        "sigmaRsolar": 35,
+        "sigmaScaleRadius": 4.86
+      },
+      {
+        "name": "thick",
+        "mass": 10700000000,
+        "mass68": [
+          8800000000,
+          12500000000
+        ],
+        "radius": 3.88,
+        "referenceExponentialHeight": 0.9,
+        "dfHdisk": 0.9,
+        "sigmaRsolar": 50,
+        "sigmaScaleRadius": 7.76
+      }
+    ],
+    "halo": {
+      "massWithinReferenceRadius": 820000000000,
+      "mass68": [
+        640000000000,
+        910000000000
+      ],
+      "referenceRadius": 207,
+      "scaleRadius": 14.4,
+      "scaleRadius68": [
+        10.9,
+        18.9
+      ],
+      "cutoffRadius": 414,
+      "cutoffStrength": 2,
+      "gamma": 1,
+      "beta": 3
+    },
+    "omitted": {
+      "coldGasMass": 12000000000,
+      "CGMmassWithinReferenceRadius": 55000000000,
+      "gasAddedToStars": false
+    },
+    "solarRadius": 8.122,
+    "kinematicChoice": "35 and 50 km/s at solar radius are explicit thin/thick population priors for sensitivity, not fitted C20 kinematics; no tuning against evolved stability",
+    "method": "AGAMA QuasiIsothermal stellar disks + action-based QuasiSpherical bulge and finite halo; SelfConsistentModel iterations",
+    "iterations": 10,
+    "potentialTolerance": 0.001,
+    "grids": {
+      "rminSph": 0.01,
+      "rmaxSph": 2000,
+      "sizeRadialSph": 40,
+      "lmaxAngularSph": 6,
+      "RminCyl": 0.02,
+      "RmaxCyl": 80,
+      "sizeRadialCyl": 30,
+      "zminCyl": 0.03,
+      "zmaxCyl": 40,
+      "sizeVerticalCyl": 25
+    },
+    "qualification": "Mass uncertainties are marginal intervals, not independent draws. R=207 kpc is the reference paper radius, not a new measured R200 of the gas-free model. Disk Hdisk is an action DF parameter and does not impose the reference double-exponential density. Bulge sphericalization and finite halo taper change profiles. Final profiles and enclosed masses must be measured."
+  },
+  "targetMassesMsun": [
+    9200000000,
+    39800000000,
+    10700000000,
+    1049128645120.4344
+  ],
+  "dfMassesMsun": [
+    9200015467.282112,
+    39800000000.0,
+    10700000000.0,
+    1049129212118.5566
+  ],
+  "dfMassRelativeErrors": [
+    1.6812263166077202e-06,
+    0.0,
+    0.0,
+    5.404467076086661e-07
+  ],
+  "finiteHaloTotalMsun": 1049128645120.4344,
+  "haloInitialMassWithinReferenceRadiusMsun": 820000000000,
+  "GAgamaKpcKmS2PerMsun": 4.30091727067736e-06,
+  "GAppKpc3Myr2Per1e10Msun": 0.04498502151469553,
+  "velocityConversion": 0.001022712164969474,
+  "standardKmSToInternal": 0.001022712165045695,
+  "gravitationalConventionVelocityFactor": 0.9999999999254715,
+  "GConvention": "single constant conversion matches nominal solar GM of historical KDK; not fitted to stability",
+  "createdUTC": "2026-10-15T17:32:35Z",
+  "software": {
+    "agama": "1.0.161 compiled on Oct 15 2026",
+    "agamaFile": "C:\\Users\\PC\\Documents\\Codex\\2026-10-10\\s-2\\work\\v1-research\\Agama-master\\agama.pyd",
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "numpy": "2.5.4",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "generatorSHA256": "52c1ba03be6756d7c0a7d6e49be9f1ca56be92cb1683be72b96ae8e7bef15638",
+    "configSHA256": "905302f6c8faace9a504fcdf919033405b21514ccea6c73aae719bfcf9362ced"
+  },
+  "iterationConverged": false,
+  "lastForceChange": 0.0013376896378194199
+}

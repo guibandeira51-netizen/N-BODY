@@ -1,0 +1,842 @@
+{
+  "schema": "final-scientific-decision-105",
+  "UTC": "2026-10-17T02:27:35.329Z",
+  "selectedLabel": "F",
+  "selectionMetric": "Lowest absolute mean thin h50 fractional change among paired E/F at200Myr. Not a global optimum over all components or a stability promotion.",
+  "structural": [
+    {
+      "label": "E",
+      "checks": [
+        {
+          "metric": "thinGrowth",
+          "budget": 5,
+          "statistics": {
+            "n": 3,
+            "values": [
+              20.3073500690083,
+              18.35126330643597,
+              18.571267730939734
+            ],
+            "mean": 19.07662703546134,
+            "sd": 1.0714988920561663,
+            "CI95": [
+              16.41487622945093,
+              21.73837784147175
+            ],
+            "assumption": "Independent realization means; Student t interval, small-n and approximate normality limitations. Epochs are not replicates."
+          },
+          "passesEquivalence": false
+        },
+        {
+          "metric": "thinVarianceGrowth",
+          "budget": 10,
+          "statistics": {
+            "n": 3,
+            "values": [
+              30.848762502714578,
+              30.47998112703716,
+              28.34596260753044
+            ],
+            "mean": 29.891568745760726,
+            "sd": 1.351174924524204,
+            "CI95": [
+              26.5350641603833,
+              33.24807333113815
+            ],
+            "assumption": "Independent realization means; Student t interval, small-n and approximate normality limitations. Epochs are not replicates."
+          },
+          "passesEquivalence": false
+        },
+        {
+          "metric": "thinLateHeightFraction",
+          "budget": 0.025,
+          "statistics": {
+            "n": 3,
+            "values": [
+              0.15047170174919072,
+              0.11276645851796933,
+              0.10491754972360423
+            ],
+            "mean": 0.12271856999692143,
+            "sd": 0.02435320479648785,
+            "CI95": [
+              0.06222185555646429,
+              0.18321528443737858
+            ],
+            "assumption": "Independent realization means; Student t interval, small-n and approximate normality limitations. Epochs are not replicates."
+          },
+          "passesEquivalence": false
+        },
+        {
+          "metric": "thinLateVarianceFraction",
+          "budget": 0.05,
+          "statistics": {
+            "n": 3,
+            "values": [
+              0.0876723254201656,
+              0.14527667718862516,
+              0.10792315131416483
+            ],
+            "mean": 0.11362405130765185,
+            "sd": 0.029222260884776058,
+            "CI95": [
+              0.04103193101694613,
+              0.18621617159835757
+            ],
+            "assumption": "Independent realization means; Student t interval, small-n and approximate normality limitations. Epochs are not replicates."
+          },
+          "passesEquivalence": false
+        },
+        {
+          "metric": "thinR50Fraction",
+          "budget": 0.05,
+          "statistics": {
+            "n": 3,
+            "values": [
+              -0.01290306253137552,
+              -0.01567759213032338,
+              -0.0038382296821418693
+            ],
+            "mean": -0.010806294781280257,
+            "sd": 0.006191926359642231,
+            "CI95": [
+              -0.026187892560544112,
+              0.004575302997983598
+            ],
+            "assumption": "Independent realization means; Student t interval, small-n and approximate normality limitations. Epochs are not replicates."
+          },
+          "passesEquivalence": true
+        },
+        {
+          "metric": "thickGrowth",
+          "budget": 5,
+          "statistics": {
+            "n": 3,
+            "values": [
+              -3.605663879984411,
+              -0.979375597841492,
+              -2.358340520057378
+            ],
+            "mean": -2.3144599992944275,
+            "sd": 1.3136938990141964,
+            "CI95": [
+              -5.577856555721946,
+              0.9489365571330914
+            ],
+            "assumption": "Independent realization means; Student t interval, small-n and approximate normality limitations. Epochs are not replicates."
+          },
+          "passesEquivalence": false
+        },
+        {
+          "metric": "thickVarianceGrowth",
+          "budget": 10,
+          "statistics": {
+            "n": 3,
+            "values": [
+              1.69079084504844,
+              3.77732067178167,
+              -17.162056222079148
+            ],
+            "mean": -3.897981568416346,
+            "sd": 11.534303576415734,
+            "CI95": [
+              -32.550780063035795,
+              24.754816926203105
+            ],
+            "assumption": "Independent realization means; Student t interval, small-n and approximate normality limitations. Epochs are not replicates."
+          },
+          "passesEquivalence": false
+        },
+        {
+          "metric": "thickLateHeightFraction",
+          "budget": 0.025,
+          "statistics": {
+            "n": 3,
+            "values": [
+              -0.06994756379748887,
+              -0.040810407148710794,
+              -0.07150704588371522
+            ],
+            "mean": -0.06075500560997162,
+            "sd": 0.017290120066963423,
+            "CI95": [
+              -0.10370604491150759,
+              -0.01780396630843565
+            ],
+            "assumption": "Independent realization means; Student t interval, small-n and approximate normality limitations. Epochs are not replicates."
+          },
+          "passesEquivalence": false
+        },
+        {
+          "metric": "thickLateVarianceFraction",
+          "budget": 0.05,
+          "statistics": {
+            "n": 3,
+            "values": [
+              0.16095304943432173,
+              0.15392293451362749,
+              -0.05704101139104321
+            ],
+            "mean": 0.085944990852302,
+            "sd": 0.12387938996096155,
+            "CI95": [
+              -0.2217884734762668,
+              0.3936784551808708
+            ],
+            "assumption": "Independent realization means; Student t interval, small-n and approximate normality limitations. Epochs are not replicates."
+          },
+          "passesEquivalence": false
+        },
+        {
+          "metric": "thickR50Fraction",
+          "budget": 0.05,
+          "statistics": {
+            "n": 3,
+            "values": [
+              -0.054850954937129326,
+              -0.07921078471515008,
+              -0.0301180255024317
+            ],
+            "mean": -0.054726588384903706,
+            "sd": 0.024546615898306038,
+            "CI95": [
+              -0.11570376263728657,
+              0.006250585867479161
+            ],
+            "assumption": "Independent realization means; Student t interval, small-n and approximate normality limitations. Epochs are not replicates."
+          },
+          "passesEquivalence": false
+        },
+        {
+          "metric": "bulge r50",
+          "budget": 0.05,
+          "statistics": {
+            "n": 3,
+            "values": [
+              -0.002699522576008695,
+              -0.004579654359095242,
+              0.053300838611408
+            ],
+            "mean": 0.015340553892101353,
+            "sd": 0.032888008998091724,
+            "CI95": [
+              -0.06635778952919968,
+              0.0970388973134024
+            ],
+            "assumption": "Independent realization means; Student t interval, small-n and approximate normality limitations. Epochs are not replicates."
+          },
+          "passesEquivalence": false
+        },
+        {
+          "metric": "bulge radial mass TV",
+          "budget": 0.05,
+          "statistics": {
+            "n": 3,
+            "values": [
+              0.054666666666666655,
+              0.030666666666666644,
+              0.03599999999999999
+            ],
+            "mean": 0.04044444444444443,
+            "sd": 0.012602175003340294,
+            "CI95": [
+              0.009138906266746578,
+              0.07174998262214227
+            ],
+            "assumption": "Independent realization means; Student t interval, small-n and approximate normality limitations. Epochs are not replicates."
+          },
+          "passesEquivalence": false
+        },
+        {
+          "metric": "disk r50",
+          "budget": 0.05,
+          "statistics": {
+            "n": 3,
+            "values": [
+              -0.001869596229646442,
+              0.0019761201920556193,
+              0.02312206242816539
+            ],
+            "mean": 0.007742862130191523,
+            "sd": 0.013456865721739845,
+            "CI95": [
+              -0.02568584549308926,
+              0.041171569753472304
+            ],
+            "assumption": "Independent realization means; Student t interval, small-n and approximate normality limitations. Epochs are not replicates."
+          },
+          "passesEquivalence": true
+        },
+        {
+          "metric": "disk radial mass TV",
+          "budget": 0.05,
+          "statistics": {
+            "n": 3,
+            "values": [
+              0.015552527351918309,
+              0.018332936632334932,
+              0.016658432355106053
+            ],
+            "mean": 0.0168479654464531,
+            "sd": 0.0013998610774621162,
+            "CI95": [
+              0.013370517752515519,
+              0.02032541314039068
+            ],
+            "assumption": "Independent realization means; Student t interval, small-n and approximate normality limitations. Epochs are not replicates."
+          },
+          "passesEquivalence": true
+        },
+        {
+          "metric": "halo r50",
+          "budget": 0.05,
+          "statistics": {
+            "n": 3,
+            "values": [
+              0.005189767129666123,
+              0.004516354780578435,
+              -0.00257635554957103
+            ],
+            "mean": 0.002376588786891176,
+            "sd": 0.004302570655787739,
+            "CI95": [
+              -0.008311589237243854,
+              0.013064766811026206
+            ],
+            "assumption": "Independent realization means; Student t interval, small-n and approximate normality limitations. Epochs are not replicates."
+          },
+          "passesEquivalence": true
+        },
+        {
+          "metric": "halo radial mass TV",
+          "budget": 0.05,
+          "statistics": {
+            "n": 3,
+            "values": [
+              0.002925000000000007,
+              0.0058999999999999955,
+              0.002624999999999997
+            ],
+            "mean": 0.0038166666666666666,
+            "sd": 0.001810444236460577,
+            "CI95": [
+              -0.000680726136407963,
+              0.008314059469741297
+            ],
+            "assumption": "Independent realization means; Student t interval, small-n and approximate normality limitations. Epochs are not replicates."
+          },
+          "passesEquivalence": true
+        },
+        {
+          "metric": "thin cylindrical mass TV",
+          "budget": 0.05,
+          "statistics": {
+            "n": 3,
+            "values": [
+              0.024111675126903674,
+              0.03440496333897366,
+              0.02256063169768763
+            ],
+            "mean": 0.02702575672118832,
+            "sd": 0.006437464692004435,
+            "CI95": [
+              0.01103420791078771,
+              0.04301730553158893
+            ],
+            "assumption": "Independent realization means; Student t interval, small-n and approximate normality limitations. Epochs are not replicates."
+          },
+          "passesEquivalence": true
+        },
+        {
+          "metric": "thick cylindrical mass TV",
+          "budget": 0.05,
+          "statistics": {
+            "n": 3,
+            "values": [
+              0.04612159329140464,
+              0.04192872117400432,
+              0.0628930817610064
+            ],
+            "mean": 0.05031446540880511,
+            "sd": 0.011093296901738336,
+            "CI95": [
+              0.022757188225949188,
+              0.07787174259166103
+            ],
+            "assumption": "Independent realization means; Student t interval, small-n and approximate normality limitations. Epochs are not replicates."
+          },
+          "passesEquivalence": false
+        }
+      ],
+      "structuralEquivalence": false,
+      "maxSampledEnergyError": 3.970144544003712e-7
+    },
+    {
+      "label": "F",
+      "checks": [
+        {
+          "metric": "thinGrowth",
+          "budget": 5,
+          "statistics": {
+            "n": 3,
+            "values": [
+              21.83819988771061,
+              15.861688348469283,
+              17.161099455554773
+            ],
+            "mean": 18.28699589724489,
+            "sd": 3.1433110954420385,
+            "CI95": [
+              10.478578264839406,
+              26.095413529650372
+            ],
+            "assumption": "Independent realization means; Student t interval, small-n and approximate normality limitations. Epochs are not replicates."
+          },
+          "passesEquivalence": false
+        },
+        {
+          "metric": "thinVarianceGrowth",
+          "budget": 10,
+          "statistics": {
+            "n": 3,
+            "values": [
+              28.590373492296383,
+              26.629488258512033,
+              33.485609159626236
+            ],
+            "mean": 29.568490303478217,
+            "sd": 3.5311659299601237,
+            "CI95": [
+              20.79658784990557,
+              38.340392757050864
+            ],
+            "assumption": "Independent realization means; Student t interval, small-n and approximate normality limitations. Epochs are not replicates."
+          },
+          "passesEquivalence": false
+        },
+        {
+          "metric": "thinLateHeightFraction",
+          "budget": 0.025,
+          "statistics": {
+            "n": 3,
+            "values": [
+              0.1779884962016831,
+              0.09871220891370465,
+              0.11020148337291072
+            ],
+            "mean": 0.12896739616276617,
+            "sd": 0.04284042534416376,
+            "CI95": [
+              0.022545879971707566,
+              0.23538891235382478
+            ],
+            "assumption": "Independent realization means; Student t interval, small-n and approximate normality limitations. Epochs are not replicates."
+          },
+          "passesEquivalence": false
+        },
+        {
+          "metric": "thinLateVarianceFraction",
+          "budget": 0.05,
+          "statistics": {
+            "n": 3,
+            "values": [
+              0.07749382083779215,
+              0.03368721255605778,
+              0.11540960673040648
+            ],
+            "mean": 0.07553021337475213,
+            "sd": 0.04089656762001655,
+            "CI95": [
+              -0.026062492537194046,
+              0.17712291928669832
+            ],
+            "assumption": "Independent realization means; Student t interval, small-n and approximate normality limitations. Epochs are not replicates."
+          },
+          "passesEquivalence": false
+        },
+        {
+          "metric": "thinR50Fraction",
+          "budget": 0.05,
+          "statistics": {
+            "n": 3,
+            "values": [
+              0.006711452780227223,
+              -0.012678231446192512,
+              -0.025535690978258918
+            ],
+            "mean": -0.010500823214741403,
+            "sd": 0.016233465437173644,
+            "CI95": [
+              -0.05082698690196816,
+              0.029825340472485348
+            ],
+            "assumption": "Independent realization means; Student t interval, small-n and approximate normality limitations. Epochs are not replicates."
+          },
+          "passesEquivalence": false
+        },
+        {
+          "metric": "thickGrowth",
+          "budget": 5,
+          "statistics": {
+            "n": 3,
+            "values": [
+              -0.39460743039980706,
+              -4.246459572081096,
+              -4.02528596166708
+            ],
+            "mean": -2.8887843213826607,
+            "sd": 2.1628495588275585,
+            "CI95": [
+              -8.261600475621615,
+              2.4840318328562936
+            ],
+            "assumption": "Independent realization means; Student t interval, small-n and approximate normality limitations. Epochs are not replicates."
+          },
+          "passesEquivalence": false
+        },
+        {
+          "metric": "thickVarianceGrowth",
+          "budget": 10,
+          "statistics": {
+            "n": 3,
+            "values": [
+              -3.612633746106708,
+              -4.224188838285725,
+              -3.4072723997071397
+            ],
+            "mean": -3.748031661366524,
+            "sd": 0.4249559547735603,
+            "CI95": [
+              -4.803680774513862,
+              -2.692382548219186
+            ],
+            "assumption": "Independent realization means; Student t interval, small-n and approximate normality limitations. Epochs are not replicates."
+          },
+          "passesEquivalence": true
+        },
+        {
+          "metric": "thickLateHeightFraction",
+          "budget": 0.025,
+          "statistics": {
+            "n": 3,
+            "values": [
+              -0.04800911743981525,
+              -0.09205136220867698,
+              -0.05386787610486717
+            ],
+            "mean": -0.0646427852511198,
+            "sd": 0.02391660158556355,
+            "CI95": [
+              -0.12405491719018545,
+              -0.005230653312054148
+            ],
+            "assumption": "Independent realization means; Student t interval, small-n and approximate normality limitations. Epochs are not replicates."
+          },
+          "passesEquivalence": false
+        },
+        {
+          "metric": "thickLateVarianceFraction",
+          "budget": 0.05,
+          "statistics": {
+            "n": 3,
+            "values": [
+              0.09650137977101436,
+              0.05850313759415523,
+              0.05244981553535141
+            ],
+            "mean": 0.06915144430017367,
+            "sd": 0.023878335467139723,
+            "CI95": [
+              0.00983437066897249,
+              0.12846851793137484
+            ],
+            "assumption": "Independent realization means; Student t interval, small-n and approximate normality limitations. Epochs are not replicates."
+          },
+          "passesEquivalence": false
+        },
+        {
+          "metric": "thickR50Fraction",
+          "budget": 0.05,
+          "statistics": {
+            "n": 3,
+            "values": [
+              -0.050355454990112736,
+              -0.05310419212878781,
+              -0.012064824236867833
+            ],
+            "mean": -0.03850815711858946,
+            "sd": 0.02294180200822372,
+            "CI95": [
+              -0.09549875266604596,
+              0.018482438428867036
+            ],
+            "assumption": "Independent realization means; Student t interval, small-n and approximate normality limitations. Epochs are not replicates."
+          },
+          "passesEquivalence": false
+        },
+        {
+          "metric": "bulge r50",
+          "budget": 0.05,
+          "statistics": {
+            "n": 3,
+            "values": [
+              -0.04361923289263081,
+              0.023978163879887715,
+              -0.019168683403379627
+            ],
+            "mean": -0.012936584138707574,
+            "sd": 0.03422690912920518,
+            "CI95": [
+              -0.09796093986816869,
+              0.07208777159075354
+            ],
+            "assumption": "Independent realization means; Student t interval, small-n and approximate normality limitations. Epochs are not replicates."
+          },
+          "passesEquivalence": false
+        },
+        {
+          "metric": "bulge radial mass TV",
+          "budget": 0.05,
+          "statistics": {
+            "n": 3,
+            "values": [
+              0.04333333333333332,
+              0.03333333333333334,
+              0.034666666666666617
+            ],
+            "mean": 0.037111111111111095,
+            "sd": 0.00542968521016472,
+            "CI95": [
+              0.023623025316822505,
+              0.050599196905399685
+            ],
+            "assumption": "Independent realization means; Student t interval, small-n and approximate normality limitations. Epochs are not replicates."
+          },
+          "passesEquivalence": false
+        },
+        {
+          "metric": "disk r50",
+          "budget": 0.05,
+          "statistics": {
+            "n": 3,
+            "values": [
+              0.004287698324584088,
+              0.007592005956415626,
+              -0.004392911922390885
+            ],
+            "mean": 0.00249559745286961,
+            "sd": 0.0061901763538072035,
+            "CI95": [
+              -0.012881653070903417,
+              0.017872847976642636
+            ],
+            "assumption": "Independent realization means; Student t interval, small-n and approximate normality limitations. Epochs are not replicates."
+          },
+          "passesEquivalence": true
+        },
+        {
+          "metric": "disk radial mass TV",
+          "budget": 0.05,
+          "statistics": {
+            "n": 3,
+            "values": [
+              0.025335256463910487,
+              0.015110544666338876,
+              0.020003647752606914
+            ],
+            "mean": 0.020149816294285427,
+            "sd": 0.005113922835532653,
+            "CI95": [
+              0.007446127722817861,
+              0.03285350486575299
+            ],
+            "assumption": "Independent realization means; Student t interval, small-n and approximate normality limitations. Epochs are not replicates."
+          },
+          "passesEquivalence": true
+        },
+        {
+          "metric": "halo r50",
+          "budget": 0.05,
+          "statistics": {
+            "n": 3,
+            "values": [
+              0.0010983525072316702,
+              0.00403298105263894,
+              0.0012401912828343686
+            ],
+            "mean": 0.0021238416142349927,
+            "sd": 0.0016548835626768795,
+            "CI95": [
+              -0.0019871170526057605,
+              0.006234800281075746
+            ],
+            "assumption": "Independent realization means; Student t interval, small-n and approximate normality limitations. Epochs are not replicates."
+          },
+          "passesEquivalence": true
+        },
+        {
+          "metric": "halo radial mass TV",
+          "budget": 0.05,
+          "statistics": {
+            "n": 3,
+            "values": [
+              0.0044749999999999955,
+              0.0016749999999999808,
+              0.002012500000000002
+            ],
+            "mean": 0.0027208333333333264,
+            "sd": 0.0015284966742958076,
+            "CI95": [
+              -0.0010761628977909456,
+              0.006517829564457598
+            ],
+            "assumption": "Independent realization means; Student t interval, small-n and approximate normality limitations. Epochs are not replicates."
+          },
+          "passesEquivalence": true
+        },
+        {
+          "metric": "thin cylindrical mass TV",
+          "budget": 0.05,
+          "statistics": {
+            "n": 3,
+            "values": [
+              0.031020868584320467,
+              0.0273547659334463,
+              0.031020868584320464
+            ],
+            "mean": 0.02979883436736241,
+            "sd": 0.0021166253523590005,
+            "CI95": [
+              0.02454084550761442,
+              0.0350568232271104
+            ],
+            "assumption": "Independent realization means; Student t interval, small-n and approximate normality limitations. Epochs are not replicates."
+          },
+          "passesEquivalence": true
+        },
+        {
+          "metric": "thick cylindrical mass TV",
+          "budget": 0.05,
+          "statistics": {
+            "n": 3,
+            "values": [
+              0.07337526205450738,
+              0.031446540880503214,
+              0.025157232704402645
+            ],
+            "mean": 0.043326345213137746,
+            "sd": 0.026212437922447276,
+            "CI95": [
+              -0.02178896035071959,
+              0.10844165077699508
+            ],
+            "assumption": "Independent realization means; Student t interval, small-n and approximate normality limitations. Epochs are not replicates."
+          },
+          "passesEquivalence": false
+        }
+      ],
+      "structuralEquivalence": false,
+      "maxSampledEnergyError": 2.6414741681216234e-7
+    }
+  ],
+  "pairs": [
+    {
+      "seed": 2026,
+      "thinGrowthDifference": 3.2669321567708742,
+      "thinVarianceDifference": 3.1553233557009435,
+      "thinLateHeightDifference": 0.07307094647807888,
+      "thickGrowthDifference": 1.963733089657571
+    },
+    {
+      "seed": 2027,
+      "thinGrowthDifference": -4.445661720539018,
+      "thinVarianceDifference": -54.470465092373786,
+      "thinLateHeightDifference": -0.05175949283548607,
+      "thickGrowthDifference": -0.6407956920966851
+    },
+    {
+      "seed": 2028,
+      "thinGrowthDifference": -1.1901638508811985,
+      "thinVarianceDifference": 38.80239760540775,
+      "thinLateHeightDifference": -0.002564975145058615,
+      "thickGrowthDifference": -3.0459103638255884
+    }
+  ],
+  "contrasts": {
+    "thinGrowthDifference": {
+      "n": 3,
+      "values": [
+        3.2669321567708742,
+        -4.445661720539018,
+        -1.1901638508811985
+      ],
+      "mean": -0.7896311382164475,
+      "sd": 3.8718659480301545,
+      "CI95": [
+        -10.407879355120158,
+        8.828617078687262
+      ],
+      "assumption": "Independent realization means; Student t interval, small-n and approximate normality limitations. Epochs are not replicates."
+    },
+    "thinVarianceDifference": {
+      "n": 3,
+      "values": [
+        3.1553233557009435,
+        -54.470465092373786,
+        38.80239760540775
+      ],
+      "mean": -4.170914710421698,
+      "sd": 47.06603926517431,
+      "CI95": [
+        -121.08943779857101,
+        112.74760837772762
+      ],
+      "assumption": "Independent realization means; Student t interval, small-n and approximate normality limitations. Epochs are not replicates."
+    },
+    "thinLateHeightDifference": {
+      "n": 3,
+      "values": [
+        0.07307094647807888,
+        -0.05175949283548607,
+        -0.002564975145058615
+      ],
+      "mean": 0.00624882616584473,
+      "sd": 0.06288021918668435,
+      "CI95": [
+        -0.14995429764802007,
+        0.16245194997970955
+      ],
+      "assumption": "Independent realization means; Student t interval, small-n and approximate normality limitations. Epochs are not replicates."
+    },
+    "thickGrowthDifference": {
+      "n": 3,
+      "values": [
+        1.963733089657571,
+        -0.6407956920966851,
+        -3.0459103638255884
+      ],
+      "mean": -0.5743243220882341,
+      "sd": 2.505483130062897,
+      "CI95": [
+        -6.798289451994147,
+        5.649640807817678
+      ],
+      "assumption": "Independent realization means; Student t interval, small-n and approximate normality limitations. Epochs are not replicates."
+    }
+  },
+  "forceMaximumVectorRelative": 0.000026152615173206473,
+  "forceMaximumVerticalOverVectorNorm": 0.000018076241018643524,
+  "maxNewSampledEnergyError": 3.970144544003712e-7,
+  "energyBudget": 0.00001,
+  "conservationPass": true,
+  "convergenceHeightEquivalence": false,
+  "longRunsLaunched": false,
+  "horizons": {
+    "200": "measured",
+    "400": "not launched",
+    "600": "not launched",
+    "1000": "not launched"
+  },
+  "reason": "No promotion based only on thickness. Residual trends, all-population equivalence, finite-N and preparation uncertainty must be resolved before multi-orbit claims.",
+  "qualification": "Confidence intervals describe individual means under small-n Student assumptions. Epochs are correlated. Shared baryons make E/F contrasts conditional on baryon seed2026, while E104 diagonal ensemble varies both populations. No claim of universal stability threshold or unique causal split."
+}

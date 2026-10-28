@@ -1,0 +1,106 @@
+{
+  "UTC": "2026-10-16T15:30:21.920Z",
+  "pilots": [
+    {
+      "id": "FE-b2026-h2026-higher-pilot20",
+      "wallSeconds": 100.5654349999996,
+      "timing": {
+        "initializeSeconds": 0.060714999999850985,
+        "forceBatch32Seconds": 1.1550050000008196,
+        "stepSeconds": 14.474564999999478,
+        "readbackSeconds": 0.1364600000018254,
+        "diagnosticSeconds": 84.47743999999948,
+        "energySeconds": 79.02801999999862,
+        "structureSeconds": 5.449420000000857
+      },
+      "precisionAudit": {
+        "n": 89546,
+        "serialSeconds": 43.22113500000071,
+        "parallelSeconds": 3.0015649999994785,
+        "serialU": -3.3959790310374394,
+        "parallelU": -3.3959790310374394,
+        "absoluteDifference": 0
+      },
+      "conservation": {
+        "samples": 11,
+        "initialTime": 0,
+        "finalTime": 20,
+        "sampleIntervalMax": 2,
+        "finalEnergyError": 3.7600594126005094e-8,
+        "maxAbsEnergyError": 7.09144222247564e-8,
+        "minEnergyError": -3.2271713985276404e-8,
+        "maxEnergyError": 7.09144222247564e-8,
+        "meanEnergyError": 2.984016950339257e-8,
+        "energyErrorPeakToPeak": 1.031861362100328e-7,
+        "energyErrorRmsAboutMean": 2.8023058724746798e-8,
+        "maxAbsEnergyScaledError": 2.3489378760490755e-8,
+        "maxAngularMomentumScaledError": 6.071920516077574e-8,
+        "maxAbsLzRelativeError": 0.000005305716794386841,
+        "maxAbsLzScaledError": 3.123229733435194e-8,
+        "maxMomentumScaledError": 2.5610072223090573e-10,
+        "maxCenterOfMassDisplacement": 3.6375216571973154e-10,
+        "maxCenterOfMassBallisticResidual": 3.6375216571973154e-10,
+        "energyApproximate": false,
+        "externalExtrapolatedMax": 0,
+        "scope": "sampled instants only; conservation does not establish structural equilibrium"
+      },
+      "forceReference": [
+        0.000004314075654604858,
+        0.000008519888597763926,
+        0.000010753440953844607,
+        0.000011925561555938135
+      ]
+    },
+    {
+      "id": "FG-b2026-h2026-higher-pilot20",
+      "wallSeconds": 44.20722999999951,
+      "timing": {
+        "initializeSeconds": 0.034110000000335275,
+        "forceBatch32Seconds": 0.5432949999999255,
+        "stepSeconds": 6.86059499999974,
+        "readbackSeconds": 0.10182500000111758,
+        "diagnosticSeconds": 36.46408499999996,
+        "energySeconds": 30.770094999999735,
+        "structureSeconds": 5.693985000000335
+      },
+      "precisionAudit": {
+        "n": 56638,
+        "serialSeconds": 17.050769999999552,
+        "parallelSeconds": 1.2471150000002236,
+        "serialU": -3.385520878324081,
+        "parallelU": -3.385520878324081,
+        "absoluteDifference": 0
+      },
+      "conservation": {
+        "samples": 11,
+        "initialTime": 0,
+        "finalTime": 20,
+        "sampleIntervalMax": 2,
+        "finalEnergyError": 1.843335057645992e-8,
+        "maxAbsEnergyError": 7.599091670895872e-8,
+        "minEnergyError": -7.599091670895872e-8,
+        "maxEnergyError": 4.430199551036189e-8,
+        "meanEnergyError": -1.1454256607150432e-8,
+        "energyErrorPeakToPeak": 1.202929122193206e-7,
+        "energyErrorRmsAboutMean": 3.491114531009163e-8,
+        "maxAbsEnergyScaledError": 2.5047181846829213e-8,
+        "maxAngularMomentumScaledError": 1.044923566809659e-7,
+        "maxAbsLzRelativeError": 0.0000029373928279745656,
+        "maxAbsLzScaledError": 1.676584729073514e-8,
+        "maxMomentumScaledError": 2.1087540315609592e-10,
+        "maxCenterOfMassDisplacement": 9.806845601093004e-10,
+        "maxCenterOfMassBallisticResidual": 9.806845601093004e-10,
+        "energyApproximate": false,
+        "externalExtrapolatedMax": 0,
+        "scope": "sampled instants only; conservation does not establish structural equilibrium"
+      },
+      "forceReference": [
+        0.0000032350764686588654,
+        0.000006209295263171238,
+        0.000008937132305003276,
+        0.00001403333589157277
+      ]
+    }
+  ],
+  "decision": "Direct Plummer GPU remains feasible at Nh80k and thin4 in measured pilots. Exact pair64 partitions match serial energy. Advance only E/G to200Myr with three paired seeds,10Myr measurement cadence. No new force approximation. Long horizons remain gated."
+}

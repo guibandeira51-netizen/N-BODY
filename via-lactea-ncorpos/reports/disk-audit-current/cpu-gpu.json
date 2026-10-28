@@ -1,0 +1,1296 @@
+{
+  "type": "result",
+  "schema": "disk-audit-cpu-gpu-v1",
+  "createdUTC": "2026-10-21T03:11:12.923Z",
+  "runs": [
+    {
+      "n": 800,
+      "seed": 2026,
+      "requestedDt": 0.1,
+      "effectiveParameters": {
+        "dt": 0.10000000149011612,
+        "epsilonSquared": 0.009999999776482582,
+        "G": 0.04498502239584923,
+        "precision": "f32"
+      },
+      "initialPolicy": "Exact same rounded particle snapshot, masses and effective gravitational parameters; only arithmetic trajectory precision differs.",
+      "samples": [
+        {
+          "step": 0,
+          "requestedMyr": 0,
+          "cpuTimeMyr": 0,
+          "gpuTimeMyr": 0,
+          "cpuEnergy": -1.6669434557216247,
+          "gpuEnergy": -1.6669434557216247,
+          "cpuErrorPercent": 0,
+          "gpuErrorPercent": 0,
+          "h50CPU": 0.18851445095454183,
+          "h50GPU": 0.18851445095454183,
+          "diskPositionErrors": {
+            "count": 360,
+            "rmsAbsolute": 0,
+            "rmsRelative": 0,
+            "maxCoordinateAbsolute": 0
+          },
+          "diskVelocityErrors": {
+            "count": 360,
+            "rmsAbsolute": 0,
+            "rmsRelative": 0,
+            "maxCoordinateAbsolute": 0
+          },
+          "diskForceErrors": {
+            "count": 360,
+            "rmsAbsolute": 9.541575037958601e-9,
+            "rmsRelative": 2.2080068448350108e-7,
+            "maxCoordinateAbsolute": 6.162654297980907e-8
+          }
+        },
+        {
+          "step": 20,
+          "requestedMyr": 2,
+          "cpuTimeMyr": 2.0000000298023224,
+          "gpuTimeMyr": 2.0000000298023224,
+          "cpuEnergy": -1.6669438358216793,
+          "gpuEnergy": -1.6669437489545407,
+          "cpuErrorPercent": -0.00002280221643017324,
+          "gpuErrorPercent": -0.000017591053550278196,
+          "h50CPU": 0.16523125579829906,
+          "h50GPU": 0.16523123814641655,
+          "diskPositionErrors": {
+            "count": 360,
+            "rmsAbsolute": 0.0000024030087998394274,
+            "rmsRelative": 6.722661526768866e-8,
+            "maxCoordinateAbsolute": 0.000012866327153915336
+          },
+          "diskVelocityErrors": {
+            "count": 360,
+            "rmsAbsolute": 6.230344372849113e-8,
+            "rmsRelative": 2.873735256187305e-7,
+            "maxCoordinateAbsolute": 4.2977385167342064e-7
+          },
+          "diskForceErrors": {
+            "count": 360,
+            "rmsAbsolute": 1.4827185643313316e-7,
+            "rmsRelative": 0.0000029891546936188257,
+            "maxCoordinateAbsolute": 0.000001957871901686614
+          }
+        },
+        {
+          "step": 40,
+          "requestedMyr": 4,
+          "cpuTimeMyr": 4.000000059604645,
+          "gpuTimeMyr": 4.000000059604645,
+          "cpuEnergy": -1.666958293414073,
+          "gpuEnergy": -1.6669582198738044,
+          "cpuErrorPercent": -0.000890113722653651,
+          "gpuErrorPercent": -0.0008857020392045796,
+          "h50CPU": 0.16760652369291562,
+          "h50GPU": 0.16760652482135235,
+          "diskPositionErrors": {
+            "count": 360,
+            "rmsAbsolute": 0.0000028069109907909137,
+            "rmsRelative": 7.853112467434113e-8,
+            "maxCoordinateAbsolute": 0.000015771621150406645
+          },
+          "diskVelocityErrors": {
+            "count": 360,
+            "rmsAbsolute": 1.0948609365320175e-7,
+            "rmsRelative": 4.848453020715626e-7,
+            "maxCoordinateAbsolute": 5.016979290686785e-7
+          },
+          "diskForceErrors": {
+            "count": 360,
+            "rmsAbsolute": 1.4151592935972318e-7,
+            "rmsRelative": 0.000002175692852378689,
+            "maxCoordinateAbsolute": 0.000001024744555128132
+          }
+        },
+        {
+          "step": 60,
+          "requestedMyr": 6,
+          "cpuTimeMyr": 6.000000089406967,
+          "gpuTimeMyr": 6.000000089406967,
+          "cpuEnergy": -1.6669264578294114,
+          "gpuEnergy": -1.6669263453529992,
+          "cpuErrorPercent": 0.001019704187024351,
+          "gpuErrorPercent": 0.0010264516511808571,
+          "h50CPU": 0.1699954478327541,
+          "h50GPU": 0.1699956204286982,
+          "diskPositionErrors": {
+            "count": 360,
+            "rmsAbsolute": 0.000003255803322557069,
+            "rmsRelative": 9.109641846411532e-8,
+            "maxCoordinateAbsolute": 0.00001835881241873949
+          },
+          "diskVelocityErrors": {
+            "count": 360,
+            "rmsAbsolute": 2.0908443768402788e-7,
+            "rmsRelative": 8.909907032464965e-7,
+            "maxCoordinateAbsolute": 0.0000013154446477647852
+          },
+          "diskForceErrors": {
+            "count": 360,
+            "rmsAbsolute": 1.9456337770998173e-7,
+            "rmsRelative": 0.0000040249458973367805,
+            "maxCoordinateAbsolute": 0.0000016202768031714498
+          }
+        },
+        {
+          "step": 80,
+          "requestedMyr": 8,
+          "cpuTimeMyr": 8.00000011920929,
+          "gpuTimeMyr": 8.00000011920929,
+          "cpuEnergy": -1.6669489925443972,
+          "gpuEnergy": -1.6669490561038323,
+          "cpuErrorPercent": -0.0003321542043603723,
+          "gpuErrorPercent": -0.00033596713723642584,
+          "h50CPU": 0.19892060360236927,
+          "h50GPU": 0.19892060990269683,
+          "diskPositionErrors": {
+            "count": 360,
+            "rmsAbsolute": 0.0000032204167628682555,
+            "rmsRelative": 9.011226948733641e-8,
+            "maxCoordinateAbsolute": 0.000021113722027621407
+          },
+          "diskVelocityErrors": {
+            "count": 360,
+            "rmsAbsolute": 3.972043376511564e-7,
+            "rmsRelative": 0.0000016841827894393548,
+            "maxCoordinateAbsolute": 0.0000025292727902082035
+          },
+          "diskForceErrors": {
+            "count": 360,
+            "rmsAbsolute": 5.335783206017814e-7,
+            "rmsRelative": 0.00001021422185537003,
+            "maxCoordinateAbsolute": 0.000004813950905700748
+          }
+        },
+        {
+          "step": 100,
+          "requestedMyr": 10,
+          "cpuTimeMyr": 10.000000149011612,
+          "gpuTimeMyr": 10.000000149011612,
+          "cpuEnergy": -1.6669378437316866,
+          "gpuEnergy": -1.6669378358164453,
+          "cpuErrorPercent": 0.0003366634854247635,
+          "gpuErrorPercent": 0.0003371383210482559,
+          "h50CPU": 0.2423618445536792,
+          "h50GPU": 0.2423618073052597,
+          "diskPositionErrors": {
+            "count": 360,
+            "rmsAbsolute": 0.000003864373169028015,
+            "rmsRelative": 1.0813898291067327e-7,
+            "maxCoordinateAbsolute": 0.000018795095819257313
+          },
+          "diskVelocityErrors": {
+            "count": 360,
+            "rmsAbsolute": 5.908980311730944e-7,
+            "rmsRelative": 0.0000024693376548369094,
+            "maxCoordinateAbsolute": 0.000003748674387349382
+          },
+          "diskForceErrors": {
+            "count": 360,
+            "rmsAbsolute": 0.000001005496656889154,
+            "rmsRelative": 0.000017989677843116533,
+            "maxCoordinateAbsolute": 0.000007794430593385804
+          }
+        },
+        {
+          "step": 120,
+          "requestedMyr": 12,
+          "cpuTimeMyr": 12.000000178813934,
+          "gpuTimeMyr": 12.000000178813934,
+          "cpuEnergy": -1.6669475003771774,
+          "gpuEnergy": -1.666947387041156,
+          "cpuErrorPercent": -0.00024263903726435125,
+          "gpuErrorPercent": -0.00023584000511555974,
+          "h50CPU": 0.25649828489913135,
+          "h50GPU": 0.25649839691327203,
+          "diskPositionErrors": {
+            "count": 360,
+            "rmsAbsolute": 0.0000047870869314121396,
+            "rmsRelative": 1.3396935334043377e-7,
+            "maxCoordinateAbsolute": 0.000026392720513968015
+          },
+          "diskVelocityErrors": {
+            "count": 360,
+            "rmsAbsolute": 7.012696774505348e-7,
+            "rmsRelative": 0.000002870496336726224,
+            "maxCoordinateAbsolute": 0.000007332763297618339
+          },
+          "diskForceErrors": {
+            "count": 360,
+            "rmsAbsolute": 9.546829071072796e-7,
+            "rmsRelative": 0.000016567946546980162,
+            "maxCoordinateAbsolute": 0.000013271595257047242
+          }
+        },
+        {
+          "step": 140,
+          "requestedMyr": 14,
+          "cpuTimeMyr": 14.000000208616257,
+          "gpuTimeMyr": 14.000000208616257,
+          "cpuEnergy": -1.6669974596012158,
+          "gpuEnergy": -1.666997313852829,
+          "cpuErrorPercent": -0.0032396947482368488,
+          "gpuErrorPercent": -0.0032309512970769023,
+          "h50CPU": 0.3013263398740913,
+          "h50GPU": 0.30132640148835266,
+          "diskPositionErrors": {
+            "count": 360,
+            "rmsAbsolute": 0.000004996149893916136,
+            "rmsRelative": 1.398295240562631e-7,
+            "maxCoordinateAbsolute": 0.00003129645475041798
+          },
+          "diskVelocityErrors": {
+            "count": 360,
+            "rmsAbsolute": 7.026868336035662e-7,
+            "rmsRelative": 0.0000028358105628756347,
+            "maxCoordinateAbsolute": 0.0000044524321741179484
+          },
+          "diskForceErrors": {
+            "count": 360,
+            "rmsAbsolute": 4.751391911418683e-7,
+            "rmsRelative": 0.000011162765631926293,
+            "maxCoordinateAbsolute": 0.0000021607824712069346
+          }
+        },
+        {
+          "step": 160,
+          "requestedMyr": 16,
+          "cpuTimeMyr": 16.00000023841858,
+          "gpuTimeMyr": 16.00000023841858,
+          "cpuEnergy": -1.6669442563668175,
+          "gpuEnergy": -1.6669442217466448,
+          "cpuErrorPercent": -0.000048030734939625616,
+          "gpuErrorPercent": -0.000045953869488085317,
+          "h50CPU": 0.33222634711141236,
+          "h50GPU": 0.3322250765220003,
+          "diskPositionErrors": {
+            "count": 360,
+            "rmsAbsolute": 0.000005517406151425969,
+            "rmsRelative": 1.544264656193307e-7,
+            "maxCoordinateAbsolute": 0.000027853497300611707
+          },
+          "diskVelocityErrors": {
+            "count": 360,
+            "rmsAbsolute": 0.00000156553932081344,
+            "rmsRelative": 0.000006158202658631677,
+            "maxCoordinateAbsolute": 0.00001169086663703467
+          },
+          "diskForceErrors": {
+            "count": 360,
+            "rmsAbsolute": 0.000004535276972650751,
+            "rmsRelative": 0.00007236916120091909,
+            "maxCoordinateAbsolute": 0.000047840118078901206
+          }
+        },
+        {
+          "step": 180,
+          "requestedMyr": 18,
+          "cpuTimeMyr": 18.0000002682209,
+          "gpuTimeMyr": 18.0000002682209,
+          "cpuEnergy": -1.6669380673262886,
+          "gpuEnergy": -1.6669380841579824,
+          "cpuErrorPercent": 0.0003232500369255245,
+          "gpuErrorPercent": 0.0003222403029865162,
+          "h50CPU": 0.35654753529428296,
+          "h50GPU": 0.356547397412067,
+          "diskPositionErrors": {
+            "count": 360,
+            "rmsAbsolute": 0.000006505308290565888,
+            "rmsRelative": 1.8208428328397028e-7,
+            "maxCoordinateAbsolute": 0.00002926860903329498
+          },
+          "diskVelocityErrors": {
+            "count": 360,
+            "rmsAbsolute": 0.0000013634066646259243,
+            "rmsRelative": 0.000005376274812670283,
+            "maxCoordinateAbsolute": 0.000010226007813668447
+          },
+          "diskForceErrors": {
+            "count": 360,
+            "rmsAbsolute": 0.0000010908127507346504,
+            "rmsRelative": 0.00002371992358251712,
+            "maxCoordinateAbsolute": 0.000008949657865695362
+          }
+        },
+        {
+          "step": 200,
+          "requestedMyr": 20,
+          "cpuTimeMyr": 20.000000298023224,
+          "gpuTimeMyr": 20.000000298023224,
+          "cpuEnergy": -1.666919957700528,
+          "gpuEnergy": -1.6669198633377607,
+          "cpuErrorPercent": 0.0014096471608581512,
+          "gpuErrorPercent": 0.0014153079867880193,
+          "h50CPU": 0.3604517409011034,
+          "h50GPU": 0.3604518093993003,
+          "diskPositionErrors": {
+            "count": 360,
+            "rmsAbsolute": 0.000007952669149962607,
+            "rmsRelative": 2.2260273427908114e-7,
+            "maxCoordinateAbsolute": 0.000032921224686788264
+          },
+          "diskVelocityErrors": {
+            "count": 360,
+            "rmsAbsolute": 0.0000024808083767311677,
+            "rmsRelative": 0.000009572251817627418,
+            "maxCoordinateAbsolute": 0.000023177547503881735
+          },
+          "diskForceErrors": {
+            "count": 360,
+            "rmsAbsolute": 0.0000031595632516465847,
+            "rmsRelative": 0.00005325435564286218,
+            "maxCoordinateAbsolute": 0.00003672673434192142
+          }
+        },
+        {
+          "step": 220,
+          "requestedMyr": 22,
+          "cpuTimeMyr": 22.000000327825546,
+          "gpuTimeMyr": 22.000000327825546,
+          "cpuEnergy": -1.666925796485724,
+          "gpuEnergy": -1.6669256902007352,
+          "cpuErrorPercent": 0.0010593782194637392,
+          "gpuErrorPercent": 0.0010657542599014178,
+          "h50CPU": 0.32886325995708054,
+          "h50GPU": 0.32886296757845157,
+          "diskPositionErrors": {
+            "count": 360,
+            "rmsAbsolute": 0.000010147315637937975,
+            "rmsRelative": 2.840394131234404e-7,
+            "maxCoordinateAbsolute": 0.00004296130255937447
+          },
+          "diskVelocityErrors": {
+            "count": 360,
+            "rmsAbsolute": 0.0000036374730195935143,
+            "rmsRelative": 0.000013311401573712165,
+            "maxCoordinateAbsolute": 0.00002583297258967887
+          },
+          "diskForceErrors": {
+            "count": 360,
+            "rmsAbsolute": 0.000004178709062777005,
+            "rmsRelative": 0.00005677368189792222,
+            "maxCoordinateAbsolute": 0.000030357669660904807
+          }
+        },
+        {
+          "step": 240,
+          "requestedMyr": 24,
+          "cpuTimeMyr": 24.00000035762787,
+          "gpuTimeMyr": 24.00000035762787,
+          "cpuEnergy": -1.6669546106844715,
+          "gpuEnergy": -1.666954568162173,
+          "cpuErrorPercent": -0.0006691866366835442,
+          "gpuErrorPercent": -0.0006666357224083657,
+          "h50CPU": 0.3500682203799566,
+          "h50GPU": 0.35006885123405806,
+          "diskPositionErrors": {
+            "count": 360,
+            "rmsAbsolute": 0.000013799266708150917,
+            "rmsRelative": 3.8626233550277427e-7,
+            "maxCoordinateAbsolute": 0.00006543889708697515
+          },
+          "diskVelocityErrors": {
+            "count": 360,
+            "rmsAbsolute": 0.000006011939643948841,
+            "rmsRelative": 0.000021174150448712263,
+            "maxCoordinateAbsolute": 0.000038124811502948663
+          },
+          "diskForceErrors": {
+            "count": 360,
+            "rmsAbsolute": 0.000009994300098823417,
+            "rmsRelative": 0.00010496369165915644,
+            "maxCoordinateAbsolute": 0.00006958634491743658
+          }
+        },
+        {
+          "step": 260,
+          "requestedMyr": 26,
+          "cpuTimeMyr": 26.00000038743019,
+          "gpuTimeMyr": 26.00000038743019,
+          "cpuEnergy": -1.6669614142777296,
+          "gpuEnergy": -1.6669613672102055,
+          "cpuErrorPercent": -0.0010773344496616203,
+          "gpuErrorPercent": -0.001074510867137637,
+          "h50CPU": 0.32105517524571986,
+          "h50GPU": 0.3210524986131348,
+          "diskPositionErrors": {
+            "count": 360,
+            "rmsAbsolute": 0.00001884810360496893,
+            "rmsRelative": 5.275623697629837e-7,
+            "maxCoordinateAbsolute": 0.00010740823838667479
+          },
+          "diskVelocityErrors": {
+            "count": 360,
+            "rmsAbsolute": 0.00000891366320712127,
+            "rmsRelative": 0.000032288111233572395,
+            "maxCoordinateAbsolute": 0.00006735174403987246
+          },
+          "diskForceErrors": {
+            "count": 360,
+            "rmsAbsolute": 0.000010459303340956203,
+            "rmsRelative": 0.00014231222609169922,
+            "maxCoordinateAbsolute": 0.00012471982519460245
+          }
+        },
+        {
+          "step": 280,
+          "requestedMyr": 28,
+          "cpuTimeMyr": 28.000000417232513,
+          "gpuTimeMyr": 28.000000417232513,
+          "cpuEnergy": -1.6669127772981391,
+          "gpuEnergy": -1.6669126256399713,
+          "cpuErrorPercent": 0.0018403997676277122,
+          "gpuErrorPercent": 0.0018494977467631937,
+          "h50CPU": 0.3649922270021855,
+          "h50GPU": 0.3649963634605716,
+          "diskPositionErrors": {
+            "count": 360,
+            "rmsAbsolute": 0.0000329234286738037,
+            "rmsRelative": 9.214634994171685e-7,
+            "maxCoordinateAbsolute": 0.00020960358263968915
+          },
+          "diskVelocityErrors": {
+            "count": 360,
+            "rmsAbsolute": 0.000011993105782124881,
+            "rmsRelative": 0.00004561382820245573,
+            "maxCoordinateAbsolute": 0.00006735174589439508
+          },
+          "diskForceErrors": {
+            "count": 360,
+            "rmsAbsolute": 0.00002206740506785544,
+            "rmsRelative": 0.000357608207395012,
+            "maxCoordinateAbsolute": 0.00023315215933089606
+          }
+        },
+        {
+          "step": 300,
+          "requestedMyr": 30,
+          "cpuTimeMyr": 30.000000447034836,
+          "gpuTimeMyr": 30.000000447034836,
+          "cpuEnergy": -1.6669451335571692,
+          "gpuEnergy": -1.6669448302101588,
+          "cpuErrorPercent": -0.00010065341681154047,
+          "gpuErrorPercent": -0.00008245561835842074,
+          "h50CPU": 0.4107207479175665,
+          "h50GPU": 0.4107198704599163,
+          "diskPositionErrors": {
+            "count": 360,
+            "rmsAbsolute": 0.000054419695816612264,
+            "rmsRelative": 0.0000015229493876683143,
+            "maxCoordinateAbsolute": 0.00039579683320444675
+          },
+          "diskVelocityErrors": {
+            "count": 360,
+            "rmsAbsolute": 0.00003147216581632156,
+            "rmsRelative": 0.00012448692564585618,
+            "maxCoordinateAbsolute": 0.00035199323366666424
+          },
+          "diskForceErrors": {
+            "count": 360,
+            "rmsAbsolute": 0.00021213307614819337,
+            "rmsRelative": 0.0033168354466251776,
+            "maxCoordinateAbsolute": 0.002462251225810508
+          }
+        },
+        {
+          "step": 320,
+          "requestedMyr": 32,
+          "cpuTimeMyr": 32.00000047683716,
+          "gpuTimeMyr": 32.00000047683716,
+          "cpuEnergy": -1.6669146232499665,
+          "gpuEnergy": -1.6669144702957357,
+          "cpuErrorPercent": 0.0017296610487432208,
+          "gpuErrorPercent": 0.0017388367787484285,
+          "h50CPU": 0.43059025746222324,
+          "h50GPU": 0.4305895381015903,
+          "diskPositionErrors": {
+            "count": 360,
+            "rmsAbsolute": 0.00005596047670099557,
+            "rmsRelative": 0.0000015658904468824558,
+            "maxCoordinateAbsolute": 0.0002690232154856087
+          },
+          "diskVelocityErrors": {
+            "count": 360,
+            "rmsAbsolute": 0.000020643472034136688,
+            "rmsRelative": 0.00008314818436815301,
+            "maxCoordinateAbsolute": 0.00010146707343536288
+          },
+          "diskForceErrors": {
+            "count": 360,
+            "rmsAbsolute": 0.000028083795316659354,
+            "rmsRelative": 0.0005037593874412147,
+            "maxCoordinateAbsolute": 0.00015845916135454052
+          }
+        },
+        {
+          "step": 340,
+          "requestedMyr": 34,
+          "cpuTimeMyr": 34.00000050663948,
+          "gpuTimeMyr": 34.00000050663948,
+          "cpuEnergy": -1.6669155578333708,
+          "gpuEnergy": -1.6669153616158177,
+          "cpuErrorPercent": 0.0016735953555120592,
+          "gpuErrorPercent": 0.001685366453831022,
+          "h50CPU": 0.4227294413454756,
+          "h50GPU": 0.42275265443527177,
+          "diskPositionErrors": {
+            "count": 360,
+            "rmsAbsolute": 0.00007529843248225569,
+            "rmsRelative": 0.0000021067724061542425,
+            "maxCoordinateAbsolute": 0.0003785899453863373
+          },
+          "diskVelocityErrors": {
+            "count": 360,
+            "rmsAbsolute": 0.00002437655452329968,
+            "rmsRelative": 0.0000993474033514367,
+            "maxCoordinateAbsolute": 0.00016788105301066003
+          },
+          "diskForceErrors": {
+            "count": 360,
+            "rmsAbsolute": 0.000023264884512721407,
+            "rmsRelative": 0.0006181830116982031,
+            "maxCoordinateAbsolute": 0.00029516372238522215
+          }
+        },
+        {
+          "step": 360,
+          "requestedMyr": 36,
+          "cpuTimeMyr": 36.0000005364418,
+          "gpuTimeMyr": 36.0000005364418,
+          "cpuEnergy": -1.6669182374898108,
+          "gpuEnergy": -1.666917940841969,
+          "cpuErrorPercent": 0.001512842665858626,
+          "gpuErrorPercent": 0.001530638580940703,
+          "h50CPU": 0.3846203263977258,
+          "h50GPU": 0.3846787216762381,
+          "diskPositionErrors": {
+            "count": 360,
+            "rmsAbsolute": 0.0000936783059180126,
+            "rmsRelative": 0.0000026207273601377423,
+            "maxCoordinateAbsolute": 0.0005585661574343259
+          },
+          "diskVelocityErrors": {
+            "count": 360,
+            "rmsAbsolute": 0.000029487607143216105,
+            "rmsRelative": 0.00011957287372057038,
+            "maxCoordinateAbsolute": 0.00015191882552972186
+          },
+          "diskForceErrors": {
+            "count": 360,
+            "rmsAbsolute": 0.000026968288766189047,
+            "rmsRelative": 0.0007239075381541201,
+            "maxCoordinateAbsolute": 0.00015418054962181016
+          }
+        },
+        {
+          "step": 380,
+          "requestedMyr": 38,
+          "cpuTimeMyr": 38.000000566244125,
+          "gpuTimeMyr": 38.000000566244125,
+          "cpuEnergy": -1.6668636199030233,
+          "gpuEnergy": -1.666863415383653,
+          "cpuErrorPercent": 0.004789353731666938,
+          "gpuErrorPercent": 0.004801622856310979,
+          "h50CPU": 0.38889955366710355,
+          "h50GPU": 0.38887601085812296,
+          "diskPositionErrors": {
+            "count": 360,
+            "rmsAbsolute": 0.00012763278512217796,
+            "rmsRelative": 0.0000035701825735174862,
+            "maxCoordinateAbsolute": 0.0009118268142138675
+          },
+          "diskVelocityErrors": {
+            "count": 360,
+            "rmsAbsolute": 0.00005640567333074773,
+            "rmsRelative": 0.00022343325173042184,
+            "maxCoordinateAbsolute": 0.0005636457611471329
+          },
+          "diskForceErrors": {
+            "count": 360,
+            "rmsAbsolute": 0.00005416156606276595,
+            "rmsRelative": 0.0010685649256119195,
+            "maxCoordinateAbsolute": 0.0006457977530130443
+          }
+        },
+        {
+          "step": 400,
+          "requestedMyr": 40,
+          "cpuTimeMyr": 40.00000059604645,
+          "gpuTimeMyr": 40.00000059604645,
+          "cpuEnergy": -1.6669344075327477,
+          "gpuEnergy": -1.6669343435574309,
+          "cpuErrorPercent": 0.0005428011877655223,
+          "gpuErrorPercent": 0.000546639069404657,
+          "h50CPU": 0.43107501798377523,
+          "h50GPU": 0.4310803769415711,
+          "diskPositionErrors": {
+            "count": 360,
+            "rmsAbsolute": 0.00019603081128958158,
+            "rmsRelative": 0.000005482597640459178,
+            "maxCoordinateAbsolute": 0.0016348417506890645
+          },
+          "diskVelocityErrors": {
+            "count": 360,
+            "rmsAbsolute": 0.00007467964259161513,
+            "rmsRelative": 0.00029100586290986655,
+            "maxCoordinateAbsolute": 0.0006223175009308912
+          },
+          "diskForceErrors": {
+            "count": 360,
+            "rmsAbsolute": 0.00015862516335626191,
+            "rmsRelative": 0.00286382920527846,
+            "maxCoordinateAbsolute": 0.001845256351872715
+          }
+        }
+      ]
+    },
+    {
+      "n": 800,
+      "seed": 2026,
+      "requestedDt": 0.05,
+      "effectiveParameters": {
+        "dt": 0.05000000074505806,
+        "epsilonSquared": 0.009999999776482582,
+        "G": 0.04498502239584923,
+        "precision": "f32"
+      },
+      "initialPolicy": "Exact same rounded particle snapshot, masses and effective gravitational parameters; only arithmetic trajectory precision differs.",
+      "samples": [
+        {
+          "step": 0,
+          "requestedMyr": 0,
+          "cpuTimeMyr": 0,
+          "gpuTimeMyr": 0,
+          "cpuEnergy": -1.6669434557216247,
+          "gpuEnergy": -1.6669434557216247,
+          "cpuErrorPercent": 0,
+          "gpuErrorPercent": 0,
+          "h50CPU": 0.18851445095454183,
+          "h50GPU": 0.18851445095454183,
+          "diskPositionErrors": {
+            "count": 360,
+            "rmsAbsolute": 0,
+            "rmsRelative": 0,
+            "maxCoordinateAbsolute": 0
+          },
+          "diskVelocityErrors": {
+            "count": 360,
+            "rmsAbsolute": 0,
+            "rmsRelative": 0,
+            "maxCoordinateAbsolute": 0
+          },
+          "diskForceErrors": {
+            "count": 360,
+            "rmsAbsolute": 9.541575037958601e-9,
+            "rmsRelative": 2.2080068448350108e-7,
+            "maxCoordinateAbsolute": 6.162654297980907e-8
+          }
+        },
+        {
+          "step": 40,
+          "requestedMyr": 2,
+          "cpuTimeMyr": 2.0000000298023224,
+          "gpuTimeMyr": 2.0000000298023224,
+          "cpuEnergy": -1.6669438384075486,
+          "gpuEnergy": -1.6669440037443906,
+          "cpuErrorPercent": -0.00002295734282558826,
+          "gpuErrorPercent": -0.00003287590613543859,
+          "h50CPU": 0.16523039569561257,
+          "h50GPU": 0.16523037474807423,
+          "diskPositionErrors": {
+            "count": 360,
+            "rmsAbsolute": 0.000007033130411231564,
+            "rmsRelative": 1.9675897823050019e-7,
+            "maxCoordinateAbsolute": 0.00008108942736839708
+          },
+          "diskVelocityErrors": {
+            "count": 360,
+            "rmsAbsolute": 8.613869243231914e-8,
+            "rmsRelative": 3.97263584343718e-7,
+            "maxCoordinateAbsolute": 4.3338587193963996e-7
+          },
+          "diskForceErrors": {
+            "count": 360,
+            "rmsAbsolute": 9.603544652651122e-8,
+            "rmsRelative": 0.000001933729693918852,
+            "maxCoordinateAbsolute": 0.0000011711306202588645
+          }
+        },
+        {
+          "step": 80,
+          "requestedMyr": 4,
+          "cpuTimeMyr": 4.000000059604645,
+          "gpuTimeMyr": 4.000000059604645,
+          "cpuEnergy": -1.6669478064378551,
+          "gpuEnergy": -1.6669480463515185,
+          "cpuErrorPercent": -0.00026099962871933087,
+          "gpuErrorPercent": -0.0002753920583219478,
+          "h50CPU": 0.16760533774596642,
+          "h50GPU": 0.16760537716479726,
+          "diskPositionErrors": {
+            "count": 360,
+            "rmsAbsolute": 0.000008103963423660513,
+            "rmsRelative": 2.2673086813812602e-7,
+            "maxCoordinateAbsolute": 0.00007578126778184924
+          },
+          "diskVelocityErrors": {
+            "count": 360,
+            "rmsAbsolute": 1.6160117627659876e-7,
+            "rmsRelative": 7.155306918619281e-7,
+            "maxCoordinateAbsolute": 0.000001085938851952406
+          },
+          "diskForceErrors": {
+            "count": 360,
+            "rmsAbsolute": 1.8220463780653454e-7,
+            "rmsRelative": 0.000002810967053714363,
+            "maxCoordinateAbsolute": 0.0000017592028856427966
+          }
+        },
+        {
+          "step": 120,
+          "requestedMyr": 6,
+          "cpuTimeMyr": 6.000000089406967,
+          "gpuTimeMyr": 6.000000089406967,
+          "cpuEnergy": -1.666939800557378,
+          "gpuEnergy": -1.6669401553700727,
+          "cpuErrorPercent": 0.00021927343931695182,
+          "gpuErrorPercent": 0.00019798821254080125,
+          "h50CPU": 0.1699968304939114,
+          "h50GPU": 0.16999690557733488,
+          "diskPositionErrors": {
+            "count": 360,
+            "rmsAbsolute": 0.00000813539294667776,
+            "rmsRelative": 2.276258976659679e-7,
+            "maxCoordinateAbsolute": 0.00007720447982251244
+          },
+          "diskVelocityErrors": {
+            "count": 360,
+            "rmsAbsolute": 4.885311343385538e-7,
+            "rmsRelative": 0.00000208073684772902,
+            "maxCoordinateAbsolute": 0.000004200873963133844
+          },
+          "diskForceErrors": {
+            "count": 360,
+            "rmsAbsolute": 5.45372590631819e-7,
+            "rmsRelative": 0.000011045349614025578,
+            "maxCoordinateAbsolute": 0.000005375555471670568
+          }
+        },
+        {
+          "step": 160,
+          "requestedMyr": 8,
+          "cpuTimeMyr": 8.00000011920929,
+          "gpuTimeMyr": 8.00000011920929,
+          "cpuEnergy": -1.6669453703772446,
+          "gpuEnergy": -1.6669459535126747,
+          "cpuErrorPercent": -0.00011486026195166255,
+          "gpuErrorPercent": -0.0001498425781282533,
+          "h50CPU": 0.19893148018055537,
+          "h50GPU": 0.19893141108474396,
+          "diskPositionErrors": {
+            "count": 360,
+            "rmsAbsolute": 0.000010289450661787218,
+            "rmsRelative": 2.8791484063192795e-7,
+            "maxCoordinateAbsolute": 0.00009686257502039552
+          },
+          "diskVelocityErrors": {
+            "count": 360,
+            "rmsAbsolute": 7.872242896401368e-7,
+            "rmsRelative": 0.0000033401233306719975,
+            "maxCoordinateAbsolute": 0.000006950234649708009
+          },
+          "diskForceErrors": {
+            "count": 360,
+            "rmsAbsolute": 5.760679011188575e-7,
+            "rmsRelative": 0.000011087604584783694,
+            "maxCoordinateAbsolute": 0.0000045596592155652815
+          }
+        },
+        {
+          "step": 200,
+          "requestedMyr": 10,
+          "cpuTimeMyr": 10.000000149011612,
+          "gpuTimeMyr": 10.000000149011612,
+          "cpuEnergy": -1.6669423250186481,
+          "gpuEnergy": -1.66694293969411,
+          "cpuErrorPercent": 0.00006783091368220424,
+          "gpuErrorPercent": 0.000030956509829260934,
+          "h50CPU": 0.2423296019235534,
+          "h50GPU": 0.2423295675892053,
+          "diskPositionErrors": {
+            "count": 360,
+            "rmsAbsolute": 0.000006029987971664204,
+            "rmsRelative": 1.6874062604653044e-7,
+            "maxCoordinateAbsolute": 0.000032992274867638116
+          },
+          "diskVelocityErrors": {
+            "count": 360,
+            "rmsAbsolute": 0.0000010992725989352895,
+            "rmsRelative": 0.000004594298152079165,
+            "maxCoordinateAbsolute": 0.00000907494302966605
+          },
+          "diskForceErrors": {
+            "count": 360,
+            "rmsAbsolute": 0.0000014113752871643824,
+            "rmsRelative": 0.000025752587606147588,
+            "maxCoordinateAbsolute": 0.000010027950557076754
+          }
+        },
+        {
+          "step": 240,
+          "requestedMyr": 12,
+          "cpuTimeMyr": 12.000000178813934,
+          "gpuTimeMyr": 12.000000178813934,
+          "cpuEnergy": -1.6669454106970483,
+          "gpuEnergy": -1.6669459928976658,
+          "cpuErrorPercent": -0.0001172790484785599,
+          "gpuErrorPercent": -0.00015220528520815398,
+          "h50CPU": 0.25648965224280795,
+          "h50GPU": 0.2564893285555443,
+          "diskPositionErrors": {
+            "count": 360,
+            "rmsAbsolute": 0.000011175249461458944,
+            "rmsRelative": 3.1274574505342355e-7,
+            "maxCoordinateAbsolute": 0.00009808650423792642
+          },
+          "diskVelocityErrors": {
+            "count": 360,
+            "rmsAbsolute": 0.000001698199418765003,
+            "rmsRelative": 0.0000069429044768392985,
+            "maxCoordinateAbsolute": 0.000018290810873705654
+          },
+          "diskForceErrors": {
+            "count": 360,
+            "rmsAbsolute": 0.000004024700709628466,
+            "rmsRelative": 0.00006653299938600706,
+            "maxCoordinateAbsolute": 0.00003924367394966821
+          }
+        },
+        {
+          "step": 280,
+          "requestedMyr": 14,
+          "cpuTimeMyr": 14.000000208616257,
+          "gpuTimeMyr": 14.000000208616257,
+          "cpuEnergy": -1.666958434609139,
+          "gpuEnergy": -1.6669591693799877,
+          "cpuErrorPercent": -0.0008985840199273118,
+          "gpuErrorPercent": -0.0009426629505045529,
+          "h50CPU": 0.301330827566864,
+          "h50GPU": 0.30133113940624245,
+          "diskPositionErrors": {
+            "count": 360,
+            "rmsAbsolute": 0.000010639911397467469,
+            "rmsRelative": 2.9778408174791775e-7,
+            "maxCoordinateAbsolute": 0.00008922956837409401
+          },
+          "diskVelocityErrors": {
+            "count": 360,
+            "rmsAbsolute": 0.0000011931254086957744,
+            "rmsRelative": 0.000004815509146616746,
+            "maxCoordinateAbsolute": 0.000008047458527643547
+          },
+          "diskForceErrors": {
+            "count": 360,
+            "rmsAbsolute": 7.542350734439216e-7,
+            "rmsRelative": 0.00001773686348072871,
+            "maxCoordinateAbsolute": 0.0000035067346434783375
+          }
+        },
+        {
+          "step": 320,
+          "requestedMyr": 16,
+          "cpuTimeMyr": 16.00000023841858,
+          "gpuTimeMyr": 16.00000023841858,
+          "cpuEnergy": -1.6669413963224178,
+          "gpuEnergy": -1.6669423937087253,
+          "cpuErrorPercent": 0.00012354343513424452,
+          "gpuErrorPercent": 0.00006371019339346099,
+          "h50CPU": 0.33226396487779086,
+          "h50GPU": 0.3322627638953444,
+          "diskPositionErrors": {
+            "count": 360,
+            "rmsAbsolute": 0.000012219523683514245,
+            "rmsRelative": 3.4201178434778584e-7,
+            "maxCoordinateAbsolute": 0.00009421779461149526
+          },
+          "diskVelocityErrors": {
+            "count": 360,
+            "rmsAbsolute": 0.0000030187097554260884,
+            "rmsRelative": 0.000011859007941039857,
+            "maxCoordinateAbsolute": 0.000026802509911431904
+          },
+          "diskForceErrors": {
+            "count": 360,
+            "rmsAbsolute": 0.000006806742994328527,
+            "rmsRelative": 0.00010437761434090357,
+            "maxCoordinateAbsolute": 0.00007104720151952792
+          }
+        },
+        {
+          "step": 360,
+          "requestedMyr": 18,
+          "cpuTimeMyr": 18.0000002682209,
+          "gpuTimeMyr": 18.0000002682209,
+          "cpuEnergy": -1.6669421381048612,
+          "gpuEnergy": -1.6669430788417612,
+          "cpuErrorPercent": 0.0000790438787201636,
+          "gpuErrorPercent": 0.00002260903705197138,
+          "h50CPU": 0.35648334805718446,
+          "h50GPU": 0.3564819392770476,
+          "diskPositionErrors": {
+            "count": 360,
+            "rmsAbsolute": 0.000013757451942975372,
+            "rmsRelative": 3.8507257035500363e-7,
+            "maxCoordinateAbsolute": 0.00009628524622939949
+          },
+          "diskVelocityErrors": {
+            "count": 360,
+            "rmsAbsolute": 0.000002156593464975255,
+            "rmsRelative": 0.000008514999674598225,
+            "maxCoordinateAbsolute": 0.000015096012810175696
+          },
+          "diskForceErrors": {
+            "count": 360,
+            "rmsAbsolute": 0.0000014144610207928802,
+            "rmsRelative": 0.00003068582975311091,
+            "maxCoordinateAbsolute": 0.000008201127618597329
+          }
+        },
+        {
+          "step": 400,
+          "requestedMyr": 20,
+          "cpuTimeMyr": 20.000000298023224,
+          "gpuTimeMyr": 20.000000298023224,
+          "cpuEnergy": -1.666937409566745,
+          "gpuEnergy": -1.6669386841325937,
+          "cpuErrorPercent": 0.00036270905644061207,
+          "gpuErrorPercent": 0.00028624780370486703,
+          "h50CPU": 0.3642247991027414,
+          "h50GPU": 0.3642277537677815,
+          "diskPositionErrors": {
+            "count": 360,
+            "rmsAbsolute": 0.000014082741482063193,
+            "rmsRelative": 3.9418933969418495e-7,
+            "maxCoordinateAbsolute": 0.00006446382010949492
+          },
+          "diskVelocityErrors": {
+            "count": 360,
+            "rmsAbsolute": 0.000004961953355781331,
+            "rmsRelative": 0.000019175714235539644,
+            "maxCoordinateAbsolute": 0.0000513053267232888
+          },
+          "diskForceErrors": {
+            "count": 360,
+            "rmsAbsolute": 0.000007484526532708513,
+            "rmsRelative": 0.0001247131281161737,
+            "maxCoordinateAbsolute": 0.00007025873515642544
+          }
+        },
+        {
+          "step": 440,
+          "requestedMyr": 22,
+          "cpuTimeMyr": 22.000000327825546,
+          "gpuTimeMyr": 22.000000327825546,
+          "cpuEnergy": -1.6669389645332933,
+          "gpuEnergy": -1.666940011081559,
+          "cpuErrorPercent": 0.00026942655529444147,
+          "gpuErrorPercent": 0.00020664408584510308,
+          "h50CPU": 0.3319752683775086,
+          "h50GPU": 0.3319752172443038,
+          "diskPositionErrors": {
+            "count": 360,
+            "rmsAbsolute": 0.000015155875925021961,
+            "rmsRelative": 4.2423718567944044e-7,
+            "maxCoordinateAbsolute": 0.00006070476714062356
+          },
+          "diskVelocityErrors": {
+            "count": 360,
+            "rmsAbsolute": 0.000004306266241998834,
+            "rmsRelative": 0.000015740433993430618,
+            "maxCoordinateAbsolute": 0.000020923850076765005
+          },
+          "diskForceErrors": {
+            "count": 360,
+            "rmsAbsolute": 0.000005435360923643604,
+            "rmsRelative": 0.00007539626632013189,
+            "maxCoordinateAbsolute": 0.000028489058587044536
+          }
+        },
+        {
+          "step": 480,
+          "requestedMyr": 24,
+          "cpuTimeMyr": 24.00000035762787,
+          "gpuTimeMyr": 24.00000035762787,
+          "cpuEnergy": -1.6669444971201202,
+          "gpuEnergy": -1.6669451843740832,
+          "cpuErrorPercent": -0.00006247353453194657,
+          "gpuErrorPercent": -0.00010370192537586368,
+          "h50CPU": 0.3501837374153758,
+          "h50GPU": 0.35018637593455515,
+          "diskPositionErrors": {
+            "count": 360,
+            "rmsAbsolute": 0.000020005666863615925,
+            "rmsRelative": 5.599889211801532e-7,
+            "maxCoordinateAbsolute": 0.0000990764173423031
+          },
+          "diskVelocityErrors": {
+            "count": 360,
+            "rmsAbsolute": 0.000009622201515898219,
+            "rmsRelative": 0.00003389868945424728,
+            "maxCoordinateAbsolute": 0.000060277835107813704
+          },
+          "diskForceErrors": {
+            "count": 360,
+            "rmsAbsolute": 0.000011499244241024233,
+            "rmsRelative": 0.00012457480961845874,
+            "maxCoordinateAbsolute": 0.00008224391662875821
+          }
+        },
+        {
+          "step": 520,
+          "requestedMyr": 26,
+          "cpuTimeMyr": 26.00000038743019,
+          "gpuTimeMyr": 26.00000038743019,
+          "cpuEnergy": -1.6669505976086274,
+          "gpuEnergy": -1.666951234844794,
+          "cpuErrorPercent": -0.00042844206731595876,
+          "gpuErrorPercent": -0.00046666988868047753,
+          "h50CPU": 0.32894236009891353,
+          "h50GPU": 0.3289433905086911,
+          "diskPositionErrors": {
+            "count": 360,
+            "rmsAbsolute": 0.000029420283518777214,
+            "rmsRelative": 8.234796176541975e-7,
+            "maxCoordinateAbsolute": 0.00019666599498024961
+          },
+          "diskVelocityErrors": {
+            "count": 360,
+            "rmsAbsolute": 0.000013463116920066973,
+            "rmsRelative": 0.000048617142882990364,
+            "maxCoordinateAbsolute": 0.00006223493465154495
+          },
+          "diskForceErrors": {
+            "count": 360,
+            "rmsAbsolute": 0.000021153139493101456,
+            "rmsRelative": 0.00028461289141138487,
+            "maxCoordinateAbsolute": 0.00017593101660179356
+          }
+        },
+        {
+          "step": 560,
+          "requestedMyr": 28,
+          "cpuTimeMyr": 28.000000417232513,
+          "gpuTimeMyr": 28.000000417232513,
+          "cpuEnergy": -1.6669410676848482,
+          "gpuEnergy": -1.6669418140632382,
+          "cpuErrorPercent": 0.00014325841517595444,
+          "gpuErrorPercent": 0.00009848314775941102,
+          "h50CPU": 0.36793333480700996,
+          "h50GPU": 0.3679352993198352,
+          "diskPositionErrors": {
+            "count": 360,
+            "rmsAbsolute": 0.00004497607615879992,
+            "rmsRelative": 0.000001258792931445476,
+            "maxCoordinateAbsolute": 0.00026115458381115175
+          },
+          "diskVelocityErrors": {
+            "count": 360,
+            "rmsAbsolute": 0.000017989770769266605,
+            "rmsRelative": 0.00006804864462643191,
+            "maxCoordinateAbsolute": 0.00008418524872871869
+          },
+          "diskForceErrors": {
+            "count": 360,
+            "rmsAbsolute": 0.000027228203438972585,
+            "rmsRelative": 0.0004975400819459973,
+            "maxCoordinateAbsolute": 0.00022986347382131234
+          }
+        },
+        {
+          "step": 600,
+          "requestedMyr": 30,
+          "cpuTimeMyr": 30.000000447034836,
+          "gpuTimeMyr": 30.000000447034836,
+          "cpuEnergy": -1.6669382469686556,
+          "gpuEnergy": -1.6669390361556744,
+          "cpuErrorPercent": 0.0003124732846388543,
+          "gpuErrorPercent": 0.0002651299259822013,
+          "h50CPU": 0.3997124881152883,
+          "h50GPU": 0.3997127497704093,
+          "diskPositionErrors": {
+            "count": 360,
+            "rmsAbsolute": 0.000065969695520527,
+            "rmsRelative": 0.0000018461730775752875,
+            "maxCoordinateAbsolute": 0.0002929969776992447
+          },
+          "diskVelocityErrors": {
+            "count": 360,
+            "rmsAbsolute": 0.000021790909040642328,
+            "rmsRelative": 0.0000867140221683988,
+            "maxCoordinateAbsolute": 0.00010944645330053168
+          },
+          "diskForceErrors": {
+            "count": 360,
+            "rmsAbsolute": 0.00001797937393942541,
+            "rmsRelative": 0.00036996714914916716,
+            "maxCoordinateAbsolute": 0.00013677905750901845
+          }
+        },
+        {
+          "step": 640,
+          "requestedMyr": 32,
+          "cpuTimeMyr": 32.00000047683716,
+          "gpuTimeMyr": 32.00000047683716,
+          "cpuEnergy": -1.6669474159446935,
+          "gpuEnergy": -1.6669481910142174,
+          "cpuErrorPercent": -0.00023757392941060066,
+          "gpuErrorPercent": -0.0002840703790192963,
+          "h50CPU": 0.42387829050371384,
+          "h50GPU": 0.4238319452413914,
+          "diskPositionErrors": {
+            "count": 360,
+            "rmsAbsolute": 0.00009570617140364183,
+            "rmsRelative": 0.0000026780441975621675,
+            "maxCoordinateAbsolute": 0.0004869040287140136
+          },
+          "diskVelocityErrors": {
+            "count": 360,
+            "rmsAbsolute": 0.000029420070289868198,
+            "rmsRelative": 0.00011903030919820215,
+            "maxCoordinateAbsolute": 0.00020864037254797463
+          },
+          "diskForceErrors": {
+            "count": 360,
+            "rmsAbsolute": 0.000032012101238046176,
+            "rmsRelative": 0.0006451741116201672,
+            "maxCoordinateAbsolute": 0.00017952773453411286
+          }
+        },
+        {
+          "step": 680,
+          "requestedMyr": 34,
+          "cpuTimeMyr": 34.00000050663948,
+          "gpuTimeMyr": 34.00000050663948,
+          "cpuEnergy": -1.6669381931734304,
+          "gpuEnergy": -1.6669393452412073,
+          "cpuErrorPercent": 0.0003157004622001992,
+          "gpuErrorPercent": 0.00024658787334779295,
+          "h50CPU": 0.4205489246425166,
+          "h50GPU": 0.420437328092604,
+          "diskPositionErrors": {
+            "count": 360,
+            "rmsAbsolute": 0.0001233846454358499,
+            "rmsRelative": 0.0000034521520825169237,
+            "maxCoordinateAbsolute": 0.0006399683210947527
+          },
+          "diskVelocityErrors": {
+            "count": 360,
+            "rmsAbsolute": 0.00006184583183963059,
+            "rmsRelative": 0.0002492447740862447,
+            "maxCoordinateAbsolute": 0.0006139179410630802
+          },
+          "diskForceErrors": {
+            "count": 360,
+            "rmsAbsolute": 0.00021438339213316484,
+            "rmsRelative": 0.0036395008420364475,
+            "maxCoordinateAbsolute": 0.002894652821107388
+          }
+        },
+        {
+          "step": 720,
+          "requestedMyr": 36,
+          "cpuTimeMyr": 36.0000005364418,
+          "gpuTimeMyr": 36.0000005364418,
+          "cpuEnergy": -1.6669402735160543,
+          "gpuEnergy": -1.6669411869677122,
+          "cpuErrorPercent": 0.00019090063069997324,
+          "gpuErrorPercent": 0.00013610263171964128,
+          "h50CPU": 0.39548802628029883,
+          "h50GPU": 0.39549885636154913,
+          "diskPositionErrors": {
+            "count": 360,
+            "rmsAbsolute": 0.00014339413636353524,
+            "rmsRelative": 0.000004011526395610752,
+            "maxCoordinateAbsolute": 0.0006612644074568408
+          },
+          "diskVelocityErrors": {
+            "count": 360,
+            "rmsAbsolute": 0.00004754932557773949,
+            "rmsRelative": 0.00019393620745339525,
+            "maxCoordinateAbsolute": 0.00036112673253800576
+          },
+          "diskForceErrors": {
+            "count": 360,
+            "rmsAbsolute": 0.000022581241988684644,
+            "rmsRelative": 0.0006641879711570619,
+            "maxCoordinateAbsolute": 0.00015610972264530273
+          }
+        },
+        {
+          "step": 760,
+          "requestedMyr": 38,
+          "cpuTimeMyr": 38.000000566244125,
+          "gpuTimeMyr": 38.000000566244125,
+          "cpuEnergy": -1.666941143772456,
+          "gpuEnergy": -1.6669420861856958,
+          "cpuErrorPercent": 0.00013869391675168404,
+          "gpuErrorPercent": 0.00008215851138710591,
+          "h50CPU": 0.40071673949767156,
+          "h50GPU": 0.4006980018531307,
+          "diskPositionErrors": {
+            "count": 360,
+            "rmsAbsolute": 0.00019349881776630482,
+            "rmsRelative": 0.000005412523433591554,
+            "maxCoordinateAbsolute": 0.001051325417013499
+          },
+          "diskVelocityErrors": {
+            "count": 360,
+            "rmsAbsolute": 0.00008023652214230511,
+            "rmsRelative": 0.00032003610924589434,
+            "maxCoordinateAbsolute": 0.0006031964725003447
+          },
+          "diskForceErrors": {
+            "count": 360,
+            "rmsAbsolute": 0.00009053112785044215,
+            "rmsRelative": 0.0021176671782335453,
+            "maxCoordinateAbsolute": 0.0007191772360745918
+          }
+        },
+        {
+          "step": 800,
+          "requestedMyr": 40,
+          "cpuTimeMyr": 40.00000059604645,
+          "gpuTimeMyr": 40.00000059604645,
+          "cpuEnergy": -1.6669407151481632,
+          "gpuEnergy": -1.666941430595495,
+          "cpuErrorPercent": 0.00016440710403792195,
+          "gpuErrorPercent": 0.0001214873919524873,
+          "h50CPU": 0.4335948771715932,
+          "h50GPU": 0.4335933660216826,
+          "diskPositionErrors": {
+            "count": 360,
+            "rmsAbsolute": 0.00027418464310139637,
+            "rmsRelative": 0.000007668259981921953,
+            "maxCoordinateAbsolute": 0.002257493718666015
+          },
+          "diskVelocityErrors": {
+            "count": 360,
+            "rmsAbsolute": 0.0001971207056494833,
+            "rmsRelative": 0.0007833127872210644,
+            "maxCoordinateAbsolute": 0.002790849269137599
+          },
+          "diskForceErrors": {
+            "count": 360,
+            "rmsAbsolute": 0.00027787001548764735,
+            "rmsRelative": 0.005679024275198188,
+            "maxCoordinateAbsolute": 0.00474575124021899
+          }
+        }
+      ]
+    }
+  ],
+  "scope": "Short 40-Myr comparison at N=800, not a long-duration N=50k validation; direct energy is sampled every 2 requested Myr with effective physical epochs retained. No empirical percentage threshold certifies equilibrium."
+}

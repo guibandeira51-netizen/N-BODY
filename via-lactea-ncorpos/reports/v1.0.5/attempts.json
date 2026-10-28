@@ -1,0 +1,28 @@
+{
+  "attempts": [
+    {
+      "stage": "baryon200",
+      "status": "failed-before-completed-output",
+      "error": "Failed to fetch: loopback collector started inside restricted sandbox was inaccessible from browser; restarted same loopback collector with host permission.",
+      "completed": 0,
+      "qualification": "No completed result or checkpoint from first attempt; integration horizon not preserved and not counted as a measurement."
+    },
+    {
+      "stage": "halo200",
+      "status": "interrupted-at-device-initialization",
+      "error": "Instance dropped in popErrorScope",
+      "completed": [
+        "E-b2026-h2027-halo-E200",
+        "E-b2026-h2028-halo-E200"
+      ],
+      "qualification": "Completed E results retained. F200 not measured by this failed initialization. Reload harness to release device objects before retry."
+    },
+    {
+      "stage": "halo200",
+      "status": "GPU-device-lost-before-first-F-checkpoint",
+      "error": "Instance dropped in popErrorScope",
+      "completedResultsRetained": 2,
+      "qualification": "Second retry also lost device. Exact failing phase/trajectory not preserved; prior initialization wording is not confirmed. Long GPU submissions are a suspected watchdog trigger. No F200 result claimed. Scheduling changes to four KDK steps per submission will be tested against original full-state F2 pilot before new200Myr."
+    }
+  ]
+}

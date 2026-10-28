@@ -1,0 +1,251 @@
+{
+  "reload": {
+    "realizationId": "987ca598-018a-4724-947f-9b3d0ab8686c",
+    "codeIdentity": "7774401655ecccb80d2581990363089fbcb3efe7917b6e3dcabb5309933125a9",
+    "points": [
+      {
+        "timeMyr": 0,
+        "E": -2.161912586311806,
+        "errorPercent": 0
+      },
+      {
+        "timeMyr": 201.40000000000012,
+        "E": -2.161864594769363,
+        "errorPercent": 0.0022198650744061667
+      },
+      {
+        "timeMyr": 401.4000000000001,
+        "E": -2.1615689045082673,
+        "errorPercent": 0.015897118399445312
+      },
+      {
+        "timeMyr": 601.4000000000001,
+        "E": -2.161562157452604,
+        "errorPercent": 0.016209205747760046
+      },
+      {
+        "timeMyr": 801.4000000000001,
+        "E": -2.161525147589968,
+        "errorPercent": 0.017921109497717958
+      },
+      {
+        "timeMyr": 1001.4000000000001,
+        "E": -2.162012373092787,
+        "errorPercent": -0.004615671401939553
+      },
+      {
+        "timeMyr": 1201.4,
+        "E": -2.1621260993327365,
+        "errorPercent": -0.009876117206704227
+      },
+      {
+        "timeMyr": 1401.4,
+        "E": -2.161217526342625,
+        "errorPercent": 0.032150234638597744
+      },
+      {
+        "timeMyr": 1601.4,
+        "E": -2.1613815250108566,
+        "errorPercent": 0.024564420611253687
+      },
+      {
+        "timeMyr": 1801.4,
+        "E": -2.1622516426476674,
+        "errorPercent": -0.015683165823093995
+      },
+      {
+        "timeMyr": 2000.6000000000045,
+        "E": -2.1643063317446214,
+        "errorPercent": -0.11072350695266833
+      },
+      {
+        "timeMyr": 2200.6000000000045,
+        "E": -2.153234943989724,
+        "errorPercent": 0.4013872890617531
+      },
+      {
+        "timeMyr": 2400.900000000008,
+        "E": -2.153542121190657,
+        "errorPercent": 0.387178703438182
+      },
+      {
+        "timeMyr": 2601.100000000015,
+        "E": -2.1570655863311243,
+        "errorPercent": 0.22419962820746683
+      }
+    ],
+    "summary": {
+      "bhMaxAbsolutePercent": 0.4382995183857666,
+      "bhLastPercent": 0.19691295182199883,
+      "directMaxAbsolutePercent": 0.4013872890617531,
+      "directLastPercent": 0.22419962820746683
+    },
+    "peakPending": 1,
+    "lastError": null
+  },
+  "status": "passed",
+  "UTC": "2026-10-18T05:25:06.589Z",
+  "archivedSource": "reports/automatic-energy/gpu-80000-auditoria.json",
+  "archivedSourceSHA256": "1c5b5d74a73546c67acded484cca6320245419b7fff2725bbcdedd9d1b50f2f5",
+  "exports": [
+    {
+      "file": "browser-bh.svg",
+      "kind": "bh",
+      "mode": "relative",
+      "markers": 9,
+      "xDomain": [
+        0,
+        1000.0000000001588
+      ],
+      "yDomain": {
+        "min": -0.01683982224766571,
+        "max": 0.01831306670184833,
+        "minimal": false,
+        "minimumDisplaySpan": 2.8421709430404007e-12,
+        "empty": false
+      },
+      "axisOffset": 0,
+      "passed": true
+    },
+    {
+      "file": "browser-direct.svg",
+      "kind": "direct",
+      "mode": "relative",
+      "markers": 6,
+      "xDomain": [
+        0,
+        1000.0000000001588
+      ],
+      "yDomain": {
+        "min": -0.00014444467453396056,
+        "max": 0.000010699605521034117,
+        "minimal": false,
+        "minimumDisplaySpan": 2.8421709430404007e-12,
+        "empty": false
+      },
+      "axisOffset": 0,
+      "passed": true
+    },
+    {
+      "file": "browser-bias-common.svg",
+      "kind": "bias",
+      "mode": "common",
+      "markers": 6,
+      "xDomain": [
+        0,
+        1000.0000000001588
+      ],
+      "yDomain": {
+        "min": -0.016796662561311543,
+        "max": 0.018449609264377657,
+        "minimal": false,
+        "minimumDisplaySpan": 2.8421709430404007e-12,
+        "empty": false
+      },
+      "axisOffset": 0,
+      "passed": true
+    },
+    {
+      "file": "browser-direct-total.svg",
+      "kind": "direct",
+      "mode": "total",
+      "markers": 6,
+      "xDomain": [
+        0,
+        1000.0000000001588
+      ],
+      "yDomain": {
+        "min": -1.8601417924899954,
+        "max": -1.860138906590572,
+        "minimal": false,
+        "minimumDisplaySpan": 5.2868403868798424e-14,
+        "empty": false
+      },
+      "axisOffset": -1.8601391056181185,
+      "passed": true
+    }
+  ],
+  "live": {
+    "realizationId": "55e0e9fb-cf1b-46bc-873f-3d3b1864b69d",
+    "n": 512,
+    "seed": 2026,
+    "codeIdentity": "9fd76a062fc9940c94fe8a1069b2fae6dbf24c40d0a2aee655eeda3ec0bf982a",
+    "points": [
+      {
+        "timeMyr": 0,
+        "E": -2.161912586311806,
+        "errorPercent": 0
+      },
+      {
+        "timeMyr": 201.10000000000002,
+        "E": -2.161864671407253,
+        "errorPercent": 0.0022163201628173598
+      },
+      {
+        "timeMyr": 400.59999999999997,
+        "E": -2.161565789001955,
+        "errorPercent": 0.016041227200708406
+      }
+    ],
+    "automatic": {
+      "mode": "automatic",
+      "phase": "ready",
+      "activeTimeMyr": null,
+      "pendingTimeMyr": null,
+      "pendingCount": 0,
+      "peakPending": 1,
+      "completed": 3,
+      "omitted": 0,
+      "lastTimeMyr": 400.59999999999997,
+      "lastCostMs": 37.855000000447035,
+      "cadenceMyr": 200,
+      "policy": {
+        "cadenceMyr": 200,
+        "snapshotBytes": 29184,
+        "estimatedWorkingBytes": 321024,
+        "memoryBudgetBytes": 100663296,
+        "allowed": true,
+        "maxEvaluationMs": 60000,
+        "targetEvaluationMs": 10000,
+        "maxReferences": 4096
+      },
+      "progress": 1,
+      "lastError": null,
+      "events": [
+        {
+          "type": "completed",
+          "timeMyr": 0,
+          "reason": "Referência direta Float64 calculada no snapshot preservado."
+        },
+        {
+          "type": "completed",
+          "timeMyr": 201.10000000000002,
+          "reason": "Referência direta Float64 calculada no snapshot preservado."
+        },
+        {
+          "type": "completed",
+          "timeMyr": 400.59999999999997,
+          "reason": "Referência direta Float64 calculada no snapshot preservado."
+        }
+      ],
+      "rawSnapshotRetention": "Initial and two latest completed snapshots; other points retain energies, parameters and epochs."
+    }
+  },
+  "reset": {
+    "realizationId": "53ca1e22-35db-4d2d-8ed2-b992ccbef751",
+    "seed": 2027,
+    "points": [
+      {
+        "timeMyr": 0,
+        "E": -2.3686890626892727
+      }
+    ],
+    "isolated": true
+  },
+  "responsive": {
+    "availableWidthPx": 390,
+    "stacked": true,
+    "noPanelHorizontalOverflow": true,
+    "mechanism": "CSS container query verified in browser; narrow content surface, not device emulation"
+  }
+}

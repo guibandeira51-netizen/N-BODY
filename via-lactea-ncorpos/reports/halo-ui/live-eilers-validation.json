@@ -1,0 +1,75 @@
+{
+  "uiTest": {
+    "n": 1000,
+    "backend": "CPU direct Float64",
+    "firstTimeMyr": 2.6,
+    "secondTimeMyr": 8.8,
+    "measuredFieldChanged": true,
+    "observationsUnchanged": true,
+    "observedPoints": 38
+  },
+  "preservedUserFigure": {
+    "timeMyr": 309.80000461637974,
+    "radialProbes": 31,
+    "origin": "Exact R/v pairs from existing simulation SVG tooltips; epoch from live-epoch DOM attribute. Not a new force evaluation or particle snapshot."
+  },
+  "historicalPhysicalSourcesUnchanged": true,
+  "physical": [
+    {
+      "path": "src/physics/initial-legacy.js",
+      "sha256": "93ca8666ff188863b947dc8535ca23244d67c20ab2a177cb12e494cf566eeefa"
+    },
+    {
+      "path": "src/physics/initial.js",
+      "sha256": "5a6bbdb6cfe562776c6a408271c26d8a29183e92d2021914e2eb0f34230ef66a"
+    },
+    {
+      "path": "src/physics/forces.js",
+      "sha256": "9532d4286c6481d49995ece96e48bd595145c2e2c8a22897520cafa45f862444"
+    },
+    {
+      "path": "src/physics/integrator.js",
+      "sha256": "5a83b4dcad749e13d438cdde561c7ee19ac6418823cfa5f06257eee3b268b04f"
+    },
+    {
+      "path": "src/compute/gpu.js",
+      "sha256": "443ab660dbaed0c47e84fc8675ded0c44c8c726852b5315dad84d26037ae58d5"
+    },
+    {
+      "path": "src/physics/models.js",
+      "sha256": "96d948549f2651e31c191a4853b3091d55f4a9c7aa31dd6a040fc5524d5c4c00"
+    },
+    {
+      "path": "src/physics/constants.js",
+      "sha256": "4b1c2a1d96453b95c8e57a45f46443083e77d54e1714aadc7d060de0d9aa22ca"
+    },
+    {
+      "path": "src/physics/disk-analysis.js",
+      "sha256": "ecd700024436712b55152cb4bf64463ea70ee5bb9e93a6cc7750a8a1057219f7"
+    },
+    {
+      "path": "src/physics/halo-resolution.js",
+      "sha256": "5a97576aeefdf4768b0feaec7d7af360bea241a050606c1565a357718d95ab98"
+    },
+    {
+      "path": "src/compute/gpu-chunked-direct.js",
+      "sha256": "6cbd27f531ff0f718a3521b530254413dbf1a4745dcf227076acb079413d0b74"
+    },
+    {
+      "path": "src/compute/gpu-wide-chunked-direct.js",
+      "sha256": "5c421730529cfdd59cc32d8daebfe04be4a75fef00c6fbaf6960aa0b843511f1"
+    },
+    {
+      "path": "tests/browser-halo-5gyr-worker.js",
+      "sha256": "85de0d0480e9a73223885032b79cbd291a0fce65bcca31603183e82c8b744894"
+    },
+    {
+      "path": "scripts/halo-5gyr/verify-final.mjs",
+      "sha256": "1e09da4d14f5abcfb6f98047b01413175b056a568995d8b39b5ca5cd494531eb"
+    },
+    {
+      "path": "scripts/halo-5gyr/collector-v3.mjs",
+      "sha256": "94025a9e72334ffdf7c3cb5d0584b2ca8b832d16dc7560148d66de33b4aca868"
+    }
+  ]
+}

@@ -1,0 +1,239 @@
+{
+  "source": "SVG actually displayed in browser, same DOM serialized by Save chart",
+  "svg": "energy-protocol-recovered-user.svg",
+  "sha256": "c304533c3c3cc36f987b9163d37194190101cee2d6ee3f50182f56fcf7c43ae5",
+  "realizationId": "a4c456d4-4543-4159-8c96-44f7eedf5b0e",
+  "configuration": {
+    "baseN": 23218,
+    "baseCounts": [
+      3482,
+      10449,
+      9287
+    ],
+    "counts": [
+      3482,
+      10449,
+      297184
+    ],
+    "n": 311115,
+    "haloRefinement": 32,
+    "dt": 1,
+    "epsilon": 0.1,
+    "theta": 0.5,
+    "budgetBytes": 536870912,
+    "seed": 2026,
+    "energyAuditCadenceMyr": 200,
+    "withHalo": true,
+    "requestedAlgorithm": "auto",
+    "requestedBackend": "auto",
+    "energyReferenceBudgetBytes": 367002122,
+    "selected": "gpu",
+    "diagnosticOptions": {
+      "dt": 1,
+      "energyAuditCadenceMyr": 200,
+      "energyReferenceBudgetBytes": 367002122,
+      "withHalo": true,
+      "forceMethod": "GPU direct f32",
+      "algorithm": "barnes-hut",
+      "epsilon": 0.1,
+      "theta": 0.5
+    },
+    "backendSelection": {
+      "gpuPilotStepMs": 386.34500000067055,
+      "cpuMeasuredStepMs": null,
+      "policy": "Measured GPU at requested N; only compare a CPU measurement at the same N, not a small-N extrapolation."
+    }
+  },
+  "direct": [
+    {
+      "timeMyr": 0,
+      "n": 311115,
+      "mass": 104.93157752821571,
+      "effectiveDt": 1,
+      "treeTheta": 0.5,
+      "diagnosticCostMs": 51549.87000000104,
+      "K": 1.8766881473311245,
+      "U": -3.7268081712694965,
+      "E": -1.850120023938372,
+      "G": 0.04498502239584923,
+      "epsilonSquared": 0.009999999776482582,
+      "forceAlgorithm": "GPU direct Float32",
+      "trajectoryPrecision": "Float32",
+      "evaluationPrecision": "Float64 compensated CPU evaluation",
+      "velocityEpoch": "full-step, after final KDK kick",
+      "externalPotential": 0,
+      "method": "Pares diretos Float64 · CPU compensada",
+      "relative": {
+        "signed": 0,
+        "absolute": 0,
+        "percent": 0,
+        "denominator": 1.850120023938372,
+        "normalization": "|E0|"
+      },
+      "origin": "manual",
+      "configuration": {
+        "baseN": 23218,
+        "baseCounts": [
+          3482,
+          10449,
+          9287
+        ],
+        "counts": [
+          3482,
+          10449,
+          297184
+        ],
+        "n": 311115,
+        "haloRefinement": 32,
+        "dt": 1,
+        "epsilon": 0.1,
+        "theta": 0.5,
+        "budgetBytes": 536870912,
+        "seed": 2026,
+        "energyAuditCadenceMyr": 200,
+        "withHalo": true,
+        "requestedAlgorithm": "auto",
+        "requestedBackend": "auto",
+        "energyReferenceBudgetBytes": 367002122,
+        "selected": "gpu",
+        "diagnosticOptions": {
+          "dt": 1,
+          "energyAuditCadenceMyr": 200,
+          "energyReferenceBudgetBytes": 367002122,
+          "withHalo": true,
+          "forceMethod": "GPU direct f32",
+          "algorithm": "barnes-hut",
+          "epsilon": 0.1,
+          "theta": 0.5
+        },
+        "backendSelection": {
+          "gpuPilotStepMs": 386.34500000067055,
+          "cpuMeasuredStepMs": null,
+          "policy": "Measured GPU at requested N; only compare a CPU measurement at the same N, not a small-N extrapolation."
+        }
+      },
+      "backend": "WebGPU",
+      "samplingCadenceMyr": null
+    },
+    {
+      "timeMyr": 1355,
+      "n": 311115,
+      "mass": 104.93157752821571,
+      "effectiveDt": 1,
+      "treeTheta": 0.5,
+      "diagnosticCostMs": 55952.085000000894,
+      "K": 2.06209515932656,
+      "U": -3.9082843799748277,
+      "E": -1.8461892206482675,
+      "G": 0.04498502239584923,
+      "epsilonSquared": 0.009999999776482582,
+      "forceAlgorithm": "GPU direct Float32",
+      "trajectoryPrecision": "Float32",
+      "evaluationPrecision": "Float64 compensated CPU evaluation",
+      "velocityEpoch": "full-step, after final KDK kick",
+      "externalPotential": 0,
+      "method": "Pares diretos Float64 · CPU compensada",
+      "relative": {
+        "signed": 0.002124620694465474,
+        "absolute": 0.002124620694465474,
+        "percent": 0.2124620694465474,
+        "denominator": 1.850120023938372,
+        "normalization": "|E0|"
+      },
+      "origin": "manual",
+      "configuration": {
+        "baseN": 23218,
+        "baseCounts": [
+          3482,
+          10449,
+          9287
+        ],
+        "counts": [
+          3482,
+          10449,
+          297184
+        ],
+        "n": 311115,
+        "haloRefinement": 32,
+        "dt": 1,
+        "epsilon": 0.1,
+        "theta": 0.5,
+        "budgetBytes": 536870912,
+        "seed": 2026,
+        "energyAuditCadenceMyr": 200,
+        "withHalo": true,
+        "requestedAlgorithm": "auto",
+        "requestedBackend": "auto",
+        "energyReferenceBudgetBytes": 367002122,
+        "selected": "gpu",
+        "diagnosticOptions": {
+          "dt": 1,
+          "energyAuditCadenceMyr": 200,
+          "energyReferenceBudgetBytes": 367002122,
+          "withHalo": true,
+          "forceMethod": "GPU direct f32",
+          "algorithm": "barnes-hut",
+          "epsilon": 0.1,
+          "theta": 0.5
+        },
+        "backendSelection": {
+          "gpuPilotStepMs": 386.34500000067055,
+          "cpuMeasuredStepMs": null,
+          "policy": "Measured GPU at requested N; only compare a CPU measurement at the same N, not a small-N extrapolation."
+        }
+      },
+      "backend": "WebGPU",
+      "samplingCadenceMyr": null
+    }
+  ],
+  "plot": {
+    "kind": "direct",
+    "mode": "relative",
+    "color": "#e9ab55",
+    "xDomain": [
+      0,
+      1355
+    ],
+    "yDomain": {
+      "min": -0.016996965555723793,
+      "max": 0.22945903500227122,
+      "minimal": false,
+      "minimumDisplaySpan": 2.8421709430404007e-12,
+      "empty": false
+    },
+    "axisOffset": 0,
+    "referenceValue": 0,
+    "guide": {
+      "segments": [
+        {
+          "fromTimeMyr": 0,
+          "toTimeMyr": 1355,
+          "fromValue": 0,
+          "toValue": 0.2124620694465474
+        }
+      ],
+      "gaps": [],
+      "nominalCadenceMyr": 3200,
+      "cadenceSource": "recorded",
+      "gapFactor": 1.5,
+      "visualGuideOnly": true,
+      "interpolatedMeasurements": false
+    },
+    "interpolated": false,
+    "plottedTimes": [
+      0,
+      1355
+    ]
+  },
+  "normalization": {
+    "BH": {
+      "value": 1.8497441312418308,
+      "reason": null
+    },
+    "direct": {
+      "value": 1.850120023938372,
+      "reason": null
+    },
+    "comparison": "B = E_BH - E_dir; ΔB = B - B0; η = 100 ΔB / |E_dir(0)|. Native percentages with different denominators are not subtracted."
+  }
+}

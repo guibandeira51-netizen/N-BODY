@@ -1,0 +1,3478 @@
+[
+  {
+    "paragraph": 0,
+    "style": [],
+    "text": "UNIVERSIDADE ESTADUAL DE MATO GROSSO DO SUL",
+    "equations": []
+  },
+  {
+    "paragraph": 1,
+    "style": [],
+    "text": "CÂMPUS DE DOURADOS – MS",
+    "equations": []
+  },
+  {
+    "paragraph": 2,
+    "style": [],
+    "text": "CURSO DE BACHARELADO EM ENGENHARIA FÍSICA",
+    "equations": []
+  },
+  {
+    "paragraph": 3,
+    "style": [],
+    "text": "TRABALHO DE CONCLUSÃO DE CURSO",
+    "equations": []
+  },
+  {
+    "paragraph": 7,
+    "style": [],
+    "text": "GUILHERME ALEIXO BANDEIRA",
+    "equations": []
+  },
+  {
+    "paragraph": 14,
+    "style": [],
+    "text": "Modelagem Computacional de Sistemas N-Corpos Aplicada ao Estudo da Matéria Escura",
+    "equations": []
+  },
+  {
+    "paragraph": 27,
+    "style": [],
+    "text": "Dourados-MS",
+    "equations": []
+  },
+  {
+    "paragraph": 28,
+    "style": [],
+    "text": "2026",
+    "equations": []
+  },
+  {
+    "paragraph": 29,
+    "style": [],
+    "text": "UNIVERSIDADE ESTADUAL DE MATO GROSSO DO SUL",
+    "equations": []
+  },
+  {
+    "paragraph": 30,
+    "style": [],
+    "text": "CÂMPUS DE DOURADOS – MS",
+    "equations": []
+  },
+  {
+    "paragraph": 31,
+    "style": [],
+    "text": "CURSO DE BACHARELADO EM ENGENHARIA FÍSICA",
+    "equations": []
+  },
+  {
+    "paragraph": 32,
+    "style": [],
+    "text": "TRABALHO DE CONCLUSÃO DE CURSO",
+    "equations": []
+  },
+  {
+    "paragraph": 36,
+    "style": [],
+    "text": "GUILHERME ALEIXO BANDEIRA",
+    "equations": []
+  },
+  {
+    "paragraph": 41,
+    "style": [],
+    "text": "Modelagem Computacional de Sistemas N-Corpos Aplicada ao Estudo da Matéria Escura",
+    "equations": []
+  },
+  {
+    "paragraph": 44,
+    "style": [],
+    "text": "      Trabalho de Conclusão de Curso, apresentado junto à Universidade Estadual de Mato Grosso do Sul como parte dos requisitos para obtenção do título de Bacharelado em Engenharia Física, sob a orientação do Professor Dr. Adriano Manoel dos Santos.",
+    "equations": []
+  },
+  {
+    "paragraph": 53,
+    "style": [],
+    "text": "Dourados-MS",
+    "equations": []
+  },
+  {
+    "paragraph": 54,
+    "style": [],
+    "text": "2026",
+    "equations": []
+  },
+  {
+    "paragraph": 66,
+    "style": [],
+    "text": "_______________________________________________________________",
+    "equations": []
+  },
+  {
+    "paragraph": 68,
+    "style": [],
+    "text": "_______________________________________________________________",
+    "equations": []
+  },
+  {
+    "paragraph": 69,
+    "style": [],
+    "text": "Ficha Catalográfica elaborada pela bibliotecária da Universidade Estadual de Mato Grosso do Sul (UEMS)",
+    "equations": []
+  },
+  {
+    "paragraph": 86,
+    "style": [],
+    "text": "RESUMO",
+    "equations": []
+  },
+  {
+    "paragraph": 118,
+    "style": [],
+    "text": "ABSTRACT",
+    "equations": []
+  },
+  {
+    "paragraph": 150,
+    "style": [],
+    "text": "SUMÁRIO",
+    "equations": []
+  },
+  {
+    "paragraph": 152,
+    "style": [
+      "Sumrio1"
+    ],
+    "text": "1.Introdução7",
+    "equations": []
+  },
+  {
+    "paragraph": 153,
+    "style": [
+      "Sumrio1"
+    ],
+    "text": "2.Problema de dois corpos9",
+    "equations": []
+  },
+  {
+    "paragraph": 154,
+    "style": [
+      "Sumrio1"
+    ],
+    "text": "3.Sistemas keplerianos11",
+    "equations": []
+  },
+  {
+    "paragraph": 155,
+    "style": [
+      "Sumrio1"
+    ],
+    "text": "4.Sistemas não keplerianos14",
+    "equations": []
+  },
+  {
+    "paragraph": 156,
+    "style": [
+      "Sumrio3"
+    ],
+    "text": "4.1 Bojo Galáctico15",
+    "equations": []
+  },
+  {
+    "paragraph": 157,
+    "style": [
+      "Sumrio3"
+    ],
+    "text": "4.2 Disco Galáctico19",
+    "equations": []
+  },
+  {
+    "paragraph": 158,
+    "style": [
+      "Sumrio3"
+    ],
+    "text": "4.3 Matéria Escura21",
+    "equations": []
+  },
+  {
+    "paragraph": 159,
+    "style": [
+      "Sumrio2"
+    ],
+    "text": "5.Velocidades Orbitais26",
+    "equations": []
+  },
+  {
+    "paragraph": 160,
+    "style": [
+      "Sumrio3"
+    ],
+    "text": "4.1  Velocidade orbital no bojo galáctico27",
+    "equations": []
+  },
+  {
+    "paragraph": 161,
+    "style": [
+      "Sumrio3"
+    ],
+    "text": "4.2 Velocidade orbital no disco galáctico28",
+    "equations": []
+  },
+  {
+    "paragraph": 162,
+    "style": [
+      "Sumrio3"
+    ],
+    "text": "4.3 Velocidade orbital no halo de matéria escura30",
+    "equations": []
+  },
+  {
+    "paragraph": 163,
+    "style": [
+      "Sumrio1"
+    ],
+    "text": "3. Modelagem Computacional32",
+    "equations": []
+  },
+  {
+    "paragraph": 164,
+    "style": [
+      "Sumrio2"
+    ],
+    "text": "3.1 Problema de N-corpos33",
+    "equations": []
+  },
+  {
+    "paragraph": 165,
+    "style": [
+      "Sumrio2"
+    ],
+    "text": "3.2 Métodos numéricos33",
+    "equations": []
+  },
+  {
+    "paragraph": 166,
+    "style": [
+      "Sumrio2"
+    ],
+    "text": "3.3 Implementação computacional33",
+    "equations": []
+  },
+  {
+    "paragraph": 167,
+    "style": [
+      "Sumrio2"
+    ],
+    "text": "3.4 Modelagem Newtoniana33",
+    "equations": []
+  },
+  {
+    "paragraph": 168,
+    "style": [
+      "Sumrio2"
+    ],
+    "text": "3.5 Modelagem relativística geral33",
+    "equations": []
+  },
+  {
+    "paragraph": 169,
+    "style": [
+      "Sumrio2"
+    ],
+    "text": "3.6 Simulação espaço-tempo33",
+    "equations": []
+  },
+  {
+    "paragraph": 170,
+    "style": [
+      "Sumrio1"
+    ],
+    "text": "4. Dinâmica Galáctica e Resultados33",
+    "equations": []
+  },
+  {
+    "paragraph": 171,
+    "style": [
+      "Sumrio2"
+    ],
+    "text": "4.1 Simulações newtonianas34",
+    "equations": []
+  },
+  {
+    "paragraph": 172,
+    "style": [
+      "Sumrio2"
+    ],
+    "text": "4.3 Curvas de rotação34",
+    "equations": []
+  },
+  {
+    "paragraph": 173,
+    "style": [
+      "Sumrio2"
+    ],
+    "text": "4.4 Influência da matéria escura34",
+    "equations": []
+  },
+  {
+    "paragraph": 174,
+    "style": [
+      "Sumrio2"
+    ],
+    "text": "4.5 Comparação entre modelos34",
+    "equations": []
+  },
+  {
+    "paragraph": 175,
+    "style": [
+      "Sumrio1"
+    ],
+    "text": "5. Conclusão34",
+    "equations": []
+  },
+  {
+    "paragraph": 181,
+    "style": [
+      "Ttulo1"
+    ],
+    "text": " Introdução",
+    "equations": []
+  },
+  {
+    "paragraph": 182,
+    "style": [],
+    "text": "A dinâmica gravitacional constitui uma das bases fundamentais para a compreensão de sistemas astronômicos, desde órbitas planetárias até a evolução de galáxias. Em sua formulação clássica, a gravitação newtoniana permite descrever com precisão sistemas simples, como o problema de dois corpos, no qual duas massas interagem mutuamente por meio de uma força central. Esse caso possui solução analítica conhecida e conduz às órbitas keplerianas, sendo amplamente utilizado como ponto de partida para o estudo de sistemas gravitacionais.",
+    "equations": []
+  },
+  {
+    "paragraph": 183,
+    "style": [],
+    "text": "Entretanto, à medida que o número de corpos aumenta, a descrição analítica do sistema torna-se progressivamente mais complexa. O problema de três corpos já não apresenta, em geral, solução fechada simples, uma vez que cada corpo sofre simultaneamente a atração gravitacional dos demais. Essa característica torna o sistema sensível às condições iniciais e exige o emprego de métodos numéricos para acompanhar sua evolução temporal. Dessa forma, o estudo de sistemas de múltiplos corpos torna-se essencial para compreender a dinâmica de estruturas astronômicas reais.",
+    "equations": []
+  },
+  {
+    "paragraph": 184,
+    "style": [],
+    "text": "No contexto galáctico, essa complexidade torna-se ainda mais evidente. Galáxias espirais, como a Via Láctea, não podem ser descritas adequadamente como sistemas dominados apenas por uma massa central. Ao contrário, sua estrutura é composta por diferentes componentes, como bojo, disco e halo, cada uma contribuindo de maneira distinta para o campo gravitacional total. Assim, a dinâmica orbital de estrelas e outros corpos depende da distribuição espacial de massa ao longo da galáxia.",
+    "equations": []
+  },
+  {
+    "paragraph": 185,
+    "style": [],
+    "text": "A descrição kepleriana prevê que, em regiões afastadas do centro, a velocidade orbital deveria diminuir com a distância radial, caso a maior parte da massa estivesse concentrada nas regiões internas. No entanto, observações astronômicas mostram que as velocidades de rotação em galáxias espirais permanecem aproximadamente constantes mesmo em grandes raios. No caso da Via Láctea, por exemplo, a velocidade orbital do Sol em torno do centro galáctico encontra-se aproximadamente no intervalo de 220 a 240 km/s, valor que evidencia a necessidade de considerar componentes adicionais de massa na modelagem galáctica (REID et al., 2014).",
+    "equations": []
+  },
+  {
+    "paragraph": 186,
+    "style": [],
+    "text": "Essa discrepância entre a previsão baseada apenas na matéria visível e os valores observados está diretamente relacionada ao problema da matéria escura. A matéria escura é uma componente que não emite radiação eletromagnética detectável, mas cuja presença pode ser inferida por seus efeitos gravitacionais. Em galáxias espirais, ela é frequentemente modelada como um halo aproximadamente esférico e estendido, responsável por contribuir de maneira significativa para a manutenção das velocidades orbitais nas regiões externas.",
+    "equations": []
+  },
+  {
+    "paragraph": 187,
+    "style": [],
+    "text": "Para representar a estrutura gravitacional de uma galáxia de forma mais realista, torna-se necessário considerar modelos matemáticos capazes de descrever suas principais componentes. O bojo galáctico pode ser representado por perfis esfericamente simétricos, como o modelo de Hernquist, adequado para regiões centrais de alta concentração de massa (HERNQUIST, 1990). O disco, por sua vez, exige uma formulação compatível com sua geometria achatada, podendo ser descrito por potenciais como o de Miyamoto-Nagai. Já o halo de matéria escura pode ser modelado por meio do perfil NFW, proposto a partir de simulações cosmológicas de formação de estruturas (NAVARRO; FRENK; WHITE, 1997).",
+    "equations": []
+  },
+  {
+    "paragraph": 188,
+    "style": [],
+    "text": "Diante desse contexto, a modelagem computacional apresenta-se como uma ferramenta fundamental para investigar a dinâmica de sistemas gravitacionais. Por meio de simulações numéricas, é possível analisar o comportamento orbital de dois, três e múltiplos corpos, bem como estudar a influência de diferentes componentes galácticas sobre suas trajetórias. Essa abordagem permite comparar modelos puramente keplerianos com modelos não keplerianos que incluem a contribuição do bojo, do disco e do halo de matéria escura.",
+    "equations": []
+  },
+  {
+    "paragraph": 189,
+    "style": [],
+    "text": "O presente trabalho tem como objetivo modelar computacionalmente sistemas gravitacionais de dois, três e múltiplos corpos, com aplicação ao estudo da influência da matéria escura na dinâmica orbital galáctica. Inicialmente, utiliza-se o problema de dois corpos como base teórica e como validação numérica do modelo. Em seguida, analisa-se o problema de três corpos, destacando sua instabilidade e sensibilidade às condições iniciais. Posteriormente, o estudo é generalizado para sistemas de múltiplas partículas e para órbitas submetidas a um potencial galáctico composto por bojo, disco e halo de matéria escura.",
+    "equations": []
+  },
+  {
+    "paragraph": 190,
+    "style": [],
+    "text": "A metodologia adotada consiste na formulação das equações de movimento, na implementação computacional dos modelos gravitacionais e na análise dos resultados obtidos a partir das simulações. São avaliadas grandezas como trajetórias orbitais, curvas de rotação, energia mecânica e estabilidade numérica. Com isso, busca-se compreender de que forma a inclusão do halo de matéria escura altera a dinâmica orbital em comparação com modelos baseados apenas na matéria visível.",
+    "equations": []
+  },
+  {
+    "paragraph": 191,
+    "style": [],
+    "text": "Assim, este trabalho procura estabelecer uma conexão entre a teoria clássica dos sistemas gravitacionais e a modelagem computacional aplicada à dinâmica galáctica. A partir da comparação entre modelos keplerianos, sistemas de três corpos e simulações com potenciais galácticos não keplerianos, pretende-se evidenciar a importância da matéria escura na descrição da estrutura dinâmica de galáxias espirais.",
+    "equations": []
+  },
+  {
+    "paragraph": 193,
+    "style": [
+      "Ttulo1"
+    ],
+    "text": "Problema de dois corpos ",
+    "equations": []
+  },
+  {
+    "paragraph": 194,
+    "style": [],
+    "text": "O estudo do problema de dois corpos constitui a base da mecânica gravitacional clássica e representa o ponto de partida para a compreensão de sistemas gravitacionais mais complexos. Neste capítulo são desenvolvidos os principais conceitos e equações que descrevem a interação entre duas massas sob a ação da gravidade, estabelecendo a fundamentação teórica necessária para a obtenção das órbitas keplerianas. Esses resultados servirão como referência para os capítulos seguintes, nos quais serão analisados sistemas não keplerianos e modelos galácticos que incorporam distribuições de massa mais realistas e a influência da matéria escura.",
+    "equations": []
+  },
+  {
+    "paragraph": 196,
+    "style": [
+      "Ttulo2"
+    ],
+    "text": "2.1 Cálculo da aceleração",
+    "equations": []
+  },
+  {
+    "paragraph": 197,
+    "style": [],
+    "text": "A adoção de um sistema de referência inercial contendo duas partículas puntiformes é necessária para estabelecer uma descrição matemática adequada do movimento de um sistema de partículas. Em problemas envolvendo mais de um corpo, a análise direta das posições e velocidades de cada partícula pode se tornar complexa, principalmente quando existem interações entre elas. Dessa forma, representar as partículas por meio de suas posições vetoriais r1 e r2, medidas em relação a uma origem fixa, permite definir de maneira precisa o estado do sistema e aplicar as leis da mecânica clássica de forma consistente. A partir dessa representação, torna-se possível investigar o movimento individual das partículas e, posteriormente, introduzir uma descrição mais conveniente do sistema, como o movimento do centro de massa e o movimento relativo entre as partículas.",
+    "equations": [
+      "r1",
+      "r2"
+    ]
+  },
+  {
+    "paragraph": 199,
+    "style": [],
+    "text": "Figura 1: Massas pontuais m1 e m2.",
+    "equations": []
+  },
+  {
+    "paragraph": 200,
+    "style": [],
+    "text": "Fonte: Desenvolvido pelo autor.",
+    "equations": []
+  },
+  {
+    "paragraph": 202,
+    "style": [],
+    "text": "Sendo r1 e r1 os vetores posição das partículas de massas M1 e M2, respectivamente, definidos em relação à origem do sistema de referência, o vetor posição relativo entre os corpos é obtido como a diferença entre suas posições.",
+    "equations": [
+      "r1",
+      "r1",
+      "M1",
+      "M2"
+    ]
+  },
+  {
+    "paragraph": 204,
+    "style": [],
+    "text": "r=r1-r2  ",
+    "equations": [
+      "r=r1-r2"
+    ]
+  },
+  {
+    "paragraph": 205,
+    "style": [],
+    "text": " (1)",
+    "equations": []
+  },
+  {
+    "paragraph": 207,
+    "style": [],
+    "text": "A interação entre os corpos é governada pela lei da gravitação universal, cuja forma vetorial pode ser escrita como: (HALLIDAY; RESNICK; WALKER, 2016)",
+    "equations": []
+  },
+  {
+    "paragraph": 210,
+    "style": [],
+    "text": "F=Gm1m2r2",
+    "equations": [
+      "F=Gm1m2r2"
+    ]
+  },
+  {
+    "paragraph": 211,
+    "style": [],
+    "text": "(2)",
+    "equations": []
+  },
+  {
+    "paragraph": 213,
+    "style": [],
+    "text": "Essa expressão evidencia que a força é central, atuando ao longo da linha que conecta as duas partículas, e obedece ao princípio da ação e reação, de modo que as forças exercidas são iguais em magnitude e opostas em direção. Nessa expressão, G representa a constante gravitacional universal, responsável por determinar a intensidade da interação gravitacional, enquanto M1 e M2, respectivamente, definidos em relação à origem do sistema de referência, o ​ e m2​ representam as massas dos dois corpos que interagem. Já r corresponde à distância entre os centros de massa dos corpos. No Sistema Internacional de Unidades, a constante gravitacional universal possui o valor de G=6,67430×10-11 m3 kg-1 s-2.",
+    "equations": [
+      "M1",
+      "M2",
+      "r",
+      "G=6,67430×10-11 m3 kg-1 s-2"
+    ]
+  },
+  {
+    "paragraph": 214,
+    "style": [],
+    "text": "De acordo com a segunda lei de Newton, a somatória das forças que agem sobre um corpo é igual a massa deste corpo multiplicada pela aceleração deste mesmo corpo (NEWTON, 1687). Desta forma, aplicando a segunda lei de Newton a cada uma das massas, obtêm-se as equações de movimento individuais:  ",
+    "equations": []
+  },
+  {
+    "paragraph": 216,
+    "style": [],
+    "text": "m1r1=Gm1m2r3r",
+    "equations": [
+      "m1r1=Gm1m2r3r"
+    ]
+  },
+  {
+    "paragraph": 218,
+    "style": [],
+    "text": "(3)",
+    "equations": []
+  },
+  {
+    "paragraph": 220,
+    "style": [],
+    "text": "m2r2=-Gm1m2r3r",
+    "equations": [
+      "m2r2=-Gm1m2r3r"
+    ]
+  },
+  {
+    "paragraph": 221,
+    "style": [],
+    "text": "(4)",
+    "equations": []
+  },
+  {
+    "paragraph": 224,
+    "style": [],
+    "text": "Sendo r1 a aceleração do corpo 1 e r2 a aceleração do corpo 2, ao dividir as equações de movimento pelas respectivas massas, obtêm-se:",
+    "equations": [
+      "r1",
+      "r2"
+    ]
+  },
+  {
+    "paragraph": 226,
+    "style": [],
+    "text": "r1=Gm2r3r",
+    "equations": [
+      "r1=Gm2r3r"
+    ]
+  },
+  {
+    "paragraph": 228,
+    "style": [],
+    "text": "(5)",
+    "equations": []
+  },
+  {
+    "paragraph": 230,
+    "style": [],
+    "text": "r2=-Gm1r3r",
+    "equations": [
+      "r2=-Gm1r3r"
+    ]
+  },
+  {
+    "paragraph": 231,
+    "style": [],
+    "text": "(6)",
+    "equations": []
+  },
+  {
+    "paragraph": 233,
+    "style": [],
+    "text": "Obtêm-se, dessa forma, duas equações diferenciais ordinárias acopladas, cujo objetivo é descrever a evolução temporal das posições de cada corpo. ",
+    "equations": []
+  },
+  {
+    "paragraph": 234,
+    "style": [],
+    "text": "Ao definir o vetor R como aquele que descreve a posição do centro de massa do sistema (MOEBS; LING; SANNY, 2016):",
+    "equations": [
+      "R"
+    ]
+  },
+  {
+    "paragraph": 236,
+    "style": [],
+    "text": "R=m1r1+m2r2m1+m2",
+    "equations": [
+      "R=m1r1+m2r2m1+m2"
+    ]
+  },
+  {
+    "paragraph": 237,
+    "style": [],
+    "text": "(7)",
+    "equations": []
+  },
+  {
+    "paragraph": 239,
+    "style": [],
+    "text": "Usando a equação (1) como referência, é possível expressar os vetores posição de cada um dos corpos em função dessa relação:",
+    "equations": []
+  },
+  {
+    "paragraph": 241,
+    "style": [],
+    "text": "r1=R-m2m1+m2 r",
+    "equations": [
+      "r1=R-m2m1+m2 r"
+    ]
+  },
+  {
+    "paragraph": 243,
+    "style": [],
+    "text": "(8)",
+    "equations": []
+  },
+  {
+    "paragraph": 245,
+    "style": [],
+    "text": "r2=R+m1m1+m2 r",
+    "equations": [
+      "r2=R+m1m1+m2 r"
+    ]
+  },
+  {
+    "paragraph": 246,
+    "style": [],
+    "text": "(9)",
+    "equations": []
+  },
+  {
+    "paragraph": 247,
+    "style": [],
+    "text": " A partir de (8) e (9) em (5) e (6), obtemos as seguintes equações:",
+    "equations": []
+  },
+  {
+    "paragraph": 249,
+    "style": [],
+    "text": "R-m2m1+m2 r=Gm2r3 r",
+    "equations": [
+      "R-m2m1+m2 r=Gm2r3 r"
+    ]
+  },
+  {
+    "paragraph": 251,
+    "style": [],
+    "text": "(10)",
+    "equations": []
+  },
+  {
+    "paragraph": 253,
+    "style": [],
+    "text": "R+m1m1+m2 r=Gm1r3 r",
+    "equations": [
+      "R+m1m1+m2 r=Gm1r3 r"
+    ]
+  },
+  {
+    "paragraph": 254,
+    "style": [],
+    "text": "(11)",
+    "equations": []
+  },
+  {
+    "paragraph": 256,
+    "style": [],
+    "text": "Somando as equações (10) e (11) obtemos: ",
+    "equations": []
+  },
+  {
+    "paragraph": 258,
+    "style": [],
+    "text": "m1+m2 R=0",
+    "equations": [
+      "m1+m2 R=0"
+    ]
+  },
+  {
+    "paragraph": 260,
+    "style": [],
+    "text": "(12)",
+    "equations": []
+  },
+  {
+    "paragraph": 262,
+    "style": [],
+    "text": "r=-Gm1+m2r3 r",
+    "equations": [
+      "r=-Gm1+m2r3 r"
+    ]
+  },
+  {
+    "paragraph": 263,
+    "style": [],
+    "text": "(13)",
+    "equations": []
+  },
+  {
+    "paragraph": 265,
+    "style": [],
+    "text": "Essas relações matemáticas permitem extrair dois resultados fundamentais. Em primeiro lugar, observa-se que o centro de massa se comporta como um referencial inercial, uma vez que a segunda derivada temporal de seu vetor posição é nula. Além disso, o sistema de dois corpos pode ser reinterpretado de forma equivalente como o movimento de uma única partícula sob a ação de uma interação gravitacional efetiva, descrita em função do vetor posição relativo r em relação ao centro de massa.",
+    "equations": [
+      "r"
+    ]
+  },
+  {
+    "paragraph": 267,
+    "style": [
+      "Ttulo1"
+    ],
+    "text": "Sistemas keplerianos",
+    "equations": []
+  },
+  {
+    "paragraph": 268,
+    "style": [],
+    "text": "Sendo o vetor aceleração r escrito em coordenadas polares (CLINE,2021):",
+    "equations": [
+      "r"
+    ]
+  },
+  {
+    "paragraph": 270,
+    "style": [],
+    "text": "r=r-rθ2 r+2rθ+rθ θ",
+    "equations": [
+      "r=r-rθ2 r+2rθ+rθ θ"
+    ]
+  },
+  {
+    "paragraph": 271,
+    "style": [],
+    "text": " (14)",
+    "equations": []
+  },
+  {
+    "paragraph": 272,
+    "style": [],
+    "text": "Para descrever o movimento de uma partícula em coordenadas polares, não é suficiente considerar apenas a variação da distância (r) em relação à origem, uma vez que a posição da partícula também pode variar devido à mudança na direção do vetor posição. Nesse sistema de coordenadas, essa orientação é determinada pelo ângulo (θ), que representa a posição angular da partícula em relação a uma direção de referência. Assim, enquanto (r) caracteriza a distância radial, (θ) determina a direção do vetor posição (r).",
+    "equations": [
+      "(r)",
+      "(θ)",
+      "(r",
+      "(r"
+    ]
+  },
+  {
+    "paragraph": 273,
+    "style": [],
+    "text": " A variação temporal de (θ) é representada por (θ), correspondente à velocidade angular, indicando a rapidez com que a direção do vetor posição se altera. Por sua vez, θ representa a aceleração angular, caracterizando a variação da própria velocidade angular. Dessa forma, a descrição da aceleração da partícula deve considerar simultaneamente as variações da distância radial e da orientação angular, resultando em componentes radiais e tangenciais. A componente radial da aceleração, r-rθ2r, está associada à variação do movimento na direção radial e ao efeito da mudança de direção do vetor posição, enquanto a componente tangencial, 2rθ+rθθ, está relacionada à variação do movimento na direção angular.",
+    "equations": [
+      "θ",
+      "(θ)",
+      "θ ",
+      "r-rθ2r",
+      "2rθ+rθθ"
+    ]
+  },
+  {
+    "paragraph": 274,
+    "style": [],
+    "text": " Substituindo na equação (13), com M = m1 + m2:",
+    "equations": []
+  },
+  {
+    "paragraph": 276,
+    "style": [],
+    "text": "-GMr2 r=r-rθ2 r+2rθ+rθ θ",
+    "equations": [
+      "-GMr2 r=r-rθ2 r+2rθ+rθ θ"
+    ]
+  },
+  {
+    "paragraph": 277,
+    "style": [],
+    "text": "(15)",
+    "equations": []
+  },
+  {
+    "paragraph": 279,
+    "style": [],
+    "text": "De acordo com a equação acima a componente do versor teta é nula, esta coordenada conduz diretamente à conservação do módulo do momento angular:",
+    "equations": []
+  },
+  {
+    "paragraph": 281,
+    "style": [],
+    "text": "2r θ+r θ=0",
+    "equations": [
+      "2r θ+r θ=0"
+    ]
+  },
+  {
+    "paragraph": 282,
+    "style": [],
+    "text": "(16)",
+    "equations": []
+  },
+  {
+    "paragraph": 284,
+    "style": [],
+    "text": "Multiplicando a equação (16) por r temos:",
+    "equations": [
+      "r"
+    ]
+  },
+  {
+    "paragraph": 286,
+    "style": [],
+    "text": "2rr θ+r2 θ=0",
+    "equations": [
+      "2rr θ+r2 θ=0"
+    ]
+  },
+  {
+    "paragraph": 287,
+    "style": [],
+    "text": "(17)",
+    "equations": []
+  },
+  {
+    "paragraph": 289,
+    "style": [],
+    "text": "Reescrevendo a equação (17) temos:",
+    "equations": []
+  },
+  {
+    "paragraph": 291,
+    "style": [],
+    "text": "θ dr2dt+r2 θ=0",
+    "equations": [
+      "θ dr2dt+r2 θ=0"
+    ]
+  },
+  {
+    "paragraph": 292,
+    "style": [],
+    "text": "(18)",
+    "equations": []
+  },
+  {
+    "paragraph": 296,
+    "style": [],
+    "text": "E isso é exatamente a derivada de um produto:",
+    "equations": []
+  },
+  {
+    "paragraph": 298,
+    "style": [],
+    "text": "ddtr2θ=0",
+    "equations": [
+      "ddtr2θ=0"
+    ]
+  },
+  {
+    "paragraph": 299,
+    "style": [],
+    "text": "(19)",
+    "equations": []
+  },
+  {
+    "paragraph": 301,
+    "style": [],
+    "text": "Como r2θ pode ser escrita como lμ, sendo μ a massa reduzida do sistema e l o momento angular, conclui-se que l permanece constante ao longo do tempo. Isso ocorre porque não há torque atuando sobre o sistema e a interação gravitacional é uma força central, sempre dirigida ao longo da linha que conecta os dois corpos.",
+    "equations": [
+      "r2θ ",
+      "lμ",
+      "μ",
+      "l ",
+      "l"
+    ]
+  },
+  {
+    "paragraph": 302,
+    "style": [],
+    "text": "Essa conservação do momento angular tem uma consequência geométrica importante, o movimento relativo entre os corpos fica restrito a um único plano. Em outras palavras, embora o espaço seja tridimensional, a dinâmica do sistema evolui como se estivesse “presa” a uma superfície plana definida pelas condições iniciais de posição e velocidade.",
+    "equations": []
+  },
+  {
+    "paragraph": 303,
+    "style": [],
+    "text": "No contexto de sistemas astronômicos como planetas ao redor de uma estrela, significa que as trajetórias tendem a se organizar em planos orbitais bem definidos, a maior parte dos corpos se movimenta aproximadamente no mesmo plano justamente porque herdaram condições iniciais semelhantes e estão sujeitos a forças gravitacionais centrais dominantes. Assim, a conservação do momento angular não só simplifica a análise matemática do problema, como também explica uma característica observável em larga escala na estrutura de sistemas planetários.",
+    "equations": []
+  },
+  {
+    "paragraph": 305,
+    "style": [],
+    "text": "Além disso, ao projetarmos a equação (15) na direção radial, obtemos a dinâmica na coordenada r:",
+    "equations": []
+  },
+  {
+    "paragraph": 307,
+    "style": [],
+    "text": "r-l2μ2r3=-GMr2",
+    "equations": [
+      "r-l2μ2r3=-GMr2"
+    ]
+  },
+  {
+    "paragraph": 308,
+    "style": [],
+    "text": "(20)",
+    "equations": []
+  },
+  {
+    "paragraph": 315,
+    "style": [],
+    "text": "Nessa expressão, o termo l2μ2r3​ surge da contribuição do movimento angular, enquanto o termo à direita representa a atração gravitacional.",
+    "equations": [
+      "l2μ2r3"
+    ]
+  },
+  {
+    "paragraph": 317,
+    "style": [],
+    "text": "Para simplificar a resolução dessa equação diferencial, é conveniente realizar uma mudança de variável, definindo:",
+    "equations": []
+  },
+  {
+    "paragraph": 319,
+    "style": [],
+    "text": "u=1r",
+    "equations": [
+      "u=1r"
+    ]
+  },
+  {
+    "paragraph": 320,
+    "style": [],
+    "text": "(21)",
+    "equations": []
+  },
+  {
+    "paragraph": 322,
+    "style": [],
+    "text": "Essa substituição permite reescrever o problema em função do ângulo θ, em vez do tempo t, o que é mais adequado para descrever órbitas. ",
+    "equations": []
+  },
+  {
+    "paragraph": 323,
+    "style": [],
+    "text": "Utilizando a relação entre r e θ, juntamente com a conservação do momento angular r2θ=μl podemos transformar as derivadas temporais em derivadas em relação a θ.",
+    "equations": [
+      "r",
+      "θ",
+      "r2θ=μl"
+    ]
+  },
+  {
+    "paragraph": 324,
+    "style": [],
+    "text": "Após essa mudança de variável e alguma manipulação algébrica, a equação radial assume a forma:",
+    "equations": []
+  },
+  {
+    "paragraph": 326,
+    "style": [],
+    "text": "d2dθ21r+1r=GMμ2l2",
+    "equations": [
+      "d2dθ21r+1r=GMμ2l2"
+    ]
+  },
+  {
+    "paragraph": 327,
+    "style": [],
+    "text": "(22)",
+    "equations": []
+  },
+  {
+    "paragraph": 331,
+    "style": [],
+    "text": "Essa equação diferencial possui solução conhecida, que descreve a trajetória orbital em coordenadas polares:",
+    "equations": []
+  },
+  {
+    "paragraph": 333,
+    "style": [],
+    "text": "rθ=α1+εcosθ",
+    "equations": [
+      "rθ=α1+εcosθ"
+    ]
+  },
+  {
+    "paragraph": 334,
+    "style": [],
+    "text": "(23)",
+    "equations": []
+  },
+  {
+    "paragraph": 335,
+    "style": [],
+    "text": "em que α=l2GMμ2​ é uma constante relacionada aos parâmetros do sistema, e ε é a excentricidade da órbita.",
+    "equations": [
+      "α=l2GMμ2"
+    ]
+  },
+  {
+    "paragraph": 336,
+    "style": [],
+    "text": "A equação (23) corresponde à forma polar geral das seções cônicas, que descreve todas as possíveis trajetórias de um sistema sob uma força central gravitacional. O parâmetro fundamental que determina o tipo de órbita é a excentricidade ε, que controla o formato da curva.",
+    "equations": []
+  },
+  {
+    "paragraph": 337,
+    "style": [],
+    "text": "Quando ε=0, a solução reduz-se a uma circunferência, indicando uma órbita perfeitamente circular, na qual a distância entre os corpos permanece constante ao longo do tempo. Para valores no intervalo 0<ε<1, a trajetória passa a ser uma elipse, sendo esse o caso mais comum em sistemas planetários. Nessa situação, o centro de massa do sistema ocupa um dos focos da elipse, o que implica que a distância entre os corpos varia periodicamente fenômeno observado, por exemplo, na órbita dos planetas ao redor de suas estrelas.",
+    "equations": []
+  },
+  {
+    "paragraph": 338,
+    "style": [],
+    "text": "No caso ε=1, a trajetória é parabólica. Esse tipo de órbita está associado a um estado crítico de energia, no qual o corpo possui velocidade suficiente para escapar da atração gravitacional, mas com velocidade assintótica nula. Já para ε>1, a trajetória é hiperbólica, caracterizando um encontro não ligado gravitacionalmente: o corpo passa pela região de influência gravitacional e se afasta indefinidamente, como ocorre com alguns cometas ou objetos interestelares que atravessam sistemas estelares.",
+    "equations": []
+  },
+  {
+    "paragraph": 339,
+    "style": [],
+    "text": "Do ponto de vista físico e astronômico, essa classificação é essencial para compreender a dinâmica de sistemas planetários e galácticos. No Sistema Solar, por exemplo, os planetas seguem órbitas aproximadamente elípticas, em concordância com as leis de Kepler, enquanto cometas podem apresentar órbitas altamente excêntricas.",
+    "equations": []
+  },
+  {
+    "paragraph": 341,
+    "style": [],
+    "text": "Figura 2 – Representação dos diferentes tipos de órbitas utilizando a equação (23). O parâmetro α foi adotado como igual a 1 unidade de comprimento.",
+    "equations": []
+  },
+  {
+    "paragraph": 342,
+    "style": [],
+    "text": "Fonte: Desenvolvido pelo autor.",
+    "equations": []
+  },
+  {
+    "paragraph": 344,
+    "style": [
+      "Ttulo1"
+    ],
+    "text": "Sistemas não keplerianos",
+    "equations": []
+  },
+  {
+    "paragraph": 345,
+    "style": [],
+    "text": "A descrição kepleriana do movimento, derivada da interação gravitacional newtoniana entre dois corpos, prevê órbitas cônicas e estabelece uma relação bem definida entre distância e velocidade orbital. Em particular, para um corpo em órbita circular, a velocidade é dada por:",
+    "equations": []
+  },
+  {
+    "paragraph": 347,
+    "style": [],
+    "text": "v=GMr",
+    "equations": [
+      "v=GMr"
+    ]
+  },
+  {
+    "paragraph": 349,
+    "style": [],
+    "text": "(24)",
+    "equations": []
+  },
+  {
+    "paragraph": 354,
+    "style": [],
+    "text": "Onde G é a constante gravitacional, M é a massa contida no interior da órbita e r é a distância ao centro galáctico. O que implica que, à medida que a distância r aumenta, a velocidade orbital deve decrescer como v ∝ r −1/2. Esse comportamento é observado com boa precisão em sistemas onde a maior parte da massa está concentrada em uma região central, como no caso do Sistema Solar. Entretanto, ao aplicar esse modelo em escalas galácticas, surgem discrepâncias significativas. ",
+    "equations": []
+  },
+  {
+    "paragraph": 355,
+    "style": [],
+    "text": "Observações de estrelas nas regiões externas de galáxias mostram que suas velocidades orbitais não diminuem com a distância ao centro, como previsto pela dinâmica kepleriana. A fim de evidenciar as limitações da descrição kepleriana em escalas galácticas, pode-se aplicar a expressão (24) a uma estrela em órbita no disco da galáxia. Consideremos o caso do Sol em sua órbita ao redor do centro da Via Láctea. Utilizando os seguintes valores observacionais:",
+    "equations": []
+  },
+  {
+    "paragraph": 356,
+    "style": [],
+    "text": "Distância ao centro galáctico (GRAVITY COLLABORATION, 2019):",
+    "equations": []
+  },
+  {
+    "paragraph": 358,
+    "style": [],
+    "text": "r≈8.2 kpc≈2.53×1020 m",
+    "equations": [
+      "r≈8.2 kpc≈2.53×1020 m"
+    ]
+  },
+  {
+    "paragraph": 359,
+    "style": [],
+    "text": "(25)",
+    "equations": []
+  },
+  {
+    "paragraph": 361,
+    "style": [],
+    "text": "Nesta seção, as distâncias são expressas em quiloparsecs (kpc), unidade amplamente utilizada em Astronomia, sendo 1 kpc equivalente a 1.000 parsecs, ou aproximadamente 3.260 anos-luz. Considerando a massa bariônica da Via Láctea contida no interior de aproximadamente 8.2 kpc, adota-se a estimativa (BLAND-HAWTHORN; GERHARD, 2016):",
+    "equations": [
+      "8.2 kpc"
+    ]
+  },
+  {
+    "paragraph": 364,
+    "style": [],
+    "text": "M≈6×1010M⊙",
+    "equations": [
+      "M≈6×1010M⊙"
+    ]
+  },
+  {
+    "paragraph": 365,
+    "style": [],
+    "text": "(26)",
+    "equations": []
+  },
+  {
+    "paragraph": 370,
+    "style": [],
+    "text": "Com M⊙=1.989×1030 kg resultando em (SPOHN et al., 2014):",
+    "equations": [
+      "M⊙=1.989×1030 kg"
+    ]
+  },
+  {
+    "paragraph": 372,
+    "style": [],
+    "text": "M≈1.19×1041 kg",
+    "equations": [
+      "M≈1.19×1041 kg"
+    ]
+  },
+  {
+    "paragraph": 373,
+    "style": [],
+    "text": "(27)",
+    "equations": []
+  },
+  {
+    "paragraph": 377,
+    "style": [],
+    "text": "O valor da constante gravitacional (SPOHN et al., 2014):",
+    "equations": []
+  },
+  {
+    "paragraph": 379,
+    "style": [],
+    "text": "G=6.672×10-11 m3 kg-1 s-2",
+    "equations": [
+      "G=6.672×10-11 m3 kg-1 s-2"
+    ]
+  },
+  {
+    "paragraph": 380,
+    "style": [],
+    "text": "(28)",
+    "equations": []
+  },
+  {
+    "paragraph": 384,
+    "style": [],
+    "text": "A velocidade teórica prevista pelo modelo kepleriano é:",
+    "equations": []
+  },
+  {
+    "paragraph": 386,
+    "style": [],
+    "text": "v≈1.77×105 m/s≈177 km/s",
+    "equations": [
+      "v≈1.77×105 m/s≈177 km/s"
+    ]
+  },
+  {
+    "paragraph": 387,
+    "style": [],
+    "text": "(29)",
+    "equations": []
+  },
+  {
+    "paragraph": 389,
+    "style": [],
+    "text": "Entretanto, medições observacionais indicam que a velocidade orbital do Sol em torno do centro da Via Láctea está no intervalo de aproximadamente 220 a 240km/s (REID et al., 2014). Dessa forma, observa-se uma discrepância significativa entre o valor teórico previsto pelo modelo kepleriano e o valor observado.",
+    "equations": []
+  },
+  {
+    "paragraph": 390,
+    "style": [],
+    "text": "A discrepância observada entre a previsão kepleriana e os dados experimentais sugere que a massa da galáxia não está concentrada em uma região central, mas distribuída ao longo de diferentes componentes estruturais. Para descrever de forma mais realista a dinâmica galáctica, é necessário considerar modelos que levem em conta essa distribuição de massa. Nesse contexto, pode-se modelar o potencial gravitacional da galáxia como a superposição de três componentes principais: o bojo central, o disco estelar e um halo estendido. Assim, o potencial total pode ser escrito como:",
+    "equations": []
+  },
+  {
+    "paragraph": 392,
+    "style": [],
+    "text": "Φtotalr=Φbojor+Φdiscor+Φhalor",
+    "equations": [
+      "Φtotalr=Φbojor+Φdiscor+Φhalor"
+    ]
+  },
+  {
+    "paragraph": 393,
+    "style": [],
+    "text": "(30)",
+    "equations": []
+  },
+  {
+    "paragraph": 395,
+    "style": [
+      "Ttulo3"
+    ],
+    "text": "3.1 Bojo Galáctico",
+    "equations": []
+  },
+  {
+    "paragraph": 396,
+    "style": [],
+    "text": "O bojo galáctico corresponde à região central da galáxia, caracterizada por uma alta concentração de massa distribuída de forma aproximadamente esfericamente simétrica. Essa componente é composta majoritariamente por estrelas antigas, com baixa metalicidade, além de apresentar pouca quantidade de gás e poeira quando comparada ao disco galáctico. Como consequência, o bojo possui uma densidade estelar muito elevada e uma estrutura mais compacta e dinâmica, com movimentos estelares predominantemente aleatórios, diferentemente do disco, onde as estrelas seguem órbitas aproximadamente circulares.",
+    "equations": []
+  },
+  {
+    "paragraph": 397,
+    "style": [],
+    "text": "Do ponto de vista estrutural, o bojo pode ser interpretado como uma componente dominada pela dispersão de velocidades, ou seja, as estrelas não estão organizadas em órbitas ordenadas, mas sim em trajetórias com diferentes inclinações e direções. Isso resulta em uma configuração aproximadamente esférica e isotrópica, justificando o uso de modelos esfericamente simétricos para descrever sua distribuição de massa.",
+    "equations": []
+  },
+  {
+    "paragraph": 398,
+    "style": [],
+    "text": "Em termos gravitacionais, o bojo desempenha um papel fundamental nas regiões internas da galáxia. Devido à sua alta concentração de massa, ele é a principal fonte do campo gravitacional próximo ao centro galáctico, determinando a dinâmica das estrelas que orbitam nessas regiões. A aceleração gravitacional gerada pelo bojo decai com a distância, uma vez que a maior parte de sua massa está confinada em pequenos raios. Assim, para distâncias muito maiores que seu raio de escala, sua contribuição se torna progressivamente menos relevante.",
+    "equations": []
+  },
+  {
+    "paragraph": 399,
+    "style": [],
+    "text": "No contexto da dinâmica do Sol, que se encontra a aproximadamente 8.2 kpc do centro galáctico, o efeito do bojo já é significativamente reduzido. Nessa região, a maior parte da massa do bojo encontra-se no interior da órbita solar, fazendo com que sua contribuição gravitacional se comporte de maneira semelhante à de uma massa central efetiva. Ainda assim, sua influência não é nula, participando da composição do potencial gravitacional total da galáxia.",
+    "equations": []
+  },
+  {
+    "paragraph": 400,
+    "style": [],
+    "text": "Fisicamente, isso significa que o bojo contribui para “ancorar” gravitacionalmente as regiões internas da galáxia, mas não é capaz, por si só, de explicar o comportamento das velocidades orbitais em grandes distâncias. Sua principal importância reside, portanto, na descrição da dinâmica central da galáxia e na definição das condições iniciais do campo gravitacional que será posteriormente modificado pelas contribuições do disco e, principalmente, do halo galáctico.",
+    "equations": []
+  },
+  {
+    "paragraph": 401,
+    "style": [],
+    "text": "Para descrever quantitativamente essa distribuição de massa concentrada na região central, adota-se um modelo analítico para o bojo galáctico. Uma das parametrizações mais utilizadas na literatura é o perfil de Hernquist, que fornece uma descrição esfericamente simétrica com massa total finita e comportamento adequado tanto nas regiões internas quanto externas. Nesse modelo, a densidade volumétrica do bojo é expressa por (HERNQUIST, 1990):",
+    "equations": []
+  },
+  {
+    "paragraph": 403,
+    "style": [],
+    "text": "ρbr=Mb2πabrr+ab3",
+    "equations": [
+      "ρbr=Mb2πabrr+ab3"
+    ]
+  },
+  {
+    "paragraph": 404,
+    "style": [],
+    "text": "(31)",
+    "equations": []
+  },
+  {
+    "paragraph": 406,
+    "style": [],
+    "text": "A grandeza ρb​(r) representa a densidade volumétrica de massa do bojo em função da distância r ao centro galáctico, indicando como a matéria está distribuída espacialmente nessa região. O parâmetro r corresponde à coordenada radial medida a partir do centro da galáxia, sendo a variável que determina como a densidade varia ao longo da estrutura do bojo.",
+    "equations": []
+  },
+  {
+    "paragraph": 407,
+    "style": [],
+    "text": "A quantidade Mb​ denota a massa total do bojo galáctico, ou seja, a massa integrada em todo o volume dessa componente. Esse parâmetro define a intensidade global do campo gravitacional gerado pelo bojo, uma vez que está diretamente relacionado à quantidade total de matéria presente nessa região. Já o parâmetro ab​ é conhecido como raio de escala e caracteriza o tamanho típico do bojo, controlando a taxa com que a densidade decai com a distância. Valores menores de ab​ correspondem a uma distribuição mais concentrada, enquanto valores maiores indicam um bojo mais estendido.",
+    "equations": []
+  },
+  {
+    "paragraph": 408,
+    "style": [],
+    "text": "O fator 2π no denominador surge da normalização da distribuição de densidade, garantindo que, ao integrar ρb(r) sobre todo o espaço, o resultado seja exatamente a massa total Mb​. Por fim, a dependência funcional r(r+ab​)3 no denominador determina o comportamento da densidade em diferentes regimes: para pequenas distâncias, a densidade cresce rapidamente, refletindo a alta concentração de massa no centro, enquanto para grandes distâncias ela decai aproximadamente como r −4, assegurando que a massa total do bojo seja finita e que sua influência gravitacional diminua de forma significativa nas regiões externas da galáxia.",
+    "equations": []
+  },
+  {
+    "paragraph": 409,
+    "style": [],
+    "text": "A massa acumulada até um raio r, denotada por M(r), é obtida a partir da integração da densidade volumétrica sobre um volume esfericamente simétrico:",
+    "equations": []
+  },
+  {
+    "paragraph": 411,
+    "style": [],
+    "text": "Mr=0r4πr'2ρbr' dr'",
+    "equations": [
+      "Mr=0r4πr'2ρbr' dr'"
+    ]
+  },
+  {
+    "paragraph": 412,
+    "style": [],
+    "text": "(32)",
+    "equations": []
+  },
+  {
+    "paragraph": 414,
+    "style": [],
+    "text": "Substituindo a expressão da densidade do perfil de Hernquist, dada pela equação (31), na definição da massa acumulada e efetuando diretamente a integração ao longo do volume esfericamente simétrico, obtém-se a seguinte expressão para a massa contida no interior de um raio r:",
+    "equations": []
+  },
+  {
+    "paragraph": 416,
+    "style": [],
+    "text": "Mr=Mbr2r+ab2",
+    "equations": [
+      "Mr=Mbr2r+ab2"
+    ]
+  },
+  {
+    "paragraph": 417,
+    "style": [],
+    "text": "(33)",
+    "equations": []
+  },
+  {
+    "paragraph": 419,
+    "style": [],
+    "text": "Essa expressão evidencia como a massa do bojo se distribui em função da distância ao centro galáctico. Em regiões muito próximas ao centro, isto é, para r≪ab​, a massa cresce aproximadamente com o quadrado da distância, M(r) ∼ r2, indicando uma forte concentração de matéria nas regiões centrais. Por outro lado, para distâncias muito maiores que o raio de escala, r ≫ ab​, a massa acumulada tende assintoticamente ao valor total Mb ​, o que mostra que praticamente toda a massa do bojo já está contida nas regiões internas, fazendo com que sua contribuição gravitacional se torne cada vez menos significativa em grandes escalas.",
+    "equations": []
+  },
+  {
+    "paragraph": 421,
+    "style": [],
+    "text": "Para obter o potencial gravitacional associado ao bojo galáctico, parte-se da descrição do campo gravitacional gerado por uma distribuição de massa esfericamente simétrica. Nessa situação, o campo gravitacional em uma distância r do centro depende apenas da massa contida no interior desse raio. Dessa forma, utiliza-se a expressão do campo gravitacional newtoniano para uma distribuição esfericamente simétrica, sendo dada pela equação abaixo.",
+    "equations": []
+  },
+  {
+    "paragraph": 423,
+    "style": [],
+    "text": "gr=-GMrr2",
+    "equations": [
+      "gr=-GMrr2"
+    ]
+  },
+  {
+    "paragraph": 424,
+    "style": [],
+    "text": "(34)",
+    "equations": []
+  },
+  {
+    "paragraph": 426,
+    "style": [],
+    "text": "Porém esse campo aponta para o centro, então vetorialmente:",
+    "equations": []
+  },
+  {
+    "paragraph": 428,
+    "style": [],
+    "text": "gr=-GMrr2 r",
+    "equations": [
+      "gr=-GMrr2 r"
+    ]
+  },
+  {
+    "paragraph": 429,
+    "style": [],
+    "text": "(35)",
+    "equations": []
+  },
+  {
+    "paragraph": 431,
+    "style": [],
+    "text": "A partir dessa expressão, observa-se que o campo gravitacional está diretamente relacionado à variação espacial do potencial gravitacional. Como a gravidade é uma força conservativa, é possível definir uma função escalar Φ(r) tal que o campo seja obtido a partir de sua derivada radial. Dessa forma, a relação entre essas grandezas é dada por:",
+    "equations": []
+  },
+  {
+    "paragraph": 433,
+    "style": [],
+    "text": "gr=-∇Φr",
+    "equations": [
+      "gr=-∇Φr"
+    ]
+  },
+  {
+    "paragraph": 434,
+    "style": [],
+    "text": "(36)",
+    "equations": []
+  },
+  {
+    "paragraph": 436,
+    "style": [],
+    "text": "No caso de simetria esférica, essa expressão se reduz apenas à componente radial, resultando em:",
+    "equations": []
+  },
+  {
+    "paragraph": 439,
+    "style": [],
+    "text": "gr=-dΦdrr",
+    "equations": [
+      "gr=-dΦdrr"
+    ]
+  },
+  {
+    "paragraph": 440,
+    "style": [],
+    "text": "(37)",
+    "equations": []
+  },
+  {
+    "paragraph": 445,
+    "style": [],
+    "text": "De forma equivalente, o potencial gravitacional pode ser obtido a partir do campo por integração:",
+    "equations": []
+  },
+  {
+    "paragraph": 447,
+    "style": [],
+    "text": "Φr=-gr dr",
+    "equations": [
+      "Φr=-gr dr"
+    ]
+  },
+  {
+    "paragraph": 448,
+    "style": [],
+    "text": "(38)",
+    "equations": []
+  },
+  {
+    "paragraph": 450,
+    "style": [],
+    "text": "A integral acima é direta, resultando em:",
+    "equations": []
+  },
+  {
+    "paragraph": 452,
+    "style": [],
+    "text": "Φbr=-GMbr+ab",
+    "equations": [
+      "Φbr=-GMbr+ab"
+    ]
+  },
+  {
+    "paragraph": 453,
+    "style": [],
+    "text": "(39)",
+    "equations": []
+  },
+  {
+    "paragraph": 456,
+    "style": [
+      "Ttulo3"
+    ],
+    "text": "3.2 Disco Galáctico",
+    "equations": []
+  },
+  {
+    "paragraph": 457,
+    "style": [],
+    "text": "O disco galáctico é uma das principais componentes estruturais de uma galáxia espiral. Diferentemente do bojo, que pode ser aproximado por uma distribuição de massa aproximadamente esférica, o disco possui uma geometria achatada, com sua massa distribuída preferencialmente ao longo do plano galáctico. Essa estrutura contém grande parte das estrelas, gás e poeira da galáxia, além de ser a região onde se encontram os braços espirais e onde ocorre intensa formação estelar.",
+    "equations": []
+  },
+  {
+    "paragraph": 458,
+    "style": [],
+    "text": "Do ponto de vista dinâmico, o disco é caracterizado por movimentos predominantemente rotacionais. As estrelas presentes nessa componente descrevem órbitas aproximadamente circulares ao redor do centro galáctico, principalmente nas regiões próximas ao plano médio da galáxia. Por esse motivo, a descrição do disco é feita de maneira mais natural em coordenadas cilíndricas (R,ϕ,z), nas quais R representa a distância radial ao eixo de simetria da galáxia, ϕ representa o ângulo azimutal e z representa a altura em relação ao plano galáctico.",
+    "equations": []
+  },
+  {
+    "paragraph": 459,
+    "style": [],
+    "text": "Como primeira etapa, considera-se o potencial gravitacional newtoniano gerado por uma massa pontual M. Para uma partícula localizada a uma distância r dessa massa, o potencial gravitacional é dado por:",
+    "equations": []
+  },
+  {
+    "paragraph": 461,
+    "style": [],
+    "text": "Φr=-GMr",
+    "equations": [
+      "Φr=-GMr"
+    ]
+  },
+  {
+    "paragraph": 462,
+    "style": [],
+    "text": "(40)",
+    "equations": []
+  },
+  {
+    "paragraph": 463,
+    "style": [],
+    "text": "Essa expressão descreve corretamente o potencial de uma distribuição de massa esfericamente simétrica ou de uma massa concentrada em um ponto. Entretanto, o disco galáctico não possui essa geometria. Sua massa não está concentrada apenas no centro, mas distribuída ao longo de uma região extensa e achatada. Portanto, o potencial de uma massa pontual não é suficiente para representar adequadamente a contribuição gravitacional do disco.",
+    "equations": []
+  },
+  {
+    "paragraph": 464,
+    "style": [],
+    "text": "Em coordenadas cilíndricas, a distância esférica até a origem pode ser escrita como:",
+    "equations": []
+  },
+  {
+    "paragraph": 466,
+    "style": [],
+    "text": "r=R2+z2",
+    "equations": [
+      "r=R2+z2"
+    ]
+  },
+  {
+    "paragraph": 467,
+    "style": [],
+    "text": "(41)",
+    "equations": []
+  },
+  {
+    "paragraph": 472,
+    "style": [],
+    "text": "Substituindo essa relação no potencial newtoniano, obtém-se:",
+    "equations": []
+  },
+  {
+    "paragraph": 473,
+    "style": [],
+    "text": "       ",
+    "equations": []
+  },
+  {
+    "paragraph": 474,
+    "style": [],
+    "text": "ΦR,z=-GMR2+z2",
+    "equations": [
+      "ΦR,z=-GMR2+z2"
+    ]
+  },
+  {
+    "paragraph": 475,
+    "style": [],
+    "text": "(42)",
+    "equations": []
+  },
+  {
+    "paragraph": 477,
+    "style": [],
+    "text": "Essa expressão ainda representa um potencial esférico, pois depende apenas da distância total até a origem. O problema é que, para um disco galáctico, deseja-se uma expressão que diferencie a direção radial R da direção vertical z, já que o disco é muito mais extenso no plano galáctico do que na direção perpendicular a ele.",
+    "equations": []
+  },
+  {
+    "paragraph": 478,
+    "style": [],
+    "text": "Para construir um potencial mais adequado para uma estrutura achatada, parte-se da ideia de modificar a dependência vertical do potencial. Em vez de usar diretamente z, introduz-se um parâmetro bd​, associado à espessura vertical do disco. Assim, considera-se a substituição:",
+    "equations": []
+  },
+  {
+    "paragraph": 480,
+    "style": [],
+    "text": "z⟶z2+bd2",
+    "equations": [
+      "z⟶z2+bd2"
+    ]
+  },
+  {
+    "paragraph": 481,
+    "style": [],
+    "text": "(43)",
+    "equations": []
+  },
+  {
+    "paragraph": 483,
+    "style": [],
+    "text": "Isso evita que o potencial tenha comportamento singular no plano do disco e permite representar uma distribuição de massa com espessura vertical finita. O parâmetro bd​, portanto, controla o quanto o disco é espesso na direção vertical. Se bd​ for pequeno, o disco se aproxima de um disco fino; se bd for maior, a distribuição se torna mais espessa.",
+    "equations": []
+  },
+  {
+    "paragraph": 484,
+    "style": [],
+    "text": "No entanto, somente modificar a coordenada vertical ainda não é suficiente para representar a extensão radial do disco. O disco galáctico também possui uma escala radial característica, associada ao fato de que a massa não está concentrada apenas no centro, mas espalhada ao longo do plano. Para representar essa extensão radial, introduz-se outro parâmetro, ad​, chamado de escala radial do disco.",
+    "equations": []
+  },
+  {
+    "paragraph": 485,
+    "style": [],
+    "text": "Assim, a dependência vertical modificada passa a aparecer somada a ad​:",
+    "equations": []
+  },
+  {
+    "paragraph": 488,
+    "style": [],
+    "text": "ad+z2+bd2",
+    "equations": [
+      "ad+z2+bd2"
+    ]
+  },
+  {
+    "paragraph": 489,
+    "style": [],
+    "text": "(44)",
+    "equations": []
+  },
+  {
+    "paragraph": 490,
+    "style": [],
+    "text": "Esse termo representa uma espécie de distância vertical efetiva, ajustada para levar em conta tanto a espessura quanto a extensão radial da distribuição de massa. Com isso, a distância efetiva que aparece no potencial deixa de ser simplesmente:",
+    "equations": []
+  },
+  {
+    "paragraph": 492,
+    "style": [],
+    "text": "R2+z2",
+    "equations": [
+      "R2+z2"
+    ]
+  },
+  {
+    "paragraph": 493,
+    "style": [],
+    "text": "(45)",
+    "equations": []
+  },
+  {
+    "paragraph": 495,
+    "style": [],
+    "text": "E passa a ser escrita como:",
+    "equations": []
+  },
+  {
+    "paragraph": 497,
+    "style": [],
+    "text": "R2+ad+z2+bd22",
+    "equations": [
+      "R2+ad+z2+bd22"
+    ]
+  },
+  {
+    "paragraph": 498,
+    "style": [],
+    "text": "(46)",
+    "equations": []
+  },
+  {
+    "paragraph": 500,
+    "style": [],
+    "text": "Substituindo essa distância efetiva no potencial gravitacional newtoniano, obtém-se o potencial de Miyamoto–Nagai para o disco galáctico:",
+    "equations": []
+  },
+  {
+    "paragraph": 502,
+    "style": [],
+    "text": "ΦdR,z=-GMdR2+ad+z2+bd22",
+    "equations": [
+      "ΦdR,z=-GMdR2+ad+z2+bd22"
+    ]
+  },
+  {
+    "paragraph": 503,
+    "style": [],
+    "text": "(47)",
+    "equations": []
+  },
+  {
+    "paragraph": 506,
+    "style": [],
+    "text": "A estrutura matemática dessa expressão mostra que o potencial depende simultaneamente da posição radial e da altura em relação ao plano do disco. O denominador pode ser interpretado como uma distância efetiva ao centro gravitacional da distribuição de massa. Diferentemente do potencial de uma massa pontual, no qual a dependência espacial é dada apenas pela distância geométrica r=R2+z2​, o modelo de Miyamoto–Nagai introduz uma modificação que incorpora explicitamente a geometria achatada característica dos discos galácticos.",
+    "equations": [
+      "r=R2+z2"
+    ]
+  },
+  {
+    "paragraph": 507,
+    "style": [],
+    "text": "O termo R2 descreve a dependência radial do potencial no plano da galáxia. À medida que R aumenta, o denominador torna-se maior em módulo, fazendo com que o potencial gravitacional diminua gradualmente. Esse comportamento reflete o enfraquecimento da atração gravitacional com a distância ao centro galáctico. Dessa forma, o potencial de Miyamoto–Nagai fornece uma representação analítica simples e fisicamente consistente de um disco galáctico de espessura finita. Essa característica torna o modelo particularmente adequado para estudos de dinâmica orbital, pois permite calcular de forma contínua e estável as acelerações gravitacionais em três dimensões.",
+    "equations": []
+  },
+  {
+    "paragraph": 509,
+    "style": [
+      "Ttulo3"
+    ],
+    "text": "3.3 Matéria Escura",
+    "equations": []
+  },
+  {
+    "paragraph": 511,
+    "style": [],
+    "text": "A análise das curvas de rotação de galáxias espirais revelou um resultado fundamental para a astrofísica moderna. De acordo com a dinâmica newtoniana, seria esperado que, em regiões suficientemente afastadas do centro galáctico, a velocidade orbital das estrelas diminuísse com a distância, uma vez que a maior parte da massa visível se encontra concentrada nas regiões centrais. No entanto, observações mostram que, em muitas galáxias, as velocidades de rotação permanecem aproximadamente constantes mesmo em grandes distâncias radiais.",
+    "equations": []
+  },
+  {
+    "paragraph": 512,
+    "style": [],
+    "text": "Esse comportamento indica que o campo gravitacional observado não pode ser explicado apenas pela matéria luminosa, composta por estrelas, gás e poeira interestelar. Para reconciliar teoria e observação, propõe-se a existência de uma componente adicional de massa, distribuída de forma extensa ao redor da galáxia e que interage gravitacionalmente, mas não emite, absorve ou reflete radiação eletromagnética de maneira detectável. Essa componente é denominada matéria escura.",
+    "equations": []
+  },
+  {
+    "paragraph": 513,
+    "style": [],
+    "text": "No contexto das galáxias espirais, a matéria escura é usualmente modelada como um halo aproximadamente esférico que envolve o disco e o bojo. Sua contribuição torna-se particularmente importante nas regiões externas da galáxia, onde a densidade de matéria visível decai significativamente, mas as velocidades orbitais permanecem elevadas, assim como descrito na figura 3.",
+    "equations": []
+  },
+  {
+    "paragraph": 514,
+    "style": [],
+    "text": "Figura 3: Representação esquemática de uma galáxia espiral envolvida por um halo aproximadamente esférico de matéria escura. O disco e o bojo correspondem à matéria visível da galáxia, enquanto a região azul translúcida representa o halo de matéria escura. As setas indicam as velocidades orbitais das estrelas e do gás nas regiões externas, que permanecem elevadas mesmo com a diminuição da densidade de matéria visível.",
+    "equations": []
+  },
+  {
+    "paragraph": 515,
+    "style": [],
+    "text": "Fonte: Desenvolvido pelo autor.",
+    "equations": []
+  },
+  {
+    "paragraph": 517,
+    "style": [],
+    "text": "Do ponto de vista dinâmico, a presença do halo de matéria escura modifica o potencial gravitacional total da galáxia e, consequentemente, altera as órbitas estelares. No caso da Via Láctea, essa componente desempenha papel fundamental na determinação da curva de rotação global e na descrição do movimento orbital do Sol em torno do centro galáctico.",
+    "equations": []
+  },
+  {
+    "paragraph": 518,
+    "style": [],
+    "text": "O perfil NFW (Navarro–Frenk–White) é um modelo matemático utilizado para descrever a distribuição de densidade da matéria escura em halos galácticos. Esse perfil foi proposto por Julio Navarro, Carlos Frenk e Simon White a partir de simulações cosmológicas numéricas. A equação do perfil NFW é dada por:",
+    "equations": []
+  },
+  {
+    "paragraph": 520,
+    "style": [],
+    "text": "ρr=ρ0rrs1+rrs2",
+    "equations": [
+      "ρr=ρ0rrs1+rrs2"
+    ]
+  },
+  {
+    "paragraph": 521,
+    "style": [],
+    "text": "(48)",
+    "equations": []
+  },
+  {
+    "paragraph": 523,
+    "style": [],
+    "text": "Na equação do perfil NFW, ρ(r) representa a densidade da matéria escura em função da distância ao centro da galáxia, enquanto ρ0​ corresponde a uma densidade característica do halo. O termo rs define o raio de escala do halo de matéria escura, e r representa a distância radial em relação ao centro galáctico. É possível determinar a massa acumulada dentro de um raio r. Para isso, integra-se a densidade sobre o volume esférico do halo:",
+    "equations": []
+  },
+  {
+    "paragraph": 526,
+    "style": [],
+    "text": "Mr=4π0rρr'r'2 dr'",
+    "equations": [
+      "Mr=4π0rρr'r'2 dr'"
+    ]
+  },
+  {
+    "paragraph": 527,
+    "style": [],
+    "text": "(49)",
+    "equations": []
+  },
+  {
+    "paragraph": 529,
+    "style": [],
+    "text": "Substituindo o perfil NFW (53) na integral (54) e resolvendo, obtém-se:",
+    "equations": []
+  },
+  {
+    "paragraph": 532,
+    "style": [],
+    "text": "Mr=4πρ0rs3ln1+rrs-r/rs1+r/rs",
+    "equations": [
+      "Mr=4πρ0rs3ln1+rrs-r/rs1+r/rs"
+    ]
+  },
+  {
+    "paragraph": 533,
+    "style": [],
+    "text": "(50)",
+    "equations": []
+  },
+  {
+    "paragraph": 535,
+    "style": [],
+    "text": "Essa expressão fornece a massa total de matéria escura contida até uma distância r do centro da galáxia. Ela é muito utilizada em estudos de curvas de rotação, pois permite relacionar a distribuição de matéria escura com as velocidades orbitais observadas nas regiões externas das galáxias espirais.",
+    "equations": []
+  },
+  {
+    "paragraph": 536,
+    "style": [],
+    "text": "Para o perfil NFW, o comportamento da massa M(r) pode ser analisado em dois casos principais.",
+    "equations": []
+  },
+  {
+    "paragraph": 537,
+    "style": [],
+    "text": "Quando r ≪ rs​, ou seja, em regiões muito próximas ao centro da galáxia, a densidade apresenta comportamento aproximadamente inversamente proporcional ao raio. Nesse limite, a massa cresce aproximadamente como:",
+    "equations": []
+  },
+  {
+    "paragraph": 539,
+    "style": [],
+    "text": "Mr∝r2",
+    "equations": [
+      "Mr∝r2"
+    ]
+  },
+  {
+    "paragraph": 540,
+    "style": [],
+    "text": "(51)",
+    "equations": []
+  },
+  {
+    "paragraph": 542,
+    "style": [],
+    "text": "Isso indica que, nas regiões centrais, a massa aumenta rapidamente com a distância ao centro.",
+    "equations": []
+  },
+  {
+    "paragraph": 543,
+    "style": [],
+    "text": "Já para r ≫ rs​, correspondente às regiões externas do halo, a densidade decai aproximadamente com 1/r3. Nesse caso, a massa passa a crescer de forma logarítmica:",
+    "equations": []
+  },
+  {
+    "paragraph": 545,
+    "style": [],
+    "text": "Mr∝lnr",
+    "equations": [
+      "Mr∝lnr"
+    ]
+  },
+  {
+    "paragraph": 546,
+    "style": [],
+    "text": "(52)",
+    "equations": []
+  },
+  {
+    "paragraph": 548,
+    "style": [],
+    "text": "Assim, a massa continua aumentando mesmo em grandes distâncias, porém de maneira muito mais lenta. Para determinar o potencial gravitacional, parte-se da relação entre a força gravitacional e o potencial, obtida por meio da derivada do potencial em relação à distância radial.",
+    "equations": []
+  },
+  {
+    "paragraph": 550,
+    "style": [],
+    "text": "fr=-dΦdr",
+    "equations": [
+      "fr=-dΦdr"
+    ]
+  },
+  {
+    "paragraph": 551,
+    "style": [],
+    "text": "(53)",
+    "equations": []
+  },
+  {
+    "paragraph": 553,
+    "style": [],
+    "text": "Porém, integrando a equação (57) em relação à distância radial:",
+    "equations": []
+  },
+  {
+    "paragraph": 555,
+    "style": [],
+    "text": "Φ=-fr dr",
+    "equations": [
+      "Φ=-fr dr"
+    ]
+  },
+  {
+    "paragraph": 556,
+    "style": [],
+    "text": "(54)",
+    "equations": []
+  },
+  {
+    "paragraph": 558,
+    "style": [],
+    "text": " A força gravitacional em simetria esférica é dada por:",
+    "equations": []
+  },
+  {
+    "paragraph": 560,
+    "style": [],
+    "text": "fr=GMrr2",
+    "equations": [
+      "fr=GMrr2"
+    ]
+  },
+  {
+    "paragraph": 561,
+    "style": [],
+    "text": "(55)",
+    "equations": []
+  },
+  {
+    "paragraph": 563,
+    "style": [],
+    "text": "Substituindo a equação (55), correspondente à massa M(r), na equação (59), obtém-se a expressão da força gravitacional em função do raio. Em seguida, substituindo a equação (59) na equação (58), torna-se possível determinar o potencial gravitacional do halo de matéria escura descrito pelo perfil NFW.",
+    "equations": []
+  },
+  {
+    "paragraph": 565,
+    "style": [],
+    "text": "ϕ=-G4πρ0rs3r2ln1+rrs-rr+rsdr",
+    "equations": [
+      "ϕ=-G4πρ0rs3r2ln1+rrs-rr+rsdr"
+    ]
+  },
+  {
+    "paragraph": 566,
+    "style": [],
+    "text": "(56)",
+    "equations": []
+  },
+  {
+    "paragraph": 568,
+    "style": [],
+    "text": "A fim de simplificar a expressão matemática e facilitar o desenvolvimento dos cálculos, realiza-se a substituição adimensional",
+    "equations": []
+  },
+  {
+    "paragraph": 570,
+    "style": [],
+    "text": "x=rrs",
+    "equations": [
+      "x=rrs"
+    ]
+  },
+  {
+    "paragraph": 571,
+    "style": [],
+    "text": "(57)",
+    "equations": []
+  },
+  {
+    "paragraph": 573,
+    "style": [],
+    "text": "Utilizando a equação (61) e realizando a substituição adimensional:",
+    "equations": []
+  },
+  {
+    "paragraph": 576,
+    "style": [],
+    "text": "ϕ=-4πGρ0rs2ln1+x-x1+xx2 dx",
+    "equations": [
+      "ϕ=-4πGρ0rs2ln1+x-x1+xx2 dx"
+    ]
+  },
+  {
+    "paragraph": 577,
+    "style": [],
+    "text": "(58)",
+    "equations": []
+  },
+  {
+    "paragraph": 580,
+    "style": [],
+    "text": "Separando a integral em dois termos, a expressão do potencial gravitacional pode ser escrita como:",
+    "equations": []
+  },
+  {
+    "paragraph": 582,
+    "style": [],
+    "text": "ϕ=-4πGρ0rs2ln1+xx2 dx-1x1+x dx",
+    "equations": [
+      "ϕ=-4πGρ0rs2ln1+xx2 dx-1x1+x dx"
+    ]
+  },
+  {
+    "paragraph": 583,
+    "style": [],
+    "text": "(59)",
+    "equations": []
+  },
+  {
+    "paragraph": 586,
+    "style": [],
+    "text": "A segunda integral pode ser resolvida por decomposição em frações parciais, enquanto a primeira integral é resolvida por integração por partes. Após a resolução das integrais e a simplificação algébrica dos termos obtidos, chega-se à expressão do potencial gravitacional do perfil NFW:",
+    "equations": []
+  },
+  {
+    "paragraph": 588,
+    "style": [],
+    "text": "ϕx=-4πGρ0rs2ln1+xx",
+    "equations": [
+      "ϕx=-4πGρ0rs2ln1+xx"
+    ]
+  },
+  {
+    "paragraph": 589,
+    "style": [],
+    "text": "(60)",
+    "equations": []
+  },
+  {
+    "paragraph": 591,
+    "style": [],
+    "text": "Lembrando que x está definido na equação (61), logo:",
+    "equations": []
+  },
+  {
+    "paragraph": 593,
+    "style": [],
+    "text": "ϕr=-4πGρ0rs3ln1+r/rsr",
+    "equations": [
+      "ϕr=-4πGρ0rs3ln1+r/rsr"
+    ]
+  },
+  {
+    "paragraph": 594,
+    "style": [],
+    "text": "(61)",
+    "equations": []
+  },
+  {
+    "paragraph": 596,
+    "style": [],
+    "text": "A expressão (65) corresponde ao potencial gravitacional associado ao perfil de densidade NFW. Essa formulação é amplamente utilizada na descrição de halos de matéria escura em galáxias espirais e foi obtida a partir do perfil proposto por Julio Navarro, Carlos Frenk e Simon White em simulações cosmológicas numéricas.",
+    "equations": []
+  },
+  {
+    "paragraph": 597,
+    "style": [],
+    "text": "Nessa equação, G representa a constante gravitacional, ρ0​ corresponde à densidade característica do halo e rs define o raio de escala da distribuição de matéria escura. O termo logarítmico indica que o potencial varia de maneira gradual nas regiões externas da galáxia, refletindo a natureza extensa do halo de matéria escura. O sinal negativo evidencia o caráter atrativo da interação gravitacional, responsável por manter estrelas e gás ligados gravitacionalmente ao sistema galáctico.",
+    "equations": []
+  },
+  {
+    "paragraph": 599,
+    "style": [],
+    "text": "Utilizando então as equações (30), (39), (52) e (63), correspondentes aos potenciais gravitacionais das diferentes componentes da galáxia, obtém-se:",
+    "equations": []
+  },
+  {
+    "paragraph": 601,
+    "style": [],
+    "text": "ΦtotalR,z=-GMbr+ab-GMdR2+ad+z2+bd22-4πGρ0rs3ln1+r/rsr",
+    "equations": [
+      "ΦtotalR,z=-GMbr+ab-GMdR2+ad+z2+bd22-4πGρ0rs3ln1+r/rsr"
+    ]
+  },
+  {
+    "paragraph": 602,
+    "style": [],
+    "text": "(62)",
+    "equations": []
+  },
+  {
+    "paragraph": 604,
+    "style": [],
+    "text": "A equação (66) representa o potencial gravitacional total da galáxia, considerando as contribuições do bojo, do disco e do halo de matéria escura. Cada termo da equação descreve a influência gravitacional de uma componente específica da estrutura galáctica.",
+    "equations": []
+  },
+  {
+    "paragraph": 606,
+    "style": [
+      "Ttulo2"
+    ],
+    "text": " Velocidades Orbitais",
+    "equations": []
+  },
+  {
+    "paragraph": 607,
+    "style": [],
+    "text": "A partir do potencial gravitacional total da galáxia, torna-se possível determinar a velocidade orbital das estrelas e do gás em torno do centro galáctico.  A velocidade orbital descreve o movimento de rotação dos corpos sob a influência do campo gravitacional gerado pelas diferentes componentes da galáxia, incluindo o bojo, o disco e o halo de matéria escura.",
+    "equations": []
+  },
+  {
+    "paragraph": 610,
+    "style": [],
+    "text": "Vtotal2=Vbojo2+Vdisco2+Vhalo2",
+    "equations": [
+      "Vtotal2=Vbojo2+Vdisco2+Vhalo2"
+    ]
+  },
+  {
+    "paragraph": 611,
+    "style": [],
+    "text": "(63)",
+    "equations": []
+  },
+  {
+    "paragraph": 618,
+    "style": [],
+    "text": "Considerando uma estrela orbitando o centro de uma galáxia a uma distância radial r, seu movimento pode ser descrito pelo equilíbrio entre a força gravitacional exercida pela massa contida no interior de sua órbita e a força centrípeta necessária para manter o movimento circular.",
+    "equations": []
+  },
+  {
+    "paragraph": 619,
+    "style": [],
+    "text": "A força centrípeta necessária para manter a estrela em órbita é expressa por:",
+    "equations": []
+  },
+  {
+    "paragraph": 621,
+    "style": [],
+    "text": "Fc=mv2r",
+    "equations": [
+      "Fc=mv2r"
+    ]
+  },
+  {
+    "paragraph": 622,
+    "style": [],
+    "text": "(64)",
+    "equations": []
+  },
+  {
+    "paragraph": 626,
+    "style": [],
+    "text": "Como a força gravitacional (34) é a responsável por fornecer a aceleração centrípeta, pode-se igualar as duas expressões:",
+    "equations": []
+  },
+  {
+    "paragraph": 629,
+    "style": [],
+    "text": "GMmr2=mv2r",
+    "equations": [
+      "GMmr2=mv2r"
+    ]
+  },
+  {
+    "paragraph": 630,
+    "style": [],
+    "text": "(65)",
+    "equations": []
+  },
+  {
+    "paragraph": 634,
+    "style": [],
+    "text": "Cancelando a massa da estrela m em ambos os lados da equação e multiplicando a expressão por r, obtém-se:",
+    "equations": []
+  },
+  {
+    "paragraph": 637,
+    "style": [],
+    "text": "v2=rGM",
+    "equations": [
+      "v2=rGM"
+    ]
+  },
+  {
+    "paragraph": 638,
+    "style": [],
+    "text": "(66)",
+    "equations": []
+  },
+  {
+    "paragraph": 642,
+    "style": [],
+    "text": "Portanto, a velocidade circular de uma estrela orbitando sob a influência gravitacional de uma massa M é dada por:",
+    "equations": []
+  },
+  {
+    "paragraph": 645,
+    "style": [],
+    "text": "vr=GMrr",
+    "equations": [
+      "vr=GMrr"
+    ]
+  },
+  {
+    "paragraph": 646,
+    "style": [],
+    "text": "(67)",
+    "equations": []
+  },
+  {
+    "paragraph": 648,
+    "style": [
+      "Ttulo3"
+    ],
+    "text": "4.1 Velocidade orbital no bojo galáctico",
+    "equations": []
+  },
+  {
+    "paragraph": 649,
+    "style": [],
+    "text": "O bojo galáctico é geralmente modelado como uma distribuição aproximadamente esférica de matéria concentrada na região central da galáxia. Nessa aproximação, a velocidade de rotação associada ao bojo é obtida a partir da massa contida no interior do raio r, sendo dada por:",
+    "equations": []
+  },
+  {
+    "paragraph": 651,
+    "style": [],
+    "text": "Vbojor=GMbojorr",
+    "equations": [
+      "Vbojor=GMbojorr"
+    ]
+  },
+  {
+    "paragraph": 652,
+    "style": [],
+    "text": "(68)",
+    "equations": []
+  },
+  {
+    "paragraph": 656,
+    "style": [],
+    "text": "Substituindo a equação (33) em (67) temos:",
+    "equations": []
+  },
+  {
+    "paragraph": 658,
+    "style": [],
+    "text": "Vbojor=GMbrr+ab2",
+    "equations": [
+      "Vbojor=GMbrr+ab2"
+    ]
+  },
+  {
+    "paragraph": 659,
+    "style": [],
+    "text": "(69)",
+    "equations": []
+  },
+  {
+    "paragraph": 663,
+    "style": [],
+    "text": "Essa equação descreve como a velocidade orbital induzida pelo bojo varia com a distância radial. O parâmetro Mb controla a intensidade do campo gravitacional produzido pelo bojo: quanto maior a massa do bojo, maior será a velocidade de rotação associada a essa componente. Já o parâmetro ab​ determina a concentração da massa na região central da galáxia. Valores menores de ab​ indicam uma distribuição mais concentrada, enquanto valores maiores correspondem a uma distribuição mais extensa.",
+    "equations": []
+  },
+  {
+    "paragraph": 664,
+    "style": [],
+    "text": "O comportamento da equação pode ser analisado em diferentes regiões da galáxia. Nas proximidades do centro galáctico, quando r ≪ ab​, o termo (r+ab)2 pode ser aproximado para ab2​, resultando em:",
+    "equations": []
+  },
+  {
+    "paragraph": 666,
+    "style": [],
+    "text": "Vbojor≈GMbrab",
+    "equations": [
+      "Vbojor≈GMbrab"
+    ]
+  },
+  {
+    "paragraph": 667,
+    "style": [],
+    "text": "(70)",
+    "equations": []
+  },
+  {
+    "paragraph": 671,
+    "style": [],
+    "text": "Nesse regime, a velocidade cresce aproximadamente com a raiz quadrada da distância ao centro, indicando que a influência gravitacional do bojo aumenta à medida que mais massa passa a estar contida dentro da órbita considerada.",
+    "equations": []
+  },
+  {
+    "paragraph": 672,
+    "style": [],
+    "text": "Por outro lado, em grandes distâncias, quando r ≫ ab, o termo (r+ab)2 torna-se aproximadamente igual a r2. A equação passa então a ser escrita como:",
+    "equations": []
+  },
+  {
+    "paragraph": 674,
+    "style": [],
+    "text": "Vbojor≈GMbr",
+    "equations": [
+      "Vbojor≈GMbr"
+    ]
+  },
+  {
+    "paragraph": 675,
+    "style": [],
+    "text": "(71)",
+    "equations": []
+  },
+  {
+    "paragraph": 679,
+    "style": [],
+    "text": "Esse comportamento é equivalente ao de uma massa pontual e mostra que a velocidade diminui com o aumento da distância ao centro galáctico. Isso ocorre porque, em regiões muito afastadas, praticamente toda a massa do bojo já está contida no interior da órbita, fazendo com que a influência gravitacional diminua segundo a lei do inverso da distância.",
+    "equations": []
+  },
+  {
+    "paragraph": 680,
+    "style": [],
+    "text": "Consequentemente, a contribuição do bojo para a curva de rotação é mais significativa nas regiões centrais da galáxia, onde sua concentração de massa é maior. À medida que a distância radial aumenta, sua influência torna-se progressivamente menor.",
+    "equations": []
+  },
+  {
+    "paragraph": 681,
+    "style": [
+      "Ttulo3"
+    ],
+    "text": "4.2 Velocidade orbital no disco galáctico ",
+    "equations": []
+  },
+  {
+    "paragraph": 682,
+    "style": [],
+    "text": "Para encontrar a velocidade orbital associada ao disco, é necessário relacionar o potencial gravitacional com a força gravitacional. Em mecânica clássica, a aceleração gravitacional é obtida a partir do gradiente do potencial:",
+    "equations": []
+  },
+  {
+    "paragraph": 684,
+    "style": [],
+    "text": "a=-∇",
+    "equations": [
+      "a=-∇"
+    ]
+  },
+  {
+    "paragraph": 685,
+    "style": [],
+    "text": "(72)",
+    "equations": []
+  },
+  {
+    "paragraph": 689,
+    "style": [],
+    "text": "Como estamos interessados na velocidade circular no plano do disco, usamos apenas a componente radial do campo gravitacional. Em coordenadas cilíndricas, essa componente é dada por:",
+    "equations": []
+  },
+  {
+    "paragraph": 691,
+    "style": [],
+    "text": "aR=-∂Φ∂R",
+    "equations": [
+      "aR=-∂Φ∂R"
+    ]
+  },
+  {
+    "paragraph": 692,
+    "style": [],
+    "text": "(73)",
+    "equations": []
+  },
+  {
+    "paragraph": 693,
+    "style": [],
+    "text": "Para uma órbita circular, a aceleração centrípeta necessária para manter a estrela em movimento ao redor do centro galáctico é:",
+    "equations": []
+  },
+  {
+    "paragraph": 695,
+    "style": [],
+    "text": "ac=-vc2R",
+    "equations": [
+      "ac=-vc2R"
+    ]
+  },
+  {
+    "paragraph": 696,
+    "style": [],
+    "text": "(74)",
+    "equations": []
+  },
+  {
+    "paragraph": 697,
+    "style": [],
+    "text": "Igualando a aceleração gravitacional radial à aceleração centrípeta, temos:",
+    "equations": []
+  },
+  {
+    "paragraph": 699,
+    "style": [],
+    "text": "vc2R=∂Φ∂R",
+    "equations": [
+      "vc2R=∂Φ∂R"
+    ]
+  },
+  {
+    "paragraph": 700,
+    "style": [],
+    "text": "(75)",
+    "equations": []
+  },
+  {
+    "paragraph": 701,
+    "style": [],
+    "text": "Multiplicando ambos os lados por R, obtemos a relação geral para a velocidade circular em um potencial axissimétrico:",
+    "equations": []
+  },
+  {
+    "paragraph": 703,
+    "style": [],
+    "text": "vc2R=R∂Φ∂R",
+    "equations": [
+      "vc2R=R∂Φ∂R"
+    ]
+  },
+  {
+    "paragraph": 704,
+    "style": [],
+    "text": "(76)",
+    "equations": []
+  },
+  {
+    "paragraph": 705,
+    "style": [],
+    "text": "Agora aplicamos essa relação ao potencial do disco de Miyamoto–Nagai, mas para simplificar a derivada, definimos:",
+    "equations": []
+  },
+  {
+    "paragraph": 707,
+    "style": [],
+    "text": "B=ad+z2+bd2",
+    "equations": [
+      "B=ad+z2+bd2"
+    ]
+  },
+  {
+    "paragraph": 708,
+    "style": [],
+    "text": "(77)",
+    "equations": []
+  },
+  {
+    "paragraph": 709,
+    "style": [],
+    "text": "Assim, o potencial pode ser escrito como:",
+    "equations": []
+  },
+  {
+    "paragraph": 711,
+    "style": [],
+    "text": "ΦdR,z=-GMdR2+B2-1/2",
+    "equations": [
+      "ΦdR,z=-GMdR2+B2-1/2"
+    ]
+  },
+  {
+    "paragraph": 712,
+    "style": [],
+    "text": "(78)",
+    "equations": []
+  },
+  {
+    "paragraph": 713,
+    "style": [],
+    "text": "Agora derivamos em relação a R.",
+    "equations": []
+  },
+  {
+    "paragraph": 715,
+    "style": [],
+    "text": "∂Φd∂R=-GMd∂∂RR2+B2-1/2",
+    "equations": [
+      "∂Φd∂R=-GMd∂∂RR2+B2-1/2"
+    ]
+  },
+  {
+    "paragraph": 716,
+    "style": [],
+    "text": "(79)",
+    "equations": []
+  },
+  {
+    "paragraph": 717,
+    "style": [],
+    "text": "Usando a regra da cadeia:",
+    "equations": []
+  },
+  {
+    "paragraph": 719,
+    "style": [],
+    "text": "∂Φd∂R=GMdRR2+B23/2",
+    "equations": [
+      "∂Φd∂R=GMdRR2+B23/2"
+    ]
+  },
+  {
+    "paragraph": 720,
+    "style": [],
+    "text": "(80)",
+    "equations": []
+  },
+  {
+    "paragraph": 724,
+    "style": [],
+    "text": "Substituindo a equação (80) em (76) e retornando a definição de B:",
+    "equations": []
+  },
+  {
+    "paragraph": 726,
+    "style": [],
+    "text": "vd2R,z=GMdR2R2+ad+z2+bd223/2",
+    "equations": [
+      "vd2R,z=GMdR2R2+ad+z2+bd223/2"
+    ]
+  },
+  {
+    "paragraph": 727,
+    "style": [],
+    "text": "(81)",
+    "equations": []
+  },
+  {
+    "paragraph": 728,
+    "style": [],
+    "text": "Essa expressão descreve a velocidade circular produzida pela componente do disco galáctico, considerando o potencial de Miyamoto–Nagai no plano da galáxia, isto é, para z=0. Ela mostra como o disco contribui para a velocidade orbital de uma estrela localizada a uma distância radial R do centro galáctico.",
+    "equations": []
+  },
+  {
+    "paragraph": 729,
+    "style": [],
+    "text": "O termo G representa a constante gravitacional, responsável por definir a intensidade da interação gravitacional. O termo Md​ representa a massa total associada ao disco. Portanto, quanto maior for a massa do disco, maior será sua contribuição para o campo gravitacional e, consequentemente, maior será a velocidade orbital necessária para manter uma estrela em órbita circular.",
+    "equations": []
+  },
+  {
+    "paragraph": 730,
+    "style": [],
+    "text": "O raio R aparece ao quadrado no numerador. Isso significa que, próximo ao centro da galáxia, quando R é pequeno, a velocidade tende a crescer com o aumento da distância radial. De fato, para valores muito pequenos de R, o denominador varia pouco, enquanto o numerador cresce com R2. Assim, a velocidade vd(R) cresce aproximadamente de forma linear com R. Esse comportamento é fisicamente esperado, pois nas regiões centrais a contribuição dinâmica do disco aumenta à medida que se afasta do centro.",
+    "equations": []
+  },
+  {
+    "paragraph": 731,
+    "style": [],
+    "text": "O termo (ad+bd) aparece no denominador e representa a combinação entre a escala radial e a espessura vertical do disco. O parâmetro ad​ está associado ao quanto o disco é espalhado radialmente, enquanto bd está ligado à sua espessura vertical. Como estamos considerando o plano galáctico, z=0, o termo vertical  z2+bd2 se reduz a bd​, fazendo com que a distância efetiva do modelo dependa de ad+bd.",
+    "equations": [
+      "z2+bd2 "
+    ]
+  },
+  {
+    "paragraph": 732,
+    "style": [],
+    "text": "O denominador R2+ad+bd23/2 controla o enfraquecimento da contribuição gravitacional do disco com o aumento da distância. Para raios pequenos, o termo (ad+bd)2 domina. Para raios muito grandes, o termo R2 passa a dominar, e o denominador cresce aproximadamente como R3. Isso permite analisar o comportamento da equação em grandes distâncias. Quando R é muito maior que ad+bd ​, temos aproximadamente R2+ad+bd23/2≈R3.",
+    "equations": [
+      "R2+ad+bd23/2",
+      "R2+ad+bd23/2≈R3"
+    ]
+  },
+  {
+    "paragraph": 733,
+    "style": [],
+    "text": "Então a equação se aproxima de vdR≈GMdR portanto, em raios muito grandes, a contribuição do disco passa a se comportar de maneira semelhante ao caso kepleriano, diminuindo com a distância radial. Isso ocorre porque, visto de muito longe, o disco inteiro se comporta aproximadamente como uma massa concentrada em uma região central.",
+    "equations": [
+      "vdR≈GMdR"
+    ]
+  },
+  {
+    "paragraph": 734,
+    "style": [],
+    "text": "Já nas regiões internas e intermediárias, a equação não se comporta como uma velocidade kepleriana simples. Isso acontece porque o disco não é uma distribuição esférica nem uma massa pontual. Sua geometria achatada modifica o campo gravitacional, fazendo com que a velocidade dependa também dos parâmetros estruturais ad​, e não apenas da massa Md.",
+    "equations": []
+  },
+  {
+    "paragraph": 735,
+    "style": [],
+    "text": "Fisicamente, essa equação mostra que o disco contribui de maneira importante para a curva de rotação da galáxia, principalmente em regiões próximas ao plano galáctico. No caso da Via Láctea, essa contribuição é relevante para a velocidade orbital do Sol, pois o Sistema Solar está localizado dentro do disco galáctico. No entanto, em grandes raios, a contribuição do disco tende a diminuir, indicando que ele sozinho não consegue manter velocidades aproximadamente constantes nas regiões externas da galáxia.",
+    "equations": []
+  },
+  {
+    "paragraph": 737,
+    "style": [
+      "Ttulo3"
+    ],
+    "text": "4.3 Velocidade orbital no halo de matéria escura",
+    "equations": []
+  },
+  {
+    "paragraph": 739,
+    "style": [],
+    "text": "A velocidade orbital associada ao halo de matéria escura pode ser obtida a partir da mesma relação utilizada para distribuições esfericamente simétricas de massa. Como o halo é modelado aproximadamente como uma estrutura esférica envolvendo o disco e o bojo galáctico, sua contribuição para a velocidade circular depende da massa de matéria escura contida no interior do raio r, partindo da equação geral da velocidade circular (67) a contribuição do halo pode ser escrita como: ",
+    "equations": []
+  },
+  {
+    "paragraph": 741,
+    "style": [],
+    "text": "Vhalor=GMhalorr",
+    "equations": [
+      "Vhalor=GMhalorr"
+    ]
+  },
+  {
+    "paragraph": 742,
+    "style": [],
+    "text": "(82)",
+    "equations": []
+  },
+  {
+    "paragraph": 744,
+    "style": [],
+    "text": "Para o perfil NFW, a massa acumulada no interior do raio r é dada por (50), substituindo essa expressão na equação da velocidade circular, obtém-se:",
+    "equations": []
+  },
+  {
+    "paragraph": 746,
+    "style": [],
+    "text": "Vhalor=4πGρ0rs3rln1+rrs-rrs1+rrs",
+    "equations": [
+      "Vhalor=4πGρ0rs3rln1+rrs-rrs1+rrs"
+    ]
+  },
+  {
+    "paragraph": 747,
+    "style": [],
+    "text": "(83)",
+    "equations": []
+  },
+  {
+    "paragraph": 751,
+    "style": [],
+    "text": "Definindo a variável adimensional:",
+    "equations": []
+  },
+  {
+    "paragraph": 753,
+    "style": [],
+    "text": "x=rrs",
+    "equations": [
+      "x=rrs"
+    ]
+  },
+  {
+    "paragraph": 754,
+    "style": [],
+    "text": "(84)",
+    "equations": []
+  },
+  {
+    "paragraph": 755,
+    "style": [],
+    "text": "A expressão assume a forma mais compacta:",
+    "equations": []
+  },
+  {
+    "paragraph": 757,
+    "style": [],
+    "text": "Vhalor=4πGρ0rs2⋅1xln1+x-x1+x",
+    "equations": [
+      "Vhalor=4πGρ0rs2⋅1xln1+x-x1+x"
+    ]
+  },
+  {
+    "paragraph": 758,
+    "style": [],
+    "text": "(85)",
+    "equations": []
+  },
+  {
+    "paragraph": 762,
+    "style": [],
+    "text": "Essa equação descreve a contribuição do halo de matéria escura para a curva de rotação galáctica. O parâmetro ρ0 controla a densidade característica do halo, enquanto rs​ determina a escala radial na qual ocorre a transição entre o comportamento interno e externo da distribuição NFW. Assim, quanto maior a densidade característica ou o raio de escala do halo, maior tende a ser sua contribuição para a velocidade orbital em grandes distâncias.",
+    "equations": []
+  },
+  {
+    "paragraph": 763,
+    "style": [],
+    "text": "O comportamento físico dessa equação pode ser analisado em dois regimes principais. Para regiões próximas ao centro galáctico, isto é, quando r ≪ rs, tem-se x ≪ 1. Nesse limite, a massa acumulada do halo cresce aproximadamente com r2, fazendo com que a velocidade orbital aumente aproximadamente com a raiz quadrada do raio:",
+    "equations": []
+  },
+  {
+    "paragraph": 765,
+    "style": [],
+    "text": "Vhalor∝r",
+    "equations": [
+      "Vhalor∝r"
+    ]
+  },
+  {
+    "paragraph": 766,
+    "style": [],
+    "text": "(86)",
+    "equations": []
+  },
+  {
+    "paragraph": 767,
+    "style": [],
+    "text": "Isso indica que, nas regiões internas, a contribuição do halo cresce gradualmente com a distância ao centro, mas ainda não domina completamente a dinâmica galáctica, pois nessa região o bojo e o disco também possuem influência significativa.",
+    "equations": []
+  },
+  {
+    "paragraph": 768,
+    "style": [],
+    "text": "Por outro lado, para grandes distâncias, quando r ≫ rs​, a massa acumulada do halo passa a crescer de forma aproximadamente logarítmica. Nesse regime, a velocidade do halo decresce de maneira lenta, com comportamento aproximado dado por:",
+    "equations": []
+  },
+  {
+    "paragraph": 770,
+    "style": [],
+    "text": "Vhalor∝lnr/rsr",
+    "equations": [
+      "Vhalor∝lnr/rsr"
+    ]
+  },
+  {
+    "paragraph": 771,
+    "style": [],
+    "text": "(87)",
+    "equations": []
+  },
+  {
+    "paragraph": 775,
+    "style": [],
+    "text": "Apesar dessa queda em raios muito grandes, ela ocorre de forma muito mais suave do que no caso kepleriano simples. Isso acontece porque o halo de matéria escura é uma estrutura extensa, cuja massa continua aumentando mesmo em regiões afastadas do centro galáctico. Dessa forma, sua presença mantém a velocidade orbital elevada em regiões onde a contribuição da matéria visível, associada principalmente ao bojo e ao disco, já se torna menos significativa.",
+    "equations": []
+  },
+  {
+    "paragraph": 776,
+    "style": [],
+    "text": "Fisicamente, essa característica explica por que o halo de matéria escura é fundamental para a descrição das curvas de rotação de galáxias espirais. Enquanto o bojo domina principalmente as regiões centrais e o disco contribuem de forma mais intensa nas regiões intermediárias, o halo passa a exercer maior influência nas regiões externas. Portanto, a inclusão da componente Vhalo é essencial para reproduzir o comportamento observado das velocidades orbitais, especialmente o fato de que elas permanecem aproximadamente constantes em grandes distâncias radiais.",
+    "equations": []
+  },
+  {
+    "paragraph": 777,
+    "style": [],
+    "text": "A velocidade orbital total da galáxia é obtida pela combinação das contribuições individuais do bojo, do disco e do halo de matéria escura. Como cada componente contribui para o potencial gravitacional total, a velocidade circular resultante pode ser expressa pela soma quadrática das velocidades associadas a cada distribuição de massa (63), substituindo as expressões obtidas para o bojo de Hernquist, para o disco de Miyamoto-Nagai e para o halo NFW, tem-se:",
+    "equations": []
+  },
+  {
+    "paragraph": 779,
+    "style": [],
+    "text": "Vtotalr=GMbrr+ab2+GMdr2r2+ad+bd23/2+4πGρ0rs2 ln1+x-x1+xx",
+    "equations": [
+      "Vtotalr=GMbrr+ab2+GMdr2r2+ad+bd23/2+4πGρ0rs2 ln1+x-x1+xx"
+    ]
+  },
+  {
+    "paragraph": 780,
+    "style": [],
+    "text": "(88)",
+    "equations": []
+  },
+  {
+    "paragraph": 784,
+    "style": [],
+    "text": "Essa equação representa a curva de rotação total da galáxia. O primeiro termo domina principalmente nas regiões centrais, onde a influência do bojo é mais intensa. O segundo termo descreve a contribuição do disco estelar, importante nas regiões intermediárias e próximas ao plano galáctico. O terceiro termo corresponde ao halo de matéria escura, cuja influência se torna mais significativa nas regiões externas da galáxia. Dessa forma, a equação permite analisar como cada componente estrutural contribui para a velocidade orbital observada em diferentes distâncias radiais.",
+    "equations": []
+  },
+  {
+    "paragraph": 788,
+    "style": [
+      "Ttulo1"
+    ],
+    "text": "5. Modelagem Computacional ",
+    "equations": []
+  },
+  {
+    "paragraph": 789,
+    "style": [],
+    "text": "Neste capítulo é apresentada a metodologia computacional empregada para modelar a dinâmica gravitacional da Via Láctea por meio de um sistema de N-corpos. Inicialmente é apresentada a formulação matemática utilizada para descrever a interação gravitacional entre as partículas. Em seguida, são descritos os procedimentos adotados para representar computacionalmente os diferentes componentes da galáxia, o método numérico empregado para integração temporal das equações de movimento e, por fim, a implementação computacional desenvolvida neste trabalho.",
+    "equations": []
+  },
+  {
+    "paragraph": 791,
+    "style": [
+      "Ttulo2"
+    ],
+    "text": "5.1 Do modelo analítico ao problema de N-corpos",
+    "equations": []
+  },
+  {
+    "paragraph": 792,
+    "style": [],
+    "text": "Nos capítulos anteriores foram apresentados os principais componentes estruturais da Via Láctea, bojo galáctico, disco e halo de matéria escura, bem como os modelos analíticos empregados para descrever suas distribuições de massa e seus respectivos potenciais gravitacionais. A partir desses modelos foi possível determinar o comportamento das velocidades orbitais e compreender a influência da matéria escura na dinâmica galáctica. Embora essa abordagem reproduza adequadamente diversas propriedades observacionais da Via Láctea, ela baseia-se na hipótese de que cada componente da galáxia pode ser representado por uma distribuição contínua de massa. Dessa forma, o campo gravitacional é previamente conhecido e a aceleração de uma partícula pode ser obtida diretamente por meio do gradiente do potencial gravitacional.",
+    "equations": []
+  },
+  {
+    "paragraph": 793,
+    "style": [],
+    "text": "Entretanto, uma galáxia não é formada por um meio contínuo, mas sim por um conjunto extremamente grande de objetos individuais, incluindo estrelas, nuvens de gás, aglomerados estelares e partículas de matéria escura. Cada um desses corpos exerce influência gravitacional sobre todos os demais, fazendo com que o campo gravitacional do sistema seja consequência direta da distribuição instantânea de massa e não uma quantidade previamente definida.",
+    "equations": []
+  },
+  {
+    "paragraph": 794,
+    "style": [],
+    "text": "Essa característica torna a descrição analítica insuficiente para representar toda a complexidade dinâmica de um sistema gravitacional composto por bilhões de corpos. Em particular, quando se deseja investigar a evolução temporal da distribuição de matéria ou analisar fenômenos coletivos decorrentes da interação gravitacional entre partículas, torna-se necessário abandonar a hipótese de campo contínuo e adotar uma formulação discreta. Nesse contexto surge o problema de N-corpos, cuja finalidade é determinar a evolução temporal de um sistema composto por N partículas que interagem exclusivamente por meio da gravitação. Diferentemente da abordagem apresentada nos capítulos anteriores, na qual a aceleração é obtida a partir de potenciais analíticos previamente estabelecidos, o método de N-corpos calcula explicitamente as forças gravitacionais entre todas as partículas do sistema, permitindo que o potencial gravitacional emerja naturalmente da própria distribuição de massa.",
+    "equations": []
+  },
+  {
+    "paragraph": 795,
+    "style": [
+      "Ttulo2"
+    ],
+    "text": "5.2 Formulação matemática do problema de N-corpos",
+    "equations": []
+  },
+  {
+    "paragraph": 796,
+    "style": [],
+    "text": "O problema de N-corpos consiste em determinar o movimento de um conjunto de partículas que interagem mutuamente por meio da força gravitacional descrita pela Lei da Gravitação Universal de Newton. Diferentemente do problema de dois corpos, cuja solução analítica pode ser obtida de forma exata, não existe uma solução analítica geral para sistemas contendo três ou mais corpos em interação gravitacional. Dessa forma, torna-se necessário recorrer a métodos numéricos para resolver as equações de movimento.",
+    "equations": []
+  },
+  {
+    "paragraph": 797,
+    "style": [],
+    "text": "Considere inicialmente duas partículas de massas mi e mj​, localizadas nas posições ri​ e rj​, respectivamente. De acordo com a Lei da Gravitação Universal, a força gravitacional exercida pela partícula j sobre a partícula i é dada por:",
+    "equations": [
+      "mi ",
+      "mj",
+      "ri​",
+      "rj",
+      "j ",
+      "i"
+    ]
+  },
+  {
+    "paragraph": 799,
+    "style": [],
+    "text": "Fij=Gmimjrj-ri3rj-ri",
+    "equations": [
+      "Fij=Gmimjrj-ri3rj-ri"
+    ]
+  },
+  {
+    "paragraph": 800,
+    "style": [],
+    "text": "(89)",
+    "equations": []
+  },
+  {
+    "paragraph": 801,
+    "style": [],
+    "text": "Em que G representa a constante da gravitação universal e rj - ri​ ​corresponde à distância entre as partículas. Em um sistema composto por N partículas, cada corpo sofre simultaneamente a ação gravitacional de todos os demais. Assim, a força resultante atuando sobre a partícula i  pode ser obtida pela soma vetorial de todas as contribuições gravitacionais,",
+    "equations": [
+      "rj -",
+      "ri​",
+      "i  "
+    ]
+  },
+  {
+    "paragraph": 803,
+    "style": [],
+    "text": "Fi=j=1, j≠iNFij",
+    "equations": [
+      "Fi=j=1, j≠iNFij"
+    ]
+  },
+  {
+    "paragraph": 804,
+    "style": [],
+    "text": "(90)",
+    "equations": []
+  },
+  {
+    "paragraph": 806,
+    "style": [],
+    "text": "Aplicando a Segunda Lei de Newton, obtém-se:",
+    "equations": []
+  },
+  {
+    "paragraph": 808,
+    "style": [],
+    "text": "miri=j=1, j≠iNG mi mjrj-ri3rj-ri",
+    "equations": [
+      "miri=j=1, j≠iNG mi mjrj-ri3rj-ri"
+    ]
+  },
+  {
+    "paragraph": 809,
+    "style": [],
+    "text": "(91)",
+    "equations": []
+  },
+  {
+    "paragraph": 811,
+    "style": [],
+    "text": "Eliminando a massa mi presente em ambos os lados da equação, chega-se à equação geral do problema gravitacional de N-corpos:",
+    "equations": [
+      "mi"
+    ]
+  },
+  {
+    "paragraph": 813,
+    "style": [],
+    "text": "ri=Gj=1, j≠iNmjrj-rirj-ri3",
+    "equations": [
+      "ri=Gj=1, j≠iNmjrj-rirj-ri3"
+    ]
+  },
+  {
+    "paragraph": 814,
+    "style": [],
+    "text": "(92)",
+    "equations": []
+  },
+  {
+    "paragraph": 815,
+    "style": [],
+    "text": "Em que G é a constante gravitacional, Mj representa a massa da partícula j, ri e rj são os vetores posição das partículas e N corresponde ao número total de partículas da simulação.",
+    "equations": [
+      "Mj",
+      "j",
+      "ri",
+      "rj",
+      "N"
+    ]
+  },
+  {
+    "paragraph": 816,
+    "style": [],
+    "text": "A Equação (92) fornece a aceleração de cada partícula em função da posição de todas as demais partículas do sistema. Observa-se que a aceleração de uma única partícula depende simultaneamente da posição de todas as outras, fazendo com que as equações de movimento sejam fortemente acopladas.",
+    "equations": []
+  },
+  {
+    "paragraph": 817,
+    "style": [],
+    "text": "No contexto deste trabalho, essa formulação constitui a base matemática da simulação computacional desenvolvida. Cada partícula representará uma fração da massa pertencente ao bojo galáctico, ao disco ou ao halo de matéria escura, distribuídas conforme os modelos físicos apresentados anteriormente. Assim, a dinâmica global da Via Láctea emergirá diretamente da interação gravitacional entre essas partículas, sem a necessidade de impor previamente um potencial gravitacional contínuo.",
+    "equations": []
+  },
+  {
+    "paragraph": 819,
+    "style": [
+      "Ttulo1"
+    ],
+    "text": "5.3 Representação discreta da Via Láctea",
+    "equations": []
+  },
+  {
+    "paragraph": 820,
+    "style": [
+      "NormalWeb"
+    ],
+    "text": "A modelagem computacional de sistemas gravitacionais em escala galáctica apresenta um desafio fundamental: a enorme quantidade de objetos que compõem uma galáxia. Estima-se que a Via Láctea contenha aproximadamente 1011 estrelas, além de grandes quantidades de gás interestelar, poeira e um halo de matéria escura cuja massa total supera a da matéria bariônica. A simulação individual de todos esses componentes exigiria um poder computacional muito além das capacidades atualmente disponíveis, tornando inviável uma abordagem que considere cada objeto real como uma partícula independente.",
+    "equations": [
+      "1011 "
+    ]
+  },
+  {
+    "paragraph": 821,
+    "style": [
+      "NormalWeb"
+    ],
+    "text": "Para contornar essa limitação, emprega-se uma representação discreta, amplamente utilizada em simulações gravitacionais do tipo N-corpos. Nessa abordagem, cada partícula da simulação não representa necessariamente uma única estrela, mas sim um elemento de massa que corresponde a uma parcela do sistema físico. Dessa forma, um conjunto relativamente pequeno de partículas é capaz de reproduzir as principais características dinâmicas da galáxia, preservando o comportamento gravitacional em grande escala.",
+    "equations": []
+  },
+  {
+    "paragraph": 822,
+    "style": [
+      "NormalWeb"
+    ],
+    "text": "Essa discretização permite transformar as distribuições contínuas de massa descritas pelos modelos analíticos apresentados anteriormente em um conjunto finito de partículas. Assim, os perfis de densidade deixam de ser utilizados diretamente para calcular a aceleração sobre um corpo de prova e passam a definir a distribuição espacial inicial das partículas que compõem a simulação.",
+    "equations": []
+  },
+  {
+    "paragraph": 823,
+    "style": [
+      "NormalWeb"
+    ],
+    "text": "No presente trabalho, os três principais componentes estruturais da Via Láctea são representados por distribuições discretas derivadas de seus respectivos modelos analíticos.",
+    "equations": []
+  },
+  {
+    "paragraph": 824,
+    "style": [
+      "NormalWeb"
+    ],
+    "text": "O bojo galáctico é construído a partir do perfil de Hernquist, cuja distribuição de densidade descreve adequadamente a concentração de massa na região central da galáxia. As partículas geradas segundo esse perfil representam a componente esferoidal responsável por uma parcela significativa do potencial gravitacional nas regiões internas.",
+    "equations": []
+  },
+  {
+    "paragraph": 825,
+    "style": [
+      "NormalWeb"
+    ],
+    "text": "O disco galáctico é representado utilizando o modelo de Miyamoto–Nagai. Esse perfil fornece uma distribuição achatada de massa, compatível com a estrutura observada da Via Láctea, permitindo posicionar partículas de forma coerente com a geometria do disco estelar.",
+    "equations": []
+  },
+  {
+    "paragraph": 826,
+    "style": [
+      "NormalWeb"
+    ],
+    "text": "Já o halo de matéria escura é construído a partir do perfil de Navarro–Frenk–White (NFW), amplamente empregado em estudos cosmológicos para descrever a distribuição de matéria escura em halos galácticos. As partículas geradas por esse modelo representam a componente invisível responsável por grande parte da massa total da galáxia e exercem papel fundamental na dinâmica gravitacional em regiões mais afastadas do centro.",
+    "equations": []
+  },
+  {
+    "paragraph": 827,
+    "style": [
+      "NormalWeb"
+    ],
+    "text": "A Figura 4 ilustra conceitualmente essa transformação, em que distribuições contínuas de densidade são convertidas em conjuntos discretos de partículas que servirão como condições iniciais para a simulação N-corpos.",
+    "equations": []
+  },
+  {
+    "paragraph": 829,
+    "style": [
+      "NormalWeb"
+    ],
+    "text": "Após essa etapa de discretização, cada partícula passa a possuir propriedades físicas bem definidas, como massa, posição e velocidade inicial. A evolução temporal do sistema deixa então de ser determinada pelos potenciais analíticos e passa a ser calculada exclusivamente por meio da interação gravitacional entre todas as partículas da simulação, conforme a Lei da Gravitação Universal de Newton. Em outras palavras, os modelos de Hernquist, Miyamoto–Nagai e NFW são utilizados apenas para construir a configuração inicial da galáxia, enquanto a dinâmica subsequente emerge naturalmente das interações gravitacionais mútuas entre as partículas.",
+    "equations": []
+  },
+  {
+    "paragraph": 830,
+    "style": [
+      "NormalWeb"
+    ],
+    "text": "Essa mudança de abordagem representa a transição entre uma descrição analítica do campo gravitacional e uma modelagem baseada em sistemas N-corpos. Dessa forma, torna-se possível investigar como a distribuição de matéria escura influencia a evolução dinâmica da galáxia por meio das interações gravitacionais entre seus diferentes componentes, mantendo a coerência entre a fundamentação teórica apresentada e a implementação computacional desenvolvida neste trabalho.",
+    "equations": []
+  },
+  {
+    "paragraph": 831,
+    "style": [
+      "Ttulo1"
+    ],
+    "text": "5.4 Geração das Partículas",
+    "equations": []
+  },
+  {
+    "paragraph": 832,
+    "style": [
+      "isselectedend"
+    ],
+    "text": "Após a definição dos modelos analíticos que descrevem os principais componentes da Via Láctea, o passo seguinte consiste em converter essas distribuições contínuas de massa em um conjunto discreto de partículas. Esse procedimento estabelece as condições iniciais da simulação N-corpos, permitindo que a evolução do sistema seja determinada exclusivamente pelas interações gravitacionais entre as partículas.",
+    "equations": []
+  },
+  {
+    "paragraph": 833,
+    "style": [
+      "isselectedend"
+    ],
+    "text": "Cada componente da galáxia é representado por um conjunto independente de partículas, cuja distribuição espacial é obtida a partir do respectivo perfil de densidade. Dessa forma, preserva-se, em termos estatísticos, a estrutura física descrita pelos modelos analíticos, ao mesmo tempo em que se torna possível aplicar diretamente os métodos numéricos utilizados em simulações gravitacionais.",
+    "equations": []
+  },
+  {
+    "paragraph": 834,
+    "style": [
+      "isselectedend"
+    ],
+    "text": "A discretização foi realizada separadamente para o bojo, o disco galáctico e o halo de matéria escura, conforme descrito nas subseções seguintes.",
+    "equations": []
+  },
+  {
+    "paragraph": 835,
+    "style": [
+      "Ttulo2"
+    ],
+    "text": "5.4.1 Geração das partículas do bojo",
+    "equations": []
+  },
+  {
+    "paragraph": 836,
+    "style": [
+      "isselectedend"
+    ],
+    "text": "O bojo galáctico foi discretizado utilizando o perfil de densidade de Hernquist, apresentado na Seção 4.4. Esse perfil descreve uma distribuição aproximadamente esférica, com elevada concentração de massa nas regiões centrais da galáxia e decréscimo progressivo da densidade com o aumento da distância ao centro.",
+    "equations": []
+  },
+  {
+    "paragraph": 837,
+    "style": [
+      "isselectedend"
+    ],
+    "text": "Para construir essa componente, foram geradas partículas distribuídas espacialmente de forma compatível com a densidade fornecida pelo modelo de Hernquist. Cada partícula representa uma fração da massa total do bojo e recebe uma posição tridimensional correspondente à distribuição esférica prevista pelo modelo.",
+    "equations": []
+  },
+  {
+    "paragraph": 838,
+    "style": [
+      "isselectedend"
+    ],
+    "text": "A quantidade de partículas utilizada pode ser ajustada conforme a capacidade computacional disponível, mantendo-se a distribuição global de massa inalterada. Dessa maneira, um maior número de partículas proporciona uma representação mais detalhada do sistema, enquanto um número menor reduz o custo computacional da simulação.",
+    "equations": []
+  },
+  {
+    "paragraph": 839,
+    "style": [
+      "Ttulo2"
+    ],
+    "text": "5.4.2 Geração das partículas do disco",
+    "equations": []
+  },
+  {
+    "paragraph": 840,
+    "style": [
+      "isselectedend"
+    ],
+    "text": "A componente de disco foi construída utilizando o modelo de Miyamoto–Nagai, que representa a distribuição achatada característica das galáxias espirais.",
+    "equations": []
+  },
+  {
+    "paragraph": 841,
+    "style": [
+      "isselectedend"
+    ],
+    "text": "Ao contrário do bojo, cuja distribuição é aproximadamente esférica, as partículas do disco são posicionadas de modo a reproduzir uma estrutura predominantemente concentrada no plano galáctico. A distribuição radial segue a variação prevista pelo modelo, enquanto a espessura do disco é controlada pelos parâmetros característicos da distribuição.",
+    "equations": []
+  },
+  {
+    "paragraph": 842,
+    "style": [
+      "isselectedend"
+    ],
+    "text": "Cada partícula representa uma parcela da massa do disco e contribui para o campo gravitacional total durante toda a evolução da simulação.",
+    "equations": []
+  },
+  {
+    "paragraph": 843,
+    "style": [
+      "Ttulo2"
+    ],
+    "text": "5.4.3 Geração das partículas do halo de matéria escura",
+    "equations": []
+  },
+  {
+    "paragraph": 844,
+    "style": [
+      "isselectedend"
+    ],
+    "text": "O halo de matéria escura foi discretizado a partir do perfil de Navarro–Frenk–White (NFW), amplamente utilizado para representar halos formados em simulações cosmológicas.",
+    "equations": []
+  },
+  {
+    "paragraph": 845,
+    "style": [
+      "isselectedend"
+    ],
+    "text": "As partículas dessa componente são distribuídas em uma região muito mais extensa que o disco e o bojo, formando uma estrutura aproximadamente esférica que envolve toda a galáxia. Em comparação com o bojo, a densidade de partículas decresce de forma mais gradual, refletindo a natureza difusa do halo de matéria escura.",
+    "equations": []
+  },
+  {
+    "paragraph": 846,
+    "style": [
+      "NormalWeb"
+    ],
+    "text": "Embora invisíveis do ponto de vista observacional, essas partículas exercem atração gravitacional sobre todos os demais componentes da simulação, influenciando diretamente a dinâmica global do sistema e contribuindo para a manutenção das velocidades de rotação observadas nas regiões externas da galáxia.",
+    "equations": []
+  },
+  {
+    "paragraph": 847,
+    "style": [
+      "Ttulo1"
+    ],
+    "text": "5.5 Condições Iniciais da Simulação",
+    "equations": []
+  },
+  {
+    "paragraph": 848,
+    "style": [],
+    "text": "A definição das condições iniciais constitui uma etapa fundamental em qualquer simulação de sistemas N-corpos, uma vez que determina o estado físico do sistema no instante inicial (t=0). Após a discretização dos componentes da Via Láctea, cada partícula passa a representar um elemento de massa cuja evolução será determinada pelas interações gravitacionais com todas as demais partículas do sistema.",
+    "equations": [
+      "t=0"
+    ]
+  },
+  {
+    "paragraph": 849,
+    "style": [],
+    "text": "Neste trabalho, as condições iniciais são definidas por três grandezas fundamentais: massa, posição e velocidade. Essas informações são suficientes para caracterizar completamente o estado dinâmico de cada partícula e permitir a integração temporal das equações de movimento.",
+    "equations": []
+  },
+  {
+    "paragraph": 850,
+    "style": [],
+    "text": "Cada partícula i é representada pelo conjunto de parâmetros:",
+    "equations": [
+      "i"
+    ]
+  },
+  {
+    "paragraph": 852,
+    "style": [],
+    "text": "Pi=mi,ri,vi",
+    "equations": [
+      "Pi=mi,ri,vi"
+    ]
+  },
+  {
+    "paragraph": 853,
+    "style": [],
+    "text": "(93)",
+    "equations": []
+  },
+  {
+    "paragraph": 854,
+    "style": [],
+    "text": "Cada partícula i é representada pelo conjunto de parâmetros Pi=mi,ri,vi, em que mi representa a massa da partícula, ri=xi,yi,zi corresponde ao vetor posição e vi=vx,i,vy,i,vz,irepresenta o vetor velocidade.",
+    "equations": [
+      "i",
+      "Pi=mi,ri,vi",
+      "mi",
+      " ri=xi,yi,zi",
+      "vi=vx,i,vy,i,vz,i"
+    ]
+  },
+  {
+    "paragraph": 855,
+    "style": [],
+    "text": "Variável",
+    "equations": []
+  },
+  {
+    "paragraph": 856,
+    "style": [],
+    "text": "Descrição",
+    "equations": []
+  },
+  {
+    "paragraph": 857,
+    "style": [],
+    "text": "Unidade",
+    "equations": []
+  },
+  {
+    "paragraph": 858,
+    "style": [],
+    "text": "mi",
+    "equations": [
+      "mi"
+    ]
+  },
+  {
+    "paragraph": 859,
+    "style": [],
+    "text": "Massa da partícula",
+    "equations": []
+  },
+  {
+    "paragraph": 860,
+    "style": [],
+    "text": "kg",
+    "equations": []
+  },
+  {
+    "paragraph": 861,
+    "style": [],
+    "text": "xi , yi , zi",
+    "equations": [
+      "xi , yi , zi"
+    ]
+  },
+  {
+    "paragraph": 864,
+    "style": [],
+    "text": "Coordenadas espaciais",
+    "equations": []
+  },
+  {
+    "paragraph": 865,
+    "style": [],
+    "text": "kpc",
+    "equations": []
+  },
+  {
+    "paragraph": 866,
+    "style": [],
+    "text": "vx,i, vy,i, vz,i",
+    "equations": [
+      "vx,i, vy,i, vz,i"
+    ]
+  },
+  {
+    "paragraph": 867,
+    "style": [],
+    "text": "Componentes da velocidade",
+    "equations": []
+  },
+  {
+    "paragraph": 868,
+    "style": [],
+    "text": "km s-1",
+    "equations": [
+      "km s-1"
+    ]
+  },
+  {
+    "paragraph": 870,
+    "style": [],
+    "text": "A distribuição espacial inicial das partículas é obtida conforme descrito na Seção 5.4, sendo cada componente da galáxia gerado a partir do respectivo perfil de densidade. Após essa etapa, todas as partículas são armazenadas em uma única estrutura de dados que representa a configuração inicial completa da Via Láctea.",
+    "equations": []
+  },
+  {
+    "paragraph": 871,
+    "style": [],
+    "text": "As velocidades iniciais são atribuídas de forma compatível com a dinâmica esperada para cada componente galáctico. As partículas pertencentes ao disco recebem velocidades predominantemente tangenciais ao centro galáctico, reproduzindo o movimento orbital característico dessa estrutura. Já as partículas do bojo apresentam uma distribuição de velocidades mais isotrópica, enquanto o halo de matéria escura é inicializado com velocidades consistentes com sua distribuição aproximadamente esférica e seu comportamento dinâmico esperado.",
+    "equations": []
+  },
+  {
+    "paragraph": 872,
+    "style": [],
+    "text": "Embora essas velocidades iniciais representem um estado de equilíbrio aproximado, a configuração do sistema evolui naturalmente ao longo da simulação em resposta às interações gravitacionais entre todas as partículas. Dessa forma, a dinâmica observada não é imposta pelos modelos analíticos, mas emerge da solução numérica das equações do movimento.",
+    "equations": []
+  },
+  {
+    "paragraph": 873,
+    "style": [],
+    "text": "A configuração inicial da simulação pode ser representada pelo conjunto:",
+    "equations": []
+  },
+  {
+    "paragraph": 875,
+    "style": [],
+    "text": "S0={P1,P2,…,PN}",
+    "equations": [
+      "S0={P1,P2,…,PN}"
+    ]
+  },
+  {
+    "paragraph": 876,
+    "style": [],
+    "text": "(94)",
+    "equations": []
+  },
+  {
+    "paragraph": 877,
+    "style": [],
+    "text": "Em que N corresponde ao número total de partículas consideradas na simulação. Esse conjunto constitui a entrada do algoritmo N-corpos, responsável por calcular, a cada passo temporal, as forças gravitacionais entre as partículas e atualizar suas posições e velocidades.",
+    "equations": [
+      "N"
+    ]
+  },
+  {
+    "paragraph": 878,
+    "style": [],
+    "text": "A escolha do número de partículas representa um compromisso entre fidelidade física e custo computacional. Um maior valor de N permite representar de forma mais detalhada a estrutura da galáxia e reduzir os efeitos da discretização, porém aumenta significativamente o número de interações gravitacionais a serem calculadas, cujo custo computacional cresce aproximadamente com N2 quando se utiliza o método direto. Assim, o número de partículas empregado neste trabalho foi selecionado de modo a proporcionar uma representação adequada da Via Láctea, mantendo o tempo de processamento compatível com os recursos computacionais disponíveis.",
+    "equations": [
+      "N",
+      "N2"
+    ]
+  },
+  {
+    "paragraph": 879,
+    "style": [],
+    "text": "As simulações foram executadas em um computador equipado com um processador AMD Ryzen 7 5700X, 16 GB de memória RAM DDR4 e uma placa de vídeo AMD Radeon RX 7600 com 8 GB de memória dedicada. Essa configuração oferece desempenho suficiente para a execução de simulações N-corpos de pequena e média escala, permitindo a análise da dinâmica gravitacional do sistema sem a necessidade de infraestrutura computacional de alto desempenho. Com as condições iniciais completamente definidas, o sistema encontra-se preparado para a etapa de integração numérica, na qual as posições e velocidades das partículas são atualizadas ao longo do tempo utilizando o método Leapfrog, apresentado na próxima seção.",
+    "equations": []
+  },
+  {
+    "paragraph": 880,
+    "style": [
+      "Ttulo2"
+    ],
+    "text": "5.6 Integração Numérica",
+    "equations": []
+  },
+  {
+    "paragraph": 881,
+    "style": [],
+    "text": "Após a definição das condições iniciais, torna-se necessário utilizar um método numérico capaz de resolver as equações de movimento das partículas ao longo do tempo. Como não existe solução analítica para um sistema gravitacional composto por um grande número de corpos interagindo simultaneamente, a evolução do sistema é obtida por integração numérica das equações diferenciais que descrevem sua dinâmica.",
+    "equations": []
+  },
+  {
+    "paragraph": 882,
+    "style": [],
+    "text": "Neste trabalho, foi empregado o método Leapfrog, amplamente utilizado em simulações gravitacionais devido à sua simplicidade, estabilidade numérica e boa conservação da energia mecânica em integrações de longa duração. Diferentemente de métodos convencionais, como o de Euler, o Leapfrog apresenta menor acúmulo de erro ao longo do tempo, sendo especialmente adequado para problemas de dinâmica orbital.",
+    "equations": []
+  },
+  {
+    "paragraph": 883,
+    "style": [],
+    "text": "A aceleração de cada partícula é obtida a partir da soma das contribuições gravitacionais de todas as demais partículas do sistema, conforme a Lei da Gravitação Universal de Newton (92), o método Leapfrog atualiza as velocidades e posições de forma alternada, utilizando um deslocamento temporal de meio passo para as velocidades. Inicialmente, calcula-se a velocidade intermediária por:",
+    "equations": []
+  },
+  {
+    "paragraph": 885,
+    "style": [],
+    "text": "vit+2Δt=vit+2Δt ait",
+    "equations": [
+      "vit+2Δt=vit+2Δt ait"
+    ]
+  },
+  {
+    "paragraph": 886,
+    "style": [],
+    "text": "(95)",
+    "equations": []
+  },
+  {
+    "paragraph": 887,
+    "style": [],
+    "text": "Em seguida, as posições são atualizadas segundo:",
+    "equations": []
+  },
+  {
+    "paragraph": 889,
+    "style": [],
+    "text": "rit+Δt=rit+Δt vit+Δt2",
+    "equations": [
+      "rit+Δt=rit+Δt vit+Δt2"
+    ]
+  },
+  {
+    "paragraph": 890,
+    "style": [],
+    "text": "(96)",
+    "equations": []
+  },
+  {
+    "paragraph": 891,
+    "style": [],
+    "text": "Após o recálculo das acelerações na nova configuração espacial, completa-se a atualização das velocidades por meio da expressão:",
+    "equations": []
+  },
+  {
+    "paragraph": 893,
+    "style": [],
+    "text": "vit+Δt=vit+Δt2+Δt2 ait+Δt",
+    "equations": [
+      "vit+Δt=vit+Δt2+Δt2 ait+Δt"
+    ]
+  },
+  {
+    "paragraph": 894,
+    "style": [],
+    "text": "(96)",
+    "equations": []
+  },
+  {
+    "paragraph": 895,
+    "style": [
+      "pdq2pgselectionanchorcontainer"
+    ],
+    "text": "Essas três etapas são conhecidas como Kick–Drift–Kick (KDK), pois consistem em uma atualização parcial da velocidade (Kick), seguida da atualização da posição (Drift) e, por fim, da conclusão da atualização da velocidade (Kick). O processo é repetido sucessivamente para todos os instantes de tempo da simulação, permitindo acompanhar a evolução dinâmica do sistema gravitacional. A cada passo temporal, novas acelerações são calculadas considerando as posições atualizadas das partículas, tornando a dinâmica completamente auto consistente.",
+    "equations": []
+  },
+  {
+    "paragraph": 896,
+    "style": [],
+    "text": "A escolha do passo de tempo Δt influencia diretamente a precisão e a estabilidade da integração. Valores muito elevados podem introduzir erros significativos na trajetória das partículas, enquanto valores muito pequenos aumentam o tempo computacional necessário para completar a simulação. Assim, o passo temporal foi escolhido de forma a equilibrar precisão numérica e custo computacional, garantindo uma evolução estável do sistema durante todo o intervalo simulado.",
+    "equations": []
+  },
+  {
+    "paragraph": 897,
+    "style": [
+      "Ttulo1"
+    ],
+    "text": "4. Dinâmica Galáctica e Resultados ",
+    "equations": []
+  },
+  {
+    "paragraph": 898,
+    "style": [
+      "Ttulo2"
+    ],
+    "text": "4.3 Curvas de rotação",
+    "equations": []
+  },
+  {
+    "paragraph": 899,
+    "style": [
+      "Ttulo2"
+    ],
+    "text": "4.4 Influência da matéria escura",
+    "equations": []
+  },
+  {
+    "paragraph": 901,
+    "style": [
+      "Ttulo1"
+    ],
+    "text": "5. Conclusão",
+    "equations": []
+  },
+  {
+    "paragraph": 923,
+    "style": [],
+    "text": "Referências",
+    "equations": []
+  },
+  {
+    "paragraph": 924,
+    "style": [],
+    "text": "BLAND-HAWTHORN, J.; GERHARD, O. The Galaxy in Context: Structural, Kinematic, and Integrated Properties. Annual Review of Astronomy and Astrophysics, v. 54, p. 529–596, 2016.",
+    "equations": []
+  },
+  {
+    "paragraph": 926,
+    "style": [],
+    "text": "Spohn, T., Breuer, D., & Johnson, T. V. (2014). Encyclopedia of the Solar System (3rd ed.). Elsevier.",
+    "equations": []
+  },
+  {
+    "paragraph": 928,
+    "style": [],
+    "text": "GRAVITY COLLABORATION. A geometric distance measurement to the Galactic center black hole. Astronomy & Astrophysics, v. 625, L10, 2019.",
+    "equations": []
+  },
+  {
+    "paragraph": 930,
+    "style": [],
+    "text": "REID, M. J. et al. Trigonometric Parallaxes of High Mass Star Forming Regions: The Structure and Kinematics of the Milky Way. The Astrophysical Journal, v. 783, n. 2, 2014.",
+    "equations": []
+  },
+  {
+    "paragraph": 932,
+    "style": [],
+    "text": "HERNQUIST, L. An analytical model for spherical galaxies and bulges. The Astrophysical Journal, v. 356, p. 359–364, 1990.",
+    "equations": []
+  },
+  {
+    "paragraph": 934,
+    "style": [],
+    "text": "FREEMAN, K. C. On the Disks of Spiral and S0 Galaxies. The Astrophysical Journal, v. 160, p. 811-830, jun. 1970.",
+    "equations": []
+  },
+  {
+    "paragraph": 936,
+    "style": [],
+    "text": "NAVARRO, Julio F.; FRENK, Carlos S.; WHITE, Simon D. M. A universal density profile from hierarchical clustering. The Astrophysical Journal, Chicago, v. 490, n. 2, p. 493–508, 1997.",
+    "equations": []
+  }
+]

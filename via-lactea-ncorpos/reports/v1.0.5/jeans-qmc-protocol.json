@@ -1,0 +1,29 @@
+{
+  "registeredUTC": "2026-10-17T01:39:22Z",
+  "method": "Owen-scrambled Sobol importance integration, diagonal Gaussian width2 native sigma, common normals per stencil, seeds92000+100pop+10location+replicate",
+  "points": [
+    [
+      1,
+      0,
+      0.2
+    ],
+    [
+      8.122,
+      0,
+      0.2
+    ]
+  ],
+  "stepsKpc": [
+    0.02,
+    0.01
+  ],
+  "powers": [
+    14,
+    16
+  ],
+  "independentScrambles": 4,
+  "selection": "Supplementary dense-region checks chosen after native Jeans audit, not a new blind stability threshold. Intended to separate quadrature sensitivity from approximate-action inconsistency.",
+  "stressUnit": "Msun (km/s)^2/kpc^3",
+  "residualUnit": "Msun (km/s)^2/kpc^4",
+  "scriptSHA256": "90e49dce95c678ac3d142376d05c388d20cc3b0e7903cfc390c7b44e244042ca"
+}

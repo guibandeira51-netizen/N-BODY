@@ -1,0 +1,29 @@
+{
+  "arrays": [
+    {
+      "seed": 2026,
+      "arraysIdentical": true,
+      "oldUnbound": 6,
+      "newUnbound": 6
+    },
+    {
+      "seed": 2027,
+      "arraysIdentical": true,
+      "oldUnbound": 8,
+      "newUnbound": 8
+    },
+    {
+      "seed": 2028,
+      "arraysIdentical": true,
+      "oldUnbound": 4,
+      "newUnbound": 4
+    }
+  ],
+  "unchangedPhysicalModules": [
+    "src/physics/forces.js",
+    "src/physics/initial-legacy.js",
+    "src/physics/constants.js"
+  ],
+  "unchangedWGSLShaderBlocks": 2,
+  "scope": "Only diagnostic clock and analytic potential reference corrected. Initial particle phase arrays, masses and force shaders identical."
+}

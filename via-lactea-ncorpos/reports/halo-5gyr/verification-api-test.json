@@ -1,0 +1,56 @@
+{
+  "createdUTC": "2026-10-21T16:49:21.623Z",
+  "results": [
+    {
+      "case": "completed actual x8 binary phases",
+      "status": 200,
+      "result": {
+        "id": "halo-x8",
+        "independentlyRecomputed": true,
+        "initialFile": "reports/halo-5gyr/initial-halo-x8.json",
+        "finalFile": "reports/halo-5gyr/state-halo-x8-s50000-2026-10-21T16-09-45-098Z.bin.gz",
+        "finalSHA256": "22ea26fa7c6721e5403f49840d1e227f1b142e4da487a2a3d121d385eae815e3",
+        "counts": [
+          4972,
+          14917,
+          106072
+        ],
+        "individualMassesAndComponentsUnchanged": true,
+        "initialMass": [
+          0.5000000145810191,
+          6.8000000909669325,
+          97.63157933810726
+        ],
+        "finalMass": [
+          0.5000000145810191,
+          6.8000000909669325,
+          97.63157933810726
+        ],
+        "globalSteps": 50000,
+        "effectiveDtMyr": 0.10000000149011612,
+        "timeMyr": 5000.000074505806,
+        "epochVerified": true,
+        "velocityEpoch": "full-step, after final KDK kick",
+        "h50InitialKpc": 0.16487250830671857,
+        "h50FinalKpc": 0.6295209027799722,
+        "ratio": 3.8182284557037893,
+        "growthPercent": 281.82284557037895,
+        "phasesReproduceReportedH50": true,
+        "independentPass": false,
+        "qualification": "Actual saved initial and final phases, same disk-analysis routine evaluated independently of the experiment worker. Checks implementation consistency, not an independent definition of thickness or an equilibrium theorem."
+      }
+    },
+    {
+      "case": "incomplete real x16 cannot be certified",
+      "status": 400,
+      "result": {
+        "error": "Only an actually completed live run can be verified"
+      }
+    },
+    {
+      "case": "missing local origin refused",
+      "status": 403
+    }
+  ],
+  "passed": true
+}

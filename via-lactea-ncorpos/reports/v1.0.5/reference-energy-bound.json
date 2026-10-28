@@ -1,0 +1,231 @@
+{
+  "schema": "parameter-convention-bound-105",
+  "source": "reports/v1.0.4/runs/FE-b2026-h2026-higher200.json",
+  "sourceSHA256": "182c173bffea204daad701f23c02b53ea508410aa5a5c2fc516fcafe10fdb3a8",
+  "nominal": {
+    "G": 0.04498502151469553,
+    "epsilonSquared": 0.010000000000000002
+  },
+  "actual": {
+    "G": 0.04498502239584923,
+    "epsilonSquared": 0.009999999776482582
+  },
+  "potentialMagnitudeRatio": {
+    "lower": 1.0000000195877132,
+    "upper": 1.0000000307635846
+  },
+  "states": [
+    {
+      "timeMyr": 0,
+      "actualParameterEnergyInterval": {
+        "lower": -1.6899625189136267,
+        "upper": -1.6899624809605296,
+        "padding": 3.6251859453058276e-14
+      },
+      "relativeDriftBound": 2.2457952491318374e-8,
+      "originalNominalDelta": 0
+    },
+    {
+      "timeMyr": 10,
+      "actualParameterEnergyInterval": {
+        "lower": -1.6899624153751192,
+        "upper": -1.6899623774269066,
+        "padding": 3.6245649069394665e-14
+      },
+      "relativeDriftBound": 8.372181140808192e-8,
+      "originalNominalDelta": 6.125879544524633e-8
+    },
+    {
+      "timeMyr": 20,
+      "actualParameterEnergyInterval": {
+        "lower": -1.689962455381127,
+        "upper": -1.6899624174240007,
+        "padding": 3.6256983173223286e-14
+      },
+      "relativeDriftBound": 6.005436640157039e-8,
+      "originalNominalDelta": 3.7600594126005094e-8
+    },
+    {
+      "timeMyr": 30,
+      "actualParameterEnergyInterval": {
+        "lower": -1.6899624428282245,
+        "upper": -1.689962404875535,
+        "padding": 3.6251341493579504e-14
+      },
+      "relativeDriftBound": 6.747965882156328e-8,
+      "originalNominalDelta": 4.5021285288501935e-8
+    },
+    {
+      "timeMyr": 40,
+      "actualParameterEnergyInterval": {
+        "lower": -1.6899623471700997,
+        "upper": -1.6899623092657508,
+        "padding": 3.618987394765605e-14
+      },
+      "relativeDriftBound": 1.2405475169436344e-7,
+      "originalNominalDelta": 1.0154624580579257e-7
+    },
+    {
+      "timeMyr": 50,
+      "actualParameterEnergyInterval": {
+        "lower": -1.6899624015847199,
+        "upper": -1.6899623636941181,
+        "padding": 3.617239328221422e-14
+      },
+      "relativeDriftBound": 9.184790214480974e-8,
+      "originalNominalDelta": 6.93251378311664e-8
+    },
+    {
+      "timeMyr": 60,
+      "actualParameterEnergyInterval": {
+        "lower": -1.6899623889761575,
+        "upper": -1.6899623511274973,
+        "padding": 3.6119062035519106e-14
+      },
+      "relativeDriftBound": 9.928393755778716e-8,
+      "originalNominalDelta": 7.671767547659734e-8
+    },
+    {
+      "timeMyr": 70,
+      "actualParameterEnergyInterval": {
+        "lower": -1.6899623858390715,
+        "upper": -1.6899623480026353,
+        "padding": 3.61035184656051e-14
+      },
+      "relativeDriftBound": 1.011330093330367e-7,
+      "originalNominalDelta": 7.855406974099945e-8
+    },
+    {
+      "timeMyr": 80,
+      "actualParameterEnergyInterval": {
+        "lower": -1.6899623780359345,
+        "upper": -1.6899623401618258,
+        "padding": 3.6151421579491376e-14
+      },
+      "relativeDriftBound": 1.057726446181489e-7,
+      "originalNominalDelta": 8.323277567991519e-8
+    },
+    {
+      "timeMyr": 90,
+      "actualParameterEnergyInterval": {
+        "lower": -1.689962340064662,
+        "upper": -1.6899623021751686,
+        "padding": 3.617098428374655e-14
+      },
+      "relativeDriftBound": 1.282504555643212e-7,
+      "originalNominalDelta": 1.0572654301874116e-7
+    },
+    {
+      "timeMyr": 100,
+      "actualParameterEnergyInterval": {
+        "lower": -1.6899623363023377,
+        "upper": -1.6899622984179692,
+        "padding": 3.616446753315239e-14
+      },
+      "relativeDriftBound": 1.3047369985689376e-7,
+      "originalNominalDelta": 1.0794447213715248e-7
+    },
+    {
+      "timeMyr": 110,
+      "actualParameterEnergyInterval": {
+        "lower": -1.6899623354055202,
+        "upper": -1.689962297510291,
+        "padding": 3.617827738945169e-14
+      },
+      "relativeDriftBound": 1.3101079944643265e-7,
+      "originalNominalDelta": 1.0849283530945908e-7
+    },
+    {
+      "timeMyr": 120,
+      "actualParameterEnergyInterval": {
+        "lower": -1.6899623125594947,
+        "upper": -1.6899622746764487,
+        "padding": 3.6162786318068614e-14
+      },
+      "relativeDriftBound": 1.4452224874172785e-7,
+      "originalNominalDelta": 1.2199165038618085e-7
+    },
+    {
+      "timeMyr": 130,
+      "actualParameterEnergyInterval": {
+        "lower": -1.6899623406191586,
+        "upper": -1.6899623027318116,
+        "padding": 3.616825529865863e-14
+      },
+      "relativeDriftBound": 1.279210737228756e-7,
+      "originalNominalDelta": 1.053949354132871e-7
+    },
+    {
+      "timeMyr": 140,
+      "actualParameterEnergyInterval": {
+        "lower": -1.6899623412564466,
+        "upper": -1.6899623033782434,
+        "padding": 3.615662799080507e-14
+      },
+      "relativeDriftBound": 1.275385612089808e-7,
+      "originalNominalDelta": 1.0500293939798314e-7
+    },
+    {
+      "timeMyr": 150,
+      "actualParameterEnergyInterval": {
+        "lower": -1.6899623299101154,
+        "upper": -1.689962292077982,
+        "padding": 3.6098047654675587e-14
+      },
+      "relativeDriftBound": 1.3422525486082153e-7,
+      "originalNominalDelta": 1.1164185429525564e-7
+    },
+    {
+      "timeMyr": 160,
+      "actualParameterEnergyInterval": {
+        "lower": -1.6899623644429502,
+        "upper": -1.6899623266340276,
+        "padding": 3.6068533460401196e-14
+      },
+      "relativeDriftBound": 1.1377743665782952e-7,
+      "originalNominalDelta": 9.116996314605936e-8
+    },
+    {
+      "timeMyr": 170,
+      "actualParameterEnergyInterval": {
+        "lower": -1.689962339991526,
+        "upper": -1.6899623021777814,
+        "padding": 3.607466547273347e-14
+      },
+      "relativeDriftBound": 1.2824890949516547e-7,
+      "originalNominalDelta": 1.0564643779195846e-7
+    },
+    {
+      "timeMyr": 180,
+      "actualParameterEnergyInterval": {
+        "lower": -1.689962474103523,
+        "upper": -1.689962436261501,
+        "padding": 3.611062042463708e-14
+      },
+      "relativeDriftBound": 4.890766896856467e-8,
+      "originalNominalDelta": 2.633452031752576e-8
+    },
+    {
+      "timeMyr": 190,
+      "actualParameterEnergyInterval": {
+        "lower": -1.6899624577726942,
+        "upper": -1.6899624199198529,
+        "padding": 3.612437802114685e-14
+      },
+      "relativeDriftBound": 5.8577497997860185e-8,
+      "originalNominalDelta": 3.6015570455841234e-8
+    },
+    {
+      "timeMyr": 200,
+      "actualParameterEnergyInterval": {
+        "lower": -1.6899624145534076,
+        "upper": -1.689962376686427,
+        "padding": 3.614235746556879e-14
+      },
+      "relativeDriftBound": 8.415997479094806e-8,
+      "originalNominalDelta": 6.161271246028907e-8
+    }
+  ],
+  "maxRelativeDriftBound": 1.4452224874172785e-7,
+  "qualification": "Analytic ideal Plummer positive-pair parameter bounds, evaluated Float64 with small arithmetic padding. Not recomputed unrecorded phase states, not a rigorous floating-point proof and not a GPU-roundoff bound. Establishes compatibility of the preserved nominal Hamiltonian reference with effective-G/epsilonSquared energy budget without rewriting historical measurements."
+}

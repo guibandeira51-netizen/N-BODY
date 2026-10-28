@@ -1,0 +1,1608 @@
+{
+  "schema": "equilibrium-rebuild-delivery-v1",
+  "createdUTC": "2026-10-21T04:16:10.508Z",
+  "generatorVersion": "positive-orbit-superposition-v1-experimental",
+  "equilibriumValidated": false,
+  "promotedToProduction": false,
+  "verification": {
+    "createdUTC": "2026-10-21T04:16:09.597Z",
+    "baselineFiles": 57,
+    "changedExistingFiles": [
+      "scripts/build.mjs",
+      "experimento-ncorpos.html"
+    ],
+    "existingPhysicsIntegratorAndShadersUnchanged": true,
+    "tests": {
+      "total": 177,
+      "passed": 177,
+      "failed": 0
+    },
+    "build": {
+      "command": "node scripts/build.mjs",
+      "exitCode": 0
+    },
+    "candidatePromoted": false,
+    "historicalPolicy": "Historical scientific data not modified; baseline source and selected audit/parameter documents checked bytewise, no bulk rehash of multi-GB archive."
+  },
+  "sourceHashes": {
+    "src/automatic-energy.js": "4f2d8549ec7add2bfc2df40795c4167a4b8ffd8236e8b2043039f5f95659653f",
+    "src/component-rotation-plot.js": "29e278885b0b060d4b8dc5d037c4e204c0e58d2932836acd7466644899a29612",
+    "src/compute/capability.js": "637aa622654cb378ec9f5a4374481a62acd9f60744d5a8986c479d41de2fd46e",
+    "src/compute/energy-reference-worker.js": "aa55eec73aa469e2d1fa3e3ce5461921304de67ec8da4ab75b08f8a1669f0b8e",
+    "src/compute/energy-snapshot-sampler.js": "f55d09236b84734af7d27de74a125d7522dd0fa776b881df1a01fceea815ab7c",
+    "src/compute/equilibrium-worker.js": "80846ea48e65737315e12e026dfb2f8531127134864de97d6bb0ce9bc2b5e0df",
+    "src/compute/gpu-external-grid.js": "82c7267f53c8a2f4a8595ea82ba13f280d9b3692ed103358ca5e2169febbd9b4",
+    "src/compute/gpu-external-polynomial.js": "cd7bed0cf447558a08940009382c3e31d2882c38548473780532bcdc42fe7dff",
+    "src/compute/gpu-fixed-halo.js": "6b06535c53e2361253edbf08ea0afa9c15036d88dac69fd18663a606a139f6ed",
+    "src/compute/gpu.js": "443ab660dbaed0c47e84fc8675ded0c44c8c726852b5315dad84d26037ae58d5",
+    "src/compute/live-energy-reference.js": "d02f6c2068f5d86688463a3881f1875b81f1f311dcff32839f9697a9e28248a9",
+    "src/compute/live-worker.js": "de993daad2f064169f748b9ddfb85b4382e3b40c5dbf7b11865b3d855ee8d047",
+    "src/compute/pair-energy-worker.js": "923409cd818d5f5874358eb1469e3f444e8cc61c34cb6a988c40f46c55b5bc48",
+    "src/compute/parallel-energy.js": "f204b19fbb512c63f6c36aa9e1bf862e201624c4a808f77f53097f0c13bcfd15",
+    "src/compute/scheduling.js": "60e7bd7f5f570229ce198c47c0b900913d3ad5317c56edf7b530542f8430d1c4",
+    "src/compute/worker.js": "70c4778002892e73746106955e3e17c1faf28c849b0f3acf42f688e7b99179dc",
+    "src/correction-102-page.js": "904053f1aec4ac5ab8dc4be4a67b52b7ebe001791715234143801017449ce4b7",
+    "src/darkmatter106-page.js": "7b39afb7c6783a5fb383cbc762f9f1675a780773915141192c41b783a43bd097",
+    "src/document-link-policy.js": "5071839c03a0f232439aaa535fff0f6a8514d71aa4daf40c6ea197af177f5e95",
+    "src/energy-audit-cadence.js": "0868a037abad73d886def7e0b55908c76cbd63ef71cdfe5601bcfc99e7536bc5",
+    "src/energy-audit-session.js": "0a88225065b8ec8d888593a3f1c268ba8f2296a5181ba046090d017ae142be50",
+    "src/energy-chart-data.js": "c9b059e64632056546b4252731f8e880b071cac2871446dea2823f88066c50c4",
+    "src/energy-charts-preview.js": "9eb721020a1204206aa2b4dd50c5486df0b436911b8bf6c11d6a98085927dbdd",
+    "src/energy-charts.js": "55d674419164e672f8a7d1788d76b4ffb27717962b1d63ec73222eb54309dc50",
+    "src/energy-direct-guide.js": "986edb0303b51c1682625ce6c02a10cfae00767c2759c61f9e8f3143d6310205",
+    "src/equilibrium-candidate-results.js": "e411fd8565b6f69de5d491ad2eeb452926c54bbd0b4f14b837fdfe91394fb7b7",
+    "src/equilibrium-page.js": "77bfbd51debcf54f6eb85a12e8c013f4388891f0b7fa3630e55f8b84f563cfa9",
+    "src/export/review.js": "a7f6407875098fc4e4714f4a82b1a341a3894851c7b12b8fb57870383e56579f",
+    "src/export/state.js": "0ec67fb03f648f8a446e228cc152c6b9d2313e69ba2b66a7c4eb77afb2055f4c",
+    "src/export/zip.js": "ecf658fc7efeaff9fde346092bbde4884959419a021b52ae159c4531ce3fa9db",
+    "src/granularity-page.js": "65e95c9a7cdbb1f6f0f3ba72ea07ebc9e59afaf8d263bb8107d2cb5bcbb1f7aa",
+    "src/laboratory-panel.js": "fdccf3fa2b78fdce6aa877975f8a15c59ee801dd2f2e5b396b7610eb777207bf",
+    "src/live-diagnostics.js": "5ed53c66dabef2fc312c97874186e37c097d75f71c9e17c7cc652e480c3334f6",
+    "src/main.js": "a724af555eddcb2798a4459ecade744637abdac708601bcf19e4567272ad5050",
+    "src/ncorpos-live-entry.js": "d4574c6cb0d46372141f994d71e30a758320fb7f359d76c26017737475055e21",
+    "src/physics/constants.js": "4b1c2a1d96453b95c8e57a45f46443083e77d54e1714aadc7d060de0d9aa22ca",
+    "src/physics/diagnostics.js": "d385ce21d018390f63210c8e8975276f1696656de69b25bc8e5017db5ef14765",
+    "src/physics/disk-analysis.js": "ecd700024436712b55152cb4bf64463ea70ee5bb9e93a6cc7750a8a1057219f7",
+    "src/physics/equilibrium-analysis.js": "21eb7a098144724e3d537d4f6c01bc3308683148522e0f97d5907d2be3661998",
+    "src/physics/equilibrium-field.js": "034752a5d363fbdf596a827b25ccc0b6d4d24ce6a74f14df1e00228377321a30",
+    "src/physics/external-grid-polynomial.js": "fcc5185e99acd25c6f35078a9c2b42d103c2fbc9b65606c4873b2184682ddcbf",
+    "src/physics/external-grid.js": "9e9dcf0b32c2864a8f8c8e08a0e909c4e306771126e5df17d3b90c240a9d6540",
+    "src/physics/fixed-halo.js": "e351183ed13436395f59ead258d73c99a55c6bfe4a75cece12b11ba51f2bb31c",
+    "src/physics/forces.js": "9532d4286c6481d49995ece96e48bd595145c2e2c8a22897520cafa45f862444",
+    "src/physics/granularity-analysis.js": "4a5edbd3ff27f0df4a98818c5118a4cfc678a8f84fc1db8b66df2aa4c0200b35",
+    "src/physics/halo-experiments.js": "a5a0169b5d8b38c56db0229a83a5b7ba4a940968dd7572bf26f52f37dc9fbcdb",
+    "src/physics/hamiltonian-bounds-105.js": "8344ca6dd1d98b157613e7225356029dc58143850e14875a6bbf189fc429e73d",
+    "src/physics/initial-allocated.js": "f62b945334f7cfd062aa5eda6a3964aca59eb977985d7ffe73a8c8cce04ed378",
+    "src/physics/initial-legacy.js": "93ca8666ff188863b947dc8535ca23244d67c20ab2a177cb12e494cf566eeefa",
+    "src/physics/initial.js": "5a6bbdb6cfe562776c6a408271c26d8a29183e92d2021914e2eb0f34230ef66a",
+    "src/physics/integrator.js": "5a83b4dcad749e13d438cdde561c7ee19ac6418823cfa5f06257eee3b268b04f",
+    "src/physics/iterative-initial.js": "bf6216a55950684589f697a36bd122584ae5817a6afb00eab0705746f98cc164",
+    "src/physics/jeans-axisymmetric.js": "903331d3c5643c122e63bcb3778bce3a29e5a4d713c09c0a79a6dea178b9698d",
+    "src/physics/laboratory.js": "3f36f219449d053c7756147c3b312464123c8b4242e65f428a8c1a5cbf528f2d",
+    "src/physics/live-energy.js": "3880ea68ca7817243b40f8e2c4e283e88afa6b553674d4aa307f607dfa635750",
+    "src/physics/mass-audit.js": "99f3722ec0027a3c51b3183a440ec02a52b773aa9e9b53482631777b0a9353f2",
+    "src/physics/models.js": "96d948549f2651e31c191a4853b3091d55f4a9c7aa31dd6a040fc5524d5c4c00",
+    "src/physics/orbit-equilibrium.js": "12e4e3506111f8640640bb5e6bcacfab21e4c87d6dbc983dd8ffc0708c6820cf",
+    "src/physics/pair-energy-partition.js": "22a2f43c0bbdb67c7959dcef72f185e2f3e0814cf9a6fd0baa135ea29e3ba688",
+    "src/physics/physical-time.js": "8b6d3e6583012e6a298e0d5e82c6bf04b4b23f867ceba7cebefcb72ef781aabe",
+    "src/physics/rotation-field.js": "cf4df5dbd647ded3ebf8873f6be9aa10672ff9f164346b5c6c53231b4f1619e7",
+    "src/physics/snapshot-model.js": "681327ebbc656b4fd702bd02b0bd42c5c58f7b5e06643de121669350684d53ba",
+    "src/physics/softened-model.js": "2f407e9a9ee2aa28beeb52fec6c892c00ae23a77de8e0c6b83d592ad9cce81aa",
+    "src/physics/stationarity-105.js": "2c75946a5def93159e19aa5d4fe31daa419dc786d29940d513c72644d0cc563b",
+    "src/physics/structure-diagnostics.js": "e94593e700e77bf95392b949bf2891652b87b224000ec1ab584e586dbb871440",
+    "src/physics/validation-101.js": "c6e0f58068bf585bdb43fb71db77edad6197d7d62f29afb7223cec761c409275",
+    "src/presentation106.js": "e98d0d5a8be6dc7c9924611f30a12dfe513741ec00d36268f80820542c280e01",
+    "src/refinement-page.js": "cc5418e1f1a839c6b124ea046afefbfb1d8663b2c805e3888d0501c5a616063a",
+    "src/render/camera.js": "faaa725427d1c78a3efbc0bd5ba63db2b4c31f7e0d121156f81f1032bb18cc83",
+    "src/render/gpu-renderer.js": "0837ecd1dea9361f7de01641cd8985b37e747ad63712a0f321ba75bc8f86de33",
+    "src/render/particle-style.js": "aa45e5469be99a31c1438b1fb05c3881b44cc8e015c016efb623a0acffacd6a5",
+    "src/render/webgl-renderer.js": "856dad630b3ba50420d3be836dbf55af837983087ffa0f6d4ae747f8bfe58e80",
+    "src/stationarity-page.js": "44c89e221c81ee11c2f0e2b7cf8b4b3134fed8a458ded9d3d132f55b68007e17",
+    "src/validation-assessment.js": "d4f68a43a078cb6c537011720690248a62871e5b3b9f9e39caccf4542a3eb7c2",
+    "scripts/equilibrium-rebuild/collect-browser.mjs": "173f929812e9926899b4da44d7599bb317fb7649dc89f1aaab1152c0fe7333e4",
+    "scripts/equilibrium-rebuild/controls.mjs": "1fdcfb47a4775519f8147793ad499203231f7b607766121273bde833e8fb90c5",
+    "scripts/equilibrium-rebuild/field.mjs": "e001bfa54b0e7f7f50e5f206b068d99594c585f2fb1784a2d9fff3919d6f0f59",
+    "scripts/equilibrium-rebuild/figure.mjs": "064d01902c36fcbe5b1a7540e53fa2677c3a03902962ba65d25afe9fc4cee891",
+    "scripts/equilibrium-rebuild/prepare.mjs": "cde5832bf2b023b1ea227fbb8baaa78031f79c4af66337522852d54bc504d4f9",
+    "scripts/equilibrium-rebuild/report.mjs": "d248225d23fd9d3dbce4a470398848973f889542d28517addf582b2ab20ef5c8",
+    "scripts/equilibrium-rebuild/run.mjs": "dd152e91ac3430d653308ac65381505a1642194c43ff0349890da90b3eb3f11f",
+    "scripts/equilibrium-rebuild/validate.mjs": "bf5b5e32a9fdcb86ca4e5d535c0207049f5d19a12f2338a55ae7066dbb3df9a3",
+    "scripts/equilibrium-rebuild/weak-stationarity.mjs": "c6003ab499fceeb62b7394672396fc69b08ee229bb69e7ac2d402cd057df50e3",
+    "tests/orbit-equilibrium.test.mjs": "f2d1d25023529973eb16037043133e2e003811625bf6789eb2400d3d4d3924e3",
+    "tests/browser-equilibrium-rebuild.html": "ce2964b69da2cbd795f8bdf4600f9ba1604c04fdfa71eafdf660bcd407aff557",
+    "tests/browser-equilibrium-rebuild-worker.js": "b62c1480dcd297e7c86fde8b3cf51a4382a72c1616099d51578b766a4d3d70e2",
+    "scripts/build.mjs": "d6cfd9a9ebaf1e6c1b8bc7d38b3ae83864e17a1264834a8b2697c3882f575bd9",
+    "package.json": "3a70ed7916b2ef2a7ba51b7699a04c6ae2da33cff3aff2f7e915a4be098b393b",
+    "equilibrio-candidato.html": "a33720dde030bd53712cd559f39d361eb9339ea1897dd54cc874f353857c519b",
+    "experimento-ncorpos.html": "44c2cccc719e1a733c2d3c10211baa5d8e72043a90d8317c369be9f5350a76ba",
+    "RECONSTRUCAO_EQUILIBRIO_METODO.md": "7212022ef15d034205bb85fccee61328f29774f6e7af500d5e583518d4a84dbe",
+    "RECONSTRUCAO_EQUILIBRIO_RESULTADOS.md": "d8df3bb440150c41ba132cb3b1ac357caf4af9d8474078b375ba322a77903127"
+  },
+  "dataHashes": {
+    "reports/equilibrium-rebuild/2026-10-21T03-39-56-668Z/field-audit.json": {
+      "sha256": "b5325e4e5e484d92f12b13be61aa12e7a6d4903c87ebbec26d70be5ac19fa25f",
+      "bytes": 55181
+    },
+    "reports/equilibrium-rebuild/2026-10-21T03-39-56-668Z/field-coarse.json": {
+      "sha256": "a2ad754a320cb0ab34497b6a4b98c98d90600abfcd4c746c15e0e6189d74e364",
+      "bytes": 1796732
+    },
+    "reports/equilibrium-rebuild/2026-10-21T03-39-56-668Z/field-grid.json": {
+      "sha256": "5e9b383d8d6fc48bf2d168ef23bc3fbe0afe5a596395605c16e3f9a7f9b72c12",
+      "bytes": 4739056
+    },
+    "reports/equilibrium-rebuild/2026-10-21T03-39-56-668Z/field-quadrature.json": {
+      "sha256": "8b1215345fea59b3d2fee1e8c9df06e5e568c2dbcf95fada900a9c6cda9297de",
+      "bytes": 1796687
+    },
+    "reports/equilibrium-rebuild/annuli.csv": {
+      "sha256": "16b459f3e5cad14966a39fa4e3d1fa5de29ffb345c02a63e6d209788d9e890e5",
+      "bytes": 1090091
+    },
+    "reports/equilibrium-rebuild/assessment.json": {
+      "sha256": "dd020a7ce24eaee32abbd0c2e4865ae351b8dba541cfd53d126ce20c4dcffef4",
+      "bytes": 28324
+    },
+    "reports/equilibrium-rebuild/baseline.json": {
+      "sha256": "059a1716ef02bcfd273915c8bc0e963361ad3d885ccfa626909a9afd5cedd7df",
+      "bytes": 6156
+    },
+    "reports/equilibrium-rebuild/browser-manifest.json": {
+      "sha256": "d4c0a9a9d803f29e6e21170859a809d1aa04e50e88a33bda3c4b8a634f3547f5",
+      "bytes": 1330
+    },
+    "reports/equilibrium-rebuild/candidate-n800-s2026.csv": {
+      "sha256": "986cde3881731649d842297b8093672f56d1f39b8b2d56a8023e981c74e8cb24",
+      "bytes": 116270
+    },
+    "reports/equilibrium-rebuild/controls-2026-10-21T03-46-06-609Z/candidate-all-live-c120-360-320-s2026-dt0.1-t40-initial.json": {
+      "sha256": "33db57e1125d87c49b5e0228568bae0046cffe0b7d7798b8a417da36c68dd4fd",
+      "bytes": 114194
+    },
+    "reports/equilibrium-rebuild/controls-2026-10-21T03-46-06-609Z/candidate-all-live-c120-360-320-s2026-dt0.1-t40.json": {
+      "sha256": "d1ad80b0535f6ec23d98542e2c742e16f4320cf438768c3698821302d1ff148a",
+      "bytes": 1741396
+    },
+    "reports/equilibrium-rebuild/controls-2026-10-21T03-46-06-609Z/candidate-all-live-c60-180-160-s2026-dt0.025-t40-initial.json": {
+      "sha256": "992f6a6e0e872d161a934f455dc7f709ac12897113a1b18a37cb514f8ef4dd76",
+      "bytes": 57492
+    },
+    "reports/equilibrium-rebuild/controls-2026-10-21T03-46-06-609Z/candidate-all-live-c60-180-160-s2026-dt0.025-t40.json": {
+      "sha256": "a58a5ee6cb12931256f650eaf2ace3c6b3d19aab5a9e94dc5170be01c7cf7dc5",
+      "bytes": 1679842
+    },
+    "reports/equilibrium-rebuild/controls-2026-10-21T03-46-06-609Z/candidate-all-live-c60-180-160-s2026-dt0.05-t40-initial.json": {
+      "sha256": "992f6a6e0e872d161a934f455dc7f709ac12897113a1b18a37cb514f8ef4dd76",
+      "bytes": 57492
+    },
+    "reports/equilibrium-rebuild/controls-2026-10-21T03-46-06-609Z/candidate-all-live-c60-180-160-s2026-dt0.05-t40.json": {
+      "sha256": "35040afc7a6702bb119dd5e0a07628c0dc852ef30c14759b903328919666ece0",
+      "bytes": 1683136
+    },
+    "reports/equilibrium-rebuild/controls-2026-10-21T03-46-06-609Z/candidate-all-live-c60-180-160-s2026-dt0.1-t200-initial.json": {
+      "sha256": "992f6a6e0e872d161a934f455dc7f709ac12897113a1b18a37cb514f8ef4dd76",
+      "bytes": 57492
+    },
+    "reports/equilibrium-rebuild/controls-2026-10-21T03-46-06-609Z/candidate-all-live-c60-180-160-s2026-dt0.1-t200.json": {
+      "sha256": "2e605166aa5faac706dd137a0049ece4230d572cc16701e4b5d41ba3475bb364",
+      "bytes": 1688517
+    },
+    "reports/equilibrium-rebuild/controls-2026-10-21T03-46-06-609Z/candidate-all-live-c60-180-160-s2027-dt0.1-t200-initial.json": {
+      "sha256": "98c43006d0479c885cb9ecb87dacf17f763b24efe967db2f3cbaf07906a5f2ff",
+      "bytes": 57528
+    },
+    "reports/equilibrium-rebuild/controls-2026-10-21T03-46-06-609Z/candidate-all-live-c60-180-160-s2027-dt0.1-t200.json": {
+      "sha256": "a62de511bd52a64cd669e2130e0e073dc7f4e639edd554a658ea76623ae781a1",
+      "bytes": 1723558
+    },
+    "reports/equilibrium-rebuild/controls-2026-10-21T03-46-06-609Z/candidate-all-live-c60-180-160-s2028-dt0.1-t200-initial.json": {
+      "sha256": "8c2b9213b14cb01ca12224c318dc389b211db765ea0c01766f603b77ed43b02e",
+      "bytes": 57716
+    },
+    "reports/equilibrium-rebuild/controls-2026-10-21T03-46-06-609Z/candidate-all-live-c60-180-160-s2028-dt0.1-t200.json": {
+      "sha256": "cace91e58760f902f95f568f5d377e1d0e30176004ccc062925495bb3b68b953",
+      "bytes": 1690579
+    },
+    "reports/equilibrium-rebuild/controls-2026-10-21T03-46-06-609Z/candidate-all-live-c60-180-640-s2026-dt0.1-t40-initial.json": {
+      "sha256": "25bdde15fe681aa8f47d2c351301630131b7dd26ffb737f70a3b452eade662ab",
+      "bytes": 125192
+    },
+    "reports/equilibrium-rebuild/controls-2026-10-21T03-46-06-609Z/candidate-all-live-c60-180-640-s2026-dt0.1-t40.json": {
+      "sha256": "359d350b958e11ca99336453c90e98bd3462f62342ab771f65f5e36255e975f2",
+      "bytes": 1713582
+    },
+    "reports/equilibrium-rebuild/controls-2026-10-21T03-46-06-609Z/candidate-disk-live-c60-180-160-s2026-dt0.1-t200-initial.json": {
+      "sha256": "992f6a6e0e872d161a934f455dc7f709ac12897113a1b18a37cb514f8ef4dd76",
+      "bytes": 57492
+    },
+    "reports/equilibrium-rebuild/controls-2026-10-21T03-46-06-609Z/candidate-disk-live-c60-180-160-s2026-dt0.1-t200.json": {
+      "sha256": "f091f0412cb5c9c116662195ee2a9dda388b0ca3290c0e2fb5f29c34e8d759cc",
+      "bytes": 1065286
+    },
+    "reports/equilibrium-rebuild/controls-2026-10-21T03-46-06-609Z/candidate-disk-live-c60-180-160-s2027-dt0.1-t200-initial.json": {
+      "sha256": "98c43006d0479c885cb9ecb87dacf17f763b24efe967db2f3cbaf07906a5f2ff",
+      "bytes": 57528
+    },
+    "reports/equilibrium-rebuild/controls-2026-10-21T03-46-06-609Z/candidate-disk-live-c60-180-160-s2027-dt0.1-t200.json": {
+      "sha256": "1bb672bdd947187d12330a5c70660365de6d4aa6f37cb05eb4408d5053149841",
+      "bytes": 1074363
+    },
+    "reports/equilibrium-rebuild/controls-2026-10-21T03-46-06-609Z/candidate-disk-live-c60-180-160-s2028-dt0.1-t200-initial.json": {
+      "sha256": "8c2b9213b14cb01ca12224c318dc389b211db765ea0c01766f603b77ed43b02e",
+      "bytes": 57716
+    },
+    "reports/equilibrium-rebuild/controls-2026-10-21T03-46-06-609Z/candidate-disk-live-c60-180-160-s2028-dt0.1-t200.json": {
+      "sha256": "2423afb4e8053d33f9f9b71c5166eaf484e2525795bfb83030384c6aa020c605",
+      "bytes": 1085709
+    },
+    "reports/equilibrium-rebuild/controls-2026-10-21T03-46-06-609Z/candidate-fixed-total-c60-180-160-s2026-dt0.1-t200-initial.json": {
+      "sha256": "992f6a6e0e872d161a934f455dc7f709ac12897113a1b18a37cb514f8ef4dd76",
+      "bytes": 57492
+    },
+    "reports/equilibrium-rebuild/controls-2026-10-21T03-46-06-609Z/candidate-fixed-total-c60-180-160-s2026-dt0.1-t200.json": {
+      "sha256": "a044315de493839ec98688fc1e10c4a26b6b82ef4cfa6c882617d9a1e2cf6fc2",
+      "bytes": 1654216
+    },
+    "reports/equilibrium-rebuild/controls-2026-10-21T03-46-06-609Z/candidate-fixed-total-c60-180-160-s2027-dt0.1-t200-initial.json": {
+      "sha256": "98c43006d0479c885cb9ecb87dacf17f763b24efe967db2f3cbaf07906a5f2ff",
+      "bytes": 57528
+    },
+    "reports/equilibrium-rebuild/controls-2026-10-21T03-46-06-609Z/candidate-fixed-total-c60-180-160-s2027-dt0.1-t200.json": {
+      "sha256": "24b1d95b8497520e1b86cf49483d6802325962fc62cc6c68d1d977adb256a987",
+      "bytes": 1657156
+    },
+    "reports/equilibrium-rebuild/controls-2026-10-21T03-46-06-609Z/candidate-fixed-total-c60-180-160-s2028-dt0.1-t200-initial.json": {
+      "sha256": "8c2b9213b14cb01ca12224c318dc389b211db765ea0c01766f603b77ed43b02e",
+      "bytes": 57716
+    },
+    "reports/equilibrium-rebuild/controls-2026-10-21T03-46-06-609Z/candidate-fixed-total-c60-180-160-s2028-dt0.1-t200.json": {
+      "sha256": "b243eca8b1a7b740de5621d07ef1e5b2eb11a9bdff6d865fe8de7b764db015dd",
+      "bytes": 1652394
+    },
+    "reports/equilibrium-rebuild/controls-2026-10-21T03-46-06-609Z/legacy-all-live-c120-360-320-s2026-dt0.1-t40-initial.json": {
+      "sha256": "c1c30d9c7dfde2bab228e3e6401174107932d6d5338b718560f8b058a4bb6c5d",
+      "bytes": 113709
+    },
+    "reports/equilibrium-rebuild/controls-2026-10-21T03-46-06-609Z/legacy-all-live-c120-360-320-s2026-dt0.1-t40.json": {
+      "sha256": "57a79a2007bb284d22708eb2ca62dda709a441656979d6ec3a410e0986541793",
+      "bytes": 1794430
+    },
+    "reports/equilibrium-rebuild/controls-2026-10-21T03-46-06-609Z/legacy-all-live-c60-180-160-s2026-dt0.025-t40-initial.json": {
+      "sha256": "bef463e3e45462ae89b07056725d9210bc70dfffa3e3c83fc0e405df67cf108e",
+      "bytes": 56832
+    },
+    "reports/equilibrium-rebuild/controls-2026-10-21T03-46-06-609Z/legacy-all-live-c60-180-160-s2026-dt0.025-t40.json": {
+      "sha256": "3be7244a9782c909ec5520a99c0b71eac9fc9bd9f0a7317b02fb430787fbd74a",
+      "bytes": 1694025
+    },
+    "reports/equilibrium-rebuild/controls-2026-10-21T03-46-06-609Z/legacy-all-live-c60-180-160-s2026-dt0.05-t40-initial.json": {
+      "sha256": "bef463e3e45462ae89b07056725d9210bc70dfffa3e3c83fc0e405df67cf108e",
+      "bytes": 56832
+    },
+    "reports/equilibrium-rebuild/controls-2026-10-21T03-46-06-609Z/legacy-all-live-c60-180-160-s2026-dt0.05-t40.json": {
+      "sha256": "8640a2764d22f530b7b6e7183ddee6b03a7f6bbef1a43301908d86a7688d5313",
+      "bytes": 1694431
+    },
+    "reports/equilibrium-rebuild/controls-2026-10-21T03-46-06-609Z/legacy-all-live-c60-180-160-s2026-dt0.1-t200-initial.json": {
+      "sha256": "bef463e3e45462ae89b07056725d9210bc70dfffa3e3c83fc0e405df67cf108e",
+      "bytes": 56832
+    },
+    "reports/equilibrium-rebuild/controls-2026-10-21T03-46-06-609Z/legacy-all-live-c60-180-160-s2026-dt0.1-t200.json": {
+      "sha256": "a42c2325f9caa52c56cb84a9ca8195889e806fb36dd99b0d383ca92e20b817c3",
+      "bytes": 1729444
+    },
+    "reports/equilibrium-rebuild/controls-2026-10-21T03-46-06-609Z/legacy-all-live-c60-180-160-s2027-dt0.1-t200-initial.json": {
+      "sha256": "9db50aca6b1cf15bb2f214f43462d506b84fc93ad3e277610133be0b939c5c13",
+      "bytes": 56804
+    },
+    "reports/equilibrium-rebuild/controls-2026-10-21T03-46-06-609Z/legacy-all-live-c60-180-160-s2027-dt0.1-t200.json": {
+      "sha256": "423ae1fa89324e2eee80e86a14195f073114d3421c2e9b0abe64dee6abbd25a5",
+      "bytes": 1757748
+    },
+    "reports/equilibrium-rebuild/controls-2026-10-21T03-46-06-609Z/legacy-all-live-c60-180-160-s2028-dt0.1-t200-initial.json": {
+      "sha256": "73339249e9779b1b6d15a3f5b43d00e065799ee51fb506142a689157080363aa",
+      "bytes": 56846
+    },
+    "reports/equilibrium-rebuild/controls-2026-10-21T03-46-06-609Z/legacy-all-live-c60-180-160-s2028-dt0.1-t200.json": {
+      "sha256": "84e029293f2359e7f7549b4e55dcf4e23bbb2b95566d987187c3f5e22ce6d2eb",
+      "bytes": 1728480
+    },
+    "reports/equilibrium-rebuild/controls-2026-10-21T03-46-06-609Z/legacy-all-live-c60-180-640-s2026-dt0.1-t40-initial.json": {
+      "sha256": "f7f25ceaa05f61cddc48b20612cd99e98ecd684d1ee5ac74ee8e51d2344d670e",
+      "bytes": 124719
+    },
+    "reports/equilibrium-rebuild/controls-2026-10-21T03-46-06-609Z/legacy-all-live-c60-180-640-s2026-dt0.1-t40.json": {
+      "sha256": "5595bcac2ce712df55e230b10ae2feb93241a254c9e6ae4c60ef254dfe88fd00",
+      "bytes": 1736690
+    },
+    "reports/equilibrium-rebuild/controls-2026-10-21T03-46-06-609Z/legacy-disk-live-c60-180-160-s2026-dt0.1-t200-initial.json": {
+      "sha256": "bef463e3e45462ae89b07056725d9210bc70dfffa3e3c83fc0e405df67cf108e",
+      "bytes": 56832
+    },
+    "reports/equilibrium-rebuild/controls-2026-10-21T03-46-06-609Z/legacy-disk-live-c60-180-160-s2026-dt0.1-t200.json": {
+      "sha256": "26b1fbf95773e19739c429fe5724dcf113d1ee5ab0544eb34793ecf98163e80a",
+      "bytes": 1090319
+    },
+    "reports/equilibrium-rebuild/controls-2026-10-21T03-46-06-609Z/legacy-disk-live-c60-180-160-s2027-dt0.1-t200-initial.json": {
+      "sha256": "9db50aca6b1cf15bb2f214f43462d506b84fc93ad3e277610133be0b939c5c13",
+      "bytes": 56804
+    },
+    "reports/equilibrium-rebuild/controls-2026-10-21T03-46-06-609Z/legacy-disk-live-c60-180-160-s2027-dt0.1-t200.json": {
+      "sha256": "f727020749038a4cb070ac7fd2d95ad4fe1e0b9519f43a38f62507567cd82126",
+      "bytes": 1112847
+    },
+    "reports/equilibrium-rebuild/controls-2026-10-21T03-46-06-609Z/legacy-disk-live-c60-180-160-s2028-dt0.1-t200-initial.json": {
+      "sha256": "73339249e9779b1b6d15a3f5b43d00e065799ee51fb506142a689157080363aa",
+      "bytes": 56846
+    },
+    "reports/equilibrium-rebuild/controls-2026-10-21T03-46-06-609Z/legacy-disk-live-c60-180-160-s2028-dt0.1-t200.json": {
+      "sha256": "812be6a7ce20f3d73ec4ff5ed82d0da96eac90863ab2aa02ba1b05485957996e",
+      "bytes": 1109524
+    },
+    "reports/equilibrium-rebuild/controls-2026-10-21T03-46-06-609Z/legacy-fixed-total-c60-180-160-s2026-dt0.1-t200-initial.json": {
+      "sha256": "bef463e3e45462ae89b07056725d9210bc70dfffa3e3c83fc0e405df67cf108e",
+      "bytes": 56832
+    },
+    "reports/equilibrium-rebuild/controls-2026-10-21T03-46-06-609Z/legacy-fixed-total-c60-180-160-s2026-dt0.1-t200.json": {
+      "sha256": "4aa14dfe627b7d0a258dc09e18dd7f76fc0cf7b7701278ff14f88f5da5fc06bd",
+      "bytes": 1690413
+    },
+    "reports/equilibrium-rebuild/controls-2026-10-21T03-46-06-609Z/legacy-fixed-total-c60-180-160-s2027-dt0.1-t200-initial.json": {
+      "sha256": "9db50aca6b1cf15bb2f214f43462d506b84fc93ad3e277610133be0b939c5c13",
+      "bytes": 56804
+    },
+    "reports/equilibrium-rebuild/controls-2026-10-21T03-46-06-609Z/legacy-fixed-total-c60-180-160-s2027-dt0.1-t200.json": {
+      "sha256": "dde3fc60c77bf62328606335b7ca46c973bab363e07cce2af70e748643016ff6",
+      "bytes": 1696649
+    },
+    "reports/equilibrium-rebuild/controls-2026-10-21T03-46-06-609Z/legacy-fixed-total-c60-180-160-s2028-dt0.1-t200-initial.json": {
+      "sha256": "73339249e9779b1b6d15a3f5b43d00e065799ee51fb506142a689157080363aa",
+      "bytes": 56846
+    },
+    "reports/equilibrium-rebuild/controls-2026-10-21T03-46-06-609Z/legacy-fixed-total-c60-180-160-s2028-dt0.1-t200.json": {
+      "sha256": "4125b8da469d9b2ea69de4003ee08a022889e683c616fe8ecf6306698ca42ad6",
+      "bytes": 1684413
+    },
+    "reports/equilibrium-rebuild/controls-2026-10-21T03-46-06-609Z/manifest.json": {
+      "sha256": "1b8478a270e6b400298ecc0cc6cf3a8285d870d007ea7c08792ef81a2b0d53be",
+      "bytes": 16517
+    },
+    "reports/equilibrium-rebuild/controls-extended-2026-10-21T03-48-10-412Z/candidate-all-live-c120-360-320-s2026-dt0.05-t200-initial.json": {
+      "sha256": "33db57e1125d87c49b5e0228568bae0046cffe0b7d7798b8a417da36c68dd4fd",
+      "bytes": 114194
+    },
+    "reports/equilibrium-rebuild/controls-extended-2026-10-21T03-48-10-412Z/candidate-all-live-c120-360-320-s2026-dt0.05-t200.json": {
+      "sha256": "d5dcc6147db09cfd87fdffd7a114313b06644889cd6dcb512044fd916d6a8ce8",
+      "bytes": 1743980
+    },
+    "reports/equilibrium-rebuild/controls-extended-2026-10-21T03-48-10-412Z/candidate-all-live-c120-360-320-s2027-dt0.05-t200-initial.json": {
+      "sha256": "c25558a30145aa195f047674f545a088c0d16181883f708af34cbea6b607a9e2",
+      "bytes": 114392
+    },
+    "reports/equilibrium-rebuild/controls-extended-2026-10-21T03-48-10-412Z/candidate-all-live-c120-360-320-s2027-dt0.05-t200.json": {
+      "sha256": "fd127d0228b789cd228b70770c76cf0cbfec7af7d9804966db62ff44fff07c35",
+      "bytes": 1797738
+    },
+    "reports/equilibrium-rebuild/controls-extended-2026-10-21T03-48-10-412Z/candidate-all-live-c120-360-320-s2028-dt0.05-t200-initial.json": {
+      "sha256": "e422d8465d4ec4fe73452386d51f691863a990166f8a97d3ffe48bcb4a989500",
+      "bytes": 114450
+    },
+    "reports/equilibrium-rebuild/controls-extended-2026-10-21T03-48-10-412Z/candidate-all-live-c120-360-320-s2028-dt0.05-t200.json": {
+      "sha256": "8d8fcaee58e8941c02da23441e24dfa01ce7f58e340cb3a15499dcec6ceb855d",
+      "bytes": 1790396
+    },
+    "reports/equilibrium-rebuild/controls-extended-2026-10-21T03-48-10-412Z/candidate-all-live-c60-180-160-s2026-dt0.025-t200-initial.json": {
+      "sha256": "992f6a6e0e872d161a934f455dc7f709ac12897113a1b18a37cb514f8ef4dd76",
+      "bytes": 57492
+    },
+    "reports/equilibrium-rebuild/controls-extended-2026-10-21T03-48-10-412Z/candidate-all-live-c60-180-160-s2026-dt0.025-t200.json": {
+      "sha256": "4c7f2afced708ca274fcb2bc049cee4c4c17fc775e1d058d3a8169ce7f757112",
+      "bytes": 1687088
+    },
+    "reports/equilibrium-rebuild/controls-extended-2026-10-21T03-48-10-412Z/candidate-all-live-c60-180-160-s2026-dt0.05-t200-initial.json": {
+      "sha256": "992f6a6e0e872d161a934f455dc7f709ac12897113a1b18a37cb514f8ef4dd76",
+      "bytes": 57492
+    },
+    "reports/equilibrium-rebuild/controls-extended-2026-10-21T03-48-10-412Z/candidate-all-live-c60-180-160-s2026-dt0.05-t200.json": {
+      "sha256": "6c5f20bb24b63185410b450a0dc22aa7d7837604c7853c80cc6cbe6f819fbc6a",
+      "bytes": 1689366
+    },
+    "reports/equilibrium-rebuild/controls-extended-2026-10-21T03-48-10-412Z/candidate-all-live-c60-180-2560-s2026-dt0.05-t40-initial.json": {
+      "sha256": "d294d994b949d4461f74ee6902434c1ae6700b372b98565ec0d3a54c0551a7eb",
+      "bytes": 394938
+    },
+    "reports/equilibrium-rebuild/controls-extended-2026-10-21T03-48-10-412Z/candidate-all-live-c60-180-2560-s2026-dt0.05-t40.json": {
+      "sha256": "297a354cfbc1a3dcf06d520d687de660c6e1b52875dcc4754d222eaeee0b92cc",
+      "bytes": 1734880
+    },
+    "reports/equilibrium-rebuild/controls-extended-2026-10-21T03-48-10-412Z/legacy-all-live-c60-180-160-s2026-dt0.025-t200-initial.json": {
+      "sha256": "bef463e3e45462ae89b07056725d9210bc70dfffa3e3c83fc0e405df67cf108e",
+      "bytes": 56832
+    },
+    "reports/equilibrium-rebuild/controls-extended-2026-10-21T03-48-10-412Z/legacy-all-live-c60-180-160-s2026-dt0.025-t200.json": {
+      "sha256": "10c68f861d4ae8ad36a00ba4d1b11b7b7caad6b2f04204b8254313b395535500",
+      "bytes": 1739630
+    },
+    "reports/equilibrium-rebuild/controls-extended-2026-10-21T03-48-10-412Z/legacy-all-live-c60-180-160-s2026-dt0.05-t200-initial.json": {
+      "sha256": "bef463e3e45462ae89b07056725d9210bc70dfffa3e3c83fc0e405df67cf108e",
+      "bytes": 56832
+    },
+    "reports/equilibrium-rebuild/controls-extended-2026-10-21T03-48-10-412Z/legacy-all-live-c60-180-160-s2026-dt0.05-t200.json": {
+      "sha256": "0bfd8e2f4df01bc746835c0433ed0b5687088f43c148d52e26b31100828096ea",
+      "bytes": 1732506
+    },
+    "reports/equilibrium-rebuild/controls-extended-2026-10-21T03-48-10-412Z/manifest.json": {
+      "sha256": "dd8b585d623251909f2348ae22c7c4b997f98079f3d1abf91278645162109b92",
+      "bytes": 6382
+    },
+    "reports/equilibrium-rebuild/figures/all-live-s2026-both-drift.svg": {
+      "sha256": "1aca9b565a0544fad3110fde4278295c0f36a5f93268a4382be1438966bafd7b",
+      "bytes": 8761
+    },
+    "reports/equilibrium-rebuild/figures/all-live-s2026-both-energy.svg": {
+      "sha256": "9efa73c4649cf8c5aaf4617d034f696d1863d223fe859ba96c32dad35a947dc5",
+      "bytes": 8731
+    },
+    "reports/equilibrium-rebuild/figures/all-live-s2026-both-halo.svg": {
+      "sha256": "d13ca86f4661c704b1911ae39bad8609f84bb5279a7d75e776e00f9a38627219",
+      "bytes": 12331
+    },
+    "reports/equilibrium-rebuild/figures/all-live-s2026-both-height.svg": {
+      "sha256": "3d7ad23d0a1211d478d53ddc66e79e625f19c98459397f35cd5ea7aaa477552a",
+      "bytes": 8692
+    },
+    "reports/equilibrium-rebuild/figures/all-live-s2026-both-radial.svg": {
+      "sha256": "932d85d8bacba819c7f4b866c6b1b3701f951273cdd079fc6e2ec84bf60342ab",
+      "bytes": 8502
+    },
+    "reports/equilibrium-rebuild/figures/all-live-s2026-both-rings.svg": {
+      "sha256": "c61137805b68c2c41ab24a16f480f6dfa809c79438d0624dbd29954ee818cdf2",
+      "bytes": 8879
+    },
+    "reports/equilibrium-rebuild/figures/all-live-s2026-both-rotation.svg": {
+      "sha256": "1d890cb9f1e13a482b815905ab04093440b5d70f9338af4fc72cef313cf828a8",
+      "bytes": 7116
+    },
+    "reports/equilibrium-rebuild/figures/all-live-s2026-both-sigma.svg": {
+      "sha256": "598cf1d79465aaa24487e6141277342eabd4117dd3b72e6009b410ec6a06e463",
+      "bytes": 8679
+    },
+    "reports/equilibrium-rebuild/figures/all-live-s2026-both-vertical.svg": {
+      "sha256": "1e757dac81295427b54d3cf411b5e86893be6802dead9e0f7b50c019fbe44d2d",
+      "bytes": 10599
+    },
+    "reports/equilibrium-rebuild/figures/all-live-s2026-candidate-drift.svg": {
+      "sha256": "79c596278410336826304c8fce2b2c13c34610d8f4cb7b81911c58b1561b66cc",
+      "bytes": 5613
+    },
+    "reports/equilibrium-rebuild/figures/all-live-s2026-candidate-energy.svg": {
+      "sha256": "5456e2feb7b294eadd77353aed2d78fe22c58f7b60afb3029e413d578d965e70",
+      "bytes": 5582
+    },
+    "reports/equilibrium-rebuild/figures/all-live-s2026-candidate-halo.svg": {
+      "sha256": "192806ec6127620a6d093babd6807dcbc5817369d633d05c183173c635989188",
+      "bytes": 8344
+    },
+    "reports/equilibrium-rebuild/figures/all-live-s2026-candidate-height.svg": {
+      "sha256": "78917b14a8efcc274c300777cbf1eee3567e178c0d43740eeec882897cbd321d",
+      "bytes": 5558
+    },
+    "reports/equilibrium-rebuild/figures/all-live-s2026-candidate-radial.svg": {
+      "sha256": "3c74697e28dc0c779bbc8fc5a972691fe2674bbbb65affd108d15d74bd67bb4c",
+      "bytes": 6352
+    },
+    "reports/equilibrium-rebuild/figures/all-live-s2026-candidate-rings.svg": {
+      "sha256": "bb52dc587ee82d476cce1377466cd90609b67bac8127db764017045cfa5d2a8f",
+      "bytes": 5661
+    },
+    "reports/equilibrium-rebuild/figures/all-live-s2026-candidate-rotation.svg": {
+      "sha256": "6221629fe23e665c1494e9d807c5699e207ddc1ab516a465a9f517fbca4b1bf3",
+      "bytes": 4514
+    },
+    "reports/equilibrium-rebuild/figures/all-live-s2026-candidate-sigma.svg": {
+      "sha256": "9ff562dda0a65ae5441ee8ba1aef78d5d73a13736b911621d7d103cac7aefa80",
+      "bytes": 5538
+    },
+    "reports/equilibrium-rebuild/figures/all-live-s2026-candidate-vertical.svg": {
+      "sha256": "d264229d66f18c0e7372485f1244684a14df356aeac17e9c4d5c2ee8b7e9ffad",
+      "bytes": 7645
+    },
+    "reports/equilibrium-rebuild/figures/all-live-s2026-legacy-drift.svg": {
+      "sha256": "bd8ee921a2a5ea2842b09d9384c42c13543eff487b0fa39654511c2b80218d88",
+      "bytes": 4956
+    },
+    "reports/equilibrium-rebuild/figures/all-live-s2026-legacy-energy.svg": {
+      "sha256": "05e43ea21b3445a5a5a1c92457209cde8a718adca1ae34f770301c1d18a8f6e7",
+      "bytes": 4941
+    },
+    "reports/equilibrium-rebuild/figures/all-live-s2026-legacy-halo.svg": {
+      "sha256": "49c218e1ef7a0d46a5c8c95ce581211968437d3a34e676dbd17c1443a8cf2949",
+      "bytes": 7572
+    },
+    "reports/equilibrium-rebuild/figures/all-live-s2026-legacy-height.svg": {
+      "sha256": "7d14c2738a985eeeeafc5e98134905d575e7039085cff2cab2448f29b6e622b4",
+      "bytes": 4930
+    },
+    "reports/equilibrium-rebuild/figures/all-live-s2026-legacy-radial.svg": {
+      "sha256": "d8b2216ff01bfbd68eeb6e953cf7b12daf98b823b58a182334ff013822c3a0ff",
+      "bytes": 5566
+    },
+    "reports/equilibrium-rebuild/figures/all-live-s2026-legacy-rings.svg": {
+      "sha256": "0426a4553594694a624964af49669f17e9abbd32c73d52ed56facab4be031c46",
+      "bytes": 5068
+    },
+    "reports/equilibrium-rebuild/figures/all-live-s2026-legacy-rotation.svg": {
+      "sha256": "799a307182b4997dea0e6df95c1e2aab2141ab78488f6f01e8aa09319a87d7b0",
+      "bytes": 4407
+    },
+    "reports/equilibrium-rebuild/figures/all-live-s2026-legacy-sigma.svg": {
+      "sha256": "96bbb155111898096181027208993807756a8b2eb265eaa16c777c791570c76c",
+      "bytes": 4917
+    },
+    "reports/equilibrium-rebuild/figures/all-live-s2026-legacy-vertical.svg": {
+      "sha256": "5aabf888ae8b03374abfb9804e51a59f745770a4dc96df1f2635409521b4e8d0",
+      "bytes": 6580
+    },
+    "reports/equilibrium-rebuild/figures/all-live-s2027-both-drift.svg": {
+      "sha256": "453bed6defe6ecdec5a491491b090a32935e160d03b0a311704dd9c2e6e1d2a9",
+      "bytes": 8804
+    },
+    "reports/equilibrium-rebuild/figures/all-live-s2027-both-energy.svg": {
+      "sha256": "72b2d9738dbf788b772ab013cb83330091cbb0ca791ab7eccf6795537e7851ec",
+      "bytes": 8733
+    },
+    "reports/equilibrium-rebuild/figures/all-live-s2027-both-halo.svg": {
+      "sha256": "833b9771b81dbc7ae71f1b5bbc0e3ac6a1c1e1a064acc74ae968b3c5df25aa04",
+      "bytes": 12311
+    },
+    "reports/equilibrium-rebuild/figures/all-live-s2027-both-height.svg": {
+      "sha256": "8bb1abbe7a890992b27a2596fb52ac7a83cb45d8c9ac65ce9923f372b6a78c94",
+      "bytes": 8698
+    },
+    "reports/equilibrium-rebuild/figures/all-live-s2027-both-radial.svg": {
+      "sha256": "aad6dc12a38f2013dbe2ead25f03ca8f9d5cc271166bc4be31340b4854e18903",
+      "bytes": 8791
+    },
+    "reports/equilibrium-rebuild/figures/all-live-s2027-both-rings.svg": {
+      "sha256": "296aea1bbb6d6fa941d10548ace0332ea738967e58f4345fe7e6356bf5a09bcc",
+      "bytes": 8878
+    },
+    "reports/equilibrium-rebuild/figures/all-live-s2027-both-rotation.svg": {
+      "sha256": "b0a91f2123ddb21ec1788e3fd35079c8806a9fc8e22c9ffb3a659c77190ea245",
+      "bytes": 8018
+    },
+    "reports/equilibrium-rebuild/figures/all-live-s2027-both-sigma.svg": {
+      "sha256": "52f4cef51b8c0db140db0d9e49f20abe6f4450a4ff272cf9c44bf90cc46d0ff2",
+      "bytes": 8672
+    },
+    "reports/equilibrium-rebuild/figures/all-live-s2027-both-vertical.svg": {
+      "sha256": "8953ca213c37ae0835ae2223ba24306be9ff255720e8fb87bde30a2b5f3325e6",
+      "bytes": 10738
+    },
+    "reports/equilibrium-rebuild/figures/all-live-s2027-candidate-drift.svg": {
+      "sha256": "c6ed37387b91ae899618970d62f049f20ffc00356e8d423cb40eb65baf97b582",
+      "bytes": 5631
+    },
+    "reports/equilibrium-rebuild/figures/all-live-s2027-candidate-energy.svg": {
+      "sha256": "a4572cce14d21f132ad5f5d2e5cc6fbd3241f62fbcb4e4aeda5944b6eac44483",
+      "bytes": 5574
+    },
+    "reports/equilibrium-rebuild/figures/all-live-s2027-candidate-halo.svg": {
+      "sha256": "c97ac90bf4867b8f0ba6acdda9f8976123378a639d09549623c8dfff67215c25",
+      "bytes": 8348
+    },
+    "reports/equilibrium-rebuild/figures/all-live-s2027-candidate-height.svg": {
+      "sha256": "1f94c376033296681647036c2d380a7da71acdf7618d4cba2a6484b48b62d924",
+      "bytes": 5558
+    },
+    "reports/equilibrium-rebuild/figures/all-live-s2027-candidate-radial.svg": {
+      "sha256": "4ba4b162721692e687de51abf230fa7fdf5828c8a4b8e5e2d88b077722ece342",
+      "bytes": 6139
+    },
+    "reports/equilibrium-rebuild/figures/all-live-s2027-candidate-rings.svg": {
+      "sha256": "e7798faba782d553b85eb49a8e14b88bf9b0fbfa3c2c8644ae767c7709b61e50",
+      "bytes": 5651
+    },
+    "reports/equilibrium-rebuild/figures/all-live-s2027-candidate-rotation.svg": {
+      "sha256": "fb74e1e82d1006f06a5b26652dfc13d6609926789e8c6891182ef132eae49c35",
+      "bytes": 5239
+    },
+    "reports/equilibrium-rebuild/figures/all-live-s2027-candidate-sigma.svg": {
+      "sha256": "ac6dbcc4cd62b85b621d25856bd738fb77fcd39760a733a9b984763f2f6fb45f",
+      "bytes": 5547
+    },
+    "reports/equilibrium-rebuild/figures/all-live-s2027-candidate-vertical.svg": {
+      "sha256": "8fc05929acb90fc5148242882840abd3cab40f1ec55e63520c7b772f35ea11e0",
+      "bytes": 7460
+    },
+    "reports/equilibrium-rebuild/figures/all-live-s2027-legacy-drift.svg": {
+      "sha256": "a0a9210c7059d49d8c8a80dcb5d8fe3c47b271d0fee33b2a4220cede968aafb8",
+      "bytes": 4986
+    },
+    "reports/equilibrium-rebuild/figures/all-live-s2027-legacy-energy.svg": {
+      "sha256": "ea791cfe8b959a8f1eff0f55da06dfe7535b52c87e761d4b48aa544a0618b1f4",
+      "bytes": 4942
+    },
+    "reports/equilibrium-rebuild/figures/all-live-s2027-legacy-halo.svg": {
+      "sha256": "f5feff949e8f837bce066ee7b833e790d0817d65329e094e1d7d28ba944e6909",
+      "bytes": 7591
+    },
+    "reports/equilibrium-rebuild/figures/all-live-s2027-legacy-height.svg": {
+      "sha256": "4ada630e19e5b09024e8c42945957635e19d9f9a9c65f023a672f699500413bc",
+      "bytes": 4917
+    },
+    "reports/equilibrium-rebuild/figures/all-live-s2027-legacy-radial.svg": {
+      "sha256": "b27b167af2d17a90af9a37bf9bb09b1acc4805a0fe342283e87ca73cf4314521",
+      "bytes": 6047
+    },
+    "reports/equilibrium-rebuild/figures/all-live-s2027-legacy-rings.svg": {
+      "sha256": "73fcef78f707ce7340fac27a36d801937d6eb13c02aef3110a865639581d2127",
+      "bytes": 5072
+    },
+    "reports/equilibrium-rebuild/figures/all-live-s2027-legacy-rotation.svg": {
+      "sha256": "3f8d63b23d7be029df0c106cc02a244f2964e1648fb285d1abb82b4e54fbbe68",
+      "bytes": 4567
+    },
+    "reports/equilibrium-rebuild/figures/all-live-s2027-legacy-sigma.svg": {
+      "sha256": "c43da0d8b81c0df31c6ddbdc237925190a3a78b17de1bdaea7e1464f24c163de",
+      "bytes": 4935
+    },
+    "reports/equilibrium-rebuild/figures/all-live-s2027-legacy-vertical.svg": {
+      "sha256": "ad97540faec04b568967d03780923ce49b6d03884d545015bf7d067ecaa7fe85",
+      "bytes": 6902
+    },
+    "reports/equilibrium-rebuild/figures/all-live-s2028-both-drift.svg": {
+      "sha256": "c759f48a97b761972c0f697d6ed133e87776dbb5efb2357be2fe738396000459",
+      "bytes": 8809
+    },
+    "reports/equilibrium-rebuild/figures/all-live-s2028-both-energy.svg": {
+      "sha256": "a3360b38238944e09b72eeb24950a1fa62c5b073cfe111a0775cb5d5a1d4e57f",
+      "bytes": 8743
+    },
+    "reports/equilibrium-rebuild/figures/all-live-s2028-both-halo.svg": {
+      "sha256": "d9a7772c1f2962fdae4c6dbb6c9fab6fa984f4d4cea873cc8b129cc1f92094ef",
+      "bytes": 12252
+    },
+    "reports/equilibrium-rebuild/figures/all-live-s2028-both-height.svg": {
+      "sha256": "2ff49e4fb53c02981a8775e2f0fd9c42492d6f8399bf4571c20069ded6e36b40",
+      "bytes": 8700
+    },
+    "reports/equilibrium-rebuild/figures/all-live-s2028-both-radial.svg": {
+      "sha256": "50a00191b23caffe684e2df80809a05c2e16d9e0a65a0a1ce21eb4e1a21994c4",
+      "bytes": 8428
+    },
+    "reports/equilibrium-rebuild/figures/all-live-s2028-both-rings.svg": {
+      "sha256": "a9331018186c963784ba73c6f7cba3816b766d9d192bf463fc00075bd92f20a7",
+      "bytes": 8701
+    },
+    "reports/equilibrium-rebuild/figures/all-live-s2028-both-rotation.svg": {
+      "sha256": "3cb3927139707da8acadaa4a6e758f3bebb5b8fd3f1675798f1b376232161532",
+      "bytes": 7615
+    },
+    "reports/equilibrium-rebuild/figures/all-live-s2028-both-sigma.svg": {
+      "sha256": "4c53e86d67e1e71f2a6e0889ce336cc9602a2981bea1ac1b3e08ef02c61b463d",
+      "bytes": 8678
+    },
+    "reports/equilibrium-rebuild/figures/all-live-s2028-both-vertical.svg": {
+      "sha256": "d59d3f6b6496d7953782e9e262340526ae23eaf18c0ae8d6e66717d1bf1d2ce8",
+      "bytes": 10152
+    },
+    "reports/equilibrium-rebuild/figures/all-live-s2028-candidate-drift.svg": {
+      "sha256": "3452e9fe8895029fca78d91f0a0a3c5b3db2c86fc004de4896005e80dd7046d8",
+      "bytes": 5627
+    },
+    "reports/equilibrium-rebuild/figures/all-live-s2028-candidate-energy.svg": {
+      "sha256": "c2b872a3a82c017c661859e58ac69363760bce9a09603d7f76c29b66bbfea8fa",
+      "bytes": 5587
+    },
+    "reports/equilibrium-rebuild/figures/all-live-s2028-candidate-halo.svg": {
+      "sha256": "036e3440b1e95321b7e2f398a330921c6bf0798201d1e8626b50bc95257c0fa7",
+      "bytes": 8297
+    },
+    "reports/equilibrium-rebuild/figures/all-live-s2028-candidate-height.svg": {
+      "sha256": "a7a8d5202031ebf13e51ad285b52563f9f44b0374b43ed21cdaf0479fdf9d34e",
+      "bytes": 5542
+    },
+    "reports/equilibrium-rebuild/figures/all-live-s2028-candidate-radial.svg": {
+      "sha256": "765c9b9da47693a20e9c2ad1bc9d0ad25d443839806eff3d003a851be373227b",
+      "bytes": 5941
+    },
+    "reports/equilibrium-rebuild/figures/all-live-s2028-candidate-rings.svg": {
+      "sha256": "93401710d9c65f881c294c47bf45c6c2a1925917b425787b51d74bc0fd7c1064",
+      "bytes": 5478
+    },
+    "reports/equilibrium-rebuild/figures/all-live-s2028-candidate-rotation.svg": {
+      "sha256": "69669fc7469473d855fd867b9284497cb94e8929e00aa0b82209f02a2d05cce4",
+      "bytes": 4690
+    },
+    "reports/equilibrium-rebuild/figures/all-live-s2028-candidate-sigma.svg": {
+      "sha256": "49dac35ba68b79763d87c4fcf6ef59367d1b11d8e59808acbd1f42acecfc8d49",
+      "bytes": 5557
+    },
+    "reports/equilibrium-rebuild/figures/all-live-s2028-candidate-vertical.svg": {
+      "sha256": "1ec9a11fb748a483b896695166c163e2eb2731fc6998f202a70debfca6926647",
+      "bytes": 7043
+    },
+    "reports/equilibrium-rebuild/figures/all-live-s2028-legacy-drift.svg": {
+      "sha256": "d44eb3365dd1bf86db60700c0f28ece8f9755200528ec53cdf6ce7df325cbae0",
+      "bytes": 4994
+    },
+    "reports/equilibrium-rebuild/figures/all-live-s2028-legacy-energy.svg": {
+      "sha256": "5172d8e6e25f6c773b8d43eb1e1f07626d645a4aab8efbfcb3ca24a3a7fc5c56",
+      "bytes": 4951
+    },
+    "reports/equilibrium-rebuild/figures/all-live-s2028-legacy-halo.svg": {
+      "sha256": "117f164242b707c0c0118006f7f2c95ef3179da8e4619efc7e33ba168b04dc71",
+      "bytes": 7561
+    },
+    "reports/equilibrium-rebuild/figures/all-live-s2028-legacy-height.svg": {
+      "sha256": "5b20efb6e8125bdc66575bda77a4fd27578b63893539e41a4130412a20f0d72f",
+      "bytes": 4910
+    },
+    "reports/equilibrium-rebuild/figures/all-live-s2028-legacy-radial.svg": {
+      "sha256": "dd6b7f6cd1a2f7a77a389a088f5d3b6499e8a94f739d77726905246bb199b98d",
+      "bytes": 5900
+    },
+    "reports/equilibrium-rebuild/figures/all-live-s2028-legacy-rings.svg": {
+      "sha256": "2044d79b8278b5286d00c6d98569197a5b4c2e1c32150b236f513dbd9f28bf4a",
+      "bytes": 5088
+    },
+    "reports/equilibrium-rebuild/figures/all-live-s2028-legacy-rotation.svg": {
+      "sha256": "ed4be2e636dfadb315407318a1aeb1521d8bcb29dfb5b23ae020801bf7f53320",
+      "bytes": 4721
+    },
+    "reports/equilibrium-rebuild/figures/all-live-s2028-legacy-sigma.svg": {
+      "sha256": "13257d58571cb733289f7e5bf7cc21499c9a05e5259ec8c4089ce7a7eacbed0d",
+      "bytes": 4913
+    },
+    "reports/equilibrium-rebuild/figures/all-live-s2028-legacy-vertical.svg": {
+      "sha256": "b1b079d4987a35a6bd4fe53f70abfc38e31663b57fc6d34f1623c3ff8586a1d2",
+      "bytes": 6732
+    },
+    "reports/equilibrium-rebuild/figures/disk-live-s2026-both-drift.svg": {
+      "sha256": "73cc1a841bc5510ed3357d7a62eade0322e52236e046614bf29d8525fd562b0a",
+      "bytes": 8886
+    },
+    "reports/equilibrium-rebuild/figures/disk-live-s2026-both-energy.svg": {
+      "sha256": "39ea8eac054538d0eec48f38dd95bd715de5d0bf5c6d44f2911cf18cbc33c1d9",
+      "bytes": 8773
+    },
+    "reports/equilibrium-rebuild/figures/disk-live-s2026-both-halo.svg": {
+      "sha256": "7a079a5da46e7325bdacef5ded16cb0d3a60a11d4076fdabb32f250a0b0a8586",
+      "bytes": 3570
+    },
+    "reports/equilibrium-rebuild/figures/disk-live-s2026-both-height.svg": {
+      "sha256": "f8b84ede26529bb49bb4662259d7e95e55c28134ac37c84d77432bed69b4eedb",
+      "bytes": 8710
+    },
+    "reports/equilibrium-rebuild/figures/disk-live-s2026-both-radial.svg": {
+      "sha256": "530bbae9154a84ded1e6bd1b78b555af66b363064c41d5bb59e194224fd87f5c",
+      "bytes": 9356
+    },
+    "reports/equilibrium-rebuild/figures/disk-live-s2026-both-rings.svg": {
+      "sha256": "ccc87b7ed9f5a09d1fc71c66f4817d8100e8a2c0cf90dd5c31b822c4cf2cd58a",
+      "bytes": 8891
+    },
+    "reports/equilibrium-rebuild/figures/disk-live-s2026-both-rotation.svg": {
+      "sha256": "e1ec194a876a7f615d592abeac9987ccf59b1872663febe605e74f48b603072d",
+      "bytes": 8165
+    },
+    "reports/equilibrium-rebuild/figures/disk-live-s2026-both-sigma.svg": {
+      "sha256": "ac35f9bc4648861d47392c129df1cd91fdf29e2bdf66df2cfbe3d7d4b666d040",
+      "bytes": 8688
+    },
+    "reports/equilibrium-rebuild/figures/disk-live-s2026-both-vertical.svg": {
+      "sha256": "b3de7e2e81a93d4501f40c29358d7cb60448f6014687494fb06cd8f629020fcb",
+      "bytes": 10928
+    },
+    "reports/equilibrium-rebuild/figures/disk-live-s2026-candidate-drift.svg": {
+      "sha256": "c7845012786cb9e2b37b02ab1d05b1311bf9e1583c036efe1d85cc411c3c9add",
+      "bytes": 5671
+    },
+    "reports/equilibrium-rebuild/figures/disk-live-s2026-candidate-energy.svg": {
+      "sha256": "d087fa90af3834aed463bf31cb5f0d1b9e5b68c85d0f17843da9d1f7470d3efb",
+      "bytes": 5596
+    },
+    "reports/equilibrium-rebuild/figures/disk-live-s2026-candidate-halo.svg": {
+      "sha256": "7a079a5da46e7325bdacef5ded16cb0d3a60a11d4076fdabb32f250a0b0a8586",
+      "bytes": 3570
+    },
+    "reports/equilibrium-rebuild/figures/disk-live-s2026-candidate-height.svg": {
+      "sha256": "1ec3034079f66b8557ad48ce6049eb74ac0b813fdfaf1a230a545c492297bbfa",
+      "bytes": 5568
+    },
+    "reports/equilibrium-rebuild/figures/disk-live-s2026-candidate-radial.svg": {
+      "sha256": "d1c01263beee0a6c01a6f18fd34765fd46a4c4e953869f4beeef6d547b560857",
+      "bytes": 6701
+    },
+    "reports/equilibrium-rebuild/figures/disk-live-s2026-candidate-rings.svg": {
+      "sha256": "5aac8d69acbde9dda87cd7cca2513453d9b5831dbcfd64c31d234ff6c77e491a",
+      "bytes": 5663
+    },
+    "reports/equilibrium-rebuild/figures/disk-live-s2026-candidate-rotation.svg": {
+      "sha256": "e57e3cfd18c25a88b0542fa5087c48ad3e1d1bf07d3a4bbdf29d7000451afb5a",
+      "bytes": 5242
+    },
+    "reports/equilibrium-rebuild/figures/disk-live-s2026-candidate-sigma.svg": {
+      "sha256": "f18e58074f24a3854f344a3cc3f395de1a958e7a503f81df562e3434be01e459",
+      "bytes": 5564
+    },
+    "reports/equilibrium-rebuild/figures/disk-live-s2026-candidate-vertical.svg": {
+      "sha256": "20e610210e5abae5c09c60504239108d15ded2fe3bbde4ee0bce03708102f16f",
+      "bytes": 7643
+    },
+    "reports/equilibrium-rebuild/figures/disk-live-s2026-legacy-drift.svg": {
+      "sha256": "8dcac28418ccaa2d53253c6d2eb3c14cef31768428ec904c5921b04107191425",
+      "bytes": 5050
+    },
+    "reports/equilibrium-rebuild/figures/disk-live-s2026-legacy-energy.svg": {
+      "sha256": "997271dc52f31fcb06475c3cd7d37d4f3687573396cc5c5963ecf45595867c12",
+      "bytes": 4954
+    },
+    "reports/equilibrium-rebuild/figures/disk-live-s2026-legacy-halo.svg": {
+      "sha256": "7a079a5da46e7325bdacef5ded16cb0d3a60a11d4076fdabb32f250a0b0a8586",
+      "bytes": 3570
+    },
+    "reports/equilibrium-rebuild/figures/disk-live-s2026-legacy-height.svg": {
+      "sha256": "936c58de95d1fcf4f4634b273ad6cd9e29dbf11c4f9b765c469357b68949aa2b",
+      "bytes": 4927
+    },
+    "reports/equilibrium-rebuild/figures/disk-live-s2026-legacy-radial.svg": {
+      "sha256": "fe7cd0ee26e2d33b3e85fa63fdf0a810113fb0e630900f346d821cf1f066e722",
+      "bytes": 6042
+    },
+    "reports/equilibrium-rebuild/figures/disk-live-s2026-legacy-rings.svg": {
+      "sha256": "3b626f5badcb15cd1e43fd283a6e45ceed5671df29e2fc8f551d1f581dbd42db",
+      "bytes": 5079
+    },
+    "reports/equilibrium-rebuild/figures/disk-live-s2026-legacy-rotation.svg": {
+      "sha256": "790e61402796707cd84ec0a627630968644e28f5e939cf85b76717502ba782b4",
+      "bytes": 4719
+    },
+    "reports/equilibrium-rebuild/figures/disk-live-s2026-legacy-sigma.svg": {
+      "sha256": "81e86caddc57f9d941dcc868fc91d836a331fa89173a87e7a0ea1abf0a2a5c5f",
+      "bytes": 4912
+    },
+    "reports/equilibrium-rebuild/figures/disk-live-s2026-legacy-vertical.svg": {
+      "sha256": "c47d15513c6d1704983bc9fb7fd465dc114e1cadc84be4c509d7b99c4b513a2a",
+      "bytes": 6915
+    },
+    "reports/equilibrium-rebuild/figures/disk-live-s2027-both-drift.svg": {
+      "sha256": "040799d72a2fe4a3e31732e7d7a5adc74779567b3e276e1b7c20313fbd9673ba",
+      "bytes": 8892
+    },
+    "reports/equilibrium-rebuild/figures/disk-live-s2027-both-energy.svg": {
+      "sha256": "e70dfd552891383a0d2677669173cbf930450dbb37e865b2e767dfc5c534928d",
+      "bytes": 8756
+    },
+    "reports/equilibrium-rebuild/figures/disk-live-s2027-both-halo.svg": {
+      "sha256": "7a079a5da46e7325bdacef5ded16cb0d3a60a11d4076fdabb32f250a0b0a8586",
+      "bytes": 3570
+    },
+    "reports/equilibrium-rebuild/figures/disk-live-s2027-both-height.svg": {
+      "sha256": "23b1352f72c862430c3c3cd605994d3da592868403cd1359f57a0bfe60cd6c24",
+      "bytes": 8717
+    },
+    "reports/equilibrium-rebuild/figures/disk-live-s2027-both-radial.svg": {
+      "sha256": "b71e28fb8971c89d58a356b0a15f756a71c98cbc3da9f4f12c878397411f5e17",
+      "bytes": 9166
+    },
+    "reports/equilibrium-rebuild/figures/disk-live-s2027-both-rings.svg": {
+      "sha256": "632b7a1b84f8db64c19715ecdbd6de7ed1189b87c4c92eccf124eeb3a205de2a",
+      "bytes": 8895
+    },
+    "reports/equilibrium-rebuild/figures/disk-live-s2027-both-rotation.svg": {
+      "sha256": "1ebe90046f00aaf61b3f1dfbf40aa91ae0c5b82b34827ba9b5585e1c317100d7",
+      "bytes": 8184
+    },
+    "reports/equilibrium-rebuild/figures/disk-live-s2027-both-sigma.svg": {
+      "sha256": "2e250fa673e6363187aa4d4d460ab741773fed23db705e77d58abe2cf633deea",
+      "bytes": 8674
+    },
+    "reports/equilibrium-rebuild/figures/disk-live-s2027-both-vertical.svg": {
+      "sha256": "ea407cb9af217d960b74d6cfc8c96eacbc0cecedb617c20314b65a374cc18f68",
+      "bytes": 10729
+    },
+    "reports/equilibrium-rebuild/figures/disk-live-s2027-candidate-drift.svg": {
+      "sha256": "0bda9304f390aae9640b9a6a7099faae08082d6ec912a378af5440c8b17f116e",
+      "bytes": 5693
+    },
+    "reports/equilibrium-rebuild/figures/disk-live-s2027-candidate-energy.svg": {
+      "sha256": "ea719e8421ebe04fb2e2759787d8de73bee42134643ab13ed45f61133333e9c7",
+      "bytes": 5595
+    },
+    "reports/equilibrium-rebuild/figures/disk-live-s2027-candidate-halo.svg": {
+      "sha256": "7a079a5da46e7325bdacef5ded16cb0d3a60a11d4076fdabb32f250a0b0a8586",
+      "bytes": 3570
+    },
+    "reports/equilibrium-rebuild/figures/disk-live-s2027-candidate-height.svg": {
+      "sha256": "f5bfa6f338eb238418227ab616d777e6713d117c5e6bd1e794cb95c10155df68",
+      "bytes": 5566
+    },
+    "reports/equilibrium-rebuild/figures/disk-live-s2027-candidate-radial.svg": {
+      "sha256": "7dc20d4adad5d2ef97a25eb5132121ea84c47103a403843e9223db853919c1c1",
+      "bytes": 6512
+    },
+    "reports/equilibrium-rebuild/figures/disk-live-s2027-candidate-rings.svg": {
+      "sha256": "60398e9b6ff0c0edf5f1985b42ea32c372c2eeec4f2ffdfd7e00c76b630bd0ed",
+      "bytes": 5664
+    },
+    "reports/equilibrium-rebuild/figures/disk-live-s2027-candidate-rotation.svg": {
+      "sha256": "4e2671a36ce725a0e7c9110bcddb8ae6d3b3a7be84fd572da0794f74b071fb2b",
+      "bytes": 5252
+    },
+    "reports/equilibrium-rebuild/figures/disk-live-s2027-candidate-sigma.svg": {
+      "sha256": "0bcf9e82b82c7f369fa318c10d5d4e8d969dc49b954ce945792d5dc1b4669b85",
+      "bytes": 5563
+    },
+    "reports/equilibrium-rebuild/figures/disk-live-s2027-candidate-vertical.svg": {
+      "sha256": "6486295cc9963213928c91a194e8bbb54969c39b31b580ec5bf445797da9071f",
+      "bytes": 7457
+    },
+    "reports/equilibrium-rebuild/figures/disk-live-s2027-legacy-drift.svg": {
+      "sha256": "a8cf3508e1220bf617ae90da063d97253397684662aed278a3699672e2361415",
+      "bytes": 5033
+    },
+    "reports/equilibrium-rebuild/figures/disk-live-s2027-legacy-energy.svg": {
+      "sha256": "680caba7c53e875934b27c0281cfe9e3cbf316d85a95cd63eb92f2787102150e",
+      "bytes": 4955
+    },
+    "reports/equilibrium-rebuild/figures/disk-live-s2027-legacy-halo.svg": {
+      "sha256": "7a079a5da46e7325bdacef5ded16cb0d3a60a11d4076fdabb32f250a0b0a8586",
+      "bytes": 3570
+    },
+    "reports/equilibrium-rebuild/figures/disk-live-s2027-legacy-height.svg": {
+      "sha256": "0f44acad117c4c64b59e36ec67b0cf4bf3fcca0c31c33bed6b77023c8dc731db",
+      "bytes": 4934
+    },
+    "reports/equilibrium-rebuild/figures/disk-live-s2027-legacy-radial.svg": {
+      "sha256": "d6b28afd9e2df8ec9200c2406881ea3b5a32149e2499e1f1d74545b88965bad0",
+      "bytes": 6048
+    },
+    "reports/equilibrium-rebuild/figures/disk-live-s2027-legacy-rings.svg": {
+      "sha256": "e81d765b1a7f69290d64c70dcc8c9c25c9e16868d1443d715322bb29e81e5248",
+      "bytes": 5075
+    },
+    "reports/equilibrium-rebuild/figures/disk-live-s2027-legacy-rotation.svg": {
+      "sha256": "6367726a9f48ff99b052dd6e27ab8ce21ad27785dbcb0d7bca83e14f6311d363",
+      "bytes": 4732
+    },
+    "reports/equilibrium-rebuild/figures/disk-live-s2027-legacy-sigma.svg": {
+      "sha256": "fe0347681282bb1066af84fc945104be59401136c3e1401a8609c4a85b8aae15",
+      "bytes": 4923
+    },
+    "reports/equilibrium-rebuild/figures/disk-live-s2027-legacy-vertical.svg": {
+      "sha256": "d24d47f2ad6cd968a0c7be94d0cb512a80c9505773c639c44e073e558b909f36",
+      "bytes": 6899
+    },
+    "reports/equilibrium-rebuild/figures/disk-live-s2028-both-drift.svg": {
+      "sha256": "71f1fe1f94fe2c6ac4f876af10887dd17de4fe1c48a95a99a03311dea0b7cc7a",
+      "bytes": 8898
+    },
+    "reports/equilibrium-rebuild/figures/disk-live-s2028-both-energy.svg": {
+      "sha256": "071f36ede71b18c55adf33c12d5531e23640a3258c00c69851b3f03b7cc88dd5",
+      "bytes": 8754
+    },
+    "reports/equilibrium-rebuild/figures/disk-live-s2028-both-halo.svg": {
+      "sha256": "7a079a5da46e7325bdacef5ded16cb0d3a60a11d4076fdabb32f250a0b0a8586",
+      "bytes": 3570
+    },
+    "reports/equilibrium-rebuild/figures/disk-live-s2028-both-height.svg": {
+      "sha256": "f0302f2f33e68f16a71c298640259eda1a5887ea7815b73f507c5093a41c1e75",
+      "bytes": 8726
+    },
+    "reports/equilibrium-rebuild/figures/disk-live-s2028-both-radial.svg": {
+      "sha256": "a687a7d295a136ef4be25c63d9155c304ca3c6a1e17b9a5e6d5486589ea16b37",
+      "bytes": 9303
+    },
+    "reports/equilibrium-rebuild/figures/disk-live-s2028-both-rings.svg": {
+      "sha256": "fb785fb1c9fe9a402e969e240652573eedeb630a79c744dadb9e5c2d21a03e5f",
+      "bytes": 8728
+    },
+    "reports/equilibrium-rebuild/figures/disk-live-s2028-both-rotation.svg": {
+      "sha256": "1f07590de74c4b0cab86d3f3f3af9d9772d655e216df5871392fa49861023b7c",
+      "bytes": 8173
+    },
+    "reports/equilibrium-rebuild/figures/disk-live-s2028-both-sigma.svg": {
+      "sha256": "f9a524f91ee3de6427ddcfe85affd94cd1507b46e5c6eb8169502339449d6e68",
+      "bytes": 8675
+    },
+    "reports/equilibrium-rebuild/figures/disk-live-s2028-both-vertical.svg": {
+      "sha256": "45bc81cc5e217dadd918d38b5ee4cf0fe2dc44d16b7a0b64bc988e46655031a9",
+      "bytes": 10752
+    },
+    "reports/equilibrium-rebuild/figures/disk-live-s2028-candidate-drift.svg": {
+      "sha256": "870b3bb0623e1366f63526dd774cc39952116e647e5f70c36257510120bf9496",
+      "bytes": 5692
+    },
+    "reports/equilibrium-rebuild/figures/disk-live-s2028-candidate-energy.svg": {
+      "sha256": "89bcb628ea9fcaff5af28d0cbe88b1c311ea9bf320a30268ee2b9db6b3862950",
+      "bytes": 5592
+    },
+    "reports/equilibrium-rebuild/figures/disk-live-s2028-candidate-halo.svg": {
+      "sha256": "7a079a5da46e7325bdacef5ded16cb0d3a60a11d4076fdabb32f250a0b0a8586",
+      "bytes": 3570
+    },
+    "reports/equilibrium-rebuild/figures/disk-live-s2028-candidate-height.svg": {
+      "sha256": "8b98af76f7b9485512eb5e1cb689516ef0c80e53bb1c4bc6b6101a9b8421273e",
+      "bytes": 5571
+    },
+    "reports/equilibrium-rebuild/figures/disk-live-s2028-candidate-radial.svg": {
+      "sha256": "be1bbb49c7f50dc4ed3331285aecfe2880526100c7b55182fda2f7923420907c",
+      "bytes": 6502
+    },
+    "reports/equilibrium-rebuild/figures/disk-live-s2028-candidate-rings.svg": {
+      "sha256": "b2c6c9382bfb49f053932f6ce0f0ad9eb4dec222f900cf8a34deb33da9818498",
+      "bytes": 5494
+    },
+    "reports/equilibrium-rebuild/figures/disk-live-s2028-candidate-rotation.svg": {
+      "sha256": "fed4ce7ec0bbc73938bf6a8df4073f8d4aef2bf4c13269b39cec68bef638287f",
+      "bytes": 5247
+    },
+    "reports/equilibrium-rebuild/figures/disk-live-s2028-candidate-sigma.svg": {
+      "sha256": "0e6469b8394fc12f811707783d5a6f344220219679544b3bfbf9877f10da8f7d",
+      "bytes": 5558
+    },
+    "reports/equilibrium-rebuild/figures/disk-live-s2028-candidate-vertical.svg": {
+      "sha256": "6da1cc0f9ab79855f268c2173d616eefb114446bb749d16dd25fccc108d3a1af",
+      "bytes": 7464
+    },
+    "reports/equilibrium-rebuild/figures/disk-live-s2028-legacy-drift.svg": {
+      "sha256": "eef38b42ceec8e7eb0c482666521a3fef5c4c2f5495568166b27b05ba9da7701",
+      "bytes": 5046
+    },
+    "reports/equilibrium-rebuild/figures/disk-live-s2028-legacy-energy.svg": {
+      "sha256": "553e582500f52ed54cc18eae69f0bb7dc8f77b0542aed4cb36c55baf9039bbcf",
+      "bytes": 4958
+    },
+    "reports/equilibrium-rebuild/figures/disk-live-s2028-legacy-halo.svg": {
+      "sha256": "7a079a5da46e7325bdacef5ded16cb0d3a60a11d4076fdabb32f250a0b0a8586",
+      "bytes": 3570
+    },
+    "reports/equilibrium-rebuild/figures/disk-live-s2028-legacy-height.svg": {
+      "sha256": "7135563f35f7c3935aa327015da10caf36c956325f2d276e3cba33ab250c96c8",
+      "bytes": 4946
+    },
+    "reports/equilibrium-rebuild/figures/disk-live-s2028-legacy-radial.svg": {
+      "sha256": "4bee8880dba59378c0402dc4b4285c67d51f1191cbf0361c751d37c83d726b63",
+      "bytes": 6214
+    },
+    "reports/equilibrium-rebuild/figures/disk-live-s2028-legacy-rings.svg": {
+      "sha256": "9a79af9181b4e89d55f60806b040f30a6b47d8ac4bbf1a9fdb02e561e1b1e578",
+      "bytes": 5104
+    },
+    "reports/equilibrium-rebuild/figures/disk-live-s2028-legacy-rotation.svg": {
+      "sha256": "897122718d4fa4c90abc6161f6187e9b35cb29eeaea9145169f96f8c7fd42608",
+      "bytes": 4738
+    },
+    "reports/equilibrium-rebuild/figures/disk-live-s2028-legacy-sigma.svg": {
+      "sha256": "e7c60dea2c415fb9b6000d3e3cf964857d3da6641de2bb96fd85bab31df36098",
+      "bytes": 4915
+    },
+    "reports/equilibrium-rebuild/figures/disk-live-s2028-legacy-vertical.svg": {
+      "sha256": "1b7c5f5faca1d0a43b55adf8d48f30fef5af4c20fa6856c953e13258ac0ab28b",
+      "bytes": 6911
+    },
+    "reports/equilibrium-rebuild/figures/fixed-total-s2026-both-drift.svg": {
+      "sha256": "f5b5dd4bb23eabff9dcbd930b31810c7f0f9c63de505a08dfccf75c7293d4fb0",
+      "bytes": 8892
+    },
+    "reports/equilibrium-rebuild/figures/fixed-total-s2026-both-energy.svg": {
+      "sha256": "9aa29684dfc5fb8b9ea2cb17fdd8df0a15b5046223e22f066964388eb11d7d22",
+      "bytes": 8729
+    },
+    "reports/equilibrium-rebuild/figures/fixed-total-s2026-both-halo.svg": {
+      "sha256": "ca2b3cbca4b24c2468262b6e01a41ccf9930a404eb7d7e741dc24cd2e9fc2cec",
+      "bytes": 12230
+    },
+    "reports/equilibrium-rebuild/figures/fixed-total-s2026-both-height.svg": {
+      "sha256": "819f16f15c935480c3521360f6bbfe2753830491b22c0c549935eb65271a5aa6",
+      "bytes": 8722
+    },
+    "reports/equilibrium-rebuild/figures/fixed-total-s2026-both-radial.svg": {
+      "sha256": "a9bef717a69c604221395f791774017474289fdc21472b95db90089f2569fcc1",
+      "bytes": 8858
+    },
+    "reports/equilibrium-rebuild/figures/fixed-total-s2026-both-rings.svg": {
+      "sha256": "32245bd4bcd97c32fa606b3f8cb78dcf1f23598d40544024c81838163cd8c5ab",
+      "bytes": 8717
+    },
+    "reports/equilibrium-rebuild/figures/fixed-total-s2026-both-rotation.svg": {
+      "sha256": "27a1d921d9bd47161d2456a345405ae1f6c7106a48800d175153e7f24e39c19c",
+      "bytes": 8077
+    },
+    "reports/equilibrium-rebuild/figures/fixed-total-s2026-both-sigma.svg": {
+      "sha256": "7dbe9dacda45621d47f151f270864469178a63bad02a0a475ab72c3c353ad4e7",
+      "bytes": 8696
+    },
+    "reports/equilibrium-rebuild/figures/fixed-total-s2026-both-vertical.svg": {
+      "sha256": "76144feafad142efc3680b25d5e536701ba11f5f361af7424629469c62c49172",
+      "bytes": 10575
+    },
+    "reports/equilibrium-rebuild/figures/fixed-total-s2026-candidate-drift.svg": {
+      "sha256": "4c0acc07505cd8ddbe2f188bf65eee60623a68d3ce25f2cc961aec520fededf4",
+      "bytes": 5683
+    },
+    "reports/equilibrium-rebuild/figures/fixed-total-s2026-candidate-energy.svg": {
+      "sha256": "d240758c564eb1fcbea6df00cfee4ca6cc1cac4308b9a7d5f67874602be4e3cc",
+      "bytes": 5575
+    },
+    "reports/equilibrium-rebuild/figures/fixed-total-s2026-candidate-halo.svg": {
+      "sha256": "a2cf53f7d4c25071f38855f2beb88cefc69c4216c9811f8b7af9b5df668b30cc",
+      "bytes": 8327
+    },
+    "reports/equilibrium-rebuild/figures/fixed-total-s2026-candidate-height.svg": {
+      "sha256": "d55535188cedca63dad8f46260280da04b40ccce37e55e185f2e9e8b16861100",
+      "bytes": 5567
+    },
+    "reports/equilibrium-rebuild/figures/fixed-total-s2026-candidate-radial.svg": {
+      "sha256": "b143f568b5c1f1a502851530805a1b873c2c46f41ce76d528ba6c5fd01dff331",
+      "bytes": 6514
+    },
+    "reports/equilibrium-rebuild/figures/fixed-total-s2026-candidate-rings.svg": {
+      "sha256": "ba3aa0f233603460f4bf3ca1fcb82660dc63b7d8a30090540cc2ed49e466d2b3",
+      "bytes": 5480
+    },
+    "reports/equilibrium-rebuild/figures/fixed-total-s2026-candidate-rotation.svg": {
+      "sha256": "fef7123f86c39c37cd6a809bedf7501f543155ee84b0e6adf34c669ec714d669",
+      "bytes": 5211
+    },
+    "reports/equilibrium-rebuild/figures/fixed-total-s2026-candidate-sigma.svg": {
+      "sha256": "c7896aa2f9a6341377d7e0a52efd3c733405c4875ba9519a00a76b88f0ce07a3",
+      "bytes": 5556
+    },
+    "reports/equilibrium-rebuild/figures/fixed-total-s2026-candidate-vertical.svg": {
+      "sha256": "7bd0f24a2ec21408056537b5ec3737ede8435634c6982c723991ebb068b18742",
+      "bytes": 7449
+    },
+    "reports/equilibrium-rebuild/figures/fixed-total-s2026-legacy-drift.svg": {
+      "sha256": "612c7a3fa0af2dbf558ab1a3e31de61710fe506e2045cd7ee2d6286771f5081b",
+      "bytes": 5050
+    },
+    "reports/equilibrium-rebuild/figures/fixed-total-s2026-legacy-energy.svg": {
+      "sha256": "2b95d0f1d67a4d4f13a3bd2e8183633f7d7c1bc8469d0b46cdb1d02e565cec4f",
+      "bytes": 4930
+    },
+    "reports/equilibrium-rebuild/figures/fixed-total-s2026-legacy-halo.svg": {
+      "sha256": "344112f8c088745db85ab7f9730a98ef3e0d6ba310ce9658888291800f020506",
+      "bytes": 7498
+    },
+    "reports/equilibrium-rebuild/figures/fixed-total-s2026-legacy-height.svg": {
+      "sha256": "51e115ea5c0e98c4ccffdfaf881427e6325b820eab911845ee3f1e9cb327f513",
+      "bytes": 4935
+    },
+    "reports/equilibrium-rebuild/figures/fixed-total-s2026-legacy-radial.svg": {
+      "sha256": "da02124c36027b399e89299dad278dc7d6ef54253b1772f955fb5b76057d0ec5",
+      "bytes": 5728
+    },
+    "reports/equilibrium-rebuild/figures/fixed-total-s2026-legacy-rings.svg": {
+      "sha256": "3fdad0ebec648bfc74af9d4cd0862d0d6dec65a4dab043cbdedc327191dc97f5",
+      "bytes": 5090
+    },
+    "reports/equilibrium-rebuild/figures/fixed-total-s2026-legacy-rotation.svg": {
+      "sha256": "252edc29d5ace80ea7af5bc7cafe68f5ac41df2d72b7d95d30904300ca378cfc",
+      "bytes": 4689
+    },
+    "reports/equilibrium-rebuild/figures/fixed-total-s2026-legacy-sigma.svg": {
+      "sha256": "df0aebc634f18fb637fab750466276d8db798ad93a25d7cd447eb581048e6db7",
+      "bytes": 4927
+    },
+    "reports/equilibrium-rebuild/figures/fixed-total-s2026-legacy-vertical.svg": {
+      "sha256": "63fb50237a709d191058ef194237316d5e1b7b3faccfb271ebc62aa526e5a8e9",
+      "bytes": 6759
+    },
+    "reports/equilibrium-rebuild/figures/fixed-total-s2027-both-drift.svg": {
+      "sha256": "cfb53a4b3ea6e3dffa0f500420a52805ee14cef543d16a83eb04bed49238fd54",
+      "bytes": 8958
+    },
+    "reports/equilibrium-rebuild/figures/fixed-total-s2027-both-energy.svg": {
+      "sha256": "fe961b25746532bc8a3477ca2215cb38e11d2c3184e08abab288969a34495083",
+      "bytes": 8727
+    },
+    "reports/equilibrium-rebuild/figures/fixed-total-s2027-both-halo.svg": {
+      "sha256": "ce03049655c591e86ce0658952a44efdf9f807a8ecb701e72be186b3f2f8d3ed",
+      "bytes": 12258
+    },
+    "reports/equilibrium-rebuild/figures/fixed-total-s2027-both-height.svg": {
+      "sha256": "cb1e9baa3a40d54069c0cf05ac889c5bdacaba7f5361556311915d63e6d66130",
+      "bytes": 8738
+    },
+    "reports/equilibrium-rebuild/figures/fixed-total-s2027-both-radial.svg": {
+      "sha256": "1ff9bcd8d776255828929c6c9319044fc6c014b5456104d5e4ac948d76391b8b",
+      "bytes": 8494
+    },
+    "reports/equilibrium-rebuild/figures/fixed-total-s2027-both-rings.svg": {
+      "sha256": "418029e94ba14da8be4e4e2e35ba279d723b38f6998d3d8b805341fe80efbf88",
+      "bytes": 8905
+    },
+    "reports/equilibrium-rebuild/figures/fixed-total-s2027-both-rotation.svg": {
+      "sha256": "27a1d921d9bd47161d2456a345405ae1f6c7106a48800d175153e7f24e39c19c",
+      "bytes": 8077
+    },
+    "reports/equilibrium-rebuild/figures/fixed-total-s2027-both-sigma.svg": {
+      "sha256": "d0f0e998df48cafbf4c540ca9be8baa7d70e92b399a240de151e4110e126b2f2",
+      "bytes": 8680
+    },
+    "reports/equilibrium-rebuild/figures/fixed-total-s2027-both-vertical.svg": {
+      "sha256": "b9d24faaf6d0e306bbb61ea32657958901a575be3082644a24f85eb1bd986bfc",
+      "bytes": 10587
+    },
+    "reports/equilibrium-rebuild/figures/fixed-total-s2027-candidate-drift.svg": {
+      "sha256": "e737e0c6cd8378dbc7e6f63c2b4e9b57e30f04d36e52c855d9f6bf39dcf4378b",
+      "bytes": 5709
+    },
+    "reports/equilibrium-rebuild/figures/fixed-total-s2027-candidate-energy.svg": {
+      "sha256": "e3fff64d0c533f3859b6830d2d8b532f5e348e0b33d6167df422f27056a5bdba",
+      "bytes": 5567
+    },
+    "reports/equilibrium-rebuild/figures/fixed-total-s2027-candidate-halo.svg": {
+      "sha256": "7097385822b9f455a3bf7bb32979b9f93f9a5adfd4cabb60696f28c4040acfae",
+      "bytes": 8317
+    },
+    "reports/equilibrium-rebuild/figures/fixed-total-s2027-candidate-height.svg": {
+      "sha256": "87a162766451f4d51b850067392e15e040c5c947ebd52494e242dcaf15f891d1",
+      "bytes": 5579
+    },
+    "reports/equilibrium-rebuild/figures/fixed-total-s2027-candidate-radial.svg": {
+      "sha256": "83666500cbc82dd509ae8f62a33f3098b732371cb226454e844fac8c40dd5cdc",
+      "bytes": 6140
+    },
+    "reports/equilibrium-rebuild/figures/fixed-total-s2027-candidate-rings.svg": {
+      "sha256": "127f9acad63210bfea842f38238a3fcd8b01dc0f1df895bca34e3752ddd390dd",
+      "bytes": 5687
+    },
+    "reports/equilibrium-rebuild/figures/fixed-total-s2027-candidate-rotation.svg": {
+      "sha256": "fef7123f86c39c37cd6a809bedf7501f543155ee84b0e6adf34c669ec714d669",
+      "bytes": 5211
+    },
+    "reports/equilibrium-rebuild/figures/fixed-total-s2027-candidate-sigma.svg": {
+      "sha256": "fed9d3f6dd76e2950a46dd4fda90bd8ab16d573b7da0a2508f045afc28922f79",
+      "bytes": 5561
+    },
+    "reports/equilibrium-rebuild/figures/fixed-total-s2027-candidate-vertical.svg": {
+      "sha256": "b18433a5104d659b92fa6925e939dde67f4b866bc5f3c4a8a1e1fb265dcb4b0b",
+      "bytes": 7460
+    },
+    "reports/equilibrium-rebuild/figures/fixed-total-s2027-legacy-drift.svg": {
+      "sha256": "a1e8ad528279cdb67542d31405da000e6d38d068faccc6aa55bcd51b40ae3188",
+      "bytes": 5087
+    },
+    "reports/equilibrium-rebuild/figures/fixed-total-s2027-legacy-energy.svg": {
+      "sha256": "e95c973622b7ee2b1d45450685e54e5bdeb126b9a085155144ba8cb1d313852e",
+      "bytes": 4937
+    },
+    "reports/equilibrium-rebuild/figures/fixed-total-s2027-legacy-halo.svg": {
+      "sha256": "fba92f0cc45e7e10c884c99edf9ef85bcca1efbfdf338fee546d58d21a2ae656",
+      "bytes": 7568
+    },
+    "reports/equilibrium-rebuild/figures/fixed-total-s2027-legacy-height.svg": {
+      "sha256": "5e1b8a6857f29795e3a8d1287cf694e9412d3e2669d71b3b0e3a6d0e77e57889",
+      "bytes": 4941
+    },
+    "reports/equilibrium-rebuild/figures/fixed-total-s2027-legacy-radial.svg": {
+      "sha256": "dd1fe382a1fddde27915f1ddea4b89ab62df2ef511dab092fbec48e13e295d16",
+      "bytes": 5751
+    },
+    "reports/equilibrium-rebuild/figures/fixed-total-s2027-legacy-rings.svg": {
+      "sha256": "2745a6a811ad033f6b9c4014c904ef3e260b60d9237b1aacd84ea4484635a719",
+      "bytes": 5081
+    },
+    "reports/equilibrium-rebuild/figures/fixed-total-s2027-legacy-rotation.svg": {
+      "sha256": "252edc29d5ace80ea7af5bc7cafe68f5ac41df2d72b7d95d30904300ca378cfc",
+      "bytes": 4689
+    },
+    "reports/equilibrium-rebuild/figures/fixed-total-s2027-legacy-sigma.svg": {
+      "sha256": "38489ff5994850d5f803869c01c93d3dfc9a39be2643f262df4148aa36b520f5",
+      "bytes": 4915
+    },
+    "reports/equilibrium-rebuild/figures/fixed-total-s2027-legacy-vertical.svg": {
+      "sha256": "4bf12484c8260fd2e82ba3fd7cfc3af7cf5f1cb7a208bad5815cbdce923cda60",
+      "bytes": 6747
+    },
+    "reports/equilibrium-rebuild/figures/fixed-total-s2028-both-drift.svg": {
+      "sha256": "69a5bcc6aab6fb5969584133a76395e3062d8d21927af7ab6c941c31ae6618a0",
+      "bytes": 8913
+    },
+    "reports/equilibrium-rebuild/figures/fixed-total-s2028-both-energy.svg": {
+      "sha256": "48abcdda38981c53cf1767f9dfcf5375cbf00c8d9cefb4c3d490c67f47ff79e1",
+      "bytes": 8711
+    },
+    "reports/equilibrium-rebuild/figures/fixed-total-s2028-both-halo.svg": {
+      "sha256": "e5cc2fb7d8caacf6a7006f1a5a49d714db53d87942092ea2f35a9aa50ae7e544",
+      "bytes": 12262
+    },
+    "reports/equilibrium-rebuild/figures/fixed-total-s2028-both-height.svg": {
+      "sha256": "3c4ca1b73c52262c52d70784c7070b86e94a75422cdffc048aa09b5c6f6922ff",
+      "bytes": 8724
+    },
+    "reports/equilibrium-rebuild/figures/fixed-total-s2028-both-radial.svg": {
+      "sha256": "1790d9a5eabb8af846f9963bcc77e41c7c9696a175cd8874f3100c5f1a9cf369",
+      "bytes": 9005
+    },
+    "reports/equilibrium-rebuild/figures/fixed-total-s2028-both-rings.svg": {
+      "sha256": "a70cd8a37f18176433ce7e558632eb9cb6038fe3ce3d0312a7281395ecc0e1e4",
+      "bytes": 8725
+    },
+    "reports/equilibrium-rebuild/figures/fixed-total-s2028-both-rotation.svg": {
+      "sha256": "27a1d921d9bd47161d2456a345405ae1f6c7106a48800d175153e7f24e39c19c",
+      "bytes": 8077
+    },
+    "reports/equilibrium-rebuild/figures/fixed-total-s2028-both-sigma.svg": {
+      "sha256": "cced8952e5fb399e521175837ea9b4f206b2938ec7e3b9fb90b60981f2088ec2",
+      "bytes": 8695
+    },
+    "reports/equilibrium-rebuild/figures/fixed-total-s2028-both-vertical.svg": {
+      "sha256": "4dc48dd46b09173d972b9b95a5d47d30c27cfa94ef3a5644ff399a2ae3aa0711",
+      "bytes": 10425
+    },
+    "reports/equilibrium-rebuild/figures/fixed-total-s2028-candidate-drift.svg": {
+      "sha256": "05189cff38a81db868ce68dbc12e5fbdad6172534c24752402ebf7492d7da2ef",
+      "bytes": 5677
+    },
+    "reports/equilibrium-rebuild/figures/fixed-total-s2028-candidate-energy.svg": {
+      "sha256": "6de44000cd80c918ffc9273157157b6a4568f085d3b77472fe9edecbb53803a1",
+      "bytes": 5569
+    },
+    "reports/equilibrium-rebuild/figures/fixed-total-s2028-candidate-halo.svg": {
+      "sha256": "a460438fd8fb1e4bb3a508bc6df544bd7a01e0b99594d38a62a074b1235280c4",
+      "bytes": 8281
+    },
+    "reports/equilibrium-rebuild/figures/fixed-total-s2028-candidate-height.svg": {
+      "sha256": "f39d23d1e17fcf009d7b13c5da4d6dd8b5a161bd3b4aeb85f3a21cc8c5ccf702",
+      "bytes": 5584
+    },
+    "reports/equilibrium-rebuild/figures/fixed-total-s2028-candidate-radial.svg": {
+      "sha256": "4a0867c39854aff10f7784ab018f1fce2ec9ec570b6a95f780b3bceb1ba1a1b7",
+      "bytes": 6317
+    },
+    "reports/equilibrium-rebuild/figures/fixed-total-s2028-candidate-rings.svg": {
+      "sha256": "644e3a7725c85b582f4a9826a17824466bbe0bdb79c5e41e2f4c0f0f19cc6a44",
+      "bytes": 5475
+    },
+    "reports/equilibrium-rebuild/figures/fixed-total-s2028-candidate-rotation.svg": {
+      "sha256": "fef7123f86c39c37cd6a809bedf7501f543155ee84b0e6adf34c669ec714d669",
+      "bytes": 5211
+    },
+    "reports/equilibrium-rebuild/figures/fixed-total-s2028-candidate-sigma.svg": {
+      "sha256": "63226b631bdd822a18dbffacd2e32f3ff6faa871a2dc8ef467c379af94f10572",
+      "bytes": 5554
+    },
+    "reports/equilibrium-rebuild/figures/fixed-total-s2028-candidate-vertical.svg": {
+      "sha256": "ab45a1cafff23c14d2ea11b72e16e235bfce291ffbf2d6f6b1497827300bc9cf",
+      "bytes": 7456
+    },
+    "reports/equilibrium-rebuild/figures/fixed-total-s2028-legacy-drift.svg": {
+      "sha256": "04b705baf48b404f7219ecaef61dfb230624e93a940b61252fd0d3585c530ca3",
+      "bytes": 5068
+    },
+    "reports/equilibrium-rebuild/figures/fixed-total-s2028-legacy-energy.svg": {
+      "sha256": "717aa42c247d8522fc9e7cbf310d7ed610ad862b8427b8163dc8c17e9a9a60c6",
+      "bytes": 4935
+    },
+    "reports/equilibrium-rebuild/figures/fixed-total-s2028-legacy-halo.svg": {
+      "sha256": "038dfb1860cc435b989ae2e903cb01c1fce01aadad6277bab352d2bc0f238f20",
+      "bytes": 7586
+    },
+    "reports/equilibrium-rebuild/figures/fixed-total-s2028-legacy-height.svg": {
+      "sha256": "6605d6b644cfb27288ff4368dc50f0d5ed14666c92a9170462451a45755dffe0",
+      "bytes": 4947
+    },
+    "reports/equilibrium-rebuild/figures/fixed-total-s2028-legacy-radial.svg": {
+      "sha256": "bbc82e79ec76f59d2940180c58d4a6d21aee50a2f62c8ec7ad36fc53c37ba774",
+      "bytes": 6076
+    },
+    "reports/equilibrium-rebuild/figures/fixed-total-s2028-legacy-rings.svg": {
+      "sha256": "f299a5dc97bb04a0b144a04c31e9e6d7e488dd591ebeb2a48dea86f21cae177c",
+      "bytes": 5083
+    },
+    "reports/equilibrium-rebuild/figures/fixed-total-s2028-legacy-rotation.svg": {
+      "sha256": "252edc29d5ace80ea7af5bc7cafe68f5ac41df2d72b7d95d30904300ca378cfc",
+      "bytes": 4689
+    },
+    "reports/equilibrium-rebuild/figures/fixed-total-s2028-legacy-sigma.svg": {
+      "sha256": "a6b70163bd9cb9a1f9325d5c95ca55875395a6f2a62b27ef51ba1027812afdb3",
+      "bytes": 4921
+    },
+    "reports/equilibrium-rebuild/figures/fixed-total-s2028-legacy-vertical.svg": {
+      "sha256": "7b9c6f5fd2e66d1d85712acec5d0ea8bc39a8a17084e473c43a41de77f99690c",
+      "bytes": 6590
+    },
+    "reports/equilibrium-rebuild/figures/gpu-halo.svg": {
+      "sha256": "d94b7ae07d30930c9c0759503d2951118d1d3cf08da8ceb09289b2bc001a6583",
+      "bytes": 12568
+    },
+    "reports/equilibrium-rebuild/figures/resolution.svg": {
+      "sha256": "92a82d024761bc88879bf1918a4daea97057cf1a9a9e28edfb6ce296cf537d8e",
+      "bytes": 10018
+    },
+    "reports/equilibrium-rebuild/figures/softening-field.svg": {
+      "sha256": "bed01252b43cd5806a38a7a32f942f4954712922d42b80e5be582854c4a5aa22",
+      "bytes": 4301
+    },
+    "reports/equilibrium-rebuild/gpu-2026-10-21T04-04-39-674Z.json": {
+      "sha256": "9bff7175f9558fc07190125aa1b04618b2abfb2d084491acccc53a7366dd0fe0",
+      "bytes": 6333687
+    },
+    "reports/equilibrium-rebuild/gpu-results.json": {
+      "sha256": "9bff7175f9558fc07190125aa1b04618b2abfb2d084491acccc53a7366dd0fe0",
+      "bytes": 6333687
+    },
+    "reports/equilibrium-rebuild/gpu-series.csv": {
+      "sha256": "388ee877a5157041d9d937448b7e1632e32f12dce399ec86bbc25dd498440fc2",
+      "bytes": 15746
+    },
+    "reports/equilibrium-rebuild/grafico-gpu-verificado.png": {
+      "sha256": "3c94c46e022d07fc398c6545cd27292969b7ecc85309508bda8875714493ce52",
+      "bytes": 63642
+    },
+    "reports/equilibrium-rebuild/halo-truncation-audit.json": {
+      "sha256": "437a737cf02be2c0cc9d40bddb346a7bf63b21f16742b73f0708e54a98e26173",
+      "bytes": 382
+    },
+    "reports/equilibrium-rebuild/index.json": {
+      "sha256": "256389183f6fe26a88901900c1c4dc8ba0b1eec97211840b8bea6c1a6a789c2e",
+      "bytes": 39480
+    },
+    "reports/equilibrium-rebuild/latest-controls-extended.json": {
+      "sha256": "bce8bc80e79b4f32bd24bca0a7cc9a25ed379ec8af5aba279416e381ce7903e4",
+      "bytes": 188
+    },
+    "reports/equilibrium-rebuild/latest-controls.json": {
+      "sha256": "3b2edd4999b5320831f34af831d27f79645c93a814d474300aada9638e620257",
+      "bytes": 170
+    },
+    "reports/equilibrium-rebuild/latest-field.json": {
+      "sha256": "fa2c192e7f87125675a00e551f128e37ee972f7af4cd5bf319f08fe509023f79",
+      "bytes": 351
+    },
+    "reports/equilibrium-rebuild/latest-gpu.json": {
+      "sha256": "95c024e46629e6c740b8d9e3cfb1c9c65530dca0fbf3226b1d10f4a2334461ef",
+      "bytes": 77
+    },
+    "reports/equilibrium-rebuild/latest-library-1024.json": {
+      "sha256": "da9c219a5c788341e9330f24db0e4729d3f86a316ec10d2e766d2e54fa14466e",
+      "bytes": 323
+    },
+    "reports/equilibrium-rebuild/latest-library-128.json": {
+      "sha256": "2718887c77f7602c565f23694ce989f17911886b90e232346743e01668572188",
+      "bytes": 311
+    },
+    "reports/equilibrium-rebuild/latest-library-512.json": {
+      "sha256": "c8aaa402b48c25f61989327025ff9d2e1c1ab140abf89c9044737d077f316e17",
+      "bytes": 320
+    },
+    "reports/equilibrium-rebuild/latest-validation.json": {
+      "sha256": "878f00cceb7dd31cd1016e42af000fceae9bcbbfca5d06dd081f61a0a3fe65d8",
+      "bytes": 172
+    },
+    "reports/equilibrium-rebuild/orbits-1024-s44-p8-2026-10-21T03-42-28-070Z/candidate-n800-s2026.json": {
+      "sha256": "33db57e1125d87c49b5e0228568bae0046cffe0b7d7798b8a417da36c68dd4fd",
+      "bytes": 114194
+    },
+    "reports/equilibrium-rebuild/orbits-1024-s44-p8-2026-10-21T03-42-28-070Z/candidate-n800-s2027.json": {
+      "sha256": "c25558a30145aa195f047674f545a088c0d16181883f708af34cbea6b607a9e2",
+      "bytes": 114392
+    },
+    "reports/equilibrium-rebuild/orbits-1024-s44-p8-2026-10-21T03-42-28-070Z/candidate-n800-s2028.json": {
+      "sha256": "e422d8465d4ec4fe73452386d51f691863a990166f8a97d3ffe48bcb4a989500",
+      "bytes": 114450
+    },
+    "reports/equilibrium-rebuild/orbits-1024-s44-p8-2026-10-21T03-42-28-070Z/gpu-n2800-s2026.json": {
+      "sha256": "d294d994b949d4461f74ee6902434c1ae6700b372b98565ec0d3a54c0551a7eb",
+      "bytes": 394938
+    },
+    "reports/equilibrium-rebuild/orbits-1024-s44-p8-2026-10-21T03-42-28-070Z/gpu-n2800-s2027.json": {
+      "sha256": "2c75877553e9f5b18c27ba4731a7f7a12ae169d078936967f1c866290715e5b9",
+      "bytes": 395046
+    },
+    "reports/equilibrium-rebuild/orbits-1024-s44-p8-2026-10-21T03-42-28-070Z/gpu-n2800-s2028.json": {
+      "sha256": "3bf5454fe4b3dfa58e24ed05480fe0086cb55ef21a5951b5d0d78236cd305d5b",
+      "bytes": 395092
+    },
+    "reports/equilibrium-rebuild/orbits-1024-s44-p8-2026-10-21T03-42-28-070Z/gpu-n400-s2026.json": {
+      "sha256": "992f6a6e0e872d161a934f455dc7f709ac12897113a1b18a37cb514f8ef4dd76",
+      "bytes": 57492
+    },
+    "reports/equilibrium-rebuild/orbits-1024-s44-p8-2026-10-21T03-42-28-070Z/library.json": {
+      "sha256": "425e78d31d701d7c1c91e8b10e8fcf1757dd9278e0232fb79fc31ea97b320737",
+      "bytes": 84274844
+    },
+    "reports/equilibrium-rebuild/orbits-1024-s44-p8-2026-10-21T03-42-28-070Z/partial.json": {
+      "sha256": "9f962c2106b6c7fecbc34e068c0f8219b1239e9d119e108d91e9eb26b6d3e073",
+      "bytes": 46
+    },
+    "reports/equilibrium-rebuild/orbits-128-s42-2026-10-21T03-41-01-427Z/candidate-n800-s2026.json": {
+      "sha256": "d76f75fbb7a2266d6119bed63a4030e9c823539ba5b2d67985b681caaf388d73",
+      "bytes": 114338
+    },
+    "reports/equilibrium-rebuild/orbits-128-s42-2026-10-21T03-41-01-427Z/candidate-n800-s2027.json": {
+      "sha256": "8177a8b75b63d3f4eb9140165fb05ba438c81d8275cc8dd14f026db62e7b17b1",
+      "bytes": 114280
+    },
+    "reports/equilibrium-rebuild/orbits-128-s42-2026-10-21T03-41-01-427Z/candidate-n800-s2028.json": {
+      "sha256": "65f6b2e108b11911571c4ace6625f484a23318cdcd49e44c3f063ad5a2e65b88",
+      "bytes": 114218
+    },
+    "reports/equilibrium-rebuild/orbits-128-s42-2026-10-21T03-41-01-427Z/library.json": {
+      "sha256": "78c83519be8765010a5aa1e93901abe0c77bae8e25a171cb7a5e601a049bf102",
+      "bytes": 2578289
+    },
+    "reports/equilibrium-rebuild/orbits-128-s42-2026-10-21T03-41-01-427Z/partial.json": {
+      "sha256": "fa0d729e69dd326eff8efbc9d2879f2f2a5dabb1fad1ee9327cc62d82f004028",
+      "bytes": 43
+    },
+    "reports/equilibrium-rebuild/orbits-512-s43-p4-2026-10-21T03-41-41-171Z/candidate-n800-s2026.json": {
+      "sha256": "a6bae6bae2e5dcf5ee35ef66f5087a4c968db127b0593ae6fd72e15367381bef",
+      "bytes": 114236
+    },
+    "reports/equilibrium-rebuild/orbits-512-s43-p4-2026-10-21T03-41-41-171Z/candidate-n800-s2027.json": {
+      "sha256": "62653918e6bdf83840e9e3a6973d57fba27587406e4260b2d9bf41c9b1e5d1e9",
+      "bytes": 114286
+    },
+    "reports/equilibrium-rebuild/orbits-512-s43-p4-2026-10-21T03-41-41-171Z/candidate-n800-s2028.json": {
+      "sha256": "4a8c3e7ee71a02bf6697e90c2e645d0ffa00491fdb65c1ef69d20869c2d19de7",
+      "bytes": 114312
+    },
+    "reports/equilibrium-rebuild/orbits-512-s43-p4-2026-10-21T03-41-41-171Z/library.json": {
+      "sha256": "75c9da910d332dcd6b5e2b62a163033eda61442dc42a1296937e1fce02384d14",
+      "bytes": 43930323
+    },
+    "reports/equilibrium-rebuild/orbits-512-s43-p4-2026-10-21T03-41-41-171Z/partial.json": {
+      "sha256": "4453e8ed8fd726386920584c6ab399ae07375bc7c36b6d87669d5959d06387d5",
+      "bytes": 43
+    },
+    "reports/equilibrium-rebuild/orbits-512-s43-p8-2026-10-21T03-42-19-346Z/candidate-n800-s2026.json": {
+      "sha256": "2f68f290644ab9579d17cf6747674603ae62c606a2db5c0b32622c4ecd208e20",
+      "bytes": 114256
+    },
+    "reports/equilibrium-rebuild/orbits-512-s43-p8-2026-10-21T03-42-19-346Z/candidate-n800-s2027.json": {
+      "sha256": "584861a0a31a6c9c41bc3519fd5928fe901a610c2e3ced4e2b760344c0f0a6c7",
+      "bytes": 114310
+    },
+    "reports/equilibrium-rebuild/orbits-512-s43-p8-2026-10-21T03-42-19-346Z/candidate-n800-s2028.json": {
+      "sha256": "4bca63eb6339b84dce6c70e8e02abf074c7be8a0308f4e58f239de9cbe3e06be",
+      "bytes": 114462
+    },
+    "reports/equilibrium-rebuild/orbits-512-s43-p8-2026-10-21T03-42-19-346Z/library.json": {
+      "sha256": "47852216312b7a7c8c5a5a7a58af1f80b1bd689bca45f67efa53484f2e76735e",
+      "bytes": 41099036
+    },
+    "reports/equilibrium-rebuild/orbits-512-s43-p8-2026-10-21T03-42-19-346Z/partial.json": {
+      "sha256": "36b32c94fa06d840e55f8f660119246cd6c6ca5462bffb207ce7e98d0d510c7a",
+      "bytes": 53
+    },
+    "reports/equilibrium-rebuild/pagina-gpu-verificada.png": {
+      "sha256": "56b99f944d2547cbeb36fcc6c39a1dbad995cdcd0efcf12fee7e4505de110b54",
+      "bytes": 87812
+    },
+    "reports/equilibrium-rebuild/pagina-verificada.png": {
+      "sha256": "0f027b4e6474655706e26bc2fafbb2e148dff27af087e5444f371194af1692da",
+      "bytes": 53671
+    },
+    "reports/equilibrium-rebuild/profiles.csv": {
+      "sha256": "87a76ae490f6dd4bc281850d7827df4c1adc130773add35ba971d8a06e7fa7ad",
+      "bytes": 9422270
+    },
+    "reports/equilibrium-rebuild/series.csv": {
+      "sha256": "7bff0e7a3cafa90d1ba9cc8bd3c12007e4c5769e0f63e661bc14f22378ec1b68",
+      "bytes": 241961
+    },
+    "reports/equilibrium-rebuild/tests-final.txt": {
+      "sha256": "84413ce62a937acb51de70f2576ec8a7a0065d01de6f727b75d5697435e887e2",
+      "bytes": 18347
+    },
+    "reports/equilibrium-rebuild/validation-2026-10-21T03-47-16-507Z/validation.json": {
+      "sha256": "ae3ccfe1f6b0c93d88772c0146fd3bc15fa1b3324fbe1c26b01046e75a28658f",
+      "bytes": 56756
+    },
+    "reports/equilibrium-rebuild/verification.json": {
+      "sha256": "46f9377cb06466275934eb5016d45e307292c10abd9ffdd3d59ee9f7d010ffdc",
+      "bytes": 567
+    },
+    "reports/equilibrium-rebuild/weak-stationarity.json": {
+      "sha256": "fd7003d5e96732f32edcb4a53ba7128a75f3e67a489107e6b1712470d4955104",
+      "bytes": 11012
+    }
+  },
+  "newDataBytes": 265749425
+}

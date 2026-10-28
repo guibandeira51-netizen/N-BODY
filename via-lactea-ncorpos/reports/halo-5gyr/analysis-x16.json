@@ -1,0 +1,190 @@
+{
+  "createdUTC": "2026-10-22T01:32:03.361Z",
+  "sourceRun": "reports/halo-5gyr/run-halo-x16-t50000-2026-10-22T01-30-29-445Z.json",
+  "counts": [
+    4972,
+    14917,
+    212144
+  ],
+  "n": 232033,
+  "completedSteps": 50000,
+  "timeMyr": 5000.000074505806,
+  "initialH50Kpc": 0.16487250830671857,
+  "finalH50Kpc": 0.5218877004115472,
+  "thresholdKpc": 0.32974501661343714,
+  "growthPercent": 216.5401592851731,
+  "meetsRequestedFinalCriterion": false,
+  "maximumSampledH50Kpc": 0.5218877004115472,
+  "maximumSampledTimeMyr": 5000.000074505806,
+  "firstSampleAboveThresholdMyr": 1200.0000178813934,
+  "x8FinalH50Kpc": 0.6295209027799722,
+  "reductionOfFinalH50VersusX8Percent": 17.09763756741284,
+  "initialSigmaNormalKpcMyr": 0.04018801987191723,
+  "finalSigmaNormalKpcMyr": 0.06619831539406612,
+  "initialR50Kpc": 5.339904280216396,
+  "finalR50Kpc": 6.143384341771353,
+  "initialDiskMass": 6.8000000909669325,
+  "finalDiskMass": 6.8000000909669325,
+  "relativeTotalAngularMomentumVectorChange": 0.000049624975024775895,
+  "energyReferences": [
+    {
+      "timeMyr": 0,
+      "energy": -1.8420285917118044,
+      "relativeEnergyPercent": 0,
+      "costMs": 28645.70999999903
+    },
+    {
+      "timeMyr": 1000.0000149011612,
+      "energy": -1.842031901193383,
+      "relativeEnergyPercent": -0.00017966504936202903,
+      "costMs": 28359.300000000745
+    },
+    {
+      "timeMyr": 5000.000074505806,
+      "energy": -1.8420306741057495,
+      "relativeEnergyPercent": -0.00011304894801455967,
+      "costMs": 28630.38500000164
+    }
+  ],
+  "maximumAbsoluteErrorAmongDirectReferencesPercent": 0.00017966504936202903,
+  "mainUsesHaloRefinement": false,
+  "mainAuditFiles": [
+    "src/ncorpos-live-entry.js",
+    "src/compute/live-worker.js",
+    "src/physics/initial.js"
+  ],
+  "independentFinalVerification": {
+    "id": "halo-x16",
+    "independentlyRecomputed": true,
+    "initialFile": "reports/halo-5gyr/initial-halo-x16.bin.gz",
+    "finalFile": "reports/halo-5gyr/state-halo-x16-s50000-2026-10-22T01-30-26-913Z.bin.gz",
+    "finalSHA256": "7f8addef20c4eb1d0632bb35d433d35a63089ff0b3c19f47663e0aaac498e027",
+    "counts": [
+      4972,
+      14917,
+      212144
+    ],
+    "individualMassesAndComponentsUnchanged": true,
+    "initialMass": [
+      0.5000000145810191,
+      6.8000000909669325,
+      97.63157933810726
+    ],
+    "finalMass": [
+      0.5000000145810191,
+      6.8000000909669325,
+      97.63157933810726
+    ],
+    "globalSteps": 50000,
+    "effectiveDtMyr": 0.10000000149011612,
+    "timeMyr": 5000.000074505806,
+    "epochVerified": true,
+    "velocityEpoch": "full-step, after final KDK kick",
+    "h50InitialKpc": 0.16487250830671857,
+    "h50FinalKpc": 0.5218877004115472,
+    "ratio": 3.165401592851731,
+    "growthPercent": 216.5401592851731,
+    "phasesReproduceReportedH50": true,
+    "independentPass": false,
+    "qualification": "Actual saved initial and final phases, same disk-analysis routine evaluated independently of the experiment worker. Checks implementation consistency, not an independent definition of thickness or an equilibrium theorem."
+  },
+  "radial": [
+    {
+      "lowerKpc": 0,
+      "upperKpc": 2,
+      "initialCount": 2399,
+      "finalCount": 3977,
+      "initialLocalH50Kpc": 0.1646194074514151,
+      "finalLocalH50Kpc": 0.2811805277793362,
+      "finalGlobalH50Kpc": 0.2791165256416795,
+      "finalTiltFromGlobalDegrees": 7.470518340388495
+    },
+    {
+      "lowerKpc": 2,
+      "upperKpc": 4,
+      "initialCount": 3307,
+      "finalCount": 1872,
+      "initialLocalH50Kpc": 0.15309703397994748,
+      "finalLocalH50Kpc": 0.5504610138798828,
+      "finalGlobalH50Kpc": 0.5505468478459873,
+      "finalTiltFromGlobalDegrees": 1.812230873356308
+    },
+    {
+      "lowerKpc": 4,
+      "upperKpc": 6,
+      "initialCount": 2429,
+      "finalCount": 1529,
+      "initialLocalH50Kpc": 0.1612922099162943,
+      "finalLocalH50Kpc": 0.5732004368036341,
+      "finalGlobalH50Kpc": 0.5705872914432314,
+      "finalTiltFromGlobalDegrees": 0.7598815866725822
+    },
+    {
+      "lowerKpc": 6,
+      "upperKpc": 8,
+      "initialCount": 1434,
+      "finalCount": 1313,
+      "initialLocalH50Kpc": 0.16644525749808023,
+      "finalLocalH50Kpc": 0.5313112056688765,
+      "finalGlobalH50Kpc": 0.5358859387430731,
+      "finalTiltFromGlobalDegrees": 0.7026978742287736
+    },
+    {
+      "lowerKpc": 8,
+      "upperKpc": 10,
+      "initialCount": 928,
+      "finalCount": 1155,
+      "initialLocalH50Kpc": 0.1593534474423288,
+      "finalLocalH50Kpc": 0.5691736790381594,
+      "finalGlobalH50Kpc": 0.5675718488945047,
+      "finalTiltFromGlobalDegrees": 0.65158509915054
+    },
+    {
+      "lowerKpc": 10,
+      "upperKpc": 12,
+      "initialCount": 676,
+      "finalCount": 935,
+      "initialLocalH50Kpc": 0.1464482314458158,
+      "finalLocalH50Kpc": 0.5931126603184197,
+      "finalGlobalH50Kpc": 0.6175694051049627,
+      "finalTiltFromGlobalDegrees": 0.5376721867960337
+    },
+    {
+      "lowerKpc": 12,
+      "upperKpc": 16,
+      "initialCount": 934,
+      "finalCount": 1201,
+      "initialLocalH50Kpc": 0.15138667503250722,
+      "finalLocalH50Kpc": 0.6517357117173184,
+      "finalGlobalH50Kpc": 0.6504176972429392,
+      "finalTiltFromGlobalDegrees": 0.1898311819628525
+    },
+    {
+      "lowerKpc": 16,
+      "upperKpc": 20,
+      "initialCount": 560,
+      "finalCount": 662,
+      "initialLocalH50Kpc": 0.1659067582833037,
+      "finalLocalH50Kpc": 0.7054112385028162,
+      "finalGlobalH50Kpc": 0.6906883411508429,
+      "finalTiltFromGlobalDegrees": 0.9822978357383607
+    },
+    {
+      "lowerKpc": 20,
+      "upperKpc": 30,
+      "initialCount": 816,
+      "finalCount": 827,
+      "initialLocalH50Kpc": 0.16176981235169682,
+      "finalLocalH50Kpc": 0.7163214634053359,
+      "finalGlobalH50Kpc": 0.9070482513757303,
+      "finalTiltFromGlobalDegrees": 2.016777091041294
+    }
+  ],
+  "limitations": [
+    "One legacy realization and seed; not a demonstration of convergence to a stable distribution function.",
+    "Maximum thickness is among 100 Myr samples, not a continuous-time bound.",
+    "Direct Float64 energy is evaluated only at the recorded epochs; it diagnoses a Float32 trajectory.",
+    "Radial bins are instantaneous selections, not tracked particle cohorts.",
+    "Resolution dependence supports a discreteness contribution but does not isolate all heating mechanisms."
+  ]
+}

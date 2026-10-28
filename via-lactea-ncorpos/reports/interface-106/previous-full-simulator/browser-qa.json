@@ -1,0 +1,21 @@
+{
+  "UTC": "2026-10-17T06:04:54.182219+00:00",
+  "status": "passed",
+  "scope": "User-selected full simulator replaces simplified N-body page",
+  "canonicalPage": "experimento-ncorpos.html",
+  "sourcePage": "simulador-tecnico.html",
+  "originalDOMAndEnginePreserved": true,
+  "navigationAdded": true,
+  "functionalRun": {
+    "n": 512,
+    "backend": "CPU Worker Float64",
+    "algorithm": "direct",
+    "pauseTimeMyr": 3.6
+  },
+  "removedActiveSources": [
+    "src/experiment106-page.js",
+    "src/compute/presentation-worker.js"
+  ],
+  "previousImplementationArchived": "previous-clean-interface",
+  "newScientificCampaigns": 0
+}

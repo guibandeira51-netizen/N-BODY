@@ -1,0 +1,4384 @@
+{
+  "schema": "refinement-summary-104",
+  "completed": 34,
+  "runs": [
+    {
+      "id": "FA-b2026-h2026-t20",
+      "family": "A",
+      "stage": "factorial20",
+      "n": 10000,
+      "nh": 4000,
+      "seed": 2026,
+      "duration": 20,
+      "dt": 0.05,
+      "counts": [
+        1500,
+        3546,
+        954,
+        4000
+      ],
+      "haloParticleMassMsun": 262282303.02963915,
+      "haloToThinParticleMass": 23.368166998570356,
+      "globalGrowth": 4.190688109121443,
+      "samples": 41,
+      "initialTime": 0,
+      "finalTime": 20,
+      "sampleIntervalMax": 0.5,
+      "finalEnergyError": 1.4531433426088508e-8,
+      "maxAbsEnergyError": 2.284311260717731e-7,
+      "minEnergyError": -2.284311260717731e-7,
+      "maxEnergyError": 1.1075259951838841e-7,
+      "meanEnergyError": -4.159385267388475e-9,
+      "energyErrorPeakToPeak": 3.3918372559016153e-7,
+      "energyErrorRmsAboutMean": 7.56534730930867e-8,
+      "maxAbsEnergyScaledError": 7.339653699047434e-8,
+      "maxAngularMomentumScaledError": 2.07634791400219e-7,
+      "maxAbsLzRelativeError": 0.000004935563905384322,
+      "maxAbsLzScaledError": 1.0561708547166343e-7,
+      "maxMomentumScaledError": 8.653234680895993e-10,
+      "maxCenterOfMassDisplacement": 1.7763335012294444e-9,
+      "maxCenterOfMassBallisticResidual": 1.7763335012294444e-9,
+      "energyApproximate": false,
+      "externalExtrapolatedMax": 0,
+      "scope": "sampled instants only; conservation does not establish structural equilibrium",
+      "timing": {
+        "initializeSeconds": 0.038875,
+        "stepSeconds": 0.8608899999978018,
+        "readbackSeconds": 0.17833999999891964,
+        "diagnosticSeconds": 9.14413000000082,
+        "energySeconds": 3.4639099999982856,
+        "structureSeconds": 5.680175000001676
+      },
+      "wallSeconds": 10.624254999999888,
+      "precisionAudit": {
+        "n": 10000,
+        "serialSeconds": 0.6076200000001117,
+        "parallelSeconds": 0.6878650000002235,
+        "serialU": -3.3695944163492633,
+        "parallelU": -3.3695944163492633,
+        "absoluteDifference": 0
+      },
+      "source": "reports/v1.0.4/initial/FA-b2026-h2026.json",
+      "sourceSHA256": "51bd6af95b5d8b08344806755fbde05a861a272c29aa34741dc74e774b70563a",
+      "thinH0": 0.2076244618710567,
+      "thinHFinal": 0.2179704171597756,
+      "thinGrowth": 4.983013656234858,
+      "thinSigmaNormalGrowth": 2.522915945219495,
+      "thinDeltaVarianceZ": 63.646125803183075,
+      "thinSigmaR0": 76.92082046521286,
+      "thinSigmaRFinal": 79.16805237129674,
+      "thinR50Change": 0.007843538951873619,
+      "thinLateHChange": 0.004926911678987539,
+      "thinLateVarianceZ": 70.7243173304809,
+      "thinTiltFinal": 0.38627354766375693,
+      "thickH0": 0.5515635808470977,
+      "thickHFinal": 0.5645854012483181,
+      "thickGrowth": 2.3608919902255776,
+      "thickSigmaNormalGrowth": -4.335438104249545,
+      "thickDeltaVarianceZ": -296.02195316804233,
+      "thickSigmaR0": 65.23074014213536,
+      "thickSigmaRFinal": 62.616992829160914,
+      "thickR50Change": -0.3879715446067591,
+      "thickLateHChange": -0.006417956248723433,
+      "thickLateVarianceZ": 152.29825234374775,
+      "thickTiltFinal": 0.6653759561869524,
+      "bulgeR50Change": 0.37417208336404917
+    },
+    {
+      "id": "FA-b2026-h2026-t200",
+      "family": "A",
+      "stage": "factorial200",
+      "n": 10000,
+      "nh": 4000,
+      "seed": 2026,
+      "duration": 200,
+      "dt": 0.05,
+      "counts": [
+        1500,
+        3546,
+        954,
+        4000
+      ],
+      "haloParticleMassMsun": 262282303.02963915,
+      "haloToThinParticleMass": 23.368166998570356,
+      "globalGrowth": 87.04045280171056,
+      "samples": 41,
+      "initialTime": 0,
+      "finalTime": 200,
+      "sampleIntervalMax": 5,
+      "finalEnergyError": -1.4591369770607388e-7,
+      "maxAbsEnergyError": 2.6781189164127445e-7,
+      "minEnergyError": -2.6781189164127445e-7,
+      "maxEnergyError": 1.7686603242685024e-7,
+      "meanEnergyError": -7.638518616772202e-8,
+      "energyErrorPeakToPeak": 4.4467792406812466e-7,
+      "energyErrorRmsAboutMean": 9.845284913523611e-8,
+      "maxAbsEnergyScaledError": 8.604985559262901e-8,
+      "maxAngularMomentumScaledError": 7.580822359366563e-7,
+      "maxAbsLzRelativeError": 0.000009238264162073087,
+      "maxAbsLzScaledError": 1.976913994672512e-7,
+      "maxMomentumScaledError": 7.293246402094001e-9,
+      "maxCenterOfMassDisplacement": 8.33353985552533e-8,
+      "maxCenterOfMassBallisticResidual": 8.33353985552533e-8,
+      "energyApproximate": false,
+      "externalExtrapolatedMax": 0,
+      "scope": "sampled instants only; conservation does not establish structural equilibrium",
+      "timing": {
+        "initializeSeconds": 0.014570000000298023,
+        "forceBatch32Seconds": 0.04688499999977648,
+        "stepSeconds": 5.614220000002532,
+        "readbackSeconds": 0.1727749999957159,
+        "diagnosticSeconds": 10.190225000000558,
+        "energySeconds": 3.6643450000006714,
+        "structureSeconds": 6.525850000000559
+      },
+      "wallSeconds": 17.52816000000015,
+      "precisionAudit": {
+        "n": 10000,
+        "serialSeconds": 0.5958499999996275,
+        "parallelSeconds": 0.0884550000000745,
+        "serialU": -3.3695944163492633,
+        "parallelU": -3.3695944163492633,
+        "absoluteDifference": 0
+      },
+      "source": "reports/v1.0.4/initial/FA-b2026-h2026.json",
+      "sourceSHA256": "51bd6af95b5d8b08344806755fbde05a861a272c29aa34741dc74e774b70563a",
+      "thinH0": 0.2076244618710567,
+      "thinHFinal": 0.4091062351908734,
+      "thinGrowth": 97.04144275877529,
+      "thinSigmaNormalGrowth": 34.5262969242826,
+      "thinDeltaVarianceZ": 1326.5154271373892,
+      "thinSigmaR0": 76.92082046521286,
+      "thinSigmaRFinal": 87.22875456208443,
+      "thinR50Change": 0.3513964510193244,
+      "thinLateHChange": 0.10597976356884442,
+      "thinLateVarianceZ": 826.6636687329027,
+      "thinTiltFinal": 6.7031689879059275,
+      "thickH0": 0.5515635808470977,
+      "thickHFinal": 0.790287796915123,
+      "thickGrowth": 43.2813594583946,
+      "thickSigmaNormalGrowth": 1.8138032118612868,
+      "thickDeltaVarianceZ": 250.26710119097677,
+      "thickSigmaR0": 65.23074014213536,
+      "thickSigmaRFinal": 72.84252247045994,
+      "thickR50Change": 0.6649019873926072,
+      "thickLateHChange": 0.12372999809444174,
+      "thickLateVarianceZ": 467.0459328844291,
+      "thickTiltFinal": 5.917112225498603,
+      "bulgeR50Change": 0.4375891211908516
+    },
+    {
+      "id": "FA-b2027-h2027-t20",
+      "family": "A",
+      "stage": "factorial20",
+      "n": 10000,
+      "nh": 4000,
+      "seed": 2027,
+      "duration": 20,
+      "dt": 0.05,
+      "counts": [
+        1500,
+        3546,
+        954,
+        4000
+      ],
+      "haloParticleMassMsun": 262282303.02963915,
+      "haloToThinParticleMass": 23.368166998570356,
+      "globalGrowth": 4.40918412651603,
+      "samples": 41,
+      "initialTime": 0,
+      "finalTime": 20,
+      "sampleIntervalMax": 0.5,
+      "finalEnergyError": 6.412691022314814e-8,
+      "maxAbsEnergyError": 2.741981496518634e-7,
+      "minEnergyError": -2.741981496518634e-7,
+      "maxEnergyError": 1.7852330103321298e-7,
+      "meanEnergyError": 1.7367118250764465e-8,
+      "energyErrorPeakToPeak": 4.5272145068507634e-7,
+      "energyErrorRmsAboutMean": 9.645697569424073e-8,
+      "maxAbsEnergyScaledError": 9.034885752603104e-8,
+      "maxAngularMomentumScaledError": 2.905788815634187e-7,
+      "maxAbsLzRelativeError": 0.000031295402523564574,
+      "maxAbsLzScaledError": 2.5830158096778283e-7,
+      "maxMomentumScaledError": 4.368851522380123e-10,
+      "maxCenterOfMassDisplacement": 2.2691859499446377e-9,
+      "maxCenterOfMassBallisticResidual": 2.2691859499446377e-9,
+      "energyApproximate": false,
+      "externalExtrapolatedMax": 0,
+      "scope": "sampled instants only; conservation does not establish structural equilibrium",
+      "timing": {
+        "initializeSeconds": 0.00912000000011176,
+        "stepSeconds": 0.8149899999983609,
+        "readbackSeconds": 0.167945000000298,
+        "diagnosticSeconds": 6.8545849999981,
+        "energySeconds": 1.9743399999970566,
+        "structureSeconds": 4.880195000000298
+      },
+      "wallSeconds": 7.976109999999404,
+      "source": "reports/v1.0.4/initial/FA-b2027-h2027.json",
+      "sourceSHA256": "b5d143ac6e327d3279dddae6740a494237fb2dcbe759eb62f06c82133426634f",
+      "thinH0": 0.19497743865111375,
+      "thinHFinal": 0.20420814974934398,
+      "thinGrowth": 4.734245747656662,
+      "thinSigmaNormalGrowth": 2.860770456714823,
+      "thinDeltaVarianceZ": 70.84629711243834,
+      "thinSigmaR0": 77.99183606633152,
+      "thinSigmaRFinal": 77.08427734198222,
+      "thinR50Change": -0.08485757664777527,
+      "thinLateHChange": 0.001315931927680647,
+      "thinLateVarianceZ": 143.49321906080996,
+      "thinTiltFinal": 0.4289588929149987,
+      "thickH0": 0.6024332975097725,
+      "thickHFinal": 0.643656829557849,
+      "thickGrowth": 6.842837575293181,
+      "thickSigmaNormalGrowth": -4.519718745711188,
+      "thickDeltaVarianceZ": -302.94678411152535,
+      "thickSigmaR0": 61.7892400200498,
+      "thickSigmaRFinal": 58.26151118092627,
+      "thickR50Change": 0.2641194397488462,
+      "thickLateHChange": 0.061928201428379626,
+      "thickLateVarianceZ": -84.15383207977474,
+      "thickTiltFinal": 0.12284216935763241,
+      "bulgeR50Change": 0.2344322089369144
+    },
+    {
+      "id": "FA-b2027-h2027-t200",
+      "family": "A",
+      "stage": "factorial200",
+      "n": 10000,
+      "nh": 4000,
+      "seed": 2027,
+      "duration": 200,
+      "dt": 0.05,
+      "counts": [
+        1500,
+        3546,
+        954,
+        4000
+      ],
+      "haloParticleMassMsun": 262282303.02963915,
+      "haloToThinParticleMass": 23.368166998570356,
+      "globalGrowth": 87.87755875540422,
+      "samples": 41,
+      "initialTime": 0,
+      "finalTime": 200,
+      "sampleIntervalMax": 5,
+      "finalEnergyError": 1.136197284387738e-7,
+      "maxAbsEnergyError": 7.130248098249227e-7,
+      "minEnergyError": -7.130248098249227e-7,
+      "maxEnergyError": 2.77174698880924e-7,
+      "meanEnergyError": 3.516754730395644e-8,
+      "energyErrorPeakToPeak": 9.901995087058467e-7,
+      "energyErrorRmsAboutMean": 1.7213153834744636e-7,
+      "maxAbsEnergyScaledError": 2.3494314982500662e-7,
+      "maxAngularMomentumScaledError": 0.000001001856221148076,
+      "maxAbsLzRelativeError": 0.00009613473242063349,
+      "maxAbsLzScaledError": 7.934633002872155e-7,
+      "maxMomentumScaledError": 2.0036140579161246e-8,
+      "maxCenterOfMassDisplacement": 1.6953275269118676e-7,
+      "maxCenterOfMassBallisticResidual": 1.6953275269118676e-7,
+      "energyApproximate": false,
+      "externalExtrapolatedMax": 0,
+      "scope": "sampled instants only; conservation does not establish structural equilibrium",
+      "timing": {
+        "initializeSeconds": 0.01025499999988824,
+        "forceBatch32Seconds": 0.049850000000558795,
+        "stepSeconds": 5.6304900000011555,
+        "readbackSeconds": 0.1682249999968335,
+        "diagnosticSeconds": 9.147270000001415,
+        "energySeconds": 3.0748150000013412,
+        "structureSeconds": 6.072415000000038
+      },
+      "wallSeconds": 16.44133999999985,
+      "source": "reports/v1.0.4/initial/FA-b2027-h2027.json",
+      "sourceSHA256": "b5d143ac6e327d3279dddae6740a494237fb2dcbe759eb62f06c82133426634f",
+      "thinH0": 0.19497743865111375,
+      "thinHFinal": 0.37929981495131304,
+      "thinGrowth": 94.53523319178467,
+      "thinSigmaNormalGrowth": 42.92875308904722,
+      "thinDeltaVarianceZ": 1374.7524834638432,
+      "thinSigmaR0": 77.99183606633152,
+      "thinSigmaRFinal": 93.94403523496861,
+      "thinR50Change": 0.225504842791433,
+      "thinLateHChange": 0.057327786774418965,
+      "thinLateVarianceZ": 1019.0362813947902,
+      "thinTiltFinal": 1.7249022539022387,
+      "thickH0": 0.6024332975097725,
+      "thickHFinal": 0.775946867961824,
+      "thickGrowth": 28.802121524372893,
+      "thickSigmaNormalGrowth": -0.35270230326307495,
+      "thickDeltaVarianceZ": -24.286791029573596,
+      "thickSigmaR0": 61.7892400200498,
+      "thickSigmaRFinal": 74.04346841661507,
+      "thickR50Change": 0.5583929396492193,
+      "thickLateHChange": 0.10222890182444322,
+      "thickLateVarianceZ": 299.74577724801276,
+      "thickTiltFinal": 0.7969648205039104,
+      "bulgeR50Change": 0.6275807805459892
+    },
+    {
+      "id": "FA-b2028-h2028-t20",
+      "family": "A",
+      "stage": "factorial20",
+      "n": 10000,
+      "nh": 4000,
+      "seed": 2028,
+      "duration": 20,
+      "dt": 0.05,
+      "counts": [
+        1500,
+        3546,
+        954,
+        4000
+      ],
+      "haloParticleMassMsun": 262282303.02963915,
+      "haloToThinParticleMass": 23.368166998570356,
+      "globalGrowth": 5.609781664818381,
+      "samples": 41,
+      "initialTime": 0,
+      "finalTime": 20,
+      "sampleIntervalMax": 0.5,
+      "finalEnergyError": -2.0060038610226584e-7,
+      "maxAbsEnergyError": 0.0000025109006151047472,
+      "minEnergyError": -0.0000025109006151047472,
+      "maxEnergyError": 6.85051241510002e-9,
+      "meanEnergyError": -2.679850547993537e-7,
+      "energyErrorPeakToPeak": 0.000002517751127519847,
+      "energyErrorRmsAboutMean": 4.114044566767462e-7,
+      "maxAbsEnergyScaledError": 8.324913656682409e-7,
+      "maxAngularMomentumScaledError": 1.379479705910721e-7,
+      "maxAbsLzRelativeError": 0.000011213565442958805,
+      "maxAbsLzScaledError": 9.2116645136657e-8,
+      "maxMomentumScaledError": 4.6341205444710706e-10,
+      "maxCenterOfMassDisplacement": 2.0813699345377707e-9,
+      "maxCenterOfMassBallisticResidual": 2.0813699345377707e-9,
+      "energyApproximate": false,
+      "externalExtrapolatedMax": 0,
+      "scope": "sampled instants only; conservation does not establish structural equilibrium",
+      "timing": {
+        "initializeSeconds": 0.01109499999973923,
+        "stepSeconds": 0.8070250000040978,
+        "readbackSeconds": 0.1626150000002235,
+        "diagnosticSeconds": 6.900889999999666,
+        "energySeconds": 2.008580000000075,
+        "structureSeconds": 4.89227499999944
+      },
+      "wallSeconds": 8.018165000000037,
+      "source": "reports/v1.0.4/initial/FA-b2028-h2028.json",
+      "sourceSHA256": "256a4a21335e2f1a3e81c8bdae4fb3c4e80f9eaba90f35c015be406e1590a486",
+      "thinH0": 0.20973148586245827,
+      "thinHFinal": 0.21672220378744556,
+      "thinGrowth": 3.3331752246163804,
+      "thinSigmaNormalGrowth": 4.761646945686326,
+      "thinDeltaVarianceZ": 126.26117012704174,
+      "thinSigmaR0": 77.75146711655876,
+      "thinSigmaRFinal": 80.62768197137622,
+      "thinR50Change": -0.0730715623127054,
+      "thinLateHChange": 0.0033056743459898286,
+      "thinLateVarianceZ": -102.47114138657217,
+      "thinTiltFinal": 0.15646132291548367,
+      "thickH0": 0.59179064457145,
+      "thickHFinal": 0.525110340563255,
+      "thickGrowth": -11.26754953290654,
+      "thickSigmaNormalGrowth": 9.139835403406327,
+      "thickDeltaVarianceZ": 612.7524323726667,
+      "thickSigmaR0": 62.0252767850397,
+      "thickSigmaRFinal": 64.42013719534944,
+      "thickR50Change": -0.15079880616863583,
+      "thickLateHChange": -0.028032070215261218,
+      "thickLateVarianceZ": 187.39218285118528,
+      "thickTiltFinal": 0.3970123725389092,
+      "bulgeR50Change": -0.059673028548411944
+    },
+    {
+      "id": "FA-b2028-h2028-t200",
+      "family": "A",
+      "stage": "factorial200",
+      "n": 10000,
+      "nh": 4000,
+      "seed": 2028,
+      "duration": 200,
+      "dt": 0.05,
+      "counts": [
+        1500,
+        3546,
+        954,
+        4000
+      ],
+      "haloParticleMassMsun": 262282303.02963915,
+      "haloToThinParticleMass": 23.368166998570356,
+      "globalGrowth": 108.543339396142,
+      "samples": 41,
+      "initialTime": 0,
+      "finalTime": 200,
+      "sampleIntervalMax": 5,
+      "finalEnergyError": -2.3248346801576911e-7,
+      "maxAbsEnergyError": 7.259705789564087e-7,
+      "minEnergyError": -7.259705789564087e-7,
+      "maxEnergyError": 1.7138320628686684e-7,
+      "meanEnergyError": -1.1787228290919224e-7,
+      "energyErrorPeakToPeak": 8.973537852432755e-7,
+      "energyErrorRmsAboutMean": 1.438401730434693e-7,
+      "maxAbsEnergyScaledError": 2.406962008271968e-7,
+      "maxAngularMomentumScaledError": 6.294439226115027e-7,
+      "maxAbsLzRelativeError": 0.00005234599255556449,
+      "maxAbsLzScaledError": 4.3000928162369647e-7,
+      "maxMomentumScaledError": 1.3170053854907791e-8,
+      "maxCenterOfMassDisplacement": 8.69037904162333e-8,
+      "maxCenterOfMassBallisticResidual": 8.69037904162333e-8,
+      "energyApproximate": false,
+      "externalExtrapolatedMax": 0,
+      "scope": "sampled instants only; conservation does not establish structural equilibrium",
+      "timing": {
+        "initializeSeconds": 0.011615000000223518,
+        "forceBatch32Seconds": 0.04934499999973923,
+        "stepSeconds": 5.637640000000598,
+        "readbackSeconds": 0.17491499999817464,
+        "diagnosticSeconds": 10.680639999999665,
+        "energySeconds": 3.1863050000006328,
+        "structureSeconds": 7.494284999999218
+      },
+      "wallSeconds": 18.03825499999989,
+      "source": "reports/v1.0.4/initial/FA-b2028-h2028.json",
+      "sourceSHA256": "256a4a21335e2f1a3e81c8bdae4fb3c4e80f9eaba90f35c015be406e1590a486",
+      "thinH0": 0.20973148586245827,
+      "thinHFinal": 0.4564452152193215,
+      "thinGrowth": 117.63313855443616,
+      "thinSigmaNormalGrowth": 55.00565337722012,
+      "thinDeltaVarianceZ": 1907.4291226409605,
+      "thinSigmaR0": 77.75146711655876,
+      "thinSigmaRFinal": 89.75847232992312,
+      "thinR50Change": 0.04203821807428465,
+      "thinLateHChange": 0.06976235680774834,
+      "thinLateVarianceZ": 1000.0603357815694,
+      "thinTiltFinal": 2.3885320817345246,
+      "thickH0": 0.59179064457145,
+      "thickHFinal": 0.7812188976476456,
+      "thickGrowth": 32.00933553340837,
+      "thickSigmaNormalGrowth": 5.347845937471685,
+      "thickDeltaVarianceZ": 405.23848873611036,
+      "thickSigmaR0": 62.0252767850397,
+      "thickSigmaRFinal": 72.01876609661029,
+      "thickR50Change": 0.23394613269177533,
+      "thickLateHChange": 0.09595809702377334,
+      "thickLateVarianceZ": 588.1979886490984,
+      "thickTiltFinal": 1.8246485713682625,
+      "bulgeR50Change": 0.463575632154583
+    },
+    {
+      "id": "FB-b2026-h2026-t20",
+      "family": "B",
+      "stage": "factorial20",
+      "n": 46000,
+      "nh": 40000,
+      "seed": 2026,
+      "duration": 20,
+      "dt": 0.05,
+      "counts": [
+        1500,
+        3546,
+        954,
+        40000
+      ],
+      "haloParticleMassMsun": 26228230.302963916,
+      "haloToThinParticleMass": 2.3368166998570357,
+      "globalGrowth": 0.431619263169325,
+      "samples": 41,
+      "initialTime": 0,
+      "finalTime": 20,
+      "sampleIntervalMax": 0.5,
+      "finalEnergyError": 2.6348957510377874e-9,
+      "maxAbsEnergyError": 5.926510239606173e-8,
+      "minEnergyError": -5.926510239606173e-8,
+      "maxEnergyError": 4.865423155868268e-8,
+      "meanEnergyError": -1.048938415613519e-8,
+      "energyErrorPeakToPeak": 1.079193339547444e-7,
+      "energyErrorRmsAboutMean": 2.735208635879732e-8,
+      "maxAbsEnergyScaledError": 1.9565174761398078e-8,
+      "maxAngularMomentumScaledError": 1.035661168521011e-7,
+      "maxAbsLzRelativeError": 0.0000031558181942929274,
+      "maxAbsLzScaledError": 1.772149879770661e-8,
+      "maxMomentumScaledError": 2.925281732778818e-10,
+      "maxCenterOfMassDisplacement": 9.707874240308216e-10,
+      "maxCenterOfMassBallisticResidual": 9.707874240308216e-10,
+      "energyApproximate": false,
+      "externalExtrapolatedMax": 0,
+      "scope": "sampled instants only; conservation does not establish structural equilibrium",
+      "timing": {
+        "initializeSeconds": 0.028485000000335277,
+        "stepSeconds": 4.799615000000222,
+        "readbackSeconds": 0.29817000000085686,
+        "diagnosticSeconds": 72.38560000000332,
+        "energySeconds": 62.72686999999918,
+        "structureSeconds": 9.658700000003913
+      },
+      "wallSeconds": 77.93004499999992,
+      "precisionAudit": {
+        "n": 46000,
+        "serialSeconds": 11.418669999999926,
+        "parallelSeconds": 12.234809999999591,
+        "serialU": -3.38648622104941,
+        "parallelU": -3.3864862210494104,
+        "absoluteDifference": 4.440892098500626e-16
+      },
+      "source": "reports/v1.0.4/initial/FB-b2026-h2026.json",
+      "sourceSHA256": "9f6c2daae5de4a28a48f5b2242c3d3a6762a4f50b477465318873847c845e811",
+      "thinH0": 0.2076244618710567,
+      "thinHFinal": 0.21536247702510575,
+      "thinGrowth": 3.726928457425527,
+      "thinSigmaNormalGrowth": 3.942673007147368,
+      "thinDeltaVarianceZ": 100.54194484194126,
+      "thinSigmaR0": 76.92082046521286,
+      "thinSigmaRFinal": 82.20862023568381,
+      "thinR50Change": -0.1481797474821489,
+      "thinLateHChange": 0.00423666040187981,
+      "thinLateVarianceZ": 23.65841255787984,
+      "thinTiltFinal": 0.20399074990167662,
+      "thickH0": 0.5515635808470977,
+      "thickHFinal": 0.5606633640926691,
+      "thickGrowth": 1.6498158256924578,
+      "thickSigmaNormalGrowth": 0.3110436332439459,
+      "thickDeltaVarianceZ": 27.108019946327776,
+      "thickSigmaR0": 65.23074014213536,
+      "thickSigmaRFinal": 64.03966134431919,
+      "thickR50Change": -0.34796747140185147,
+      "thickLateHChange": -0.030640810797471052,
+      "thickLateVarianceZ": 418.94034773968025,
+      "thickTiltFinal": 0.4869622204817256,
+      "bulgeR50Change": 0.06337060672247974
+    },
+    {
+      "id": "FB-b2026-h2026-t200",
+      "family": "B",
+      "stage": "factorial200",
+      "n": 46000,
+      "nh": 40000,
+      "seed": 2026,
+      "duration": 200,
+      "dt": 0.05,
+      "counts": [
+        1500,
+        3546,
+        954,
+        40000
+      ],
+      "haloParticleMassMsun": 26228230.302963916,
+      "haloToThinParticleMass": 2.3368166998570357,
+      "globalGrowth": 26.06521092494003,
+      "samples": 41,
+      "initialTime": 0,
+      "finalTime": 200,
+      "sampleIntervalMax": 5,
+      "finalEnergyError": -1.4090454386160712e-7,
+      "maxAbsEnergyError": 1.4090454386160712e-7,
+      "minEnergyError": -1.4090454386160712e-7,
+      "maxEnergyError": 5.138006922383813e-8,
+      "meanEnergyError": -4.925554587211249e-8,
+      "energyErrorPeakToPeak": 1.9228461308544525e-7,
+      "energyErrorRmsAboutMean": 4.225384596032661e-8,
+      "maxAbsEnergyScaledError": 4.651678498594174e-8,
+      "maxAngularMomentumScaledError": 2.7104670018935795e-7,
+      "maxAbsLzRelativeError": 0.00003126462505069459,
+      "maxAbsLzScaledError": 1.7556651908801432e-7,
+      "maxMomentumScaledError": 3.846961459238054e-9,
+      "maxCenterOfMassDisplacement": 1.553971631771786e-8,
+      "maxCenterOfMassBallisticResidual": 1.553971631771786e-8,
+      "energyApproximate": false,
+      "externalExtrapolatedMax": 0,
+      "scope": "sampled instants only; conservation does not establish structural equilibrium",
+      "timing": {
+        "initializeSeconds": 0.030165000000037252,
+        "forceBatch32Seconds": 0.368554999999702,
+        "stepSeconds": 44.652724999996835,
+        "readbackSeconds": 0.2925100000016392,
+        "diagnosticSeconds": 74.34170500000194,
+        "energySeconds": 63.95140499999931,
+        "structureSeconds": 10.390270000003278
+      },
+      "wallSeconds": 124.40493000000063,
+      "precisionAudit": {
+        "n": 46000,
+        "serialSeconds": 11.534035000000149,
+        "parallelSeconds": 1.3021749999998138,
+        "serialU": -3.38648622104941,
+        "parallelU": -3.3864862210494104,
+        "absoluteDifference": 4.440892098500626e-16
+      },
+      "source": "reports/v1.0.4/initial/FB-b2026-h2026.json",
+      "sourceSHA256": "9f6c2daae5de4a28a48f5b2242c3d3a6762a4f50b477465318873847c845e811",
+      "thinH0": 0.2076244618710567,
+      "thinHFinal": 0.26544987835977557,
+      "thinGrowth": 27.850965135616246,
+      "thinSigmaNormalGrowth": 16.823858435901595,
+      "thinDeltaVarianceZ": 458.23047830630355,
+      "thinSigmaR0": 76.92082046521286,
+      "thinSigmaRFinal": 81.25849684643488,
+      "thinR50Change": -0.06840420723848784,
+      "thinLateHChange": 0.01769434883510293,
+      "thinLateVarianceZ": 130.69724122954096,
+      "thinTiltFinal": 1.4837293201188506,
+      "thickH0": 0.5515635808470977,
+      "thickHFinal": 0.614661767980343,
+      "thickGrowth": 11.43987553281498,
+      "thickSigmaNormalGrowth": -0.9347547983666771,
+      "thickDeltaVarianceZ": -69.23651285099223,
+      "thickSigmaR0": 65.23074014213536,
+      "thickSigmaRFinal": 68.19989723105992,
+      "thickR50Change": -0.7124066251662455,
+      "thickLateHChange": 0.04945205875823111,
+      "thickLateVarianceZ": 154.04940771133639,
+      "thickTiltFinal": 0.9662349333657843,
+      "bulgeR50Change": 0.01350154492159028
+    },
+    {
+      "id": "FB-b2027-h2027-t20",
+      "family": "B",
+      "stage": "factorial20",
+      "n": 46000,
+      "nh": 40000,
+      "seed": 2027,
+      "duration": 20,
+      "dt": 0.05,
+      "counts": [
+        1500,
+        3546,
+        954,
+        40000
+      ],
+      "haloParticleMassMsun": 26228230.302963916,
+      "haloToThinParticleMass": 2.3368166998570357,
+      "globalGrowth": 4.640249711790823,
+      "samples": 41,
+      "initialTime": 0,
+      "finalTime": 20,
+      "sampleIntervalMax": 0.5,
+      "finalEnergyError": -9.769438811689462e-9,
+      "maxAbsEnergyError": 8.70434258102545e-8,
+      "minEnergyError": -5.9430312091173856e-8,
+      "maxEnergyError": 8.70434258102545e-8,
+      "meanEnergyError": 8.16643939155217e-9,
+      "energyErrorPeakToPeak": 1.4647373790142836e-7,
+      "energyErrorRmsAboutMean": 3.608357710923523e-8,
+      "maxAbsEnergyScaledError": 2.898727235448559e-8,
+      "maxAngularMomentumScaledError": 1.100225945554517e-7,
+      "maxAbsLzRelativeError": 0.000016183058450277158,
+      "maxAbsLzScaledError": 9.960242412050665e-8,
+      "maxMomentumScaledError": 1.7353436343271336e-10,
+      "maxCenterOfMassDisplacement": 6.578416065629903e-10,
+      "maxCenterOfMassBallisticResidual": 6.578416065629903e-10,
+      "energyApproximate": false,
+      "externalExtrapolatedMax": 0,
+      "scope": "sampled instants only; conservation does not establish structural equilibrium",
+      "timing": {
+        "initializeSeconds": 0.03122499999962747,
+        "stepSeconds": 4.842939999999476,
+        "readbackSeconds": 0.29776500000152734,
+        "diagnosticSeconds": 60.88347999999952,
+        "energySeconds": 51.16538499999698,
+        "structureSeconds": 9.718060000002385
+      },
+      "wallSeconds": 66.4783200000003,
+      "source": "reports/v1.0.4/initial/FB-b2027-h2027.json",
+      "sourceSHA256": "86c623697f513578ab3b4b7be286846776d3310ee4bed05af16828d06bb9f11f",
+      "thinH0": 0.19497743865111375,
+      "thinHFinal": 0.20970165721000017,
+      "thinGrowth": 7.55175504445591,
+      "thinSigmaNormalGrowth": -2.4172061941867606,
+      "thinDeltaVarianceZ": -62.35220968843275,
+      "thinSigmaR0": 77.99183606633152,
+      "thinSigmaRFinal": 77.73492305816907,
+      "thinR50Change": -0.04318696784708109,
+      "thinLateHChange": 0.008854052993476469,
+      "thinLateVarianceZ": 19.48329683170337,
+      "thinTiltFinal": 0.21011805945331283,
+      "thickH0": 0.6024332975097725,
+      "thickHFinal": 0.638478961246117,
+      "thickGrowth": 5.9833451911345925,
+      "thickSigmaNormalGrowth": -3.796007993288575,
+      "thickDeltaVarianceZ": -248.53090085034265,
+      "thickSigmaR0": 61.7892400200498,
+      "thickSigmaRFinal": 58.68832813677951,
+      "thickR50Change": 0.17490818755867377,
+      "thickLateHChange": 0.046352141159665794,
+      "thickLateVarianceZ": -7.841415347745382,
+      "thickTiltFinal": 0.3066812184091655,
+      "bulgeR50Change": 0.11929948789474154
+    },
+    {
+      "id": "FB-b2027-h2027-t200",
+      "family": "B",
+      "stage": "factorial200",
+      "n": 46000,
+      "nh": 40000,
+      "seed": 2027,
+      "duration": 200,
+      "dt": 0.05,
+      "counts": [
+        1500,
+        3546,
+        954,
+        40000
+      ],
+      "haloParticleMassMsun": 26228230.302963916,
+      "haloToThinParticleMass": 2.3368166998570357,
+      "globalGrowth": 22.65306759267689,
+      "samples": 41,
+      "initialTime": 0,
+      "finalTime": 200,
+      "sampleIntervalMax": 5,
+      "finalEnergyError": -2.7248183915660963e-7,
+      "maxAbsEnergyError": 2.9641091064263284e-7,
+      "minEnergyError": -2.9641091064263284e-7,
+      "maxEnergyError": 5.8962677528676034e-8,
+      "meanEnergyError": -1.0797089367916723e-7,
+      "energyErrorPeakToPeak": 3.553735881713089e-7,
+      "energyErrorRmsAboutMean": 9.664481717514732e-8,
+      "maxAbsEnergyScaledError": 9.871100218836812e-8,
+      "maxAngularMomentumScaledError": 3.8829109685771255e-7,
+      "maxAbsLzRelativeError": 0.00004997990712937745,
+      "maxAbsLzScaledError": 3.0761304624210443e-7,
+      "maxMomentumScaledError": 2.7119377266281977e-9,
+      "maxCenterOfMassDisplacement": 2.077690223774364e-8,
+      "maxCenterOfMassBallisticResidual": 2.077690223774364e-8,
+      "energyApproximate": false,
+      "externalExtrapolatedMax": 0,
+      "scope": "sampled instants only; conservation does not establish structural equilibrium",
+      "timing": {
+        "initializeSeconds": 0.031445000000298026,
+        "forceBatch32Seconds": 0.36925,
+        "stepSeconds": 44.713690000003204,
+        "readbackSeconds": 0.295054999999702,
+        "diagnosticSeconds": 62.92354000000098,
+        "energySeconds": 52.5046649999991,
+        "structureSeconds": 10.418840000001714
+      },
+      "wallSeconds": 112.86276500000059,
+      "source": "reports/v1.0.4/initial/FB-b2027-h2027.json",
+      "sourceSHA256": "86c623697f513578ab3b4b7be286846776d3310ee4bed05af16828d06bb9f11f",
+      "thinH0": 0.19497743865111375,
+      "thinHFinal": 0.24365739887287058,
+      "thinGrowth": 24.96697082417989,
+      "thinSigmaNormalGrowth": 12.830519958560771,
+      "thinDeltaVarianceZ": 365.02515249678044,
+      "thinSigmaR0": 77.99183606633152,
+      "thinSigmaRFinal": 81.26508120870179,
+      "thinR50Change": -0.08583140920291399,
+      "thinLateHChange": 0.018526929057761127,
+      "thinLateVarianceZ": 250.90791737456604,
+      "thinTiltFinal": 1.8510192056514867,
+      "thickH0": 0.6024332975097725,
+      "thickHFinal": 0.5634519843883609,
+      "thickGrowth": -6.47064385095335,
+      "thickSigmaNormalGrowth": -0.6165440656918597,
+      "thickDeltaVarianceZ": 0.474186105226692,
+      "thickSigmaR0": 61.7892400200498,
+      "thickSigmaRFinal": 65.96107544525427,
+      "thickR50Change": 0.130614383518167,
+      "thickLateHChange": 0.02079537228134276,
+      "thickLateVarianceZ": 352.48600913863373,
+      "thickTiltFinal": 2.075553067987872,
+      "bulgeR50Change": 0.027045398770449536
+    },
+    {
+      "id": "FB-b2028-h2028-t20",
+      "family": "B",
+      "stage": "factorial20",
+      "n": 46000,
+      "nh": 40000,
+      "seed": 2028,
+      "duration": 20,
+      "dt": 0.05,
+      "counts": [
+        1500,
+        3546,
+        954,
+        40000
+      ],
+      "haloParticleMassMsun": 26228230.302963916,
+      "haloToThinParticleMass": 2.3368166998570357,
+      "globalGrowth": 1.5868840802637285,
+      "samples": 41,
+      "initialTime": 0,
+      "finalTime": 20,
+      "sampleIntervalMax": 0.5,
+      "finalEnergyError": -3.316540962784574e-8,
+      "maxAbsEnergyError": 7.825528498890811e-8,
+      "minEnergyError": -7.825528498890811e-8,
+      "maxEnergyError": 1.188694697743264e-8,
+      "meanEnergyError": -3.2428676349108535e-8,
+      "energyErrorPeakToPeak": 9.014223196634076e-8,
+      "energyErrorRmsAboutMean": 2.323254098724231e-8,
+      "maxAbsEnergyScaledError": 2.5613921558967267e-8,
+      "maxAngularMomentumScaledError": 8.770845666586484e-8,
+      "maxAbsLzRelativeError": 0.000016078249887435164,
+      "maxAbsLzScaledError": 2.260661353065109e-8,
+      "maxMomentumScaledError": 2.267802569959362e-10,
+      "maxCenterOfMassDisplacement": 2.886890460644563e-10,
+      "maxCenterOfMassBallisticResidual": 2.886890460644563e-10,
+      "energyApproximate": false,
+      "externalExtrapolatedMax": 0,
+      "scope": "sampled instants only; conservation does not establish structural equilibrium",
+      "timing": {
+        "initializeSeconds": 0.029075000000186264,
+        "stepSeconds": 5.0326900000022725,
+        "readbackSeconds": 0.3005099999997765,
+        "diagnosticSeconds": 61.90801000000257,
+        "energySeconds": 51.56581000000425,
+        "structureSeconds": 10.342174999998885
+      },
+      "wallSeconds": 67.71105500000063,
+      "source": "reports/v1.0.4/initial/FB-b2028-h2028.json",
+      "sourceSHA256": "1b94ae32065bfbd839ef82f9afcbe34e9afbf689be8fddcd2bc615618446a9b2",
+      "thinH0": 0.20973148586245827,
+      "thinHFinal": 0.21454120768428087,
+      "thinGrowth": 2.2932759962311033,
+      "thinSigmaNormalGrowth": -1.4625547014186724,
+      "thinDeltaVarianceZ": -40.20894657225693,
+      "thinSigmaR0": 77.75146711655876,
+      "thinSigmaRFinal": 76.79410597913676,
+      "thinR50Change": -0.04776515737691245,
+      "thinLateHChange": 0.008264417942012464,
+      "thinLateVarianceZ": -158.01264535131563,
+      "thinTiltFinal": 0.29412468207314424,
+      "thickH0": 0.59179064457145,
+      "thickHFinal": 0.5250820833495508,
+      "thickGrowth": -11.272324399485367,
+      "thickSigmaNormalGrowth": 5.728800452708094,
+      "thickDeltaVarianceZ": 369.42146261339315,
+      "thickSigmaR0": 62.0252767850397,
+      "thickSigmaRFinal": 62.121102342810076,
+      "thickR50Change": -0.16311753893361747,
+      "thickLateHChange": -0.02514935771377458,
+      "thickLateVarianceZ": 120.92663152372603,
+      "thickTiltFinal": 0.4446821421156574,
+      "bulgeR50Change": -0.0137429023815836
+    },
+    {
+      "id": "FB-b2028-h2028-t200",
+      "family": "B",
+      "stage": "factorial200",
+      "n": 46000,
+      "nh": 40000,
+      "seed": 2028,
+      "duration": 200,
+      "dt": 0.05,
+      "counts": [
+        1500,
+        3546,
+        954,
+        40000
+      ],
+      "haloParticleMassMsun": 26228230.302963916,
+      "haloToThinParticleMass": 2.3368166998570357,
+      "globalGrowth": 24.621157397951364,
+      "samples": 41,
+      "initialTime": 0,
+      "finalTime": 200,
+      "sampleIntervalMax": 5,
+      "finalEnergyError": -1.0753853225256772e-7,
+      "maxAbsEnergyError": 1.4565456498234542e-7,
+      "minEnergyError": -1.4565456498234542e-7,
+      "maxEnergyError": 1.7490672509203434e-8,
+      "meanEnergyError": -6.095830622592406e-8,
+      "energyErrorPeakToPeak": 1.6314523749154885e-7,
+      "energyErrorRmsAboutMean": 4.91368362879367e-8,
+      "maxAbsEnergyScaledError": 4.767453856556904e-8,
+      "maxAngularMomentumScaledError": 1.8382109365228274e-7,
+      "maxAbsLzRelativeError": 0.00009829035783300045,
+      "maxAbsLzScaledError": 1.381998755384754e-7,
+      "maxMomentumScaledError": 3.2276014758791048e-9,
+      "maxCenterOfMassDisplacement": 2.9208134020783276e-8,
+      "maxCenterOfMassBallisticResidual": 2.9208134020783276e-8,
+      "energyApproximate": false,
+      "externalExtrapolatedMax": 0,
+      "scope": "sampled instants only; conservation does not establish structural equilibrium",
+      "timing": {
+        "initializeSeconds": 0.028449999999254943,
+        "forceBatch32Seconds": 0.3679850000003353,
+        "stepSeconds": 44.46531000000054,
+        "readbackSeconds": 0.28562499999906865,
+        "diagnosticSeconds": 63.244580000001,
+        "energySeconds": 52.967435000000506,
+        "structureSeconds": 10.27710000000149
+      },
+      "wallSeconds": 113.04491999999992,
+      "source": "reports/v1.0.4/initial/FB-b2028-h2028.json",
+      "sourceSHA256": "1b94ae32065bfbd839ef82f9afcbe34e9afbf689be8fddcd2bc615618446a9b2",
+      "thinH0": 0.20973148586245827,
+      "thinHFinal": 0.26488136375996063,
+      "thinGrowth": 26.295469023506367,
+      "thinSigmaNormalGrowth": 12.326075703236604,
+      "thinDeltaVarianceZ": 370.981794746848,
+      "thinSigmaR0": 77.75146711655876,
+      "thinSigmaRFinal": 73.78039546017375,
+      "thinR50Change": 0.15349057920578524,
+      "thinLateHChange": 0.021700022215341758,
+      "thinLateVarianceZ": 93.6657290997708,
+      "thinTiltFinal": 1.8349130916194727,
+      "thickH0": 0.59179064457145,
+      "thickHFinal": 0.5734566520696176,
+      "thickGrowth": -3.098053791490596,
+      "thickSigmaNormalGrowth": 0.93522659093912,
+      "thickDeltaVarianceZ": 78.77836455152212,
+      "thickSigmaR0": 62.0252767850397,
+      "thickSigmaRFinal": 59.65666779258115,
+      "thickR50Change": 0.14115428973645638,
+      "thickLateHChange": 0.0027532905888359993,
+      "thickLateVarianceZ": -177.16571464155078,
+      "thickTiltFinal": 1.1494555258315995,
+      "bulgeR50Change": 0.11641454852882638
+    },
+    {
+      "id": "FC-b2026-h2026-t20",
+      "family": "C",
+      "stage": "factorial20",
+      "n": 13546,
+      "nh": 4000,
+      "seed": 2026,
+      "duration": 20,
+      "dt": 0.05,
+      "counts": [
+        1500,
+        7092,
+        954,
+        4000
+      ],
+      "haloParticleMassMsun": 262282303.02963915,
+      "haloToThinParticleMass": 46.73633399714071,
+      "globalGrowth": 4.135979000675483,
+      "samples": 41,
+      "initialTime": 0,
+      "finalTime": 20,
+      "sampleIntervalMax": 0.5,
+      "finalEnergyError": 1.4887075987632055e-7,
+      "maxAbsEnergyError": 1.806403624013168e-7,
+      "minEnergyError": -1.604233681299094e-7,
+      "maxEnergyError": 1.806403624013168e-7,
+      "meanEnergyError": 5.450829062163152e-8,
+      "energyErrorPeakToPeak": 3.410637305312262e-7,
+      "energyErrorRmsAboutMean": 7.821675505964375e-8,
+      "maxAbsEnergyScaledError": 5.810637448862095e-8,
+      "maxAngularMomentumScaledError": 2.0726968898355222e-7,
+      "maxAbsLzRelativeError": 0.000004934965669811969,
+      "maxAbsLzScaledError": 1.0550409432212245e-7,
+      "maxMomentumScaledError": 5.986068511841284e-10,
+      "maxCenterOfMassDisplacement": 1.318262275509855e-9,
+      "maxCenterOfMassBallisticResidual": 1.318262275509855e-9,
+      "energyApproximate": false,
+      "externalExtrapolatedMax": 0,
+      "scope": "sampled instants only; conservation does not establish structural equilibrium",
+      "timing": {
+        "initializeSeconds": 0.013634999999776482,
+        "stepSeconds": 1.292045000001788,
+        "readbackSeconds": 0.19783500000182538,
+        "diagnosticSeconds": 19.411919999999927,
+        "energySeconds": 6.644320000000298,
+        "structureSeconds": 12.767560000000522
+      },
+      "wallSeconds": 21.103790000000036,
+      "precisionAudit": {
+        "n": 13546,
+        "serialSeconds": 1.0487299999995157,
+        "parallelSeconds": 1.1700599999995902,
+        "serialU": -3.3722195471726173,
+        "parallelU": -3.3722195471726177,
+        "absoluteDifference": 4.440892098500626e-16
+      },
+      "source": "reports/v1.0.4/initial/FC-b2026-h2026.json",
+      "sourceSHA256": "29c6f5d2e75f5d775c8a56cb5b48b54c6a73e6e1cb4422f3ff30fbbb447aaf2c",
+      "thinH0": 0.20698386909445454,
+      "thinHFinal": 0.21963988186005895,
+      "thinGrowth": 6.114492313325637,
+      "thinSigmaNormalGrowth": 3.21732299958275,
+      "thinDeltaVarianceZ": 86.44032198337247,
+      "thinSigmaR0": 76.95886700374982,
+      "thinSigmaRFinal": 78.2773617635102,
+      "thinR50Change": -0.0008174306104358209,
+      "thinLateHChange": 0.010113016182598494,
+      "thinLateVarianceZ": 74.19865100725231,
+      "thinTiltFinal": 0.26514603102595524,
+      "thickH0": 0.5515635808470977,
+      "thickHFinal": 0.5563266686071338,
+      "thickGrowth": 0.8635609611354012,
+      "thickSigmaNormalGrowth": -3.6505082795311727,
+      "thickDeltaVarianceZ": -248.0154911727309,
+      "thickSigmaR0": 65.23074014213536,
+      "thickSigmaRFinal": 63.22487220482627,
+      "thickR50Change": -0.39972004398980676,
+      "thickLateHChange": -0.02053770495248164,
+      "thickLateVarianceZ": 199.0299747310874,
+      "thickTiltFinal": 0.6268287349307957,
+      "bulgeR50Change": 0.27282790345747165
+    },
+    {
+      "id": "FC-b2026-h2026-t200",
+      "family": "C",
+      "stage": "factorial200",
+      "n": 13546,
+      "nh": 4000,
+      "seed": 2026,
+      "duration": 200,
+      "dt": 0.05,
+      "counts": [
+        1500,
+        7092,
+        954,
+        4000
+      ],
+      "haloParticleMassMsun": 262282303.02963915,
+      "haloToThinParticleMass": 46.73633399714071,
+      "globalGrowth": 80.88810962336485,
+      "samples": 41,
+      "initialTime": 0,
+      "finalTime": 200,
+      "sampleIntervalMax": 5,
+      "finalEnergyError": -7.976742073500476e-7,
+      "maxAbsEnergyError": 7.976742073500476e-7,
+      "minEnergyError": -7.976742073500476e-7,
+      "maxEnergyError": 5.044938528906559e-7,
+      "meanEnergyError": 2.7225505871523224e-8,
+      "energyErrorPeakToPeak": 0.0000013021680602407037,
+      "energyErrorRmsAboutMean": 1.9674919072231797e-7,
+      "maxAbsEnergyScaledError": 2.565869310493471e-7,
+      "maxAngularMomentumScaledError": 7.560944096894311e-7,
+      "maxAbsLzRelativeError": 0.00000927131664991781,
+      "maxAbsLzScaledError": 1.9821047029906953e-7,
+      "maxMomentumScaledError": 1.8816012444444638e-8,
+      "maxCenterOfMassDisplacement": 1.0523368010677286e-7,
+      "maxCenterOfMassBallisticResidual": 1.0523368010677286e-7,
+      "energyApproximate": false,
+      "externalExtrapolatedMax": 0,
+      "scope": "sampled instants only; conservation does not establish structural equilibrium",
+      "timing": {
+        "initializeSeconds": 0.010309999999590218,
+        "forceBatch32Seconds": 0.05966500000003725,
+        "stepSeconds": 7.417564999997616,
+        "readbackSeconds": 0.1743600000021979,
+        "diagnosticSeconds": 16.19729499999899,
+        "energySeconds": 6.215315000000409,
+        "structureSeconds": 9.98194999999832
+      },
+      "wallSeconds": 25.523389999999665,
+      "precisionAudit": {
+        "n": 13546,
+        "serialSeconds": 1.0290300000002608,
+        "parallelSeconds": 0.125945000000298,
+        "serialU": -3.3722195471726173,
+        "parallelU": -3.3722195471726177,
+        "absoluteDifference": 4.440892098500626e-16
+      },
+      "source": "reports/v1.0.4/initial/FC-b2026-h2026.json",
+      "sourceSHA256": "29c6f5d2e75f5d775c8a56cb5b48b54c6a73e6e1cb4422f3ff30fbbb447aaf2c",
+      "thinH0": 0.20698386909445454,
+      "thinHFinal": 0.402043958420619,
+      "thinGrowth": 94.23927100191136,
+      "thinSigmaNormalGrowth": 41.15982549840167,
+      "thinDeltaVarianceZ": 1691.7614424055332,
+      "thinSigmaR0": 76.95886700374982,
+      "thinSigmaRFinal": 84.24917283132275,
+      "thinR50Change": 0.05008696086011977,
+      "thinLateHChange": 0.12098319391618961,
+      "thinLateVarianceZ": 1240.8441541901952,
+      "thinTiltFinal": 6.681845356917054,
+      "thickH0": 0.5515635808470977,
+      "thickHFinal": 0.7367557769848296,
+      "thickGrowth": 33.57585645036818,
+      "thickSigmaNormalGrowth": 4.782080570786107,
+      "thickDeltaVarianceZ": 451.83151340294535,
+      "thickSigmaR0": 65.23074014213536,
+      "thickSigmaRFinal": 70.33420486937942,
+      "thickR50Change": -0.02234171934467799,
+      "thickLateHChange": 0.06422123166045657,
+      "thickLateVarianceZ": 843.7685858186477,
+      "thickTiltFinal": 5.802203463824279,
+      "bulgeR50Change": 0.4808290566772906
+    },
+    {
+      "id": "FC-b2027-h2027-t20",
+      "family": "C",
+      "stage": "factorial20",
+      "n": 13546,
+      "nh": 4000,
+      "seed": 2027,
+      "duration": 20,
+      "dt": 0.05,
+      "counts": [
+        1500,
+        7092,
+        954,
+        4000
+      ],
+      "haloParticleMassMsun": 262282303.02963915,
+      "haloToThinParticleMass": 46.73633399714071,
+      "globalGrowth": 1.277649216558907,
+      "samples": 41,
+      "initialTime": 0,
+      "finalTime": 20,
+      "sampleIntervalMax": 0.5,
+      "finalEnergyError": 2.939940178411592e-8,
+      "maxAbsEnergyError": 3.563919703583175e-7,
+      "minEnergyError": -3.563919703583175e-7,
+      "maxEnergyError": 1.6386969096595646e-7,
+      "meanEnergyError": -2.204381499388214e-8,
+      "energyErrorPeakToPeak": 5.202616613242739e-7,
+      "energyErrorRmsAboutMean": 1.0256513869073267e-7,
+      "maxAbsEnergyScaledError": 1.1759175219422893e-7,
+      "maxAngularMomentumScaledError": 2.8337377700981946e-7,
+      "maxAbsLzRelativeError": 0.00003063088263398884,
+      "maxAbsLzScaledError": 2.538065653837034e-7,
+      "maxMomentumScaledError": 5.85468193315495e-10,
+      "maxCenterOfMassDisplacement": 2.2315749625979395e-9,
+      "maxCenterOfMassBallisticResidual": 2.2315749625979395e-9,
+      "energyApproximate": false,
+      "externalExtrapolatedMax": 0,
+      "scope": "sampled instants only; conservation does not establish structural equilibrium",
+      "timing": {
+        "initializeSeconds": 0.010160000000149012,
+        "stepSeconds": 1.2939100000001493,
+        "readbackSeconds": 0.19233499999903142,
+        "diagnosticSeconds": 18.648530000000257,
+        "energySeconds": 5.623400000001304,
+        "structureSeconds": 13.025074999999255
+      },
+      "wallSeconds": 20.3899450000003,
+      "source": "reports/v1.0.4/initial/FC-b2027-h2027.json",
+      "sourceSHA256": "b4714ed22b543b53397ec0e173c8ad46444157465054c59b1e62bcd67517c4fc",
+      "thinH0": 0.20262129223415462,
+      "thinHFinal": 0.20703147753427828,
+      "thinGrowth": 2.176565577830347,
+      "thinSigmaNormalGrowth": 4.5703013273924675,
+      "thinDeltaVarianceZ": 116.13297920653513,
+      "thinSigmaR0": 77.59072241851156,
+      "thinSigmaRFinal": 78.34121603920353,
+      "thinR50Change": -0.053268281539210705,
+      "thinLateHChange": 0.005520315727665259,
+      "thinLateVarianceZ": 142.45552167944172,
+      "thinTiltFinal": 0.44726908757766154,
+      "thickH0": 0.6024332975097725,
+      "thickHFinal": 0.6487585960275734,
+      "thickGrowth": 7.689697549802088,
+      "thickSigmaNormalGrowth": -4.449293391521259,
+      "thickDeltaVarianceZ": -297.98474147830336,
+      "thickSigmaR0": 61.7892400200498,
+      "thickSigmaRFinal": 58.392821577559005,
+      "thickR50Change": 0.286493733185039,
+      "thickLateHChange": 0.06967422283741398,
+      "thickLateVarianceZ": -74.02682324467442,
+      "thickTiltFinal": 0.12376267852768053,
+      "bulgeR50Change": 0.21940385842621835
+    },
+    {
+      "id": "FC-b2027-h2027-t200",
+      "family": "C",
+      "stage": "factorial200",
+      "n": 13546,
+      "nh": 4000,
+      "seed": 2027,
+      "duration": 200,
+      "dt": 0.05,
+      "counts": [
+        1500,
+        7092,
+        954,
+        4000
+      ],
+      "haloParticleMassMsun": 262282303.02963915,
+      "haloToThinParticleMass": 46.73633399714071,
+      "globalGrowth": 87.39871566882289,
+      "samples": 41,
+      "initialTime": 0,
+      "finalTime": 200,
+      "sampleIntervalMax": 5,
+      "finalEnergyError": -3.137052355419777e-7,
+      "maxAbsEnergyError": 6.537942568737632e-7,
+      "minEnergyError": -6.537942568737632e-7,
+      "maxEnergyError": 1.374658245972055e-7,
+      "meanEnergyError": -9.060706850797148e-8,
+      "energyErrorPeakToPeak": 7.912600814709687e-7,
+      "energyErrorRmsAboutMean": 1.590015615189107e-7,
+      "maxAbsEnergyScaledError": 2.1571982152968662e-7,
+      "maxAngularMomentumScaledError": 9.80484426731392e-7,
+      "maxAbsLzRelativeError": 0.00009400743804033081,
+      "maxAbsLzScaledError": 7.78942783159056e-7,
+      "maxMomentumScaledError": 1.4146918436194811e-8,
+      "maxCenterOfMassDisplacement": 1.4699151452290508e-7,
+      "maxCenterOfMassBallisticResidual": 1.4699151452290508e-7,
+      "energyApproximate": false,
+      "externalExtrapolatedMax": 0,
+      "scope": "sampled instants only; conservation does not establish structural equilibrium",
+      "timing": {
+        "initializeSeconds": 0.011169999999925495,
+        "forceBatch32Seconds": 0.06102000000048429,
+        "stepSeconds": 7.423614999998361,
+        "readbackSeconds": 0.17816500000096855,
+        "diagnosticSeconds": 15.154429999999701,
+        "energySeconds": 5.219509999999776,
+        "structureSeconds": 9.934890000000594
+      },
+      "wallSeconds": 24.291320000000297,
+      "source": "reports/v1.0.4/initial/FC-b2027-h2027.json",
+      "sourceSHA256": "b4714ed22b543b53397ec0e173c8ad46444157465054c59b1e62bcd67517c4fc",
+      "thinH0": 0.20262129223415462,
+      "thinHFinal": 0.394696680681499,
+      "thinGrowth": 94.79526377976943,
+      "thinSigmaNormalGrowth": 36.95121516906508,
+      "thinDeltaVarianceZ": 1154.6863378750893,
+      "thinSigmaR0": 77.59072241851156,
+      "thinSigmaRFinal": 91.60662545412423,
+      "thinR50Change": 0.125320702951778,
+      "thinLateHChange": 0.09159269377673285,
+      "thinLateVarianceZ": 747.8923705005917,
+      "thinTiltFinal": 1.5669190870293745,
+      "thickH0": 0.6024332975097725,
+      "thickHFinal": 0.8582863585974767,
+      "thickGrowth": 42.46994018180974,
+      "thickSigmaNormalGrowth": 2.0389512983866265,
+      "thickDeltaVarianceZ": 165.09203659490572,
+      "thickSigmaR0": 61.7892400200498,
+      "thickSigmaRFinal": 68.88741882296858,
+      "thickR50Change": 0.5223410117069633,
+      "thickLateHChange": 0.18957314442621498,
+      "thickLateVarianceZ": 241.33609738218186,
+      "thickTiltFinal": 0.7326181918253686,
+      "bulgeR50Change": 0.4528602031049851
+    },
+    {
+      "id": "FC-b2028-h2028-t20",
+      "family": "C",
+      "stage": "factorial20",
+      "n": 13546,
+      "nh": 4000,
+      "seed": 2028,
+      "duration": 20,
+      "dt": 0.05,
+      "counts": [
+        1500,
+        7092,
+        954,
+        4000
+      ],
+      "haloParticleMassMsun": 262282303.02963915,
+      "haloToThinParticleMass": 46.73633399714071,
+      "globalGrowth": 3.5911119297719507,
+      "samples": 41,
+      "initialTime": 0,
+      "finalTime": 20,
+      "sampleIntervalMax": 0.5,
+      "finalEnergyError": -2.1852304900586303e-7,
+      "maxAbsEnergyError": 8.765134332562029e-7,
+      "minEnergyError": -8.765134332562029e-7,
+      "maxEnergyError": 7.795785591520509e-8,
+      "meanEnergyError": -2.111118632727004e-7,
+      "energyErrorPeakToPeak": 9.54471289171408e-7,
+      "energyErrorRmsAboutMean": 2.0735167356706889e-7,
+      "maxAbsEnergyScaledError": 2.9055472158058125e-7,
+      "maxAngularMomentumScaledError": 1.369471913741769e-7,
+      "maxAbsLzRelativeError": 0.00001103704714078084,
+      "maxAbsLzScaledError": 9.058223373972442e-8,
+      "maxMomentumScaledError": 4.0343984103032207e-10,
+      "maxCenterOfMassDisplacement": 1.9797851203102246e-9,
+      "maxCenterOfMassBallisticResidual": 1.9797851203102246e-9,
+      "energyApproximate": false,
+      "externalExtrapolatedMax": 0,
+      "scope": "sampled instants only; conservation does not establish structural equilibrium",
+      "timing": {
+        "initializeSeconds": 0.01125,
+        "stepSeconds": 1.2853000000007448,
+        "readbackSeconds": 0.19525500000081958,
+        "diagnosticSeconds": 18.754915000000967,
+        "energySeconds": 5.551534999998286,
+        "structureSeconds": 13.203345000003466
+      },
+      "wallSeconds": 20.49691000000015,
+      "source": "reports/v1.0.4/initial/FC-b2028-h2028.json",
+      "sourceSHA256": "6b025cc8978642c94dade6ef796b02678fabae6fdb2cb7ed3cdc0ca187bb53ed",
+      "thinH0": 0.20580549838547363,
+      "thinHFinal": 0.21208297063691117,
+      "thinGrowth": 3.0501965694229582,
+      "thinSigmaNormalGrowth": 7.908782785702617,
+      "thinDeltaVarianceZ": 211.1402995530917,
+      "thinSigmaR0": 77.47114960153698,
+      "thinSigmaRFinal": 81.95167715502261,
+      "thinR50Change": -0.08751043180792983,
+      "thinLateHChange": 0.001436037732087253,
+      "thinLateVarianceZ": 14.83655132235115,
+      "thinTiltFinal": 0.25148592288139004,
+      "thickH0": 0.59179064457145,
+      "thickHFinal": 0.5225055538605113,
+      "thickGrowth": -11.707702943008169,
+      "thickSigmaNormalGrowth": 9.559853247239802,
+      "thickDeltaVarianceZ": 642.493635114107,
+      "thickSigmaR0": 62.0252767850397,
+      "thickSigmaRFinal": 63.822857109766936,
+      "thickR50Change": -0.12546300083558215,
+      "thickLateHChange": -0.0253897042613761,
+      "thickLateVarianceZ": 230.02680953656088,
+      "thickTiltFinal": 0.3939465086717073,
+      "bulgeR50Change": -0.04281831380613643
+    },
+    {
+      "id": "FC-b2028-h2028-t200",
+      "family": "C",
+      "stage": "factorial200",
+      "n": 13546,
+      "nh": 4000,
+      "seed": 2028,
+      "duration": 200,
+      "dt": 0.05,
+      "counts": [
+        1500,
+        7092,
+        954,
+        4000
+      ],
+      "haloParticleMassMsun": 262282303.02963915,
+      "haloToThinParticleMass": 46.73633399714071,
+      "globalGrowth": 108.93386074166625,
+      "samples": 41,
+      "initialTime": 0,
+      "finalTime": 200,
+      "sampleIntervalMax": 5,
+      "finalEnergyError": -1.1889410371745844e-7,
+      "maxAbsEnergyError": 7.717858565618598e-7,
+      "minEnergyError": -7.717858565618598e-7,
+      "maxEnergyError": 1.4743378909202115e-7,
+      "meanEnergyError": -3.511190978360316e-8,
+      "energyErrorPeakToPeak": 9.19219645653881e-7,
+      "energyErrorRmsAboutMean": 1.6386585063665178e-7,
+      "maxAbsEnergyScaledError": 2.5583866278021434e-7,
+      "maxAngularMomentumScaledError": 6.251181245108936e-7,
+      "maxAbsLzRelativeError": 0.00005194948784136679,
+      "maxAbsLzScaledError": 4.263550377454257e-7,
+      "maxMomentumScaledError": 1.1568890580621048e-8,
+      "maxCenterOfMassDisplacement": 1.1114132190097002e-7,
+      "maxCenterOfMassBallisticResidual": 1.1114132190097002e-7,
+      "energyApproximate": false,
+      "externalExtrapolatedMax": 0,
+      "scope": "sampled instants only; conservation does not establish structural equilibrium",
+      "timing": {
+        "initializeSeconds": 0.00937000000011176,
+        "forceBatch32Seconds": 0.06067499999981373,
+        "stepSeconds": 7.417600000002422,
+        "readbackSeconds": 0.174554999999702,
+        "diagnosticSeconds": 15.116325000001119,
+        "energySeconds": 5.195234999999404,
+        "structureSeconds": 9.92103500000201
+      },
+      "wallSeconds": 24.44297500000056,
+      "source": "reports/v1.0.4/initial/FC-b2028-h2028.json",
+      "sourceSHA256": "6b025cc8978642c94dade6ef796b02678fabae6fdb2cb7ed3cdc0ca187bb53ed",
+      "thinH0": 0.20580549838547363,
+      "thinHFinal": 0.46768460949164953,
+      "thinGrowth": 127.24592547847115,
+      "thinSigmaNormalGrowth": 62.05749280265709,
+      "thinDeltaVarianceZ": 2194.6225005263714,
+      "thinSigmaR0": 77.47114960153698,
+      "thinSigmaRFinal": 86.65354451825195,
+      "thinR50Change": 0.30255777311345344,
+      "thinLateHChange": 0.07258937461693055,
+      "thinLateVarianceZ": 1216.7586354870334,
+      "thinTiltFinal": 2.482152175790713,
+      "thickH0": 0.59179064457145,
+      "thickHFinal": 0.7425912765331121,
+      "thickGrowth": 25.482091233609406,
+      "thickSigmaNormalGrowth": 5.150064009764743,
+      "thickDeltaVarianceZ": 360.9413425037958,
+      "thickSigmaR0": 62.0252767850397,
+      "thickSigmaRFinal": 75.74647012903354,
+      "thickR50Change": 0.08780277596712072,
+      "thickLateHChange": 0.03819693091214127,
+      "thickLateVarianceZ": 452.28609821190156,
+      "thickTiltFinal": 1.7232535349114133,
+      "bulgeR50Change": 0.46767476327907853
+    },
+    {
+      "id": "FD-b2026-h2026-t20",
+      "family": "D",
+      "stage": "factorial20",
+      "n": 49546,
+      "nh": 40000,
+      "seed": 2026,
+      "duration": 20,
+      "dt": 0.05,
+      "counts": [
+        1500,
+        7092,
+        954,
+        40000
+      ],
+      "haloParticleMassMsun": 26228230.302963916,
+      "haloToThinParticleMass": 4.673633399714071,
+      "globalGrowth": -0.4728354395012069,
+      "samples": 41,
+      "initialTime": 0,
+      "finalTime": 20,
+      "sampleIntervalMax": 0.5,
+      "finalEnergyError": -3.1668611100147196e-8,
+      "maxAbsEnergyError": 8.313717169775734e-8,
+      "minEnergyError": -8.313717169775734e-8,
+      "maxEnergyError": 3.322237479114388e-8,
+      "meanEnergyError": -3.010094961157763e-8,
+      "energyErrorPeakToPeak": 1.1635954648890121e-7,
+      "energyErrorRmsAboutMean": 2.9650450877297413e-8,
+      "maxAbsEnergyScaledError": 2.747921318347861e-8,
+      "maxAngularMomentumScaledError": 1.0462840950598015e-7,
+      "maxAbsLzRelativeError": 0.000003182430781256454,
+      "maxAbsLzScaledError": 1.780355791107375e-8,
+      "maxMomentumScaledError": 2.5106075977079573e-10,
+      "maxCenterOfMassDisplacement": 1.236337577629263e-9,
+      "maxCenterOfMassBallisticResidual": 1.236337577629263e-9,
+      "energyApproximate": false,
+      "externalExtrapolatedMax": 0,
+      "scope": "sampled instants only; conservation does not establish structural equilibrium",
+      "timing": {
+        "initializeSeconds": 0.03202499999944121,
+        "stepSeconds": 5.8274500000039104,
+        "readbackSeconds": 0.3334049999993295,
+        "diagnosticSeconds": 97.75825999999793,
+        "energySeconds": 81.22499500000106,
+        "structureSeconds": 16.53323999999743
+      },
+      "wallSeconds": 104.47000999999977,
+      "precisionAudit": {
+        "n": 49546,
+        "serialSeconds": 20.024229999999516,
+        "parallelSeconds": 21.599895000000483,
+        "serialU": -3.389422865522089,
+        "parallelU": -3.389422865522089,
+        "absoluteDifference": 0
+      },
+      "source": "reports/v1.0.4/initial/FD-b2026-h2026.json",
+      "sourceSHA256": "e7e3d74beb1158d4bb8f51987cfd2f2d9ee51dfdc483083924b6d058a9ad1656",
+      "thinH0": 0.20698386909445454,
+      "thinHFinal": 0.2136599449834794,
+      "thinGrowth": 3.225408780999417,
+      "thinSigmaNormalGrowth": 4.145327423977596,
+      "thinDeltaVarianceZ": 108.83112326818686,
+      "thinSigmaR0": 76.95886700374982,
+      "thinSigmaRFinal": 81.81751092548573,
+      "thinR50Change": -0.13224866319697792,
+      "thinLateHChange": 0.008715586067730818,
+      "thinLateVarianceZ": -12.14955530359974,
+      "thinTiltFinal": 0.2478413992760957,
+      "thickH0": 0.5515635808470977,
+      "thickHFinal": 0.5548343513006344,
+      "thickGrowth": 0.5929997133809151,
+      "thickSigmaNormalGrowth": 0.6385101724114328,
+      "thickDeltaVarianceZ": 49.760126024594044,
+      "thickSigmaR0": 65.23074014213536,
+      "thickSigmaRFinal": 64.45381983655372,
+      "thickR50Change": -0.37399397566803927,
+      "thickLateHChange": -0.03383516410106224,
+      "thickLateVarianceZ": 438.4526260901868,
+      "thickTiltFinal": 0.45594234288979607,
+      "bulgeR50Change": 0.04963610309460775
+    },
+    {
+      "id": "FD-b2026-h2026-t200",
+      "family": "D",
+      "stage": "factorial200",
+      "n": 49546,
+      "nh": 40000,
+      "seed": 2026,
+      "duration": 200,
+      "dt": 0.05,
+      "counts": [
+        1500,
+        7092,
+        954,
+        40000
+      ],
+      "haloParticleMassMsun": 26228230.302963916,
+      "haloToThinParticleMass": 4.673633399714071,
+      "globalGrowth": 21.32329433737048,
+      "samples": 41,
+      "initialTime": 0,
+      "finalTime": 200,
+      "sampleIntervalMax": 5,
+      "finalEnergyError": -1.017627742405817e-7,
+      "maxAbsEnergyError": 1.4082482923452294e-7,
+      "minEnergyError": -1.4082482923452294e-7,
+      "maxEnergyError": 2.4380461940192257e-8,
+      "meanEnergyError": -6.051924427573706e-8,
+      "energyErrorPeakToPeak": 1.652052911747152e-7,
+      "energyErrorRmsAboutMean": 3.627101984211838e-8,
+      "maxAbsEnergyScaledError": 4.654663401505653e-8,
+      "maxAngularMomentumScaledError": 2.7448041310067635e-7,
+      "maxAbsLzRelativeError": 0.00003125495956746707,
+      "maxAbsLzScaledError": 1.7485045894634573e-7,
+      "maxMomentumScaledError": 6.5008644051019e-9,
+      "maxCenterOfMassDisplacement": 6.314736682550005e-8,
+      "maxCenterOfMassBallisticResidual": 6.314736682550005e-8,
+      "energyApproximate": false,
+      "externalExtrapolatedMax": 0,
+      "scope": "sampled instants only; conservation does not establish structural equilibrium",
+      "timing": {
+        "initializeSeconds": 0.03168500000052154,
+        "forceBatch32Seconds": 0.4247999999998137,
+        "stepSeconds": 51.090160000001084,
+        "readbackSeconds": 0.3064850000031293,
+        "diagnosticSeconds": 89.05580999999773,
+        "energySeconds": 74.84760999999939,
+        "structureSeconds": 14.208169999998065
+      },
+      "wallSeconds": 145.9638300000001,
+      "precisionAudit": {
+        "n": 49546,
+        "serialSeconds": 15.03090500000026,
+        "parallelSeconds": 1.4005200000004843,
+        "serialU": -3.389422865522089,
+        "parallelU": -3.389422865522089,
+        "absoluteDifference": 0
+      },
+      "source": "reports/v1.0.4/initial/FD-b2026-h2026.json",
+      "sourceSHA256": "e7e3d74beb1158d4bb8f51987cfd2f2d9ee51dfdc483083924b6d058a9ad1656",
+      "thinH0": 0.20698386909445454,
+      "thinHFinal": 0.2531739926938421,
+      "thinGrowth": 22.31580837746794,
+      "thinSigmaNormalGrowth": 17.212616138740366,
+      "thinDeltaVarianceZ": 492.85996393310484,
+      "thinSigmaR0": 76.95886700374982,
+      "thinSigmaRFinal": 79.77199341447398,
+      "thinR50Change": 0.0035661353004234897,
+      "thinLateHChange": 0.004283979204960264,
+      "thinLateVarianceZ": 118.3594489712942,
+      "thinTiltFinal": 1.2825009872838364,
+      "thickH0": 0.5515635808470977,
+      "thickHFinal": 0.5942628452357755,
+      "thickGrowth": 7.7414945205591446,
+      "thickSigmaNormalGrowth": -4.466906877359545,
+      "thickDeltaVarianceZ": -313.84987770384157,
+      "thickSigmaR0": 65.23074014213536,
+      "thickSigmaRFinal": 64.59389839085725,
+      "thickR50Change": -0.4095970177051509,
+      "thickLateHChange": 0.010120300606683008,
+      "thickLateVarianceZ": -28.920420125764945,
+      "thickTiltFinal": 0.8336455835231771,
+      "bulgeR50Change": 0.03572907534838676
+    },
+    {
+      "id": "FD-b2026-h2026-time025",
+      "family": "D",
+      "stage": "time025",
+      "n": 49546,
+      "nh": 40000,
+      "seed": 2026,
+      "duration": 200,
+      "dt": 0.025,
+      "counts": [
+        1500,
+        7092,
+        954,
+        40000
+      ],
+      "haloParticleMassMsun": 26228230.302963916,
+      "haloToThinParticleMass": 4.673633399714071,
+      "globalGrowth": 20.9854235473804,
+      "samples": 41,
+      "initialTime": 0,
+      "finalTime": 200,
+      "sampleIntervalMax": 5,
+      "finalEnergyError": -7.833119498884509e-8,
+      "maxAbsEnergyError": 1.8562530778505758e-7,
+      "minEnergyError": -1.8562530778505758e-7,
+      "maxEnergyError": 5.23643347530563e-8,
+      "meanEnergyError": -6.327881974524926e-8,
+      "energyErrorPeakToPeak": 2.379896425381139e-7,
+      "energyErrorRmsAboutMean": 6.944777968686673e-8,
+      "maxAbsEnergyScaledError": 6.135447358515356e-8,
+      "maxAngularMomentumScaledError": 6.510358436620573e-7,
+      "maxAbsLzRelativeError": 0.00003121993198284996,
+      "maxAbsLzScaledError": 1.7465450318985647e-7,
+      "maxMomentumScaledError": 6.41145906369013e-9,
+      "maxCenterOfMassDisplacement": 5.283586857333341e-8,
+      "maxCenterOfMassBallisticResidual": 5.283586857333341e-8,
+      "energyApproximate": false,
+      "externalExtrapolatedMax": 0,
+      "scope": "sampled instants only; conservation does not establish structural equilibrium",
+      "timing": {
+        "initializeSeconds": 0.034634999999776483,
+        "forceBatch32Seconds": 0.427339999999851,
+        "stepSeconds": 97.73582499999831,
+        "readbackSeconds": 0.3130349999982864,
+        "diagnosticSeconds": 55.25618500000053,
+        "energySeconds": 40.85754000000004,
+        "structureSeconds": 14.39857500000205
+      },
+      "wallSeconds": 158.6387000000011,
+      "source": "reports/v1.0.4/initial/FD-b2026-h2026.json",
+      "sourceSHA256": "e7e3d74beb1158d4bb8f51987cfd2f2d9ee51dfdc483083924b6d058a9ad1656",
+      "thinH0": 0.20698386909445454,
+      "thinHFinal": 0.25273115508958266,
+      "thinGrowth": 22.101860495347058,
+      "thinSigmaNormalGrowth": 17.228243026809764,
+      "thinDeltaVarianceZ": 493.3705065341959,
+      "thinSigmaR0": 76.95886700374982,
+      "thinSigmaRFinal": 79.78666113943835,
+      "thinR50Change": 0.0027680249673416313,
+      "thinLateHChange": 0.003872359839005135,
+      "thinLateVarianceZ": 118.85939278123176,
+      "thinTiltFinal": 1.282570911494256,
+      "thickH0": 0.5515635808470977,
+      "thickHFinal": 0.5915831649345167,
+      "thickGrowth": 7.255661083706166,
+      "thickSigmaNormalGrowth": -4.4618992189157325,
+      "thickDeltaVarianceZ": -313.3543441172378,
+      "thickSigmaR0": 65.23074014213536,
+      "thickSigmaRFinal": 64.54321372468189,
+      "thickR50Change": -0.40889952361935844,
+      "thickLateHChange": 0.007423372109320425,
+      "thickLateVarianceZ": -28.365244408127133,
+      "thickTiltFinal": 0.8337306236664659,
+      "bulgeR50Change": 0.03270926377149541
+    },
+    {
+      "id": "FD-b2026-h2026-time100",
+      "family": "D",
+      "stage": "time100",
+      "n": 49546,
+      "nh": 40000,
+      "seed": 2026,
+      "duration": 200,
+      "dt": 0.1,
+      "counts": [
+        1500,
+        7092,
+        954,
+        40000
+      ],
+      "haloParticleMassMsun": 26228230.302963916,
+      "haloToThinParticleMass": 4.673633399714071,
+      "globalGrowth": 21.686827391060536,
+      "samples": 41,
+      "initialTime": 0,
+      "finalTime": 200,
+      "sampleIntervalMax": 5,
+      "finalEnergyError": -2.4655024341493325e-7,
+      "maxAbsEnergyError": 4.3373392642003083e-7,
+      "minEnergyError": -4.3373392642003083e-7,
+      "maxEnergyError": 5.8882502285735856e-8,
+      "meanEnergyError": -1.3749510179870701e-7,
+      "energyErrorPeakToPeak": 4.926164287057667e-7,
+      "energyErrorRmsAboutMean": 1.0548769588538483e-7,
+      "maxAbsEnergyScaledError": 1.4336146858992513e-7,
+      "maxAngularMomentumScaledError": 1.1818179973325321e-7,
+      "maxAbsLzRelativeError": 0.000009162989758215476,
+      "maxAbsLzScaledError": 5.126075946718882e-8,
+      "maxMomentumScaledError": 2.1322730469807215e-9,
+      "maxCenterOfMassDisplacement": 2.0467840872603708e-8,
+      "maxCenterOfMassBallisticResidual": 2.0467840872603708e-8,
+      "energyApproximate": false,
+      "externalExtrapolatedMax": 0,
+      "scope": "sampled instants only; conservation does not establish structural equilibrium",
+      "timing": {
+        "initializeSeconds": 0.03352999999932945,
+        "forceBatch32Seconds": 0.44785500000044703,
+        "stepSeconds": 27.578140000000598,
+        "readbackSeconds": 0.30377499999105934,
+        "diagnosticSeconds": 53.97804500000366,
+        "energySeconds": 39.76331000000797,
+        "structureSeconds": 14.214699999991803
+      },
+      "wallSeconds": 86.93506499999948,
+      "source": "reports/v1.0.4/initial/FD-b2026-h2026.json",
+      "sourceSHA256": "e7e3d74beb1158d4bb8f51987cfd2f2d9ee51dfdc483083924b6d058a9ad1656",
+      "thinH0": 0.20698386909445454,
+      "thinHFinal": 0.2535870602978244,
+      "thinGrowth": 22.515373496136103,
+      "thinSigmaNormalGrowth": 17.146155817653643,
+      "thinDeltaVarianceZ": 490.5377830274773,
+      "thinSigmaR0": 76.95886700374982,
+      "thinSigmaRFinal": 79.81297433916981,
+      "thinR50Change": -0.005581371054118378,
+      "thinLateHChange": 0.004707529112145004,
+      "thinLateVarianceZ": 116.0165859335024,
+      "thinTiltFinal": 1.2832832958164326,
+      "thickH0": 0.5515635808470977,
+      "thickHFinal": 0.594130013034512,
+      "thickGrowth": 7.717411675738317,
+      "thickSigmaNormalGrowth": -4.386242469522539,
+      "thickDeltaVarianceZ": -308.81294165735466,
+      "thickSigmaR0": 65.23074014213536,
+      "thickSigmaRFinal": 64.79493929159949,
+      "thickR50Change": -0.4113385493024335,
+      "thickLateHChange": 0.009889843018138,
+      "thickLateVarianceZ": -24.152573887267714,
+      "thickTiltFinal": 0.8340929055508657,
+      "bulgeR50Change": 0.037357594255683635
+    },
+    {
+      "id": "FD-b2027-h2027-t20",
+      "family": "D",
+      "stage": "factorial20",
+      "n": 49546,
+      "nh": 40000,
+      "seed": 2027,
+      "duration": 20,
+      "dt": 0.05,
+      "counts": [
+        1500,
+        7092,
+        954,
+        40000
+      ],
+      "haloParticleMassMsun": 26228230.302963916,
+      "haloToThinParticleMass": 4.673633399714071,
+      "globalGrowth": -1.5124291943586,
+      "samples": 41,
+      "initialTime": 0,
+      "finalTime": 20,
+      "sampleIntervalMax": 0.5,
+      "finalEnergyError": -1.66469120757216e-8,
+      "maxAbsEnergyError": 5.4109354309455327e-8,
+      "minEnergyError": -4.616856111284529e-8,
+      "maxEnergyError": 5.4109354309455327e-8,
+      "meanEnergyError": 6.9212636122143045e-9,
+      "energyErrorPeakToPeak": 1.0027791542230061e-7,
+      "energyErrorRmsAboutMean": 2.7342717327223506e-8,
+      "maxAbsEnergyScaledError": 1.804296297503388e-8,
+      "maxAngularMomentumScaledError": 1.1076387250115415e-7,
+      "maxAbsLzRelativeError": 0.000016501551704928876,
+      "maxAbsLzScaledError": 1.0102735182906097e-7,
+      "maxMomentumScaledError": 2.1847222035371477e-10,
+      "maxCenterOfMassDisplacement": 7.278992408107498e-10,
+      "maxCenterOfMassBallisticResidual": 7.278992408107498e-10,
+      "energyApproximate": false,
+      "externalExtrapolatedMax": 0,
+      "scope": "sampled instants only; conservation does not establish structural equilibrium",
+      "timing": {
+        "initializeSeconds": 0.03782999999914318,
+        "stepSeconds": 5.806389999998734,
+        "readbackSeconds": 0.3052700000032783,
+        "diagnosticSeconds": 72.74322999999765,
+        "energySeconds": 58.85531499999949,
+        "structureSeconds": 13.887884999998848
+      },
+      "wallSeconds": 79.356625,
+      "source": "reports/v1.0.4/initial/FD-b2027-h2027.json",
+      "sourceSHA256": "578f377c156d313d31c8b592c524eece4620b7e705bee2f3ae4a79bb317c0103",
+      "thinH0": 0.20262129223415462,
+      "thinHFinal": 0.20499638073069332,
+      "thinGrowth": 1.1721811021686568,
+      "thinSigmaNormalGrowth": 1.467195462688231,
+      "thinDeltaVarianceZ": 38.55268349094787,
+      "thinSigmaR0": 77.59072241851156,
+      "thinSigmaRFinal": 78.44364934429363,
+      "thinR50Change": -0.01678110340644512,
+      "thinLateHChange": 0.003967628398158424,
+      "thinLateVarianceZ": 82.06281303494644,
+      "thinTiltFinal": 0.2151474119625574,
+      "thickH0": 0.6024332975097725,
+      "thickHFinal": 0.6372417257464578,
+      "thickGrowth": 5.7779721639839465,
+      "thickSigmaNormalGrowth": -3.7638500626822613,
+      "thickDeltaVarianceZ": -246.0831191934337,
+      "thickSigmaR0": 61.7892400200498,
+      "thickSigmaRFinal": 58.72976204798587,
+      "thickR50Change": 0.17456696948214834,
+      "thickLateHChange": 0.04438211179512852,
+      "thickLateVarianceZ": -11.395040228945692,
+      "thickTiltFinal": 0.30342411627109644,
+      "bulgeR50Change": 0.08542519782106561
+    },
+    {
+      "id": "FD-b2027-h2027-t200",
+      "family": "D",
+      "stage": "factorial200",
+      "n": 49546,
+      "nh": 40000,
+      "seed": 2027,
+      "duration": 200,
+      "dt": 0.05,
+      "counts": [
+        1500,
+        7092,
+        954,
+        40000
+      ],
+      "haloParticleMassMsun": 26228230.302963916,
+      "haloToThinParticleMass": 4.673633399714071,
+      "globalGrowth": 14.280723346993817,
+      "samples": 41,
+      "initialTime": 0,
+      "finalTime": 200,
+      "sampleIntervalMax": 5,
+      "finalEnergyError": -3.5001320851732403e-7,
+      "maxAbsEnergyError": 3.5001320851732403e-7,
+      "minEnergyError": -3.5001320851732403e-7,
+      "maxEnergyError": 4.638894623316478e-8,
+      "meanEnergyError": -1.4446888200884254e-7,
+      "energyErrorPeakToPeak": 3.9640215475048883e-7,
+      "energyErrorRmsAboutMean": 1.0830602517303777e-7,
+      "maxAbsEnergyScaledError": 1.1671319021722885e-7,
+      "maxAngularMomentumScaledError": 3.7959539729700423e-7,
+      "maxAbsLzRelativeError": 0.000049307638352409494,
+      "maxAbsLzScaledError": 3.018758609350092e-7,
+      "maxMomentumScaledError": 5.427968897960985e-9,
+      "maxCenterOfMassDisplacement": 6.810389444940824e-8,
+      "maxCenterOfMassBallisticResidual": 6.810389444940824e-8,
+      "energyApproximate": false,
+      "externalExtrapolatedMax": 0,
+      "scope": "sampled instants only; conservation does not establish structural equilibrium",
+      "timing": {
+        "initializeSeconds": 0.02928500000014901,
+        "forceBatch32Seconds": 0.42107000000029804,
+        "stepSeconds": 51.167860000004055,
+        "readbackSeconds": 0.2998100000005216,
+        "diagnosticSeconds": 56.57121500000078,
+        "energySeconds": 42.52732500000019,
+        "structureSeconds": 14.043870000001043
+      },
+      "wallSeconds": 112.92692499999981,
+      "source": "reports/v1.0.4/initial/FD-b2027-h2027.json",
+      "sourceSHA256": "578f377c156d313d31c8b592c524eece4620b7e705bee2f3ae4a79bb317c0103",
+      "thinH0": 0.20262129223415462,
+      "thinHFinal": 0.2463628682564858,
+      "thinGrowth": 21.58784772322062,
+      "thinSigmaNormalGrowth": 12.148005702163678,
+      "thinDeltaVarianceZ": 357.0177759967795,
+      "thinSigmaR0": 77.59072241851156,
+      "thinSigmaRFinal": 82.32505724146559,
+      "thinR50Change": -0.08245663844242301,
+      "thinLateHChange": 0.02409967572976865,
+      "thinLateVarianceZ": 227.67867329220718,
+      "thinTiltFinal": 1.5038732259198049,
+      "thickH0": 0.6024332975097725,
+      "thickHFinal": 0.5695952427384021,
+      "thickGrowth": -5.450903014011721,
+      "thickSigmaNormalGrowth": 2.6090814183852062,
+      "thickDeltaVarianceZ": 219.81328315736525,
+      "thickSigmaR0": 61.7892400200498,
+      "thickSigmaRFinal": 65.46747209472385,
+      "thickR50Change": -0.11489064493026202,
+      "thickLateHChange": 0.0049855909791102215,
+      "thickLateVarianceZ": 569.2116035221279,
+      "thickTiltFinal": 1.9269630964728035,
+      "bulgeR50Change": 0.05371685700474216
+    },
+    {
+      "id": "FD-b2028-h2028-t20",
+      "family": "D",
+      "stage": "factorial20",
+      "n": 49546,
+      "nh": 40000,
+      "seed": 2028,
+      "duration": 20,
+      "dt": 0.05,
+      "counts": [
+        1500,
+        7092,
+        954,
+        40000
+      ],
+      "haloParticleMassMsun": 26228230.302963916,
+      "haloToThinParticleMass": 4.673633399714071,
+      "globalGrowth": 2.524178062305049,
+      "samples": 41,
+      "initialTime": 0,
+      "finalTime": 20,
+      "sampleIntervalMax": 0.5,
+      "finalEnergyError": -7.198371124415009e-8,
+      "maxAbsEnergyError": 1.0372841532906192e-7,
+      "minEnergyError": -1.0372841532906192e-7,
+      "maxEnergyError": 0,
+      "meanEnergyError": -5.729654050293892e-8,
+      "energyErrorPeakToPeak": 1.0372841532906192e-7,
+      "energyErrorRmsAboutMean": 2.4579666587475928e-8,
+      "maxAbsEnergyScaledError": 3.3945408325050047e-8,
+      "maxAngularMomentumScaledError": 8.631994196869252e-8,
+      "maxAbsLzRelativeError": 0.000016941681791817145,
+      "maxAbsLzScaledError": 2.3689474645014177e-8,
+      "maxMomentumScaledError": 2.851664905439045e-10,
+      "maxCenterOfMassDisplacement": 7.530316929564392e-10,
+      "maxCenterOfMassBallisticResidual": 7.530316929564392e-10,
+      "energyApproximate": false,
+      "externalExtrapolatedMax": 0,
+      "scope": "sampled instants only; conservation does not establish structural equilibrium",
+      "timing": {
+        "initializeSeconds": 0.03259499999973923,
+        "stepSeconds": 5.801699999999254,
+        "readbackSeconds": 0.30188999999873345,
+        "diagnosticSeconds": 72.52614500000328,
+        "energySeconds": 58.823825000003914,
+        "structureSeconds": 13.702294999999928
+      },
+      "wallSeconds": 79.14803000000026,
+      "source": "reports/v1.0.4/initial/FD-b2028-h2028.json",
+      "sourceSHA256": "9d3b8d7e574ce20c3e46108cbfd3b687ba87533848d5f2638b77da3ab9f79d08",
+      "thinH0": 0.20580549838547363,
+      "thinHFinal": 0.21320018200622995,
+      "thinGrowth": 3.5930447333851534,
+      "thinSigmaNormalGrowth": -0.5722098027083677,
+      "thinDeltaVarianceZ": -15.257492348169983,
+      "thinSigmaR0": 77.47114960153698,
+      "thinSigmaRFinal": 77.48326736565089,
+      "thinR50Change": -0.03842772936430805,
+      "thinLateHChange": 0.007936377614430112,
+      "thinLateVarianceZ": -117.64281813174969,
+      "thinTiltFinal": 0.1908098925981218,
+      "thickH0": 0.59179064457145,
+      "thickHFinal": 0.5378231518242256,
+      "thickGrowth": -9.119355508957982,
+      "thickSigmaNormalGrowth": 5.755803915632041,
+      "thickDeltaVarianceZ": 371.2325380456373,
+      "thickSigmaR0": 62.0252767850397,
+      "thickSigmaRFinal": 61.773853930356125,
+      "thickR50Change": -0.1711704573688193,
+      "thickLateHChange": -0.0067148138064720975,
+      "thickLateVarianceZ": 124.31633708085627,
+      "thickTiltFinal": 0.4400841198378294,
+      "bulgeR50Change": 0.011275080459117293
+    },
+    {
+      "id": "FD-b2028-h2028-t200",
+      "family": "D",
+      "stage": "factorial200",
+      "n": 49546,
+      "nh": 40000,
+      "seed": 2028,
+      "duration": 200,
+      "dt": 0.05,
+      "counts": [
+        1500,
+        7092,
+        954,
+        40000
+      ],
+      "haloParticleMassMsun": 26228230.302963916,
+      "haloToThinParticleMass": 4.673633399714071,
+      "globalGrowth": 23.712189693636265,
+      "samples": 41,
+      "initialTime": 0,
+      "finalTime": 200,
+      "sampleIntervalMax": 5,
+      "finalEnergyError": -1.8082886710849196e-7,
+      "maxAbsEnergyError": 2.4699494987335425e-7,
+      "minEnergyError": -2.4699494987335425e-7,
+      "maxEnergyError": 1.1808109137564052e-8,
+      "meanEnergyError": -1.1984434010053e-7,
+      "energyErrorPeakToPeak": 2.588030590109183e-7,
+      "energyErrorRmsAboutMean": 6.85228443154667e-8,
+      "maxAbsEnergyScaledError": 8.082977457120382e-8,
+      "maxAngularMomentumScaledError": 1.8585622410106256e-7,
+      "maxAbsLzRelativeError": 0.00009793338482065374,
+      "maxAbsLzScaledError": 1.3693979530000685e-7,
+      "maxMomentumScaledError": 2.9532565821155006e-9,
+      "maxCenterOfMassDisplacement": 2.1533194195605524e-8,
+      "maxCenterOfMassBallisticResidual": 2.1533194195605524e-8,
+      "energyApproximate": false,
+      "externalExtrapolatedMax": 0,
+      "scope": "sampled instants only; conservation does not establish structural equilibrium",
+      "timing": {
+        "initializeSeconds": 0.02904000000003725,
+        "forceBatch32Seconds": 0.4250999999996275,
+        "stepSeconds": 51.16479500000086,
+        "readbackSeconds": 0.2977399999992922,
+        "diagnosticSeconds": 53.7151450000005,
+        "energySeconds": 39.72850499999802,
+        "structureSeconds": 13.986605000003241
+      },
+      "wallSeconds": 110.24134500000068,
+      "source": "reports/v1.0.4/initial/FD-b2028-h2028.json",
+      "sourceSHA256": "9d3b8d7e574ce20c3e46108cbfd3b687ba87533848d5f2638b77da3ab9f79d08",
+      "thinH0": 0.20580549838547363,
+      "thinHFinal": 0.2592232931830525,
+      "thinGrowth": 25.955475056126698,
+      "thinSigmaNormalGrowth": 10.351914551050779,
+      "thinDeltaVarianceZ": 305.80572746385724,
+      "thinSigmaR0": 77.47114960153698,
+      "thinSigmaRFinal": 75.50676694101797,
+      "thinR50Change": 0.18901170390159017,
+      "thinLateHChange": 0.025395300360934903,
+      "thinLateVarianceZ": 60.32605824102498,
+      "thinTiltFinal": 1.8360982646688875,
+      "thickH0": 0.59179064457145,
+      "thickHFinal": 0.5675475479832104,
+      "thickGrowth": -4.096566380463051,
+      "thickSigmaNormalGrowth": 0.3246805556206711,
+      "thickDeltaVarianceZ": 45.9205888621613,
+      "thickSigmaR0": 62.0252767850397,
+      "thickSigmaRFinal": 59.293120733146175,
+      "thickR50Change": 0.0019289141527467635,
+      "thickLateHChange": -0.00024310073894540096,
+      "thickLateVarianceZ": -121.89983825037099,
+      "thickTiltFinal": 1.1491647824739966,
+      "bulgeR50Change": 0.03248280783454116
+    },
+    {
+      "id": "FE-b2026-h2026-higher-pilot20",
+      "family": "E",
+      "stage": "higher-pilot20",
+      "n": 89546,
+      "nh": 80000,
+      "seed": 2026,
+      "duration": 20,
+      "dt": 0.05,
+      "counts": [
+        1500,
+        7092,
+        954,
+        80000
+      ],
+      "haloParticleMassMsun": 13114115.151481958,
+      "haloToThinParticleMass": 2.3368166998570357,
+      "globalGrowth": -0.9395966113192378,
+      "samples": 11,
+      "initialTime": 0,
+      "finalTime": 20,
+      "sampleIntervalMax": 2,
+      "finalEnergyError": 3.7600594126005094e-8,
+      "maxAbsEnergyError": 7.09144222247564e-8,
+      "minEnergyError": -3.2271713985276404e-8,
+      "maxEnergyError": 7.09144222247564e-8,
+      "meanEnergyError": 2.984016950339257e-8,
+      "energyErrorPeakToPeak": 1.031861362100328e-7,
+      "energyErrorRmsAboutMean": 2.8023058724746798e-8,
+      "maxAbsEnergyScaledError": 2.3489378760490755e-8,
+      "maxAngularMomentumScaledError": 6.071920516077574e-8,
+      "maxAbsLzRelativeError": 0.000005305716794386841,
+      "maxAbsLzScaledError": 3.123229733435194e-8,
+      "maxMomentumScaledError": 2.5610072223090573e-10,
+      "maxCenterOfMassDisplacement": 3.6375216571973154e-10,
+      "maxCenterOfMassBallisticResidual": 3.6375216571973154e-10,
+      "energyApproximate": false,
+      "externalExtrapolatedMax": 0,
+      "scope": "sampled instants only; conservation does not establish structural equilibrium",
+      "timing": {
+        "initializeSeconds": 0.060714999999850985,
+        "forceBatch32Seconds": 1.1550050000008196,
+        "stepSeconds": 14.474564999999478,
+        "readbackSeconds": 0.1364600000018254,
+        "diagnosticSeconds": 84.47743999999948,
+        "energySeconds": 79.02801999999862,
+        "structureSeconds": 5.449420000000857
+      },
+      "wallSeconds": 100.5654349999996,
+      "precisionAudit": {
+        "n": 89546,
+        "serialSeconds": 43.22113500000071,
+        "parallelSeconds": 3.0015649999994785,
+        "serialU": -3.3959790310374394,
+        "parallelU": -3.3959790310374394,
+        "absoluteDifference": 0
+      },
+      "source": "reports/v1.0.4/initial/FE-b2026-h2026.json",
+      "sourceSHA256": "1135f8befba3d425bf831069ff1f4f803526cfcf1439e0280b5cc76a333f33bf",
+      "thinH0": 0.20698386909445454,
+      "thinHFinal": 0.21228186796768836,
+      "thinGrowth": 2.559619209174291,
+      "thinSigmaNormalGrowth": 4.3423457714398594,
+      "thinDeltaVarianceZ": 115.32086188526003,
+      "thinSigmaR0": 76.95886700374982,
+      "thinSigmaRFinal": 80.89351989507102,
+      "thinR50Change": -0.12811073067598056,
+      "thinLateHChange": 0.001419134762046692,
+      "thinLateVarianceZ": 66.48380390560968,
+      "thinTiltFinal": 0.29513063678622137,
+      "thickH0": 0.5515635808470977,
+      "thickHFinal": 0.5661177489763949,
+      "thickGrowth": 2.638710863930638,
+      "thickSigmaNormalGrowth": 0.37219471123768333,
+      "thickDeltaVarianceZ": 30.235792586042532,
+      "thickSigmaR0": 65.23074014213536,
+      "thickSigmaRFinal": 63.83546871110556,
+      "thickR50Change": -0.3388822270792451,
+      "thickLateHChange": -0.02112123587465442,
+      "thickLateVarianceZ": 426.54885403822004,
+      "thickTiltFinal": 0.4276578268468122,
+      "bulgeR50Change": 0.08402179253447906
+    },
+    {
+      "id": "FE-b2026-h2026-higher200",
+      "family": "E",
+      "stage": "higher200",
+      "n": 89546,
+      "nh": 80000,
+      "seed": 2026,
+      "duration": 200,
+      "dt": 0.05,
+      "counts": [
+        1500,
+        7092,
+        954,
+        80000
+      ],
+      "haloParticleMassMsun": 13114115.151481958,
+      "haloToThinParticleMass": 2.3368166998570357,
+      "globalGrowth": 13.957974911647742,
+      "samples": 21,
+      "initialTime": 0,
+      "finalTime": 200,
+      "sampleIntervalMax": 10,
+      "finalEnergyError": 6.161271246028907e-8,
+      "maxAbsEnergyError": 1.2199165038618085e-7,
+      "minEnergyError": 0,
+      "maxEnergyError": 1.2199165038618085e-7,
+      "meanEnergyError": 7.810623873923608e-8,
+      "energyErrorPeakToPeak": 1.2199165038618085e-7,
+      "energyErrorRmsAboutMean": 3.2749415113412544e-8,
+      "maxAbsEnergyScaledError": 4.0407973323908914e-8,
+      "maxAngularMomentumScaledError": 1.5822889864741294e-7,
+      "maxAbsLzRelativeError": 0.000016709881377366113,
+      "maxAbsLzScaledError": 9.836333219891755e-8,
+      "maxMomentumScaledError": 2.0589093367981355e-9,
+      "maxCenterOfMassDisplacement": 2.2882500390132655e-8,
+      "maxCenterOfMassBallisticResidual": 2.2882500390132655e-8,
+      "energyApproximate": false,
+      "externalExtrapolatedMax": 0,
+      "scope": "sampled instants only; conservation does not establish structural equilibrium",
+      "timing": {
+        "initializeSeconds": 0.06131499999947846,
+        "forceBatch32Seconds": 1.1501749999998137,
+        "stepSeconds": 133.10089999999943,
+        "readbackSeconds": 0.26152500000037254,
+        "diagnosticSeconds": 75.11650499999897,
+        "energySeconds": 64.3696949999975,
+        "structureSeconds": 10.7467900000019
+      },
+      "wallSeconds": 213.98264500000047,
+      "source": "reports/v1.0.4/initial/FE-b2026-h2026.json",
+      "sourceSHA256": "1135f8befba3d425bf831069ff1f4f803526cfcf1439e0280b5cc76a333f33bf",
+      "thinH0": 0.20698386909445454,
+      "thinHFinal": 0.24542339758384352,
+      "thinGrowth": 18.571267730939734,
+      "thinSigmaNormalGrowth": 13.227410705093035,
+      "thinDeltaVarianceZ": 365.94392242807265,
+      "thinSigmaR0": 76.95886700374982,
+      "thinSigmaRFinal": 77.08273180150293,
+      "thinR50Change": -0.01727240280853337,
+      "thinLateHChange": 0.021716240377701423,
+      "thinLateVarianceZ": 139.32785370362365,
+      "thinTiltFinal": 0.5096380274532025,
+      "thickH0": 0.5515635808470977,
+      "thickHFinal": 0.5385558334261011,
+      "thickGrowth": -2.358340520057378,
+      "thickSigmaNormalGrowth": -8.95770805913686,
+      "thickDeltaVarianceZ": -606.7581050815229,
+      "thickSigmaR0": 65.23074014213536,
+      "thickSigmaRFinal": 65.46834804021275,
+      "thickR50Change": -0.22862208259022498,
+      "thickLateHChange": -0.03944068228341968,
+      "thickLateVarianceZ": -201.66637106710277,
+      "thickTiltFinal": 0.5512260501254356,
+      "bulgeR50Change": 0.07358280701610376
+    },
+    {
+      "id": "FE-b2027-h2027-higher200",
+      "family": "E",
+      "stage": "higher200",
+      "n": 89546,
+      "nh": 80000,
+      "seed": 2027,
+      "duration": 200,
+      "dt": 0.05,
+      "counts": [
+        1500,
+        7092,
+        954,
+        80000
+      ],
+      "haloParticleMassMsun": 13114115.151481958,
+      "haloToThinParticleMass": 2.3368166998570357,
+      "globalGrowth": 12.407834570453824,
+      "samples": 21,
+      "initialTime": 0,
+      "finalTime": 200,
+      "sampleIntervalMax": 10,
+      "finalEnergyError": -1.259412642269314e-9,
+      "maxAbsEnergyError": 6.388884228280407e-8,
+      "minEnergyError": -6.388884228280407e-8,
+      "maxEnergyError": 3.793359248938178e-8,
+      "meanEnergyError": -9.94733460910821e-9,
+      "energyErrorPeakToPeak": 1.0182243477218584e-7,
+      "energyErrorRmsAboutMean": 2.7450242836518554e-8,
+      "maxAbsEnergyScaledError": 2.1297523640697568e-8,
+      "maxAngularMomentumScaledError": 3.820791624229677e-7,
+      "maxAbsLzRelativeError": 0.00003411268610683592,
+      "maxAbsLzScaledError": 2.8100049641379326e-7,
+      "maxMomentumScaledError": 4.693826676964948e-9,
+      "maxCenterOfMassDisplacement": 6.118179639520118e-8,
+      "maxCenterOfMassBallisticResidual": 6.118179639520118e-8,
+      "energyApproximate": false,
+      "externalExtrapolatedMax": 0,
+      "scope": "sampled instants only; conservation does not establish structural equilibrium",
+      "timing": {
+        "initializeSeconds": 0.05834999999962747,
+        "forceBatch32Seconds": 1.1617750000003726,
+        "stepSeconds": 133.53658499999813,
+        "readbackSeconds": 0.23566000000108034,
+        "diagnosticSeconds": 79.26325000000094,
+        "energySeconds": 68.2260700000003,
+        "structureSeconds": 11.037175000000744
+      },
+      "wallSeconds": 218.35986999999918,
+      "source": "reports/v1.0.4/initial/FE-b2027-h2027.json",
+      "sourceSHA256": "bd3c528b6f4a5fc4438f3238384bec53824aec85d913cddc1bff885c43c3ce88",
+      "thinH0": 0.20262129223415462,
+      "thinHFinal": 0.23705157694802254,
+      "thinGrowth": 16.992431710522983,
+      "thinSigmaNormalGrowth": 12.318912393916914,
+      "thinDeltaVarianceZ": 357.73703593338666,
+      "thinSigmaR0": 77.59072241851156,
+      "thinSigmaRFinal": 80.58241810248093,
+      "thinR50Change": -0.0010216019202964333,
+      "thinLateHChange": 0.021574804357266303,
+      "thinLateVarianceZ": 192.70288360990907,
+      "thinTiltFinal": 1.580731842226888,
+      "thickH0": 0.6024332975097725,
+      "thickHFinal": 0.5790384309366484,
+      "thickGrowth": -3.88339533518971,
+      "thickSigmaNormalGrowth": 0.9111542701426112,
+      "thickDeltaVarianceZ": 88.1921451131452,
+      "thickSigmaR0": 61.7892400200498,
+      "thickSigmaRFinal": 60.15738390134729,
+      "thickR50Change": -0.11056806682857978,
+      "thickLateHChange": -0.012724415819610368,
+      "thickLateVarianceZ": 460.2941553009582,
+      "thickTiltFinal": 1.3418999030915635,
+      "bulgeR50Change": -0.04979202056549492
+    },
+    {
+      "id": "FE-b2028-h2028-higher200",
+      "family": "E",
+      "stage": "higher200",
+      "n": 89546,
+      "nh": 80000,
+      "seed": 2028,
+      "duration": 200,
+      "dt": 0.05,
+      "counts": [
+        1500,
+        7092,
+        954,
+        80000
+      ],
+      "haloParticleMassMsun": 13114115.151481958,
+      "haloToThinParticleMass": 2.3368166998570357,
+      "globalGrowth": 18.75760651527365,
+      "samples": 21,
+      "initialTime": 0,
+      "finalTime": 200,
+      "sampleIntervalMax": 10,
+      "finalEnergyError": 3.749968572649485e-7,
+      "maxAbsEnergyError": 3.749968572649485e-7,
+      "minEnergyError": -6.582612696137651e-8,
+      "maxEnergyError": 3.749968572649485e-7,
+      "meanEnergyError": 1.309153163864692e-7,
+      "energyErrorPeakToPeak": 4.40822984226325e-7,
+      "energyErrorRmsAboutMean": 1.5982573426609064e-7,
+      "maxAbsEnergyScaledError": 1.2447713172174868e-7,
+      "maxAngularMomentumScaledError": 2.515932454601409e-7,
+      "maxAbsLzRelativeError": 0.000028510524710181076,
+      "maxAbsLzScaledError": 1.9011084881794375e-7,
+      "maxMomentumScaledError": 2.202024141727352e-9,
+      "maxCenterOfMassDisplacement": 2.700856314835617e-8,
+      "maxCenterOfMassBallisticResidual": 2.700856314835617e-8,
+      "energyApproximate": false,
+      "externalExtrapolatedMax": 0,
+      "scope": "sampled instants only; conservation does not establish structural equilibrium",
+      "timing": {
+        "initializeSeconds": 0.0585,
+        "forceBatch32Seconds": 1.1760349999992177,
+        "stepSeconds": 133.9025900000017,
+        "readbackSeconds": 0.22386499999929219,
+        "diagnosticSeconds": 76.76463500000165,
+        "energySeconds": 66.14224999999999,
+        "structureSeconds": 10.622365000002086
+      },
+      "wallSeconds": 215.97236500000022,
+      "source": "reports/v1.0.4/initial/FE-b2028-h2028.json",
+      "sourceSHA256": "fd9dc71dd0efd878bbdedc6a3379273932aa41d88352e733bb15267e2d735420",
+      "thinH0": 0.20580549838547363,
+      "thinHFinal": 0.24309065504972138,
+      "thinGrowth": 18.116696082828977,
+      "thinSigmaNormalGrowth": 13.239488807728206,
+      "thinDeltaVarianceZ": 386.0451885184116,
+      "thinSigmaR0": 77.47114960153698,
+      "thinSigmaRFinal": 78.78447790829976,
+      "thinR50Change": -0.03814750137245593,
+      "thinLateHChange": 0.014261958358026045,
+      "thinLateVarianceZ": 184.0046939202331,
+      "thinTiltFinal": 1.9431609718798715,
+      "thickH0": 0.59179064457145,
+      "thickHFinal": 0.5622992808362143,
+      "thickGrowth": -4.983411617902844,
+      "thickSigmaNormalGrowth": 5.037031222943833,
+      "thickDeltaVarianceZ": 331.56287461177646,
+      "thickSigmaR0": 62.0252767850397,
+      "thickSigmaRFinal": 61.46124542221032,
+      "thickR50Change": -0.11000813141684773,
+      "thickLateHChange": 0.004230580455605759,
+      "thickLateVarianceZ": 158.7883044575977,
+      "thickTiltFinal": 1.1557607017744913,
+      "bulgeR50Change": -0.005231040776032314
+    },
+    {
+      "id": "FG-b2026-h2026-higher-pilot20",
+      "family": "G",
+      "stage": "higher-pilot20",
+      "n": 56638,
+      "nh": 40000,
+      "seed": 2026,
+      "duration": 20,
+      "dt": 0.05,
+      "counts": [
+        1500,
+        14184,
+        954,
+        40000
+      ],
+      "haloParticleMassMsun": 26228230.302963916,
+      "haloToThinParticleMass": 9.347266799428143,
+      "globalGrowth": -0.7604969258207306,
+      "samples": 11,
+      "initialTime": 0,
+      "finalTime": 20,
+      "sampleIntervalMax": 2,
+      "finalEnergyError": 1.843335057645992e-8,
+      "maxAbsEnergyError": 7.599091670895872e-8,
+      "minEnergyError": -7.599091670895872e-8,
+      "maxEnergyError": 4.430199551036189e-8,
+      "meanEnergyError": -1.1454256607150432e-8,
+      "energyErrorPeakToPeak": 1.202929122193206e-7,
+      "energyErrorRmsAboutMean": 3.491114531009163e-8,
+      "maxAbsEnergyScaledError": 2.5047181846829213e-8,
+      "maxAngularMomentumScaledError": 1.044923566809659e-7,
+      "maxAbsLzRelativeError": 0.0000029373928279745656,
+      "maxAbsLzScaledError": 1.676584729073514e-8,
+      "maxMomentumScaledError": 2.1087540315609592e-10,
+      "maxCenterOfMassDisplacement": 9.806845601093004e-10,
+      "maxCenterOfMassBallisticResidual": 9.806845601093004e-10,
+      "energyApproximate": false,
+      "externalExtrapolatedMax": 0,
+      "scope": "sampled instants only; conservation does not establish structural equilibrium",
+      "timing": {
+        "initializeSeconds": 0.034110000000335275,
+        "forceBatch32Seconds": 0.5432949999999255,
+        "stepSeconds": 6.86059499999974,
+        "readbackSeconds": 0.10182500000111758,
+        "diagnosticSeconds": 36.46408499999996,
+        "energySeconds": 30.770094999999735,
+        "structureSeconds": 5.693985000000335
+      },
+      "wallSeconds": 44.20722999999951,
+      "precisionAudit": {
+        "n": 56638,
+        "serialSeconds": 17.050769999999552,
+        "parallelSeconds": 1.2471150000002236,
+        "serialU": -3.385520878324081,
+        "parallelU": -3.385520878324081,
+        "absoluteDifference": 0
+      },
+      "source": "reports/v1.0.4/initial/FG-b2026-h2026.json",
+      "sourceSHA256": "35473be92eee11afd726a95c5325d4931f3e0124096d2cbe5715db023c28b409",
+      "thinH0": 0.20360625081492426,
+      "thinHFinal": 0.20504520123200606,
+      "thinGrowth": 0.7067319452730425,
+      "thinSigmaNormalGrowth": -0.4257286022644857,
+      "thinDeltaVarianceZ": -11.422918429596324,
+      "thinSigmaR0": 78.32396046890989,
+      "thinSigmaRFinal": 76.94679403632145,
+      "thinR50Change": 0.022750177593177767,
+      "thinLateHChange": 0.001116811322736111,
+      "thinLateVarianceZ": 54.170197838526725,
+      "thinTiltFinal": 0.04711181674311748,
+      "thickH0": 0.5515635808470977,
+      "thickHFinal": 0.5553865481440139,
+      "thickGrowth": 0.6931145256263704,
+      "thickSigmaNormalGrowth": -0.8940162718612754,
+      "thickDeltaVarianceZ": -58.00153246403941,
+      "thickSigmaR0": 65.23074014213536,
+      "thickSigmaRFinal": 64.63242399149128,
+      "thickR50Change": -0.3601920253667785,
+      "thickLateHChange": -0.03396800264538513,
+      "thickLateVarianceZ": 342.90567742713534,
+      "thickTiltFinal": 0.4860359618863921,
+      "bulgeR50Change": 0.08293306233822229
+    },
+    {
+      "id": "FG-b2026-h2026-higher200",
+      "family": "G",
+      "stage": "higher200",
+      "n": 56638,
+      "nh": 40000,
+      "seed": 2026,
+      "duration": 200,
+      "dt": 0.05,
+      "counts": [
+        1500,
+        14184,
+        954,
+        40000
+      ],
+      "haloParticleMassMsun": 26228230.302963916,
+      "haloToThinParticleMass": 9.347266799428143,
+      "globalGrowth": 22.973719958699412,
+      "samples": 21,
+      "initialTime": 0,
+      "finalTime": 200,
+      "sampleIntervalMax": 10,
+      "finalEnergyError": -5.233046591622198e-8,
+      "maxAbsEnergyError": 7.718811512819147e-8,
+      "minEnergyError": -7.718811512819147e-8,
+      "maxEnergyError": 4.430199551036189e-8,
+      "meanEnergyError": -2.4916507175118267e-8,
+      "energyErrorPeakToPeak": 1.2149011063855335e-7,
+      "energyErrorRmsAboutMean": 3.7346412173202384e-8,
+      "maxAbsEnergyScaledError": 2.5441787515663364e-8,
+      "maxAngularMomentumScaledError": 2.5174476934658533e-7,
+      "maxAbsLzRelativeError": 0.000028926163529575007,
+      "maxAbsLzScaledError": 1.6510275228597584e-7,
+      "maxMomentumScaledError": 2.0526140329056927e-9,
+      "maxCenterOfMassDisplacement": 1.912089119400327e-8,
+      "maxCenterOfMassBallisticResidual": 1.912089119400327e-8,
+      "energyApproximate": false,
+      "externalExtrapolatedMax": 0,
+      "scope": "sampled instants only; conservation does not establish structural equilibrium",
+      "timing": {
+        "initializeSeconds": 0.03387000000011176,
+        "forceBatch32Seconds": 0.5500599999995902,
+        "stepSeconds": 61.24344500000029,
+        "readbackSeconds": 0.18970500000100585,
+        "diagnosticSeconds": 40.87447000000067,
+        "energySeconds": 28.673844999999737,
+        "structureSeconds": 12.20060000000149
+      },
+      "wallSeconds": 105.61896999999973,
+      "source": "reports/v1.0.4/initial/FG-b2026-h2026.json",
+      "sourceSHA256": "35473be92eee11afd726a95c5325d4931f3e0124096d2cbe5715db023c28b409",
+      "thinH0": 0.20360625081492426,
+      "thinHFinal": 0.2527300118811512,
+      "thinGrowth": 24.126843291702205,
+      "thinSigmaNormalGrowth": 9.324784263969011,
+      "thinDeltaVarianceZ": 260.2589641519415,
+      "thinSigmaR0": 78.32396046890989,
+      "thinSigmaRFinal": 78.47264026535285,
+      "thinR50Change": -0.021258170640241936,
+      "thinLateHChange": 0.0209733256630511,
+      "thinLateVarianceZ": 100.04558082061492,
+      "thinTiltFinal": 1.011282206715666,
+      "thickH0": 0.5515635808470977,
+      "thickHFinal": 0.6439199775458845,
+      "thickGrowth": 16.74446970500569,
+      "thickSigmaNormalGrowth": -6.4052243697167555,
+      "thickDeltaVarianceZ": -437.1700728187303,
+      "thickSigmaR0": 65.23074014213536,
+      "thickSigmaRFinal": 64.1362483180409,
+      "thickR50Change": -0.5072956495910672,
+      "thickLateHChange": 0.020166540217550932,
+      "thickLateVarianceZ": 103.45040338314531,
+      "thickTiltFinal": 0.6474094346926,
+      "bulgeR50Change": 0.0816074676810834
+    },
+    {
+      "id": "FG-b2027-h2027-higher200",
+      "family": "G",
+      "stage": "higher200",
+      "n": 56638,
+      "nh": 40000,
+      "seed": 2027,
+      "duration": 200,
+      "dt": 0.05,
+      "counts": [
+        1500,
+        14184,
+        954,
+        40000
+      ],
+      "haloParticleMassMsun": 26228230.302963916,
+      "haloToThinParticleMass": 9.347266799428143,
+      "globalGrowth": 12.016395995201057,
+      "samples": 21,
+      "initialTime": 0,
+      "finalTime": 200,
+      "sampleIntervalMax": 10,
+      "finalEnergyError": -2.596028763690485e-7,
+      "maxAbsEnergyError": 2.6444782530729827e-7,
+      "minEnergyError": -2.6444782530729827e-7,
+      "maxEnergyError": 6.981566738740805e-8,
+      "meanEnergyError": -1.1714662936379528e-7,
+      "energyErrorPeakToPeak": 3.342634926947063e-7,
+      "energyErrorRmsAboutMean": 9.813285075697954e-8,
+      "maxAbsEnergyScaledError": 8.80553114289347e-8,
+      "maxAngularMomentumScaledError": 3.7098084290421375e-7,
+      "maxAbsLzRelativeError": 0.00004999546100796978,
+      "maxAbsLzScaledError": 3.0745650686512955e-7,
+      "maxMomentumScaledError": 2.3422138957326227e-9,
+      "maxCenterOfMassDisplacement": 1.9233434314760038e-8,
+      "maxCenterOfMassBallisticResidual": 1.9233434314760038e-8,
+      "energyApproximate": false,
+      "externalExtrapolatedMax": 0,
+      "scope": "sampled instants only; conservation does not establish structural equilibrium",
+      "timing": {
+        "initializeSeconds": 0.03287999999988824,
+        "forceBatch32Seconds": 0.551945000000298,
+        "stepSeconds": 61.22587000000198,
+        "readbackSeconds": 0.16721499999985098,
+        "diagnosticSeconds": 40.02193499999772,
+        "energySeconds": 28.377055000000638,
+        "structureSeconds": 11.64486999999732
+      },
+      "wallSeconds": 104.63556999999936,
+      "source": "reports/v1.0.4/initial/FG-b2027-h2027.json",
+      "sourceSHA256": "b5cc85dc8cf7f2fb8cf8fa434a259f4bf1183b20b0f3b446632d7760c2960b31",
+      "thinH0": 0.19715175440382526,
+      "thinHFinal": 0.23180236708453725,
+      "thinGrowth": 17.575604531389178,
+      "thinSigmaNormalGrowth": 15.118117862176117,
+      "thinDeltaVarianceZ": 455.1223231802485,
+      "thinSigmaR0": 77.7434055470907,
+      "thinSigmaRFinal": 81.49771572166428,
+      "thinR50Change": -0.0983486749041722,
+      "thinLateHChange": 0.004326211908355998,
+      "thinLateVarianceZ": 321.4772215688556,
+      "thinTiltFinal": 1.8064719000611955,
+      "thickH0": 0.6024332975097725,
+      "thickHFinal": 0.5922490863088508,
+      "thickGrowth": -1.6905126663847025,
+      "thickSigmaNormalGrowth": -3.966941566618798,
+      "thickDeltaVarianceZ": -218.42155791657603,
+      "thickSigmaR0": 61.7892400200498,
+      "thickSigmaRFinal": 64.3469643621363,
+      "thickR50Change": -0.01947837011511222,
+      "thickLateHChange": 0.04321330981329008,
+      "thickLateVarianceZ": 212.05745859064533,
+      "thickTiltFinal": 1.8368444034894893,
+      "bulgeR50Change": 0.08549680189197217
+    },
+    {
+      "id": "FG-b2028-h2028-higher200",
+      "family": "G",
+      "stage": "higher200",
+      "n": 56638,
+      "nh": 40000,
+      "seed": 2028,
+      "duration": 200,
+      "dt": 0.05,
+      "counts": [
+        1500,
+        14184,
+        954,
+        40000
+      ],
+      "haloParticleMassMsun": 26228230.302963916,
+      "haloToThinParticleMass": 9.347266799428143,
+      "globalGrowth": 21.80515674432264,
+      "samples": 21,
+      "initialTime": 0,
+      "finalTime": 200,
+      "sampleIntervalMax": 10,
+      "finalEnergyError": -1.7529707230649179e-7,
+      "maxAbsEnergyError": 2.3537452006696794e-7,
+      "minEnergyError": -2.3537452006696794e-7,
+      "maxEnergyError": 0,
+      "meanEnergyError": -1.2831484421652903e-7,
+      "energyErrorPeakToPeak": 2.3537452006696794e-7,
+      "energyErrorRmsAboutMean": 5.473431752030068e-8,
+      "maxAbsEnergyScaledError": 7.68571986803832e-8,
+      "maxAngularMomentumScaledError": 1.8010797297911558e-7,
+      "maxAbsLzRelativeError": 0.00010246187811968575,
+      "maxAbsLzScaledError": 1.3459640799427246e-7,
+      "maxMomentumScaledError": 2.685576173963494e-9,
+      "maxCenterOfMassDisplacement": 2.2599453977997113e-8,
+      "maxCenterOfMassBallisticResidual": 2.2599453977997113e-8,
+      "energyApproximate": false,
+      "externalExtrapolatedMax": 0,
+      "scope": "sampled instants only; conservation does not establish structural equilibrium",
+      "timing": {
+        "initializeSeconds": 0.033605000000447034,
+        "forceBatch32Seconds": 0.5502350000003353,
+        "stepSeconds": 61.791185000001455,
+        "readbackSeconds": 0.16421999999601392,
+        "diagnosticSeconds": 38.335435000004246,
+        "energySeconds": 26.72487500000279,
+        "structureSeconds": 11.610555000001561
+      },
+      "wallSeconds": 103.4564299999997,
+      "source": "reports/v1.0.4/initial/FG-b2028-h2028.json",
+      "sourceSHA256": "4e06e25314b173a371d24cdfa98007d2bbfbf3dfb666c2d8a8a34d3c04c8c874",
+      "thinH0": 0.20725154143539454,
+      "thinHFinal": 0.2536107435913939,
+      "thinGrowth": 22.36856808635639,
+      "thinSigmaNormalGrowth": 9.936543701890477,
+      "thinDeltaVarianceZ": 285.3927317374018,
+      "thinSigmaR0": 78.05329423927621,
+      "thinSigmaRFinal": 76.1717460148438,
+      "thinR50Change": 0.303580406665251,
+      "thinLateHChange": 0.025170353341293583,
+      "thinLateVarianceZ": 181.40841835640964,
+      "thinTiltFinal": 2.0376794976309514,
+      "thickH0": 0.59179064457145,
+      "thickHFinal": 0.6073875392526855,
+      "thickGrowth": 2.6355426237821167,
+      "thickSigmaNormalGrowth": -7.971007370104033,
+      "thickDeltaVarianceZ": -491.2284916961304,
+      "thickSigmaR0": 62.0252767850397,
+      "thickSigmaRFinal": 56.31197808907598,
+      "thickR50Change": 0.33704906583201044,
+      "thickLateHChange": 0.049326365755939405,
+      "thickLateVarianceZ": -519.5304940276094,
+      "thickTiltFinal": 1.3828273469247578,
+      "bulgeR50Change": 0.06522319192037696
+    }
+  ],
+  "groups": [
+    {
+      "stage": "factorial20",
+      "family": "A",
+      "count": 3,
+      "nh": 4000,
+      "n": 10000,
+      "dt": 0.05,
+      "duration": 20,
+      "metrics": {
+        "globalGrowth": {
+          "mean": 4.736551300151952,
+          "sd": 0.7640900337891621,
+          "values": [
+            4.190688109121443,
+            4.40918412651603,
+            5.609781664818381
+          ]
+        },
+        "thinGrowth": {
+          "mean": 4.3501448761693,
+          "sd": 0.8894615349858267,
+          "values": [
+            4.983013656234858,
+            4.734245747656662,
+            3.3331752246163804
+          ]
+        },
+        "thickGrowth": {
+          "mean": -0.6879399891292598,
+          "sd": 9.43228830300284,
+          "values": [
+            2.3608919902255776,
+            6.842837575293181,
+            -11.26754953290654
+          ]
+        },
+        "thinSigmaNormalGrowth": {
+          "mean": 3.381777782540215,
+          "sd": 1.2068825950711195,
+          "values": [
+            2.522915945219495,
+            2.860770456714823,
+            4.761646945686326
+          ]
+        },
+        "thinDeltaVarianceZ": {
+          "mean": 86.91786434755439,
+          "sd": 34.26196723722002,
+          "values": [
+            63.646125803183075,
+            70.84629711243834,
+            126.26117012704174
+          ]
+        },
+        "thinLateHChange": {
+          "mean": 0.0031828393175526715,
+          "sd": 0.0018086210283653852,
+          "values": [
+            0.004926911678987539,
+            0.001315931927680647,
+            0.0033056743459898286
+          ]
+        },
+        "thinLateVarianceZ": {
+          "mean": 37.24879833490623,
+          "sd": 126.3529755549498,
+          "values": [
+            70.7243173304809,
+            143.49321906080996,
+            -102.47114138657217
+          ]
+        },
+        "thinR50Change": {
+          "mean": -0.05002853333620235,
+          "sd": 0.050463948484674045,
+          "values": [
+            0.007843538951873619,
+            -0.08485757664777527,
+            -0.0730715623127054
+          ]
+        },
+        "bulgeR50Change": {
+          "mean": 0.1829770879175172,
+          "sd": 0.22145229145783202,
+          "values": [
+            0.37417208336404917,
+            0.2344322089369144,
+            -0.059673028548411944
+          ]
+        }
+      }
+    },
+    {
+      "stage": "factorial20",
+      "family": "B",
+      "count": 3,
+      "nh": 40000,
+      "n": 46000,
+      "dt": 0.05,
+      "duration": 20,
+      "metrics": {
+        "globalGrowth": {
+          "mean": 2.219584351741292,
+          "sd": 2.1744826484503927,
+          "values": [
+            0.431619263169325,
+            4.640249711790823,
+            1.5868840802637285
+          ]
+        },
+        "thinGrowth": {
+          "mean": 4.523986499370847,
+          "sd": 2.7183407837920353,
+          "values": [
+            3.726928457425527,
+            7.55175504445591,
+            2.2932759962311033
+          ]
+        },
+        "thickGrowth": {
+          "mean": -1.2130544608861056,
+          "sd": 8.977001334715977,
+          "values": [
+            1.6498158256924578,
+            5.9833451911345925,
+            -11.272324399485367
+          ]
+        },
+        "thinSigmaNormalGrowth": {
+          "mean": 0.0209707038473117,
+          "sd": 3.4296722270419386,
+          "values": [
+            3.942673007147368,
+            -2.4172061941867606,
+            -1.4625547014186724
+          ]
+        },
+        "thinDeltaVarianceZ": {
+          "mean": -0.6730704729161398,
+          "sd": 88.35123382980093,
+          "values": [
+            100.54194484194126,
+            -62.35220968843275,
+            -40.20894657225693
+          ]
+        },
+        "thinLateHChange": {
+          "mean": 0.007118377112456248,
+          "sd": 0.0025129933890661853,
+          "values": [
+            0.00423666040187981,
+            0.008854052993476469,
+            0.008264417942012464
+          ]
+        },
+        "thinLateVarianceZ": {
+          "mean": -38.29031198724414,
+          "sd": 103.70359553764344,
+          "values": [
+            23.65841255787984,
+            19.48329683170337,
+            -158.01264535131563
+          ]
+        },
+        "thinR50Change": {
+          "mean": -0.07971062423538082,
+          "sd": 0.05934016838094246,
+          "values": [
+            -0.1481797474821489,
+            -0.04318696784708109,
+            -0.04776515737691245
+          ]
+        },
+        "bulgeR50Change": {
+          "mean": 0.05630906407854589,
+          "sd": 0.06680170986579292,
+          "values": [
+            0.06337060672247974,
+            0.11929948789474154,
+            -0.0137429023815836
+          ]
+        }
+      }
+    },
+    {
+      "stage": "factorial20",
+      "family": "C",
+      "count": 3,
+      "nh": 4000,
+      "n": 13546,
+      "dt": 0.05,
+      "duration": 20,
+      "metrics": {
+        "globalGrowth": {
+          "mean": 3.0015800490021136,
+          "sd": 1.5176208905800532,
+          "values": [
+            4.135979000675483,
+            1.277649216558907,
+            3.5911119297719507
+          ]
+        },
+        "thinGrowth": {
+          "mean": 3.780418153526314,
+          "sd": 2.0680266958987636,
+          "values": [
+            6.114492313325637,
+            2.176565577830347,
+            3.0501965694229582
+          ]
+        },
+        "thickGrowth": {
+          "mean": -1.0514814773568932,
+          "sd": 9.839477990500248,
+          "values": [
+            0.8635609611354012,
+            7.689697549802088,
+            -11.707702943008169
+          ]
+        },
+        "thinSigmaNormalGrowth": {
+          "mean": 5.2321357042259455,
+          "sd": 2.414739590093285,
+          "values": [
+            3.21732299958275,
+            4.5703013273924675,
+            7.908782785702617
+          ]
+        },
+        "thinDeltaVarianceZ": {
+          "mean": 137.90453358099975,
+          "sd": 65.13847969044352,
+          "values": [
+            86.44032198337247,
+            116.13297920653513,
+            211.1402995530917
+          ]
+        },
+        "thinLateHChange": {
+          "mean": 0.005689789880783669,
+          "sd": 0.004340971075011963,
+          "values": [
+            0.010113016182598494,
+            0.005520315727665259,
+            0.001436037732087253
+          ]
+        },
+        "thinLateVarianceZ": {
+          "mean": 77.16357466968172,
+          "sd": 63.86112650113538,
+          "values": [
+            74.19865100725231,
+            142.45552167944172,
+            14.83655132235115
+          ]
+        },
+        "thinR50Change": {
+          "mean": -0.04719871465252545,
+          "sd": 0.04366404522946923,
+          "values": [
+            -0.0008174306104358209,
+            -0.053268281539210705,
+            -0.08751043180792983
+          ]
+        },
+        "bulgeR50Change": {
+          "mean": 0.14980448269251787,
+          "sd": 0.16894137576418877,
+          "values": [
+            0.27282790345747165,
+            0.21940385842621835,
+            -0.04281831380613643
+          ]
+        }
+      }
+    },
+    {
+      "stage": "factorial20",
+      "family": "D",
+      "count": 3,
+      "nh": 40000,
+      "n": 49546,
+      "dt": 0.05,
+      "duration": 20,
+      "metrics": {
+        "globalGrowth": {
+          "mean": 0.17963780948174746,
+          "sd": 2.0959104326321265,
+          "values": [
+            -0.4728354395012069,
+            -1.5124291943586,
+            2.524178062305049
+          ]
+        },
+        "thinGrowth": {
+          "mean": 2.663544872184409,
+          "sd": 1.3045740566400745,
+          "values": [
+            3.225408780999417,
+            1.1721811021686568,
+            3.5930447333851534
+          ]
+        },
+        "thickGrowth": {
+          "mean": -0.9161278771977068,
+          "sd": 7.562452810579023,
+          "values": [
+            0.5929997133809151,
+            5.7779721639839465,
+            -9.119355508957982
+          ]
+        },
+        "thinSigmaNormalGrowth": {
+          "mean": 1.680104361319153,
+          "sd": 2.365964289804296,
+          "values": [
+            4.145327423977596,
+            1.467195462688231,
+            -0.5722098027083677
+          ]
+        },
+        "thinDeltaVarianceZ": {
+          "mean": 44.042104803654915,
+          "sd": 62.2261716736398,
+          "values": [
+            108.83112326818686,
+            38.55268349094787,
+            -15.257492348169983
+          ]
+        },
+        "thinLateHChange": {
+          "mean": 0.006873197360106452,
+          "sd": 0.0025462795796810343,
+          "values": [
+            0.008715586067730818,
+            0.003967628398158424,
+            0.007936377614430112
+          ]
+        },
+        "thinLateVarianceZ": {
+          "mean": -15.909853466800996,
+          "sd": 99.90590403789584,
+          "values": [
+            -12.14955530359974,
+            82.06281303494644,
+            -117.64281813174969
+          ]
+        },
+        "thinR50Change": {
+          "mean": -0.0624858319892437,
+          "sd": 0.061378201076840125,
+          "values": [
+            -0.13224866319697792,
+            -0.01678110340644512,
+            -0.03842772936430805
+          ]
+        },
+        "bulgeR50Change": {
+          "mean": 0.048778793791596886,
+          "sd": 0.037082491968966284,
+          "values": [
+            0.04963610309460775,
+            0.08542519782106561,
+            0.011275080459117293
+          ]
+        }
+      }
+    },
+    {
+      "stage": "factorial200",
+      "family": "A",
+      "count": 3,
+      "nh": 4000,
+      "n": 10000,
+      "dt": 0.05,
+      "duration": 200,
+      "metrics": {
+        "globalGrowth": {
+          "mean": 94.48711698441893,
+          "sd": 12.18023924068394,
+          "values": [
+            87.04045280171056,
+            87.87755875540422,
+            108.543339396142
+          ]
+        },
+        "thinGrowth": {
+          "mean": 103.06993816833203,
+          "sd": 12.674201186378028,
+          "values": [
+            97.04144275877529,
+            94.53523319178467,
+            117.63313855443616
+          ]
+        },
+        "thickGrowth": {
+          "mean": 34.697605505391955,
+          "sd": 7.604747160110239,
+          "values": [
+            43.2813594583946,
+            28.802121524372893,
+            32.00933553340837
+          ]
+        },
+        "thinSigmaNormalGrowth": {
+          "mean": 44.15356779684998,
+          "sd": 10.29447125805672,
+          "values": [
+            34.5262969242826,
+            42.92875308904722,
+            55.00565337722012
+          ]
+        },
+        "thinDeltaVarianceZ": {
+          "mean": 1536.2323444140645,
+          "sd": 322.3693371356541,
+          "values": [
+            1326.5154271373892,
+            1374.7524834638432,
+            1907.4291226409605
+          ]
+        },
+        "thinLateHChange": {
+          "mean": 0.07768996905033725,
+          "sd": 0.025276253448700863,
+          "values": [
+            0.10597976356884442,
+            0.057327786774418965,
+            0.06976235680774834
+          ]
+        },
+        "thinLateVarianceZ": {
+          "mean": 948.5867619697541,
+          "sd": 106.01392420956054,
+          "values": [
+            826.6636687329027,
+            1019.0362813947902,
+            1000.0603357815694
+          ]
+        },
+        "thinR50Change": {
+          "mean": 0.20631317062834734,
+          "sd": 0.15556949984823787,
+          "values": [
+            0.3513964510193244,
+            0.225504842791433,
+            0.04203821807428465
+          ]
+        },
+        "bulgeR50Change": {
+          "mean": 0.5095818446304746,
+          "sd": 0.10301279700072379,
+          "values": [
+            0.4375891211908516,
+            0.6275807805459892,
+            0.463575632154583
+          ]
+        }
+      }
+    },
+    {
+      "stage": "factorial200",
+      "family": "B",
+      "count": 3,
+      "nh": 40000,
+      "n": 46000,
+      "dt": 0.05,
+      "duration": 200,
+      "metrics": {
+        "globalGrowth": {
+          "mean": 24.446478638522763,
+          "sd": 1.7127653171767536,
+          "values": [
+            26.06521092494003,
+            22.65306759267689,
+            24.621157397951364
+          ]
+        },
+        "thinGrowth": {
+          "mean": 26.37113499443417,
+          "sd": 1.4434852965883138,
+          "values": [
+            27.850965135616246,
+            24.96697082417989,
+            26.295469023506367
+          ]
+        },
+        "thickGrowth": {
+          "mean": 0.6237259634570114,
+          "sd": 9.517636763258968,
+          "values": [
+            11.43987553281498,
+            -6.47064385095335,
+            -3.098053791490596
+          ]
+        },
+        "thinSigmaNormalGrowth": {
+          "mean": 13.993484699232988,
+          "sd": 2.4641180204283923,
+          "values": [
+            16.823858435901595,
+            12.830519958560771,
+            12.326075703236604
+          ]
+        },
+        "thinDeltaVarianceZ": {
+          "mean": 398.0791418499773,
+          "sd": 52.17765666293805,
+          "values": [
+            458.23047830630355,
+            365.02515249678044,
+            370.981794746848
+          ]
+        },
+        "thinLateHChange": {
+          "mean": 0.019307100036068604,
+          "sd": 0.0021137300853783163,
+          "values": [
+            0.01769434883510293,
+            0.018526929057761127,
+            0.021700022215341758
+          ]
+        },
+        "thinLateVarianceZ": {
+          "mean": 158.42362923462596,
+          "sd": 82.20608789632267,
+          "values": [
+            130.69724122954096,
+            250.90791737456604,
+            93.6657290997708
+          ]
+        },
+        "thinR50Change": {
+          "mean": -0.0002483457452055286,
+          "sd": 0.1334266451121814,
+          "values": [
+            -0.06840420723848784,
+            -0.08583140920291399,
+            0.15349057920578524
+          ]
+        },
+        "bulgeR50Change": {
+          "mean": 0.0523204974069554,
+          "sd": 0.055918642116735744,
+          "values": [
+            0.01350154492159028,
+            0.027045398770449536,
+            0.11641454852882638
+          ]
+        }
+      }
+    },
+    {
+      "stage": "factorial200",
+      "family": "C",
+      "count": 3,
+      "nh": 4000,
+      "n": 13546,
+      "dt": 0.05,
+      "duration": 200,
+      "metrics": {
+        "globalGrowth": {
+          "mean": 92.40689534461801,
+          "sd": 14.678298153948617,
+          "values": [
+            80.88810962336485,
+            87.39871566882289,
+            108.93386074166625
+          ]
+        },
+        "thinGrowth": {
+          "mean": 105.42682008671731,
+          "sd": 18.897944387276716,
+          "values": [
+            94.23927100191136,
+            94.79526377976943,
+            127.24592547847115
+          ]
+        },
+        "thickGrowth": {
+          "mean": 33.842629288595774,
+          "sd": 8.497065892537837,
+          "values": [
+            33.57585645036818,
+            42.46994018180974,
+            25.482091233609406
+          ]
+        },
+        "thinSigmaNormalGrowth": {
+          "mean": 46.722844490041275,
+          "sd": 13.445879643212555,
+          "values": [
+            41.15982549840167,
+            36.95121516906508,
+            62.05749280265709
+          ]
+        },
+        "thinDeltaVarianceZ": {
+          "mean": 1680.356760268998,
+          "sd": 520.0618767785666,
+          "values": [
+            1691.7614424055332,
+            1154.6863378750893,
+            2194.6225005263714
+          ]
+        },
+        "thinLateHChange": {
+          "mean": 0.09505508743661767,
+          "sd": 0.024381992617182515,
+          "values": [
+            0.12098319391618961,
+            0.09159269377673285,
+            0.07258937461693055
+          ]
+        },
+        "thinLateVarianceZ": {
+          "mean": 1068.49838672594,
+          "sd": 277.91399979618944,
+          "values": [
+            1240.8441541901952,
+            747.8923705005917,
+            1216.7586354870334
+          ]
+        },
+        "thinR50Change": {
+          "mean": 0.1593218123084504,
+          "sd": 0.12962420429101124,
+          "values": [
+            0.05008696086011977,
+            0.125320702951778,
+            0.30255777311345344
+          ]
+        },
+        "bulgeR50Change": {
+          "mean": 0.4671213410204514,
+          "sd": 0.013992637338419246,
+          "values": [
+            0.4808290566772906,
+            0.4528602031049851,
+            0.46767476327907853
+          ]
+        }
+      }
+    },
+    {
+      "stage": "factorial200",
+      "family": "D",
+      "count": 3,
+      "nh": 40000,
+      "n": 49546,
+      "dt": 0.05,
+      "duration": 200,
+      "metrics": {
+        "globalGrowth": {
+          "mean": 19.772069126000186,
+          "sd": 4.903352333277242,
+          "values": [
+            21.32329433737048,
+            14.280723346993817,
+            23.712189693636265
+          ]
+        },
+        "thinGrowth": {
+          "mean": 23.28637705227175,
+          "sd": 2.339988203852722,
+          "values": [
+            22.31580837746794,
+            21.58784772322062,
+            25.955475056126698
+          ]
+        },
+        "thickGrowth": {
+          "mean": -0.6019916246385426,
+          "sd": 7.257332686364343,
+          "values": [
+            7.7414945205591446,
+            -5.450903014011721,
+            -4.096566380463051
+          ]
+        },
+        "thinSigmaNormalGrowth": {
+          "mean": 13.23751213065161,
+          "sd": 3.557748552402066,
+          "values": [
+            17.212616138740366,
+            12.148005702163678,
+            10.351914551050779
+          ]
+        },
+        "thinDeltaVarianceZ": {
+          "mean": 385.22782246458047,
+          "sd": 96.66528273666776,
+          "values": [
+            492.85996393310484,
+            357.0177759967795,
+            305.80572746385724
+          ]
+        },
+        "thinLateHChange": {
+          "mean": 0.01792631843188794,
+          "sd": 0.011832359252623643,
+          "values": [
+            0.004283979204960264,
+            0.02409967572976865,
+            0.025395300360934903
+          ]
+        },
+        "thinLateVarianceZ": {
+          "mean": 135.4547268348421,
+          "sd": 84.97594268403986,
+          "values": [
+            118.3594489712942,
+            227.67867329220718,
+            60.32605824102498
+          ]
+        },
+        "thinR50Change": {
+          "mean": 0.03670706691986355,
+          "sd": 0.13873538205953406,
+          "values": [
+            0.0035661353004234897,
+            -0.08245663844242301,
+            0.18901170390159017
+          ]
+        },
+        "bulgeR50Change": {
+          "mean": 0.040642913395890025,
+          "sd": 0.011438118914771188,
+          "values": [
+            0.03572907534838676,
+            0.05371685700474216,
+            0.03248280783454116
+          ]
+        }
+      }
+    },
+    {
+      "stage": "time025",
+      "family": "D",
+      "count": 1,
+      "nh": 40000,
+      "n": 49546,
+      "dt": 0.025,
+      "duration": 200,
+      "metrics": {
+        "globalGrowth": {
+          "mean": 20.9854235473804,
+          "sd": null,
+          "values": [
+            20.9854235473804
+          ]
+        },
+        "thinGrowth": {
+          "mean": 22.101860495347058,
+          "sd": null,
+          "values": [
+            22.101860495347058
+          ]
+        },
+        "thickGrowth": {
+          "mean": 7.255661083706166,
+          "sd": null,
+          "values": [
+            7.255661083706166
+          ]
+        },
+        "thinSigmaNormalGrowth": {
+          "mean": 17.228243026809764,
+          "sd": null,
+          "values": [
+            17.228243026809764
+          ]
+        },
+        "thinDeltaVarianceZ": {
+          "mean": 493.3705065341959,
+          "sd": null,
+          "values": [
+            493.3705065341959
+          ]
+        },
+        "thinLateHChange": {
+          "mean": 0.003872359839005135,
+          "sd": null,
+          "values": [
+            0.003872359839005135
+          ]
+        },
+        "thinLateVarianceZ": {
+          "mean": 118.85939278123176,
+          "sd": null,
+          "values": [
+            118.85939278123176
+          ]
+        },
+        "thinR50Change": {
+          "mean": 0.0027680249673416313,
+          "sd": null,
+          "values": [
+            0.0027680249673416313
+          ]
+        },
+        "bulgeR50Change": {
+          "mean": 0.03270926377149541,
+          "sd": null,
+          "values": [
+            0.03270926377149541
+          ]
+        }
+      }
+    },
+    {
+      "stage": "time100",
+      "family": "D",
+      "count": 1,
+      "nh": 40000,
+      "n": 49546,
+      "dt": 0.1,
+      "duration": 200,
+      "metrics": {
+        "globalGrowth": {
+          "mean": 21.686827391060536,
+          "sd": null,
+          "values": [
+            21.686827391060536
+          ]
+        },
+        "thinGrowth": {
+          "mean": 22.515373496136103,
+          "sd": null,
+          "values": [
+            22.515373496136103
+          ]
+        },
+        "thickGrowth": {
+          "mean": 7.717411675738317,
+          "sd": null,
+          "values": [
+            7.717411675738317
+          ]
+        },
+        "thinSigmaNormalGrowth": {
+          "mean": 17.146155817653643,
+          "sd": null,
+          "values": [
+            17.146155817653643
+          ]
+        },
+        "thinDeltaVarianceZ": {
+          "mean": 490.5377830274773,
+          "sd": null,
+          "values": [
+            490.5377830274773
+          ]
+        },
+        "thinLateHChange": {
+          "mean": 0.004707529112145004,
+          "sd": null,
+          "values": [
+            0.004707529112145004
+          ]
+        },
+        "thinLateVarianceZ": {
+          "mean": 116.0165859335024,
+          "sd": null,
+          "values": [
+            116.0165859335024
+          ]
+        },
+        "thinR50Change": {
+          "mean": -0.005581371054118378,
+          "sd": null,
+          "values": [
+            -0.005581371054118378
+          ]
+        },
+        "bulgeR50Change": {
+          "mean": 0.037357594255683635,
+          "sd": null,
+          "values": [
+            0.037357594255683635
+          ]
+        }
+      }
+    },
+    {
+      "stage": "higher-pilot20",
+      "family": "E",
+      "count": 1,
+      "nh": 80000,
+      "n": 89546,
+      "dt": 0.05,
+      "duration": 20,
+      "metrics": {
+        "globalGrowth": {
+          "mean": -0.9395966113192378,
+          "sd": null,
+          "values": [
+            -0.9395966113192378
+          ]
+        },
+        "thinGrowth": {
+          "mean": 2.559619209174291,
+          "sd": null,
+          "values": [
+            2.559619209174291
+          ]
+        },
+        "thickGrowth": {
+          "mean": 2.638710863930638,
+          "sd": null,
+          "values": [
+            2.638710863930638
+          ]
+        },
+        "thinSigmaNormalGrowth": {
+          "mean": 4.3423457714398594,
+          "sd": null,
+          "values": [
+            4.3423457714398594
+          ]
+        },
+        "thinDeltaVarianceZ": {
+          "mean": 115.32086188526003,
+          "sd": null,
+          "values": [
+            115.32086188526003
+          ]
+        },
+        "thinLateHChange": {
+          "mean": 0.001419134762046692,
+          "sd": null,
+          "values": [
+            0.001419134762046692
+          ]
+        },
+        "thinLateVarianceZ": {
+          "mean": 66.48380390560968,
+          "sd": null,
+          "values": [
+            66.48380390560968
+          ]
+        },
+        "thinR50Change": {
+          "mean": -0.12811073067598056,
+          "sd": null,
+          "values": [
+            -0.12811073067598056
+          ]
+        },
+        "bulgeR50Change": {
+          "mean": 0.08402179253447906,
+          "sd": null,
+          "values": [
+            0.08402179253447906
+          ]
+        }
+      }
+    },
+    {
+      "stage": "higher-pilot20",
+      "family": "G",
+      "count": 1,
+      "nh": 40000,
+      "n": 56638,
+      "dt": 0.05,
+      "duration": 20,
+      "metrics": {
+        "globalGrowth": {
+          "mean": -0.7604969258207306,
+          "sd": null,
+          "values": [
+            -0.7604969258207306
+          ]
+        },
+        "thinGrowth": {
+          "mean": 0.7067319452730425,
+          "sd": null,
+          "values": [
+            0.7067319452730425
+          ]
+        },
+        "thickGrowth": {
+          "mean": 0.6931145256263704,
+          "sd": null,
+          "values": [
+            0.6931145256263704
+          ]
+        },
+        "thinSigmaNormalGrowth": {
+          "mean": -0.4257286022644857,
+          "sd": null,
+          "values": [
+            -0.4257286022644857
+          ]
+        },
+        "thinDeltaVarianceZ": {
+          "mean": -11.422918429596324,
+          "sd": null,
+          "values": [
+            -11.422918429596324
+          ]
+        },
+        "thinLateHChange": {
+          "mean": 0.001116811322736111,
+          "sd": null,
+          "values": [
+            0.001116811322736111
+          ]
+        },
+        "thinLateVarianceZ": {
+          "mean": 54.170197838526725,
+          "sd": null,
+          "values": [
+            54.170197838526725
+          ]
+        },
+        "thinR50Change": {
+          "mean": 0.022750177593177767,
+          "sd": null,
+          "values": [
+            0.022750177593177767
+          ]
+        },
+        "bulgeR50Change": {
+          "mean": 0.08293306233822229,
+          "sd": null,
+          "values": [
+            0.08293306233822229
+          ]
+        }
+      }
+    },
+    {
+      "stage": "higher200",
+      "family": "E",
+      "count": 3,
+      "nh": 80000,
+      "n": 89546,
+      "dt": 0.05,
+      "duration": 200,
+      "metrics": {
+        "globalGrowth": {
+          "mean": 15.04113866579174,
+          "sd": 3.3105639589839866,
+          "values": [
+            13.957974911647742,
+            12.407834570453824,
+            18.75760651527365
+          ]
+        },
+        "thinGrowth": {
+          "mean": 17.8934651747639,
+          "sd": 0.8127452390374373,
+          "values": [
+            18.571267730939734,
+            16.992431710522983,
+            18.116696082828977
+          ]
+        },
+        "thickGrowth": {
+          "mean": -3.7417158243833106,
+          "sd": 1.3182580855138555,
+          "values": [
+            -2.358340520057378,
+            -3.88339533518971,
+            -4.983411617902844
+          ]
+        },
+        "thinSigmaNormalGrowth": {
+          "mean": 12.928603968912718,
+          "sd": 0.5280429268596112,
+          "values": [
+            13.227410705093035,
+            12.318912393916914,
+            13.239488807728206
+          ]
+        },
+        "thinDeltaVarianceZ": {
+          "mean": 369.90871562662363,
+          "sd": 14.564599703552455,
+          "values": [
+            365.94392242807265,
+            357.73703593338666,
+            386.0451885184116
+          ]
+        },
+        "thinLateHChange": {
+          "mean": 0.019184334364331257,
+          "sd": 0.004263489204578343,
+          "values": [
+            0.021716240377701423,
+            0.021574804357266303,
+            0.014261958358026045
+          ]
+        },
+        "thinLateVarianceZ": {
+          "mean": 172.01181041125528,
+          "sd": 28.63730775612732,
+          "values": [
+            139.32785370362365,
+            192.70288360990907,
+            184.0046939202331
+          ]
+        },
+        "thinR50Change": {
+          "mean": -0.018813835367095244,
+          "sd": 0.01861088695582266,
+          "values": [
+            -0.01727240280853337,
+            -0.0010216019202964333,
+            -0.03814750137245593
+          ]
+        },
+        "bulgeR50Change": {
+          "mean": 0.006186581891525507,
+          "sd": 0.06247486375120276,
+          "values": [
+            0.07358280701610376,
+            -0.04979202056549492,
+            -0.005231040776032314
+          ]
+        }
+      }
+    },
+    {
+      "stage": "higher200",
+      "family": "G",
+      "count": 3,
+      "nh": 40000,
+      "n": 56638,
+      "dt": 0.05,
+      "duration": 200,
+      "metrics": {
+        "globalGrowth": {
+          "mean": 18.93175756607437,
+          "sd": 6.0173128752319505,
+          "values": [
+            22.973719958699412,
+            12.016395995201057,
+            21.80515674432264
+          ]
+        },
+        "thinGrowth": {
+          "mean": 21.357005303149254,
+          "sd": 3.390741330732007,
+          "values": [
+            24.126843291702205,
+            17.575604531389178,
+            22.36856808635639
+          ]
+        },
+        "thickGrowth": {
+          "mean": 5.896499887467702,
+          "sd": 9.640411063074877,
+          "values": [
+            16.74446970500569,
+            -1.6905126663847025,
+            2.6355426237821167
+          ]
+        },
+        "thinSigmaNormalGrowth": {
+          "mean": 11.459815276011868,
+          "sd": 3.1829146644896906,
+          "values": [
+            9.324784263969011,
+            15.118117862176117,
+            9.936543701890477
+          ]
+        },
+        "thinDeltaVarianceZ": {
+          "mean": 333.5913396898639,
+          "sd": 105.99651659071198,
+          "values": [
+            260.2589641519415,
+            455.1223231802485,
+            285.3927317374018
+          ]
+        },
+        "thinLateHChange": {
+          "mean": 0.016823296970900226,
+          "sd": 0.011024364454621996,
+          "values": [
+            0.0209733256630511,
+            0.004326211908355998,
+            0.025170353341293583
+          ]
+        },
+        "thinLateVarianceZ": {
+          "mean": 200.97707358196007,
+          "sd": 112.00532166650311,
+          "values": [
+            100.04558082061492,
+            321.4772215688556,
+            181.40841835640964
+          ]
+        },
+        "thinR50Change": {
+          "mean": 0.06132452037361228,
+          "sd": 0.21331120995889385,
+          "values": [
+            -0.021258170640241936,
+            -0.0983486749041722,
+            0.303580406665251
+          ]
+        },
+        "bulgeR50Change": {
+          "mean": 0.0774424871644775,
+          "sd": 0.010759419703119276,
+          "values": [
+            0.0816074676810834,
+            0.08549680189197217,
+            0.06522319192037696
+          ]
+        }
+      }
+    }
+  ],
+  "contrasts": [
+    {
+      "stage": "factorial20",
+      "metric": "thinGrowth",
+      "paired": [
+        {
+          "seed": 2026,
+          "haloOriginal": -1.2560851988093313,
+          "haloFine": -2.88908353232622,
+          "thinCoarseHalo": 1.1314786570907787,
+          "thinFineHalo": -0.5015196764261098,
+          "interaction": -1.6329983335168885,
+          "combined": -1.7576048752354412
+        },
+        {
+          "seed": 2027,
+          "haloOriginal": 2.8175092967992477,
+          "haloFine": -1.0043844756616904,
+          "thinCoarseHalo": -2.557680169826315,
+          "thinFineHalo": -6.379573942287253,
+          "interaction": -3.821893772460938,
+          "combined": -3.5620646454880056
+        },
+        {
+          "seed": 2028,
+          "haloOriginal": -1.039899228385277,
+          "haloFine": 0.5428481639621952,
+          "thinCoarseHalo": -0.28297865519342214,
+          "thinFineHalo": 1.29976873715405,
+          "interaction": 1.5827473923474722,
+          "combined": 0.259869508768773
+        }
+      ],
+      "statistics": {
+        "haloOriginal": {
+          "mean": 0.17384162320154642,
+          "sd": 2.2920336319022807,
+          "values": [
+            -1.2560851988093313,
+            2.8175092967992477,
+            -1.039899228385277
+          ]
+        },
+        "haloFine": {
+          "mean": -1.116873281341905,
+          "sd": 1.7187289171215425,
+          "values": [
+            -2.88908353232622,
+            -1.0043844756616904,
+            0.5428481639621952
+          ]
+        },
+        "thinCoarseHalo": {
+          "mean": -0.5697267226429862,
+          "sd": 1.8612204472320364,
+          "values": [
+            1.1314786570907787,
+            -2.557680169826315,
+            -0.28297865519342214
+          ]
+        },
+        "thinFineHalo": {
+          "mean": -1.8604416271864377,
+          "sd": 4.0159777947924304,
+          "values": [
+            -0.5015196764261098,
+            -6.379573942287253,
+            1.29976873715405
+          ]
+        },
+        "interaction": {
+          "mean": -1.2907149045434514,
+          "sd": 2.7185299316722196,
+          "values": [
+            -1.6329983335168885,
+            -3.821893772460938,
+            1.5827473923474722
+          ]
+        },
+        "combined": {
+          "mean": -1.6866000039848912,
+          "sd": 1.911956181159652,
+          "values": [
+            -1.7576048752354412,
+            -3.5620646454880056,
+            0.259869508768773
+          ]
+        }
+      },
+      "qualification": "Paired diagonal seeds, n=3. Growth percentages have different original thin realizations; variance contrast uses common physical units. Interaction is measured, not assumed additive."
+    },
+    {
+      "stage": "factorial20",
+      "metric": "thinDeltaVarianceZ",
+      "paired": [
+        {
+          "seed": 2026,
+          "haloOriginal": 36.895819038758184,
+          "haloFine": 22.390801284814387,
+          "thinCoarseHalo": 22.794196180189395,
+          "thinFineHalo": 8.289178426245599,
+          "interaction": -14.505017753943797,
+          "combined": 45.18499746500378
+        },
+        {
+          "seed": 2027,
+          "haloOriginal": -133.1985068008711,
+          "haloFine": -77.58029571558725,
+          "thinCoarseHalo": 45.28668209409679,
+          "thinFineHalo": 100.90489317938062,
+          "interaction": 55.61821108528383,
+          "combined": -32.293613621490465
+        },
+        {
+          "seed": 2028,
+          "haloOriginal": -166.47011669929867,
+          "haloFine": -226.39779190126168,
+          "thinCoarseHalo": 84.87912942604996,
+          "thinFineHalo": 24.951454224086945,
+          "interaction": -59.92767520196301,
+          "combined": -141.51866247521173
+        }
+      ],
+      "statistics": {
+        "haloOriginal": {
+          "mean": -87.59093482047052,
+          "sd": 109.08466400514067,
+          "values": [
+            36.895819038758184,
+            -133.1985068008711,
+            -166.47011669929867
+          ]
+        },
+        "haloFine": {
+          "mean": -93.86242877734485,
+          "sd": 125.19094183549105,
+          "values": [
+            22.390801284814387,
+            -77.58029571558725,
+            -226.39779190126168
+          ]
+        },
+        "thinCoarseHalo": {
+          "mean": 50.98666923344538,
+          "sd": 31.432501078935715,
+          "values": [
+            22.794196180189395,
+            45.28668209409679,
+            84.87912942604996
+          ]
+        },
+        "thinFineHalo": {
+          "mean": 44.71517527657105,
+          "sd": 49.369739286214795,
+          "values": [
+            8.289178426245599,
+            100.90489317938062,
+            24.951454224086945
+          ]
+        },
+        "interaction": {
+          "mean": -6.271493956874326,
+          "sd": 58.211305990022474,
+          "values": [
+            -14.505017753943797,
+            55.61821108528383,
+            -59.92767520196301
+          ]
+        },
+        "combined": {
+          "mean": -42.87575954389947,
+          "sd": 93.80058911334339,
+          "values": [
+            45.18499746500378,
+            -32.293613621490465,
+            -141.51866247521173
+          ]
+        }
+      },
+      "qualification": "Paired diagonal seeds, n=3. Growth percentages have different original thin realizations; variance contrast uses common physical units. Interaction is measured, not assumed additive."
+    },
+    {
+      "stage": "factorial20",
+      "metric": "thickGrowth",
+      "paired": [
+        {
+          "seed": 2026,
+          "haloOriginal": -0.7110761645331198,
+          "haloFine": -0.2705612477544861,
+          "thinCoarseHalo": -1.4973310290901765,
+          "thinFineHalo": -1.0568161123115427,
+          "interaction": 0.44051491677863375,
+          "combined": -1.7678922768446625
+        },
+        {
+          "seed": 2027,
+          "haloOriginal": -0.8594923841585889,
+          "haloFine": -1.9117253858181416,
+          "thinCoarseHalo": 0.8468599745089067,
+          "thinFineHalo": -0.20537302715064598,
+          "interaction": -1.0522330016595527,
+          "combined": -1.0648654113092348
+        },
+        {
+          "seed": 2028,
+          "haloOriginal": -0.004774866578827641,
+          "haloFine": 2.5883474340501866,
+          "thinCoarseHalo": -0.44015341010162956,
+          "thinFineHalo": 2.1529688905273847,
+          "interaction": 2.5931223006290143,
+          "combined": 2.148194023948557
+        }
+      ],
+      "statistics": {
+        "haloOriginal": {
+          "mean": -0.5251144717568454,
+          "sd": 0.4566966412177677,
+          "values": [
+            -0.7110761645331198,
+            -0.8594923841585889,
+            -0.004774866578827641
+          ]
+        },
+        "haloFine": {
+          "mean": 0.13535360015918632,
+          "sd": 2.2773315511464305,
+          "values": [
+            -0.2705612477544861,
+            -1.9117253858181416,
+            2.5883474340501866
+          ]
+        },
+        "thinCoarseHalo": {
+          "mean": -0.3635414882276331,
+          "sd": 1.1739718502880039,
+          "values": [
+            -1.4973310290901765,
+            0.8468599745089067,
+            -0.44015341010162956
+          ]
+        },
+        "thinFineHalo": {
+          "mean": 0.2969265836883987,
+          "sd": 1.6628014359505512,
+          "values": [
+            -1.0568161123115427,
+            -0.20537302715064598,
+            2.1529688905273847
+          ]
+        },
+        "interaction": {
+          "mean": 0.6604680719160317,
+          "sd": 1.8326042570129577,
+          "values": [
+            0.44051491677863375,
+            -1.0522330016595527,
+            2.5931223006290143
+          ]
+        },
+        "combined": {
+          "mean": -0.22818788806844678,
+          "sd": 2.0878110396387255,
+          "values": [
+            -1.7678922768446625,
+            -1.0648654113092348,
+            2.148194023948557
+          ]
+        }
+      },
+      "qualification": "Paired diagonal seeds, n=3. Growth percentages have different original thin realizations; variance contrast uses common physical units. Interaction is measured, not assumed additive."
+    },
+    {
+      "stage": "factorial200",
+      "metric": "thinGrowth",
+      "paired": [
+        {
+          "seed": 2026,
+          "haloOriginal": -69.19047762315904,
+          "haloFine": -71.92346262444343,
+          "thinCoarseHalo": -2.8021717568639275,
+          "thinFineHalo": -5.535156758148307,
+          "interaction": -2.7329850012843906,
+          "combined": -74.72563438130734
+        },
+        {
+          "seed": 2027,
+          "haloOriginal": -69.56826236760477,
+          "haloFine": -73.20741605654881,
+          "thinCoarseHalo": 0.2600305879847582,
+          "thinFineHalo": -3.3791231009592693,
+          "interaction": -3.6391536889440204,
+          "combined": -72.94738546856405
+        },
+        {
+          "seed": 2028,
+          "haloOriginal": -91.33766953092979,
+          "haloFine": -101.29045042234445,
+          "thinCoarseHalo": 9.612786924034992,
+          "thinFineHalo": -0.33999396737966947,
+          "interaction": -9.952780891414662,
+          "combined": -91.67766349830946
+        }
+      ],
+      "statistics": {
+        "haloOriginal": {
+          "mean": -76.69880317389787,
+          "sd": 12.679037285715534,
+          "values": [
+            -69.19047762315904,
+            -69.56826236760477,
+            -91.33766953092979
+          ]
+        },
+        "haloFine": {
+          "mean": -82.14044303444557,
+          "sd": 16.596813589402945,
+          "values": [
+            -71.92346262444343,
+            -73.20741605654881,
+            -101.29045042234445
+          ]
+        },
+        "thinCoarseHalo": {
+          "mean": 2.3568819183852745,
+          "sd": 6.467641679040256,
+          "values": [
+            -2.8021717568639275,
+            0.2600305879847582,
+            9.612786924034992
+          ]
+        },
+        "thinFineHalo": {
+          "mean": -3.0847579421624154,
+          "sd": 2.610060773369438,
+          "values": [
+            -5.535156758148307,
+            -3.3791231009592693,
+            -0.33999396737966947
+          ]
+        },
+        "interaction": {
+          "mean": -5.441639860547691,
+          "sd": 3.9329480638450254,
+          "values": [
+            -2.7329850012843906,
+            -3.6391536889440204,
+            -9.952780891414662
+          ]
+        },
+        "combined": {
+          "mean": -79.78356111606028,
+          "sd": 10.338897228838638,
+          "values": [
+            -74.72563438130734,
+            -72.94738546856405,
+            -91.67766349830946
+          ]
+        }
+      },
+      "qualification": "Paired diagonal seeds, n=3. Growth percentages have different original thin realizations; variance contrast uses common physical units. Interaction is measured, not assumed additive."
+    },
+    {
+      "stage": "factorial200",
+      "metric": "thinDeltaVarianceZ",
+      "paired": [
+        {
+          "seed": 2026,
+          "haloOriginal": -868.2849488310857,
+          "haloFine": -1198.9014784724284,
+          "thinCoarseHalo": 365.246015268144,
+          "thinFineHalo": 34.629485626801284,
+          "interaction": -330.6165296413426,
+          "combined": -833.6554632042844
+        },
+        {
+          "seed": 2027,
+          "haloOriginal": -1009.7273309670627,
+          "haloFine": -797.6685618783098,
+          "thinCoarseHalo": -220.0661455887539,
+          "thinFineHalo": -8.00737650000093,
+          "interaction": 212.05876908875302,
+          "combined": -1017.7347074670637
+        },
+        {
+          "seed": 2028,
+          "haloOriginal": -1536.4473278941125,
+          "haloFine": -1888.8167730625141,
+          "thinCoarseHalo": 287.1933778854109,
+          "thinFineHalo": -65.17606728299074,
+          "interaction": -352.3694451684014,
+          "combined": -1601.6233951771032
+        }
+      ],
+      "statistics": {
+        "haloOriginal": {
+          "mean": -1138.153202564087,
+          "sd": 352.1081432889369,
+          "values": [
+            -868.2849488310857,
+            -1009.7273309670627,
+            -1536.4473278941125
+          ]
+        },
+        "haloFine": {
+          "mean": -1295.1289378044173,
+          "sd": 551.902072509009,
+          "values": [
+            -1198.9014784724284,
+            -797.6685618783098,
+            -1888.8167730625141
+          ]
+        },
+        "thinCoarseHalo": {
+          "mean": 144.12441585493366,
+          "sd": 317.8035986802248,
+          "values": [
+            365.246015268144,
+            -220.0661455887539,
+            287.1933778854109
+          ]
+        },
+        "thinFineHalo": {
+          "mean": -12.851319385396797,
+          "sd": 50.07878727480386,
+          "values": [
+            34.629485626801284,
+            -8.00737650000093,
+            -65.17606728299074
+          ]
+        },
+        "interaction": {
+          "mean": -156.97573524033032,
+          "sd": 319.77827689282,
+          "values": [
+            -330.6165296413426,
+            212.05876908875302,
+            -352.3694451684014
+          ]
+        },
+        "combined": {
+          "mean": -1151.004521949484,
+          "sd": 400.95426013921593,
+          "values": [
+            -833.6554632042844,
+            -1017.7347074670637,
+            -1601.6233951771032
+          ]
+        }
+      },
+      "qualification": "Paired diagonal seeds, n=3. Growth percentages have different original thin realizations; variance contrast uses common physical units. Interaction is measured, not assumed additive."
+    },
+    {
+      "stage": "factorial200",
+      "metric": "thickGrowth",
+      "paired": [
+        {
+          "seed": 2026,
+          "haloOriginal": -31.841483925579617,
+          "haloFine": -25.834361929809035,
+          "thinCoarseHalo": -9.705503008026419,
+          "thinFineHalo": -3.698381012255836,
+          "interaction": 6.007121995770582,
+          "combined": -35.53986493783545
+        },
+        {
+          "seed": 2027,
+          "haloOriginal": -35.272765375326244,
+          "haloFine": -47.92084319582146,
+          "thinCoarseHalo": 13.667818657436847,
+          "thinFineHalo": 1.0197408369416294,
+          "interaction": -12.648077820495217,
+          "combined": -34.253024538384615
+        },
+        {
+          "seed": 2028,
+          "haloOriginal": -35.10738932489896,
+          "haloFine": -29.57865761407246,
+          "thinCoarseHalo": -6.527244299798962,
+          "thinFineHalo": -0.9985125889724555,
+          "interaction": 5.528731710826506,
+          "combined": -36.10590191387142
+        }
+      ],
+      "statistics": {
+        "haloOriginal": {
+          "mean": -34.07387954193494,
+          "sd": 1.935078796962951,
+          "values": [
+            -31.841483925579617,
+            -35.272765375326244,
+            -35.10738932489896
+          ]
+        },
+        "haloFine": {
+          "mean": -34.44462091323432,
+          "sd": 11.819956125133126,
+          "values": [
+            -25.834361929809035,
+            -47.92084319582146,
+            -29.57865761407246
+          ]
+        },
+        "thinCoarseHalo": {
+          "mean": -0.8549762167961781,
+          "sd": 12.677105754997577,
+          "values": [
+            -9.705503008026419,
+            13.667818657436847,
+            -6.527244299798962
+          ]
+        },
+        "thinFineHalo": {
+          "mean": -1.225717588095554,
+          "sd": 2.36725263326256,
+          "values": [
+            -3.698381012255836,
+            1.0197408369416294,
+            -0.9985125889724555
+          ]
+        },
+        "interaction": {
+          "mean": -0.3707413712993765,
+          "sd": 10.635175458413782,
+          "values": [
+            6.007121995770582,
+            -12.648077820495217,
+            5.528731710826506
+          ]
+        },
+        "combined": {
+          "mean": -35.2995971300305,
+          "sd": 0.9495183551402616,
+          "values": [
+            -35.53986493783545,
+            -34.253024538384615,
+            -36.10590191387142
+          ]
+        }
+      },
+      "qualification": "Paired diagonal seeds, n=3. Growth percentages have different original thin realizations; variance contrast uses common physical units. Interaction is measured, not assumed additive."
+    }
+  ]
+}

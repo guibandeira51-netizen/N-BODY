@@ -1,0 +1,50 @@
+{
+  "status": "passed",
+  "initialSourceSHA256": "d1ff21a1881f61d868e98a5b0873e2da3829adc13a961177c38607a409321a6b",
+  "states": [
+    {
+      "timeMyr": 0,
+      "positions": {
+        "elements": 508638,
+        "different": 0,
+        "maxAbsoluteDifference": 0
+      },
+      "velocities": {
+        "elements": 508638,
+        "different": 0,
+        "maxAbsoluteDifference": 0
+      },
+      "accelerations": {
+        "elements": 508638,
+        "different": 0,
+        "maxAbsoluteDifference": 0
+      }
+    },
+    {
+      "timeMyr": 2,
+      "positions": {
+        "elements": 508638,
+        "different": 0,
+        "maxAbsoluteDifference": 0
+      },
+      "velocities": {
+        "elements": 508638,
+        "different": 0,
+        "maxAbsoluteDifference": 0
+      },
+      "accelerations": {
+        "elements": 508638,
+        "different": 0,
+        "maxAbsoluteDifference": 0
+      }
+    }
+  ],
+  "oldScheduler": "up to32 steps per submission; original2Myr pilot had20per1Myr observation",
+  "newScheduler": {
+    "maximumStepsPerSubmission": 4,
+    "forceWarmupEvaluations": 32,
+    "forceWarmupSubmissionSize": 4,
+    "qualification": "Queue scheduling only; identical WGSL and KDK operations; new scheduling pilot checks actual state equality."
+  },
+  "qualification": "Entire169546-particle initial/final p,v,a states are bit-identical at2Myr. Queue submissions divided without changing any WGSL, force law, epsilon, dt or KDK operation. Device-loss cause is not independently confirmed; long submissions were suspected."
+}

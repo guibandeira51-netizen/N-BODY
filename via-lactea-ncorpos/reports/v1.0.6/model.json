@@ -1,0 +1,411 @@
+{
+  "schema": "fixed-mass-physical-field-106",
+  "modelId": "C20-reduced-positive-DF-density-Newtonian106",
+  "sourceConfig": {
+    "id": "C20-NFW-plummer-mean-v1-eps0.1",
+    "status": "candidate-not-validated",
+    "reference": "https://doi.org/10.1093/mnras/staa1017",
+    "branch": "Cautun et al. 2020 Table 2, uncontracted NFW column; reduced collisionless approximation, not a refit",
+    "units": {
+      "length": "kpc",
+      "velocity": "km/s",
+      "mass": "Msun"
+    },
+    "bulge": {
+      "mass": 9200000000,
+      "mass68": [
+        8400000000,
+        10300000000
+      ],
+      "r0": 0.075,
+      "cutoff": 2.1,
+      "alpha": 1.8,
+      "sphericalized": true
+    },
+    "disks": [
+      {
+        "name": "thin",
+        "mass": 39800000000,
+        "mass68": [
+          33100000000,
+          42400000000
+        ],
+        "radius": 2.43,
+        "referenceExponentialHeight": 0.3,
+        "dfHdisk": 0.18645786701588404,
+        "sigmaRsolar": 35,
+        "sigmaScaleRadius": 4.86,
+        "verticalCalibrationTargetMedianAbsZKpc": 0.2079441541679836
+      },
+      {
+        "name": "thick",
+        "mass": 10700000000,
+        "mass68": [
+          8800000000,
+          12500000000
+        ],
+        "radius": 3.88,
+        "referenceExponentialHeight": 0.9,
+        "dfHdisk": 0.4983290857005914,
+        "sigmaRsolar": 50,
+        "sigmaScaleRadius": 7.76,
+        "verticalCalibrationTargetMedianAbsZKpc": 0.6238324625039507
+      }
+    ],
+    "halo": {
+      "massWithinReferenceRadius": 820000000000,
+      "mass68": [
+        640000000000,
+        910000000000
+      ],
+      "referenceRadius": 207,
+      "scaleRadius": 14.4,
+      "scaleRadius68": [
+        10.9,
+        18.9
+      ],
+      "cutoffRadius": 414,
+      "cutoffStrength": 2,
+      "gamma": 1,
+      "beta": 3
+    },
+    "omitted": {
+      "coldGasMass": 12000000000,
+      "CGMmassWithinReferenceRadius": 55000000000,
+      "gasAddedToStars": false
+    },
+    "solarRadius": 8.122,
+    "kinematicChoice": "35 and 50 km/s at solar radius are explicit thin/thick population priors for sensitivity, not fitted C20 kinematics; no tuning against evolved stability",
+    "method": "Fixed action DFs + Plummer mean-field self-consistent iteration",
+    "iterations": 14,
+    "potentialTolerance": 0.001,
+    "grids": {
+      "rminSph": 0.01,
+      "rmaxSph": 2000,
+      "sizeRadialSph": 40,
+      "lmaxAngularSph": 6,
+      "RminCyl": 0.02,
+      "RmaxCyl": 80,
+      "sizeRadialCyl": 30,
+      "zminCyl": 0.03,
+      "zmaxCyl": 40,
+      "sizeVerticalCyl": 25
+    },
+    "qualification": "Mass uncertainties are marginal intervals, not independent draws. R=207 kpc is the reference paper radius, not a new measured R200 of the gas-free model. Disk Hdisk is an action DF parameter and does not impose the reference double-exponential density. Bulge sphericalization and finite halo taper change profiles. Final profiles and enclosed masses must be measured. Vertical DF parameter calibrated to the declared initial exponential median at solar radius; iteration seed changes only convergence speed, not fixed DFs.",
+    "calibration": {
+      "target": "median |z| of reference exponential at solar radius, before SCM",
+      "calibrationCodeSHA256": "3cf55a0f0e15d20b0cd1182c82ff6f731da8d7f4617a647b2b880fc779f6247c",
+      "referencePotentialSHA256": "293f19893a50dd789931e5c8aeeccbe516203b0f059f6fc74e695ad98bd7053a",
+      "usesEvolvedStability": false,
+      "qualification": "Fixed spatial target, no dynamical cooling. Final SCM density must be checked again; no exact fit of the full exponential profile is asserted."
+    },
+    "adaptiveIterations": true,
+    "warmStartPotential": "../agama/potential-final.ini"
+  },
+  "componentMassesMsun": [
+    9200015467.282112,
+    39800000000.00001,
+    10699999999.999998,
+    1049129212118.5566
+  ],
+  "densityGridMassesMsun": [
+    9245966382.362854,
+    39801098111.341286,
+    10700788915.656708,
+    1049678585182.4504
+  ],
+  "numericalMassNormalization": [
+    0.9950348795915472,
+    0.9999542792849685,
+    0.999920230073168,
+    0.9994830529432415
+  ],
+  "normalizationReason": "Positive-density reconstruction of tiny negative interpolation lobes, then normalization to unchanged action-DF masses. Spherical quadrature integral to10000kpc. See mass-quadrature.json for signed artifacts and convergence; no observational or stability fit.",
+  "symmetry": "Stationary axisymmetric, reflection symmetric, isolated Newtonian smooth potential; gas and CGM omitted.",
+  "potentialConvention": "Phi(infinity)=0; lengths kpc, velocities km/s, masses Msun, time unit kpc/(km/s).",
+  "relationToLiveModel": "NEW positive-density, unsmoothed Newtonian representation of preserved density grids and exact historical component masses. Live historical campaigns retain original grids, Plummer epsilon0.1kpc and their own field. They are not relabelled as this orbit experiment.",
+  "freeFittedParameters106": 0,
+  "observationalDependence": "Historical Cautun-based parameters used rotation-curve constraints related to Eilers: this is a consistency comparison, not an independent out-of-sample discovery or formal model-selection test.",
+  "sourceSHA256": {
+    "reports/v1.0.2/corrected/preparation.json": "6471bace89388756be5c8d718321977aaead151094eeaec7bd7ec06acdc3dcbf",
+    "reports/v1.0.2/corrected/density-0-final.ini": "c34c866029af4a7bbdd2c233589241951b61174a090cdad64c287421c7b15dac",
+    "reports/v1.0.2/corrected/density-1-final.ini": "e969e80875d3fd065ec4a41bd960139a1111eb97e66ff22d59b4a988069113b7",
+    "reports/v1.0.2/corrected/density-2-final.ini": "6fdd48c9a887915e16ac8a8af2004b0928bd7997184012128df57904172c83c4",
+    "reports/v1.0.2/corrected/density-3-final.ini": "6a7f93aaebe8f4b47c9283931e7acd532431cfc843d0feff71d9764d8c9fd901"
+  },
+  "potentialSHA256": {
+    "potentials/component-0.ini": "7229bd7f3a0bff60f6b8058eb02b7b1e29985bb64a236edea6e9baa2c1ac96a1",
+    "potentials/component-1.ini": "403b0c105ed9ba6c7db988c9a8bd304e7dc7ddf043a6ff3318cdb505a6e8abc9",
+    "potentials/component-2.ini": "0120b171ce2720d8a7a940df58729a99e767a4548f72d41580573c63a2b09869",
+    "potentials/component-3.ini": "76396a184e1d1ed91394d48f705ffe53d77c28f57ad1feecd290084c95841b17"
+  },
+  "gridChecks": [
+    {
+      "population": 0,
+      "maxRadialForceRelativeGridRefinement5to25": 5.035062125013923e-07,
+      "settings": {
+        "type": "Multipole",
+        "symmetry": "a",
+        "lmax": 12,
+        "mmax": 0,
+        "gridSizeR": 100,
+        "rmin": 0.001,
+        "rmax": 4000
+      },
+      "finerSettings": {
+        "type": "Multipole",
+        "symmetry": "a",
+        "lmax": 16,
+        "mmax": 0,
+        "gridSizeR": 160,
+        "rmin": 0.001,
+        "rmax": 4000
+      }
+    },
+    {
+      "population": 1,
+      "maxRadialForceRelativeGridRefinement5to25": 0.0001873938223809768,
+      "settings": {
+        "type": "CylSpline",
+        "symmetry": "a",
+        "mmax": 0,
+        "gridSizeR": 100,
+        "gridSizeZ": 80,
+        "Rmin": 0.003,
+        "Rmax": 240,
+        "zmin": 0.003,
+        "zmax": 160
+      },
+      "finerSettings": {
+        "type": "CylSpline",
+        "symmetry": "a",
+        "mmax": 0,
+        "gridSizeR": 150,
+        "gridSizeZ": 120,
+        "Rmin": 0.003,
+        "Rmax": 240,
+        "zmin": 0.003,
+        "zmax": 160
+      }
+    },
+    {
+      "population": 2,
+      "maxRadialForceRelativeGridRefinement5to25": 2.571596414568944e-05,
+      "settings": {
+        "type": "CylSpline",
+        "symmetry": "a",
+        "mmax": 0,
+        "gridSizeR": 100,
+        "gridSizeZ": 80,
+        "Rmin": 0.003,
+        "Rmax": 240,
+        "zmin": 0.003,
+        "zmax": 160
+      },
+      "finerSettings": {
+        "type": "CylSpline",
+        "symmetry": "a",
+        "mmax": 0,
+        "gridSizeR": 150,
+        "gridSizeZ": 120,
+        "Rmin": 0.003,
+        "Rmax": 240,
+        "zmin": 0.003,
+        "zmax": 160
+      }
+    },
+    {
+      "population": 3,
+      "maxRadialForceRelativeGridRefinement5to25": 1.5483770798851992e-07,
+      "settings": {
+        "type": "Multipole",
+        "symmetry": "a",
+        "lmax": 12,
+        "mmax": 0,
+        "gridSizeR": 100,
+        "rmin": 0.001,
+        "rmax": 4000
+      },
+      "finerSettings": {
+        "type": "Multipole",
+        "symmetry": "a",
+        "lmax": 16,
+        "mmax": 0,
+        "gridSizeR": 160,
+        "rmin": 0.001,
+        "rmax": 4000
+      }
+    }
+  ],
+  "gradientChecks": [
+    {
+      "Rkpc": 1,
+      "force": -22271.51853724993,
+      "negativePotentialGradient": -22271.51853876421,
+      "relativeDifference": 6.799175242984806e-11
+    },
+    {
+      "Rkpc": 5,
+      "force": -9803.703963303502,
+      "negativePotentialGradient": -9803.703963698354,
+      "relativeDifference": 4.027576406677371e-11
+    },
+    {
+      "Rkpc": 8.122,
+      "force": -6668.138975156292,
+      "negativePotentialGradient": -6668.138975176406,
+      "relativeDifference": 3.016491542745422e-12
+    },
+    {
+      "Rkpc": 12,
+      "force": -4243.719853659857,
+      "negativePotentialGradient": -4243.719853851265,
+      "relativeDifference": 4.510375662440307e-11
+    },
+    {
+      "Rkpc": 20,
+      "force": -2215.7707087288045,
+      "negativePotentialGradient": -2215.7707088263123,
+      "relativeDifference": 4.400628462487348e-11
+    },
+    {
+      "Rkpc": 25,
+      "force": -1676.4975412589774,
+      "negativePotentialGradient": -1676.4975413389038,
+      "relativeDifference": 4.767462666946929e-11
+    }
+  ],
+  "preservedReferenceComparison": {
+    "Rkpc": [
+      5.0,
+      5.5,
+      6.0,
+      6.5,
+      7.0,
+      7.5,
+      8.0,
+      8.5,
+      9.0,
+      9.5,
+      10.0,
+      10.5,
+      11.0,
+      11.5,
+      12.0,
+      12.5,
+      13.0,
+      13.5,
+      14.0,
+      14.5,
+      15.0,
+      15.5,
+      16.0,
+      16.5,
+      17.0,
+      17.5,
+      18.0,
+      18.5,
+      19.0,
+      19.5,
+      20.0,
+      20.5,
+      21.0,
+      21.5,
+      22.0,
+      22.5,
+      23.0,
+      23.5,
+      24.0,
+      24.5,
+      25.0
+    ],
+    "relativeNewForceToPreservedNewtonian": [
+      -0.0010210598246618297,
+      -0.00092730488057291,
+      -0.0008527226750167927,
+      -0.0007879374000067108,
+      -0.0007539653284011072,
+      -0.0007022170976994646,
+      -0.0007006914461137326,
+      -0.0006933674469030704,
+      -0.000721355394724843,
+      -0.0006291653182581847,
+      -0.000627802067802663,
+      -0.0006291484248863721,
+      -0.0006427476734652826,
+      -0.0006197547390461855,
+      -0.0005877014326767238,
+      -0.0005848265930301633,
+      -0.0006089426999565939,
+      -0.0006308156123064901,
+      -0.0006270384707808274,
+      -0.0006092272076926308,
+      -0.0005906806984502522,
+      -0.0005817399464269624,
+      -0.0005855391783154973,
+      -0.00059575659896971,
+      -0.0006053237842873482,
+      -0.0006103729294590909,
+      -0.0006084078179053876,
+      -0.0005980250692744216,
+      -0.0005868938830592141,
+      -0.000581999585059001,
+      -0.0005826862527457122,
+      -0.000586224514068534,
+      -0.000590314963872629,
+      -0.0005931537722271285,
+      -0.0005938192873066184,
+      -0.0005922909985353053,
+      -0.0005892157296247813,
+      -0.0005857375154207922,
+      -0.0005842316830706462,
+      -0.0005858266684746205,
+      -0.000586833931740971
+    ],
+    "relativePlummerToNewNewtonian": [
+      -0.004192360808988771,
+      -0.0038573252412448245,
+      -0.003582586652047026,
+      -0.0033230159671810977,
+      -0.0030360528250684693,
+      -0.0027571238959919198,
+      -0.0024272953086884597,
+      -0.002116965178406316,
+      -0.001790568441115803,
+      -0.0016114219386096362,
+      -0.0013579907741442243,
+      -0.0011193195136908196,
+      -0.0008879980549636457,
+      -0.0007156789721289858,
+      -0.0005781122409728168,
+      -0.0004377823279463344,
+      -0.00029475678125245874,
+      -0.00017278556907340814,
+      -9.220392254660759e-05,
+      -4.240074850181408e-05,
+      -6.195568887923386e-07,
+      4.5930868008303705e-05,
+      9.697352927084957e-05,
+      0.00014905503208195725,
+      0.00019610426622485022,
+      0.00023361933124710355,
+      0.0002599955277724497,
+      0.00027671522893002454,
+      0.00028868757297995096,
+      0.0003030688394671799,
+      0.00032166054474358496,
+      0.00034130855564473705,
+      0.00036023340208068966,
+      0.00037692270251832305,
+      0.0003904637264584565,
+      0.000400646025136675,
+      0.0004083330439565991,
+      0.0004159446886724538,
+      0.00042420174460322535,
+      0.0004328537959568113,
+      0.000441061375682672
+    ]
+  },
+  "GAgama": 4.30091727067736e-06,
+  "wallSeconds": 308.18455820000236
+}

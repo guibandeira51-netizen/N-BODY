@@ -1,0 +1,384 @@
+{
+  "createdUTC": "2026-10-22T05:41:59.328Z",
+  "cpu": "AMD Ryzen 7 5700X 8-Core Processor             ",
+  "logicalProcessors": 16,
+  "availableParallelism": 16,
+  "totalMemoryBytes": 17098825728,
+  "runtime": "v24.19.0",
+  "platform": "win32",
+  "options": {
+    "seed": 2026,
+    "withHalo": true,
+    "dt": 0.1,
+    "epsilon": 0.1,
+    "theta": 0.5,
+    "algorithm": "barnes-hut",
+    "energyAuditCadenceMyr": 200
+  },
+  "files": {
+    "src/physics/forces.js": "9532d4286c6481d49995ece96e48bd595145c2e2c8a22897520cafa45f862444",
+    "src/physics/integrator.js": "5a83b4dcad749e13d438cdde561c7ee19ac6418823cfa5f06257eee3b268b04f",
+    "src/physics/initial.js": "5a6bbdb6cfe562776c6a408271c26d8a29183e92d2021914e2eb0f34230ef66a",
+    "src/physics/initial-legacy.js": "93ca8666ff188863b947dc8535ca23244d67c20ab2a177cb12e494cf566eeefa",
+    "src/physics/live-initial.js": "c3321a11fa28aa16b0c2d6232de89483208001a02bf607289dab9436de72b812",
+    "src/physics/rotation-field.js": "cf4df5dbd647ded3ebf8873f6be9aa10672ff9f164346b5c6c53231b4f1619e7",
+    "src/compute/live-worker.js": "5ce1906ee3fdd28f9f4a0ba506096864fd805b6ec496d988d2e946dfcef870cd",
+    "src/ncorpos-live-entry.js": "8ceacfadff741424aa8372d3191f07071ae8b0a37127026f649e4166302e3698",
+    "src/compute/energy-snapshot-sampler.js": "339cd3d1807f76a608859f99166081ed15dd99814a64bbf2974e27d151f4fa1e",
+    "src/automatic-energy.js": "b8f6971343e195e74563be2327883a0cffa4aa81e9827e58e99a113788b7505d"
+  },
+  "method": "Unmodified original KDK and BH. One warmup step then three real full steps. Forces timed around original engine.force(); tree build comes from original getBarnesHutStats. Remainder includes validation, clearing and traversal. Diagnostics measured separately on the same final state; not inside step timing. Process CPU time / wall time is an effective whole-process core count, not per-core OS telemetry.",
+  "results": [
+    {
+      "baseN": 1000,
+      "haloRefinement": 1,
+      "n": 1000,
+      "counts": [
+        150,
+        450,
+        400
+      ],
+      "initialHashes": {
+        "positions": "7fb66980238046ad79270eb155ee20f44f47f63d4c7d2ae099c5851b248745b5",
+        "velocities": "a9fa9bb07a0a645d9f6cb3e86395b0d111b56bbc395227726c4fb016c903aaa8",
+        "masses": "2e063e3624939023938c95d04bd70fd15f1a769d4d2e965e147912c74548b661"
+      },
+      "initializationMs": 440.252,
+      "stateCloneMs": 0.10550000000000637,
+      "initialForceMs": 17.127999999999986,
+      "steps": 4,
+      "timeMyr": 0.4,
+      "samples": [
+        {
+          "forceMs": 6.858000000000061,
+          "treeBuildMs": 0.6731999999999516,
+          "treeNodes": 477,
+          "treeAllocatedBytes": 117576,
+          "totalStepMs": 7.303700000000049,
+          "integrationAndBookkeepingMs": 0.445699999999988,
+          "traversalValidationAndClearMs": 6.184800000000109,
+          "effectiveProcessCores": 2.1906704820844083
+        },
+        {
+          "forceMs": 7.251300000000015,
+          "treeBuildMs": 0.8328000000000202,
+          "treeNodes": 477,
+          "treeAllocatedBytes": 117576,
+          "totalStepMs": 7.493000000000052,
+          "integrationAndBookkeepingMs": 0.2417000000000371,
+          "traversalValidationAndClearMs": 6.4184999999999945,
+          "effectiveProcessCores": 0
+        },
+        {
+          "forceMs": 6.940299999999979,
+          "treeBuildMs": 0.7386000000000195,
+          "treeNodes": 491,
+          "treeAllocatedBytes": 117576,
+          "totalStepMs": 6.955199999999991,
+          "integrationAndBookkeepingMs": 0.01490000000001146,
+          "traversalValidationAndClearMs": 6.20169999999996,
+          "effectiveProcessCores": 0
+        }
+      ],
+      "medianStepMs": 7.303700000000049,
+      "treeBuildMs": 0.7386000000000195,
+      "forceTraversalValidationMs": 6.20169999999996,
+      "leapfrogOtherMs": 0.2417000000000371,
+      "effectiveProcessCores": 0,
+      "diagnostics": {
+        "fastEnergyFirstMs": 14.379099999999994,
+        "fastEnergyRepeatedMs": 8.944999999999936,
+        "structureMs": 26.13379999999995,
+        "rotationFieldMs": 17.447599999999966,
+        "packFloat32Ms": 0.2844000000000051,
+        "copySnapshotMs": 0.07209999999997763,
+        "cloneStructuredDiagnosticMs": 0.9720999999999549,
+        "directFloat64Ms": 9.150700000000029,
+        "directPairs": 499500,
+        "energyDirectSkipped": null
+      },
+      "finite": true
+    },
+    {
+      "baseN": 10000,
+      "haloRefinement": 1,
+      "n": 10000,
+      "counts": [
+        1500,
+        4500,
+        4000
+      ],
+      "initialHashes": {
+        "positions": "c373669fc30ad6b2d9b58795507e6419d0f336a4ca32dd8c5f7ece215c2a5715",
+        "velocities": "251728ccd3ab09edd2ce1a704121bc58046a018842d07d7d45e516140032c9fb",
+        "masses": "a1c13572184085d68d0fcd39841bc26323fc6d1cc40684b441dd1541351b7912"
+      },
+      "initializationMs": 27.170299999999997,
+      "stateCloneMs": 0.5189000000000306,
+      "initialForceMs": 208.7813,
+      "steps": 4,
+      "timeMyr": 0.4,
+      "samples": [
+        {
+          "forceMs": 198.38159999999993,
+          "treeBuildMs": 3.102300000000014,
+          "treeNodes": 4287,
+          "treeAllocatedBytes": 1170576,
+          "totalStepMs": 198.5039999999999,
+          "integrationAndBookkeepingMs": 0.12239999999997053,
+          "traversalValidationAndClearMs": 195.27929999999992,
+          "effectiveProcessCores": 0.7909160520694801
+        },
+        {
+          "forceMs": 198.13080000000014,
+          "treeBuildMs": 2.460800000000063,
+          "treeNodes": 4285,
+          "treeAllocatedBytes": 1170576,
+          "totalStepMs": 198.25070000000005,
+          "integrationAndBookkeepingMs": 0.11989999999991596,
+          "traversalValidationAndClearMs": 195.67000000000007,
+          "effectiveProcessCores": 1.0239560314288925
+        },
+        {
+          "forceMs": 198.1178,
+          "treeBuildMs": 2.3514999999999873,
+          "treeNodes": 4301,
+          "treeAllocatedBytes": 1170576,
+          "totalStepMs": 198.24609999999984,
+          "integrationAndBookkeepingMs": 0.12829999999985375,
+          "traversalValidationAndClearMs": 195.7663,
+          "effectiveProcessCores": 0.9483162594371347
+        }
+      ],
+      "medianStepMs": 198.25070000000005,
+      "treeBuildMs": 2.460800000000063,
+      "forceTraversalValidationMs": 195.67000000000007,
+      "leapfrogOtherMs": 0.12239999999997053,
+      "effectiveProcessCores": 0.9483162594371347,
+      "diagnostics": {
+        "fastEnergyFirstMs": 207.6099999999999,
+        "fastEnergyRepeatedMs": 208.94720000000007,
+        "structureMs": 123.76159999999982,
+        "rotationFieldMs": 80.70070000000032,
+        "packFloat32Ms": 0.12860000000000582,
+        "copySnapshotMs": 0.1643000000003667,
+        "cloneStructuredDiagnosticMs": 0.8314999999997781,
+        "directFloat64Ms": 204.92849999999999,
+        "directPairs": 49995000,
+        "energyDirectSkipped": null
+      },
+      "finite": true
+    },
+    {
+      "baseN": 24000,
+      "haloRefinement": 1,
+      "n": 24000,
+      "counts": [
+        3600,
+        10800,
+        9600
+      ],
+      "initialHashes": {
+        "positions": "c920507d3e154cc864255cbc82306156d2c9aa12ce731f81fcf8466699d38ea5",
+        "velocities": "1fda94843a549334f67c159fbd86386459f8a4e5857ff3a13e2b474eef8faec1",
+        "masses": "25eb25552725878bf232abc98ff298139f8ded5ad24efa9d9e4cf8ed144dce0c"
+      },
+      "initializationMs": 50.7194999999997,
+      "stateCloneMs": 1.0363999999999578,
+      "initialForceMs": 604.3062,
+      "steps": 4,
+      "timeMyr": 0.4,
+      "samples": [
+        {
+          "forceMs": 592.9997000000003,
+          "treeBuildMs": 6.911899999999605,
+          "treeNodes": 10117,
+          "treeAllocatedBytes": 2008896,
+          "totalStepMs": 594.0981000000002,
+          "integrationAndBookkeepingMs": 1.098399999999856,
+          "traversalValidationAndClearMs": 586.0878000000007,
+          "effectiveProcessCores": 1.026766454900293
+        },
+        {
+          "forceMs": 595.3590999999997,
+          "treeBuildMs": 6.711099999999533,
+          "treeNodes": 10147,
+          "treeAllocatedBytes": 2008896,
+          "totalStepMs": 595.5115999999998,
+          "integrationAndBookkeepingMs": 0.15250000000014552,
+          "traversalValidationAndClearMs": 588.6480000000001,
+          "effectiveProcessCores": 0.9974616783283485
+        },
+        {
+          "forceMs": 595.8665999999994,
+          "treeBuildMs": 6.7454000000007,
+          "treeNodes": 10143,
+          "treeAllocatedBytes": 2008896,
+          "totalStepMs": 596.1495999999997,
+          "integrationAndBookkeepingMs": 0.2830000000003565,
+          "traversalValidationAndClearMs": 589.1211999999987,
+          "effectiveProcessCores": 1.0198782319068909
+        }
+      ],
+      "medianStepMs": 595.5115999999998,
+      "treeBuildMs": 6.7454000000007,
+      "forceTraversalValidationMs": 588.6480000000001,
+      "leapfrogOtherMs": 0.2830000000003565,
+      "effectiveProcessCores": 1.0198782319068909,
+      "diagnostics": {
+        "fastEnergyFirstMs": 641.6066000000001,
+        "fastEnergyRepeatedMs": 604.9366,
+        "structureMs": 313.90590000000066,
+        "rotationFieldMs": 158.10629999999946,
+        "packFloat32Ms": 1.64259999999922,
+        "copySnapshotMs": 0.2588000000005195,
+        "cloneStructuredDiagnosticMs": 0.8275000000003274,
+        "directFloat64Ms": null,
+        "directPairs": 287988000,
+        "energyDirectSkipped": "Full direct energy at large N measured separately; never inserted in every physics step."
+      },
+      "finite": true
+    },
+    {
+      "baseN": 80000,
+      "haloRefinement": 1,
+      "n": 80000,
+      "counts": [
+        12000,
+        36000,
+        32000
+      ],
+      "initialHashes": {
+        "positions": "76ee2644bc0f396dee752b0ca85e6aed5de039a940a962e1a1b36a4926f32e13",
+        "velocities": "a095bb51d4c6b142777278ee772b8ccd8f15324d172b55bcd0da881f5e86418c",
+        "masses": "a3cd796214f69302c6208aa5a64a3bbb8717e1f6a06e8e1639ccf43a3dcc7792"
+      },
+      "initializationMs": 98.19669999999951,
+      "stateCloneMs": 3.2408000000004904,
+      "initialForceMs": 2423.3337999999994,
+      "steps": 4,
+      "timeMyr": 0.4,
+      "samples": [
+        {
+          "forceMs": 2396.2273000000005,
+          "treeBuildMs": 26.495899999999892,
+          "treeNodes": 34241,
+          "treeAllocatedBytes": 7841856,
+          "totalStepMs": 2396.7194999999992,
+          "integrationAndBookkeepingMs": 0.49219999999877473,
+          "traversalValidationAndClearMs": 2369.7314000000006,
+          "effectiveProcessCores": 1.00387216776932
+        },
+        {
+          "forceMs": 2487.6965,
+          "treeBuildMs": 91.91609999999855,
+          "treeNodes": 34103,
+          "treeAllocatedBytes": 7841856,
+          "totalStepMs": 2488.211800000001,
+          "integrationAndBookkeepingMs": 0.5153000000009342,
+          "traversalValidationAndClearMs": 2395.7804000000015,
+          "effectiveProcessCores": 0.985848551960086
+        },
+        {
+          "forceMs": 2443.8278000000028,
+          "treeBuildMs": 89.99109999999928,
+          "treeNodes": 34195,
+          "treeAllocatedBytes": 7841856,
+          "totalStepMs": 2444.3106000000007,
+          "integrationAndBookkeepingMs": 0.4827999999979511,
+          "traversalValidationAndClearMs": 2353.8367000000035,
+          "effectiveProcessCores": 0.997418249546518
+        }
+      ],
+      "medianStepMs": 2444.3106000000007,
+      "treeBuildMs": 89.99109999999928,
+      "forceTraversalValidationMs": 2369.7314000000006,
+      "leapfrogOtherMs": 0.49219999999877473,
+      "effectiveProcessCores": 0.997418249546518,
+      "diagnostics": {
+        "fastEnergyFirstMs": 2396.4958000000006,
+        "fastEnergyRepeatedMs": 2377.149300000001,
+        "structureMs": 871.3709999999992,
+        "rotationFieldMs": 504.432499999999,
+        "packFloat32Ms": 0.3499999999985448,
+        "copySnapshotMs": 0.6989999999968859,
+        "cloneStructuredDiagnosticMs": 0.8980999999985215,
+        "directFloat64Ms": null,
+        "directPairs": 3199960000,
+        "energyDirectSkipped": "Full direct energy at large N measured separately; never inserted in every physics step."
+      },
+      "finite": true
+    },
+    {
+      "baseN": 40000,
+      "haloRefinement": 32,
+      "n": 536000,
+      "counts": [
+        6000,
+        18000,
+        512000
+      ],
+      "initialHashes": {
+        "positions": "d0003d7227bf56bfda4b0f80628d93327dfccfc9ad0d5416cf431e0c08789736",
+        "velocities": "76e3c03d776c9e971851528b3522f9f08daded3b25802b67977a55fbfd855c04",
+        "masses": "3b4b0e37c0f1b96b359a47fdb8045742485264498eea8988e9a81171f8058889"
+      },
+      "initializationMs": 1244.3546999999999,
+      "stateCloneMs": 19.05949999999939,
+      "initialForceMs": 15605.817,
+      "steps": 4,
+      "timeMyr": 0.4,
+      "samples": [
+        {
+          "forceMs": 15475.0472,
+          "treeBuildMs": 201.14110000000073,
+          "treeNodes": 228699,
+          "treeAllocatedBytes": 33957696,
+          "totalStepMs": 15478.292300000008,
+          "integrationAndBookkeepingMs": 3.245100000007369,
+          "traversalValidationAndClearMs": 15273.9061,
+          "effectiveProcessCores": 0.9942957337741962
+        },
+        {
+          "forceMs": 15361.968300000008,
+          "treeBuildMs": 207.82069999999658,
+          "treeNodes": 228521,
+          "treeAllocatedBytes": 33957696,
+          "totalStepMs": 15365.326499999996,
+          "integrationAndBookkeepingMs": 3.3581999999878462,
+          "traversalValidationAndClearMs": 15154.147600000011,
+          "effectiveProcessCores": 0.9955532022049778
+        },
+        {
+          "forceMs": 15413.998900000006,
+          "treeBuildMs": 200.95140000000538,
+          "treeNodes": 228617,
+          "treeAllocatedBytes": 33957696,
+          "totalStepMs": 15417.293900000004,
+          "integrationAndBookkeepingMs": 3.2949999999982538,
+          "traversalValidationAndClearMs": 15213.0475,
+          "effectiveProcessCores": 0.9992674525066941
+        }
+      ],
+      "medianStepMs": 15417.293900000004,
+      "treeBuildMs": 201.14110000000073,
+      "forceTraversalValidationMs": 15213.0475,
+      "leapfrogOtherMs": 3.2949999999982538,
+      "effectiveProcessCores": 0.9955532022049778,
+      "diagnostics": {
+        "fastEnergyFirstMs": 15398.819000000003,
+        "fastEnergyRepeatedMs": 15479.84510000002,
+        "structureMs": 3225.351800000004,
+        "rotationFieldMs": 3587.130899999989,
+        "packFloat32Ms": 4.534600000013597,
+        "copySnapshotMs": 6.44529999999213,
+        "cloneStructuredDiagnosticMs": 0.8568999999843072,
+        "directFloat64Ms": null,
+        "directPairs": 143647732000,
+        "energyDirectSkipped": "Full direct energy at large N measured separately; never inserted in every physics step."
+      },
+      "finite": true
+    }
+  ],
+  "completedUTC": "2026-10-22T05:44:21.361Z"
+}

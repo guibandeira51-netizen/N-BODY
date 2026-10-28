@@ -1,0 +1,23 @@
+{
+  "physicsFiles": 63,
+  "changedPhysicsFiles": [],
+  "tests": 236,
+  "gpuCheckPassed": true,
+  "identity": "continuous-active-count-density-v4",
+  "sha256": "146d4506a66ab4f604739d16df932773b86f71878344cb92b64d6522219afa01",
+  "buildPassed": true,
+  "sourceAndDistIdentityMismatches": [],
+  "browser": {
+    "continuousDensityVisible": true,
+    "counts": "bojo 19.999 · disco 60.001 · halo 0",
+    "diagnostic": "Diagnóstico em 0.700 Myr.",
+    "input": 80000,
+    "inputLabel": "Partículas · bojo + disco",
+    "integrated": "80.000",
+    "opacity": "55",
+    "physicalTime": "0.70 Myr",
+    "status": "Simulação pausada.",
+    "steps": "7",
+    "errors": []
+  }
+}

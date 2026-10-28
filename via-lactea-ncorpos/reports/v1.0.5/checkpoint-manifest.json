@@ -1,0 +1,90 @@
+{
+  "files": [
+    {
+      "path": "reports/v1.0.5/checkpoints/B-bulge2-s2026-baryon200.json",
+      "sha256": "b5f57afec008543262041495805bd7d8fdafb3c93a79454ef5dabaaa1547383d",
+      "bytes": 2485968
+    },
+    {
+      "path": "reports/v1.0.5/checkpoints/B-bulge2-s2027-baryon200.json",
+      "sha256": "4c7521289de31b8eefd2e00d044cc5e13e4b93833840e209ccd0a85b2e110afd",
+      "bytes": 2486506
+    },
+    {
+      "path": "reports/v1.0.5/checkpoints/B-bulge2-s2028-baryon200.json",
+      "sha256": "8fa92e7b08f52c8d7418565cc606fbe0eb6b34aee3fc6f2861f453f84330c114",
+      "bytes": 2486440
+    },
+    {
+      "path": "reports/v1.0.5/checkpoints/B-MIX-s2026-t200.json",
+      "sha256": "17231e9a1d93f6f5741ddb1234eaaa79205305df580f48b2b72a98111d05350b",
+      "bytes": 2164992
+    },
+    {
+      "path": "reports/v1.0.5/checkpoints/B-MIX-s2027-t200.json",
+      "sha256": "c503eb5356e7ab47e2d03980baf1a57e9f3012c1ab4a1a5ef1cd0248f4b86801",
+      "bytes": 2165123
+    },
+    {
+      "path": "reports/v1.0.5/checkpoints/B-MIX-s2028-t200.json",
+      "sha256": "68fddbbbafc58106e8db367214346bd37d4afa0a418eb6e0abf0b16b882faa7f",
+      "bytes": 2165512
+    },
+    {
+      "path": "reports/v1.0.5/checkpoints/B-thick2-s2026-baryon200.json",
+      "sha256": "609493ea3a9d5b507cb4feec4bceb3f398e9912a1cc16fb90751c8544510c4fb",
+      "bytes": 2367472
+    },
+    {
+      "path": "reports/v1.0.5/checkpoints/B-thick2-s2027-baryon200.json",
+      "sha256": "1a8faf2b1348f8c1274e80e4b95ebafa63d9838b23732fd4259b20ab68e836ff",
+      "bytes": 2368269
+    },
+    {
+      "path": "reports/v1.0.5/checkpoints/B-thick2-s2028-baryon200.json",
+      "sha256": "e7066cec5c2b70eaf64f13da1f5a24c93162b3c89a3c28f35b73421e6091142f",
+      "bytes": 2367797
+    },
+    {
+      "path": "reports/v1.0.5/checkpoints/B-thin2-s2026-baryon200.json",
+      "sha256": "67076311e901bd3c960df3ce88ef78695f0cdc58a10727540c8aa7bd2335aa1a",
+      "bytes": 3674978
+    },
+    {
+      "path": "reports/v1.0.5/checkpoints/B-thin2-s2027-baryon200.json",
+      "sha256": "d946b26093597f9ba62dcc4ca5a000aa070b8a1df3a311e3f3899ed2509e6b42",
+      "bytes": 3675604
+    },
+    {
+      "path": "reports/v1.0.5/checkpoints/B-thin2-s2028-baryon200.json",
+      "sha256": "6c6ae4930a2acbc9ef8384d37bb8cc29a0a639b5c2c17c3a37acbdc9cc6f7735",
+      "bytes": 3675298
+    },
+    {
+      "path": "reports/v1.0.5/checkpoints/E-b2026-h2027-halo-E200.json",
+      "sha256": "acfdf8de08ddb3479f36e47c6b283db0bbc306687c0db4f79fc5e2db290222b5",
+      "bytes": 19321460
+    },
+    {
+      "path": "reports/v1.0.5/checkpoints/E-b2026-h2028-halo-E200.json",
+      "sha256": "2b818404474d464e8d46f851f6082848a8d3298127e17b636fa21a03c36e4bb8",
+      "bytes": 19322224
+    },
+    {
+      "path": "reports/v1.0.5/checkpoints/F-b2026-h2026-halo-F200.json",
+      "sha256": "fcd0f9fbc4f0614c6985a8f9f668fa15a49678cc5fc3640cb1499e8cd8b8465e",
+      "bytes": 36464073
+    },
+    {
+      "path": "reports/v1.0.5/checkpoints/F-b2026-h2027-halo-F200.json",
+      "sha256": "1b607eee0068f4f9c93504b0c86725dc905c8bd51c50c1dc16e2f00eb60f0aa5",
+      "bytes": 36463273
+    },
+    {
+      "path": "reports/v1.0.5/checkpoints/F-b2026-h2028-halo-F200.json",
+      "sha256": "5e3e996b7479c5efb2d1baa540070a8e06801a6ac492e5bdf9e4bdd9501ceda4",
+      "bytes": 36460947
+    }
+  ],
+  "qualification": "Latest partial checkpoints remain intact locally; completed runs and native trajectories are included. Baseline history hashes cover prior versions that remain available in their own preserved full packages. This ZIP is a supplement, not a repackaging of every historical release."
+}

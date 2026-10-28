@@ -1,0 +1,49 @@
+{
+  "UTC": "2026-10-16T04:03:11.931Z",
+  "additionalRuns": 6,
+  "evidenceBeforeExtension": {
+    "base": {
+      "stage": "baryons200",
+      "group": "null",
+      "nRuns": 3,
+      "ids": [
+        "B-base-s2026-t200",
+        "B-base-s2027-t200",
+        "B-base-s2028-t200"
+      ],
+      "nh": 0,
+      "refinedPopulation": null,
+      "globalGrowthMean": 13.46105032055808,
+      "globalGrowthSD": 6.8217036094508305,
+      "thinGrowthMean": 15.30543792175115,
+      "thinGrowthSD": 10.510237702334413,
+      "thickGrowthMean": -4.502937601806981,
+      "thickGrowthSD": 0.8933576818562253,
+      "thinSigmaZGrowthMean": 10.158064196467246,
+      "thinSigmaZGrowthSD": 2.21501403718821,
+      "meanWallSeconds": 15.709524999996026
+    },
+    "thickRefined": {
+      "stage": "baryons200",
+      "group": "2",
+      "nRuns": 3,
+      "ids": [
+        "B-thick2-s2026-t200",
+        "B-thick2-s2027-t200",
+        "B-thick2-s2028-t200"
+      ],
+      "nh": 0,
+      "refinedPopulation": 2,
+      "globalGrowthMean": 13.923863715750356,
+      "globalGrowthSD": 6.101860530039893,
+      "thinGrowthMean": 15.618398821243415,
+      "thinGrowthSD": 7.713567792783236,
+      "thickGrowthMean": -1.2987558225572664,
+      "thickGrowthSD": 0.3020737745233428,
+      "thinSigmaZGrowthMean": 9.867380489833021,
+      "thinSigmaZGrowthSD": 2.1190848594925162,
+      "meanWallSeconds": 18.880801666667065
+    }
+  },
+  "reason": "The thick2 variant selected from short kinematics did not reduce the observed200Myr thickness residual. Complete bulge2/thin2 fixed-halo contrasts, all3 seeds, to isolate baryonic resolution rather than infer a dominant cause prematurely. These are small N=7500/9546, measured short costs about13/20seconds; same direct force,dt,epsilon and no1Gyr campaign yet."
+}

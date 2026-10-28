@@ -1,0 +1,31 @@
+{
+  "path": "C:\\Users\\PC\\Desktop\\laboratorio-estabilidade (2).zip",
+  "zipSha256": "afd1e34eae63b234f28737c7fd8bdba137315c9d9907e93910dfe65db6ef4b2a",
+  "rawJsonSha256": "9225ec41e360c447e9aa633ba0e185ea6706dda51b946daad576a88e71558393",
+  "version": "0.8.0",
+  "codeSha256": "8600c6814b20b2d3e1c221ec59d69b5b4c027528aa04f377440a023608538e86",
+  "configuration": {
+    "n": 50000,
+    "dt": 0.1,
+    "epsilon": 0.1,
+    "theta": 0.5,
+    "budgetBytes": 536870912,
+    "seed": 2026,
+    "withHalo": true,
+    "requestedAlgorithm": "auto",
+    "requestedBackend": "auto",
+    "selected": "gpu",
+    "diagnosticOptions": {
+      "withHalo": true,
+      "forceMethod": "GPU direct f32",
+      "algorithm": "barnes-hut",
+      "epsilon": 0.1,
+      "theta": 0.5
+    }
+  },
+  "timeMyr": 2540.399999998785,
+  "heightChangePercent": 483.8498533994929,
+  "bulgeRadiusChangePercent": 47.09289666959899,
+  "tiltDegrees": 2.867570442919057,
+  "sampleCount": 19
+}

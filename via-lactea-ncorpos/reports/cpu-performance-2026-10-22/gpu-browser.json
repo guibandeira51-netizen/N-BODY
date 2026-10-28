@@ -1,0 +1,122 @@
+{
+  "type": "result",
+  "results": [
+    {
+      "baseN": 10000,
+      "haloRefinement": 1,
+      "n": 10000,
+      "options": {
+        "seed": 2026,
+        "withHalo": true,
+        "dt": 0.1,
+        "epsilon": 0.1,
+        "theta": 0.5,
+        "budgetBytes": 536870912
+      },
+      "effectiveParameters": {
+        "dt": 0.10000000149011612,
+        "epsilonSquared": 0.009999999776482582,
+        "G": 0.04498502239584923,
+        "precision": "f32"
+      },
+      "backend": "WebGPU direct Float32",
+      "initialUploadAndForceMs": 10.41499999910593,
+      "initialReadbackMs": 5.094999998807907,
+      "finalReadbackMs": 5.0150000005960464,
+      "steps": 4,
+      "timeMyr": 0.4000000059604645,
+      "samples": [
+        3.0850000008940697,
+        3.024999998509884,
+        2.7049999982118607
+      ],
+      "medianStepMs": 3.024999998509884,
+      "finite": true,
+      "forceReference": {
+        "targets": 96,
+        "relativeL2": 0.000001972906991974777,
+        "maximumTargetRelative": 0.000005595783686791277,
+        "scope": "96 stratified direct Float64 target probes on the same GPU-quantized initial state, effective G and epsilon²; no global bound"
+      },
+      "timing": "Warmup one full KDK step; median three steps including submit/queue completion, excluding readback, diagnostics and rendering."
+    },
+    {
+      "baseN": 80000,
+      "haloRefinement": 1,
+      "n": 80000,
+      "options": {
+        "seed": 2026,
+        "withHalo": true,
+        "dt": 0.1,
+        "epsilon": 0.1,
+        "theta": 0.5,
+        "budgetBytes": 536870912
+      },
+      "effectiveParameters": {
+        "dt": 0.10000000149011612,
+        "epsilonSquared": 0.009999999776482582,
+        "G": 0.04498502239584923,
+        "precision": "f32"
+      },
+      "backend": "WebGPU direct Float32",
+      "initialUploadAndForceMs": 65.41000000014901,
+      "initialReadbackMs": 12.800000000745058,
+      "finalReadbackMs": 13.399999998509884,
+      "steps": 4,
+      "timeMyr": 0.4000000059604645,
+      "samples": [
+        45.83999999985099,
+        46.064999997615814,
+        42.519999999552965
+      ],
+      "medianStepMs": 45.83999999985099,
+      "finite": true,
+      "forceReference": {
+        "targets": 96,
+        "relativeL2": 0.000010773333032967489,
+        "maximumTargetRelative": 0.00002171658230162051,
+        "scope": "96 stratified direct Float64 target probes on the same GPU-quantized initial state, effective G and epsilon²; no global bound"
+      },
+      "timing": "Warmup one full KDK step; median three steps including submit/queue completion, excluding readback, diagnostics and rendering."
+    },
+    {
+      "baseN": 40000,
+      "haloRefinement": 32,
+      "n": 536000,
+      "options": {
+        "seed": 2026,
+        "withHalo": true,
+        "dt": 0.1,
+        "epsilon": 0.1,
+        "theta": 0.5,
+        "budgetBytes": 536870912
+      },
+      "effectiveParameters": {
+        "dt": 0.10000000149011612,
+        "epsilonSquared": 0.009999999776482582,
+        "G": 0.04498502239584923,
+        "precision": "f32"
+      },
+      "backend": "WebGPU direct Float32",
+      "initialUploadAndForceMs": 1318.050000000745,
+      "initialReadbackMs": 66.66499999910593,
+      "finalReadbackMs": 54.94500000029802,
+      "steps": 4,
+      "timeMyr": 0.4000000059604645,
+      "samples": [
+        1047.6650000028312,
+        1044.675000000745,
+        1045.425000000745
+      ],
+      "medianStepMs": 1045.425000000745,
+      "finite": true,
+      "forceReference": {
+        "targets": 96,
+        "relativeL2": 0.000041300002467582366,
+        "maximumTargetRelative": 0.00012820219686369573,
+        "scope": "96 stratified direct Float64 target probes on the same GPU-quantized initial state, effective G and epsilon²; no global bound"
+      },
+      "timing": "Warmup one full KDK step; median three steps including submit/queue completion, excluding readback, diagnostics and rendering."
+    }
+  ]
+}

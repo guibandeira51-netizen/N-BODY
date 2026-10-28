@@ -1,0 +1,142 @@
+{
+  "status": "passed",
+  "UTC": "2026-10-16T16:06:01.625Z",
+  "physicsAuditSHA256": "fa852228bed20ccf2cd644f7a70fb7d4df94af1445c1d2549f453d510cc3d378",
+  "unchangedPhysicalRuns": 34,
+  "figures": 11,
+  "outputs": [
+    {
+      "path": "reports/v1.0.4/figures/01-fino-quatro-familias.png",
+      "sha256": "d0c851313fc8bc94fa6813797b053fa23610af383b58158a3c6cc718f7393734"
+    },
+    {
+      "path": "reports/v1.0.4/figures/01-fino-quatro-familias.svg",
+      "sha256": "e142c666b84a1b484a19eb45ab9f2919d5126b00f340883e4ed0d5eb69fa4735"
+    },
+    {
+      "path": "reports/v1.0.4/figures/01-fino-quatro-familias.csv",
+      "sha256": "ef574a9ca6c919a625b183b7d5a43f76c6c45782f4ef841b3bb350b1177f743d"
+    },
+    {
+      "path": "reports/v1.0.4/figures/02-espesso-global.png",
+      "sha256": "db06e8eb6f0ee178771827d95f0b72018790923116360c9b97494b3f012582a4"
+    },
+    {
+      "path": "reports/v1.0.4/figures/02-espesso-global.svg",
+      "sha256": "dca03d847a80f633c67da10a1fb745a13b3bd08431e7c8f9ab2c383f6fad9f5d"
+    },
+    {
+      "path": "reports/v1.0.4/figures/02-espesso-global.csv",
+      "sha256": "555bede10ba8c090f3c06b21d13821f2b2612280b6e92a1a5937b81e38b41b1b"
+    },
+    {
+      "path": "reports/v1.0.4/figures/03-dispersoes.png",
+      "sha256": "c898e6e59f30dadd8c3e64393837940bdfc01b2f327a5ebbe14e9d11e12f08a0"
+    },
+    {
+      "path": "reports/v1.0.4/figures/03-dispersoes.svg",
+      "sha256": "c3abe7003e469e515f0bb1ab0abf4f86bf420cb9964de074a17ff56267c816fb"
+    },
+    {
+      "path": "reports/v1.0.4/figures/03-dispersoes.csv",
+      "sha256": "b4ba3685aa9e2f1025150e1d8b9e1028a4fe1ffa417906ede44cd03d50435370"
+    },
+    {
+      "path": "reports/v1.0.4/figures/04-taxa-massa-resolucao.png",
+      "sha256": "67de2adc037d64c16c7967f4304513967b7ed5f7dd06e1375490ed56d9a91af7"
+    },
+    {
+      "path": "reports/v1.0.4/figures/04-taxa-massa-resolucao.svg",
+      "sha256": "fc2291624784b2d7f6af0ce0efcb8bcaff0d6c28900ee88cea6a307f58322929"
+    },
+    {
+      "path": "reports/v1.0.4/figures/04-taxa-massa-resolucao.csv",
+      "sha256": "5d6d2b0d321dac7f09190a3ff3ddc9aa2aeb9ada4f1c0380f93385cc37833dd3"
+    },
+    {
+      "path": "reports/v1.0.4/figures/05-contrastes-controles.png",
+      "sha256": "0703eba1758eceab48d727579116f6964ff0f822073864757d1f2274a0826dd1"
+    },
+    {
+      "path": "reports/v1.0.4/figures/05-contrastes-controles.svg",
+      "sha256": "72625a051353f08a318a019be095d80770081a3057e02e37c97f8dfe977457b8"
+    },
+    {
+      "path": "reports/v1.0.4/figures/05-contrastes-controles.csv",
+      "sha256": "c82558ff58a9e8e65a90480f655baed2d93120aa4da86f5d15b3d2d7e75f6eb3"
+    },
+    {
+      "path": "reports/v1.0.4/figures/06-variabilidade.png",
+      "sha256": "affea18fb39891910833303f34eb8c8380b442fb01356c334d640e5d557d27e1"
+    },
+    {
+      "path": "reports/v1.0.4/figures/06-variabilidade.svg",
+      "sha256": "0b850690bc6c2c15242a836cf9e08954502b34d808642c5dffaad5276e248a28"
+    },
+    {
+      "path": "reports/v1.0.4/figures/06-variabilidade.csv",
+      "sha256": "2a063f29f5cd2a4c36d16d2abaaa646d551c525fdfe2bceaee70250be98521ce"
+    },
+    {
+      "path": "reports/v1.0.4/figures/07-perfis-densidade.png",
+      "sha256": "683a2af4a6bed903f19b7c9f6fdd64e7651aba25abab506138d6b0871ff9a7a2"
+    },
+    {
+      "path": "reports/v1.0.4/figures/07-perfis-densidade.svg",
+      "sha256": "7cd2958c35a56418eeabb8e4a252d70f95cac9dca4cc01ce7c15939b8e8d1c32"
+    },
+    {
+      "path": "reports/v1.0.4/figures/07-perfis-densidade.csv",
+      "sha256": "0c6df54a0421384922a129cecacbad551a684d051231fc802650719e91ba5c3f"
+    },
+    {
+      "path": "reports/v1.0.4/figures/08-modos-coletivos.png",
+      "sha256": "214ab7a73927f0507ddb70f082eb43dcb14876a9d9fcd2458df65c06ea6ff159"
+    },
+    {
+      "path": "reports/v1.0.4/figures/08-modos-coletivos.svg",
+      "sha256": "2203bb36795059a412d8b7746802873656f3c4e4023ab1cdd66ef9b45a5d3811"
+    },
+    {
+      "path": "reports/v1.0.4/figures/08-modos-coletivos.csv",
+      "sha256": "2b318899fb978026aa266a0e052a4eba473a3684105c1e4aae3f249f90cffab1"
+    },
+    {
+      "path": "reports/v1.0.4/figures/09-energia-momentos.png",
+      "sha256": "518fb2986f1d16bac446294cc6b0128c4cccbe6da87ed762029cac607b6aa6ed"
+    },
+    {
+      "path": "reports/v1.0.4/figures/09-energia-momentos.svg",
+      "sha256": "b4d1db88368b334d00fe1e131ace19c2645a7f8af290f3276cf7425483a8301e"
+    },
+    {
+      "path": "reports/v1.0.4/figures/09-energia-momentos.csv",
+      "sha256": "74464139f00c6b7e34f090f0358e64bce55bbdc2968038756d530d6e88cf4434"
+    },
+    {
+      "path": "reports/v1.0.4/figures/10-convergencia.png",
+      "sha256": "6a5428f5af44caabad09026690c6e507adb8ada83c4250390ec579b8f1465595"
+    },
+    {
+      "path": "reports/v1.0.4/figures/10-convergencia.svg",
+      "sha256": "294f02b6115163576d23d11475d40f054f6e1647265e8df21c8f3911d233ef77"
+    },
+    {
+      "path": "reports/v1.0.4/figures/10-convergencia.csv",
+      "sha256": "be8303fb709027bc3b4b3c482b27ae1ace6a8e6e5034d9343cb7de842e065464"
+    },
+    {
+      "path": "reports/v1.0.4/figures/11-migracao-coortes.png",
+      "sha256": "7605232b916b519181ff2f5c9496865011dcc6d1138cc3e09e6b54ff477840f7"
+    },
+    {
+      "path": "reports/v1.0.4/figures/11-migracao-coortes.svg",
+      "sha256": "7dafdfb149ab2cd6150f1b0a83c32232467612cd0105b6ffeadbfec6be5c1bb6"
+    },
+    {
+      "path": "reports/v1.0.4/figures/11-migracao-coortes.csv",
+      "sha256": "ab8f1bba683f6b62a37007c80cfa78c8c14753b621daead5c181b9cfabdf3a7a"
+    }
+  ],
+  "qualification": "Final typography/legend revision only; underlying34 measured trajectories unchanged, all figure sources and plotted-point CSV hashes verified. Physical energy/force audit remains applicable."
+}

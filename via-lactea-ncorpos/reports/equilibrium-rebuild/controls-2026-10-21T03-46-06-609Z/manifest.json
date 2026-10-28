@@ -1,0 +1,574 @@
+{
+  "schema": "equilibrium-rebuild-controls-v1",
+  "createdUTC": "2026-10-21T03:46:06.611Z",
+  "library": {
+    "id": "orbits-1024-s44-p8-2026-10-21T03-42-28-070Z",
+    "path": "reports/equilibrium-rebuild/orbits-1024-s44-p8-2026-10-21T03-42-28-070Z",
+    "library": "reports/equilibrium-rebuild/orbits-1024-s44-p8-2026-10-21T03-42-28-070Z/library.json",
+    "sha256": "425e78d31d701d7c1c91e8b10e8fcf1757dd9278e0232fb79fc31ea97b320737"
+  },
+  "field": "reports/equilibrium-rebuild/2026-10-21T03-39-56-668Z/field-grid.json",
+  "epsilon": 0.1,
+  "backend": "CPU direct Float64",
+  "qualification": "Rejection/characterization controls. Candidate density/stationarity not certified; no automatic promotion. N/halo studies short, epsilon convergence requires rebuilding the DF and remains gated.",
+  "runs": [
+    {
+      "id": "legacy-fixed-total-c60-180-160-s2026-dt0.1-t200",
+      "file": "legacy-fixed-total-c60-180-160-s2026-dt0.1-t200.json",
+      "config": {
+        "seed": 2026,
+        "generator": "legacy",
+        "control": "fixed-total",
+        "counts": [
+          60,
+          180,
+          160
+        ],
+        "dt": 0.1,
+        "duration": 200,
+        "stride": 10
+      },
+      "wallMs": 12423.8737,
+      "initialH50": 0.2324855209890173,
+      "finalH50": 0.1905025736922644,
+      "maxSampledEnergyPercent": 0.00007667604049537517
+    },
+    {
+      "id": "legacy-disk-live-c60-180-160-s2026-dt0.1-t200",
+      "file": "legacy-disk-live-c60-180-160-s2026-dt0.1-t200.json",
+      "config": {
+        "seed": 2026,
+        "generator": "legacy",
+        "control": "disk-live",
+        "counts": [
+          60,
+          180,
+          160
+        ],
+        "dt": 0.1,
+        "duration": 200,
+        "stride": 10
+      },
+      "wallMs": 531.4603000000006,
+      "initialH50": 0.2324855209890173,
+      "finalH50": 0.3338709223100163,
+      "maxSampledEnergyPercent": 0.0021591057222843948
+    },
+    {
+      "id": "legacy-all-live-c60-180-160-s2026-dt0.1-t200",
+      "file": "legacy-all-live-c60-180-160-s2026-dt0.1-t200.json",
+      "config": {
+        "seed": 2026,
+        "generator": "legacy",
+        "control": "all-live",
+        "counts": [
+          60,
+          180,
+          160
+        ],
+        "dt": 0.1,
+        "duration": 200,
+        "stride": 10
+      },
+      "wallMs": 1359.9941999999992,
+      "initialH50": 0.2324855209890173,
+      "finalH50": 2.414987568330355,
+      "maxSampledEnergyPercent": 0.422205927941678
+    },
+    {
+      "id": "candidate-fixed-total-c60-180-160-s2026-dt0.1-t200",
+      "file": "candidate-fixed-total-c60-180-160-s2026-dt0.1-t200.json",
+      "config": {
+        "seed": 2026,
+        "generator": "candidate",
+        "control": "fixed-total",
+        "counts": [
+          60,
+          180,
+          160
+        ],
+        "dt": 0.1,
+        "duration": 200,
+        "stride": 10
+      },
+      "wallMs": 306.9940000000006,
+      "initialH50": 0.17908872813532034,
+      "finalH50": 0.17010046143114846,
+      "maxSampledEnergyPercent": 0.00016595958176949038
+    },
+    {
+      "id": "candidate-disk-live-c60-180-160-s2026-dt0.1-t200",
+      "file": "candidate-disk-live-c60-180-160-s2026-dt0.1-t200.json",
+      "config": {
+        "seed": 2026,
+        "generator": "candidate",
+        "control": "disk-live",
+        "counts": [
+          60,
+          180,
+          160
+        ],
+        "dt": 0.1,
+        "duration": 200,
+        "stride": 10
+      },
+      "wallMs": 469.3035,
+      "initialH50": 0.17908872813532034,
+      "finalH50": 0.4334274492424462,
+      "maxSampledEnergyPercent": 0.0030760975192981508
+    },
+    {
+      "id": "candidate-all-live-c60-180-160-s2026-dt0.1-t200",
+      "file": "candidate-all-live-c60-180-160-s2026-dt0.1-t200.json",
+      "config": {
+        "seed": 2026,
+        "generator": "candidate",
+        "control": "all-live",
+        "counts": [
+          60,
+          180,
+          160
+        ],
+        "dt": 0.1,
+        "duration": 200,
+        "stride": 10
+      },
+      "wallMs": 1321.4675000000007,
+      "initialH50": 0.17908872813532034,
+      "finalH50": 1.4665655268701259,
+      "maxSampledEnergyPercent": 0.39846834446589374
+    },
+    {
+      "id": "legacy-fixed-total-c60-180-160-s2027-dt0.1-t200",
+      "file": "legacy-fixed-total-c60-180-160-s2027-dt0.1-t200.json",
+      "config": {
+        "seed": 2027,
+        "generator": "legacy",
+        "control": "fixed-total",
+        "counts": [
+          60,
+          180,
+          160
+        ],
+        "dt": 0.1,
+        "duration": 200,
+        "stride": 10
+      },
+      "wallMs": 11795.39,
+      "initialH50": 0.18609194658501044,
+      "finalH50": 0.17439897130246584,
+      "maxSampledEnergyPercent": 0.000051412257503281185
+    },
+    {
+      "id": "legacy-disk-live-c60-180-160-s2027-dt0.1-t200",
+      "file": "legacy-disk-live-c60-180-160-s2027-dt0.1-t200.json",
+      "config": {
+        "seed": 2027,
+        "generator": "legacy",
+        "control": "disk-live",
+        "counts": [
+          60,
+          180,
+          160
+        ],
+        "dt": 0.1,
+        "duration": 200,
+        "stride": 10
+      },
+      "wallMs": 8206.062799999996,
+      "initialH50": 0.18609194658501044,
+      "finalH50": 0.42295895143938067,
+      "maxSampledEnergyPercent": 0.0031510878108323447
+    },
+    {
+      "id": "legacy-all-live-c60-180-160-s2027-dt0.1-t200",
+      "file": "legacy-all-live-c60-180-160-s2027-dt0.1-t200.json",
+      "config": {
+        "seed": 2027,
+        "generator": "legacy",
+        "control": "all-live",
+        "counts": [
+          60,
+          180,
+          160
+        ],
+        "dt": 0.1,
+        "duration": 200,
+        "stride": 10
+      },
+      "wallMs": 1299.4910000000018,
+      "initialH50": 0.18609194658501044,
+      "finalH50": 2.5224825718603046,
+      "maxSampledEnergyPercent": 0.379991586514504
+    },
+    {
+      "id": "candidate-fixed-total-c60-180-160-s2027-dt0.1-t200",
+      "file": "candidate-fixed-total-c60-180-160-s2027-dt0.1-t200.json",
+      "config": {
+        "seed": 2027,
+        "generator": "candidate",
+        "control": "fixed-total",
+        "counts": [
+          60,
+          180,
+          160
+        ],
+        "dt": 0.1,
+        "duration": 200,
+        "stride": 10
+      },
+      "wallMs": 267.50180000000546,
+      "initialH50": 0.1646371676908921,
+      "finalH50": 0.17857995196414386,
+      "maxSampledEnergyPercent": 0.00003504983092965012
+    },
+    {
+      "id": "candidate-disk-live-c60-180-160-s2027-dt0.1-t200",
+      "file": "candidate-disk-live-c60-180-160-s2027-dt0.1-t200.json",
+      "config": {
+        "seed": 2027,
+        "generator": "candidate",
+        "control": "disk-live",
+        "counts": [
+          60,
+          180,
+          160
+        ],
+        "dt": 0.1,
+        "duration": 200,
+        "stride": 10
+      },
+      "wallMs": 413.5965999999971,
+      "initialH50": 0.1646371676908921,
+      "finalH50": 0.41588509595285317,
+      "maxSampledEnergyPercent": 0.0017337304357999074
+    },
+    {
+      "id": "candidate-all-live-c60-180-160-s2027-dt0.1-t200",
+      "file": "candidate-all-live-c60-180-160-s2027-dt0.1-t200.json",
+      "config": {
+        "seed": 2027,
+        "generator": "candidate",
+        "control": "all-live",
+        "counts": [
+          60,
+          180,
+          160
+        ],
+        "dt": 0.1,
+        "duration": 200,
+        "stride": 10
+      },
+      "wallMs": 1320.0071000000025,
+      "initialH50": 0.1646371676908921,
+      "finalH50": 2.740205517625457,
+      "maxSampledEnergyPercent": 0.24075749456087644
+    },
+    {
+      "id": "legacy-fixed-total-c60-180-160-s2028-dt0.1-t200",
+      "file": "legacy-fixed-total-c60-180-160-s2028-dt0.1-t200.json",
+      "config": {
+        "seed": 2028,
+        "generator": "legacy",
+        "control": "fixed-total",
+        "counts": [
+          60,
+          180,
+          160
+        ],
+        "dt": 0.1,
+        "duration": 200,
+        "stride": 10
+      },
+      "wallMs": 11875.329099999995,
+      "initialH50": 0.13011153392091362,
+      "finalH50": 0.17184683847474175,
+      "maxSampledEnergyPercent": 0.00006607505097350018
+    },
+    {
+      "id": "legacy-disk-live-c60-180-160-s2028-dt0.1-t200",
+      "file": "legacy-disk-live-c60-180-160-s2028-dt0.1-t200.json",
+      "config": {
+        "seed": 2028,
+        "generator": "legacy",
+        "control": "disk-live",
+        "counts": [
+          60,
+          180,
+          160
+        ],
+        "dt": 0.1,
+        "duration": 200,
+        "stride": 10
+      },
+      "wallMs": 8333.076799999995,
+      "initialH50": 0.13011153392091362,
+      "finalH50": 0.4033608197812656,
+      "maxSampledEnergyPercent": 0.0018544320475609968
+    },
+    {
+      "id": "legacy-all-live-c60-180-160-s2028-dt0.1-t200",
+      "file": "legacy-all-live-c60-180-160-s2028-dt0.1-t200.json",
+      "config": {
+        "seed": 2028,
+        "generator": "legacy",
+        "control": "all-live",
+        "counts": [
+          60,
+          180,
+          160
+        ],
+        "dt": 0.1,
+        "duration": 200,
+        "stride": 10
+      },
+      "wallMs": 1266.4628000000012,
+      "initialH50": 0.13011153392091362,
+      "finalH50": 3.560702496374217,
+      "maxSampledEnergyPercent": 0.5720692386110835
+    },
+    {
+      "id": "candidate-fixed-total-c60-180-160-s2028-dt0.1-t200",
+      "file": "candidate-fixed-total-c60-180-160-s2028-dt0.1-t200.json",
+      "config": {
+        "seed": 2028,
+        "generator": "candidate",
+        "control": "fixed-total",
+        "counts": [
+          60,
+          180,
+          160
+        ],
+        "dt": 0.1,
+        "duration": 200,
+        "stride": 10
+      },
+      "wallMs": 257.50679999999556,
+      "initialH50": 0.13870278347972914,
+      "finalH50": 0.18393255620545657,
+      "maxSampledEnergyPercent": 0.00004847553455701657
+    },
+    {
+      "id": "candidate-disk-live-c60-180-160-s2028-dt0.1-t200",
+      "file": "candidate-disk-live-c60-180-160-s2028-dt0.1-t200.json",
+      "config": {
+        "seed": 2028,
+        "generator": "candidate",
+        "control": "disk-live",
+        "counts": [
+          60,
+          180,
+          160
+        ],
+        "dt": 0.1,
+        "duration": 200,
+        "stride": 10
+      },
+      "wallMs": 384.7698999999993,
+      "initialH50": 0.13870278347972914,
+      "finalH50": 0.41987255150058983,
+      "maxSampledEnergyPercent": 0.0014032018340749582
+    },
+    {
+      "id": "candidate-all-live-c60-180-160-s2028-dt0.1-t200",
+      "file": "candidate-all-live-c60-180-160-s2028-dt0.1-t200.json",
+      "config": {
+        "seed": 2028,
+        "generator": "candidate",
+        "control": "all-live",
+        "counts": [
+          60,
+          180,
+          160
+        ],
+        "dt": 0.1,
+        "duration": 200,
+        "stride": 10
+      },
+      "wallMs": 1288.3510000000024,
+      "initialH50": 0.13870278347972914,
+      "finalH50": 2.5958943602763895,
+      "maxSampledEnergyPercent": 0.5794333900528008
+    },
+    {
+      "id": "legacy-all-live-c60-180-160-s2026-dt0.05-t40",
+      "file": "legacy-all-live-c60-180-160-s2026-dt0.05-t40.json",
+      "config": {
+        "seed": 2026,
+        "generator": "legacy",
+        "control": "all-live",
+        "counts": [
+          60,
+          180,
+          160
+        ],
+        "dt": 0.05,
+        "duration": 40,
+        "stride": 2
+      },
+      "wallMs": 568.9391000000032,
+      "initialH50": 0.2324855209890173,
+      "finalH50": 0.9135430384685284,
+      "maxSampledEnergyPercent": 0.00392426255080777
+    },
+    {
+      "id": "legacy-all-live-c60-180-160-s2026-dt0.025-t40",
+      "file": "legacy-all-live-c60-180-160-s2026-dt0.025-t40.json",
+      "config": {
+        "seed": 2026,
+        "generator": "legacy",
+        "control": "all-live",
+        "counts": [
+          60,
+          180,
+          160
+        ],
+        "dt": 0.025,
+        "duration": 40,
+        "stride": 2
+      },
+      "wallMs": 1022.4424999999974,
+      "initialH50": 0.2324855209890173,
+      "finalH50": 0.9114050510245302,
+      "maxSampledEnergyPercent": 0.0009130349830328878
+    },
+    {
+      "id": "legacy-all-live-c120-360-320-s2026-dt0.1-t40",
+      "file": "legacy-all-live-c120-360-320-s2026-dt0.1-t40.json",
+      "config": {
+        "seed": 2026,
+        "generator": "legacy",
+        "control": "all-live",
+        "counts": [
+          120,
+          360,
+          320
+        ],
+        "dt": 0.1,
+        "duration": 40,
+        "stride": 2
+      },
+      "wallMs": 1260.311999999998,
+      "initialH50": 0.18851444520308308,
+      "finalH50": 0.4310665318275696,
+      "maxSampledEnergyPercent": 0.004789487009973206
+    },
+    {
+      "id": "legacy-all-live-c60-180-640-s2026-dt0.1-t40",
+      "file": "legacy-all-live-c60-180-640-s2026-dt0.1-t40.json",
+      "config": {
+        "seed": 2026,
+        "generator": "legacy",
+        "control": "all-live",
+        "counts": [
+          60,
+          180,
+          640
+        ],
+        "dt": 0.1,
+        "duration": 40,
+        "stride": 2
+      },
+      "wallMs": 1390.0980000000127,
+      "initialH50": 0.2324855209890173,
+      "finalH50": 0.40226455022845287,
+      "maxSampledEnergyPercent": 0.0025124648918154503
+    },
+    {
+      "id": "candidate-all-live-c60-180-160-s2026-dt0.05-t40",
+      "file": "candidate-all-live-c60-180-160-s2026-dt0.05-t40.json",
+      "config": {
+        "seed": 2026,
+        "generator": "candidate",
+        "control": "all-live",
+        "counts": [
+          60,
+          180,
+          160
+        ],
+        "dt": 0.05,
+        "duration": 40,
+        "stride": 2
+      },
+      "wallMs": 564.8757000000041,
+      "initialH50": 0.17908872813532034,
+      "finalH50": 0.5502640736965928,
+      "maxSampledEnergyPercent": 0.000259096869322697
+    },
+    {
+      "id": "candidate-all-live-c60-180-160-s2026-dt0.025-t40",
+      "file": "candidate-all-live-c60-180-160-s2026-dt0.025-t40.json",
+      "config": {
+        "seed": 2026,
+        "generator": "candidate",
+        "control": "all-live",
+        "counts": [
+          60,
+          180,
+          160
+        ],
+        "dt": 0.025,
+        "duration": 40,
+        "stride": 2
+      },
+      "wallMs": 1039.6363000000129,
+      "initialH50": 0.17908872813532034,
+      "finalH50": 0.5486692012371625,
+      "maxSampledEnergyPercent": 0.00006389169063822166
+    },
+    {
+      "id": "candidate-all-live-c120-360-320-s2026-dt0.1-t40",
+      "file": "candidate-all-live-c120-360-320-s2026-dt0.1-t40.json",
+      "config": {
+        "seed": 2026,
+        "generator": "candidate",
+        "control": "all-live",
+        "counts": [
+          120,
+          360,
+          320
+        ],
+        "dt": 0.1,
+        "duration": 40,
+        "stride": 2
+      },
+      "wallMs": 1330.4272000000055,
+      "initialH50": 0.15994248750135104,
+      "finalH50": 0.47208287154978007,
+      "maxSampledEnergyPercent": 0.00947901177107147
+    },
+    {
+      "id": "candidate-all-live-c60-180-640-s2026-dt0.1-t40",
+      "file": "candidate-all-live-c60-180-640-s2026-dt0.1-t40.json",
+      "config": {
+        "seed": 2026,
+        "generator": "candidate",
+        "control": "all-live",
+        "counts": [
+          60,
+          180,
+          640
+        ],
+        "dt": 0.1,
+        "duration": 40,
+        "stride": 2
+      },
+      "wallMs": 1397.9005000000034,
+      "initialH50": 0.17908872813532034,
+      "finalH50": 0.22764129677297879,
+      "maxSampledEnergyPercent": 0.0014267677555475592
+    }
+  ],
+  "sourceHashes": {
+    "src/physics/equilibrium-field.js": "034752a5d363fbdf596a827b25ccc0b6d4d24ce6a74f14df1e00228377321a30",
+    "src/physics/orbit-equilibrium.js": "2e0c062cafb2c23d96665f67b017325acc2c71cb1f5040fa0e990bf7e70f8ff0",
+    "src/physics/integrator.js": "5a83b4dcad749e13d438cdde561c7ee19ac6418823cfa5f06257eee3b268b04f",
+    "src/physics/forces.js": "9532d4286c6481d49995ece96e48bd595145c2e2c8a22897520cafa45f862444",
+    "src/physics/constants.js": "4b1c2a1d96453b95c8e57a45f46443083e77d54e1714aadc7d060de0d9aa22ca",
+    "src/compute/gpu.js": "443ab660dbaed0c47e84fc8675ded0c44c8c726852b5315dad84d26037ae58d5",
+    "scripts/equilibrium-rebuild/prepare.mjs": "cde5832bf2b023b1ea227fbb8baaa78031f79c4af66337522852d54bc504d4f9",
+    "scripts/equilibrium-rebuild/run.mjs": "7b8694e7fd9944302c881481b623c59270f80e5b1668ba9d9cf90b4524004209",
+    "scripts/equilibrium-rebuild/controls.mjs": "1fdcfb47a4775519f8147793ad499203231f7b607766121273bde833e8fb90c5"
+  },
+  "completedUTC": "2026-10-21T03:47:18.753Z"
+}

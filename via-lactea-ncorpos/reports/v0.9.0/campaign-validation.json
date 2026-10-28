@@ -1,0 +1,254 @@
+{
+  "createdUTC": "2026-10-15T13:59:50.550Z",
+  "completedRuns": 25,
+  "checks": [
+    {
+      "label": "A",
+      "n": 10000,
+      "seed": 2026,
+      "epochs": 201,
+      "timeMyr": 1000,
+      "componentMassesConstant": true,
+      "complexModeConsistency": true
+    },
+    {
+      "label": "A",
+      "n": 10000,
+      "seed": 2027,
+      "epochs": 201,
+      "timeMyr": 1000,
+      "componentMassesConstant": true,
+      "complexModeConsistency": true
+    },
+    {
+      "label": "B",
+      "n": 14000,
+      "seed": 2026,
+      "epochs": 201,
+      "timeMyr": 1000,
+      "componentMassesConstant": true,
+      "complexModeConsistency": true
+    },
+    {
+      "label": "B",
+      "n": 14000,
+      "seed": 2027,
+      "epochs": 201,
+      "timeMyr": 1000,
+      "componentMassesConstant": true,
+      "complexModeConsistency": true
+    },
+    {
+      "label": "B",
+      "n": 26000,
+      "seed": 2026,
+      "epochs": 201,
+      "timeMyr": 1000,
+      "componentMassesConstant": true,
+      "complexModeConsistency": true
+    },
+    {
+      "label": "B",
+      "n": 26000,
+      "seed": 2027,
+      "epochs": 201,
+      "timeMyr": 1000,
+      "componentMassesConstant": true,
+      "complexModeConsistency": true
+    },
+    {
+      "label": "C",
+      "n": 6000,
+      "seed": null,
+      "epochs": 201,
+      "timeMyr": 1000,
+      "componentMassesConstant": true,
+      "complexModeConsistency": true
+    },
+    {
+      "label": "C-soft",
+      "n": 6000,
+      "seed": null,
+      "epochs": 201,
+      "timeMyr": 1000,
+      "componentMassesConstant": true,
+      "complexModeConsistency": true
+    },
+    {
+      "label": "A",
+      "n": 10000,
+      "seed": 2027,
+      "epochs": 41,
+      "timeMyr": 200,
+      "componentMassesConstant": true,
+      "complexModeConsistency": true
+    },
+    {
+      "label": "B",
+      "n": 26000,
+      "seed": 2027,
+      "epochs": 41,
+      "timeMyr": 200,
+      "componentMassesConstant": true,
+      "complexModeConsistency": true
+    },
+    {
+      "label": "C",
+      "n": 6000,
+      "seed": 2027,
+      "epochs": 41,
+      "timeMyr": 200,
+      "componentMassesConstant": true,
+      "complexModeConsistency": true
+    },
+    {
+      "label": "A",
+      "n": 50000,
+      "seed": 2026,
+      "epochs": 41,
+      "timeMyr": 200,
+      "componentMassesConstant": true,
+      "complexModeConsistency": true
+    },
+    {
+      "label": "A",
+      "n": 50000,
+      "seed": 2027,
+      "epochs": 41,
+      "timeMyr": 200,
+      "componentMassesConstant": true,
+      "complexModeConsistency": true
+    },
+    {
+      "label": "B",
+      "n": 70000,
+      "seed": 2026,
+      "epochs": 41,
+      "timeMyr": 200,
+      "componentMassesConstant": true,
+      "complexModeConsistency": true
+    },
+    {
+      "label": "B",
+      "n": 70000,
+      "seed": 2027,
+      "epochs": 41,
+      "timeMyr": 200,
+      "componentMassesConstant": true,
+      "complexModeConsistency": true
+    },
+    {
+      "label": "C",
+      "n": 30000,
+      "seed": null,
+      "epochs": 41,
+      "timeMyr": 200,
+      "componentMassesConstant": true,
+      "complexModeConsistency": true
+    },
+    {
+      "label": "C-soft",
+      "n": 30000,
+      "seed": null,
+      "epochs": 41,
+      "timeMyr": 200,
+      "componentMassesConstant": true,
+      "complexModeConsistency": true
+    },
+    {
+      "label": "A-dt",
+      "n": 10000,
+      "seed": 2026,
+      "epochs": 41,
+      "timeMyr": 200,
+      "componentMassesConstant": true,
+      "complexModeConsistency": true
+    },
+    {
+      "label": "B-dt",
+      "n": 26000,
+      "seed": 2026,
+      "epochs": 41,
+      "timeMyr": 200,
+      "componentMassesConstant": true,
+      "complexModeConsistency": true
+    },
+    {
+      "label": "C-dt",
+      "n": 6000,
+      "seed": 2026,
+      "epochs": 41,
+      "timeMyr": 200,
+      "componentMassesConstant": true,
+      "complexModeConsistency": true
+    },
+    {
+      "label": "A-epsilon",
+      "n": 10000,
+      "seed": 2026,
+      "epochs": 41,
+      "timeMyr": 200,
+      "componentMassesConstant": true,
+      "complexModeConsistency": true
+    },
+    {
+      "label": "B-epsilon",
+      "n": 26000,
+      "seed": 2026,
+      "epochs": 41,
+      "timeMyr": 200,
+      "componentMassesConstant": true,
+      "complexModeConsistency": true
+    },
+    {
+      "label": "A-high-dt",
+      "n": 50000,
+      "seed": 2026,
+      "epochs": 41,
+      "timeMyr": 200,
+      "componentMassesConstant": true,
+      "complexModeConsistency": true
+    },
+    {
+      "label": "B-high-dt",
+      "n": 70000,
+      "seed": 2026,
+      "epochs": 41,
+      "timeMyr": 200,
+      "componentMassesConstant": true,
+      "complexModeConsistency": true
+    },
+    {
+      "label": "C-high-dt",
+      "n": 30000,
+      "seed": null,
+      "epochs": 41,
+      "timeMyr": 200,
+      "componentMassesConstant": true,
+      "complexModeConsistency": true
+    }
+  ],
+  "provenanceChecks": [
+    {
+      "name": "campaign",
+      "files": 15,
+      "verified": true
+    },
+    {
+      "name": "continuation",
+      "files": 15,
+      "verified": true
+    },
+    {
+      "name": "resume",
+      "files": 15,
+      "verified": true
+    },
+    {
+      "name": "high-dt",
+      "files": 15,
+      "verified": true
+    }
+  ],
+  "limits": "Checks validate data integrity and configurations, not equilibrium or a collisionless limit."
+}

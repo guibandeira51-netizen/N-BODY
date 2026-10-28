@@ -1,0 +1,1172 @@
+{
+  "schema": "equilibrium-rebuild-results-ui-v1",
+  "metrics": {
+    "height": [
+      "Espessura própria do disco",
+      "h50 [kpc]"
+    ],
+    "sigma": [
+      "Dispersão vertical do disco",
+      "sigma normal [km/s]"
+    ],
+    "energy": [
+      "Energia mecânica total",
+      "E [1e10 Msun kpc²/Myr²]"
+    ],
+    "drift": [
+      "Erro energético direto amostrado",
+      "100 delta E / |E0| [%]"
+    ],
+    "radial": [
+      "Perfil superficial do disco — inicial/final",
+      "Sigma [1e10 Msun/kpc²]"
+    ],
+    "vertical": [
+      "Densidade vertical — R < 30 kpc",
+      "rho [1e10 Msun/kpc³]"
+    ],
+    "rotation": [
+      "Curva circular do campo — inicial/final",
+      "vc [km/s]"
+    ],
+    "rings": [
+      "Estrutura vertical por anéis — inicial/final",
+      "h50 próprio [kpc]"
+    ],
+    "halo": [
+      "Massa acumulada do halo — inicial/final",
+      "M(<r) [1e10 Msun]"
+    ]
+  },
+  "globalMetrics": {
+    "resolution": {
+      "figure": "figures/resolution.svg",
+      "metadata": "Candidato · CPU Float64 · semente 2026 · dt=0,1 Myr · ε=0,1 kpc · 40 Myr · N=400/800/880",
+      "caption": "Refinar apenas o halo preserva as partículas bariônicas. Aumentar todas as componentes muda a amostra. Este estudo curto não demonstra um platô não colisional."
+    },
+    "softening": {
+      "figure": "figures/softening-field.svg",
+      "metadata": "Convolução contínua dos perfis-alvo · z=0,28 kpc · ε=0,05/0,1/0,2 kpc",
+      "caption": "Sensibilidade do campo à suavização. Não é evolução de galáxias preparadas e validadas em cada epsilon; esse estudo de convergência permanece pendente."
+    },
+    "gpu": {
+      "figure": "figures/gpu-halo.svg",
+      "metadata": "N=2.800 (60/180/2.560) · GPU Float32 direta · dt solicitado=0,05 Myr · ε=0,1 kpc · 200 Myr",
+      "caption": "Mesma biblioteca orbital e três sementes de reamostragem, sem três ajustes independentes de DF. Nd=180 continua baixo; o engrossamento remanescente não certifica convergência."
+    }
+  },
+  "controlLabels": {
+    "fixed-total": "Campo total suavizado fixo",
+    "disk-live": "Disco vivo; bojo/halo suavizados fixos",
+    "all-live": "Galáxia inteiramente viva"
+  },
+  "selections": [
+    {
+      "seed": 2026,
+      "control": "fixed-total",
+      "generator": "both",
+      "figures": {
+        "height": "figures/fixed-total-s2026-both-height.svg",
+        "sigma": "figures/fixed-total-s2026-both-sigma.svg",
+        "energy": "figures/fixed-total-s2026-both-energy.svg",
+        "drift": "figures/fixed-total-s2026-both-drift.svg",
+        "radial": "figures/fixed-total-s2026-both-radial.svg",
+        "vertical": "figures/fixed-total-s2026-both-vertical.svg",
+        "rotation": "figures/fixed-total-s2026-both-rotation.svg",
+        "rings": "figures/fixed-total-s2026-both-rings.svg",
+        "halo": "figures/fixed-total-s2026-both-halo.svg"
+      },
+      "runIDs": [
+        "legacy-fixed-total-c60-180-160-s2026-dt0.1-t200",
+        "candidate-fixed-total-c60-180-160-s2026-dt0.1-t200"
+      ]
+    },
+    {
+      "seed": 2026,
+      "control": "fixed-total",
+      "generator": "legacy",
+      "figures": {
+        "height": "figures/fixed-total-s2026-legacy-height.svg",
+        "sigma": "figures/fixed-total-s2026-legacy-sigma.svg",
+        "energy": "figures/fixed-total-s2026-legacy-energy.svg",
+        "drift": "figures/fixed-total-s2026-legacy-drift.svg",
+        "radial": "figures/fixed-total-s2026-legacy-radial.svg",
+        "vertical": "figures/fixed-total-s2026-legacy-vertical.svg",
+        "rotation": "figures/fixed-total-s2026-legacy-rotation.svg",
+        "rings": "figures/fixed-total-s2026-legacy-rings.svg",
+        "halo": "figures/fixed-total-s2026-legacy-halo.svg"
+      },
+      "runIDs": [
+        "legacy-fixed-total-c60-180-160-s2026-dt0.1-t200"
+      ]
+    },
+    {
+      "seed": 2026,
+      "control": "fixed-total",
+      "generator": "candidate",
+      "figures": {
+        "height": "figures/fixed-total-s2026-candidate-height.svg",
+        "sigma": "figures/fixed-total-s2026-candidate-sigma.svg",
+        "energy": "figures/fixed-total-s2026-candidate-energy.svg",
+        "drift": "figures/fixed-total-s2026-candidate-drift.svg",
+        "radial": "figures/fixed-total-s2026-candidate-radial.svg",
+        "vertical": "figures/fixed-total-s2026-candidate-vertical.svg",
+        "rotation": "figures/fixed-total-s2026-candidate-rotation.svg",
+        "rings": "figures/fixed-total-s2026-candidate-rings.svg",
+        "halo": "figures/fixed-total-s2026-candidate-halo.svg"
+      },
+      "runIDs": [
+        "candidate-fixed-total-c60-180-160-s2026-dt0.1-t200"
+      ]
+    },
+    {
+      "seed": 2026,
+      "control": "disk-live",
+      "generator": "both",
+      "figures": {
+        "height": "figures/disk-live-s2026-both-height.svg",
+        "sigma": "figures/disk-live-s2026-both-sigma.svg",
+        "energy": "figures/disk-live-s2026-both-energy.svg",
+        "drift": "figures/disk-live-s2026-both-drift.svg",
+        "radial": "figures/disk-live-s2026-both-radial.svg",
+        "vertical": "figures/disk-live-s2026-both-vertical.svg",
+        "rotation": "figures/disk-live-s2026-both-rotation.svg",
+        "rings": "figures/disk-live-s2026-both-rings.svg",
+        "halo": "figures/disk-live-s2026-both-halo.svg"
+      },
+      "runIDs": [
+        "legacy-disk-live-c60-180-160-s2026-dt0.1-t200",
+        "candidate-disk-live-c60-180-160-s2026-dt0.1-t200"
+      ]
+    },
+    {
+      "seed": 2026,
+      "control": "disk-live",
+      "generator": "legacy",
+      "figures": {
+        "height": "figures/disk-live-s2026-legacy-height.svg",
+        "sigma": "figures/disk-live-s2026-legacy-sigma.svg",
+        "energy": "figures/disk-live-s2026-legacy-energy.svg",
+        "drift": "figures/disk-live-s2026-legacy-drift.svg",
+        "radial": "figures/disk-live-s2026-legacy-radial.svg",
+        "vertical": "figures/disk-live-s2026-legacy-vertical.svg",
+        "rotation": "figures/disk-live-s2026-legacy-rotation.svg",
+        "rings": "figures/disk-live-s2026-legacy-rings.svg",
+        "halo": "figures/disk-live-s2026-legacy-halo.svg"
+      },
+      "runIDs": [
+        "legacy-disk-live-c60-180-160-s2026-dt0.1-t200"
+      ]
+    },
+    {
+      "seed": 2026,
+      "control": "disk-live",
+      "generator": "candidate",
+      "figures": {
+        "height": "figures/disk-live-s2026-candidate-height.svg",
+        "sigma": "figures/disk-live-s2026-candidate-sigma.svg",
+        "energy": "figures/disk-live-s2026-candidate-energy.svg",
+        "drift": "figures/disk-live-s2026-candidate-drift.svg",
+        "radial": "figures/disk-live-s2026-candidate-radial.svg",
+        "vertical": "figures/disk-live-s2026-candidate-vertical.svg",
+        "rotation": "figures/disk-live-s2026-candidate-rotation.svg",
+        "rings": "figures/disk-live-s2026-candidate-rings.svg",
+        "halo": "figures/disk-live-s2026-candidate-halo.svg"
+      },
+      "runIDs": [
+        "candidate-disk-live-c60-180-160-s2026-dt0.1-t200"
+      ]
+    },
+    {
+      "seed": 2026,
+      "control": "all-live",
+      "generator": "both",
+      "figures": {
+        "height": "figures/all-live-s2026-both-height.svg",
+        "sigma": "figures/all-live-s2026-both-sigma.svg",
+        "energy": "figures/all-live-s2026-both-energy.svg",
+        "drift": "figures/all-live-s2026-both-drift.svg",
+        "radial": "figures/all-live-s2026-both-radial.svg",
+        "vertical": "figures/all-live-s2026-both-vertical.svg",
+        "rotation": "figures/all-live-s2026-both-rotation.svg",
+        "rings": "figures/all-live-s2026-both-rings.svg",
+        "halo": "figures/all-live-s2026-both-halo.svg"
+      },
+      "runIDs": [
+        "legacy-all-live-c60-180-160-s2026-dt0.1-t200",
+        "candidate-all-live-c60-180-160-s2026-dt0.1-t200"
+      ]
+    },
+    {
+      "seed": 2026,
+      "control": "all-live",
+      "generator": "legacy",
+      "figures": {
+        "height": "figures/all-live-s2026-legacy-height.svg",
+        "sigma": "figures/all-live-s2026-legacy-sigma.svg",
+        "energy": "figures/all-live-s2026-legacy-energy.svg",
+        "drift": "figures/all-live-s2026-legacy-drift.svg",
+        "radial": "figures/all-live-s2026-legacy-radial.svg",
+        "vertical": "figures/all-live-s2026-legacy-vertical.svg",
+        "rotation": "figures/all-live-s2026-legacy-rotation.svg",
+        "rings": "figures/all-live-s2026-legacy-rings.svg",
+        "halo": "figures/all-live-s2026-legacy-halo.svg"
+      },
+      "runIDs": [
+        "legacy-all-live-c60-180-160-s2026-dt0.1-t200"
+      ]
+    },
+    {
+      "seed": 2026,
+      "control": "all-live",
+      "generator": "candidate",
+      "figures": {
+        "height": "figures/all-live-s2026-candidate-height.svg",
+        "sigma": "figures/all-live-s2026-candidate-sigma.svg",
+        "energy": "figures/all-live-s2026-candidate-energy.svg",
+        "drift": "figures/all-live-s2026-candidate-drift.svg",
+        "radial": "figures/all-live-s2026-candidate-radial.svg",
+        "vertical": "figures/all-live-s2026-candidate-vertical.svg",
+        "rotation": "figures/all-live-s2026-candidate-rotation.svg",
+        "rings": "figures/all-live-s2026-candidate-rings.svg",
+        "halo": "figures/all-live-s2026-candidate-halo.svg"
+      },
+      "runIDs": [
+        "candidate-all-live-c60-180-160-s2026-dt0.1-t200"
+      ]
+    },
+    {
+      "seed": 2027,
+      "control": "fixed-total",
+      "generator": "both",
+      "figures": {
+        "height": "figures/fixed-total-s2027-both-height.svg",
+        "sigma": "figures/fixed-total-s2027-both-sigma.svg",
+        "energy": "figures/fixed-total-s2027-both-energy.svg",
+        "drift": "figures/fixed-total-s2027-both-drift.svg",
+        "radial": "figures/fixed-total-s2027-both-radial.svg",
+        "vertical": "figures/fixed-total-s2027-both-vertical.svg",
+        "rotation": "figures/fixed-total-s2027-both-rotation.svg",
+        "rings": "figures/fixed-total-s2027-both-rings.svg",
+        "halo": "figures/fixed-total-s2027-both-halo.svg"
+      },
+      "runIDs": [
+        "legacy-fixed-total-c60-180-160-s2027-dt0.1-t200",
+        "candidate-fixed-total-c60-180-160-s2027-dt0.1-t200"
+      ]
+    },
+    {
+      "seed": 2027,
+      "control": "fixed-total",
+      "generator": "legacy",
+      "figures": {
+        "height": "figures/fixed-total-s2027-legacy-height.svg",
+        "sigma": "figures/fixed-total-s2027-legacy-sigma.svg",
+        "energy": "figures/fixed-total-s2027-legacy-energy.svg",
+        "drift": "figures/fixed-total-s2027-legacy-drift.svg",
+        "radial": "figures/fixed-total-s2027-legacy-radial.svg",
+        "vertical": "figures/fixed-total-s2027-legacy-vertical.svg",
+        "rotation": "figures/fixed-total-s2027-legacy-rotation.svg",
+        "rings": "figures/fixed-total-s2027-legacy-rings.svg",
+        "halo": "figures/fixed-total-s2027-legacy-halo.svg"
+      },
+      "runIDs": [
+        "legacy-fixed-total-c60-180-160-s2027-dt0.1-t200"
+      ]
+    },
+    {
+      "seed": 2027,
+      "control": "fixed-total",
+      "generator": "candidate",
+      "figures": {
+        "height": "figures/fixed-total-s2027-candidate-height.svg",
+        "sigma": "figures/fixed-total-s2027-candidate-sigma.svg",
+        "energy": "figures/fixed-total-s2027-candidate-energy.svg",
+        "drift": "figures/fixed-total-s2027-candidate-drift.svg",
+        "radial": "figures/fixed-total-s2027-candidate-radial.svg",
+        "vertical": "figures/fixed-total-s2027-candidate-vertical.svg",
+        "rotation": "figures/fixed-total-s2027-candidate-rotation.svg",
+        "rings": "figures/fixed-total-s2027-candidate-rings.svg",
+        "halo": "figures/fixed-total-s2027-candidate-halo.svg"
+      },
+      "runIDs": [
+        "candidate-fixed-total-c60-180-160-s2027-dt0.1-t200"
+      ]
+    },
+    {
+      "seed": 2027,
+      "control": "disk-live",
+      "generator": "both",
+      "figures": {
+        "height": "figures/disk-live-s2027-both-height.svg",
+        "sigma": "figures/disk-live-s2027-both-sigma.svg",
+        "energy": "figures/disk-live-s2027-both-energy.svg",
+        "drift": "figures/disk-live-s2027-both-drift.svg",
+        "radial": "figures/disk-live-s2027-both-radial.svg",
+        "vertical": "figures/disk-live-s2027-both-vertical.svg",
+        "rotation": "figures/disk-live-s2027-both-rotation.svg",
+        "rings": "figures/disk-live-s2027-both-rings.svg",
+        "halo": "figures/disk-live-s2027-both-halo.svg"
+      },
+      "runIDs": [
+        "legacy-disk-live-c60-180-160-s2027-dt0.1-t200",
+        "candidate-disk-live-c60-180-160-s2027-dt0.1-t200"
+      ]
+    },
+    {
+      "seed": 2027,
+      "control": "disk-live",
+      "generator": "legacy",
+      "figures": {
+        "height": "figures/disk-live-s2027-legacy-height.svg",
+        "sigma": "figures/disk-live-s2027-legacy-sigma.svg",
+        "energy": "figures/disk-live-s2027-legacy-energy.svg",
+        "drift": "figures/disk-live-s2027-legacy-drift.svg",
+        "radial": "figures/disk-live-s2027-legacy-radial.svg",
+        "vertical": "figures/disk-live-s2027-legacy-vertical.svg",
+        "rotation": "figures/disk-live-s2027-legacy-rotation.svg",
+        "rings": "figures/disk-live-s2027-legacy-rings.svg",
+        "halo": "figures/disk-live-s2027-legacy-halo.svg"
+      },
+      "runIDs": [
+        "legacy-disk-live-c60-180-160-s2027-dt0.1-t200"
+      ]
+    },
+    {
+      "seed": 2027,
+      "control": "disk-live",
+      "generator": "candidate",
+      "figures": {
+        "height": "figures/disk-live-s2027-candidate-height.svg",
+        "sigma": "figures/disk-live-s2027-candidate-sigma.svg",
+        "energy": "figures/disk-live-s2027-candidate-energy.svg",
+        "drift": "figures/disk-live-s2027-candidate-drift.svg",
+        "radial": "figures/disk-live-s2027-candidate-radial.svg",
+        "vertical": "figures/disk-live-s2027-candidate-vertical.svg",
+        "rotation": "figures/disk-live-s2027-candidate-rotation.svg",
+        "rings": "figures/disk-live-s2027-candidate-rings.svg",
+        "halo": "figures/disk-live-s2027-candidate-halo.svg"
+      },
+      "runIDs": [
+        "candidate-disk-live-c60-180-160-s2027-dt0.1-t200"
+      ]
+    },
+    {
+      "seed": 2027,
+      "control": "all-live",
+      "generator": "both",
+      "figures": {
+        "height": "figures/all-live-s2027-both-height.svg",
+        "sigma": "figures/all-live-s2027-both-sigma.svg",
+        "energy": "figures/all-live-s2027-both-energy.svg",
+        "drift": "figures/all-live-s2027-both-drift.svg",
+        "radial": "figures/all-live-s2027-both-radial.svg",
+        "vertical": "figures/all-live-s2027-both-vertical.svg",
+        "rotation": "figures/all-live-s2027-both-rotation.svg",
+        "rings": "figures/all-live-s2027-both-rings.svg",
+        "halo": "figures/all-live-s2027-both-halo.svg"
+      },
+      "runIDs": [
+        "legacy-all-live-c60-180-160-s2027-dt0.1-t200",
+        "candidate-all-live-c60-180-160-s2027-dt0.1-t200"
+      ]
+    },
+    {
+      "seed": 2027,
+      "control": "all-live",
+      "generator": "legacy",
+      "figures": {
+        "height": "figures/all-live-s2027-legacy-height.svg",
+        "sigma": "figures/all-live-s2027-legacy-sigma.svg",
+        "energy": "figures/all-live-s2027-legacy-energy.svg",
+        "drift": "figures/all-live-s2027-legacy-drift.svg",
+        "radial": "figures/all-live-s2027-legacy-radial.svg",
+        "vertical": "figures/all-live-s2027-legacy-vertical.svg",
+        "rotation": "figures/all-live-s2027-legacy-rotation.svg",
+        "rings": "figures/all-live-s2027-legacy-rings.svg",
+        "halo": "figures/all-live-s2027-legacy-halo.svg"
+      },
+      "runIDs": [
+        "legacy-all-live-c60-180-160-s2027-dt0.1-t200"
+      ]
+    },
+    {
+      "seed": 2027,
+      "control": "all-live",
+      "generator": "candidate",
+      "figures": {
+        "height": "figures/all-live-s2027-candidate-height.svg",
+        "sigma": "figures/all-live-s2027-candidate-sigma.svg",
+        "energy": "figures/all-live-s2027-candidate-energy.svg",
+        "drift": "figures/all-live-s2027-candidate-drift.svg",
+        "radial": "figures/all-live-s2027-candidate-radial.svg",
+        "vertical": "figures/all-live-s2027-candidate-vertical.svg",
+        "rotation": "figures/all-live-s2027-candidate-rotation.svg",
+        "rings": "figures/all-live-s2027-candidate-rings.svg",
+        "halo": "figures/all-live-s2027-candidate-halo.svg"
+      },
+      "runIDs": [
+        "candidate-all-live-c60-180-160-s2027-dt0.1-t200"
+      ]
+    },
+    {
+      "seed": 2028,
+      "control": "fixed-total",
+      "generator": "both",
+      "figures": {
+        "height": "figures/fixed-total-s2028-both-height.svg",
+        "sigma": "figures/fixed-total-s2028-both-sigma.svg",
+        "energy": "figures/fixed-total-s2028-both-energy.svg",
+        "drift": "figures/fixed-total-s2028-both-drift.svg",
+        "radial": "figures/fixed-total-s2028-both-radial.svg",
+        "vertical": "figures/fixed-total-s2028-both-vertical.svg",
+        "rotation": "figures/fixed-total-s2028-both-rotation.svg",
+        "rings": "figures/fixed-total-s2028-both-rings.svg",
+        "halo": "figures/fixed-total-s2028-both-halo.svg"
+      },
+      "runIDs": [
+        "legacy-fixed-total-c60-180-160-s2028-dt0.1-t200",
+        "candidate-fixed-total-c60-180-160-s2028-dt0.1-t200"
+      ]
+    },
+    {
+      "seed": 2028,
+      "control": "fixed-total",
+      "generator": "legacy",
+      "figures": {
+        "height": "figures/fixed-total-s2028-legacy-height.svg",
+        "sigma": "figures/fixed-total-s2028-legacy-sigma.svg",
+        "energy": "figures/fixed-total-s2028-legacy-energy.svg",
+        "drift": "figures/fixed-total-s2028-legacy-drift.svg",
+        "radial": "figures/fixed-total-s2028-legacy-radial.svg",
+        "vertical": "figures/fixed-total-s2028-legacy-vertical.svg",
+        "rotation": "figures/fixed-total-s2028-legacy-rotation.svg",
+        "rings": "figures/fixed-total-s2028-legacy-rings.svg",
+        "halo": "figures/fixed-total-s2028-legacy-halo.svg"
+      },
+      "runIDs": [
+        "legacy-fixed-total-c60-180-160-s2028-dt0.1-t200"
+      ]
+    },
+    {
+      "seed": 2028,
+      "control": "fixed-total",
+      "generator": "candidate",
+      "figures": {
+        "height": "figures/fixed-total-s2028-candidate-height.svg",
+        "sigma": "figures/fixed-total-s2028-candidate-sigma.svg",
+        "energy": "figures/fixed-total-s2028-candidate-energy.svg",
+        "drift": "figures/fixed-total-s2028-candidate-drift.svg",
+        "radial": "figures/fixed-total-s2028-candidate-radial.svg",
+        "vertical": "figures/fixed-total-s2028-candidate-vertical.svg",
+        "rotation": "figures/fixed-total-s2028-candidate-rotation.svg",
+        "rings": "figures/fixed-total-s2028-candidate-rings.svg",
+        "halo": "figures/fixed-total-s2028-candidate-halo.svg"
+      },
+      "runIDs": [
+        "candidate-fixed-total-c60-180-160-s2028-dt0.1-t200"
+      ]
+    },
+    {
+      "seed": 2028,
+      "control": "disk-live",
+      "generator": "both",
+      "figures": {
+        "height": "figures/disk-live-s2028-both-height.svg",
+        "sigma": "figures/disk-live-s2028-both-sigma.svg",
+        "energy": "figures/disk-live-s2028-both-energy.svg",
+        "drift": "figures/disk-live-s2028-both-drift.svg",
+        "radial": "figures/disk-live-s2028-both-radial.svg",
+        "vertical": "figures/disk-live-s2028-both-vertical.svg",
+        "rotation": "figures/disk-live-s2028-both-rotation.svg",
+        "rings": "figures/disk-live-s2028-both-rings.svg",
+        "halo": "figures/disk-live-s2028-both-halo.svg"
+      },
+      "runIDs": [
+        "legacy-disk-live-c60-180-160-s2028-dt0.1-t200",
+        "candidate-disk-live-c60-180-160-s2028-dt0.1-t200"
+      ]
+    },
+    {
+      "seed": 2028,
+      "control": "disk-live",
+      "generator": "legacy",
+      "figures": {
+        "height": "figures/disk-live-s2028-legacy-height.svg",
+        "sigma": "figures/disk-live-s2028-legacy-sigma.svg",
+        "energy": "figures/disk-live-s2028-legacy-energy.svg",
+        "drift": "figures/disk-live-s2028-legacy-drift.svg",
+        "radial": "figures/disk-live-s2028-legacy-radial.svg",
+        "vertical": "figures/disk-live-s2028-legacy-vertical.svg",
+        "rotation": "figures/disk-live-s2028-legacy-rotation.svg",
+        "rings": "figures/disk-live-s2028-legacy-rings.svg",
+        "halo": "figures/disk-live-s2028-legacy-halo.svg"
+      },
+      "runIDs": [
+        "legacy-disk-live-c60-180-160-s2028-dt0.1-t200"
+      ]
+    },
+    {
+      "seed": 2028,
+      "control": "disk-live",
+      "generator": "candidate",
+      "figures": {
+        "height": "figures/disk-live-s2028-candidate-height.svg",
+        "sigma": "figures/disk-live-s2028-candidate-sigma.svg",
+        "energy": "figures/disk-live-s2028-candidate-energy.svg",
+        "drift": "figures/disk-live-s2028-candidate-drift.svg",
+        "radial": "figures/disk-live-s2028-candidate-radial.svg",
+        "vertical": "figures/disk-live-s2028-candidate-vertical.svg",
+        "rotation": "figures/disk-live-s2028-candidate-rotation.svg",
+        "rings": "figures/disk-live-s2028-candidate-rings.svg",
+        "halo": "figures/disk-live-s2028-candidate-halo.svg"
+      },
+      "runIDs": [
+        "candidate-disk-live-c60-180-160-s2028-dt0.1-t200"
+      ]
+    },
+    {
+      "seed": 2028,
+      "control": "all-live",
+      "generator": "both",
+      "figures": {
+        "height": "figures/all-live-s2028-both-height.svg",
+        "sigma": "figures/all-live-s2028-both-sigma.svg",
+        "energy": "figures/all-live-s2028-both-energy.svg",
+        "drift": "figures/all-live-s2028-both-drift.svg",
+        "radial": "figures/all-live-s2028-both-radial.svg",
+        "vertical": "figures/all-live-s2028-both-vertical.svg",
+        "rotation": "figures/all-live-s2028-both-rotation.svg",
+        "rings": "figures/all-live-s2028-both-rings.svg",
+        "halo": "figures/all-live-s2028-both-halo.svg"
+      },
+      "runIDs": [
+        "legacy-all-live-c60-180-160-s2028-dt0.1-t200",
+        "candidate-all-live-c60-180-160-s2028-dt0.1-t200"
+      ]
+    },
+    {
+      "seed": 2028,
+      "control": "all-live",
+      "generator": "legacy",
+      "figures": {
+        "height": "figures/all-live-s2028-legacy-height.svg",
+        "sigma": "figures/all-live-s2028-legacy-sigma.svg",
+        "energy": "figures/all-live-s2028-legacy-energy.svg",
+        "drift": "figures/all-live-s2028-legacy-drift.svg",
+        "radial": "figures/all-live-s2028-legacy-radial.svg",
+        "vertical": "figures/all-live-s2028-legacy-vertical.svg",
+        "rotation": "figures/all-live-s2028-legacy-rotation.svg",
+        "rings": "figures/all-live-s2028-legacy-rings.svg",
+        "halo": "figures/all-live-s2028-legacy-halo.svg"
+      },
+      "runIDs": [
+        "legacy-all-live-c60-180-160-s2028-dt0.1-t200"
+      ]
+    },
+    {
+      "seed": 2028,
+      "control": "all-live",
+      "generator": "candidate",
+      "figures": {
+        "height": "figures/all-live-s2028-candidate-height.svg",
+        "sigma": "figures/all-live-s2028-candidate-sigma.svg",
+        "energy": "figures/all-live-s2028-candidate-energy.svg",
+        "drift": "figures/all-live-s2028-candidate-drift.svg",
+        "radial": "figures/all-live-s2028-candidate-radial.svg",
+        "vertical": "figures/all-live-s2028-candidate-vertical.svg",
+        "rotation": "figures/all-live-s2028-candidate-rotation.svg",
+        "rings": "figures/all-live-s2028-candidate-rings.svg",
+        "halo": "figures/all-live-s2028-candidate-halo.svg"
+      },
+      "runIDs": [
+        "candidate-all-live-c60-180-160-s2028-dt0.1-t200"
+      ]
+    }
+  ],
+  "assessment": {
+    "equilibriumValidated": false,
+    "cpuRuns": 34,
+    "gpuRuns": 4
+  },
+  "runs": [
+    {
+      "id": "legacy-fixed-total-c60-180-160-s2026-dt0.1-t200",
+      "config": {
+        "seed": 2026,
+        "generator": "legacy",
+        "control": "fixed-total",
+        "counts": [
+          60,
+          180,
+          160
+        ],
+        "dt": 0.1,
+        "duration": 200,
+        "stride": 10
+      },
+      "path": "reports/equilibrium-rebuild/controls-2026-10-21T03-46-06-609Z/legacy-fixed-total-c60-180-160-s2026-dt0.1-t200.json"
+    },
+    {
+      "id": "legacy-disk-live-c60-180-160-s2026-dt0.1-t200",
+      "config": {
+        "seed": 2026,
+        "generator": "legacy",
+        "control": "disk-live",
+        "counts": [
+          60,
+          180,
+          160
+        ],
+        "dt": 0.1,
+        "duration": 200,
+        "stride": 10
+      },
+      "path": "reports/equilibrium-rebuild/controls-2026-10-21T03-46-06-609Z/legacy-disk-live-c60-180-160-s2026-dt0.1-t200.json"
+    },
+    {
+      "id": "legacy-all-live-c60-180-160-s2026-dt0.1-t200",
+      "config": {
+        "seed": 2026,
+        "generator": "legacy",
+        "control": "all-live",
+        "counts": [
+          60,
+          180,
+          160
+        ],
+        "dt": 0.1,
+        "duration": 200,
+        "stride": 10
+      },
+      "path": "reports/equilibrium-rebuild/controls-2026-10-21T03-46-06-609Z/legacy-all-live-c60-180-160-s2026-dt0.1-t200.json"
+    },
+    {
+      "id": "candidate-fixed-total-c60-180-160-s2026-dt0.1-t200",
+      "config": {
+        "seed": 2026,
+        "generator": "candidate",
+        "control": "fixed-total",
+        "counts": [
+          60,
+          180,
+          160
+        ],
+        "dt": 0.1,
+        "duration": 200,
+        "stride": 10
+      },
+      "path": "reports/equilibrium-rebuild/controls-2026-10-21T03-46-06-609Z/candidate-fixed-total-c60-180-160-s2026-dt0.1-t200.json"
+    },
+    {
+      "id": "candidate-disk-live-c60-180-160-s2026-dt0.1-t200",
+      "config": {
+        "seed": 2026,
+        "generator": "candidate",
+        "control": "disk-live",
+        "counts": [
+          60,
+          180,
+          160
+        ],
+        "dt": 0.1,
+        "duration": 200,
+        "stride": 10
+      },
+      "path": "reports/equilibrium-rebuild/controls-2026-10-21T03-46-06-609Z/candidate-disk-live-c60-180-160-s2026-dt0.1-t200.json"
+    },
+    {
+      "id": "candidate-all-live-c60-180-160-s2026-dt0.1-t200",
+      "config": {
+        "seed": 2026,
+        "generator": "candidate",
+        "control": "all-live",
+        "counts": [
+          60,
+          180,
+          160
+        ],
+        "dt": 0.1,
+        "duration": 200,
+        "stride": 10
+      },
+      "path": "reports/equilibrium-rebuild/controls-2026-10-21T03-46-06-609Z/candidate-all-live-c60-180-160-s2026-dt0.1-t200.json"
+    },
+    {
+      "id": "legacy-fixed-total-c60-180-160-s2027-dt0.1-t200",
+      "config": {
+        "seed": 2027,
+        "generator": "legacy",
+        "control": "fixed-total",
+        "counts": [
+          60,
+          180,
+          160
+        ],
+        "dt": 0.1,
+        "duration": 200,
+        "stride": 10
+      },
+      "path": "reports/equilibrium-rebuild/controls-2026-10-21T03-46-06-609Z/legacy-fixed-total-c60-180-160-s2027-dt0.1-t200.json"
+    },
+    {
+      "id": "legacy-disk-live-c60-180-160-s2027-dt0.1-t200",
+      "config": {
+        "seed": 2027,
+        "generator": "legacy",
+        "control": "disk-live",
+        "counts": [
+          60,
+          180,
+          160
+        ],
+        "dt": 0.1,
+        "duration": 200,
+        "stride": 10
+      },
+      "path": "reports/equilibrium-rebuild/controls-2026-10-21T03-46-06-609Z/legacy-disk-live-c60-180-160-s2027-dt0.1-t200.json"
+    },
+    {
+      "id": "legacy-all-live-c60-180-160-s2027-dt0.1-t200",
+      "config": {
+        "seed": 2027,
+        "generator": "legacy",
+        "control": "all-live",
+        "counts": [
+          60,
+          180,
+          160
+        ],
+        "dt": 0.1,
+        "duration": 200,
+        "stride": 10
+      },
+      "path": "reports/equilibrium-rebuild/controls-2026-10-21T03-46-06-609Z/legacy-all-live-c60-180-160-s2027-dt0.1-t200.json"
+    },
+    {
+      "id": "candidate-fixed-total-c60-180-160-s2027-dt0.1-t200",
+      "config": {
+        "seed": 2027,
+        "generator": "candidate",
+        "control": "fixed-total",
+        "counts": [
+          60,
+          180,
+          160
+        ],
+        "dt": 0.1,
+        "duration": 200,
+        "stride": 10
+      },
+      "path": "reports/equilibrium-rebuild/controls-2026-10-21T03-46-06-609Z/candidate-fixed-total-c60-180-160-s2027-dt0.1-t200.json"
+    },
+    {
+      "id": "candidate-disk-live-c60-180-160-s2027-dt0.1-t200",
+      "config": {
+        "seed": 2027,
+        "generator": "candidate",
+        "control": "disk-live",
+        "counts": [
+          60,
+          180,
+          160
+        ],
+        "dt": 0.1,
+        "duration": 200,
+        "stride": 10
+      },
+      "path": "reports/equilibrium-rebuild/controls-2026-10-21T03-46-06-609Z/candidate-disk-live-c60-180-160-s2027-dt0.1-t200.json"
+    },
+    {
+      "id": "candidate-all-live-c60-180-160-s2027-dt0.1-t200",
+      "config": {
+        "seed": 2027,
+        "generator": "candidate",
+        "control": "all-live",
+        "counts": [
+          60,
+          180,
+          160
+        ],
+        "dt": 0.1,
+        "duration": 200,
+        "stride": 10
+      },
+      "path": "reports/equilibrium-rebuild/controls-2026-10-21T03-46-06-609Z/candidate-all-live-c60-180-160-s2027-dt0.1-t200.json"
+    },
+    {
+      "id": "legacy-fixed-total-c60-180-160-s2028-dt0.1-t200",
+      "config": {
+        "seed": 2028,
+        "generator": "legacy",
+        "control": "fixed-total",
+        "counts": [
+          60,
+          180,
+          160
+        ],
+        "dt": 0.1,
+        "duration": 200,
+        "stride": 10
+      },
+      "path": "reports/equilibrium-rebuild/controls-2026-10-21T03-46-06-609Z/legacy-fixed-total-c60-180-160-s2028-dt0.1-t200.json"
+    },
+    {
+      "id": "legacy-disk-live-c60-180-160-s2028-dt0.1-t200",
+      "config": {
+        "seed": 2028,
+        "generator": "legacy",
+        "control": "disk-live",
+        "counts": [
+          60,
+          180,
+          160
+        ],
+        "dt": 0.1,
+        "duration": 200,
+        "stride": 10
+      },
+      "path": "reports/equilibrium-rebuild/controls-2026-10-21T03-46-06-609Z/legacy-disk-live-c60-180-160-s2028-dt0.1-t200.json"
+    },
+    {
+      "id": "legacy-all-live-c60-180-160-s2028-dt0.1-t200",
+      "config": {
+        "seed": 2028,
+        "generator": "legacy",
+        "control": "all-live",
+        "counts": [
+          60,
+          180,
+          160
+        ],
+        "dt": 0.1,
+        "duration": 200,
+        "stride": 10
+      },
+      "path": "reports/equilibrium-rebuild/controls-2026-10-21T03-46-06-609Z/legacy-all-live-c60-180-160-s2028-dt0.1-t200.json"
+    },
+    {
+      "id": "candidate-fixed-total-c60-180-160-s2028-dt0.1-t200",
+      "config": {
+        "seed": 2028,
+        "generator": "candidate",
+        "control": "fixed-total",
+        "counts": [
+          60,
+          180,
+          160
+        ],
+        "dt": 0.1,
+        "duration": 200,
+        "stride": 10
+      },
+      "path": "reports/equilibrium-rebuild/controls-2026-10-21T03-46-06-609Z/candidate-fixed-total-c60-180-160-s2028-dt0.1-t200.json"
+    },
+    {
+      "id": "candidate-disk-live-c60-180-160-s2028-dt0.1-t200",
+      "config": {
+        "seed": 2028,
+        "generator": "candidate",
+        "control": "disk-live",
+        "counts": [
+          60,
+          180,
+          160
+        ],
+        "dt": 0.1,
+        "duration": 200,
+        "stride": 10
+      },
+      "path": "reports/equilibrium-rebuild/controls-2026-10-21T03-46-06-609Z/candidate-disk-live-c60-180-160-s2028-dt0.1-t200.json"
+    },
+    {
+      "id": "candidate-all-live-c60-180-160-s2028-dt0.1-t200",
+      "config": {
+        "seed": 2028,
+        "generator": "candidate",
+        "control": "all-live",
+        "counts": [
+          60,
+          180,
+          160
+        ],
+        "dt": 0.1,
+        "duration": 200,
+        "stride": 10
+      },
+      "path": "reports/equilibrium-rebuild/controls-2026-10-21T03-46-06-609Z/candidate-all-live-c60-180-160-s2028-dt0.1-t200.json"
+    },
+    {
+      "id": "legacy-all-live-c60-180-160-s2026-dt0.05-t40",
+      "config": {
+        "seed": 2026,
+        "generator": "legacy",
+        "control": "all-live",
+        "counts": [
+          60,
+          180,
+          160
+        ],
+        "dt": 0.05,
+        "duration": 40,
+        "stride": 2
+      },
+      "path": "reports/equilibrium-rebuild/controls-2026-10-21T03-46-06-609Z/legacy-all-live-c60-180-160-s2026-dt0.05-t40.json"
+    },
+    {
+      "id": "legacy-all-live-c60-180-160-s2026-dt0.025-t40",
+      "config": {
+        "seed": 2026,
+        "generator": "legacy",
+        "control": "all-live",
+        "counts": [
+          60,
+          180,
+          160
+        ],
+        "dt": 0.025,
+        "duration": 40,
+        "stride": 2
+      },
+      "path": "reports/equilibrium-rebuild/controls-2026-10-21T03-46-06-609Z/legacy-all-live-c60-180-160-s2026-dt0.025-t40.json"
+    },
+    {
+      "id": "legacy-all-live-c120-360-320-s2026-dt0.1-t40",
+      "config": {
+        "seed": 2026,
+        "generator": "legacy",
+        "control": "all-live",
+        "counts": [
+          120,
+          360,
+          320
+        ],
+        "dt": 0.1,
+        "duration": 40,
+        "stride": 2
+      },
+      "path": "reports/equilibrium-rebuild/controls-2026-10-21T03-46-06-609Z/legacy-all-live-c120-360-320-s2026-dt0.1-t40.json"
+    },
+    {
+      "id": "legacy-all-live-c60-180-640-s2026-dt0.1-t40",
+      "config": {
+        "seed": 2026,
+        "generator": "legacy",
+        "control": "all-live",
+        "counts": [
+          60,
+          180,
+          640
+        ],
+        "dt": 0.1,
+        "duration": 40,
+        "stride": 2
+      },
+      "path": "reports/equilibrium-rebuild/controls-2026-10-21T03-46-06-609Z/legacy-all-live-c60-180-640-s2026-dt0.1-t40.json"
+    },
+    {
+      "id": "candidate-all-live-c60-180-160-s2026-dt0.05-t40",
+      "config": {
+        "seed": 2026,
+        "generator": "candidate",
+        "control": "all-live",
+        "counts": [
+          60,
+          180,
+          160
+        ],
+        "dt": 0.05,
+        "duration": 40,
+        "stride": 2
+      },
+      "path": "reports/equilibrium-rebuild/controls-2026-10-21T03-46-06-609Z/candidate-all-live-c60-180-160-s2026-dt0.05-t40.json"
+    },
+    {
+      "id": "candidate-all-live-c60-180-160-s2026-dt0.025-t40",
+      "config": {
+        "seed": 2026,
+        "generator": "candidate",
+        "control": "all-live",
+        "counts": [
+          60,
+          180,
+          160
+        ],
+        "dt": 0.025,
+        "duration": 40,
+        "stride": 2
+      },
+      "path": "reports/equilibrium-rebuild/controls-2026-10-21T03-46-06-609Z/candidate-all-live-c60-180-160-s2026-dt0.025-t40.json"
+    },
+    {
+      "id": "candidate-all-live-c120-360-320-s2026-dt0.1-t40",
+      "config": {
+        "seed": 2026,
+        "generator": "candidate",
+        "control": "all-live",
+        "counts": [
+          120,
+          360,
+          320
+        ],
+        "dt": 0.1,
+        "duration": 40,
+        "stride": 2
+      },
+      "path": "reports/equilibrium-rebuild/controls-2026-10-21T03-46-06-609Z/candidate-all-live-c120-360-320-s2026-dt0.1-t40.json"
+    },
+    {
+      "id": "candidate-all-live-c60-180-640-s2026-dt0.1-t40",
+      "config": {
+        "seed": 2026,
+        "generator": "candidate",
+        "control": "all-live",
+        "counts": [
+          60,
+          180,
+          640
+        ],
+        "dt": 0.1,
+        "duration": 40,
+        "stride": 2
+      },
+      "path": "reports/equilibrium-rebuild/controls-2026-10-21T03-46-06-609Z/candidate-all-live-c60-180-640-s2026-dt0.1-t40.json"
+    },
+    {
+      "id": "legacy-all-live-c60-180-160-s2026-dt0.05-t200",
+      "config": {
+        "seed": 2026,
+        "generator": "legacy",
+        "control": "all-live",
+        "counts": [
+          60,
+          180,
+          160
+        ],
+        "dt": 0.05,
+        "duration": 200,
+        "stride": 10
+      },
+      "path": "reports/equilibrium-rebuild/controls-extended-2026-10-21T03-48-10-412Z/legacy-all-live-c60-180-160-s2026-dt0.05-t200.json"
+    },
+    {
+      "id": "legacy-all-live-c60-180-160-s2026-dt0.025-t200",
+      "config": {
+        "seed": 2026,
+        "generator": "legacy",
+        "control": "all-live",
+        "counts": [
+          60,
+          180,
+          160
+        ],
+        "dt": 0.025,
+        "duration": 200,
+        "stride": 10
+      },
+      "path": "reports/equilibrium-rebuild/controls-extended-2026-10-21T03-48-10-412Z/legacy-all-live-c60-180-160-s2026-dt0.025-t200.json"
+    },
+    {
+      "id": "candidate-all-live-c60-180-160-s2026-dt0.05-t200",
+      "config": {
+        "seed": 2026,
+        "generator": "candidate",
+        "control": "all-live",
+        "counts": [
+          60,
+          180,
+          160
+        ],
+        "dt": 0.05,
+        "duration": 200,
+        "stride": 10
+      },
+      "path": "reports/equilibrium-rebuild/controls-extended-2026-10-21T03-48-10-412Z/candidate-all-live-c60-180-160-s2026-dt0.05-t200.json"
+    },
+    {
+      "id": "candidate-all-live-c60-180-160-s2026-dt0.025-t200",
+      "config": {
+        "seed": 2026,
+        "generator": "candidate",
+        "control": "all-live",
+        "counts": [
+          60,
+          180,
+          160
+        ],
+        "dt": 0.025,
+        "duration": 200,
+        "stride": 10
+      },
+      "path": "reports/equilibrium-rebuild/controls-extended-2026-10-21T03-48-10-412Z/candidate-all-live-c60-180-160-s2026-dt0.025-t200.json"
+    },
+    {
+      "id": "candidate-all-live-c120-360-320-s2026-dt0.05-t200",
+      "config": {
+        "seed": 2026,
+        "generator": "candidate",
+        "control": "all-live",
+        "counts": [
+          120,
+          360,
+          320
+        ],
+        "dt": 0.05,
+        "duration": 200,
+        "stride": 10
+      },
+      "path": "reports/equilibrium-rebuild/controls-extended-2026-10-21T03-48-10-412Z/candidate-all-live-c120-360-320-s2026-dt0.05-t200.json"
+    },
+    {
+      "id": "candidate-all-live-c120-360-320-s2027-dt0.05-t200",
+      "config": {
+        "seed": 2027,
+        "generator": "candidate",
+        "control": "all-live",
+        "counts": [
+          120,
+          360,
+          320
+        ],
+        "dt": 0.05,
+        "duration": 200,
+        "stride": 10
+      },
+      "path": "reports/equilibrium-rebuild/controls-extended-2026-10-21T03-48-10-412Z/candidate-all-live-c120-360-320-s2027-dt0.05-t200.json"
+    },
+    {
+      "id": "candidate-all-live-c120-360-320-s2028-dt0.05-t200",
+      "config": {
+        "seed": 2028,
+        "generator": "candidate",
+        "control": "all-live",
+        "counts": [
+          120,
+          360,
+          320
+        ],
+        "dt": 0.05,
+        "duration": 200,
+        "stride": 10
+      },
+      "path": "reports/equilibrium-rebuild/controls-extended-2026-10-21T03-48-10-412Z/candidate-all-live-c120-360-320-s2028-dt0.05-t200.json"
+    },
+    {
+      "id": "candidate-all-live-c60-180-2560-s2026-dt0.05-t40",
+      "config": {
+        "seed": 2026,
+        "generator": "candidate",
+        "control": "all-live",
+        "counts": [
+          60,
+          180,
+          2560
+        ],
+        "dt": 0.05,
+        "duration": 40,
+        "stride": 2
+      },
+      "path": "reports/equilibrium-rebuild/controls-extended-2026-10-21T03-48-10-412Z/candidate-all-live-c60-180-2560-s2026-dt0.05-t40.json"
+    }
+  ]
+}

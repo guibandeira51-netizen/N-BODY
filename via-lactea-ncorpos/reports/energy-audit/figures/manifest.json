@@ -1,0 +1,158 @@
+{
+  "figures": [
+    {
+      "id": "observed-80000",
+      "title": "Execu\u00e7\u00e3o preservada: 80.000 corpos, GPU Float32",
+      "svg": "observed-80000.svg",
+      "png": "observed-80000.png",
+      "data": [
+        "observed-80000.csv",
+        "observed-run-before.json"
+      ],
+      "caption": "Oito medi\u00e7\u00f5es; sem refer\u00eancia direta dos estados posteriores. N\u00e3o representa erro de 1,6%.",
+      "code": "scripts/energy-analysis.py",
+      "units": {
+        "time": "Myr",
+        "energy": "1e10 Msun kpc2 Myr-2",
+        "energyError": "percent unless explicit dimensionless label"
+      },
+      "noSmoothing": true
+    },
+    {
+      "id": "legacy-dt",
+      "title": "Mesmas condi\u00e7\u00f5es iniciais legacy, N=96, for\u00e7a direta CPU",
+      "svg": "legacy-dt.svg",
+      "png": "legacy-dt.png",
+      "data": [
+        "trajectories.csv",
+        "experiments.json"
+      ],
+      "caption": "Cad\u00eancia 5 Myr; m\u00e1ximos amostrados. N\u00e3o \u00e9 reprodu\u00e7\u00e3o da realiza\u00e7\u00e3o N=80.000.",
+      "code": "scripts/energy-analysis.py",
+      "units": {
+        "time": "Myr",
+        "energy": "1e10 Msun kpc2 Myr-2",
+        "energyError": "percent unless explicit dimensionless label"
+      },
+      "noSmoothing": true
+    },
+    {
+      "id": "theta-calibration",
+      "title": "Erro da \u00e1rvore em snapshots id\u00eanticos: N=256",
+      "svg": "theta-calibration.svg",
+      "png": "theta-calibration.png",
+      "data": [
+        "theta-snapshots.csv"
+      ],
+      "caption": "Calibra\u00e7\u00e3o determin\u00edstica pontual; a diferen\u00e7a varia com \u03b8 e com o estado. Sem faixa estat\u00edstica.",
+      "code": "scripts/energy-analysis.py",
+      "units": {
+        "time": "Myr",
+        "energy": "1e10 Msun kpc2 Myr-2",
+        "energyError": "percent unless explicit dimensionless label"
+      },
+      "noSmoothing": true
+    },
+    {
+      "id": "binary-convergence",
+      "title": "Converg\u00eancia em bin\u00e1rias resolvidas: CPU Float64",
+      "svg": "binary-convergence.svg",
+      "png": "binary-convergence.png",
+      "data": [
+        "resolved-controls.json",
+        "resolved-controls.csv"
+      ],
+      "caption": "Energia avaliada em cada passo por 1 Gyr; trajet\u00f3ria comparada a dt=0,003125 Myr nos primeiros 100 Myr.",
+      "code": "scripts/energy-analysis.py",
+      "units": {
+        "time": "Myr",
+        "energy": "1e10 Msun kpc2 Myr-2",
+        "energyError": "percent unless explicit dimensionless label"
+      },
+      "noSmoothing": true
+    },
+    {
+      "id": "gpu-legacy",
+      "title": "Hamiltoniana direta: GPU Float32 \u00d7 CPU Float64 \u00b7 legacy N=96",
+      "svg": "gpu-legacy.svg",
+      "png": "gpu-legacy.png",
+      "data": [
+        "gpu-controls.csv",
+        "gpu-controls.json"
+      ],
+      "caption": "Estados iniciais e par\u00e2metros efetivos coincidem. Cad\u00eancia 10 Myr; picos entre amostras n\u00e3o s\u00e3o limitados.",
+      "code": "scripts/energy-analysis.py",
+      "units": {
+        "time": "Myr",
+        "energy": "1e10 Msun kpc2 Myr-2",
+        "energyError": "percent unless explicit dimensionless label"
+      },
+      "noSmoothing": true
+    },
+    {
+      "id": "gpu-binary",
+      "title": "Hamiltoniana direta: GPU Float32 \u00d7 CPU Float64 \u00b7 bin\u00e1ria exc\u00eantrica N=2",
+      "svg": "gpu-binary.svg",
+      "png": "gpu-binary.png",
+      "data": [
+        "gpu-controls.csv",
+        "gpu-binary-controls.json"
+      ],
+      "caption": "Estados iniciais e par\u00e2metros efetivos coincidem. Cad\u00eancia 10 Myr; picos entre amostras n\u00e3o s\u00e3o limitados.",
+      "code": "scripts/energy-analysis.py",
+      "units": {
+        "time": "Myr",
+        "energy": "1e10 Msun kpc2 Myr-2",
+        "energyError": "percent unless explicit dimensionless label"
+      },
+      "noSmoothing": true
+    },
+    {
+      "id": "replay-80000-energy",
+      "svg": "replay-80000-energy.svg",
+      "png": "replay-80000-energy.png",
+      "data": [
+        "replay-80000.csv",
+        "replay-80000-analysis.json",
+        "replay-80000-snapshots.json"
+      ],
+      "code": "scripts/energy-replay-report.py",
+      "units": {
+        "time": "Myr",
+        "relativeEnergy": "percent",
+        "energy": "1e10 Msun kpc2 Myr-2"
+      },
+      "calibration": "selected snapshots, no statistical band",
+      "directPointsInterpolated": false
+    },
+    {
+      "id": "replay-80000-theta",
+      "svg": "replay-80000-theta.svg",
+      "png": "replay-80000-theta.png",
+      "data": [
+        "replay-80000-theta.csv",
+        "replay-80000-analysis.json",
+        "replay-80000-snapshots.json"
+      ],
+      "code": "scripts/energy-replay-report.py",
+      "units": {
+        "time": "Myr",
+        "relativeEnergy": "percent",
+        "energy": "1e10 Msun kpc2 Myr-2"
+      },
+      "calibration": "selected snapshots, no statistical band",
+      "directPointsInterpolated": false
+    }
+  ],
+  "sourceIdentities": {
+    "experiments.json": "a010395dfe859c0161f82374fe9ad0fdf7a23bad7419552ae18042a4cfa36483",
+    "gpu-controls.json": "091608f90acb6d2d61acc0ac966f44b24b5082551055a867e767c6ea4c285803",
+    "gpu-binary-controls.json": "024b5001e7b2f451fdf15b03116a6df237305ab415bb8a6d37f2d2166c8157b3",
+    "resolved-controls.json": "dd54b5c26be5804437f8c386af4b15fb1fa5b28213ceaa8e0ec5e5166dcfea42",
+    "observed-run-before.json": "092f32a062f19c1d90e0929f8a1997dd48311a6bd871a3ded84b801e594242cf",
+    "replay-80000-snapshots.json": "23c711a6eb41d3a6b8ac5d32d283f61d19a10487b38db6ae93ad690a4d9b33ee",
+    "replay-80000-analysis.json": "30e622feb20cd14ab31a0b9892ef40e1e3c92ce26cab01ebfb7293f4bd5627f6",
+    "replay-80000.csv": "98dae3092e1d74bbe4d89d57c56b491631c7f501cddbb185721d9368ceaed1f3",
+    "replay-80000-theta.csv": "ca2618844df894c2f79391393b07a369e3c4779f75e0a907b3b16b7913957f13"
+  }
+}

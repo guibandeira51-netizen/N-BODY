@@ -1,0 +1,21 @@
+{
+  "archivedUTC": "2026-10-15T05:23:22.687Z",
+  "harness": "tests/browser-halos-continuation-09.html",
+  "sourceHashes": {
+    "src/physics/initial-legacy.js": "93ca8666ff188863b947dc8535ca23244d67c20ab2a177cb12e494cf566eeefa",
+    "src/physics/initial-allocated.js": "f62b945334f7cfd062aa5eda6a3964aca59eb977985d7ffe73a8c8cce04ed378",
+    "src/physics/constants.js": "4b1c2a1d96453b95c8e57a45f46443083e77d54e1714aadc7d060de0d9aa22ca",
+    "src/physics/models.js": "2215cd8332d06b4d18b3ef707c5000992b5db730d104c654ef7ddba7ac9102f3",
+    "src/physics/diagnostics.js": "d385ce21d018390f63210c8e8975276f1696656de69b25bc8e5017db5ef14765",
+    "src/physics/laboratory.js": "173666736cd3c0af56e4347a43be098e05eabb27a7e1417a4cb3cf6e18285d9b",
+    "src/physics/mass-audit.js": "859059f878baea426aa1998d0f664c02d3192f1df24a7ecf1cfad0647f0ae725",
+    "src/physics/halo-experiments.js": "44a0548aa9300b9c86619b40c8531114a465b801dfa0de76834e680da7debacf",
+    "src/physics/fixed-halo.js": "e351183ed13436395f59ead258d73c99a55c6bfe4a75cece12b11ba51f2bb31c",
+    "src/physics/disk-analysis.js": "ecd700024436712b55152cb4bf64463ea70ee5bb9e93a6cc7750a8a1057219f7",
+    "src/physics/forces.js": "9532d4286c6481d49995ece96e48bd595145c2e2c8a22897520cafa45f862444",
+    "src/physics/integrator.js": "433880162ae754dd3bada1fad9e2538239b42d3d43f20f96f7e1465135a1ce6f",
+    "src/compute/gpu.js": "7ee6706d635a797f8a8546f96968466c8d8f9dbb67d3bd2aadd6f46ea00a7967",
+    "src/compute/gpu-fixed-halo.js": "6b06535c53e2361253edbf08ea0afa9c15036d88dac69fd18663a606a139f6ed",
+    "tests/browser-halos-continuation-09.html": "b42286cbdb5d7b5039926679eed5a3ddc20433f1e910cca02d65f4c16cdb3a57"
+  }
+}

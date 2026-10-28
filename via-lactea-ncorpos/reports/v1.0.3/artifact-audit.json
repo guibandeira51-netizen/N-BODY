@@ -1,0 +1,42 @@
+{
+  "status": "passed",
+  "UTC": "2026-10-16T04:14:08.367Z",
+  "initialSnapshotsVerified": 24,
+  "baryonicPairsExactlyPreserved": true,
+  "actualGPUBarionPhaseDigest": "10d7b77201d15fad5f1467ef5170ed83fa768f89129071352b36031be3319a1b",
+  "physicalPopulationMassesVerified": true,
+  "unchangedPhysicalCore": true,
+  "completedRegisteredGPUExperiments": 42,
+  "totalCompletedIntegrations": 51,
+  "sourceEpochsVerified": 6,
+  "nativeSourceFilesVerified": 9,
+  "figuresVerified": 11,
+  "historicalFilesUnchanged": 1344,
+  "representativeDirectEnergyRechecks": [
+    {
+      "id": "H-nh40000-b2026-h2026-t200",
+      "timeMyr": 0,
+      "recomputedE": -1.6810087984227837,
+      "recordedE": -1.6810087984227837
+    },
+    {
+      "id": "H-nh40000-b2026-h2026-t200",
+      "timeMyr": 200,
+      "recomputedE": -1.6810090352845621,
+      "recordedE": -1.6810090352845621
+    },
+    {
+      "id": "B-base-s2026-t200",
+      "timeMyr": 0,
+      "recomputedE": -0.7693083032299797,
+      "recordedE": -0.7693083032299797
+    },
+    {
+      "id": "B-base-s2026-t200",
+      "timeMyr": 200,
+      "recomputedE": -0.7693082982534101,
+      "recordedE": -0.7693082982534101
+    }
+  ],
+  "qualification": "Checks provenance and implementations; scientific equilibrium/convergence qualifications are separate in assessment.json."
+}

@@ -1,0 +1,15 @@
+{
+  "physics": {
+    "filesChecked": 63,
+    "changed": [],
+    "unchanged": true
+  },
+  "gpuPassed": true,
+  "tests": {
+    "passed": 231,
+    "failed": 0
+  },
+  "buildPassed": true,
+  "manifestMismatches": [],
+  "qualification": "No profile, force or integrator change. Explicit orthographic camera comparison; perspective difference is projection, not radial renormalization."
+}

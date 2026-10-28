@@ -1,0 +1,33 @@
+{
+  "protocol": {
+    "azimuthalNull": "random rotations of original antipodal label pairs; approximate P not global evidence",
+    "cadenceMyr": 5,
+    "diskPlane": "robust PCA core within 20 kpc; original plane retained",
+    "energy": "Barnes-Hut theta=.5 self potential; fixed halo adds sum m Phi_external once",
+    "fixedHaloC": "same finite density; unsoftened analytic field, no response; C-soft controls Plummer smoothing of mean halo",
+    "haloSeeds": [
+      2026,
+      2027
+    ],
+    "pairedBaryons": true,
+    "units": "kpc,Myr,1e10 Msun"
+  },
+  "sourceHashes": {
+    "src/compute/gpu-fixed-halo.js": "6b06535c53e2361253edbf08ea0afa9c15036d88dac69fd18663a606a139f6ed",
+    "src/compute/gpu.js": "7ee6706d635a797f8a8546f96968466c8d8f9dbb67d3bd2aadd6f46ea00a7967",
+    "src/physics/constants.js": "4b1c2a1d96453b95c8e57a45f46443083e77d54e1714aadc7d060de0d9aa22ca",
+    "src/physics/diagnostics.js": "d385ce21d018390f63210c8e8975276f1696656de69b25bc8e5017db5ef14765",
+    "src/physics/disk-analysis.js": "f1555987a7150962b5c2275ebddce6835a4dc1f691e2f37033ca5aa1d0276c7e",
+    "src/physics/fixed-halo.js": "e351183ed13436395f59ead258d73c99a55c6bfe4a75cece12b11ba51f2bb31c",
+    "src/physics/forces.js": "9532d4286c6481d49995ece96e48bd595145c2e2c8a22897520cafa45f862444",
+    "src/physics/halo-experiments.js": "44a0548aa9300b9c86619b40c8531114a465b801dfa0de76834e680da7debacf",
+    "src/physics/initial-allocated.js": "f62b945334f7cfd062aa5eda6a3964aca59eb977985d7ffe73a8c8cce04ed378",
+    "src/physics/initial-legacy.js": "93ca8666ff188863b947dc8535ca23244d67c20ab2a177cb12e494cf566eeefa",
+    "src/physics/integrator.js": "433880162ae754dd3bada1fad9e2538239b42d3d43f20f96f7e1465135a1ce6f",
+    "src/physics/laboratory.js": "220833b20fa4ff18333b6e8f3b1f0fd336ec5725d56cceda6aab4e82726d6d5a",
+    "src/physics/mass-audit.js": "24325095abdd82b3c5bf0ef625bdc3031f0dad2729d0eace4f6818c86f33b5fe",
+    "src/physics/models.js": "2215cd8332d06b4d18b3ef707c5000992b5db730d104c654ef7ddba7ac9102f3",
+    "tests/browser-halos-09.html": "efa12d80d4572b9f61056f0ac07142a8f2b76e5f882b675d99c05bc88ed92ec2"
+  },
+  "startedUTC": "2026-10-15T04:57:03.245Z"
+}

@@ -1,0 +1,95 @@
+{
+  "schema": "granularity-long-run-decision-103",
+  "UTC": "2026-10-16T04:08:39.879Z",
+  "status": "not-justified-before-further-convergence",
+  "oneGyrExecuted": false,
+  "publicConclusion": "O refinamento do halo reduz fortemente o aquecimento numérico em 200 Myr; o candidato permanece experimental, sem equilíbrio estrutural e convergência global validados.",
+  "interpretation": "Com os mesmos bárions e a mesma física contínua, refinar o halo de 4.000 para 40.000 partículas reduziu o crescimento médio de h50 do fino em 200 Myr de 105.729463% para 29.483456% (72.11% menor), e o aumento médio de σ perpendicular de 41.092723% para 17.598522% (57.17% menor). As três sementes refinadas aqueceram menos que seus contrastes grosseiros. Isso demonstra uma contribuição importante da discretização do halo ao excesso de aquecimento deste domínio, incluindo ruído e respostas que ele pode excitar; não quantifica uma fração universal puramente colisional. O resíduo com halo fixo e os contrastes bariônicos mostram outra contribuição: o excesso médio de crescimento de variância vertical do fino B−A, com controles suaves das mesmas fases, foi 217,666789(km/s)² na base e 170,501303(km/s)² com o fino duplicado. Essa redução é preliminar, com apenas três sementes; B−A inclui autogravidade/resposta coletiva dos bárions, não apenas encontros de duas partículas. Refinar só bojo ou espesso não trouxe melhora estrutural/cinemática uniforme. Não se identifica ainda uma causa única para todo o resíduo do modelo refinado.",
+  "explanation": "Não foi iniciado 1 Gyr: nas três sementes com Nh=40.000, h50 e a variância vertical do fino ainda crescem de 100 para 200 Myr, e a resposta estrutural continua dependente da resolução. Os dados não mostram um patamar de estacionariedade/convergência que justifique promover esta realização a referência de longo prazo. Essa decisão usa tendências e controles físicos, não uma porcentagem universal aceitável de espessamento. Nh=40.000 é o halo vivo mais promissor entre os testados para a próxima rodada de convergência; B com fino duplicado é um controle promissor de resolução bariônica, mas a combinação viva não foi testada e não foi promovida.",
+  "candidateForFurtherConvergence": {
+    "haloParticles": 40000,
+    "baryonCounts": [
+      1500,
+      3546,
+      954
+    ],
+    "totalParticles": 46000,
+    "dtMyr": 0.05,
+    "epsilonKpc": 0.1,
+    "haloSeeds": [
+      2026,
+      2027,
+      2028
+    ],
+    "baryonSeed": 2026,
+    "status": "improved, still evolving; opt-in experimental only"
+  },
+  "demonstratedDomain": {
+    "shortHaloResolutions": [
+      4000,
+      8000,
+      20000,
+      40000
+    ],
+    "mediumHaloResolutions": [
+      4000,
+      40000
+    ],
+    "maxDurationMyr": 200,
+    "completedIntegrations": 51,
+    "varianceReference": "Same-phase A controls for baseline and thin2 baryons"
+  },
+  "thinGrowthReductionPercent": 72.1142477381902,
+  "normalDispersionGrowthReductionPercent": 57.17362914267753,
+  "remaining": [
+    "Convergência do halo acima40.000 com os mesmos bárions e sementes",
+    "Refinamento bariônico além de um fator2 e controles conjuntos de população/halo",
+    "Separação entre ruído discreto e modos coletivos persistentes no limite de resolução",
+    "Convergência estrutural em N,epsilon,método e diferentes realizações bariônicas",
+    "Somente após justificar a configuração, integração1Gyr sem supressão de instabilidades"
+  ],
+  "evidence": [
+    {
+      "id": "H-nh4000-b2026-h2026-t200",
+      "thinH100": 0.303126471622029,
+      "thinH200": 0.4091062351908734,
+      "thinHeightChange100to200Kpc": 0.10597976356884442,
+      "cartesianVarianceChange100to200Km2S2": 826.6636687329027
+    },
+    {
+      "id": "H-nh4000-b2026-h2027-t200",
+      "thinH100": 0.3139588342648126,
+      "thinH200": 0.4034883121464804,
+      "thinHeightChange100to200Kpc": 0.08952947788166782,
+      "cartesianVarianceChange100to200Km2S2": 780.7884621411052
+    },
+    {
+      "id": "H-nh4000-b2026-h2028-t200",
+      "thinH100": 0.34676813053907046,
+      "thinH200": 0.4688395240879436,
+      "thinHeightChange100to200Kpc": 0.12207139354887314,
+      "cartesianVarianceChange100to200Km2S2": 656.1773634964774
+    },
+    {
+      "id": "H-nh40000-b2026-h2026-t200",
+      "thinH100": 0.24775552952467264,
+      "thinH200": 0.26544987835977557,
+      "thinHeightChange100to200Kpc": 0.01769434883510293,
+      "cartesianVarianceChange100to200Km2S2": 130.69724122954096
+    },
+    {
+      "id": "H-nh40000-b2026-h2027-t200",
+      "thinH100": 0.24263404782244183,
+      "thinH200": 0.26906444889358977,
+      "thinHeightChange100to200Kpc": 0.02643040107114794,
+      "cartesianVarianceChange100to200Km2S2": 397.12308368403757
+    },
+    {
+      "id": "H-nh40000-b2026-h2028-t200",
+      "thinH100": 0.22602024755615546,
+      "thinH200": 0.27200365969905027,
+      "thinHeightChange100to200Kpc": 0.04598341214289481,
+      "cartesianVarianceChange100to200Km2S2": 178.3809680456012
+    }
+  ]
+}

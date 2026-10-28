@@ -1,0 +1,69 @@
+{
+  "schema": "integrated-halo-representation-validation-v1",
+  "computedUTC": "2026-10-22T22:11:09.788Z",
+  "matchingInitialBaryons": true,
+  "probeMaxRelativeError": 3.2789550078883194e-7,
+  "gpuComputeSpeedup": 3.4326935997061447,
+  "executedCoreSourceHashes": {
+    "src/physics/halo-geometry.js": "dae6489e269bd0946db52d6d04438dced9df0235fb75320cd3ff5d7b2277fca8",
+    "src/compute/gpu-halo-geometry.js": "daa41618aa7ac6cf44b8f1306a36454d68278023e9d32c1866db3b7512ad404d",
+    "src/compute/halo-geometry-probes.js": "7824d12539338ac533f8e301bb3e6d9b2a2a21ddd3fc0df7a6ae303895b4cdce",
+    "src/compute/halo-representation-validation-worker.js": "3e2be326d8d807ce032d052dda12fa376fe5fc3d23aa2e0116a613ac9845e459",
+    "src/physics/live-initial.js": "364d97d8066a70bd6ef1a19fba02dfed553481c683c0b1b7953927c8e8df7828",
+    "src/physics/live-energy.js": "351eff02951315dfb024e6383cec2a03e178ef838aa38e607fce33740fc57171",
+    "src/physics/gpu-energy.js": "0563e28a877d8423bcceca13486b18e780dee8e05122babeebb073f4d136bcc5"
+  },
+  "runs": [
+    {
+      "mode": "particles",
+      "n": 9010,
+      "counts": [
+        614,
+        1844,
+        6552
+      ],
+      "h50_initial": 0.1751922460738034,
+      "h50_200": 0.43426669484974445,
+      "h50_1200": 1.0699405500453696,
+      "h50_growth_percent": 510.7236901310317,
+      "maxSampledDirectErrorPercent": 0.00017580142312112124,
+      "gpuComputeSeconds": 13.539745000000053,
+      "diagnosticSeconds": 2.4729100000000908,
+      "forceRmsRelative": 0.000001878891219602806,
+      "convergence200": {
+        "coarseMaxSampled": 0.0000015049395967660414,
+        "fineMaxSampled": 4.4914231596027034e-7,
+        "reduction": 3.350696523769903,
+        "observed": true,
+        "qualification": "Same realization, epochs and Hamiltonian; sampled energy convergence, not proof of equilibrium or full Einstein accuracy."
+      },
+      "finalTimeMyr": 1200.0000178813934
+    },
+    {
+      "mode": "geometry",
+      "n": 2458,
+      "counts": [
+        614,
+        1844,
+        0
+      ],
+      "h50_initial": 0.1751922460738034,
+      "h50_200": 0.3037137681205751,
+      "h50_1200": 0.441712004101269,
+      "h50_growth_percent": 152.12988245791914,
+      "maxSampledDirectErrorPercent": 0.0005053069489414169,
+      "gpuComputeSeconds": 3.944349999999744,
+      "diagnosticSeconds": 0.5278249999998952,
+      "forceRmsRelative": 5.710559696802827e-7,
+      "convergence200": {
+        "coarseMaxSampled": 0.0000024060531553752523,
+        "fineMaxSampled": 0.0000010298712408741337,
+        "reduction": 2.3362659912058943,
+        "observed": true,
+        "qualification": "Same realization, epochs and Hamiltonian; sampled energy convergence, not proof of equilibrium or full Einstein accuracy."
+      },
+      "finalTimeMyr": 1200.0000178813934
+    }
+  ],
+  "qualification": "Finite-resolution numerical comparison. Static halo has no live response or halo particle relaxation; pair Plummer softening differs from unsoftened continuum NFW. Differences are not evidence of new relativistic physics or certified galaxy equilibrium."
+}

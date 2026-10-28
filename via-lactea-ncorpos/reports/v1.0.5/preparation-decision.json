@@ -1,0 +1,125 @@
+{
+  "schema": "preparation-decision-105",
+  "UTC": "2026-10-17T01:30:34.631Z",
+  "phaseACompleted": true,
+  "JeansSpatialChecks": 216,
+  "originalContinuum": {
+    "kind": "A",
+    "metrics": {
+      "thinGrowth": {
+        "n": 3,
+        "values": [
+          2.7797053384476467,
+          0.15419717249944842,
+          0.7972459575637858
+        ],
+        "mean": 1.2437161561702936,
+        "sd": 1.368511969640006,
+        "CI95": [
+          -2.1558560367921213,
+          4.643288349132709
+        ],
+        "assumption": "Independent realization means; Student t interval, small-n and approximate normality limitations. Epochs are not replicates."
+      },
+      "thinVarianceChange": {
+        "n": 3,
+        "values": [
+          95.87246772686946,
+          26.52784871647426,
+          93.28558149225896
+        ],
+        "mean": 71.89529931186756,
+        "sd": 39.31064964156396,
+        "CI95": [
+          -25.757767941832284,
+          169.5483665655674
+        ],
+        "assumption": "Independent realization means; Student t interval, small-n and approximate normality limitations. Epochs are not replicates."
+      },
+      "thinLateH": {
+        "n": 3,
+        "values": [
+          0.0032747980739132043,
+          0.0023603359570021076,
+          -0.00016584456933038672
+        ],
+        "mean": 0.001823096487194975,
+        "sd": 0.0017821265767519285,
+        "CI95": [
+          -0.002603951349484791,
+          0.006250144323874741
+        ],
+        "assumption": "Independent realization means; Student t interval, small-n and approximate normality limitations. Epochs are not replicates."
+      },
+      "thinLateVariance": {
+        "n": 3,
+        "values": [
+          -66.88057018983747,
+          -40.968013890910875,
+          -66.00397182743643
+        ],
+        "mean": -57.950851969394925,
+        "sd": 14.714098615689883,
+        "CI95": [
+          -94.50269923717187,
+          -21.39900470161799
+        ],
+        "assumption": "Independent realization means; Student t interval, small-n and approximate normality limitations. Epochs are not replicates."
+      },
+      "thickGrowth": {
+        "n": 3,
+        "values": [
+          0.3187209609503805,
+          -2.693413968748215,
+          -8.19728609220891
+        ],
+        "mean": -3.523993033335582,
+        "sd": 4.318331879240271,
+        "CI95": [
+          -14.251324107034652,
+          7.203338040363487
+        ],
+        "assumption": "Independent realization means; Student t interval, small-n and approximate normality limitations. Epochs are not replicates."
+      }
+    }
+  },
+  "trial": {
+    "method": "Finite randomized orbital phase sampling, same original weighted orbits, no orbit-weight optimization or new self-consistent solve.",
+    "thinGrowth": {
+      "n": 3,
+      "values": [
+        0.09888572495906356,
+        -5.4398958251483105,
+        -0.7259754964155318
+      ],
+      "mean": -2.022328532201593,
+      "sd": 2.988297786365386,
+      "CI95": [
+        -9.445671757684131,
+        5.4010146932809455
+      ],
+      "assumption": "Independent realization means; Student t interval, small-n and approximate normality limitations. Epochs are not replicates."
+    },
+    "thickGrowth": {
+      "n": 3,
+      "values": [
+        9.59347562473658,
+        0.4917034497097683,
+        -2.622648677346029
+      ],
+      "mean": 2.487510132366773,
+      "sd": 6.34790173812474,
+      "CI95": [
+        -13.281551966712573,
+        18.25657223144612
+      ],
+      "assumption": "Independent realization means; Student t interval, small-n and approximate normality limitations. Epochs are not replicates."
+    },
+    "maximumRadialMassTV": 0.056603773584905676,
+    "passesHeightEquivalence": false,
+    "promoted": false
+  },
+  "decision": "No improved globally stationary preparation demonstrated. Keep original104 for directly comparable resolution campaign. MIX trial remains explicitly experimental and is not promoted to a live model; fixed-halo exploratory controls may finish. Higher halo sampling is now allowed, subject to registered cost/accuracy pilots.",
+  "reason": "Orbit-phase sampling does not consistently improve both populations across seeds and does not solve density/potential closure. Inherited original controls show small thin height drift but nonzero velocity-moment changes; all-population equilibrium is unproven. A full orbit-weight fit or a more accurate action/potential method would require a separate validated preparation, not arbitrary velocity adjustments.",
+  "numericalChanges": "No force, integrator, physical mass, epsilon or dt changed. New diagnostics read states only."
+}

@@ -1,0 +1,255 @@
+{
+  "createdUTC": "2026-10-22T01:31:04.848Z",
+  "runs": [
+    {
+      "id": "smooth-halo-control",
+      "timeMyr": 5000.000074505806,
+      "complete": true,
+      "haloParticleMassMsun": null,
+      "sigmaNormalInitial": 0.040188019871919084,
+      "sigmaNormalLast": 0.058560887678055354,
+      "R50Initial": 5.3405106889879,
+      "R50Last": 6.48678679227491,
+      "diskMassInitial": 6.8000000909669325,
+      "diskMassLast": 6.8000000909669325,
+      "totalAngularMomentumInitial": [
+        0.09160619002045788,
+        0.08344924487873481,
+        21.560013286558696
+      ],
+      "totalAngularMomentumLast": [
+        0.09163199589491856,
+        0.08356866526147555,
+        21.56108328825929
+      ],
+      "relativeAngularMomentumVectorChange": 0.000049950647622563366,
+      "energyReferences": [
+        {
+          "timeMyr": 0,
+          "energy": -0.8697028710813594,
+          "errorPercent": 0,
+          "diagnosticPrecision": "Float64",
+          "actualTrajectoryPrecision": "Float32",
+          "originalNestedPrecisionLabel": "Float64"
+        },
+        {
+          "timeMyr": 1000.0000149011612,
+          "energy": -0.8697037870250677,
+          "errorPercent": -0.00010531685461553968,
+          "diagnosticPrecision": "Float64",
+          "actualTrajectoryPrecision": "Float32",
+          "originalNestedPrecisionLabel": "Float64"
+        },
+        {
+          "timeMyr": 5000.000074505806,
+          "energy": -0.8697044374076086,
+          "errorPercent": -0.000180099008677609,
+          "diagnosticPrecision": "Float64",
+          "actualTrajectoryPrecision": "Float32",
+          "originalNestedPrecisionLabel": "Float64"
+        }
+      ],
+      "qualification": "Static axisymmetric external field: full angular-momentum vector need not be conserved; only symmetry-axis component is an invariant."
+    },
+    {
+      "id": "halo-x2",
+      "timeMyr": 5000.000074505806,
+      "complete": true,
+      "haloParticleMassMsun": 36817097.57074714,
+      "sigmaNormalInitial": 0.04018801987191723,
+      "sigmaNormalLast": 0.08036623753419249,
+      "R50Initial": 5.339904280216396,
+      "R50Last": 6.762405000977552,
+      "diskMassInitial": 6.8000000909669325,
+      "diskMassLast": 6.8000000909669325,
+      "totalAngularMomentumInitial": [
+        0.007985389610918284,
+        -3.1888942308695394,
+        28.110677332391646
+      ],
+      "totalAngularMomentumLast": [
+        0.007868121778407122,
+        -3.1885446772384602,
+        28.111345778550163
+      ],
+      "relativeAngularMomentumVectorChange": 0.000026983411326062612,
+      "energyReferences": [
+        {
+          "timeMyr": 0,
+          "energy": -1.8657369943979483,
+          "errorPercent": 0,
+          "diagnosticPrecision": "Float64",
+          "actualTrajectoryPrecision": "Float32",
+          "originalNestedPrecisionLabel": "Float64"
+        },
+        {
+          "timeMyr": 1000.0000149011612,
+          "energy": -1.8657382860465233,
+          "errorPercent": -0.00006922993856391162,
+          "diagnosticPrecision": "Float64",
+          "actualTrajectoryPrecision": "Float32",
+          "originalNestedPrecisionLabel": "Float64"
+        },
+        {
+          "timeMyr": 5000.000074505806,
+          "energy": -1.8657413988668885,
+          "errorPercent": -0.00023607126585677512,
+          "diagnosticPrecision": "Float64",
+          "actualTrajectoryPrecision": "Float32",
+          "originalNestedPrecisionLabel": "Float64"
+        }
+      ],
+      "qualification": "Isolated pair forces: total angular momentum is an invariant; finite arithmetic errors remain."
+    },
+    {
+      "id": "halo-x4",
+      "timeMyr": 5000.000074505806,
+      "complete": true,
+      "haloParticleMassMsun": 18408548.78537357,
+      "sigmaNormalInitial": 0.04018801987191723,
+      "sigmaNormalLast": 0.07564559161405689,
+      "R50Initial": 5.339904280216396,
+      "R50Last": 6.145113591603137,
+      "diskMassInitial": 6.8000000909669325,
+      "diskMassLast": 6.8000000909669325,
+      "totalAngularMomentumInitial": [
+        -4.593684047119862,
+        -0.7414282190719123,
+        27.641450419379588
+      ],
+      "totalAngularMomentumLast": [
+        -4.594508534984671,
+        -0.7417313385731382,
+        27.641791645356097
+      ],
+      "relativeAngularMomentumVectorChange": 0.000033620284959325525,
+      "energyReferences": [
+        {
+          "timeMyr": 0,
+          "energy": -1.8834709382429908,
+          "errorPercent": 0,
+          "diagnosticPrecision": "Float64",
+          "actualTrajectoryPrecision": "Float32",
+          "originalNestedPrecisionLabel": "Float64"
+        },
+        {
+          "timeMyr": 1000.0000149011612,
+          "energy": -1.8834738305865644,
+          "errorPercent": -0.0001535645448415156,
+          "diagnosticPrecision": "Float64",
+          "actualTrajectoryPrecision": "Float32",
+          "originalNestedPrecisionLabel": "Float64"
+        },
+        {
+          "timeMyr": 5000.000074505806,
+          "energy": -1.8834751346083085,
+          "errorPercent": -0.000222799578823949,
+          "diagnosticPrecision": "Float64",
+          "actualTrajectoryPrecision": "Float32",
+          "originalNestedPrecisionLabel": "Float64"
+        }
+      ],
+      "qualification": "Isolated pair forces: total angular momentum is an invariant; finite arithmetic errors remain."
+    },
+    {
+      "id": "halo-x8",
+      "timeMyr": 5000.000074505806,
+      "complete": true,
+      "haloParticleMassMsun": 9204274.392686784,
+      "sigmaNormalInitial": 0.04018801987191723,
+      "sigmaNormalLast": 0.06896004860902229,
+      "R50Initial": 5.339904280216396,
+      "R50Last": 6.076406195730604,
+      "diskMassInitial": 6.8000000909669325,
+      "diskMassLast": 6.8000000909669325,
+      "totalAngularMomentumInitial": [
+        -4.702911630811999,
+        2.284450786709698,
+        26.40342289326113
+      ],
+      "totalAngularMomentumLast": [
+        -4.702756314239168,
+        2.284007646877043,
+        26.404133383717156
+      ],
+      "relativeAngularMomentumVectorChange": 0.0000316405805073657,
+      "energyReferences": [
+        {
+          "timeMyr": 0,
+          "energy": -1.8586132898507994,
+          "errorPercent": 0,
+          "diagnosticPrecision": "Float64",
+          "actualTrajectoryPrecision": "Float32",
+          "originalNestedPrecisionLabel": "Float64"
+        },
+        {
+          "timeMyr": 1000.0000149011612,
+          "energy": -1.858616600060055,
+          "errorPercent": -0.0001781010215340262,
+          "diagnosticPrecision": "Float64",
+          "actualTrajectoryPrecision": "Float32",
+          "originalNestedPrecisionLabel": "Float64"
+        },
+        {
+          "timeMyr": 5000.000074505806,
+          "energy": -1.858617266385989,
+          "errorPercent": -0.00021395172472349997,
+          "diagnosticPrecision": "Float64",
+          "actualTrajectoryPrecision": "Float32",
+          "originalNestedPrecisionLabel": "Float64"
+        }
+      ],
+      "qualification": "Isolated pair forces: total angular momentum is an invariant; finite arithmetic errors remain."
+    },
+    {
+      "id": "halo-x16",
+      "timeMyr": 5000.000074505806,
+      "complete": true,
+      "haloParticleMassMsun": 4602137.196343392,
+      "sigmaNormalInitial": 0.04018801987191723,
+      "sigmaNormalLast": 0.06619831539406612,
+      "R50Initial": 5.339904280216396,
+      "R50Last": 6.143384341771353,
+      "diskMassInitial": 6.8000000909669325,
+      "diskMassLast": 6.8000000909669325,
+      "totalAngularMomentumInitial": [
+        -4.638529043894159,
+        1.3512348674446062,
+        24.286385870478426
+      ],
+      "totalAngularMomentumLast": [
+        -4.63853509889012,
+        1.3512253633952183,
+        24.287614646147546
+      ],
+      "relativeAngularMomentumVectorChange": 0.000049624975024775895,
+      "energyReferences": [
+        {
+          "timeMyr": 0,
+          "energy": -1.8420285917118044,
+          "errorPercent": 0,
+          "diagnosticPrecision": "Float64",
+          "actualTrajectoryPrecision": "Float32",
+          "originalNestedPrecisionLabel": "Float32"
+        },
+        {
+          "timeMyr": 1000.0000149011612,
+          "energy": -1.842031901193383,
+          "errorPercent": -0.00017966504936202903,
+          "diagnosticPrecision": "Float64",
+          "actualTrajectoryPrecision": "Float32",
+          "originalNestedPrecisionLabel": "Float32"
+        },
+        {
+          "timeMyr": 5000.000074505806,
+          "energy": -1.8420306741057495,
+          "errorPercent": -0.00011304894801455967,
+          "diagnosticPrecision": "Float64",
+          "actualTrajectoryPrecision": "Float32",
+          "originalNestedPrecisionLabel": "Float32"
+        }
+      ],
+      "qualification": "Isolated pair forces: total angular momentum is an invariant; finite arithmetic errors remain."
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "createdUTC": "2026-10-22T06:06:52.601Z",
+  "tests": {
+    "passed": 200,
+    "failed": 0
+  },
+  "build": "passed",
+  "originalModulesUnchanged": 10,
+  "linksRemovedFromSourceAndBuild": true,
+  "browserOriginalSimulation": {
+    "preserved": true,
+    "paused": true,
+    "physicalTimeMyr": 1.4,
+    "integratedParticles": 536000
+  },
+  "prototypeProductionIntegrated": false,
+  "benchmarks": {
+    "nodeSerial": [
+      1000,
+      10000,
+      24000,
+      80000,
+      536000
+    ],
+    "nodeParallel": [
+      10000,
+      24000,
+      80000,
+      536000
+    ],
+    "browserCPU": [
+      10000,
+      80000
+    ],
+    "browserGPU": [
+      10000,
+      80000,
+      536000
+    ],
+    "native": [
+      1000,
+      10000,
+      80000,
+      536000
+    ]
+  },
+  "limitations": [
+    "Three measured steps per configuration after warmup; not a long-duration physics validation.",
+    "Process CPU usage is aggregate logical CPU equivalents, not individual physical-core telemetry.",
+    "Native approximation has larger measured force error at the settings tested.",
+    "Main CPU backend remains serial; the parallel prototype is isolated."
+  ]
+}

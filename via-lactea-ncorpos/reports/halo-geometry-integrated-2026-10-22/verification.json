@@ -1,0 +1,70 @@
+{
+  "verifiedUTC": "2026-10-22T22:17:25.688Z",
+  "tests": {
+    "passed": 228,
+    "failed": 0,
+    "log": "tests.tap"
+  },
+  "build": {
+    "passed": true,
+    "log": "build.txt",
+    "remotePublished": false
+  },
+  "browser": {
+    "url": "http://localhost:4180/experimento-ncorpos.html",
+    "modes": [
+      "particles",
+      "geometry"
+    ],
+    "actualCounts": {
+      "particles": [
+        614,
+        1844,
+        6552
+      ],
+      "geometry": [
+        614,
+        1844,
+        0
+      ]
+    },
+    "cancelObserved": "Comparação cancelada; nenhum estado parcial foi certificado.",
+    "preservedReportRestoredAfterReload": true,
+    "visualAmplificationChange": {
+      "from": 8,
+      "to": 12,
+      "stepsBefore": 545,
+      "stepsAfter": 545,
+      "physicalTimeBefore": "54.50 Myr",
+      "physicalTimeAfter": "54.50 Myr"
+    },
+    "directSampling": {
+      "cadenceMyr": 50,
+      "events": [
+        {
+          "type": "completed",
+          "timeMyr": 0,
+          "reason": "Referência direta Float64 calculada no snapshot preservado."
+        },
+        {
+          "type": "completed",
+          "timeMyr": 51.10000076144934,
+          "reason": "Referência direta Float64 calculada no snapshot preservado."
+        }
+      ]
+    },
+    "svg": {
+      "realMarkers": 2,
+      "dashedVisualGuide": true,
+      "file": "main-energy-final.svg"
+    },
+    "screenshot": "main-geometry.png"
+  },
+  "campaign": {
+    "file": "comparison-4096.json",
+    "matchingInitialBaryons": true,
+    "probeMaxRelative": 3.2789550078883194e-7,
+    "gpuComputeSpeedup": 3.4326935997061447
+  },
+  "limitations": "Finite-resolution numerical comparison. Static halo has no live response or halo particle relaxation; pair Plummer softening differs from unsoftened continuum NFW. Differences are not evidence of new relativistic physics or certified galaxy equilibrium."
+}

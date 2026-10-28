@@ -1,0 +1,19 @@
+{
+  "id": "A-base-s2028-t200",
+  "model": "A",
+  "stage": "continuous200",
+  "seed": 2028,
+  "n": 6000,
+  "source": "reports/v1.0.3/initial/baryons/B-base-s2028.json",
+  "sourceSHA256": "47c5aa253802dc1799ed61515be1d5140ac0b1578616683442defbcb87162148",
+  "potentialSHA256": "1074a9a28555ad253907b7e6f4b7aba406be33b9efc63ff7794e08110ea707d1",
+  "scriptSHA256": "8c3dcd4d64e33319726180105b82d79ab37f7a56c35c10a28eb0550ae1ef21ae",
+  "durationMyr": 200,
+  "cadenceMyr": 5,
+  "algorithm": "actual AGAMA DOP853",
+  "accuracy": 1e-10,
+  "selfGravity": false,
+  "inputQuantization": "positions, velocities and weights rounded once to Float32 to match actual initial GPU uploads; evolution itself Float64",
+  "qualification": "A: test particles in complete fixed Plummer mean. B: self-gravitating baryons and fixed halo only. Same initial baryons do not make the Hamiltonians identical.",
+  "wallSeconds": 3.474757900003169
+}

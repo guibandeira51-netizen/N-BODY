@@ -1,0 +1,40 @@
+{
+  "dateUTC": "2026-10-23T03:43:23.666Z",
+  "tests": {
+    "passed": 241,
+    "failed": 0,
+    "log": "tests.tap"
+  },
+  "physicsBaseline": {
+    "files": 63,
+    "changed": [
+      "src/physics/halo-geometry.js",
+      "src/physics/live-energy.js",
+      "src/physics/live-initial.js",
+      "src/compute/gpu-halo-geometry.js"
+    ],
+    "unchanged": 59,
+    "qualification": "Only the explicit halo extension, dispatch/initial-field metadata and angular symmetry handling changed among prior physics/compute files. Constants, baryonic sampling and original pair-force/KDK modules retain their hashes."
+  },
+  "browser": {
+    "actualMainPageTest": true,
+    "particleSelectorPreserved": true,
+    "continuousShapeChoices": 4,
+    "triaxialStartedAndAdvanced": true,
+    "automaticFloat64ReferenceObserved": true,
+    "isodensityContoursDrawn": true,
+    "changeShapeWhileRunningPaused": true,
+    "newRealizationAtTimeZeroObserved": true,
+    "particleModeHidesShapeControls": true,
+    "consoleErrorsObservedAfterVisualLayoutFix": [],
+    "screenshot": "interface-triaxial.png",
+    "qualification": "Interactive checks on an agent-created test tab; user original running tab preserved."
+  },
+  "build": {
+    "status": "passed",
+    "log": "build.txt",
+    "hashMismatches": [],
+    "sourceAndBuildFilesChecked": 52
+  },
+  "physicalConclusion": "No configuration certified in equilibrium; all four sampled disks thickened."
+}

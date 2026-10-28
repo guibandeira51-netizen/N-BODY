@@ -1,0 +1,26 @@
+{
+  "schema": "stored-binary64-decimal80-calibration",
+  "n": 96,
+  "decimalDigits": 80,
+  "inputConvention": "Decimal.from_float: exact binary64 inputs, including stored epsilonSquared, not decimal reparsing of physical parameters.",
+  "reference": {
+    "K": "1.6597076425709807975900472771515112495212280055666625852141853945022237685777070",
+    "U": "-3.4371532644908730355058809982438900724893006245131764393981304713667917000725665",
+    "E": "-1.7774456219198922379158337210923788229680726189465138541839450768645679314948595"
+  },
+  "errors": {
+    "kinetic": {
+      "absolute": 1.0742355394507982e-16,
+      "relative": 6.472438349363425e-17
+    },
+    "potential": {
+      "absolute": 7.027945915979209e-17,
+      "relative": 2.0446996031817103e-17
+    },
+    "energy": {
+      "absolute": 1.777030131048719e-16,
+      "relative": 9.997662427102978e-17
+    }
+  },
+  "scope": "Empirical calibration on this 96-body snapshot; not a formal error enclosure for arbitrary N, positions, cancellation, underflow, or Float32 trajectory integration."
+}

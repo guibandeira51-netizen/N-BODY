@@ -1,0 +1,56 @@
+{
+  "createdUTC": "2026-10-22T06:06:01.210Z",
+  "allUnchanged": true,
+  "files": [
+    {
+      "file": "src/physics/forces.js",
+      "expected": "9532d4286c6481d49995ece96e48bd595145c2e2c8a22897520cafa45f862444",
+      "current": "9532d4286c6481d49995ece96e48bd595145c2e2c8a22897520cafa45f862444"
+    },
+    {
+      "file": "src/physics/integrator.js",
+      "expected": "5a83b4dcad749e13d438cdde561c7ee19ac6418823cfa5f06257eee3b268b04f",
+      "current": "5a83b4dcad749e13d438cdde561c7ee19ac6418823cfa5f06257eee3b268b04f"
+    },
+    {
+      "file": "src/physics/initial.js",
+      "expected": "5a6bbdb6cfe562776c6a408271c26d8a29183e92d2021914e2eb0f34230ef66a",
+      "current": "5a6bbdb6cfe562776c6a408271c26d8a29183e92d2021914e2eb0f34230ef66a"
+    },
+    {
+      "file": "src/physics/initial-legacy.js",
+      "expected": "93ca8666ff188863b947dc8535ca23244d67c20ab2a177cb12e494cf566eeefa",
+      "current": "93ca8666ff188863b947dc8535ca23244d67c20ab2a177cb12e494cf566eeefa"
+    },
+    {
+      "file": "src/physics/live-initial.js",
+      "expected": "c3321a11fa28aa16b0c2d6232de89483208001a02bf607289dab9436de72b812",
+      "current": "c3321a11fa28aa16b0c2d6232de89483208001a02bf607289dab9436de72b812"
+    },
+    {
+      "file": "src/physics/rotation-field.js",
+      "expected": "cf4df5dbd647ded3ebf8873f6be9aa10672ff9f164346b5c6c53231b4f1619e7",
+      "current": "cf4df5dbd647ded3ebf8873f6be9aa10672ff9f164346b5c6c53231b4f1619e7"
+    },
+    {
+      "file": "src/compute/live-worker.js",
+      "expected": "5ce1906ee3fdd28f9f4a0ba506096864fd805b6ec496d988d2e946dfcef870cd",
+      "current": "5ce1906ee3fdd28f9f4a0ba506096864fd805b6ec496d988d2e946dfcef870cd"
+    },
+    {
+      "file": "src/ncorpos-live-entry.js",
+      "expected": "8ceacfadff741424aa8372d3191f07071ae8b0a37127026f649e4166302e3698",
+      "current": "8ceacfadff741424aa8372d3191f07071ae8b0a37127026f649e4166302e3698"
+    },
+    {
+      "file": "src/compute/energy-snapshot-sampler.js",
+      "expected": "339cd3d1807f76a608859f99166081ed15dd99814a64bbf2974e27d151f4fa1e",
+      "current": "339cd3d1807f76a608859f99166081ed15dd99814a64bbf2974e27d151f4fa1e"
+    },
+    {
+      "file": "src/automatic-energy.js",
+      "expected": "b8f6971343e195e74563be2327883a0cffa4aa81e9827e58e99a113788b7505d",
+      "current": "b8f6971343e195e74563be2327883a0cffa4aa81e9827e58e99a113788b7505d"
+    }
+  ]
+}

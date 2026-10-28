@@ -1,0 +1,30 @@
+{
+  "status": "passed",
+  "files": [
+    {
+      "path": "src/automatic-energy.js",
+      "sha256": "95dc42305ac02fb7646effd9dd8892a517224a32aa24dac0e360b493942ce5e9"
+    },
+    {
+      "path": "src/compute/energy-reference-worker.js",
+      "sha256": "aa55eec73aa469e2d1fa3e3ce5461921304de67ec8da4ab75b08f8a1669f0b8e"
+    },
+    {
+      "path": "src/compute/energy-snapshot-sampler.js",
+      "sha256": "e4dff1a34cd9ee4c8e1f6324ee1c97cdc78a2cffc58059fba0ed05396fe214ce"
+    },
+    {
+      "path": "src/compute/live-energy-reference.js",
+      "sha256": "d02f6c2068f5d86688463a3881f1875b81f1f311dcff32839f9697a9e28248a9"
+    },
+    {
+      "path": "src/energy-audit-session.js",
+      "sha256": "0a88225065b8ec8d888593a3f1c268ba8f2296a5181ba046090d017ae142be50"
+    },
+    {
+      "path": "src/physics/live-energy.js",
+      "sha256": "3880ea68ca7817243b40f8e2c4e283e88afa6b553674d4aa307f607dfa635750"
+    }
+  ],
+  "meaning": "Automatic reference schedule, snapshot validation, force-compatible energy and parallel direct CPU evaluator unchanged since baseline."
+}

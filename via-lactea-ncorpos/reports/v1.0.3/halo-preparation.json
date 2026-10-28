@@ -1,0 +1,117 @@
+{
+  "rows": 12,
+  "wallSeconds": 9.88917180000135,
+  "DFMassesMsun": [
+    9200015467.282112,
+    39800000000.00001,
+    10699999999.999998,
+    1049129212118.5566
+  ],
+  "physicalConfig": {
+    "id": "C20-NFW-collisionless-v2-vertical-calibrated",
+    "status": "candidate-not-validated",
+    "reference": "https://doi.org/10.1093/mnras/staa1017",
+    "branch": "Cautun et al. 2020 Table 2, uncontracted NFW column; reduced collisionless approximation, not a refit",
+    "units": {
+      "length": "kpc",
+      "velocity": "km/s",
+      "mass": "Msun"
+    },
+    "bulge": {
+      "mass": 9200000000,
+      "mass68": [
+        8400000000,
+        10300000000
+      ],
+      "r0": 0.075,
+      "cutoff": 2.1,
+      "alpha": 1.8,
+      "sphericalized": true
+    },
+    "disks": [
+      {
+        "name": "thin",
+        "mass": 39800000000,
+        "mass68": [
+          33100000000,
+          42400000000
+        ],
+        "radius": 2.43,
+        "referenceExponentialHeight": 0.3,
+        "dfHdisk": 0.18645786701588404,
+        "sigmaRsolar": 35,
+        "sigmaScaleRadius": 4.86,
+        "verticalCalibrationTargetMedianAbsZKpc": 0.2079441541679836
+      },
+      {
+        "name": "thick",
+        "mass": 10700000000,
+        "mass68": [
+          8800000000,
+          12500000000
+        ],
+        "radius": 3.88,
+        "referenceExponentialHeight": 0.9,
+        "dfHdisk": 0.4983290857005914,
+        "sigmaRsolar": 50,
+        "sigmaScaleRadius": 7.76,
+        "verticalCalibrationTargetMedianAbsZKpc": 0.6238324625039507
+      }
+    ],
+    "halo": {
+      "massWithinReferenceRadius": 820000000000,
+      "mass68": [
+        640000000000,
+        910000000000
+      ],
+      "referenceRadius": 207,
+      "scaleRadius": 14.4,
+      "scaleRadius68": [
+        10.9,
+        18.9
+      ],
+      "cutoffRadius": 414,
+      "cutoffStrength": 2,
+      "gamma": 1,
+      "beta": 3
+    },
+    "omitted": {
+      "coldGasMass": 12000000000,
+      "CGMmassWithinReferenceRadius": 55000000000,
+      "gasAddedToStars": false
+    },
+    "solarRadius": 8.122,
+    "kinematicChoice": "35 and 50 km/s at solar radius are explicit thin/thick population priors for sensitivity, not fitted C20 kinematics; no tuning against evolved stability",
+    "method": "AGAMA QuasiIsothermal stellar disks + action-based QuasiSpherical bulge and finite halo; SelfConsistentModel iterations",
+    "iterations": 14,
+    "potentialTolerance": 0.001,
+    "grids": {
+      "rminSph": 0.01,
+      "rmaxSph": 2000,
+      "sizeRadialSph": 40,
+      "lmaxAngularSph": 6,
+      "RminCyl": 0.02,
+      "RmaxCyl": 80,
+      "sizeRadialCyl": 30,
+      "zminCyl": 0.03,
+      "zmaxCyl": 40,
+      "sizeVerticalCyl": 25
+    },
+    "qualification": "Mass uncertainties are marginal intervals, not independent draws. R=207 kpc is the reference paper radius, not a new measured R200 of the gas-free model. Disk Hdisk is an action DF parameter and does not impose the reference double-exponential density. Bulge sphericalization and finite halo taper change profiles. Final profiles and enclosed masses must be measured. Vertical DF parameter calibrated to the declared initial exponential median at solar radius; iteration seed changes only convergence speed, not fixed DFs.",
+    "calibration": {
+      "target": "median |z| of reference exponential at solar radius, before SCM",
+      "calibrationCodeSHA256": "3cf55a0f0e15d20b0cd1182c82ff6f731da8d7f4617a647b2b880fc779f6247c",
+      "referencePotentialSHA256": "293f19893a50dd789931e5c8aeeccbe516203b0f059f6fc74e695ad98bd7053a",
+      "usesEvolvedStability": false,
+      "qualification": "Fixed spatial target, no dynamical cooling. Final SCM density must be checked again; no exact fit of the full exponential profile is asserted."
+    },
+    "adaptiveIterations": true,
+    "warmStartPotential": "../agama/potential-final.ini"
+  },
+  "potentialSHA256": "1074a9a28555ad253907b7e6f4b7aba406be33b9efc63ff7794e08110ea707d1",
+  "generatorSHA256": "d2e68e165612a4b241bf998edcab793c5e54137b0b11e8f586862f46717490c3",
+  "agama": "1.0.161 compiled on Oct 15 2026",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "numpy": "2.5.4",
+  "qualification": "Same v1.0.2 fixed DFs/Plummer potential; copied paired populations; antipodal sampling."
+}

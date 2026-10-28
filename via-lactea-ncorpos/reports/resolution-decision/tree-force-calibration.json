@@ -1,0 +1,734 @@
+{
+  "schema": "resolution-tree-calibration-v1",
+  "runs": [
+    {
+      "epoch": "initial",
+      "timeMyr": 0,
+      "n": 33148,
+      "theta": 0.2,
+      "algorithm": "Existing CPU Float64 monopole Barnes-Hut, 8-body leaves; unchanged solver",
+      "directMs": 5119.1911,
+      "treeMs": 7421.3827,
+      "options": {
+        "G": 0.04498502239584923,
+        "epsilon": 0.0999999988824129
+      },
+      "groups": [
+        {
+          "component": null,
+          "count": 33148,
+          "forceRmsRelative": 0.00028786043492377443,
+          "maxParticleForceRelative": 0.001598376650440158,
+          "totalForce": [
+            1.1972775442817132e-7,
+            6.737520031393605e-8,
+            5.39254293787214e-8
+          ],
+          "normalizedNetForce": 6.955274555180716e-7,
+          "totalTorque": [
+            -0.000013823211186385567,
+            -0.000004329874975048235,
+            -0.000002922669034317024
+          ],
+          "normalizedNetTorque": 0.00004661836960426072,
+          "qualification": "Net force/torque should cancel for exact isolated symmetric pair force; tree need not preserve this."
+        },
+        {
+          "component": 0,
+          "count": 4972,
+          "forceRmsRelative": 0.0002475262093748501,
+          "maxParticleForceRelative": 0.001598376650440158,
+          "totalForce": [
+            -0.0000017059445246182233,
+            -8.449962023750798e-7,
+            1.6418787460482378e-7
+          ],
+          "normalizedNetForce": 0.0002180108146213652,
+          "totalTorque": [
+            0.00006875475984292229,
+            0.00004548411874020124,
+            -0.00000621994449005478
+          ],
+          "normalizedNetTorque": 0.018328131875334955,
+          "qualification": "Individual component exchanges forces and torques; net does not measure total-system conservation."
+        },
+        {
+          "component": 1,
+          "count": 14917,
+          "forceRmsRelative": 0.0003141467404001328,
+          "maxParticleForceRelative": 0.0009360781343980523,
+          "totalForce": [
+            0.000003521204964074384,
+            0.000001927044385471382,
+            -4.5946600443292863e-7
+          ],
+          "normalizedNetForce": 0.00005520243250330957,
+          "totalTorque": [
+            -0.0025861036509299607,
+            -0.0021006542167898382,
+            0.00016004247873248827
+          ],
+          "normalizedNetTorque": 0.054660604681429956,
+          "qualification": "Individual component exchanges forces and torques; net does not measure total-system conservation."
+        },
+        {
+          "component": 2,
+          "count": 13259,
+          "forceRmsRelative": 0.0003644300478094459,
+          "maxParticleForceRelative": 0.001039764121297501,
+          "totalForce": [
+            -0.0000016955326850280457,
+            -0.0000010146729827824088,
+            3.492035592068885e-7
+          ],
+          "normalizedNetForce": 0.000015406611871999138,
+          "totalTorque": [
+            0.0025035256799006665,
+            0.0020508402230745566,
+            -0.00015674520327674477
+          ],
+          "normalizedNetTorque": 0.01288552863563687,
+          "qualification": "Individual component exchanges forces and torques; net does not measure total-system conservation."
+        }
+      ]
+    },
+    {
+      "epoch": "initial",
+      "timeMyr": 0,
+      "n": 33148,
+      "theta": 0.35,
+      "algorithm": "Existing CPU Float64 monopole Barnes-Hut, 8-body leaves; unchanged solver",
+      "directMs": 5119.1911,
+      "treeMs": 2071.2202000000016,
+      "options": {
+        "G": 0.04498502239584923,
+        "epsilon": 0.0999999988824129
+      },
+      "groups": [
+        {
+          "component": null,
+          "count": 33148,
+          "forceRmsRelative": 0.001789050280551624,
+          "maxParticleForceRelative": 0.014413332525360882,
+          "totalForce": [
+            2.8961542281417123e-7,
+            5.046648773418447e-7,
+            9.726388173642471e-7
+          ],
+          "normalizedNetForce": 0.0000053446114643107185,
+          "totalTorque": [
+            -0.00003451647795838005,
+            0.00007183238896601116,
+            -0.000104969254398708
+          ],
+          "normalizedNetTorque": 0.00041608263685092336,
+          "qualification": "Net force/torque should cancel for exact isolated symmetric pair force; tree need not preserve this."
+        },
+        {
+          "component": 0,
+          "count": 4972,
+          "forceRmsRelative": 0.001539750448080324,
+          "maxParticleForceRelative": 0.014413332525360882,
+          "totalForce": [
+            -0.0000016130360480606124,
+            -8.714675923589449e-7,
+            2.676199930112251e-7
+          ],
+          "normalizedNetForce": 0.0002114880231220377,
+          "totalTorque": [
+            0.00006777107901413055,
+            0.00004637714384876527,
+            -0.00000847434324624131
+          ],
+          "normalizedNetTorque": 0.01833582404293207,
+          "qualification": "Individual component exchanges forces and torques; net does not measure total-system conservation."
+        },
+        {
+          "component": 1,
+          "count": 14917,
+          "forceRmsRelative": 0.0019762738007505047,
+          "maxParticleForceRelative": 0.006710013014339621,
+          "totalForce": [
+            0.000003599614727190134,
+            0.000002155908624524073,
+            4.573903616658722e-8
+          ],
+          "normalizedNetForce": 0.00005740319005743006,
+          "totalTorque": [
+            -0.00257440381176331,
+            -0.0020893225518178273,
+            0.00011003147815946113
+          ],
+          "normalizedNetTorque": 0.05442975552031148,
+          "qualification": "Individual component exchanges forces and torques; net does not measure total-system conservation."
+        },
+        {
+          "component": 2,
+          "count": 13259,
+          "forceRmsRelative": 0.0017007797952289174,
+          "maxParticleForceRelative": 0.0045061944815475,
+          "totalForce": [
+            -0.0000016969632563152808,
+            -7.797761548232303e-7,
+            6.592797881863908e-7
+          ],
+          "normalizedNetForce": 0.000015210759452169643,
+          "totalTorque": [
+            0.0024721162547908576,
+            0.002114777796935069,
+            -0.00020652638931192467
+          ],
+          "normalizedNetTorque": 0.012971699857279943,
+          "qualification": "Individual component exchanges forces and torques; net does not measure total-system conservation."
+        }
+      ]
+    },
+    {
+      "epoch": "initial",
+      "timeMyr": 0,
+      "n": 33148,
+      "theta": 0.5,
+      "algorithm": "Existing CPU Float64 monopole Barnes-Hut, 8-body leaves; unchanged solver",
+      "directMs": 5119.1911,
+      "treeMs": 1187.673499999999,
+      "options": {
+        "G": 0.04498502239584923,
+        "epsilon": 0.0999999988824129
+      },
+      "groups": [
+        {
+          "component": null,
+          "count": 33148,
+          "forceRmsRelative": 0.004993338809613374,
+          "maxParticleForceRelative": 0.04040206972679313,
+          "totalForce": [
+            5.3227453866962606e-8,
+            0.0000011930122820670585,
+            9.510874488578175e-7
+          ],
+          "normalizedNetForce": 0.000007207403806441739,
+          "totalTorque": [
+            -0.000026502214964120517,
+            0.0001619014552084144,
+            -0.00023667015117725482
+          ],
+          "normalizedNetTorque": 0.0009102590594150027,
+          "qualification": "Net force/torque should cancel for exact isolated symmetric pair force; tree need not preserve this."
+        },
+        {
+          "component": 0,
+          "count": 4972,
+          "forceRmsRelative": 0.0044507223077952665,
+          "maxParticleForceRelative": 0.04040206972679313,
+          "totalForce": [
+            -0.0000016313313321767359,
+            -8.258826507194467e-7,
+            3.305225738800794e-7
+          ],
+          "normalizedNetForce": 0.00021224935078105277,
+          "totalTorque": [
+            0.0000680091832143993,
+            0.00004694059381286197,
+            -0.00001084961459259977
+          ],
+          "normalizedNetTorque": 0.018581192587170354,
+          "qualification": "Individual component exchanges forces and torques; net does not measure total-system conservation."
+        },
+        {
+          "component": 1,
+          "count": 14917,
+          "forceRmsRelative": 0.005431538392995102,
+          "maxParticleForceRelative": 0.01620608712006396,
+          "totalForce": [
+            0.000003562221695661656,
+            0.000002813456835677483,
+            5.393879145302662e-7
+          ],
+          "normalizedNetForce": 0.0000626759017317692,
+          "totalTorque": [
+            -0.0025537136984698384,
+            -0.002097215109199464,
+            0.000023306446357402527
+          ],
+          "normalizedNetTorque": 0.0543879498751041,
+          "qualification": "Individual component exchanges forces and torques; net does not measure total-system conservation."
+        },
+        {
+          "component": 2,
+          "count": 13259,
+          "forceRmsRelative": 0.004252607597642253,
+          "maxParticleForceRelative": 0.011287664188218739,
+          "totalForce": [
+            -0.0000018776629096181022,
+            -7.945619028909885e-7,
+            8.117696044743523e-8
+          ],
+          "normalizedNetForce": 0.000015680350504443743,
+          "totalTorque": [
+            0.002459202300291313,
+            0.002212175970595027,
+            -0.0002491269829420589
+          ],
+          "normalizedNetTorque": 0.013209598715770755,
+          "qualification": "Individual component exchanges forces and torques; net does not measure total-system conservation."
+        }
+      ]
+    },
+    {
+      "epoch": "initial",
+      "timeMyr": 0,
+      "n": 33148,
+      "theta": 0.8,
+      "algorithm": "Existing CPU Float64 monopole Barnes-Hut, 8-body leaves; unchanged solver",
+      "directMs": 5119.1911,
+      "treeMs": 503.0212999999985,
+      "options": {
+        "G": 0.04498502239584923,
+        "epsilon": 0.0999999988824129
+      },
+      "groups": [
+        {
+          "component": null,
+          "count": 33148,
+          "forceRmsRelative": 0.01847673388261234,
+          "maxParticleForceRelative": 0.07113609725891248,
+          "totalForce": [
+            0.0000016869995377954258,
+            0.000004707754874361411,
+            0.0000051606043956492695
+          ],
+          "normalizedNetForce": 0.0000341396074218492,
+          "totalTorque": [
+            -0.0002896483145705457,
+            0.00019718365258576323,
+            -0.0004286413971715404
+          ],
+          "normalizedNetTorque": 0.0017549870363045502,
+          "qualification": "Net force/torque should cancel for exact isolated symmetric pair force; tree need not preserve this."
+        },
+        {
+          "component": 0,
+          "count": 4972,
+          "forceRmsRelative": 0.015728515732498543,
+          "maxParticleForceRelative": 0.07113609725891248,
+          "totalForce": [
+            -0.0000020154886707842972,
+            -8.181710789245739e-7,
+            0.0000016233558739088703
+          ],
+          "normalizedNetForce": 0.00031139170846902086,
+          "totalTorque": [
+            0.00007200220882153878,
+            0.00004799831054375522,
+            -0.000009744778444989186
+          ],
+          "normalizedNetTorque": 0.019667114089817472,
+          "qualification": "Individual component exchanges forces and torques; net does not measure total-system conservation."
+        },
+        {
+          "component": 1,
+          "count": 14917,
+          "forceRmsRelative": 0.02062758799667776,
+          "maxParticleForceRelative": 0.07069566715168796,
+          "totalForce": [
+            0.0000048474447310865025,
+            0.000003488053762307562,
+            0.0000021602549776882112
+          ],
+          "normalizedNetForce": 0.00008797592217915606,
+          "totalTorque": [
+            -0.0026216447767741127,
+            -0.002255240909418073,
+            -0.00004155499108443587
+          ],
+          "normalizedNetTorque": 0.05776459571474588,
+          "qualification": "Individual component exchanges forces and torques; net does not measure total-system conservation."
+        },
+        {
+          "component": 2,
+          "count": 13259,
+          "forceRmsRelative": 0.014444318159685826,
+          "maxParticleForceRelative": 0.041047093037854886,
+          "totalForce": [
+            -0.0000011449565225068176,
+            0.0000020378721909784693,
+            0.0000013769935440522467
+          ],
+          "normalizedNetForce": 0.000020934623855472113,
+          "totalTorque": [
+            0.0022599942533820393,
+            0.0024044262514600918,
+            -0.0003773416276421141
+          ],
+          "normalizedNetTorque": 0.013223728505052183,
+          "qualification": "Individual component exchanges forces and torques; net does not measure total-system conservation."
+        }
+      ]
+    },
+    {
+      "epoch": "final",
+      "timeMyr": 18600.0002771616,
+      "n": 33148,
+      "theta": 0.2,
+      "algorithm": "Existing CPU Float64 monopole Barnes-Hut, 8-body leaves; unchanged solver",
+      "directMs": 5677.449999999997,
+      "treeMs": 7310.68,
+      "options": {
+        "G": 0.04498502239584923,
+        "epsilon": 0.0999999988824129
+      },
+      "groups": [
+        {
+          "component": null,
+          "count": 33148,
+          "forceRmsRelative": 0.00023912878366880183,
+          "maxParticleForceRelative": 0.0015616783780175536,
+          "totalForce": [
+            -0.000004612283900670823,
+            0.0000028609479990207847,
+            -0.000004196918786759038
+          ],
+          "normalizedNetForce": 0.000021863965885445018,
+          "totalTorque": [
+            0.000024836489870535518,
+            0.00003762024274586432,
+            0.0000014837638168497376
+          ],
+          "normalizedNetTorque": 0.00006764406026262556,
+          "qualification": "Net force/torque should cancel for exact isolated symmetric pair force; tree need not preserve this."
+        },
+        {
+          "component": 0,
+          "count": 4972,
+          "forceRmsRelative": 0.00032670437734802146,
+          "maxParticleForceRelative": 0.0010016845734026377,
+          "totalForce": [
+            0.000039130796495905506,
+            -0.000023747615655618392,
+            0.00002884336721668234
+          ],
+          "normalizedNetForce": 0.019602449539751866,
+          "totalTorque": [
+            -0.00013282511865554678,
+            -0.0000765314351840542,
+            0.0001181172112738759
+          ],
+          "normalizedNetTorque": 0.03506081202932863,
+          "qualification": "Individual component exchanges forces and torques; net does not measure total-system conservation."
+        },
+        {
+          "component": 1,
+          "count": 14917,
+          "forceRmsRelative": 0.00028546834119098913,
+          "maxParticleForceRelative": 0.0013004973224711859,
+          "totalForce": [
+            -0.0004169765943106698,
+            0.00006954883524387078,
+            0.00041644142950635413
+          ],
+          "normalizedNetForce": 0.017320751144840833,
+          "totalTorque": [
+            -0.00010348490153332986,
+            0.0004752921849215079,
+            -0.0006082016056870632
+          ],
+          "normalizedNetTorque": 0.011174118717597924,
+          "qualification": "Individual component exchanges forces and torques; net does not measure total-system conservation."
+        },
+        {
+          "component": 2,
+          "count": 13259,
+          "forceRmsRelative": 0.0001699970968495547,
+          "maxParticleForceRelative": 0.0015616783780175536,
+          "totalForce": [
+            0.00037323351391410165,
+            -0.00004294027158923549,
+            -0.00044948171550979914
+          ],
+          "normalizedNetForce": 0.0021165354250040486,
+          "totalTorque": [
+            0.00026114651005939915,
+            -0.000361140506991591,
+            0.0004915681582300441
+          ],
+          "normalizedNetTorque": 0.0011216400599205957,
+          "qualification": "Individual component exchanges forces and torques; net does not measure total-system conservation."
+        }
+      ]
+    },
+    {
+      "epoch": "final",
+      "timeMyr": 18600.0002771616,
+      "n": 33148,
+      "theta": 0.35,
+      "algorithm": "Existing CPU Float64 monopole Barnes-Hut, 8-body leaves; unchanged solver",
+      "directMs": 5677.449999999997,
+      "treeMs": 2679.0944999999992,
+      "options": {
+        "G": 0.04498502239584923,
+        "epsilon": 0.0999999988824129
+      },
+      "groups": [
+        {
+          "component": null,
+          "count": 33148,
+          "forceRmsRelative": 0.0013592915504261952,
+          "maxParticleForceRelative": 0.00793655175570008,
+          "totalForce": [
+            0.000004686962912020139,
+            -0.000003398555059356467,
+            -0.000040493907193137947
+          ],
+          "normalizedNetForce": 0.00013036659128182423,
+          "totalTorque": [
+            0.00004510676888897663,
+            0.00007602169413676061,
+            -0.00001724853598843575
+          ],
+          "normalizedNetTorque": 0.0001350848964739388,
+          "qualification": "Net force/torque should cancel for exact isolated symmetric pair force; tree need not preserve this."
+        },
+        {
+          "component": 0,
+          "count": 4972,
+          "forceRmsRelative": 0.0013865702920985293,
+          "maxParticleForceRelative": 0.0044609462055915025,
+          "totalForce": [
+            0.00003912284236004392,
+            -0.000023683364329486722,
+            0.00002872682256098134
+          ],
+          "normalizedNetForce": 0.019570841655714245,
+          "totalTorque": [
+            -0.00013284964183932153,
+            -0.00007622491138772676,
+            0.00011844587702049939
+          ],
+          "normalizedNetTorque": 0.03508180713886459,
+          "qualification": "Individual component exchanges forces and torques; net does not measure total-system conservation."
+        },
+        {
+          "component": 1,
+          "count": 14917,
+          "forceRmsRelative": 0.0014230955794627747,
+          "maxParticleForceRelative": 0.004345128184442939,
+          "totalForce": [
+            -0.00041675029786682416,
+            0.00007033583625432034,
+            0.000414654898493757
+          ],
+          "normalizedNetForce": 0.01728447532531297,
+          "totalTorque": [
+            -0.00011023918197431017,
+            0.0004714871400134483,
+            -0.0006070621855420825
+          ],
+          "normalizedNetTorque": 0.011142869379883433,
+          "qualification": "Individual component exchanges forces and torques; net does not measure total-system conservation."
+        },
+        {
+          "component": 2,
+          "count": 13259,
+          "forceRmsRelative": 0.0013071603167265488,
+          "maxParticleForceRelative": 0.00793655175570008,
+          "totalForce": [
+            0.0003823144184188131,
+            -0.000050051026984188923,
+            -0.0004838756282478928
+          ],
+          "normalizedNetForce": 0.0022355616567268123,
+          "totalTorque": [
+            0.0002881955927026075,
+            -0.0003192405344889659,
+            0.00047136777253315896
+          ],
+          "normalizedNetTorque": 0.0010787452560492665,
+          "qualification": "Individual component exchanges forces and torques; net does not measure total-system conservation."
+        }
+      ]
+    },
+    {
+      "epoch": "final",
+      "timeMyr": 18600.0002771616,
+      "n": 33148,
+      "theta": 0.5,
+      "algorithm": "Existing CPU Float64 monopole Barnes-Hut, 8-body leaves; unchanged solver",
+      "directMs": 5677.449999999997,
+      "treeMs": 980.3258999999998,
+      "options": {
+        "G": 0.04498502239584923,
+        "epsilon": 0.0999999988824129
+      },
+      "groups": [
+        {
+          "component": null,
+          "count": 33148,
+          "forceRmsRelative": 0.0041999339568748574,
+          "maxParticleForceRelative": 0.018043651523126956,
+          "totalForce": [
+            0.000036092721485364256,
+            0.00003836912571073911,
+            -0.00009165653108592169
+          ],
+          "normalizedNetForce": 0.00033691351957832035,
+          "totalTorque": [
+            0.00006286020962511115,
+            0.00002724191520741895,
+            0.00008903289448067967
+          ],
+          "normalizedNetTorque": 0.0001684644717952721,
+          "qualification": "Net force/torque should cancel for exact isolated symmetric pair force; tree need not preserve this."
+        },
+        {
+          "component": 0,
+          "count": 4972,
+          "forceRmsRelative": 0.003374080949719448,
+          "maxParticleForceRelative": 0.014182815023017353,
+          "totalForce": [
+            0.000039303355891909475,
+            -0.000023932934152544456,
+            0.000028486250371979068
+          ],
+          "normalizedNetForce": 0.019621825969191303,
+          "totalTorque": [
+            -0.00013498716174344835,
+            -0.00007622539964893424,
+            0.000119569483983884
+          ],
+          "normalizedNetTorque": 0.03547652824680504,
+          "qualification": "Individual component exchanges forces and torques; net does not measure total-system conservation."
+        },
+        {
+          "component": 1,
+          "count": 14917,
+          "forceRmsRelative": 0.003723497548889363,
+          "maxParticleForceRelative": 0.010988836297376353,
+          "totalForce": [
+            -0.00041500628876943094,
+            0.00006956850242793744,
+            0.0004153254788503955
+          ],
+          "normalizedNetForce": 0.01726928015425551,
+          "totalTorque": [
+            -0.00015172087958409208,
+            0.0004563801811051154,
+            -0.0005999525077122012
+          ],
+          "normalizedNetTorque": 0.011037788428951067,
+          "qualification": "Individual component exchanges forces and torques; net does not measure total-system conservation."
+        },
+        {
+          "component": 2,
+          "count": 13259,
+          "forceRmsRelative": 0.004657535351014909,
+          "maxParticleForceRelative": 0.018043651523126956,
+          "totalForce": [
+            0.00041179565436289347,
+            -0.000007266442564652922,
+            -0.0005354682603082754
+          ],
+          "normalizedNetForce": 0.002440694213895205,
+          "totalTorque": [
+            0.0003495682509526457,
+            -0.00035291286624875766,
+            0.0005694159182090168
+          ],
+          "normalizedNetTorque": 0.0012771212732326054,
+          "qualification": "Individual component exchanges forces and torques; net does not measure total-system conservation."
+        }
+      ]
+    },
+    {
+      "epoch": "final",
+      "timeMyr": 18600.0002771616,
+      "n": 33148,
+      "theta": 0.8,
+      "algorithm": "Existing CPU Float64 monopole Barnes-Hut, 8-body leaves; unchanged solver",
+      "directMs": 5677.449999999997,
+      "treeMs": 332.56350000000384,
+      "options": {
+        "G": 0.04498502239584923,
+        "epsilon": 0.0999999988824129
+      },
+      "groups": [
+        {
+          "component": null,
+          "count": 33148,
+          "forceRmsRelative": 0.0159346417101127,
+          "maxParticleForceRelative": 0.09990844730747317,
+          "totalForce": [
+            -0.00009546283476665284,
+            0.00007428621030079978,
+            -0.00003639435476142862
+          ],
+          "normalizedNetForce": 0.0004033007343724015,
+          "totalTorque": [
+            -0.00044610425409351214,
+            0.0001287708270394199,
+            -0.0002869237761186272
+          ],
+          "normalizedNetTorque": 0.0008180039417703442,
+          "qualification": "Net force/torque should cancel for exact isolated symmetric pair force; tree need not preserve this."
+        },
+        {
+          "component": 0,
+          "count": 4972,
+          "forceRmsRelative": 0.014138997705431124,
+          "maxParticleForceRelative": 0.04367201762384801,
+          "totalForce": [
+            0.00003961385468727723,
+            -0.00002436690003380809,
+            0.000027921899287621704
+          ],
+          "normalizedNetForce": 0.019729506457404008,
+          "totalTorque": [
+            -0.00013879131544970619,
+            -0.00007620556899970757,
+            0.00012013220754557309
+          ],
+          "normalizedNetTorque": 0.03599186412393169,
+          "qualification": "Individual component exchanges forces and torques; net does not measure total-system conservation."
+        },
+        {
+          "component": 1,
+          "count": 14917,
+          "forceRmsRelative": 0.013907739044974572,
+          "maxParticleForceRelative": 0.05301003804485765,
+          "totalForce": [
+            -0.0004061169460770318,
+            0.000058725314361828484,
+            0.00040312867709583713
+          ],
+          "normalizedNetForce": 0.01685525880305281,
+          "totalTorque": [
+            -0.0002821896519538837,
+            0.00039583572386292694,
+            -0.0005939735024596804
+          ],
+          "normalizedNetTorque": 0.01101541772009097,
+          "qualification": "Individual component exchanges forces and torques; net does not measure total-system conservation."
+        },
+        {
+          "component": 2,
+          "count": 13259,
+          "forceRmsRelative": 0.017549310517661863,
+          "maxParticleForceRelative": 0.09990844730747317,
+          "totalForce": [
+            0.00027104025662309333,
+            0.00003992779597277308,
+            -0.00046744493114490724
+          ],
+          "normalizedNetForce": 0.001960731853848743,
+          "totalTorque": [
+            -0.000025123286689891096,
+            -0.0001908593278237824,
+            0.00018691751879545957
+          ],
+          "normalizedNetTorque": 0.00045320529706248294,
+          "qualification": "Individual component exchanges forces and torques; net does not measure total-system conservation."
+        }
+      ]
+    }
+  ],
+  "qualification": "Measured CPU snapshot force tests, not a Tree trajectory or GADGET-4 validation. Concurrent CPU/GPU audit work may affect timing. Force RMS is weighted by a^2 and hides local tails; maximum also reported. Same captured states, effective G and Plummer epsilon as GPU. No solver replacement."
+}

@@ -1,0 +1,682 @@
+[
+  {
+    "id": "c20-agama-n10000-nb1500-nd4500-nh4000-s2026-h2026",
+    "file": "c20-agama-n10000-nb1500-nd4500-nh4000-s2026-h2026.json",
+    "sha256": "602690e98780bdd52162cf406d84d08f6dc40e9ed17f1cfd4ffa7a06ac5b088f",
+    "n": 10000,
+    "counts": [
+      1500,
+      4500,
+      4000
+    ],
+    "seed": 2026,
+    "haloSeed": 2026,
+    "admissibility": [
+      {
+        "component": 0,
+        "n": 1500,
+        "seed": 2026,
+        "sampleMassMsun": 9228134163.583246,
+        "targetMassMsun": 9200000000,
+        "massRelativeError": 0.0030580612590485057,
+        "negativeDF": 0,
+        "nonFiniteDF": 0,
+        "unboundInContinuum": 0,
+        "DFmin": 0.0007934582723149384,
+        "DFmax": 5164.963748160652
+      },
+      {
+        "component": 1,
+        "n": 3546,
+        "seed": 102029,
+        "sampleMassMsun": 39601228127.52379,
+        "targetMassMsun": 39800000000,
+        "massRelativeError": -0.004994268152668679,
+        "negativeDF": 0,
+        "nonFiniteDF": 0,
+        "unboundInContinuum": 0,
+        "DFmin": 0.0006842417235209191,
+        "DFmax": 370.8738323282565
+      },
+      {
+        "component": 2,
+        "n": 954,
+        "seed": 202032,
+        "sampleMassMsun": 10561935291.41529,
+        "targetMassMsun": 10700000000,
+        "massRelativeError": -0.012903243792963481,
+        "negativeDF": 0,
+        "nonFiniteDF": 0,
+        "unboundInContinuum": 0,
+        "DFmin": 0.00023512133299754043,
+        "DFmax": 6.335208760511228
+      },
+      {
+        "component": 3,
+        "n": 4000,
+        "seed": 302035,
+        "sampleMassMsun": 1048549685729.9994,
+        "targetMassMsun": 1049128645120.4344,
+        "massRelativeError": -0.0005518478530996962,
+        "negativeDF": 0,
+        "nonFiniteDF": 0,
+        "unboundInContinuum": 0,
+        "DFmin": 7.255618949070505e-07,
+        "DFmax": 6.4366571190537
+      }
+    ],
+    "status": "candidate-not-validated"
+  },
+  {
+    "id": "c20-agama-n10000-nb1500-nd4500-nh4000-s2026-h2027",
+    "file": "c20-agama-n10000-nb1500-nd4500-nh4000-s2026-h2027.json",
+    "sha256": "503207c94ee4f1b61cd325d4b9e07f33ab3fd41914ca4cad2aaf96c5839cd6bc",
+    "n": 10000,
+    "counts": [
+      1500,
+      4500,
+      4000
+    ],
+    "seed": 2026,
+    "haloSeed": 2027,
+    "admissibility": [
+      {
+        "component": 0,
+        "n": 1500,
+        "seed": 2026,
+        "sampleMassMsun": 9228134163.583246,
+        "targetMassMsun": 9200000000,
+        "massRelativeError": 0.0030580612590485057,
+        "negativeDF": 0,
+        "nonFiniteDF": 0,
+        "unboundInContinuum": 0,
+        "DFmin": 0.0007934582723149384,
+        "DFmax": 5164.963748160652
+      },
+      {
+        "component": 1,
+        "n": 3546,
+        "seed": 102029,
+        "sampleMassMsun": 39601228127.52379,
+        "targetMassMsun": 39800000000,
+        "massRelativeError": -0.004994268152668679,
+        "negativeDF": 0,
+        "nonFiniteDF": 0,
+        "unboundInContinuum": 0,
+        "DFmin": 0.0006842417235209191,
+        "DFmax": 370.8738323282565
+      },
+      {
+        "component": 2,
+        "n": 954,
+        "seed": 202032,
+        "sampleMassMsun": 10561935291.41529,
+        "targetMassMsun": 10700000000,
+        "massRelativeError": -0.012903243792963481,
+        "negativeDF": 0,
+        "nonFiniteDF": 0,
+        "unboundInContinuum": 0,
+        "DFmin": 0.00023512133299754043,
+        "DFmax": 6.335208760511228
+      },
+      {
+        "component": 3,
+        "n": 4000,
+        "seed": 302036,
+        "sampleMassMsun": 1049586712729.723,
+        "targetMassMsun": 1049128645120.4344,
+        "massRelativeError": 0.00043661719791865394,
+        "negativeDF": 0,
+        "nonFiniteDF": 0,
+        "unboundInContinuum": 0,
+        "DFmin": 3.0546033767549294e-07,
+        "DFmax": 3.1468851340241377
+      }
+    ],
+    "status": "candidate-not-validated"
+  },
+  {
+    "id": "c20-agama-n10000-nb1500-nd4500-nh4000-s2027-h2027",
+    "file": "c20-agama-n10000-nb1500-nd4500-nh4000-s2027-h2027.json",
+    "sha256": "bc09669479a3139e9e1a7c55312def252d6d315380eb6d3b23af44f6dc8db063",
+    "n": 10000,
+    "counts": [
+      1500,
+      4500,
+      4000
+    ],
+    "seed": 2027,
+    "haloSeed": 2027,
+    "admissibility": [
+      {
+        "component": 0,
+        "n": 1500,
+        "seed": 2027,
+        "sampleMassMsun": 9241423940.275202,
+        "targetMassMsun": 9200000000,
+        "massRelativeError": 0.004502602203826367,
+        "negativeDF": 0,
+        "nonFiniteDF": 0,
+        "unboundInContinuum": 0,
+        "DFmin": 0.008612019264583817,
+        "DFmax": 3239.3201508719326
+      },
+      {
+        "component": 1,
+        "n": 3546,
+        "seed": 102030,
+        "sampleMassMsun": 39777517154.71036,
+        "targetMassMsun": 39800000000,
+        "massRelativeError": -0.0005648956102924929,
+        "negativeDF": 0,
+        "nonFiniteDF": 0,
+        "unboundInContinuum": 0,
+        "DFmin": 0.002682859233633552,
+        "DFmax": 310.8825604866451
+      },
+      {
+        "component": 2,
+        "n": 954,
+        "seed": 202033,
+        "sampleMassMsun": 10697896085.5626,
+        "targetMassMsun": 10700000000,
+        "massRelativeError": -0.00019662751751414742,
+        "negativeDF": 0,
+        "nonFiniteDF": 0,
+        "unboundInContinuum": 0,
+        "DFmin": 3.190979138610221e-05,
+        "DFmax": 9.674557934242337
+      },
+      {
+        "component": 3,
+        "n": 4000,
+        "seed": 302036,
+        "sampleMassMsun": 1049586712729.723,
+        "targetMassMsun": 1049128645120.4344,
+        "massRelativeError": 0.00043661719791865394,
+        "negativeDF": 0,
+        "nonFiniteDF": 0,
+        "unboundInContinuum": 0,
+        "DFmin": 3.0546033767549294e-07,
+        "DFmax": 3.1468851340241377
+      }
+    ],
+    "status": "candidate-not-validated"
+  },
+  {
+    "id": "c20-agama-n14000-nb1500-nd4500-nh8000-s2026-h2026",
+    "file": "c20-agama-n14000-nb1500-nd4500-nh8000-s2026-h2026.json",
+    "sha256": "8a5fe602b63f5c39e23c19af4e25c6e5f019ef67ff6df409ae8cf307cef47e09",
+    "n": 14000,
+    "counts": [
+      1500,
+      4500,
+      8000
+    ],
+    "seed": 2026,
+    "haloSeed": 2026,
+    "admissibility": [
+      {
+        "component": 0,
+        "n": 1500,
+        "seed": 2026,
+        "sampleMassMsun": 9228134163.583246,
+        "targetMassMsun": 9200000000,
+        "massRelativeError": 0.0030580612590485057,
+        "negativeDF": 0,
+        "nonFiniteDF": 0,
+        "unboundInContinuum": 0,
+        "DFmin": 0.0007934582723149384,
+        "DFmax": 5164.963748160652
+      },
+      {
+        "component": 1,
+        "n": 3546,
+        "seed": 102029,
+        "sampleMassMsun": 39601228127.52379,
+        "targetMassMsun": 39800000000,
+        "massRelativeError": -0.004994268152668679,
+        "negativeDF": 0,
+        "nonFiniteDF": 0,
+        "unboundInContinuum": 0,
+        "DFmin": 0.0006842417235209191,
+        "DFmax": 370.8738323282565
+      },
+      {
+        "component": 2,
+        "n": 954,
+        "seed": 202032,
+        "sampleMassMsun": 10561935291.41529,
+        "targetMassMsun": 10700000000,
+        "massRelativeError": -0.012903243792963481,
+        "negativeDF": 0,
+        "nonFiniteDF": 0,
+        "unboundInContinuum": 0,
+        "DFmin": 0.00023512133299754043,
+        "DFmax": 6.335208760511228
+      },
+      {
+        "component": 3,
+        "n": 8000,
+        "seed": 302035,
+        "sampleMassMsun": 1048959253565.6644,
+        "targetMassMsun": 1049128645120.4344,
+        "massRelativeError": -0.00016145927914357205,
+        "negativeDF": 0,
+        "nonFiniteDF": 0,
+        "unboundInContinuum": 0,
+        "DFmin": 1.392357391552035e-07,
+        "DFmax": 22.100232153635687
+      }
+    ],
+    "status": "candidate-not-validated"
+  },
+  {
+    "id": "c20-agama-n14000-nb1500-nd4500-nh8000-s2026-h2027",
+    "file": "c20-agama-n14000-nb1500-nd4500-nh8000-s2026-h2027.json",
+    "sha256": "913885702deab81323cf77a25f2aa13c2eacaaef3529fe1dbc3f1b4e8b5ecea7",
+    "n": 14000,
+    "counts": [
+      1500,
+      4500,
+      8000
+    ],
+    "seed": 2026,
+    "haloSeed": 2027,
+    "admissibility": [
+      {
+        "component": 0,
+        "n": 1500,
+        "seed": 2026,
+        "sampleMassMsun": 9228134163.583246,
+        "targetMassMsun": 9200000000,
+        "massRelativeError": 0.0030580612590485057,
+        "negativeDF": 0,
+        "nonFiniteDF": 0,
+        "unboundInContinuum": 0,
+        "DFmin": 0.0007934582723149384,
+        "DFmax": 5164.963748160652
+      },
+      {
+        "component": 1,
+        "n": 3546,
+        "seed": 102029,
+        "sampleMassMsun": 39601228127.52379,
+        "targetMassMsun": 39800000000,
+        "massRelativeError": -0.004994268152668679,
+        "negativeDF": 0,
+        "nonFiniteDF": 0,
+        "unboundInContinuum": 0,
+        "DFmin": 0.0006842417235209191,
+        "DFmax": 370.8738323282565
+      },
+      {
+        "component": 2,
+        "n": 954,
+        "seed": 202032,
+        "sampleMassMsun": 10561935291.41529,
+        "targetMassMsun": 10700000000,
+        "massRelativeError": -0.012903243792963481,
+        "negativeDF": 0,
+        "nonFiniteDF": 0,
+        "unboundInContinuum": 0,
+        "DFmin": 0.00023512133299754043,
+        "DFmax": 6.335208760511228
+      },
+      {
+        "component": 3,
+        "n": 8000,
+        "seed": 302036,
+        "sampleMassMsun": 1049142209994.3981,
+        "targetMassMsun": 1049128645120.4344,
+        "massRelativeError": 1.2929657412952267e-05,
+        "negativeDF": 0,
+        "nonFiniteDF": 0,
+        "unboundInContinuum": 0,
+        "DFmin": 6.639072921650183e-08,
+        "DFmax": 16.057089165135615
+      }
+    ],
+    "status": "candidate-not-validated"
+  },
+  {
+    "id": "c20-agama-n14000-nb1500-nd4500-nh8000-s2027-h2027",
+    "file": "c20-agama-n14000-nb1500-nd4500-nh8000-s2027-h2027.json",
+    "sha256": "d6a8e6c7b4daad66d7681517293a8bc1cea2194393e61de40611b555806e8ea7",
+    "n": 14000,
+    "counts": [
+      1500,
+      4500,
+      8000
+    ],
+    "seed": 2027,
+    "haloSeed": 2027,
+    "admissibility": [
+      {
+        "component": 0,
+        "n": 1500,
+        "seed": 2027,
+        "sampleMassMsun": 9241423940.275202,
+        "targetMassMsun": 9200000000,
+        "massRelativeError": 0.004502602203826367,
+        "negativeDF": 0,
+        "nonFiniteDF": 0,
+        "unboundInContinuum": 0,
+        "DFmin": 0.008612019264583817,
+        "DFmax": 3239.3201508719326
+      },
+      {
+        "component": 1,
+        "n": 3546,
+        "seed": 102030,
+        "sampleMassMsun": 39777517154.71036,
+        "targetMassMsun": 39800000000,
+        "massRelativeError": -0.0005648956102924929,
+        "negativeDF": 0,
+        "nonFiniteDF": 0,
+        "unboundInContinuum": 0,
+        "DFmin": 0.002682859233633552,
+        "DFmax": 310.8825604866451
+      },
+      {
+        "component": 2,
+        "n": 954,
+        "seed": 202033,
+        "sampleMassMsun": 10697896085.5626,
+        "targetMassMsun": 10700000000,
+        "massRelativeError": -0.00019662751751414742,
+        "negativeDF": 0,
+        "nonFiniteDF": 0,
+        "unboundInContinuum": 0,
+        "DFmin": 3.190979138610221e-05,
+        "DFmax": 9.674557934242337
+      },
+      {
+        "component": 3,
+        "n": 8000,
+        "seed": 302036,
+        "sampleMassMsun": 1049142209994.3981,
+        "targetMassMsun": 1049128645120.4344,
+        "massRelativeError": 1.2929657412952267e-05,
+        "negativeDF": 0,
+        "nonFiniteDF": 0,
+        "unboundInContinuum": 0,
+        "DFmin": 6.639072921650183e-08,
+        "DFmax": 16.057089165135615
+      }
+    ],
+    "status": "candidate-not-validated"
+  },
+  {
+    "id": "c20-agama-n26000-nb1500-nd4500-nh20000-s2026-h2026",
+    "file": "c20-agama-n26000-nb1500-nd4500-nh20000-s2026-h2026.json",
+    "sha256": "787c0c63e828fab593df98b968ce0c7a24c7d9c530de8ba47e1bbf1ea908604b",
+    "n": 26000,
+    "counts": [
+      1500,
+      4500,
+      20000
+    ],
+    "seed": 2026,
+    "haloSeed": 2026,
+    "admissibility": [
+      {
+        "component": 0,
+        "n": 1500,
+        "seed": 2026,
+        "sampleMassMsun": 9228134163.583246,
+        "targetMassMsun": 9200000000,
+        "massRelativeError": 0.0030580612590485057,
+        "negativeDF": 0,
+        "nonFiniteDF": 0,
+        "unboundInContinuum": 0,
+        "DFmin": 0.0007934582723149384,
+        "DFmax": 5164.963748160652
+      },
+      {
+        "component": 1,
+        "n": 3546,
+        "seed": 102029,
+        "sampleMassMsun": 39601228127.52379,
+        "targetMassMsun": 39800000000,
+        "massRelativeError": -0.004994268152668679,
+        "negativeDF": 0,
+        "nonFiniteDF": 0,
+        "unboundInContinuum": 0,
+        "DFmin": 0.0006842417235209191,
+        "DFmax": 370.8738323282565
+      },
+      {
+        "component": 2,
+        "n": 954,
+        "seed": 202032,
+        "sampleMassMsun": 10561935291.41529,
+        "targetMassMsun": 10700000000,
+        "massRelativeError": -0.012903243792963481,
+        "negativeDF": 0,
+        "nonFiniteDF": 0,
+        "unboundInContinuum": 0,
+        "DFmin": 0.00023512133299754043,
+        "DFmax": 6.335208760511228
+      },
+      {
+        "component": 3,
+        "n": 20000,
+        "seed": 302035,
+        "sampleMassMsun": 1049237174807.809,
+        "targetMassMsun": 1049128645120.4344,
+        "massRelativeError": 0.00010344745411283718,
+        "negativeDF": 0,
+        "nonFiniteDF": 0,
+        "unboundInContinuum": 0,
+        "DFmin": 2.5273906985400698e-08,
+        "DFmax": 13.95635304672634
+      }
+    ],
+    "status": "candidate-not-validated"
+  },
+  {
+    "id": "c20-agama-n26000-nb1500-nd4500-nh20000-s2026-h2027",
+    "file": "c20-agama-n26000-nb1500-nd4500-nh20000-s2026-h2027.json",
+    "sha256": "febc7794c5e6c00181f71d430aeb308842e001bca55a20580d1cba1e66e524e3",
+    "n": 26000,
+    "counts": [
+      1500,
+      4500,
+      20000
+    ],
+    "seed": 2026,
+    "haloSeed": 2027,
+    "admissibility": [
+      {
+        "component": 0,
+        "n": 1500,
+        "seed": 2026,
+        "sampleMassMsun": 9228134163.583246,
+        "targetMassMsun": 9200000000,
+        "massRelativeError": 0.0030580612590485057,
+        "negativeDF": 0,
+        "nonFiniteDF": 0,
+        "unboundInContinuum": 0,
+        "DFmin": 0.0007934582723149384,
+        "DFmax": 5164.963748160652
+      },
+      {
+        "component": 1,
+        "n": 3546,
+        "seed": 102029,
+        "sampleMassMsun": 39601228127.52379,
+        "targetMassMsun": 39800000000,
+        "massRelativeError": -0.004994268152668679,
+        "negativeDF": 0,
+        "nonFiniteDF": 0,
+        "unboundInContinuum": 0,
+        "DFmin": 0.0006842417235209191,
+        "DFmax": 370.8738323282565
+      },
+      {
+        "component": 2,
+        "n": 954,
+        "seed": 202032,
+        "sampleMassMsun": 10561935291.41529,
+        "targetMassMsun": 10700000000,
+        "massRelativeError": -0.012903243792963481,
+        "negativeDF": 0,
+        "nonFiniteDF": 0,
+        "unboundInContinuum": 0,
+        "DFmin": 0.00023512133299754043,
+        "DFmax": 6.335208760511228
+      },
+      {
+        "component": 3,
+        "n": 20000,
+        "seed": 302036,
+        "sampleMassMsun": 1049578807069.5996,
+        "targetMassMsun": 1049128645120.4344,
+        "massRelativeError": 0.00042908174441613767,
+        "negativeDF": 0,
+        "nonFiniteDF": 0,
+        "unboundInContinuum": 0,
+        "DFmin": 2.3998255002348567e-08,
+        "DFmax": 18.770121820014783
+      }
+    ],
+    "status": "candidate-not-validated"
+  },
+  {
+    "id": "c20-agama-n26000-nb1500-nd4500-nh20000-s2027-h2027",
+    "file": "c20-agama-n26000-nb1500-nd4500-nh20000-s2027-h2027.json",
+    "sha256": "645e0ddaa8c9800f4ce45600563668b0d8e3aa199730989b8921205821c5a3d9",
+    "n": 26000,
+    "counts": [
+      1500,
+      4500,
+      20000
+    ],
+    "seed": 2027,
+    "haloSeed": 2027,
+    "admissibility": [
+      {
+        "component": 0,
+        "n": 1500,
+        "seed": 2027,
+        "sampleMassMsun": 9241423940.275202,
+        "targetMassMsun": 9200000000,
+        "massRelativeError": 0.004502602203826367,
+        "negativeDF": 0,
+        "nonFiniteDF": 0,
+        "unboundInContinuum": 0,
+        "DFmin": 0.008612019264583817,
+        "DFmax": 3239.3201508719326
+      },
+      {
+        "component": 1,
+        "n": 3546,
+        "seed": 102030,
+        "sampleMassMsun": 39777517154.71036,
+        "targetMassMsun": 39800000000,
+        "massRelativeError": -0.0005648956102924929,
+        "negativeDF": 0,
+        "nonFiniteDF": 0,
+        "unboundInContinuum": 0,
+        "DFmin": 0.002682859233633552,
+        "DFmax": 310.8825604866451
+      },
+      {
+        "component": 2,
+        "n": 954,
+        "seed": 202033,
+        "sampleMassMsun": 10697896085.5626,
+        "targetMassMsun": 10700000000,
+        "massRelativeError": -0.00019662751751414742,
+        "negativeDF": 0,
+        "nonFiniteDF": 0,
+        "unboundInContinuum": 0,
+        "DFmin": 3.190979138610221e-05,
+        "DFmax": 9.674557934242337
+      },
+      {
+        "component": 3,
+        "n": 20000,
+        "seed": 302036,
+        "sampleMassMsun": 1049578807069.5996,
+        "targetMassMsun": 1049128645120.4344,
+        "massRelativeError": 0.00042908174441613767,
+        "negativeDF": 0,
+        "nonFiniteDF": 0,
+        "unboundInContinuum": 0,
+        "DFmin": 2.3998255002348567e-08,
+        "DFmax": 18.770121820014783
+      }
+    ],
+    "status": "candidate-not-validated"
+  },
+  {
+    "id": "c20-agama-n50000-nb7500-nd22500-nh20000-s2026-h2026",
+    "file": "c20-agama-n50000-nb7500-nd22500-nh20000-s2026-h2026.json",
+    "sha256": "50a42f9c1f3281010aca364fafb3c4b6261ab8ff30abfe6631e2d573a65a2aed",
+    "n": 50000,
+    "counts": [
+      7500,
+      22500,
+      20000
+    ],
+    "seed": 2026,
+    "haloSeed": 2026,
+    "admissibility": [
+      {
+        "component": 0,
+        "n": 7500,
+        "seed": 2026,
+        "sampleMassMsun": 9213074620.392868,
+        "targetMassMsun": 9200000000,
+        "massRelativeError": 0.0014211543905291446,
+        "negativeDF": 0,
+        "nonFiniteDF": 0,
+        "unboundInContinuum": 0,
+        "DFmin": 0.00010621632479642641,
+        "DFmax": 7841.363216876586
+      },
+      {
+        "component": 1,
+        "n": 17732,
+        "seed": 102029,
+        "sampleMassMsun": 39771383287.09226,
+        "targetMassMsun": 39800000000,
+        "massRelativeError": -0.0007190128871290558,
+        "negativeDF": 0,
+        "nonFiniteDF": 0,
+        "unboundInContinuum": 0,
+        "DFmin": 4.003040001727066e-06,
+        "DFmax": 385.45701062096174
+      },
+      {
+        "component": 2,
+        "n": 4768,
+        "seed": 202032,
+        "sampleMassMsun": 10698107618.60986,
+        "targetMassMsun": 10700000000,
+        "massRelativeError": -0.00017685807384493213,
+        "negativeDF": 0,
+        "nonFiniteDF": 0,
+        "unboundInContinuum": 0,
+        "DFmin": 2.3852114261737093e-06,
+        "DFmax": 11.267878313952002
+      },
+      {
+        "component": 3,
+        "n": 20000,
+        "seed": 302035,
+        "sampleMassMsun": 1049237174807.809,
+        "targetMassMsun": 1049128645120.4344,
+        "massRelativeError": 0.00010344745411283718,
+        "negativeDF": 0,
+        "nonFiniteDF": 0,
+        "unboundInContinuum": 0,
+        "DFmin": 2.5273906985400698e-08,
+        "DFmax": 13.95635304672634
+      }
+    ],
+    "status": "candidate-not-validated"
+  }
+]

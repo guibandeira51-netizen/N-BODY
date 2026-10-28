@@ -1,0 +1,649 @@
+{
+  "schema": "resolution-candidate-kinematics-v1",
+  "library": {
+    "id": "orbits-1024-s44-p8-2026-10-21T03-42-28-070Z",
+    "path": "reports/equilibrium-rebuild/orbits-1024-s44-p8-2026-10-21T03-42-28-070Z",
+    "library": "reports/equilibrium-rebuild/orbits-1024-s44-p8-2026-10-21T03-42-28-070Z/library.json",
+    "sha256": "425e78d31d701d7c1c91e8b10e8fcf1757dd9278e0232fb79fc31ea97b320737"
+  },
+  "summary": [
+    {
+      "component": 0,
+      "orbits": 487,
+      "effectiveOrbitCount": 345.88988126336824,
+      "heldDensityL1": 0.05373768956608757,
+      "independentTargetNoiseL1": 0.027320000000002957,
+      "weightedStoredPhaseFractionBeyondHaloOuterRadius": 0,
+      "weightOfOrbitsWithAtLeastOneStoredPhaseBeyondHaloBoundary": 0,
+      "maximumStoredRadiusKpc": 242.7159872081395,
+      "retrogradeStoredPhaseFractionBeforeSpheroidReversal": 0.5142659721237877
+    },
+    {
+      "component": 1,
+      "orbits": 511,
+      "effectiveOrbitCount": 379.00489213884924,
+      "heldDensityL1": 0.04173639081819184,
+      "independentTargetNoiseL1": 0.02716000000000217,
+      "weightedStoredPhaseFractionBeyondHaloOuterRadius": 0.01146419951729651,
+      "weightOfOrbitsWithAtLeastOneStoredPhaseBeyondHaloBoundary": 0.011464199517296578,
+      "maximumStoredRadiusKpc": 817.8192452061605,
+      "retrogradeStoredPhaseFractionBeforeSpheroidReversal": 0.0019118886971450345
+    },
+    {
+      "component": 2,
+      "orbits": 323,
+      "effectiveOrbitCount": 187.41457150276102,
+      "heldDensityL1": 0.05066663597845185,
+      "independentTargetNoiseL1": 0.02449999999999666,
+      "weightedStoredPhaseFractionBeyondHaloOuterRadius": 0.004868710721894248,
+      "weightOfOrbitsWithAtLeastOneStoredPhaseBeyondHaloBoundary": 0.026200734225155627,
+      "maximumStoredRadiusKpc": 1177.920270126271,
+      "retrogradeStoredPhaseFractionBeforeSpheroidReversal": 0.5250286282796355
+    }
+  ],
+  "radialMoments": [
+    {
+      "component": 0,
+      "Rlower": 0,
+      "Rupper": 1,
+      "probability": 0.33488079705868934,
+      "meanRadialKmS": 0,
+      "meanAzimuthalKmS": 0,
+      "sigmaRKmS": 83.01214702278658,
+      "sigmaPhiKmS": 80.3018619561386,
+      "sigmaZKmS": 104.71637766901888
+    },
+    {
+      "component": 0,
+      "Rlower": 1,
+      "Rupper": 2,
+      "probability": 0.19404446684511267,
+      "meanRadialKmS": 0,
+      "meanAzimuthalKmS": 0,
+      "sigmaRKmS": 103.96619908419586,
+      "sigmaPhiKmS": 96.2276898940923,
+      "sigmaZKmS": 125.1552776976018
+    },
+    {
+      "component": 0,
+      "Rlower": 2,
+      "Rupper": 4,
+      "probability": 0.17697958113756268,
+      "meanRadialKmS": 0,
+      "meanAzimuthalKmS": 0,
+      "sigmaRKmS": 111.54612193473983,
+      "sigmaPhiKmS": 105.21186896837203,
+      "sigmaZKmS": 126.88003535392328
+    },
+    {
+      "component": 0,
+      "Rlower": 4,
+      "Rupper": 8,
+      "probability": 0.12925164540746664,
+      "meanRadialKmS": 0,
+      "meanAzimuthalKmS": 0,
+      "sigmaRKmS": 107.98308796749748,
+      "sigmaPhiKmS": 109.97030038263156,
+      "sigmaZKmS": 125.13638482007264
+    },
+    {
+      "component": 0,
+      "Rlower": 8,
+      "Rupper": 12,
+      "probability": 0.049698807188808085,
+      "meanRadialKmS": 0,
+      "meanAzimuthalKmS": 0,
+      "sigmaRKmS": 106.5221867760682,
+      "sigmaPhiKmS": 120.81270567828788,
+      "sigmaZKmS": 123.29949292021672
+    },
+    {
+      "component": 0,
+      "Rlower": 12,
+      "Rupper": 20,
+      "probability": 0.047271954157080465,
+      "meanRadialKmS": 0,
+      "meanAzimuthalKmS": 0,
+      "sigmaRKmS": 98.75870000897363,
+      "sigmaPhiKmS": 117.53545101173766,
+      "sigmaZKmS": 122.7439073275976
+    },
+    {
+      "component": 0,
+      "Rlower": 20,
+      "Rupper": 30,
+      "probability": 0.025687120510102524,
+      "meanRadialKmS": 0,
+      "meanAzimuthalKmS": 0,
+      "sigmaRKmS": 100.76217462819092,
+      "sigmaPhiKmS": 100.84908094186049,
+      "sigmaZKmS": 108.13733623489264
+    },
+    {
+      "component": 0,
+      "Rlower": 30,
+      "Rupper": 60,
+      "probability": 0.02348677600947198,
+      "meanRadialKmS": 0,
+      "meanAzimuthalKmS": 0,
+      "sigmaRKmS": 101.51524673723753,
+      "sigmaPhiKmS": 87.55319975034757,
+      "sigmaZKmS": 93.29856125294549
+    },
+    {
+      "component": 0,
+      "Rlower": 60,
+      "Rupper": 120,
+      "probability": 0.013059649025884638,
+      "meanRadialKmS": 0,
+      "meanAzimuthalKmS": 0,
+      "sigmaRKmS": 82.53352578807821,
+      "sigmaPhiKmS": 68.07043803403818,
+      "sigmaZKmS": 66.2452230819995
+    },
+    {
+      "component": 0,
+      "Rlower": 120,
+      "Rupper": 247.95095842704154,
+      "probability": 0.005639202659940843,
+      "meanRadialKmS": 0,
+      "meanAzimuthalKmS": 0,
+      "sigmaRKmS": 61.03199039555078,
+      "sigmaPhiKmS": 71.77886106155806,
+      "sigmaZKmS": 52.77854621975177
+    },
+    {
+      "component": 0,
+      "Rlower": 247.95095842704154,
+      "Rupper": null,
+      "probability": 0,
+      "meanRadialKmS": 0,
+      "meanAzimuthalKmS": 0,
+      "sigmaRKmS": null,
+      "sigmaPhiKmS": null,
+      "sigmaZKmS": null
+    },
+    {
+      "component": 1,
+      "Rlower": 0,
+      "Rupper": 1,
+      "probability": 0.05023082418453322,
+      "meanRadialKmS": -0.2540582403217137,
+      "meanAzimuthalKmS": 88.79909195085204,
+      "sigmaRKmS": 74.24046736060173,
+      "sigmaPhiKmS": 55.16207926390331,
+      "sigmaZKmS": 68.94446912889764
+    },
+    {
+      "component": 1,
+      "Rlower": 1,
+      "Rupper": 2,
+      "probability": 0.11445795793773067,
+      "meanRadialKmS": 0.1158048645715933,
+      "meanAzimuthalKmS": 148.2013584644914,
+      "sigmaRKmS": 62.26324023243281,
+      "sigmaPhiKmS": 56.783801100934454,
+      "sigmaZKmS": 60.50296849095691
+    },
+    {
+      "component": 1,
+      "Rlower": 2,
+      "Rupper": 4,
+      "probability": 0.23518881104247982,
+      "meanRadialKmS": 0.05461241108505015,
+      "meanAzimuthalKmS": 187.92888103078704,
+      "sigmaRKmS": 52.087755778986725,
+      "sigmaPhiKmS": 48.422129052919175,
+      "sigmaZKmS": 45.43404686464982
+    },
+    {
+      "component": 1,
+      "Rlower": 4,
+      "Rupper": 8,
+      "probability": 0.25090878828744556,
+      "meanRadialKmS": 0.02675309238677802,
+      "meanAzimuthalKmS": 220.03534420077008,
+      "sigmaRKmS": 32.3995676317596,
+      "sigmaPhiKmS": 27.17674504396203,
+      "sigmaZKmS": 28.716460726558623
+    },
+    {
+      "component": 1,
+      "Rlower": 8,
+      "Rupper": 12,
+      "probability": 0.09468047299997516,
+      "meanRadialKmS": 0.08155555978778672,
+      "meanAzimuthalKmS": 219.8277556570914,
+      "sigmaRKmS": 24.698349152653243,
+      "sigmaPhiKmS": 16.317027867430316,
+      "sigmaZKmS": 19.23400607450609
+    },
+    {
+      "component": 1,
+      "Rlower": 12,
+      "Rupper": 20,
+      "probability": 0.10289514254148646,
+      "meanRadialKmS": 0.17859848927784447,
+      "meanAzimuthalKmS": 215.4841381776546,
+      "sigmaRKmS": 16.404202070948443,
+      "sigmaPhiKmS": 14.55355429508069,
+      "sigmaZKmS": 10.598621564391578
+    },
+    {
+      "component": 1,
+      "Rlower": 20,
+      "Rupper": 30,
+      "probability": 0.05798739024606721,
+      "meanRadialKmS": -0.03454102737493592,
+      "meanAzimuthalKmS": 208.76650073877852,
+      "sigmaRKmS": 6.071060650866789,
+      "sigmaPhiKmS": 6.0401382167097495,
+      "sigmaZKmS": 4.739953020447743
+    },
+    {
+      "component": 1,
+      "Rlower": 30,
+      "Rupper": 60,
+      "probability": 0.04679613803278866,
+      "meanRadialKmS": 0.01451395937323129,
+      "meanAzimuthalKmS": 198.22751947560974,
+      "sigmaRKmS": 1.9574115401666263,
+      "sigmaPhiKmS": 5.453064881654455,
+      "sigmaZKmS": 2.1008415114396914
+    },
+    {
+      "component": 1,
+      "Rlower": 60,
+      "Rupper": 120,
+      "probability": 0.024378609884355848,
+      "meanRadialKmS": 0.005789012235853454,
+      "meanAzimuthalKmS": 175.7339058177287,
+      "sigmaRKmS": 1.0132072792039375,
+      "sigmaPhiKmS": 5.709645961502174,
+      "sigmaZKmS": 0.8127460316081301
+    },
+    {
+      "component": 1,
+      "Rlower": 120,
+      "Rupper": 247.95095842704154,
+      "probability": 0.011011665325823858,
+      "meanRadialKmS": 0.00028734358613924984,
+      "meanAzimuthalKmS": 151.91565838903736,
+      "sigmaRKmS": 0.6758489730936693,
+      "sigmaPhiKmS": 5.9876064455030376,
+      "sigmaZKmS": 0.28220434471246514
+    },
+    {
+      "component": 1,
+      "Rlower": 247.95095842704154,
+      "Rupper": null,
+      "probability": 0.01146419951729651,
+      "meanRadialKmS": -0.00007742864020938747,
+      "meanAzimuthalKmS": 107.2744031272803,
+      "sigmaRKmS": 0.220319771720584,
+      "sigmaPhiKmS": 11.613758519446293,
+      "sigmaZKmS": 0.1118619086588281
+    },
+    {
+      "component": 2,
+      "Rlower": 0,
+      "Rupper": 1,
+      "probability": 0.003615263096413155,
+      "meanRadialKmS": 0,
+      "meanAzimuthalKmS": 0,
+      "sigmaRKmS": 149.09539823449106,
+      "sigmaPhiKmS": 136.8102264373406,
+      "sigmaZKmS": 149.40335435888494
+    },
+    {
+      "component": 2,
+      "Rlower": 1,
+      "Rupper": 2,
+      "probability": 0.006185013153633345,
+      "meanRadialKmS": 0,
+      "meanAzimuthalKmS": 0,
+      "sigmaRKmS": 165.98949183274524,
+      "sigmaPhiKmS": 138.13807288336122,
+      "sigmaZKmS": 135.12543879628063
+    },
+    {
+      "component": 2,
+      "Rlower": 2,
+      "Rupper": 4,
+      "probability": 0.019540757604349906,
+      "meanRadialKmS": 0,
+      "meanAzimuthalKmS": 0,
+      "sigmaRKmS": 145.6053867412627,
+      "sigmaPhiKmS": 149.05412413678863,
+      "sigmaZKmS": 149.19913832072857
+    },
+    {
+      "component": 2,
+      "Rlower": 4,
+      "Rupper": 8,
+      "probability": 0.04653669454231497,
+      "meanRadialKmS": 0,
+      "meanAzimuthalKmS": 0,
+      "sigmaRKmS": 140.47476735697637,
+      "sigmaPhiKmS": 145.14301821796613,
+      "sigmaZKmS": 151.78226538473942
+    },
+    {
+      "component": 2,
+      "Rlower": 8,
+      "Rupper": 12,
+      "probability": 0.04745848619915435,
+      "meanRadialKmS": 0,
+      "meanAzimuthalKmS": 0,
+      "sigmaRKmS": 135.32645844517282,
+      "sigmaPhiKmS": 145.11481987252134,
+      "sigmaZKmS": 125.9756910518613
+    },
+    {
+      "component": 2,
+      "Rlower": 12,
+      "Rupper": 20,
+      "probability": 0.0990224559045325,
+      "meanRadialKmS": 0,
+      "meanAzimuthalKmS": 0,
+      "sigmaRKmS": 121.1198321693866,
+      "sigmaPhiKmS": 128.6669071621956,
+      "sigmaZKmS": 116.94551887026653
+    },
+    {
+      "component": 2,
+      "Rlower": 20,
+      "Rupper": 30,
+      "probability": 0.10236461017920519,
+      "meanRadialKmS": 0,
+      "meanAzimuthalKmS": 0,
+      "sigmaRKmS": 108.74956527692332,
+      "sigmaPhiKmS": 119.3775581791909,
+      "sigmaZKmS": 119.80516747200008
+    },
+    {
+      "component": 2,
+      "Rlower": 30,
+      "Rupper": 60,
+      "probability": 0.22241138175569503,
+      "meanRadialKmS": 0,
+      "meanAzimuthalKmS": 0,
+      "sigmaRKmS": 98.2222660427671,
+      "sigmaPhiKmS": 117.65107324032164,
+      "sigmaZKmS": 113.71991054997967
+    },
+    {
+      "component": 2,
+      "Rlower": 60,
+      "Rupper": 120,
+      "probability": 0.2618091987288406,
+      "meanRadialKmS": 0,
+      "meanAzimuthalKmS": 0,
+      "sigmaRKmS": 84.38205849535045,
+      "sigmaPhiKmS": 100.28169939573381,
+      "sigmaZKmS": 93.13477860842391
+    },
+    {
+      "component": 2,
+      "Rlower": 120,
+      "Rupper": 247.95095842704154,
+      "probability": 0.190751473735429,
+      "meanRadialKmS": 0,
+      "meanAzimuthalKmS": 0,
+      "sigmaRKmS": 59.12495269761128,
+      "sigmaPhiKmS": 75.06512112573864,
+      "sigmaZKmS": 67.39368928333569
+    },
+    {
+      "component": 2,
+      "Rlower": 247.95095842704154,
+      "Rupper": null,
+      "probability": 0.0003046651004215265,
+      "meanRadialKmS": 0,
+      "meanAzimuthalKmS": 0,
+      "sigmaRKmS": 13.659280188976448,
+      "sigmaPhiKmS": 41.083698123489995,
+      "sigmaZKmS": 51.74489438410625
+    }
+  ],
+  "weakStationarity": {
+    "schema": "weak-orbit-stationarity-v1",
+    "libraryId": "orbits-1024-s44-p8-2026-10-21T03-42-28-070Z",
+    "identity": "For continuous Hamiltonian trajectories, mean {g,H} over finite T = [g(T)-g(0)]/T. Stationarity requires appropriate weak residuals to vanish as numerical/library/time resolution is refined.",
+    "components": [
+      {
+        "component": 0,
+        "totalProbability": 0.9999999999998097,
+        "weakTests": [
+          {
+            "g": "z^2",
+            "meanPoissonBracketUnreversed": 0.005956775572448956,
+            "meanPoissonBracketRepresented": 0,
+            "finiteOrbitEndpointRateUnreversed": 0.005817940137708997,
+            "normalizedResidualUnreversed": 0.009390789600759345,
+            "normalizedResidual": 0,
+            "normalization": 0.6343210555976345,
+            "qualification": "Finite stored-phase quadrature; endpoint identity exact for continuous orbit, not for sparse quadrature or finite-step KDK. Nonzero residual need not be purely physical."
+          },
+          {
+            "g": "z*vz",
+            "meanPoissonBracketUnreversed": 0.000008395780470282373,
+            "meanPoissonBracketRepresented": 0.000008395780470282373,
+            "finiteOrbitEndpointRateUnreversed": 0.000005199476953013288,
+            "normalizedResidualUnreversed": 0.000294541522757112,
+            "normalizedResidual": 0.000294541522757112,
+            "normalization": 0.02850457345263945,
+            "qualification": "Finite stored-phase quadrature; endpoint identity exact for continuous orbit, not for sparse quadrature or finite-step KDK. Nonzero residual need not be purely physical."
+          },
+          {
+            "g": "x^2+y^2",
+            "meanPoissonBracketUnreversed": 0.035781298783228756,
+            "meanPoissonBracketRepresented": 0,
+            "finiteOrbitEndpointRateUnreversed": 0.03585263284137804,
+            "normalizedResidualUnreversed": 0.028219635054606892,
+            "normalizedResidual": 0,
+            "normalization": 1.2679575307756297,
+            "qualification": "Finite stored-phase quadrature; endpoint identity exact for continuous orbit, not for sparse quadrature or finite-step KDK. Nonzero residual need not be purely physical."
+          },
+          {
+            "g": "x*vx+y*vy",
+            "meanPoissonBracketUnreversed": 0.000015017845533551402,
+            "meanPoissonBracketRepresented": 0.000015017845533551402,
+            "finiteOrbitEndpointRateUnreversed": 0.000019310996143257664,
+            "normalizedResidualUnreversed": 0.00037522895555801235,
+            "normalizedResidual": 0.00037522895555801235,
+            "normalization": 0.04002315202785454,
+            "qualification": "Finite stored-phase quadrature; endpoint identity exact for continuous orbit, not for sparse quadrature or finite-step KDK. Nonzero residual need not be purely physical."
+          }
+        ],
+        "moments": {
+          "unreversedMeanCylindrical": [
+            0.0006253311244523891,
+            0.0012005293828446233,
+            -0.00036908397181248343
+          ],
+          "meanCylindrical": [
+            0,
+            0,
+            0
+          ],
+          "secondCylindrical": [
+            0.010200090197957356,
+            0.00981899473873691,
+            0.014256484616554715
+          ],
+          "dispersionCylindrical": [
+            0.10099549592906287,
+            0.09909084084180994,
+            0.11940052184372862
+          ],
+          "crossSecondMoments": {
+            "Rz": -0.000020825397285028397,
+            "Rphi": -0.000012527330097684545,
+            "zphi": 1.443601339616709e-7
+          },
+          "units": "kpc/Myr, squared for second moments",
+          "qualification": "Orbit-library moments, before equal-mass particle resampling; spheroid time reversal makes all first velocity moments zero in the represented mixture, while second moments remain. Cylindrical moments do not impose sigmaR=sigmaz."
+        }
+      },
+      {
+        "component": 1,
+        "totalProbability": 1.0000000000002436,
+        "weakTests": [
+          {
+            "g": "z^2",
+            "meanPoissonBracketUnreversed": 0.00012420863827880047,
+            "meanPoissonBracketRepresented": 0.00012420863827880047,
+            "finiteOrbitEndpointRateUnreversed": 0.00012477658396065796,
+            "normalizedResidualUnreversed": 0.00777756476295775,
+            "normalizedResidual": 0.00777756476295775,
+            "normalization": 0.015970119447975495,
+            "qualification": "Finite stored-phase quadrature; endpoint identity exact for continuous orbit, not for sparse quadrature or finite-step KDK. Nonzero residual need not be purely physical."
+          },
+          {
+            "g": "z*vz",
+            "meanPoissonBracketUnreversed": 4.2330917536136704e-7,
+            "meanPoissonBracketRepresented": 4.2330917536136704e-7,
+            "finiteOrbitEndpointRateUnreversed": 9.589582959248876e-7,
+            "normalizedResidualUnreversed": 0.00014474251592614632,
+            "normalizedResidual": 0.00014474251592614632,
+            "normalization": 0.0029245669294387356,
+            "qualification": "Finite stored-phase quadrature; endpoint identity exact for continuous orbit, not for sparse quadrature or finite-step KDK. Nonzero residual need not be purely physical."
+          },
+          {
+            "g": "x^2+y^2",
+            "meanPoissonBracketUnreversed": 0.0008880831107567984,
+            "meanPoissonBracketRepresented": 0.0008880831107567984,
+            "finiteOrbitEndpointRateUnreversed": 0.0008972680561278009,
+            "normalizedResidualUnreversed": 0.00023601882014110965,
+            "normalizedResidual": 0.00023601882014110965,
+            "normalization": 3.762763961898615,
+            "qualification": "Finite stored-phase quadrature; endpoint identity exact for continuous orbit, not for sparse quadrature or finite-step KDK. Nonzero residual need not be purely physical."
+          },
+          {
+            "g": "x*vx+y*vy",
+            "meanPoissonBracketUnreversed": -0.0000024127709518112164,
+            "meanPoissonBracketRepresented": -0.0000024127709518112164,
+            "finiteOrbitEndpointRateUnreversed": -0.0000013913843153849395,
+            "normalizedResidualUnreversed": -0.000027964417080135747,
+            "normalizedResidual": -0.000027964417080135747,
+            "normalization": 0.08628003740958022,
+            "qualification": "Finite stored-phase quadrature; endpoint identity exact for continuous orbit, not for sparse quadrature or finite-step KDK. Nonzero residual need not be purely physical."
+          }
+        ],
+        "moments": {
+          "unreversedMeanCylindrical": [
+            0.00004598966967568688,
+            0.19675491954049237,
+            0.00008994736894461183
+          ],
+          "meanCylindrical": [
+            0.00004598966967568688,
+            0.19675491954049237,
+            0.00008994736894461183
+          ],
+          "secondCylindrical": [
+            0.0017884137867811554,
+            0.04135039853253202,
+            0.0014624951193070632
+          ],
+          "dispersionCylindrical": [
+            0.04228961659475572,
+            0.05136049229852063,
+            0.038242476760506544
+          ],
+          "crossSecondMoments": {
+            "Rz": -0.00002274959222443545,
+            "Rphi": 0.000008127406901372394,
+            "zphi": 0.000006035296829154075
+          },
+          "units": "kpc/Myr, squared for second moments",
+          "qualification": "Orbit-library moments, before equal-mass particle resampling; spheroid time reversal makes all first velocity moments zero in the represented mixture, while second moments remain. Cylindrical moments do not impose sigmaR=sigmaz."
+        }
+      },
+      {
+        "component": 2,
+        "totalProbability": 1.0000000000003817,
+        "weakTests": [
+          {
+            "g": "z^2",
+            "meanPoissonBracketUnreversed": 0.2053443966570909,
+            "meanPoissonBracketRepresented": 0,
+            "finiteOrbitEndpointRateUnreversed": 0.20502216471027204,
+            "normalizedResidualUnreversed": 0.035437440054651624,
+            "normalizedResidual": 0,
+            "normalization": 5.794560677645133,
+            "qualification": "Finite stored-phase quadrature; endpoint identity exact for continuous orbit, not for sparse quadrature or finite-step KDK. Nonzero residual need not be purely physical."
+          },
+          {
+            "g": "z*vz",
+            "meanPoissonBracketUnreversed": 0.000041373799198157846,
+            "meanPoissonBracketRepresented": 0.000041373799198157846,
+            "finiteOrbitEndpointRateUnreversed": 0.000044503405227827575,
+            "normalizedResidualUnreversed": 0.0017546311552948757,
+            "normalizedResidual": 0.0017546311552948757,
+            "normalization": 0.02357977006922845,
+            "qualification": "Finite stored-phase quadrature; endpoint identity exact for continuous orbit, not for sparse quadrature or finite-step KDK. Nonzero residual need not be purely physical."
+          },
+          {
+            "g": "x^2+y^2",
+            "meanPoissonBracketUnreversed": 0.3287158738935589,
+            "meanPoissonBracketRepresented": 0,
+            "finiteOrbitEndpointRateUnreversed": 0.3291103530044882,
+            "normalizedResidualUnreversed": 0.027669704782075942,
+            "normalizedResidual": 0,
+            "normalization": 11.879992088187965,
+            "qualification": "Finite stored-phase quadrature; endpoint identity exact for continuous orbit, not for sparse quadrature or finite-step KDK. Nonzero residual need not be purely physical."
+          },
+          {
+            "g": "x*vx+y*vy",
+            "meanPoissonBracketUnreversed": 0.00015669095176439868,
+            "meanPoissonBracketRepresented": 0.00015669095176439868,
+            "finiteOrbitEndpointRateUnreversed": 0.0001630777069815635,
+            "normalizedResidualUnreversed": 0.0033737421048676106,
+            "normalizedResidual": 0.0033737421048676106,
+            "normalization": 0.04644425889528607,
+            "qualification": "Finite stored-phase quadrature; endpoint identity exact for continuous orbit, not for sparse quadrature or finite-step KDK. Nonzero residual need not be purely physical."
+          }
+        ],
+        "moments": {
+          "unreversedMeanCylindrical": [
+            0.0020690042966364313,
+            -0.0069232953174781136,
+            -0.00017314471505049288
+          ],
+          "meanCylindrical": [
+            0,
+            0,
+            0
+          ],
+          "secondCylindrical": [
+            0.010242425121515674,
+            0.013058049802009418,
+            0.011810571934213452
+          ],
+          "dispersionCylindrical": [
+            0.10120486708412631,
+            0.11427182418255787,
+            0.10867645528914463
+          ],
+          "crossSecondMoments": {
+            "Rz": 0.0000708295871950064,
+            "Rphi": -0.000014642983461354488,
+            "zphi": -0.000014934632185363218
+          },
+          "units": "kpc/Myr, squared for second moments",
+          "qualification": "Orbit-library moments, before equal-mass particle resampling; spheroid time reversal makes all first velocity moments zero in the represented mixture, while second moments remain. Cylindrical moments do not impose sigmaR=sigmaz."
+        }
+      }
+    ],
+    "equilibriumValidated": false
+  },
+  "boundary": {
+    "haloOuterRadiusKpc": 247.95095842704154,
+    "weightedOrbitPhaseMassFractionBeyondHaloOuterRadius": 0.004868710721894252,
+    "targetMassFractionBeyondOuterRadius": 0,
+    "qualification": "Independent spherical-boundary diagnostic not included explicitly in the coarse cylindrical training bins; nonzero support cannot certify the exact truncated target. No particle was clipped."
+  },
+  "qualification": "Conditional moments of the existing positive orbit measure, including antipodal and spheroid time-reversal sampling symmetries. Not a new fit or a kinematic target. Finite phase records do not bound orbit extrema between samples. Halo boundary alone is not imposed by coarse cylindrical bins. Density, weak stationarity, and collective stability are distinct tests."
+}

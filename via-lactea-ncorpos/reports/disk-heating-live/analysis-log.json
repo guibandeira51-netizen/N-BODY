@@ -1,0 +1,143 @@
+{
+  "snapshots": [
+    {
+      "timeMyr": 0,
+      "diskCount": 22409,
+      "positiveEnergyCount": 0,
+      "positiveEnergyMassFraction": 0,
+      "positiveAndOutwardCount": 0,
+      "positiveAndOutside30KpcCount": 0,
+      "newPositiveSinceInitial": 0,
+      "alreadyPositiveInitially": 0,
+      "h50Kpc": 0.16354152764523064,
+      "boundOnlyH50Kpc": 0.16354152764523064,
+      "h90Kpc": 0.6090178483010561,
+      "sigmaNormalKmS": 38.58345852764385,
+      "planeTiltDegrees": 0.09700214281367296,
+      "R50Kpc": 5.283958371799841,
+      "r50Kpc": 5.313743711329339,
+      "kineticDisk": 0.1528971144030389,
+      "verticalRandomKinetic": 0.00529405054046906,
+      "directCostMs": 3206.371,
+      "specificEnergyMin": -0.24886032316602996,
+      "specificEnergyMax": -0.00003693793034862691
+    },
+    {
+      "timeMyr": 9850.000000018303,
+      "diskCount": 22409,
+      "positiveEnergyCount": 0,
+      "positiveEnergyMassFraction": 0,
+      "positiveAndOutwardCount": 0,
+      "positiveAndOutside30KpcCount": 0,
+      "newPositiveSinceInitial": 0,
+      "alreadyPositiveInitially": 0,
+      "h50Kpc": 2.1174209415195975,
+      "boundOnlyH50Kpc": 2.1174209415195975,
+      "h90Kpc": 6.667364848499313,
+      "sigmaNormalKmS": 91.52763746475239,
+      "planeTiltDegrees": 10.149945857316068,
+      "R50Kpc": 8.275104066770758,
+      "r50Kpc": 9.089342206209986,
+      "kineticDisk": 0.16173692504960152,
+      "verticalRandomKinetic": 0.029791356565532293,
+      "directCostMs": 2173.8777,
+      "specificEnergyMin": -0.2990309640419034,
+      "specificEnergyMax": -0.00003692625527982257
+    },
+    {
+      "timeMyr": 9900.000000018485,
+      "diskCount": 22409,
+      "positiveEnergyCount": 0,
+      "positiveEnergyMassFraction": 0,
+      "positiveAndOutwardCount": 0,
+      "positiveAndOutside30KpcCount": 0,
+      "newPositiveSinceInitial": 0,
+      "alreadyPositiveInitially": 0,
+      "h50Kpc": 2.137174349154643,
+      "boundOnlyH50Kpc": 2.137174349154643,
+      "h90Kpc": 6.640536888020651,
+      "sigmaNormalKmS": 90.59780043374195,
+      "planeTiltDegrees": 10.182358019631126,
+      "R50Kpc": 8.446268345822975,
+      "r50Kpc": 9.341796152566305,
+      "kineticDisk": 0.15958682814001565,
+      "verticalRandomKinetic": 0.02918912540657724,
+      "directCostMs": 2075.9775999999993,
+      "specificEnergyMin": -0.3083697191186161,
+      "specificEnergyMax": -0.00003692627933125892,
+      "persistentPositiveOver50MyrCount": 0,
+      "persistentPositiveOutwardOutside30KpcCount": 0
+    }
+  ],
+  "massByComponent": [
+    {
+      "component": 0,
+      "count": 7469,
+      "massMsun": 4999999916.9094715,
+      "particleMassMsun": 669433.64799954
+    },
+    {
+      "component": 1,
+      "count": 22409,
+      "massMsun": 68000002186.177925,
+      "particleMassMsun": 3034495.166502893
+    },
+    {
+      "component": 2,
+      "count": 19918,
+      "massMsun": 976315727568.8446,
+      "particleMassMsun": 49016755.07426262
+    }
+  ],
+  "haloToDiskParticleMassRatio": 16.153182781553753,
+  "initialVerticalVirial": {
+    "all": {
+      "plummer": {
+        "n": 22409,
+        "Kz": 0.005294668543241263,
+        "Wz": -0.010054276412950864,
+        "ratio2KzOverMinusWz": 1.05321722335408,
+        "initialSecondDerivativeOfIz": 0.0010701213470633263
+      },
+      "newtonSameParticles": {
+        "n": 22409,
+        "Kz": 0.005294668543241263,
+        "Wz": -0.010476305299833422,
+        "ratio2KzOverMinusWz": 1.0107892795612687,
+        "initialSecondDerivativeOfIz": 0.00022606357329820956
+      },
+      "analyticUnsoftened": {
+        "n": 22409,
+        "Kz": 0.005294668543241263,
+        "Wz": -0.010525522557360724,
+        "ratio2KzOverMinusWz": 1.0060628371440974,
+        "initialSecondDerivativeOfIz": 0.00012762905824360501
+      }
+    },
+    "initialCohortR30": {
+      "plummer": {
+        "n": 20235,
+        "Kz": 0.005290790733656167,
+        "Wz": -0.010052236360292876,
+        "ratio2KzOverMinusWz": 1.0526594369697089,
+        "initialSecondDerivativeOfIz": 0.001058690214038916
+      },
+      "newtonSameParticles": {
+        "n": 20235,
+        "Kz": 0.005290790733656167,
+        "Wz": -0.010474252751336927,
+        "ratio2KzOverMinusWz": 1.0102469091135602,
+        "initialSecondDerivativeOfIz": 0.00021465743195081544
+      },
+      "analyticUnsoftened": {
+        "n": 20235,
+        "Kz": 0.005290790733656167,
+        "Wz": -0.010522150902765407,
+        "ratio2KzOverMinusWz": 1.0056481383983296,
+        "initialSecondDerivativeOfIz": 0.00011886112909385502
+      }
+    }
+  },
+  "initialDiskBeyond30Kpc": 2174,
+  "initialDiskBeyond240Kpc": 304
+}

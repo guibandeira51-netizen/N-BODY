@@ -1,0 +1,294 @@
+{
+  "schema": "granularity-controlled-diagnosis-103",
+  "matchedBvsA": [
+    {
+      "id": "B-base-s2026-t200",
+      "AReference": "A-base-s2026-t200",
+      "refinedPopulation": null,
+      "baryonSeed": 2026,
+      "extraThinHeightChangeKpc": 0.038122300990456576,
+      "extraThinCartesianVelocityVarianceKm2S2": 125.56001981168399,
+      "qualification": "B−A contains self-gravity response, discreteness and collective effects of baryons; not a pure two-body-heating estimator."
+    },
+    {
+      "id": "B-base-s2027-t200",
+      "AReference": "A-base-s2027-t200",
+      "refinedPopulation": null,
+      "baryonSeed": 2027,
+      "extraThinHeightChangeKpc": 0.03312300898809303,
+      "extraThinCartesianVelocityVarianceKm2S2": 301.0270992305733,
+      "qualification": "B−A contains self-gravity response, discreteness and collective effects of baryons; not a pure two-body-heating estimator."
+    },
+    {
+      "id": "B-base-s2028-t200",
+      "AReference": "A-base-s2028-t200",
+      "refinedPopulation": null,
+      "baryonSeed": 2028,
+      "extraThinHeightChangeKpc": 0.005194424778418166,
+      "extraThinCartesianVelocityVarianceKm2S2": 226.41324727460838,
+      "qualification": "B−A contains self-gravity response, discreteness and collective effects of baryons; not a pure two-body-heating estimator."
+    },
+    {
+      "id": "B-bulge2-s2026-t200",
+      "AReference": "A-base-s2026-t200",
+      "refinedPopulation": 0,
+      "baryonSeed": 2026,
+      "extraThinHeightChangeKpc": 0.026878765028666707,
+      "extraThinCartesianVelocityVarianceKm2S2": 218.46969213746218,
+      "qualification": "B−A contains self-gravity response, discreteness and collective effects of baryons; not a pure two-body-heating estimator."
+    },
+    {
+      "id": "B-bulge2-s2027-t200",
+      "AReference": "A-base-s2027-t200",
+      "refinedPopulation": 0,
+      "baryonSeed": 2027,
+      "extraThinHeightChangeKpc": 0.02459962416171596,
+      "extraThinCartesianVelocityVarianceKm2S2": 283.7050008180237,
+      "qualification": "B−A contains self-gravity response, discreteness and collective effects of baryons; not a pure two-body-heating estimator."
+    },
+    {
+      "id": "B-bulge2-s2028-t200",
+      "AReference": "A-base-s2028-t200",
+      "refinedPopulation": 0,
+      "baryonSeed": 2028,
+      "extraThinHeightChangeKpc": 0.02096517921611457,
+      "extraThinCartesianVelocityVarianceKm2S2": 213.2616969234722,
+      "qualification": "B−A contains self-gravity response, discreteness and collective effects of baryons; not a pure two-body-heating estimator."
+    },
+    {
+      "id": "B-thick2-s2026-t200",
+      "AReference": "A-base-s2026-t200",
+      "refinedPopulation": 2,
+      "baryonSeed": 2026,
+      "extraThinHeightChangeKpc": 0.017005422902510503,
+      "extraThinCartesianVelocityVarianceKm2S2": 137.9376996798962,
+      "qualification": "B−A contains self-gravity response, discreteness and collective effects of baryons; not a pure two-body-heating estimator."
+    },
+    {
+      "id": "B-thick2-s2027-t200",
+      "AReference": "A-base-s2027-t200",
+      "refinedPopulation": 2,
+      "baryonSeed": 2027,
+      "extraThinHeightChangeKpc": 0.037146711227370344,
+      "extraThinCartesianVelocityVarianceKm2S2": 296.49268047236353,
+      "qualification": "B−A contains self-gravity response, discreteness and collective effects of baryons; not a pure two-body-heating estimator."
+    },
+    {
+      "id": "B-thick2-s2028-t200",
+      "AReference": "A-base-s2028-t200",
+      "refinedPopulation": 2,
+      "baryonSeed": 2028,
+      "extraThinHeightChangeKpc": 0.024166556818643353,
+      "extraThinCartesianVelocityVarianceKm2S2": 194.71690062563664,
+      "qualification": "B−A contains self-gravity response, discreteness and collective effects of baryons; not a pure two-body-heating estimator."
+    },
+    {
+      "id": "B-thin2-s2026-t200",
+      "AReference": "A-thin2-s2026-t200",
+      "refinedPopulation": 1,
+      "baryonSeed": 2026,
+      "extraThinHeightChangeKpc": 0.02232801101223908,
+      "extraThinCartesianVelocityVarianceKm2S2": 224.46086077114822,
+      "qualification": "B−A contains self-gravity response, discreteness and collective effects of baryons; not a pure two-body-heating estimator."
+    },
+    {
+      "id": "B-thin2-s2027-t200",
+      "AReference": "A-thin2-s2027-t200",
+      "refinedPopulation": 1,
+      "baryonSeed": 2027,
+      "extraThinHeightChangeKpc": 0.016736046482466738,
+      "extraThinCartesianVelocityVarianceKm2S2": 159.0340661248641,
+      "qualification": "B−A contains self-gravity response, discreteness and collective effects of baryons; not a pure two-body-heating estimator."
+    },
+    {
+      "id": "B-thin2-s2028-t200",
+      "AReference": "A-thin2-s2028-t200",
+      "refinedPopulation": 1,
+      "baryonSeed": 2028,
+      "extraThinHeightChangeKpc": 0.022005607283171164,
+      "extraThinCartesianVelocityVarianceKm2S2": 128.0089821707012,
+      "qualification": "B−A contains self-gravity response, discreteness and collective effects of baryons; not a pure two-body-heating estimator."
+    }
+  ],
+  "pairedBaryonGroups": [
+    {
+      "refinedPopulation": null,
+      "meanExtraHeightKpc": 0.025479911585655924,
+      "meanExtraCartesianVarianceKm2S2": 217.66678877228856,
+      "varianceExcessSD": 88.0599193288201
+    },
+    {
+      "refinedPopulation": 0,
+      "meanExtraHeightKpc": 0.02414785613549908,
+      "meanExtraCartesianVarianceKm2S2": 238.47879662631934,
+      "varianceExcessSD": 39.253508922509546
+    },
+    {
+      "refinedPopulation": 1,
+      "meanExtraHeightKpc": 0.020356554925958992,
+      "meanExtraCartesianVarianceKm2S2": 170.50130302223783,
+      "varianceExcessSD": 49.23783466943089
+    },
+    {
+      "refinedPopulation": 2,
+      "meanExtraHeightKpc": 0.026106230316174733,
+      "meanExtraCartesianVarianceKm2S2": 209.7157602592988,
+      "varianceExcessSD": 80.33458051336078
+    }
+  ],
+  "liveLateEvolution": [
+    {
+      "id": "H-nh4000-b2026-h2026-t200",
+      "thinH100": 0.303126471622029,
+      "thinH200": 0.4091062351908734,
+      "thinHeightChange100to200Kpc": 0.10597976356884442,
+      "cartesianVarianceChange100to200Km2S2": 826.6636687329027
+    },
+    {
+      "id": "H-nh4000-b2026-h2027-t200",
+      "thinH100": 0.3139588342648126,
+      "thinH200": 0.4034883121464804,
+      "thinHeightChange100to200Kpc": 0.08952947788166782,
+      "cartesianVarianceChange100to200Km2S2": 780.7884621411052
+    },
+    {
+      "id": "H-nh4000-b2026-h2028-t200",
+      "thinH100": 0.34676813053907046,
+      "thinH200": 0.4688395240879436,
+      "thinHeightChange100to200Kpc": 0.12207139354887314,
+      "cartesianVarianceChange100to200Km2S2": 656.1773634964774
+    },
+    {
+      "id": "H-nh40000-b2026-h2026-t200",
+      "thinH100": 0.24775552952467264,
+      "thinH200": 0.26544987835977557,
+      "thinHeightChange100to200Kpc": 0.01769434883510293,
+      "cartesianVarianceChange100to200Km2S2": 130.69724122954096
+    },
+    {
+      "id": "H-nh40000-b2026-h2027-t200",
+      "thinH100": 0.24263404782244183,
+      "thinH200": 0.26906444889358977,
+      "thinHeightChange100to200Kpc": 0.02643040107114794,
+      "cartesianVarianceChange100to200Km2S2": 397.12308368403757
+    },
+    {
+      "id": "H-nh40000-b2026-h2028-t200",
+      "thinH100": 0.22602024755615546,
+      "thinH200": 0.27200365969905027,
+      "thinHeightChange100to200Kpc": 0.04598341214289481,
+      "cartesianVarianceChange100to200Km2S2": 178.3809680456012
+    }
+  ],
+  "localHaloCounts": [
+    {
+      "id": "H-nh4000-b2026-h2026",
+      "nh": 4000,
+      "haloSeed": 2026,
+      "haloParticleMassMsun": 262282303.02963915,
+      "sphere8Kpc": 156,
+      "sphere20Kpc": 514,
+      "cylinderR8AbsZ1Kpc": 54
+    },
+    {
+      "id": "H-nh4000-b2026-h2027",
+      "nh": 4000,
+      "haloSeed": 2027,
+      "haloParticleMassMsun": 262282303.02963915,
+      "sphere8Kpc": 144,
+      "sphere20Kpc": 498,
+      "cylinderR8AbsZ1Kpc": 32
+    },
+    {
+      "id": "H-nh4000-b2026-h2028",
+      "nh": 4000,
+      "haloSeed": 2028,
+      "haloParticleMassMsun": 262282303.02963915,
+      "sphere8Kpc": 146,
+      "sphere20Kpc": 520,
+      "cylinderR8AbsZ1Kpc": 46
+    },
+    {
+      "id": "H-nh8000-b2026-h2026",
+      "nh": 8000,
+      "haloSeed": 2026,
+      "haloParticleMassMsun": 131141151.51481958,
+      "sphere8Kpc": 318,
+      "sphere20Kpc": 1012,
+      "cylinderR8AbsZ1Kpc": 104
+    },
+    {
+      "id": "H-nh8000-b2026-h2027",
+      "nh": 8000,
+      "haloSeed": 2027,
+      "haloParticleMassMsun": 131141151.51481958,
+      "sphere8Kpc": 302,
+      "sphere20Kpc": 1006,
+      "cylinderR8AbsZ1Kpc": 76
+    },
+    {
+      "id": "H-nh8000-b2026-h2028",
+      "nh": 8000,
+      "haloSeed": 2028,
+      "haloParticleMassMsun": 131141151.51481958,
+      "sphere8Kpc": 270,
+      "sphere20Kpc": 1036,
+      "cylinderR8AbsZ1Kpc": 74
+    },
+    {
+      "id": "H-nh20000-b2026-h2026",
+      "nh": 20000,
+      "haloSeed": 2026,
+      "haloParticleMassMsun": 52456460.60592783,
+      "sphere8Kpc": 740,
+      "sphere20Kpc": 2644,
+      "cylinderR8AbsZ1Kpc": 232
+    },
+    {
+      "id": "H-nh20000-b2026-h2027",
+      "nh": 20000,
+      "haloSeed": 2027,
+      "haloParticleMassMsun": 52456460.60592783,
+      "sphere8Kpc": 730,
+      "sphere20Kpc": 2544,
+      "cylinderR8AbsZ1Kpc": 194
+    },
+    {
+      "id": "H-nh20000-b2026-h2028",
+      "nh": 20000,
+      "haloSeed": 2028,
+      "haloParticleMassMsun": 52456460.60592783,
+      "sphere8Kpc": 736,
+      "sphere20Kpc": 2604,
+      "cylinderR8AbsZ1Kpc": 190
+    },
+    {
+      "id": "H-nh40000-b2026-h2026",
+      "nh": 40000,
+      "haloSeed": 2026,
+      "haloParticleMassMsun": 26228230.302963916,
+      "sphere8Kpc": 1504,
+      "sphere20Kpc": 5290,
+      "cylinderR8AbsZ1Kpc": 464
+    },
+    {
+      "id": "H-nh40000-b2026-h2027",
+      "nh": 40000,
+      "haloSeed": 2027,
+      "haloParticleMassMsun": 26228230.302963916,
+      "sphere8Kpc": 1620,
+      "sphere20Kpc": 5388,
+      "cylinderR8AbsZ1Kpc": 442
+    },
+    {
+      "id": "H-nh40000-b2026-h2028",
+      "nh": 40000,
+      "haloSeed": 2028,
+      "haloParticleMassMsun": 26228230.302963916,
+      "sphere8Kpc": 1428,
+      "sphere20Kpc": 5124,
+      "cylinderR8AbsZ1Kpc": 402
+    }
+  ],
+  "qualification": "Finite resolution/seed comparisons, not a unique attribution of all heating to two-body scattering. B removes halo response as well as halo noise. Local counts are descriptive, not acceptance thresholds."
+}

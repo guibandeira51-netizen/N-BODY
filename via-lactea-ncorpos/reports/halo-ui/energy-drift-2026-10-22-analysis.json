@@ -1,0 +1,35 @@
+{
+  "realizationId": "7605ce4a-dbbf-415d-8084-3447c3f71ff2",
+  "n": 343578,
+  "baseN": 25642,
+  "counts": [
+    3846,
+    11540,
+    328192
+  ],
+  "dtMyr": 1,
+  "epsilonKpc": 0.1,
+  "force": "GPU direct f32",
+  "trajectoryPrecision": "Float32",
+  "evaluationPrecision": "Float64 compensated CPU evaluation",
+  "referenceCount": 9,
+  "initial": {
+    "t": 0,
+    "E": -1.8840509973998674,
+    "K": 1.8752791305664935,
+    "U": -3.759330127966361
+  },
+  "last": {
+    "t": 1600,
+    "E": -1.8786124241987863,
+    "errorPercent": 0.28866379989643276
+  },
+  "allSampledDirectEnergiesIncreasing": true,
+  "sameSnapshot": {
+    "timeMyr": 1600,
+    "biasChangeCommonPercent": 0.006760009287542241,
+    "directChangeCommonPercent": 0.28866379989643276,
+    "bhChangeCommonPercent": 0.295423809183975
+  },
+  "qualification": "Measured global Hamiltonian drift of the stored GPU trajectory. No dt/precision causal decomposition or equilibrium certification."
+}

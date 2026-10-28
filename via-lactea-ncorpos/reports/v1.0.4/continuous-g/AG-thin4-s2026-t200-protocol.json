@@ -1,0 +1,15 @@
+{
+  "id": "AG-thin4-s2026-t200",
+  "source": "reports/v1.0.4/initial/FG-b2026-h2026.json",
+  "sourceSHA256": "35473be92eee11afd726a95c5325d4931f3e0124096d2cbe5715db023c28b409",
+  "scriptSHA256": "b2267ecbe53e27a1f42152c6fcec9548387a844722088b9e8c44603588631733",
+  "potentialSHA256": "1074a9a28555ad253907b7e6f4b7aba406be33b9efc63ff7794e08110ea707d1",
+  "seed": 2026,
+  "n": 16638,
+  "durationMyr": 200,
+  "cadenceMyr": 5,
+  "algorithm": "AGAMA DOP853 Float64 accuracy1e-10",
+  "selfGravity": false,
+  "qualification": "All16638 same uploaded baryons from G; complete fixed mean, no self gravity. This changes collective response as well as discrete forces. Input p,v,m quantized once toFloat32.",
+  "seconds": 9.71394760000021
+}

@@ -1,0 +1,63 @@
+{
+  "durationMyr": 1200.0,
+  "outputCadenceMyr": 1,
+  "integrator": "AGAMA DOP853 Float64 accuracy1e-10",
+  "verification": "DOP853 accuracy1e-12 plus independent KDK dt0.05 and0.025Myr, all same initial vectors",
+  "initialConditionsKmS": [
+    [
+      5,
+      0,
+      0,
+      0,
+      199.26181080138488,
+      0
+    ],
+    [
+      8.122,
+      0,
+      0,
+      0,
+      209.44879098223993,
+      0
+    ],
+    [
+      15,
+      0,
+      0,
+      0,
+      196.91437225813277,
+      0
+    ],
+    [
+      22,
+      0,
+      0,
+      0,
+      187.18012689912914,
+      0
+    ],
+    [
+      8.122,
+      0,
+      0.3,
+      12,
+      209.44879098223993,
+      18
+    ]
+  ],
+  "initialIds": [
+    "R5",
+    "R8.122",
+    "R15",
+    "R22",
+    "solar-inclined"
+  ],
+  "timeConversionKmSToKpcMyr": 0.0010227121650537077,
+  "potentialHashes": {
+    "potentials/component-0.ini": "abbf37d00b10ef18e87ca49cdcc256537987bed18656255b7cad70517d5caacb",
+    "potentials/component-1.ini": "72628f74cd8cb8d3d234ac7730e6bb20a855b5f71a6e846ecf74124e3ffddb11",
+    "potentials/component-2.ini": "c8e70ddece443ab71fa1cb564c85daf4bd6b9805898dc819060f1100a98ba347",
+    "potentials/component-3.ini": "af36631c46a036b3e2377061b665fe89c1b103968aee8fd8a6102cc3005e69f9"
+  },
+  "qualification": "Smooth fixed fields; zero test-particle self gravity; removing halo is a force counterfactual, not a self-consistent galaxy without DM. No velocity adjustment between potentials."
+}

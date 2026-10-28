@@ -1,0 +1,3782 @@
+{
+  "createdUTC": "2026-10-22T05:48:29.967Z",
+  "runtime": "v24.19.0",
+  "method": "Prototype only, original octree/Plummer/traversal arithmetic. Persistent worker_threads, shared Float64 state and read-only published tree, atomic target queue in chunks of 256, barrier before final kick. Original serial KDK and prototype both perform four complete steps from identical copied initial arrays; first step is warmup, following three steps timed. No changes to physical parameters.",
+  "options": {
+    "seed": 2026,
+    "withHalo": true,
+    "dt": 0.1,
+    "epsilon": 0.1,
+    "theta": 0.5,
+    "algorithm": "barnes-hut",
+    "energyAuditCadenceMyr": 200
+  },
+  "results": [
+    {
+      "n": 10000,
+      "baseN": 10000,
+      "haloRefinement": 1,
+      "workerCount": 1,
+      "startupMs": 24.20939999999996,
+      "originalStepMs": 200.19939999999997,
+      "prototypeStepMs": 196.63969999999972,
+      "speedup": 1.0181026517025822,
+      "medianEffectiveProcessCores": 1.0239683753473512,
+      "buildMs": 3.318200000000161,
+      "publicationMs": 0.11809999999991305,
+      "dispatchTraverseMs": 192.77039999999988,
+      "bitwiseIdenticalAfterFourKDKSteps": true,
+      "serialHashes": {
+        "positions": "e20d246e6c17df3db4f901be38b1bd6bd0e172df8810b221e7cf021b61837de0",
+        "velocities": "b37aa2a688af85e4f5eae6fb592bb9ab983671c6efaf6350651ac43a897c9343",
+        "accelerations": "0c4ae33ef6f3ee372c09a4f6286e50cb13e10212fdc6edc40aee1b9a865262f5"
+      },
+      "finalHashes": {
+        "positions": "e20d246e6c17df3db4f901be38b1bd6bd0e172df8810b221e7cf021b61837de0",
+        "velocities": "b37aa2a688af85e4f5eae6fb592bb9ab983671c6efaf6350651ac43a897c9343",
+        "accelerations": "0c4ae33ef6f3ee372c09a4f6286e50cb13e10212fdc6edc40aee1b9a865262f5"
+      },
+      "samples": [
+        {
+          "buildMs": 17.873999999999796,
+          "publicationMs": 0.11809999999991305,
+          "dispatchAndTraverseMs": 192.77039999999988,
+          "totalForceMs": 210.7624999999996,
+          "sharedTreeBytes": 530135,
+          "workers": [
+            {
+              "type": "done",
+              "threadId": 1,
+              "computeMs": 192.47320000000013,
+              "bodies": 10000,
+              "chunks": 40,
+              "startEpochMs": 1792648111952.5652,
+              "endEpochMs": 1792648112145.0417
+            }
+          ],
+          "stepMs": 212.89719999999988,
+          "wallStepMs": 212.94069999999988,
+          "effectiveProcessCores": 1.0239683753473512
+        },
+        {
+          "buildMs": 3.318200000000161,
+          "publicationMs": 0.038100000000213186,
+          "dispatchAndTraverseMs": 192.41160000000036,
+          "totalForceMs": 195.76790000000074,
+          "sharedTreeBytes": 530135,
+          "workers": [
+            {
+              "type": "done",
+              "threadId": 1,
+              "computeMs": 192.04749999999967,
+              "bodies": 10000,
+              "chunks": 40,
+              "startEpochMs": 1792648112149.3,
+              "endEpochMs": 1792648112341.351
+            }
+          ],
+          "stepMs": 196.3530999999998,
+          "wallStepMs": 196.38570000000027,
+          "effectiveProcessCores": 1.1204304897656325
+        },
+        {
+          "buildMs": 3.127599999999802,
+          "publicationMs": 0.14530000000013388,
+          "dispatchAndTraverseMs": 193.01229999999987,
+          "totalForceMs": 196.2851999999998,
+          "sharedTreeBytes": 531605,
+          "workers": [
+            {
+              "type": "done",
+              "threadId": 1,
+              "computeMs": 192.67779999999993,
+              "bodies": 10000,
+              "chunks": 40,
+              "startEpochMs": 1792648112345.4058,
+              "endEpochMs": 1792648112538.1008
+            }
+          ],
+          "stepMs": 196.63969999999972,
+          "wallStepMs": 196.66930000000002,
+          "effectiveProcessCores": 0.9509778544210568
+        }
+      ]
+    },
+    {
+      "n": 10000,
+      "baseN": 10000,
+      "haloRefinement": 1,
+      "workerCount": 2,
+      "startupMs": 23.964300000000094,
+      "originalStepMs": 200.19939999999997,
+      "prototypeStepMs": 103.25019999999995,
+      "speedup": 1.9389734838286035,
+      "medianEffectiveProcessCores": 1.8111345062769864,
+      "buildMs": 2.560399999999845,
+      "publicationMs": 0.06290000000035434,
+      "dispatchTraverseMs": 100.18470000000025,
+      "bitwiseIdenticalAfterFourKDKSteps": true,
+      "serialHashes": {
+        "positions": "e20d246e6c17df3db4f901be38b1bd6bd0e172df8810b221e7cf021b61837de0",
+        "velocities": "b37aa2a688af85e4f5eae6fb592bb9ab983671c6efaf6350651ac43a897c9343",
+        "accelerations": "0c4ae33ef6f3ee372c09a4f6286e50cb13e10212fdc6edc40aee1b9a865262f5"
+      },
+      "finalHashes": {
+        "positions": "e20d246e6c17df3db4f901be38b1bd6bd0e172df8810b221e7cf021b61837de0",
+        "velocities": "b37aa2a688af85e4f5eae6fb592bb9ab983671c6efaf6350651ac43a897c9343",
+        "accelerations": "0c4ae33ef6f3ee372c09a4f6286e50cb13e10212fdc6edc40aee1b9a865262f5"
+      },
+      "samples": [
+        {
+          "buildMs": 2.55580000000009,
+          "publicationMs": 0.06290000000035434,
+          "dispatchAndTraverseMs": 100.18470000000025,
+          "totalForceMs": 102.80340000000069,
+          "sharedTreeBytes": 530135,
+          "workers": [
+            {
+              "type": "done",
+              "threadId": 2,
+              "computeMs": 99.69029999999975,
+              "bodies": 5136,
+              "chunks": 21,
+              "startEpochMs": 1792648112795.6943,
+              "endEpochMs": 1792648112895.3875
+            },
+            {
+              "type": "done",
+              "threadId": 3,
+              "computeMs": 99.99189999999999,
+              "bodies": 4864,
+              "chunks": 19,
+              "startEpochMs": 1792648112795.7153,
+              "endEpochMs": 1792648112895.7104
+            }
+          ],
+          "stepMs": 103.25019999999995,
+          "wallStepMs": 103.30370000000039,
+          "effectiveProcessCores": 1.8111345062769864
+        },
+        {
+          "buildMs": 2.655499999999847,
+          "publicationMs": 0.03690000000005966,
+          "dispatchAndTraverseMs": 98.25999999999976,
+          "totalForceMs": 100.95239999999967,
+          "sharedTreeBytes": 530135,
+          "workers": [
+            {
+              "type": "done",
+              "threadId": 2,
+              "computeMs": 95.95330000000013,
+              "bodies": 4880,
+              "chunks": 20,
+              "startEpochMs": 1792648112898.7559,
+              "endEpochMs": 1792648112994.7131
+            },
+            {
+              "type": "done",
+              "threadId": 3,
+              "computeMs": 98.10559999999987,
+              "bodies": 5120,
+              "chunks": 20,
+              "startEpochMs": 1792648112898.768,
+              "endEpochMs": 1792648112996.8777
+            }
+          ],
+          "stepMs": 101.10269999999991,
+          "wallStepMs": 101.13880000000017,
+          "effectiveProcessCores": 2.166114258076196
+        },
+        {
+          "buildMs": 2.560399999999845,
+          "publicationMs": 0.07160000000021682,
+          "dispatchAndTraverseMs": 101.8732,
+          "totalForceMs": 104.50520000000006,
+          "sharedTreeBytes": 531605,
+          "workers": [
+            {
+              "type": "done",
+              "threadId": 2,
+              "computeMs": 99.0965000000001,
+              "bodies": 4880,
+              "chunks": 20,
+              "startEpochMs": 1792648112999.8284,
+              "endEpochMs": 1792648113098.9421
+            },
+            {
+              "type": "done",
+              "threadId": 3,
+              "computeMs": 101.71529999999984,
+              "bodies": 5120,
+              "chunks": 20,
+              "startEpochMs": 1792648112999.8386,
+              "endEpochMs": 1792648113101.5637
+            }
+          ],
+          "stepMs": 104.64679999999998,
+          "wallStepMs": 104.67669999999998,
+          "effectiveProcessCores": 1.7869633854069118
+        }
+      ]
+    },
+    {
+      "n": 10000,
+      "baseN": 10000,
+      "haloRefinement": 1,
+      "workerCount": 4,
+      "startupMs": 25.334799999999632,
+      "originalStepMs": 200.19939999999997,
+      "prototypeStepMs": 53.49510000000009,
+      "speedup": 3.742387620548417,
+      "medianEffectiveProcessCores": 3.5010269054853915,
+      "buildMs": 2.6036000000003696,
+      "publicationMs": 0.13619999999991705,
+      "dispatchTraverseMs": 50.66160000000036,
+      "bitwiseIdenticalAfterFourKDKSteps": true,
+      "serialHashes": {
+        "positions": "e20d246e6c17df3db4f901be38b1bd6bd0e172df8810b221e7cf021b61837de0",
+        "velocities": "b37aa2a688af85e4f5eae6fb592bb9ab983671c6efaf6350651ac43a897c9343",
+        "accelerations": "0c4ae33ef6f3ee372c09a4f6286e50cb13e10212fdc6edc40aee1b9a865262f5"
+      },
+      "finalHashes": {
+        "positions": "e20d246e6c17df3db4f901be38b1bd6bd0e172df8810b221e7cf021b61837de0",
+        "velocities": "b37aa2a688af85e4f5eae6fb592bb9ab983671c6efaf6350651ac43a897c9343",
+        "accelerations": "0c4ae33ef6f3ee372c09a4f6286e50cb13e10212fdc6edc40aee1b9a865262f5"
+      },
+      "samples": [
+        {
+          "buildMs": 2.6036000000003696,
+          "publicationMs": 0.13619999999991705,
+          "dispatchAndTraverseMs": 50.55690000000004,
+          "totalForceMs": 53.29670000000033,
+          "sharedTreeBytes": 530135,
+          "workers": [
+            {
+              "type": "done",
+              "threadId": 4,
+              "computeMs": 49.1871000000001,
+              "bodies": 2560,
+              "chunks": 10,
+              "startEpochMs": 1792648113264.6716,
+              "endEpochMs": 1792648113313.8643
+            },
+            {
+              "type": "done",
+              "threadId": 5,
+              "computeMs": 48.25779999999986,
+              "bodies": 2320,
+              "chunks": 10,
+              "startEpochMs": 1792648113264.6775,
+              "endEpochMs": 1792648113312.9407
+            },
+            {
+              "type": "done",
+              "threadId": 6,
+              "computeMs": 50.36020000000008,
+              "bodies": 2560,
+              "chunks": 10,
+              "startEpochMs": 1792648113264.6985,
+              "endEpochMs": 1792648113315.066
+            },
+            {
+              "type": "done",
+              "threadId": 7,
+              "computeMs": 48.44470000000001,
+              "bodies": 2560,
+              "chunks": 10,
+              "startEpochMs": 1792648113264.7131,
+              "endEpochMs": 1792648113313.1633
+            }
+          ],
+          "stepMs": 53.41289999999981,
+          "wallStepMs": 53.433300000000145,
+          "effectiveProcessCores": 3.5010269054853915
+        },
+        {
+          "buildMs": 2.778400000000147,
+          "publicationMs": 0.0363999999999578,
+          "dispatchAndTraverseMs": 50.66160000000036,
+          "totalForceMs": 53.47640000000047,
+          "sharedTreeBytes": 530135,
+          "workers": [
+            {
+              "type": "done",
+              "threadId": 4,
+              "computeMs": 50.528099999999995,
+              "bodies": 2560,
+              "chunks": 10,
+              "startEpochMs": 1792648113318.1594,
+              "endEpochMs": 1792648113368.69
+            },
+            {
+              "type": "done",
+              "threadId": 5,
+              "computeMs": 48.36090000000013,
+              "bodies": 2320,
+              "chunks": 10,
+              "startEpochMs": 1792648113318.166,
+              "endEpochMs": 1792648113366.5293
+            },
+            {
+              "type": "done",
+              "threadId": 6,
+              "computeMs": 49.43170000000009,
+              "bodies": 2560,
+              "chunks": 10,
+              "startEpochMs": 1792648113318.1821,
+              "endEpochMs": 1792648113367.6165
+            },
+            {
+              "type": "done",
+              "threadId": 7,
+              "computeMs": 48.59619999999995,
+              "bodies": 2560,
+              "chunks": 10,
+              "startEpochMs": 1792648113318.189,
+              "endEpochMs": 1792648113366.7878
+            }
+          ],
+          "stepMs": 53.59680000000026,
+          "wallStepMs": 53.614300000000185,
+          "effectiveProcessCores": 3.2091468147351927
+        },
+        {
+          "buildMs": 2.4947000000001935,
+          "publicationMs": 0.15020000000004075,
+          "dispatchAndTraverseMs": 50.73580000000038,
+          "totalForceMs": 53.380700000000616,
+          "sharedTreeBytes": 531605,
+          "workers": [
+            {
+              "type": "done",
+              "threadId": 4,
+              "computeMs": 48.92639999999983,
+              "bodies": 2560,
+              "chunks": 10,
+              "startEpochMs": 1792648113371.5806,
+              "endEpochMs": 1792648113420.5134
+            },
+            {
+              "type": "done",
+              "threadId": 5,
+              "computeMs": 48.96259999999984,
+              "bodies": 2560,
+              "chunks": 10,
+              "startEpochMs": 1792648113371.6016,
+              "endEpochMs": 1792648113420.572
+            },
+            {
+              "type": "done",
+              "threadId": 6,
+              "computeMs": 48.61040000000003,
+              "bodies": 2320,
+              "chunks": 10,
+              "startEpochMs": 1792648113371.599,
+              "endEpochMs": 1792648113420.2183
+            },
+            {
+              "type": "done",
+              "threadId": 7,
+              "computeMs": 50.5938000000001,
+              "bodies": 2560,
+              "chunks": 10,
+              "startEpochMs": 1792648113371.6116,
+              "endEpochMs": 1792648113422.2104
+            }
+          ],
+          "stepMs": 53.49510000000009,
+          "wallStepMs": 53.51209999999992,
+          "effectiveProcessCores": 3.5143405657714384
+        }
+      ]
+    },
+    {
+      "n": 10000,
+      "baseN": 10000,
+      "haloRefinement": 1,
+      "workerCount": 8,
+      "startupMs": 32.7800000000002,
+      "originalStepMs": 200.19939999999997,
+      "prototypeStepMs": 31.709299999999985,
+      "speedup": 6.313586234953155,
+      "medianEffectiveProcessCores": 7.884122323734681,
+      "buildMs": 2.530300000000352,
+      "publicationMs": 0.0761000000002241,
+      "dispatchTraverseMs": 29.090400000000045,
+      "bitwiseIdenticalAfterFourKDKSteps": true,
+      "serialHashes": {
+        "positions": "e20d246e6c17df3db4f901be38b1bd6bd0e172df8810b221e7cf021b61837de0",
+        "velocities": "b37aa2a688af85e4f5eae6fb592bb9ab983671c6efaf6350651ac43a897c9343",
+        "accelerations": "0c4ae33ef6f3ee372c09a4f6286e50cb13e10212fdc6edc40aee1b9a865262f5"
+      },
+      "finalHashes": {
+        "positions": "e20d246e6c17df3db4f901be38b1bd6bd0e172df8810b221e7cf021b61837de0",
+        "velocities": "b37aa2a688af85e4f5eae6fb592bb9ab983671c6efaf6350651ac43a897c9343",
+        "accelerations": "0c4ae33ef6f3ee372c09a4f6286e50cb13e10212fdc6edc40aee1b9a865262f5"
+      },
+      "samples": [
+        {
+          "buildMs": 2.5731000000000677,
+          "publicationMs": 0.0761000000002241,
+          "dispatchAndTraverseMs": 28.931100000000242,
+          "totalForceMs": 31.580300000000534,
+          "sharedTreeBytes": 530135,
+          "workers": [
+            {
+              "type": "done",
+              "threadId": 8,
+              "computeMs": 26.377300000000105,
+              "bodies": 1024,
+              "chunks": 4,
+              "startEpochMs": 1792648113583.8647,
+              "endEpochMs": 1792648113610.2468
+            },
+            {
+              "type": "done",
+              "threadId": 9,
+              "computeMs": 26.368199999999888,
+              "bodies": 1296,
+              "chunks": 6,
+              "startEpochMs": 1792648113583.8813,
+              "endEpochMs": 1792648113610.2542
+            },
+            {
+              "type": "done",
+              "threadId": 10,
+              "computeMs": 26.534299999999803,
+              "bodies": 1280,
+              "chunks": 5,
+              "startEpochMs": 1792648113583.8767,
+              "endEpochMs": 1792648113610.4146
+            },
+            {
+              "type": "done",
+              "threadId": 11,
+              "computeMs": 28.68899999999985,
+              "bodies": 1280,
+              "chunks": 5,
+              "startEpochMs": 1792648113583.9385,
+              "endEpochMs": 1792648113612.6313
+            },
+            {
+              "type": "done",
+              "threadId": 12,
+              "computeMs": 26.55729999999994,
+              "bodies": 1280,
+              "chunks": 5,
+              "startEpochMs": 1792648113583.9167,
+              "endEpochMs": 1792648113610.4778
+            },
+            {
+              "type": "done",
+              "threadId": 13,
+              "computeMs": 26.937599999999748,
+              "bodies": 1280,
+              "chunks": 5,
+              "startEpochMs": 1792648113583.9348,
+              "endEpochMs": 1792648113610.8767
+            },
+            {
+              "type": "done",
+              "threadId": 14,
+              "computeMs": 27.628400000000056,
+              "bodies": 1280,
+              "chunks": 5,
+              "startEpochMs": 1792648113583.9238,
+              "endEpochMs": 1792648113611.5562
+            },
+            {
+              "type": "done",
+              "threadId": 15,
+              "computeMs": 27.75099999999975,
+              "bodies": 1280,
+              "chunks": 5,
+              "startEpochMs": 1792648113583.9634,
+              "endEpochMs": 1792648113611.718
+            }
+          ],
+          "stepMs": 31.709299999999985,
+          "wallStepMs": 31.728799999999865,
+          "effectiveProcessCores": 7.884122323734681
+        },
+        {
+          "buildMs": 2.342399999999998,
+          "publicationMs": 0.032299999999850115,
+          "dispatchAndTraverseMs": 29.090400000000045,
+          "totalForceMs": 31.465099999999893,
+          "sharedTreeBytes": 530135,
+          "workers": [
+            {
+              "type": "done",
+              "threadId": 8,
+              "computeMs": 27.161399999999958,
+              "bodies": 1280,
+              "chunks": 5,
+              "startEpochMs": 1792648113615.2468,
+              "endEpochMs": 1792648113642.413
+            },
+            {
+              "type": "done",
+              "threadId": 9,
+              "computeMs": 28.942199999999957,
+              "bodies": 1536,
+              "chunks": 6,
+              "startEpochMs": 1792648113615.2705,
+              "endEpochMs": 1792648113644.2195
+            },
+            {
+              "type": "done",
+              "threadId": 10,
+              "computeMs": 26.521999999999935,
+              "bodies": 1296,
+              "chunks": 6,
+              "startEpochMs": 1792648113615.271,
+              "endEpochMs": 1792648113641.7976
+            },
+            {
+              "type": "done",
+              "threadId": 11,
+              "computeMs": 26.917899999999918,
+              "bodies": 1024,
+              "chunks": 4,
+              "startEpochMs": 1792648113615.2817,
+              "endEpochMs": 1792648113642.2043
+            },
+            {
+              "type": "done",
+              "threadId": 12,
+              "computeMs": 26.751900000000205,
+              "bodies": 1280,
+              "chunks": 5,
+              "startEpochMs": 1792648113615.2917,
+              "endEpochMs": 1792648113642.048
+            },
+            {
+              "type": "done",
+              "threadId": 13,
+              "computeMs": 26.775900000000092,
+              "bodies": 1280,
+              "chunks": 5,
+              "startEpochMs": 1792648113615.313,
+              "endEpochMs": 1792648113642.0947
+            },
+            {
+              "type": "done",
+              "threadId": 14,
+              "computeMs": 26.584599999999682,
+              "bodies": 1280,
+              "chunks": 5,
+              "startEpochMs": 1792648113615.311,
+              "endEpochMs": 1792648113641.9001
+            },
+            {
+              "type": "done",
+              "threadId": 15,
+              "computeMs": 26.88949999999977,
+              "bodies": 1024,
+              "chunks": 4,
+              "startEpochMs": 1792648113615.3293,
+              "endEpochMs": 1792648113642.2249
+            }
+          ],
+          "stepMs": 31.5591000000004,
+          "wallStepMs": 31.576700000000073,
+          "effectiveProcessCores": 7.921645420813548
+        },
+        {
+          "buildMs": 2.530300000000352,
+          "publicationMs": 0.07639999999992142,
+          "dispatchAndTraverseMs": 29.439699999999903,
+          "totalForceMs": 32.046400000000176,
+          "sharedTreeBytes": 531605,
+          "workers": [
+            {
+              "type": "done",
+              "threadId": 8,
+              "computeMs": 26.943199999999706,
+              "bodies": 1280,
+              "chunks": 5,
+              "startEpochMs": 1792648113647.0688,
+              "endEpochMs": 1792648113674.019
+            },
+            {
+              "type": "done",
+              "threadId": 9,
+              "computeMs": 26.158300000000054,
+              "bodies": 1280,
+              "chunks": 5,
+              "startEpochMs": 1792648113647.0828,
+              "endEpochMs": 1792648113673.2485
+            },
+            {
+              "type": "done",
+              "threadId": 10,
+              "computeMs": 29.308400000000347,
+              "bodies": 1024,
+              "chunks": 4,
+              "startEpochMs": 1792648113647.0957,
+              "endEpochMs": 1792648113676.409
+            },
+            {
+              "type": "done",
+              "threadId": 11,
+              "computeMs": 27.30269999999973,
+              "bodies": 1024,
+              "chunks": 4,
+              "startEpochMs": 1792648113647.111,
+              "endEpochMs": 1792648113674.4207
+            },
+            {
+              "type": "done",
+              "threadId": 12,
+              "computeMs": 28.79880000000003,
+              "bodies": 1536,
+              "chunks": 6,
+              "startEpochMs": 1792648113647.1233,
+              "endEpochMs": 1792648113675.9282
+            },
+            {
+              "type": "done",
+              "threadId": 13,
+              "computeMs": 25.828099999999722,
+              "bodies": 1296,
+              "chunks": 6,
+              "startEpochMs": 1792648113647.1313,
+              "endEpochMs": 1792648113672.9668
+            },
+            {
+              "type": "done",
+              "threadId": 14,
+              "computeMs": 26.182999999999993,
+              "bodies": 1280,
+              "chunks": 5,
+              "startEpochMs": 1792648113647.1375,
+              "endEpochMs": 1792648113673.3271
+            },
+            {
+              "type": "done",
+              "threadId": 15,
+              "computeMs": 28.07479999999987,
+              "bodies": 1280,
+              "chunks": 5,
+              "startEpochMs": 1792648113647.145,
+              "endEpochMs": 1792648113675.228
+            }
+          ],
+          "stepMs": 32.1588999999999,
+          "wallStepMs": 32.17430000000013,
+          "effectiveProcessCores": 7.773897739039605
+        }
+      ]
+    },
+    {
+      "n": 10000,
+      "baseN": 10000,
+      "haloRefinement": 1,
+      "workerCount": 16,
+      "startupMs": 58.41830000000027,
+      "originalStepMs": 200.19939999999997,
+      "prototypeStepMs": 38.64140000000043,
+      "speedup": 5.180956176535989,
+      "medianEffectiveProcessCores": 11.344659841719261,
+      "buildMs": 8.217699999999695,
+      "publicationMs": 0.12160000000039872,
+      "dispatchTraverseMs": 30.22490000000016,
+      "bitwiseIdenticalAfterFourKDKSteps": true,
+      "serialHashes": {
+        "positions": "e20d246e6c17df3db4f901be38b1bd6bd0e172df8810b221e7cf021b61837de0",
+        "velocities": "b37aa2a688af85e4f5eae6fb592bb9ab983671c6efaf6350651ac43a897c9343",
+        "accelerations": "0c4ae33ef6f3ee372c09a4f6286e50cb13e10212fdc6edc40aee1b9a865262f5"
+      },
+      "finalHashes": {
+        "positions": "e20d246e6c17df3db4f901be38b1bd6bd0e172df8810b221e7cf021b61837de0",
+        "velocities": "b37aa2a688af85e4f5eae6fb592bb9ab983671c6efaf6350651ac43a897c9343",
+        "accelerations": "0c4ae33ef6f3ee372c09a4f6286e50cb13e10212fdc6edc40aee1b9a865262f5"
+      },
+      "samples": [
+        {
+          "buildMs": 8.965099999999893,
+          "publicationMs": 0.12160000000039872,
+          "dispatchAndTraverseMs": 34.85690000000022,
+          "totalForceMs": 43.943600000000515,
+          "sharedTreeBytes": 530135,
+          "workers": [
+            {
+              "type": "done",
+              "threadId": 16,
+              "computeMs": 23.20470000000023,
+              "bodies": 512,
+              "chunks": 2,
+              "startEpochMs": 1792648113970.4988,
+              "endEpochMs": 1792648113993.7097
+            },
+            {
+              "type": "done",
+              "threadId": 17,
+              "computeMs": 24.601800000000367,
+              "bodies": 768,
+              "chunks": 3,
+              "startEpochMs": 1792648113970.5212,
+              "endEpochMs": 1792648113995.128
+            },
+            {
+              "type": "done",
+              "threadId": 18,
+              "computeMs": 24.659000000000106,
+              "bodies": 768,
+              "chunks": 3,
+              "startEpochMs": 1792648113970.5356,
+              "endEpochMs": 1792648113995.1992
+            },
+            {
+              "type": "done",
+              "threadId": 19,
+              "computeMs": 23.65639999999985,
+              "bodies": 768,
+              "chunks": 3,
+              "startEpochMs": 1792648113970.5547,
+              "endEpochMs": 1792648113994.2175
+            },
+            {
+              "type": "done",
+              "threadId": 20,
+              "computeMs": 25.372699999999895,
+              "bodies": 768,
+              "chunks": 3,
+              "startEpochMs": 1792648113970.569,
+              "endEpochMs": 1792648113995.9468
+            },
+            {
+              "type": "done",
+              "threadId": 21,
+              "computeMs": 34.48219999999992,
+              "bodies": 512,
+              "chunks": 2,
+              "startEpochMs": 1792648113970.6738,
+              "endEpochMs": 1792648114005.162
+            },
+            {
+              "type": "done",
+              "threadId": 22,
+              "computeMs": 29.118199999999888,
+              "bodies": 512,
+              "chunks": 2,
+              "startEpochMs": 1792648113970.6973,
+              "endEpochMs": 1792648113999.8198
+            },
+            {
+              "type": "done",
+              "threadId": 23,
+              "computeMs": 25.16489999999976,
+              "bodies": 768,
+              "chunks": 3,
+              "startEpochMs": 1792648113970.6157,
+              "endEpochMs": 1792648113995.7852
+            },
+            {
+              "type": "done",
+              "threadId": 24,
+              "computeMs": 23.21250000000009,
+              "bodies": 528,
+              "chunks": 3,
+              "startEpochMs": 1792648113970.6472,
+              "endEpochMs": 1792648113993.8662
+            },
+            {
+              "type": "done",
+              "threadId": 25,
+              "computeMs": 23.366199999999935,
+              "bodies": 512,
+              "chunks": 2,
+              "startEpochMs": 1792648113970.675,
+              "endEpochMs": 1792648113994.051
+            },
+            {
+              "type": "done",
+              "threadId": 26,
+              "computeMs": 33.2820999999999,
+              "bodies": 512,
+              "chunks": 2,
+              "startEpochMs": 1792648113970.6873,
+              "endEpochMs": 1792648114003.9736
+            },
+            {
+              "type": "done",
+              "threadId": 27,
+              "computeMs": 24.902399999999943,
+              "bodies": 768,
+              "chunks": 3,
+              "startEpochMs": 1792648113970.739,
+              "endEpochMs": 1792648113995.6472
+            },
+            {
+              "type": "done",
+              "threadId": 28,
+              "computeMs": 26.04340000000002,
+              "bodies": 768,
+              "chunks": 3,
+              "startEpochMs": 1792648113970.76,
+              "endEpochMs": 1792648113996.8076
+            },
+            {
+              "type": "done",
+              "threadId": 29,
+              "computeMs": 23.134999999999764,
+              "bodies": 512,
+              "chunks": 2,
+              "startEpochMs": 1792648113970.7815,
+              "endEpochMs": 1792648113993.9238
+            },
+            {
+              "type": "done",
+              "threadId": 30,
+              "computeMs": 23.3442,
+              "bodies": 512,
+              "chunks": 2,
+              "startEpochMs": 1792648113970.7998,
+              "endEpochMs": 1792648113994.15
+            },
+            {
+              "type": "done",
+              "threadId": 31,
+              "computeMs": 27.933399999999892,
+              "bodies": 512,
+              "chunks": 2,
+              "startEpochMs": 1792648113970.828,
+              "endEpochMs": 1792648113998.7656
+            }
+          ],
+          "stepMs": 44.07360000000017,
+          "wallStepMs": 44.10909999999967,
+          "effectiveProcessCores": 11.344659841719261
+        },
+        {
+          "buildMs": 8.217699999999695,
+          "publicationMs": 0.04870000000028085,
+          "dispatchAndTraverseMs": 30.22490000000016,
+          "totalForceMs": 38.49130000000014,
+          "sharedTreeBytes": 530135,
+          "workers": [
+            {
+              "type": "done",
+              "threadId": 16,
+              "computeMs": 29.12149999999974,
+              "bodies": 768,
+              "chunks": 3,
+              "startEpochMs": 1792648114013.7988,
+              "endEpochMs": 1792648114042.9263
+            },
+            {
+              "type": "done",
+              "threadId": 17,
+              "computeMs": 28.638700000000426,
+              "bodies": 768,
+              "chunks": 3,
+              "startEpochMs": 1792648114013.8113,
+              "endEpochMs": 1792648114042.4543
+            },
+            {
+              "type": "done",
+              "threadId": 18,
+              "computeMs": 28.781600000000253,
+              "bodies": 768,
+              "chunks": 3,
+              "startEpochMs": 1792648114013.8208,
+              "endEpochMs": 1792648114042.607
+            },
+            {
+              "type": "done",
+              "threadId": 19,
+              "computeMs": 27.080399999999827,
+              "bodies": 768,
+              "chunks": 3,
+              "startEpochMs": 1792648114013.849,
+              "endEpochMs": 1792648114040.9346
+            },
+            {
+              "type": "done",
+              "threadId": 20,
+              "computeMs": 25.13899999999967,
+              "bodies": 528,
+              "chunks": 3,
+              "startEpochMs": 1792648114013.8552,
+              "endEpochMs": 1792648114039.0007
+            },
+            {
+              "type": "done",
+              "threadId": 21,
+              "computeMs": 29.99940000000015,
+              "bodies": 256,
+              "chunks": 1,
+              "startEpochMs": 1792648114013.8447,
+              "endEpochMs": 1792648114043.8486
+            },
+            {
+              "type": "done",
+              "threadId": 22,
+              "computeMs": 26.978099999999813,
+              "bodies": 256,
+              "chunks": 1,
+              "startEpochMs": 1792648114013.8904,
+              "endEpochMs": 1792648114040.874
+            },
+            {
+              "type": "done",
+              "threadId": 23,
+              "computeMs": 27.65769999999975,
+              "bodies": 512,
+              "chunks": 2,
+              "startEpochMs": 1792648114013.924,
+              "endEpochMs": 1792648114041.5884
+            },
+            {
+              "type": "done",
+              "threadId": 24,
+              "computeMs": 28.651100000000042,
+              "bodies": 768,
+              "chunks": 3,
+              "startEpochMs": 1792648114013.9512,
+              "endEpochMs": 1792648114042.607
+            },
+            {
+              "type": "done",
+              "threadId": 25,
+              "computeMs": 25.725699999999506,
+              "bodies": 768,
+              "chunks": 3,
+              "startEpochMs": 1792648114013.964,
+              "endEpochMs": 1792648114039.6987
+            },
+            {
+              "type": "done",
+              "threadId": 26,
+              "computeMs": 27.16469999999981,
+              "bodies": 256,
+              "chunks": 1,
+              "startEpochMs": 1792648114013.9644,
+              "endEpochMs": 1792648114041.1353
+            },
+            {
+              "type": "done",
+              "threadId": 27,
+              "computeMs": 27.37099999999964,
+              "bodies": 768,
+              "chunks": 3,
+              "startEpochMs": 1792648114013.9927,
+              "endEpochMs": 1792648114041.368
+            },
+            {
+              "type": "done",
+              "threadId": 28,
+              "computeMs": 27.783500000000004,
+              "bodies": 768,
+              "chunks": 3,
+              "startEpochMs": 1792648114014.016,
+              "endEpochMs": 1792648114041.8044
+            },
+            {
+              "type": "done",
+              "threadId": 29,
+              "computeMs": 18.884500000000116,
+              "bodies": 512,
+              "chunks": 2,
+              "startEpochMs": 1792648114020.3586,
+              "endEpochMs": 1792648114039.2495
+            },
+            {
+              "type": "done",
+              "threadId": 30,
+              "computeMs": 27.38070000000016,
+              "bodies": 768,
+              "chunks": 3,
+              "startEpochMs": 1792648114015.5676,
+              "endEpochMs": 1792648114042.9526
+            },
+            {
+              "type": "done",
+              "threadId": 31,
+              "computeMs": 25.846600000000308,
+              "bodies": 768,
+              "chunks": 3,
+              "startEpochMs": 1792648114016.4207,
+              "endEpochMs": 1792648114042.2734
+            }
+          ],
+          "stepMs": 38.64140000000043,
+          "wallStepMs": 38.667799999999716,
+          "effectiveProcessCores": 12.551305076938066
+        },
+        {
+          "buildMs": 2.7515000000003056,
+          "publicationMs": 0.23209999999926367,
+          "dispatchAndTraverseMs": 23.864400000000387,
+          "totalForceMs": 26.847999999999956,
+          "sharedTreeBytes": 531605,
+          "workers": [
+            {
+              "type": "done",
+              "threadId": 16,
+              "computeMs": 23.135400000000118,
+              "bodies": 768,
+              "chunks": 3,
+              "startEpochMs": 1792648114047.169,
+              "endEpochMs": 1792648114070.3132
+            },
+            {
+              "type": "done",
+              "threadId": 17,
+              "computeMs": 21.80410000000029,
+              "bodies": 512,
+              "chunks": 2,
+              "startEpochMs": 1792648114047.179,
+              "endEpochMs": 1792648114068.9922
+            },
+            {
+              "type": "done",
+              "threadId": 18,
+              "computeMs": 23.66240000000016,
+              "bodies": 768,
+              "chunks": 3,
+              "startEpochMs": 1792648114047.2156,
+              "endEpochMs": 1792648114070.8884
+            },
+            {
+              "type": "done",
+              "threadId": 19,
+              "computeMs": 23.603399999999965,
+              "bodies": 768,
+              "chunks": 3,
+              "startEpochMs": 1792648114047.238,
+              "endEpochMs": 1792648114070.852
+            },
+            {
+              "type": "done",
+              "threadId": 20,
+              "computeMs": 23.58140000000003,
+              "bodies": 768,
+              "chunks": 3,
+              "startEpochMs": 1792648114047.238,
+              "endEpochMs": 1792648114070.8325
+            },
+            {
+              "type": "done",
+              "threadId": 21,
+              "computeMs": 21.845299999999952,
+              "bodies": 512,
+              "chunks": 2,
+              "startEpochMs": 1792648114047.2336,
+              "endEpochMs": 1792648114069.0876
+            },
+            {
+              "type": "done",
+              "threadId": 22,
+              "computeMs": 20.8783999999996,
+              "bodies": 512,
+              "chunks": 2,
+              "startEpochMs": 1792648114047.2568,
+              "endEpochMs": 1792648114068.144
+            },
+            {
+              "type": "done",
+              "threadId": 23,
+              "computeMs": 21.649000000000342,
+              "bodies": 512,
+              "chunks": 2,
+              "startEpochMs": 1792648114047.283,
+              "endEpochMs": 1792648114068.941
+            },
+            {
+              "type": "done",
+              "threadId": 24,
+              "computeMs": 22.3087000000005,
+              "bodies": 768,
+              "chunks": 3,
+              "startEpochMs": 1792648114047.3193,
+              "endEpochMs": 1792648114069.6401
+            },
+            {
+              "type": "done",
+              "threadId": 25,
+              "computeMs": 22.47900000000027,
+              "bodies": 512,
+              "chunks": 2,
+              "startEpochMs": 1792648114047.324,
+              "endEpochMs": 1792648114069.8127
+            },
+            {
+              "type": "done",
+              "threadId": 26,
+              "computeMs": 22.11359999999968,
+              "bodies": 512,
+              "chunks": 2,
+              "startEpochMs": 1792648114047.3464,
+              "endEpochMs": 1792648114069.4707
+            },
+            {
+              "type": "done",
+              "threadId": 27,
+              "computeMs": 19.753600000000006,
+              "bodies": 528,
+              "chunks": 3,
+              "startEpochMs": 1792648114047.3708,
+              "endEpochMs": 1792648114067.1353
+            },
+            {
+              "type": "done",
+              "threadId": 28,
+              "computeMs": 23.311099999999897,
+              "bodies": 768,
+              "chunks": 3,
+              "startEpochMs": 1792648114047.3843,
+              "endEpochMs": 1792648114070.7039
+            },
+            {
+              "type": "done",
+              "threadId": 29,
+              "computeMs": 21.527399999999943,
+              "bodies": 512,
+              "chunks": 2,
+              "startEpochMs": 1792648114047.4026,
+              "endEpochMs": 1792648114068.9375
+            },
+            {
+              "type": "done",
+              "threadId": 30,
+              "computeMs": 19.807400000000598,
+              "bodies": 512,
+              "chunks": 2,
+              "startEpochMs": 1792648114047.4075,
+              "endEpochMs": 1792648114067.2231
+            },
+            {
+              "type": "done",
+              "threadId": 31,
+              "computeMs": 22.314900000000307,
+              "bodies": 768,
+              "chunks": 3,
+              "startEpochMs": 1792648114047.4268,
+              "endEpochMs": 1792648114069.749
+            }
+          ],
+          "stepMs": 27.0595000000003,
+          "wallStepMs": 27.079499999999825,
+          "effectiveProcessCores": 8.647609896709008
+        }
+      ]
+    },
+    {
+      "n": 24000,
+      "baseN": 24000,
+      "haloRefinement": 1,
+      "workerCount": 4,
+      "startupMs": 25.821899999999914,
+      "originalStepMs": 669.0853999999999,
+      "prototypeStepMs": 153.79559999999947,
+      "speedup": 4.350484669262334,
+      "medianEffectiveProcessCores": 3.764737092608644,
+      "buildMs": 7.04739999999947,
+      "publicationMs": 0.07250000000021828,
+      "dispatchTraverseMs": 146.32949999999983,
+      "bitwiseIdenticalAfterFourKDKSteps": true,
+      "serialHashes": {
+        "positions": "16de3de98e5498d54fa99a6409c34de0cc3e23f317f0ba299f2e68e45a001a48",
+        "velocities": "63a748f2b014dd8d42e7e6547647efb4b454ed1b8a7099f03125da2eacab24c9",
+        "accelerations": "2a962c41d0bd3dd53ed41ddc31e0c521656073646aa8b25f3307e64aad52fc6a"
+      },
+      "finalHashes": {
+        "positions": "16de3de98e5498d54fa99a6409c34de0cc3e23f317f0ba299f2e68e45a001a48",
+        "velocities": "63a748f2b014dd8d42e7e6547647efb4b454ed1b8a7099f03125da2eacab24c9",
+        "accelerations": "2a962c41d0bd3dd53ed41ddc31e0c521656073646aa8b25f3307e64aad52fc6a"
+      },
+      "samples": [
+        {
+          "buildMs": 7.329399999999623,
+          "publicationMs": 0.07690000000002328,
+          "dispatchAndTraverseMs": 150.57980000000043,
+          "totalForceMs": 157.98610000000008,
+          "sharedTreeBytes": 1257855,
+          "workers": [
+            {
+              "type": "done",
+              "threadId": 32,
+              "computeMs": 149.0627999999997,
+              "bodies": 6144,
+              "chunks": 24,
+              "startEpochMs": 1792648117825.4817,
+              "endEpochMs": 1792648117974.5476
+            },
+            {
+              "type": "done",
+              "threadId": 33,
+              "computeMs": 148.33709999999974,
+              "bodies": 5888,
+              "chunks": 23,
+              "startEpochMs": 1792648117825.489,
+              "endEpochMs": 1792648117973.8293
+            },
+            {
+              "type": "done",
+              "threadId": 34,
+              "computeMs": 148.50870000000032,
+              "bodies": 5888,
+              "chunks": 23,
+              "startEpochMs": 1792648117825.5042,
+              "endEpochMs": 1792648117974.0159
+            },
+            {
+              "type": "done",
+              "threadId": 35,
+              "computeMs": 150.3811999999998,
+              "bodies": 6080,
+              "chunks": 24,
+              "startEpochMs": 1792648117825.5151,
+              "endEpochMs": 1792648117975.8997
+            }
+          ],
+          "stepMs": 158.45219999999972,
+          "wallStepMs": 158.47580000000016,
+          "effectiveProcessCores": 3.5468109625489643
+        },
+        {
+          "buildMs": 7.04739999999947,
+          "publicationMs": 0.07250000000021828,
+          "dispatchAndTraverseMs": 146.32949999999983,
+          "totalForceMs": 153.4493999999995,
+          "sharedTreeBytes": 1257855,
+          "workers": [
+            {
+              "type": "done",
+              "threadId": 32,
+              "computeMs": 143.26510000000053,
+              "bodies": 5888,
+              "chunks": 23,
+              "startEpochMs": 1792648117983.6143,
+              "endEpochMs": 1792648118126.883
+            },
+            {
+              "type": "done",
+              "threadId": 33,
+              "computeMs": 146.08960000000025,
+              "bodies": 6144,
+              "chunks": 24,
+              "startEpochMs": 1792648117983.626,
+              "endEpochMs": 1792648118129.7188
+            },
+            {
+              "type": "done",
+              "threadId": 34,
+              "computeMs": 146.15370000000075,
+              "bodies": 6080,
+              "chunks": 24,
+              "startEpochMs": 1792648117983.635,
+              "endEpochMs": 1792648118129.7917
+            },
+            {
+              "type": "done",
+              "threadId": 35,
+              "computeMs": 144.59100000000035,
+              "bodies": 5888,
+              "chunks": 23,
+              "startEpochMs": 1792648117983.6438,
+              "endEpochMs": 1792648118128.238
+            }
+          ],
+          "stepMs": 153.79559999999947,
+          "wallStepMs": 153.8173999999999,
+          "effectiveProcessCores": 3.764737092608644
+        },
+        {
+          "buildMs": 6.753799999998591,
+          "publicationMs": 0.06929999999920256,
+          "dispatchAndTraverseMs": 146.1241000000009,
+          "totalForceMs": 152.9471999999987,
+          "sharedTreeBytes": 1257855,
+          "workers": [
+            {
+              "type": "done",
+              "threadId": 32,
+              "computeMs": 145.60900000000038,
+              "bodies": 6080,
+              "chunks": 24,
+              "startEpochMs": 1792648118137.036,
+              "endEpochMs": 1792648118282.6528
+            },
+            {
+              "type": "done",
+              "threadId": 33,
+              "computeMs": 145.95420000000013,
+              "bodies": 6144,
+              "chunks": 24,
+              "startEpochMs": 1792648118137.0476,
+              "endEpochMs": 1792648118283.0105
+            },
+            {
+              "type": "done",
+              "threadId": 34,
+              "computeMs": 143.08419999999933,
+              "bodies": 5888,
+              "chunks": 23,
+              "startEpochMs": 1792648118137.0564,
+              "endEpochMs": 1792648118280.1494
+            },
+            {
+              "type": "done",
+              "threadId": 35,
+              "computeMs": 142.96030000000064,
+              "bodies": 5888,
+              "chunks": 23,
+              "startEpochMs": 1792648118137.073,
+              "endEpochMs": 1792648118280.0476
+            }
+          ],
+          "stepMs": 153.1999999999989,
+          "wallStepMs": 153.22390000000087,
+          "effectiveProcessCores": 3.772845953002638
+        }
+      ]
+    },
+    {
+      "n": 24000,
+      "baseN": 24000,
+      "haloRefinement": 1,
+      "workerCount": 8,
+      "startupMs": 33.75300000000061,
+      "originalStepMs": 669.0853999999999,
+      "prototypeStepMs": 89.81890000000021,
+      "speedup": 7.449271812502696,
+      "medianEffectiveProcessCores": 7.162732702860049,
+      "buildMs": 7.258299999999508,
+      "publicationMs": 0.07550000000082946,
+      "dispatchTraverseMs": 81.91499999999905,
+      "bitwiseIdenticalAfterFourKDKSteps": true,
+      "serialHashes": {
+        "positions": "16de3de98e5498d54fa99a6409c34de0cc3e23f317f0ba299f2e68e45a001a48",
+        "velocities": "63a748f2b014dd8d42e7e6547647efb4b454ed1b8a7099f03125da2eacab24c9",
+        "accelerations": "2a962c41d0bd3dd53ed41ddc31e0c521656073646aa8b25f3307e64aad52fc6a"
+      },
+      "finalHashes": {
+        "positions": "16de3de98e5498d54fa99a6409c34de0cc3e23f317f0ba299f2e68e45a001a48",
+        "velocities": "63a748f2b014dd8d42e7e6547647efb4b454ed1b8a7099f03125da2eacab24c9",
+        "accelerations": "2a962c41d0bd3dd53ed41ddc31e0c521656073646aa8b25f3307e64aad52fc6a"
+      },
+      "samples": [
+        {
+          "buildMs": 7.452599999998711,
+          "publicationMs": 0.0805000000000291,
+          "dispatchAndTraverseMs": 81.91499999999905,
+          "totalForceMs": 89.4480999999978,
+          "sharedTreeBytes": 1257855,
+          "workers": [
+            {
+              "type": "done",
+              "threadId": 36,
+              "computeMs": 78.09270000000106,
+              "bodies": 2560,
+              "chunks": 10,
+              "startEpochMs": 1792648118565.8423,
+              "endEpochMs": 1792648118643.9438
+            },
+            {
+              "type": "done",
+              "threadId": 37,
+              "computeMs": 78.24559999999838,
+              "bodies": 2816,
+              "chunks": 11,
+              "startEpochMs": 1792648118565.8333,
+              "endEpochMs": 1792648118644.0818
+            },
+            {
+              "type": "done",
+              "threadId": 38,
+              "computeMs": 80.77579999999944,
+              "bodies": 3008,
+              "chunks": 12,
+              "startEpochMs": 1792648118565.8474,
+              "endEpochMs": 1792648118646.6267
+            },
+            {
+              "type": "done",
+              "threadId": 39,
+              "computeMs": 78.77469999999994,
+              "bodies": 3072,
+              "chunks": 12,
+              "startEpochMs": 1792648118565.8555,
+              "endEpochMs": 1792648118644.633
+            },
+            {
+              "type": "done",
+              "threadId": 40,
+              "computeMs": 81.69889999999941,
+              "bodies": 3328,
+              "chunks": 13,
+              "startEpochMs": 1792648118565.8735,
+              "endEpochMs": 1792648118647.5752
+            },
+            {
+              "type": "done",
+              "threadId": 41,
+              "computeMs": 80.59749999999985,
+              "bodies": 3072,
+              "chunks": 12,
+              "startEpochMs": 1792648118565.8994,
+              "endEpochMs": 1792648118646.5034
+            },
+            {
+              "type": "done",
+              "threadId": 42,
+              "computeMs": 79.10080000000016,
+              "bodies": 3072,
+              "chunks": 12,
+              "startEpochMs": 1792648118565.8875,
+              "endEpochMs": 1792648118644.9912
+            },
+            {
+              "type": "done",
+              "threadId": 43,
+              "computeMs": 80.4494999999988,
+              "bodies": 3072,
+              "chunks": 12,
+              "startEpochMs": 1792648118565.92,
+              "endEpochMs": 1792648118646.3723
+            }
+          ],
+          "stepMs": 89.81890000000021,
+          "wallStepMs": 89.84079999999994,
+          "effectiveProcessCores": 6.95844638489225
+        },
+        {
+          "buildMs": 7.258299999999508,
+          "publicationMs": 0.06880000000091968,
+          "dispatchAndTraverseMs": 79.65550000000076,
+          "totalForceMs": 86.98260000000118,
+          "sharedTreeBytes": 1257855,
+          "workers": [
+            {
+              "type": "done",
+              "threadId": 36,
+              "computeMs": 78.87519999999859,
+              "bodies": 2816,
+              "chunks": 11,
+              "startEpochMs": 1792648118655.3809,
+              "endEpochMs": 1792648118734.26
+            },
+            {
+              "type": "done",
+              "threadId": 37,
+              "computeMs": 76.95640000000094,
+              "bodies": 2816,
+              "chunks": 11,
+              "startEpochMs": 1792648118655.3955,
+              "endEpochMs": 1792648118732.356
+            },
+            {
+              "type": "done",
+              "threadId": 38,
+              "computeMs": 76.83630000000085,
+              "bodies": 3072,
+              "chunks": 12,
+              "startEpochMs": 1792648118655.4028,
+              "endEpochMs": 1792648118732.244
+            },
+            {
+              "type": "done",
+              "threadId": 39,
+              "computeMs": 77.95080000000053,
+              "bodies": 3072,
+              "chunks": 12,
+              "startEpochMs": 1792648118655.4148,
+              "endEpochMs": 1792648118733.3704
+            },
+            {
+              "type": "done",
+              "threadId": 40,
+              "computeMs": 78.130799999999,
+              "bodies": 3072,
+              "chunks": 12,
+              "startEpochMs": 1792648118655.4246,
+              "endEpochMs": 1792648118733.5593
+            },
+            {
+              "type": "done",
+              "threadId": 41,
+              "computeMs": 79.27360000000044,
+              "bodies": 3072,
+              "chunks": 12,
+              "startEpochMs": 1792648118655.4336,
+              "endEpochMs": 1792648118734.711
+            },
+            {
+              "type": "done",
+              "threadId": 42,
+              "computeMs": 76.59859999999935,
+              "bodies": 2816,
+              "chunks": 11,
+              "startEpochMs": 1792648118655.4463,
+              "endEpochMs": 1792648118732.05
+            },
+            {
+              "type": "done",
+              "threadId": 43,
+              "computeMs": 79.45060000000012,
+              "bodies": 3264,
+              "chunks": 13,
+              "startEpochMs": 1792648118655.4539,
+              "endEpochMs": 1792648118734.9082
+            }
+          ],
+          "stepMs": 87.25720000000001,
+          "wallStepMs": 87.27770000000055,
+          "effectiveProcessCores": 7.162732702860049
+        },
+        {
+          "buildMs": 6.959999999999127,
+          "publicationMs": 0.07550000000082946,
+          "dispatchAndTraverseMs": 85.3135999999995,
+          "totalForceMs": 92.34909999999945,
+          "sharedTreeBytes": 1257855,
+          "workers": [
+            {
+              "type": "done",
+              "threadId": 36,
+              "computeMs": 85.17070000000058,
+              "bodies": 2816,
+              "chunks": 11,
+              "startEpochMs": 1792648118742.3513,
+              "endEpochMs": 1792648118827.5305
+            },
+            {
+              "type": "done",
+              "threadId": 37,
+              "computeMs": 80.6805000000004,
+              "bodies": 3072,
+              "chunks": 12,
+              "startEpochMs": 1792648118742.36,
+              "endEpochMs": 1792648118823.0564
+            },
+            {
+              "type": "done",
+              "threadId": 38,
+              "computeMs": 83.48749999999927,
+              "bodies": 3072,
+              "chunks": 12,
+              "startEpochMs": 1792648118742.3726,
+              "endEpochMs": 1792648118825.8699
+            },
+            {
+              "type": "done",
+              "threadId": 39,
+              "computeMs": 83.34070000000065,
+              "bodies": 3264,
+              "chunks": 13,
+              "startEpochMs": 1792648118742.3826,
+              "endEpochMs": 1792648118825.7322
+            },
+            {
+              "type": "done",
+              "threadId": 40,
+              "computeMs": 83.38180000000102,
+              "bodies": 3072,
+              "chunks": 12,
+              "startEpochMs": 1792648118742.391,
+              "endEpochMs": 1792648118825.7837
+            },
+            {
+              "type": "done",
+              "threadId": 41,
+              "computeMs": 83.93429999999898,
+              "bodies": 3328,
+              "chunks": 13,
+              "startEpochMs": 1792648118742.4036,
+              "endEpochMs": 1792648118826.348
+            },
+            {
+              "type": "done",
+              "threadId": 42,
+              "computeMs": 84.10729999999967,
+              "bodies": 2560,
+              "chunks": 10,
+              "startEpochMs": 1792648118742.4229,
+              "endEpochMs": 1792648118826.541
+            },
+            {
+              "type": "done",
+              "threadId": 43,
+              "computeMs": 81.70810000000165,
+              "bodies": 2816,
+              "chunks": 11,
+              "startEpochMs": 1792648118742.436,
+              "endEpochMs": 1792648118824.154
+            }
+          ],
+          "stepMs": 92.67099999999846,
+          "wallStepMs": 92.6880999999994,
+          "effectiveProcessCores": 8.093146723354797
+        }
+      ]
+    },
+    {
+      "n": 80000,
+      "baseN": 80000,
+      "haloRefinement": 1,
+      "workerCount": 1,
+      "startupMs": 24.184699999997974,
+      "originalStepMs": 2690.2706,
+      "prototypeStepMs": 2379.3106000000007,
+      "speedup": 1.130693319316948,
+      "medianEffectiveProcessCores": 0.9981882987450227,
+      "buildMs": 92.08620000000155,
+      "publicationMs": 0.3385999999991327,
+      "dispatchTraverseMs": 2285.9660000000003,
+      "bitwiseIdenticalAfterFourKDKSteps": true,
+      "serialHashes": {
+        "positions": "7b9b44889651b5e6ee83c498f8e72fb2b47f466531c3b81e6ab8ded5f6d2f8b5",
+        "velocities": "43734d707b66392c5e81b40890202a4954ad96c154ff29dbb4d6e60010e386dc",
+        "accelerations": "3378e73514ce949af7073f11012b6146e445fc72ebf85197fabd9158e4afe41b"
+      },
+      "finalHashes": {
+        "positions": "7b9b44889651b5e6ee83c498f8e72fb2b47f466531c3b81e6ab8ded5f6d2f8b5",
+        "velocities": "43734d707b66392c5e81b40890202a4954ad96c154ff29dbb4d6e60010e386dc",
+        "accelerations": "3378e73514ce949af7073f11012b6146e445fc72ebf85197fabd9158e4afe41b"
+      },
+      "samples": [
+        {
+          "buildMs": 26.444400000000314,
+          "publicationMs": 0.3127999999996973,
+          "dispatchAndTraverseMs": 2285.9660000000003,
+          "totalForceMs": 2312.7232000000004,
+          "sharedTreeBytes": 4251685,
+          "workers": [
+            {
+              "type": "done",
+              "threadId": 44,
+              "computeMs": 2285.7042999999976,
+              "bodies": 80000,
+              "chunks": 313,
+              "startEpochMs": 1792648136907.536,
+              "endEpochMs": 1792648139193.2441
+            }
+          ],
+          "stepMs": 2313.8207,
+          "wallStepMs": 2313.839,
+          "effectiveProcessCores": 0.9992131196682611
+        },
+        {
+          "buildMs": 92.08620000000155,
+          "publicationMs": 0.3385999999991327,
+          "dispatchAndTraverseMs": 2304.0036,
+          "totalForceMs": 2396.4284000000007,
+          "sharedTreeBytes": 4251685,
+          "workers": [
+            {
+              "type": "done",
+              "threadId": 44,
+              "computeMs": 2303.7455999999984,
+              "bodies": 80000,
+              "chunks": 313,
+              "startEpochMs": 1792648139286.9333,
+              "endEpochMs": 1792648141590.6836
+            }
+          ],
+          "stepMs": 2397.4208,
+          "wallStepMs": 2397.437600000001,
+          "effectiveProcessCores": 0.9843912257706282
+        },
+        {
+          "buildMs": 93.14730000000054,
+          "publicationMs": 0.3430999999982305,
+          "dispatchAndTraverseMs": 2284.770099999998,
+          "totalForceMs": 2378.2604999999967,
+          "sharedTreeBytes": 4251685,
+          "workers": [
+            {
+              "type": "done",
+              "threadId": 44,
+              "computeMs": 2284.5059999999976,
+              "bodies": 80000,
+              "chunks": 313,
+              "startEpochMs": 1792648141685.4937,
+              "endEpochMs": 1792648143970.0164
+            }
+          ],
+          "stepMs": 2379.3106000000007,
+          "wallStepMs": 2379.329999999998,
+          "effectiveProcessCores": 0.9981882987450227
+        }
+      ]
+    },
+    {
+      "n": 80000,
+      "baseN": 80000,
+      "haloRefinement": 1,
+      "workerCount": 2,
+      "startupMs": 23.846599999997125,
+      "originalStepMs": 2690.2706,
+      "prototypeStepMs": 1163.6603000000032,
+      "speedup": 2.311903740292586,
+      "medianEffectiveProcessCores": 1.987693487523802,
+      "buildMs": 26.4771999999939,
+      "publicationMs": 0.3415999999997439,
+      "dispatchTraverseMs": 1135.6614999999947,
+      "bitwiseIdenticalAfterFourKDKSteps": true,
+      "serialHashes": {
+        "positions": "7b9b44889651b5e6ee83c498f8e72fb2b47f466531c3b81e6ab8ded5f6d2f8b5",
+        "velocities": "43734d707b66392c5e81b40890202a4954ad96c154ff29dbb4d6e60010e386dc",
+        "accelerations": "3378e73514ce949af7073f11012b6146e445fc72ebf85197fabd9158e4afe41b"
+      },
+      "finalHashes": {
+        "positions": "7b9b44889651b5e6ee83c498f8e72fb2b47f466531c3b81e6ab8ded5f6d2f8b5",
+        "velocities": "43734d707b66392c5e81b40890202a4954ad96c154ff29dbb4d6e60010e386dc",
+        "accelerations": "3378e73514ce949af7073f11012b6146e445fc72ebf85197fabd9158e4afe41b"
+      },
+      "samples": [
+        {
+          "buildMs": 26.58400000000256,
+          "publicationMs": 0.34870000000228174,
+          "dispatchAndTraverseMs": 1135.6614999999947,
+          "totalForceMs": 1162.5941999999995,
+          "sharedTreeBytes": 4251685,
+          "workers": [
+            {
+              "type": "done",
+              "threadId": 45,
+              "computeMs": 1135.4305999999997,
+              "bodies": 40064,
+              "chunks": 157,
+              "startEpochMs": 1792648146376.294,
+              "endEpochMs": 1792648147511.728
+            },
+            {
+              "type": "done",
+              "threadId": 46,
+              "computeMs": 1133.5161000000007,
+              "bodies": 39936,
+              "chunks": 156,
+              "startEpochMs": 1792648146376.3062,
+              "endEpochMs": 1792648147509.827
+            }
+          ],
+          "stepMs": 1163.6603000000032,
+          "wallStepMs": 1163.6779999999999,
+          "effectiveProcessCores": 1.987693487523802
+        },
+        {
+          "buildMs": 26.4771999999939,
+          "publicationMs": 0.3415999999997439,
+          "dispatchAndTraverseMs": 1137.849599999994,
+          "totalForceMs": 1164.6683999999877,
+          "sharedTreeBytes": 4251685,
+          "workers": [
+            {
+              "type": "done",
+              "threadId": 45,
+              "computeMs": 1137.660100000001,
+              "bodies": 40192,
+              "chunks": 157,
+              "startEpochMs": 1792648147539.816,
+              "endEpochMs": 1792648148677.4792
+            },
+            {
+              "type": "done",
+              "threadId": 46,
+              "computeMs": 1137.2498999999953,
+              "bodies": 39808,
+              "chunks": 156,
+              "startEpochMs": 1792648147539.824,
+              "endEpochMs": 1792648148677.0774
+            }
+          ],
+          "stepMs": 1165.640800000001,
+          "wallStepMs": 1165.6612000000023,
+          "effectiveProcessCores": 1.9568635552221558
+        },
+        {
+          "buildMs": 26.372400000000198,
+          "publicationMs": 0.3271000000022468,
+          "dispatchAndTraverseMs": 1122.4020000000019,
+          "totalForceMs": 1149.1015000000043,
+          "sharedTreeBytes": 4251685,
+          "workers": [
+            {
+              "type": "done",
+              "threadId": 45,
+              "computeMs": 1122.2102999999988,
+              "bodies": 39680,
+              "chunks": 155,
+              "startEpochMs": 1792648148705.3289,
+              "endEpochMs": 1792648149827.5513
+            },
+            {
+              "type": "done",
+              "threadId": 46,
+              "computeMs": 1120.7800999999963,
+              "bodies": 40320,
+              "chunks": 158,
+              "startEpochMs": 1792648148705.3335,
+              "endEpochMs": 1792648149826.1357
+            }
+          ],
+          "stepMs": 1150.0949000000037,
+          "wallStepMs": 1150.112500000003,
+          "effectiveProcessCores": 2.011138385188903
+        }
+      ]
+    },
+    {
+      "n": 80000,
+      "baseN": 80000,
+      "haloRefinement": 1,
+      "workerCount": 4,
+      "startupMs": 26.164499999998952,
+      "originalStepMs": 2690.2706,
+      "prototypeStepMs": 608.0652999999947,
+      "speedup": 4.4243119941230376,
+      "medianEffectiveProcessCores": 3.830180738812131,
+      "buildMs": 26.43499999999767,
+      "publicationMs": 0.28070000000298023,
+      "dispatchTraverseMs": 580.270399999994,
+      "bitwiseIdenticalAfterFourKDKSteps": true,
+      "serialHashes": {
+        "positions": "7b9b44889651b5e6ee83c498f8e72fb2b47f466531c3b81e6ab8ded5f6d2f8b5",
+        "velocities": "43734d707b66392c5e81b40890202a4954ad96c154ff29dbb4d6e60010e386dc",
+        "accelerations": "3378e73514ce949af7073f11012b6146e445fc72ebf85197fabd9158e4afe41b"
+      },
+      "finalHashes": {
+        "positions": "7b9b44889651b5e6ee83c498f8e72fb2b47f466531c3b81e6ab8ded5f6d2f8b5",
+        "velocities": "43734d707b66392c5e81b40890202a4954ad96c154ff29dbb4d6e60010e386dc",
+        "accelerations": "3378e73514ce949af7073f11012b6146e445fc72ebf85197fabd9158e4afe41b"
+      },
+      "samples": [
+        {
+          "buildMs": 26.58070000000589,
+          "publicationMs": 0.26789999999891734,
+          "dispatchAndTraverseMs": 580.270399999994,
+          "totalForceMs": 607.1189999999988,
+          "sharedTreeBytes": 4251685,
+          "workers": [
+            {
+              "type": "done",
+              "threadId": 47,
+              "computeMs": 580.0543000000034,
+              "bodies": 20224,
+              "chunks": 79,
+              "startEpochMs": 1792648151122.4888,
+              "endEpochMs": 1792648151702.5479
+            },
+            {
+              "type": "done",
+              "threadId": 48,
+              "computeMs": 578.0312999999951,
+              "bodies": 19840,
+              "chunks": 78,
+              "startEpochMs": 1792648151122.4912,
+              "endEpochMs": 1792648151700.5256
+            },
+            {
+              "type": "done",
+              "threadId": 49,
+              "computeMs": 579.7619999999952,
+              "bodies": 19968,
+              "chunks": 78,
+              "startEpochMs": 1792648151122.5085,
+              "endEpochMs": 1792648151702.274
+            },
+            {
+              "type": "done",
+              "threadId": 50,
+              "computeMs": 575.4700000000012,
+              "bodies": 19968,
+              "chunks": 78,
+              "startEpochMs": 1792648151122.5176,
+              "endEpochMs": 1792648151697.9917
+            }
+          ],
+          "stepMs": 608.0652999999947,
+          "wallStepMs": 608.0823999999993,
+          "effectiveProcessCores": 3.830180738812131
+        },
+        {
+          "buildMs": 26.43499999999767,
+          "publicationMs": 0.28070000000298023,
+          "dispatchAndTraverseMs": 577.1605000000054,
+          "totalForceMs": 603.8762000000061,
+          "sharedTreeBytes": 4251685,
+          "workers": [
+            {
+              "type": "done",
+              "threadId": 47,
+              "computeMs": 575.7203000000009,
+              "bodies": 20096,
+              "chunks": 79,
+              "startEpochMs": 1792648151730.311,
+              "endEpochMs": 1792648152306.0347
+            },
+            {
+              "type": "done",
+              "threadId": 48,
+              "computeMs": 576.9704999999958,
+              "bodies": 19456,
+              "chunks": 76,
+              "startEpochMs": 1792648151730.314,
+              "endEpochMs": 1792648152307.2878
+            },
+            {
+              "type": "done",
+              "threadId": 49,
+              "computeMs": 574.0575000000026,
+              "bodies": 20224,
+              "chunks": 79,
+              "startEpochMs": 1792648151730.333,
+              "endEpochMs": 1792648152304.3945
+            },
+            {
+              "type": "done",
+              "threadId": 50,
+              "computeMs": 576.2577000000019,
+              "bodies": 20224,
+              "chunks": 79,
+              "startEpochMs": 1792648151730.3418,
+              "endEpochMs": 1792648152306.6033
+            }
+          ],
+          "stepMs": 604.8252000000066,
+          "wallStepMs": 604.8431000000055,
+          "effectiveProcessCores": 3.7961381238744267
+        },
+        {
+          "buildMs": 26.348500000000058,
+          "publicationMs": 0.28179999999701977,
+          "dispatchAndTraverseMs": 620.9375,
+          "totalForceMs": 647.5677999999971,
+          "sharedTreeBytes": 4251685,
+          "workers": [
+            {
+              "type": "done",
+              "threadId": 47,
+              "computeMs": 620.3568000000014,
+              "bodies": 19712,
+              "chunks": 77,
+              "startEpochMs": 1792648152335.402,
+              "endEpochMs": 1792648152955.7708
+            },
+            {
+              "type": "done",
+              "threadId": 48,
+              "computeMs": 620.7332000000024,
+              "bodies": 19968,
+              "chunks": 78,
+              "startEpochMs": 1792648152335.4028,
+              "endEpochMs": 1792648152956.147
+            },
+            {
+              "type": "done",
+              "threadId": 49,
+              "computeMs": 619.7574000000022,
+              "bodies": 20224,
+              "chunks": 79,
+              "startEpochMs": 1792648152335.419,
+              "endEpochMs": 1792648152955.1895
+            },
+            {
+              "type": "done",
+              "threadId": 50,
+              "computeMs": 618.8537999999971,
+              "bodies": 20096,
+              "chunks": 79,
+              "startEpochMs": 1792648152335.4277,
+              "endEpochMs": 1792648152954.2993
+            }
+          ],
+          "stepMs": 648.8266999999978,
+          "wallStepMs": 648.8451999999961,
+          "effectiveProcessCores": 3.877768901927138
+        }
+      ]
+    },
+    {
+      "n": 80000,
+      "baseN": 80000,
+      "haloRefinement": 1,
+      "workerCount": 8,
+      "startupMs": 34.18830000000162,
+      "originalStepMs": 2690.2706,
+      "prototypeStepMs": 362.9753000000055,
+      "speedup": 7.411718097622508,
+      "medianEffectiveProcessCores": 7.36138244117426,
+      "buildMs": 26.34560000000056,
+      "publicationMs": 0.31049999999959255,
+      "dispatchTraverseMs": 335.4349000000002,
+      "bitwiseIdenticalAfterFourKDKSteps": true,
+      "serialHashes": {
+        "positions": "7b9b44889651b5e6ee83c498f8e72fb2b47f466531c3b81e6ab8ded5f6d2f8b5",
+        "velocities": "43734d707b66392c5e81b40890202a4954ad96c154ff29dbb4d6e60010e386dc",
+        "accelerations": "3378e73514ce949af7073f11012b6146e445fc72ebf85197fabd9158e4afe41b"
+      },
+      "finalHashes": {
+        "positions": "7b9b44889651b5e6ee83c498f8e72fb2b47f466531c3b81e6ab8ded5f6d2f8b5",
+        "velocities": "43734d707b66392c5e81b40890202a4954ad96c154ff29dbb4d6e60010e386dc",
+        "accelerations": "3378e73514ce949af7073f11012b6146e445fc72ebf85197fabd9158e4afe41b"
+      },
+      "samples": [
+        {
+          "buildMs": 26.442500000004657,
+          "publicationMs": 0.31049999999959255,
+          "dispatchAndTraverseMs": 343.3578000000052,
+          "totalForceMs": 370.1108000000095,
+          "sharedTreeBytes": 4251685,
+          "workers": [
+            {
+              "type": "done",
+              "threadId": 51,
+              "computeMs": 338.84189999999944,
+              "bodies": 9728,
+              "chunks": 38,
+              "startEpochMs": 1792648153803.4094,
+              "endEpochMs": 1792648154142.2551
+            },
+            {
+              "type": "done",
+              "threadId": 52,
+              "computeMs": 339.75079999999434,
+              "bodies": 9216,
+              "chunks": 36,
+              "startEpochMs": 1792648153803.4148,
+              "endEpochMs": 1792648154143.1692
+            },
+            {
+              "type": "done",
+              "threadId": 53,
+              "computeMs": 341.90989999999874,
+              "bodies": 10240,
+              "chunks": 40,
+              "startEpochMs": 1792648153803.4275,
+              "endEpochMs": 1792648154145.3408
+            },
+            {
+              "type": "done",
+              "threadId": 54,
+              "computeMs": 339.5587000000014,
+              "bodies": 10496,
+              "chunks": 41,
+              "startEpochMs": 1792648153803.44,
+              "endEpochMs": 1792648154143.0022
+            },
+            {
+              "type": "done",
+              "threadId": 55,
+              "computeMs": 341.3594000000012,
+              "bodies": 10240,
+              "chunks": 40,
+              "startEpochMs": 1792648153803.4507,
+              "endEpochMs": 1792648154144.8137
+            },
+            {
+              "type": "done",
+              "threadId": 56,
+              "computeMs": 341.0512000000017,
+              "bodies": 10112,
+              "chunks": 40,
+              "startEpochMs": 1792648153803.457,
+              "endEpochMs": 1792648154144.5117
+            },
+            {
+              "type": "done",
+              "threadId": 57,
+              "computeMs": 342.1284000000014,
+              "bodies": 10496,
+              "chunks": 41,
+              "startEpochMs": 1792648153803.4758,
+              "endEpochMs": 1792648154145.6077
+            },
+            {
+              "type": "done",
+              "threadId": 58,
+              "computeMs": 343.0774999999994,
+              "bodies": 9472,
+              "chunks": 37,
+              "startEpochMs": 1792648153803.5042,
+              "endEpochMs": 1792648154146.5852
+            }
+          ],
+          "stepMs": 371.1620000000039,
+          "wallStepMs": 371.1782999999996,
+          "effectiveProcessCores": 7.325642172420591
+        },
+        {
+          "buildMs": 26.27270000000135,
+          "publicationMs": 0.302800000004936,
+          "dispatchAndTraverseMs": 335.4349000000002,
+          "totalForceMs": 362.0104000000065,
+          "sharedTreeBytes": 4251685,
+          "workers": [
+            {
+              "type": "done",
+              "threadId": 51,
+              "computeMs": 332.12710000000516,
+              "bodies": 9472,
+              "chunks": 37,
+              "startEpochMs": 1792648154174.4424,
+              "endEpochMs": 1792648154506.5732
+            },
+            {
+              "type": "done",
+              "threadId": 52,
+              "computeMs": 335.2353000000003,
+              "bodies": 9728,
+              "chunks": 38,
+              "startEpochMs": 1792648154174.4646,
+              "endEpochMs": 1792648154509.7031
+            },
+            {
+              "type": "done",
+              "threadId": 53,
+              "computeMs": 333.2311999999947,
+              "bodies": 10112,
+              "chunks": 40,
+              "startEpochMs": 1792648154174.4768,
+              "endEpochMs": 1792648154507.7114
+            },
+            {
+              "type": "done",
+              "threadId": 54,
+              "computeMs": 334.6600000000035,
+              "bodies": 9984,
+              "chunks": 39,
+              "startEpochMs": 1792648154174.4956,
+              "endEpochMs": 1792648154509.1592
+            },
+            {
+              "type": "done",
+              "threadId": 55,
+              "computeMs": 332.0825999999943,
+              "bodies": 10240,
+              "chunks": 40,
+              "startEpochMs": 1792648154174.5027,
+              "endEpochMs": 1792648154506.5896
+            },
+            {
+              "type": "done",
+              "threadId": 56,
+              "computeMs": 334.65869999999995,
+              "bodies": 10752,
+              "chunks": 42,
+              "startEpochMs": 1792648154174.5186,
+              "endEpochMs": 1792648154509.1807
+            },
+            {
+              "type": "done",
+              "threadId": 57,
+              "computeMs": 330.6457999999984,
+              "bodies": 9984,
+              "chunks": 39,
+              "startEpochMs": 1792648154174.534,
+              "endEpochMs": 1792648154505.1848
+            },
+            {
+              "type": "done",
+              "threadId": 58,
+              "computeMs": 331.8438000000024,
+              "bodies": 9728,
+              "chunks": 38,
+              "startEpochMs": 1792648154174.534,
+              "endEpochMs": 1792648154506.3813
+            }
+          ],
+          "stepMs": 362.9753000000055,
+          "wallStepMs": 362.9927000000025,
+          "effectiveProcessCores": 7.36138244117426
+        },
+        {
+          "buildMs": 26.34560000000056,
+          "publicationMs": 0.3280000000013388,
+          "dispatchAndTraverseMs": 334.1788000000015,
+          "totalForceMs": 360.8524000000034,
+          "sharedTreeBytes": 4251685,
+          "workers": [
+            {
+              "type": "done",
+              "threadId": 51,
+              "computeMs": 329.3113000000012,
+              "bodies": 9984,
+              "chunks": 39,
+              "startEpochMs": 1792648154537.5293,
+              "endEpochMs": 1792648154866.8516
+            },
+            {
+              "type": "done",
+              "threadId": 52,
+              "computeMs": 330.0780999999988,
+              "bodies": 9984,
+              "chunks": 39,
+              "startEpochMs": 1792648154537.5388,
+              "endEpochMs": 1792648154867.6257
+            },
+            {
+              "type": "done",
+              "threadId": 53,
+              "computeMs": 333.9455999999991,
+              "bodies": 10496,
+              "chunks": 41,
+              "startEpochMs": 1792648154537.5498,
+              "endEpochMs": 1792648154871.5056
+            },
+            {
+              "type": "done",
+              "threadId": 54,
+              "computeMs": 327.9508999999962,
+              "bodies": 10240,
+              "chunks": 40,
+              "startEpochMs": 1792648154537.5706,
+              "endEpochMs": 1792648154865.538
+            },
+            {
+              "type": "done",
+              "threadId": 55,
+              "computeMs": 331.80569999999716,
+              "bodies": 10112,
+              "chunks": 40,
+              "startEpochMs": 1792648154537.581,
+              "endEpochMs": 1792648154869.399
+            },
+            {
+              "type": "done",
+              "threadId": 56,
+              "computeMs": 328.10859999999957,
+              "bodies": 9728,
+              "chunks": 38,
+              "startEpochMs": 1792648154537.5918,
+              "endEpochMs": 1792648154865.7122
+            },
+            {
+              "type": "done",
+              "threadId": 57,
+              "computeMs": 327.95560000000114,
+              "bodies": 9728,
+              "chunks": 38,
+              "startEpochMs": 1792648154537.6191,
+              "endEpochMs": 1792648154865.587
+            },
+            {
+              "type": "done",
+              "threadId": 58,
+              "computeMs": 332.6651000000056,
+              "bodies": 9728,
+              "chunks": 38,
+              "startEpochMs": 1792648154537.6465,
+              "endEpochMs": 1792648154870.3213
+            }
+          ],
+          "stepMs": 362.0054999999993,
+          "wallStepMs": 362.0266000000047,
+          "effectiveProcessCores": 7.381103325778214
+        }
+      ]
+    },
+    {
+      "n": 80000,
+      "baseN": 80000,
+      "haloRefinement": 1,
+      "workerCount": 16,
+      "startupMs": 55.43329999999696,
+      "originalStepMs": 2690.2706,
+      "prototypeStepMs": 309.35889999999927,
+      "speedup": 8.696276719370305,
+      "medianEffectiveProcessCores": 13.717605734670613,
+      "buildMs": 26.27169999999751,
+      "publicationMs": 0.2786999999952968,
+      "dispatchTraverseMs": 281.48250000000553,
+      "bitwiseIdenticalAfterFourKDKSteps": true,
+      "serialHashes": {
+        "positions": "7b9b44889651b5e6ee83c498f8e72fb2b47f466531c3b81e6ab8ded5f6d2f8b5",
+        "velocities": "43734d707b66392c5e81b40890202a4954ad96c154ff29dbb4d6e60010e386dc",
+        "accelerations": "3378e73514ce949af7073f11012b6146e445fc72ebf85197fabd9158e4afe41b"
+      },
+      "finalHashes": {
+        "positions": "7b9b44889651b5e6ee83c498f8e72fb2b47f466531c3b81e6ab8ded5f6d2f8b5",
+        "velocities": "43734d707b66392c5e81b40890202a4954ad96c154ff29dbb4d6e60010e386dc",
+        "accelerations": "3378e73514ce949af7073f11012b6146e445fc72ebf85197fabd9158e4afe41b"
+      },
+      "samples": [
+        {
+          "buildMs": 26.198499999998603,
+          "publicationMs": 0.27560000000084983,
+          "dispatchAndTraverseMs": 280.09509999999864,
+          "totalForceMs": 306.5691999999981,
+          "sharedTreeBytes": 4251685,
+          "workers": [
+            {
+              "type": "done",
+              "threadId": 59,
+              "computeMs": 273.30349999999453,
+              "bodies": 4864,
+              "chunks": 19,
+              "startEpochMs": 1792648155729.593,
+              "endEpochMs": 1792648156002.9014
+            },
+            {
+              "type": "done",
+              "threadId": 60,
+              "computeMs": 274.47789999999804,
+              "bodies": 5120,
+              "chunks": 20,
+              "startEpochMs": 1792648155729.597,
+              "endEpochMs": 1792648156004.08
+            },
+            {
+              "type": "done",
+              "threadId": 61,
+              "computeMs": 279.167300000001,
+              "bodies": 5120,
+              "chunks": 20,
+              "startEpochMs": 1792648155729.609,
+              "endEpochMs": 1792648156008.7795
+            },
+            {
+              "type": "done",
+              "threadId": 62,
+              "computeMs": 277.2505999999994,
+              "bodies": 5120,
+              "chunks": 20,
+              "startEpochMs": 1792648155729.6274,
+              "endEpochMs": 1792648156006.8816
+            },
+            {
+              "type": "done",
+              "threadId": 63,
+              "computeMs": 274.98279999999795,
+              "bodies": 4864,
+              "chunks": 19,
+              "startEpochMs": 1792648155729.6528,
+              "endEpochMs": 1792648156004.6396
+            },
+            {
+              "type": "done",
+              "threadId": 64,
+              "computeMs": 279.815300000002,
+              "bodies": 5120,
+              "chunks": 20,
+              "startEpochMs": 1792648155729.6604,
+              "endEpochMs": 1792648156009.4788
+            },
+            {
+              "type": "done",
+              "threadId": 65,
+              "computeMs": 278.1915000000008,
+              "bodies": 5120,
+              "chunks": 20,
+              "startEpochMs": 1792648155729.6729,
+              "endEpochMs": 1792648156007.8682
+            },
+            {
+              "type": "done",
+              "threadId": 66,
+              "computeMs": 277.2217000000019,
+              "bodies": 4992,
+              "chunks": 20,
+              "startEpochMs": 1792648155729.7048,
+              "endEpochMs": 1792648156006.9316
+            },
+            {
+              "type": "done",
+              "threadId": 67,
+              "computeMs": 273.54179999999906,
+              "bodies": 4864,
+              "chunks": 19,
+              "startEpochMs": 1792648155729.731,
+              "endEpochMs": 1792648156003.2773
+            },
+            {
+              "type": "done",
+              "threadId": 68,
+              "computeMs": 278.2268999999942,
+              "bodies": 4864,
+              "chunks": 19,
+              "startEpochMs": 1792648155729.7305,
+              "endEpochMs": 1792648156007.9612
+            },
+            {
+              "type": "done",
+              "threadId": 69,
+              "computeMs": 275.1408999999985,
+              "bodies": 4864,
+              "chunks": 19,
+              "startEpochMs": 1792648155729.7708,
+              "endEpochMs": 1792648156004.915
+            },
+            {
+              "type": "done",
+              "threadId": 70,
+              "computeMs": 278.1157999999996,
+              "bodies": 5120,
+              "chunks": 20,
+              "startEpochMs": 1792648155729.792,
+              "endEpochMs": 1792648156007.9124
+            },
+            {
+              "type": "done",
+              "threadId": 71,
+              "computeMs": 276.97789999999804,
+              "bodies": 5120,
+              "chunks": 20,
+              "startEpochMs": 1792648155729.8135,
+              "endEpochMs": 1792648156006.7947
+            },
+            {
+              "type": "done",
+              "threadId": 72,
+              "computeMs": 274.51379999999335,
+              "bodies": 4864,
+              "chunks": 19,
+              "startEpochMs": 1792648155729.8381,
+              "endEpochMs": 1792648156004.3564
+            },
+            {
+              "type": "done",
+              "threadId": 73,
+              "computeMs": 278.01580000000104,
+              "bodies": 5120,
+              "chunks": 20,
+              "startEpochMs": 1792648155729.8618,
+              "endEpochMs": 1792648156007.8813
+            },
+            {
+              "type": "done",
+              "threadId": 74,
+              "computeMs": 276.9177000000054,
+              "bodies": 4864,
+              "chunks": 19,
+              "startEpochMs": 1792648155729.9072,
+              "endEpochMs": 1792648156006.8293
+            }
+          ],
+          "stepMs": 307.55189999999857,
+          "wallStepMs": 307.56959999999526,
+          "effectiveProcessCores": 13.613962391388313
+        },
+        {
+          "buildMs": 26.49269999999524,
+          "publicationMs": 0.29769999999552965,
+          "dispatchAndTraverseMs": 281.48250000000553,
+          "totalForceMs": 308.2728999999963,
+          "sharedTreeBytes": 4251685,
+          "workers": [
+            {
+              "type": "done",
+              "threadId": 59,
+              "computeMs": 279.27760000000126,
+              "bodies": 5248,
+              "chunks": 21,
+              "startEpochMs": 1792648156037.6023,
+              "endEpochMs": 1792648156316.8857
+            },
+            {
+              "type": "done",
+              "threadId": 60,
+              "computeMs": 275.1454999999987,
+              "bodies": 5120,
+              "chunks": 20,
+              "startEpochMs": 1792648156037.6006,
+              "endEpochMs": 1792648156312.7522
+            },
+            {
+              "type": "done",
+              "threadId": 61,
+              "computeMs": 281.2563000000009,
+              "bodies": 5120,
+              "chunks": 20,
+              "startEpochMs": 1792648156037.6135,
+              "endEpochMs": 1792648156318.8748
+            },
+            {
+              "type": "done",
+              "threadId": 62,
+              "computeMs": 280.9502999999968,
+              "bodies": 4864,
+              "chunks": 19,
+              "startEpochMs": 1792648156037.6392,
+              "endEpochMs": 1792648156318.5947
+            },
+            {
+              "type": "done",
+              "threadId": 63,
+              "computeMs": 274.6538999999975,
+              "bodies": 4864,
+              "chunks": 19,
+              "startEpochMs": 1792648156037.6492,
+              "endEpochMs": 1792648156312.308
+            },
+            {
+              "type": "done",
+              "threadId": 64,
+              "computeMs": 279.7465000000011,
+              "bodies": 5120,
+              "chunks": 20,
+              "startEpochMs": 1792648156037.6648,
+              "endEpochMs": 1792648156317.4163
+            },
+            {
+              "type": "done",
+              "threadId": 65,
+              "computeMs": 278.23829999999725,
+              "bodies": 5120,
+              "chunks": 20,
+              "startEpochMs": 1792648156037.6777,
+              "endEpochMs": 1792648156315.9214
+            },
+            {
+              "type": "done",
+              "threadId": 66,
+              "computeMs": 277.6183000000019,
+              "bodies": 4608,
+              "chunks": 18,
+              "startEpochMs": 1792648156037.7112,
+              "endEpochMs": 1792648156315.3357
+            },
+            {
+              "type": "done",
+              "threadId": 67,
+              "computeMs": 279.99179999999615,
+              "bodies": 5120,
+              "chunks": 20,
+              "startEpochMs": 1792648156037.7424,
+              "endEpochMs": 1792648156317.7395
+            },
+            {
+              "type": "done",
+              "threadId": 68,
+              "computeMs": 278.11569999999483,
+              "bodies": 5120,
+              "chunks": 20,
+              "startEpochMs": 1792648156037.7795,
+              "endEpochMs": 1792648156315.9001
+            },
+            {
+              "type": "done",
+              "threadId": 69,
+              "computeMs": 276.19810000000143,
+              "bodies": 4864,
+              "chunks": 19,
+              "startEpochMs": 1792648156037.8,
+              "endEpochMs": 1792648156314.0046
+            },
+            {
+              "type": "done",
+              "threadId": 70,
+              "computeMs": 276.4375,
+              "bodies": 4608,
+              "chunks": 18,
+              "startEpochMs": 1792648156037.8088,
+              "endEpochMs": 1792648156314.2532
+            },
+            {
+              "type": "done",
+              "threadId": 71,
+              "computeMs": 276.40209999999934,
+              "bodies": 4864,
+              "chunks": 19,
+              "startEpochMs": 1792648156037.8325,
+              "endEpochMs": 1792648156314.2417
+            },
+            {
+              "type": "done",
+              "threadId": 72,
+              "computeMs": 277.02300000000105,
+              "bodies": 5120,
+              "chunks": 20,
+              "startEpochMs": 1792648156037.8496,
+              "endEpochMs": 1792648156314.8792
+            },
+            {
+              "type": "done",
+              "threadId": 73,
+              "computeMs": 280.5570000000007,
+              "bodies": 5120,
+              "chunks": 20,
+              "startEpochMs": 1792648156037.8745,
+              "endEpochMs": 1792648156318.4368
+            },
+            {
+              "type": "done",
+              "threadId": 74,
+              "computeMs": 278.3556000000026,
+              "bodies": 5120,
+              "chunks": 20,
+              "startEpochMs": 1792648156037.891,
+              "endEpochMs": 1792648156316.252
+            }
+          ],
+          "stepMs": 309.35889999999927,
+          "wallStepMs": 309.37540000000445,
+          "effectiveProcessCores": 14.145382596072103
+        },
+        {
+          "buildMs": 26.27169999999751,
+          "publicationMs": 0.2786999999952968,
+          "dispatchAndTraverseMs": 284.53199999999924,
+          "totalForceMs": 311.08239999999205,
+          "sharedTreeBytes": 4251685,
+          "workers": [
+            {
+              "type": "done",
+              "threadId": 59,
+              "computeMs": 281.6906999999992,
+              "bodies": 5376,
+              "chunks": 21,
+              "startEpochMs": 1792648156346.7363,
+              "endEpochMs": 1792648156628.4387
+            },
+            {
+              "type": "done",
+              "threadId": 60,
+              "computeMs": 281.61529999999766,
+              "bodies": 4864,
+              "chunks": 19,
+              "startEpochMs": 1792648156346.7388,
+              "endEpochMs": 1792648156628.3655
+            },
+            {
+              "type": "done",
+              "threadId": 61,
+              "computeMs": 281.7546000000002,
+              "bodies": 5120,
+              "chunks": 20,
+              "startEpochMs": 1792648156346.75,
+              "endEpochMs": 1792648156628.515
+            },
+            {
+              "type": "done",
+              "threadId": 62,
+              "computeMs": 279.7566000000006,
+              "bodies": 4864,
+              "chunks": 19,
+              "startEpochMs": 1792648156346.7678,
+              "endEpochMs": 1792648156626.5378
+            },
+            {
+              "type": "done",
+              "threadId": 63,
+              "computeMs": 281.6742000000013,
+              "bodies": 4864,
+              "chunks": 19,
+              "startEpochMs": 1792648156346.7866,
+              "endEpochMs": 1792648156628.4685
+            },
+            {
+              "type": "done",
+              "threadId": 64,
+              "computeMs": 278.0371000000014,
+              "bodies": 5120,
+              "chunks": 20,
+              "startEpochMs": 1792648156346.7966,
+              "endEpochMs": 1792648156624.8496
+            },
+            {
+              "type": "done",
+              "threadId": 65,
+              "computeMs": 279.45009999999456,
+              "bodies": 4864,
+              "chunks": 19,
+              "startEpochMs": 1792648156346.8215,
+              "endEpochMs": 1792648156626.2817
+            },
+            {
+              "type": "done",
+              "threadId": 66,
+              "computeMs": 280.77219999999943,
+              "bodies": 5120,
+              "chunks": 20,
+              "startEpochMs": 1792648156346.846,
+              "endEpochMs": 1792648156627.6301
+            },
+            {
+              "type": "done",
+              "threadId": 67,
+              "computeMs": 279.67929999999615,
+              "bodies": 5120,
+              "chunks": 20,
+              "startEpochMs": 1792648156346.8682,
+              "endEpochMs": 1792648156626.5583
+            },
+            {
+              "type": "done",
+              "threadId": 68,
+              "computeMs": 280.877800000002,
+              "bodies": 4864,
+              "chunks": 19,
+              "startEpochMs": 1792648156346.8784,
+              "endEpochMs": 1792648156627.77
+            },
+            {
+              "type": "done",
+              "threadId": 69,
+              "computeMs": 280.7069000000047,
+              "bodies": 4864,
+              "chunks": 19,
+              "startEpochMs": 1792648156346.8975,
+              "endEpochMs": 1792648156627.6143
+            },
+            {
+              "type": "done",
+              "threadId": 70,
+              "computeMs": 282.96979999999894,
+              "bodies": 4864,
+              "chunks": 19,
+              "startEpochMs": 1792648156346.9287,
+              "endEpochMs": 1792648156629.9102
+            },
+            {
+              "type": "done",
+              "threadId": 71,
+              "computeMs": 276.86069999999745,
+              "bodies": 5120,
+              "chunks": 20,
+              "startEpochMs": 1792648156346.9456,
+              "endEpochMs": 1792648156623.8228
+            },
+            {
+              "type": "done",
+              "threadId": 72,
+              "computeMs": 280.01780000000144,
+              "bodies": 5248,
+              "chunks": 21,
+              "startEpochMs": 1792648156346.9504,
+              "endEpochMs": 1792648156626.9802
+            },
+            {
+              "type": "done",
+              "threadId": 73,
+              "computeMs": 283.4087999999974,
+              "bodies": 5120,
+              "chunks": 20,
+              "startEpochMs": 1792648156346.9927,
+              "endEpochMs": 1792648156630.4106
+            },
+            {
+              "type": "done",
+              "threadId": 74,
+              "computeMs": 252.67209999999614,
+              "bodies": 4608,
+              "chunks": 18,
+              "startEpochMs": 1792648156378.396,
+              "endEpochMs": 1792648156631.0776
+            }
+          ],
+          "stepMs": 312.0806999999986,
+          "wallStepMs": 312.0974999999962,
+          "effectiveProcessCores": 13.717605734670613
+        }
+      ]
+    },
+    {
+      "n": 536000,
+      "baseN": 40000,
+      "haloRefinement": 32,
+      "workerCount": 4,
+      "startupMs": 28.771799999987707,
+      "originalStepMs": 16930.201700000005,
+      "prototypeStepMs": 3776.56779999999,
+      "speedup": 4.482959818701004,
+      "medianEffectiveProcessCores": 3.7987405096365734,
+      "buildMs": 208.800900000002,
+      "publicationMs": 2.4733999999880325,
+      "dispatchTraverseMs": 3558.0723,
+      "bitwiseIdenticalAfterFourKDKSteps": true,
+      "serialHashes": {
+        "positions": "6407ee9cc7ca4aa47c47614c3caf284aaa0ba6967813c2bcc807ccf03c24be49",
+        "velocities": "b8e8a941a84228952f75570dad88ba88ff142284684431221029acd52a8f38b1",
+        "accelerations": "147c8790b9e9b003a223734c78b20d8c392281f2752de1aaad70175abea4446d"
+      },
+      "finalHashes": {
+        "positions": "6407ee9cc7ca4aa47c47614c3caf284aaa0ba6967813c2bcc807ccf03c24be49",
+        "velocities": "b8e8a941a84228952f75570dad88ba88ff142284684431221029acd52a8f38b1",
+        "accelerations": "147c8790b9e9b003a223734c78b20d8c392281f2752de1aaad70175abea4446d"
+      },
+      "samples": [
+        {
+          "buildMs": 204.0908000000054,
+          "publicationMs": 2.4733999999880325,
+          "dispatchAndTraverseMs": 3703.0151999999944,
+          "totalForceMs": 3909.579399999988,
+          "sharedTreeBytes": 28329955,
+          "workers": [
+            {
+              "type": "done",
+              "threadId": 75,
+              "computeMs": 3701.8070000000007,
+              "bodies": 134080,
+              "chunks": 524,
+              "startEpochMs": 1792648250552.8447,
+              "endEpochMs": 1792648254254.6565
+            },
+            {
+              "type": "done",
+              "threadId": 76,
+              "computeMs": 3700.2482999999775,
+              "bodies": 133888,
+              "chunks": 523,
+              "startEpochMs": 1792648250552.8455,
+              "endEpochMs": 1792648254253.0986
+            },
+            {
+              "type": "done",
+              "threadId": 77,
+              "computeMs": 3702.7066999999806,
+              "bodies": 134144,
+              "chunks": 524,
+              "startEpochMs": 1792648250552.856,
+              "endEpochMs": 1792648254255.5667
+            },
+            {
+              "type": "done",
+              "threadId": 78,
+              "computeMs": 3698.159400000004,
+              "bodies": 133888,
+              "chunks": 523,
+              "startEpochMs": 1792648250552.8618,
+              "endEpochMs": 1792648254251.0269
+            }
+          ],
+          "stepMs": 3916.9521999999997,
+          "wallStepMs": 3916.973499999993,
+          "effectiveProcessCores": 3.8455919885874534
+        },
+        {
+          "buildMs": 212.72959999999148,
+          "publicationMs": 2.3637999999918975,
+          "dispatchAndTraverseMs": 3438.002599999978,
+          "totalForceMs": 3653.0959999999614,
+          "sharedTreeBytes": 28329955,
+          "workers": [
+            {
+              "type": "done",
+              "threadId": 75,
+              "computeMs": 3432.5162999999884,
+              "bodies": 134144,
+              "chunks": 524,
+              "startEpochMs": 1792648254478.504,
+              "endEpochMs": 1792648257911.0256
+            },
+            {
+              "type": "done",
+              "threadId": 76,
+              "computeMs": 3437.7418999999936,
+              "bodies": 133120,
+              "chunks": 520,
+              "startEpochMs": 1792648254478.5034,
+              "endEpochMs": 1792648257916.249
+            },
+            {
+              "type": "done",
+              "threadId": 77,
+              "computeMs": 3436.806600000011,
+              "bodies": 134848,
+              "chunks": 527,
+              "startEpochMs": 1792648254478.5103,
+              "endEpochMs": 1792648257915.321
+            },
+            {
+              "type": "done",
+              "threadId": 78,
+              "computeMs": 3435.7253999999957,
+              "bodies": 133888,
+              "chunks": 523,
+              "startEpochMs": 1792648254478.525,
+              "endEpochMs": 1792648257914.2546
+            }
+          ],
+          "stepMs": 3660.6870000000054,
+          "wallStepMs": 3660.7082999999984,
+          "effectiveProcessCores": 3.7987405096365734
+        },
+        {
+          "buildMs": 208.800900000002,
+          "publicationMs": 2.4807999999902677,
+          "dispatchAndTraverseMs": 3558.0723,
+          "totalForceMs": 3769.353999999992,
+          "sharedTreeBytes": 28329955,
+          "workers": [
+            {
+              "type": "done",
+              "threadId": 75,
+              "computeMs": 3556.4874000000127,
+              "bodies": 133568,
+              "chunks": 522,
+              "startEpochMs": 1792648258135.1816,
+              "endEpochMs": 1792648261691.6768
+            },
+            {
+              "type": "done",
+              "threadId": 76,
+              "computeMs": 3557.815800000011,
+              "bodies": 133888,
+              "chunks": 523,
+              "startEpochMs": 1792648258135.1797,
+              "endEpochMs": 1792648261693.0054
+            },
+            {
+              "type": "done",
+              "threadId": 77,
+              "computeMs": 3554.077499999985,
+              "bodies": 135168,
+              "chunks": 528,
+              "startEpochMs": 1792648258135.1921,
+              "endEpochMs": 1792648261689.287
+            },
+            {
+              "type": "done",
+              "threadId": 78,
+              "computeMs": 3557.066200000001,
+              "bodies": 133376,
+              "chunks": 521,
+              "startEpochMs": 1792648258135.2158,
+              "endEpochMs": 1792648261692.292
+            }
+          ],
+          "stepMs": 3776.56779999999,
+          "wallStepMs": 3776.5881999999983,
+          "effectiveProcessCores": 3.79789289100014
+        }
+      ]
+    },
+    {
+      "n": 536000,
+      "baseN": 40000,
+      "haloRefinement": 32,
+      "workerCount": 8,
+      "startupMs": 34.87269999997807,
+      "originalStepMs": 16930.201700000005,
+      "prototypeStepMs": 2264.337599999999,
+      "speedup": 7.476889356074825,
+      "medianEffectiveProcessCores": 7.314280344061772,
+      "buildMs": 204.19760000001406,
+      "publicationMs": 2.6662000000069384,
+      "dispatchTraverseMs": 2049.5290000000095,
+      "bitwiseIdenticalAfterFourKDKSteps": true,
+      "serialHashes": {
+        "positions": "6407ee9cc7ca4aa47c47614c3caf284aaa0ba6967813c2bcc807ccf03c24be49",
+        "velocities": "b8e8a941a84228952f75570dad88ba88ff142284684431221029acd52a8f38b1",
+        "accelerations": "147c8790b9e9b003a223734c78b20d8c392281f2752de1aaad70175abea4446d"
+      },
+      "finalHashes": {
+        "positions": "6407ee9cc7ca4aa47c47614c3caf284aaa0ba6967813c2bcc807ccf03c24be49",
+        "velocities": "b8e8a941a84228952f75570dad88ba88ff142284684431221029acd52a8f38b1",
+        "accelerations": "147c8790b9e9b003a223734c78b20d8c392281f2752de1aaad70175abea4446d"
+      },
+      "samples": [
+        {
+          "buildMs": 204.19760000001406,
+          "publicationMs": 2.6662000000069384,
+          "dispatchAndTraverseMs": 2147.941200000001,
+          "totalForceMs": 2354.805000000022,
+          "sharedTreeBytes": 28329955,
+          "workers": [
+            {
+              "type": "done",
+              "threadId": 79,
+              "computeMs": 2144.899999999994,
+              "bodies": 68352,
+              "chunks": 267,
+              "startEpochMs": 1792648266980.1758,
+              "endEpochMs": 1792648269125.0803
+            },
+            {
+              "type": "done",
+              "threadId": 80,
+              "computeMs": 2147.632200000022,
+              "bodies": 65792,
+              "chunks": 257,
+              "startEpochMs": 1792648266980.1729,
+              "endEpochMs": 1792648269127.8093
+            },
+            {
+              "type": "done",
+              "threadId": 81,
+              "computeMs": 2145.61970000001,
+              "bodies": 65280,
+              "chunks": 255,
+              "startEpochMs": 1792648266980.1719,
+              "endEpochMs": 1792648269125.7952
+            },
+            {
+              "type": "done",
+              "threadId": 82,
+              "computeMs": 2147.1561999999976,
+              "bodies": 66816,
+              "chunks": 261,
+              "startEpochMs": 1792648266980.5063,
+              "endEpochMs": 1792648269127.6667
+            },
+            {
+              "type": "done",
+              "threadId": 83,
+              "computeMs": 2144.931199999992,
+              "bodies": 66048,
+              "chunks": 258,
+              "startEpochMs": 1792648266980.2043,
+              "endEpochMs": 1792648269125.1396
+            },
+            {
+              "type": "done",
+              "threadId": 84,
+              "computeMs": 2146.239600000001,
+              "bodies": 67776,
+              "chunks": 265,
+              "startEpochMs": 1792648266980.2407,
+              "endEpochMs": 1792648269126.4836
+            },
+            {
+              "type": "done",
+              "threadId": 85,
+              "computeMs": 2142.297500000015,
+              "bodies": 67328,
+              "chunks": 263,
+              "startEpochMs": 1792648266980.2485,
+              "endEpochMs": 1792648269122.5505
+            },
+            {
+              "type": "done",
+              "threadId": 86,
+              "computeMs": 2144.654500000004,
+              "bodies": 68608,
+              "chunks": 268,
+              "startEpochMs": 1792648266980.2502,
+              "endEpochMs": 1792648269124.9092
+            }
+          ],
+          "stepMs": 2362.345399999991,
+          "wallStepMs": 2362.3672999999835,
+          "effectiveProcessCores": 7.335083176236661
+        },
+        {
+          "buildMs": 204.3914999999979,
+          "publicationMs": 2.9864000000234228,
+          "dispatchAndTraverseMs": 2049.5290000000095,
+          "totalForceMs": 2256.906900000031,
+          "sharedTreeBytes": 28329955,
+          "workers": [
+            {
+              "type": "done",
+              "threadId": 79,
+              "computeMs": 2048.9294999999984,
+              "bodies": 65792,
+              "chunks": 257,
+              "startEpochMs": 1792648269342.561,
+              "endEpochMs": 1792648271391.495
+            },
+            {
+              "type": "done",
+              "threadId": 80,
+              "computeMs": 2045.5050000000047,
+              "bodies": 67584,
+              "chunks": 264,
+              "startEpochMs": 1792648269342.5376,
+              "endEpochMs": 1792648271388.0486
+            },
+            {
+              "type": "done",
+              "threadId": 81,
+              "computeMs": 2048.6165000000037,
+              "bodies": 67328,
+              "chunks": 263,
+              "startEpochMs": 1792648269342.5364,
+              "endEpochMs": 1792648271391.1567
+            },
+            {
+              "type": "done",
+              "threadId": 82,
+              "computeMs": 2048.0963000000047,
+              "bodies": 66816,
+              "chunks": 261,
+              "startEpochMs": 1792648269342.567,
+              "endEpochMs": 1792648271390.668
+            },
+            {
+              "type": "done",
+              "threadId": 83,
+              "computeMs": 2049.2388999999966,
+              "bodies": 69120,
+              "chunks": 270,
+              "startEpochMs": 1792648269342.5742,
+              "endEpochMs": 1792648271391.8176
+            },
+            {
+              "type": "done",
+              "threadId": 84,
+              "computeMs": 2049.136999999988,
+              "bodies": 66304,
+              "chunks": 259,
+              "startEpochMs": 1792648269342.5916,
+              "endEpochMs": 1792648271391.7327
+            },
+            {
+              "type": "done",
+              "threadId": 85,
+              "computeMs": 2047.9115999999922,
+              "bodies": 66240,
+              "chunks": 259,
+              "startEpochMs": 1792648269342.612,
+              "endEpochMs": 1792648271390.5278
+            },
+            {
+              "type": "done",
+              "threadId": 86,
+              "computeMs": 2049.158999999985,
+              "bodies": 66816,
+              "chunks": 261,
+              "startEpochMs": 1792648269342.6316,
+              "endEpochMs": 1792648271391.7944
+            }
+          ],
+          "stepMs": 2264.337599999999,
+          "wallStepMs": 2264.36010000002,
+          "effectiveProcessCores": 7.314280344061772
+        },
+        {
+          "buildMs": 203.1009999999951,
+          "publicationMs": 2.4222000000008848,
+          "dispatchAndTraverseMs": 1983.9225000000151,
+          "totalForceMs": 2189.445700000011,
+          "sharedTreeBytes": 28329955,
+          "workers": [
+            {
+              "type": "done",
+              "threadId": 79,
+              "computeMs": 1981.832699999999,
+              "bodies": 65792,
+              "chunks": 257,
+              "startEpochMs": 1792648271604.9963,
+              "endEpochMs": 1792648273586.8364
+            },
+            {
+              "type": "done",
+              "threadId": 80,
+              "computeMs": 1981.975999999995,
+              "bodies": 67328,
+              "chunks": 263,
+              "startEpochMs": 1792648271604.9963,
+              "endEpochMs": 1792648273586.9822
+            },
+            {
+              "type": "done",
+              "threadId": 81,
+              "computeMs": 1980.6377999999968,
+              "bodies": 65280,
+              "chunks": 255,
+              "startEpochMs": 1792648271605.0107,
+              "endEpochMs": 1792648273585.6582
+            },
+            {
+              "type": "done",
+              "threadId": 82,
+              "computeMs": 1983.6408000000229,
+              "bodies": 69888,
+              "chunks": 273,
+              "startEpochMs": 1792648271605.0227,
+              "endEpochMs": 1792648273588.67
+            },
+            {
+              "type": "done",
+              "threadId": 83,
+              "computeMs": 1980.0918999999994,
+              "bodies": 66816,
+              "chunks": 261,
+              "startEpochMs": 1792648271605.0308,
+              "endEpochMs": 1792648273585.133
+            },
+            {
+              "type": "done",
+              "threadId": 84,
+              "computeMs": 1983.389199999976,
+              "bodies": 68288,
+              "chunks": 267,
+              "startEpochMs": 1792648271605.0427,
+              "endEpochMs": 1792648273588.4407
+            },
+            {
+              "type": "done",
+              "threadId": 85,
+              "computeMs": 1979.9715999999898,
+              "bodies": 66816,
+              "chunks": 261,
+              "startEpochMs": 1792648271605.07,
+              "endEpochMs": 1792648273585.0522
+            },
+            {
+              "type": "done",
+              "threadId": 86,
+              "computeMs": 1978.6419999999925,
+              "bodies": 65792,
+              "chunks": 257,
+              "startEpochMs": 1792648271605.0833,
+              "endEpochMs": 1792648273583.744
+            }
+          ],
+          "stepMs": 2196.189400000003,
+          "wallStepMs": 2196.2086000000127,
+          "effectiveProcessCores": 7.292631500725747
+        }
+      ]
+    },
+    {
+      "n": 536000,
+      "baseN": 40000,
+      "haloRefinement": 32,
+      "workerCount": 16,
+      "startupMs": 53.147100000001956,
+      "originalStepMs": 16930.201700000005,
+      "prototypeStepMs": 1916.5547999999835,
+      "speedup": 8.833664291780309,
+      "medianEffectiveProcessCores": 13.594197535068828,
+      "buildMs": 203.62589999998454,
+      "publicationMs": 2.8795000000100117,
+      "dispatchTraverseMs": 1702.8457000000053,
+      "bitwiseIdenticalAfterFourKDKSteps": true,
+      "serialHashes": {
+        "positions": "6407ee9cc7ca4aa47c47614c3caf284aaa0ba6967813c2bcc807ccf03c24be49",
+        "velocities": "b8e8a941a84228952f75570dad88ba88ff142284684431221029acd52a8f38b1",
+        "accelerations": "147c8790b9e9b003a223734c78b20d8c392281f2752de1aaad70175abea4446d"
+      },
+      "finalHashes": {
+        "positions": "6407ee9cc7ca4aa47c47614c3caf284aaa0ba6967813c2bcc807ccf03c24be49",
+        "velocities": "b8e8a941a84228952f75570dad88ba88ff142284684431221029acd52a8f38b1",
+        "accelerations": "147c8790b9e9b003a223734c78b20d8c392281f2752de1aaad70175abea4446d"
+      },
+      "samples": [
+        {
+          "buildMs": 203.62589999998454,
+          "publicationMs": 3.0750000000116415,
+          "dispatchAndTraverseMs": 1702.8457000000053,
+          "totalForceMs": 1909.5466000000015,
+          "sharedTreeBytes": 28329955,
+          "workers": [
+            {
+              "type": "done",
+              "threadId": 87,
+              "computeMs": 1699.7706999999937,
+              "bodies": 32768,
+              "chunks": 128,
+              "startEpochMs": 1792648277919.5068,
+              "endEpochMs": 1792648279619.2817
+            },
+            {
+              "type": "done",
+              "threadId": 88,
+              "computeMs": 1702.5783999999985,
+              "bodies": 33280,
+              "chunks": 130,
+              "startEpochMs": 1792648277919.5085,
+              "endEpochMs": 1792648279622.0906
+            },
+            {
+              "type": "done",
+              "threadId": 89,
+              "computeMs": 1700.1802000000025,
+              "bodies": 33280,
+              "chunks": 130,
+              "startEpochMs": 1792648277919.5352,
+              "endEpochMs": 1792648279619.7207
+            },
+            {
+              "type": "done",
+              "threadId": 90,
+              "computeMs": 1697.8071000000054,
+              "bodies": 33024,
+              "chunks": 129,
+              "startEpochMs": 1792648277919.5537,
+              "endEpochMs": 1792648279617.366
+            },
+            {
+              "type": "done",
+              "threadId": 91,
+              "computeMs": 1700.9241000000038,
+              "bodies": 32512,
+              "chunks": 127,
+              "startEpochMs": 1792648277919.5645,
+              "endEpochMs": 1792648279620.4927
+            },
+            {
+              "type": "done",
+              "threadId": 92,
+              "computeMs": 1701.420599999983,
+              "bodies": 33536,
+              "chunks": 131,
+              "startEpochMs": 1792648277919.5825,
+              "endEpochMs": 1792648279621.0068
+            },
+            {
+              "type": "done",
+              "threadId": 93,
+              "computeMs": 1700.3646999999764,
+              "bodies": 33536,
+              "chunks": 131,
+              "startEpochMs": 1792648277919.5925,
+              "endEpochMs": 1792648279619.9622
+            },
+            {
+              "type": "done",
+              "threadId": 94,
+              "computeMs": 1695.0194999999949,
+              "bodies": 34816,
+              "chunks": 136,
+              "startEpochMs": 1792648277919.6194,
+              "endEpochMs": 1792648279614.644
+            },
+            {
+              "type": "done",
+              "threadId": 95,
+              "computeMs": 1702.206200000015,
+              "bodies": 33280,
+              "chunks": 130,
+              "startEpochMs": 1792648277919.6274,
+              "endEpochMs": 1792648279621.8376
+            },
+            {
+              "type": "done",
+              "threadId": 96,
+              "computeMs": 1694.4525999999896,
+              "bodies": 32512,
+              "chunks": 127,
+              "startEpochMs": 1792648277919.6501,
+              "endEpochMs": 1792648279614.1094
+            },
+            {
+              "type": "done",
+              "threadId": 97,
+              "computeMs": 1695.1462000000174,
+              "bodies": 33792,
+              "chunks": 132,
+              "startEpochMs": 1792648277919.698,
+              "endEpochMs": 1792648279614.853
+            },
+            {
+              "type": "done",
+              "threadId": 98,
+              "computeMs": 1700.7562000000034,
+              "bodies": 32960,
+              "chunks": 129,
+              "startEpochMs": 1792648277919.7214,
+              "endEpochMs": 1792648279620.4822
+            },
+            {
+              "type": "done",
+              "threadId": 99,
+              "computeMs": 1695.8620000000228,
+              "bodies": 34816,
+              "chunks": 136,
+              "startEpochMs": 1792648277920.3137,
+              "endEpochMs": 1792648279616.1814
+            },
+            {
+              "type": "done",
+              "threadId": 100,
+              "computeMs": 1700.6927000000142,
+              "bodies": 32768,
+              "chunks": 128,
+              "startEpochMs": 1792648277919.776,
+              "endEpochMs": 1792648279620.4736
+            },
+            {
+              "type": "done",
+              "threadId": 101,
+              "computeMs": 1700.4906000000192,
+              "bodies": 34048,
+              "chunks": 133,
+              "startEpochMs": 1792648277919.7888,
+              "endEpochMs": 1792648279620.284
+            },
+            {
+              "type": "done",
+              "threadId": 102,
+              "computeMs": 1701.5766000000003,
+              "bodies": 35072,
+              "chunks": 137,
+              "startEpochMs": 1792648277919.8472,
+              "endEpochMs": 1792648279621.4277
+            }
+          ],
+          "stepMs": 1916.5547999999835,
+          "wallStepMs": 1916.578999999998,
+          "effectiveProcessCores": 13.655231773179784
+        },
+        {
+          "buildMs": 200.4600999999966,
+          "publicationMs": 2.8795000000100117,
+          "dispatchAndTraverseMs": 1700.9015999999829,
+          "totalForceMs": 1904.2411999999895,
+          "sharedTreeBytes": 28329955,
+          "workers": [
+            {
+              "type": "done",
+              "threadId": 87,
+              "computeMs": 1698.0364999999874,
+              "bodies": 32512,
+              "chunks": 127,
+              "startEpochMs": 1792648279832.8362,
+              "endEpochMs": 1792648281530.878
+            },
+            {
+              "type": "done",
+              "threadId": 88,
+              "computeMs": 1693.2711999999883,
+              "bodies": 34304,
+              "chunks": 134,
+              "startEpochMs": 1792648279832.8508,
+              "endEpochMs": 1792648281526.1274
+            },
+            {
+              "type": "done",
+              "threadId": 89,
+              "computeMs": 1698.0091000000248,
+              "bodies": 34048,
+              "chunks": 133,
+              "startEpochMs": 1792648279832.864,
+              "endEpochMs": 1792648281530.8777
+            },
+            {
+              "type": "done",
+              "threadId": 90,
+              "computeMs": 1696.801299999992,
+              "bodies": 32768,
+              "chunks": 128,
+              "startEpochMs": 1792648279832.8845,
+              "endEpochMs": 1792648281529.6902
+            },
+            {
+              "type": "done",
+              "threadId": 91,
+              "computeMs": 1692.090600000025,
+              "bodies": 33280,
+              "chunks": 130,
+              "startEpochMs": 1792648279832.8916,
+              "endEpochMs": 1792648281524.9885
+            },
+            {
+              "type": "done",
+              "threadId": 92,
+              "computeMs": 1696.2969000000157,
+              "bodies": 34048,
+              "chunks": 133,
+              "startEpochMs": 1792648279832.9126,
+              "endEpochMs": 1792648281529.2134
+            },
+            {
+              "type": "done",
+              "threadId": 93,
+              "computeMs": 1692.349600000016,
+              "bodies": 33024,
+              "chunks": 129,
+              "startEpochMs": 1792648279832.926,
+              "endEpochMs": 1792648281525.2805
+            },
+            {
+              "type": "done",
+              "threadId": 94,
+              "computeMs": 1694.5346000000136,
+              "bodies": 34304,
+              "chunks": 134,
+              "startEpochMs": 1792648279832.97,
+              "endEpochMs": 1792648281527.51
+            },
+            {
+              "type": "done",
+              "threadId": 95,
+              "computeMs": 1699.2684000000008,
+              "bodies": 32512,
+              "chunks": 127,
+              "startEpochMs": 1792648279832.9678,
+              "endEpochMs": 1792648281532.24
+            },
+            {
+              "type": "done",
+              "threadId": 96,
+              "computeMs": 1696.1315999999933,
+              "bodies": 34048,
+              "chunks": 133,
+              "startEpochMs": 1792648279833.0056,
+              "endEpochMs": 1792648281529.1423
+            },
+            {
+              "type": "done",
+              "threadId": 97,
+              "computeMs": 1698.0871000000043,
+              "bodies": 33280,
+              "chunks": 130,
+              "startEpochMs": 1792648279833.042,
+              "endEpochMs": 1792648281531.1335
+            },
+            {
+              "type": "done",
+              "threadId": 98,
+              "computeMs": 1698.9912000000186,
+              "bodies": 32192,
+              "chunks": 126,
+              "startEpochMs": 1792648279833.0742,
+              "endEpochMs": 1792648281532.0698
+            },
+            {
+              "type": "done",
+              "threadId": 99,
+              "computeMs": 1700.4073999999964,
+              "bodies": 33536,
+              "chunks": 131,
+              "startEpochMs": 1792648279833.09,
+              "endEpochMs": 1792648281533.5015
+            },
+            {
+              "type": "done",
+              "threadId": 100,
+              "computeMs": 1693.5656000000017,
+              "bodies": 34048,
+              "chunks": 133,
+              "startEpochMs": 1792648279833.1147,
+              "endEpochMs": 1792648281526.686
+            },
+            {
+              "type": "done",
+              "threadId": 101,
+              "computeMs": 1697.1019999999844,
+              "bodies": 33792,
+              "chunks": 132,
+              "startEpochMs": 1792648279833.1335,
+              "endEpochMs": 1792648281530.2402
+            },
+            {
+              "type": "done",
+              "threadId": 102,
+              "computeMs": 1692.6322999999975,
+              "bodies": 34304,
+              "chunks": 134,
+              "startEpochMs": 1792648279833.1782,
+              "endEpochMs": 1792648281525.8152
+            }
+          ],
+          "stepMs": 1911.4772999999986,
+          "wallStepMs": 1911.4975999999733,
+          "effectiveProcessCores": 13.594197535068828
+        },
+        {
+          "buildMs": 208.13369999997667,
+          "publicationMs": 2.4734999999927823,
+          "dispatchAndTraverseMs": 1797.7560999999987,
+          "totalForceMs": 2008.3632999999681,
+          "sharedTreeBytes": 28329955,
+          "workers": [
+            {
+              "type": "done",
+              "threadId": 87,
+              "computeMs": 1789.950599999982,
+              "bodies": 33024,
+              "chunks": 129,
+              "startEpochMs": 1792648281751.419,
+              "endEpochMs": 1792648283541.3843
+            },
+            {
+              "type": "done",
+              "threadId": 88,
+              "computeMs": 1797.4543999999878,
+              "bodies": 34560,
+              "chunks": 135,
+              "startEpochMs": 1792648281751.4175,
+              "endEpochMs": 1792648283548.8835
+            },
+            {
+              "type": "done",
+              "threadId": 89,
+              "computeMs": 1791.8452999999863,
+              "bodies": 32000,
+              "chunks": 125,
+              "startEpochMs": 1792648281751.4207,
+              "endEpochMs": 1792648283543.2822
+            },
+            {
+              "type": "done",
+              "threadId": 90,
+              "computeMs": 1788.2501999999804,
+              "bodies": 33792,
+              "chunks": 132,
+              "startEpochMs": 1792648281751.438,
+              "endEpochMs": 1792648283539.7126
+            },
+            {
+              "type": "done",
+              "threadId": 91,
+              "computeMs": 1796.196499999991,
+              "bodies": 33280,
+              "chunks": 130,
+              "startEpochMs": 1792648281751.4492,
+              "endEpochMs": 1792648283547.6597
+            },
+            {
+              "type": "done",
+              "threadId": 92,
+              "computeMs": 1789.6045000000158,
+              "bodies": 33536,
+              "chunks": 131,
+              "startEpochMs": 1792648281751.4631,
+              "endEpochMs": 1792648283541.0823
+            },
+            {
+              "type": "done",
+              "threadId": 93,
+              "computeMs": 1796.5688000000082,
+              "bodies": 33792,
+              "chunks": 132,
+              "startEpochMs": 1792648281751.483,
+              "endEpochMs": 1792648283548.0662
+            },
+            {
+              "type": "done",
+              "threadId": 94,
+              "computeMs": 1791.2118999999948,
+              "bodies": 34560,
+              "chunks": 135,
+              "startEpochMs": 1792648281751.5105,
+              "endEpochMs": 1792648283542.737
+            },
+            {
+              "type": "done",
+              "threadId": 95,
+              "computeMs": 1795.0959999999905,
+              "bodies": 32768,
+              "chunks": 128,
+              "startEpochMs": 1792648281751.528,
+              "endEpochMs": 1792648283546.6406
+            },
+            {
+              "type": "done",
+              "threadId": 96,
+              "computeMs": 1788.4156000000075,
+              "bodies": 33792,
+              "chunks": 132,
+              "startEpochMs": 1792648281751.5671,
+              "endEpochMs": 1792648283539.998
+            },
+            {
+              "type": "done",
+              "threadId": 97,
+              "computeMs": 1790.354800000001,
+              "bodies": 33536,
+              "chunks": 131,
+              "startEpochMs": 1792648281751.5957,
+              "endEpochMs": 1792648283541.9663
+            },
+            {
+              "type": "done",
+              "threadId": 98,
+              "computeMs": 1795.702099999995,
+              "bodies": 33216,
+              "chunks": 130,
+              "startEpochMs": 1792648281751.6106,
+              "endEpochMs": 1792648283547.326
+            },
+            {
+              "type": "done",
+              "threadId": 99,
+              "computeMs": 1790.9006999999983,
+              "bodies": 33280,
+              "chunks": 130,
+              "startEpochMs": 1792648281751.627,
+              "endEpochMs": 1792648283542.546
+            },
+            {
+              "type": "done",
+              "threadId": 100,
+              "computeMs": 1791.4006000000227,
+              "bodies": 32768,
+              "chunks": 128,
+              "startEpochMs": 1792648281751.641,
+              "endEpochMs": 1792648283543.0564
+            },
+            {
+              "type": "done",
+              "threadId": 101,
+              "computeMs": 1788.907899999991,
+              "bodies": 34048,
+              "chunks": 133,
+              "startEpochMs": 1792648281751.669,
+              "endEpochMs": 1792648283540.592
+            },
+            {
+              "type": "done",
+              "threadId": 102,
+              "computeMs": 1793.5426999999909,
+              "bodies": 34048,
+              "chunks": 133,
+              "startEpochMs": 1792648281751.7283,
+              "endEpochMs": 1792648283545.2898
+            }
+          ],
+          "stepMs": 2015.181500000006,
+          "wallStepMs": 2015.2053000000014,
+          "effectiveProcessCores": 12.972032543966844
+        }
+      ]
+    }
+  ],
+  "transfers": [
+    {
+      "n": 10000,
+      "kind": "visual",
+      "bytes": 160000,
+      "cloneRoundTripMs": 0.19200000000000728,
+      "transferOwnershipRoundTripMs": 0.07079999999996289,
+      "note": "Node worker_threads round trip; cloned back vs transferred both ways. Not a GPU readback or a browser main-thread rendering cost."
+    },
+    {
+      "n": 10000,
+      "kind": "energy-snapshot",
+      "bytes": 570000,
+      "cloneRoundTripMs": 0.401299999999992,
+      "transferOwnershipRoundTripMs": 0.05209999999988213,
+      "note": "Node worker_threads round trip; cloned back vs transferred both ways. Not a GPU readback or a browser main-thread rendering cost."
+    },
+    {
+      "n": 24000,
+      "kind": "visual",
+      "bytes": 384000,
+      "cloneRoundTripMs": 0.29060000000026776,
+      "transferOwnershipRoundTripMs": 0.04039999999986321,
+      "note": "Node worker_threads round trip; cloned back vs transferred both ways. Not a GPU readback or a browser main-thread rendering cost."
+    },
+    {
+      "n": 24000,
+      "kind": "energy-snapshot",
+      "bytes": 1368000,
+      "cloneRoundTripMs": 1.4894999999996799,
+      "transferOwnershipRoundTripMs": 0.06589999999960128,
+      "note": "Node worker_threads round trip; cloned back vs transferred both ways. Not a GPU readback or a browser main-thread rendering cost."
+    },
+    {
+      "n": 80000,
+      "kind": "visual",
+      "bytes": 1280000,
+      "cloneRoundTripMs": 1.6450999999942724,
+      "transferOwnershipRoundTripMs": 0.05730000000039581,
+      "note": "Node worker_threads round trip; cloned back vs transferred both ways. Not a GPU readback or a browser main-thread rendering cost."
+    },
+    {
+      "n": 80000,
+      "kind": "energy-snapshot",
+      "bytes": 4560000,
+      "cloneRoundTripMs": 3.1600000000034925,
+      "transferOwnershipRoundTripMs": 0.1595000000015716,
+      "note": "Node worker_threads round trip; cloned back vs transferred both ways. Not a GPU readback or a browser main-thread rendering cost."
+    },
+    {
+      "n": 536000,
+      "kind": "visual",
+      "bytes": 8576000,
+      "cloneRoundTripMs": 6.029600000008941,
+      "transferOwnershipRoundTripMs": 0.176099999982398,
+      "note": "Node worker_threads round trip; cloned back vs transferred both ways. Not a GPU readback or a browser main-thread rendering cost."
+    },
+    {
+      "n": 536000,
+      "kind": "energy-snapshot",
+      "bytes": 30552000,
+      "cloneRoundTripMs": 21.518400000000838,
+      "transferOwnershipRoundTripMs": 0.45579999999608845,
+      "note": "Node worker_threads round trip; cloned back vs transferred both ways. Not a GPU readback or a browser main-thread rendering cost."
+    }
+  ],
+  "completedUTC": "2026-10-22T05:51:23.573Z"
+}

@@ -1,0 +1,61 @@
+{
+  "schema": "equilibrium-attempts-v1",
+  "attempts": [
+    {
+      "stage": "Windows toolchain discovery",
+      "result": "no installed MSVC toolchain, GCC or WSL distribution detected",
+      "action": "prepared task-local portable MSVC and Windows SDK from Microsoft packages; no machine-wide registration or security changes"
+    },
+    {
+      "stage": "portable toolchain extraction",
+      "result": "first extraction failed because custom temporary directory did not exist",
+      "action": "created the directory and reused verified package cache"
+    },
+    {
+      "stage": "official AGAMA setup.py build_ext",
+      "result": "failed building GSL: msbuild was absent",
+      "action": "built author-supplied GSL source using the exact MSVC project source lists, cl and lib, without MSBuild"
+    },
+    {
+      "stage": "official AGAMA master compilation",
+      "result": "MSVC default language mode rejected alternative token or",
+      "action": "used standard C++17 and permissive- flags, no physical algorithm changes"
+    },
+    {
+      "stage": "official AGAMA master portability",
+      "result": "new math_cubature.h includes POSIX alloca.h unconditionally",
+      "action": "added a compatibility include mapping alloca to MSVC CRT _alloca; official numerical source unchanged"
+    },
+    {
+      "stage": "official coordinates test with extension-only import",
+      "result": "failed: Python helper transformCelestialCoords absent from bare compiled module",
+      "action": "assembled the official Python package wrapper with the compiled module; coordinate test passed"
+    },
+    {
+      "stage": "pre-simulation sampling audit",
+      "result": "review identified that sampler Monte Carlo mass normalization could change component mass across seeds/N",
+      "action": "before any candidate evolution, fixed weights to independent action-space DF mass, preserved preparation source, regenerated final snapshots; also enforced sample pool >=4096 per subcomponent"
+    },
+    {
+      "stage": "coordinate-label review",
+      "result": "initial preparation source commentary incorrectly described intrinsic velocity moment ordering; no physical arrays used that label",
+      "action": "final profile metadata labels observed Cartesian XYZ correctly; at (R,0,0) these correspond to R,phi,z"
+    },
+    {
+      "stage": "off-grid DF relative-density report",
+      "result": "division by zero produced nonfinite ratios in a vanishing bulge at a sparse probe",
+      "action": "preserved physical values; report null for undefined ratios with explicit denominator indices, no clipping of physical states"
+    },
+    {
+      "stage": "vertical profile audit of first candidate",
+      "result": "Hdisk equal to reference exponential height did not reproduce reference median absolute height",
+      "action": "preserved all first-candidate data; built a second model calibrating initial solar median only, with no evolved stability in the objective"
+    },
+    {
+      "stage": "execution environment restart",
+      "result": "processes and browser runs were interrupted; six completed initial runs survived and later one additional run was preserved",
+      "action": "restarted preparation, added iteration checkpoints and local per-run durable recording; restarted remaining original runs at index 7 after preserving their source epoch"
+    }
+  ],
+  "qualification": "Failed attempts are evidence of preparation and code review, not failed physical evolution unless explicitly recorded as such. Complete/partial evolution is reported separately."
+}

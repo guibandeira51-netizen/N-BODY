@@ -1,0 +1,413 @@
+[
+  {
+    "id": "B-bulge2-s2026",
+    "family": "bulge2",
+    "file": "initial/B-bulge2-s2026.json",
+    "sha256": "f6a5b6c00b74ec1ddf8ebffdfd11bfedabab7c2d58d4d890b52c7aca575f9b0e",
+    "n": 11046,
+    "nh": 0,
+    "counts": [
+      3000,
+      7092,
+      954,
+      0
+    ],
+    "baryonSeed": 2026,
+    "haloSeed": null,
+    "stage": "baryons",
+    "preparation": "original104",
+    "refinedPopulation": 0,
+    "haloParticleMassMsun": null,
+    "checks": [
+      {
+        "population": 0,
+        "samplingSeed": 2026,
+        "independentOrbits": 1500,
+        "negativeDF": 0,
+        "unbound": 0
+      }
+    ]
+  },
+  {
+    "id": "B-bulge2-s2027",
+    "family": "bulge2",
+    "file": "initial/B-bulge2-s2027.json",
+    "sha256": "020c4bc2c273d38799999cef810859cdf2c1c57fb8965eb6ca4ffabf71f5e871",
+    "n": 11046,
+    "nh": 0,
+    "counts": [
+      3000,
+      7092,
+      954,
+      0
+    ],
+    "baryonSeed": 2027,
+    "haloSeed": null,
+    "stage": "baryons",
+    "preparation": "original104",
+    "refinedPopulation": 0,
+    "haloParticleMassMsun": null,
+    "checks": [
+      {
+        "population": 0,
+        "samplingSeed": 2027,
+        "independentOrbits": 1500,
+        "negativeDF": 0,
+        "unbound": 0
+      }
+    ]
+  },
+  {
+    "id": "B-bulge2-s2028",
+    "family": "bulge2",
+    "file": "initial/B-bulge2-s2028.json",
+    "sha256": "1b53e96aed73be041e916d06e400dbc32243e6620839669ecf3bb6469f0aaf4b",
+    "n": 11046,
+    "nh": 0,
+    "counts": [
+      3000,
+      7092,
+      954,
+      0
+    ],
+    "baryonSeed": 2028,
+    "haloSeed": null,
+    "stage": "baryons",
+    "preparation": "original104",
+    "refinedPopulation": 0,
+    "haloParticleMassMsun": null,
+    "checks": [
+      {
+        "population": 0,
+        "samplingSeed": 2028,
+        "independentOrbits": 1500,
+        "negativeDF": 0,
+        "unbound": 0
+      }
+    ]
+  },
+  {
+    "id": "B-thin2-s2026",
+    "family": "thin2",
+    "file": "initial/B-thin2-s2026.json",
+    "sha256": "b7c844a3c9d6aeb91d02f2e749069a9d91ca30aab13dbc9114c204956bcee2ac",
+    "n": 16638,
+    "nh": 0,
+    "counts": [
+      1500,
+      14184,
+      954,
+      0
+    ],
+    "baryonSeed": 2026,
+    "haloSeed": null,
+    "stage": "baryons",
+    "preparation": "original104",
+    "refinedPopulation": 1,
+    "haloParticleMassMsun": null,
+    "checks": [
+      {
+        "population": 1,
+        "samplingSeed": 102029,
+        "independentOrbits": 7092,
+        "negativeDF": 0,
+        "unbound": 0
+      }
+    ]
+  },
+  {
+    "id": "B-thin2-s2027",
+    "family": "thin2",
+    "file": "initial/B-thin2-s2027.json",
+    "sha256": "081625f798355ed9f14287475b1406b60a5a2037bbf1681454460b6a510e4937",
+    "n": 16638,
+    "nh": 0,
+    "counts": [
+      1500,
+      14184,
+      954,
+      0
+    ],
+    "baryonSeed": 2027,
+    "haloSeed": null,
+    "stage": "baryons",
+    "preparation": "original104",
+    "refinedPopulation": 1,
+    "haloParticleMassMsun": null,
+    "checks": [
+      {
+        "population": 1,
+        "samplingSeed": 102030,
+        "independentOrbits": 7092,
+        "negativeDF": 0,
+        "unbound": 0
+      }
+    ]
+  },
+  {
+    "id": "B-thin2-s2028",
+    "family": "thin2",
+    "file": "initial/B-thin2-s2028.json",
+    "sha256": "a8a1dfd1e7e9a226529d682e4f68344a5972c220d9e5551bd980ac5dd00dda8a",
+    "n": 16638,
+    "nh": 0,
+    "counts": [
+      1500,
+      14184,
+      954,
+      0
+    ],
+    "baryonSeed": 2028,
+    "haloSeed": null,
+    "stage": "baryons",
+    "preparation": "original104",
+    "refinedPopulation": 1,
+    "haloParticleMassMsun": null,
+    "checks": [
+      {
+        "population": 1,
+        "samplingSeed": 102031,
+        "independentOrbits": 7092,
+        "negativeDF": 0,
+        "unbound": 0
+      }
+    ]
+  },
+  {
+    "id": "B-thick2-s2026",
+    "family": "thick2",
+    "file": "initial/B-thick2-s2026.json",
+    "sha256": "584b0bbb4fd07d44e6b9e3108c1f931b09dcd60ee238adfe0dbed1ad616ddec1",
+    "n": 10500,
+    "nh": 0,
+    "counts": [
+      1500,
+      7092,
+      1908,
+      0
+    ],
+    "baryonSeed": 2026,
+    "haloSeed": null,
+    "stage": "baryons",
+    "preparation": "original104",
+    "refinedPopulation": 2,
+    "haloParticleMassMsun": null,
+    "checks": [
+      {
+        "population": 2,
+        "samplingSeed": 202032,
+        "independentOrbits": 954,
+        "negativeDF": 0,
+        "unbound": 0
+      }
+    ]
+  },
+  {
+    "id": "B-thick2-s2027",
+    "family": "thick2",
+    "file": "initial/B-thick2-s2027.json",
+    "sha256": "9508744a7c7e82ddaf1036288425714b22d54e2382937e18a74e53adde142ffc",
+    "n": 10500,
+    "nh": 0,
+    "counts": [
+      1500,
+      7092,
+      1908,
+      0
+    ],
+    "baryonSeed": 2027,
+    "haloSeed": null,
+    "stage": "baryons",
+    "preparation": "original104",
+    "refinedPopulation": 2,
+    "haloParticleMassMsun": null,
+    "checks": [
+      {
+        "population": 2,
+        "samplingSeed": 202033,
+        "independentOrbits": 954,
+        "negativeDF": 0,
+        "unbound": 0
+      }
+    ]
+  },
+  {
+    "id": "B-thick2-s2028",
+    "family": "thick2",
+    "file": "initial/B-thick2-s2028.json",
+    "sha256": "bd933f28e90e825b7b3680becc6b70782142ccba37913f8a80f23f4a984ea84d",
+    "n": 10500,
+    "nh": 0,
+    "counts": [
+      1500,
+      7092,
+      1908,
+      0
+    ],
+    "baryonSeed": 2028,
+    "haloSeed": null,
+    "stage": "baryons",
+    "preparation": "original104",
+    "refinedPopulation": 2,
+    "haloParticleMassMsun": null,
+    "checks": [
+      {
+        "population": 2,
+        "samplingSeed": 202034,
+        "independentOrbits": 954,
+        "negativeDF": 0,
+        "unbound": 0
+      }
+    ]
+  },
+  {
+    "id": "E-b2026-h2026",
+    "family": "E",
+    "file": "initial/E-b2026-h2026.json",
+    "sha256": "198ca0eeb9c1fbcc64d9752e55f47925d97ef73f25e59d5efa91ae4f6c7d67db",
+    "n": 89546,
+    "nh": 80000,
+    "counts": [
+      1500,
+      7092,
+      954,
+      80000
+    ],
+    "baryonSeed": 2026,
+    "haloSeed": 2026,
+    "stage": "halo",
+    "preparation": "original104",
+    "refinedPopulation": 3,
+    "haloParticleMassMsun": 13114115.151481958,
+    "checks": []
+  },
+  {
+    "id": "E-b2026-h2027",
+    "family": "E",
+    "file": "initial/E-b2026-h2027.json",
+    "sha256": "51a880906301213131a695178f256b252193a7dae861b00d4407566f4a48569f",
+    "n": 89546,
+    "nh": 80000,
+    "counts": [
+      1500,
+      7092,
+      954,
+      80000
+    ],
+    "baryonSeed": 2026,
+    "haloSeed": 2027,
+    "stage": "halo",
+    "preparation": "original104",
+    "refinedPopulation": 3,
+    "haloParticleMassMsun": 13114115.151481958,
+    "checks": []
+  },
+  {
+    "id": "E-b2026-h2028",
+    "family": "E",
+    "file": "initial/E-b2026-h2028.json",
+    "sha256": "0dc952e155ec997f5ab731f30a0112a79d702a4571a074d38bc093d0b9caeed9",
+    "n": 89546,
+    "nh": 80000,
+    "counts": [
+      1500,
+      7092,
+      954,
+      80000
+    ],
+    "baryonSeed": 2026,
+    "haloSeed": 2028,
+    "stage": "halo",
+    "preparation": "original104",
+    "refinedPopulation": 3,
+    "haloParticleMassMsun": 13114115.151481958,
+    "checks": []
+  },
+  {
+    "id": "F-b2026-h2026",
+    "family": "F",
+    "file": "initial/F-b2026-h2026.json",
+    "sha256": "d1ff21a1881f61d868e98a5b0873e2da3829adc13a961177c38607a409321a6b",
+    "n": 169546,
+    "nh": 160000,
+    "counts": [
+      1500,
+      7092,
+      954,
+      160000
+    ],
+    "baryonSeed": 2026,
+    "haloSeed": 2026,
+    "stage": "halo",
+    "preparation": "original104",
+    "refinedPopulation": 3,
+    "haloParticleMassMsun": 6557057.575740979,
+    "checks": [
+      {
+        "population": 3,
+        "samplingSeed": 302035,
+        "independentOrbits": 80000,
+        "negativeDF": 0,
+        "unbound": 0
+      }
+    ]
+  },
+  {
+    "id": "F-b2026-h2027",
+    "family": "F",
+    "file": "initial/F-b2026-h2027.json",
+    "sha256": "193b5ee618236dfb07196e8d89134e7112ae934723d7888fa1a8f8544c98e326",
+    "n": 169546,
+    "nh": 160000,
+    "counts": [
+      1500,
+      7092,
+      954,
+      160000
+    ],
+    "baryonSeed": 2026,
+    "haloSeed": 2027,
+    "stage": "halo",
+    "preparation": "original104",
+    "refinedPopulation": 3,
+    "haloParticleMassMsun": 6557057.575740979,
+    "checks": [
+      {
+        "population": 3,
+        "samplingSeed": 302036,
+        "independentOrbits": 80000,
+        "negativeDF": 0,
+        "unbound": 0
+      }
+    ]
+  },
+  {
+    "id": "F-b2026-h2028",
+    "family": "F",
+    "file": "initial/F-b2026-h2028.json",
+    "sha256": "6194f4d1bf51ae0e961616f111cbf4356b8d3cce8072ddc09b6bc2752bc78c83",
+    "n": 169546,
+    "nh": 160000,
+    "counts": [
+      1500,
+      7092,
+      954,
+      160000
+    ],
+    "baryonSeed": 2026,
+    "haloSeed": 2028,
+    "stage": "halo",
+    "preparation": "original104",
+    "refinedPopulation": 3,
+    "haloParticleMassMsun": 6557057.575740979,
+    "checks": [
+      {
+        "population": 3,
+        "samplingSeed": 302037,
+        "independentOrbits": 80000,
+        "negativeDF": 0,
+        "unbound": 0
+      }
+    ]
+  }
+]

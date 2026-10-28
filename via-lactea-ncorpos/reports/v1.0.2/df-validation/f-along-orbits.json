@@ -1,0 +1,473 @@
+{
+  "checks": [
+    {
+      "family": "baseline",
+      "seed": 2026,
+      "population": 0,
+      "independentOrbits": 75,
+      "invalidOrNonpositive": 0,
+      "absLogFChangeQuantiles50_90_99_Max": [
+        0.023649208549433486,
+        0.09358549998275348,
+        0.2006614341822146,
+        0.20906028778378702
+      ]
+    },
+    {
+      "family": "baseline",
+      "seed": 2026,
+      "population": 1,
+      "independentOrbits": 128,
+      "invalidOrNonpositive": 0,
+      "absLogFChangeQuantiles50_90_99_Max": [
+        0.003835427929821629,
+        0.07394068027435771,
+        0.2960841110491583,
+        0.4869407335167974
+      ]
+    },
+    {
+      "family": "baseline",
+      "seed": 2026,
+      "population": 2,
+      "independentOrbits": 48,
+      "invalidOrNonpositive": 0,
+      "absLogFChangeQuantiles50_90_99_Max": [
+        0.002454199801925281,
+        0.013235990276694233,
+        0.07624028337184427,
+        0.09490154461842343
+      ]
+    },
+    {
+      "family": "baseline",
+      "seed": 2026,
+      "population": 3,
+      "independentOrbits": 128,
+      "invalidOrNonpositive": 0,
+      "absLogFChangeQuantiles50_90_99_Max": [
+        2.8666429052777735e-05,
+        0.001475723556181471,
+        0.008320958230856264,
+        0.040698994270993584
+      ]
+    },
+    {
+      "family": "baseline",
+      "seed": 2027,
+      "population": 0,
+      "independentOrbits": 75,
+      "invalidOrNonpositive": 0,
+      "absLogFChangeQuantiles50_90_99_Max": [
+        0.027972432887230128,
+        0.10649105834202582,
+        0.18634336950557626,
+        0.21763641972327438
+      ]
+    },
+    {
+      "family": "baseline",
+      "seed": 2027,
+      "population": 1,
+      "independentOrbits": 128,
+      "invalidOrNonpositive": 0,
+      "absLogFChangeQuantiles50_90_99_Max": [
+        0.0032865941738659432,
+        0.04740406088024897,
+        0.24701844242955032,
+        0.3701183686202404
+      ]
+    },
+    {
+      "family": "baseline",
+      "seed": 2027,
+      "population": 2,
+      "independentOrbits": 48,
+      "invalidOrNonpositive": 0,
+      "absLogFChangeQuantiles50_90_99_Max": [
+        0.0037026376468545525,
+        0.0179610143229413,
+        0.17405499483801554,
+        0.2890747617715395
+      ]
+    },
+    {
+      "family": "baseline",
+      "seed": 2027,
+      "population": 3,
+      "independentOrbits": 128,
+      "invalidOrNonpositive": 0,
+      "absLogFChangeQuantiles50_90_99_Max": [
+        3.109196030055684e-05,
+        0.0014365806702390349,
+        0.019802744321588385,
+        0.07242235326668385
+      ]
+    },
+    {
+      "family": "baseline",
+      "seed": 2028,
+      "population": 0,
+      "independentOrbits": 75,
+      "invalidOrNonpositive": 0,
+      "absLogFChangeQuantiles50_90_99_Max": [
+        0.016447579641326916,
+        0.09600657723707388,
+        0.14770737233105535,
+        0.22891795101373885
+      ]
+    },
+    {
+      "family": "baseline",
+      "seed": 2028,
+      "population": 1,
+      "independentOrbits": 128,
+      "invalidOrNonpositive": 0,
+      "absLogFChangeQuantiles50_90_99_Max": [
+        0.004315484782942721,
+        0.045378608997449166,
+        0.255384300784183,
+        0.8781945987999167
+      ]
+    },
+    {
+      "family": "baseline",
+      "seed": 2028,
+      "population": 2,
+      "independentOrbits": 48,
+      "invalidOrNonpositive": 0,
+      "absLogFChangeQuantiles50_90_99_Max": [
+        0.0034455928751675182,
+        0.01984678420807465,
+        0.045121025953644624,
+        0.06071854970085888
+      ]
+    },
+    {
+      "family": "baseline",
+      "seed": 2028,
+      "population": 3,
+      "independentOrbits": 128,
+      "invalidOrNonpositive": 0,
+      "absLogFChangeQuantiles50_90_99_Max": [
+        2.3951826590561574e-05,
+        0.0012120917044975232,
+        0.007990575034062652,
+        0.06795204971684836
+      ]
+    },
+    {
+      "family": "baseline-softened",
+      "seed": 2026,
+      "population": 0,
+      "independentOrbits": 75,
+      "invalidOrNonpositive": 0,
+      "absLogFChangeQuantiles50_90_99_Max": [
+        0.031221879998482086,
+        0.16593352797314506,
+        0.3579796931276409,
+        0.6214993215431999
+      ]
+    },
+    {
+      "family": "baseline-softened",
+      "seed": 2026,
+      "population": 1,
+      "independentOrbits": 128,
+      "invalidOrNonpositive": 0,
+      "absLogFChangeQuantiles50_90_99_Max": [
+        0.02570091076087158,
+        0.0934256136901608,
+        0.27478510708732756,
+        0.44514231194983617
+      ]
+    },
+    {
+      "family": "baseline-softened",
+      "seed": 2026,
+      "population": 2,
+      "independentOrbits": 48,
+      "invalidOrNonpositive": 0,
+      "absLogFChangeQuantiles50_90_99_Max": [
+        0.010452715292089677,
+        0.035254643743480196,
+        0.08240120608777564,
+        0.08852505438433589
+      ]
+    },
+    {
+      "family": "baseline-softened",
+      "seed": 2026,
+      "population": 3,
+      "independentOrbits": 128,
+      "invalidOrNonpositive": 0,
+      "absLogFChangeQuantiles50_90_99_Max": [
+        2.7598619824850305e-05,
+        0.0013579883403060406,
+        0.009814311708652613,
+        0.03480788265585931
+      ]
+    },
+    {
+      "family": "baseline-softened",
+      "seed": 2027,
+      "population": 0,
+      "independentOrbits": 75,
+      "invalidOrNonpositive": 0,
+      "absLogFChangeQuantiles50_90_99_Max": [
+        0.04481186045790195,
+        0.15234309936352783,
+        0.22725943418233774,
+        0.2920226361234848
+      ]
+    },
+    {
+      "family": "baseline-softened",
+      "seed": 2027,
+      "population": 1,
+      "independentOrbits": 128,
+      "invalidOrNonpositive": 0,
+      "absLogFChangeQuantiles50_90_99_Max": [
+        0.02263706618847627,
+        0.10771558723750384,
+        0.3261215623695027,
+        0.3499037382514538
+      ]
+    },
+    {
+      "family": "baseline-softened",
+      "seed": 2027,
+      "population": 2,
+      "independentOrbits": 48,
+      "invalidOrNonpositive": 0,
+      "absLogFChangeQuantiles50_90_99_Max": [
+        0.010263352702160396,
+        0.027919628543505826,
+        0.25409533165251486,
+        0.4402083906666548
+      ]
+    },
+    {
+      "family": "baseline-softened",
+      "seed": 2027,
+      "population": 3,
+      "independentOrbits": 128,
+      "invalidOrNonpositive": 0,
+      "absLogFChangeQuantiles50_90_99_Max": [
+        3.1232135706508966e-05,
+        0.0011963489044077005,
+        0.019730760480282862,
+        0.07332785086411052
+      ]
+    },
+    {
+      "family": "baseline-softened",
+      "seed": 2028,
+      "population": 0,
+      "independentOrbits": 75,
+      "invalidOrNonpositive": 0,
+      "absLogFChangeQuantiles50_90_99_Max": [
+        0.03963939467790635,
+        0.16347316110065957,
+        0.2741654664245137,
+        0.3032415808156416
+      ]
+    },
+    {
+      "family": "baseline-softened",
+      "seed": 2028,
+      "population": 1,
+      "independentOrbits": 128,
+      "invalidOrNonpositive": 0,
+      "absLogFChangeQuantiles50_90_99_Max": [
+        0.018995657799636738,
+        0.10020854795367212,
+        0.429636797427711,
+        0.859815514604711
+      ]
+    },
+    {
+      "family": "baseline-softened",
+      "seed": 2028,
+      "population": 2,
+      "independentOrbits": 48,
+      "invalidOrNonpositive": 0,
+      "absLogFChangeQuantiles50_90_99_Max": [
+        0.009154479218152198,
+        0.027436615847735393,
+        0.06997568470526459,
+        0.07160259784961884
+      ]
+    },
+    {
+      "family": "baseline-softened",
+      "seed": 2028,
+      "population": 3,
+      "independentOrbits": 128,
+      "invalidOrNonpositive": 0,
+      "absLogFChangeQuantiles50_90_99_Max": [
+        2.4181498219135765e-05,
+        0.0012151870904618786,
+        0.010956961001209475,
+        0.06670249183423757
+      ]
+    },
+    {
+      "family": "corrected",
+      "seed": 2026,
+      "population": 0,
+      "independentOrbits": 75,
+      "invalidOrNonpositive": 0,
+      "absLogFChangeQuantiles50_90_99_Max": [
+        0.023094324964478052,
+        0.10038604505762046,
+        0.22369679579509316,
+        0.26211021353922526
+      ]
+    },
+    {
+      "family": "corrected",
+      "seed": 2026,
+      "population": 1,
+      "independentOrbits": 128,
+      "invalidOrNonpositive": 0,
+      "absLogFChangeQuantiles50_90_99_Max": [
+        0.004762219647228817,
+        0.08651392764727263,
+        0.3901925147554204,
+        0.4483787093568578
+      ]
+    },
+    {
+      "family": "corrected",
+      "seed": 2026,
+      "population": 2,
+      "independentOrbits": 48,
+      "invalidOrNonpositive": 0,
+      "absLogFChangeQuantiles50_90_99_Max": [
+        0.003496180542008011,
+        0.027154211227690198,
+        0.06731185647519672,
+        0.07696530660031321
+      ]
+    },
+    {
+      "family": "corrected",
+      "seed": 2026,
+      "population": 3,
+      "independentOrbits": 128,
+      "invalidOrNonpositive": 0,
+      "absLogFChangeQuantiles50_90_99_Max": [
+        3.573333288981753e-05,
+        0.0016175347250630611,
+        0.00815936742821181,
+        0.04454539467541182
+      ]
+    },
+    {
+      "family": "corrected",
+      "seed": 2027,
+      "population": 0,
+      "independentOrbits": 75,
+      "invalidOrNonpositive": 0,
+      "absLogFChangeQuantiles50_90_99_Max": [
+        0.01387168230151035,
+        0.09014789602961062,
+        0.17075845925877076,
+        0.20903799722483682
+      ]
+    },
+    {
+      "family": "corrected",
+      "seed": 2027,
+      "population": 1,
+      "independentOrbits": 128,
+      "invalidOrNonpositive": 0,
+      "absLogFChangeQuantiles50_90_99_Max": [
+        0.0027848096548371572,
+        0.044357704987915664,
+        0.09327217932682663,
+        0.21186635055400652
+      ]
+    },
+    {
+      "family": "corrected",
+      "seed": 2027,
+      "population": 2,
+      "independentOrbits": 48,
+      "invalidOrNonpositive": 0,
+      "absLogFChangeQuantiles50_90_99_Max": [
+        0.00277549009111613,
+        0.017964490714081936,
+        0.04882894184619996,
+        0.05454130421901367
+      ]
+    },
+    {
+      "family": "corrected",
+      "seed": 2027,
+      "population": 3,
+      "independentOrbits": 128,
+      "invalidOrNonpositive": 0,
+      "absLogFChangeQuantiles50_90_99_Max": [
+        3.966796270986163e-05,
+        0.0011661591780681095,
+        0.01105527028079519,
+        0.06801579803675488
+      ]
+    },
+    {
+      "family": "corrected",
+      "seed": 2028,
+      "population": 0,
+      "independentOrbits": 75,
+      "invalidOrNonpositive": 0,
+      "absLogFChangeQuantiles50_90_99_Max": [
+        0.014070752505348788,
+        0.09313539834902192,
+        0.30734909038028146,
+        0.3213233700969286
+      ]
+    },
+    {
+      "family": "corrected",
+      "seed": 2028,
+      "population": 1,
+      "independentOrbits": 128,
+      "invalidOrNonpositive": 0,
+      "absLogFChangeQuantiles50_90_99_Max": [
+        0.004458678373745455,
+        0.0539729185846506,
+        0.5324197512530644,
+        1.4139123669738523
+      ]
+    },
+    {
+      "family": "corrected",
+      "seed": 2028,
+      "population": 2,
+      "independentOrbits": 48,
+      "invalidOrNonpositive": 0,
+      "absLogFChangeQuantiles50_90_99_Max": [
+        0.003913619666290169,
+        0.015991822638580958,
+        0.15056085927227675,
+        0.19126485912307728
+      ]
+    },
+    {
+      "family": "corrected",
+      "seed": 2028,
+      "population": 3,
+      "independentOrbits": 128,
+      "invalidOrNonpositive": 0,
+      "absLogFChangeQuantiles50_90_99_Max": [
+        2.3917655521030288e-05,
+        0.0011438503221738317,
+        0.0037240450658568573,
+        0.004480423099175945
+      ]
+    }
+  ],
+  "qualification": "For baseline-softened, evaluate the ORIGINAL f(J_old) along orbits in the changed softened field: this directly tests nonstationarity of the old DF. For corrected, evaluate f(J_corrected). Approximate actions and short20Myr horizon limit the inference; no phase-space values are altered."
+}

@@ -1,0 +1,53 @@
+{
+  "schema": "reused-validation-106",
+  "newNBodyRuns": 0,
+  "horizonMyr": 200,
+  "Fcounts": [
+    1500,
+    7092,
+    954,
+    160000
+  ],
+  "FNtotal": 169546,
+  "thinGrowthMeanPercent": 18.28699589724489,
+  "thinGrowthSDPercent": 3.1433110954420385,
+  "structuralConclusion": "Estacionariedade estrutural e convergência global não demonstradas. F tem apenas a menor estimativa pontual entre E105/F105 pareados.",
+  "energyMaxAbsF": 2.6414741681216234e-07,
+  "energyMethod": "GPU direta Float32 KDK dt0.05Myr epsilon0.1kpc; Hamiltoniano direto compensado Float64 com parâmetros efetivos f32. Três realizações F105 completas. Não é energia Barnes–Hut.",
+  "h50Definition": "Mediana ponderada da distância absoluta ao plano próprio de cada população. Mudanças relativas ao próprio início. Faixas são SD entre três realizações, não CI.",
+  "ensembleScope": "E105/F105: mesmos bárions2026, três halos. A/B: três realizações bariônicas. Não misturar legacy80000 total/1.51Gyr com E104/F105.",
+  "sources": {
+    "reports/v1.0.3/runs/A-thin2-s2026-t200.json": "6b306b32f64e4bb5b1a13baf03dfbf22552be698d031b72217b697087860b662",
+    "reports/v1.0.3/runs/A-thin2-s2027-t200.json": "991a9ac29ebc01e1bbea84e8b96e25cd1a218f3cd571d8c189b63444ace34dce",
+    "reports/v1.0.3/runs/A-thin2-s2028-t200.json": "1274c4642c1b9d6eb71741f44380c5e243117d083124162b501fe9f77de4ee5a",
+    "reports/v1.0.3/runs/B-thin2-s2026-t200.json": "4489aa9e50b60da17837c6354f3e9d0bd7e61a7ff15484640a6ab26ae1ccf83f",
+    "reports/v1.0.3/runs/B-thin2-s2027-t200.json": "2e111a55d26c058f2d636d56215b954448e0cea36cede6f449a1f12633a4fa3c",
+    "reports/v1.0.3/runs/B-thin2-s2028-t200.json": "e781e1cc1e07f3a2af7d19d5d50be1a19b40de8db688c2c3366bf4176637da26",
+    "reports/v1.0.5/runs/E-b2026-h2027-halo-E200.json": "839df4942f60ed723a4091d221543818fa6f4a6ddb576f0669af22fc6d356bb1",
+    "reports/v1.0.5/runs/E-b2026-h2028-halo-E200.json": "9b81bad2fa9c11c7ad794c616194dade08def1c8c1f2ed0b82f8e8fb45fca65b",
+    "reports/v1.0.4/runs/FE-b2026-h2026-higher200.json": "182c173bffea204daad701f23c02b53ea508410aa5a5c2fc516fcafe10fdb3a8",
+    "reports/v1.0.5/runs/F-b2026-h2026-halo-F200.json": "6e4a96bde43a566c83444afdcb9b666f06369dff91154a7fa0346123e2ac5a3f",
+    "reports/v1.0.5/runs/F-b2026-h2027-halo-F200.json": "caace3c6dfc64c27cfd60b142f554d8254c0de0969ec84c7224cb34e10a69c0c",
+    "reports/v1.0.5/runs/F-b2026-h2028-halo-F200.json": "23d6999f477e024540c23f30faf28b5e32540a5699caccc73bb8d00181bd22f1"
+  },
+  "derivedSourceSHA256": {
+    "reports/v1.0.5/analysis.json": "ca0d8208783406f3196ac3e51bc259e2f003b97159dfb3c3920714a4d0ce6e24",
+    "reports/v1.0.5/time-series.csv": "0e5e45ccaccbe391ef602a2d68a5e50a016259fdd8f13dae1d94379d824e1e19",
+    "reports/v1.0.5/energy-series.csv": "35022fc864fed4da35ccf20fa77d79b7880768e5039b28fc7213edd961a1b45b",
+    "reports/v1.0.4/field-audit.json": "a0cb05b1902b9137af0ebb3f4b872c8f3661abbbb10f46d22a194004a7e57cdf"
+  },
+  "fieldExperimentD": {
+    "source": "reports/v1.0.4/field-audit.json",
+    "family": "E104",
+    "n": 89546,
+    "seeds": [
+      2026,
+      2027,
+      2028
+    ],
+    "arithmetic": "NumPy Float64 direct sum at fixed28 probes, epsilon .1; distinct from compensated GPU-upload force oracle.",
+    "scope": "Diagonal seed triples vary baryons and halo together. Component forces separate halo fluctuations from baryon fluctuations; population phases remain paired. Three seeds do not define an asymptotic noise law. No velocity corrections.",
+    "table": "smooth-nbody-field.csv",
+    "interpretation": "Initial direct Plummer particle field versus corresponding Plummer continuum, never mean stellar vphi versus circular speed. Ensemble fluctuations include baryon and halo sampling. Unsmooothed106 field is a separate reference, not silently compared with softened particles. No new physical trajectories."
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "schema": "granularity-initial-family-provenance-103",
+  "family": "baryons",
+  "preparationProtocol": "reports/v1.0.2/corrected/protocol.json",
+  "relativePreparationProtocol": "../../../v1.0.2/corrected/protocol.json",
+  "campaign": "reports/v1.0.3/campaign.json",
+  "samplingManifest": "reports/v1.0.3/baryons-initial-manifest.json",
+  "qualification": "meta.preparation is inherited v1.0.2 provenance; its admissibility rows describe the PARENT. Actual v1.0.3 counts, weights and sampling checks are in the arrays, manifest and meta.version103. B contains no live halo particles; the Plummer field supplies its halo."
+}

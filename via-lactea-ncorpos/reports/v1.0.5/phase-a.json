@@ -1,0 +1,671 @@
+{
+  "schema": "phase-A-105",
+  "UTC": "2026-10-17T01:23:16.344Z",
+  "references": [
+    {
+      "kind": "A",
+      "seed": 2026,
+      "path": "reports/v1.0.3/runs/A-thin2-s2026-t200.json",
+      "sha256": "6b306b32f64e4bb5b1a13baf03dfbf22552be698d031b72217b697087860b662",
+      "n": 9546,
+      "durationMyr": 200,
+      "initialUploadedBaryonsVerified": true,
+      "source": "reports/v1.0.3/initial/baryons/B-thin2-s2026.json",
+      "sourceSHA256": "c8aad60e099d43d181265dc866b4557a58fc279361ea7f2bbe7bf2a00b1831f4",
+      "algorithm": "AGAMA-DOP853-Float64",
+      "conservation": {
+        "samples": 41,
+        "initialTime": 0,
+        "finalTime": 200,
+        "sampleIntervalMax": 5,
+        "finalEnergyError": 8.61690495183594e-11,
+        "maxAbsEnergyError": 9.157636042957706e-11,
+        "minEnergyError": 0,
+        "maxEnergyError": 9.157636042957706e-11,
+        "meanEnergyError": 6.458042938057208e-11,
+        "energyErrorPeakToPeak": 9.157636042957706e-11,
+        "energyErrorRmsAboutMean": 1.785506351095705e-11,
+        "maxAbsEnergyScaledError": 7.165068543384627e-11,
+        "maxAngularMomentumScaledError": 0.0036058565250096874,
+        "maxAbsLzRelativeError": 2.6918490043483785e-12,
+        "maxAbsLzScaledError": 2.5489808596287006e-12,
+        "maxMomentumScaledError": 1.70938150063528e-9,
+        "maxCenterOfMassDisplacement": 1.7838948882218181e-9,
+        "maxCenterOfMassBallisticResidual": 1.7838948882218181e-9,
+        "energyApproximate": false,
+        "externalExtrapolatedMax": 0,
+        "scope": "sampled instants only; conservation does not establish structural equilibrium"
+      }
+    },
+    {
+      "kind": "B",
+      "seed": 2026,
+      "path": "reports/v1.0.3/runs/B-thin2-s2026-t200.json",
+      "sha256": "4489aa9e50b60da17837c6354f3e9d0bd7e61a7ff15484640a6ab26ae1ccf83f",
+      "n": 9546,
+      "durationMyr": 200,
+      "initialUploadedBaryonsVerified": true,
+      "source": "reports/v1.0.3/initial/baryons/B-thin2-s2026.json",
+      "sourceSHA256": "c8aad60e099d43d181265dc866b4557a58fc279361ea7f2bbe7bf2a00b1831f4",
+      "algorithm": "direct GPU f32 KDK",
+      "conservation": {
+        "samples": 41,
+        "initialTime": 0,
+        "finalTime": 200,
+        "sampleIntervalMax": 5,
+        "finalEnergyError": -2.4028823897584124e-9,
+        "maxAbsEnergyError": 7.91278327925698e-8,
+        "minEnergyError": -7.91278327925698e-8,
+        "maxEnergyError": 3.701948433285359e-8,
+        "meanEnergyError": -6.2426271991534116e-9,
+        "energyErrorPeakToPeak": 1.161473171254234e-7,
+        "energyErrorRmsAboutMean": 2.6636930388049222e-8,
+        "maxAbsEnergyScaledError": 5.900012043416642e-8,
+        "maxAngularMomentumScaledError": 0.0005509608681444635,
+        "maxAbsLzRelativeError": 9.436219133610291e-8,
+        "maxAbsLzScaledError": 8.935397906784615e-8,
+        "maxMomentumScaledError": 1.2988723815826791e-7,
+        "maxCenterOfMassDisplacement": 6.201508882643983e-7,
+        "maxCenterOfMassBallisticResidual": 6.201508882643983e-7,
+        "energyApproximate": false,
+        "externalExtrapolatedMax": 0,
+        "scope": "sampled instants only; conservation does not establish structural equilibrium"
+      }
+    },
+    {
+      "kind": "C",
+      "seed": 2026,
+      "path": "reports/v1.0.4/runs/FE-b2026-h2026-higher200.json",
+      "sha256": "182c173bffea204daad701f23c02b53ea508410aa5a5c2fc516fcafe10fdb3a8",
+      "n": 89546,
+      "durationMyr": 200,
+      "initialUploadedBaryonsVerified": true,
+      "source": "reports/v1.0.4/initial/FE-b2026-h2026.json",
+      "sourceSHA256": "1135f8befba3d425bf831069ff1f4f803526cfcf1439e0280b5cc76a333f33bf",
+      "algorithm": "direct GPU f32 KDK",
+      "conservation": {
+        "samples": 21,
+        "initialTime": 0,
+        "finalTime": 200,
+        "sampleIntervalMax": 10,
+        "finalEnergyError": 6.161271246028907e-8,
+        "maxAbsEnergyError": 1.2199165038618085e-7,
+        "minEnergyError": 0,
+        "maxEnergyError": 1.2199165038618085e-7,
+        "meanEnergyError": 7.810623873923608e-8,
+        "energyErrorPeakToPeak": 1.2199165038618085e-7,
+        "energyErrorRmsAboutMean": 3.2749415113412544e-8,
+        "maxAbsEnergyScaledError": 4.0407973323908914e-8,
+        "maxAngularMomentumScaledError": 1.5822889864741294e-7,
+        "maxAbsLzRelativeError": 0.000016709881377366113,
+        "maxAbsLzScaledError": 9.836333219891755e-8,
+        "maxMomentumScaledError": 2.0589093367981355e-9,
+        "maxCenterOfMassDisplacement": 2.2882500390132655e-8,
+        "maxCenterOfMassBallisticResidual": 2.2882500390132655e-8,
+        "energyApproximate": false,
+        "externalExtrapolatedMax": 0,
+        "scope": "sampled instants only; conservation does not establish structural equilibrium"
+      }
+    },
+    {
+      "kind": "A",
+      "seed": 2027,
+      "path": "reports/v1.0.3/runs/A-thin2-s2027-t200.json",
+      "sha256": "991a9ac29ebc01e1bbea84e8b96e25cd1a218f3cd571d8c189b63444ace34dce",
+      "n": 9546,
+      "durationMyr": 200,
+      "initialUploadedBaryonsVerified": true,
+      "source": "reports/v1.0.3/initial/baryons/B-thin2-s2027.json",
+      "sourceSHA256": "d167ef15519f6af478e0b5c773e283bbb8cc731b43f250efc8ef9098b7a95ab5",
+      "algorithm": "AGAMA-DOP853-Float64",
+      "conservation": {
+        "samples": 41,
+        "initialTime": 0,
+        "finalTime": 200,
+        "sampleIntervalMax": 5,
+        "finalEnergyError": 2.8641971295899754e-11,
+        "maxAbsEnergyError": 4.143677344903327e-11,
+        "minEnergyError": -1.3236082866363697e-11,
+        "maxEnergyError": 4.143677344903327e-11,
+        "meanEnergyError": 1.4867898070938028e-11,
+        "energyErrorPeakToPeak": 5.4672856315396967e-11,
+        "energyErrorRmsAboutMean": 1.3309441917375916e-11,
+        "maxAbsEnergyScaledError": 3.24168974063232e-11,
+        "maxAngularMomentumScaledError": 0.007545991313601814,
+        "maxAbsLzRelativeError": 3.7106906083817425e-12,
+        "maxAbsLzScaledError": 3.5148309317358844e-12,
+        "maxMomentumScaledError": 1.7389199280211604e-9,
+        "maxCenterOfMassDisplacement": 1.6600354474479933e-9,
+        "maxCenterOfMassBallisticResidual": 1.6600354474479933e-9,
+        "energyApproximate": false,
+        "externalExtrapolatedMax": 0,
+        "scope": "sampled instants only; conservation does not establish structural equilibrium"
+      }
+    },
+    {
+      "kind": "B",
+      "seed": 2027,
+      "path": "reports/v1.0.3/runs/B-thin2-s2027-t200.json",
+      "sha256": "2e111a55d26c058f2d636d56215b954448e0cea36cede6f449a1f12633a4fa3c",
+      "n": 9546,
+      "durationMyr": 200,
+      "initialUploadedBaryonsVerified": true,
+      "source": "reports/v1.0.3/initial/baryons/B-thin2-s2027.json",
+      "sourceSHA256": "d167ef15519f6af478e0b5c773e283bbb8cc731b43f250efc8ef9098b7a95ab5",
+      "algorithm": "direct GPU f32 KDK",
+      "conservation": {
+        "samples": 41,
+        "initialTime": 0,
+        "finalTime": 200,
+        "sampleIntervalMax": 5,
+        "finalEnergyError": -7.940173207442474e-9,
+        "maxAbsEnergyError": 4.003939713522495e-8,
+        "minEnergyError": -4.003939713522495e-8,
+        "maxEnergyError": 3.486943570136126e-8,
+        "meanEnergyError": -4.573474250328174e-9,
+        "energyErrorPeakToPeak": 7.490883283658621e-8,
+        "energyErrorRmsAboutMean": 1.7864245752760985e-8,
+        "maxAbsEnergyScaledError": 2.985417061275171e-8,
+        "maxAngularMomentumScaledError": 0.0009473734415674477,
+        "maxAbsLzRelativeError": 3.395838373177326e-8,
+        "maxAbsLzScaledError": 3.21659739733047e-8,
+        "maxMomentumScaledError": 7.02676461868994e-8,
+        "maxCenterOfMassDisplacement": 3.2100979477415924e-7,
+        "maxCenterOfMassBallisticResidual": 3.2100979477415924e-7,
+        "energyApproximate": false,
+        "externalExtrapolatedMax": 0,
+        "scope": "sampled instants only; conservation does not establish structural equilibrium"
+      }
+    },
+    {
+      "kind": "C",
+      "seed": 2027,
+      "path": "reports/v1.0.4/runs/FE-b2027-h2027-higher200.json",
+      "sha256": "9f41486335ecceab607d8d8930d1098f14d0d168ffa61ead397aa6a116f3614f",
+      "n": 89546,
+      "durationMyr": 200,
+      "initialUploadedBaryonsVerified": true,
+      "source": "reports/v1.0.4/initial/FE-b2027-h2027.json",
+      "sourceSHA256": "bd3c528b6f4a5fc4438f3238384bec53824aec85d913cddc1bff885c43c3ce88",
+      "algorithm": "direct GPU f32 KDK",
+      "conservation": {
+        "samples": 21,
+        "initialTime": 0,
+        "finalTime": 200,
+        "sampleIntervalMax": 10,
+        "finalEnergyError": -1.259412642269314e-9,
+        "maxAbsEnergyError": 6.388884228280407e-8,
+        "minEnergyError": -6.388884228280407e-8,
+        "maxEnergyError": 3.793359248938178e-8,
+        "meanEnergyError": -9.94733460910821e-9,
+        "energyErrorPeakToPeak": 1.0182243477218584e-7,
+        "energyErrorRmsAboutMean": 2.7450242836518554e-8,
+        "maxAbsEnergyScaledError": 2.1297523640697568e-8,
+        "maxAngularMomentumScaledError": 3.820791624229677e-7,
+        "maxAbsLzRelativeError": 0.00003411268610683592,
+        "maxAbsLzScaledError": 2.8100049641379326e-7,
+        "maxMomentumScaledError": 4.693826676964948e-9,
+        "maxCenterOfMassDisplacement": 6.118179639520118e-8,
+        "maxCenterOfMassBallisticResidual": 6.118179639520118e-8,
+        "energyApproximate": false,
+        "externalExtrapolatedMax": 0,
+        "scope": "sampled instants only; conservation does not establish structural equilibrium"
+      }
+    },
+    {
+      "kind": "A",
+      "seed": 2028,
+      "path": "reports/v1.0.3/runs/A-thin2-s2028-t200.json",
+      "sha256": "1274c4642c1b9d6eb71741f44380c5e243117d083124162b501fe9f77de4ee5a",
+      "n": 9546,
+      "durationMyr": 200,
+      "initialUploadedBaryonsVerified": true,
+      "source": "reports/v1.0.3/initial/baryons/B-thin2-s2028.json",
+      "sourceSHA256": "4a35fffb54e3c8cc96aac1498e52a3f6d71e9738462d1d9b2660ba6b64dac0bf",
+      "algorithm": "AGAMA-DOP853-Float64",
+      "conservation": {
+        "samples": 41,
+        "initialTime": 0,
+        "finalTime": 200,
+        "sampleIntervalMax": 5,
+        "finalEnergyError": 8.174718049880311e-11,
+        "maxAbsEnergyError": 8.843733834847513e-11,
+        "minEnergyError": 0,
+        "maxEnergyError": 8.843733834847513e-11,
+        "meanEnergyError": 5.519762464859185e-11,
+        "energyErrorPeakToPeak": 8.843733834847513e-11,
+        "energyErrorRmsAboutMean": 1.9292500609428497e-11,
+        "maxAbsEnergyScaledError": 6.917767027124998e-11,
+        "maxAngularMomentumScaledError": 0.005242730073974836,
+        "maxAbsLzRelativeError": 2.616989375230767e-12,
+        "maxAbsLzScaledError": 2.4786164037630826e-12,
+        "maxMomentumScaledError": 1.620980575219637e-9,
+        "maxCenterOfMassDisplacement": 3.036942326177542e-9,
+        "maxCenterOfMassBallisticResidual": 3.036942326177542e-9,
+        "energyApproximate": false,
+        "externalExtrapolatedMax": 0,
+        "scope": "sampled instants only; conservation does not establish structural equilibrium"
+      }
+    },
+    {
+      "kind": "B",
+      "seed": 2028,
+      "path": "reports/v1.0.3/runs/B-thin2-s2028-t200.json",
+      "sha256": "e781e1cc1e07f3a2af7d19d5d50be1a19b40de8db688c2c3366bf4176637da26",
+      "n": 9546,
+      "durationMyr": 200,
+      "initialUploadedBaryonsVerified": true,
+      "source": "reports/v1.0.3/initial/baryons/B-thin2-s2028.json",
+      "sourceSHA256": "4a35fffb54e3c8cc96aac1498e52a3f6d71e9738462d1d9b2660ba6b64dac0bf",
+      "algorithm": "direct GPU f32 KDK",
+      "conservation": {
+        "samples": 41,
+        "initialTime": 0,
+        "finalTime": 200,
+        "sampleIntervalMax": 5,
+        "finalEnergyError": -2.5953033200601134e-8,
+        "maxAbsEnergyError": 1.0307516739698405e-7,
+        "minEnergyError": -1.0307516739698405e-7,
+        "maxEnergyError": 5.8821450538252935e-9,
+        "meanEnergyError": -3.874336829146635e-8,
+        "energyErrorPeakToPeak": 1.0895731245080934e-7,
+        "energyErrorRmsAboutMean": 2.470420969232897e-8,
+        "maxAbsEnergyScaledError": 7.682063717573197e-8,
+        "maxAngularMomentumScaledError": 0.0011291387165885689,
+        "maxAbsLzRelativeError": 1.1658754728687965e-7,
+        "maxAbsLzScaledError": 1.1042299594903094e-7,
+        "maxMomentumScaledError": 1.1231988706869944e-7,
+        "maxCenterOfMassDisplacement": 3.1311846676993133e-7,
+        "maxCenterOfMassBallisticResidual": 3.1311846676993133e-7,
+        "energyApproximate": false,
+        "externalExtrapolatedMax": 0,
+        "scope": "sampled instants only; conservation does not establish structural equilibrium"
+      }
+    },
+    {
+      "kind": "C",
+      "seed": 2028,
+      "path": "reports/v1.0.4/runs/FE-b2028-h2028-higher200.json",
+      "sha256": "f73f655f3fa7ec9782b4839e24bafa863138a825cde71b40b61b8b0d3a564d41",
+      "n": 89546,
+      "durationMyr": 200,
+      "initialUploadedBaryonsVerified": true,
+      "source": "reports/v1.0.4/initial/FE-b2028-h2028.json",
+      "sourceSHA256": "fd9dc71dd0efd878bbdedc6a3379273932aa41d88352e733bb15267e2d735420",
+      "algorithm": "direct GPU f32 KDK",
+      "conservation": {
+        "samples": 21,
+        "initialTime": 0,
+        "finalTime": 200,
+        "sampleIntervalMax": 10,
+        "finalEnergyError": 3.749968572649485e-7,
+        "maxAbsEnergyError": 3.749968572649485e-7,
+        "minEnergyError": -6.582612696137651e-8,
+        "maxEnergyError": 3.749968572649485e-7,
+        "meanEnergyError": 1.309153163864692e-7,
+        "energyErrorPeakToPeak": 4.40822984226325e-7,
+        "energyErrorRmsAboutMean": 1.5982573426609064e-7,
+        "maxAbsEnergyScaledError": 1.2447713172174868e-7,
+        "maxAngularMomentumScaledError": 2.515932454601409e-7,
+        "maxAbsLzRelativeError": 0.000028510524710181076,
+        "maxAbsLzScaledError": 1.9011084881794375e-7,
+        "maxMomentumScaledError": 2.202024141727352e-9,
+        "maxCenterOfMassDisplacement": 2.700856314835617e-8,
+        "maxCenterOfMassBallisticResidual": 2.700856314835617e-8,
+        "energyApproximate": false,
+        "externalExtrapolatedMax": 0,
+        "scope": "sampled instants only; conservation does not establish structural equilibrium"
+      }
+    }
+  ],
+  "groups": [
+    {
+      "kind": "A",
+      "metrics": {
+        "thinGrowth": {
+          "n": 3,
+          "values": [
+            2.7797053384476467,
+            0.15419717249944842,
+            0.7972459575637858
+          ],
+          "mean": 1.2437161561702936,
+          "sd": 1.368511969640006,
+          "CI95": [
+            -2.1558560367921213,
+            4.643288349132709
+          ],
+          "assumption": "Independent realization means; Student t interval, small-n and approximate normality limitations. Epochs are not replicates."
+        },
+        "thinVarianceChange": {
+          "n": 3,
+          "values": [
+            95.87246772686946,
+            26.52784871647426,
+            93.28558149225896
+          ],
+          "mean": 71.89529931186756,
+          "sd": 39.31064964156396,
+          "CI95": [
+            -25.757767941832284,
+            169.5483665655674
+          ],
+          "assumption": "Independent realization means; Student t interval, small-n and approximate normality limitations. Epochs are not replicates."
+        },
+        "thinLateH": {
+          "n": 3,
+          "values": [
+            0.0032747980739132043,
+            0.0023603359570021076,
+            -0.00016584456933038672
+          ],
+          "mean": 0.001823096487194975,
+          "sd": 0.0017821265767519285,
+          "CI95": [
+            -0.002603951349484791,
+            0.006250144323874741
+          ],
+          "assumption": "Independent realization means; Student t interval, small-n and approximate normality limitations. Epochs are not replicates."
+        },
+        "thinLateVariance": {
+          "n": 3,
+          "values": [
+            -66.88057018983747,
+            -40.968013890910875,
+            -66.00397182743643
+          ],
+          "mean": -57.950851969394925,
+          "sd": 14.714098615689883,
+          "CI95": [
+            -94.50269923717187,
+            -21.39900470161799
+          ],
+          "assumption": "Independent realization means; Student t interval, small-n and approximate normality limitations. Epochs are not replicates."
+        },
+        "thickGrowth": {
+          "n": 3,
+          "values": [
+            0.3187209609503805,
+            -2.693413968748215,
+            -8.19728609220891
+          ],
+          "mean": -3.523993033335582,
+          "sd": 4.318331879240271,
+          "CI95": [
+            -14.251324107034652,
+            7.203338040363487
+          ],
+          "assumption": "Independent realization means; Student t interval, small-n and approximate normality limitations. Epochs are not replicates."
+        }
+      }
+    },
+    {
+      "kind": "B",
+      "metrics": {
+        "thinGrowth": {
+          "n": 3,
+          "values": [
+            13.5670247126207,
+            8.41396409922801,
+            11.489675195753835
+          ],
+          "mean": 11.156888002534181,
+          "sd": 2.5925988714614183,
+          "CI95": [
+            4.716515374120511,
+            17.59726063094785
+          ],
+          "assumption": "Independent realization means; Student t interval, small-n and approximate normality limitations. Epochs are not replicates."
+        },
+        "thinVarianceChange": {
+          "n": 3,
+          "values": [
+            320.3333284980177,
+            185.56191484133834,
+            221.29456366296014
+          ],
+          "mean": 242.3966023341054,
+          "sd": 69.81980744612396,
+          "CI95": [
+            68.95458561994306,
+            415.8386190482678
+          ],
+          "assumption": "Independent realization means; Student t interval, small-n and approximate normality limitations. Epochs are not replicates."
+        },
+        "thinLateH": {
+          "n": 3,
+          "values": [
+            0.018930041328645897,
+            0.0048207867628513035,
+            0.012178908272745481
+          ],
+          "mean": 0.011976578788080894,
+          "sd": 0.007056803030825812,
+          "CI95": [
+            -0.005553491746208287,
+            0.029506649322370074
+          ],
+          "assumption": "Independent realization means; Student t interval, small-n and approximate normality limitations. Epochs are not replicates."
+        },
+        "thinLateVariance": {
+          "n": 3,
+          "values": [
+            100.27379511889826,
+            47.49233164789616,
+            -11.369218959132949
+          ],
+          "mean": 45.46563593588716,
+          "sd": 55.849093723521385,
+          "CI95": [
+            -93.27120395786946,
+            184.20247582964376
+          ],
+          "assumption": "Independent realization means; Student t interval, small-n and approximate normality limitations. Epochs are not replicates."
+        },
+        "thickGrowth": {
+          "n": 3,
+          "values": [
+            -8.911967781767427,
+            -9.411277455971046,
+            -8.690060053066418
+          ],
+          "mean": -9.004435096934964,
+          "sd": 0.3693931358916183,
+          "CI95": [
+            -9.92205851631848,
+            -8.086811677551449
+          ],
+          "assumption": "Independent realization means; Student t interval, small-n and approximate normality limitations. Epochs are not replicates."
+        }
+      }
+    },
+    {
+      "kind": "C",
+      "metrics": {
+        "thinGrowth": {
+          "n": 3,
+          "values": [
+            18.571267730939734,
+            16.992431710522983,
+            18.116696082828977
+          ],
+          "mean": 17.8934651747639,
+          "sd": 0.8127452390374373,
+          "CI95": [
+            15.874494076307904,
+            19.912436273219896
+          ],
+          "assumption": "Independent realization means; Student t interval, small-n and approximate normality limitations. Epochs are not replicates."
+        },
+        "thinVarianceChange": {
+          "n": 3,
+          "values": [
+            365.94392242807265,
+            357.73703593338666,
+            386.0451885184116
+          ],
+          "mean": 369.90871562662363,
+          "sd": 14.564599703552455,
+          "CI95": [
+            333.72824424437454,
+            406.0891870088727
+          ],
+          "assumption": "Independent realization means; Student t interval, small-n and approximate normality limitations. Epochs are not replicates."
+        },
+        "thinLateH": {
+          "n": 3,
+          "values": [
+            0.021716240377701423,
+            0.021574804357266303,
+            0.014261958358026045
+          ],
+          "mean": 0.019184334364331257,
+          "sd": 0.004263489204578343,
+          "CI95": [
+            0.00859324004698107,
+            0.029775428681681444
+          ],
+          "assumption": "Independent realization means; Student t interval, small-n and approximate normality limitations. Epochs are not replicates."
+        },
+        "thinLateVariance": {
+          "n": 3,
+          "values": [
+            139.32785370362365,
+            192.70288360990907,
+            184.0046939202331
+          ],
+          "mean": 172.01181041125528,
+          "sd": 28.63730775612732,
+          "CI95": [
+            100.87279424711684,
+            243.15082657539372
+          ],
+          "assumption": "Independent realization means; Student t interval, small-n and approximate normality limitations. Epochs are not replicates."
+        },
+        "thickGrowth": {
+          "n": 3,
+          "values": [
+            -2.358340520057378,
+            -3.88339533518971,
+            -4.983411617902844
+          ],
+          "mean": -3.7417158243833106,
+          "sd": 1.3182580855138555,
+          "CI95": [
+            -7.016450448618754,
+            -0.4669812001478668
+          ],
+          "assumption": "Independent realization means; Student t interval, small-n and approximate normality limitations. Epochs are not replicates."
+        }
+      }
+    }
+  ],
+  "endpoint": [
+    {
+      "kind": "A",
+      "seed": 2026,
+      "thinGrowth": 2.7797053384476467,
+      "thinVarianceChange": 95.87246772686946,
+      "thinLateH": 0.0032747980739132043,
+      "thinLateVariance": -66.88057018983747,
+      "thickGrowth": 0.3187209609503805
+    },
+    {
+      "kind": "B",
+      "seed": 2026,
+      "thinGrowth": 13.5670247126207,
+      "thinVarianceChange": 320.3333284980177,
+      "thinLateH": 0.018930041328645897,
+      "thinLateVariance": 100.27379511889826,
+      "thickGrowth": -8.911967781767427
+    },
+    {
+      "kind": "C",
+      "seed": 2026,
+      "thinGrowth": 18.571267730939734,
+      "thinVarianceChange": 365.94392242807265,
+      "thinLateH": 0.021716240377701423,
+      "thinLateVariance": 139.32785370362365,
+      "thickGrowth": -2.358340520057378
+    },
+    {
+      "kind": "A",
+      "seed": 2027,
+      "thinGrowth": 0.15419717249944842,
+      "thinVarianceChange": 26.52784871647426,
+      "thinLateH": 0.0023603359570021076,
+      "thinLateVariance": -40.968013890910875,
+      "thickGrowth": -2.693413968748215
+    },
+    {
+      "kind": "B",
+      "seed": 2027,
+      "thinGrowth": 8.41396409922801,
+      "thinVarianceChange": 185.56191484133834,
+      "thinLateH": 0.0048207867628513035,
+      "thinLateVariance": 47.49233164789616,
+      "thickGrowth": -9.411277455971046
+    },
+    {
+      "kind": "C",
+      "seed": 2027,
+      "thinGrowth": 16.992431710522983,
+      "thinVarianceChange": 357.73703593338666,
+      "thinLateH": 0.021574804357266303,
+      "thinLateVariance": 192.70288360990907,
+      "thickGrowth": -3.88339533518971
+    },
+    {
+      "kind": "A",
+      "seed": 2028,
+      "thinGrowth": 0.7972459575637858,
+      "thinVarianceChange": 93.28558149225896,
+      "thinLateH": -0.00016584456933038672,
+      "thinLateVariance": -66.00397182743643,
+      "thickGrowth": -8.19728609220891
+    },
+    {
+      "kind": "B",
+      "seed": 2028,
+      "thinGrowth": 11.489675195753835,
+      "thinVarianceChange": 221.29456366296014,
+      "thinLateH": 0.012178908272745481,
+      "thinLateVariance": -11.369218959132949,
+      "thickGrowth": -8.690060053066418
+    },
+    {
+      "kind": "C",
+      "seed": 2028,
+      "thinGrowth": 18.116696082828977,
+      "thinVarianceChange": 386.0451885184116,
+      "thinLateH": 0.014261958358026045,
+      "thinLateVariance": 184.0046939202331,
+      "thickGrowth": -4.983411617902844
+    }
+  ],
+  "contrasts": [
+    {
+      "seed": 2026,
+      "liveMinusFixedVariance": 45.61059393005496,
+      "fixedMinusContinuousVariance": 224.46086077114825
+    },
+    {
+      "seed": 2027,
+      "liveMinusFixedVariance": 172.17512109204833,
+      "fixedMinusContinuousVariance": 159.03406612486407
+    },
+    {
+      "seed": 2028,
+      "liveMinusFixedVariance": 164.75062485545143,
+      "fixedMinusContinuousVariance": 128.0089821707012
+    }
+  ],
+  "epochs": [
+    20,
+    50,
+    100,
+    200
+  ],
+  "qualification": "Reanalysis of nine preserved same-phase controls, not nine new integrations. A: total fixed smooth Plummer field and tracers; B: fixed continuous halo plus live baryons; C: E104 entirely live. Native Float64 adaptive DOP853 differs from GPU Float32 KDK; prior temporal/force controls bound part of that numerical difference. Contrasts remove collective responses too and are not unique causal fractions.",
+  "decision": "Proceed to preparation investigation and isolated baryon controls before any halo160k run. Full-continuum changes and f(J) drift prevent certifying exact equilibrium. Live E drift remains larger; do not assign the entire excess to two-body encounters."
+}

@@ -1,0 +1,665 @@
+{
+  "status": "passed",
+  "UTC": "2026-10-17T02:32:16.515Z",
+  "initials": [
+    {
+      "path": "reports/v1.0.5/initial/B-bulge2-s2026.json",
+      "sha256": "f6a5b6c00b74ec1ddf8ebffdfd11bfedabab7c2d58d4d890b52c7aca575f9b0e",
+      "n": 11046,
+      "counts": [
+        3000,
+        7092,
+        954,
+        0
+      ],
+      "massPreserved": true,
+      "coincidentClones": 0,
+      "pairedBaryonsVerified": false
+    },
+    {
+      "path": "reports/v1.0.5/initial/B-bulge2-s2027.json",
+      "sha256": "020c4bc2c273d38799999cef810859cdf2c1c57fb8965eb6ca4ffabf71f5e871",
+      "n": 11046,
+      "counts": [
+        3000,
+        7092,
+        954,
+        0
+      ],
+      "massPreserved": true,
+      "coincidentClones": 0,
+      "pairedBaryonsVerified": false
+    },
+    {
+      "path": "reports/v1.0.5/initial/B-bulge2-s2028.json",
+      "sha256": "1b53e96aed73be041e916d06e400dbc32243e6620839669ecf3bb6469f0aaf4b",
+      "n": 11046,
+      "counts": [
+        3000,
+        7092,
+        954,
+        0
+      ],
+      "massPreserved": true,
+      "coincidentClones": 0,
+      "pairedBaryonsVerified": false
+    },
+    {
+      "path": "reports/v1.0.5/initial/B-thin2-s2026.json",
+      "sha256": "b7c844a3c9d6aeb91d02f2e749069a9d91ca30aab13dbc9114c204956bcee2ac",
+      "n": 16638,
+      "counts": [
+        1500,
+        14184,
+        954,
+        0
+      ],
+      "massPreserved": true,
+      "coincidentClones": 0,
+      "pairedBaryonsVerified": false
+    },
+    {
+      "path": "reports/v1.0.5/initial/B-thin2-s2027.json",
+      "sha256": "081625f798355ed9f14287475b1406b60a5a2037bbf1681454460b6a510e4937",
+      "n": 16638,
+      "counts": [
+        1500,
+        14184,
+        954,
+        0
+      ],
+      "massPreserved": true,
+      "coincidentClones": 0,
+      "pairedBaryonsVerified": false
+    },
+    {
+      "path": "reports/v1.0.5/initial/B-thin2-s2028.json",
+      "sha256": "a8a1dfd1e7e9a226529d682e4f68344a5972c220d9e5551bd980ac5dd00dda8a",
+      "n": 16638,
+      "counts": [
+        1500,
+        14184,
+        954,
+        0
+      ],
+      "massPreserved": true,
+      "coincidentClones": 0,
+      "pairedBaryonsVerified": false
+    },
+    {
+      "path": "reports/v1.0.5/initial/B-thick2-s2026.json",
+      "sha256": "584b0bbb4fd07d44e6b9e3108c1f931b09dcd60ee238adfe0dbed1ad616ddec1",
+      "n": 10500,
+      "counts": [
+        1500,
+        7092,
+        1908,
+        0
+      ],
+      "massPreserved": true,
+      "coincidentClones": 0,
+      "pairedBaryonsVerified": false
+    },
+    {
+      "path": "reports/v1.0.5/initial/B-thick2-s2027.json",
+      "sha256": "9508744a7c7e82ddaf1036288425714b22d54e2382937e18a74e53adde142ffc",
+      "n": 10500,
+      "counts": [
+        1500,
+        7092,
+        1908,
+        0
+      ],
+      "massPreserved": true,
+      "coincidentClones": 0,
+      "pairedBaryonsVerified": false
+    },
+    {
+      "path": "reports/v1.0.5/initial/B-thick2-s2028.json",
+      "sha256": "bd933f28e90e825b7b3680becc6b70782142ccba37913f8a80f23f4a984ea84d",
+      "n": 10500,
+      "counts": [
+        1500,
+        7092,
+        1908,
+        0
+      ],
+      "massPreserved": true,
+      "coincidentClones": 0,
+      "pairedBaryonsVerified": false
+    },
+    {
+      "path": "reports/v1.0.5/initial/E-b2026-h2026.json",
+      "sha256": "198ca0eeb9c1fbcc64d9752e55f47925d97ef73f25e59d5efa91ae4f6c7d67db",
+      "n": 89546,
+      "counts": [
+        1500,
+        7092,
+        954,
+        80000
+      ],
+      "massPreserved": true,
+      "coincidentClones": 0,
+      "pairedBaryonsVerified": true
+    },
+    {
+      "path": "reports/v1.0.5/initial/E-b2026-h2027.json",
+      "sha256": "51a880906301213131a695178f256b252193a7dae861b00d4407566f4a48569f",
+      "n": 89546,
+      "counts": [
+        1500,
+        7092,
+        954,
+        80000
+      ],
+      "massPreserved": true,
+      "coincidentClones": 0,
+      "pairedBaryonsVerified": true
+    },
+    {
+      "path": "reports/v1.0.5/initial/E-b2026-h2028.json",
+      "sha256": "0dc952e155ec997f5ab731f30a0112a79d702a4571a074d38bc093d0b9caeed9",
+      "n": 89546,
+      "counts": [
+        1500,
+        7092,
+        954,
+        80000
+      ],
+      "massPreserved": true,
+      "coincidentClones": 0,
+      "pairedBaryonsVerified": true
+    },
+    {
+      "path": "reports/v1.0.5/initial/F-b2026-h2026.json",
+      "sha256": "d1ff21a1881f61d868e98a5b0873e2da3829adc13a961177c38607a409321a6b",
+      "n": 169546,
+      "counts": [
+        1500,
+        7092,
+        954,
+        160000
+      ],
+      "massPreserved": true,
+      "coincidentClones": 0,
+      "pairedBaryonsVerified": true
+    },
+    {
+      "path": "reports/v1.0.5/initial/F-b2026-h2027.json",
+      "sha256": "193b5ee618236dfb07196e8d89134e7112ae934723d7888fa1a8f8544c98e326",
+      "n": 169546,
+      "counts": [
+        1500,
+        7092,
+        954,
+        160000
+      ],
+      "massPreserved": true,
+      "coincidentClones": 0,
+      "pairedBaryonsVerified": true
+    },
+    {
+      "path": "reports/v1.0.5/initial/F-b2026-h2028.json",
+      "sha256": "6194f4d1bf51ae0e961616f111cbf4356b8d3cce8072ddc09b6bc2752bc78c83",
+      "n": 169546,
+      "counts": [
+        1500,
+        7092,
+        954,
+        160000
+      ],
+      "massPreserved": true,
+      "coincidentClones": 0,
+      "pairedBaryonsVerified": true
+    }
+  ],
+  "runs": [
+    {
+      "path": "reports/v1.0.5/runs/B-MIX-s2026-t200.json",
+      "sha256": "e29de5ba2f077300a13904f21b3521f97cf0507db62f4ff5a4ff05e513f2b3fe",
+      "durationMyr": 200,
+      "samples": 41,
+      "sourceSHA256": "a482d9555c79963425b220f339bddb624e497e4be98c83421818818e466f0998",
+      "codeHashes": {
+        "scripts/equilibrium-105/browser-runner.mjs": "11473467bf3ef2c1fd14f5fb120a8228656612f2281750b49e5373e80696806f",
+        "src/compute/gpu.js": "7ee6706d635a797f8a8546f96968466c8d8f9dbb67d3bd2aadd6f46ea00a7967",
+        "src/compute/parallel-energy.js": "f204b19fbb512c63f6c36aa9e1bf862e201624c4a808f77f53097f0c13bcfd15",
+        "src/compute/pair-energy-worker.js": "923409cd818d5f5874358eb1469e3f444e8cc61c34cb6a988c40f46c55b5bc48",
+        "src/physics/pair-energy-partition.js": "22a2f43c0bbdb67c7959dcef72f185e2f3e0814cf9a6fd0baa135ea29e3ba688",
+        "src/compute/gpu-external-polynomial.js": "cd7bed0cf447558a08940009382c3e31d2882c38548473780532bcdc42fe7dff",
+        "src/physics/external-grid-polynomial.js": "fcc5185e99acd25c6f35078a9c2b42d103c2fbc9b65606c4873b2184682ddcbf",
+        "src/physics/granularity-analysis.js": "4a5edbd3ff27f0df4a98818c5118a4cfc678a8f84fc1db8b66df2aa4c0200b35",
+        "src/physics/validation-101.js": "c6e0f58068bf585bdb43fb71db77edad6197d7d62f29afb7223cec761c409275",
+        "src/physics/equilibrium-analysis.js": "21eb7a098144724e3d537d4f6c01bc3308683148522e0f97d5907d2be3661998",
+        "src/physics/disk-analysis.js": "ecd700024436712b55152cb4bf64463ea70ee5bb9e93a6cc7750a8a1057219f7",
+        "src/physics/external-grid.js": "9e9dcf0b32c2864a8f8c8e08a0e909c4e306771126e5df17d3b90c240a9d6540"
+      },
+      "executedSourceVerified": true
+    },
+    {
+      "path": "reports/v1.0.5/runs/B-MIX-s2027-t200.json",
+      "sha256": "211362a2daaeb1e21afa0fdc91dfd1e1d606bb571e45c264b9e7f2e24452458c",
+      "durationMyr": 200,
+      "samples": 41,
+      "sourceSHA256": "8055e92fc25411198e9b3913900370465e5022a156b6af79d5f15c76f6061f02",
+      "codeHashes": {
+        "scripts/equilibrium-105/browser-runner.mjs": "11473467bf3ef2c1fd14f5fb120a8228656612f2281750b49e5373e80696806f",
+        "src/compute/gpu.js": "7ee6706d635a797f8a8546f96968466c8d8f9dbb67d3bd2aadd6f46ea00a7967",
+        "src/compute/parallel-energy.js": "f204b19fbb512c63f6c36aa9e1bf862e201624c4a808f77f53097f0c13bcfd15",
+        "src/compute/pair-energy-worker.js": "923409cd818d5f5874358eb1469e3f444e8cc61c34cb6a988c40f46c55b5bc48",
+        "src/physics/pair-energy-partition.js": "22a2f43c0bbdb67c7959dcef72f185e2f3e0814cf9a6fd0baa135ea29e3ba688",
+        "src/compute/gpu-external-polynomial.js": "cd7bed0cf447558a08940009382c3e31d2882c38548473780532bcdc42fe7dff",
+        "src/physics/external-grid-polynomial.js": "fcc5185e99acd25c6f35078a9c2b42d103c2fbc9b65606c4873b2184682ddcbf",
+        "src/physics/granularity-analysis.js": "4a5edbd3ff27f0df4a98818c5118a4cfc678a8f84fc1db8b66df2aa4c0200b35",
+        "src/physics/validation-101.js": "c6e0f58068bf585bdb43fb71db77edad6197d7d62f29afb7223cec761c409275",
+        "src/physics/equilibrium-analysis.js": "21eb7a098144724e3d537d4f6c01bc3308683148522e0f97d5907d2be3661998",
+        "src/physics/disk-analysis.js": "ecd700024436712b55152cb4bf64463ea70ee5bb9e93a6cc7750a8a1057219f7",
+        "src/physics/external-grid.js": "9e9dcf0b32c2864a8f8c8e08a0e909c4e306771126e5df17d3b90c240a9d6540"
+      },
+      "executedSourceVerified": true
+    },
+    {
+      "path": "reports/v1.0.5/runs/B-MIX-s2028-t200.json",
+      "sha256": "43327f0b7f413322a1a05d97afe913d1d4c1896ed935b3f65a6d771c3d13ab26",
+      "durationMyr": 200,
+      "samples": 41,
+      "sourceSHA256": "98dc1f3590f729e47680d7b6a1191df23cfb5c37557cf93832e533f2b2e8fce0",
+      "codeHashes": {
+        "scripts/equilibrium-105/browser-runner.mjs": "11473467bf3ef2c1fd14f5fb120a8228656612f2281750b49e5373e80696806f",
+        "src/compute/gpu.js": "7ee6706d635a797f8a8546f96968466c8d8f9dbb67d3bd2aadd6f46ea00a7967",
+        "src/compute/parallel-energy.js": "f204b19fbb512c63f6c36aa9e1bf862e201624c4a808f77f53097f0c13bcfd15",
+        "src/compute/pair-energy-worker.js": "923409cd818d5f5874358eb1469e3f444e8cc61c34cb6a988c40f46c55b5bc48",
+        "src/physics/pair-energy-partition.js": "22a2f43c0bbdb67c7959dcef72f185e2f3e0814cf9a6fd0baa135ea29e3ba688",
+        "src/compute/gpu-external-polynomial.js": "cd7bed0cf447558a08940009382c3e31d2882c38548473780532bcdc42fe7dff",
+        "src/physics/external-grid-polynomial.js": "fcc5185e99acd25c6f35078a9c2b42d103c2fbc9b65606c4873b2184682ddcbf",
+        "src/physics/granularity-analysis.js": "4a5edbd3ff27f0df4a98818c5118a4cfc678a8f84fc1db8b66df2aa4c0200b35",
+        "src/physics/validation-101.js": "c6e0f58068bf585bdb43fb71db77edad6197d7d62f29afb7223cec761c409275",
+        "src/physics/equilibrium-analysis.js": "21eb7a098144724e3d537d4f6c01bc3308683148522e0f97d5907d2be3661998",
+        "src/physics/disk-analysis.js": "ecd700024436712b55152cb4bf64463ea70ee5bb9e93a6cc7750a8a1057219f7",
+        "src/physics/external-grid.js": "9e9dcf0b32c2864a8f8c8e08a0e909c4e306771126e5df17d3b90c240a9d6540"
+      },
+      "executedSourceVerified": true
+    },
+    {
+      "path": "reports/v1.0.5/runs/B-bulge2-s2026-baryon200.json",
+      "sha256": "342cb95b2634af5c267921485fd721015ffbb37777ce52911480a4c7f2ec867b",
+      "durationMyr": 200,
+      "samples": 41,
+      "sourceSHA256": "f6a5b6c00b74ec1ddf8ebffdfd11bfedabab7c2d58d4d890b52c7aca575f9b0e",
+      "codeHashes": {
+        "scripts/equilibrium-105/browser-runner.mjs": "11473467bf3ef2c1fd14f5fb120a8228656612f2281750b49e5373e80696806f",
+        "src/compute/gpu.js": "7ee6706d635a797f8a8546f96968466c8d8f9dbb67d3bd2aadd6f46ea00a7967",
+        "src/compute/parallel-energy.js": "f204b19fbb512c63f6c36aa9e1bf862e201624c4a808f77f53097f0c13bcfd15",
+        "src/compute/pair-energy-worker.js": "923409cd818d5f5874358eb1469e3f444e8cc61c34cb6a988c40f46c55b5bc48",
+        "src/physics/pair-energy-partition.js": "22a2f43c0bbdb67c7959dcef72f185e2f3e0814cf9a6fd0baa135ea29e3ba688",
+        "src/compute/gpu-external-polynomial.js": "cd7bed0cf447558a08940009382c3e31d2882c38548473780532bcdc42fe7dff",
+        "src/physics/external-grid-polynomial.js": "fcc5185e99acd25c6f35078a9c2b42d103c2fbc9b65606c4873b2184682ddcbf",
+        "src/physics/granularity-analysis.js": "4a5edbd3ff27f0df4a98818c5118a4cfc678a8f84fc1db8b66df2aa4c0200b35",
+        "src/physics/validation-101.js": "c6e0f58068bf585bdb43fb71db77edad6197d7d62f29afb7223cec761c409275",
+        "src/physics/equilibrium-analysis.js": "21eb7a098144724e3d537d4f6c01bc3308683148522e0f97d5907d2be3661998",
+        "src/physics/disk-analysis.js": "ecd700024436712b55152cb4bf64463ea70ee5bb9e93a6cc7750a8a1057219f7",
+        "src/physics/external-grid.js": "9e9dcf0b32c2864a8f8c8e08a0e909c4e306771126e5df17d3b90c240a9d6540"
+      },
+      "executedSourceVerified": true
+    },
+    {
+      "path": "reports/v1.0.5/runs/B-bulge2-s2027-baryon200.json",
+      "sha256": "a573ac55f6345af300a7e957e0a788fcd4ba995b161c5d71cd653b14e0079fda",
+      "durationMyr": 200,
+      "samples": 41,
+      "sourceSHA256": "020c4bc2c273d38799999cef810859cdf2c1c57fb8965eb6ca4ffabf71f5e871",
+      "codeHashes": {
+        "scripts/equilibrium-105/browser-runner.mjs": "11473467bf3ef2c1fd14f5fb120a8228656612f2281750b49e5373e80696806f",
+        "src/compute/gpu.js": "7ee6706d635a797f8a8546f96968466c8d8f9dbb67d3bd2aadd6f46ea00a7967",
+        "src/compute/parallel-energy.js": "f204b19fbb512c63f6c36aa9e1bf862e201624c4a808f77f53097f0c13bcfd15",
+        "src/compute/pair-energy-worker.js": "923409cd818d5f5874358eb1469e3f444e8cc61c34cb6a988c40f46c55b5bc48",
+        "src/physics/pair-energy-partition.js": "22a2f43c0bbdb67c7959dcef72f185e2f3e0814cf9a6fd0baa135ea29e3ba688",
+        "src/compute/gpu-external-polynomial.js": "cd7bed0cf447558a08940009382c3e31d2882c38548473780532bcdc42fe7dff",
+        "src/physics/external-grid-polynomial.js": "fcc5185e99acd25c6f35078a9c2b42d103c2fbc9b65606c4873b2184682ddcbf",
+        "src/physics/granularity-analysis.js": "4a5edbd3ff27f0df4a98818c5118a4cfc678a8f84fc1db8b66df2aa4c0200b35",
+        "src/physics/validation-101.js": "c6e0f58068bf585bdb43fb71db77edad6197d7d62f29afb7223cec761c409275",
+        "src/physics/equilibrium-analysis.js": "21eb7a098144724e3d537d4f6c01bc3308683148522e0f97d5907d2be3661998",
+        "src/physics/disk-analysis.js": "ecd700024436712b55152cb4bf64463ea70ee5bb9e93a6cc7750a8a1057219f7",
+        "src/physics/external-grid.js": "9e9dcf0b32c2864a8f8c8e08a0e909c4e306771126e5df17d3b90c240a9d6540"
+      },
+      "executedSourceVerified": true
+    },
+    {
+      "path": "reports/v1.0.5/runs/B-bulge2-s2028-baryon200.json",
+      "sha256": "17c484d6f5e85b0c34244f38ff3c5cc7337505364a7728a3c8641c01eefba1c0",
+      "durationMyr": 200,
+      "samples": 41,
+      "sourceSHA256": "1b53e96aed73be041e916d06e400dbc32243e6620839669ecf3bb6469f0aaf4b",
+      "codeHashes": {
+        "scripts/equilibrium-105/browser-runner.mjs": "11473467bf3ef2c1fd14f5fb120a8228656612f2281750b49e5373e80696806f",
+        "src/compute/gpu.js": "7ee6706d635a797f8a8546f96968466c8d8f9dbb67d3bd2aadd6f46ea00a7967",
+        "src/compute/parallel-energy.js": "f204b19fbb512c63f6c36aa9e1bf862e201624c4a808f77f53097f0c13bcfd15",
+        "src/compute/pair-energy-worker.js": "923409cd818d5f5874358eb1469e3f444e8cc61c34cb6a988c40f46c55b5bc48",
+        "src/physics/pair-energy-partition.js": "22a2f43c0bbdb67c7959dcef72f185e2f3e0814cf9a6fd0baa135ea29e3ba688",
+        "src/compute/gpu-external-polynomial.js": "cd7bed0cf447558a08940009382c3e31d2882c38548473780532bcdc42fe7dff",
+        "src/physics/external-grid-polynomial.js": "fcc5185e99acd25c6f35078a9c2b42d103c2fbc9b65606c4873b2184682ddcbf",
+        "src/physics/granularity-analysis.js": "4a5edbd3ff27f0df4a98818c5118a4cfc678a8f84fc1db8b66df2aa4c0200b35",
+        "src/physics/validation-101.js": "c6e0f58068bf585bdb43fb71db77edad6197d7d62f29afb7223cec761c409275",
+        "src/physics/equilibrium-analysis.js": "21eb7a098144724e3d537d4f6c01bc3308683148522e0f97d5907d2be3661998",
+        "src/physics/disk-analysis.js": "ecd700024436712b55152cb4bf64463ea70ee5bb9e93a6cc7750a8a1057219f7",
+        "src/physics/external-grid.js": "9e9dcf0b32c2864a8f8c8e08a0e909c4e306771126e5df17d3b90c240a9d6540"
+      },
+      "executedSourceVerified": true
+    },
+    {
+      "path": "reports/v1.0.5/runs/B-thin2-s2026-baryon200.json",
+      "sha256": "7481b3f684030821468596df60b83996ab9b7a8bbd48980959c73e17e1309c04",
+      "durationMyr": 200,
+      "samples": 41,
+      "sourceSHA256": "b7c844a3c9d6aeb91d02f2e749069a9d91ca30aab13dbc9114c204956bcee2ac",
+      "codeHashes": {
+        "scripts/equilibrium-105/browser-runner.mjs": "11473467bf3ef2c1fd14f5fb120a8228656612f2281750b49e5373e80696806f",
+        "src/compute/gpu.js": "7ee6706d635a797f8a8546f96968466c8d8f9dbb67d3bd2aadd6f46ea00a7967",
+        "src/compute/parallel-energy.js": "f204b19fbb512c63f6c36aa9e1bf862e201624c4a808f77f53097f0c13bcfd15",
+        "src/compute/pair-energy-worker.js": "923409cd818d5f5874358eb1469e3f444e8cc61c34cb6a988c40f46c55b5bc48",
+        "src/physics/pair-energy-partition.js": "22a2f43c0bbdb67c7959dcef72f185e2f3e0814cf9a6fd0baa135ea29e3ba688",
+        "src/compute/gpu-external-polynomial.js": "cd7bed0cf447558a08940009382c3e31d2882c38548473780532bcdc42fe7dff",
+        "src/physics/external-grid-polynomial.js": "fcc5185e99acd25c6f35078a9c2b42d103c2fbc9b65606c4873b2184682ddcbf",
+        "src/physics/granularity-analysis.js": "4a5edbd3ff27f0df4a98818c5118a4cfc678a8f84fc1db8b66df2aa4c0200b35",
+        "src/physics/validation-101.js": "c6e0f58068bf585bdb43fb71db77edad6197d7d62f29afb7223cec761c409275",
+        "src/physics/equilibrium-analysis.js": "21eb7a098144724e3d537d4f6c01bc3308683148522e0f97d5907d2be3661998",
+        "src/physics/disk-analysis.js": "ecd700024436712b55152cb4bf64463ea70ee5bb9e93a6cc7750a8a1057219f7",
+        "src/physics/external-grid.js": "9e9dcf0b32c2864a8f8c8e08a0e909c4e306771126e5df17d3b90c240a9d6540"
+      },
+      "executedSourceVerified": true
+    },
+    {
+      "path": "reports/v1.0.5/runs/B-thin2-s2027-baryon200.json",
+      "sha256": "30254754f1a5d53cef72d7d43892028cbd63ab9de4e0791820bcf602e2abd389",
+      "durationMyr": 200,
+      "samples": 41,
+      "sourceSHA256": "081625f798355ed9f14287475b1406b60a5a2037bbf1681454460b6a510e4937",
+      "codeHashes": {
+        "scripts/equilibrium-105/browser-runner.mjs": "11473467bf3ef2c1fd14f5fb120a8228656612f2281750b49e5373e80696806f",
+        "src/compute/gpu.js": "7ee6706d635a797f8a8546f96968466c8d8f9dbb67d3bd2aadd6f46ea00a7967",
+        "src/compute/parallel-energy.js": "f204b19fbb512c63f6c36aa9e1bf862e201624c4a808f77f53097f0c13bcfd15",
+        "src/compute/pair-energy-worker.js": "923409cd818d5f5874358eb1469e3f444e8cc61c34cb6a988c40f46c55b5bc48",
+        "src/physics/pair-energy-partition.js": "22a2f43c0bbdb67c7959dcef72f185e2f3e0814cf9a6fd0baa135ea29e3ba688",
+        "src/compute/gpu-external-polynomial.js": "cd7bed0cf447558a08940009382c3e31d2882c38548473780532bcdc42fe7dff",
+        "src/physics/external-grid-polynomial.js": "fcc5185e99acd25c6f35078a9c2b42d103c2fbc9b65606c4873b2184682ddcbf",
+        "src/physics/granularity-analysis.js": "4a5edbd3ff27f0df4a98818c5118a4cfc678a8f84fc1db8b66df2aa4c0200b35",
+        "src/physics/validation-101.js": "c6e0f58068bf585bdb43fb71db77edad6197d7d62f29afb7223cec761c409275",
+        "src/physics/equilibrium-analysis.js": "21eb7a098144724e3d537d4f6c01bc3308683148522e0f97d5907d2be3661998",
+        "src/physics/disk-analysis.js": "ecd700024436712b55152cb4bf64463ea70ee5bb9e93a6cc7750a8a1057219f7",
+        "src/physics/external-grid.js": "9e9dcf0b32c2864a8f8c8e08a0e909c4e306771126e5df17d3b90c240a9d6540"
+      },
+      "executedSourceVerified": true
+    },
+    {
+      "path": "reports/v1.0.5/runs/B-thin2-s2028-baryon200.json",
+      "sha256": "0e5a2f848593d4972a1a85d28bb787d32f75f932600ad3a88911f4f6f54b342f",
+      "durationMyr": 200,
+      "samples": 41,
+      "sourceSHA256": "a8a1dfd1e7e9a226529d682e4f68344a5972c220d9e5551bd980ac5dd00dda8a",
+      "codeHashes": {
+        "scripts/equilibrium-105/browser-runner.mjs": "11473467bf3ef2c1fd14f5fb120a8228656612f2281750b49e5373e80696806f",
+        "src/compute/gpu.js": "7ee6706d635a797f8a8546f96968466c8d8f9dbb67d3bd2aadd6f46ea00a7967",
+        "src/compute/parallel-energy.js": "f204b19fbb512c63f6c36aa9e1bf862e201624c4a808f77f53097f0c13bcfd15",
+        "src/compute/pair-energy-worker.js": "923409cd818d5f5874358eb1469e3f444e8cc61c34cb6a988c40f46c55b5bc48",
+        "src/physics/pair-energy-partition.js": "22a2f43c0bbdb67c7959dcef72f185e2f3e0814cf9a6fd0baa135ea29e3ba688",
+        "src/compute/gpu-external-polynomial.js": "cd7bed0cf447558a08940009382c3e31d2882c38548473780532bcdc42fe7dff",
+        "src/physics/external-grid-polynomial.js": "fcc5185e99acd25c6f35078a9c2b42d103c2fbc9b65606c4873b2184682ddcbf",
+        "src/physics/granularity-analysis.js": "4a5edbd3ff27f0df4a98818c5118a4cfc678a8f84fc1db8b66df2aa4c0200b35",
+        "src/physics/validation-101.js": "c6e0f58068bf585bdb43fb71db77edad6197d7d62f29afb7223cec761c409275",
+        "src/physics/equilibrium-analysis.js": "21eb7a098144724e3d537d4f6c01bc3308683148522e0f97d5907d2be3661998",
+        "src/physics/disk-analysis.js": "ecd700024436712b55152cb4bf64463ea70ee5bb9e93a6cc7750a8a1057219f7",
+        "src/physics/external-grid.js": "9e9dcf0b32c2864a8f8c8e08a0e909c4e306771126e5df17d3b90c240a9d6540"
+      },
+      "executedSourceVerified": true
+    },
+    {
+      "path": "reports/v1.0.5/runs/B-thick2-s2026-baryon200.json",
+      "sha256": "4d805ea6f828f64297e6aa851941b60f95fe6680eac47cfbde42ac09e5a09dac",
+      "durationMyr": 200,
+      "samples": 41,
+      "sourceSHA256": "584b0bbb4fd07d44e6b9e3108c1f931b09dcd60ee238adfe0dbed1ad616ddec1",
+      "codeHashes": {
+        "scripts/equilibrium-105/browser-runner.mjs": "11473467bf3ef2c1fd14f5fb120a8228656612f2281750b49e5373e80696806f",
+        "src/compute/gpu.js": "7ee6706d635a797f8a8546f96968466c8d8f9dbb67d3bd2aadd6f46ea00a7967",
+        "src/compute/parallel-energy.js": "f204b19fbb512c63f6c36aa9e1bf862e201624c4a808f77f53097f0c13bcfd15",
+        "src/compute/pair-energy-worker.js": "923409cd818d5f5874358eb1469e3f444e8cc61c34cb6a988c40f46c55b5bc48",
+        "src/physics/pair-energy-partition.js": "22a2f43c0bbdb67c7959dcef72f185e2f3e0814cf9a6fd0baa135ea29e3ba688",
+        "src/compute/gpu-external-polynomial.js": "cd7bed0cf447558a08940009382c3e31d2882c38548473780532bcdc42fe7dff",
+        "src/physics/external-grid-polynomial.js": "fcc5185e99acd25c6f35078a9c2b42d103c2fbc9b65606c4873b2184682ddcbf",
+        "src/physics/granularity-analysis.js": "4a5edbd3ff27f0df4a98818c5118a4cfc678a8f84fc1db8b66df2aa4c0200b35",
+        "src/physics/validation-101.js": "c6e0f58068bf585bdb43fb71db77edad6197d7d62f29afb7223cec761c409275",
+        "src/physics/equilibrium-analysis.js": "21eb7a098144724e3d537d4f6c01bc3308683148522e0f97d5907d2be3661998",
+        "src/physics/disk-analysis.js": "ecd700024436712b55152cb4bf64463ea70ee5bb9e93a6cc7750a8a1057219f7",
+        "src/physics/external-grid.js": "9e9dcf0b32c2864a8f8c8e08a0e909c4e306771126e5df17d3b90c240a9d6540"
+      },
+      "executedSourceVerified": true
+    },
+    {
+      "path": "reports/v1.0.5/runs/B-thick2-s2027-baryon200.json",
+      "sha256": "e58545efc391a2b8ea3154aac1ec291f4fbe5abf1e544a4b8f8c3f38c5ea0739",
+      "durationMyr": 200,
+      "samples": 41,
+      "sourceSHA256": "9508744a7c7e82ddaf1036288425714b22d54e2382937e18a74e53adde142ffc",
+      "codeHashes": {
+        "scripts/equilibrium-105/browser-runner.mjs": "11473467bf3ef2c1fd14f5fb120a8228656612f2281750b49e5373e80696806f",
+        "src/compute/gpu.js": "7ee6706d635a797f8a8546f96968466c8d8f9dbb67d3bd2aadd6f46ea00a7967",
+        "src/compute/parallel-energy.js": "f204b19fbb512c63f6c36aa9e1bf862e201624c4a808f77f53097f0c13bcfd15",
+        "src/compute/pair-energy-worker.js": "923409cd818d5f5874358eb1469e3f444e8cc61c34cb6a988c40f46c55b5bc48",
+        "src/physics/pair-energy-partition.js": "22a2f43c0bbdb67c7959dcef72f185e2f3e0814cf9a6fd0baa135ea29e3ba688",
+        "src/compute/gpu-external-polynomial.js": "cd7bed0cf447558a08940009382c3e31d2882c38548473780532bcdc42fe7dff",
+        "src/physics/external-grid-polynomial.js": "fcc5185e99acd25c6f35078a9c2b42d103c2fbc9b65606c4873b2184682ddcbf",
+        "src/physics/granularity-analysis.js": "4a5edbd3ff27f0df4a98818c5118a4cfc678a8f84fc1db8b66df2aa4c0200b35",
+        "src/physics/validation-101.js": "c6e0f58068bf585bdb43fb71db77edad6197d7d62f29afb7223cec761c409275",
+        "src/physics/equilibrium-analysis.js": "21eb7a098144724e3d537d4f6c01bc3308683148522e0f97d5907d2be3661998",
+        "src/physics/disk-analysis.js": "ecd700024436712b55152cb4bf64463ea70ee5bb9e93a6cc7750a8a1057219f7",
+        "src/physics/external-grid.js": "9e9dcf0b32c2864a8f8c8e08a0e909c4e306771126e5df17d3b90c240a9d6540"
+      },
+      "executedSourceVerified": true
+    },
+    {
+      "path": "reports/v1.0.5/runs/B-thick2-s2028-baryon200.json",
+      "sha256": "9e7d47e9c3f94830d0675d005e47eca3d7ff47e3286d4b29ade1bfb6d5123e05",
+      "durationMyr": 200,
+      "samples": 41,
+      "sourceSHA256": "bd933f28e90e825b7b3680becc6b70782142ccba37913f8a80f23f4a984ea84d",
+      "codeHashes": {
+        "scripts/equilibrium-105/browser-runner.mjs": "11473467bf3ef2c1fd14f5fb120a8228656612f2281750b49e5373e80696806f",
+        "src/compute/gpu.js": "7ee6706d635a797f8a8546f96968466c8d8f9dbb67d3bd2aadd6f46ea00a7967",
+        "src/compute/parallel-energy.js": "f204b19fbb512c63f6c36aa9e1bf862e201624c4a808f77f53097f0c13bcfd15",
+        "src/compute/pair-energy-worker.js": "923409cd818d5f5874358eb1469e3f444e8cc61c34cb6a988c40f46c55b5bc48",
+        "src/physics/pair-energy-partition.js": "22a2f43c0bbdb67c7959dcef72f185e2f3e0814cf9a6fd0baa135ea29e3ba688",
+        "src/compute/gpu-external-polynomial.js": "cd7bed0cf447558a08940009382c3e31d2882c38548473780532bcdc42fe7dff",
+        "src/physics/external-grid-polynomial.js": "fcc5185e99acd25c6f35078a9c2b42d103c2fbc9b65606c4873b2184682ddcbf",
+        "src/physics/granularity-analysis.js": "4a5edbd3ff27f0df4a98818c5118a4cfc678a8f84fc1db8b66df2aa4c0200b35",
+        "src/physics/validation-101.js": "c6e0f58068bf585bdb43fb71db77edad6197d7d62f29afb7223cec761c409275",
+        "src/physics/equilibrium-analysis.js": "21eb7a098144724e3d537d4f6c01bc3308683148522e0f97d5907d2be3661998",
+        "src/physics/disk-analysis.js": "ecd700024436712b55152cb4bf64463ea70ee5bb9e93a6cc7750a8a1057219f7",
+        "src/physics/external-grid.js": "9e9dcf0b32c2864a8f8c8e08a0e909c4e306771126e5df17d3b90c240a9d6540"
+      },
+      "executedSourceVerified": true
+    },
+    {
+      "path": "reports/v1.0.5/runs/F-b2026-h2026-pilot-F.json",
+      "sha256": "1ddbf601822cf2f9ea23e7d4e8be6cd329b085682abeaf48c69f710900daa6e1",
+      "durationMyr": 2,
+      "samples": 3,
+      "sourceSHA256": "d1ff21a1881f61d868e98a5b0873e2da3829adc13a961177c38607a409321a6b",
+      "codeHashes": {
+        "scripts/equilibrium-105/browser-runner.mjs": "11473467bf3ef2c1fd14f5fb120a8228656612f2281750b49e5373e80696806f",
+        "src/compute/gpu.js": "7ee6706d635a797f8a8546f96968466c8d8f9dbb67d3bd2aadd6f46ea00a7967",
+        "src/compute/parallel-energy.js": "f204b19fbb512c63f6c36aa9e1bf862e201624c4a808f77f53097f0c13bcfd15",
+        "src/compute/pair-energy-worker.js": "923409cd818d5f5874358eb1469e3f444e8cc61c34cb6a988c40f46c55b5bc48",
+        "src/physics/pair-energy-partition.js": "22a2f43c0bbdb67c7959dcef72f185e2f3e0814cf9a6fd0baa135ea29e3ba688",
+        "src/compute/gpu-external-polynomial.js": "cd7bed0cf447558a08940009382c3e31d2882c38548473780532bcdc42fe7dff",
+        "src/physics/external-grid-polynomial.js": "fcc5185e99acd25c6f35078a9c2b42d103c2fbc9b65606c4873b2184682ddcbf",
+        "src/physics/granularity-analysis.js": "4a5edbd3ff27f0df4a98818c5118a4cfc678a8f84fc1db8b66df2aa4c0200b35",
+        "src/physics/validation-101.js": "c6e0f58068bf585bdb43fb71db77edad6197d7d62f29afb7223cec761c409275",
+        "src/physics/equilibrium-analysis.js": "21eb7a098144724e3d537d4f6c01bc3308683148522e0f97d5907d2be3661998",
+        "src/physics/disk-analysis.js": "ecd700024436712b55152cb4bf64463ea70ee5bb9e93a6cc7750a8a1057219f7",
+        "src/physics/external-grid.js": "9e9dcf0b32c2864a8f8c8e08a0e909c4e306771126e5df17d3b90c240a9d6540"
+      },
+      "executedSourceVerified": true
+    },
+    {
+      "path": "reports/v1.0.5/runs/E-b2026-h2027-halo-E200.json",
+      "sha256": "839df4942f60ed723a4091d221543818fa6f4a6ddb576f0669af22fc6d356bb1",
+      "durationMyr": 200,
+      "samples": 21,
+      "sourceSHA256": "51a880906301213131a695178f256b252193a7dae861b00d4407566f4a48569f",
+      "codeHashes": {
+        "scripts/equilibrium-105/browser-runner.mjs": "15dae6f8906e6229798f30342c01bf6ef47a20f3bf2a750713862c597f4c661a",
+        "src/compute/gpu.js": "7ee6706d635a797f8a8546f96968466c8d8f9dbb67d3bd2aadd6f46ea00a7967",
+        "src/compute/parallel-energy.js": "f204b19fbb512c63f6c36aa9e1bf862e201624c4a808f77f53097f0c13bcfd15",
+        "src/compute/pair-energy-worker.js": "923409cd818d5f5874358eb1469e3f444e8cc61c34cb6a988c40f46c55b5bc48",
+        "src/physics/pair-energy-partition.js": "22a2f43c0bbdb67c7959dcef72f185e2f3e0814cf9a6fd0baa135ea29e3ba688",
+        "src/compute/gpu-external-polynomial.js": "cd7bed0cf447558a08940009382c3e31d2882c38548473780532bcdc42fe7dff",
+        "src/physics/external-grid-polynomial.js": "fcc5185e99acd25c6f35078a9c2b42d103c2fbc9b65606c4873b2184682ddcbf",
+        "src/physics/granularity-analysis.js": "4a5edbd3ff27f0df4a98818c5118a4cfc678a8f84fc1db8b66df2aa4c0200b35",
+        "src/physics/validation-101.js": "c6e0f58068bf585bdb43fb71db77edad6197d7d62f29afb7223cec761c409275",
+        "src/physics/equilibrium-analysis.js": "21eb7a098144724e3d537d4f6c01bc3308683148522e0f97d5907d2be3661998",
+        "src/physics/disk-analysis.js": "ecd700024436712b55152cb4bf64463ea70ee5bb9e93a6cc7750a8a1057219f7",
+        "src/physics/external-grid.js": "9e9dcf0b32c2864a8f8c8e08a0e909c4e306771126e5df17d3b90c240a9d6540"
+      },
+      "executedSourceVerified": true
+    },
+    {
+      "path": "reports/v1.0.5/runs/E-b2026-h2028-halo-E200.json",
+      "sha256": "9b81bad2fa9c11c7ad794c616194dade08def1c8c1f2ed0b82f8e8fb45fca65b",
+      "durationMyr": 200,
+      "samples": 21,
+      "sourceSHA256": "0dc952e155ec997f5ab731f30a0112a79d702a4571a074d38bc093d0b9caeed9",
+      "codeHashes": {
+        "scripts/equilibrium-105/browser-runner.mjs": "15dae6f8906e6229798f30342c01bf6ef47a20f3bf2a750713862c597f4c661a",
+        "src/compute/gpu.js": "7ee6706d635a797f8a8546f96968466c8d8f9dbb67d3bd2aadd6f46ea00a7967",
+        "src/compute/parallel-energy.js": "f204b19fbb512c63f6c36aa9e1bf862e201624c4a808f77f53097f0c13bcfd15",
+        "src/compute/pair-energy-worker.js": "923409cd818d5f5874358eb1469e3f444e8cc61c34cb6a988c40f46c55b5bc48",
+        "src/physics/pair-energy-partition.js": "22a2f43c0bbdb67c7959dcef72f185e2f3e0814cf9a6fd0baa135ea29e3ba688",
+        "src/compute/gpu-external-polynomial.js": "cd7bed0cf447558a08940009382c3e31d2882c38548473780532bcdc42fe7dff",
+        "src/physics/external-grid-polynomial.js": "fcc5185e99acd25c6f35078a9c2b42d103c2fbc9b65606c4873b2184682ddcbf",
+        "src/physics/granularity-analysis.js": "4a5edbd3ff27f0df4a98818c5118a4cfc678a8f84fc1db8b66df2aa4c0200b35",
+        "src/physics/validation-101.js": "c6e0f58068bf585bdb43fb71db77edad6197d7d62f29afb7223cec761c409275",
+        "src/physics/equilibrium-analysis.js": "21eb7a098144724e3d537d4f6c01bc3308683148522e0f97d5907d2be3661998",
+        "src/physics/disk-analysis.js": "ecd700024436712b55152cb4bf64463ea70ee5bb9e93a6cc7750a8a1057219f7",
+        "src/physics/external-grid.js": "9e9dcf0b32c2864a8f8c8e08a0e909c4e306771126e5df17d3b90c240a9d6540"
+      },
+      "executedSourceVerified": true
+    },
+    {
+      "path": "reports/v1.0.5/runs/F-b2026-h2026-halo-F200.json",
+      "sha256": "6e4a96bde43a566c83444afdcb9b666f06369dff91154a7fa0346123e2ac5a3f",
+      "durationMyr": 200,
+      "samples": 21,
+      "sourceSHA256": "d1ff21a1881f61d868e98a5b0873e2da3829adc13a961177c38607a409321a6b",
+      "codeHashes": {
+        "scripts/equilibrium-105/browser-runner.mjs": "c5e4b57143cc09aa2ac8035de8f4069baf2d5a873fb07b8a887c76c17144421f",
+        "src/compute/gpu.js": "7ee6706d635a797f8a8546f96968466c8d8f9dbb67d3bd2aadd6f46ea00a7967",
+        "src/compute/parallel-energy.js": "f204b19fbb512c63f6c36aa9e1bf862e201624c4a808f77f53097f0c13bcfd15",
+        "src/compute/pair-energy-worker.js": "923409cd818d5f5874358eb1469e3f444e8cc61c34cb6a988c40f46c55b5bc48",
+        "src/physics/pair-energy-partition.js": "22a2f43c0bbdb67c7959dcef72f185e2f3e0814cf9a6fd0baa135ea29e3ba688",
+        "src/compute/gpu-external-polynomial.js": "cd7bed0cf447558a08940009382c3e31d2882c38548473780532bcdc42fe7dff",
+        "src/physics/external-grid-polynomial.js": "fcc5185e99acd25c6f35078a9c2b42d103c2fbc9b65606c4873b2184682ddcbf",
+        "src/physics/granularity-analysis.js": "4a5edbd3ff27f0df4a98818c5118a4cfc678a8f84fc1db8b66df2aa4c0200b35",
+        "src/physics/validation-101.js": "c6e0f58068bf585bdb43fb71db77edad6197d7d62f29afb7223cec761c409275",
+        "src/physics/equilibrium-analysis.js": "21eb7a098144724e3d537d4f6c01bc3308683148522e0f97d5907d2be3661998",
+        "src/physics/disk-analysis.js": "ecd700024436712b55152cb4bf64463ea70ee5bb9e93a6cc7750a8a1057219f7",
+        "src/physics/stationarity-105.js": "2c75946a5def93159e19aa5d4fe31daa419dc786d29940d513c72644d0cc563b",
+        "src/physics/external-grid.js": "9e9dcf0b32c2864a8f8c8e08a0e909c4e306771126e5df17d3b90c240a9d6540"
+      },
+      "executedSourceVerified": true
+    },
+    {
+      "path": "reports/v1.0.5/runs/F-b2026-h2027-halo-F200.json",
+      "sha256": "caace3c6dfc64c27cfd60b142f554d8254c0de0969ec84c7224cb34e10a69c0c",
+      "durationMyr": 200,
+      "samples": 21,
+      "sourceSHA256": "193b5ee618236dfb07196e8d89134e7112ae934723d7888fa1a8f8544c98e326",
+      "codeHashes": {
+        "scripts/equilibrium-105/browser-runner.mjs": "c5e4b57143cc09aa2ac8035de8f4069baf2d5a873fb07b8a887c76c17144421f",
+        "src/compute/gpu.js": "7ee6706d635a797f8a8546f96968466c8d8f9dbb67d3bd2aadd6f46ea00a7967",
+        "src/compute/parallel-energy.js": "f204b19fbb512c63f6c36aa9e1bf862e201624c4a808f77f53097f0c13bcfd15",
+        "src/compute/pair-energy-worker.js": "923409cd818d5f5874358eb1469e3f444e8cc61c34cb6a988c40f46c55b5bc48",
+        "src/physics/pair-energy-partition.js": "22a2f43c0bbdb67c7959dcef72f185e2f3e0814cf9a6fd0baa135ea29e3ba688",
+        "src/compute/gpu-external-polynomial.js": "cd7bed0cf447558a08940009382c3e31d2882c38548473780532bcdc42fe7dff",
+        "src/physics/external-grid-polynomial.js": "fcc5185e99acd25c6f35078a9c2b42d103c2fbc9b65606c4873b2184682ddcbf",
+        "src/physics/granularity-analysis.js": "4a5edbd3ff27f0df4a98818c5118a4cfc678a8f84fc1db8b66df2aa4c0200b35",
+        "src/physics/validation-101.js": "c6e0f58068bf585bdb43fb71db77edad6197d7d62f29afb7223cec761c409275",
+        "src/physics/equilibrium-analysis.js": "21eb7a098144724e3d537d4f6c01bc3308683148522e0f97d5907d2be3661998",
+        "src/physics/disk-analysis.js": "ecd700024436712b55152cb4bf64463ea70ee5bb9e93a6cc7750a8a1057219f7",
+        "src/physics/stationarity-105.js": "2c75946a5def93159e19aa5d4fe31daa419dc786d29940d513c72644d0cc563b",
+        "src/physics/external-grid.js": "9e9dcf0b32c2864a8f8c8e08a0e909c4e306771126e5df17d3b90c240a9d6540"
+      },
+      "executedSourceVerified": true
+    },
+    {
+      "path": "reports/v1.0.5/runs/F-b2026-h2028-halo-F200.json",
+      "sha256": "23d6999f477e024540c23f30faf28b5e32540a5699caccc73bb8d00181bd22f1",
+      "durationMyr": 200,
+      "samples": 21,
+      "sourceSHA256": "6194f4d1bf51ae0e961616f111cbf4356b8d3cce8072ddc09b6bc2752bc78c83",
+      "codeHashes": {
+        "scripts/equilibrium-105/browser-runner.mjs": "c5e4b57143cc09aa2ac8035de8f4069baf2d5a873fb07b8a887c76c17144421f",
+        "src/compute/gpu.js": "7ee6706d635a797f8a8546f96968466c8d8f9dbb67d3bd2aadd6f46ea00a7967",
+        "src/compute/parallel-energy.js": "f204b19fbb512c63f6c36aa9e1bf862e201624c4a808f77f53097f0c13bcfd15",
+        "src/compute/pair-energy-worker.js": "923409cd818d5f5874358eb1469e3f444e8cc61c34cb6a988c40f46c55b5bc48",
+        "src/physics/pair-energy-partition.js": "22a2f43c0bbdb67c7959dcef72f185e2f3e0814cf9a6fd0baa135ea29e3ba688",
+        "src/compute/gpu-external-polynomial.js": "cd7bed0cf447558a08940009382c3e31d2882c38548473780532bcdc42fe7dff",
+        "src/physics/external-grid-polynomial.js": "fcc5185e99acd25c6f35078a9c2b42d103c2fbc9b65606c4873b2184682ddcbf",
+        "src/physics/granularity-analysis.js": "4a5edbd3ff27f0df4a98818c5118a4cfc678a8f84fc1db8b66df2aa4c0200b35",
+        "src/physics/validation-101.js": "c6e0f58068bf585bdb43fb71db77edad6197d7d62f29afb7223cec761c409275",
+        "src/physics/equilibrium-analysis.js": "21eb7a098144724e3d537d4f6c01bc3308683148522e0f97d5907d2be3661998",
+        "src/physics/disk-analysis.js": "ecd700024436712b55152cb4bf64463ea70ee5bb9e93a6cc7750a8a1057219f7",
+        "src/physics/stationarity-105.js": "2c75946a5def93159e19aa5d4fe31daa419dc786d29940d513c72644d0cc563b",
+        "src/physics/external-grid.js": "9e9dcf0b32c2864a8f8c8e08a0e909c4e306771126e5df17d3b90c240a9d6540"
+      },
+      "executedSourceVerified": true
+    },
+    {
+      "path": "reports/v1.0.5/runs/F-b2026-h2026-schedule-pilot.json",
+      "sha256": "9829f4684add57beeefd991daf47080cdaf13d0dff695a58652a618f8909fead",
+      "durationMyr": 2,
+      "samples": 3,
+      "sourceSHA256": "d1ff21a1881f61d868e98a5b0873e2da3829adc13a961177c38607a409321a6b",
+      "codeHashes": {
+        "scripts/equilibrium-105/browser-runner.mjs": "c5e4b57143cc09aa2ac8035de8f4069baf2d5a873fb07b8a887c76c17144421f",
+        "src/compute/gpu.js": "7ee6706d635a797f8a8546f96968466c8d8f9dbb67d3bd2aadd6f46ea00a7967",
+        "src/compute/parallel-energy.js": "f204b19fbb512c63f6c36aa9e1bf862e201624c4a808f77f53097f0c13bcfd15",
+        "src/compute/pair-energy-worker.js": "923409cd818d5f5874358eb1469e3f444e8cc61c34cb6a988c40f46c55b5bc48",
+        "src/physics/pair-energy-partition.js": "22a2f43c0bbdb67c7959dcef72f185e2f3e0814cf9a6fd0baa135ea29e3ba688",
+        "src/compute/gpu-external-polynomial.js": "cd7bed0cf447558a08940009382c3e31d2882c38548473780532bcdc42fe7dff",
+        "src/physics/external-grid-polynomial.js": "fcc5185e99acd25c6f35078a9c2b42d103c2fbc9b65606c4873b2184682ddcbf",
+        "src/physics/granularity-analysis.js": "4a5edbd3ff27f0df4a98818c5118a4cfc678a8f84fc1db8b66df2aa4c0200b35",
+        "src/physics/validation-101.js": "c6e0f58068bf585bdb43fb71db77edad6197d7d62f29afb7223cec761c409275",
+        "src/physics/equilibrium-analysis.js": "21eb7a098144724e3d537d4f6c01bc3308683148522e0f97d5907d2be3661998",
+        "src/physics/disk-analysis.js": "ecd700024436712b55152cb4bf64463ea70ee5bb9e93a6cc7750a8a1057219f7",
+        "src/physics/stationarity-105.js": "2c75946a5def93159e19aa5d4fe31daa419dc786d29940d513c72644d0cc563b",
+        "src/physics/external-grid.js": "9e9dcf0b32c2864a8f8c8e08a0e909c4e306771126e5df17d3b90c240a9d6540"
+      },
+      "executedSourceVerified": true
+    }
+  ],
+  "native": [
+    {
+      "file": "A-MIX-s2026-t200-analysis.json",
+      "rawSHA256": "c9aac4d990b6a8558e4db4a5b13b3669e23cbf0e5aeef8673cf9234bb61e107a"
+    },
+    {
+      "file": "A-MIX-s2027-t200-analysis.json",
+      "rawSHA256": "62010cd0a261f62df04dd04634bb0fecb4ffe3b8599d1293cdcfd31582f7a196"
+    },
+    {
+      "file": "A-MIX-s2028-t200-analysis.json",
+      "rawSHA256": "a8cb7dc81d8fec74a62aaabac1fe4e2645ec332c99a9e56e03d6dd993ea051b2"
+    }
+  ],
+  "physicalCoreUnchanged": [
+    "src/compute/gpu.js",
+    "src/compute/gpu-external-polynomial.js",
+    "src/physics/forces.js",
+    "src/physics/integrator.js",
+    "src/physics/constants.js"
+  ],
+  "reusedEPhaseVerified": true,
+  "historicalUniqueControls": 9,
+  "figures": 17,
+  "qualification": "Checks verify provenance, arrays, coverage, definitions and historical identity; not equilibrium certification."
+}

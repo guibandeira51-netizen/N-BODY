@@ -1,0 +1,2482 @@
+{
+  "initial": {
+    "options": [
+      "",
+      "50",
+      "100",
+      "150",
+      "200"
+    ],
+    "required": true,
+    "resetDisabled": true,
+    "startDisabled": true,
+    "value": ""
+  },
+  "runs": [
+    {
+      "choice": 50,
+      "data": {
+        "schema": "energy-panels-v1",
+        "realizationId": "6e20c44c-ac42-4acf-b317-08c448e9d108",
+        "configuration": {
+          "n": 256,
+          "dt": 0.1,
+          "epsilon": 0.1,
+          "theta": 0.5,
+          "budgetBytes": 536870912,
+          "seed": 2026,
+          "energyAuditCadenceMyr": 50,
+          "withHalo": true,
+          "requestedAlgorithm": "direct",
+          "requestedBackend": "cpu-direct",
+          "selected": "cpu-direct",
+          "diagnosticOptions": {
+            "dt": 0.1,
+            "energyAuditCadenceMyr": 50,
+            "withHalo": true,
+            "forceMethod": "GPU direct f32",
+            "algorithm": "direct",
+            "epsilon": 0.1,
+            "theta": 0.5
+          }
+        },
+        "codeIdentity": "69dcff9a57a26743bebd3d1f0c2bd7038c2d3b2ff10a76d896ba03c601f81075",
+        "units": "10¹⁰ M☉ kpc²/Myr²",
+        "relativeUnits": "percent",
+        "directSampling": {
+          "cadenceMyr": 50,
+          "events": [
+            {
+              "type": "completed",
+              "timeMyr": 0,
+              "reason": "Referência direta Float64 calculada no snapshot preservado."
+            },
+            {
+              "type": "completed",
+              "timeMyr": 51.30000000000001,
+              "reason": "Referência direta Float64 calculada no snapshot preservado."
+            }
+          ]
+        },
+        "xDomain": [
+          0,
+          86.50000000000004
+        ],
+        "estimated": [
+          {
+            "timeMyr": 0,
+            "n": 256,
+            "mass": 104.9315764173288,
+            "effectiveDt": 0.1,
+            "treeTheta": 0.5,
+            "treeOrder": "monopole",
+            "treeLeafBucket": 8,
+            "diagnosticCostMs": 6.584999999962747,
+            "K": 1.6118708038836265,
+            "U": -2.9547656397238637,
+            "E": -1.3428948358402373,
+            "G": 0.04498502151469553,
+            "epsilonSquared": 0.010000000000000002,
+            "forceAlgorithm": "direct",
+            "trajectoryPrecision": "Float64",
+            "evaluationPrecision": "Float64 compensated CPU evaluation",
+            "velocityEpoch": "full-step, after final KDK kick",
+            "externalPotential": 0,
+            "method": "Barnes–Hut monopolar · aproximação",
+            "relative": {
+              "signed": 0,
+              "absolute": 0,
+              "percent": 0,
+              "denominator": 1.3428948358402373,
+              "normalization": "|E0|"
+            }
+          },
+          {
+            "timeMyr": 51.30000000000001,
+            "n": 256,
+            "mass": 104.9315764173288,
+            "effectiveDt": 0.1,
+            "treeTheta": 0.5,
+            "treeOrder": "monopole",
+            "treeLeafBucket": 8,
+            "diagnosticCostMs": 2.2299999995157123,
+            "K": 1.5261048957359427,
+            "U": -2.8693930404682204,
+            "E": -1.3432881447322778,
+            "G": 0.04498502151469553,
+            "epsilonSquared": 0.010000000000000002,
+            "forceAlgorithm": "direct",
+            "trajectoryPrecision": "Float64",
+            "evaluationPrecision": "Float64 compensated CPU evaluation",
+            "velocityEpoch": "full-step, after final KDK kick",
+            "externalPotential": 0,
+            "method": "Barnes–Hut monopolar · aproximação",
+            "relative": {
+              "signed": -0.00029288137949714306,
+              "absolute": 0.00029288137949714306,
+              "percent": -0.029288137949714306,
+              "denominator": 1.3428948358402373,
+              "normalization": "|E0|"
+            }
+          },
+          {
+            "timeMyr": 86.50000000000004,
+            "n": 256,
+            "mass": 104.9315764173288,
+            "effectiveDt": 0.1,
+            "treeTheta": 0.5,
+            "treeOrder": "monopole",
+            "treeLeafBucket": 8,
+            "diagnosticCostMs": 2.334999999962747,
+            "K": 1.6078530061517686,
+            "U": -2.9515425730962814,
+            "E": -1.3436895669445128,
+            "G": 0.04498502151469553,
+            "epsilonSquared": 0.010000000000000002,
+            "forceAlgorithm": "direct",
+            "trajectoryPrecision": "Float64",
+            "evaluationPrecision": "Float64 compensated CPU evaluation",
+            "velocityEpoch": "full-step, after final KDK kick",
+            "externalPotential": 0,
+            "method": "Barnes–Hut monopolar · aproximação",
+            "relative": {
+              "signed": -0.0005918044235967812,
+              "absolute": 0.0005918044235967812,
+              "percent": -0.05918044235967811,
+              "denominator": 1.3428948358402373,
+              "normalization": "|E0|"
+            }
+          }
+        ],
+        "direct": [
+          {
+            "timeMyr": 0,
+            "n": 256,
+            "mass": 104.9315764173288,
+            "effectiveDt": 0.1,
+            "treeTheta": 0.5,
+            "diagnosticCostMs": 34.830000000074506,
+            "K": 1.6118708038836265,
+            "U": -2.9559600140698503,
+            "E": -1.3440892101862238,
+            "G": 0.04498502151469553,
+            "epsilonSquared": 0.010000000000000002,
+            "forceAlgorithm": "direct",
+            "trajectoryPrecision": "Float64",
+            "evaluationPrecision": "Float64 compensated CPU evaluation",
+            "velocityEpoch": "full-step, after final KDK kick",
+            "externalPotential": 0,
+            "method": "Pares diretos Float64 · CPU compensada",
+            "relative": {
+              "signed": 0,
+              "absolute": 0,
+              "percent": 0,
+              "denominator": 1.3440892101862238,
+              "normalization": "|E0|"
+            },
+            "origin": "automatic",
+            "configuration": {
+              "n": 256,
+              "dt": 0.1,
+              "epsilon": 0.1,
+              "theta": 0.5,
+              "budgetBytes": 536870912,
+              "seed": 2026,
+              "energyAuditCadenceMyr": 50,
+              "withHalo": true,
+              "requestedAlgorithm": "direct",
+              "requestedBackend": "cpu-direct",
+              "selected": "cpu-direct",
+              "diagnosticOptions": {
+                "dt": 0.1,
+                "energyAuditCadenceMyr": 50,
+                "withHalo": true,
+                "forceMethod": "GPU direct f32",
+                "algorithm": "direct",
+                "epsilon": 0.1,
+                "theta": 0.5
+              }
+            },
+            "backend": "CPU Worker",
+            "requestedTimeMyr": 0,
+            "samplingCadenceMyr": 50
+          },
+          {
+            "timeMyr": 51.30000000000001,
+            "n": 256,
+            "mass": 104.9315764173288,
+            "effectiveDt": 0.1,
+            "treeTheta": 0.5,
+            "diagnosticCostMs": 36.75,
+            "K": 1.5261048957359427,
+            "U": -2.8701984566819148,
+            "E": -1.344093560945972,
+            "G": 0.04498502151469553,
+            "epsilonSquared": 0.010000000000000002,
+            "forceAlgorithm": "direct",
+            "trajectoryPrecision": "Float64",
+            "evaluationPrecision": "Float64 compensated CPU evaluation",
+            "velocityEpoch": "full-step, after final KDK kick",
+            "externalPotential": 0,
+            "method": "Pares diretos Float64 · CPU compensada",
+            "relative": {
+              "signed": -0.0000032369575734097376,
+              "absolute": 0.0000032369575734097376,
+              "percent": -0.00032369575734097377,
+              "denominator": 1.3440892101862238,
+              "normalization": "|E0|"
+            },
+            "origin": "automatic",
+            "configuration": {
+              "n": 256,
+              "dt": 0.1,
+              "epsilon": 0.1,
+              "theta": 0.5,
+              "budgetBytes": 536870912,
+              "seed": 2026,
+              "energyAuditCadenceMyr": 50,
+              "withHalo": true,
+              "requestedAlgorithm": "direct",
+              "requestedBackend": "cpu-direct",
+              "selected": "cpu-direct",
+              "diagnosticOptions": {
+                "dt": 0.1,
+                "energyAuditCadenceMyr": 50,
+                "withHalo": true,
+                "forceMethod": "GPU direct f32",
+                "algorithm": "direct",
+                "epsilon": 0.1,
+                "theta": 0.5
+              }
+            },
+            "backend": "CPU Worker",
+            "requestedTimeMyr": 50,
+            "samplingCadenceMyr": 50
+          }
+        ],
+        "comparison": [
+          {
+            "timeMyr": 0,
+            "method": "Diferença de estimadores no mesmo snapshot",
+            "BH": {
+              "timeMyr": 0,
+              "n": 256,
+              "mass": 104.9315764173288,
+              "effectiveDt": 0.1,
+              "treeTheta": 0.5,
+              "treeOrder": "monopole",
+              "treeLeafBucket": 8,
+              "diagnosticCostMs": 6.584999999962747,
+              "K": 1.6118708038836265,
+              "U": -2.9547656397238637,
+              "E": -1.3428948358402373,
+              "G": 0.04498502151469553,
+              "epsilonSquared": 0.010000000000000002,
+              "forceAlgorithm": "direct",
+              "trajectoryPrecision": "Float64",
+              "evaluationPrecision": "Float64 compensated CPU evaluation",
+              "velocityEpoch": "full-step, after final KDK kick",
+              "externalPotential": 0
+            },
+            "direct": {
+              "timeMyr": 0,
+              "n": 256,
+              "mass": 104.9315764173288,
+              "effectiveDt": 0.1,
+              "treeTheta": 0.5,
+              "diagnosticCostMs": 34.830000000074506,
+              "K": 1.6118708038836265,
+              "U": -2.9559600140698503,
+              "E": -1.3440892101862238,
+              "G": 0.04498502151469553,
+              "epsilonSquared": 0.010000000000000002,
+              "forceAlgorithm": "direct",
+              "trajectoryPrecision": "Float64",
+              "evaluationPrecision": "Float64 compensated CPU evaluation",
+              "velocityEpoch": "full-step, after final KDK kick",
+              "externalPotential": 0
+            },
+            "B": 0.0011943743459865708,
+            "epsilonPercent": 0.08886124052889986,
+            "deltaB": 0,
+            "etaPercent": 0,
+            "bhChangeCommonPercent": 0,
+            "directChangeCommonPercent": 0,
+            "n": 256,
+            "configuration": {
+              "n": 256,
+              "dt": 0.1,
+              "epsilon": 0.1,
+              "theta": 0.5,
+              "budgetBytes": 536870912,
+              "seed": 2026,
+              "energyAuditCadenceMyr": 50,
+              "withHalo": true,
+              "requestedAlgorithm": "direct",
+              "requestedBackend": "cpu-direct",
+              "selected": "cpu-direct",
+              "diagnosticOptions": {
+                "dt": 0.1,
+                "energyAuditCadenceMyr": 50,
+                "withHalo": true,
+                "forceMethod": "GPU direct f32",
+                "algorithm": "direct",
+                "epsilon": 0.1,
+                "theta": 0.5
+              }
+            },
+            "backend": "CPU Worker",
+            "instantNormalizationReason": null
+          },
+          {
+            "timeMyr": 51.30000000000001,
+            "method": "Diferença de estimadores no mesmo snapshot",
+            "BH": {
+              "timeMyr": 51.30000000000001,
+              "n": 256,
+              "mass": 104.9315764173288,
+              "effectiveDt": 0.1,
+              "treeTheta": 0.5,
+              "treeOrder": "monopole",
+              "treeLeafBucket": 8,
+              "diagnosticCostMs": 2.2299999995157123,
+              "K": 1.5261048957359427,
+              "U": -2.8693930404682204,
+              "E": -1.3432881447322778,
+              "G": 0.04498502151469553,
+              "epsilonSquared": 0.010000000000000002,
+              "forceAlgorithm": "direct",
+              "trajectoryPrecision": "Float64",
+              "evaluationPrecision": "Float64 compensated CPU evaluation",
+              "velocityEpoch": "full-step, after final KDK kick",
+              "externalPotential": 0
+            },
+            "direct": {
+              "timeMyr": 51.30000000000001,
+              "n": 256,
+              "mass": 104.9315764173288,
+              "effectiveDt": 0.1,
+              "treeTheta": 0.5,
+              "diagnosticCostMs": 36.75,
+              "K": 1.5261048957359427,
+              "U": -2.8701984566819148,
+              "E": -1.344093560945972,
+              "G": 0.04498502151469553,
+              "epsilonSquared": 0.010000000000000002,
+              "forceAlgorithm": "direct",
+              "trajectoryPrecision": "Float64",
+              "evaluationPrecision": "Float64 compensated CPU evaluation",
+              "velocityEpoch": "full-step, after final KDK kick",
+              "externalPotential": 0
+            },
+            "B": 0.0008054162136943432,
+            "epsilonPercent": 0.059922630172224906,
+            "deltaB": -0.00038895813229222753,
+            "etaPercent": -0.0289384163896634,
+            "bhChangeCommonPercent": -0.029262112147004374,
+            "directChangeCommonPercent": -0.00032369575734097377,
+            "n": 256,
+            "configuration": {
+              "n": 256,
+              "dt": 0.1,
+              "epsilon": 0.1,
+              "theta": 0.5,
+              "budgetBytes": 536870912,
+              "seed": 2026,
+              "energyAuditCadenceMyr": 50,
+              "withHalo": true,
+              "requestedAlgorithm": "direct",
+              "requestedBackend": "cpu-direct",
+              "selected": "cpu-direct",
+              "diagnosticOptions": {
+                "dt": 0.1,
+                "energyAuditCadenceMyr": 50,
+                "withHalo": true,
+                "forceMethod": "GPU direct f32",
+                "algorithm": "direct",
+                "epsilon": 0.1,
+                "theta": 0.5
+              }
+            },
+            "backend": "CPU Worker",
+            "instantNormalizationReason": null
+          }
+        ],
+        "bhInitial": {
+          "time": 0,
+          "n": 256,
+          "mass": 104.9315764173288,
+          "kinetic": 1.6118708038836265,
+          "selfPotential": -2.9547656397238637,
+          "externalPotential": 0,
+          "potential": -2.9547656397238637,
+          "energy": -1.3428948358402373,
+          "energyScale": 4.56663644360749,
+          "algorithm": "barnes-hut",
+          "energyAlgorithm": "barnes-hut",
+          "G": 0.04498502151469553,
+          "epsilon": 0.1,
+          "theta": 0.5,
+          "energyApproximate": true,
+          "energyMethod": "Energia estimada — Barnes–Hut",
+          "externalPotentialModel": null,
+          "selfGravity": true,
+          "externalExtrapolated": 0,
+          "momentum": [
+            0,
+            0,
+            0
+          ],
+          "momentumNorm": 0,
+          "momentumScale": 16.38153274048814,
+          "centerOfMass": [
+            0,
+            0,
+            0
+          ],
+          "centerOfMassVelocity": [
+            0,
+            0,
+            0
+          ],
+          "angularMomentum": [
+            -25.801707877086148,
+            -146.39674439336133,
+            9.57415160504873
+          ],
+          "angularMomentumNorm": 148.96106631367178,
+          "angularMomentumScale": 994.6006627539268,
+          "Lx": -25.801707877086148,
+          "Ly": -146.39674439336133,
+          "Lz": 9.57415160504873,
+          "Lnorm": 148.96106631367178,
+          "intrinsicAngularMomentum": [
+            -25.801707877086148,
+            -146.39674439336133,
+            9.57415160504873
+          ],
+          "origin": [
+            0,
+            0,
+            0
+          ],
+          "conditions": {
+            "system": "isolated",
+            "energy": true,
+            "angularVector": true,
+            "angularZ": true,
+            "linearMomentum": true,
+            "centerOfMassBallistic": true,
+            "angularOrigin": "specified inertial origin; also report intrinsic COM angular momentum",
+            "forceCaveat": "Ideal invariants assume pair-symmetric conservative forces; fixed-step KDK has bounded discretization error, not exact energy conservation."
+          },
+          "epsilonSquared": 0.010000000000000002,
+          "forceAlgorithm": "direct",
+          "trajectoryPrecision": "Float64",
+          "requestedDt": 0.1,
+          "effectiveDt": 0.1,
+          "velocityEpoch": "full-step, after final KDK kick",
+          "precision": "Float64 compensated CPU evaluation",
+          "units": "1e10 Msun kpc^2 Myr^-2",
+          "arithmeticUncertainty": "Not a formal interval; see Decimal-80 calibration in energy-audit report.",
+          "treeOrder": "monopole",
+          "treeLeafBucket": 8,
+          "treeEpsilonSquared": 0.010000000000000002,
+          "diagnosticCostMs": 6.584999999962747
+        },
+        "directInitial": {
+          "time": 0,
+          "n": 256,
+          "mass": 104.9315764173288,
+          "kinetic": 1.6118708038836265,
+          "selfPotential": -2.9559600140698503,
+          "externalPotential": 0,
+          "potential": -2.9559600140698503,
+          "energy": -1.3440892101862238,
+          "energyScale": 4.567830817953476,
+          "algorithm": "direct",
+          "energyAlgorithm": "direct",
+          "G": 0.04498502151469553,
+          "epsilon": 0.1,
+          "theta": 0.5,
+          "energyApproximate": false,
+          "energyMethod": "Energia direta Float64 — pares compensados",
+          "externalPotentialModel": null,
+          "selfGravity": true,
+          "externalExtrapolated": 0,
+          "momentum": [
+            0,
+            0,
+            0
+          ],
+          "momentumNorm": 0,
+          "momentumScale": 16.38153274048814,
+          "centerOfMass": [
+            0,
+            0,
+            0
+          ],
+          "centerOfMassVelocity": [
+            0,
+            0,
+            0
+          ],
+          "angularMomentum": [
+            -25.801707877086148,
+            -146.39674439336133,
+            9.57415160504873
+          ],
+          "angularMomentumNorm": 148.96106631367178,
+          "angularMomentumScale": 994.6006627539268,
+          "Lx": -25.801707877086148,
+          "Ly": -146.39674439336133,
+          "Lz": 9.57415160504873,
+          "Lnorm": 148.96106631367178,
+          "intrinsicAngularMomentum": [
+            -25.801707877086148,
+            -146.39674439336133,
+            9.57415160504873
+          ],
+          "origin": [
+            0,
+            0,
+            0
+          ],
+          "conditions": {
+            "system": "isolated",
+            "energy": true,
+            "angularVector": true,
+            "angularZ": true,
+            "linearMomentum": true,
+            "centerOfMassBallistic": true,
+            "angularOrigin": "specified inertial origin; also report intrinsic COM angular momentum",
+            "forceCaveat": "Ideal invariants assume pair-symmetric conservative forces; fixed-step KDK has bounded discretization error, not exact energy conservation."
+          },
+          "epsilonSquared": 0.010000000000000002,
+          "forceAlgorithm": "direct",
+          "trajectoryPrecision": "Float64",
+          "requestedDt": 0.1,
+          "effectiveDt": 0.1,
+          "velocityEpoch": "full-step, after final KDK kick",
+          "precision": "Float64 compensated CPU evaluation",
+          "units": "1e10 Msun kpc^2 Myr^-2",
+          "arithmeticUncertainty": "Not a formal interval; see Decimal-80 calibration in energy-audit report.",
+          "diagnosticCostMs": 34.830000000074506,
+          "maximumWorkerComputeMs": 3.3050000006332994,
+          "parallelWorkers": 4,
+          "pairCount": 32640
+        },
+        "biasInitial": 0.0011943743459865708,
+        "normalization": {
+          "BH": {
+            "value": 1.3428948358402373,
+            "reason": null
+          },
+          "direct": {
+            "value": 1.3440892101862238,
+            "reason": null
+          },
+          "comparison": "B = E_BH - E_dir; ΔB = B - B0; η = 100 ΔB / |E_dir(0)|. Native percentages with different denominators are not subtracted."
+        },
+        "summary": {
+          "bhMaxAbsolutePercent": 0.05918044235967811,
+          "bhLastPercent": -0.05918044235967811,
+          "directMaxAbsolutePercent": 0.00032369575734097377,
+          "directLastPercent": -0.00032369575734097377
+        },
+        "rejectedComparisonTimes": [],
+        "noInterpolatedDirectPoints": true,
+        "fastHistory": "Every measured energy epoch in this realization; no temporal decimation. Archived inputs may already be decimated: see source.",
+        "plot": {
+          "kind": "direct",
+          "mode": "relative",
+          "color": "#e9ab55",
+          "xDomain": [
+            0,
+            86.50000000000004
+          ],
+          "yDomain": {
+            "min": -0.0003495914179282517,
+            "max": 0.0000258956605872779,
+            "minimal": false,
+            "minimumDisplaySpan": 2.8421709430404007e-12,
+            "empty": false
+          },
+          "axisOffset": 0,
+          "referenceValue": 0,
+          "guide": {
+            "segments": [
+              {
+                "fromTimeMyr": 0,
+                "toTimeMyr": 51.30000000000001,
+                "fromValue": 0,
+                "toValue": -0.00032369575734097377
+              }
+            ],
+            "gaps": [],
+            "nominalCadenceMyr": 50,
+            "cadenceSource": "recorded",
+            "gapFactor": 1.5,
+            "visualGuideOnly": true,
+            "interpolatedMeasurements": false
+          },
+          "interpolated": false,
+          "plottedTimes": [
+            0,
+            51.30000000000001
+          ]
+        }
+      },
+      "status": "Referência direta Float64: automática · última avaliação em 51,3 Myr · intervalo solicitado 50 Myr · efetivo 50 Myr."
+    },
+    {
+      "choice": 100,
+      "lockedDuringRun": true,
+      "data": {
+        "schema": "energy-panels-v1",
+        "realizationId": "1adb4602-01b8-40c8-830a-8b03d9f244cd",
+        "configuration": {
+          "n": 256,
+          "dt": 0.1,
+          "epsilon": 0.1,
+          "theta": 0.5,
+          "budgetBytes": 536870912,
+          "seed": 2026,
+          "energyAuditCadenceMyr": 100,
+          "withHalo": true,
+          "requestedAlgorithm": "direct",
+          "requestedBackend": "cpu-direct",
+          "selected": "cpu-direct",
+          "diagnosticOptions": {
+            "dt": 0.1,
+            "energyAuditCadenceMyr": 100,
+            "withHalo": true,
+            "forceMethod": "GPU direct f32",
+            "algorithm": "direct",
+            "epsilon": 0.1,
+            "theta": 0.5
+          }
+        },
+        "codeIdentity": "69dcff9a57a26743bebd3d1f0c2bd7038c2d3b2ff10a76d896ba03c601f81075",
+        "units": "10¹⁰ M☉ kpc²/Myr²",
+        "relativeUnits": "percent",
+        "directSampling": {
+          "cadenceMyr": 100,
+          "events": [
+            {
+              "type": "completed",
+              "timeMyr": 0,
+              "reason": "Referência direta Float64 calculada no snapshot preservado."
+            },
+            {
+              "type": "completed",
+              "timeMyr": 102.50000000000006,
+              "reason": "Referência direta Float64 calculada no snapshot preservado."
+            }
+          ]
+        },
+        "xDomain": [
+          0,
+          144.10000000000002
+        ],
+        "estimated": [
+          {
+            "timeMyr": 0,
+            "n": 256,
+            "mass": 104.9315764173288,
+            "effectiveDt": 0.1,
+            "treeTheta": 0.5,
+            "treeOrder": "monopole",
+            "treeLeafBucket": 8,
+            "diagnosticCostMs": 4.75,
+            "K": 1.6118708038836265,
+            "U": -2.9547656397238637,
+            "E": -1.3428948358402373,
+            "G": 0.04498502151469553,
+            "epsilonSquared": 0.010000000000000002,
+            "forceAlgorithm": "direct",
+            "trajectoryPrecision": "Float64",
+            "evaluationPrecision": "Float64 compensated CPU evaluation",
+            "velocityEpoch": "full-step, after final KDK kick",
+            "externalPotential": 0,
+            "method": "Barnes–Hut monopolar · aproximação",
+            "relative": {
+              "signed": 0,
+              "absolute": 0,
+              "percent": 0,
+              "denominator": 1.3428948358402373,
+              "normalization": "|E0|"
+            }
+          },
+          {
+            "timeMyr": 102.50000000000006,
+            "n": 256,
+            "mass": 104.9315764173288,
+            "effectiveDt": 0.1,
+            "treeTheta": 0.5,
+            "treeOrder": "monopole",
+            "treeLeafBucket": 8,
+            "diagnosticCostMs": 2.0899999998509884,
+            "K": 1.6952558375336901,
+            "U": -3.0391853379716465,
+            "E": -1.3439295004379563,
+            "G": 0.04498502151469553,
+            "epsilonSquared": 0.010000000000000002,
+            "forceAlgorithm": "direct",
+            "trajectoryPrecision": "Float64",
+            "evaluationPrecision": "Float64 compensated CPU evaluation",
+            "velocityEpoch": "full-step, after final KDK kick",
+            "externalPotential": 0,
+            "method": "Barnes–Hut monopolar · aproximação",
+            "relative": {
+              "signed": -0.000770473286593346,
+              "absolute": 0.000770473286593346,
+              "percent": -0.0770473286593346,
+              "denominator": 1.3428948358402373,
+              "normalization": "|E0|"
+            }
+          },
+          {
+            "timeMyr": 144.10000000000002,
+            "n": 256,
+            "mass": 104.9315764173288,
+            "effectiveDt": 0.1,
+            "treeTheta": 0.5,
+            "treeOrder": "monopole",
+            "treeLeafBucket": 8,
+            "diagnosticCostMs": 1.334999999962747,
+            "K": 1.5253245249620264,
+            "U": -2.8696214610380704,
+            "E": -1.344296936076044,
+            "G": 0.04498502151469553,
+            "epsilonSquared": 0.010000000000000002,
+            "forceAlgorithm": "direct",
+            "trajectoryPrecision": "Float64",
+            "evaluationPrecision": "Float64 compensated CPU evaluation",
+            "velocityEpoch": "full-step, after final KDK kick",
+            "externalPotential": 0,
+            "method": "Barnes–Hut monopolar · aproximação",
+            "relative": {
+              "signed": -0.0010440878901208878,
+              "absolute": 0.0010440878901208878,
+              "percent": -0.10440878901208878,
+              "denominator": 1.3428948358402373,
+              "normalization": "|E0|"
+            }
+          }
+        ],
+        "direct": [
+          {
+            "timeMyr": 0,
+            "n": 256,
+            "mass": 104.9315764173288,
+            "effectiveDt": 0.1,
+            "treeTheta": 0.5,
+            "diagnosticCostMs": 37.924999999813735,
+            "K": 1.6118708038836265,
+            "U": -2.9559600140698503,
+            "E": -1.3440892101862238,
+            "G": 0.04498502151469553,
+            "epsilonSquared": 0.010000000000000002,
+            "forceAlgorithm": "direct",
+            "trajectoryPrecision": "Float64",
+            "evaluationPrecision": "Float64 compensated CPU evaluation",
+            "velocityEpoch": "full-step, after final KDK kick",
+            "externalPotential": 0,
+            "method": "Pares diretos Float64 · CPU compensada",
+            "relative": {
+              "signed": 0,
+              "absolute": 0,
+              "percent": 0,
+              "denominator": 1.3440892101862238,
+              "normalization": "|E0|"
+            },
+            "origin": "automatic",
+            "configuration": {
+              "n": 256,
+              "dt": 0.1,
+              "epsilon": 0.1,
+              "theta": 0.5,
+              "budgetBytes": 536870912,
+              "seed": 2026,
+              "energyAuditCadenceMyr": 100,
+              "withHalo": true,
+              "requestedAlgorithm": "direct",
+              "requestedBackend": "cpu-direct",
+              "selected": "cpu-direct",
+              "diagnosticOptions": {
+                "dt": 0.1,
+                "energyAuditCadenceMyr": 100,
+                "withHalo": true,
+                "forceMethod": "GPU direct f32",
+                "algorithm": "direct",
+                "epsilon": 0.1,
+                "theta": 0.5
+              }
+            },
+            "backend": "CPU Worker",
+            "requestedTimeMyr": 0,
+            "samplingCadenceMyr": 100
+          },
+          {
+            "timeMyr": 102.50000000000006,
+            "n": 256,
+            "mass": 104.9315764173288,
+            "effectiveDt": 0.1,
+            "treeTheta": 0.5,
+            "diagnosticCostMs": 33.53499999921769,
+            "K": 1.6952558375336901,
+            "U": -3.039351296214281,
+            "E": -1.3440954586805909,
+            "G": 0.04498502151469553,
+            "epsilonSquared": 0.010000000000000002,
+            "forceAlgorithm": "direct",
+            "trajectoryPrecision": "Float64",
+            "evaluationPrecision": "Float64 compensated CPU evaluation",
+            "velocityEpoch": "full-step, after final KDK kick",
+            "externalPotential": 0,
+            "method": "Pares diretos Float64 · CPU compensada",
+            "relative": {
+              "signed": -0.000004648868780196558,
+              "absolute": 0.000004648868780196558,
+              "percent": -0.00046488687801965575,
+              "denominator": 1.3440892101862238,
+              "normalization": "|E0|"
+            },
+            "origin": "automatic",
+            "configuration": {
+              "n": 256,
+              "dt": 0.1,
+              "epsilon": 0.1,
+              "theta": 0.5,
+              "budgetBytes": 536870912,
+              "seed": 2026,
+              "energyAuditCadenceMyr": 100,
+              "withHalo": true,
+              "requestedAlgorithm": "direct",
+              "requestedBackend": "cpu-direct",
+              "selected": "cpu-direct",
+              "diagnosticOptions": {
+                "dt": 0.1,
+                "energyAuditCadenceMyr": 100,
+                "withHalo": true,
+                "forceMethod": "GPU direct f32",
+                "algorithm": "direct",
+                "epsilon": 0.1,
+                "theta": 0.5
+              }
+            },
+            "backend": "CPU Worker",
+            "requestedTimeMyr": 100,
+            "samplingCadenceMyr": 100
+          }
+        ],
+        "comparison": [
+          {
+            "timeMyr": 0,
+            "method": "Diferença de estimadores no mesmo snapshot",
+            "BH": {
+              "timeMyr": 0,
+              "n": 256,
+              "mass": 104.9315764173288,
+              "effectiveDt": 0.1,
+              "treeTheta": 0.5,
+              "treeOrder": "monopole",
+              "treeLeafBucket": 8,
+              "diagnosticCostMs": 4.75,
+              "K": 1.6118708038836265,
+              "U": -2.9547656397238637,
+              "E": -1.3428948358402373,
+              "G": 0.04498502151469553,
+              "epsilonSquared": 0.010000000000000002,
+              "forceAlgorithm": "direct",
+              "trajectoryPrecision": "Float64",
+              "evaluationPrecision": "Float64 compensated CPU evaluation",
+              "velocityEpoch": "full-step, after final KDK kick",
+              "externalPotential": 0
+            },
+            "direct": {
+              "timeMyr": 0,
+              "n": 256,
+              "mass": 104.9315764173288,
+              "effectiveDt": 0.1,
+              "treeTheta": 0.5,
+              "diagnosticCostMs": 37.924999999813735,
+              "K": 1.6118708038836265,
+              "U": -2.9559600140698503,
+              "E": -1.3440892101862238,
+              "G": 0.04498502151469553,
+              "epsilonSquared": 0.010000000000000002,
+              "forceAlgorithm": "direct",
+              "trajectoryPrecision": "Float64",
+              "evaluationPrecision": "Float64 compensated CPU evaluation",
+              "velocityEpoch": "full-step, after final KDK kick",
+              "externalPotential": 0
+            },
+            "B": 0.0011943743459865708,
+            "epsilonPercent": 0.08886124052889986,
+            "deltaB": 0,
+            "etaPercent": 0,
+            "bhChangeCommonPercent": 0,
+            "directChangeCommonPercent": 0,
+            "n": 256,
+            "configuration": {
+              "n": 256,
+              "dt": 0.1,
+              "epsilon": 0.1,
+              "theta": 0.5,
+              "budgetBytes": 536870912,
+              "seed": 2026,
+              "energyAuditCadenceMyr": 100,
+              "withHalo": true,
+              "requestedAlgorithm": "direct",
+              "requestedBackend": "cpu-direct",
+              "selected": "cpu-direct",
+              "diagnosticOptions": {
+                "dt": 0.1,
+                "energyAuditCadenceMyr": 100,
+                "withHalo": true,
+                "forceMethod": "GPU direct f32",
+                "algorithm": "direct",
+                "epsilon": 0.1,
+                "theta": 0.5
+              }
+            },
+            "backend": "CPU Worker",
+            "instantNormalizationReason": null
+          },
+          {
+            "timeMyr": 102.50000000000006,
+            "method": "Diferença de estimadores no mesmo snapshot",
+            "BH": {
+              "timeMyr": 102.50000000000006,
+              "n": 256,
+              "mass": 104.9315764173288,
+              "effectiveDt": 0.1,
+              "treeTheta": 0.5,
+              "treeOrder": "monopole",
+              "treeLeafBucket": 8,
+              "diagnosticCostMs": 2.0899999998509884,
+              "K": 1.6952558375336901,
+              "U": -3.0391853379716465,
+              "E": -1.3439295004379563,
+              "G": 0.04498502151469553,
+              "epsilonSquared": 0.010000000000000002,
+              "forceAlgorithm": "direct",
+              "trajectoryPrecision": "Float64",
+              "evaluationPrecision": "Float64 compensated CPU evaluation",
+              "velocityEpoch": "full-step, after final KDK kick",
+              "externalPotential": 0
+            },
+            "direct": {
+              "timeMyr": 102.50000000000006,
+              "n": 256,
+              "mass": 104.9315764173288,
+              "effectiveDt": 0.1,
+              "treeTheta": 0.5,
+              "diagnosticCostMs": 33.53499999921769,
+              "K": 1.6952558375336901,
+              "U": -3.039351296214281,
+              "E": -1.3440954586805909,
+              "G": 0.04498502151469553,
+              "epsilonSquared": 0.010000000000000002,
+              "forceAlgorithm": "direct",
+              "trajectoryPrecision": "Float64",
+              "evaluationPrecision": "Float64 compensated CPU evaluation",
+              "velocityEpoch": "full-step, after final KDK kick",
+              "externalPotential": 0
+            },
+            "B": 0.00016595824263454517,
+            "epsilonPercent": 0.01234720655908289,
+            "deltaB": -0.0010284161033520256,
+            "etaPercent": -0.07651397656927388,
+            "bhChangeCommonPercent": -0.07697886344729353,
+            "directChangeCommonPercent": -0.0004648868780196558,
+            "n": 256,
+            "configuration": {
+              "n": 256,
+              "dt": 0.1,
+              "epsilon": 0.1,
+              "theta": 0.5,
+              "budgetBytes": 536870912,
+              "seed": 2026,
+              "energyAuditCadenceMyr": 100,
+              "withHalo": true,
+              "requestedAlgorithm": "direct",
+              "requestedBackend": "cpu-direct",
+              "selected": "cpu-direct",
+              "diagnosticOptions": {
+                "dt": 0.1,
+                "energyAuditCadenceMyr": 100,
+                "withHalo": true,
+                "forceMethod": "GPU direct f32",
+                "algorithm": "direct",
+                "epsilon": 0.1,
+                "theta": 0.5
+              }
+            },
+            "backend": "CPU Worker",
+            "instantNormalizationReason": null
+          }
+        ],
+        "bhInitial": {
+          "time": 0,
+          "n": 256,
+          "mass": 104.9315764173288,
+          "kinetic": 1.6118708038836265,
+          "selfPotential": -2.9547656397238637,
+          "externalPotential": 0,
+          "potential": -2.9547656397238637,
+          "energy": -1.3428948358402373,
+          "energyScale": 4.56663644360749,
+          "algorithm": "barnes-hut",
+          "energyAlgorithm": "barnes-hut",
+          "G": 0.04498502151469553,
+          "epsilon": 0.1,
+          "theta": 0.5,
+          "energyApproximate": true,
+          "energyMethod": "Energia estimada — Barnes–Hut",
+          "externalPotentialModel": null,
+          "selfGravity": true,
+          "externalExtrapolated": 0,
+          "momentum": [
+            0,
+            0,
+            0
+          ],
+          "momentumNorm": 0,
+          "momentumScale": 16.38153274048814,
+          "centerOfMass": [
+            0,
+            0,
+            0
+          ],
+          "centerOfMassVelocity": [
+            0,
+            0,
+            0
+          ],
+          "angularMomentum": [
+            -25.801707877086148,
+            -146.39674439336133,
+            9.57415160504873
+          ],
+          "angularMomentumNorm": 148.96106631367178,
+          "angularMomentumScale": 994.6006627539268,
+          "Lx": -25.801707877086148,
+          "Ly": -146.39674439336133,
+          "Lz": 9.57415160504873,
+          "Lnorm": 148.96106631367178,
+          "intrinsicAngularMomentum": [
+            -25.801707877086148,
+            -146.39674439336133,
+            9.57415160504873
+          ],
+          "origin": [
+            0,
+            0,
+            0
+          ],
+          "conditions": {
+            "system": "isolated",
+            "energy": true,
+            "angularVector": true,
+            "angularZ": true,
+            "linearMomentum": true,
+            "centerOfMassBallistic": true,
+            "angularOrigin": "specified inertial origin; also report intrinsic COM angular momentum",
+            "forceCaveat": "Ideal invariants assume pair-symmetric conservative forces; fixed-step KDK has bounded discretization error, not exact energy conservation."
+          },
+          "epsilonSquared": 0.010000000000000002,
+          "forceAlgorithm": "direct",
+          "trajectoryPrecision": "Float64",
+          "requestedDt": 0.1,
+          "effectiveDt": 0.1,
+          "velocityEpoch": "full-step, after final KDK kick",
+          "precision": "Float64 compensated CPU evaluation",
+          "units": "1e10 Msun kpc^2 Myr^-2",
+          "arithmeticUncertainty": "Not a formal interval; see Decimal-80 calibration in energy-audit report.",
+          "treeOrder": "monopole",
+          "treeLeafBucket": 8,
+          "treeEpsilonSquared": 0.010000000000000002,
+          "diagnosticCostMs": 4.75
+        },
+        "directInitial": {
+          "time": 0,
+          "n": 256,
+          "mass": 104.9315764173288,
+          "kinetic": 1.6118708038836265,
+          "selfPotential": -2.9559600140698503,
+          "externalPotential": 0,
+          "potential": -2.9559600140698503,
+          "energy": -1.3440892101862238,
+          "energyScale": 4.567830817953476,
+          "algorithm": "direct",
+          "energyAlgorithm": "direct",
+          "G": 0.04498502151469553,
+          "epsilon": 0.1,
+          "theta": 0.5,
+          "energyApproximate": false,
+          "energyMethod": "Energia direta Float64 — pares compensados",
+          "externalPotentialModel": null,
+          "selfGravity": true,
+          "externalExtrapolated": 0,
+          "momentum": [
+            0,
+            0,
+            0
+          ],
+          "momentumNorm": 0,
+          "momentumScale": 16.38153274048814,
+          "centerOfMass": [
+            0,
+            0,
+            0
+          ],
+          "centerOfMassVelocity": [
+            0,
+            0,
+            0
+          ],
+          "angularMomentum": [
+            -25.801707877086148,
+            -146.39674439336133,
+            9.57415160504873
+          ],
+          "angularMomentumNorm": 148.96106631367178,
+          "angularMomentumScale": 994.6006627539268,
+          "Lx": -25.801707877086148,
+          "Ly": -146.39674439336133,
+          "Lz": 9.57415160504873,
+          "Lnorm": 148.96106631367178,
+          "intrinsicAngularMomentum": [
+            -25.801707877086148,
+            -146.39674439336133,
+            9.57415160504873
+          ],
+          "origin": [
+            0,
+            0,
+            0
+          ],
+          "conditions": {
+            "system": "isolated",
+            "energy": true,
+            "angularVector": true,
+            "angularZ": true,
+            "linearMomentum": true,
+            "centerOfMassBallistic": true,
+            "angularOrigin": "specified inertial origin; also report intrinsic COM angular momentum",
+            "forceCaveat": "Ideal invariants assume pair-symmetric conservative forces; fixed-step KDK has bounded discretization error, not exact energy conservation."
+          },
+          "epsilonSquared": 0.010000000000000002,
+          "forceAlgorithm": "direct",
+          "trajectoryPrecision": "Float64",
+          "requestedDt": 0.1,
+          "effectiveDt": 0.1,
+          "velocityEpoch": "full-step, after final KDK kick",
+          "precision": "Float64 compensated CPU evaluation",
+          "units": "1e10 Msun kpc^2 Myr^-2",
+          "arithmeticUncertainty": "Not a formal interval; see Decimal-80 calibration in energy-audit report.",
+          "diagnosticCostMs": 37.924999999813735,
+          "maximumWorkerComputeMs": 3.605000000447035,
+          "parallelWorkers": 4,
+          "pairCount": 32640
+        },
+        "biasInitial": 0.0011943743459865708,
+        "normalization": {
+          "BH": {
+            "value": 1.3428948358402373,
+            "reason": null
+          },
+          "direct": {
+            "value": 1.3440892101862238,
+            "reason": null
+          },
+          "comparison": "B = E_BH - E_dir; ΔB = B - B0; η = 100 ΔB / |E_dir(0)|. Native percentages with different denominators are not subtracted."
+        },
+        "summary": {
+          "bhMaxAbsolutePercent": 0.10440878901208878,
+          "bhLastPercent": -0.10440878901208878,
+          "directMaxAbsolutePercent": 0.00046488687801965575,
+          "directLastPercent": -0.00046488687801965575
+        },
+        "rejectedComparisonTimes": [],
+        "noInterpolatedDirectPoints": true,
+        "fastHistory": "Every measured energy epoch in this realization; no temporal decimation. Archived inputs may already be decimated: see source.",
+        "plot": {
+          "kind": "direct",
+          "mode": "relative",
+          "color": "#e9ab55",
+          "xDomain": [
+            0,
+            144.10000000000002
+          ],
+          "yDomain": {
+            "min": -0.0005020778282612282,
+            "max": 0.00003719095024157246,
+            "minimal": false,
+            "minimumDisplaySpan": 2.8421709430404007e-12,
+            "empty": false
+          },
+          "axisOffset": 0,
+          "referenceValue": 0,
+          "guide": {
+            "segments": [
+              {
+                "fromTimeMyr": 0,
+                "toTimeMyr": 102.50000000000006,
+                "fromValue": 0,
+                "toValue": -0.00046488687801965575
+              }
+            ],
+            "gaps": [],
+            "nominalCadenceMyr": 100,
+            "cadenceSource": "recorded",
+            "gapFactor": 1.5,
+            "visualGuideOnly": true,
+            "interpolatedMeasurements": false
+          },
+          "interpolated": false,
+          "plottedTimes": [
+            0,
+            102.50000000000006
+          ]
+        }
+      },
+      "status": "Referência direta Float64: automática · última avaliação em 102,5 Myr · intervalo solicitado 100 Myr · efetivo 100 Myr."
+    },
+    {
+      "choice": 150,
+      "data": {
+        "schema": "energy-panels-v1",
+        "realizationId": "3b6db1d3-f270-4929-9946-fa52d5a38cb3",
+        "configuration": {
+          "n": 256,
+          "dt": 0.1,
+          "epsilon": 0.1,
+          "theta": 0.5,
+          "budgetBytes": 536870912,
+          "seed": 2026,
+          "energyAuditCadenceMyr": 150,
+          "withHalo": true,
+          "requestedAlgorithm": "direct",
+          "requestedBackend": "cpu-direct",
+          "selected": "cpu-direct",
+          "diagnosticOptions": {
+            "dt": 0.1,
+            "energyAuditCadenceMyr": 150,
+            "withHalo": true,
+            "forceMethod": "GPU direct f32",
+            "algorithm": "direct",
+            "epsilon": 0.1,
+            "theta": 0.5
+          }
+        },
+        "codeIdentity": "69dcff9a57a26743bebd3d1f0c2bd7038c2d3b2ff10a76d896ba03c601f81075",
+        "units": "10¹⁰ M☉ kpc²/Myr²",
+        "relativeUnits": "percent",
+        "directSampling": {
+          "cadenceMyr": 150,
+          "events": [
+            {
+              "type": "completed",
+              "timeMyr": 0,
+              "reason": "Referência direta Float64 calculada no snapshot preservado."
+            },
+            {
+              "type": "completed",
+              "timeMyr": 150.5,
+              "reason": "Referência direta Float64 calculada no snapshot preservado."
+            }
+          ]
+        },
+        "xDomain": [
+          0,
+          214.49999999999977
+        ],
+        "estimated": [
+          {
+            "timeMyr": 0,
+            "n": 256,
+            "mass": 104.9315764173288,
+            "effectiveDt": 0.1,
+            "treeTheta": 0.5,
+            "treeOrder": "monopole",
+            "treeLeafBucket": 8,
+            "diagnosticCostMs": 4.90500000026077,
+            "K": 1.6118708038836265,
+            "U": -2.9547656397238637,
+            "E": -1.3428948358402373,
+            "G": 0.04498502151469553,
+            "epsilonSquared": 0.010000000000000002,
+            "forceAlgorithm": "direct",
+            "trajectoryPrecision": "Float64",
+            "evaluationPrecision": "Float64 compensated CPU evaluation",
+            "velocityEpoch": "full-step, after final KDK kick",
+            "externalPotential": 0,
+            "method": "Barnes–Hut monopolar · aproximação",
+            "relative": {
+              "signed": 0,
+              "absolute": 0,
+              "percent": 0,
+              "denominator": 1.3428948358402373,
+              "normalization": "|E0|"
+            }
+          },
+          {
+            "timeMyr": 150.5,
+            "n": 256,
+            "mass": 104.9315764173288,
+            "effectiveDt": 0.1,
+            "treeTheta": 0.5,
+            "treeOrder": "monopole",
+            "treeLeafBucket": 8,
+            "diagnosticCostMs": 2.3049999997019768,
+            "K": 1.5200690107707313,
+            "U": -2.8644305795755383,
+            "E": -1.344361568804807,
+            "G": 0.04498502151469553,
+            "epsilonSquared": 0.010000000000000002,
+            "forceAlgorithm": "direct",
+            "trajectoryPrecision": "Float64",
+            "evaluationPrecision": "Float64 compensated CPU evaluation",
+            "velocityEpoch": "full-step, after final KDK kick",
+            "externalPotential": 0,
+            "method": "Barnes–Hut monopolar · aproximação",
+            "relative": {
+              "signed": -0.001092217294626761,
+              "absolute": 0.001092217294626761,
+              "percent": -0.10922172946267611,
+              "denominator": 1.3428948358402373,
+              "normalization": "|E0|"
+            }
+          },
+          {
+            "timeMyr": 214.49999999999977,
+            "n": 256,
+            "mass": 104.9315764173288,
+            "effectiveDt": 0.1,
+            "treeTheta": 0.5,
+            "treeOrder": "monopole",
+            "treeLeafBucket": 8,
+            "diagnosticCostMs": 1.415000000037253,
+            "K": 1.4921600997164115,
+            "U": -2.8347057328899745,
+            "E": -1.342545633173563,
+            "G": 0.04498502151469553,
+            "epsilonSquared": 0.010000000000000002,
+            "forceAlgorithm": "direct",
+            "trajectoryPrecision": "Float64",
+            "evaluationPrecision": "Float64 compensated CPU evaluation",
+            "velocityEpoch": "full-step, after final KDK kick",
+            "externalPotential": 0,
+            "method": "Barnes–Hut monopolar · aproximação",
+            "relative": {
+              "signed": 0.00026003723996434263,
+              "absolute": 0.00026003723996434263,
+              "percent": 0.026003723996434264,
+              "denominator": 1.3428948358402373,
+              "normalization": "|E0|"
+            }
+          }
+        ],
+        "direct": [
+          {
+            "timeMyr": 0,
+            "n": 256,
+            "mass": 104.9315764173288,
+            "effectiveDt": 0.1,
+            "treeTheta": 0.5,
+            "diagnosticCostMs": 40.41500000003725,
+            "K": 1.6118708038836265,
+            "U": -2.9559600140698503,
+            "E": -1.3440892101862238,
+            "G": 0.04498502151469553,
+            "epsilonSquared": 0.010000000000000002,
+            "forceAlgorithm": "direct",
+            "trajectoryPrecision": "Float64",
+            "evaluationPrecision": "Float64 compensated CPU evaluation",
+            "velocityEpoch": "full-step, after final KDK kick",
+            "externalPotential": 0,
+            "method": "Pares diretos Float64 · CPU compensada",
+            "relative": {
+              "signed": 0,
+              "absolute": 0,
+              "percent": 0,
+              "denominator": 1.3440892101862238,
+              "normalization": "|E0|"
+            },
+            "origin": "automatic",
+            "configuration": {
+              "n": 256,
+              "dt": 0.1,
+              "epsilon": 0.1,
+              "theta": 0.5,
+              "budgetBytes": 536870912,
+              "seed": 2026,
+              "energyAuditCadenceMyr": 150,
+              "withHalo": true,
+              "requestedAlgorithm": "direct",
+              "requestedBackend": "cpu-direct",
+              "selected": "cpu-direct",
+              "diagnosticOptions": {
+                "dt": 0.1,
+                "energyAuditCadenceMyr": 150,
+                "withHalo": true,
+                "forceMethod": "GPU direct f32",
+                "algorithm": "direct",
+                "epsilon": 0.1,
+                "theta": 0.5
+              }
+            },
+            "backend": "CPU Worker",
+            "requestedTimeMyr": 0,
+            "samplingCadenceMyr": 150
+          },
+          {
+            "timeMyr": 150.5,
+            "n": 256,
+            "mass": 104.9315764173288,
+            "effectiveDt": 0.1,
+            "treeTheta": 0.5,
+            "diagnosticCostMs": 34,
+            "K": 1.5200690107707313,
+            "U": -2.8641731300738638,
+            "E": -1.3441041193031324,
+            "G": 0.04498502151469553,
+            "epsilonSquared": 0.010000000000000002,
+            "forceAlgorithm": "direct",
+            "trajectoryPrecision": "Float64",
+            "evaluationPrecision": "Float64 compensated CPU evaluation",
+            "velocityEpoch": "full-step, after final KDK kick",
+            "externalPotential": 0,
+            "method": "Pares diretos Float64 · CPU compensada",
+            "relative": {
+              "signed": -0.000011092356664730344,
+              "absolute": 0.000011092356664730344,
+              "percent": -0.0011092356664730344,
+              "denominator": 1.3440892101862238,
+              "normalization": "|E0|"
+            },
+            "origin": "automatic",
+            "configuration": {
+              "n": 256,
+              "dt": 0.1,
+              "epsilon": 0.1,
+              "theta": 0.5,
+              "budgetBytes": 536870912,
+              "seed": 2026,
+              "energyAuditCadenceMyr": 150,
+              "withHalo": true,
+              "requestedAlgorithm": "direct",
+              "requestedBackend": "cpu-direct",
+              "selected": "cpu-direct",
+              "diagnosticOptions": {
+                "dt": 0.1,
+                "energyAuditCadenceMyr": 150,
+                "withHalo": true,
+                "forceMethod": "GPU direct f32",
+                "algorithm": "direct",
+                "epsilon": 0.1,
+                "theta": 0.5
+              }
+            },
+            "backend": "CPU Worker",
+            "requestedTimeMyr": 150,
+            "samplingCadenceMyr": 150
+          }
+        ],
+        "comparison": [
+          {
+            "timeMyr": 0,
+            "method": "Diferença de estimadores no mesmo snapshot",
+            "BH": {
+              "timeMyr": 0,
+              "n": 256,
+              "mass": 104.9315764173288,
+              "effectiveDt": 0.1,
+              "treeTheta": 0.5,
+              "treeOrder": "monopole",
+              "treeLeafBucket": 8,
+              "diagnosticCostMs": 4.90500000026077,
+              "K": 1.6118708038836265,
+              "U": -2.9547656397238637,
+              "E": -1.3428948358402373,
+              "G": 0.04498502151469553,
+              "epsilonSquared": 0.010000000000000002,
+              "forceAlgorithm": "direct",
+              "trajectoryPrecision": "Float64",
+              "evaluationPrecision": "Float64 compensated CPU evaluation",
+              "velocityEpoch": "full-step, after final KDK kick",
+              "externalPotential": 0
+            },
+            "direct": {
+              "timeMyr": 0,
+              "n": 256,
+              "mass": 104.9315764173288,
+              "effectiveDt": 0.1,
+              "treeTheta": 0.5,
+              "diagnosticCostMs": 40.41500000003725,
+              "K": 1.6118708038836265,
+              "U": -2.9559600140698503,
+              "E": -1.3440892101862238,
+              "G": 0.04498502151469553,
+              "epsilonSquared": 0.010000000000000002,
+              "forceAlgorithm": "direct",
+              "trajectoryPrecision": "Float64",
+              "evaluationPrecision": "Float64 compensated CPU evaluation",
+              "velocityEpoch": "full-step, after final KDK kick",
+              "externalPotential": 0
+            },
+            "B": 0.0011943743459865708,
+            "epsilonPercent": 0.08886124052889986,
+            "deltaB": 0,
+            "etaPercent": 0,
+            "bhChangeCommonPercent": 0,
+            "directChangeCommonPercent": 0,
+            "n": 256,
+            "configuration": {
+              "n": 256,
+              "dt": 0.1,
+              "epsilon": 0.1,
+              "theta": 0.5,
+              "budgetBytes": 536870912,
+              "seed": 2026,
+              "energyAuditCadenceMyr": 150,
+              "withHalo": true,
+              "requestedAlgorithm": "direct",
+              "requestedBackend": "cpu-direct",
+              "selected": "cpu-direct",
+              "diagnosticOptions": {
+                "dt": 0.1,
+                "energyAuditCadenceMyr": 150,
+                "withHalo": true,
+                "forceMethod": "GPU direct f32",
+                "algorithm": "direct",
+                "epsilon": 0.1,
+                "theta": 0.5
+              }
+            },
+            "backend": "CPU Worker",
+            "instantNormalizationReason": null
+          },
+          {
+            "timeMyr": 150.5,
+            "method": "Diferença de estimadores no mesmo snapshot",
+            "BH": {
+              "timeMyr": 150.5,
+              "n": 256,
+              "mass": 104.9315764173288,
+              "effectiveDt": 0.1,
+              "treeTheta": 0.5,
+              "treeOrder": "monopole",
+              "treeLeafBucket": 8,
+              "diagnosticCostMs": 2.3049999997019768,
+              "K": 1.5200690107707313,
+              "U": -2.8644305795755383,
+              "E": -1.344361568804807,
+              "G": 0.04498502151469553,
+              "epsilonSquared": 0.010000000000000002,
+              "forceAlgorithm": "direct",
+              "trajectoryPrecision": "Float64",
+              "evaluationPrecision": "Float64 compensated CPU evaluation",
+              "velocityEpoch": "full-step, after final KDK kick",
+              "externalPotential": 0
+            },
+            "direct": {
+              "timeMyr": 150.5,
+              "n": 256,
+              "mass": 104.9315764173288,
+              "effectiveDt": 0.1,
+              "treeTheta": 0.5,
+              "diagnosticCostMs": 34,
+              "K": 1.5200690107707313,
+              "U": -2.8641731300738638,
+              "E": -1.3441041193031324,
+              "G": 0.04498502151469553,
+              "epsilonSquared": 0.010000000000000002,
+              "forceAlgorithm": "direct",
+              "trajectoryPrecision": "Float64",
+              "evaluationPrecision": "Float64 compensated CPU evaluation",
+              "velocityEpoch": "full-step, after final KDK kick",
+              "externalPotential": 0
+            },
+            "B": -0.0002574495016745004,
+            "epsilonPercent": -0.019153985020742167,
+            "deltaB": -0.0014518238476610712,
+            "etaPercent": -0.10801543801247543,
+            "bhChangeCommonPercent": -0.10912467367894846,
+            "directChangeCommonPercent": -0.0011092356664730344,
+            "n": 256,
+            "configuration": {
+              "n": 256,
+              "dt": 0.1,
+              "epsilon": 0.1,
+              "theta": 0.5,
+              "budgetBytes": 536870912,
+              "seed": 2026,
+              "energyAuditCadenceMyr": 150,
+              "withHalo": true,
+              "requestedAlgorithm": "direct",
+              "requestedBackend": "cpu-direct",
+              "selected": "cpu-direct",
+              "diagnosticOptions": {
+                "dt": 0.1,
+                "energyAuditCadenceMyr": 150,
+                "withHalo": true,
+                "forceMethod": "GPU direct f32",
+                "algorithm": "direct",
+                "epsilon": 0.1,
+                "theta": 0.5
+              }
+            },
+            "backend": "CPU Worker",
+            "instantNormalizationReason": null
+          }
+        ],
+        "bhInitial": {
+          "time": 0,
+          "n": 256,
+          "mass": 104.9315764173288,
+          "kinetic": 1.6118708038836265,
+          "selfPotential": -2.9547656397238637,
+          "externalPotential": 0,
+          "potential": -2.9547656397238637,
+          "energy": -1.3428948358402373,
+          "energyScale": 4.56663644360749,
+          "algorithm": "barnes-hut",
+          "energyAlgorithm": "barnes-hut",
+          "G": 0.04498502151469553,
+          "epsilon": 0.1,
+          "theta": 0.5,
+          "energyApproximate": true,
+          "energyMethod": "Energia estimada — Barnes–Hut",
+          "externalPotentialModel": null,
+          "selfGravity": true,
+          "externalExtrapolated": 0,
+          "momentum": [
+            0,
+            0,
+            0
+          ],
+          "momentumNorm": 0,
+          "momentumScale": 16.38153274048814,
+          "centerOfMass": [
+            0,
+            0,
+            0
+          ],
+          "centerOfMassVelocity": [
+            0,
+            0,
+            0
+          ],
+          "angularMomentum": [
+            -25.801707877086148,
+            -146.39674439336133,
+            9.57415160504873
+          ],
+          "angularMomentumNorm": 148.96106631367178,
+          "angularMomentumScale": 994.6006627539268,
+          "Lx": -25.801707877086148,
+          "Ly": -146.39674439336133,
+          "Lz": 9.57415160504873,
+          "Lnorm": 148.96106631367178,
+          "intrinsicAngularMomentum": [
+            -25.801707877086148,
+            -146.39674439336133,
+            9.57415160504873
+          ],
+          "origin": [
+            0,
+            0,
+            0
+          ],
+          "conditions": {
+            "system": "isolated",
+            "energy": true,
+            "angularVector": true,
+            "angularZ": true,
+            "linearMomentum": true,
+            "centerOfMassBallistic": true,
+            "angularOrigin": "specified inertial origin; also report intrinsic COM angular momentum",
+            "forceCaveat": "Ideal invariants assume pair-symmetric conservative forces; fixed-step KDK has bounded discretization error, not exact energy conservation."
+          },
+          "epsilonSquared": 0.010000000000000002,
+          "forceAlgorithm": "direct",
+          "trajectoryPrecision": "Float64",
+          "requestedDt": 0.1,
+          "effectiveDt": 0.1,
+          "velocityEpoch": "full-step, after final KDK kick",
+          "precision": "Float64 compensated CPU evaluation",
+          "units": "1e10 Msun kpc^2 Myr^-2",
+          "arithmeticUncertainty": "Not a formal interval; see Decimal-80 calibration in energy-audit report.",
+          "treeOrder": "monopole",
+          "treeLeafBucket": 8,
+          "treeEpsilonSquared": 0.010000000000000002,
+          "diagnosticCostMs": 4.90500000026077
+        },
+        "directInitial": {
+          "time": 0,
+          "n": 256,
+          "mass": 104.9315764173288,
+          "kinetic": 1.6118708038836265,
+          "selfPotential": -2.9559600140698503,
+          "externalPotential": 0,
+          "potential": -2.9559600140698503,
+          "energy": -1.3440892101862238,
+          "energyScale": 4.567830817953476,
+          "algorithm": "direct",
+          "energyAlgorithm": "direct",
+          "G": 0.04498502151469553,
+          "epsilon": 0.1,
+          "theta": 0.5,
+          "energyApproximate": false,
+          "energyMethod": "Energia direta Float64 — pares compensados",
+          "externalPotentialModel": null,
+          "selfGravity": true,
+          "externalExtrapolated": 0,
+          "momentum": [
+            0,
+            0,
+            0
+          ],
+          "momentumNorm": 0,
+          "momentumScale": 16.38153274048814,
+          "centerOfMass": [
+            0,
+            0,
+            0
+          ],
+          "centerOfMassVelocity": [
+            0,
+            0,
+            0
+          ],
+          "angularMomentum": [
+            -25.801707877086148,
+            -146.39674439336133,
+            9.57415160504873
+          ],
+          "angularMomentumNorm": 148.96106631367178,
+          "angularMomentumScale": 994.6006627539268,
+          "Lx": -25.801707877086148,
+          "Ly": -146.39674439336133,
+          "Lz": 9.57415160504873,
+          "Lnorm": 148.96106631367178,
+          "intrinsicAngularMomentum": [
+            -25.801707877086148,
+            -146.39674439336133,
+            9.57415160504873
+          ],
+          "origin": [
+            0,
+            0,
+            0
+          ],
+          "conditions": {
+            "system": "isolated",
+            "energy": true,
+            "angularVector": true,
+            "angularZ": true,
+            "linearMomentum": true,
+            "centerOfMassBallistic": true,
+            "angularOrigin": "specified inertial origin; also report intrinsic COM angular momentum",
+            "forceCaveat": "Ideal invariants assume pair-symmetric conservative forces; fixed-step KDK has bounded discretization error, not exact energy conservation."
+          },
+          "epsilonSquared": 0.010000000000000002,
+          "forceAlgorithm": "direct",
+          "trajectoryPrecision": "Float64",
+          "requestedDt": 0.1,
+          "effectiveDt": 0.1,
+          "velocityEpoch": "full-step, after final KDK kick",
+          "precision": "Float64 compensated CPU evaluation",
+          "units": "1e10 Msun kpc^2 Myr^-2",
+          "arithmeticUncertainty": "Not a formal interval; see Decimal-80 calibration in energy-audit report.",
+          "diagnosticCostMs": 40.41500000003725,
+          "maximumWorkerComputeMs": 3.150000000372529,
+          "parallelWorkers": 4,
+          "pairCount": 32640
+        },
+        "biasInitial": 0.0011943743459865708,
+        "normalization": {
+          "BH": {
+            "value": 1.3428948358402373,
+            "reason": null
+          },
+          "direct": {
+            "value": 1.3440892101862238,
+            "reason": null
+          },
+          "comparison": "B = E_BH - E_dir; ΔB = B - B0; η = 100 ΔB / |E_dir(0)|. Native percentages with different denominators are not subtracted."
+        },
+        "summary": {
+          "bhMaxAbsolutePercent": 0.10922172946267611,
+          "bhLastPercent": 0.026003723996434264,
+          "directMaxAbsolutePercent": 0.0011092356664730344,
+          "directLastPercent": -0.0011092356664730344
+        },
+        "rejectedComparisonTimes": [],
+        "noInterpolatedDirectPoints": true,
+        "fastHistory": "Every measured energy epoch in this realization; no temporal decimation. Archived inputs may already be decimated: see source.",
+        "plot": {
+          "kind": "direct",
+          "mode": "relative",
+          "color": "#e9ab55",
+          "xDomain": [
+            0,
+            214.49999999999977
+          ],
+          "yDomain": {
+            "min": -0.001197974519790877,
+            "max": 0.00008873885331784275,
+            "minimal": false,
+            "minimumDisplaySpan": 2.8421709430404007e-12,
+            "empty": false
+          },
+          "axisOffset": 0,
+          "referenceValue": 0,
+          "guide": {
+            "segments": [
+              {
+                "fromTimeMyr": 0,
+                "toTimeMyr": 150.5,
+                "fromValue": 0,
+                "toValue": -0.0011092356664730344
+              }
+            ],
+            "gaps": [],
+            "nominalCadenceMyr": 150,
+            "cadenceSource": "recorded",
+            "gapFactor": 1.5,
+            "visualGuideOnly": true,
+            "interpolatedMeasurements": false
+          },
+          "interpolated": false,
+          "plottedTimes": [
+            0,
+            150.5
+          ]
+        }
+      },
+      "status": "Referência direta Float64: automática · última avaliação em 150,5 Myr · intervalo solicitado 150 Myr · efetivo 150 Myr."
+    },
+    {
+      "choice": 200,
+      "data": {
+        "schema": "energy-panels-v1",
+        "realizationId": "3e64f575-7656-401b-9b40-bcf4b7b74009",
+        "configuration": {
+          "n": 256,
+          "dt": 0.1,
+          "epsilon": 0.1,
+          "theta": 0.5,
+          "budgetBytes": 536870912,
+          "seed": 2026,
+          "energyAuditCadenceMyr": 200,
+          "withHalo": true,
+          "requestedAlgorithm": "direct",
+          "requestedBackend": "cpu-direct",
+          "selected": "cpu-direct",
+          "diagnosticOptions": {
+            "dt": 0.1,
+            "energyAuditCadenceMyr": 200,
+            "withHalo": true,
+            "forceMethod": "GPU direct f32",
+            "algorithm": "direct",
+            "epsilon": 0.1,
+            "theta": 0.5
+          }
+        },
+        "codeIdentity": "69dcff9a57a26743bebd3d1f0c2bd7038c2d3b2ff10a76d896ba03c601f81075",
+        "units": "10¹⁰ M☉ kpc²/Myr²",
+        "relativeUnits": "percent",
+        "directSampling": {
+          "cadenceMyr": 200,
+          "events": [
+            {
+              "type": "completed",
+              "timeMyr": 0,
+              "reason": "Referência direta Float64 calculada no snapshot preservado."
+            },
+            {
+              "type": "completed",
+              "timeMyr": 201.69999999999982,
+              "reason": "Referência direta Float64 calculada no snapshot preservado."
+            }
+          ]
+        },
+        "xDomain": [
+          0,
+          240.09999999999968
+        ],
+        "estimated": [
+          {
+            "timeMyr": 0,
+            "n": 256,
+            "mass": 104.9315764173288,
+            "effectiveDt": 0.1,
+            "treeTheta": 0.5,
+            "treeOrder": "monopole",
+            "treeLeafBucket": 8,
+            "diagnosticCostMs": 5.320000000298023,
+            "K": 1.6118708038836265,
+            "U": -2.9547656397238637,
+            "E": -1.3428948358402373,
+            "G": 0.04498502151469553,
+            "epsilonSquared": 0.010000000000000002,
+            "forceAlgorithm": "direct",
+            "trajectoryPrecision": "Float64",
+            "evaluationPrecision": "Float64 compensated CPU evaluation",
+            "velocityEpoch": "full-step, after final KDK kick",
+            "externalPotential": 0,
+            "method": "Barnes–Hut monopolar · aproximação",
+            "relative": {
+              "signed": 0,
+              "absolute": 0,
+              "percent": 0,
+              "denominator": 1.3428948358402373,
+              "normalization": "|E0|"
+            }
+          },
+          {
+            "timeMyr": 201.69999999999982,
+            "n": 256,
+            "mass": 104.9315764173288,
+            "effectiveDt": 0.1,
+            "treeTheta": 0.5,
+            "treeOrder": "monopole",
+            "treeLeafBucket": 8,
+            "diagnosticCostMs": 2.0899999998509884,
+            "K": 1.4732880095617469,
+            "U": -2.816117532040808,
+            "E": -1.3428295224790612,
+            "G": 0.04498502151469553,
+            "epsilonSquared": 0.010000000000000002,
+            "forceAlgorithm": "direct",
+            "trajectoryPrecision": "Float64",
+            "evaluationPrecision": "Float64 compensated CPU evaluation",
+            "velocityEpoch": "full-step, after final KDK kick",
+            "externalPotential": 0,
+            "method": "Barnes–Hut monopolar · aproximação",
+            "relative": {
+              "signed": 0.00004863624420391365,
+              "absolute": 0.00004863624420391365,
+              "percent": 0.0048636244203913645,
+              "denominator": 1.3428948358402373,
+              "normalization": "|E0|"
+            }
+          },
+          {
+            "timeMyr": 240.09999999999968,
+            "n": 256,
+            "mass": 104.9315764173288,
+            "effectiveDt": 0.1,
+            "treeTheta": 0.5,
+            "treeOrder": "monopole",
+            "treeLeafBucket": 8,
+            "diagnosticCostMs": 1.5,
+            "K": 1.5223569505654484,
+            "U": -2.866246535023119,
+            "E": -1.3438895844576706,
+            "G": 0.04498502151469553,
+            "epsilonSquared": 0.010000000000000002,
+            "forceAlgorithm": "direct",
+            "trajectoryPrecision": "Float64",
+            "evaluationPrecision": "Float64 compensated CPU evaluation",
+            "velocityEpoch": "full-step, after final KDK kick",
+            "externalPotential": 0,
+            "method": "Barnes–Hut monopolar · aproximação",
+            "relative": {
+              "signed": -0.0007407494547485628,
+              "absolute": 0.0007407494547485628,
+              "percent": -0.07407494547485628,
+              "denominator": 1.3428948358402373,
+              "normalization": "|E0|"
+            }
+          }
+        ],
+        "direct": [
+          {
+            "timeMyr": 0,
+            "n": 256,
+            "mass": 104.9315764173288,
+            "effectiveDt": 0.1,
+            "treeTheta": 0.5,
+            "diagnosticCostMs": 38.66000000014901,
+            "K": 1.6118708038836265,
+            "U": -2.9559600140698503,
+            "E": -1.3440892101862238,
+            "G": 0.04498502151469553,
+            "epsilonSquared": 0.010000000000000002,
+            "forceAlgorithm": "direct",
+            "trajectoryPrecision": "Float64",
+            "evaluationPrecision": "Float64 compensated CPU evaluation",
+            "velocityEpoch": "full-step, after final KDK kick",
+            "externalPotential": 0,
+            "method": "Pares diretos Float64 · CPU compensada",
+            "relative": {
+              "signed": 0,
+              "absolute": 0,
+              "percent": 0,
+              "denominator": 1.3440892101862238,
+              "normalization": "|E0|"
+            },
+            "origin": "automatic",
+            "configuration": {
+              "n": 256,
+              "dt": 0.1,
+              "epsilon": 0.1,
+              "theta": 0.5,
+              "budgetBytes": 536870912,
+              "seed": 2026,
+              "energyAuditCadenceMyr": 200,
+              "withHalo": true,
+              "requestedAlgorithm": "direct",
+              "requestedBackend": "cpu-direct",
+              "selected": "cpu-direct",
+              "diagnosticOptions": {
+                "dt": 0.1,
+                "energyAuditCadenceMyr": 200,
+                "withHalo": true,
+                "forceMethod": "GPU direct f32",
+                "algorithm": "direct",
+                "epsilon": 0.1,
+                "theta": 0.5
+              }
+            },
+            "backend": "CPU Worker",
+            "requestedTimeMyr": 0,
+            "samplingCadenceMyr": 200
+          },
+          {
+            "timeMyr": 201.69999999999982,
+            "n": 256,
+            "mass": 104.9315764173288,
+            "effectiveDt": 0.1,
+            "treeTheta": 0.5,
+            "diagnosticCostMs": 35.16500000003725,
+            "K": 1.4732880095617469,
+            "U": -2.817379434125967,
+            "E": -1.3440914245642201,
+            "G": 0.04498502151469553,
+            "epsilonSquared": 0.010000000000000002,
+            "forceAlgorithm": "direct",
+            "trajectoryPrecision": "Float64",
+            "evaluationPrecision": "Float64 compensated CPU evaluation",
+            "velocityEpoch": "full-step, after final KDK kick",
+            "externalPotential": 0,
+            "method": "Pares diretos Float64 · CPU compensada",
+            "relative": {
+              "signed": -0.0000016474933207703574,
+              "absolute": 0.0000016474933207703574,
+              "percent": -0.00016474933207703574,
+              "denominator": 1.3440892101862238,
+              "normalization": "|E0|"
+            },
+            "origin": "automatic",
+            "configuration": {
+              "n": 256,
+              "dt": 0.1,
+              "epsilon": 0.1,
+              "theta": 0.5,
+              "budgetBytes": 536870912,
+              "seed": 2026,
+              "energyAuditCadenceMyr": 200,
+              "withHalo": true,
+              "requestedAlgorithm": "direct",
+              "requestedBackend": "cpu-direct",
+              "selected": "cpu-direct",
+              "diagnosticOptions": {
+                "dt": 0.1,
+                "energyAuditCadenceMyr": 200,
+                "withHalo": true,
+                "forceMethod": "GPU direct f32",
+                "algorithm": "direct",
+                "epsilon": 0.1,
+                "theta": 0.5
+              }
+            },
+            "backend": "CPU Worker",
+            "requestedTimeMyr": 200,
+            "samplingCadenceMyr": 200
+          }
+        ],
+        "comparison": [
+          {
+            "timeMyr": 0,
+            "method": "Diferença de estimadores no mesmo snapshot",
+            "BH": {
+              "timeMyr": 0,
+              "n": 256,
+              "mass": 104.9315764173288,
+              "effectiveDt": 0.1,
+              "treeTheta": 0.5,
+              "treeOrder": "monopole",
+              "treeLeafBucket": 8,
+              "diagnosticCostMs": 5.320000000298023,
+              "K": 1.6118708038836265,
+              "U": -2.9547656397238637,
+              "E": -1.3428948358402373,
+              "G": 0.04498502151469553,
+              "epsilonSquared": 0.010000000000000002,
+              "forceAlgorithm": "direct",
+              "trajectoryPrecision": "Float64",
+              "evaluationPrecision": "Float64 compensated CPU evaluation",
+              "velocityEpoch": "full-step, after final KDK kick",
+              "externalPotential": 0
+            },
+            "direct": {
+              "timeMyr": 0,
+              "n": 256,
+              "mass": 104.9315764173288,
+              "effectiveDt": 0.1,
+              "treeTheta": 0.5,
+              "diagnosticCostMs": 38.66000000014901,
+              "K": 1.6118708038836265,
+              "U": -2.9559600140698503,
+              "E": -1.3440892101862238,
+              "G": 0.04498502151469553,
+              "epsilonSquared": 0.010000000000000002,
+              "forceAlgorithm": "direct",
+              "trajectoryPrecision": "Float64",
+              "evaluationPrecision": "Float64 compensated CPU evaluation",
+              "velocityEpoch": "full-step, after final KDK kick",
+              "externalPotential": 0
+            },
+            "B": 0.0011943743459865708,
+            "epsilonPercent": 0.08886124052889986,
+            "deltaB": 0,
+            "etaPercent": 0,
+            "bhChangeCommonPercent": 0,
+            "directChangeCommonPercent": 0,
+            "n": 256,
+            "configuration": {
+              "n": 256,
+              "dt": 0.1,
+              "epsilon": 0.1,
+              "theta": 0.5,
+              "budgetBytes": 536870912,
+              "seed": 2026,
+              "energyAuditCadenceMyr": 200,
+              "withHalo": true,
+              "requestedAlgorithm": "direct",
+              "requestedBackend": "cpu-direct",
+              "selected": "cpu-direct",
+              "diagnosticOptions": {
+                "dt": 0.1,
+                "energyAuditCadenceMyr": 200,
+                "withHalo": true,
+                "forceMethod": "GPU direct f32",
+                "algorithm": "direct",
+                "epsilon": 0.1,
+                "theta": 0.5
+              }
+            },
+            "backend": "CPU Worker",
+            "instantNormalizationReason": null
+          },
+          {
+            "timeMyr": 201.69999999999982,
+            "method": "Diferença de estimadores no mesmo snapshot",
+            "BH": {
+              "timeMyr": 201.69999999999982,
+              "n": 256,
+              "mass": 104.9315764173288,
+              "effectiveDt": 0.1,
+              "treeTheta": 0.5,
+              "treeOrder": "monopole",
+              "treeLeafBucket": 8,
+              "diagnosticCostMs": 2.0899999998509884,
+              "K": 1.4732880095617469,
+              "U": -2.816117532040808,
+              "E": -1.3428295224790612,
+              "G": 0.04498502151469553,
+              "epsilonSquared": 0.010000000000000002,
+              "forceAlgorithm": "direct",
+              "trajectoryPrecision": "Float64",
+              "evaluationPrecision": "Float64 compensated CPU evaluation",
+              "velocityEpoch": "full-step, after final KDK kick",
+              "externalPotential": 0
+            },
+            "direct": {
+              "timeMyr": 201.69999999999982,
+              "n": 256,
+              "mass": 104.9315764173288,
+              "effectiveDt": 0.1,
+              "treeTheta": 0.5,
+              "diagnosticCostMs": 35.16500000003725,
+              "K": 1.4732880095617469,
+              "U": -2.817379434125967,
+              "E": -1.3440914245642201,
+              "G": 0.04498502151469553,
+              "epsilonSquared": 0.010000000000000002,
+              "forceAlgorithm": "direct",
+              "trajectoryPrecision": "Float64",
+              "evaluationPrecision": "Float64 compensated CPU evaluation",
+              "velocityEpoch": "full-step, after final KDK kick",
+              "externalPotential": 0
+            },
+            "B": 0.0012619020851589724,
+            "epsilonPercent": 0.0938851377292363,
+            "deltaB": 0.00006752773917240162,
+            "etaPercent": 0.005024051875473775,
+            "bhChangeCommonPercent": 0.004859302543396739,
+            "directChangeCommonPercent": -0.00016474933207703574,
+            "n": 256,
+            "configuration": {
+              "n": 256,
+              "dt": 0.1,
+              "epsilon": 0.1,
+              "theta": 0.5,
+              "budgetBytes": 536870912,
+              "seed": 2026,
+              "energyAuditCadenceMyr": 200,
+              "withHalo": true,
+              "requestedAlgorithm": "direct",
+              "requestedBackend": "cpu-direct",
+              "selected": "cpu-direct",
+              "diagnosticOptions": {
+                "dt": 0.1,
+                "energyAuditCadenceMyr": 200,
+                "withHalo": true,
+                "forceMethod": "GPU direct f32",
+                "algorithm": "direct",
+                "epsilon": 0.1,
+                "theta": 0.5
+              }
+            },
+            "backend": "CPU Worker",
+            "instantNormalizationReason": null
+          }
+        ],
+        "bhInitial": {
+          "time": 0,
+          "n": 256,
+          "mass": 104.9315764173288,
+          "kinetic": 1.6118708038836265,
+          "selfPotential": -2.9547656397238637,
+          "externalPotential": 0,
+          "potential": -2.9547656397238637,
+          "energy": -1.3428948358402373,
+          "energyScale": 4.56663644360749,
+          "algorithm": "barnes-hut",
+          "energyAlgorithm": "barnes-hut",
+          "G": 0.04498502151469553,
+          "epsilon": 0.1,
+          "theta": 0.5,
+          "energyApproximate": true,
+          "energyMethod": "Energia estimada — Barnes–Hut",
+          "externalPotentialModel": null,
+          "selfGravity": true,
+          "externalExtrapolated": 0,
+          "momentum": [
+            0,
+            0,
+            0
+          ],
+          "momentumNorm": 0,
+          "momentumScale": 16.38153274048814,
+          "centerOfMass": [
+            0,
+            0,
+            0
+          ],
+          "centerOfMassVelocity": [
+            0,
+            0,
+            0
+          ],
+          "angularMomentum": [
+            -25.801707877086148,
+            -146.39674439336133,
+            9.57415160504873
+          ],
+          "angularMomentumNorm": 148.96106631367178,
+          "angularMomentumScale": 994.6006627539268,
+          "Lx": -25.801707877086148,
+          "Ly": -146.39674439336133,
+          "Lz": 9.57415160504873,
+          "Lnorm": 148.96106631367178,
+          "intrinsicAngularMomentum": [
+            -25.801707877086148,
+            -146.39674439336133,
+            9.57415160504873
+          ],
+          "origin": [
+            0,
+            0,
+            0
+          ],
+          "conditions": {
+            "system": "isolated",
+            "energy": true,
+            "angularVector": true,
+            "angularZ": true,
+            "linearMomentum": true,
+            "centerOfMassBallistic": true,
+            "angularOrigin": "specified inertial origin; also report intrinsic COM angular momentum",
+            "forceCaveat": "Ideal invariants assume pair-symmetric conservative forces; fixed-step KDK has bounded discretization error, not exact energy conservation."
+          },
+          "epsilonSquared": 0.010000000000000002,
+          "forceAlgorithm": "direct",
+          "trajectoryPrecision": "Float64",
+          "requestedDt": 0.1,
+          "effectiveDt": 0.1,
+          "velocityEpoch": "full-step, after final KDK kick",
+          "precision": "Float64 compensated CPU evaluation",
+          "units": "1e10 Msun kpc^2 Myr^-2",
+          "arithmeticUncertainty": "Not a formal interval; see Decimal-80 calibration in energy-audit report.",
+          "treeOrder": "monopole",
+          "treeLeafBucket": 8,
+          "treeEpsilonSquared": 0.010000000000000002,
+          "diagnosticCostMs": 5.320000000298023
+        },
+        "directInitial": {
+          "time": 0,
+          "n": 256,
+          "mass": 104.9315764173288,
+          "kinetic": 1.6118708038836265,
+          "selfPotential": -2.9559600140698503,
+          "externalPotential": 0,
+          "potential": -2.9559600140698503,
+          "energy": -1.3440892101862238,
+          "energyScale": 4.567830817953476,
+          "algorithm": "direct",
+          "energyAlgorithm": "direct",
+          "G": 0.04498502151469553,
+          "epsilon": 0.1,
+          "theta": 0.5,
+          "energyApproximate": false,
+          "energyMethod": "Energia direta Float64 — pares compensados",
+          "externalPotentialModel": null,
+          "selfGravity": true,
+          "externalExtrapolated": 0,
+          "momentum": [
+            0,
+            0,
+            0
+          ],
+          "momentumNorm": 0,
+          "momentumScale": 16.38153274048814,
+          "centerOfMass": [
+            0,
+            0,
+            0
+          ],
+          "centerOfMassVelocity": [
+            0,
+            0,
+            0
+          ],
+          "angularMomentum": [
+            -25.801707877086148,
+            -146.39674439336133,
+            9.57415160504873
+          ],
+          "angularMomentumNorm": 148.96106631367178,
+          "angularMomentumScale": 994.6006627539268,
+          "Lx": -25.801707877086148,
+          "Ly": -146.39674439336133,
+          "Lz": 9.57415160504873,
+          "Lnorm": 148.96106631367178,
+          "intrinsicAngularMomentum": [
+            -25.801707877086148,
+            -146.39674439336133,
+            9.57415160504873
+          ],
+          "origin": [
+            0,
+            0,
+            0
+          ],
+          "conditions": {
+            "system": "isolated",
+            "energy": true,
+            "angularVector": true,
+            "angularZ": true,
+            "linearMomentum": true,
+            "centerOfMassBallistic": true,
+            "angularOrigin": "specified inertial origin; also report intrinsic COM angular momentum",
+            "forceCaveat": "Ideal invariants assume pair-symmetric conservative forces; fixed-step KDK has bounded discretization error, not exact energy conservation."
+          },
+          "epsilonSquared": 0.010000000000000002,
+          "forceAlgorithm": "direct",
+          "trajectoryPrecision": "Float64",
+          "requestedDt": 0.1,
+          "effectiveDt": 0.1,
+          "velocityEpoch": "full-step, after final KDK kick",
+          "precision": "Float64 compensated CPU evaluation",
+          "units": "1e10 Msun kpc^2 Myr^-2",
+          "arithmeticUncertainty": "Not a formal interval; see Decimal-80 calibration in energy-audit report.",
+          "diagnosticCostMs": 38.66000000014901,
+          "maximumWorkerComputeMs": 5.385000000707805,
+          "parallelWorkers": 4,
+          "pairCount": 32640
+        },
+        "biasInitial": 0.0011943743459865708,
+        "normalization": {
+          "BH": {
+            "value": 1.3428948358402373,
+            "reason": null
+          },
+          "direct": {
+            "value": 1.3440892101862238,
+            "reason": null
+          },
+          "comparison": "B = E_BH - E_dir; ΔB = B - B0; η = 100 ΔB / |E_dir(0)|. Native percentages with different denominators are not subtracted."
+        },
+        "summary": {
+          "bhMaxAbsolutePercent": 0.07407494547485628,
+          "bhLastPercent": -0.07407494547485628,
+          "directMaxAbsolutePercent": 0.00016474933207703574,
+          "directLastPercent": -0.00016474933207703574
+        },
+        "rejectedComparisonTimes": [],
+        "noInterpolatedDirectPoints": true,
+        "fastHistory": "Every measured energy epoch in this realization; no temporal decimation. Archived inputs may already be decimated: see source.",
+        "plot": {
+          "kind": "direct",
+          "mode": "relative",
+          "color": "#e9ab55",
+          "xDomain": [
+            0,
+            240.09999999999968
+          ],
+          "yDomain": {
+            "min": -0.0001779292786431986,
+            "max": 0.00001317994656616286,
+            "minimal": false,
+            "minimumDisplaySpan": 2.8421709430404007e-12,
+            "empty": false
+          },
+          "axisOffset": 0,
+          "referenceValue": 0,
+          "guide": {
+            "segments": [
+              {
+                "fromTimeMyr": 0,
+                "toTimeMyr": 201.69999999999982,
+                "fromValue": 0,
+                "toValue": -0.00016474933207703574
+              }
+            ],
+            "gaps": [],
+            "nominalCadenceMyr": 200,
+            "cadenceSource": "recorded",
+            "gapFactor": 1.5,
+            "visualGuideOnly": true,
+            "interpolatedMeasurements": false
+          },
+          "interpolated": false,
+          "plottedTimes": [
+            0,
+            201.69999999999982
+          ]
+        }
+      },
+      "status": "Referência direta Float64: automática · última avaliação em 201,7 Myr · intervalo solicitado 200 Myr · efetivo 200 Myr."
+    }
+  ]
+}

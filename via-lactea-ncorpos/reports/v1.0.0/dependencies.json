@@ -1,0 +1,65 @@
+{
+  "schema": "equilibrium-dependencies-v1",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "numpy": "2.5.4",
+  "scipy": "1.18.1",
+  "matplotlib": "3.11.2",
+  "agama": {
+    "version": "1.0.161 compiled on Oct 15 2026",
+    "commit": "f302756b8af2b763db58e278e30478517dc8eea3",
+    "commitDate": "2026-08-25T15:34:37Z",
+    "repository": "https://github.com/GalacticDynamics-Oxford/Agama",
+    "pinnedURL": "https://codeload.github.com/GalacticDynamics-Oxford/Agama/zip/f302756b8af2b763db58e278e30478517dc8eea3",
+    "sourceArchiveSHA256": "41b171767525abf26149d2881b032388d548e3c81374814a815ac8b252f44721",
+    "buildArchiveMasterSHA256": "9277701bb3af18b4bd4d341141e611ab549b126108f508de771f7bade4fbd477",
+    "pinnedSourceMatchesBuiltSource": true,
+    "binarySHA256": "4ba5b5f95aa5685e08460228c393227ea322254982cd52784545a4f072666c0b",
+    "binaryABI": "CPython 3.12 Windows x64",
+    "sourceModifications": "none; compile flags C++17 /permissive- and a POSIX alloca compatibility header supplied through extras/include",
+    "officialTests": {
+      "coordinates": "passed after importing the complete Python package",
+      "orbit": "passed",
+      "selfConsistentModel": "passed",
+      "actions": "passed"
+    },
+    "GSL": "2.7 (author-supplied Windows port, actual 628 gsl + 143 cblas source list; consult build log for count)",
+    "Eigen": "3.4.1",
+    "GSLArchiveSHA256": "5be5792b9ed769aa2688b585b496671e314d51cd2da6729673275157a6160dd6"
+  },
+  "toolchain": {
+    "VCToolsVersion": "14.44.35207",
+    "WindowsSDKVersion": "10.0.26100.0",
+    "TOOL_VERSIONS": {
+      "cl.exe": "19.44.35229.0",
+      "lib.exe": "14.44.35229.0",
+      "link.exe": "14.44.35229.0",
+      "nmake.exe": "14.44.35229.0"
+    }
+  },
+  "compileFlags": "/O2 /EHsc /openmp /std:c++17 /permissive-; default precise FP, no fast-math",
+  "files": {
+    "agama-source-f302756.zip": "41b171767525abf26149d2881b032388d548e3c81374814a815ac8b252f44721",
+    "gsl-source-author.zip": "5be5792b9ed769aa2688b585b496671e314d51cd2da6729673275157a6160dd6",
+    "build-gsl-executed.py": "56ffdffa630f1229267639cdf88acb8d05699fb1e60c8e6bad8dffe7472681e8",
+    "Makefile.local-executed.txt": "c83c0352e589d0e56e9f741e5a94be222f4e9b36bfa87a60f99822ad966537e3",
+    "alloca-msvc-compat.h": "e30341d5bb77f2299a06e9af3a6230a3a782dc2a8fe364a0c98483ca4a7d521e",
+    "portablemsvc.lock": "de8b8919929f1509b0f9d859e537d49c54cabf4bfb5e3e56bca22293e5d50564"
+  },
+  "executionSourceEpochs": [
+    "executed-source-preparation/generate_agama.py",
+    "executed-source-refinement/generate_agama.py",
+    "executed-source-refinement/refine_scm.py",
+    "scripts/equilibrium/generate_agama.py (final sampling hash recorded in each snapshot)",
+    "executed-source-sampling/generate_agama.py",
+    "executed-source-calibrated-checkpoint/generate_agama.py"
+  ],
+  "qualification": "Library tests check known numerical/API problems, not equilibrium of the Milky Way candidate. Toolchain is task-local; no Windows registry activation was used.",
+  "preparationAndSamplingSources": {
+    "executed-source-calibrated": "7e1ca53a57dae3dfbe014e346170af60bb99a62c29edc24ea8f77cf38f16a8ca",
+    "executed-source-calibrated-checkpoint": "3e7a5ec567999b637350e463f57d400fa45a86016b8c39b89abf4b706e429f5e",
+    "executed-source-preparation": "52c1ba03be6756d7c0a7d6e49be9f1ca56be92cb1683be72b96ae8e7bef15638",
+    "executed-source-refinement": "77e79737367771a78345ec14fbfbb9aff4bb7fc4133200df64e6cc79c058fc93",
+    "executed-source-sampling": "82389a9550c62b43c7af9f73352ede706a0d4e58b2659c618661078a85ff07dc"
+  }
+}

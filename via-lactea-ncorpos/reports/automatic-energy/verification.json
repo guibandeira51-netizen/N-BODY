@@ -1,0 +1,492 @@
+{
+  "status": "passed",
+  "scope": "Automatic energy diagnostic workflow and actual performance; not a structural equilibrium certificate",
+  "results": [
+    {
+      "name": "cpu-512",
+      "status": "passed",
+      "codeIdentity": "8522dd3d241135de320e47df22bf8fc575e77dda176a9041bd50916ee323ff02",
+      "automatic": {
+        "mode": "automatic",
+        "phase": "ready",
+        "activeTimeMyr": null,
+        "pendingTimeMyr": null,
+        "pendingCount": 0,
+        "peakPending": 1,
+        "completed": 18,
+        "omitted": 0,
+        "lastTimeMyr": 3401.5000000000005,
+        "lastCostMs": 37.93999999947846,
+        "cadenceMyr": 200,
+        "policy": {
+          "cadenceMyr": 200,
+          "snapshotBytes": 29184,
+          "estimatedWorkingBytes": 321024,
+          "memoryBudgetBytes": 100663296,
+          "allowed": true,
+          "maxEvaluationMs": 60000,
+          "targetEvaluationMs": 10000,
+          "maxReferences": 4096
+        },
+        "progress": 1,
+        "lastError": null,
+        "events": [
+          {
+            "type": "completed",
+            "timeMyr": 0,
+            "reason": "Referência direta Float64 calculada no snapshot preservado."
+          },
+          {
+            "type": "completed",
+            "timeMyr": 201.8,
+            "reason": "Referência direta Float64 calculada no snapshot preservado."
+          },
+          {
+            "type": "completed",
+            "timeMyr": 401.8,
+            "reason": "Referência direta Float64 calculada no snapshot preservado."
+          },
+          {
+            "type": "completed",
+            "timeMyr": 601.8,
+            "reason": "Referência direta Float64 calculada no snapshot preservado."
+          },
+          {
+            "type": "completed",
+            "timeMyr": 801.8,
+            "reason": "Referência direta Float64 calculada no snapshot preservado."
+          },
+          {
+            "type": "completed",
+            "timeMyr": 1001.8,
+            "reason": "Referência direta Float64 calculada no snapshot preservado."
+          },
+          {
+            "type": "completed",
+            "timeMyr": 1201.8,
+            "reason": "Referência direta Float64 calculada no snapshot preservado."
+          },
+          {
+            "type": "completed",
+            "timeMyr": 1401.8,
+            "reason": "Referência direta Float64 calculada no snapshot preservado."
+          },
+          {
+            "type": "completed",
+            "timeMyr": 1601.8,
+            "reason": "Referência direta Float64 calculada no snapshot preservado."
+          },
+          {
+            "type": "completed",
+            "timeMyr": 1801.8,
+            "reason": "Referência direta Float64 calculada no snapshot preservado."
+          },
+          {
+            "type": "completed",
+            "timeMyr": 2001.8,
+            "reason": "Referência direta Float64 calculada no snapshot preservado."
+          },
+          {
+            "type": "completed",
+            "timeMyr": 2201.8,
+            "reason": "Referência direta Float64 calculada no snapshot preservado."
+          },
+          {
+            "type": "completed",
+            "timeMyr": 2401.8,
+            "reason": "Referência direta Float64 calculada no snapshot preservado."
+          },
+          {
+            "type": "completed",
+            "timeMyr": 2601.8,
+            "reason": "Referência direta Float64 calculada no snapshot preservado."
+          },
+          {
+            "type": "completed",
+            "timeMyr": 2801.8,
+            "reason": "Referência direta Float64 calculada no snapshot preservado."
+          },
+          {
+            "type": "completed",
+            "timeMyr": 3001.8,
+            "reason": "Referência direta Float64 calculada no snapshot preservado."
+          },
+          {
+            "type": "completed",
+            "timeMyr": 3201.5000000000005,
+            "reason": "Referência direta Float64 calculada no snapshot preservado."
+          },
+          {
+            "type": "completed",
+            "timeMyr": 3401.5000000000005,
+            "reason": "Referência direta Float64 calculada no snapshot preservado."
+          }
+        ],
+        "rawSnapshotRetention": "Initial and two latest completed snapshots; other points retain energies, parameters and epochs."
+      },
+      "referenceCount": 18,
+      "initialEnergy": -2.161912586311806,
+      "meanReferenceCostMs": 38.308888888710904,
+      "maxAbsoluteSignedPercent": 0.5730190221702297,
+      "rows": [
+        {
+          "timeMyr": 0,
+          "requestedTimeMyr": 0,
+          "n": 512,
+          "backend": "CPU Worker",
+          "trajectoryPrecision": "Float64",
+          "energy": -2.161912586311806,
+          "signedPercent": 0,
+          "denominator": 2.161912586311806,
+          "costMs": 33.17999999970198,
+          "rawArraysRetained": true
+        },
+        {
+          "timeMyr": 201.8,
+          "requestedTimeMyr": 200,
+          "n": 512,
+          "backend": "CPU Worker",
+          "trajectoryPrecision": "Float64",
+          "energy": -2.1618641243362893,
+          "signedPercent": 0.0022416251158069046,
+          "denominator": 2.161912586311806,
+          "costMs": 37.809999998658895,
+          "rawArraysRetained": false
+        },
+        {
+          "timeMyr": 401.8,
+          "requestedTimeMyr": 400,
+          "n": 512,
+          "backend": "CPU Worker",
+          "trajectoryPrecision": "Float64",
+          "energy": -2.1615717690599383,
+          "signedPercent": 0.015764617590249094,
+          "denominator": 2.161912586311806,
+          "costMs": 35.18500000052154,
+          "rawArraysRetained": false
+        },
+        {
+          "timeMyr": 601.8,
+          "requestedTimeMyr": 600,
+          "n": 512,
+          "backend": "CPU Worker",
+          "trajectoryPrecision": "Float64",
+          "energy": -2.161561438030243,
+          "signedPercent": 0.016242482873086498,
+          "denominator": 2.161912586311806,
+          "costMs": 37.5149999987334,
+          "rawArraysRetained": false
+        },
+        {
+          "timeMyr": 801.8,
+          "requestedTimeMyr": 800,
+          "n": 512,
+          "backend": "CPU Worker",
+          "trajectoryPrecision": "Float64",
+          "energy": -2.161522755824712,
+          "signedPercent": 0.01803174141092364,
+          "denominator": 2.161912586311806,
+          "costMs": 41.15000000037253,
+          "rawArraysRetained": false
+        },
+        {
+          "timeMyr": 1001.8,
+          "requestedTimeMyr": 1000,
+          "n": 512,
+          "backend": "CPU Worker",
+          "trajectoryPrecision": "Float64",
+          "energy": -2.1620152657953557,
+          "signedPercent": -0.004749474340453634,
+          "denominator": 2.161912586311806,
+          "costMs": 48.85999999940395,
+          "rawArraysRetained": false
+        },
+        {
+          "timeMyr": 1201.8,
+          "requestedTimeMyr": 1200,
+          "n": 512,
+          "backend": "CPU Worker",
+          "trajectoryPrecision": "Float64",
+          "energy": -2.162128821012124,
+          "signedPercent": -0.010002009409972432,
+          "denominator": 2.161912586311806,
+          "costMs": 32.519999999552965,
+          "rawArraysRetained": false
+        },
+        {
+          "timeMyr": 1401.8,
+          "requestedTimeMyr": 1400,
+          "n": 512,
+          "backend": "CPU Worker",
+          "trajectoryPrecision": "Float64",
+          "energy": -2.161198862653799,
+          "signedPercent": 0.03301352989598161,
+          "denominator": 2.161912586311806,
+          "costMs": 40.57499999925494,
+          "rawArraysRetained": false
+        },
+        {
+          "timeMyr": 1601.8,
+          "requestedTimeMyr": 1600,
+          "n": 512,
+          "backend": "CPU Worker",
+          "trajectoryPrecision": "Float64",
+          "energy": -2.1613790950473324,
+          "signedPercent": 0.024676819398307365,
+          "denominator": 2.161912586311806,
+          "costMs": 35.59999999962747,
+          "rawArraysRetained": false
+        },
+        {
+          "timeMyr": 1801.8,
+          "requestedTimeMyr": 1800,
+          "n": 512,
+          "backend": "CPU Worker",
+          "trajectoryPrecision": "Float64",
+          "energy": -2.1622440128875122,
+          "signedPercent": -0.015330248679101514,
+          "denominator": 2.161912586311806,
+          "costMs": 40.91000000014901,
+          "rawArraysRetained": false
+        },
+        {
+          "timeMyr": 2001.8,
+          "requestedTimeMyr": 2000,
+          "n": 512,
+          "backend": "CPU Worker",
+          "trajectoryPrecision": "Float64",
+          "energy": -2.1637921020284145,
+          "signedPercent": -0.08693763700294395,
+          "denominator": 2.161912586311806,
+          "costMs": 35.744999999180436,
+          "rawArraysRetained": false
+        },
+        {
+          "timeMyr": 2201.8,
+          "requestedTimeMyr": 2200,
+          "n": 512,
+          "backend": "CPU Worker",
+          "trajectoryPrecision": "Float64",
+          "energy": -2.153196334976912,
+          "signedPercent": 0.40317316204554615,
+          "denominator": 2.161912586311806,
+          "costMs": 34.794999999925494,
+          "rawArraysRetained": false
+        },
+        {
+          "timeMyr": 2401.8,
+          "requestedTimeMyr": 2400,
+          "n": 512,
+          "backend": "CPU Worker",
+          "trajectoryPrecision": "Float64",
+          "energy": -2.1534630939370847,
+          "signedPercent": 0.3908341358581879,
+          "denominator": 2.161912586311806,
+          "costMs": 43.84999999962747,
+          "rawArraysRetained": false
+        },
+        {
+          "timeMyr": 2601.8,
+          "requestedTimeMyr": 2600,
+          "n": 512,
+          "backend": "CPU Worker",
+          "trajectoryPrecision": "Float64",
+          "energy": -2.157024154492065,
+          "signedPercent": 0.22611607197681544,
+          "denominator": 2.161912586311806,
+          "costMs": 34.230000000447035,
+          "rawArraysRetained": false
+        },
+        {
+          "timeMyr": 2801.8,
+          "requestedTimeMyr": 2800,
+          "n": 512,
+          "backend": "CPU Worker",
+          "trajectoryPrecision": "Float64",
+          "energy": -2.155918790200212,
+          "signedPercent": 0.27724507223573785,
+          "denominator": 2.161912586311806,
+          "costMs": 37.56000000052154,
+          "rawArraysRetained": false
+        },
+        {
+          "timeMyr": 3001.8,
+          "requestedTimeMyr": 3000,
+          "n": 512,
+          "backend": "CPU Worker",
+          "trajectoryPrecision": "Float64",
+          "energy": -2.153174793896856,
+          "signedPercent": 0.40416955201025073,
+          "denominator": 2.161912586311806,
+          "costMs": 39.980000000447035,
+          "rawArraysRetained": false
+        },
+        {
+          "timeMyr": 3201.5000000000005,
+          "requestedTimeMyr": 3200,
+          "n": 512,
+          "backend": "CPU Worker",
+          "trajectoryPrecision": "Float64",
+          "energy": -2.149906368539448,
+          "signedPercent": 0.55535167556614,
+          "denominator": 2.161912586311806,
+          "costMs": 42.15500000119209,
+          "rawArraysRetained": true
+        },
+        {
+          "timeMyr": 3401.5000000000005,
+          "requestedTimeMyr": 3400,
+          "n": 512,
+          "backend": "CPU Worker",
+          "trajectoryPrecision": "Float64",
+          "energy": -2.149524415949547,
+          "signedPercent": 0.5730190221702297,
+          "denominator": 2.161912586311806,
+          "costMs": 37.93999999947846,
+          "rawArraysRetained": true
+        }
+      ]
+    },
+    {
+      "name": "gpu-80000",
+      "status": "passed",
+      "codeIdentity": "8522dd3d241135de320e47df22bf8fc575e77dda176a9041bd50916ee323ff02",
+      "automatic": {
+        "mode": "automatic",
+        "phase": "ready",
+        "activeTimeMyr": null,
+        "pendingTimeMyr": null,
+        "pendingCount": 0,
+        "peakPending": 1,
+        "completed": 6,
+        "omitted": 0,
+        "lastTimeMyr": 1000.0000000001588,
+        "lastCostMs": 3671.960000000894,
+        "cadenceMyr": 200,
+        "policy": {
+          "cadenceMyr": 200,
+          "snapshotBytes": 4560000,
+          "estimatedWorkingBytes": 50160000,
+          "memoryBudgetBytes": 100663296,
+          "allowed": true,
+          "maxEvaluationMs": 60000,
+          "targetEvaluationMs": 10000,
+          "maxReferences": 4096
+        },
+        "progress": 1,
+        "lastError": null,
+        "events": [
+          {
+            "type": "completed",
+            "timeMyr": 0,
+            "reason": "Referência direta Float64 calculada no snapshot preservado."
+          },
+          {
+            "type": "completed",
+            "timeMyr": 200.09999999999292,
+            "reason": "Referência direta Float64 calculada no snapshot preservado."
+          },
+          {
+            "type": "completed",
+            "timeMyr": 400.00000000002245,
+            "reason": "Referência direta Float64 calculada no snapshot preservado."
+          },
+          {
+            "type": "completed",
+            "timeMyr": 600.0000000000679,
+            "reason": "Referência direta Float64 calculada no snapshot preservado."
+          },
+          {
+            "type": "completed",
+            "timeMyr": 800.0000000001133,
+            "reason": "Referência direta Float64 calculada no snapshot preservado."
+          },
+          {
+            "type": "completed",
+            "timeMyr": 1000.0000000001588,
+            "reason": "Referência direta Float64 calculada no snapshot preservado."
+          }
+        ],
+        "rawSnapshotRetention": "Initial and two latest completed snapshots; other points retain energies, parameters and epochs."
+      },
+      "referenceCount": 6,
+      "initialEnergy": -1.8601391056181185,
+      "meanReferenceCostMs": 3570.110833333805,
+      "maxAbsoluteSignedPercent": 0.00013374506901292645,
+      "rows": [
+        {
+          "timeMyr": 0,
+          "requestedTimeMyr": 0,
+          "n": 80000,
+          "backend": "WebGPU",
+          "trajectoryPrecision": "Float32",
+          "energy": -1.8601391056181185,
+          "signedPercent": 0,
+          "denominator": 1.8601391056181185,
+          "costMs": 3510.1500000003725,
+          "rawArraysRetained": true
+        },
+        {
+          "timeMyr": 200.09999999999292,
+          "requestedTimeMyr": 200,
+          "n": 80000,
+          "backend": "WebGPU",
+          "trajectoryPrecision": "Float32",
+          "energy": -1.8601399667684193,
+          "signedPercent": -0.00004629494096678508,
+          "denominator": 1.8601391056181185,
+          "costMs": 3567.6450000014156,
+          "rawArraysRetained": false
+        },
+        {
+          "timeMyr": 400.00000000002245,
+          "requestedTimeMyr": 400,
+          "n": 80000,
+          "backend": "WebGPU",
+          "trajectoryPrecision": "Float32",
+          "energy": -1.860139536260794,
+          "signedPercent": -0.000023151100593442988,
+          "denominator": 1.8601391056181185,
+          "costMs": 3540.710000000894,
+          "rawArraysRetained": false
+        },
+        {
+          "timeMyr": 600.0000000000679,
+          "requestedTimeMyr": 600,
+          "n": 80000,
+          "backend": "WebGPU",
+          "trajectoryPrecision": "Float32",
+          "energy": -1.8601404176779788,
+          "signedPercent": -0.00007053557749265583,
+          "denominator": 1.8601391056181185,
+          "costMs": 3588.660000000149,
+          "rawArraysRetained": false
+        },
+        {
+          "timeMyr": 800.0000000001133,
+          "requestedTimeMyr": 800,
+          "n": 80000,
+          "backend": "WebGPU",
+          "trajectoryPrecision": "Float32",
+          "energy": -1.8601407157088787,
+          "signedPercent": -0.00008655754590667455,
+          "denominator": 1.8601391056181185,
+          "costMs": 3541.539999999106,
+          "rawArraysRetained": true
+        },
+        {
+          "timeMyr": 1000.0000000001588,
+          "requestedTimeMyr": 1000,
+          "n": 80000,
+          "backend": "WebGPU",
+          "trajectoryPrecision": "Float32",
+          "energy": -1.860141593462449,
+          "signedPercent": -0.00013374506901292645,
+          "denominator": 1.8601391056181185,
+          "costMs": 3671.960000000894,
+          "rawArraysRetained": true
+        }
+      ]
+    }
+  ]
+}

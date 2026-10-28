@@ -1,0 +1,9 @@
+{
+  "files": {
+    "generate_agama.py": "3e7a5ec567999b637350e463f57d400fa45a86016b8c39b89abf4b706e429f5e",
+    "generate_softened.py": "fbc6b94ecfb41e39481813a94389803277a351fe50d8fab93ec95a4285d87159",
+    "model-c20-calibrated.json": "5b8be4b0476fb82dcfac9ff2a1f67829d2a35e8dbc5738810c11f382fcd9c70b",
+    "plummer_mean.py": "4bba8cf8cf8c91943f4a27b0c9b4e7a54fe3f82301508dcf865089a2d04d2eed"
+  },
+  "qualification": "First generation loaded before sample-only/manifest-merging CLI extension. Iteration/operator numerical code identical. Subsequent sample-only calls execute current source and preserve their separate hashes."
+}

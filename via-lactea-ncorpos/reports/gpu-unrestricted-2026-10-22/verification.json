@@ -1,0 +1,52 @@
+{
+  "at": "2026-10-22T07:24:27.570Z",
+  "tests": {
+    "passed": 215,
+    "failed": 0
+  },
+  "build": "passed",
+  "sourceIdentityChecked": true,
+  "unchangedPhysics": {
+    "src/physics/live-initial.js": true,
+    "src/physics/forces.js": true,
+    "src/physics/integrator.js": true,
+    "src/physics/constants.js": true,
+    "src/compute/gpu-live.js": true
+  },
+  "browser": {
+    "passed": true,
+    "budgetControlRejected": true,
+    "n": 16,
+    "steps": 2,
+    "timeMyr": 0.20000000298023224,
+    "memoryPolicy": "adapter-limits-only",
+    "budgetBytes": null,
+    "effectiveParameters": {
+      "dt": 0.10000000149011612,
+      "epsilonSquared": 0.009999999776482582,
+      "G": 0.04498502239584923,
+      "precision": "f32"
+    }
+  },
+  "originalPage": {
+    "budgetFieldPresent": false,
+    "estimate": "1.072.000 corpos físicos · ~296.5 MiB estimados · alocação e custo final serão conferidos ao iniciar.",
+    "fields": {
+      "backend": "auto",
+      "dt": "0.1",
+      "energy-audit-cadence": "150",
+      "epsilon": "0.1",
+      "force-method": "auto",
+      "halo-refinement": "32",
+      "mode": "manual",
+      "model": "halo",
+      "n": "80000",
+      "seed": "2026"
+    },
+    "startEnabled": true,
+    "status": "GPU avaliada: N=10.000, 3.05 ms/passo · N=30.000, 8.54 ms/passo · N=41.306, 15.61 ms/passo. N automático verificado antes de iniciar; alvo de cálculo ~20 ms/passo.",
+    "steps": "0",
+    "time": "0 Myr"
+  },
+  "largeRunExecuted": false
+}

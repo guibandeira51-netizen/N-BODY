@@ -1,0 +1,482 @@
+{
+  "utc": "2026-10-18T04:38:36.185Z",
+  "time": "378.00 Myr",
+  "status": "Referência direta Float64: automática · última avaliação em 281,1 Myr · cadência 200 Myr.",
+  "chart": {
+    "schema": "live-energy-chart-v1",
+    "units": "1e10 Msun kpc^2 Myr^-2",
+    "errorUnits": "percent",
+    "normalization": "Independent E(0) for each method in the same realization; signed 100*(E(t)-E(0))/abs(E(0)); explicit K0+abs(U0) fallback near cancellation",
+    "fastInitial": {
+      "time": 0,
+      "n": 80000,
+      "mass": 104.93157387827523,
+      "kinetic": 1.8716261528111353,
+      "selfPotential": -3.731338796533102,
+      "externalPotential": 0,
+      "potential": -3.731338796533102,
+      "energy": -1.8597126437219669,
+      "energyScale": 5.602964949344237,
+      "algorithm": "barnes-hut",
+      "energyAlgorithm": "barnes-hut",
+      "G": 0.04498502239584923,
+      "epsilon": 0.0999999988824129,
+      "theta": 0.5,
+      "energyApproximate": true,
+      "energyMethod": "Energia estimada — Barnes–Hut",
+      "externalPotentialModel": null,
+      "selfGravity": true,
+      "externalExtrapolated": 0,
+      "momentum": [
+        0,
+        0,
+        0
+      ],
+      "momentumNorm": 0,
+      "momentumScale": 17.525418556915128,
+      "centerOfMass": [
+        0,
+        0,
+        0
+      ],
+      "centerOfMassVelocity": [
+        0,
+        0,
+        0
+      ],
+      "angularMomentum": [
+        4.8752367319019205,
+        -3.5742099051730825,
+        26.152307940966384
+      ],
+      "angularMomentumNorm": 26.841872518091144,
+      "angularMomentumScale": 866.1817538685871,
+      "Lx": 4.8752367319019205,
+      "Ly": -3.5742099051730825,
+      "Lz": 26.152307940966384,
+      "Lnorm": 26.841872518091144,
+      "intrinsicAngularMomentum": [
+        4.8752367319019205,
+        -3.5742099051730825,
+        26.152307940966384
+      ],
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "conditions": {
+        "system": "isolated",
+        "energy": true,
+        "angularVector": true,
+        "angularZ": true,
+        "linearMomentum": true,
+        "centerOfMassBallistic": true,
+        "angularOrigin": "specified inertial origin; also report intrinsic COM angular momentum",
+        "forceCaveat": "Float32 force and accumulation roundoff must be measured; Float64 readback diagnostics do not upgrade the trajectory precision."
+      },
+      "epsilonSquared": 0.009999999776482582,
+      "forceAlgorithm": "GPU direct f32",
+      "trajectoryPrecision": "Float32",
+      "requestedDt": 0.1,
+      "effectiveDt": 0.10000000149011612,
+      "velocityEpoch": "full-step, after final KDK kick",
+      "precision": "Float64 compensated CPU evaluation",
+      "units": "1e10 Msun kpc^2 Myr^-2",
+      "arithmeticUncertainty": "Not a formal interval; see Decimal-80 calibration in energy-audit report.",
+      "treeOrder": "monopole",
+      "treeLeafBucket": 8,
+      "treeEpsilonSquared": 0.00999999977648258,
+      "diagnosticCostMs": 2712.890000000596
+    },
+    "directInitial": {
+      "time": 0,
+      "n": 80000,
+      "mass": 104.93157387827523,
+      "kinetic": 1.8716261528111353,
+      "selfPotential": -3.7317652584292538,
+      "externalPotential": 0,
+      "potential": -3.7317652584292538,
+      "energy": -1.8601391056181185,
+      "energyScale": 5.6033914112403895,
+      "algorithm": "direct",
+      "energyAlgorithm": "direct",
+      "G": 0.04498502239584923,
+      "epsilon": 0.0999999988824129,
+      "theta": 0.5,
+      "energyApproximate": false,
+      "energyMethod": "Energia direta Float64 — pares compensados",
+      "externalPotentialModel": null,
+      "selfGravity": true,
+      "externalExtrapolated": 0,
+      "momentum": [
+        0,
+        0,
+        0
+      ],
+      "momentumNorm": 0,
+      "momentumScale": 17.525418556915128,
+      "centerOfMass": [
+        0,
+        0,
+        0
+      ],
+      "centerOfMassVelocity": [
+        0,
+        0,
+        0
+      ],
+      "angularMomentum": [
+        4.8752367319019205,
+        -3.5742099051730825,
+        26.152307940966384
+      ],
+      "angularMomentumNorm": 26.841872518091144,
+      "angularMomentumScale": 866.1817538685871,
+      "Lx": 4.8752367319019205,
+      "Ly": -3.5742099051730825,
+      "Lz": 26.152307940966384,
+      "Lnorm": 26.841872518091144,
+      "intrinsicAngularMomentum": [
+        4.8752367319019205,
+        -3.5742099051730825,
+        26.152307940966384
+      ],
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "conditions": {
+        "system": "isolated",
+        "energy": true,
+        "angularVector": true,
+        "angularZ": true,
+        "linearMomentum": true,
+        "centerOfMassBallistic": true,
+        "angularOrigin": "specified inertial origin; also report intrinsic COM angular momentum",
+        "forceCaveat": "Float32 force and accumulation roundoff must be measured; Float64 readback diagnostics do not upgrade the trajectory precision."
+      },
+      "epsilonSquared": 0.009999999776482582,
+      "forceAlgorithm": "GPU direct f32",
+      "trajectoryPrecision": "Float32",
+      "requestedDt": 0.1,
+      "effectiveDt": 0.10000000149011612,
+      "velocityEpoch": "full-step, after final KDK kick",
+      "precision": "Float64 compensated CPU evaluation",
+      "units": "1e10 Msun kpc^2 Myr^-2",
+      "arithmeticUncertainty": "Not a formal interval; see Decimal-80 calibration in energy-audit report.",
+      "diagnosticCostMs": 3615.129999998957,
+      "maximumWorkerComputeMs": 3574.984999999404,
+      "parallelWorkers": 4,
+      "pairCount": 3199960000
+    },
+    "estimated": [
+      {
+        "timeMyr": 0,
+        "energy": -1.8597126437219669,
+        "relative": {
+          "signed": 0,
+          "absolute": 0,
+          "percent": 0,
+          "denominator": 1.8597126437219669,
+          "normalization": "|E0|"
+        }
+      },
+      {
+        "timeMyr": 137.0999999999965,
+        "energy": -1.8596971845874184,
+        "relative": {
+          "signed": 0.000008312646903093328,
+          "absolute": 0.000008312646903093328,
+          "percent": 0.0008312646903093328,
+          "denominator": 1.8597126437219669,
+          "normalization": "|E0|"
+        }
+      },
+      {
+        "timeMyr": 281.0999999999954,
+        "energy": -1.859736430683604,
+        "relative": {
+          "signed": -0.00001279066511558848,
+          "absolute": 0.00001279066511558848,
+          "percent": -0.001279066511558848,
+          "denominator": 1.8597126437219669,
+          "normalization": "|E0|"
+        }
+      }
+    ],
+    "references": [
+      {
+        "timeMyr": 0,
+        "origin": "automatic",
+        "requestedTimeMyr": 0,
+        "direct": {
+          "time": 0,
+          "n": 80000,
+          "mass": 104.93157387827523,
+          "kinetic": 1.8716261528111353,
+          "selfPotential": -3.7317652584292538,
+          "externalPotential": 0,
+          "potential": -3.7317652584292538,
+          "energy": -1.8601391056181185,
+          "energyScale": 5.6033914112403895,
+          "algorithm": "direct",
+          "energyAlgorithm": "direct",
+          "G": 0.04498502239584923,
+          "epsilon": 0.0999999988824129,
+          "theta": 0.5,
+          "energyApproximate": false,
+          "energyMethod": "Energia direta Float64 — pares compensados",
+          "externalPotentialModel": null,
+          "selfGravity": true,
+          "externalExtrapolated": 0,
+          "momentum": [
+            0,
+            0,
+            0
+          ],
+          "momentumNorm": 0,
+          "momentumScale": 17.525418556915128,
+          "centerOfMass": [
+            0,
+            0,
+            0
+          ],
+          "centerOfMassVelocity": [
+            0,
+            0,
+            0
+          ],
+          "angularMomentum": [
+            4.8752367319019205,
+            -3.5742099051730825,
+            26.152307940966384
+          ],
+          "angularMomentumNorm": 26.841872518091144,
+          "angularMomentumScale": 866.1817538685871,
+          "Lx": 4.8752367319019205,
+          "Ly": -3.5742099051730825,
+          "Lz": 26.152307940966384,
+          "Lnorm": 26.841872518091144,
+          "intrinsicAngularMomentum": [
+            4.8752367319019205,
+            -3.5742099051730825,
+            26.152307940966384
+          ],
+          "origin": [
+            0,
+            0,
+            0
+          ],
+          "conditions": {
+            "system": "isolated",
+            "energy": true,
+            "angularVector": true,
+            "angularZ": true,
+            "linearMomentum": true,
+            "centerOfMassBallistic": true,
+            "angularOrigin": "specified inertial origin; also report intrinsic COM angular momentum",
+            "forceCaveat": "Float32 force and accumulation roundoff must be measured; Float64 readback diagnostics do not upgrade the trajectory precision."
+          },
+          "epsilonSquared": 0.009999999776482582,
+          "forceAlgorithm": "GPU direct f32",
+          "trajectoryPrecision": "Float32",
+          "requestedDt": 0.1,
+          "effectiveDt": 0.10000000149011612,
+          "velocityEpoch": "full-step, after final KDK kick",
+          "precision": "Float64 compensated CPU evaluation",
+          "units": "1e10 Msun kpc^2 Myr^-2",
+          "arithmeticUncertainty": "Not a formal interval; see Decimal-80 calibration in energy-audit report.",
+          "diagnosticCostMs": 3615.129999998957,
+          "maximumWorkerComputeMs": 3574.984999999404,
+          "parallelWorkers": 4,
+          "pairCount": 3199960000
+        },
+        "relative": {
+          "signed": 0,
+          "absolute": 0,
+          "percent": 0,
+          "denominator": 1.8601391056181185,
+          "normalization": "|E0|"
+        },
+        "deltaU": 0.00042646189615158647,
+        "relativeU": 0.00011427886445651985,
+        "snapshot": {
+          "n": 80000,
+          "time": 0,
+          "parameters": {
+            "G": 0.04498502239584923,
+            "epsilonSquared": 0.009999999776482582,
+            "epsilon": 0.0999999988824129,
+            "theta": 0.5,
+            "forceAlgorithm": "GPU direct f32",
+            "trajectoryPrecision": "Float32",
+            "requestedDt": 0.1,
+            "effectiveDt": 0.10000000149011612,
+            "velocityEpoch": "full-step, after final KDK kick",
+            "externalPotential": "none; isolated live components"
+          },
+          "backend": "WebGPU",
+          "configuration": {
+            "n": 80000,
+            "dt": 0.1,
+            "epsilon": 0.1,
+            "theta": 0.5,
+            "budgetBytes": 536870912,
+            "seed": 2026,
+            "withHalo": true,
+            "requestedAlgorithm": "direct",
+            "requestedBackend": "gpu",
+            "selected": "gpu",
+            "diagnosticOptions": {
+              "dt": 0.1,
+              "withHalo": true,
+              "forceMethod": "GPU direct f32",
+              "algorithm": "barnes-hut",
+              "epsilon": 0.1,
+              "theta": 0.5
+            }
+          },
+          "rawArraysRetained": true
+        }
+      },
+      {
+        "timeMyr": 281.0999999999954,
+        "origin": "automatic",
+        "requestedTimeMyr": 200,
+        "direct": {
+          "time": 281.0999999999954,
+          "n": 80000,
+          "mass": 104.93157387827523,
+          "kinetic": 1.9505116984612572,
+          "selfPotential": -3.810651612801587,
+          "externalPotential": 0,
+          "potential": -3.810651612801587,
+          "energy": -1.8601399143403297,
+          "energyScale": 5.761163311262844,
+          "algorithm": "direct",
+          "energyAlgorithm": "direct",
+          "G": 0.04498502239584923,
+          "epsilon": 0.0999999988824129,
+          "theta": 0.5,
+          "energyApproximate": false,
+          "energyMethod": "Energia direta Float64 — pares compensados",
+          "externalPotentialModel": null,
+          "selfGravity": true,
+          "externalExtrapolated": 0,
+          "momentum": [
+            -2.312398752100051e-8,
+            -4.757941531052122e-8,
+            3.208473689092052e-8
+          ],
+          "momentumNorm": 6.187042832825747e-8,
+          "momentumScale": 18.14661795508977,
+          "centerOfMass": [
+            -1.418552718577657e-9,
+            -1.5054964493007622e-8,
+            -1.93192126696649e-9
+          ],
+          "centerOfMassVelocity": [
+            -2.2037206406362731e-10,
+            -4.5343278054435e-10,
+            3.057681849710944e-10
+          ],
+          "angularMomentum": [
+            4.875216306901587,
+            -3.574156229637199,
+            26.152347232803695
+          ],
+          "angularMomentumNorm": 26.841899943522417,
+          "angularMomentumScale": 866.3574259849378,
+          "Lx": 4.875216306901587,
+          "Ly": -3.574156229637199,
+          "Lz": 26.152347232803695,
+          "Lnorm": 26.841899943522417,
+          "intrinsicAngularMomentum": [
+            4.875216306901588,
+            -3.574156229637199,
+            26.152347232803695
+          ],
+          "origin": [
+            0,
+            0,
+            0
+          ],
+          "conditions": {
+            "system": "isolated",
+            "energy": true,
+            "angularVector": true,
+            "angularZ": true,
+            "linearMomentum": true,
+            "centerOfMassBallistic": true,
+            "angularOrigin": "specified inertial origin; also report intrinsic COM angular momentum",
+            "forceCaveat": "Float32 force and accumulation roundoff must be measured; Float64 readback diagnostics do not upgrade the trajectory precision."
+          },
+          "epsilonSquared": 0.009999999776482582,
+          "forceAlgorithm": "GPU direct f32",
+          "trajectoryPrecision": "Float32",
+          "requestedDt": 0.1,
+          "effectiveDt": 0.10000000149011612,
+          "velocityEpoch": "full-step, after final KDK kick",
+          "precision": "Float64 compensated CPU evaluation",
+          "units": "1e10 Msun kpc^2 Myr^-2",
+          "arithmeticUncertainty": "Not a formal interval; see Decimal-80 calibration in energy-audit report.",
+          "diagnosticCostMs": 3544.695000000298,
+          "maximumWorkerComputeMs": 3501.5800000000745,
+          "parallelWorkers": 4,
+          "pairCount": 3199960000
+        },
+        "relative": {
+          "signed": -4.3476437259771853e-7,
+          "absolute": 4.3476437259771853e-7,
+          "percent": -0.00004347643725977185,
+          "denominator": 1.8601391056181185,
+          "normalization": "|E0|"
+        },
+        "deltaU": 0.0004034836567257116,
+        "relativeU": 0.0001058831133683908,
+        "snapshot": {
+          "n": 80000,
+          "time": 281.0999999999954,
+          "parameters": {
+            "G": 0.04498502239584923,
+            "epsilonSquared": 0.009999999776482582,
+            "epsilon": 0.0999999988824129,
+            "theta": 0.5,
+            "forceAlgorithm": "GPU direct f32",
+            "trajectoryPrecision": "Float32",
+            "requestedDt": 0.1,
+            "effectiveDt": 0.10000000149011612,
+            "velocityEpoch": "full-step, after final KDK kick",
+            "externalPotential": "none; isolated live components"
+          },
+          "backend": "WebGPU",
+          "configuration": {
+            "n": 80000,
+            "dt": 0.1,
+            "epsilon": 0.1,
+            "theta": 0.5,
+            "budgetBytes": 536870912,
+            "seed": 2026,
+            "withHalo": true,
+            "requestedAlgorithm": "direct",
+            "requestedBackend": "gpu",
+            "selected": "gpu",
+            "diagnosticOptions": {
+              "dt": 0.1,
+              "withHalo": true,
+              "forceMethod": "GPU direct f32",
+              "algorithm": "barnes-hut",
+              "epsilon": 0.1,
+              "theta": 0.5
+            }
+          },
+          "rawArraysRetained": true
+        }
+      }
+    ],
+    "noInterpolatedReference": true
+  },
+  "note": "Initial timing trial before refining capture triggers at 200 Myr."
+}

@@ -1,0 +1,76 @@
+{
+  "dateUTC": "2026-10-22T02:41:21.799Z",
+  "factors": [
+    1,
+    2,
+    4,
+    8,
+    16,
+    32
+  ],
+  "baseNForPreviews": 33148,
+  "cpu": {
+    "baseN": 64,
+    "factor": 32,
+    "n": 839,
+    "counts": [
+      9,
+      30,
+      800
+    ],
+    "backend": "CPU direct Float64",
+    "observedTimeMyr": 383.7
+  },
+  "gpuSmall": {
+    "baseN": 64,
+    "factor": 16,
+    "n": 439,
+    "counts": [
+      9,
+      30,
+      400
+    ],
+    "backend": "GPU direct Float32",
+    "observedTimeMyr": 6334.50009439
+  },
+  "gpuFullFirstPreparation": {
+    "baseN": 33148,
+    "factor": 16,
+    "n": 232033,
+    "counts": [
+      4972,
+      14917,
+      212144
+    ],
+    "backend": "GPU direct Float32",
+    "steps": 3,
+    "timeMyr": 0.30000000447034836,
+    "observedStepMs": 247.23
+  },
+  "testCount": 190,
+  "qualification": "UI functional checks only. Small-N integrations are not stability evidence at campaign resolution. Full-resolution x16 was prepared and stepped briefly; no new 5-Gyr campaign was run. No full-resolution x32 integration was performed.",
+  "referencePolicy": {
+    "defaultBudgetMiB": 96,
+    "liveBudget": "remainder of configured budget after conservative simulator estimate",
+    "pilotMaximumN": 10000,
+    "maximumEvaluationMs": 60000,
+    "requestedCadenceMyr": 200,
+    "expectedEffectiveCadenceMyrForX16": 1800
+  },
+  "gpuFullFinalPreparation": {
+    "baseN": 33148,
+    "factor": 16,
+    "n": 232033,
+    "counts": [
+      4972,
+      14917,
+      212144
+    ],
+    "backend": "GPU direct Float32",
+    "paused": true,
+    "timeMyr": 0,
+    "directFloat64InitialReferenceCompleted": true,
+    "requestedCadenceMyr": 200,
+    "effectiveCadenceMyr": 1800
+  }
+}

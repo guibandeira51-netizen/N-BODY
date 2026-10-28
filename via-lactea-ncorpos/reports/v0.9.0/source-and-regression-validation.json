@@ -1,0 +1,372 @@
+{
+  "createdUTC": "2026-10-15T14:01:15.416Z",
+  "baselineVersion": "0.8.0",
+  "preserved": [
+    {
+      "path": "src/compute/capability.js",
+      "baseline": "637aa622654cb378ec9f5a4374481a62acd9f60744d5a8986c479d41de2fd46e",
+      "current": "637aa622654cb378ec9f5a4374481a62acd9f60744d5a8986c479d41de2fd46e"
+    },
+    {
+      "path": "src/compute/scheduling.js",
+      "baseline": "60e7bd7f5f570229ce198c47c0b900913d3ad5317c56edf7b530542f8430d1c4",
+      "current": "60e7bd7f5f570229ce198c47c0b900913d3ad5317c56edf7b530542f8430d1c4"
+    },
+    {
+      "path": "src/compute/worker.js",
+      "baseline": "70c4778002892e73746106955e3e17c1faf28c849b0f3acf42f688e7b99179dc",
+      "current": "70c4778002892e73746106955e3e17c1faf28c849b0f3acf42f688e7b99179dc"
+    },
+    {
+      "path": "src/export/state.js",
+      "baseline": "0ec67fb03f648f8a446e228cc152c6b9d2313e69ba2b66a7c4eb77afb2055f4c",
+      "current": "0ec67fb03f648f8a446e228cc152c6b9d2313e69ba2b66a7c4eb77afb2055f4c"
+    },
+    {
+      "path": "src/export/zip.js",
+      "baseline": "ecf658fc7efeaff9fde346092bbde4884959419a021b52ae159c4531ce3fa9db",
+      "current": "ecf658fc7efeaff9fde346092bbde4884959419a021b52ae159c4531ce3fa9db"
+    },
+    {
+      "path": "src/main.js",
+      "baseline": "a724af555eddcb2798a4459ecade744637abdac708601bcf19e4567272ad5050",
+      "current": "a724af555eddcb2798a4459ecade744637abdac708601bcf19e4567272ad5050"
+    },
+    {
+      "path": "src/physics/constants.js",
+      "baseline": "4b1c2a1d96453b95c8e57a45f46443083e77d54e1714aadc7d060de0d9aa22ca",
+      "current": "4b1c2a1d96453b95c8e57a45f46443083e77d54e1714aadc7d060de0d9aa22ca"
+    },
+    {
+      "path": "src/physics/diagnostics.js",
+      "baseline": "d385ce21d018390f63210c8e8975276f1696656de69b25bc8e5017db5ef14765",
+      "current": "d385ce21d018390f63210c8e8975276f1696656de69b25bc8e5017db5ef14765"
+    },
+    {
+      "path": "src/physics/forces.js",
+      "baseline": "9532d4286c6481d49995ece96e48bd595145c2e2c8a22897520cafa45f862444",
+      "current": "9532d4286c6481d49995ece96e48bd595145c2e2c8a22897520cafa45f862444"
+    },
+    {
+      "path": "src/physics/initial-allocated.js",
+      "baseline": "f62b945334f7cfd062aa5eda6a3964aca59eb977985d7ffe73a8c8cce04ed378",
+      "current": "f62b945334f7cfd062aa5eda6a3964aca59eb977985d7ffe73a8c8cce04ed378"
+    },
+    {
+      "path": "src/physics/initial-legacy.js",
+      "baseline": "93ca8666ff188863b947dc8535ca23244d67c20ab2a177cb12e494cf566eeefa",
+      "current": "93ca8666ff188863b947dc8535ca23244d67c20ab2a177cb12e494cf566eeefa"
+    },
+    {
+      "path": "src/physics/initial.js",
+      "baseline": "a1ede5b4f605b493ce86742b2d650f6d38d1c1928ab4d011c821c278455e4ad1",
+      "current": "a1ede5b4f605b493ce86742b2d650f6d38d1c1928ab4d011c821c278455e4ad1"
+    },
+    {
+      "path": "src/physics/integrator.js",
+      "baseline": "433880162ae754dd3bada1fad9e2538239b42d3d43f20f96f7e1465135a1ce6f",
+      "current": "433880162ae754dd3bada1fad9e2538239b42d3d43f20f96f7e1465135a1ce6f"
+    },
+    {
+      "path": "src/physics/iterative-initial.js",
+      "baseline": "dcf07cdea42f16bce59d328b97ac2d32b491b0a67ab9a9f0256aacd25f858df1",
+      "current": "dcf07cdea42f16bce59d328b97ac2d32b491b0a67ab9a9f0256aacd25f858df1"
+    },
+    {
+      "path": "src/physics/jeans-axisymmetric.js",
+      "baseline": "903331d3c5643c122e63bcb3778bce3a29e5a4d713c09c0a79a6dea178b9698d",
+      "current": "903331d3c5643c122e63bcb3778bce3a29e5a4d713c09c0a79a6dea178b9698d"
+    },
+    {
+      "path": "src/physics/models.js",
+      "baseline": "2215cd8332d06b4d18b3ef707c5000992b5db730d104c654ef7ddba7ac9102f3",
+      "current": "2215cd8332d06b4d18b3ef707c5000992b5db730d104c654ef7ddba7ac9102f3"
+    },
+    {
+      "path": "src/physics/structure-diagnostics.js",
+      "baseline": "e94593e700e77bf95392b949bf2891652b87b224000ec1ab584e586dbb871440",
+      "current": "e94593e700e77bf95392b949bf2891652b87b224000ec1ab584e586dbb871440"
+    },
+    {
+      "path": "src/render/camera.js",
+      "baseline": "faaa725427d1c78a3efbc0bd5ba63db2b4c31f7e0d121156f81f1032bb18cc83",
+      "current": "faaa725427d1c78a3efbc0bd5ba63db2b4c31f7e0d121156f81f1032bb18cc83"
+    },
+    {
+      "path": "src/render/gpu-renderer.js",
+      "baseline": "0837ecd1dea9361f7de01641cd8985b37e747ad63712a0f321ba75bc8f86de33",
+      "current": "0837ecd1dea9361f7de01641cd8985b37e747ad63712a0f321ba75bc8f86de33"
+    },
+    {
+      "path": "src/render/particle-style.js",
+      "baseline": "aa45e5469be99a31c1438b1fb05c3881b44cc8e015c016efb623a0acffacd6a5",
+      "current": "aa45e5469be99a31c1438b1fb05c3881b44cc8e015c016efb623a0acffacd6a5"
+    },
+    {
+      "path": "src/render/webgl-renderer.js",
+      "baseline": "856dad630b3ba50420d3be836dbf55af837983087ffa0f6d4ae747f8bfe58e80",
+      "current": "856dad630b3ba50420d3be836dbf55af837983087ffa0f6d4ae747f8bfe58e80"
+    },
+    {
+      "path": "index.html",
+      "baseline": "042dade64149192cb491b12c01fe92fcad56a563c6bd4d45793552c227474b2b",
+      "current": "042dade64149192cb491b12c01fe92fcad56a563c6bd4d45793552c227474b2b"
+    },
+    {
+      "path": "style.css",
+      "baseline": "2f1a317564225a8fd5021c0469fefa9cf414f5ca7e5bcb408c45337cb01f2ae5",
+      "current": "2f1a317564225a8fd5021c0469fefa9cf414f5ca7e5bcb408c45337cb01f2ae5"
+    }
+  ],
+  "changed": [
+    {
+      "path": "src/compute/gpu.js",
+      "baseline": "c2feb955d4a4edb80cb694c9b6b92c31d71e1c1b3181700e20d3238ec443b39f",
+      "current": "7ee6706d635a797f8a8546f96968466c8d8f9dbb67d3bd2aadd6f46ea00a7967"
+    },
+    {
+      "path": "src/export/review.js",
+      "baseline": "31b4d013555f4b60a0c4ed1ac95d3d6760d916d94c593d015dfcf1e2d8d9e606",
+      "current": "184606972335a1f63338763c2f3775ac3a173b2d24033080faeba199b48350a4"
+    },
+    {
+      "path": "src/laboratory-panel.js",
+      "baseline": "4388dd4b07f5f444284059c13414fe3c6937be009a2d61455312c954db7bf37d",
+      "current": "fdccf3fa2b78fdce6aa877975f8a15c59ee801dd2f2e5b396b7610eb777207bf"
+    },
+    {
+      "path": "src/physics/laboratory.js",
+      "baseline": "220833b20fa4ff18333b6e8f3b1f0fd336ec5725d56cceda6aab4e82726d6d5a",
+      "current": "173666736cd3c0af56e4347a43be098e05eabb27a7e1417a4cb3cf6e18285d9b"
+    },
+    {
+      "path": "src/physics/mass-audit.js",
+      "baseline": "72ccf535f5e0beac80a1cc9d26d2e9da6b5d44aeb096b97ca750c498bd96070f",
+      "current": "859059f878baea426aa1998d0f664c02d3192f1df24a7ecf1cfad0647f0ae725"
+    }
+  ],
+  "defaultWGSLIdentical": true,
+  "archiveChecks": [
+    {
+      "path": "src/compute/gpu-fixed-halo.js",
+      "sha256": "6b06535c53e2361253edbf08ea0afa9c15036d88dac69fd18663a606a139f6ed"
+    },
+    {
+      "path": "src/compute/gpu.js",
+      "sha256": "7ee6706d635a797f8a8546f96968466c8d8f9dbb67d3bd2aadd6f46ea00a7967"
+    },
+    {
+      "path": "src/physics/constants.js",
+      "sha256": "4b1c2a1d96453b95c8e57a45f46443083e77d54e1714aadc7d060de0d9aa22ca"
+    },
+    {
+      "path": "src/physics/diagnostics.js",
+      "sha256": "d385ce21d018390f63210c8e8975276f1696656de69b25bc8e5017db5ef14765"
+    },
+    {
+      "path": "src/physics/disk-analysis.js",
+      "sha256": "f1555987a7150962b5c2275ebddce6835a4dc1f691e2f37033ca5aa1d0276c7e"
+    },
+    {
+      "path": "src/physics/fixed-halo.js",
+      "sha256": "e351183ed13436395f59ead258d73c99a55c6bfe4a75cece12b11ba51f2bb31c"
+    },
+    {
+      "path": "src/physics/forces.js",
+      "sha256": "9532d4286c6481d49995ece96e48bd595145c2e2c8a22897520cafa45f862444"
+    },
+    {
+      "path": "src/physics/halo-experiments.js",
+      "sha256": "44a0548aa9300b9c86619b40c8531114a465b801dfa0de76834e680da7debacf"
+    },
+    {
+      "path": "src/physics/initial-allocated.js",
+      "sha256": "f62b945334f7cfd062aa5eda6a3964aca59eb977985d7ffe73a8c8cce04ed378"
+    },
+    {
+      "path": "src/physics/initial-legacy.js",
+      "sha256": "93ca8666ff188863b947dc8535ca23244d67c20ab2a177cb12e494cf566eeefa"
+    },
+    {
+      "path": "src/physics/integrator.js",
+      "sha256": "433880162ae754dd3bada1fad9e2538239b42d3d43f20f96f7e1465135a1ce6f"
+    },
+    {
+      "path": "src/physics/laboratory.js",
+      "sha256": "220833b20fa4ff18333b6e8f3b1f0fd336ec5725d56cceda6aab4e82726d6d5a"
+    },
+    {
+      "path": "src/physics/mass-audit.js",
+      "sha256": "24325095abdd82b3c5bf0ef625bdc3031f0dad2729d0eace4f6818c86f33b5fe"
+    },
+    {
+      "path": "src/physics/models.js",
+      "sha256": "2215cd8332d06b4d18b3ef707c5000992b5db730d104c654ef7ddba7ac9102f3"
+    },
+    {
+      "path": "tests/browser-halos-09.html",
+      "sha256": "efa12d80d4572b9f61056f0ac07142a8f2b76e5f882b675d99c05bc88ed92ec2"
+    }
+  ],
+  "fixture": {
+    "dateUTC": "2026-10-15T04:53:34.555Z",
+    "tests": [
+      {
+        "softening": 0,
+        "forceRMS": 4.0608080321046465e-7,
+        "positionRMS": 0.00000642062164756442,
+        "velocityRMS": 0.000006921343245738141,
+        "cpuEnergyDrift": -9.66881478488512e-7,
+        "gpuEnergyDrift": -9.860961642339656e-7,
+        "passed": true
+      },
+      {
+        "softening": 0.1,
+        "forceRMS": 4.025994832142872e-7,
+        "positionRMS": 0.000006420597569798389,
+        "velocityRMS": 0.000005081589374262852,
+        "cpuEnergyDrift": -8.963500471418708e-7,
+        "gpuEnergyDrift": -8.864021063953619e-7,
+        "passed": true
+      }
+    ],
+    "liveKernel": {
+      "status": "passed",
+      "n": 1025,
+      "steps": 8,
+      "options": {
+        "dt": 0.05,
+        "epsilon": 0.1
+      },
+      "force": {
+        "rmsRelative": 7.231964893205934e-7,
+        "maxAbs": 3.4302131295994853e-9
+      },
+      "position": {
+        "rmsRelative": 7.974270777055365e-8,
+        "maxAbs": 0.0000019311309742420235
+      },
+      "velocity": {
+        "rmsRelative": 1.3524110711014576e-7,
+        "maxAbs": 2.7722954244746578e-8
+      },
+      "tolerance": {
+        "forceRmsRelative": 0.0005,
+        "positionRmsRelative": 0.00002,
+        "velocityRmsRelative": 0.0005
+      },
+      "gpuStepMs": 0.4100000001490116,
+      "cpuStepMs": 3.991249999962747,
+      "precision": {
+        "cpu": "Float64",
+        "gpu": "f32"
+      },
+      "scope": "Fixture determinística curta; inclui grupos parciais quando N não é múltiplo de 64. Não comprova estabilidade de longa duração."
+    },
+    "passed": true
+  },
+  "comparisons": [
+    {
+      "seed": 2026,
+      "energy": {
+        "cpu": -0.000013611045696792859,
+        "gpu": -0.000013608040878813444
+      },
+      "epochs": [
+        {
+          "timeMyr": 0,
+          "positionFrameHeightDifference": 0.0016241885537985334,
+          "normalSigmaDifference": 7.921144989930795e-11
+        },
+        {
+          "timeMyr": 5,
+          "positionFrameHeightDifference": 0.000056815438509105753,
+          "normalSigmaDifference": 3.2855215909011193e-9
+        },
+        {
+          "timeMyr": 10,
+          "positionFrameHeightDifference": 0.00144728115166462,
+          "normalSigmaDifference": -5.798451621630285e-9
+        },
+        {
+          "timeMyr": 15,
+          "positionFrameHeightDifference": 0.0006819135542824872,
+          "normalSigmaDifference": 3.421240569317918e-8
+        },
+        {
+          "timeMyr": 20,
+          "positionFrameHeightDifference": 0.000009811353780253551,
+          "normalSigmaDifference": -1.3797883538502198e-7
+        }
+      ]
+    },
+    {
+      "seed": 2027,
+      "energy": {
+        "cpu": 5.516825340820361e-7,
+        "gpu": 5.399196275733948e-7
+      },
+      "epochs": [
+        {
+          "timeMyr": 0,
+          "positionFrameHeightDifference": 0.0006303893053603016,
+          "normalSigmaDifference": -1.727555945518766e-10
+        },
+        {
+          "timeMyr": 5,
+          "positionFrameHeightDifference": 0.0022499231155290456,
+          "normalSigmaDifference": 2.0247241383497538e-10
+        },
+        {
+          "timeMyr": 10,
+          "positionFrameHeightDifference": 0.0005956013185919873,
+          "normalSigmaDifference": -7.697447672316837e-9
+        },
+        {
+          "timeMyr": 15,
+          "positionFrameHeightDifference": 0.0006326442892045925,
+          "normalSigmaDifference": -3.8803800797571064e-9
+        },
+        {
+          "timeMyr": 20,
+          "positionFrameHeightDifference": 0.0022019109503648715,
+          "normalSigmaDifference": -1.8705384463579833e-10
+        }
+      ]
+    },
+    {
+      "seed": 2028,
+      "energy": {
+        "cpu": 0.000020519440368400665,
+        "gpu": 0.000020489025128290663
+      },
+      "epochs": [
+        {
+          "timeMyr": 0,
+          "positionFrameHeightDifference": 0.0003963472676050961,
+          "normalSigmaDifference": 4.471369802194758e-11
+        },
+        {
+          "timeMyr": 5,
+          "positionFrameHeightDifference": -0.0005891856912766391,
+          "normalSigmaDifference": -1.0908171942103362e-8
+        },
+        {
+          "timeMyr": 10,
+          "positionFrameHeightDifference": -0.000012977775507266864,
+          "normalSigmaDifference": -1.6240762228114658e-8
+        },
+        {
+          "timeMyr": 15,
+          "positionFrameHeightDifference": 0.00014067449801563603,
+          "normalSigmaDifference": -5.920099371142795e-8
+        },
+        {
+          "timeMyr": 20,
+          "positionFrameHeightDifference": 0.001102521703532533,
+          "normalSigmaDifference": 2.883058883296208e-7
+        }
+      ]
+    }
+  ]
+}

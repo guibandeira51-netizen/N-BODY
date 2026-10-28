@@ -1,0 +1,10 @@
+{
+  "src/physics/initial.js": true,
+  "src/physics/initial-legacy.js": true,
+  "src/physics/forces.js": true,
+  "src/physics/models.js": true,
+  "src/physics/constants.js": true,
+  "src/physics/integrator.js": true,
+  "src/compute/gpu.js": true,
+  "src/physics/disk-analysis.js": true
+}

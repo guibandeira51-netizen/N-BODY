@@ -1,0 +1,20 @@
+{
+  "version": "gpu-unrestricted-2026-10-22",
+  "builtUTC": "2026-10-22T07:23:03.651Z",
+  "sha256": "c2f9008d182ce50d8c4ee67141557bcd7d582b24c6aa22a07344402283064d28",
+  "files": {
+    "experimento-ncorpos.html": "415a70ee48d413aadca457eef0b26287aa6173371026201cb70b852e751cce44",
+    "src/ncorpos-live-entry.js": "6efa779a5a142cf850f15a20b4372e613d22f0da3c01a0e89d51608f5f0ff822",
+    "src/compute/capability.js": "fab03e57ad63110b37759be3b58a7c71d49cb5c153770b60a2ca5dbab96985cb",
+    "src/compute/gpu.js": "fe5f7ec88aeba90045b2642df8af1228f805f5af9235890b4b152fc5582e2234",
+    "src/compute/gpu-live.js": "15599669bf0b63a0c125d4ee4c8aff1002536a904fab6df275152e267b315696",
+    "src/compute/gpu-auto-policy.js": "61e092bb0615384eb324087341b5a66d9db6d521b9c18a2fd36e544c360f4cd3",
+    "src/compute/energy-snapshot-sampler.js": "3dadff5cb2868de81b3abed11380a4e3e1c3ba543de7e4637a2beac0c738dc0c",
+    "src/automatic-energy.js": "d027d4e5bbc85dd2c8a159ebfa7eee401d43a7f474596863475bbad937b9d592",
+    "src/live-diagnostics.js": "5bbf37c2d9caa7e791ad52c7039b74f816a3b9288aa57a5c1e5d7cd5f22ee144",
+    "src/physics/live-initial.js": "c3321a11fa28aa16b0c2d6232de89483208001a02bf607289dab9436de72b812",
+    "src/physics/forces.js": "9532d4286c6481d49995ece96e48bd595145c2e2c8a22897520cafa45f862444",
+    "src/physics/integrator.js": "5a83b4dcad749e13d438cdde561c7ee19ac6418823cfa5f06257eee3b268b04f",
+    "src/physics/constants.js": "4b1c2a1d96453b95c8e57a45f46443083e77d54e1714aadc7d060de0d9aa22ca"
+  }
+}

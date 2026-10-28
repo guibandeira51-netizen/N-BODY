@@ -1,0 +1,220 @@
+{
+  "schema": "halo-refinement-5gyr-manifest-v1",
+  "createdUTC": "2026-10-21T14:41:38.781Z",
+  "originalRealization": "1ca8f265-4da8-49e8-9694-df20f8edc2fa",
+  "counts": [
+    4972,
+    14917,
+    13259
+  ],
+  "seed": 2026,
+  "dt": 0.1,
+  "epsilon": 0.1,
+  "durationMyr": 5000,
+  "cadenceMyr": 100,
+  "criterion": {
+    "finalH50RatioMaximum": 2,
+    "maximumAlongTrajectoryAlsoReported": true,
+    "qualification": "Requested engineering target, not a universal equilibrium certificate."
+  },
+  "baseline": {
+    "timeMyr": 5000.000074505806,
+    "h50Kpc": 1.691158687158314,
+    "h0Kpc": 0.16487250830671857
+  },
+  "fixedBaryonPhaseSHA256": "34b47cd206b51589179207e47382dedc031c999581bcb566f1bf29886dac804b",
+  "field": {
+    "id": "2026-10-21T03-39-56-668Z",
+    "path": "reports/equilibrium-rebuild/2026-10-21T03-39-56-668Z",
+    "field": "reports/equilibrium-rebuild/2026-10-21T03-39-56-668Z/field-grid.json",
+    "sha256": "5e9b383d8d6fc48bf2d168ef23bc3fbe0afe5a596395605c16e3f9a7f9b72c12",
+    "audit": "reports/equilibrium-rebuild/2026-10-21T03-39-56-668Z/field-audit.json"
+  },
+  "sources": {
+    "src/physics/initial-legacy.js": "93ca8666ff188863b947dc8535ca23244d67c20ab2a177cb12e494cf566eeefa",
+    "src/physics/initial.js": "5a6bbdb6cfe562776c6a408271c26d8a29183e92d2021914e2eb0f34230ef66a",
+    "src/physics/forces.js": "9532d4286c6481d49995ece96e48bd595145c2e2c8a22897520cafa45f862444",
+    "src/physics/integrator.js": "5a83b4dcad749e13d438cdde561c7ee19ac6418823cfa5f06257eee3b268b04f",
+    "src/compute/gpu.js": "443ab660dbaed0c47e84fc8675ded0c44c8c726852b5315dad84d26037ae58d5",
+    "src/physics/models.js": "96d948549f2651e31c191a4853b3091d55f4a9c7aa31dd6a040fc5524d5c4c00",
+    "src/physics/constants.js": "4b1c2a1d96453b95c8e57a45f46443083e77d54e1714aadc7d060de0d9aa22ca",
+    "src/physics/disk-analysis.js": "ecd700024436712b55152cb4bf64463ea70ee5bb9e93a6cc7750a8a1057219f7",
+    "src/physics/halo-resolution.js": "5a97576aeefdf4768b0feaec7d7af360bea241a050606c1565a357718d95ab98",
+    "src/compute/gpu-chunked-direct.js": "6cbd27f531ff0f718a3521b530254413dbf1a4745dcf227076acb079413d0b74",
+    "src/compute/gpu-wide-chunked-direct.js": "5c421730529cfdd59cc32d8daebfe04be4a75fef00c6fbaf6960aa0b843511f1",
+    "tests/browser-halo-5gyr-worker.js": "85de0d0480e9a73223885032b79cbd291a0fce65bcca31603183e82c8b744894",
+    "scripts/halo-5gyr/verify-final.mjs": "1e09da4d14f5abcfb6f98047b01413175b056a568995d8b39b5ca5cd494531eb",
+    "scripts/halo-5gyr/collector-v3.mjs": "94025a9e72334ffdf7c3cb5d0584b2ca8b832d16dc7560148d66de33b4aca868"
+  },
+  "runs": [
+    {
+      "id": "smooth-halo-control",
+      "mode": "smooth-halo",
+      "file": "reports/halo-5gyr/initial-smooth-halo.json",
+      "counts": [
+        4972,
+        14917,
+        0
+      ],
+      "haloMassPhysical": 97.6315764173288,
+      "qualification": "Diagnostic control, no live halo particles; cannot be accepted as the requested refined all-live result."
+    },
+    {
+      "id": "halo-x2",
+      "mode": "live",
+      "factor": 2,
+      "file": "reports/halo-5gyr/initial-halo-x2.json",
+      "counts": [
+        4972,
+        14917,
+        26518
+      ],
+      "n": 46407,
+      "sha256": "19533bf69ee7b68f5385408a48ee98201b09f939656d8e261ebaca4500a4eee2",
+      "fixedBaryonPhaseSHA256": "34b47cd206b51589179207e47382dedc031c999581bcb566f1bf29886dac804b",
+      "haloParticleMassMsun": 36817097.57074714,
+      "effectiveHaloMass": 97.63157933810726
+    },
+    {
+      "id": "halo-x4",
+      "mode": "live",
+      "factor": 4,
+      "file": "reports/halo-5gyr/initial-halo-x4.json",
+      "counts": [
+        4972,
+        14917,
+        53036
+      ],
+      "n": 72925,
+      "sha256": "763ef04493c5792c8e45a6bbc50b5324402759954f82a15be2628bd5d1d7825d",
+      "fixedBaryonPhaseSHA256": "34b47cd206b51589179207e47382dedc031c999581bcb566f1bf29886dac804b",
+      "haloParticleMassMsun": 18408548.78537357,
+      "effectiveHaloMass": 97.63157933810726
+    },
+    {
+      "id": "halo-x8",
+      "mode": "live",
+      "factor": 8,
+      "file": "reports/halo-5gyr/initial-halo-x8.json",
+      "counts": [
+        4972,
+        14917,
+        106072
+      ],
+      "n": 125961,
+      "sha256": "42ba05c8fe2053c869c04f22fa44250d3e4baf27f11249196356d50eb8adbce7",
+      "fixedBaryonPhaseSHA256": "34b47cd206b51589179207e47382dedc031c999581bcb566f1bf29886dac804b",
+      "haloParticleMassMsun": 9204274.392686784,
+      "effectiveHaloMass": 97.63157933810726
+    },
+    {
+      "id": "halo-x16",
+      "mode": "live",
+      "factor": 16,
+      "n": 232033,
+      "file": "reports/halo-5gyr/initial-halo-x16.bin.gz",
+      "encoding": "state-gzip",
+      "sha256": "c93ff537b1725600b29d90f3a6b5ce553bb111280de6e557a4fce9b4ab95c648",
+      "counts": [
+        4972,
+        14917,
+        212144
+      ],
+      "backend": "direct",
+      "chunkValidationSHA256": "b74c5301dd7ff2148dd0a0eb2969486183059855b1c41528b0bfeeb9b7f4a710",
+      "fixedBaryonPhaseSHA256": "34b47cd206b51589179207e47382dedc031c999581bcb566f1bf29886dac804b",
+      "haloParticleMassMsun": 4602137.196343392,
+      "effectiveHaloMass": 97.63157933810726,
+      "qualification": "Exact direct pair sum with bounded target dispatches; original per-target source ordering and force/integrator arithmetic retained. No force approximation.",
+      "schedulingDecision": {
+        "previous": "chunked-direct, 8192 targets",
+        "current": "original GPU direct",
+        "reason": "Original shader validated at N=232033; measured faster than the dispatch variants. No physical kernel or arithmetic change."
+      }
+    },
+    {
+      "id": "halo-x32",
+      "mode": "live",
+      "factor": 32,
+      "n": 444177,
+      "file": "reports/halo-5gyr/initial-halo-x32.bin.gz",
+      "encoding": "state-gzip",
+      "sha256": "d4e6c13cce260b11302c895d2cf2acd2bb86d2b8ddce7113eb367e0c0deb3a2d",
+      "counts": [
+        4972,
+        14917,
+        424288
+      ],
+      "backend": "wide-chunked-direct",
+      "chunkValidationSHA256": "b74c5301dd7ff2148dd0a0eb2969486183059855b1c41528b0bfeeb9b7f4a710",
+      "fixedBaryonPhaseSHA256": "34b47cd206b51589179207e47382dedc031c999581bcb566f1bf29886dac804b",
+      "haloParticleMassMsun": 2301068.598171696,
+      "effectiveHaloMass": 97.63157933810726,
+      "qualification": "Same ordered direct Plummer sum, 65536 independent target particles per dispatch; unchanged 64-source tile and KDK. Higher-N force error is measured against direct Float64 disk probes at initialization and completion.",
+      "wideSchedulingValidationSHA256": "969871ed3a4c0ddeabdbe5bc534d3250cb601a0507f75d8050779604db2ad91e"
+    },
+    {
+      "id": "halo-x64",
+      "mode": "live",
+      "factor": 64,
+      "n": 868465,
+      "file": "reports/halo-5gyr/initial-halo-x64.bin.gz",
+      "encoding": "state-gzip",
+      "sha256": "cbee4803f913884e2e84f0c71caac5f405d4258d211756f99f6b8793c2c18530",
+      "counts": [
+        4972,
+        14917,
+        848576
+      ],
+      "backend": "wide-chunked-direct",
+      "chunkValidationSHA256": "b74c5301dd7ff2148dd0a0eb2969486183059855b1c41528b0bfeeb9b7f4a710",
+      "fixedBaryonPhaseSHA256": "34b47cd206b51589179207e47382dedc031c999581bcb566f1bf29886dac804b",
+      "haloParticleMassMsun": 1150534.299085848,
+      "effectiveHaloMass": 97.63157933810726,
+      "qualification": "Same ordered direct Plummer sum, 65536 independent target particles per dispatch; unchanged 64-source tile and KDK. Higher-N force error is measured against direct Float64 disk probes at initialization and completion.",
+      "wideSchedulingValidationSHA256": "969871ed3a4c0ddeabdbe5bc534d3250cb601a0507f75d8050779604db2ad91e"
+    },
+    {
+      "id": "halo-x128",
+      "mode": "live",
+      "factor": 128,
+      "n": 1717041,
+      "file": "reports/halo-5gyr/initial-halo-x128.bin.gz",
+      "encoding": "state-gzip",
+      "sha256": "cce3aa735fe8884d85ddbdff7fb0ff0cd147da9e3045f273ad05721b79ff43c4",
+      "counts": [
+        4972,
+        14917,
+        1697152
+      ],
+      "backend": "wide-chunked-direct",
+      "chunkValidationSHA256": "b74c5301dd7ff2148dd0a0eb2969486183059855b1c41528b0bfeeb9b7f4a710",
+      "fixedBaryonPhaseSHA256": "34b47cd206b51589179207e47382dedc031c999581bcb566f1bf29886dac804b",
+      "haloParticleMassMsun": 575267.149542924,
+      "effectiveHaloMass": 97.63157933810726,
+      "qualification": "Same ordered direct Plummer sum, 65536 independent target particles per dispatch; unchanged 64-source tile and KDK. Higher-N force error is measured against direct Float64 disk probes at initialization and completion.",
+      "wideSchedulingValidationSHA256": "969871ed3a4c0ddeabdbe5bc534d3250cb601a0507f75d8050779604db2ad91e"
+    }
+  ],
+  "qualification": "Halo refinement only: identical captured bulge/disk arrays and masses. New halo phases use existing legacy sampler, same seed, same target centre and bulk frame. No energy corrections, damping or IC kinematic refit.",
+  "pipeline": {
+    "collectorPort": 4193,
+    "runnerRevision": "v4-automatic-staged-direct-independent-final-check",
+    "stopAfterFirstIndependentPass": true,
+    "plannedHaloFactors": [
+      2,
+      4,
+      8,
+      16,
+      32,
+      64,
+      128
+    ],
+    "qualification": "A finite staged campaign, not a guarantee that any halo resolution will meet the requested physical criterion. Unstarted levels have no measured outcomes; resource/device failure stops execution with preserved evidence.",
+    "validatedHardware": {
+      "vendor": "amd",
+      "architecture": "rdna-3",
+      "description": ""
+    }
+  }
+}

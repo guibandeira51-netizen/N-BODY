@@ -1,0 +1,1500 @@
+{
+  "schema": "refinement-ic-consistency-104",
+  "potentialSHA256": "1074a9a28555ad253907b7e6f4b7aba406be33b9efc63ff7794e08110ea707d1",
+  "generatorSHA256": null,
+  "scriptSHA256": "9917ea75d46d76e76a6026f11eee20ce62e092d6010a4f36dfea2f87f72b8218",
+  "agama": "1.0.161 compiled on Oct 15 2026",
+  "seconds": 122.59136709999984,
+  "Jeans": [
+    {
+      "population": 0,
+      "Rkpc": 1.0,
+      "zkpc": 0.1,
+      "differenceStepKpc": 0.02,
+      "densityMsunKpc3": 367632011.0468678,
+      "radialTermsMsunKpc4Km2S2": [
+        -7539263690984.68,
+        -318075321260.9764,
+        24807840691.01953,
+        7843614562675.073
+      ],
+      "verticalTermsMsunKpc4Km2S2": [
+        29789260606.750965,
+        -1715049462782.6172,
+        1951587905207.5168
+      ],
+      "radialResidualScaled": 0.0007047920178563492,
+      "verticalResidualScaled": 0.0720500444865438,
+      "sigmaRKmS": 102.47592776977419,
+      "sigmaZKmS": 116.73298927550971
+    },
+    {
+      "population": 0,
+      "Rkpc": 1.0,
+      "zkpc": 0.1,
+      "differenceStepKpc": 0.01,
+      "densityMsunKpc3": 367632011.0468678,
+      "radialTermsMsunKpc4Km2S2": [
+        -7537908049073.657,
+        -316508745044.2261,
+        24807840691.01953,
+        7843614562675.073
+      ],
+      "verticalTermsMsunKpc4Km2S2": [
+        29041925810.320282,
+        -1718059163578.5156,
+        1951587905207.5168
+      ],
+      "radialResidualScaled": 0.0008907811796772168,
+      "verticalResidualScaled": 0.07099019891181106,
+      "sigmaRKmS": 102.47592776977419,
+      "sigmaZKmS": 116.73298927550971
+    },
+    {
+      "population": 0,
+      "Rkpc": 1.0,
+      "zkpc": 0.4,
+      "differenceStepKpc": 0.02,
+      "densityMsunKpc3": 294275401.54355,
+      "radialTermsMsunKpc4Km2S2": [
+        -5717237550905.847,
+        -6373223530.303192,
+        115517859800.64502,
+        5520898319606.088
+      ],
+      "verticalTermsMsunKpc4Km2S2": [
+        37802289926.79596,
+        -4745775542379.907,
+        5007017985739.669
+      ],
+      "radialResidualScaled": -0.007675562336577004,
+      "verticalResidualScaled": 0.030544079118795593,
+      "sigmaRKmS": 104.27462511866275,
+      "sigmaZKmS": 115.5999966641429
+    },
+    {
+      "population": 0,
+      "Rkpc": 1.0,
+      "zkpc": 0.4,
+      "differenceStepKpc": 0.01,
+      "densityMsunKpc3": 294275401.54355,
+      "radialTermsMsunKpc4Km2S2": [
+        -5715908640567.505,
+        -6506670393.982697,
+        115517859800.64502,
+        5520898319606.088
+      ],
+      "verticalTermsMsunKpc4Km2S2": [
+        38047310381.1409,
+        -4748540417166.431,
+        5007017985739.669
+      ],
+      "radialResidualScaled": -0.007571124866820792,
+      "verticalResidualScaled": 0.030277396051596794,
+      "sigmaRKmS": 104.27462511866275,
+      "sigmaZKmS": 115.5999966641429
+    },
+    {
+      "population": 0,
+      "Rkpc": 3.0,
+      "zkpc": 0.1,
+      "differenceStepKpc": 0.02,
+      "densityMsunKpc3": 15501260.361867955,
+      "radialTermsMsunKpc4Km2S2": [
+        -189833264228.79868,
+        -12766300564.885633,
+        2996569881.5726676,
+        207207280528.1335
+      ],
+      "verticalTermsMsunKpc4Km2S2": [
+        1796745405.565993,
+        -45155232835.33554,
+        31735788746.911697
+      ],
+      "radialResidualScaled": 0.018421082132460576,
+      "verticalResidualScaled": -0.14770655119312148,
+      "sigmaRKmS": 79.13474817558884,
+      "sigmaZKmS": 102.09590553232783
+    },
+    {
+      "population": 0,
+      "Rkpc": 3.0,
+      "zkpc": 0.1,
+      "differenceStepKpc": 0.01,
+      "densityMsunKpc3": 15501260.361867955,
+      "radialTermsMsunKpc4Km2S2": [
+        -189854726777.03247,
+        -12812184837.563812,
+        2996569881.5726676,
+        207207280528.1335
+      ],
+      "verticalTermsMsunKpc4Km2S2": [
+        1818799237.4774854,
+        -45403155258.40912,
+        31735788746.911697
+      ],
+      "radialResidualScaled": 0.01825495890810077,
+      "verticalResidualScaled": -0.15006213181125383,
+      "sigmaRKmS": 79.13474817558884,
+      "sigmaZKmS": 102.09590553232783
+    },
+    {
+      "population": 0,
+      "Rkpc": 3.0,
+      "zkpc": 0.4,
+      "differenceStepKpc": 0.02,
+      "densityMsunKpc3": 13633426.94707245,
+      "radialTermsMsunKpc4Km2S2": [
+        -168108366318.3159,
+        -4491679722.480917,
+        2851444889.872808,
+        175654721655.18997
+      ],
+      "verticalTermsMsunKpc4Km2S2": [
+        5360220567.423487,
+        -120990862217.64717,
+        91661462179.71024
+      ],
+      "radialResidualScaled": 0.016821463968888548,
+      "verticalResidualScaled": -0.10994403773592742,
+      "sigmaRKmS": 79.22145777210147,
+      "sigmaZKmS": 99.08450458079822
+    },
+    {
+      "population": 0,
+      "Rkpc": 3.0,
+      "zkpc": 0.4,
+      "differenceStepKpc": 0.01,
+      "densityMsunKpc3": 13633426.94707245,
+      "radialTermsMsunKpc4Km2S2": [
+        -168081455854.52042,
+        -4475927958.066988,
+        2851444889.872808,
+        175654721655.18997
+      ],
+      "verticalTermsMsunKpc4Km2S2": [
+        5325617521.669166,
+        -120987881890.9172,
+        91661462179.71024
+      ],
+      "radialResidualScaled": 0.01694503096779765,
+      "verticalResidualScaled": -0.11010806935903604,
+      "sigmaRKmS": 79.22145777210147,
+      "sigmaZKmS": 99.08450458079822
+    },
+    {
+      "population": 0,
+      "Rkpc": 8.122,
+      "zkpc": 0.1,
+      "differenceStepKpc": 0.02,
+      "densityMsunKpc3": 12.216347922862914,
+      "radialTermsMsunKpc4Km2S2": [
+        -78369.91356434827,
+        -4237.205331429694,
+        659.7371789724281,
+        81184.44212639489
+      ],
+      "verticalTermsMsunKpc4Km2S2": [
+        1841.428792626198,
+        -17288.97557539549,
+        4838.740986031183
+      ],
+      "radialResidualScaled": -0.0046393041511747475,
+      "verticalResidualScaled": -0.44260258928857876,
+      "sigmaRKmS": 38.58282505000399,
+      "sigmaZKmS": 69.91929249923732
+    },
+    {
+      "population": 0,
+      "Rkpc": 8.122,
+      "zkpc": 0.1,
+      "differenceStepKpc": 0.01,
+      "densityMsunKpc3": 12.216347922862914,
+      "radialTermsMsunKpc4Km2S2": [
+        -78297.52720122306,
+        -4234.7623687728055,
+        659.7371789724281,
+        81184.44212639489
+      ],
+      "verticalTermsMsunKpc4Km2S2": [
+        1891.0263228043787,
+        -17289.47331555828,
+        4838.740986031183
+      ],
+      "radialResidualScaled": -0.0041861847339615035,
+      "verticalResidualScaled": -0.43963529787858174,
+      "sigmaRKmS": 38.58282505000399,
+      "sigmaZKmS": 69.91929249923732
+    },
+    {
+      "population": 0,
+      "Rkpc": 8.122,
+      "zkpc": 0.4,
+      "differenceStepKpc": 0.02,
+      "densityMsunKpc3": 10.768369904149068,
+      "radialTermsMsunKpc4Km2S2": [
+        -68840.91249108342,
+        -2151.355443888076,
+        588.0093957464021,
+        70570.88362678555
+      ],
+      "verticalTermsMsunKpc4Km2S2": [
+        5885.383390783576,
+        -42732.972308067656,
+        14206.489626325014
+      ],
+      "radialResidualScaled": 0.0011721683202450851,
+      "verticalResidualScaled": -0.36038448123143957,
+      "sigmaRKmS": 38.59325010579735,
+      "sigmaZKmS": 67.83064959505128
+    },
+    {
+      "population": 0,
+      "Rkpc": 8.122,
+      "zkpc": 0.4,
+      "differenceStepKpc": 0.01,
+      "densityMsunKpc3": 10.768369904149068,
+      "radialTermsMsunKpc4Km2S2": [
+        -68796.44542903533,
+        -2157.673991006777,
+        588.0093957464021,
+        70570.88362678555
+      ],
+      "verticalTermsMsunKpc4Km2S2": [
+        5915.17998959096,
+        -42769.6630674629,
+        14206.489626325014
+      ],
+      "radialResidualScaled": 0.0014409208486279843,
+      "verticalResidualScaled": -0.36011311074558316,
+      "sigmaRKmS": 38.59325010579735,
+      "sigmaZKmS": 67.83064959505128
+    },
+    {
+      "population": 0,
+      "Rkpc": 15.0,
+      "zkpc": 0.1,
+      "differenceStepKpc": 0.02,
+      "densityMsunKpc3": 5.131815823168558e-13,
+      "radialTermsMsunKpc4Km2S2": [
+        -2.358357092308041e-09,
+        -1.0677010932310169e-10,
+        5.510449039464153e-11,
+        1.6374551993152528e-09
+      ],
+      "verticalTermsMsunKpc4Km2S2": [
+        2.234640116422027e-11,
+        -5.155577420883491e-10,
+        2.3216160346634083e-11
+      ],
+      "radialResidualScaled": -0.18581666491775223,
+      "verticalResidualScaled": -0.8376014511732989,
+      "sigmaRKmS": 40.282930581424026,
+      "sigmaZKmS": 69.71486801808436
+    },
+    {
+      "population": 0,
+      "Rkpc": 15.0,
+      "zkpc": 0.1,
+      "differenceStepKpc": 0.01,
+      "densityMsunKpc3": 5.131815823168558e-13,
+      "radialTermsMsunKpc4Km2S2": [
+        -2.357679284468142e-09,
+        -1.0637127999189331e-10,
+        5.510449039464153e-11,
+        1.6374551993152528e-09
+      ],
+      "verticalTermsMsunKpc4Km2S2": [
+        2.381253767079416e-11,
+        -5.150142784861039e-10,
+        2.3216160346634083e-11
+      ],
+      "radialResidualScaled": -0.18560577672062906,
+      "verticalResidualScaled": -0.8326508826424854,
+      "sigmaRKmS": 40.282930581424026,
+      "sigmaZKmS": 69.71486801808436
+    },
+    {
+      "population": 0,
+      "Rkpc": 15.0,
+      "zkpc": 0.4,
+      "differenceStepKpc": 0.02,
+      "densityMsunKpc3": 4.498002094334201e-13,
+      "radialTermsMsunKpc4Km2S2": [
+        -2.044460393703535e-09,
+        -7.129450564908948e-11,
+        4.818792837794001e-11,
+        1.4316075221531984e-09
+      ],
+      "verticalTermsMsunKpc4Km2S2": [
+        7.934179745095248e-11,
+        -1.4346519944851004e-09,
+        7.443316473127503e-11
+      ],
+      "radialResidualScaled": -0.17687402120291423,
+      "verticalResidualScaled": -0.80638082029927,
+      "sigmaRKmS": 40.23836619550818,
+      "sigmaZKmS": 69.49649353508048
+    },
+    {
+      "population": 0,
+      "Rkpc": 15.0,
+      "zkpc": 0.4,
+      "differenceStepKpc": 0.01,
+      "densityMsunKpc3": 4.498002094334201e-13,
+      "radialTermsMsunKpc4Km2S2": [
+        -2.037467645514733e-09,
+        -7.040594457191697e-11,
+        4.818792837794001e-11,
+        1.4316075221531984e-09
+      ],
+      "verticalTermsMsunKpc4Km2S2": [
+        8.211974342125948e-11,
+        -1.436466496974932e-09,
+        7.443316473127503e-11
+      ],
+      "radialResidualScaled": -0.17506579688503218,
+      "verticalResidualScaled": -0.8034513482401581,
+      "sigmaRKmS": 40.23836619550818,
+      "sigmaZKmS": 69.49649353508048
+    },
+    {
+      "population": 1,
+      "Rkpc": 1.0,
+      "zkpc": 0.1,
+      "differenceStepKpc": 0.02,
+      "densityMsunKpc3": 745059565.856454,
+      "radialTermsMsunKpc4Km2S2": [
+        -10799515799564.453,
+        2064421776357.8354,
+        -7222040231503.594,
+        15896221997020.355
+      ],
+      "verticalTermsMsunKpc4Km2S2": [
+        -12086066354.273224,
+        -3831243225440.32,
+        3955175810844.308
+      ],
+      "radialResidualScaled": -0.0016928441846495634,
+      "verticalResidualScaled": 0.014342046017494763,
+      "sigmaRKmS": 127.85200971820639,
+      "sigmaZKmS": 61.27181613239502
+    },
+    {
+      "population": 1,
+      "Rkpc": 1.0,
+      "zkpc": 0.1,
+      "differenceStepKpc": 0.01,
+      "densityMsunKpc3": 745059565.856454,
+      "radialTermsMsunKpc4Km2S2": [
+        -10799945917409.96,
+        2068140359455.22,
+        -7222040231503.594,
+        15896221997020.355
+      ],
+      "verticalTermsMsunKpc4Km2S2": [
+        -12200784224.8703,
+        -3840511024343.994,
+        3955175810844.308
+      ],
+      "radialResidualScaled": -0.0016012681150284263,
+      "verticalResidualScaled": 0.013123139992522698,
+      "sigmaRKmS": 127.85200971820639,
+      "sigmaZKmS": 61.27181613239502
+    },
+    {
+      "population": 1,
+      "Rkpc": 1.0,
+      "zkpc": 0.4,
+      "differenceStepKpc": 0.02,
+      "densityMsunKpc3": 294241691.67306584,
+      "radialTermsMsunKpc4Km2S2": [
+        -2591460729606.7627,
+        -891395886524.6643,
+        -2014353551184.5576,
+        5520265889011.026
+      ],
+      "verticalTermsMsunKpc4Km2S2": [
+        91385885552.93579,
+        -5070093210153.527,
+        5006444421225.184
+      ],
+      "radialResidualScaled": 0.002092650038644901,
+      "verticalResidualScaled": 0.0027279017764447115,
+      "sigmaRKmS": 120.91804341870804,
+      "sigmaZKmS": 60.60011546319484
+    },
+    {
+      "population": 1,
+      "Rkpc": 1.0,
+      "zkpc": 0.4,
+      "differenceStepKpc": 0.01,
+      "densityMsunKpc3": 294241691.67306584,
+      "radialTermsMsunKpc4Km2S2": [
+        -2590788776466.211,
+        -894414106016.7664,
+        -2014353551184.5576,
+        5520265889011.026
+      ],
+      "verticalTermsMsunKpc4Km2S2": [
+        91431515277.98767,
+        -5071451404043.964,
+        5006444421225.184
+      ],
+      "radialResidualScaled": 0.0018792912205917865,
+      "verticalResidualScaled": 0.002598454310133882,
+      "sigmaRKmS": 120.91804341870804,
+      "sigmaZKmS": 60.60011546319484
+    },
+    {
+      "population": 1,
+      "Rkpc": 3.0,
+      "zkpc": 0.1,
+      "differenceStepKpc": 0.02,
+      "densityMsunKpc3": 344696175.392846,
+      "radialTermsMsunKpc4Km2S2": [
+        -1823938615441.3696,
+        312965904596.7321,
+        -2996671287911.443,
+        4607596765956.995
+      ],
+      "verticalTermsMsunKpc4Km2S2": [
+        -17633730166.013847,
+        -685000322667.9657,
+        705697778681.6278
+      ],
+      "radialResidualScaled": 0.010260855809972639,
+      "verticalResidualScaled": 0.002175428957216155,
+      "sigmaRKmS": 90.8065129354419,
+      "sigmaZKmS": 40.04798636014279
+    },
+    {
+      "population": 1,
+      "Rkpc": 3.0,
+      "zkpc": 0.1,
+      "differenceStepKpc": 0.01,
+      "densityMsunKpc3": 344696175.392846,
+      "radialTermsMsunKpc4Km2S2": [
+        -1823894812403.3447,
+        313456575930.67474,
+        -2996671287911.443,
+        4607596765956.995
+      ],
+      "verticalTermsMsunKpc4Km2S2": [
+        -17592282688.085686,
+        -686419099792.1478,
+        705697778681.6278
+      ],
+      "radialResidualScaled": 0.010315250166471597,
+      "verticalResidualScaled": 0.0011962724282818624,
+      "sigmaRKmS": 90.8065129354419,
+      "sigmaZKmS": 40.04798636014279
+    },
+    {
+      "population": 1,
+      "Rkpc": 3.0,
+      "zkpc": 0.4,
+      "differenceStepKpc": 0.02,
+      "densityMsunKpc3": 150512592.53492126,
+      "radialTermsMsunKpc4Km2S2": [
+        -755027012345.0867,
+        -95831182532.47108,
+        -1123115263476.0872,
+        1939222445681.5525
+      ],
+      "verticalTermsMsunKpc4Km2S2": [
+        -30260760691.48814,
+        -988508885398.3765,
+        1011939577757.6177
+      ],
+      "radialResidualScaled": -0.008880468426397484,
+      "verticalResidualScaled": -0.003363390608580761,
+      "sigmaRKmS": 89.86731686347808,
+      "sigmaZKmS": 39.50207639470631
+    },
+    {
+      "population": 1,
+      "Rkpc": 3.0,
+      "zkpc": 0.4,
+      "differenceStepKpc": 0.01,
+      "densityMsunKpc3": 150512592.53492126,
+      "radialTermsMsunKpc4Km2S2": [
+        -755347766335.8154,
+        -96144900599.14246,
+        -1123115263476.0872,
+        1939222445681.5525
+      ],
+      "verticalTermsMsunKpc4Km2S2": [
+        -30243716014.430748,
+        -988884966683.9523,
+        1011939577757.6177
+      ],
+      "radialResidualScaled": -0.009041139070727894,
+      "verticalResidualScaled": -0.0035395683546112504,
+      "sigmaRKmS": 89.86731686347808,
+      "sigmaZKmS": 39.50207639470631
+    },
+    {
+      "population": 1,
+      "Rkpc": 8.122,
+      "zkpc": 0.1,
+      "differenceStepKpc": 0.02,
+      "densityMsunKpc3": 58095055.32115606,
+      "radialTermsMsunKpc4Km2S2": [
+        -66360775377.674484,
+        6006605363.892036,
+        -325429520228.2687,
+        386074028533.7917
+      ],
+      "verticalTermsMsunKpc4Km2S2": [
+        -503443806.41251004,
+        -22582254775.599003,
+        23010717036.155685
+      ],
+      "radialResidualScaled": 0.00037039043139970937,
+      "verticalResidualScaled": -0.0016266242147095734,
+      "sigmaRKmS": 37.29742879214831,
+      "sigmaZKmS": 17.011629333825972
+    },
+    {
+      "population": 1,
+      "Rkpc": 8.122,
+      "zkpc": 0.1,
+      "differenceStepKpc": 0.01,
+      "densityMsunKpc3": 58095055.32115606,
+      "radialTermsMsunKpc4Km2S2": [
+        -66359284890.55481,
+        6019030117.252898,
+        -325429520228.2687,
+        386074028533.7917
+      ],
+      "verticalTermsMsunKpc4Km2S2": [
+        -498560434.41462356,
+        -22631460994.757843,
+        23010717036.155685
+      ],
+      "radialResidualScaled": 0.0003881369709944623,
+      "verticalResidualScaled": -0.0025856628433988016,
+      "sigmaRKmS": 37.29742879214831,
+      "sigmaZKmS": 17.011629333825972
+    },
+    {
+      "population": 1,
+      "Rkpc": 8.122,
+      "zkpc": 0.4,
+      "differenceStepKpc": 0.02,
+      "densityMsunKpc3": 23441777.37032947,
+      "radialTermsMsunKpc4Km2S2": [
+        -28103517394.69719,
+        -2014802433.619243,
+        -123759693281.61899,
+        153626496631.50308
+      ],
+      "verticalTermsMsunKpc4Km2S2": [
+        -867121247.8503486,
+        -30225865901.48406,
+        30926256248.486683
+      ],
+      "radialResidualScaled": -0.0008179277716734209,
+      "verticalResidualScaled": -0.002688373667802317,
+      "sigmaRKmS": 38.00163300509844,
+      "sigmaZKmS": 16.86898714327035
+    },
+    {
+      "population": 1,
+      "Rkpc": 8.122,
+      "zkpc": 0.4,
+      "differenceStepKpc": 0.01,
+      "densityMsunKpc3": 23441777.37032947,
+      "radialTermsMsunKpc4Km2S2": [
+        -28104208966.04023,
+        -2021892340.249586,
+        -123759693281.61899,
+        153626496631.50308
+      ],
+      "verticalTermsMsunKpc4Km2S2": [
+        -869052857.0692283,
+        -30236536591.54801,
+        30926256248.486683
+      ],
+      "radialResidualScaled": -0.0008432116822957186,
+      "verticalResidualScaled": -0.0028909860429790586,
+      "sigmaRKmS": 38.00163300509844,
+      "sigmaZKmS": 16.86898714327035
+    },
+    {
+      "population": 1,
+      "Rkpc": 15.0,
+      "zkpc": 0.1,
+      "differenceStepKpc": 0.02,
+      "densityMsunKpc3": 3026185.9131460553,
+      "radialTermsMsunKpc4Km2S2": [
+        -187756303.14974487,
+        7316382.163865515,
+        -9477747564.350912,
+        9655926923.963627
+      ],
+      "verticalTermsMsunKpc4Km2S2": [
+        -813332.1020910734,
+        -135513216.4150417,
+        136903622.06908935
+      ],
+      "radialResidualScaled": -0.0001169533313700438,
+      "verticalResidualScaled": 0.002112041839005072,
+      "sigmaRKmS": 8.60873347307255,
+      "sigmaZKmS": 5.685108895269378
+    },
+    {
+      "population": 1,
+      "Rkpc": 15.0,
+      "zkpc": 0.1,
+      "differenceStepKpc": 0.01,
+      "densityMsunKpc3": 3026185.9131460553,
+      "radialTermsMsunKpc4Km2S2": [
+        -187758106.1002165,
+        7328291.872378095,
+        -9477747564.350912,
+        9655926923.963627
+      ],
+      "verticalTermsMsunKpc4Km2S2": [
+        -728409.9151757173,
+        -135798317.0726277,
+        136903622.06908935
+      ],
+      "radialResidualScaled": -0.00011643036138547003,
+      "verticalResidualScaled": 0.0013783952022367965,
+      "sigmaRKmS": 8.60873347307255,
+      "sigmaZKmS": 5.685108895269378
+    },
+    {
+      "population": 1,
+      "Rkpc": 15.0,
+      "zkpc": 0.4,
+      "differenceStepKpc": 0.02,
+      "densityMsunKpc3": 1131204.481392137,
+      "radialTermsMsunKpc4Km2S2": [
+        -72082412.6812946,
+        -3133359.435218578,
+        -3524136193.545912,
+        3600355915.116803
+      ],
+      "verticalTermsMsunKpc4Km2S2": [
+        -1274110.5349680968,
+        -185320029.22812915,
+        187192286.13583097
+      ],
+      "radialResidualScaled": 0.00013944308171979196,
+      "verticalResidualScaled": 0.001600235672804905,
+      "sigmaRKmS": 8.665821204446216,
+      "sigmaZKmS": 5.632796074666607
+    },
+    {
+      "population": 1,
+      "Rkpc": 15.0,
+      "zkpc": 0.4,
+      "differenceStepKpc": 0.01,
+      "densityMsunKpc3": 1131204.481392137,
+      "radialTermsMsunKpc4Km2S2": [
+        -72079453.48774418,
+        -3144626.743916434,
+        -3524136193.545912,
+        3600355915.116803
+      ],
+      "verticalTermsMsunKpc4Km2S2": [
+        -1273787.9533299557,
+        -185401923.41730854,
+        187192286.13583097
+      ],
+      "radialResidualScaled": 0.00013828897044112972,
+      "verticalResidualScaled": 0.0013817036190254288,
+      "sigmaRKmS": 8.665821204446216,
+      "sigmaZKmS": 5.632796074666607
+    },
+    {
+      "population": 2,
+      "Rkpc": 1.0,
+      "zkpc": 0.1,
+      "differenceStepKpc": 0.02,
+      "densityMsunKpc3": 32591289.73937517,
+      "radialTermsMsunKpc4Km2S2": [
+        -255279331896.0327,
+        -28783374055.88461,
+        -422980988216.1777,
+        695351621008.6945
+      ],
+      "verticalTermsMsunKpc4Km2S2": [
+        978251647.060883,
+        -140958844371.74683,
+        173012047262.5811
+      ],
+      "radialResidualScaled": -0.008337216356093274,
+      "verticalResidualScaled": 0.10487869309231126,
+      "sigmaRKmS": 112.63793406645061,
+      "sigmaZKmS": 127.15886729263941
+    },
+    {
+      "population": 2,
+      "Rkpc": 1.0,
+      "zkpc": 0.1,
+      "differenceStepKpc": 0.01,
+      "densityMsunKpc3": 32591289.73937517,
+      "radialTermsMsunKpc4Km2S2": [
+        -255259712882.5348,
+        -28774544632.917786,
+        -422980988216.1777,
+        695351621008.6945
+      ],
+      "verticalTermsMsunKpc4Km2S2": [
+        845809071.624279,
+        -141061387251.77612,
+        173012047262.5811
+      ],
+      "radialResidualScaled": -0.008317099469161614,
+      "verticalResidualScaled": 0.10414247382591248,
+      "sigmaRKmS": 112.63793406645061,
+      "sigmaZKmS": 127.15886729263941
+    },
+    {
+      "population": 2,
+      "Rkpc": 1.0,
+      "zkpc": 0.4,
+      "differenceStepKpc": 0.02,
+      "densityMsunKpc3": 27852464.21753377,
+      "radialTermsMsunKpc4Km2S2": [
+        -196464338122.20917,
+        -9594614266.937828,
+        -326580274243.69794,
+        522539845630.67285
+      ],
+      "verticalTermsMsunKpc4Km2S2": [
+        2292646772.2871304,
+        -443941719331.23016,
+        473902298842.7515
+      ],
+      "radialResidualScaled": -0.009571248395314955,
+      "verticalResidualScaled": 0.035052647625656665,
+      "sigmaRKmS": 111.74731059668166,
+      "sigmaZKmS": 124.55699918151431
+    },
+    {
+      "population": 2,
+      "Rkpc": 1.0,
+      "zkpc": 0.4,
+      "differenceStepKpc": 0.01,
+      "densityMsunKpc3": 27852464.21753377,
+      "radialTermsMsunKpc4Km2S2": [
+        -196449970874.92676,
+        -9539659516.72802,
+        -326580274243.69794,
+        522539845630.67285
+      ],
+      "verticalTermsMsunKpc4Km2S2": [
+        2206521432.830429,
+        -443296946075.5554,
+        473902298842.7515
+      ],
+      "radialResidualScaled": -0.009506176018325093,
+      "verticalResidualScaled": 0.03568813183568299,
+      "sigmaRKmS": 111.74731059668166,
+      "sigmaZKmS": 124.55699918151431
+    },
+    {
+      "population": 2,
+      "Rkpc": 3.0,
+      "zkpc": 0.1,
+      "differenceStepKpc": 0.02,
+      "densityMsunKpc3": 20142589.315421987,
+      "radialTermsMsunKpc4Km2S2": [
+        -64344029738.71384,
+        -828827164.9962243,
+        -201778164922.7628,
+        269248503503.02
+      ],
+      "verticalTermsMsunKpc4Km2S2": [
+        303813519.7544679,
+        -40304013754.03671,
+        41237999001.84388
+      ],
+      "radialResidualScaled": 0.004284751418113164,
+      "verticalResidualScaled": 0.015123541711132091,
+      "sigmaRKmS": 87.8378743131455,
+      "sigmaZKmS": 88.9396540606874
+    },
+    {
+      "population": 2,
+      "Rkpc": 3.0,
+      "zkpc": 0.1,
+      "differenceStepKpc": 0.01,
+      "densityMsunKpc3": 20142589.315421987,
+      "radialTermsMsunKpc4Km2S2": [
+        -64347032917.10205,
+        -809050052.516628,
+        -201778164922.7628,
+        269248503503.02
+      ],
+      "verticalTermsMsunKpc4Km2S2": [
+        323492527.0956149,
+        -40221283391.68396,
+        41237999001.84388
+      ],
+      "radialResidualScaled": 0.004316169448971885,
+      "verticalResidualScaled": 0.01638741334659172,
+      "sigmaRKmS": 87.8378743131455,
+      "sigmaZKmS": 88.9396540606874
+    },
+    {
+      "population": 2,
+      "Rkpc": 3.0,
+      "zkpc": 0.4,
+      "differenceStepKpc": 0.02,
+      "densityMsunKpc3": 17386486.03260663,
+      "radialTermsMsunKpc4Km2S2": [
+        -55369920044.33861,
+        610429807.1068476,
+        -168774183741.0555,
+        224009588819.86493
+      ],
+      "verticalTermsMsunKpc4Km2S2": [
+        933838402.6573415,
+        -117319345523.17543,
+        116894361051.1697
+      ],
+      "radialResidualScaled": 0.0010605010913514,
+      "verticalResidualScaled": 0.002163977219925377,
+      "sigmaRKmS": 87.53123928659811,
+      "sigmaZKmS": 87.6224403796759
+    },
+    {
+      "population": 2,
+      "Rkpc": 3.0,
+      "zkpc": 0.4,
+      "differenceStepKpc": 0.01,
+      "densityMsunKpc3": 17386486.03260663,
+      "radialTermsMsunKpc4Km2S2": [
+        -55369659359.503174,
+        614017919.6580284,
+        -168774183741.0555,
+        224009588819.86493
+      ],
+      "verticalTermsMsunKpc4Km2S2": [
+        949106108.4688088,
+        -117471775616.3559,
+        116894361051.1697
+      ],
+      "radialResidualScaled": 0.0010690696019402203,
+      "verticalResidualScaled": 0.0015795472443594972,
+      "sigmaRKmS": 87.53123928659811,
+      "sigmaZKmS": 87.6224403796759
+    },
+    {
+      "population": 2,
+      "Rkpc": 8.122,
+      "zkpc": 0.1,
+      "differenceStepKpc": 0.02,
+      "densityMsunKpc3": 7188005.743116715,
+      "radialTermsMsunKpc4Km2S2": [
+        -8645381775.053406,
+        711587833.8118572,
+        -39797001175.68043,
+        47768305220.26394
+      ],
+      "verticalTermsMsunKpc4Km2S2": [
+        -19953943.416220862,
+        -2908880213.2877827,
+        2847078211.644077
+      ],
+      "radialResidualScaled": 0.00038701220078760155,
+      "verticalResidualScaled": -0.014154637370876326,
+      "sigmaRKmS": 50.156546707339366,
+      "sigmaZKmS": 40.25439113978357
+    },
+    {
+      "population": 2,
+      "Rkpc": 8.122,
+      "zkpc": 0.1,
+      "differenceStepKpc": 0.01,
+      "densityMsunKpc3": 7188005.743116715,
+      "radialTermsMsunKpc4Km2S2": [
+        -8644920844.973183,
+        711762500.300844,
+        -39797001175.68043,
+        47768305220.26394
+      ],
+      "verticalTermsMsunKpc4Km2S2": [
+        -20074505.893400636,
+        -2910866424.660778,
+        2847078211.644077
+      ],
+      "radialResidualScaled": 0.0003935711597855135,
+      "verticalResidualScaled": -0.014514095029148034,
+      "sigmaRKmS": 50.156546707339366,
+      "sigmaZKmS": 40.25439113978357
+    },
+    {
+      "population": 2,
+      "Rkpc": 8.122,
+      "zkpc": 0.4,
+      "differenceStepKpc": 0.02,
+      "densityMsunKpc3": 6156448.49386703,
+      "radialTermsMsunKpc4Km2S2": [
+        -7328815840.867138,
+        471161711.93359643,
+        -33516120898.716854,
+        40346497574.121124
+      ],
+      "verticalTermsMsunKpc4Km2S2": [
+        -70652312.86158955,
+        -8253668297.828627,
+        8122076269.819369
+      ],
+      "radialResidualScaled": -0.0003340262844535335,
+      "verticalResidualScaled": -0.012297182315387506,
+      "sigmaRKmS": 50.11913630066285,
+      "sigmaZKmS": 39.92205865875807
+    },
+    {
+      "population": 2,
+      "Rkpc": 8.122,
+      "zkpc": 0.4,
+      "differenceStepKpc": 0.01,
+      "densityMsunKpc3": 6156448.49386703,
+      "radialTermsMsunKpc4Km2S2": [
+        -7328158679.667759,
+        470563001.62277967,
+        -33516120898.716854,
+        40346497574.121124
+      ],
+      "verticalTermsMsunKpc4Km2S2": [
+        -70535826.70267683,
+        -8257568293.89286,
+        8122076269.819369
+      ],
+      "radialResidualScaled": -0.0003333156496003553,
+      "verticalResidualScaled": -0.012524352067057877,
+      "sigmaRKmS": 50.11913630066285,
+      "sigmaZKmS": 39.92205865875807
+    },
+    {
+      "population": 2,
+      "Rkpc": 15.0,
+      "zkpc": 0.1,
+      "differenceStepKpc": 0.02,
+      "densityMsunKpc3": 1288575.2681859399,
+      "radialTermsMsunKpc4Km2S2": [
+        -289601415.8859998,
+        19405809.14272254,
+        -3847678596.0417433,
+        4111574431.5573215
+      ],
+      "verticalTermsMsunKpc4Km2S2": [
+        -1014552.5039699053,
+        -56964998.30507338,
+        58294707.1285204
+      ],
+      "radialResidualScaled": -0.0007619222224768062,
+      "verticalResidualScaled": 0.0027104565109015103,
+      "sigmaRKmS": 21.090337060774175,
+      "sigmaZKmS": 14.656332589305766
+    },
+    {
+      "population": 2,
+      "Rkpc": 15.0,
+      "zkpc": 0.1,
+      "differenceStepKpc": 0.01,
+      "densityMsunKpc3": 1288575.2681859399,
+      "radialTermsMsunKpc4Km2S2": [
+        -289600913.30348253,
+        19410745.242129233,
+        -3847678596.0417433,
+        4111574431.5573215
+      ],
+      "verticalTermsMsunKpc4Km2S2": [
+        -1014601.1708667378,
+        -56997824.352782965,
+        58294707.1285204
+      ],
+      "radialResidualScaled": -0.0007612640360101795,
+      "verticalResidualScaled": 0.0024270360590428713,
+      "sigmaRKmS": 21.090337060774175,
+      "sigmaZKmS": 14.656332589305766
+    },
+    {
+      "population": 2,
+      "Rkpc": 15.0,
+      "zkpc": 0.4,
+      "differenceStepKpc": 0.02,
+      "densityMsunKpc3": 1117340.9958900004,
+      "radialTermsMsunKpc4Km2S2": [
+        -252866580.88629395,
+        12833134.086298872,
+        -3319958879.9604025,
+        3556231724.616491
+      ],
+      "verticalTermsMsunKpc4Km2S2": [
+        -3585747.7613518885,
+        -179864831.78508878,
+        184898149.58700636
+      ],
+      "radialResidualScaled": -0.0005265555722149222,
+      "verticalResidualScaled": 0.003929890145056716,
+      "sigmaRKmS": 21.148982985785683,
+      "sigmaZKmS": 14.62188886940064
+    },
+    {
+      "population": 2,
+      "Rkpc": 15.0,
+      "zkpc": 0.4,
+      "differenceStepKpc": 0.01,
+      "densityMsunKpc3": 1117340.9958900004,
+      "radialTermsMsunKpc4Km2S2": [
+        -252843584.93182957,
+        12835692.27222125,
+        -3319958879.9604025,
+        3556231724.616491
+      ],
+      "verticalTermsMsunKpc4Km2S2": [
+        -3580191.380125682,
+        -179906395.44273466,
+        184898149.58700636
+      ],
+      "radialResidualScaled": -0.0005229790048469232,
+      "verticalResidualScaled": 0.003831762352323735,
+      "sigmaRKmS": 21.148982985785683,
+      "sigmaZKmS": 14.62188886940064
+    },
+    {
+      "population": 3,
+      "Rkpc": 1.0,
+      "zkpc": 0.1,
+      "differenceStepKpc": 0.02,
+      "densityMsunKpc3": 161094326.22567353,
+      "radialTermsMsunKpc4Km2S2": [
+        -3422733794413.928,
+        -95015847469.28835,
+        28268975295.595215,
+        3437028781987.4746
+      ],
+      "verticalTermsMsunKpc4Km2S2": [
+        1137073123.5934258,
+        -681024109626.3184,
+        855175091429.9418
+      ],
+      "radialResidualScaled": -0.007511317280534177,
+      "verticalResidualScaled": 0.11402063287729967,
+      "sigmaRKmS": 164.7113620493825,
+      "sigmaZKmS": 174.36993148541333
+    },
+    {
+      "population": 3,
+      "Rkpc": 1.0,
+      "zkpc": 0.1,
+      "differenceStepKpc": 0.01,
+      "densityMsunKpc3": 161094326.22567353,
+      "radialTermsMsunKpc4Km2S2": [
+        -3421071006490.6494,
+        -85116709584.76677,
+        28268975295.595215,
+        3437028781987.4746
+      ],
+      "verticalTermsMsunKpc4Km2S2": [
+        -151841001.60217285,
+        -701089457504.3457,
+        855175091429.9418
+      ],
+      "radialResidualScaled": -0.0058653150678728465,
+      "verticalResidualScaled": 0.0989027061905552,
+      "sigmaRKmS": 164.7113620493825,
+      "sigmaZKmS": 174.36993148541333
+    },
+    {
+      "population": 3,
+      "Rkpc": 1.0,
+      "zkpc": 0.4,
+      "differenceStepKpc": 0.02,
+      "densityMsunKpc3": 143150308.32956475,
+      "radialTermsMsunKpc4Km2S2": [
+        -2789931972852.722,
+        -19128722640.494633,
+        52241635245.68262,
+        2685641723917.0015
+      ],
+      "verticalTermsMsunKpc4Km2S2": [
+        -378825894.07167435,
+        -2302989497655.542,
+        2435664566969.3755
+      ],
+      "radialResidualScaled": -0.012831810746457607,
+      "verticalResidualScaled": 0.027916295682276528,
+      "sigmaRKmS": 167.37276359124456,
+      "sigmaZKmS": 175.4879638556536
+    },
+    {
+      "population": 3,
+      "Rkpc": 1.0,
+      "zkpc": 0.4,
+      "differenceStepKpc": 0.01,
+      "densityMsunKpc3": 143150308.32956475,
+      "radialTermsMsunKpc4Km2S2": [
+        -2789944804734.8633,
+        -18973397275.927353,
+        52241635245.68262,
+        2685641723917.0015
+      ],
+      "verticalTermsMsunKpc4Km2S2": [
+        -4920625676.206589,
+        -2330384538016.04,
+        2435664566969.3755
+      ],
+      "radialResidualScaled": -0.012806451080805999,
+      "verticalResidualScaled": 0.02103543072850546,
+      "sigmaRKmS": 167.37276359124456,
+      "sigmaZKmS": 175.4879638556536
+    },
+    {
+      "population": 3,
+      "Rkpc": 3.0,
+      "zkpc": 0.1,
+      "differenceStepKpc": 0.02,
+      "densityMsunKpc3": 47290056.67864895,
+      "radialTermsMsunKpc4Km2S2": [
+        -617645385255.0842,
+        -12485711340.994143,
+        9393167031.90853,
+        632132085498.5854
+      ],
+      "verticalTermsMsunKpc4Km2S2": [
+        938892949.1544088,
+        -82118569930.93872,
+        96817111225.02774
+      ],
+      "radialResidualScaled": 0.008960090469600251,
+      "verticalResidualScaled": 0.08693521205562227,
+      "sigmaRKmS": 173.77223708284876,
+      "sigmaZKmS": 178.55786784322984
+    },
+    {
+      "population": 3,
+      "Rkpc": 3.0,
+      "zkpc": 0.1,
+      "differenceStepKpc": 0.01,
+      "densityMsunKpc3": 47290056.67864895,
+      "radialTermsMsunKpc4Km2S2": [
+        -617733396030.5664,
+        -12941986530.374502,
+        9393167031.90853,
+        632132085498.5854
+      ],
+      "verticalTermsMsunKpc4Km2S2": [
+        1963610644.411715,
+        -86359213242.1997,
+        96817111225.02774
+      ],
+      "radialResidualScaled": 0.008528426782913297,
+      "verticalResidualScaled": 0.06709254067605452,
+      "sigmaRKmS": 173.77223708284876,
+      "sigmaZKmS": 178.55786784322984
+    },
+    {
+      "population": 3,
+      "Rkpc": 3.0,
+      "zkpc": 0.4,
+      "differenceStepKpc": 0.02,
+      "densityMsunKpc3": 45811213.04599206,
+      "radialTermsMsunKpc4Km2S2": [
+        -585116941468.103,
+        -7705366959.985625,
+        9205379052.343668,
+        590237209435.3204
+      ],
+      "verticalTermsMsunKpc4Km2S2": [
+        1903599818.2900906,
+        -288212151786.55396,
+        308002000401.1934
+      ],
+      "radialResidualScaled": 0.005552692255472182,
+      "verticalResidualScaled": 0.036269527798115896,
+      "sigmaRKmS": 173.56816328419944,
+      "sigmaZKmS": 177.84412594918464
+    },
+    {
+      "population": 3,
+      "Rkpc": 3.0,
+      "zkpc": 0.4,
+      "differenceStepKpc": 0.01,
+      "densityMsunKpc3": 45811213.04599206,
+      "radialTermsMsunKpc4Km2S2": [
+        -585138229144.1528,
+        -7465339203.136039,
+        9205379052.343668,
+        590237209435.3204
+      ],
+      "verticalTermsMsunKpc4Km2S2": [
+        2449910473.179563,
+        -289566582344.812,
+        308002000401.1934
+      ],
+      "radialResidualScaled": 0.005737210846376777,
+      "verticalResidualScaled": 0.03480780803522938,
+      "sigmaRKmS": 173.56816328419944,
+      "sigmaZKmS": 177.84412594918464
+    },
+    {
+      "population": 3,
+      "Rkpc": 8.122,
+      "zkpc": 0.1,
+      "differenceStepKpc": 0.02,
+      "densityMsunKpc3": 10628981.92934801,
+      "radialTermsMsunKpc4Km2S2": [
+        -70885158051.9432,
+        -386627898.32039475,
+        1256729418.4211931,
+        70635510199.46944
+      ],
+      "verticalTermsMsunKpc4Km2S2": [
+        81066319.25383212,
+        -4772427517.186737,
+        4210005381.810387
+      ],
+      "radialResidualScaled": 0.004333865754086791,
+      "verticalResidualScaled": -0.053109268785859566,
+      "sigmaRKmS": 156.63874211967283,
+      "sigmaZKmS": 157.7561562055304
+    },
+    {
+      "population": 3,
+      "Rkpc": 8.122,
+      "zkpc": 0.1,
+      "differenceStepKpc": 0.01,
+      "densityMsunKpc3": 10628981.92934801,
+      "radialTermsMsunKpc4Km2S2": [
+        -70831684211.03363,
+        -394423815.8658169,
+        1256729418.4211931,
+        70635510199.46944
+      ],
+      "verticalTermsMsunKpc4Km2S2": [
+        43976939.34230397,
+        -4753418637.6449585,
+        4210005381.810387
+      ],
+      "radialResidualScaled": 0.004654410856143151,
+      "verticalResidualScaled": -0.05544732812237708,
+      "sigmaRKmS": 156.63874211967283,
+      "sigmaZKmS": 157.7561562055304
+    },
+    {
+      "population": 3,
+      "Rkpc": 8.122,
+      "zkpc": 0.4,
+      "differenceStepKpc": 0.02,
+      "densityMsunKpc3": 10532051.043711344,
+      "radialTermsMsunKpc4Km2S2": [
+        -69341538670.37582,
+        -361244868.91336215,
+        1205015177.9409416,
+        69022159822.97755
+      ],
+      "verticalTermsMsunKpc4Km2S2": [
+        131467007.98003097,
+        -16356591792.90924,
+        13894718999.09016
+      ],
+      "radialResidualScaled": 0.0037475281712359768,
+      "verticalResidualScaled": -0.07670153799566766,
+      "sigmaRKmS": 156.43995032587864,
+      "sigmaZKmS": 157.52557355205192
+    },
+    {
+      "population": 3,
+      "Rkpc": 8.122,
+      "zkpc": 0.4,
+      "differenceStepKpc": 0.01,
+      "densityMsunKpc3": 10532051.043711344,
+      "radialTermsMsunKpc4Km2S2": [
+        -69350648104.89655,
+        -370683719.0985799,
+        1205015177.9409416,
+        69022159822.97755
+      ],
+      "verticalTermsMsunKpc4Km2S2": [
+        140937133.80312485,
+        -17341763001.620483,
+        13894718999.09016
+      ],
+      "radialResidualScaled": 0.0036144949910484683,
+      "verticalResidualScaled": -0.10536579998992425,
+      "sigmaRKmS": 156.43995032587864,
+      "sigmaZKmS": 157.52557355205192
+    },
+    {
+      "population": 3,
+      "Rkpc": 15.0,
+      "zkpc": 0.1,
+      "differenceStepKpc": 0.02,
+      "densityMsunKpc3": 3110520.6305848574,
+      "radialTermsMsunKpc4Km2S2": [
+        -10073813115.308762,
+        -14845719.301722333,
+        86019045.14509633,
+        9925021385.478586
+      ],
+      "verticalTermsMsunKpc4Km2S2": [
+        -4875915.967933573,
+        -148203639.24446106,
+        140718896.0195064
+      ],
+      "radialResidualScaled": -0.0038616699166765804,
+      "verticalResidualScaled": -0.042071900451005825,
+      "sigmaRKmS": 137.84975606819515,
+      "sigmaZKmS": 138.10609823061142
+    },
+    {
+      "population": 3,
+      "Rkpc": 15.0,
+      "zkpc": 0.1,
+      "differenceStepKpc": 0.01,
+      "densityMsunKpc3": 3110520.6305848574,
+      "radialTermsMsunKpc4Km2S2": [
+        -10095486572.706604,
+        -14642052.98334374,
+        86019045.14509633,
+        9925021385.478586
+      ],
+      "verticalTermsMsunKpc4Km2S2": [
+        -1878532.6300713297,
+        -148047449.94163513,
+        140718896.0195064
+      ],
+      "radialResidualScaled": -0.004924574451362366,
+      "verticalResidualScaled": -0.03167813104716595,
+      "sigmaRKmS": 137.84975606819515,
+      "sigmaZKmS": 138.10609823061142
+    },
+    {
+      "population": 3,
+      "Rkpc": 15.0,
+      "zkpc": 0.4,
+      "differenceStepKpc": 0.02,
+      "densityMsunKpc3": 3105973.435599208,
+      "radialTermsMsunKpc4Km2S2": [
+        -10022952607.293892,
+        -15537054.633025894,
+        85177802.021875,
+        9885577731.528423
+      ],
+      "verticalTermsMsunKpc4Km2S2": [
+        2642445.3844419373,
+        -539991658.1468582,
+        513978045.2172971
+      ],
+      "radialResidualScaled": -0.003385141604038597,
+      "verticalResidualScaled": -0.0221189653864939,
+      "sigmaRKmS": 137.82407036283843,
+      "sigmaZKmS": 138.08401842912167
+    },
+    {
+      "population": 3,
+      "Rkpc": 15.0,
+      "zkpc": 0.4,
+      "differenceStepKpc": 0.01,
+      "densityMsunKpc3": 3105973.435599208,
+      "radialTermsMsunKpc4Km2S2": [
+        -10032767820.13855,
+        -15708283.26731231,
+        85177802.021875,
+        9885577731.528423
+      ],
+      "verticalTermsMsunKpc4Km2S2": [
+        6029179.098175913,
+        -542686660.6956482,
+        513978045.2172971
+      ],
+      "radialResidualScaled": -0.003882295348043697,
+      "verticalResidualScaled": -0.021341457497836162,
+      "sigmaRKmS": 137.82407036283843,
+      "sigmaZKmS": 138.08401842912167
+    }
+  ],
+  "frequencies": [
+    {
+      "Rkpc": 0.5,
+      "omega2Myr2": 0.05031553283006904,
+      "kappa2Myr2": 0.14946356417150014,
+      "nu2Myr2": 0.09363085359928913,
+      "circularPeriodMyr": 28.011013980947673,
+      "verticalPeriodMyr": 20.53384961373949
+    },
+    {
+      "Rkpc": 1,
+      "omega2Myr2": 0.022529493067217698,
+      "kappa2Myr2": 0.06144553473177642,
+      "nu2Myr2": 0.056474416095892134,
+      "circularPeriodMyr": 41.86047561433758,
+      "verticalPeriodMyr": 26.43954601183324
+    },
+    {
+      "Rkpc": 2,
+      "omega2Myr2": 0.008695589754158725,
+      "kappa2Myr2": 0.021957819060592902,
+      "nu2Myr2": 0.03205448285602933,
+      "circularPeriodMyr": 67.37989770115531,
+      "verticalPeriodMyr": 35.09421084774218
+    },
+    {
+      "Rkpc": 3,
+      "omega2Myr2": 0.004672894694446927,
+      "kappa2Myr2": 0.011295091345560736,
+      "nu2Myr2": 0.021740867213536845,
+      "circularPeriodMyr": 91.91510153668948,
+      "verticalPeriodMyr": 42.61293391993249
+    },
+    {
+      "Rkpc": 5,
+      "omega2Myr2": 0.002042219795485176,
+      "kappa2Myr2": 0.0047841344388722335,
+      "nu2Myr2": 0.011593707694238372,
+      "circularPeriodMyr": 139.03643627379392,
+      "verticalPeriodMyr": 58.35373987489211
+    },
+    {
+      "Rkpc": 8.122,
+      "omega2Myr2": 0.0008566955235444687,
+      "kappa2Myr2": 0.0017197177523833335,
+      "nu2Myr2": 0.004201993496761605,
+      "circularPeriodMyr": 214.66765866351278,
+      "verticalPeriodMyr": 96.92865365277962
+    },
+    {
+      "Rkpc": 12,
+      "omega2Myr2": 0.00036967591847532013,
+      "kappa2Myr2": 0.0006408949767299316,
+      "nu2Myr2": 0.0011154969385902666,
+      "circularPeriodMyr": 326.79039859474267,
+      "verticalPeriodMyr": 188.1246378913409
+    },
+    {
+      "Rkpc": 15,
+      "omega2Myr2": 0.0002225321976142935,
+      "kappa2Myr2": 0.0003839402995021094,
+      "nu2Myr2": 0.0004766954190712358,
+      "circularPeriodMyr": 421.19522588246514,
+      "verticalPeriodMyr": 287.7791855284808
+    },
+    {
+      "Rkpc": 20,
+      "omega2Myr2": 0.00011591545329019061,
+      "kappa2Myr2": 0.0002021128100174529,
+      "nu2Myr2": 0.00016354537228730626,
+      "circularPeriodMyr": 583.5918247161991,
+      "verticalPeriodMyr": 491.3158088758126
+    }
+  ],
+  "momentOrdering": "xx,yy,zz,xy,xz,yz at y=0. Noncentral second moments. Stationary axisymmetric Jeans equations include cross stress, no imposed isotropy. Residual divided by sum of absolute terms; two finite-difference steps expose numerical sensitivity. Tiny-density bulge tails should not determine global quality. Moment quadrature and approximate actions limit interpretation. No physical parameter adjusted.",
+  "preservedEvidence": {
+    "reports/v1.0.2/corrected/iterations.json": "10d706f518b0342ef7aee628f996af5889da48783ac9337498f9eca475c0713e",
+    "reports/v1.0.2/df-validation/closure.json": "e4390ab9b1cf23230dcb499f345c9a8d0a70a23d65a91ef8e6f6acc5cd220a34",
+    "reports/v1.0.2/df-validation/f-along-orbits.json": "6f12c9e4c639782467a48b6ce350e09d1397aae19aa378b66224a22399698430",
+    "reports/v1.0.2/corrected/kinematic-moments.json": "684306fba54b1f381c87758baa984b124d4b8d335ea8c705049fb8d9b2d661f8",
+    "reports/v1.0.2/corrected/continuum-profiles.json": "ffb41cd9e84d6d2fffde040bc95ec88688ca720971fa1b6a4bd1dd66b261df91"
+  }
+}

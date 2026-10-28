@@ -1,0 +1,1765 @@
+{
+  "schema": "graph-audit-106",
+  "count": 83,
+  "mainGraphCount": 7,
+  "mainAstrophysics": 5,
+  "mainValidation": 2,
+  "qualification": "Figures are counted once across PNG/SVG/PDF formats; multi-panel figures count as one. Interactive radial/vertical profile variants count separately. Screenshots are not data figures. No old astrophysical observation comparison existed; five new targeted figures replace the presentation, not the scientific archive.",
+  "figures": [
+    {
+      "number": 1,
+      "version": "1.0.5",
+      "title": "Espessura vertical ao longo do tempo",
+      "theme": "Estrutura e resolução",
+      "source": "reports/v1.0.5/figures/01-espessura-tempo.png",
+      "category": "Fundamental para validar o simulador",
+      "action": "Síntese reutilizada nos gráficos6/7; original preservado",
+      "formats": [
+        {
+          "path": "reports/v1.0.5/figures/01-espessura-tempo.png",
+          "label": "PNG"
+        },
+        {
+          "path": "reports/v1.0.5/figures/01-espessura-tempo.svg",
+          "label": "SVG"
+        },
+        {
+          "path": "reports/v1.0.5/figures/01-espessura-tempo.csv",
+          "label": "CSV"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "version": "1.0.5",
+      "title": "Espessura por anel galáctico",
+      "theme": "Estrutura e resolução",
+      "source": "reports/v1.0.5/figures/02-espessura-aneis.png",
+      "category": "Diagnóstico técnico",
+      "action": "Arquivo técnico; consulta explícita",
+      "formats": [
+        {
+          "path": "reports/v1.0.5/figures/02-espessura-aneis.png",
+          "label": "PNG"
+        },
+        {
+          "path": "reports/v1.0.5/figures/02-espessura-aneis.svg",
+          "label": "SVG"
+        },
+        {
+          "path": "reports/v1.0.5/figures/02-espessura-aneis.csv",
+          "label": "CSV"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "version": "1.0.5",
+      "title": "Dispersão vertical e evolução cinemática",
+      "theme": "Estrutura e resolução",
+      "source": "reports/v1.0.5/figures/03-dispersao-vertical.png",
+      "category": "Diagnóstico técnico",
+      "action": "Arquivo técnico; consulta explícita",
+      "formats": [
+        {
+          "path": "reports/v1.0.5/figures/03-dispersao-vertical.png",
+          "label": "PNG"
+        },
+        {
+          "path": "reports/v1.0.5/figures/03-dispersao-vertical.svg",
+          "label": "SVG"
+        },
+        {
+          "path": "reports/v1.0.5/figures/03-dispersao-vertical.csv",
+          "label": "CSV"
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "version": "1.0.5",
+      "title": "Dispersões radial e azimutal",
+      "theme": "Massa e estrutura",
+      "source": "reports/v1.0.5/figures/04-dispersoes-radial-azimutal.png",
+      "category": "Diagnóstico técnico",
+      "action": "Arquivo técnico; consulta explícita",
+      "formats": [
+        {
+          "path": "reports/v1.0.5/figures/04-dispersoes-radial-azimutal.png",
+          "label": "PNG"
+        },
+        {
+          "path": "reports/v1.0.5/figures/04-dispersoes-radial-azimutal.svg",
+          "label": "SVG"
+        },
+        {
+          "path": "reports/v1.0.5/figures/04-dispersoes-radial-azimutal.csv",
+          "label": "CSV"
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "version": "1.0.5",
+      "title": "Perfis verticais de densidade",
+      "theme": "Massa e estrutura",
+      "source": "reports/v1.0.5/figures/05-perfil-vertical.png",
+      "category": "Diagnóstico técnico",
+      "action": "Arquivo técnico; consulta explícita",
+      "formats": [
+        {
+          "path": "reports/v1.0.5/figures/05-perfil-vertical.png",
+          "label": "PNG"
+        },
+        {
+          "path": "reports/v1.0.5/figures/05-perfil-vertical.svg",
+          "label": "SVG"
+        },
+        {
+          "path": "reports/v1.0.5/figures/05-perfil-vertical.csv",
+          "label": "CSV"
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "version": "1.0.5",
+      "title": "Perfis radiais de massa e densidade",
+      "theme": "Massa e estrutura",
+      "source": "reports/v1.0.5/figures/06-perfil-radial.png",
+      "category": "Diagnóstico técnico",
+      "action": "Arquivo técnico; consulta explícita",
+      "formats": [
+        {
+          "path": "reports/v1.0.5/figures/06-perfil-radial.png",
+          "label": "PNG"
+        },
+        {
+          "path": "reports/v1.0.5/figures/06-perfil-radial.svg",
+          "label": "SVG"
+        },
+        {
+          "path": "reports/v1.0.5/figures/06-perfil-radial.csv",
+          "label": "CSV"
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "version": "1.0.5",
+      "title": "Energia total e erro energético",
+      "theme": "Conservação",
+      "source": "reports/v1.0.5/figures/07-energia.png",
+      "category": "Fundamental para validar o simulador",
+      "action": "Síntese reutilizada nos gráficos6/7; original preservado",
+      "formats": [
+        {
+          "path": "reports/v1.0.5/figures/07-energia.png",
+          "label": "PNG"
+        },
+        {
+          "path": "reports/v1.0.5/figures/07-energia.svg",
+          "label": "SVG"
+        },
+        {
+          "path": "reports/v1.0.5/figures/07-energia.csv",
+          "label": "CSV"
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "version": "1.0.5",
+      "title": "Modos de Fourier: amplitude e fase",
+      "theme": "Dinâmica coletiva",
+      "source": "reports/v1.0.5/figures/08-fourier.png",
+      "category": "Experimental ou inconclusivo",
+      "action": "Arquivo técnico; consulta explícita",
+      "formats": [
+        {
+          "path": "reports/v1.0.5/figures/08-fourier.png",
+          "label": "PNG"
+        },
+        {
+          "path": "reports/v1.0.5/figures/08-fourier.svg",
+          "label": "SVG"
+        },
+        {
+          "path": "reports/v1.0.5/figures/08-fourier.csv",
+          "label": "CSV"
+        }
+      ]
+    },
+    {
+      "number": 9,
+      "version": "1.0.5",
+      "title": "Plano médio, flexão e respiração vertical",
+      "theme": "Dinâmica coletiva",
+      "source": "reports/v1.0.5/figures/09-plano-respiracao.png",
+      "category": "Experimental ou inconclusivo",
+      "action": "Arquivo técnico; consulta explícita",
+      "formats": [
+        {
+          "path": "reports/v1.0.5/figures/09-plano-respiracao.png",
+          "label": "PNG"
+        },
+        {
+          "path": "reports/v1.0.5/figures/09-plano-respiracao.svg",
+          "label": "SVG"
+        },
+        {
+          "path": "reports/v1.0.5/figures/09-plano-respiracao.csv",
+          "label": "CSV"
+        }
+      ]
+    },
+    {
+      "number": 10,
+      "version": "1.0.5",
+      "title": "Massa das macro partículas e aquecimento medido",
+      "theme": "Massa e estrutura",
+      "source": "reports/v1.0.5/figures/10-massa-aquecimento.png",
+      "category": "Diagnóstico técnico",
+      "action": "Arquivo técnico; consulta explícita",
+      "formats": [
+        {
+          "path": "reports/v1.0.5/figures/10-massa-aquecimento.png",
+          "label": "PNG"
+        },
+        {
+          "path": "reports/v1.0.5/figures/10-massa-aquecimento.svg",
+          "label": "SVG"
+        },
+        {
+          "path": "reports/v1.0.5/figures/10-massa-aquecimento.csv",
+          "label": "CSV"
+        }
+      ]
+    },
+    {
+      "number": 11,
+      "version": "1.0.5",
+      "title": "Campo contínuo, bárions vivos e halo vivo",
+      "theme": "Campo e preparação",
+      "source": "reports/v1.0.5/figures/11-continuo-vivo.png",
+      "category": "Diagnóstico técnico",
+      "action": "Arquivo técnico; consulta explícita",
+      "formats": [
+        {
+          "path": "reports/v1.0.5/figures/11-continuo-vivo.png",
+          "label": "PNG"
+        },
+        {
+          "path": "reports/v1.0.5/figures/11-continuo-vivo.svg",
+          "label": "SVG"
+        },
+        {
+          "path": "reports/v1.0.5/figures/11-continuo-vivo.csv",
+          "label": "CSV"
+        }
+      ]
+    },
+    {
+      "number": 12,
+      "version": "1.0.5",
+      "title": "Preparação original e tentativa de fases orbitais",
+      "theme": "Campo e preparação",
+      "source": "reports/v1.0.5/figures/12-preparacao.png",
+      "category": "Experimental ou inconclusivo",
+      "action": "Arquivo técnico; consulta explícita",
+      "formats": [
+        {
+          "path": "reports/v1.0.5/figures/12-preparacao.png",
+          "label": "PNG"
+        },
+        {
+          "path": "reports/v1.0.5/figures/12-preparacao.svg",
+          "label": "SVG"
+        },
+        {
+          "path": "reports/v1.0.5/figures/12-preparacao.csv",
+          "label": "CSV"
+        }
+      ]
+    },
+    {
+      "number": 13,
+      "version": "1.0.5",
+      "title": "Resolução e deriva estrutural tardia",
+      "theme": "Estrutura e resolução",
+      "source": "reports/v1.0.5/figures/13-convergencia.png",
+      "category": "Experimental ou inconclusivo",
+      "action": "Arquivo técnico; consulta explícita",
+      "formats": [
+        {
+          "path": "reports/v1.0.5/figures/13-convergencia.png",
+          "label": "PNG"
+        },
+        {
+          "path": "reports/v1.0.5/figures/13-convergencia.svg",
+          "label": "SVG"
+        },
+        {
+          "path": "reports/v1.0.5/figures/13-convergencia.csv",
+          "label": "CSV"
+        }
+      ]
+    },
+    {
+      "number": 14,
+      "version": "1.0.5",
+      "title": "Domínio efetivamente integrado em períodos orbitais",
+      "theme": "Estrutura e resolução",
+      "source": "reports/v1.0.5/figures/14-dominio-orbital.png",
+      "category": "Diagnóstico técnico",
+      "action": "Arquivo técnico; consulta explícita",
+      "formats": [
+        {
+          "path": "reports/v1.0.5/figures/14-dominio-orbital.png",
+          "label": "PNG"
+        },
+        {
+          "path": "reports/v1.0.5/figures/14-dominio-orbital.svg",
+          "label": "SVG"
+        },
+        {
+          "path": "reports/v1.0.5/figures/14-dominio-orbital.csv",
+          "label": "CSV"
+        }
+      ]
+    },
+    {
+      "number": 15,
+      "version": "1.0.5",
+      "title": "Resíduos espaciais das equações de Jeans",
+      "theme": "Campo e preparação",
+      "source": "reports/v1.0.5/figures/15-jeans.png",
+      "category": "Diagnóstico técnico",
+      "action": "Arquivo técnico; consulta explícita",
+      "formats": [
+        {
+          "path": "reports/v1.0.5/figures/15-jeans.png",
+          "label": "PNG"
+        },
+        {
+          "path": "reports/v1.0.5/figures/15-jeans.svg",
+          "label": "SVG"
+        },
+        {
+          "path": "reports/v1.0.5/figures/15-jeans.csv",
+          "label": "CSV"
+        }
+      ]
+    },
+    {
+      "number": 16,
+      "version": "1.0.5",
+      "title": "Refinamento isolado de bojo e discos",
+      "theme": "Estrutura e resolução",
+      "source": "reports/v1.0.5/figures/16-resolucao-barionica.png",
+      "category": "Experimental ou inconclusivo",
+      "action": "Arquivo técnico; consulta explícita",
+      "formats": [
+        {
+          "path": "reports/v1.0.5/figures/16-resolucao-barionica.png",
+          "label": "PNG"
+        },
+        {
+          "path": "reports/v1.0.5/figures/16-resolucao-barionica.svg",
+          "label": "SVG"
+        },
+        {
+          "path": "reports/v1.0.5/figures/16-resolucao-barionica.csv",
+          "label": "CSV"
+        }
+      ]
+    },
+    {
+      "number": 17,
+      "version": "1.0.5",
+      "title": "Quadratura independente dos momentos de Jeans",
+      "theme": "Campo e preparação",
+      "source": "reports/v1.0.5/figures/17-jeans-independente.png",
+      "category": "Diagnóstico técnico",
+      "action": "Arquivo técnico; consulta explícita",
+      "formats": [
+        {
+          "path": "reports/v1.0.5/figures/17-jeans-independente.png",
+          "label": "PNG"
+        },
+        {
+          "path": "reports/v1.0.5/figures/17-jeans-independente.svg",
+          "label": "SVG"
+        },
+        {
+          "path": "reports/v1.0.5/figures/17-jeans-independente.csv",
+          "label": "CSV"
+        }
+      ]
+    },
+    {
+      "number": 18,
+      "version": "1.0.4",
+      "title": "Disco fino: refinamento isolado e combinado",
+      "theme": "Estrutura e resolução",
+      "source": "reports/v1.0.4/figures/01-fino-quatro-familias.png",
+      "category": "Histórico",
+      "action": "Arquivo técnico; consulta explícita",
+      "formats": [
+        {
+          "path": "reports/v1.0.4/figures/01-fino-quatro-familias.png",
+          "label": "PNG"
+        },
+        {
+          "path": "reports/v1.0.4/figures/01-fino-quatro-familias.svg",
+          "label": "SVG"
+        },
+        {
+          "path": "reports/v1.0.4/figures/01-fino-quatro-familias.csv",
+          "label": "CSV"
+        }
+      ]
+    },
+    {
+      "number": 19,
+      "version": "1.0.4",
+      "title": "Espessura por população e mistura global",
+      "theme": "Estrutura e resolução",
+      "source": "reports/v1.0.4/figures/02-espesso-global.png",
+      "category": "Redundante na exposição principal; histórico válido",
+      "action": "Arquivo técnico; consulta explícita",
+      "formats": [
+        {
+          "path": "reports/v1.0.4/figures/02-espesso-global.png",
+          "label": "PNG"
+        },
+        {
+          "path": "reports/v1.0.4/figures/02-espesso-global.svg",
+          "label": "SVG"
+        },
+        {
+          "path": "reports/v1.0.4/figures/02-espesso-global.csv",
+          "label": "CSV"
+        }
+      ]
+    },
+    {
+      "number": 20,
+      "version": "1.0.4",
+      "title": "Aquecimento vertical e radial do disco fino",
+      "theme": "Massa e estrutura",
+      "source": "reports/v1.0.4/figures/03-dispersoes.png",
+      "category": "Redundante na exposição principal; histórico válido",
+      "action": "Arquivo técnico; consulta explícita",
+      "formats": [
+        {
+          "path": "reports/v1.0.4/figures/03-dispersoes.png",
+          "label": "PNG"
+        },
+        {
+          "path": "reports/v1.0.4/figures/03-dispersoes.svg",
+          "label": "SVG"
+        },
+        {
+          "path": "reports/v1.0.4/figures/03-dispersoes.csv",
+          "label": "CSV"
+        }
+      ]
+    },
+    {
+      "number": 21,
+      "version": "1.0.4",
+      "title": "Taxa média medida e granularidade do halo",
+      "theme": "Estrutura e resolução",
+      "source": "reports/v1.0.4/figures/04-taxa-massa-resolucao.png",
+      "category": "Histórico",
+      "action": "Arquivo técnico; consulta explícita",
+      "formats": [
+        {
+          "path": "reports/v1.0.4/figures/04-taxa-massa-resolucao.png",
+          "label": "PNG"
+        },
+        {
+          "path": "reports/v1.0.4/figures/04-taxa-massa-resolucao.svg",
+          "label": "SVG"
+        },
+        {
+          "path": "reports/v1.0.4/figures/04-taxa-massa-resolucao.csv",
+          "label": "CSV"
+        }
+      ]
+    },
+    {
+      "number": 22,
+      "version": "1.0.4",
+      "title": "O ganho combinado não é uma soma presumida",
+      "theme": "Estrutura e resolução",
+      "source": "reports/v1.0.4/figures/05-contrastes-controles.png",
+      "category": "Histórico",
+      "action": "Arquivo técnico; consulta explícita",
+      "formats": [
+        {
+          "path": "reports/v1.0.4/figures/05-contrastes-controles.png",
+          "label": "PNG"
+        },
+        {
+          "path": "reports/v1.0.4/figures/05-contrastes-controles.svg",
+          "label": "SVG"
+        },
+        {
+          "path": "reports/v1.0.4/figures/05-contrastes-controles.csv",
+          "label": "CSV"
+        }
+      ]
+    },
+    {
+      "number": 23,
+      "version": "1.0.4",
+      "title": "Variação entre sementes em 200 Myr",
+      "theme": "Estrutura e resolução",
+      "source": "reports/v1.0.4/figures/06-variabilidade.png",
+      "category": "Histórico",
+      "action": "Arquivo técnico; consulta explícita",
+      "formats": [
+        {
+          "path": "reports/v1.0.4/figures/06-variabilidade.png",
+          "label": "PNG"
+        },
+        {
+          "path": "reports/v1.0.4/figures/06-variabilidade.svg",
+          "label": "SVG"
+        },
+        {
+          "path": "reports/v1.0.4/figures/06-variabilidade.csv",
+          "label": "CSV"
+        }
+      ]
+    },
+    {
+      "number": 24,
+      "version": "1.0.4",
+      "title": "Perfis de densidade: início e fim medidos",
+      "theme": "Massa e estrutura",
+      "source": "reports/v1.0.4/figures/07-perfis-densidade.png",
+      "category": "Histórico",
+      "action": "Arquivo técnico; consulta explícita",
+      "formats": [
+        {
+          "path": "reports/v1.0.4/figures/07-perfis-densidade.png",
+          "label": "PNG"
+        },
+        {
+          "path": "reports/v1.0.4/figures/07-perfis-densidade.svg",
+          "label": "SVG"
+        },
+        {
+          "path": "reports/v1.0.4/figures/07-perfis-densidade.csv",
+          "label": "CSV"
+        }
+      ]
+    },
+    {
+      "number": 25,
+      "version": "1.0.4",
+      "title": "Modos m=2 e sua referência de amostragem",
+      "theme": "Dinâmica coletiva",
+      "source": "reports/v1.0.4/figures/08-modos-coletivos.png",
+      "category": "Redundante na exposição principal; histórico válido",
+      "action": "Arquivo técnico; consulta explícita",
+      "formats": [
+        {
+          "path": "reports/v1.0.4/figures/08-modos-coletivos.png",
+          "label": "PNG"
+        },
+        {
+          "path": "reports/v1.0.4/figures/08-modos-coletivos.svg",
+          "label": "SVG"
+        },
+        {
+          "path": "reports/v1.0.4/figures/08-modos-coletivos.csv",
+          "label": "CSV"
+        }
+      ]
+    },
+    {
+      "number": 26,
+      "version": "1.0.4",
+      "title": "Conservação energética e angular medidas",
+      "theme": "Conservação",
+      "source": "reports/v1.0.4/figures/09-energia-momentos.png",
+      "category": "Redundante na exposição principal; histórico válido",
+      "action": "Arquivo técnico; consulta explícita",
+      "formats": [
+        {
+          "path": "reports/v1.0.4/figures/09-energia-momentos.png",
+          "label": "PNG"
+        },
+        {
+          "path": "reports/v1.0.4/figures/09-energia-momentos.svg",
+          "label": "SVG"
+        },
+        {
+          "path": "reports/v1.0.4/figures/09-energia-momentos.csv",
+          "label": "CSV"
+        }
+      ]
+    },
+    {
+      "number": 27,
+      "version": "1.0.4",
+      "title": "Convergência física e temporal: domínios distintos",
+      "theme": "Estrutura e resolução",
+      "source": "reports/v1.0.4/figures/10-convergencia.png",
+      "category": "Histórico",
+      "action": "Arquivo técnico; consulta explícita",
+      "formats": [
+        {
+          "path": "reports/v1.0.4/figures/10-convergencia.png",
+          "label": "PNG"
+        },
+        {
+          "path": "reports/v1.0.4/figures/10-convergencia.svg",
+          "label": "SVG"
+        },
+        {
+          "path": "reports/v1.0.4/figures/10-convergencia.csv",
+          "label": "CSV"
+        }
+      ]
+    },
+    {
+      "number": 28,
+      "version": "1.0.4",
+      "title": "Decomposição exata da variância local nos extremos",
+      "theme": "Estrutura e resolução",
+      "source": "reports/v1.0.4/figures/11-migracao-coortes.png",
+      "category": "Histórico",
+      "action": "Arquivo técnico; consulta explícita",
+      "formats": [
+        {
+          "path": "reports/v1.0.4/figures/11-migracao-coortes.png",
+          "label": "PNG"
+        },
+        {
+          "path": "reports/v1.0.4/figures/11-migracao-coortes.svg",
+          "label": "SVG"
+        },
+        {
+          "path": "reports/v1.0.4/figures/11-migracao-coortes.csv",
+          "label": "CSV"
+        }
+      ]
+    },
+    {
+      "number": 29,
+      "version": "1.0.3",
+      "title": "Refinamento isolado do halo: mesmos bárions",
+      "theme": "Estrutura e resolução",
+      "source": "reports/v1.0.3/figures/01-halo-time.png",
+      "category": "Histórico",
+      "action": "Arquivo técnico; consulta explícita",
+      "formats": [
+        {
+          "path": "reports/v1.0.3/figures/01-halo-time.png",
+          "label": "PNG"
+        },
+        {
+          "path": "reports/v1.0.3/figures/01-halo-time.svg",
+          "label": "SVG"
+        },
+        {
+          "path": "reports/v1.0.3/figures/01-halo-time.csv",
+          "label": "CSV"
+        }
+      ]
+    },
+    {
+      "number": 30,
+      "version": "1.0.3",
+      "title": "Massa individual do halo e espessamento do disco fino",
+      "theme": "Massa e estrutura",
+      "source": "reports/v1.0.3/figures/02-halo-particle-mass.png",
+      "category": "Histórico",
+      "action": "Arquivo técnico; consulta explícita",
+      "formats": [
+        {
+          "path": "reports/v1.0.3/figures/02-halo-particle-mass.png",
+          "label": "PNG"
+        },
+        {
+          "path": "reports/v1.0.3/figures/02-halo-particle-mass.svg",
+          "label": "SVG"
+        },
+        {
+          "path": "reports/v1.0.3/figures/02-halo-particle-mass.csv",
+          "label": "CSV"
+        }
+      ]
+    },
+    {
+      "number": 31,
+      "version": "1.0.3",
+      "title": "Populações físicas separadas: fino e espesso",
+      "theme": "Estrutura e resolução",
+      "source": "reports/v1.0.3/figures/03-populations.png",
+      "category": "Histórico",
+      "action": "Arquivo técnico; consulta explícita",
+      "formats": [
+        {
+          "path": "reports/v1.0.3/figures/03-populations.png",
+          "label": "PNG"
+        },
+        {
+          "path": "reports/v1.0.3/figures/03-populations.svg",
+          "label": "SVG"
+        },
+        {
+          "path": "reports/v1.0.3/figures/03-populations.csv",
+          "label": "CSV"
+        }
+      ]
+    },
+    {
+      "number": 32,
+      "version": "1.0.3",
+      "title": "Aquecimento cinemático: dispersão vertical",
+      "theme": "Estrutura e resolução",
+      "source": "reports/v1.0.3/figures/04-vertical-dispersion.png",
+      "category": "Redundante na exposição principal; histórico válido",
+      "action": "Arquivo técnico; consulta explícita",
+      "formats": [
+        {
+          "path": "reports/v1.0.3/figures/04-vertical-dispersion.png",
+          "label": "PNG"
+        },
+        {
+          "path": "reports/v1.0.3/figures/04-vertical-dispersion.svg",
+          "label": "SVG"
+        },
+        {
+          "path": "reports/v1.0.3/figures/04-vertical-dispersion.csv",
+          "label": "CSV"
+        }
+      ]
+    },
+    {
+      "number": 33,
+      "version": "1.0.3",
+      "title": "Halo fixo e dinâmico: bárions inicialmente idênticos",
+      "theme": "Estrutura e resolução",
+      "source": "reports/v1.0.3/figures/05-fixed-vs-live.png",
+      "category": "Histórico",
+      "action": "Arquivo técnico; consulta explícita",
+      "formats": [
+        {
+          "path": "reports/v1.0.3/figures/05-fixed-vs-live.png",
+          "label": "PNG"
+        },
+        {
+          "path": "reports/v1.0.3/figures/05-fixed-vs-live.svg",
+          "label": "SVG"
+        },
+        {
+          "path": "reports/v1.0.3/figures/05-fixed-vs-live.csv",
+          "label": "CSV"
+        }
+      ]
+    },
+    {
+      "number": 34,
+      "version": "1.0.3",
+      "title": "Refinamento bariônico isolado com halo fixo",
+      "theme": "Estrutura e resolução",
+      "source": "reports/v1.0.3/figures/06-baryon-refinement.png",
+      "category": "Histórico",
+      "action": "Arquivo técnico; consulta explícita",
+      "formats": [
+        {
+          "path": "reports/v1.0.3/figures/06-baryon-refinement.png",
+          "label": "PNG"
+        },
+        {
+          "path": "reports/v1.0.3/figures/06-baryon-refinement.svg",
+          "label": "SVG"
+        },
+        {
+          "path": "reports/v1.0.3/figures/06-baryon-refinement.csv",
+          "label": "CSV"
+        }
+      ]
+    },
+    {
+      "number": 35,
+      "version": "1.0.3",
+      "title": "Conservação da Hamiltoniana correspondente a cada modelo",
+      "theme": "Conservação",
+      "source": "reports/v1.0.3/figures/07-energy.png",
+      "category": "Redundante na exposição principal; histórico válido",
+      "action": "Arquivo técnico; consulta explícita",
+      "formats": [
+        {
+          "path": "reports/v1.0.3/figures/07-energy.png",
+          "label": "PNG"
+        },
+        {
+          "path": "reports/v1.0.3/figures/07-energy.svg",
+          "label": "SVG"
+        },
+        {
+          "path": "reports/v1.0.3/figures/07-energy.csv",
+          "label": "CSV"
+        }
+      ]
+    },
+    {
+      "number": 36,
+      "version": "1.0.3",
+      "title": "Ruído do halo e convergência estrutural são testes distintos",
+      "theme": "Estrutura e resolução",
+      "source": "reports/v1.0.3/figures/08-convergence.png",
+      "category": "Histórico",
+      "action": "Arquivo técnico; consulta explícita",
+      "formats": [
+        {
+          "path": "reports/v1.0.3/figures/08-convergence.png",
+          "label": "PNG"
+        },
+        {
+          "path": "reports/v1.0.3/figures/08-convergence.svg",
+          "label": "SVG"
+        },
+        {
+          "path": "reports/v1.0.3/figures/08-convergence.csv",
+          "label": "CSV"
+        }
+      ]
+    },
+    {
+      "number": 37,
+      "version": "1.0.3",
+      "title": "Perfis de densidade inicial e final",
+      "theme": "Massa e estrutura",
+      "source": "reports/v1.0.3/figures/09-density-profiles.png",
+      "category": "Histórico",
+      "action": "Arquivo técnico; consulta explícita",
+      "formats": [
+        {
+          "path": "reports/v1.0.3/figures/09-density-profiles.png",
+          "label": "PNG"
+        },
+        {
+          "path": "reports/v1.0.3/figures/09-density-profiles.svg",
+          "label": "SVG"
+        },
+        {
+          "path": "reports/v1.0.3/figures/09-density-profiles.csv",
+          "label": "CSV"
+        }
+      ]
+    },
+    {
+      "number": 38,
+      "version": "1.0.3",
+      "title": "Comparação histórica e novo protocolo pareado",
+      "theme": "Estrutura e resolução",
+      "source": "reports/v1.0.3/figures/10-versions.png",
+      "category": "Histórico",
+      "action": "Arquivo técnico; consulta explícita",
+      "formats": [
+        {
+          "path": "reports/v1.0.3/figures/10-versions.png",
+          "label": "PNG"
+        },
+        {
+          "path": "reports/v1.0.3/figures/10-versions.svg",
+          "label": "SVG"
+        },
+        {
+          "path": "reports/v1.0.3/figures/10-versions.csv",
+          "label": "CSV"
+        }
+      ]
+    },
+    {
+      "number": 39,
+      "version": "1.0.3",
+      "title": "Modos coletivos: medidas antes da interpretação",
+      "theme": "Dinâmica coletiva",
+      "source": "reports/v1.0.3/figures/11-collective-modes.png",
+      "category": "Redundante na exposição principal; histórico válido",
+      "action": "Arquivo técnico; consulta explícita",
+      "formats": [
+        {
+          "path": "reports/v1.0.3/figures/11-collective-modes.png",
+          "label": "PNG"
+        },
+        {
+          "path": "reports/v1.0.3/figures/11-collective-modes.svg",
+          "label": "SVG"
+        },
+        {
+          "path": "reports/v1.0.3/figures/11-collective-modes.csv",
+          "label": "CSV"
+        }
+      ]
+    },
+    {
+      "number": 40,
+      "version": "1.0.2",
+      "title": "Compatibilidade do campo de preparação",
+      "theme": "Campo e preparação",
+      "source": "reports/v1.0.2/figures/01-force-compatibility.png",
+      "category": "Histórico",
+      "action": "Arquivo técnico; consulta explícita",
+      "formats": [
+        {
+          "path": "reports/v1.0.2/figures/01-force-compatibility.png",
+          "label": "PNG"
+        },
+        {
+          "path": "reports/v1.0.2/figures/01-force-compatibility.svg",
+          "label": "SVG"
+        },
+        {
+          "path": "reports/v1.0.2/figures/01-force-compatibility.csv",
+          "label": "CSV"
+        }
+      ]
+    },
+    {
+      "number": 41,
+      "version": "1.0.2",
+      "title": "Disco global: anterior e campo corrigido",
+      "theme": "Campo e preparação",
+      "source": "reports/v1.0.2/figures/02-global-thickness.png",
+      "category": "Histórico",
+      "action": "Arquivo técnico; consulta explícita",
+      "formats": [
+        {
+          "path": "reports/v1.0.2/figures/02-global-thickness.png",
+          "label": "PNG"
+        },
+        {
+          "path": "reports/v1.0.2/figures/02-global-thickness.svg",
+          "label": "SVG"
+        },
+        {
+          "path": "reports/v1.0.2/figures/02-global-thickness.csv",
+          "label": "CSV"
+        }
+      ]
+    },
+    {
+      "number": 42,
+      "version": "1.0.2",
+      "title": "Disco fino e espesso separados",
+      "theme": "Estrutura e resolução",
+      "source": "reports/v1.0.2/figures/03-population-thickness.png",
+      "category": "Histórico",
+      "action": "Arquivo técnico; consulta explícita",
+      "formats": [
+        {
+          "path": "reports/v1.0.2/figures/03-population-thickness.png",
+          "label": "PNG"
+        },
+        {
+          "path": "reports/v1.0.2/figures/03-population-thickness.svg",
+          "label": "SVG"
+        },
+        {
+          "path": "reports/v1.0.2/figures/03-population-thickness.csv",
+          "label": "CSV"
+        }
+      ]
+    },
+    {
+      "number": 43,
+      "version": "1.0.2",
+      "title": "Conservação da Hamiltoniana discreta de Plummer",
+      "theme": "Conservação",
+      "source": "reports/v1.0.2/figures/06-energy.png",
+      "category": "Redundante na exposição principal; histórico válido",
+      "action": "Arquivo técnico; consulta explícita",
+      "formats": [
+        {
+          "path": "reports/v1.0.2/figures/06-energy.png",
+          "label": "PNG"
+        },
+        {
+          "path": "reports/v1.0.2/figures/06-energy.svg",
+          "label": "SVG"
+        },
+        {
+          "path": "reports/v1.0.2/figures/06-energy.csv",
+          "label": "CSV"
+        }
+      ]
+    },
+    {
+      "number": 44,
+      "version": "1.0.2",
+      "title": "Dispersão vertical: medir além da espessura",
+      "theme": "Estrutura e resolução",
+      "source": "reports/v1.0.2/figures/07-vertical-dispersion.png",
+      "category": "Redundante na exposição principal; histórico válido",
+      "action": "Arquivo técnico; consulta explícita",
+      "formats": [
+        {
+          "path": "reports/v1.0.2/figures/07-vertical-dispersion.png",
+          "label": "PNG"
+        },
+        {
+          "path": "reports/v1.0.2/figures/07-vertical-dispersion.svg",
+          "label": "SVG"
+        },
+        {
+          "path": "reports/v1.0.2/figures/07-vertical-dispersion.csv",
+          "label": "CSV"
+        }
+      ]
+    },
+    {
+      "number": 45,
+      "version": "1.0.2",
+      "title": "Perfis inicial e final: população fina",
+      "theme": "Estrutura e resolução",
+      "source": "reports/v1.0.2/figures/08-density.png",
+      "category": "Histórico",
+      "action": "Arquivo técnico; consulta explícita",
+      "formats": [
+        {
+          "path": "reports/v1.0.2/figures/08-density.png",
+          "label": "PNG"
+        },
+        {
+          "path": "reports/v1.0.2/figures/08-density.svg",
+          "label": "SVG"
+        },
+        {
+          "path": "reports/v1.0.2/figures/08-density.csv",
+          "label": "CSV"
+        }
+      ]
+    },
+    {
+      "number": 46,
+      "version": "1.0.2",
+      "title": "Campo contínuo e evolução N-corpos",
+      "theme": "Campo e preparação",
+      "source": "reports/v1.0.2/figures/09-model-comparison.png",
+      "category": "Histórico",
+      "action": "Arquivo técnico; consulta explícita",
+      "formats": [
+        {
+          "path": "reports/v1.0.2/figures/09-model-comparison.png",
+          "label": "PNG"
+        },
+        {
+          "path": "reports/v1.0.2/figures/09-model-comparison.svg",
+          "label": "SVG"
+        },
+        {
+          "path": "reports/v1.0.2/figures/09-model-comparison.csv",
+          "label": "CSV"
+        }
+      ]
+    },
+    {
+      "number": 47,
+      "version": "1.0.2",
+      "title": "Convergência do campo e ruído de amostragem",
+      "theme": "Campo e preparação",
+      "source": "reports/v1.0.2/figures/10-convergence.png",
+      "category": "Histórico",
+      "action": "Arquivo técnico; consulta explícita",
+      "formats": [
+        {
+          "path": "reports/v1.0.2/figures/10-convergence.png",
+          "label": "PNG"
+        },
+        {
+          "path": "reports/v1.0.2/figures/10-convergence.svg",
+          "label": "SVG"
+        },
+        {
+          "path": "reports/v1.0.2/figures/10-convergence.csv",
+          "label": "CSV"
+        }
+      ]
+    },
+    {
+      "number": 48,
+      "version": "1.0.1",
+      "title": "Energia cinética, potencial e total",
+      "theme": "Conservação",
+      "source": "reports/v1.0.1/figures/energy-terms.png",
+      "category": "Redundante na exposição principal; histórico válido",
+      "action": "Arquivo técnico; consulta explícita",
+      "formats": [
+        {
+          "path": "reports/v1.0.1/figures/energy-terms.png",
+          "label": "PNG"
+        },
+        {
+          "path": "reports/v1.0.1/figures/energy-terms.svg",
+          "label": "SVG"
+        },
+        {
+          "path": "reports/v1.0.1/figures/energy-terms.csv",
+          "label": "CSV"
+        }
+      ]
+    },
+    {
+      "number": 49,
+      "version": "1.0.1",
+      "title": "Erro relativo assinado da energia",
+      "theme": "Conservação",
+      "source": "reports/v1.0.1/figures/energy-error.png",
+      "category": "Redundante na exposição principal; histórico válido",
+      "action": "Arquivo técnico; consulta explícita",
+      "formats": [
+        {
+          "path": "reports/v1.0.1/figures/energy-error.png",
+          "label": "PNG"
+        },
+        {
+          "path": "reports/v1.0.1/figures/energy-error.svg",
+          "label": "SVG"
+        },
+        {
+          "path": "reports/v1.0.1/figures/energy-error.csv",
+          "label": "CSV"
+        }
+      ]
+    },
+    {
+      "number": 50,
+      "version": "1.0.1",
+      "title": "Erro máximo da energia e passo temporal",
+      "theme": "Conservação",
+      "source": "reports/v1.0.1/figures/energy-dt.png",
+      "category": "Redundante na exposição principal; histórico válido",
+      "action": "Arquivo técnico; consulta explícita",
+      "formats": [
+        {
+          "path": "reports/v1.0.1/figures/energy-dt.png",
+          "label": "PNG"
+        },
+        {
+          "path": "reports/v1.0.1/figures/energy-dt.svg",
+          "label": "SVG"
+        },
+        {
+          "path": "reports/v1.0.1/figures/energy-dt.csv",
+          "label": "CSV"
+        }
+      ]
+    },
+    {
+      "number": 51,
+      "version": "1.0.1",
+      "title": "Espessura do disco durante a evolução",
+      "theme": "Estrutura e resolução",
+      "source": "reports/v1.0.1/figures/disk-thickness.png",
+      "category": "Redundante na exposição principal; histórico válido",
+      "action": "Arquivo técnico; consulta explícita",
+      "formats": [
+        {
+          "path": "reports/v1.0.1/figures/disk-thickness.png",
+          "label": "PNG"
+        },
+        {
+          "path": "reports/v1.0.1/figures/disk-thickness.svg",
+          "label": "SVG"
+        },
+        {
+          "path": "reports/v1.0.1/figures/disk-thickness.csv",
+          "label": "CSV"
+        }
+      ]
+    },
+    {
+      "number": 52,
+      "version": "1.0.1",
+      "title": "Dispersões de velocidade das populações estelares",
+      "theme": "Estrutura e resolução",
+      "source": "reports/v1.0.1/figures/velocity-dispersion.png",
+      "category": "Redundante na exposição principal; histórico válido",
+      "action": "Arquivo técnico; consulta explícita",
+      "formats": [
+        {
+          "path": "reports/v1.0.1/figures/velocity-dispersion.png",
+          "label": "PNG"
+        },
+        {
+          "path": "reports/v1.0.1/figures/velocity-dispersion.svg",
+          "label": "SVG"
+        },
+        {
+          "path": "reports/v1.0.1/figures/velocity-dispersion.csv",
+          "label": "CSV"
+        }
+      ]
+    },
+    {
+      "number": 53,
+      "version": "1.0.1",
+      "title": "Espessura e número de partículas",
+      "theme": "Estrutura e resolução",
+      "source": "reports/v1.0.1/figures/resolution-thickness.png",
+      "category": "Redundante na exposição principal; histórico válido",
+      "action": "Arquivo técnico; consulta explícita",
+      "formats": [
+        {
+          "path": "reports/v1.0.1/figures/resolution-thickness.png",
+          "label": "PNG"
+        },
+        {
+          "path": "reports/v1.0.1/figures/resolution-thickness.svg",
+          "label": "SVG"
+        },
+        {
+          "path": "reports/v1.0.1/figures/resolution-thickness.csv",
+          "label": "CSV"
+        }
+      ]
+    },
+    {
+      "number": 54,
+      "version": "1.0.1",
+      "title": "Evolução dos raios de meia massa",
+      "theme": "Massa e estrutura",
+      "source": "reports/v1.0.1/figures/half-mass.png",
+      "category": "Histórico",
+      "action": "Arquivo técnico; consulta explícita",
+      "formats": [
+        {
+          "path": "reports/v1.0.1/figures/half-mass.png",
+          "label": "PNG"
+        },
+        {
+          "path": "reports/v1.0.1/figures/half-mass.svg",
+          "label": "SVG"
+        },
+        {
+          "path": "reports/v1.0.1/figures/half-mass.csv",
+          "label": "CSV"
+        }
+      ]
+    },
+    {
+      "number": 55,
+      "version": "1.0.1",
+      "title": "Perfis de densidade inicial e final",
+      "theme": "Massa e estrutura",
+      "source": "reports/v1.0.1/figures/density-profiles.png",
+      "category": "Histórico",
+      "action": "Arquivo técnico; consulta explícita",
+      "formats": [
+        {
+          "path": "reports/v1.0.1/figures/density-profiles.png",
+          "label": "PNG"
+        },
+        {
+          "path": "reports/v1.0.1/figures/density-profiles.svg",
+          "label": "SVG"
+        },
+        {
+          "path": "reports/v1.0.1/figures/density-profiles.csv",
+          "label": "CSV"
+        }
+      ]
+    },
+    {
+      "number": 56,
+      "version": "1.0.1",
+      "title": "Evolução do momento angular",
+      "theme": "Conservação",
+      "source": "reports/v1.0.1/figures/angular-momentum.png",
+      "category": "Histórico",
+      "action": "Arquivo técnico; consulta explícita",
+      "formats": [
+        {
+          "path": "reports/v1.0.1/figures/angular-momentum.png",
+          "label": "PNG"
+        },
+        {
+          "path": "reports/v1.0.1/figures/angular-momentum.svg",
+          "label": "SVG"
+        },
+        {
+          "path": "reports/v1.0.1/figures/angular-momentum.csv",
+          "label": "CSV"
+        }
+      ]
+    },
+    {
+      "number": 57,
+      "version": "1.0.1",
+      "title": "Campo contínuo, halo fixo e halo dinâmico",
+      "theme": "Campo e preparação",
+      "source": "reports/v1.0.1/figures/field-comparison.png",
+      "category": "Histórico",
+      "action": "Arquivo técnico; consulta explícita",
+      "formats": [
+        {
+          "path": "reports/v1.0.1/figures/field-comparison.png",
+          "label": "PNG"
+        },
+        {
+          "path": "reports/v1.0.1/figures/field-comparison.svg",
+          "label": "SVG"
+        },
+        {
+          "path": "reports/v1.0.1/figures/field-comparison.csv",
+          "label": "CSV"
+        }
+      ]
+    },
+    {
+      "number": 58,
+      "version": "Interativo",
+      "title": "Estrutura radial",
+      "theme": "Massa e estrutura",
+      "source": "simulador-tecnico.html",
+      "category": "Diagnóstico técnico interativo",
+      "action": "Arquivo técnico; consulta explícita",
+      "formats": []
+    },
+    {
+      "number": 59,
+      "version": "Interativo",
+      "title": "Espessura vertical",
+      "theme": "Estrutura e resolução",
+      "source": "simulador-tecnico.html",
+      "category": "Diagnóstico técnico interativo",
+      "action": "Arquivo técnico; consulta explícita",
+      "formats": []
+    },
+    {
+      "number": 60,
+      "version": "Interativo",
+      "title": "Dispersões do disco",
+      "theme": "Estrutura e resolução",
+      "source": "simulador-tecnico.html",
+      "category": "Diagnóstico técnico interativo",
+      "action": "Arquivo técnico; consulta explícita",
+      "formats": []
+    },
+    {
+      "number": 61,
+      "version": "Interativo",
+      "title": "Energia total",
+      "theme": "Conservação",
+      "source": "simulador-tecnico.html",
+      "category": "Diagnóstico técnico interativo",
+      "action": "Arquivo técnico; consulta explícita",
+      "formats": []
+    },
+    {
+      "number": 62,
+      "version": "Interativo",
+      "title": "Perfil de massa",
+      "theme": "Massa e estrutura",
+      "source": "simulador-tecnico.html",
+      "category": "Diagnóstico técnico interativo",
+      "action": "Arquivo técnico; consulta explícita",
+      "formats": []
+    },
+    {
+      "number": 63,
+      "version": "Interativo",
+      "title": "Distribuição vertical do disco",
+      "theme": "Estrutura e resolução",
+      "source": "simulador-tecnico.html",
+      "category": "Diagnóstico técnico interativo",
+      "action": "Arquivo técnico; consulta explícita",
+      "formats": []
+    },
+    {
+      "number": 64,
+      "version": "Laboratório",
+      "title": "Evolução em20Myr — N2000 Barnes–Hut",
+      "theme": "Estrutura e resolução",
+      "source": "reports/laboratory/evolucao-20Myr.png",
+      "category": "Histórico; fora da exposição principal",
+      "action": "Arquivo técnico; consulta explícita",
+      "formats": [
+        {
+          "path": "reports/laboratory/evolucao-20Myr.png",
+          "label": "PNG"
+        },
+        {
+          "path": "reports/laboratory/evolucao-20Myr.svg",
+          "label": "SVG"
+        },
+        {
+          "path": "reports/laboratory/evolucao-20Myr.pdf",
+          "label": "PDF"
+        }
+      ]
+    },
+    {
+      "number": 65,
+      "version": "Laboratório",
+      "title": "Sensibilidade controlada de N, dt e epsilon",
+      "theme": "Estrutura e resolução",
+      "source": "reports/laboratory/sensibilidade.png",
+      "category": "Histórico; fora da exposição principal",
+      "action": "Arquivo técnico; consulta explícita",
+      "formats": [
+        {
+          "path": "reports/laboratory/sensibilidade.png",
+          "label": "PNG"
+        },
+        {
+          "path": "reports/laboratory/sensibilidade.svg",
+          "label": "SVG"
+        },
+        {
+          "path": "reports/laboratory/sensibilidade.pdf",
+          "label": "PDF"
+        }
+      ]
+    },
+    {
+      "number": 66,
+      "version": "Laboratório",
+      "title": "Evolução em200Myr — N1000",
+      "theme": "Estrutura e resolução",
+      "source": "reports/laboratory/evolucao-200Myr.png",
+      "category": "Histórico; fora da exposição principal",
+      "action": "Arquivo técnico; consulta explícita",
+      "formats": [
+        {
+          "path": "reports/laboratory/evolucao-200Myr.png",
+          "label": "PNG"
+        },
+        {
+          "path": "reports/laboratory/evolucao-200Myr.svg",
+          "label": "SVG"
+        },
+        {
+          "path": "reports/laboratory/evolucao-200Myr.pdf",
+          "label": "PDF"
+        }
+      ]
+    },
+    {
+      "number": 67,
+      "version": "Laboratório",
+      "title": "Resolução GPU — N10000 e50000",
+      "theme": "Estrutura e resolução",
+      "source": "reports/laboratory/resolucao-gpu.png",
+      "category": "Histórico; fora da exposição principal",
+      "action": "Arquivo técnico; consulta explícita",
+      "formats": [
+        {
+          "path": "reports/laboratory/resolucao-gpu.png",
+          "label": "PNG"
+        },
+        {
+          "path": "reports/laboratory/resolucao-gpu.svg",
+          "label": "SVG"
+        },
+        {
+          "path": "reports/laboratory/resolucao-gpu.pdf",
+          "label": "PDF"
+        }
+      ]
+    },
+    {
+      "number": 68,
+      "version": "0.9.0",
+      "title": "Reprodução histórica: espessura, dispersão e inclinação",
+      "theme": "Estrutura e resolução",
+      "source": "reports/v0.9.0/historical-thickness.png",
+      "category": "Histórico; fora da exposição principal",
+      "action": "Arquivo técnico; consulta explícita",
+      "formats": [
+        {
+          "path": "reports/v0.9.0/historical-thickness.png",
+          "label": "PNG"
+        },
+        {
+          "path": "reports/v0.9.0/historical-thickness.pdf",
+          "label": "PDF"
+        }
+      ]
+    },
+    {
+      "number": 69,
+      "version": "0.9.0",
+      "title": "Distribuição de massa: modos azimutais históricos",
+      "theme": "Dinâmica coletiva",
+      "source": "reports/v0.9.0/historical-modes.png",
+      "category": "Histórico; fora da exposição principal",
+      "action": "Arquivo técnico; consulta explícita",
+      "formats": [
+        {
+          "path": "reports/v0.9.0/historical-modes.png",
+          "label": "PNG"
+        },
+        {
+          "path": "reports/v0.9.0/historical-modes.pdf",
+          "label": "PDF"
+        }
+      ]
+    },
+    {
+      "number": 70,
+      "version": "0.9.0",
+      "title": "Halos A/B/C — Nbase10000",
+      "theme": "Estrutura e resolução",
+      "source": "reports/v0.9.0/halo-comparison-10000.png",
+      "category": "Histórico; fora da exposição principal",
+      "action": "Arquivo técnico; consulta explícita",
+      "formats": [
+        {
+          "path": "reports/v0.9.0/halo-comparison-10000.png",
+          "label": "PNG"
+        },
+        {
+          "path": "reports/v0.9.0/halo-comparison-10000.pdf",
+          "label": "PDF"
+        }
+      ]
+    },
+    {
+      "number": 71,
+      "version": "0.9.0",
+      "title": "Halos A/B/C — Nbase50000",
+      "theme": "Estrutura e resolução",
+      "source": "reports/v0.9.0/halo-comparison-50000.png",
+      "category": "Histórico; fora da exposição principal",
+      "action": "Arquivo técnico; consulta explícita",
+      "formats": [
+        {
+          "path": "reports/v0.9.0/halo-comparison-50000.png",
+          "label": "PNG"
+        },
+        {
+          "path": "reports/v0.9.0/halo-comparison-50000.pdf",
+          "label": "PDF"
+        }
+      ]
+    },
+    {
+      "number": 72,
+      "version": "0.9.0",
+      "title": "Anel4–6kpc: aquecimento e modos",
+      "theme": "Dinâmica coletiva",
+      "source": "reports/v0.9.0/heating-and-modes.png",
+      "category": "Histórico; fora da exposição principal",
+      "action": "Arquivo técnico; consulta explícita",
+      "formats": [
+        {
+          "path": "reports/v0.9.0/heating-and-modes.png",
+          "label": "PNG"
+        },
+        {
+          "path": "reports/v0.9.0/heating-and-modes.pdf",
+          "label": "PDF"
+        }
+      ]
+    },
+    {
+      "number": 73,
+      "version": "0.9.0",
+      "title": "Mapas de densidade projetada históricos",
+      "theme": "Massa e estrutura",
+      "source": "reports/v0.9.0/historical-density.png",
+      "category": "Histórico; fora da exposição principal",
+      "action": "Arquivo técnico; consulta explícita",
+      "formats": [
+        {
+          "path": "reports/v0.9.0/historical-density.png",
+          "label": "PNG"
+        },
+        {
+          "path": "reports/v0.9.0/historical-density.pdf",
+          "label": "PDF"
+        }
+      ]
+    },
+    {
+      "number": 74,
+      "version": "1.0.0",
+      "title": "Evolução N-corpos medida: espessura e dispersão normal",
+      "theme": "Estrutura e resolução",
+      "source": "reports/v1.0.0/comparison.png",
+      "category": "Histórico; fora da exposição principal",
+      "action": "Arquivo técnico; consulta explícita",
+      "formats": [
+        {
+          "path": "reports/v1.0.0/comparison.png",
+          "label": "PNG"
+        },
+        {
+          "path": "reports/v1.0.0/comparison.pdf",
+          "label": "PDF"
+        }
+      ]
+    },
+    {
+      "number": 75,
+      "version": "1.0.0",
+      "title": "Conservação numérica e estrutura",
+      "theme": "Estrutura e resolução",
+      "source": "reports/v1.0.0/conservation-and-structure.png",
+      "category": "Histórico; fora da exposição principal",
+      "action": "Arquivo técnico; consulta explícita",
+      "formats": [
+        {
+          "path": "reports/v1.0.0/conservation-and-structure.png",
+          "label": "PNG"
+        },
+        {
+          "path": "reports/v1.0.0/conservation-and-structure.pdf",
+          "label": "PDF"
+        }
+      ]
+    },
+    {
+      "number": 76,
+      "version": "1.0.0",
+      "title": "Perfis e cinemática do modelo contínuo calibrado",
+      "theme": "Estrutura e resolução",
+      "source": "reports/v1.0.0/initial-model.png",
+      "category": "Histórico; fora da exposição principal",
+      "action": "Arquivo técnico; consulta explícita",
+      "formats": [
+        {
+          "path": "reports/v1.0.0/initial-model.png",
+          "label": "PNG"
+        },
+        {
+          "path": "reports/v1.0.0/initial-model.pdf",
+          "label": "PDF"
+        }
+      ]
+    },
+    {
+      "number": 77,
+      "version": "1.0.0",
+      "title": "Perfis e cinemática do modelo contínuo original",
+      "theme": "Estrutura e resolução",
+      "source": "reports/v1.0.0/initial-model-uncalibrated.png",
+      "category": "Histórico; fora da exposição principal",
+      "action": "Arquivo técnico; consulta explícita",
+      "formats": [
+        {
+          "path": "reports/v1.0.0/initial-model-uncalibrated.png",
+          "label": "PNG"
+        },
+        {
+          "path": "reports/v1.0.0/initial-model-uncalibrated.pdf",
+          "label": "PDF"
+        }
+      ]
+    },
+    {
+      "number": 78,
+      "version": "1.0.0",
+      "title": "Convergência SCM calibrada",
+      "theme": "Estrutura e resolução",
+      "source": "reports/v1.0.0/scm-convergence.png",
+      "category": "Histórico; fora da exposição principal",
+      "action": "Arquivo técnico; consulta explícita",
+      "formats": [
+        {
+          "path": "reports/v1.0.0/scm-convergence.png",
+          "label": "PNG"
+        }
+      ]
+    },
+    {
+      "number": 79,
+      "version": "1.0.0",
+      "title": "Convergência SCM original",
+      "theme": "Estrutura e resolução",
+      "source": "reports/v1.0.0/scm-convergence-uncalibrated.png",
+      "category": "Histórico; fora da exposição principal",
+      "action": "Arquivo técnico; consulta explícita",
+      "formats": [
+        {
+          "path": "reports/v1.0.0/scm-convergence-uncalibrated.png",
+          "label": "PNG"
+        }
+      ]
+    },
+    {
+      "number": 80,
+      "version": "1.0.0",
+      "title": "Sensibilidade numérica: espessura e dispersão normal",
+      "theme": "Estrutura e resolução",
+      "source": "reports/v1.0.0/numerical-sensitivity.png",
+      "category": "Histórico; fora da exposição principal",
+      "action": "Arquivo técnico; consulta explícita",
+      "formats": [
+        {
+          "path": "reports/v1.0.0/numerical-sensitivity.png",
+          "label": "PNG"
+        }
+      ]
+    },
+    {
+      "number": 81,
+      "version": "1.0.0",
+      "title": "Diagnósticos por anéis calibrated-A-10k",
+      "theme": "Estrutura e resolução",
+      "source": "reports/v1.0.0/calibrated-A-10k-radial.png",
+      "category": "Histórico; fora da exposição principal",
+      "action": "Arquivo técnico; consulta explícita",
+      "formats": [
+        {
+          "path": "reports/v1.0.0/calibrated-A-10k-radial.png",
+          "label": "PNG"
+        },
+        {
+          "path": "reports/v1.0.0/calibrated-A-10k-radial.pdf",
+          "label": "PDF"
+        }
+      ]
+    },
+    {
+      "number": 82,
+      "version": "1.0.0",
+      "title": "Diagnósticos por anéis calibrated-B-26k",
+      "theme": "Estrutura e resolução",
+      "source": "reports/v1.0.0/calibrated-B-26k-radial.png",
+      "category": "Histórico; fora da exposição principal",
+      "action": "Arquivo técnico; consulta explícita",
+      "formats": [
+        {
+          "path": "reports/v1.0.0/calibrated-B-26k-radial.png",
+          "label": "PNG"
+        },
+        {
+          "path": "reports/v1.0.0/calibrated-B-26k-radial.pdf",
+          "label": "PDF"
+        }
+      ]
+    },
+    {
+      "number": 83,
+      "version": "1.0.0",
+      "title": "Diagnósticos por anéis calibrated-fixed",
+      "theme": "Estrutura e resolução",
+      "source": "reports/v1.0.0/calibrated-fixed-radial.png",
+      "category": "Histórico; fora da exposição principal",
+      "action": "Arquivo técnico; consulta explícita",
+      "formats": [
+        {
+          "path": "reports/v1.0.0/calibrated-fixed-radial.png",
+          "label": "PNG"
+        },
+        {
+          "path": "reports/v1.0.0/calibrated-fixed-radial.pdf",
+          "label": "PDF"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2216 @@
+{
+  "realizationId": "1ca8f265-4da8-49e8-9694-df20f8edc2fa",
+  "initialCodeVersion": "1.0.6-disk-audit.1",
+  "configuration": {
+    "n": 33148,
+    "dt": 0.1,
+    "epsilon": 0.1,
+    "theta": 0.5,
+    "budgetBytes": 536870912,
+    "seed": 2026,
+    "energyAuditCadenceMyr": 50,
+    "withHalo": true,
+    "requestedAlgorithm": "auto",
+    "requestedBackend": "auto",
+    "selected": "gpu",
+    "diagnosticOptions": {
+      "dt": 0.1,
+      "energyAuditCadenceMyr": 50,
+      "withHalo": true,
+      "forceMethod": "GPU direct f32",
+      "algorithm": "barnes-hut",
+      "epsilon": 0.1,
+      "theta": 0.5
+    }
+  },
+  "initial": {
+    "seed": 2026,
+    "withHalo": true,
+    "counts": [
+      4972,
+      14917,
+      13259
+    ],
+    "masses": [
+      0.5,
+      6.8,
+      97.6315764173288
+    ],
+    "initialization": "Jeans + Satoh k=1, Gaussiana aproximada; pares antipodais",
+    "clippedStreaming": 0,
+    "unbound": 210,
+    "centerShift": [
+      0.0015096228527497414,
+      0.005746079542547766,
+      -0.0026991374241868717
+    ],
+    "method": "legacy"
+  },
+  "snapshotTimes": [
+    0,
+    18550.10027641803,
+    18600.0002771616
+  ],
+  "reconstructionComparison": {
+    "positions": {
+      "unequal": 0,
+      "maxAbs": 0,
+      "capturedSHA256": "043dfa11e60808a6003493a2f17730518c0619c99ba0c2f7d1845e86e521251e",
+      "reconstructedSHA256": "043dfa11e60808a6003493a2f17730518c0619c99ba0c2f7d1845e86e521251e"
+    },
+    "velocities": {
+      "unequal": 0,
+      "maxAbs": 0,
+      "capturedSHA256": "8f53fff54171d566299c27823b05320e053c175a25a93c71e3b43bc0fdda736b",
+      "reconstructedSHA256": "8f53fff54171d566299c27823b05320e053c175a25a93c71e3b43bc0fdda736b"
+    },
+    "masses": {
+      "unequal": 0,
+      "maxAbs": 0,
+      "capturedSHA256": "f8aaf72c856996b620a30f40d83386d59e8579adc05b5a402e774796dbb0faf3",
+      "reconstructedSHA256": "f8aaf72c856996b620a30f40d83386d59e8579adc05b5a402e774796dbb0faf3"
+    },
+    "components": {
+      "unequal": 0,
+      "maxAbs": 0,
+      "capturedSHA256": "4f804898beb0408d53bd778b73a15efb5fec58b2ca9d4004415bb60108ad6c91",
+      "reconstructedSHA256": "4f804898beb0408d53bd778b73a15efb5fec58b2ca9d4004415bb60108ad6c91"
+    }
+  },
+  "measurements": [
+    {
+      "timeMyr": 0,
+      "n": 33148,
+      "parameters": {
+        "G": 0.04498502239584923,
+        "epsilonSquared": 0.009999999776482582,
+        "epsilon": 0.0999999988824129,
+        "theta": 0.5,
+        "forceAlgorithm": "GPU direct f32",
+        "trajectoryPrecision": "Float32",
+        "requestedDt": 0.1,
+        "effectiveDt": 0.10000000149011612,
+        "velocityEpoch": "full-step, after final KDK kick",
+        "externalPotential": "none; isolated live components"
+      },
+      "backend": "WebGPU",
+      "cmVelocity": [
+        -3.387831593171508e-11,
+        1.6469526770132906e-11,
+        4.582605194768693e-12
+      ],
+      "diskMass": 6.8000000909669325,
+      "instantaneousPositiveSpecificEnergyFraction": 0,
+      "diskMassOutside30KpcFraction": 0.09613193001273715,
+      "disk": {
+        "available": true,
+        "timeMyr": 0,
+        "plane": {
+          "normal": [
+            -0.0011691662759585354,
+            0.0010264727091953026,
+            0.9999987897012658
+          ],
+          "eigenvalues": [
+            0.11024713349981026,
+            26.30738150311233,
+            27.154983413987306
+          ],
+          "center": [
+            -0.00186622762911242,
+            -0.005954545964256261,
+            0.0028100312901542445
+          ],
+          "geometricCenter": [
+            -0.0018661252201717278,
+            -0.005954635874464039,
+            0.0027224399707221486
+          ],
+          "u": [
+            0.9999993165248758,
+            0.0000012001180950338043,
+            0.0011691656600137158
+          ],
+          "v": [
+            -2.117582368135751e-22,
+            0.9999994731760296,
+            -0.0010264734107643442
+          ],
+          "tiltDegrees": 0.0891423263282658,
+          "fitCount": 12665,
+          "apertureKpc": 20,
+          "method": "6-step Huber IRLS PCA, 2.5 MAD-normal scales; geometric median center; spherical fit aperture; signed-height median intercept"
+        },
+        "centerOfMass": [
+          -0.001590994429348993,
+          -0.005792508244933292,
+          0.0027079707181953726
+        ],
+        "fixed": {
+          "count": 14917,
+          "mass": 6.8000000909669325,
+          "h50": 0.16058985888957977,
+          "medianSignedHeight": 0.0027224065270274878,
+          "meanHeight": 0.0027079707181953726,
+          "meanNormalVelocity": 0.000004174226414239198,
+          "sigmaNormal": 0.040190476370968974
+        },
+        "instant": {
+          "count": 14917,
+          "mass": 6.8000000909669325,
+          "h50": 0.16487250830671857,
+          "medianSignedHeight": 4.336808689942018e-19,
+          "meanHeight": -0.00010221591451355558,
+          "meanNormalVelocity": 0.000004151657892746269,
+          "sigmaNormal": 0.04018801987191723
+        },
+        "rings": [
+          {
+            "lower": 0,
+            "upper": 2,
+            "radius": 1,
+            "count": 2399,
+            "mass": 1.0935979230562225,
+            "surfaceDensity": 0.08702575760471401,
+            "globalPlane": {
+              "count": 2399,
+              "mass": 1.0935979230562225,
+              "h50": 0.16446847152402946,
+              "medianSignedHeight": 4.336808689942018e-19,
+              "meanHeight": -0.00005587695538704855,
+              "meanNormalVelocity": 0.000002445234356031915,
+              "sigmaNormal": 0.06961728019981542
+            },
+            "localPlane": {
+              "normal": [
+                -0.002829681526622329,
+                0.0017731499819077419,
+                0.9999944244052563
+              ],
+              "tiltFromGlobalDegrees": 0.10431699907375068,
+              "count": 2399,
+              "mass": 1.0935979230562225,
+              "h50": 0.1646194074514151,
+              "medianSignedHeight": 0,
+              "meanHeight": 0.0000031246012821385465,
+              "meanNormalVelocity": 0.000002282581181231926,
+              "sigmaNormal": 0.06961871754488388
+            },
+            "meanRadialVelocity": -0.0002871946617578211,
+            "meanAzimuthalVelocity": 0.12458531430394854,
+            "sigmaR": 0.0680980179470097,
+            "sigmaPhi": 0.07334260364854801,
+            "modes": [
+              {
+                "m": 1,
+                "re": -0.00016686569771490306,
+                "im": -0.00010282731974631502,
+                "amplitude": 0.00019600412944653056,
+                "phaseRadians": -2.589326156139946,
+                "orientationRadians": -2.589326156139946,
+                "nullRms": 0.0004170276538933529,
+                "independentParticleRms": 0.02041666843894649,
+                "inferenceRms": 0.02041666843894649,
+                "independentGroups": 1200,
+                "approximateNullP": 0.9999078403795533,
+                "noiseModel": "conservative maximum of randomized antipodal-pair RMS and independent-particle RMS",
+                "qualification": "conditional sampling-noise reference; not proof of coherent spiral or calibrated temporal significance"
+              },
+              {
+                "m": 2,
+                "re": -0.041289667152255946,
+                "im": 0.011322897803767445,
+                "amplitude": 0.04281407044674269,
+                "phaseRadians": 2.8739417170068977,
+                "orientationRadians": 1.4369708585034489,
+                "nullRms": 0.028870509515267886,
+                "independentParticleRms": 0.02041666843894649,
+                "inferenceRms": 0.028870509515267886,
+                "independentGroups": 1200,
+                "approximateNullP": 0.11089216497145886,
+                "noiseModel": "conservative maximum of randomized antipodal-pair RMS and independent-particle RMS",
+                "qualification": "conditional sampling-noise reference; not proof of coherent spiral or calibrated temporal significance"
+              },
+              {
+                "m": 3,
+                "re": -0.000054461650679194674,
+                "im": -0.0004438130631022393,
+                "amplitude": 0.0004471421545491935,
+                "phaseRadians": -1.6928989163018142,
+                "orientationRadians": -0.5642996387672714,
+                "nullRms": 0.00041852304250108557,
+                "independentParticleRms": 0.02041666843894649,
+                "inferenceRms": 0.02041666843894649,
+                "independentGroups": 1200,
+                "approximateNullP": 0.9995204682929051,
+                "noiseModel": "conservative maximum of randomized antipodal-pair RMS and independent-particle RMS",
+                "qualification": "conditional sampling-noise reference; not proof of coherent spiral or calibrated temporal significance"
+              },
+              {
+                "m": 4,
+                "re": -0.014530189381590595,
+                "im": 0.015665336392628876,
+                "amplitude": 0.021366543186933887,
+                "phaseRadians": 2.3186189658041925,
+                "orientationRadians": 0.5796547414510481,
+                "nullRms": 0.02887047705693001,
+                "independentParticleRms": 0.02041666843894649,
+                "inferenceRms": 0.02887047705693001,
+                "independentGroups": 1200,
+                "approximateNullP": 0.5782652908344227,
+                "noiseModel": "conservative maximum of randomized antipodal-pair RMS and independent-particle RMS",
+                "qualification": "conditional sampling-noise reference; not proof of coherent spiral or calibrated temporal significance"
+              }
+            ]
+          },
+          {
+            "lower": 2,
+            "upper": 4,
+            "radius": 3,
+            "count": 3307,
+            "mass": 1.5075149360345677,
+            "surfaceDensity": 0.039988075642460645,
+            "globalPlane": {
+              "count": 3307,
+              "mass": 1.5075149360345677,
+              "h50": 0.15364140024337003,
+              "medianSignedHeight": 0.000072690350625971,
+              "meanHeight": -0.0000985939071906701,
+              "meanNormalVelocity": -1.186102953307763e-7,
+              "sigmaNormal": 0.048721968258206017
+            },
+            "localPlane": {
+              "normal": [
+                -0.0021657966666053,
+                0.0019932573096191957,
+                0.999995668115666
+              ],
+              "tiltFromGlobalDegrees": 0.07955565206858933,
+              "count": 3307,
+              "mass": 1.5075149360345677,
+              "h50": 0.15309703397994748,
+              "medianSignedHeight": 1.734723475976807e-18,
+              "meanHeight": -0.000021087653348799145,
+              "meanNormalVelocity": -1.4563995042557456e-7,
+              "sigmaNormal": 0.04871404923946494
+            },
+            "meanRadialVelocity": -0.00032737021285865296,
+            "meanAzimuthalVelocity": 0.19332384418022197,
+            "sigmaR": 0.048018854084458176,
+            "sigmaPhi": 0.052465148328689544,
+            "modes": [
+              {
+                "m": 1,
+                "re": -0.00022437384944935904,
+                "im": 0.00012801157469050146,
+                "amplitude": 0.00025832264239021997,
+                "phaseRadians": 2.6231256576548585,
+                "orientationRadians": 2.6231256576548585,
+                "nullRms": 0.00030239978466253635,
+                "independentParticleRms": 0.017389332134659197,
+                "inferenceRms": 0.017389332134659197,
+                "independentGroups": 1654,
+                "approximateNullP": 0.9997793462945117,
+                "noiseModel": "conservative maximum of randomized antipodal-pair RMS and independent-particle RMS",
+                "qualification": "conditional sampling-noise reference; not proof of coherent spiral or calibrated temporal significance"
+              },
+              {
+                "m": 2,
+                "re": -0.020845828982569776,
+                "im": 0.025335173169525323,
+                "amplitude": 0.03280883395520758,
+                "phaseRadians": 2.2592870617236724,
+                "orientationRadians": 1.1296435308618362,
+                "nullRms": 0.02459036963426638,
+                "independentParticleRms": 0.017389332134659197,
+                "inferenceRms": 0.02459036963426638,
+                "independentGroups": 1654,
+                "approximateNullP": 0.168616393013416,
+                "noiseModel": "conservative maximum of randomized antipodal-pair RMS and independent-particle RMS",
+                "qualification": "conditional sampling-noise reference; not proof of coherent spiral or calibrated temporal significance"
+              },
+              {
+                "m": 3,
+                "re": -0.0001855145319833278,
+                "im": 0.0002530099156455336,
+                "amplitude": 0.00031373501397190777,
+                "phaseRadians": 2.203478145830985,
+                "orientationRadians": 0.734492715276995,
+                "nullRms": 0.00030248707106912795,
+                "independentParticleRms": 0.017389332134659197,
+                "inferenceRms": 0.017389332134659197,
+                "independentGroups": 1654,
+                "approximateNullP": 0.9996745460893312,
+                "noiseModel": "conservative maximum of randomized antipodal-pair RMS and independent-particle RMS",
+                "qualification": "conditional sampling-noise reference; not proof of coherent spiral or calibrated temporal significance"
+              },
+              {
+                "m": 4,
+                "re": 0.015428239865235994,
+                "im": -0.022969429322881135,
+                "amplitude": 0.027669934382974038,
+                "phaseRadians": -0.9793269726863767,
+                "orientationRadians": -0.24483174317159417,
+                "nullRms": 0.024590368023928687,
+                "independentParticleRms": 0.017389332134659197,
+                "inferenceRms": 0.024590368023928687,
+                "independentGroups": 1654,
+                "approximateNullP": 0.2819140509791722,
+                "noiseModel": "conservative maximum of randomized antipodal-pair RMS and independent-particle RMS",
+                "qualification": "conditional sampling-noise reference; not proof of coherent spiral or calibrated temporal significance"
+              }
+            ]
+          },
+          {
+            "lower": 4,
+            "upper": 6,
+            "radius": 5,
+            "count": 2429,
+            "mass": 1.1072735952911898,
+            "surfaceDensity": 0.017622806604572768,
+            "globalPlane": {
+              "count": 2429,
+              "mass": 1.1072735952911898,
+              "h50": 0.1628930374940482,
+              "medianSignedHeight": -0.0010224396755522513,
+              "meanHeight": -0.00012811864359089155,
+              "meanNormalVelocity": 0.000010737750312713318,
+              "sigmaNormal": 0.03415342005639639
+            },
+            "localPlane": {
+              "normal": [
+                -0.007071997525041459,
+                -0.00040593050003584247,
+                0.9999749107209817
+              ],
+              "tiltFromGlobalDegrees": 0.3480258999568629,
+              "count": 2429,
+              "mass": 1.1072735952911898,
+              "h50": 0.1612922099162943,
+              "medianSignedHeight": -3.469446951953614e-18,
+              "meanHeight": 0.00020943386430862567,
+              "meanNormalVelocity": 0.000010503011745256114,
+              "sigmaNormal": 0.03418514879037881
+            },
+            "meanRadialVelocity": 0.0004066689771036011,
+            "meanAzimuthalVelocity": 0.22233622721385843,
+            "sigmaR": 0.03501329307148471,
+            "sigmaPhi": 0.03671009109659581,
+            "modes": [
+              {
+                "m": 1,
+                "re": 0.000428072237926341,
+                "im": -0.00010407141751446208,
+                "amplitude": 0.000440541372434798,
+                "phaseRadians": -0.23848964110577983,
+                "orientationRadians": -0.23848964110577983,
+                "nullRms": 0.0004116958009212822,
+                "independentParticleRms": 0.020290196015399428,
+                "inferenceRms": 0.020290196015399428,
+                "independentGroups": 1215,
+                "approximateNullP": 0.9995286987910149,
+                "noiseModel": "conservative maximum of randomized antipodal-pair RMS and independent-particle RMS",
+                "qualification": "conditional sampling-noise reference; not proof of coherent spiral or calibrated temporal significance"
+              },
+              {
+                "m": 2,
+                "re": 0.023827439327883487,
+                "im": -0.03202270479482883,
+                "amplitude": 0.03991491559931853,
+                "phaseRadians": -0.9310950952483191,
+                "orientationRadians": -0.46554754762415956,
+                "nullRms": 0.028691716679201073,
+                "independentParticleRms": 0.020290196015399428,
+                "inferenceRms": 0.028691716679201073,
+                "independentGroups": 1215,
+                "approximateNullP": 0.1443751147409838,
+                "noiseModel": "conservative maximum of randomized antipodal-pair RMS and independent-particle RMS",
+                "qualification": "conditional sampling-noise reference; not proof of coherent spiral or calibrated temporal significance"
+              },
+              {
+                "m": 3,
+                "re": 0.00024372476806061406,
+                "im": -0.0003359914300908991,
+                "amplitude": 0.000415080719451925,
+                "phaseRadians": -0.9432326570185134,
+                "orientationRadians": -0.3144108856728378,
+                "nullRms": 0.00041172577231686253,
+                "independentParticleRms": 0.020290196015399428,
+                "inferenceRms": 0.020290196015399428,
+                "independentGroups": 1215,
+                "approximateNullP": 0.9995815902808788,
+                "noiseModel": "conservative maximum of randomized antipodal-pair RMS and independent-particle RMS",
+                "qualification": "conditional sampling-noise reference; not proof of coherent spiral or calibrated temporal significance"
+              },
+              {
+                "m": 4,
+                "re": 0.015935812173687273,
+                "im": 0.013978570496280977,
+                "amplitude": 0.021197890054308156,
+                "phaseRadians": 0.720063171455064,
+                "orientationRadians": 0.180015792863766,
+                "nullRms": 0.02869171603409088,
+                "independentParticleRms": 0.020290196015399428,
+                "inferenceRms": 0.02869171603409088,
+                "independentGroups": 1215,
+                "approximateNullP": 0.5793499222924043,
+                "noiseModel": "conservative maximum of randomized antipodal-pair RMS and independent-particle RMS",
+                "qualification": "conditional sampling-noise reference; not proof of coherent spiral or calibrated temporal significance"
+              }
+            ]
+          },
+          {
+            "lower": 6,
+            "upper": 8,
+            "radius": 7,
+            "count": 1434,
+            "mass": 0.6536971328314394,
+            "surfaceDensity": 0.007431366426794492,
+            "globalPlane": {
+              "count": 1434,
+              "mass": 0.6536971328314394,
+              "h50": 0.1667341062981168,
+              "medianSignedHeight": -0.0002478994573712756,
+              "meanHeight": -0.00011109641926389512,
+              "meanNormalVelocity": 0.000004478684601800342,
+              "sigmaNormal": 0.026076005005286534
+            },
+            "localPlane": {
+              "normal": [
+                -0.0011641817391818763,
+                0.0015077463107763503,
+                0.9999981856893242
+              ],
+              "tiltFromGlobalDegrees": 0.02757644706992118,
+              "count": 1434,
+              "mass": 0.6536971328314394,
+              "h50": 0.16644525749808023,
+              "medianSignedHeight": -0.0008504578069777396,
+              "meanHeight": 3.417306219629431e-10,
+              "meanNormalVelocity": 0.000004473802490450386,
+              "sigmaNormal": 0.026073931631553627
+            },
+            "meanRadialVelocity": -0.00039948451835479184,
+            "meanAzimuthalVelocity": 0.22451873125736796,
+            "sigmaR": 0.02776692842084959,
+            "sigmaPhi": 0.03176368665147456,
+            "modes": [
+              {
+                "m": 1,
+                "re": 0.000027726227466797936,
+                "im": 0.000015352672597458274,
+                "amplitude": 0.000031693031496298465,
+                "phaseRadians": 0.5056976938373099,
+                "orientationRadians": 0.5056976938373099,
+                "nullRms": 0.0000016315269907832647,
+                "independentParticleRms": 0.026407386650991804,
+                "inferenceRms": 0.026407386650991804,
+                "independentGroups": 717,
+                "approximateNullP": 0.9999985596222534,
+                "noiseModel": "conservative maximum of randomized antipodal-pair RMS and independent-particle RMS",
+                "qualification": "conditional sampling-noise reference; not proof of coherent spiral or calibrated temporal significance"
+              },
+              {
+                "m": 2,
+                "re": -0.053497421145398384,
+                "im": -0.0379445535666441,
+                "amplitude": 0.06558782825021761,
+                "phaseRadians": -2.524666826205976,
+                "orientationRadians": -1.262333413102988,
+                "nullRms": 0.03734568420611001,
+                "independentParticleRms": 0.026407386650991804,
+                "inferenceRms": 0.03734568420611001,
+                "independentGroups": 717,
+                "approximateNullP": 0.04575911608594688,
+                "noiseModel": "conservative maximum of randomized antipodal-pair RMS and independent-particle RMS",
+                "qualification": "conditional sampling-noise reference; not proof of coherent spiral or calibrated temporal significance"
+              },
+              {
+                "m": 3,
+                "re": -0.000004258074262469295,
+                "im": -0.0000045287291989766194,
+                "amplitude": 0.0000062161551285635435,
+                "phaseRadians": -2.325401792010173,
+                "orientationRadians": -0.7751339306700576,
+                "nullRms": 0.000004894580953947347,
+                "independentParticleRms": 0.026407386650991804,
+                "inferenceRms": 0.026407386650991804,
+                "independentGroups": 717,
+                "approximateNullP": 0.9999999445894032,
+                "noiseModel": "conservative maximum of randomized antipodal-pair RMS and independent-particle RMS",
+                "qualification": "conditional sampling-noise reference; not proof of coherent spiral or calibrated temporal significance"
+              },
+              {
+                "m": 4,
+                "re": 0.0246533695445413,
+                "im": 0.0032631850481459547,
+                "amplitude": 0.024868393726941027,
+                "phaseRadians": 0.13159767211454684,
+                "orientationRadians": 0.03289941802863671,
+                "nullRms": 0.03734568377844923,
+                "independentParticleRms": 0.026407386650991804,
+                "inferenceRms": 0.03734568377844923,
+                "independentGroups": 717,
+                "approximateNullP": 0.6418379976508947,
+                "noiseModel": "conservative maximum of randomized antipodal-pair RMS and independent-particle RMS",
+                "qualification": "conditional sampling-noise reference; not proof of coherent spiral or calibrated temporal significance"
+              }
+            ]
+          },
+          {
+            "lower": 8,
+            "upper": 10,
+            "radius": 9,
+            "count": 928,
+            "mass": 0.4230341278016567,
+            "surfaceDensity": 0.0037404429186779034,
+            "globalPlane": {
+              "count": 928,
+              "mass": 0.4230341278016567,
+              "h50": 0.1703706404674359,
+              "medianSignedHeight": -0.0003144967043754429,
+              "meanHeight": -0.00011109651662937049,
+              "meanNormalVelocity": 0.000004478693426398116,
+              "sigmaNormal": 0.018413232649730483
+            },
+            "localPlane": {
+              "normal": [
+                -0.0009230558533500496,
+                0.005862116297011082,
+                0.9999823916251784
+              ],
+              "tiltFromGlobalDegrees": 0.27742243665343835,
+              "count": 928,
+              "mass": 0.4230341278016567,
+              "h50": 0.1593534474423288,
+              "medianSignedHeight": -0.0003770191397076562,
+              "meanHeight": 2.629244796260497e-10,
+              "meanNormalVelocity": 0.000004428045952902459,
+              "sigmaNormal": 0.018442545585422538
+            },
+            "meanRadialVelocity": -0.0012674553862598963,
+            "meanAzimuthalVelocity": 0.22809908300239962,
+            "sigmaR": 0.01886749985252738,
+            "sigmaPhi": 0.019752726558313904,
+            "modes": [
+              {
+                "m": 1,
+                "re": 0.000019562246373673395,
+                "im": 0.000011917233834328705,
+                "amplitude": 0.000022906373467800766,
+                "phaseRadians": 0.5471535276864028,
+                "orientationRadians": 0.5471535276864028,
+                "nullRms": 0.0000015189556173479883,
+                "independentParticleRms": 0.03282660821493025,
+                "inferenceRms": 0.03282660821493025,
+                "independentGroups": 464,
+                "approximateNullP": 0.9999995130767132,
+                "noiseModel": "conservative maximum of randomized antipodal-pair RMS and independent-particle RMS",
+                "qualification": "conditional sampling-noise reference; not proof of coherent spiral or calibrated temporal significance"
+              },
+              {
+                "m": 2,
+                "re": 0.023908357716836245,
+                "im": 0.005212922468854151,
+                "amplitude": 0.02447006598647596,
+                "phaseRadians": 0.21467779257228428,
+                "orientationRadians": 0.10733889628614214,
+                "nullRms": 0.04642383444486462,
+                "independentParticleRms": 0.03282660821493025,
+                "inferenceRms": 0.04642383444486462,
+                "independentGroups": 464,
+                "approximateNullP": 0.7574211516683098,
+                "noiseModel": "conservative maximum of randomized antipodal-pair RMS and independent-particle RMS",
+                "qualification": "conditional sampling-noise reference; not proof of coherent spiral or calibrated temporal significance"
+              },
+              {
+                "m": 3,
+                "re": 0.0000038409541060711765,
+                "im": 9.635090552343457e-7,
+                "amplitude": 0.000003959959361466177,
+                "phaseRadians": 0.24577990348206527,
+                "orientationRadians": 0.08192663449402175,
+                "nullRms": 0.000004556866842022406,
+                "independentParticleRms": 0.03282660821493025,
+                "inferenceRms": 0.03282660821493025,
+                "independentGroups": 464,
+                "approximateNullP": 0.999999985447774,
+                "noiseModel": "conservative maximum of randomized antipodal-pair RMS and independent-particle RMS",
+                "qualification": "conditional sampling-noise reference; not proof of coherent spiral or calibrated temporal significance"
+              },
+              {
+                "m": 4,
+                "re": -0.0354859446293411,
+                "im": -0.017130291886231514,
+                "amplitude": 0.039404303906352064,
+                "phaseRadians": -2.691852553317239,
+                "orientationRadians": -0.6729631383293098,
+                "nullRms": 0.04642383414666961,
+                "independentParticleRms": 0.03282660821493025,
+                "inferenceRms": 0.04642383414666961,
+                "independentGroups": 464,
+                "approximateNullP": 0.48653208662427994,
+                "noiseModel": "conservative maximum of randomized antipodal-pair RMS and independent-particle RMS",
+                "qualification": "conditional sampling-noise reference; not proof of coherent spiral or calibrated temporal significance"
+              }
+            ]
+          },
+          {
+            "lower": 10,
+            "upper": 12,
+            "radius": 11,
+            "count": 676,
+            "mass": 0.308158481027931,
+            "surfaceDensity": 0.0022293157050584213,
+            "globalPlane": {
+              "count": 676,
+              "mass": 0.308158481027931,
+              "h50": 0.14719582692089883,
+              "medianSignedHeight": -0.0004719819183894729,
+              "meanHeight": -0.0001110967264545064,
+              "meanNormalVelocity": 0.000004478646448434855,
+              "sigmaNormal": 0.0178551358544735
+            },
+            "localPlane": {
+              "normal": [
+                -0.0014721162185376358,
+                -0.0017773837380046119,
+                0.9999973368868975
+              ],
+              "tiltFromGlobalDegrees": 0.1615842265244738,
+              "count": 676,
+              "mass": 0.308158481027931,
+              "h50": 0.1464482314458158,
+              "medianSignedHeight": -0.0004478896271550958,
+              "meanHeight": -2.2840707607609326e-10,
+              "meanNormalVelocity": 0.000004509227337198356,
+              "sigmaNormal": 0.017850397506790586
+            },
+            "meanRadialVelocity": -0.0017032378757432215,
+            "meanAzimuthalVelocity": 0.2252068226168235,
+            "sigmaR": 0.015034189745115873,
+            "sigmaPhi": 0.01719652194962297,
+            "modes": [
+              {
+                "m": 1,
+                "re": 0.000016403261700975962,
+                "im": 0.000009374315626410896,
+                "amplitude": 0.00001889298250394247,
+                "phaseRadians": 0.5191931374642721,
+                "orientationRadians": 0.5191931374642721,
+                "nullRms": 0.000001449386249579947,
+                "independentParticleRms": 0.0384615384615383,
+                "inferenceRms": 0.0384615384615383,
+                "independentGroups": 338,
+                "approximateNullP": 0.9999997587053525,
+                "noiseModel": "conservative maximum of randomized antipodal-pair RMS and independent-particle RMS",
+                "qualification": "conditional sampling-noise reference; not proof of coherent spiral or calibrated temporal significance"
+              },
+              {
+                "m": 2,
+                "re": -0.014260868740073882,
+                "im": -0.0011112277212254747,
+                "amplitude": 0.014304097464364411,
+                "phaseRadians": -3.0638283276131917,
+                "orientationRadians": -1.5319141638065958,
+                "nullRms": 0.05439282924479957,
+                "independentParticleRms": 0.0384615384615383,
+                "inferenceRms": 0.05439282924479957,
+                "independentGroups": 338,
+                "approximateNullP": 0.933179939770626,
+                "noiseModel": "conservative maximum of randomized antipodal-pair RMS and independent-particle RMS",
+                "qualification": "conditional sampling-noise reference; not proof of coherent spiral or calibrated temporal significance"
+              },
+              {
+                "m": 3,
+                "re": 9.401242139914868e-7,
+                "im": -0.000003119175463118904,
+                "amplitude": 0.0000032577736427591375,
+                "phaseRadians": -1.2780542341016496,
+                "orientationRadians": -0.4260180780338832,
+                "nullRms": 0.0000043481587424628906,
+                "independentParticleRms": 0.0384615384615383,
+                "inferenceRms": 0.0384615384615383,
+                "independentGroups": 338,
+                "approximateNullP": 0.9999999928255517,
+                "noiseModel": "conservative maximum of randomized antipodal-pair RMS and independent-particle RMS",
+                "qualification": "conditional sampling-noise reference; not proof of coherent spiral or calibrated temporal significance"
+              },
+              {
+                "m": 4,
+                "re": -0.05058939406425615,
+                "im": 0.030099080198715798,
+                "amplitude": 0.058866301230817285,
+                "phaseRadians": 2.6048812285764065,
+                "orientationRadians": 0.6512203071441016,
+                "nullRms": 0.0543928290130719,
+                "independentParticleRms": 0.0384615384615383,
+                "inferenceRms": 0.0543928290130719,
+                "independentGroups": 338,
+                "approximateNullP": 0.30997872482088024,
+                "noiseModel": "conservative maximum of randomized antipodal-pair RMS and independent-particle RMS",
+                "qualification": "conditional sampling-noise reference; not proof of coherent spiral or calibrated temporal significance"
+              }
+            ]
+          },
+          {
+            "lower": 12,
+            "upper": 16,
+            "radius": 14,
+            "count": 934,
+            "mass": 0.4257692622486502,
+            "surfaceDensity": 0.0012100586197046819,
+            "globalPlane": {
+              "count": 934,
+              "mass": 0.4257692622486502,
+              "h50": 0.15207378581024572,
+              "medianSignedHeight": -0.0035441021290148265,
+              "meanHeight": -0.00011109734194886359,
+              "meanNormalVelocity": 0.000004478676483704545,
+              "sigmaNormal": 0.013293641007699676
+            },
+            "localPlane": {
+              "normal": [
+                0.000010896570700185643,
+                0.00012566658119545935,
+                0.9999999920445874
+              ],
+              "tiltFromGlobalDegrees": 0.08506063295004362,
+              "count": 934,
+              "mass": 0.4257692622486502,
+              "h50": 0.15138667503250722,
+              "medianSignedHeight": -0.0003453452566802549,
+              "meanHeight": -6.993758249124789e-10,
+              "meanNormalVelocity": 0.000004478434171558054,
+              "sigmaNormal": 0.013279283693768637
+            },
+            "meanRadialVelocity": 0.00029369858511260345,
+            "meanAzimuthalVelocity": 0.22131760714191184,
+            "sigmaR": 0.012736203787990417,
+            "sigmaPhi": 0.01988125645384793,
+            "modes": [
+              {
+                "m": 1,
+                "re": 0.000012358174499154886,
+                "im": 0.00000717702115217998,
+                "amplitude": 0.000014291049981383487,
+                "phaseRadians": 0.5261455045719222,
+                "orientationRadians": 0.5261455045719222,
+                "nullRms": 9.647419146073343e-7,
+                "independentParticleRms": 0.03272099955018403,
+                "inferenceRms": 0.03272099955018403,
+                "independentGroups": 467,
+                "approximateNullP": 0.9999998092453598,
+                "noiseModel": "conservative maximum of randomized antipodal-pair RMS and independent-particle RMS",
+                "qualification": "conditional sampling-noise reference; not proof of coherent spiral or calibrated temporal significance"
+              },
+              {
+                "m": 2,
+                "re": 0.027739667294081574,
+                "im": 0.04631035366604919,
+                "amplitude": 0.053982756490020906,
+                "phaseRadians": 1.031116172446355,
+                "orientationRadians": 0.5155580862231774,
+                "nullRms": 0.046274481298048384,
+                "independentParticleRms": 0.03272099955018403,
+                "inferenceRms": 0.046274481298048384,
+                "independentGroups": 467,
+                "approximateNullP": 0.256429258545535,
+                "noiseModel": "conservative maximum of randomized antipodal-pair RMS and independent-particle RMS",
+                "qualification": "conditional sampling-noise reference; not proof of coherent spiral or calibrated temporal significance"
+              },
+              {
+                "m": 3,
+                "re": -0.0000033704906021712444,
+                "im": -0.000001526695645553155,
+                "amplitude": 0.0000037001360101320117,
+                "phaseRadians": -2.7162803551767913,
+                "orientationRadians": -0.9054267850589305,
+                "nullRms": 0.0000028942257410526163,
+                "independentParticleRms": 0.03272099955018403,
+                "inferenceRms": 0.03272099955018403,
+                "independentGroups": 467,
+                "approximateNullP": 0.9999999872126,
+                "noiseModel": "conservative maximum of randomized antipodal-pair RMS and independent-particle RMS",
+                "qualification": "conditional sampling-noise reference; not proof of coherent spiral or calibrated temporal significance"
+              },
+              {
+                "m": 4,
+                "re": 0.01656706836683524,
+                "im": 0.10792282395581185,
+                "amplitude": 0.10918701243677541,
+                "phaseRadians": 1.4184768841660902,
+                "orientationRadians": 0.35461922104152255,
+                "nullRms": 0.0462744811773693,
+                "independentParticleRms": 0.03272099955018403,
+                "inferenceRms": 0.0462744811773693,
+                "independentGroups": 467,
+                "approximateNullP": 0.0038200859387869258,
+                "noiseModel": "conservative maximum of randomized antipodal-pair RMS and independent-particle RMS",
+                "qualification": "conditional sampling-noise reference; not proof of coherent spiral or calibrated temporal significance"
+              }
+            ]
+          },
+          {
+            "lower": 16,
+            "upper": 20,
+            "radius": 18,
+            "count": 560,
+            "mass": 0.2552792150527239,
+            "surfaceDensity": 0.0005642909575591665,
+            "globalPlane": {
+              "count": 560,
+              "mass": 0.2552792150527239,
+              "h50": 0.16904913577815062,
+              "medianSignedHeight": -0.0005505519281079445,
+              "meanHeight": -0.00011109754158647944,
+              "meanNormalVelocity": 0.000004478667220528463,
+              "sigmaNormal": 0.011055581583306296
+            },
+            "localPlane": {
+              "normal": [
+                0.00018360164242047335,
+                0.0013098095043475107,
+                0.9999991253443671
+              ],
+              "tiltFromGlobalDegrees": 0.07918975684265107,
+              "count": 560,
+              "mass": 0.2552792150527239,
+              "h50": 0.1659067582833037,
+              "medianSignedHeight": -0.0001131023325656082,
+              "meanHeight": -1.0421439795789455e-9,
+              "meanNormalVelocity": 0.00000446514936417248,
+              "sigmaNormal": 0.011052688674036259
+            },
+            "meanRadialVelocity": -0.00022776423526637687,
+            "meanAzimuthalVelocity": 0.2184248151901021,
+            "sigmaR": 0.009683967337745859,
+            "sigmaPhi": 0.012792649290196252,
+            "modes": [
+              {
+                "m": 1,
+                "re": 0.000010959555361725757,
+                "im": 0.000006308453349682909,
+                "amplitude": 0.000012645490792842216,
+                "phaseRadians": 0.5222942136482751,
+                "orientationRadians": 0.5222942136482751,
+                "nullRms": 0.0000010267527809445113,
+                "independentParticleRms": 0.042257712736425826,
+                "inferenceRms": 0.042257712736425826,
+                "independentGroups": 280,
+                "approximateNullP": 0.9999999104512791,
+                "noiseModel": "conservative maximum of randomized antipodal-pair RMS and independent-particle RMS",
+                "qualification": "conditional sampling-noise reference; not proof of coherent spiral or calibrated temporal significance"
+              },
+              {
+                "m": 2,
+                "re": -0.047942031757953786,
+                "im": -0.07403214600199781,
+                "amplitude": 0.08819975652314337,
+                "phaseRadians": -2.1454712395972524,
+                "orientationRadians": -1.0727356197986262,
+                "nullRms": 0.059761430431438695,
+                "independentParticleRms": 0.042257712736425826,
+                "inferenceRms": 0.059761430431438695,
+                "independentGroups": 280,
+                "approximateNullP": 0.11324799977798372,
+                "noiseModel": "conservative maximum of randomized antipodal-pair RMS and independent-particle RMS",
+                "qualification": "conditional sampling-noise reference; not proof of coherent spiral or calibrated temporal significance"
+              },
+              {
+                "m": 3,
+                "re": -0.0000010080477045189487,
+                "im": -0.000003960108582867134,
+                "amplitude": 0.00000408639451872722,
+                "phaseRadians": -1.8200532266954357,
+                "orientationRadians": -0.6066844088984785,
+                "nullRms": 0.0000030802583410766954,
+                "independentParticleRms": 0.042257712736425826,
+                "inferenceRms": 0.042257712736425826,
+                "independentGroups": 280,
+                "approximateNullP": 0.9999999906487728,
+                "noiseModel": "conservative maximum of randomized antipodal-pair RMS and independent-particle RMS",
+                "qualification": "conditional sampling-noise reference; not proof of coherent spiral or calibrated temporal significance"
+              },
+              {
+                "m": 4,
+                "re": 0.010013362465455717,
+                "im": 0.03601305130277411,
+                "amplitude": 0.03737923610777563,
+                "phaseRadians": 1.2995984848697848,
+                "orientationRadians": 0.3248996212174462,
+                "nullRms": 0.05976143032559575,
+                "independentParticleRms": 0.042257712736425826,
+                "inferenceRms": 0.05976143032559575,
+                "independentGroups": 280,
+                "approximateNullP": 0.6762326917471468,
+                "noiseModel": "conservative maximum of randomized antipodal-pair RMS and independent-particle RMS",
+                "qualification": "conditional sampling-noise reference; not proof of coherent spiral or calibrated temporal significance"
+              }
+            ]
+          },
+          {
+            "lower": 20,
+            "upper": 30,
+            "radius": 25,
+            "count": 816,
+            "mass": 0.37197828479111195,
+            "surfaceDensity": 0.00023680873098940106,
+            "globalPlane": {
+              "count": 816,
+              "mass": 0.37197828479111195,
+              "h50": 0.17390457102859475,
+              "medianSignedHeight": -0.0009091178724721684,
+              "meanHeight": -0.00011109690732016836,
+              "meanNormalVelocity": 0.000004478691185871448,
+              "sigmaNormal": 0.0061212222815613905
+            },
+            "localPlane": {
+              "normal": [
+                0.0013111656902204867,
+                0.00027500481129222,
+                0.9999991026080406
+              ],
+              "tiltFromGlobalDegrees": 0.1484917654112469,
+              "count": 816,
+              "mass": 0.37197828479111195,
+              "h50": 0.16176981235169682,
+              "medianSignedHeight": -0.0006395415593751525,
+              "meanHeight": -2.6626635553535227e-10,
+              "meanNormalVelocity": 0.000004466687585033456,
+              "sigmaNormal": 0.006094558428279718
+            },
+            "meanRadialVelocity": -0.0003004333947392632,
+            "meanAzimuthalVelocity": 0.2134777994575077,
+            "sigmaR": 0.0053502769641599925,
+            "sigmaPhi": 0.006696644483280982,
+            "modes": [
+              {
+                "m": 1,
+                "re": 0.00000761533429600469,
+                "im": 0.000004627839079123568,
+                "amplitude": 0.00000891124070947298,
+                "phaseRadians": 0.5460620778518707,
+                "orientationRadians": 0.5460620778518707,
+                "nullRms": 6.115340584382106e-7,
+                "independentParticleRms": 0.03500700210069992,
+                "inferenceRms": 0.03500700210069992,
+                "independentGroups": 408,
+                "approximateNullP": 0.99999993520127,
+                "noiseModel": "conservative maximum of randomized antipodal-pair RMS and independent-particle RMS",
+                "qualification": "conditional sampling-noise reference; not proof of coherent spiral or calibrated temporal significance"
+              },
+              {
+                "m": 2,
+                "re": -0.009163367468645798,
+                "im": -0.057116985697351935,
+                "amplitude": 0.05784736258911844,
+                "phaseRadians": -1.7298723544462404,
+                "orientationRadians": -0.8649361772231202,
+                "nullRms": 0.04950737713372593,
+                "independentParticleRms": 0.03500700210069992,
+                "inferenceRms": 0.04950737713372593,
+                "independentGroups": 408,
+                "approximateNullP": 0.2553047158498033,
+                "noiseModel": "conservative maximum of randomized antipodal-pair RMS and independent-particle RMS",
+                "qualification": "conditional sampling-noise reference; not proof of coherent spiral or calibrated temporal significance"
+              },
+              {
+                "m": 3,
+                "re": 6.591592200182824e-7,
+                "im": -0.00000215708439866092,
+                "amplitude": 0.000002255549596058897,
+                "phaseRadians": -1.2742292761185563,
+                "orientationRadians": -0.42474309203951877,
+                "nullRms": 0.0000018346021747489868,
+                "independentParticleRms": 0.03500700210069992,
+                "inferenceRms": 0.03500700210069992,
+                "independentGroups": 408,
+                "approximateNullP": 0.9999999958485968,
+                "noiseModel": "conservative maximum of randomized antipodal-pair RMS and independent-particle RMS",
+                "qualification": "conditional sampling-noise reference; not proof of coherent spiral or calibrated temporal significance"
+              },
+              {
+                "m": 4,
+                "re": -0.02968037361129498,
+                "im": 0.03419542221508897,
+                "amplitude": 0.045279702717379404,
+                "phaseRadians": 2.285627048628772,
+                "orientationRadians": 0.571406762157193,
+                "nullRms": 0.04950737708840249,
+                "independentParticleRms": 0.03500700210069992,
+                "inferenceRms": 0.04950737708840249,
+                "independentGroups": 408,
+                "approximateNullP": 0.43322302896874904,
+                "noiseModel": "conservative maximum of randomized antipodal-pair RMS and independent-particle RMS",
+                "qualification": "conditional sampling-noise reference; not proof of coherent spiral or calibrated temporal significance"
+              }
+            ]
+          }
+        ],
+        "conventions": {
+          "positionUnits": "kpc",
+          "velocityUnits": "kpc/Myr",
+          "massUnits": "1e10 Msun",
+          "normalVelocity": "projected velocity minus population mean; no rotating-frame rate subtraction",
+          "rings": "instantaneous cylindrical selections in fitted global plane; not tracked cohorts",
+          "warp": "local median height and local normal versus fitted global plane",
+          "oddModes": "antipodal initialization suppresses odd modes; pair correlations retained in null reference",
+          "basis": "global x projected into fitted plane; possible geometric phase evolution under changing tilt"
+        }
+      },
+      "costMs": 2987.3537,
+      "qualification": "Direct Plummer particle potential, excluding self, full-step velocities relative to whole-system COM. Positive instantaneous specific energy in a time-dependent live potential is not a proof of permanent escape."
+    },
+    {
+      "timeMyr": 18600.0002771616,
+      "n": 33148,
+      "parameters": {
+        "G": 0.04498502239584923,
+        "epsilonSquared": 0.009999999776482582,
+        "epsilon": 0.0999999988824129,
+        "theta": 0.5,
+        "forceAlgorithm": "GPU direct f32",
+        "trajectoryPrecision": "Float32",
+        "requestedDt": 0.1,
+        "effectiveDt": 0.10000000149011612,
+        "velocityEpoch": "full-step, after final KDK kick",
+        "externalPotential": "none; isolated live components"
+      },
+      "backend": "WebGPU",
+      "cmVelocity": [
+        -3.5772680164410133e-7,
+        -5.559460610654563e-7,
+        -1.3013952568305832e-7
+      ],
+      "diskMass": 6.8000000909669325,
+      "instantaneousPositiveSpecificEnergyFraction": 0,
+      "diskMassOutside30KpcFraction": 0.14815311389689617,
+      "disk": {
+        "available": true,
+        "timeMyr": 18600.0002771616,
+        "plane": {
+          "normal": [
+            -0.02377234434306695,
+            -0.0735148781704475,
+            0.9970107513623001
+          ],
+          "eigenvalues": [
+            33.221896949524165,
+            50.91921808160771,
+            53.02172835788832
+          ],
+          "center": [
+            0.5965048035617916,
+            -1.7286400610168644,
+            -1.613653552626782
+          ],
+          "geometricCenter": [
+            0.5955094795211822,
+            -1.731718054694289,
+            -1.5719097197402967
+          ],
+          "u": [
+            0.9997173978902409,
+            -0.0017481150191990202,
+            0.02370798282108787
+          ],
+          "v": [
+            -2.168404344971009e-19,
+            0.997292588351815,
+            0.07353565950296553
+          ],
+          "tiltDegrees": 4.431256546093477,
+          "fitCount": 9980,
+          "apertureKpc": 20,
+          "method": "6-step Huber IRLS PCA, 2.5 MAD-normal scales; geometric median center; spherical fit aperture; signed-height median intercept"
+        },
+        "centerOfMass": [
+          0.4144394803151855,
+          -1.7330788595122069,
+          -1.4816700002245882
+        ],
+        "fixed": {
+          "count": 14917,
+          "mass": 6.8000000909669325,
+          "h50": 4.456998348236084,
+          "medianSignedHeight": -1.483344316482544,
+          "meanHeight": -1.4816700002245882,
+          "meanNormalVelocity": -0.002112936339080291,
+          "sigmaNormal": 0.10473700654287166
+        },
+        "instant": {
+          "count": 14917,
+          "mass": 6.8000000909669325,
+          "h50": 4.470348179159905,
+          "medianSignedHeight": 0.07906974968396707,
+          "meanHeight": 0.1362434580357294,
+          "meanNormalVelocity": -0.0023468281507709665,
+          "sigmaNormal": 0.10447778677161242
+        },
+        "rings": [
+          {
+            "lower": 0,
+            "upper": 2,
+            "radius": 1,
+            "count": 642,
+            "mass": 0.2926593858283013,
+            "surfaceDensity": 0.02328909394840617,
+            "globalPlane": {
+              "count": 642,
+              "mass": 0.2926593858283013,
+              "h50": 2.0346443585870997,
+              "medianSignedHeight": 0.04718131761574372,
+              "meanHeight": -0.11197278189567936,
+              "meanNormalVelocity": -0.0008916929155904136,
+              "sigmaNormal": 0.17912190552494678
+            },
+            "localPlane": {
+              "normal": [
+                -0.8251866472280325,
+                0.564617390766684,
+                0.01655896374717715
+              ],
+              "tiltFromGlobalDegrees": 90.30834976579584,
+              "count": 642,
+              "mass": 0.2926593858283013,
+              "h50": 0.7487607818381075,
+              "medianSignedHeight": -0.0004285052309908055,
+              "meanHeight": 0.05006281667287341,
+              "meanNormalVelocity": -0.006078153100396478,
+              "sigmaNormal": 0.18863713063525855
+            },
+            "meanRadialVelocity": -0.005024185204946827,
+            "meanAzimuthalVelocity": 0.01756994615908595,
+            "sigmaR": 0.18037916715472693,
+            "sigmaPhi": 0.18838632356473964,
+            "modes": [
+              {
+                "m": 1,
+                "re": 0.014290739770746958,
+                "im": -0.020049662265391028,
+                "amplitude": 0.02462141750897892,
+                "phaseRadians": -0.9515531274819697,
+                "orientationRadians": -0.9515531274819697,
+                "nullRms": 0.03953626241897948,
+                "independentParticleRms": 0.03946685189819281,
+                "inferenceRms": 0.03953626241897948,
+                "independentGroups": 629,
+                "approximateNullP": 0.6785316316259342,
+                "noiseModel": "conservative maximum of randomized antipodal-pair RMS and independent-particle RMS",
+                "qualification": "conditional sampling-noise reference; not proof of coherent spiral or calibrated temporal significance"
+              },
+              {
+                "m": 2,
+                "re": 0.011684773902916177,
+                "im": 0.01371024850159947,
+                "amplitude": 0.01801401829514674,
+                "phaseRadians": 0.8649884034788783,
+                "orientationRadians": 0.43249420173943914,
+                "nullRms": 0.039135464014468956,
+                "independentParticleRms": 0.03946685189819281,
+                "inferenceRms": 0.03946685189819281,
+                "independentGroups": 629,
+                "approximateNullP": 0.8119373337376787,
+                "noiseModel": "conservative maximum of randomized antipodal-pair RMS and independent-particle RMS",
+                "qualification": "conditional sampling-noise reference; not proof of coherent spiral or calibrated temporal significance"
+              },
+              {
+                "m": 3,
+                "re": -0.02235652482472864,
+                "im": -0.01028621225207771,
+                "amplitude": 0.024609355227910818,
+                "phaseRadians": -2.7103722967381887,
+                "orientationRadians": -0.9034574322460629,
+                "nullRms": 0.03957300205669782,
+                "independentParticleRms": 0.03946685189819281,
+                "inferenceRms": 0.03957300205669782,
+                "independentGroups": 629,
+                "approximateNullP": 0.6792777333297874,
+                "noiseModel": "conservative maximum of randomized antipodal-pair RMS and independent-particle RMS",
+                "qualification": "conditional sampling-noise reference; not proof of coherent spiral or calibrated temporal significance"
+              },
+              {
+                "m": 4,
+                "re": 0.0030292562068487665,
+                "im": 0.016401801763948922,
+                "amplitude": 0.016679193453839718,
+                "phaseRadians": 1.3881638799343652,
+                "orientationRadians": 0.3470409699835913,
+                "nullRms": 0.03962067594226888,
+                "independentParticleRms": 0.03946685189819281,
+                "inferenceRms": 0.03962067594226888,
+                "independentGroups": 629,
+                "approximateNullP": 0.8375976811865575,
+                "noiseModel": "conservative maximum of randomized antipodal-pair RMS and independent-particle RMS",
+                "qualification": "conditional sampling-noise reference; not proof of coherent spiral or calibrated temporal significance"
+              }
+            ]
+          },
+          {
+            "lower": 2,
+            "upper": 4,
+            "radius": 3,
+            "count": 1284,
+            "mass": 0.5853187716566026,
+            "surfaceDensity": 0.01552606263227078,
+            "globalPlane": {
+              "count": 1284,
+              "mass": 0.5853187716566026,
+              "h50": 2.8306627349561557,
+              "medianSignedHeight": 0.09055404588529611,
+              "meanHeight": 0.07284841073663463,
+              "meanNormalVelocity": 0.0005716767502162028,
+              "sigmaNormal": 0.15679471372016532
+            },
+            "localPlane": {
+              "normal": [
+                0.9994515690006243,
+                -0.03261155849525215,
+                0.005748693303817904
+              ],
+              "tiltFromGlobalDegrees": 90.89559030552408,
+              "count": 1284,
+              "mass": 0.5853187716566026,
+              "h50": 1.9401963527091937,
+              "medianSignedHeight": -0.0038701874667947077,
+              "meanHeight": 0.012367395981556275,
+              "meanNormalVelocity": 0.0035094853280927306,
+              "sigmaNormal": 0.16089964355088207
+            },
+            "meanRadialVelocity": -0.001671226761629472,
+            "meanAzimuthalVelocity": 0.01944039771776161,
+            "sigmaR": 0.15616737847470985,
+            "sigmaPhi": 0.15664366621200554,
+            "modes": [
+              {
+                "m": 1,
+                "re": 0.00841948017092909,
+                "im": -0.023926969820387396,
+                "amplitude": 0.02536508488324842,
+                "phaseRadians": -1.2324454991051694,
+                "orientationRadians": -1.2324454991051694,
+                "nullRms": 0.028101313847517677,
+                "independentParticleRms": 0.02790727860929688,
+                "inferenceRms": 0.028101313847517677,
+                "independentGroups": 1209,
+                "approximateNullP": 0.44275413735339086,
+                "noiseModel": "conservative maximum of randomized antipodal-pair RMS and independent-particle RMS",
+                "qualification": "conditional sampling-noise reference; not proof of coherent spiral or calibrated temporal significance"
+              },
+              {
+                "m": 2,
+                "re": -0.03983175076326921,
+                "im": 0.014702912188548918,
+                "amplitude": 0.042458732855460694,
+                "phaseRadians": 2.7879822105028715,
+                "orientationRadians": 1.3939911052514358,
+                "nullRms": 0.028099402343124993,
+                "independentParticleRms": 0.02790727860929688,
+                "inferenceRms": 0.028099402343124993,
+                "independentGroups": 1209,
+                "approximateNullP": 0.10195959860288936,
+                "noiseModel": "conservative maximum of randomized antipodal-pair RMS and independent-particle RMS",
+                "qualification": "conditional sampling-noise reference; not proof of coherent spiral or calibrated temporal significance"
+              },
+              {
+                "m": 3,
+                "re": -0.031206671530113902,
+                "im": 0.010731008654356338,
+                "amplitude": 0.03300016507122793,
+                "phaseRadians": 2.8103901069804755,
+                "orientationRadians": 0.9367967023268252,
+                "nullRms": 0.027843357094393183,
+                "independentParticleRms": 0.02790727860929688,
+                "inferenceRms": 0.02790727860929688,
+                "independentGroups": 1209,
+                "approximateNullP": 0.24701900825154338,
+                "noiseModel": "conservative maximum of randomized antipodal-pair RMS and independent-particle RMS",
+                "qualification": "conditional sampling-noise reference; not proof of coherent spiral or calibrated temporal significance"
+              },
+              {
+                "m": 4,
+                "re": 0.015488359251229267,
+                "im": 0.00853959524754112,
+                "amplitude": 0.017686547410022287,
+                "phaseRadians": 0.5038834640689815,
+                "orientationRadians": 0.1259708660172454,
+                "nullRms": 0.027835503770117394,
+                "independentParticleRms": 0.02790727860929688,
+                "inferenceRms": 0.02790727860929688,
+                "independentGroups": 1209,
+                "approximateNullP": 0.6692128394913966,
+                "noiseModel": "conservative maximum of randomized antipodal-pair RMS and independent-particle RMS",
+                "qualification": "conditional sampling-noise reference; not proof of coherent spiral or calibrated temporal significance"
+              }
+            ]
+          },
+          {
+            "lower": 4,
+            "upper": 6,
+            "radius": 5,
+            "count": 1434,
+            "mass": 0.6536971328314394,
+            "surfaceDensity": 0.010403912997512288,
+            "globalPlane": {
+              "count": 1434,
+              "mass": 0.6536971328314394,
+              "h50": 3.4949418385154134,
+              "medianSignedHeight": -0.2462778092525599,
+              "meanHeight": -0.35135888052720504,
+              "meanNormalVelocity": 0.001078536858017812,
+              "sigmaNormal": 0.1355771006410449
+            },
+            "localPlane": {
+              "normal": [
+                -0.7625865088015892,
+                0.6463525067173111,
+                0.026272678851865933
+              ],
+              "tiltFromGlobalDegrees": 90.18299807054075,
+              "count": 1434,
+              "mass": 0.6536971328314394,
+              "h50": 3.3575864864481337,
+              "medianSignedHeight": -0.0008379227741469042,
+              "meanHeight": 0.009160822154561184,
+              "meanNormalVelocity": 0.0061052429147239375,
+              "sigmaNormal": 0.14395545030642085
+            },
+            "meanRadialVelocity": -0.0071098889915314776,
+            "meanAzimuthalVelocity": 0.04521024502445034,
+            "sigmaR": 0.13987710744547985,
+            "sigmaPhi": 0.14404382850405933,
+            "modes": [
+              {
+                "m": 1,
+                "re": 0.013636601469210542,
+                "im": -0.013281228616624192,
+                "amplitude": 0.019035438875873403,
+                "phaseRadians": -0.7721967943838033,
+                "orientationRadians": -0.7721967943838033,
+                "nullRms": 0.02661179315253389,
+                "independentParticleRms": 0.026407386650991804,
+                "inferenceRms": 0.02661179315253389,
+                "independentGroups": 1343,
+                "approximateNullP": 0.5995023773248579,
+                "noiseModel": "conservative maximum of randomized antipodal-pair RMS and independent-particle RMS",
+                "qualification": "conditional sampling-noise reference; not proof of coherent spiral or calibrated temporal significance"
+              },
+              {
+                "m": 2,
+                "re": -0.006288611473633246,
+                "im": 0.043724108450614065,
+                "amplitude": 0.04417402284224714,
+                "phaseRadians": 1.71364156384619,
+                "orientationRadians": 0.856820781923095,
+                "nullRms": 0.026377368610495475,
+                "independentParticleRms": 0.026407386650991804,
+                "inferenceRms": 0.026407386650991804,
+                "independentGroups": 1343,
+                "approximateNullP": 0.06091793078149134,
+                "noiseModel": "conservative maximum of randomized antipodal-pair RMS and independent-particle RMS",
+                "qualification": "conditional sampling-noise reference; not proof of coherent spiral or calibrated temporal significance"
+              },
+              {
+                "m": 3,
+                "re": 0.001598140994727388,
+                "im": -0.01125421372771244,
+                "amplitude": 0.011367118424124004,
+                "phaseRadians": -1.4297356584217753,
+                "orientationRadians": -0.4765785528072584,
+                "nullRms": 0.02617549328073582,
+                "independentParticleRms": 0.026407386650991804,
+                "inferenceRms": 0.026407386650991804,
+                "independentGroups": 1343,
+                "approximateNullP": 0.8308640291008765,
+                "noiseModel": "conservative maximum of randomized antipodal-pair RMS and independent-particle RMS",
+                "qualification": "conditional sampling-noise reference; not proof of coherent spiral or calibrated temporal significance"
+              },
+              {
+                "m": 4,
+                "re": 0.01672992761449702,
+                "im": -0.03385331446139472,
+                "amplitude": 0.03776158601023515,
+                "phaseRadians": -1.1118085049849047,
+                "orientationRadians": -0.27795212624622617,
+                "nullRms": 0.026286313664482315,
+                "independentParticleRms": 0.026407386650991804,
+                "inferenceRms": 0.026407386650991804,
+                "independentGroups": 1343,
+                "approximateNullP": 0.1294068191522216,
+                "noiseModel": "conservative maximum of randomized antipodal-pair RMS and independent-particle RMS",
+                "qualification": "conditional sampling-noise reference; not proof of coherent spiral or calibrated temporal significance"
+              }
+            ]
+          },
+          {
+            "lower": 6,
+            "upper": 8,
+            "radius": 7,
+            "count": 1379,
+            "mass": 0.6286250670673326,
+            "surfaceDensity": 0.007146341912517158,
+            "globalPlane": {
+              "count": 1379,
+              "mass": 0.6286250670673326,
+              "h50": 3.769482337902643,
+              "medianSignedHeight": 0.2057658445881352,
+              "meanHeight": 0.033639721806286375,
+              "meanNormalVelocity": -0.006168749938042354,
+              "sigmaNormal": 0.1254105931914076
+            },
+            "localPlane": {
+              "normal": [
+                -0.4554795986508565,
+                0.8901438819319967,
+                0.013498321076720377
+              ],
+              "tiltFromGlobalDegrees": 92.35856098127903,
+              "count": 1379,
+              "mass": 0.6286250670673326,
+              "h50": 4.7434928003819055,
+              "medianSignedHeight": 1.6653345369377348e-16,
+              "meanHeight": -0.060272455030990345,
+              "meanNormalVelocity": -0.003492277783343393,
+              "sigmaNormal": 0.13809182532635436
+            },
+            "meanRadialVelocity": -0.0015167982903750994,
+            "meanAzimuthalVelocity": 0.05903699781753989,
+            "sigmaR": 0.13093660083720668,
+            "sigmaPhi": 0.13182623003704574,
+            "modes": [
+              {
+                "m": 1,
+                "re": -0.0030307132900819368,
+                "im": -0.0036723540056681986,
+                "amplitude": 0.004761450093157183,
+                "phaseRadians": -2.260761815603569,
+                "orientationRadians": -2.260761815603569,
+                "nullRms": 0.026895969484956476,
+                "independentParticleRms": 0.02692885370214183,
+                "inferenceRms": 0.02692885370214183,
+                "independentGroups": 1296,
+                "approximateNullP": 0.9692197910732614,
+                "noiseModel": "conservative maximum of randomized antipodal-pair RMS and independent-particle RMS",
+                "qualification": "conditional sampling-noise reference; not proof of coherent spiral or calibrated temporal significance"
+              },
+              {
+                "m": 2,
+                "re": 0.015186909525292547,
+                "im": 0.01887616192636965,
+                "amplitude": 0.024227086287871038,
+                "phaseRadians": 0.8932841403105295,
+                "orientationRadians": 0.44664207015526475,
+                "nullRms": 0.02690959940456417,
+                "independentParticleRms": 0.02692885370214183,
+                "inferenceRms": 0.02692885370214183,
+                "independentGroups": 1296,
+                "approximateNullP": 0.445122208760848,
+                "noiseModel": "conservative maximum of randomized antipodal-pair RMS and independent-particle RMS",
+                "qualification": "conditional sampling-noise reference; not proof of coherent spiral or calibrated temporal significance"
+              },
+              {
+                "m": 3,
+                "re": -0.008401371649090984,
+                "im": -0.021463272986893055,
+                "amplitude": 0.023048972491112114,
+                "phaseRadians": -1.9438931203992222,
+                "orientationRadians": -0.6479643734664075,
+                "nullRms": 0.026888450978153327,
+                "independentParticleRms": 0.02692885370214183,
+                "inferenceRms": 0.02692885370214183,
+                "independentGroups": 1296,
+                "approximateNullP": 0.4806572560464913,
+                "noiseModel": "conservative maximum of randomized antipodal-pair RMS and independent-particle RMS",
+                "qualification": "conditional sampling-noise reference; not proof of coherent spiral or calibrated temporal significance"
+              },
+              {
+                "m": 4,
+                "re": 0.0043611795344059125,
+                "im": -0.018442484953933202,
+                "amplitude": 0.01895112498527128,
+                "phaseRadians": -1.3385873844930651,
+                "orientationRadians": -0.3346468461232663,
+                "nullRms": 0.027020925503527173,
+                "independentParticleRms": 0.02692885370214183,
+                "inferenceRms": 0.027020925503527173,
+                "independentGroups": 1296,
+                "approximateNullP": 0.6114685448337444,
+                "noiseModel": "conservative maximum of randomized antipodal-pair RMS and independent-particle RMS",
+                "qualification": "conditional sampling-noise reference; not proof of coherent spiral or calibrated temporal significance"
+              }
+            ]
+          },
+          {
+            "lower": 8,
+            "upper": 10,
+            "radius": 9,
+            "count": 1294,
+            "mass": 0.5898773290682584,
+            "surfaceDensity": 0.005215660707725439,
+            "globalPlane": {
+              "count": 1294,
+              "mass": 0.5898773290682584,
+              "h50": 4.398695337862324,
+              "medianSignedHeight": -0.1557170490685944,
+              "meanHeight": -0.11423707616525258,
+              "meanNormalVelocity": -0.0002174766804886322,
+              "sigmaNormal": 0.10877086509137411
+            },
+            "localPlane": {
+              "normal": [
+                0.6392469815821292,
+                -0.7667969718330251,
+                0.0581867727738857
+              ],
+              "tiltFromGlobalDegrees": 84.30761929261386,
+              "count": 1294,
+              "mass": 0.5898773290682584,
+              "h50": 5.885813597375291,
+              "medianSignedHeight": -0.005254251563945406,
+              "meanHeight": -0.035614063407288614,
+              "meanNormalVelocity": -0.00201633378511713,
+              "sigmaNormal": 0.12770063280479266
+            },
+            "meanRadialVelocity": 0.0014435886755627412,
+            "meanAzimuthalVelocity": 0.06877816060812325,
+            "sigmaR": 0.12023871102260285,
+            "sigmaPhi": 0.1194109561870228,
+            "modes": [
+              {
+                "m": 1,
+                "re": 0.003157327536719936,
+                "im": 0.023962690556290918,
+                "amplitude": 0.024169800492984707,
+                "phaseRadians": 1.43979082282459,
+                "orientationRadians": 1.43979082282459,
+                "nullRms": 0.027899634541625033,
+                "independentParticleRms": 0.027799236087487834,
+                "inferenceRms": 0.027899634541625033,
+                "independentGroups": 1228,
+                "approximateNullP": 0.47213172930478425,
+                "noiseModel": "conservative maximum of randomized antipodal-pair RMS and independent-particle RMS",
+                "qualification": "conditional sampling-noise reference; not proof of coherent spiral or calibrated temporal significance"
+              },
+              {
+                "m": 2,
+                "re": 0.010271551136878873,
+                "im": 0.04665739473988163,
+                "amplitude": 0.04777465067031524,
+                "phaseRadians": 1.3541044703170988,
+                "orientationRadians": 0.6770522351585494,
+                "nullRms": 0.027591628077610397,
+                "independentParticleRms": 0.027799236087487834,
+                "inferenceRms": 0.027799236087487834,
+                "independentGroups": 1228,
+                "approximateNullP": 0.052159553729910685,
+                "noiseModel": "conservative maximum of randomized antipodal-pair RMS and independent-particle RMS",
+                "qualification": "conditional sampling-noise reference; not proof of coherent spiral or calibrated temporal significance"
+              },
+              {
+                "m": 3,
+                "re": 0.00910322334781326,
+                "im": 0.029574462236299448,
+                "amplitude": 0.0309437795346088,
+                "phaseRadians": 1.2721927228989123,
+                "orientationRadians": 0.4240642409663041,
+                "nullRms": 0.028002367748366983,
+                "independentParticleRms": 0.027799236087487834,
+                "inferenceRms": 0.028002367748366983,
+                "independentGroups": 1228,
+                "approximateNullP": 0.2949006374688108,
+                "noiseModel": "conservative maximum of randomized antipodal-pair RMS and independent-particle RMS",
+                "qualification": "conditional sampling-noise reference; not proof of coherent spiral or calibrated temporal significance"
+              },
+              {
+                "m": 4,
+                "re": -0.011970623055895685,
+                "im": 0.015120107475945586,
+                "amplitude": 0.019285058113225558,
+                "phaseRadians": 2.240457144002079,
+                "orientationRadians": 0.5601142860005197,
+                "nullRms": 0.02776506591401662,
+                "independentParticleRms": 0.027799236087487834,
+                "inferenceRms": 0.027799236087487834,
+                "independentGroups": 1228,
+                "approximateNullP": 0.6180066719413833,
+                "noiseModel": "conservative maximum of randomized antipodal-pair RMS and independent-particle RMS",
+                "qualification": "conditional sampling-noise reference; not proof of coherent spiral or calibrated temporal significance"
+              }
+            ]
+          },
+          {
+            "lower": 10,
+            "upper": 12,
+            "radius": 11,
+            "count": 1222,
+            "mass": 0.5570557157043368,
+            "surfaceDensity": 0.004029916851451762,
+            "globalPlane": {
+              "count": 1222,
+              "mass": 0.5570557157043368,
+              "h50": 4.697119347594764,
+              "medianSignedHeight": -0.32336377056606364,
+              "meanHeight": 0.03706182559267666,
+              "meanNormalVelocity": -0.0032986756574472473,
+              "sigmaNormal": 0.10246066825499427
+            },
+            "localPlane": {
+              "normal": [
+                0.056620959707098246,
+                0.14825781979488709,
+                0.9873265345322763
+              ],
+              "tiltFromGlobalDegrees": 13.558759119119095,
+              "count": 1222,
+              "mass": 0.5570557157043368,
+              "h50": 4.527671281721976,
+              "medianSignedHeight": -0.007498498662865227,
+              "meanHeight": 0.3885307670141023,
+              "meanNormalVelocity": -0.0019702137225159977,
+              "sigmaNormal": 0.10483351891636614
+            },
+            "meanRadialVelocity": -0.0003094373036221378,
+            "meanAzimuthalVelocity": 0.07884902931822782,
+            "sigmaR": 0.11973726600074719,
+            "sigmaPhi": 0.11290153748040793,
+            "modes": [
+              {
+                "m": 1,
+                "re": 0.02019294170036262,
+                "im": 0.011354863861682933,
+                "amplitude": 0.023166523861632687,
+                "phaseRadians": 0.5122515431741597,
+                "orientationRadians": 0.5122515431741597,
+                "nullRms": 0.028388626170512493,
+                "independentParticleRms": 0.02860647838453067,
+                "inferenceRms": 0.02860647838453067,
+                "independentGroups": 1168,
+                "approximateNullP": 0.5190097937293264,
+                "noiseModel": "conservative maximum of randomized antipodal-pair RMS and independent-particle RMS",
+                "qualification": "conditional sampling-noise reference; not proof of coherent spiral or calibrated temporal significance"
+              },
+              {
+                "m": 2,
+                "re": 0.006371615173665855,
+                "im": 0.0429289616979339,
+                "amplitude": 0.043399230781016894,
+                "phaseRadians": 1.423449719372672,
+                "orientationRadians": 0.711724859686336,
+                "nullRms": 0.028720648378341103,
+                "independentParticleRms": 0.02860647838453067,
+                "inferenceRms": 0.028720648378341103,
+                "independentGroups": 1168,
+                "approximateNullP": 0.10194046790749968,
+                "noiseModel": "conservative maximum of randomized antipodal-pair RMS and independent-particle RMS",
+                "qualification": "conditional sampling-noise reference; not proof of coherent spiral or calibrated temporal significance"
+              },
+              {
+                "m": 3,
+                "re": -0.010421828529023956,
+                "im": 0.009365547203747637,
+                "amplitude": 0.014011708829190065,
+                "phaseRadians": 2.4095254486580706,
+                "orientationRadians": 0.8031751495526902,
+                "nullRms": 0.028463663271366547,
+                "independentParticleRms": 0.02860647838453067,
+                "inferenceRms": 0.02860647838453067,
+                "independentGroups": 1168,
+                "approximateNullP": 0.7866964604992965,
+                "noiseModel": "conservative maximum of randomized antipodal-pair RMS and independent-particle RMS",
+                "qualification": "conditional sampling-noise reference; not proof of coherent spiral or calibrated temporal significance"
+              },
+              {
+                "m": 4,
+                "re": -0.0055116461119109105,
+                "im": -0.027482414468839818,
+                "amplitude": 0.02802965122687114,
+                "phaseRadians": -1.7687223520176514,
+                "orientationRadians": -0.44218058800441284,
+                "nullRms": 0.028657050389393257,
+                "independentParticleRms": 0.02860647838453067,
+                "inferenceRms": 0.028657050389393257,
+                "independentGroups": 1168,
+                "approximateNullP": 0.38416136382847027,
+                "noiseModel": "conservative maximum of randomized antipodal-pair RMS and independent-particle RMS",
+                "qualification": "conditional sampling-noise reference; not proof of coherent spiral or calibrated temporal significance"
+              }
+            ]
+          },
+          {
+            "lower": 12,
+            "upper": 16,
+            "radius": 14,
+            "count": 1967,
+            "mass": 0.8966682428726926,
+            "surfaceDensity": 0.002548378270834164,
+            "globalPlane": {
+              "count": 1967,
+              "mass": 0.8966682428726926,
+              "h50": 4.799172689336023,
+              "medianSignedHeight": 0.08242898153863737,
+              "meanHeight": 0.23954276573112643,
+              "meanNormalVelocity": -0.004301272746934373,
+              "sigmaNormal": 0.0898736000439413
+            },
+            "localPlane": {
+              "normal": [
+                -0.0011322195547218594,
+                -0.10943532514661117,
+                0.9939932734626203
+              ],
+              "tiltFromGlobalDegrees": 2.4390999747763478,
+              "count": 1967,
+              "mass": 0.8966682428726926,
+              "h50": 4.829478776605042,
+              "medianSignedHeight": 1.1102230246251565e-16,
+              "meanHeight": 0.16267265389577626,
+              "meanNormalVelocity": -0.004548976099088421,
+              "sigmaNormal": 0.08997743181569723
+            },
+            "meanRadialVelocity": 0.001336738747915483,
+            "meanAzimuthalVelocity": 0.08753938265045484,
+            "sigmaR": 0.10675823091976408,
+            "sigmaPhi": 0.10432759910077313,
+            "modes": [
+              {
+                "m": 1,
+                "re": 0.011818809593790015,
+                "im": 0.009152406753178265,
+                "amplitude": 0.014948271123775015,
+                "phaseRadians": 0.6589309064161956,
+                "orientationRadians": 0.6589309064161956,
+                "nullRms": 0.022495849816170334,
+                "independentParticleRms": 0.022547470118491286,
+                "inferenceRms": 0.022547470118491286,
+                "independentGroups": 1816,
+                "approximateNullP": 0.6443406439670113,
+                "noiseModel": "conservative maximum of randomized antipodal-pair RMS and independent-particle RMS",
+                "qualification": "conditional sampling-noise reference; not proof of coherent spiral or calibrated temporal significance"
+              },
+              {
+                "m": 2,
+                "re": 0.017816082708603347,
+                "im": 0.015674550650978093,
+                "amplitude": 0.023729819661975377,
+                "phaseRadians": 0.7215408942619899,
+                "orientationRadians": 0.36077044713099493,
+                "nullRms": 0.022451315942739362,
+                "independentParticleRms": 0.022547470118491286,
+                "inferenceRms": 0.022547470118491286,
+                "independentGroups": 1816,
+                "approximateNullP": 0.33034218446922237,
+                "noiseModel": "conservative maximum of randomized antipodal-pair RMS and independent-particle RMS",
+                "qualification": "conditional sampling-noise reference; not proof of coherent spiral or calibrated temporal significance"
+              },
+              {
+                "m": 3,
+                "re": -0.005099529964452293,
+                "im": 0.019013350129916166,
+                "amplitude": 0.019685341983850066,
+                "phaseRadians": 1.8328370398311014,
+                "orientationRadians": 0.6109456799437004,
+                "nullRms": 0.02271361080554736,
+                "independentParticleRms": 0.022547470118491286,
+                "inferenceRms": 0.02271361080554736,
+                "independentGroups": 1816,
+                "approximateNullP": 0.47183433664097907,
+                "noiseModel": "conservative maximum of randomized antipodal-pair RMS and independent-particle RMS",
+                "qualification": "conditional sampling-noise reference; not proof of coherent spiral or calibrated temporal significance"
+              },
+              {
+                "m": 4,
+                "re": -0.003435766663359621,
+                "im": 0.0213188611759907,
+                "amplitude": 0.021593942076568992,
+                "phaseRadians": 1.730583297591876,
+                "orientationRadians": 0.432645824397969,
+                "nullRms": 0.022622712288147495,
+                "independentParticleRms": 0.022547470118491286,
+                "inferenceRms": 0.022622712288147495,
+                "independentGroups": 1816,
+                "approximateNullP": 0.4020745436429095,
+                "noiseModel": "conservative maximum of randomized antipodal-pair RMS and independent-particle RMS",
+                "qualification": "conditional sampling-noise reference; not proof of coherent spiral or calibrated temporal significance"
+              }
+            ]
+          },
+          {
+            "lower": 16,
+            "upper": 20,
+            "radius": 18,
+            "count": 1482,
+            "mass": 0.6755782084073871,
+            "surfaceDensity": 0.0014933557126833655,
+            "globalPlane": {
+              "count": 1482,
+              "mass": 0.6755782084073871,
+              "h50": 4.97438675479016,
+              "medianSignedHeight": 0.35922544657234956,
+              "meanHeight": 0.08140014507909868,
+              "meanNormalVelocity": -0.0037224498002677233,
+              "sigmaNormal": 0.0766854659345823
+            },
+            "localPlane": {
+              "normal": [
+                -0.08020018745067165,
+                -0.14160394536859397,
+                0.9866692721418486
+              ],
+              "tiltFromGlobalDegrees": 5.1029960847912355,
+              "count": 1482,
+              "mass": 0.6755782084073871,
+              "h50": 4.984112400979455,
+              "medianSignedHeight": -0.0009311589489031658,
+              "meanHeight": -0.20575068579582678,
+              "meanNormalVelocity": -0.003942469311222558,
+              "sigmaNormal": 0.076695821683288
+            },
+            "meanRadialVelocity": 0.0031863937923465495,
+            "meanAzimuthalVelocity": 0.10016429907532934,
+            "sigmaR": 0.10040463861441239,
+            "sigmaPhi": 0.09357335810037906,
+            "modes": [
+              {
+                "m": 1,
+                "re": 0.013591689565188012,
+                "im": 0.04340097435596554,
+                "amplitude": 0.045479430518462066,
+                "phaseRadians": 1.2673052452177165,
+                "orientationRadians": 1.2673052452177165,
+                "nullRms": 0.025847475509312018,
+                "independentParticleRms": 0.025976216673306043,
+                "inferenceRms": 0.025976216673306043,
+                "independentGroups": 1397,
+                "approximateNullP": 0.046638118175504256,
+                "noiseModel": "conservative maximum of randomized antipodal-pair RMS and independent-particle RMS",
+                "qualification": "conditional sampling-noise reference; not proof of coherent spiral or calibrated temporal significance"
+              },
+              {
+                "m": 2,
+                "re": 0.020551496068997817,
+                "im": -0.013387892348849066,
+                "amplitude": 0.024527528457192832,
+                "phaseRadians": -0.5773809042621844,
+                "orientationRadians": -0.2886904521310922,
+                "nullRms": 0.025856587452838933,
+                "independentParticleRms": 0.025976216673306043,
+                "inferenceRms": 0.025976216673306043,
+                "independentGroups": 1397,
+                "approximateNullP": 0.41001124837968733,
+                "noiseModel": "conservative maximum of randomized antipodal-pair RMS and independent-particle RMS",
+                "qualification": "conditional sampling-noise reference; not proof of coherent spiral or calibrated temporal significance"
+              },
+              {
+                "m": 3,
+                "re": -0.02191661060535705,
+                "im": 0.015197711905626018,
+                "amplitude": 0.02667036309451478,
+                "phaseRadians": 2.5352873478130484,
+                "orientationRadians": 0.8450957826043495,
+                "nullRms": 0.026052178665360252,
+                "independentParticleRms": 0.025976216673306043,
+                "inferenceRms": 0.026052178665360252,
+                "independentGroups": 1397,
+                "approximateNullP": 0.3506311513691473,
+                "noiseModel": "conservative maximum of randomized antipodal-pair RMS and independent-particle RMS",
+                "qualification": "conditional sampling-noise reference; not proof of coherent spiral or calibrated temporal significance"
+              },
+              {
+                "m": 4,
+                "re": 0.0015718111752409361,
+                "im": 0.02711988620566124,
+                "amplitude": 0.027165397441941234,
+                "phaseRadians": 1.5129032096712514,
+                "orientationRadians": 0.37822580241781284,
+                "nullRms": 0.026128132507393962,
+                "independentParticleRms": 0.025976216673306043,
+                "inferenceRms": 0.026128132507393962,
+                "independentGroups": 1397,
+                "approximateNullP": 0.33926480357836225,
+                "noiseModel": "conservative maximum of randomized antipodal-pair RMS and independent-particle RMS",
+                "qualification": "conditional sampling-noise reference; not proof of coherent spiral or calibrated temporal significance"
+              }
+            ]
+          },
+          {
+            "lower": 20,
+            "upper": 30,
+            "radius": 25,
+            "count": 2013,
+            "mass": 0.9176376069663092,
+            "surfaceDensity": 0.0005841862444628239,
+            "globalPlane": {
+              "count": 2013,
+              "mass": 0.9176376069663092,
+              "h50": 5.538295723220887,
+              "medianSignedHeight": 0.1850877551610941,
+              "meanHeight": 0.4920617757839867,
+              "meanNormalVelocity": -0.004685601611160878,
+              "sigmaNormal": 0.059755421490672415
+            },
+            "localPlane": {
+              "normal": [
+                -0.08114320824112536,
+                -0.10565133898127081,
+                0.9910870669763591
+              ],
+              "tiltFromGlobalDegrees": 3.7836228768228928,
+              "count": 2013,
+              "mass": 0.9176376069663092,
+              "h50": 5.45048380039778,
+              "medianSignedHeight": -4.440892098500626e-16,
+              "meanHeight": 0.4139869573713102,
+              "meanNormalVelocity": -0.004805790725741805,
+              "sigmaNormal": 0.05973052582133967
+            },
+            "meanRadialVelocity": 0.0053363125296516465,
+            "meanAzimuthalVelocity": 0.11383098625804924,
+            "sigmaR": 0.0861314320925733,
+            "sigmaPhi": 0.08261731378961856,
+            "modes": [
+              {
+                "m": 1,
+                "re": -0.021910416159272725,
+                "im": -0.016316442294941842,
+                "amplitude": 0.027318356931497298,
+                "phaseRadians": -2.501499364675082,
+                "orientationRadians": -2.501499364675082,
+                "nullRms": 0.022248052554436785,
+                "independentParticleRms": 0.022288359934599145,
+                "inferenceRms": 0.022288359934599145,
+                "independentGroups": 1823,
+                "approximateNullP": 0.22262043230907808,
+                "noiseModel": "conservative maximum of randomized antipodal-pair RMS and independent-particle RMS",
+                "qualification": "conditional sampling-noise reference; not proof of coherent spiral or calibrated temporal significance"
+              },
+              {
+                "m": 2,
+                "re": 0.020701494913522224,
+                "im": -0.041024724903128904,
+                "amplitude": 0.045951930808530675,
+                "phaseRadians": -1.103467357820759,
+                "orientationRadians": -0.5517336789103795,
+                "nullRms": 0.022234706120837524,
+                "independentParticleRms": 0.022288359934599145,
+                "inferenceRms": 0.022288359934599145,
+                "independentGroups": 1823,
+                "approximateNullP": 0.01425552925902896,
+                "noiseModel": "conservative maximum of randomized antipodal-pair RMS and independent-particle RMS",
+                "qualification": "conditional sampling-noise reference; not proof of coherent spiral or calibrated temporal significance"
+              },
+              {
+                "m": 3,
+                "re": -0.03063331961350757,
+                "im": 0.005473458000182914,
+                "amplitude": 0.031118467395150968,
+                "phaseRadians": 2.964781858854194,
+                "orientationRadians": 0.9882606196180647,
+                "nullRms": 0.022359242778699655,
+                "independentParticleRms": 0.022288359934599145,
+                "inferenceRms": 0.022359242778699655,
+                "independentGroups": 1823,
+                "approximateNullP": 0.14414046921818022,
+                "noiseModel": "conservative maximum of randomized antipodal-pair RMS and independent-particle RMS",
+                "qualification": "conditional sampling-noise reference; not proof of coherent spiral or calibrated temporal significance"
+              },
+              {
+                "m": 4,
+                "re": 0.004244895771210541,
+                "im": 0.0004537406469421443,
+                "amplitude": 0.004269077263663497,
+                "phaseRadians": 0.10648654919828476,
+                "orientationRadians": 0.02662163729957119,
+                "nullRms": 0.02246211408668653,
+                "independentParticleRms": 0.022288359934599145,
+                "inferenceRms": 0.02246211408668653,
+                "independentGroups": 1823,
+                "approximateNullP": 0.9645230169338058,
+                "noiseModel": "conservative maximum of randomized antipodal-pair RMS and independent-particle RMS",
+                "qualification": "conditional sampling-noise reference; not proof of coherent spiral or calibrated temporal significance"
+              }
+            ]
+          }
+        ],
+        "conventions": {
+          "positionUnits": "kpc",
+          "velocityUnits": "kpc/Myr",
+          "massUnits": "1e10 Msun",
+          "normalVelocity": "projected velocity minus population mean; no rotating-frame rate subtraction",
+          "rings": "instantaneous cylindrical selections in fitted global plane; not tracked cohorts",
+          "warp": "local median height and local normal versus fitted global plane",
+          "oddModes": "antipodal initialization suppresses odd modes; pair correlations retained in null reference",
+          "basis": "global x projected into fitted plane; possible geometric phase evolution under changing tilt"
+        }
+      },
+      "costMs": 4437.549300000001,
+      "qualification": "Direct Plummer particle potential, excluding self, full-step velocities relative to whole-system COM. Positive instantaneous specific energy in a time-dependent live potential is not a proof of permanent escape."
+    }
+  ],
+  "firstDirect": {
+    "time": 0,
+    "n": 33148,
+    "mass": 104.93157944365521,
+    "kinetic": 1.8491905112148663,
+    "selfPotential": -3.6933881282477428,
+    "externalPotential": 0,
+    "potential": -3.6933881282477428,
+    "energy": -1.8441976170328764,
+    "energyScale": 5.542578639462609,
+    "algorithm": "direct",
+    "energyAlgorithm": "direct",
+    "G": 0.04498502239584923,
+    "epsilon": 0.0999999988824129,
+    "theta": 0.5,
+    "energyApproximate": false,
+    "energyMethod": "Energia direta Float64 — pares compensados",
+    "externalPotentialModel": null,
+    "selfGravity": true,
+    "externalExtrapolated": 0,
+    "momentum": [
+      -3.554905211472397e-9,
+      1.7281734568363836e-9,
+      4.808600086001781e-10
+    ],
+    "momentumNorm": 3.9818539535420414e-9,
+    "momentumScale": 17.376852825268305,
+    "centerOfMass": [
+      -2.2908652907091655e-8,
+      -1.9501174272613115e-9,
+      2.7713820911517458e-8
+    ],
+    "centerOfMassVelocity": [
+      -3.387831604480197e-11,
+      1.6469526771626988e-11,
+      4.582605266686032e-12
+    ],
+    "angularMomentum": [
+      2.2485841384826513,
+      -1.1049203567571935,
+      26.364143082350676
+    ],
+    "angularMomentumNorm": 26.48291940268805,
+    "angularMomentumScale": 871.2120000025528,
+    "Lx": 2.2485841384826513,
+    "Ly": -1.1049203567571935,
+    "Lz": 26.364143082350676,
+    "Lnorm": 26.48291940268805,
+    "intrinsicAngularMomentum": [
+      2.2485841384826513,
+      -1.1049203567571935,
+      26.364143082350676
+    ],
+    "origin": [
+      0,
+      0,
+      0
+    ],
+    "conditions": {
+      "system": "isolated",
+      "energy": true,
+      "angularVector": true,
+      "angularZ": true,
+      "linearMomentum": true,
+      "centerOfMassBallistic": true,
+      "angularOrigin": "specified inertial origin; also report intrinsic COM angular momentum",
+      "forceCaveat": "Float32 force and accumulation roundoff must be measured; Float64 readback diagnostics do not upgrade the trajectory precision."
+    },
+    "epsilonSquared": 0.009999999776482582,
+    "forceAlgorithm": "GPU direct f32",
+    "trajectoryPrecision": "Float32",
+    "requestedDt": 0.1,
+    "effectiveDt": 0.10000000149011612,
+    "velocityEpoch": "full-step, after final KDK kick",
+    "precision": "Float64 compensated CPU evaluation",
+    "units": "1e10 Msun kpc^2 Myr^-2",
+    "arithmeticUncertainty": "Not a formal interval; see Decimal-80 calibration in energy-audit report.",
+    "diagnosticCostMs": 675.8499999999913,
+    "maximumWorkerComputeMs": 645.7300000000105,
+    "parallelWorkers": 4,
+    "pairCount": 549378378
+  },
+  "lastDirect": {
+    "time": 18600.0002771616,
+    "n": 33148,
+    "mass": 104.93157944365521,
+    "kinetic": 1.8701618160428568,
+    "selfPotential": -3.7143235776752874,
+    "externalPotential": 0,
+    "potential": -3.7143235776752874,
+    "energy": -1.8441617616324306,
+    "energyScale": 5.584485393718144,
+    "algorithm": "direct",
+    "energyAlgorithm": "direct",
+    "G": 0.04498502239584923,
+    "epsilon": 0.0999999988824129,
+    "theta": 0.5,
+    "energyApproximate": false,
+    "energyMethod": "Energia direta Float64 — pares compensados",
+    "externalPotentialModel": null,
+    "selfGravity": true,
+    "externalExtrapolated": 0,
+    "momentum": [
+      -0.00003753683830574561,
+      -0.00005833629827357531,
+      -0.000013655745978357246
+    ],
+    "momentumNorm": 0.0000707009004502818,
+    "momentumScale": 17.71607245611112,
+    "centerOfMass": [
+      -0.0037513546759217866,
+      -0.0037233846467663164,
+      -0.0011687619353081815
+    ],
+    "centerOfMassVelocity": [
+      -3.57726801643176e-7,
+      -5.559460610702041e-7,
+      -1.3013952568673503e-7
+    ],
+    "angularMomentum": [
+      2.2952254303186077,
+      -1.0135757310671456,
+      26.443449937397013
+    ],
+    "angularMomentumNorm": 26.562218283310067,
+    "angularMomentumScale": 871.6871579600346,
+    "Lx": 2.2952254303186077,
+    "Ly": -1.0135757310671456,
+    "Lz": 26.443449937397013,
+    "Lnorm": 26.562218283310067,
+    "intrinsicAngularMomentum": [
+      2.2952254476542575,
+      -1.0135757237112268,
+      26.443449858320953
+    ],
+    "origin": [
+      0,
+      0,
+      0
+    ],
+    "conditions": {
+      "system": "isolated",
+      "energy": true,
+      "angularVector": true,
+      "angularZ": true,
+      "linearMomentum": true,
+      "centerOfMassBallistic": true,
+      "angularOrigin": "specified inertial origin; also report intrinsic COM angular momentum",
+      "forceCaveat": "Float32 force and accumulation roundoff must be measured; Float64 readback diagnostics do not upgrade the trajectory precision."
+    },
+    "epsilonSquared": 0.009999999776482582,
+    "forceAlgorithm": "GPU direct f32",
+    "trajectoryPrecision": "Float32",
+    "requestedDt": 0.1,
+    "effectiveDt": 0.10000000149011612,
+    "velocityEpoch": "full-step, after final KDK kick",
+    "precision": "Float64 compensated CPU evaluation",
+    "units": "1e10 Msun kpc^2 Myr^-2",
+    "arithmeticUncertainty": "Not a formal interval; see Decimal-80 calibration in energy-audit report.",
+    "diagnosticCostMs": 869.5749999999534,
+    "maximumWorkerComputeMs": 820.6550000000279,
+    "parallelWorkers": 4,
+    "pairCount": 549378378
+  },
+  "maximumDirectEnergyPercent": 0.0020624734828964823,
+  "qualification": "Original t0 and final particle buffers are retained in energy-reference provenance. Reconstructed t0 is compared element by element, not substituted for the captured snapshot."
+}

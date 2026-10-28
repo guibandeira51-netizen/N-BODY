@@ -1,0 +1,137 @@
+{
+  "schema": "direct-target-chunk-validation-v1",
+  "createdUTC": "2026-10-21T15:30:16.793Z",
+  "runs": [
+    {
+      "n": 256,
+      "steps": 20,
+      "time": 2.0000000298023224,
+      "comparison": {
+        "initial": {
+          "positions": {
+            "unequal": 0,
+            "maxAbsolute": 0
+          },
+          "velocities": {
+            "unequal": 0,
+            "maxAbsolute": 0
+          },
+          "masses": {
+            "unequal": 0,
+            "maxAbsolute": 0
+          },
+          "accelerations": {
+            "unequal": 0,
+            "maxAbsolute": 0
+          }
+        },
+        "final": {
+          "positions": {
+            "unequal": 0,
+            "maxAbsolute": 0
+          },
+          "velocities": {
+            "unequal": 0,
+            "maxAbsolute": 0
+          },
+          "masses": {
+            "unequal": 0,
+            "maxAbsolute": 0
+          },
+          "accelerations": {
+            "unequal": 0,
+            "maxAbsolute": 0
+          }
+        }
+      }
+    },
+    {
+      "n": 8193,
+      "steps": 20,
+      "time": 2.0000000298023224,
+      "comparison": {
+        "initial": {
+          "positions": {
+            "unequal": 0,
+            "maxAbsolute": 0
+          },
+          "velocities": {
+            "unequal": 0,
+            "maxAbsolute": 0
+          },
+          "masses": {
+            "unequal": 0,
+            "maxAbsolute": 0
+          },
+          "accelerations": {
+            "unequal": 0,
+            "maxAbsolute": 0
+          }
+        },
+        "final": {
+          "positions": {
+            "unequal": 0,
+            "maxAbsolute": 0
+          },
+          "velocities": {
+            "unequal": 0,
+            "maxAbsolute": 0
+          },
+          "masses": {
+            "unequal": 0,
+            "maxAbsolute": 0
+          },
+          "accelerations": {
+            "unequal": 0,
+            "maxAbsolute": 0
+          }
+        }
+      }
+    },
+    {
+      "n": 16384,
+      "steps": 20,
+      "time": 2.0000000298023224,
+      "comparison": {
+        "initial": {
+          "positions": {
+            "unequal": 0,
+            "maxAbsolute": 0
+          },
+          "velocities": {
+            "unequal": 0,
+            "maxAbsolute": 0
+          },
+          "masses": {
+            "unequal": 0,
+            "maxAbsolute": 0
+          },
+          "accelerations": {
+            "unequal": 0,
+            "maxAbsolute": 0
+          }
+        },
+        "final": {
+          "positions": {
+            "unequal": 0,
+            "maxAbsolute": 0
+          },
+          "velocities": {
+            "unequal": 0,
+            "maxAbsolute": 0
+          },
+          "masses": {
+            "unequal": 0,
+            "maxAbsolute": 0
+          },
+          "accelerations": {
+            "unequal": 0,
+            "maxAbsolute": 0
+          }
+        }
+      }
+    }
+  ],
+  "bitwiseEqual": true,
+  "qualification": "Original versus chunked direct GPU Plummer forces and KDK trajectories; same input states, G, epsilon and per-particle source ordering. Not a structural-equilibrium test."
+}

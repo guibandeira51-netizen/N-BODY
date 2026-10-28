@@ -1,0 +1,48 @@
+{
+  "schema": "orbit-phase-trial-105",
+  "registeredUTC": "2026-10-17T01:24:34Z",
+  "seed": 2027,
+  "phaseSeed": 702027,
+  "uniformPhaseWindowMyr": [
+    0.001,
+    1000
+  ],
+  "source": "reports/v1.0.4/initial/FE-b2027-h2027.json",
+  "sourceSHA256": "bd3c528b6f4a5fc4438f3238384bec53824aec85d913cddc1bff885c43c3ce88",
+  "potentialSHA256": "1074a9a28555ad253907b7e6f4b7aba406be33b9efc63ff7794e08110ea707d1",
+  "scriptSHA256": "13afb856c7fd5e8893cd8ec7a49b5005a80d89d598488f079d3390134076555f",
+  "method": "Same weighted original orbits, random time in fixed complete mean, DOP853 Float64 accuracy1e-10, then antipodal partners. New trial model, original action DF not redefined as exact. Finite phase mixing may change density; independent closure and stationary controls mandatory.",
+  "promotion": false,
+  "seconds": 6.539807499997551,
+  "checks": [
+    {
+      "population": 0,
+      "independentOrbits": 750,
+      "maxRelativeSpecificEnergyChange": 5.649936000614632e-08,
+      "LzMaxAbsoluteChangeKpcKmS": 3.511638624331681e-08,
+      "LzRMSScaledChange": 3.126971411611081e-11
+    },
+    {
+      "population": 1,
+      "independentOrbits": 3546,
+      "maxRelativeSpecificEnergyChange": 5.9515646593779044e-08,
+      "LzMaxAbsoluteChangeKpcKmS": 3.33102434524335e-08,
+      "LzRMSScaledChange": 2.719353121684952e-12
+    },
+    {
+      "population": 2,
+      "independentOrbits": 477,
+      "maxRelativeSpecificEnergyChange": 3.0401025384870675e-08,
+      "LzMaxAbsoluteChangeKpcKmS": 2.002639121201355e-07,
+      "LzRMSScaledChange": 9.228170150438356e-12
+    },
+    {
+      "population": 3,
+      "independentOrbits": 40000,
+      "maxRelativeSpecificEnergyChange": 2.88760336509701e-07,
+      "LzMaxAbsoluteChangeKpcKmS": 6.729314918629825e-07,
+      "LzRMSScaledChange": 3.3456666721795653e-12
+    }
+  ],
+  "phaseTimeSHA256": "a1aab06ed0eac0700a13d077b00e84c2bf28097be150798bce1fe413affe1e86"
+}

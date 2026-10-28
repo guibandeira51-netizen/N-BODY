@@ -1,0 +1,984 @@
+{
+  "verifiedUTC": "2026-10-20T01:37:40.344Z",
+  "rawExportUnchanged": true,
+  "runtimeFilesChecked": 154,
+  "runtimeUnchanged": true,
+  "parameters": [
+    {
+      "G": 0.04498502239584923,
+      "epsilonSquared": 0.009999999776482582,
+      "n": 49796
+    },
+    {
+      "G": 0.04498502239584923,
+      "epsilonSquared": 0.009999999776482582,
+      "n": 49796
+    },
+    {
+      "G": 0.04498502239584923,
+      "epsilonSquared": 0.009999999776482582,
+      "n": 49796
+    }
+  ],
+  "realizationId": "36a246aa-fa41-4425-a763-ef11e9848c07",
+  "retainedDirectReferences": 199,
+  "fullSnapshots": 3,
+  "codeChecks": [
+    {
+      "file": "src/automatic-energy.js",
+      "expected": "4f2d8549ec7add2bfc2df40795c4167a4b8ffd8236e8b2043039f5f95659653f",
+      "actual": "4f2d8549ec7add2bfc2df40795c4167a4b8ffd8236e8b2043039f5f95659653f",
+      "unchanged": true
+    },
+    {
+      "file": "src/component-rotation-plot.js",
+      "expected": "29e278885b0b060d4b8dc5d037c4e204c0e58d2932836acd7466644899a29612",
+      "actual": "29e278885b0b060d4b8dc5d037c4e204c0e58d2932836acd7466644899a29612",
+      "unchanged": true
+    },
+    {
+      "file": "src/compute/capability.js",
+      "expected": "637aa622654cb378ec9f5a4374481a62acd9f60744d5a8986c479d41de2fd46e",
+      "actual": "637aa622654cb378ec9f5a4374481a62acd9f60744d5a8986c479d41de2fd46e",
+      "unchanged": true
+    },
+    {
+      "file": "src/compute/energy-reference-worker.js",
+      "expected": "aa55eec73aa469e2d1fa3e3ce5461921304de67ec8da4ab75b08f8a1669f0b8e",
+      "actual": "aa55eec73aa469e2d1fa3e3ce5461921304de67ec8da4ab75b08f8a1669f0b8e",
+      "unchanged": true
+    },
+    {
+      "file": "src/compute/energy-snapshot-sampler.js",
+      "expected": "f55d09236b84734af7d27de74a125d7522dd0fa776b881df1a01fceea815ab7c",
+      "actual": "f55d09236b84734af7d27de74a125d7522dd0fa776b881df1a01fceea815ab7c",
+      "unchanged": true
+    },
+    {
+      "file": "src/compute/equilibrium-worker.js",
+      "expected": "80846ea48e65737315e12e026dfb2f8531127134864de97d6bb0ce9bc2b5e0df",
+      "actual": "80846ea48e65737315e12e026dfb2f8531127134864de97d6bb0ce9bc2b5e0df",
+      "unchanged": true
+    },
+    {
+      "file": "src/compute/gpu-external-grid.js",
+      "expected": "82c7267f53c8a2f4a8595ea82ba13f280d9b3692ed103358ca5e2169febbd9b4",
+      "actual": "82c7267f53c8a2f4a8595ea82ba13f280d9b3692ed103358ca5e2169febbd9b4",
+      "unchanged": true
+    },
+    {
+      "file": "src/compute/gpu-external-polynomial.js",
+      "expected": "cd7bed0cf447558a08940009382c3e31d2882c38548473780532bcdc42fe7dff",
+      "actual": "cd7bed0cf447558a08940009382c3e31d2882c38548473780532bcdc42fe7dff",
+      "unchanged": true
+    },
+    {
+      "file": "src/compute/gpu-fixed-halo.js",
+      "expected": "6b06535c53e2361253edbf08ea0afa9c15036d88dac69fd18663a606a139f6ed",
+      "actual": "6b06535c53e2361253edbf08ea0afa9c15036d88dac69fd18663a606a139f6ed",
+      "unchanged": true
+    },
+    {
+      "file": "src/compute/gpu.js",
+      "expected": "7ee6706d635a797f8a8546f96968466c8d8f9dbb67d3bd2aadd6f46ea00a7967",
+      "actual": "7ee6706d635a797f8a8546f96968466c8d8f9dbb67d3bd2aadd6f46ea00a7967",
+      "unchanged": true
+    },
+    {
+      "file": "src/compute/live-energy-reference.js",
+      "expected": "d02f6c2068f5d86688463a3881f1875b81f1f311dcff32839f9697a9e28248a9",
+      "actual": "d02f6c2068f5d86688463a3881f1875b81f1f311dcff32839f9697a9e28248a9",
+      "unchanged": true
+    },
+    {
+      "file": "src/compute/live-worker.js",
+      "expected": "de993daad2f064169f748b9ddfb85b4382e3b40c5dbf7b11865b3d855ee8d047",
+      "actual": "de993daad2f064169f748b9ddfb85b4382e3b40c5dbf7b11865b3d855ee8d047",
+      "unchanged": true
+    },
+    {
+      "file": "src/compute/pair-energy-worker.js",
+      "expected": "923409cd818d5f5874358eb1469e3f444e8cc61c34cb6a988c40f46c55b5bc48",
+      "actual": "923409cd818d5f5874358eb1469e3f444e8cc61c34cb6a988c40f46c55b5bc48",
+      "unchanged": true
+    },
+    {
+      "file": "src/compute/parallel-energy.js",
+      "expected": "f204b19fbb512c63f6c36aa9e1bf862e201624c4a808f77f53097f0c13bcfd15",
+      "actual": "f204b19fbb512c63f6c36aa9e1bf862e201624c4a808f77f53097f0c13bcfd15",
+      "unchanged": true
+    },
+    {
+      "file": "src/compute/scheduling.js",
+      "expected": "60e7bd7f5f570229ce198c47c0b900913d3ad5317c56edf7b530542f8430d1c4",
+      "actual": "60e7bd7f5f570229ce198c47c0b900913d3ad5317c56edf7b530542f8430d1c4",
+      "unchanged": true
+    },
+    {
+      "file": "src/compute/worker.js",
+      "expected": "70c4778002892e73746106955e3e17c1faf28c849b0f3acf42f688e7b99179dc",
+      "actual": "70c4778002892e73746106955e3e17c1faf28c849b0f3acf42f688e7b99179dc",
+      "unchanged": true
+    },
+    {
+      "file": "src/correction-102-page.js",
+      "expected": "904053f1aec4ac5ab8dc4be4a67b52b7ebe001791715234143801017449ce4b7",
+      "actual": "904053f1aec4ac5ab8dc4be4a67b52b7ebe001791715234143801017449ce4b7",
+      "unchanged": true
+    },
+    {
+      "file": "src/darkmatter106-page.js",
+      "expected": "7b39afb7c6783a5fb383cbc762f9f1675a780773915141192c41b783a43bd097",
+      "actual": "7b39afb7c6783a5fb383cbc762f9f1675a780773915141192c41b783a43bd097",
+      "unchanged": true
+    },
+    {
+      "file": "src/document-link-policy.js",
+      "expected": "5071839c03a0f232439aaa535fff0f6a8514d71aa4daf40c6ea197af177f5e95",
+      "actual": "5071839c03a0f232439aaa535fff0f6a8514d71aa4daf40c6ea197af177f5e95",
+      "unchanged": true
+    },
+    {
+      "file": "src/energy-audit-cadence.js",
+      "expected": "0868a037abad73d886def7e0b55908c76cbd63ef71cdfe5601bcfc99e7536bc5",
+      "actual": "0868a037abad73d886def7e0b55908c76cbd63ef71cdfe5601bcfc99e7536bc5",
+      "unchanged": true
+    },
+    {
+      "file": "src/energy-audit-session.js",
+      "expected": "0a88225065b8ec8d888593a3f1c268ba8f2296a5181ba046090d017ae142be50",
+      "actual": "0a88225065b8ec8d888593a3f1c268ba8f2296a5181ba046090d017ae142be50",
+      "unchanged": true
+    },
+    {
+      "file": "src/energy-chart-data.js",
+      "expected": "c9b059e64632056546b4252731f8e880b071cac2871446dea2823f88066c50c4",
+      "actual": "c9b059e64632056546b4252731f8e880b071cac2871446dea2823f88066c50c4",
+      "unchanged": true
+    },
+    {
+      "file": "src/energy-charts-preview.js",
+      "expected": "9eb721020a1204206aa2b4dd50c5486df0b436911b8bf6c11d6a98085927dbdd",
+      "actual": "9eb721020a1204206aa2b4dd50c5486df0b436911b8bf6c11d6a98085927dbdd",
+      "unchanged": true
+    },
+    {
+      "file": "src/energy-charts.js",
+      "expected": "55d674419164e672f8a7d1788d76b4ffb27717962b1d63ec73222eb54309dc50",
+      "actual": "55d674419164e672f8a7d1788d76b4ffb27717962b1d63ec73222eb54309dc50",
+      "unchanged": true
+    },
+    {
+      "file": "src/energy-direct-guide.js",
+      "expected": "986edb0303b51c1682625ce6c02a10cfae00767c2759c61f9e8f3143d6310205",
+      "actual": "986edb0303b51c1682625ce6c02a10cfae00767c2759c61f9e8f3143d6310205",
+      "unchanged": true
+    },
+    {
+      "file": "src/equilibrium-page.js",
+      "expected": "77bfbd51debcf54f6eb85a12e8c013f4388891f0b7fa3630e55f8b84f563cfa9",
+      "actual": "77bfbd51debcf54f6eb85a12e8c013f4388891f0b7fa3630e55f8b84f563cfa9",
+      "unchanged": true
+    },
+    {
+      "file": "src/export/review.js",
+      "expected": "a7f6407875098fc4e4714f4a82b1a341a3894851c7b12b8fb57870383e56579f",
+      "actual": "a7f6407875098fc4e4714f4a82b1a341a3894851c7b12b8fb57870383e56579f",
+      "unchanged": true
+    },
+    {
+      "file": "src/export/state.js",
+      "expected": "0ec67fb03f648f8a446e228cc152c6b9d2313e69ba2b66a7c4eb77afb2055f4c",
+      "actual": "0ec67fb03f648f8a446e228cc152c6b9d2313e69ba2b66a7c4eb77afb2055f4c",
+      "unchanged": true
+    },
+    {
+      "file": "src/export/zip.js",
+      "expected": "ecf658fc7efeaff9fde346092bbde4884959419a021b52ae159c4531ce3fa9db",
+      "actual": "ecf658fc7efeaff9fde346092bbde4884959419a021b52ae159c4531ce3fa9db",
+      "unchanged": true
+    },
+    {
+      "file": "src/granularity-page.js",
+      "expected": "65e95c9a7cdbb1f6f0f3ba72ea07ebc9e59afaf8d263bb8107d2cb5bcbb1f7aa",
+      "actual": "65e95c9a7cdbb1f6f0f3ba72ea07ebc9e59afaf8d263bb8107d2cb5bcbb1f7aa",
+      "unchanged": true
+    },
+    {
+      "file": "src/laboratory-panel.js",
+      "expected": "fdccf3fa2b78fdce6aa877975f8a15c59ee801dd2f2e5b396b7610eb777207bf",
+      "actual": "fdccf3fa2b78fdce6aa877975f8a15c59ee801dd2f2e5b396b7610eb777207bf",
+      "unchanged": true
+    },
+    {
+      "file": "src/live-diagnostics.js",
+      "expected": "bb15d6fde518f58eba105307ba4d453d7b000be09cf4b616133f129b0824a663",
+      "actual": "bb15d6fde518f58eba105307ba4d453d7b000be09cf4b616133f129b0824a663",
+      "unchanged": true
+    },
+    {
+      "file": "src/main.js",
+      "expected": "a724af555eddcb2798a4459ecade744637abdac708601bcf19e4567272ad5050",
+      "actual": "a724af555eddcb2798a4459ecade744637abdac708601bcf19e4567272ad5050",
+      "unchanged": true
+    },
+    {
+      "file": "src/ncorpos-live-entry.js",
+      "expected": "84eb446d45f354b81ac1ae0f3532c71cd8b267367db9cd8e7db07a090b539bec",
+      "actual": "84eb446d45f354b81ac1ae0f3532c71cd8b267367db9cd8e7db07a090b539bec",
+      "unchanged": true
+    },
+    {
+      "file": "src/physics/constants.js",
+      "expected": "4b1c2a1d96453b95c8e57a45f46443083e77d54e1714aadc7d060de0d9aa22ca",
+      "actual": "4b1c2a1d96453b95c8e57a45f46443083e77d54e1714aadc7d060de0d9aa22ca",
+      "unchanged": true
+    },
+    {
+      "file": "src/physics/diagnostics.js",
+      "expected": "d385ce21d018390f63210c8e8975276f1696656de69b25bc8e5017db5ef14765",
+      "actual": "d385ce21d018390f63210c8e8975276f1696656de69b25bc8e5017db5ef14765",
+      "unchanged": true
+    },
+    {
+      "file": "src/physics/disk-analysis.js",
+      "expected": "ecd700024436712b55152cb4bf64463ea70ee5bb9e93a6cc7750a8a1057219f7",
+      "actual": "ecd700024436712b55152cb4bf64463ea70ee5bb9e93a6cc7750a8a1057219f7",
+      "unchanged": true
+    },
+    {
+      "file": "src/physics/equilibrium-analysis.js",
+      "expected": "21eb7a098144724e3d537d4f6c01bc3308683148522e0f97d5907d2be3661998",
+      "actual": "21eb7a098144724e3d537d4f6c01bc3308683148522e0f97d5907d2be3661998",
+      "unchanged": true
+    },
+    {
+      "file": "src/physics/external-grid-polynomial.js",
+      "expected": "fcc5185e99acd25c6f35078a9c2b42d103c2fbc9b65606c4873b2184682ddcbf",
+      "actual": "fcc5185e99acd25c6f35078a9c2b42d103c2fbc9b65606c4873b2184682ddcbf",
+      "unchanged": true
+    },
+    {
+      "file": "src/physics/external-grid.js",
+      "expected": "9e9dcf0b32c2864a8f8c8e08a0e909c4e306771126e5df17d3b90c240a9d6540",
+      "actual": "9e9dcf0b32c2864a8f8c8e08a0e909c4e306771126e5df17d3b90c240a9d6540",
+      "unchanged": true
+    },
+    {
+      "file": "src/physics/fixed-halo.js",
+      "expected": "e351183ed13436395f59ead258d73c99a55c6bfe4a75cece12b11ba51f2bb31c",
+      "actual": "e351183ed13436395f59ead258d73c99a55c6bfe4a75cece12b11ba51f2bb31c",
+      "unchanged": true
+    },
+    {
+      "file": "src/physics/forces.js",
+      "expected": "9532d4286c6481d49995ece96e48bd595145c2e2c8a22897520cafa45f862444",
+      "actual": "9532d4286c6481d49995ece96e48bd595145c2e2c8a22897520cafa45f862444",
+      "unchanged": true
+    },
+    {
+      "file": "src/physics/granularity-analysis.js",
+      "expected": "4a5edbd3ff27f0df4a98818c5118a4cfc678a8f84fc1db8b66df2aa4c0200b35",
+      "actual": "4a5edbd3ff27f0df4a98818c5118a4cfc678a8f84fc1db8b66df2aa4c0200b35",
+      "unchanged": true
+    },
+    {
+      "file": "src/physics/halo-experiments.js",
+      "expected": "a5a0169b5d8b38c56db0229a83a5b7ba4a940968dd7572bf26f52f37dc9fbcdb",
+      "actual": "a5a0169b5d8b38c56db0229a83a5b7ba4a940968dd7572bf26f52f37dc9fbcdb",
+      "unchanged": true
+    },
+    {
+      "file": "src/physics/hamiltonian-bounds-105.js",
+      "expected": "8344ca6dd1d98b157613e7225356029dc58143850e14875a6bbf189fc429e73d",
+      "actual": "8344ca6dd1d98b157613e7225356029dc58143850e14875a6bbf189fc429e73d",
+      "unchanged": true
+    },
+    {
+      "file": "src/physics/initial-allocated.js",
+      "expected": "f62b945334f7cfd062aa5eda6a3964aca59eb977985d7ffe73a8c8cce04ed378",
+      "actual": "f62b945334f7cfd062aa5eda6a3964aca59eb977985d7ffe73a8c8cce04ed378",
+      "unchanged": true
+    },
+    {
+      "file": "src/physics/initial-legacy.js",
+      "expected": "93ca8666ff188863b947dc8535ca23244d67c20ab2a177cb12e494cf566eeefa",
+      "actual": "93ca8666ff188863b947dc8535ca23244d67c20ab2a177cb12e494cf566eeefa",
+      "unchanged": true
+    },
+    {
+      "file": "src/physics/initial.js",
+      "expected": "5a6bbdb6cfe562776c6a408271c26d8a29183e92d2021914e2eb0f34230ef66a",
+      "actual": "5a6bbdb6cfe562776c6a408271c26d8a29183e92d2021914e2eb0f34230ef66a",
+      "unchanged": true
+    },
+    {
+      "file": "src/physics/integrator.js",
+      "expected": "433880162ae754dd3bada1fad9e2538239b42d3d43f20f96f7e1465135a1ce6f",
+      "actual": "433880162ae754dd3bada1fad9e2538239b42d3d43f20f96f7e1465135a1ce6f",
+      "unchanged": true
+    },
+    {
+      "file": "src/physics/iterative-initial.js",
+      "expected": "bf6216a55950684589f697a36bd122584ae5817a6afb00eab0705746f98cc164",
+      "actual": "bf6216a55950684589f697a36bd122584ae5817a6afb00eab0705746f98cc164",
+      "unchanged": true
+    },
+    {
+      "file": "src/physics/jeans-axisymmetric.js",
+      "expected": "903331d3c5643c122e63bcb3778bce3a29e5a4d713c09c0a79a6dea178b9698d",
+      "actual": "903331d3c5643c122e63bcb3778bce3a29e5a4d713c09c0a79a6dea178b9698d",
+      "unchanged": true
+    },
+    {
+      "file": "src/physics/laboratory.js",
+      "expected": "3f36f219449d053c7756147c3b312464123c8b4242e65f428a8c1a5cbf528f2d",
+      "actual": "3f36f219449d053c7756147c3b312464123c8b4242e65f428a8c1a5cbf528f2d",
+      "unchanged": true
+    },
+    {
+      "file": "src/physics/live-energy.js",
+      "expected": "3880ea68ca7817243b40f8e2c4e283e88afa6b553674d4aa307f607dfa635750",
+      "actual": "3880ea68ca7817243b40f8e2c4e283e88afa6b553674d4aa307f607dfa635750",
+      "unchanged": true
+    },
+    {
+      "file": "src/physics/mass-audit.js",
+      "expected": "99f3722ec0027a3c51b3183a440ec02a52b773aa9e9b53482631777b0a9353f2",
+      "actual": "99f3722ec0027a3c51b3183a440ec02a52b773aa9e9b53482631777b0a9353f2",
+      "unchanged": true
+    },
+    {
+      "file": "src/physics/models.js",
+      "expected": "2215cd8332d06b4d18b3ef707c5000992b5db730d104c654ef7ddba7ac9102f3",
+      "actual": "2215cd8332d06b4d18b3ef707c5000992b5db730d104c654ef7ddba7ac9102f3",
+      "unchanged": true
+    },
+    {
+      "file": "src/physics/pair-energy-partition.js",
+      "expected": "22a2f43c0bbdb67c7959dcef72f185e2f3e0814cf9a6fd0baa135ea29e3ba688",
+      "actual": "22a2f43c0bbdb67c7959dcef72f185e2f3e0814cf9a6fd0baa135ea29e3ba688",
+      "unchanged": true
+    },
+    {
+      "file": "src/physics/rotation-field.js",
+      "expected": "cf4df5dbd647ded3ebf8873f6be9aa10672ff9f164346b5c6c53231b4f1619e7",
+      "actual": "cf4df5dbd647ded3ebf8873f6be9aa10672ff9f164346b5c6c53231b4f1619e7",
+      "unchanged": true
+    },
+    {
+      "file": "src/physics/snapshot-model.js",
+      "expected": "681327ebbc656b4fd702bd02b0bd42c5c58f7b5e06643de121669350684d53ba",
+      "actual": "681327ebbc656b4fd702bd02b0bd42c5c58f7b5e06643de121669350684d53ba",
+      "unchanged": true
+    },
+    {
+      "file": "src/physics/softened-model.js",
+      "expected": "2f407e9a9ee2aa28beeb52fec6c892c00ae23a77de8e0c6b83d592ad9cce81aa",
+      "actual": "2f407e9a9ee2aa28beeb52fec6c892c00ae23a77de8e0c6b83d592ad9cce81aa",
+      "unchanged": true
+    },
+    {
+      "file": "src/physics/stationarity-105.js",
+      "expected": "2c75946a5def93159e19aa5d4fe31daa419dc786d29940d513c72644d0cc563b",
+      "actual": "2c75946a5def93159e19aa5d4fe31daa419dc786d29940d513c72644d0cc563b",
+      "unchanged": true
+    },
+    {
+      "file": "src/physics/structure-diagnostics.js",
+      "expected": "e94593e700e77bf95392b949bf2891652b87b224000ec1ab584e586dbb871440",
+      "actual": "e94593e700e77bf95392b949bf2891652b87b224000ec1ab584e586dbb871440",
+      "unchanged": true
+    },
+    {
+      "file": "src/physics/validation-101.js",
+      "expected": "c6e0f58068bf585bdb43fb71db77edad6197d7d62f29afb7223cec761c409275",
+      "actual": "c6e0f58068bf585bdb43fb71db77edad6197d7d62f29afb7223cec761c409275",
+      "unchanged": true
+    },
+    {
+      "file": "src/presentation106.js",
+      "expected": "e98d0d5a8be6dc7c9924611f30a12dfe513741ec00d36268f80820542c280e01",
+      "actual": "e98d0d5a8be6dc7c9924611f30a12dfe513741ec00d36268f80820542c280e01",
+      "unchanged": true
+    },
+    {
+      "file": "src/refinement-page.js",
+      "expected": "cc5418e1f1a839c6b124ea046afefbfb1d8663b2c805e3888d0501c5a616063a",
+      "actual": "cc5418e1f1a839c6b124ea046afefbfb1d8663b2c805e3888d0501c5a616063a",
+      "unchanged": true
+    },
+    {
+      "file": "src/render/camera.js",
+      "expected": "faaa725427d1c78a3efbc0bd5ba63db2b4c31f7e0d121156f81f1032bb18cc83",
+      "actual": "faaa725427d1c78a3efbc0bd5ba63db2b4c31f7e0d121156f81f1032bb18cc83",
+      "unchanged": true
+    },
+    {
+      "file": "src/render/gpu-renderer.js",
+      "expected": "0837ecd1dea9361f7de01641cd8985b37e747ad63712a0f321ba75bc8f86de33",
+      "actual": "0837ecd1dea9361f7de01641cd8985b37e747ad63712a0f321ba75bc8f86de33",
+      "unchanged": true
+    },
+    {
+      "file": "src/render/particle-style.js",
+      "expected": "aa45e5469be99a31c1438b1fb05c3881b44cc8e015c016efb623a0acffacd6a5",
+      "actual": "aa45e5469be99a31c1438b1fb05c3881b44cc8e015c016efb623a0acffacd6a5",
+      "unchanged": true
+    },
+    {
+      "file": "src/render/webgl-renderer.js",
+      "expected": "856dad630b3ba50420d3be836dbf55af837983087ffa0f6d4ae747f8bfe58e80",
+      "actual": "856dad630b3ba50420d3be836dbf55af837983087ffa0f6d4ae747f8bfe58e80",
+      "unchanged": true
+    },
+    {
+      "file": "src/stationarity-page.js",
+      "expected": "44c89e221c81ee11c2f0e2b7cf8b4b3134fed8a458ded9d3d132f55b68007e17",
+      "actual": "44c89e221c81ee11c2f0e2b7cf8b4b3134fed8a458ded9d3d132f55b68007e17",
+      "unchanged": true
+    },
+    {
+      "file": "src/validation-assessment.js",
+      "expected": "d4f68a43a078cb6c537011720690248a62871e5b3b9f9e39caccf4542a3eb7c2",
+      "actual": "d4f68a43a078cb6c537011720690248a62871e5b3b9f9e39caccf4542a3eb7c2",
+      "unchanged": true
+    },
+    {
+      "file": "scripts/interface-106/audit.mjs",
+      "expected": "4e64a1f85c94155da3fa278fed70af7c01e04102ad32b90a98822004ecd01cff",
+      "actual": "4e64a1f85c94155da3fa278fed70af7c01e04102ad32b90a98822004ecd01cff",
+      "unchanged": true
+    },
+    {
+      "file": "scripts/interface-106/clean-document-links.mjs",
+      "expected": "b8cbbc2444ef7197820d34a236079bf0d3511ea377ba269cdaad453073918054",
+      "actual": "b8cbbc2444ef7197820d34a236079bf0d3511ea377ba269cdaad453073918054",
+      "unchanged": true
+    },
+    {
+      "file": "scripts/interface-106/identity.mjs",
+      "expected": "733f86721336801354813b300e2f8274525a78a499d37e494cc4d4a76f7ba909",
+      "actual": "733f86721336801354813b300e2f8274525a78a499d37e494cc4d4a76f7ba909",
+      "unchanged": true
+    },
+    {
+      "file": "scripts/interface-106/package.py",
+      "expected": "6544499833bf1481e84346f18b8965475f409550e02970f5561df20b00aa2a16",
+      "actual": "6544499833bf1481e84346f18b8965475f409550e02970f5561df20b00aa2a16",
+      "unchanged": true
+    },
+    {
+      "file": "scripts/interface-106/preserve.mjs",
+      "expected": "981d0102e0cc36c465c01f0a911165547c8ce2b228b25df75f51cad8f1271a5c",
+      "actual": "981d0102e0cc36c465c01f0a911165547c8ce2b228b25df75f51cad8f1271a5c",
+      "unchanged": true
+    },
+    {
+      "file": "scripts/interface-106/site.mjs",
+      "expected": "51f4c0bba0bdf96aa2f7b778660398de975e2aa89f8b481281956370b7407bdf",
+      "actual": "51f4c0bba0bdf96aa2f7b778660398de975e2aa89f8b481281956370b7407bdf",
+      "unchanged": true
+    },
+    {
+      "file": "tests/automatic-energy.test.mjs",
+      "expected": "0380450e62b7798b89a2a3b22dd8bf6449fbc99a3f577bc620d02840d534759c",
+      "actual": "0380450e62b7798b89a2a3b22dd8bf6449fbc99a3f577bc620d02840d534759c",
+      "unchanged": true
+    },
+    {
+      "file": "tests/browser-energy-audit.html",
+      "expected": "da617b4450a30abb44848ef4b31bb1d318e9ed67e8bfc7a36401b25083c4b00e",
+      "actual": "da617b4450a30abb44848ef4b31bb1d318e9ed67e8bfc7a36401b25083c4b00e",
+      "unchanged": true
+    },
+    {
+      "file": "tests/browser-energy-audit.js",
+      "expected": "0a6a14cd4df7a32166e3568396c3600fa17bfc3c3c95bbf86bf1888464783bf8",
+      "actual": "0a6a14cd4df7a32166e3568396c3600fa17bfc3c3c95bbf86bf1888464783bf8",
+      "unchanged": true
+    },
+    {
+      "file": "tests/browser-energy-charts.html",
+      "expected": "141314f33779e8d70cf6424aa362097cc089af5528a82cac9e7f144352791cf6",
+      "actual": "141314f33779e8d70cf6424aa362097cc089af5528a82cac9e7f144352791cf6",
+      "unchanged": true
+    },
+    {
+      "file": "tests/browser-energy-replay.html",
+      "expected": "24465801215a3bc8b0e48df5e06b642e29e6146f645f0fc38dec1324b889d2df",
+      "actual": "24465801215a3bc8b0e48df5e06b642e29e6146f645f0fc38dec1324b889d2df",
+      "unchanged": true
+    },
+    {
+      "file": "tests/browser-energy-replay.js",
+      "expected": "b715dce22e251f6fc3583cca11438336c0830df2679d302da8011793443b55a9",
+      "actual": "b715dce22e251f6fc3583cca11438336c0830df2679d302da8011793443b55a9",
+      "unchanged": true
+    },
+    {
+      "file": "tests/browser-equilibrium-08.html",
+      "expected": "f1d42c4adaf8ffe1290642aa1eb30894c47cb1d4f43e9b8e78a794d59ec8d4a3",
+      "actual": "f1d42c4adaf8ffe1290642aa1eb30894c47cb1d4f43e9b8e78a794d59ec8d4a3",
+      "unchanged": true
+    },
+    {
+      "file": "tests/browser-equilibrium-105.html",
+      "expected": "55d040b841246d558745b5b4a21d84d505d93940b8c11c85f2ac8190be52c008",
+      "actual": "55d040b841246d558745b5b4a21d84d505d93940b8c11c85f2ac8190be52c008",
+      "unchanged": true
+    },
+    {
+      "file": "tests/browser-equilibrium-backends-calibrated-v1.html",
+      "expected": "bb9d13ef94651d8114fd3613f2005b74a888ba9eda953a6fce61aba80d3057b5",
+      "actual": "bb9d13ef94651d8114fd3613f2005b74a888ba9eda953a6fce61aba80d3057b5",
+      "unchanged": true
+    },
+    {
+      "file": "tests/browser-equilibrium-backends-v1.html",
+      "expected": "e28f20bc8ed548b22d15131ecda4a49d261ec180db6ba8d42e133d3bc19e3f82",
+      "actual": "e28f20bc8ed548b22d15131ecda4a49d261ec180db6ba8d42e133d3bc19e3f82",
+      "unchanged": true
+    },
+    {
+      "file": "tests/browser-equilibrium-batch-calibrated-v1.html",
+      "expected": "53898924270dd0772ac53f19c60525e52b94bbe264f2900c471665268bed8128",
+      "actual": "53898924270dd0772ac53f19c60525e52b94bbe264f2900c471665268bed8128",
+      "unchanged": true
+    },
+    {
+      "file": "tests/browser-equilibrium-batch-v1.html",
+      "expected": "519834b31e74a149605c8fc0f579439e571eed897587888d2391c1c521b8815d",
+      "actual": "519834b31e74a149605c8fc0f579439e571eed897587888d2391c1c521b8815d",
+      "unchanged": true
+    },
+    {
+      "file": "tests/browser-equilibrium-calibrated-v1.html",
+      "expected": "4f018bcf89b1cf1b102a2df8c4d53884bca0088687d1a96f192eb205fc80b923",
+      "actual": "4f018bcf89b1cf1b102a2df8c4d53884bca0088687d1a96f192eb205fc80b923",
+      "unchanged": true
+    },
+    {
+      "file": "tests/browser-equilibrium-refinement-08.html",
+      "expected": "413346d83e67283b03ec54222198871c9b089388f0a002c3b4a365998f638cd7",
+      "actual": "413346d83e67283b03ec54222198871c9b089388f0a002c3b4a365998f638cd7",
+      "unchanged": true
+    },
+    {
+      "file": "tests/browser-equilibrium-resume-v1.html",
+      "expected": "745310eedd35987c878d58742ddd4a373f68dcaa04216ff1c22cc103cba8b1c7",
+      "actual": "745310eedd35987c878d58742ddd4a373f68dcaa04216ff1c22cc103cba8b1c7",
+      "unchanged": true
+    },
+    {
+      "file": "tests/browser-equilibrium-v1.html",
+      "expected": "70698b309abb236fd04b182dbcf2d3163703a66a9c48febb93fa972645924a64",
+      "actual": "70698b309abb236fd04b182dbcf2d3163703a66a9c48febb93fa972645924a64",
+      "unchanged": true
+    },
+    {
+      "file": "tests/browser-export-09.html",
+      "expected": "4a6979ede18cc43af05cbc694321fda9faa6128391d4d0031df58fab06cdf547",
+      "actual": "4a6979ede18cc43af05cbc694321fda9faa6128391d4d0031df58fab06cdf547",
+      "unchanged": true
+    },
+    {
+      "file": "tests/browser-fixed-halo-09.html",
+      "expected": "079c6efe8fbc96aa48b53a85e32bd5d048dbc074f3b47f22fbb49b5a159bc41c",
+      "actual": "079c6efe8fbc96aa48b53a85e32bd5d048dbc074f3b47f22fbb49b5a159bc41c",
+      "unchanged": true
+    },
+    {
+      "file": "tests/browser-gpu.html",
+      "expected": "1bf64e544088d5bd4d2d69b622f0dad014deb99a13b3327bc6547e86d328d24f",
+      "actual": "1bf64e544088d5bd4d2d69b622f0dad014deb99a13b3327bc6547e86d328d24f",
+      "unchanged": true
+    },
+    {
+      "file": "tests/browser-granularity-103.html",
+      "expected": "6d94addb31c5b37b817383625e3e60b4d68d15ae349ad3d79d6c927970df27b0",
+      "actual": "6d94addb31c5b37b817383625e3e60b4d68d15ae349ad3d79d6c927970df27b0",
+      "unchanged": true
+    },
+    {
+      "file": "tests/browser-granularity-force-103.html",
+      "expected": "6ba4a263d25b89cd841592141eb47bc3d2e5430f360c714cf688cb4cdbb69693",
+      "actual": "6ba4a263d25b89cd841592141eb47bc3d2e5430f360c714cf688cb4cdbb69693",
+      "unchanged": true
+    },
+    {
+      "file": "tests/browser-halos-09.html",
+      "expected": "912cd40f45cc7bb986c261c3373132208e08864f2721917dd46fcb46df60c42b",
+      "actual": "912cd40f45cc7bb986c261c3373132208e08864f2721917dd46fcb46df60c42b",
+      "unchanged": true
+    },
+    {
+      "file": "tests/browser-halos-continuation-09.html",
+      "expected": "b42286cbdb5d7b5039926679eed5a3ddc20433f1e910cca02d65f4c16cdb3a57",
+      "actual": "b42286cbdb5d7b5039926679eed5a3ddc20433f1e910cca02d65f4c16cdb3a57",
+      "unchanged": true
+    },
+    {
+      "file": "tests/browser-halos-resume-09.html",
+      "expected": "207e6de0a64f0aaa9e0d0acfc651df109b6eefd437422b2d9d9db0e45c8a6c5f",
+      "actual": "207e6de0a64f0aaa9e0d0acfc651df109b6eefd437422b2d9d9db0e45c8a6c5f",
+      "unchanged": true
+    },
+    {
+      "file": "tests/browser-high-dt-09.html",
+      "expected": "0d28b0f0f7fd21e49d2682e5202c55d160e1977d915e823885d9ec8b398ea8b6",
+      "actual": "0d28b0f0f7fd21e49d2682e5202c55d160e1977d915e823885d9ec8b398ea8b6",
+      "unchanged": true
+    },
+    {
+      "file": "tests/browser-initial-audit-09.html",
+      "expected": "1d4187f042f5ee04224cbf1413f173cd5749573fd9d7e361ff442b49fe21f815",
+      "actual": "1d4187f042f5ee04224cbf1413f173cd5749573fd9d7e361ff442b49fe21f815",
+      "unchanged": true
+    },
+    {
+      "file": "tests/browser-laboratory.html",
+      "expected": "190526994afd3f8f82fcf5cb254f76ffd8caa2f36440f4605888b385d47cdd01",
+      "actual": "190526994afd3f8f82fcf5cb254f76ffd8caa2f36440f4605888b385d47cdd01",
+      "unchanged": true
+    },
+    {
+      "file": "tests/browser-mass.html",
+      "expected": "f67e97378bf755e2ec6758ee21ff0349f79dd4b7824664b758d1885c5d94404f",
+      "actual": "f67e97378bf755e2ec6758ee21ff0349f79dd4b7824664b758d1885c5d94404f",
+      "unchanged": true
+    },
+    {
+      "file": "tests/browser-refinement-104.html",
+      "expected": "2a0f8f3b10cf826574607121a86022da9d9001ee393f6a806699c2843f1e4010",
+      "actual": "2a0f8f3b10cf826574607121a86022da9d9001ee393f6a806699c2843f1e4010",
+      "unchanged": true
+    },
+    {
+      "file": "tests/browser-reproduce-09.html",
+      "expected": "2d40343beb1703a26f66519edfd80ab7a71173022ca5f6ce1efb0f75782bb508",
+      "actual": "2d40343beb1703a26f66519edfd80ab7a71173022ca5f6ce1efb0f75782bb508",
+      "unchanged": true
+    },
+    {
+      "file": "tests/browser-softened-minimum-102.html",
+      "expected": "e279eb2c4d2d9fa68d3654b3a450f2f494ef36e2dcc15874db4063b6b89a2159",
+      "actual": "e279eb2c4d2d9fa68d3654b3a450f2f494ef36e2dcc15874db4063b6b89a2159",
+      "unchanged": true
+    },
+    {
+      "file": "tests/browser-validation-101.html",
+      "expected": "a9bc366c5bf7bcd87ef5297aea9770f4434fdc6e213251d31a8c84866a00d0e0",
+      "actual": "a9bc366c5bf7bcd87ef5297aea9770f4434fdc6e213251d31a8c84866a00d0e0",
+      "unchanged": true
+    },
+    {
+      "file": "tests/capability.test.mjs",
+      "expected": "1b3ea402cf54929db0500850bb4b14d2521ec680dcf98c0d817f721f7aaced04",
+      "actual": "1b3ea402cf54929db0500850bb4b14d2521ec680dcf98c0d817f721f7aaced04",
+      "unchanged": true
+    },
+    {
+      "file": "tests/core.test.mjs",
+      "expected": "8a3c6d70a8ee2b26b6a35064ec004107c127ec0bfc10928eeef51570c38362e5",
+      "actual": "8a3c6d70a8ee2b26b6a35064ec004107c127ec0bfc10928eeef51570c38362e5",
+      "unchanged": true
+    },
+    {
+      "file": "tests/darkmatter-106.test.mjs",
+      "expected": "ec2d11525889893672b404c1c357b19a0330406d5b9d128c51274a6dcee70f3f",
+      "actual": "ec2d11525889893672b404c1c357b19a0330406d5b9d128c51274a6dcee70f3f",
+      "unchanged": true
+    },
+    {
+      "file": "tests/disk-analysis.test.mjs",
+      "expected": "d9dd265dfa4e953c424325b850b1993d35fad37afd2a7052abeec69fbe79a62a",
+      "actual": "d9dd265dfa4e953c424325b850b1993d35fad37afd2a7052abeec69fbe79a62a",
+      "unchanged": true
+    },
+    {
+      "file": "tests/document-link-policy.test.mjs",
+      "expected": "b058e0cc4ba8851434275f5dd68c9308603e16b4cd1e6aa3e0f57d6ae8f00ad1",
+      "actual": "b058e0cc4ba8851434275f5dd68c9308603e16b4cd1e6aa3e0f57d6ae8f00ad1",
+      "unchanged": true
+    },
+    {
+      "file": "tests/energy-audit-cadence.test.mjs",
+      "expected": "8031b0cb4cdad4ae742b59ab5bd403f7e94311147503c4a592481367944ca33d",
+      "actual": "8031b0cb4cdad4ae742b59ab5bd403f7e94311147503c4a592481367944ca33d",
+      "unchanged": true
+    },
+    {
+      "file": "tests/energy-audit-session.test.mjs",
+      "expected": "0e3ee0c47652c99dcb6da80790ec50872dac6e4714f9c086c6bc02b6a77f5c28",
+      "actual": "0e3ee0c47652c99dcb6da80790ec50872dac6e4714f9c086c6bc02b6a77f5c28",
+      "unchanged": true
+    },
+    {
+      "file": "tests/energy-charts.test.mjs",
+      "expected": "c90a095ba82b419a82b3fb55aefda0a9816d32c4a6ac09c944bb3289ec7642c4",
+      "actual": "c90a095ba82b419a82b3fb55aefda0a9816d32c4a6ac09c944bb3289ec7642c4",
+      "unchanged": true
+    },
+    {
+      "file": "tests/energy-direct-guide.test.mjs",
+      "expected": "df7b863e942b927417878b530f69ac5f9cfb1ac51072e8f2d450c2fddcc35120",
+      "actual": "df7b863e942b927417878b530f69ac5f9cfb1ac51072e8f2d450c2fddcc35120",
+      "unchanged": true
+    },
+    {
+      "file": "tests/energy-evidence.test.mjs",
+      "expected": "1686d41561150e986a0834ddbb23fbb9ac421a1658f4c967704e48e167c00b4d",
+      "actual": "1686d41561150e986a0834ddbb23fbb9ac421a1658f4c967704e48e167c00b4d",
+      "unchanged": true
+    },
+    {
+      "file": "tests/equilibrium-v1.test.mjs",
+      "expected": "60fbd4c8f2e012749f51544e225865fde38cb271878361dd54a58b666b163dca",
+      "actual": "60fbd4c8f2e012749f51544e225865fde38cb271878361dd54a58b666b163dca",
+      "unchanged": true
+    },
+    {
+      "file": "tests/external-polynomial-103.test.mjs",
+      "expected": "e00d9a6c7af161f6385088c2b709bf27abacccde0f4f79b1b5558ee8c8c0b6b6",
+      "actual": "e00d9a6c7af161f6385088c2b709bf27abacccde0f4f79b1b5558ee8c8c0b6b6",
+      "unchanged": true
+    },
+    {
+      "file": "tests/fixed-halo.test.mjs",
+      "expected": "f8c41ec1185bd0feab18aa25a0b7c9836ea3b9c28fa6eea4e28443baad884fe1",
+      "actual": "f8c41ec1185bd0feab18aa25a0b7c9836ea3b9c28fa6eea4e28443baad884fe1",
+      "unchanged": true
+    },
+    {
+      "file": "tests/granularity-analysis.test.mjs",
+      "expected": "b9b83ea8f36711a95a7d8cc3c9fed259dd7ba97220af057bd7d7215f8bd3b806",
+      "actual": "b9b83ea8f36711a95a7d8cc3c9fed259dd7ba97220af057bd7d7215f8bd3b806",
+      "unchanged": true
+    },
+    {
+      "file": "tests/hamiltonian-bounds-105.test.mjs",
+      "expected": "a7bf74f10deea2be7f03f571c8fa2023d5a61d9a9af7d158a308184f0a2bb9d9",
+      "actual": "a7bf74f10deea2be7f03f571c8fa2023d5a61d9a9af7d158a308184f0a2bb9d9",
+      "unchanged": true
+    },
+    {
+      "file": "tests/interface-106.test.mjs",
+      "expected": "9c5126e40ba642e063628b54687e3870e5ddd5cc4a31bd50523d82957b7bc0cf",
+      "actual": "9c5126e40ba642e063628b54687e3870e5ddd5cc4a31bd50523d82957b7bc0cf",
+      "unchanged": true
+    },
+    {
+      "file": "tests/iterative-initial.test.mjs",
+      "expected": "6f2f8627f54b643893cfe1bc4d4eff5f924348c088bab8c7a1b6b2af611b798c",
+      "actual": "6f2f8627f54b643893cfe1bc4d4eff5f924348c088bab8c7a1b6b2af611b798c",
+      "unchanged": true
+    },
+    {
+      "file": "tests/laboratory.test.mjs",
+      "expected": "009d4e3f9ce13edddf809c430936e1dabc430d12a8f9a2cf66c1a1b15bf392a4",
+      "actual": "009d4e3f9ce13edddf809c430936e1dabc430d12a8f9a2cf66c1a1b15bf392a4",
+      "unchanged": true
+    },
+    {
+      "file": "tests/live-diagnostics.test.mjs",
+      "expected": "21c1bca184874a875b9283740791afa4fd1715506d6b6c2c310b890c2cbed8cb",
+      "actual": "21c1bca184874a875b9283740791afa4fd1715506d6b6c2c310b890c2cbed8cb",
+      "unchanged": true
+    },
+    {
+      "file": "tests/live-energy.test.mjs",
+      "expected": "d83957a51ddc3a5c15eb720ba0d19b6af2fea865cd8dd5d47a466c5eea305145",
+      "actual": "d83957a51ddc3a5c15eb720ba0d19b6af2fea865cd8dd5d47a466c5eea305145",
+      "unchanged": true
+    },
+    {
+      "file": "tests/mass-audit.test.mjs",
+      "expected": "3aeadf1400cb30027f1f4acb26e538c5e9f514e719eb5f77d38574b29b4fac0a",
+      "actual": "3aeadf1400cb30027f1f4acb26e538c5e9f514e719eb5f77d38574b29b4fac0a",
+      "unchanged": true
+    },
+    {
+      "file": "tests/models.test.mjs",
+      "expected": "89bfbea9bd61de31edcb287494a17cfbae8ea45b7d3d925ffba1020de80855bb",
+      "actual": "89bfbea9bd61de31edcb287494a17cfbae8ea45b7d3d925ffba1020de80855bb",
+      "unchanged": true
+    },
+    {
+      "file": "tests/pair-energy-104.test.mjs",
+      "expected": "21311b1bd822c9d577d9090a03745fb8dfcf04443b60f16ced12505190d4d346",
+      "actual": "21311b1bd822c9d577d9090a03745fb8dfcf04443b60f16ced12505190d4d346",
+      "unchanged": true
+    },
+    {
+      "file": "tests/render.test.mjs",
+      "expected": "2bbf0ee6340d7015d64845ff50e9b859221d1158844a9aa86a7fd46d72e16fa3",
+      "actual": "2bbf0ee6340d7015d64845ff50e9b859221d1158844a9aa86a7fd46d72e16fa3",
+      "unchanged": true
+    },
+    {
+      "file": "tests/reproduction-105.test.mjs",
+      "expected": "dcca338076d465853e6576c718799f69bec0f6db993df3e858019c059d2e666f",
+      "actual": "dcca338076d465853e6576c718799f69bec0f6db993df3e858019c059d2e666f",
+      "unchanged": true
+    },
+    {
+      "file": "tests/review-export.test.mjs",
+      "expected": "27d47edfbdb3502a0078396450c44ac9a2e80f5a43752122a4126f3307bf8e6f",
+      "actual": "27d47edfbdb3502a0078396450c44ac9a2e80f5a43752122a4126f3307bf8e6f",
+      "unchanged": true
+    },
+    {
+      "file": "tests/rotation-field.test.mjs",
+      "expected": "7177b557abe572e310368d11d4d3ff797c412f021eb50ffffc71500920008c04",
+      "actual": "7177b557abe572e310368d11d4d3ff797c412f021eb50ffffc71500920008c04",
+      "unchanged": true
+    },
+    {
+      "file": "tests/softened-model.test.mjs",
+      "expected": "d39163a40c1fdd169fe655616037e256b18d5545445316be947d3a3577921964",
+      "actual": "d39163a40c1fdd169fe655616037e256b18d5545445316be947d3a3577921964",
+      "unchanged": true
+    },
+    {
+      "file": "tests/stationarity-105.test.mjs",
+      "expected": "ba555b95387a025ee108ea834867ed5d9c4f2b313f5c4bd6d24144282242fe02",
+      "actual": "ba555b95387a025ee108ea834867ed5d9c4f2b313f5c4bd6d24144282242fe02",
+      "unchanged": true
+    },
+    {
+      "file": "tests/structure-diagnostics.test.mjs",
+      "expected": "73245eeca2b0d7c0a82a304eb117414c7f2997ac5dc9cf0f4e446a6977824b30",
+      "actual": "73245eeca2b0d7c0a82a304eb117414c7f2997ac5dc9cf0f4e446a6977824b30",
+      "unchanged": true
+    },
+    {
+      "file": "tests/validation-101.test.mjs",
+      "expected": "54b578f8232bf035f5f571ad5d5d41b886a9564044be442a38f5fd87e863ded4",
+      "actual": "54b578f8232bf035f5f571ad5d5d41b886a9564044be442a38f5fd87e863ded4",
+      "unchanged": true
+    },
+    {
+      "file": "tests/validation-assessment.test.mjs",
+      "expected": "f2f7f4a006471c565c1f778e68a07d18015f6ae951ba8043f8516c8b754d7dc2",
+      "actual": "f2f7f4a006471c565c1f778e68a07d18015f6ae951ba8043f8516c8b754d7dc2",
+      "unchanged": true
+    },
+    {
+      "file": "index.html",
+      "expected": "b5ace6c219b85d467fd062725c3dbf6899c0fdec488a80d1802b90c3ad81b124",
+      "actual": "b5ace6c219b85d467fd062725c3dbf6899c0fdec488a80d1802b90c3ad81b124",
+      "unchanged": true
+    },
+    {
+      "file": "experimento-ncorpos.html",
+      "expected": "7469383e5011724019f0f1b250f905aac42b2444f8880d11a77a75355e4a6567",
+      "actual": "7469383e5011724019f0f1b250f905aac42b2444f8880d11a77a75355e4a6567",
+      "unchanged": true
+    },
+    {
+      "file": "materia-escura.html",
+      "expected": "f6d74410307f5803dd4262185cf31f9b133408b03d0bb13444f17afd0849762e",
+      "actual": "f6d74410307f5803dd4262185cf31f9b133408b03d0bb13444f17afd0849762e",
+      "unchanged": true
+    },
+    {
+      "file": "validacao106.html",
+      "expected": "bdd012fbafc413b1bf85596bb61585288e5fbcd7447ddccabd800f14f01594e7",
+      "actual": "bdd012fbafc413b1bf85596bb61585288e5fbcd7447ddccabd800f14f01594e7",
+      "unchanged": true
+    },
+    {
+      "file": "arquivo-cientifico.html",
+      "expected": "8b8ca174eebcb0f828525a402057ac6cb2754827e78564f135a0f889b7d76f6d",
+      "actual": "8b8ca174eebcb0f828525a402057ac6cb2754827e78564f135a0f889b7d76f6d",
+      "unchanged": true
+    },
+    {
+      "file": "interface106.css",
+      "expected": "4eb818a9a2bffcf984b59891c0d498bc45d6a7424ffd1810e0ebe0d59c67ef83",
+      "actual": "4eb818a9a2bffcf984b59891c0d498bc45d6a7424ffd1810e0ebe0d59c67ef83",
+      "unchanged": true
+    },
+    {
+      "file": "ncorpos-navigation.css",
+      "expected": "b5aa2120d759b13daf76a09313495e96ad9ed44a070103c639a166283e41fad5",
+      "actual": "b5aa2120d759b13daf76a09313495e96ad9ed44a070103c639a166283e41fad5",
+      "unchanged": true
+    },
+    {
+      "file": "live-diagnostics.css",
+      "expected": "c0c76b2e0b05bef9133aca2d17f9eee72f9a2b0a6c3a90caa97e7fb65fe3b3fa",
+      "actual": "c0c76b2e0b05bef9133aca2d17f9eee72f9a2b0a6c3a90caa97e7fb65fe3b3fa",
+      "unchanged": true
+    },
+    {
+      "file": "simulador-tecnico.html",
+      "expected": "b92a84bd5a6c85129b952f462c02f64ec1319d0f9c6fc7a00a7f2620a11673ba",
+      "actual": "b92a84bd5a6c85129b952f462c02f64ec1319d0f9c6fc7a00a7f2620a11673ba",
+      "unchanged": true
+    },
+    {
+      "file": "style.css",
+      "expected": "a5d981c1a847050c6e54e0f3c20bbfaacde14102b801e0064ac887743215a4cf",
+      "actual": "a5d981c1a847050c6e54e0f3c20bbfaacde14102b801e0064ac887743215a4cf",
+      "unchanged": true
+    },
+    {
+      "file": "darkmatter106.css",
+      "expected": "1752c1e22a0b714fcf94d886177917c2488aae52dda303bc1c336bd9e65d7652",
+      "actual": "1752c1e22a0b714fcf94d886177917c2488aae52dda303bc1c336bd9e65d7652",
+      "unchanged": true
+    },
+    {
+      "file": "package.json",
+      "expected": "3a70ed7916b2ef2a7ba51b7699a04c6ae2da33cff3aff2f7e915a4be098b393b",
+      "actual": "3a70ed7916b2ef2a7ba51b7699a04c6ae2da33cff3aff2f7e915a4be098b393b",
+      "unchanged": true
+    },
+    {
+      "file": "scripts/build.mjs",
+      "expected": "5479e54682b345dea9508dca521eb16774fac442ff70022e8a23619e82e52819",
+      "actual": "5479e54682b345dea9508dca521eb16774fac442ff70022e8a23619e82e52819",
+      "unchanged": true
+    },
+    {
+      "file": "REORGANIZACAO_INTERFACE_TCC.md",
+      "expected": "fc782c8115a8b74458f46769d95fad450e943d8598cf91f1fc5cc2893805fca7",
+      "actual": "fc782c8115a8b74458f46769d95fad450e943d8598cf91f1fc5cc2893805fca7",
+      "unchanged": true
+    }
+  ],
+  "hashes": {
+    "analysis-log.json": "3488c2153b297a854b5ea67fa5ca8c5f773a0063e8196ef496c775e0426fb61f",
+    "analysis.json": "43105cf7ba5fa6f050ea5ad4c1dd4cf87765cd7dc6aefc6f29b007cd2b45f8a5",
+    "azimuthal-modes.csv": "4eb1ce8c7faf476dddb281491420559d7cb9635f89ae06fa99cca58b2bdbf837",
+    "diagnostic-tests.tap": "0b319f5915da183ad943718e5c5a74212231bf3c63841e59dad6981785c3fa25",
+    "DIAGNOSTICO_AQUECIMENTO_DISCO.md": "3eea2c5f54b6ce5f1415e5e11a90ca2441391e97b7484795ae2996d8750bbd0e",
+    "direct-disk-0.json": "78e074051d4a6a05daf5e3e1d9f2b4dc029e51fd3b6d2047b7594fe919e770d4",
+    "direct-disk-1.json": "12bb5a5c57234476784de72fcb78436497fb3a4f36315cb8b2bfc168ba6d88b7",
+    "direct-disk-2.json": "ab0bc24be90fa16975f9599e800c86a4c53b8004d2c9a79ed4998becdf5e7de5",
+    "evolucao-estrutural.png": "f676e8be1395d46754e610e0905754d139dd0e395d5e1463a0845abf82422be3",
+    "evolucao-estrutural.svg": "f8399ee1975df4e04d5e44fa0f7edee5d7dc7c0052b3b09313c7149ad101e2f9",
+    "individual-disk-binding.csv": "97a8c0e8aa735ac605b4c8e474d444a986914ccb12208567865c8bed7627ddff",
+    "node-tests.tap": "2786bcd8fd8686bc0692214da57f9e7022e0a7fdfcefef60d434795c39271de8",
+    "observed-session.json": "66e48233e209ce09af83c841c0dd1a75d3c3f9701635f1a2c45785f9d326d754",
+    "populacoes-e-ligacao.png": "ed2daa6e0b84b695ff5a00305687bb4e0722f34ea77105940ca9b88d7ae009a3",
+    "populacoes-e-ligacao.svg": "d6b99803062ed250c97dca6d39ca81e0c6d2a6c2f2ee6329799ae4782c03b400",
+    "snapshot-0.bin": "4ed7d78e654ec9d4bfef00bb700c251741fbc92ac2cc5a0747209263a3b59d04",
+    "snapshot-1.bin": "3d98d7ccd8f967731808f36894a40b516bcc13c58f4cb29d67f6f0ccf5ad63de",
+    "snapshot-2.bin": "e748ba5e15f5765457d8fe03e2e323320061ac8af6b8b6e18de4821c09dc024f",
+    "snapshot-manifest.json": "fb102e2ff39c43a9f012dfa705a2c84f598f91433e91a9a448160899d35f96cb",
+    "structure-energy-series.csv": "1caec9b70debea6440584406be360ad00c58f6812e11379876cd1ed8c3feccd2",
+    "summary.csv": "cbf52bf4308286c490447c1efd679bb34812cfb2d94d9ea54b82cbd9af1d0410"
+  },
+  "scriptHashes": {
+    "analyze.mjs": "fe0e6f7c345e7ca6d1349e57a40dfb8e721e561fdb1b03812f39978b4ad6cfb0",
+    "direct-audit.mjs": "796e0f266fdb740259bed1da69f6452a581bb30dcfa2fef8e96d374eccbbf25d",
+    "direct-target-field.mjs": "17bc7264968e6ada96e6bdab9f431dd86e6f2ec791f63d2c178fb90b3ca6500e",
+    "direct-target-field.test.mjs": "737c372bf50e6b049161b6fda1f450a07cb09dae1c9c4a977e14862634bffa74",
+    "field-worker.mjs": "51f163538500a3a38e6d6e4f7d809a520f9dc40817fdfe69031033e7cf75d43e",
+    "plot.py": "a1a265acbff94dc7bfacd0e445104e415162c37fe5f8f9a30b1f46ea2d31707f",
+    "verify.mjs": "e4754d9c6d097307493980e19fdebfed0fac7960ae2d983b8461d9956a7dde18"
+  }
+}

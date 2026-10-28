@@ -1,12 +1,18 @@
 /dist/
-/downloads/
+# Preserve the small manifests required by scripts/build.mjs.
+/downloads/*
+!/downloads/*.json
 /node_modules/
 __pycache__/
 *.pyc
 # Ignorar arquivos JSON e JSONL grandes e pesados
-*.json
 *.jsonl
 
 # Ignorar pastas de ferramentas e executáveis
 **/tools/
 *.exe
+
+# Oversized raw scientific records stay local; do not ignore all JSON files.
+/reports/resolution-decision/session-export-original.json
+/reports/v1.0.1/runs/A-continuum-agama-calibrated.json
+/reports/v1.0.1/runs/A-continuum-agama.json

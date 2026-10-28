@@ -1,0 +1,52 @@
+{
+  "definition": "M_i(<r)=4pi integral_0^r s²ds integral_0^1 rho_i(s sqrt(1−mu²),0,s mu)dmu. Same spherical volume for each population.",
+  "orders": [
+    24,
+    96
+  ],
+  "higherOrders": [
+    32,
+    160
+  ],
+  "normalizationOuterRadiusKpc": 10000,
+  "checks": [
+    {
+      "population": 0,
+      "integratedPositiveMassBeforeNormalizationMsun": 9245922586.209877,
+      "negativeInterpolationMassMsun": -2354.0492958714326,
+      "negativeMassFractionOfPositive": 2.5460404561276055e-07,
+      "minimumRawDensityMsunKpc3": -4869.446127017648,
+      "maxQuadratureRelativeDifference": 1.4191607888847102e-09,
+      "normalization": 0.9950348795915472
+    },
+    {
+      "population": 1,
+      "integratedPositiveMassBeforeNormalizationMsun": 39801819767.65934,
+      "negativeInterpolationMassMsun": -589865.3390956938,
+      "negativeMassFractionOfPositive": 1.4820059548507988e-05,
+      "minimumRawDensityMsunKpc3": -594.1974066845983,
+      "maxQuadratureRelativeDifference": 2.7579747152728373e-08,
+      "normalization": 0.9999542792849685
+    },
+    {
+      "population": 2,
+      "integratedPositiveMassBeforeNormalizationMsun": 10700853606.309214,
+      "negativeInterpolationMassMsun": -43456.56971700032,
+      "negativeMassFractionOfPositive": 4.061037681272302e-06,
+      "minimumRawDensityMsunKpc3": -12.177986822289629,
+      "maxQuadratureRelativeDifference": 1.8124262290974968e-07,
+      "normalization": 0.999920230073168
+    },
+    {
+      "population": 3,
+      "integratedPositiveMassBeforeNormalizationMsun": 1049671836885.1968,
+      "negativeInterpolationMassMsun": 0.0,
+      "negativeMassFractionOfPositive": -0.0,
+      "minimumRawDensityMsunKpc3": 1.401497875121087e-38,
+      "maxQuadratureRelativeDifference": 5.1159817382462336e-08,
+      "normalization": 0.9994830529432415
+    }
+  ],
+  "densityReconstruction": "rho106_i = unchangedDFmass_i * max(rho_grid_i,0) / integral(max(rho_grid_i,0)dV). Tiny negative interpolation lobes are quantified and removed in this NEW smooth-field representation. No cumulative-mass or visual monotonicity filter; positive shell integration. All historical grids and N-body runs unchanged.",
+  "supersededAttempt": "attempts/signed-density/ contains pre-correction estimates, potentials and diagnostics."
+}

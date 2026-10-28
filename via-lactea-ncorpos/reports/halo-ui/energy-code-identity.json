@@ -1,0 +1,16 @@
+{
+  "description": "Final diagnostic implementation, separate from unchanged physical-source identity",
+  "createdUTC": "2026-10-22T03:37:00.584Z",
+  "files": {
+    "src/automatic-energy.js": "b8f6971343e195e74563be2327883a0cffa4aa81e9827e58e99a113788b7505d",
+    "src/compute/energy-snapshot-sampler.js": "339cd3d1807f76a608859f99166081ed15dd99814a64bbf2974e27d151f4fa1e",
+    "src/compute/energy-reference-worker.js": "48a00cd46468453461b02f9fe08170c911e9b7345a04f182536c83e3a3283ffe",
+    "src/compute/live-energy-reference.js": "9e194cb340f7cc2c414f547e015a31e5556424ae513117158684872864296547",
+    "src/physics/pair-energy-partition.js": "38f9d521e9b5ad25a338f13fad58e59002d4092893ae1fc54f100a149e8b3c15",
+    "src/live-diagnostics.js": "c29e31f471ca3798c91d2a7fd4ecf501a60ae2147824fc1924d5439dcca256fc",
+    "src/energy-audit-cadence.js": "8a62629e9017b720275cd1cabd74973a51f508eb5c55cfbd5d139956a83322e7",
+    "experimento-ncorpos.html": "aaf0497d4403a5b112b00b51d1caa0b89bcf126b501a2d2e8a9e212a311686e1",
+    "scripts/build.mjs": "f2b6db942c3fe5c2197fc25a1e99c9d8610555ea1496727e614751033b41f720",
+    "scripts/audit-energy-reference-ui.mjs": "2d8c819410e3b6352a2c09d1f1afe930e527e8f5444cd505d77dc963bf74d836"
+  }
+}

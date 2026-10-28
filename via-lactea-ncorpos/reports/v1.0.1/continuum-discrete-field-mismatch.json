@@ -1,0 +1,212 @@
+[
+  {
+    "dataset": "agama",
+    "epsilon": 0.05,
+    "groups": [
+      {
+        "id": 0,
+        "name": "bulge",
+        "count": 150,
+        "forceDifferenceRmsRelative": 0.9171497949574243,
+        "verticalForceDifferenceRmsRelative": 0.7846979112499342
+      },
+      {
+        "id": 1,
+        "name": "thin",
+        "count": 354,
+        "forceDifferenceRmsRelative": 0.6228657049397488,
+        "verticalForceDifferenceRmsRelative": 0.6509957332947074
+      },
+      {
+        "id": 2,
+        "name": "thick",
+        "count": 96,
+        "forceDifferenceRmsRelative": 0.601088360323178,
+        "verticalForceDifferenceRmsRelative": 0.3450072041201969
+      },
+      {
+        "id": 3,
+        "name": "halo",
+        "count": 400,
+        "forceDifferenceRmsRelative": 0.2471162900317691,
+        "verticalForceDifferenceRmsRelative": 0.1512716169341332
+      }
+    ],
+    "qualification": "Discrete softened direct field versus actual unsoftened AGAMA mean at IDENTICAL initial positions. Includes softening bias + all-component discreteness + finite realization; not a pure integrator or BH error."
+  },
+  {
+    "dataset": "agama",
+    "epsilon": 0.1,
+    "groups": [
+      {
+        "id": 0,
+        "name": "bulge",
+        "count": 150,
+        "forceDifferenceRmsRelative": 0.8046960659178812,
+        "verticalForceDifferenceRmsRelative": 0.669703898512377
+      },
+      {
+        "id": 1,
+        "name": "thin",
+        "count": 354,
+        "forceDifferenceRmsRelative": 0.5753767209492895,
+        "verticalForceDifferenceRmsRelative": 0.5902648771458495
+      },
+      {
+        "id": 2,
+        "name": "thick",
+        "count": 96,
+        "forceDifferenceRmsRelative": 0.5930338158776587,
+        "verticalForceDifferenceRmsRelative": 0.33818205200859053
+      },
+      {
+        "id": 3,
+        "name": "halo",
+        "count": 400,
+        "forceDifferenceRmsRelative": 0.24336763139161982,
+        "verticalForceDifferenceRmsRelative": 0.15435397405422951
+      }
+    ],
+    "qualification": "Discrete softened direct field versus actual unsoftened AGAMA mean at IDENTICAL initial positions. Includes softening bias + all-component discreteness + finite realization; not a pure integrator or BH error."
+  },
+  {
+    "dataset": "agama",
+    "epsilon": 0.2,
+    "groups": [
+      {
+        "id": 0,
+        "name": "bulge",
+        "count": 150,
+        "forceDifferenceRmsRelative": 0.6349400700455323,
+        "verticalForceDifferenceRmsRelative": 0.5308165940318275
+      },
+      {
+        "id": 1,
+        "name": "thin",
+        "count": 354,
+        "forceDifferenceRmsRelative": 0.5214274815187596,
+        "verticalForceDifferenceRmsRelative": 0.5332424786286618
+      },
+      {
+        "id": 2,
+        "name": "thick",
+        "count": 96,
+        "forceDifferenceRmsRelative": 0.5644478942769523,
+        "verticalForceDifferenceRmsRelative": 0.3177642299041432
+      },
+      {
+        "id": 3,
+        "name": "halo",
+        "count": 400,
+        "forceDifferenceRmsRelative": 0.23433818138813672,
+        "verticalForceDifferenceRmsRelative": 0.16324934649391845
+      }
+    ],
+    "qualification": "Discrete softened direct field versus actual unsoftened AGAMA mean at IDENTICAL initial positions. Includes softening bias + all-component discreteness + finite realization; not a pure integrator or BH error."
+  },
+  {
+    "dataset": "agama-calibrated",
+    "epsilon": 0.05,
+    "groups": [
+      {
+        "id": 0,
+        "name": "bulge",
+        "count": 150,
+        "forceDifferenceRmsRelative": 0.5584592061926107,
+        "verticalForceDifferenceRmsRelative": 0.4830536188994102
+      },
+      {
+        "id": 1,
+        "name": "thin",
+        "count": 354,
+        "forceDifferenceRmsRelative": 1.7231083003206584,
+        "verticalForceDifferenceRmsRelative": 2.486672659107006
+      },
+      {
+        "id": 2,
+        "name": "thick",
+        "count": 96,
+        "forceDifferenceRmsRelative": 3.4234820960423065,
+        "verticalForceDifferenceRmsRelative": 0.8645599533888837
+      },
+      {
+        "id": 3,
+        "name": "halo",
+        "count": 400,
+        "forceDifferenceRmsRelative": 0.5624751458244305,
+        "verticalForceDifferenceRmsRelative": 0.6645533884348218
+      }
+    ],
+    "qualification": "Discrete softened direct field versus actual unsoftened AGAMA mean at IDENTICAL initial positions. Includes softening bias + all-component discreteness + finite realization; not a pure integrator or BH error."
+  },
+  {
+    "dataset": "agama-calibrated",
+    "epsilon": 0.1,
+    "groups": [
+      {
+        "id": 0,
+        "name": "bulge",
+        "count": 150,
+        "forceDifferenceRmsRelative": 0.4833094640814145,
+        "verticalForceDifferenceRmsRelative": 0.4009022101894019
+      },
+      {
+        "id": 1,
+        "name": "thin",
+        "count": 354,
+        "forceDifferenceRmsRelative": 1.437597540407466,
+        "verticalForceDifferenceRmsRelative": 2.0320862787822422
+      },
+      {
+        "id": 2,
+        "name": "thick",
+        "count": 96,
+        "forceDifferenceRmsRelative": 2.9337318529082648,
+        "verticalForceDifferenceRmsRelative": 0.7125233573858764
+      },
+      {
+        "id": 3,
+        "name": "halo",
+        "count": 400,
+        "forceDifferenceRmsRelative": 0.5251750771431694,
+        "verticalForceDifferenceRmsRelative": 0.5766072541665904
+      }
+    ],
+    "qualification": "Discrete softened direct field versus actual unsoftened AGAMA mean at IDENTICAL initial positions. Includes softening bias + all-component discreteness + finite realization; not a pure integrator or BH error."
+  },
+  {
+    "dataset": "agama-calibrated",
+    "epsilon": 0.2,
+    "groups": [
+      {
+        "id": 0,
+        "name": "bulge",
+        "count": 150,
+        "forceDifferenceRmsRelative": 0.46961071312804603,
+        "verticalForceDifferenceRmsRelative": 0.39255076761126667
+      },
+      {
+        "id": 1,
+        "name": "thin",
+        "count": 354,
+        "forceDifferenceRmsRelative": 0.9632322331871198,
+        "verticalForceDifferenceRmsRelative": 1.2631759125010418
+      },
+      {
+        "id": 2,
+        "name": "thick",
+        "count": 96,
+        "forceDifferenceRmsRelative": 1.893407518526726,
+        "verticalForceDifferenceRmsRelative": 0.5202707687828277
+      },
+      {
+        "id": 3,
+        "name": "halo",
+        "count": 400,
+        "forceDifferenceRmsRelative": 0.47579371154082223,
+        "verticalForceDifferenceRmsRelative": 0.4103623412902384
+      }
+    ],
+    "qualification": "Discrete softened direct field versus actual unsoftened AGAMA mean at IDENTICAL initial positions. Includes softening bias + all-component discreteness + finite realization; not a pure integrator or BH error."
+  }
+]

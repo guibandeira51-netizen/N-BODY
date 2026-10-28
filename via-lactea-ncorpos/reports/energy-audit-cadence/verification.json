@@ -1,0 +1,107 @@
+{
+  "status": "passed",
+  "mandatorySelectionVerified": true,
+  "cpu": [
+    {
+      "requestedCadenceMyr": 50,
+      "effectiveCadenceMyr": 50,
+      "realizationId": "6e20c44c-ac42-4acf-b317-08c448e9d108",
+      "n": 256,
+      "codeIdentity": "69dcff9a57a26743bebd3d1f0c2bd7038c2d3b2ff10a76d896ba03c601f81075",
+      "times": [
+        0,
+        51.30000000000001
+      ],
+      "E0": -1.3440892101862238
+    },
+    {
+      "requestedCadenceMyr": 100,
+      "effectiveCadenceMyr": 100,
+      "realizationId": "1adb4602-01b8-40c8-830a-8b03d9f244cd",
+      "n": 256,
+      "codeIdentity": "69dcff9a57a26743bebd3d1f0c2bd7038c2d3b2ff10a76d896ba03c601f81075",
+      "times": [
+        0,
+        102.50000000000006
+      ],
+      "E0": -1.3440892101862238
+    },
+    {
+      "requestedCadenceMyr": 150,
+      "effectiveCadenceMyr": 150,
+      "realizationId": "3b6db1d3-f270-4929-9946-fa52d5a38cb3",
+      "n": 256,
+      "codeIdentity": "69dcff9a57a26743bebd3d1f0c2bd7038c2d3b2ff10a76d896ba03c601f81075",
+      "times": [
+        0,
+        150.5
+      ],
+      "E0": -1.3440892101862238
+    },
+    {
+      "requestedCadenceMyr": 200,
+      "effectiveCadenceMyr": 200,
+      "realizationId": "3e64f575-7656-401b-9b40-bcf4b7b74009",
+      "n": 256,
+      "codeIdentity": "69dcff9a57a26743bebd3d1f0c2bd7038c2d3b2ff10a76d896ba03c601f81075",
+      "times": [
+        0,
+        201.69999999999982
+      ],
+      "E0": -1.3440892101862238
+    }
+  ],
+  "gpu": {
+    "requestedCadenceMyr": 50,
+    "effectiveCadenceMyr": 50,
+    "n": 1024,
+    "backend": "GPU WebGPU · f32",
+    "codeIdentity": "69dcff9a57a26743bebd3d1f0c2bd7038c2d3b2ff10a76d896ba03c601f81075",
+    "times": [
+      0,
+      50.79999999999999
+    ]
+  },
+  "physicalAndNumericalKernelsUnchanged": [
+    "src/compute/capability.js",
+    "src/compute/energy-reference-worker.js",
+    "src/compute/equilibrium-worker.js",
+    "src/compute/gpu-external-grid.js",
+    "src/compute/gpu-external-polynomial.js",
+    "src/compute/gpu-fixed-halo.js",
+    "src/compute/gpu.js",
+    "src/compute/live-energy-reference.js",
+    "src/compute/pair-energy-worker.js",
+    "src/compute/parallel-energy.js",
+    "src/compute/scheduling.js",
+    "src/compute/worker.js",
+    "src/physics/constants.js",
+    "src/physics/diagnostics.js",
+    "src/physics/disk-analysis.js",
+    "src/physics/equilibrium-analysis.js",
+    "src/physics/external-grid-polynomial.js",
+    "src/physics/external-grid.js",
+    "src/physics/fixed-halo.js",
+    "src/physics/forces.js",
+    "src/physics/granularity-analysis.js",
+    "src/physics/halo-experiments.js",
+    "src/physics/hamiltonian-bounds-105.js",
+    "src/physics/initial-allocated.js",
+    "src/physics/initial-legacy.js",
+    "src/physics/initial.js",
+    "src/physics/integrator.js",
+    "src/physics/iterative-initial.js",
+    "src/physics/jeans-axisymmetric.js",
+    "src/physics/laboratory.js",
+    "src/physics/live-energy.js",
+    "src/physics/mass-audit.js",
+    "src/physics/models.js",
+    "src/physics/pair-energy-partition.js",
+    "src/physics/rotation-field.js",
+    "src/physics/snapshot-model.js",
+    "src/physics/softened-model.js",
+    "src/physics/stationarity-105.js",
+    "src/physics/structure-diagnostics.js",
+    "src/physics/validation-101.js"
+  ]
+}

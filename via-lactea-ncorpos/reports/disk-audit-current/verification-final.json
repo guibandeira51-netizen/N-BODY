@@ -1,0 +1,23 @@
+{
+  "createdUTC": "2026-10-21T03:23:05.914Z",
+  "node": "v24.19.0",
+  "tests": {
+    "total": 168,
+    "passed": 168,
+    "failed": 0,
+    "log": "tests-final.txt"
+  },
+  "build": {
+    "command": "node scripts/build.mjs",
+    "exitCode": 0,
+    "sourceFilesChecked": 145,
+    "sourceMismatch": [],
+    "distMismatch": []
+  },
+  "historical": {
+    "files": 4560,
+    "bytes": 10909158704,
+    "preserved": true,
+    "details": "preservation-verification.json"
+  }
+}

@@ -1,0 +1,150 @@
+{
+  "computedUTC": "2026-10-22T23:22:18.073Z",
+  "runs": [
+    {
+      "mode": "particles",
+      "n": 1024,
+      "counts": [
+        153,
+        462,
+        409
+      ],
+      "stationary": [
+        {
+          "showGeometry": false,
+          "amplification": 8,
+          "arraysAndTimeExact": true,
+          "energyExact": true,
+          "steps": 0
+        },
+        {
+          "showGeometry": true,
+          "amplification": 8,
+          "arraysAndTimeExact": true,
+          "energyExact": true,
+          "steps": 0
+        },
+        {
+          "showGeometry": true,
+          "amplification": 12,
+          "arraysAndTimeExact": true,
+          "energyExact": true,
+          "steps": 0
+        },
+        {
+          "showGeometry": false,
+          "amplification": 12,
+          "arraysAndTimeExact": true,
+          "energyExact": true,
+          "steps": 0
+        }
+      ],
+      "evolving": [
+        {
+          "steps": 20,
+          "timeMyr": 2.0000000298023224,
+          "arraysAndTimeExact": true,
+          "energyExact": true
+        },
+        {
+          "steps": 40,
+          "timeMyr": 4.000000059604645,
+          "arraysAndTimeExact": true,
+          "energyExact": true
+        },
+        {
+          "steps": 60,
+          "timeMyr": 6.000000089406967,
+          "arraysAndTimeExact": true,
+          "energyExact": true
+        },
+        {
+          "steps": 80,
+          "timeMyr": 8.00000011920929,
+          "arraysAndTimeExact": true,
+          "energyExact": true
+        },
+        {
+          "steps": 100,
+          "timeMyr": 10.000000149011612,
+          "arraysAndTimeExact": true,
+          "energyExact": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "mode": "geometry",
+      "n": 615,
+      "counts": [
+        153,
+        462,
+        0
+      ],
+      "stationary": [
+        {
+          "showGeometry": false,
+          "amplification": 8,
+          "arraysAndTimeExact": true,
+          "energyExact": true,
+          "steps": 0
+        },
+        {
+          "showGeometry": true,
+          "amplification": 8,
+          "arraysAndTimeExact": true,
+          "energyExact": true,
+          "steps": 0
+        },
+        {
+          "showGeometry": true,
+          "amplification": 12,
+          "arraysAndTimeExact": true,
+          "energyExact": true,
+          "steps": 0
+        },
+        {
+          "showGeometry": false,
+          "amplification": 12,
+          "arraysAndTimeExact": true,
+          "energyExact": true,
+          "steps": 0
+        }
+      ],
+      "evolving": [
+        {
+          "steps": 20,
+          "timeMyr": 2.0000000298023224,
+          "arraysAndTimeExact": true,
+          "energyExact": true
+        },
+        {
+          "steps": 40,
+          "timeMyr": 4.000000059604645,
+          "arraysAndTimeExact": true,
+          "energyExact": true
+        },
+        {
+          "steps": 60,
+          "timeMyr": 6.000000089406967,
+          "arraysAndTimeExact": true,
+          "energyExact": true
+        },
+        {
+          "steps": 80,
+          "timeMyr": 8.00000011920929,
+          "arraysAndTimeExact": true,
+          "energyExact": true
+        },
+        {
+          "steps": 100,
+          "timeMyr": 10.000000149011612,
+          "arraysAndTimeExact": true,
+          "energyExact": true
+        }
+      ],
+      "passed": true
+    }
+  ],
+  "passed": true
+}

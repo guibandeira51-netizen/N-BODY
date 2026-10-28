@@ -1,0 +1,20 @@
+{
+  "createdUTC": "2026-10-21T04:16:09.597Z",
+  "baselineFiles": 57,
+  "changedExistingFiles": [
+    "scripts/build.mjs",
+    "experimento-ncorpos.html"
+  ],
+  "existingPhysicsIntegratorAndShadersUnchanged": true,
+  "tests": {
+    "total": 177,
+    "passed": 177,
+    "failed": 0
+  },
+  "build": {
+    "command": "node scripts/build.mjs",
+    "exitCode": 0
+  },
+  "candidatePromoted": false,
+  "historicalPolicy": "Historical scientific data not modified; baseline source and selected audit/parameter documents checked bytewise, no bulk rehash of multi-GB archive."
+}

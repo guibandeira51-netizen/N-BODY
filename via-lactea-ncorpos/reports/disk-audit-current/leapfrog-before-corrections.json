@@ -1,0 +1,130 @@
+{
+  "G": 0.04498502151469553,
+  "epsilon": 0.1,
+  "reference": "exact circular Plummer binary; eccentric pair shares same Hamiltonian; every-step energy, no endpoint-only selection",
+  "rows": [
+    {
+      "shape": "circular",
+      "dt": 0.1,
+      "timeMyr": 99.9999999999986,
+      "steps": 1000,
+      "maxEveryStepEnergyPercent": 3.0990402383217135e-7,
+      "maxEveryStepRelativeLz": 3.671027091521393e-15,
+      "maxEveryStepAbsoluteP": 0,
+      "finalSignedEnergyPercent": 2.1117094937963673e-7,
+      "positionErrorCircular": 0.0006281181343584679,
+      "positions": [
+        0.3995607647611773,
+        0.9167480399504864,
+        0,
+        -0.3995607647611773,
+        -0.9167480399504864,
+        0
+      ]
+    },
+    {
+      "shape": "circular",
+      "dt": 0.05,
+      "timeMyr": 99.99999999999646,
+      "steps": 2000,
+      "maxEveryStepEnergyPercent": 1.9371712901378562e-8,
+      "maxEveryStepRelativeLz": 4.195459533167306e-15,
+      "maxEveryStepAbsoluteP": 0,
+      "finalSignedEnergyPercent": 1.3197920512771404e-8,
+      "positionErrorCircular": 0.00015703444227764868,
+      "positions": [
+        0.39924514390608645,
+        0.9168545453473342,
+        0,
+        -0.39924514390608645,
+        -0.9168545453473342,
+        0
+      ]
+    },
+    {
+      "shape": "circular",
+      "dt": 0.025,
+      "timeMyr": 100.00000000000561,
+      "steps": 4000,
+      "maxEveryStepEnergyPercent": 1.209936734531172e-9,
+      "maxEveryStepRelativeLz": 1.2979702930736353e-14,
+      "maxEveryStepAbsoluteP": 0,
+      "finalSignedEnergyPercent": 8.228518788965718e-10,
+      "positionErrorCircular": 0.000039258917123361774,
+      "positions": [
+        0.3991662303039725,
+        0.9168811570096083,
+        0,
+        -0.3991662303039725,
+        -0.9168811570096083,
+        0
+      ]
+    },
+    {
+      "shape": "eccentric",
+      "dt": 0.1,
+      "timeMyr": 99.9999999999986,
+      "steps": 1000,
+      "maxEveryStepEnergyPercent": 0.10065726929706202,
+      "maxEveryStepRelativeLz": 2.9967568094052186e-15,
+      "maxEveryStepAbsoluteP": 0,
+      "finalSignedEnergyPercent": 0.00011138066501758961,
+      "positionErrorCircular": null,
+      "positions": [
+        -0.9500719387932726,
+        -0.0343536409539156,
+        0,
+        0.9500719387932726,
+        0.0343536409539156,
+        0
+      ]
+    },
+    {
+      "shape": "eccentric",
+      "dt": 0.05,
+      "timeMyr": 99.99999999999646,
+      "steps": 2000,
+      "maxEveryStepEnergyPercent": 0.025198680763193267,
+      "maxEveryStepRelativeLz": 6.3681082199860896e-15,
+      "maxEveryStepAbsoluteP": 0,
+      "finalSignedEnergyPercent": 0.00002782598751757189,
+      "positionErrorCircular": null,
+      "positions": [
+        -0.9500006078343611,
+        -0.037098643173901116,
+        0,
+        0.9500006078343611,
+        0.037098643173901116,
+        0
+      ]
+    },
+    {
+      "shape": "eccentric",
+      "dt": 0.025,
+      "timeMyr": 100.00000000000561,
+      "steps": 4000,
+      "maxEveryStepEnergyPercent": 0.006302410355484482,
+      "maxEveryStepRelativeLz": 1.3860000243499136e-14,
+      "maxEveryStepAbsoluteP": 0,
+      "finalSignedEnergyPercent": 0.0000069552948997279295,
+      "positionErrorCircular": null,
+      "positions": [
+        -0.949981518467268,
+        -0.03778551321831151,
+        0,
+        0.949981518467268,
+        0.03778551321831151,
+        0
+      ]
+    }
+  ],
+  "observedCircularOrders": [
+    1.9999549025649208,
+    1.9999887346462413
+  ],
+  "observedEccentricEnergyOrders": [
+    1.9980312541943468,
+    1.9993726080305976
+  ],
+  "qualification": "These simple-system convergence tests validate numerical order, not equilibrium or all trajectories in a galaxy."
+}

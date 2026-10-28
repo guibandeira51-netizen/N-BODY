@@ -1,0 +1,13 @@
+{
+  "backendOptions": [
+    "Automático · ensaio local",
+    "GPU · WebGPU direto f32"
+  ],
+  "counts": "Nova realização: bojo 6.119 · disco 18.359 · halo 16.318. Total: 40.796. Halo ×1.",
+  "forceOptions": [
+    "Automático · ensaio local",
+    "Direto O(N²)"
+  ],
+  "n": "40796",
+  "status": "GPU avaliada: N=10.000, 2.96 ms/passo · N=30.000, 8.76 ms/passo · N=40.796, 14.97 ms/passo. N automático verificado antes de iniciar; alvo de cálculo ~20 ms/passo."
+}

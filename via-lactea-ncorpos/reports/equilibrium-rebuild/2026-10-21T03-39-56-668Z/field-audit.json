@@ -1,0 +1,2028 @@
+{
+  "schema": "equilibrium-rebuild-field-audit-v1",
+  "createdUTC": "2026-10-21T03:40:44.721Z",
+  "epsilonKpc": 0.1,
+  "variants": [
+    {
+      "id": "coarse",
+      "orders": [
+        16,
+        8,
+        16
+      ],
+      "nu": 64,
+      "nv": 64
+    },
+    {
+      "id": "quadrature",
+      "orders": [
+        32,
+        12,
+        24
+      ],
+      "nu": 64,
+      "nv": 64
+    },
+    {
+      "id": "grid",
+      "orders": [
+        32,
+        12,
+        24
+      ],
+      "nu": 112,
+      "nv": 96
+    }
+  ],
+  "rows": [
+    {
+      "R": 0.1,
+      "z": 0,
+      "component": 0,
+      "analyticAcceleration": [
+        -0.018588851865576662,
+        0,
+        0
+      ],
+      "convolution": [
+        -0.008710406930176013,
+        0,
+        0
+      ],
+      "quadratureRelativeForceChange": 0.00009143128404765866,
+      "coarseGridError": 0.00006983271311335136,
+      "fineGridError": 0.000027400124933216535,
+      "gridRelativeForceChange": 0.0000972328380465679,
+      "gradientRelativeError": 1.3182187142010209e-9
+    },
+    {
+      "R": 0.1,
+      "z": 0,
+      "component": 1,
+      "analyticAcceleration": [
+        -0.0008656654333832406,
+        0,
+        0
+      ],
+      "convolution": [
+        -0.0008341130374223626,
+        0,
+        0
+      ],
+      "quadratureRelativeForceChange": 0.000016398521785263046,
+      "coarseGridError": 0.0002227005021067592,
+      "fineGridError": 0.00007958351118087985,
+      "gridRelativeForceChange": 0.00030228401328763905,
+      "gradientRelativeError": 1.3958398001030404e-9
+    },
+    {
+      "R": 0.1,
+      "z": 0,
+      "component": 2,
+      "analyticAcceleration": [
+        -0.004935979022463663,
+        0,
+        0
+      ],
+      "convolution": [
+        -0.0026109818703638045,
+        0,
+        0
+      ],
+      "quadratureRelativeForceChange": 0.00006776888304641223,
+      "coarseGridError": 0.000013504801335501486,
+      "fineGridError": 0.000005960696764552315,
+      "gridRelativeForceChange": 0.0000194654981000538,
+      "gradientRelativeError": 5.48459290904768e-10
+    },
+    {
+      "R": 0.1,
+      "z": 0.05,
+      "component": 0,
+      "analyticAcceleration": [
+        -0.016275222538901606,
+        0,
+        -0.008137611269450803
+      ],
+      "convolution": [
+        -0.008249134001843334,
+        0,
+        -0.004126184095606991
+      ],
+      "quadratureRelativeForceChange": 0.0010087410084535602,
+      "coarseGridError": 0.00017739728188335166,
+      "fineGridError": 0.000031757137377649086,
+      "gridRelativeForceChange": 0.0001958432191800073,
+      "gradientRelativeError": 1.4819741888263228e-9
+    },
+    {
+      "R": 0.1,
+      "z": 0.05,
+      "component": 1,
+      "analyticAcceleration": [
+        -0.000862171183364285,
+        0,
+        -0.004977934275856687
+      ],
+      "convolution": [
+        -0.0008313501530190099,
+        0,
+        -0.004084308443135172
+      ],
+      "quadratureRelativeForceChange": 0.00044699610401097075,
+      "coarseGridError": 0.00019337855576781373,
+      "fineGridError": 0.00011021216707868419,
+      "gridRelativeForceChange": 0.00009981191455141737,
+      "gradientRelativeError": 1.2431769997520205e-9
+    },
+    {
+      "R": 0.1,
+      "z": 0.05,
+      "component": 2,
+      "analyticAcceleration": [
+        -0.0044104553434099495,
+        0,
+        -0.0022052276717049748
+      ],
+      "convolution": [
+        -0.0025038415051628856,
+        0,
+        -0.0012522787749104638
+      ],
+      "quadratureRelativeForceChange": 0.0007360057461937461,
+      "coarseGridError": 0.00008453567798427842,
+      "fineGridError": 0.000012548739829092045,
+      "gridRelativeForceChange": 0.00009707511355833773,
+      "gradientRelativeError": 9.341716437593173e-10
+    },
+    {
+      "R": 0.1,
+      "z": 0.28,
+      "component": 0,
+      "analyticAcceleration": [
+        -0.004494865046090324,
+        0,
+        -0.012585622129052908
+      ],
+      "convolution": [
+        -0.003617484525355256,
+        0,
+        -0.010132575933746777
+      ],
+      "quadratureRelativeForceChange": 0.0008648434086786825,
+      "coarseGridError": 0.000025720825724937394,
+      "fineGridError": 0.000026345139890192094,
+      "gridRelativeForceChange": 0.000048363759842535474,
+      "gradientRelativeError": 2.315014302217024e-10
+    },
+    {
+      "R": 0.1,
+      "z": 0.28,
+      "component": 1,
+      "analyticAcceleration": [
+        -0.0007800401014628125,
+        0,
+        -0.01873126164434979
+      ],
+      "convolution": [
+        -0.0007620985926157148,
+        0,
+        -0.01692341509802518
+      ],
+      "quadratureRelativeForceChange": 0.00010440025488919351,
+      "coarseGridError": 0.00001064943997803322,
+      "fineGridError": 0.000016720682775092987,
+      "gridRelativeForceChange": 0.00002442183499073674,
+      "gradientRelativeError": 1.9998854719035082e-10
+    },
+    {
+      "R": 0.1,
+      "z": 0.28,
+      "component": 2,
+      "analyticAcceleration": [
+        -0.0016327373066659778,
+        0,
+        -0.004571664458664739
+      ],
+      "convolution": [
+        -0.001382169292067354,
+        0,
+        -0.0038708766024665602
+      ],
+      "quadratureRelativeForceChange": 0.0005026236386425192,
+      "coarseGridError": 0.00003929105679363996,
+      "fineGridError": 0.00001879551340711931,
+      "gridRelativeForceChange": 0.00005806404675617588,
+      "gradientRelativeError": 1.0047445779857949e-9
+    },
+    {
+      "R": 0.1,
+      "z": 1,
+      "component": 0,
+      "analyticAcceleration": [
+        -0.0005567418706124108,
+        0,
+        -0.005567418706124107
+      ],
+      "convolution": [
+        -0.0005377323010213831,
+        0,
+        -0.005377973834477904
+      ],
+      "quadratureRelativeForceChange": 0.00025301277008889765,
+      "coarseGridError": 0.000019704199515622756,
+      "fineGridError": 0.000007215804207962222,
+      "gridRelativeForceChange": 0.000022062894278539814,
+      "gradientRelativeError": 6.065077283917063e-11
+    },
+    {
+      "R": 0.1,
+      "z": 1,
+      "component": 1,
+      "analyticAcceleration": [
+        -0.0004640128941226317,
+        0,
+        -0.018044960592932528
+      ],
+      "convolution": [
+        -0.00046158389765552386,
+        0,
+        -0.017835314791778124
+      ],
+      "quadratureRelativeForceChange": 0.00022533494282813286,
+      "coarseGridError": 0.00001813301338784265,
+      "fineGridError": 0.0000020718325298434707,
+      "gridRelativeForceChange": 0.000018945840228505955,
+      "gradientRelativeError": 3.2822774648175854e-11
+    },
+    {
+      "R": 0.1,
+      "z": 1,
+      "component": 2,
+      "analyticAcceleration": [
+        -0.0004557303463766248,
+        0,
+        -0.004557303463766248
+      ],
+      "convolution": [
+        -0.00044357574973992166,
+        0,
+        -0.004435906490748294
+      ],
+      "quadratureRelativeForceChange": 0.00008442824592569505,
+      "coarseGridError": 0.000023789307641936132,
+      "fineGridError": 0.000007513801029595985,
+      "gridRelativeForceChange": 0.00002970676065967739,
+      "gradientRelativeError": 4.824389577616303e-10
+    },
+    {
+      "R": 0.3,
+      "z": 0,
+      "component": 0,
+      "analyticAcceleration": [
+        -0.01330917796292767,
+        0,
+        0
+      ],
+      "convolution": [
+        -0.010742066989007273,
+        0,
+        0
+      ],
+      "quadratureRelativeForceChange": 0.00027038811792159663,
+      "coarseGridError": 0.00002835892045899415,
+      "fineGridError": 0.000002168413346476205,
+      "gridRelativeForceChange": 0.000026190507112517944,
+      "gradientRelativeError": 8.678860122556551e-11
+    },
+    {
+      "R": 0.3,
+      "z": 0,
+      "component": 1,
+      "analyticAcceleration": [
+        -0.002568322549882328,
+        0,
+        0
+      ],
+      "convolution": [
+        -0.002475468286430776,
+        0,
+        0
+      ],
+      "quadratureRelativeForceChange": 0.000016413175870484564,
+      "coarseGridError": 0.00026099243922826084,
+      "fineGridError": 0.000009643861020182453,
+      "gridRelativeForceChange": 0.0002513485782080784,
+      "gradientRelativeError": 4.122342323593904e-10
+    },
+    {
+      "R": 0.3,
+      "z": 0,
+      "component": 2,
+      "analyticAcceleration": [
+        -0.004853386264679309,
+        0,
+        0
+      ],
+      "convolution": [
+        -0.004117833784126257,
+        0,
+        0
+      ],
+      "quadratureRelativeForceChange": 0.0001562736940641289,
+      "coarseGridError": 0.000025848281058779664,
+      "fineGridError": 2.8716341812733367e-7,
+      "gridRelativeForceChange": 0.00002556111764065233,
+      "gradientRelativeError": 5.402139790808172e-10
+    },
+    {
+      "R": 0.3,
+      "z": 0.05,
+      "component": 0,
+      "analyticAcceleration": [
+        -0.013044911641524397,
+        0,
+        -0.002174151940254066
+      ],
+      "convolution": [
+        -0.010569408270721722,
+        0,
+        -0.0017622704161443395
+      ],
+      "quadratureRelativeForceChange": 0.00041301800782334535,
+      "coarseGridError": 0.00004459368669767825,
+      "fineGridError": 0.0000163168531662267,
+      "gridRelativeForceChange": 0.00004672845661085259,
+      "gradientRelativeError": 1.789926932867185e-10
+    },
+    {
+      "R": 0.3,
+      "z": 0.05,
+      "component": 1,
+      "analyticAcceleration": [
+        -0.0025580317358022708,
+        0,
+        -0.004923118943615109
+      ],
+      "convolution": [
+        -0.00246732617760555,
+        0,
+        -0.004040810509157572
+      ],
+      "quadratureRelativeForceChange": 0.00039112742386642656,
+      "coarseGridError": 0.0002080341543014322,
+      "fineGridError": 0.00009562468052377681,
+      "gridRelativeForceChange": 0.0001460592715722139,
+      "gradientRelativeError": 1.0664363628195587e-9
+    },
+    {
+      "R": 0.3,
+      "z": 0.05,
+      "component": 2,
+      "analyticAcceleration": [
+        -0.0047856893912588,
+        0,
+        -0.0007976148985431333
+      ],
+      "convolution": [
+        -0.004073078381165013,
+        0,
+        -0.0006790022019146886
+      ],
+      "quadratureRelativeForceChange": 0.00023773115187632053,
+      "coarseGridError": 0.000020941108408270406,
+      "fineGridError": 0.00001839995235593597,
+      "gridRelativeForceChange": 0.00003227617933575296,
+      "gradientRelativeError": 4.94888578463573e-10
+    },
+    {
+      "R": 0.3,
+      "z": 0.28,
+      "component": 0,
+      "analyticAcceleration": [
+        -0.008266557272694593,
+        0,
+        -0.007715453454514955
+      ],
+      "convolution": [
+        -0.007188581821653583,
+        0,
+        -0.0067094084898544504
+      ],
+      "quadratureRelativeForceChange": 0.00008956978953570474,
+      "coarseGridError": 0.00008708689947824437,
+      "fineGridError": 0.00002300208007745543,
+      "gridRelativeForceChange": 0.00010907854945153936,
+      "gradientRelativeError": 2.1459204069084144e-10
+    },
+    {
+      "R": 0.3,
+      "z": 0.28,
+      "component": 1,
+      "analyticAcceleration": [
+        -0.002316001022780061,
+        0,
+        -0.01853820123902233
+      ],
+      "convolution": [
+        -0.002263145511748462,
+        0,
+        -0.0167527253993451
+      ],
+      "quadratureRelativeForceChange": 0.00010513926827410004,
+      "coarseGridError": 0.000034871404669668596,
+      "fineGridError": 0.000016054216769121793,
+      "gridRelativeForceChange": 0.00003874190556964356,
+      "gradientRelativeError": 1.3962209633889667e-10
+    },
+    {
+      "R": 0.3,
+      "z": 0.28,
+      "component": 2,
+      "analyticAcceleration": [
+        -0.0035154998207833203,
+        0,
+        -0.0032811331660644325
+      ],
+      "convolution": [
+        -0.003164769048405451,
+        0,
+        -0.002953799022719964
+      ],
+      "quadratureRelativeForceChange": 0.00004614995352928336,
+      "coarseGridError": 0.00002467403055691432,
+      "fineGridError": 0.00000875537106957628,
+      "gridRelativeForceChange": 0.000019612069242966163,
+      "gradientRelativeError": 5.571949583409176e-10
+    },
+    {
+      "R": 0.3,
+      "z": 1,
+      "component": 0,
+      "analyticAcceleration": [
+        -0.0015469316844263046,
+        0,
+        -0.005156438948087682
+      ],
+      "convolution": [
+        -0.0014975218659634328,
+        0,
+        -0.0049917038375360085
+      ],
+      "quadratureRelativeForceChange": 0.000626421304085594,
+      "coarseGridError": 0.00004433406554107609,
+      "fineGridError": 0.0000013403148357016711,
+      "gridRelativeForceChange": 0.00004329870963609494,
+      "gradientRelativeError": 3.8137545154424935e-11
+    },
+    {
+      "R": 0.3,
+      "z": 1,
+      "component": 1,
+      "analyticAcceleration": [
+        -0.0013818649461391486,
+        0,
+        -0.017913078719493252
+      ],
+      "convolution": [
+        -0.001374671797492324,
+        0,
+        -0.01770555020269165
+      ],
+      "quadratureRelativeForceChange": 0.00022144282549630347,
+      "coarseGridError": 0.000027757860346261114,
+      "fineGridError": 7.631621403228279e-7,
+      "gridRelativeForceChange": 0.00002718731970847881,
+      "gradientRelativeError": 9.935406156078223e-12
+    },
+    {
+      "R": 0.3,
+      "z": 1,
+      "component": 2,
+      "analyticAcceleration": [
+        -0.001311931420737651,
+        0,
+        -0.00437310473579217
+      ],
+      "convolution": [
+        -0.00127896821960497,
+        0,
+        -0.00426321926320765
+      ],
+      "quadratureRelativeForceChange": 0.00018983015507727263,
+      "coarseGridError": 0.00006196548902567715,
+      "fineGridError": 0.000002112424764556815,
+      "gridRelativeForceChange": 0.000059857256720158355,
+      "gradientRelativeError": 4.71372479199646e-10
+    },
+    {
+      "R": 1,
+      "z": 0,
+      "component": 0,
+      "analyticAcceleration": [
+        -0.005623127689336941,
+        0,
+        0
+      ],
+      "convolution": [
+        -0.0054301796338610455,
+        0,
+        0
+      ],
+      "quadratureRelativeForceChange": 0.00013237973503089042,
+      "coarseGridError": 0.000019538320817475807,
+      "fineGridError": 0.0000026688673823724815,
+      "gridRelativeForceChange": 0.00002220718819984829,
+      "gradientRelativeError": 3.355364937733779e-11
+    },
+    {
+      "R": 1,
+      "z": 0,
+      "component": 1,
+      "analyticAcceleration": [
+        -0.007586727758819624,
+        0,
+        0
+      ],
+      "convolution": [
+        -0.00733564124987143,
+        0,
+        0
+      ],
+      "quadratureRelativeForceChange": 0.000015451062494413238,
+      "coarseGridError": 0.00004699607838957797,
+      "fineGridError": 0.00000988462679573572,
+      "gridRelativeForceChange": 0.00005688070518531369,
+      "gradientRelativeError": 1.3737643390064762e-11
+    },
+    {
+      "R": 1,
+      "z": 0,
+      "component": 2,
+      "analyticAcceleration": [
+        -0.004581875497688842,
+        0,
+        0
+      ],
+      "convolution": [
+        -0.004458884588725315,
+        0,
+        0
+      ],
+      "quadratureRelativeForceChange": 0.00005372961675724305,
+      "coarseGridError": 0.000017146124002686027,
+      "fineGridError": 0.0000027120534379504224,
+      "gridRelativeForceChange": 0.00001985817744063645,
+      "gradientRelativeError": 2.1908930216655934e-10
+    },
+    {
+      "R": 1,
+      "z": 0.05,
+      "component": 0,
+      "analyticAcceleration": [
+        -0.005609102741428464,
+        0,
+        -0.0002804551370714232
+      ],
+      "convolution": [
+        -0.005417041596804726,
+        0,
+        -0.0002708167889588887
+      ],
+      "quadratureRelativeForceChange": 0.00016429689666666518,
+      "coarseGridError": 0.00004883834347297435,
+      "fineGridError": 0.000013378308357743448,
+      "gridRelativeForceChange": 0.00003932880657699737,
+      "gradientRelativeError": 5.008225052124855e-11
+    },
+    {
+      "R": 1,
+      "z": 0.05,
+      "component": 1,
+      "analyticAcceleration": [
+        -0.007558674429064373,
+        0,
+        -0.004364166333379182
+      ],
+      "convolution": [
+        -0.00731329719486045,
+        0,
+        -0.003595664269355968
+      ],
+      "quadratureRelativeForceChange": 0.00021207857142990005,
+      "coarseGridError": 0.00011601423556447845,
+      "fineGridError": 0.00005677655060867093,
+      "gridRelativeForceChange": 0.00007420032096195599,
+      "gradientRelativeError": 3.1081389120625623e-10
+    },
+    {
+      "R": 1,
+      "z": 0.05,
+      "component": 2,
+      "analyticAcceleration": [
+        -0.004575697918210753,
+        0,
+        -0.00022878489591053768
+      ],
+      "convolution": [
+        -0.004453109381757889,
+        0,
+        -0.00022264740080953928
+      ],
+      "quadratureRelativeForceChange": 0.0000615299945992349,
+      "coarseGridError": 0.00003349783390512026,
+      "fineGridError": 0.000010917928051091255,
+      "gridRelativeForceChange": 0.000027374506815721754,
+      "gradientRelativeError": 1.0266824556601314e-9
+    },
+    {
+      "R": 1,
+      "z": 0.28,
+      "component": 0,
+      "analyticAcceleration": [
+        -0.005212468453517926,
+        0,
+        -0.0014594911669850194
+      ],
+      "convolution": [
+        -0.005044468447551589,
+        0,
+        -0.001412430575742595
+      ],
+      "quadratureRelativeForceChange": 0.00040877731497018777,
+      "coarseGridError": 0.000048446510227580404,
+      "fineGridError": 0.000013343115335958838,
+      "gridRelativeForceChange": 0.00004090289850416943,
+      "gradientRelativeError": 4.170821620328934e-11
+    },
+    {
+      "R": 1,
+      "z": 0.28,
+      "component": 1,
+      "analyticAcceleration": [
+        -0.006894630275540375,
+        0,
+        -0.016556215941977325
+      ],
+      "convolution": [
+        -0.006750112984467129,
+        0,
+        -0.014996497733846884
+      ],
+      "quadratureRelativeForceChange": 0.00011268935539761932,
+      "coarseGridError": 0.000023951396055745246,
+      "fineGridError": 0.000014199468344136472,
+      "gridRelativeForceChange": 0.00003436282347834259,
+      "gradientRelativeError": 1.3231977900588503e-10
+    },
+    {
+      "R": 1,
+      "z": 0.28,
+      "component": 2,
+      "analyticAcceleration": [
+        -0.004398532697872422,
+        0,
+        -0.0012315891554042784
+      ],
+      "convolution": [
+        -0.0042871005162989076,
+        0,
+        -0.001200383415493014
+      ],
+      "quadratureRelativeForceChange": 0.00013174505852328795,
+      "coarseGridError": 0.000029085315080099706,
+      "fineGridError": 0.00001842789193165501,
+      "gridRelativeForceChange": 0.000021943040771897177,
+      "gradientRelativeError": 8.319510573971832e-10
+    },
+    {
+      "R": 1,
+      "z": 1,
+      "component": 0,
+      "analyticAcceleration": [
+        -0.002728799132600387,
+        0,
+        -0.002728799132600387
+      ],
+      "convolution": [
+        -0.002678074756516832,
+        0,
+        -0.00267804384399972
+      ],
+      "quadratureRelativeForceChange": 0.00011917818460926928,
+      "coarseGridError": 0.00008403689097342306,
+      "fineGridError": 0.0000284621536069551,
+      "gridRelativeForceChange": 0.00011096393217134845,
+      "gradientRelativeError": 2.431281453769218e-11
+    },
+    {
+      "R": 1,
+      "z": 1,
+      "component": 1,
+      "analyticAcceleration": [
+        -0.00424778734306989,
+        0,
+        -0.016519186467390704
+      ],
+      "convolution": [
+        -0.0042270051343922055,
+        0,
+        -0.016333562774147724
+      ],
+      "quadratureRelativeForceChange": 0.00018264530453719244,
+      "coarseGridError": 0.00003358936527277121,
+      "fineGridError": 0.000005151590024817708,
+      "gridRelativeForceChange": 0.00003874088001370788,
+      "gradientRelativeError": 4.8286461223701285e-11
+    },
+    {
+      "R": 1,
+      "z": 1,
+      "component": 2,
+      "analyticAcceleration": [
+        -0.0031346205961638534,
+        0,
+        -0.0031346205961638534
+      ],
+      "convolution": [
+        -0.0030856650331265107,
+        0,
+        -0.003085657865195102
+      ],
+      "quadratureRelativeForceChange": 0.000017314480835130373,
+      "coarseGridError": 0.000008972063642758569,
+      "fineGridError": 0.000008518912101471713,
+      "gridRelativeForceChange": 0.0000044357127731571875,
+      "gradientRelativeError": 3.249715653907131e-10
+    },
+    {
+      "R": 3,
+      "z": 0,
+      "component": 0,
+      "analyticAcceleration": [
+        -0.0014057819223342353,
+        0,
+        0
+      ],
+      "convolution": [
+        -0.0013996363162934902,
+        0,
+        0
+      ],
+      "quadratureRelativeForceChange": 0.0005476720016743661,
+      "coarseGridError": 0.00002258163082224986,
+      "fineGridError": 2.3844138325359886e-7,
+      "gridRelativeForceChange": 0.00002282007220550346,
+      "gradientRelativeError": 5.1078416742460874e-11
+    },
+    {
+      "R": 3,
+      "z": 0,
+      "component": 1,
+      "analyticAcceleration": [
+        -0.010448896804710183,
+        0,
+        0
+      ],
+      "convolution": [
+        -0.010252319414813795,
+        0,
+        0
+      ],
+      "quadratureRelativeForceChange": 0.000042252342804421095,
+      "coarseGridError": 0.00009361449523693206,
+      "fineGridError": 7.878978314862347e-7,
+      "gridRelativeForceChange": 0.00009440239306841829,
+      "gradientRelativeError": 7.077254998985001e-12
+    },
+    {
+      "R": 3,
+      "z": 0,
+      "component": 2,
+      "analyticAcceleration": [
+        -0.003931794083330101,
+        0,
+        0
+      ],
+      "convolution": [
+        -0.0039132523217345165,
+        0,
+        0
+      ],
+      "quadratureRelativeForceChange": 0.0001394771374956643,
+      "coarseGridError": 0.000001993311601704825,
+      "fineGridError": 5.573382150537041e-8,
+      "gridRelativeForceChange": 0.0000020490454232101954,
+      "gradientRelativeError": 5.914413888356198e-11
+    },
+    {
+      "R": 3,
+      "z": 0.05,
+      "component": 0,
+      "analyticAcceleration": [
+        -0.0014052939510211383,
+        0,
+        -0.000023421565850352307
+      ],
+      "convolution": [
+        -0.001399151931882073,
+        0,
+        -0.00002331824536078423
+      ],
+      "quadratureRelativeForceChange": 0.0005483289273624217,
+      "coarseGridError": 0.000023433807460234385,
+      "fineGridError": 0.0000013880202031062552,
+      "gridRelativeForceChange": 0.00002413952745782422,
+      "gradientRelativeError": 1.336883835179026e-10
+    },
+    {
+      "R": 3,
+      "z": 0.05,
+      "component": 1,
+      "analyticAcceleration": [
+        -0.010425875010376572,
+        0,
+        -0.0020065358083311826
+      ],
+      "convolution": [
+        -0.010233397556265435,
+        0,
+        -0.0016832820212785262
+      ],
+      "quadratureRelativeForceChange": 0.00010175933611566976,
+      "coarseGridError": 0.00009336861842804263,
+      "fineGridError": 0.00001746529183577037,
+      "gridRelativeForceChange": 0.00009850093430390914,
+      "gradientRelativeError": 1.3007970510414107e-9
+    },
+    {
+      "R": 3,
+      "z": 0.05,
+      "component": 2,
+      "analyticAcceleration": [
+        -0.003931129105069757,
+        0,
+        -0.0000655188184178293
+      ],
+      "convolution": [
+        -0.003912594554656862,
+        0,
+        -0.00006520963169042687
+      ],
+      "quadratureRelativeForceChange": 0.00013956302483390814,
+      "coarseGridError": 0.0000019783434323547634,
+      "fineGridError": 0.000002179859412997985,
+      "gridRelativeForceChange": 0.000003377650599444892,
+      "gradientRelativeError": 3.0994999717629376e-10
+    },
+    {
+      "R": 3,
+      "z": 0.28,
+      "component": 0,
+      "analyticAcceleration": [
+        -0.0013906182288450008,
+        0,
+        -0.00012979103469220007
+      ],
+      "convolution": [
+        -0.0013845848332480902,
+        0,
+        -0.0001292259637657332
+      ],
+      "quadratureRelativeForceChange": 0.0005646963357643463,
+      "coarseGridError": 0.000041237173825911196,
+      "fineGridError": 0.0000067317713837366626,
+      "gridRelativeForceChange": 0.00004733465219970147,
+      "gradientRelativeError": 3.7706251184610065e-11
+    },
+    {
+      "R": 3,
+      "z": 0.28,
+      "component": 1,
+      "analyticAcceleration": [
+        -0.00986346891801646,
+        0,
+        -0.00789511619030038
+      ],
+      "convolution": [
+        -0.009744190241749554,
+        0,
+        -0.00723247576278499
+      ],
+      "quadratureRelativeForceChange": 0.00013133674377703808,
+      "coarseGridError": 0.00008605031099910099,
+      "fineGridError": 0.0000025692307539183353,
+      "gridRelativeForceChange": 0.00008476282631190302,
+      "gradientRelativeError": 9.150059978423283e-10
+    },
+    {
+      "R": 3,
+      "z": 0.28,
+      "component": 2,
+      "analyticAcceleration": [
+        -0.003911074162845304,
+        0,
+        -0.00036503358853222834
+      ],
+      "convolution": [
+        -0.0038927566730949013,
+        0,
+        -0.0003633233881626839
+      ],
+      "quadratureRelativeForceChange": 0.0001417771427353831,
+      "coarseGridError": 0.0000174085157760547,
+      "fineGridError": 0.00000778766449492701,
+      "gridRelativeForceChange": 0.00002513065933529454,
+      "gradientRelativeError": 3.5017908530073654e-10
+    },
+    {
+      "R": 3,
+      "z": 1,
+      "component": 0,
+      "analyticAcceleration": [
+        -0.0012316777482691864,
+        0,
+        -0.00041055924942306213
+      ],
+      "convolution": [
+        -0.001226804183133295,
+        0,
+        -0.0004089278235375161
+      ],
+      "quadratureRelativeForceChange": 0.0006074436097641019,
+      "coarseGridError": 0.00004210103814809325,
+      "fineGridError": 4.105336134219325e-7,
+      "gridRelativeForceChange": 0.00004246155654130643,
+      "gradientRelativeError": 4.986870512118196e-11
+    },
+    {
+      "R": 3,
+      "z": 1,
+      "component": 1,
+      "analyticAcceleration": [
+        -0.007207446731741944,
+        0,
+        -0.009342994120588045
+      ],
+      "convolution": [
+        -0.007184507217725063,
+        0,
+        -0.009255928646948212
+      ],
+      "quadratureRelativeForceChange": 0.0000835504833118963,
+      "coarseGridError": 0.00007188571448411061,
+      "fineGridError": 0.0000018148944566254949,
+      "gridRelativeForceChange": 0.00007231702542164498,
+      "gradientRelativeError": 4.1376436337769394e-11
+    },
+    {
+      "R": 3,
+      "z": 1,
+      "component": 2,
+      "analyticAcceleration": [
+        -0.003686476479663951,
+        0,
+        -0.001228825493221317
+      ],
+      "convolution": [
+        -0.003670501403668659,
+        0,
+        -0.0012234985080380517
+      ],
+      "quadratureRelativeForceChange": 0.00014955924505086554,
+      "coarseGridError": 0.000058373836723419444,
+      "fineGridError": 1.9359335256527658e-7,
+      "gridRelativeForceChange": 0.00005823577153759986,
+      "gradientRelativeError": 3.3026729898077323e-10
+    },
+    {
+      "R": 8.2,
+      "z": 0,
+      "component": 0,
+      "analyticAcceleration": [
+        -0.0002657432745433338,
+        0,
+        0
+      ],
+      "convolution": [
+        -0.00026559237278667906,
+        0,
+        0
+      ],
+      "quadratureRelativeForceChange": 0.00013596408255428673,
+      "coarseGridError": 0.000002076476049527532,
+      "fineGridError": 1.273069308661634e-7,
+      "gridRelativeForceChange": 0.0000019491691186613687,
+      "gradientRelativeError": 7.908085870551728e-11
+    },
+    {
+      "R": 8.2,
+      "z": 0,
+      "component": 1,
+      "analyticAcceleration": [
+        -0.003641347753601273,
+        0,
+        0
+      ],
+      "convolution": [
+        -0.0036251307794853966,
+        0,
+        0
+      ],
+      "quadratureRelativeForceChange": 0.00006587612482067416,
+      "coarseGridError": 0.000049186722897522516,
+      "fineGridError": 0.0000018433492419502393,
+      "gridRelativeForceChange": 0.00005103007213947275,
+      "gradientRelativeError": 4.284253513917378e-11
+    },
+    {
+      "R": 8.2,
+      "z": 0,
+      "component": 2,
+      "analyticAcceleration": [
+        -0.0028079805635366,
+        0,
+        0
+      ],
+      "convolution": [
+        -0.0028054551206206217,
+        0,
+        0
+      ],
+      "quadratureRelativeForceChange": 0.00008408725650966637,
+      "coarseGridError": 0.000012673365824787255,
+      "fineGridError": 3.764772865852901e-7,
+      "gridRelativeForceChange": 0.000013049843111372545,
+      "gradientRelativeError": 1.4146059949403166e-12
+    },
+    {
+      "R": 8.2,
+      "z": 0.05,
+      "component": 0,
+      "analyticAcceleration": [
+        -0.00026572952850016575,
+        0,
+        -0.0000016203020030497915
+      ],
+      "convolution": [
+        -0.0002655786334272823,
+        0,
+        -0.00000161910056415083
+      ],
+      "quadratureRelativeForceChange": 0.0001359473827423736,
+      "coarseGridError": 0.000005944860519623096,
+      "fineGridError": 6.301737079986124e-7,
+      "gridRelativeForceChange": 0.000005329234826760325,
+      "gradientRelativeError": 2.7731472682589936e-10
+    },
+    {
+      "R": 8.2,
+      "z": 0.05,
+      "component": 1,
+      "analyticAcceleration": [
+        -0.003639312620285463,
+        0,
+        -0.00025624840225598963
+      ],
+      "convolution": [
+        -0.003623402387939249,
+        0,
+        -0.00021910988659177598
+      ],
+      "quadratureRelativeForceChange": 0.00007183933746672064,
+      "coarseGridError": 0.00006703582841873949,
+      "fineGridError": 0.0000060241524942323095,
+      "gridRelativeForceChange": 0.0000644399531740762,
+      "gradientRelativeError": 3.653565850120127e-9
+    },
+    {
+      "R": 8.2,
+      "z": 0.05,
+      "component": 2,
+      "analyticAcceleration": [
+        -0.0028079035541012823,
+        0,
+        -0.000017121363134763918
+      ],
+      "convolution": [
+        -0.002805378259418162,
+        0,
+        -0.000017105829157229756
+      ],
+      "quadratureRelativeForceChange": 0.0000840894210317925,
+      "coarseGridError": 0.000013215340575140955,
+      "fineGridError": 9.772343937419349e-7,
+      "gridRelativeForceChange": 0.00001338079273117583,
+      "gradientRelativeError": 3.6472277923376614e-10
+    },
+    {
+      "R": 8.2,
+      "z": 0.28,
+      "component": 0,
+      "analyticAcceleration": [
+        -0.0002653127712178649,
+        0,
+        -0.000009059460480610022
+      ],
+      "convolution": [
+        -0.0002651620876027939,
+        0,
+        -0.00000905288710953325
+      ],
+      "quadratureRelativeForceChange": 0.00013547046047580313,
+      "coarseGridError": 0.000012613450812362908,
+      "fineGridError": 0.000002524025261322224,
+      "gridRelativeForceChange": 0.0000101385054875031,
+      "gradientRelativeError": 1.2436278489251348e-10
+    },
+    {
+      "R": 8.2,
+      "z": 0.28,
+      "component": 1,
+      "analyticAcceleration": [
+        -0.0035877921537764597,
+        0,
+        -0.0010506632057715951
+      ],
+      "convolution": [
+        -0.0035773774317162345,
+        0,
+        -0.0009744013564209374
+      ],
+      "quadratureRelativeForceChange": 0.00007315691125655954,
+      "coarseGridError": 0.00006194596514207541,
+      "fineGridError": 0.000002313754392621654,
+      "gridRelativeForceChange": 0.0000617281832085511,
+      "gradientRelativeError": 2.720020340972293e-9
+    },
+    {
+      "R": 8.2,
+      "z": 0.28,
+      "component": 2,
+      "analyticAcceleration": [
+        -0.002805567763718332,
+        0,
+        -0.00009579987485867477
+      ],
+      "convolution": [
+        -0.0028030469673861517,
+        0,
+        -0.00009571311199936234
+      ],
+      "quadratureRelativeForceChange": 0.00008415732285835675,
+      "coarseGridError": 0.00001420887857047948,
+      "fineGridError": 0.000003061507496276012,
+      "gridRelativeForceChange": 0.000013670226550460937,
+      "gradientRelativeError": 7.762139387297065e-11
+    },
+    {
+      "R": 8.2,
+      "z": 1,
+      "component": 0,
+      "analyticAcceleration": [
+        -0.0002603394038305906,
+        0,
+        -0.00003174870778421837
+      ],
+      "convolution": [
+        -0.000260192575805456,
+        0,
+        -0.00003173048528141098
+      ],
+      "quadratureRelativeForceChange": 0.0001356485809757288,
+      "coarseGridError": 0.000016977620091325452,
+      "fineGridError": 0.000003974074551881251,
+      "gridRelativeForceChange": 0.000013984297537895689,
+      "gradientRelativeError": 8.165209402413114e-11
+    },
+    {
+      "R": 8.2,
+      "z": 1,
+      "component": 1,
+      "analyticAcceleration": [
+        -0.0032845626280395713,
+        0,
+        -0.0015577206734072508
+      ],
+      "convolution": [
+        -0.0032815998694016766,
+        0,
+        -0.0015473201751140828
+      ],
+      "quadratureRelativeForceChange": 0.00007174002239707988,
+      "coarseGridError": 0.00005529124980998413,
+      "fineGridError": 0.0000023720370698466594,
+      "gridRelativeForceChange": 0.00005732893138211073,
+      "gradientRelativeError": 8.185547139110779e-11
+    },
+    {
+      "R": 8.2,
+      "z": 1,
+      "component": 2,
+      "analyticAcceleration": [
+        -0.0027775439462442144,
+        0,
+        -0.00033872487149319693
+      ],
+      "convolution": [
+        -0.0027750774229066107,
+        0,
+        -0.0003384239238391951
+      ],
+      "quadratureRelativeForceChange": 0.00008527186189316723,
+      "coarseGridError": 0.00002555281630108703,
+      "fineGridError": 3.5298844477072476e-7,
+      "gridRelativeForceChange": 0.00002566755590251501,
+      "gradientRelativeError": 1.249212527549689e-10
+    },
+    {
+      "R": 20,
+      "z": 0,
+      "component": 0,
+      "analyticAcceleration": [
+        -0.00005100342575362305,
+        0,
+        0
+      ],
+      "convolution": [
+        -0.00005100051455134555,
+        0,
+        0
+      ],
+      "quadratureRelativeForceChange": 0.000025742186329233037,
+      "coarseGridError": 0.000013684252388413193,
+      "fineGridError": 8.103137780538101e-7,
+      "gridRelativeForceChange": 0.000014494566166467004,
+      "gradientRelativeError": 8.072162475519236e-11
+    },
+    {
+      "R": 20,
+      "z": 0,
+      "component": 1,
+      "analyticAcceleration": [
+        -0.0007348981610328293,
+        0,
+        0
+      ],
+      "convolution": [
+        -0.0007343013195523954,
+        0,
+        0
+      ],
+      "quadratureRelativeForceChange": 8.757123734085319e-7,
+      "coarseGridError": 9.890295481025098e-7,
+      "fineGridError": 2.3033607310060023e-7,
+      "gridRelativeForceChange": 0.00000121936562120311,
+      "gradientRelativeError": 9.004635008896094e-11
+    },
+    {
+      "R": 20,
+      "z": 0,
+      "component": 2,
+      "analyticAcceleration": [
+        -0.0015964208284168662,
+        0,
+        0
+      ],
+      "convolution": [
+        -0.0015961389828553166,
+        0,
+        0
+      ],
+      "quadratureRelativeForceChange": 0.000008580464399921363,
+      "coarseGridError": 0.0000070474182975544875,
+      "fineGridError": 3.6244963033861127e-7,
+      "gridRelativeForceChange": 0.000007409867927893099,
+      "gradientRelativeError": 9.061537859013735e-12
+    },
+    {
+      "R": 20,
+      "z": 0.05,
+      "component": 0,
+      "analyticAcceleration": [
+        -0.000051002962779623127,
+        0,
+        -1.2750740694905782e-7
+      ],
+      "convolution": [
+        -0.00005100005161423995,
+        0,
+        -1.2750012903313195e-7
+      ],
+      "quadratureRelativeForceChange": 0.000025742395876931017,
+      "coarseGridError": 0.000013700397716094544,
+      "fineGridError": 8.0631801559716e-7,
+      "gridRelativeForceChange": 0.000014506351348179678,
+      "gradientRelativeError": 7.875754451223222e-10
+    },
+    {
+      "R": 20,
+      "z": 0.05,
+      "component": 1,
+      "analyticAcceleration": [
+        -0.0007348201383270269,
+        0,
+        -0.000021213225538891198
+      ],
+      "convolution": [
+        -0.0007342344821698773,
+        0,
+        -0.000018232188477366727
+      ],
+      "quadratureRelativeForceChange": 0.000012106376501020934,
+      "coarseGridError": 0.000007097416159471754,
+      "fineGridError": 3.428815287656877e-7,
+      "gridRelativeForceChange": 0.0000068467059162849545,
+      "gradientRelativeError": 1.0268835113224591e-8
+    },
+    {
+      "R": 20,
+      "z": 0.05,
+      "component": 2,
+      "analyticAcceleration": [
+        -0.0015964118450891769,
+        0,
+        -0.0000039910296127229425
+      ],
+      "convolution": [
+        -0.0015961300026336453,
+        0,
+        -0.00000399032500657803
+      ],
+      "quadratureRelativeForceChange": 0.00000858018406843335,
+      "coarseGridError": 0.000007055799033803271,
+      "fineGridError": 4.1769620566158783e-7,
+      "gridRelativeForceChange": 0.000007426659817956118,
+      "gradientRelativeError": 7.16380058225224e-10
+    },
+    {
+      "R": 20,
+      "z": 0.28,
+      "component": 0,
+      "analyticAcceleration": [
+        -0.00005098891024482852,
+        0,
+        -7.138447434275993e-7
+      ],
+      "convolution": [
+        -0.00005098600019920089,
+        0,
+        -7.138040027752771e-7
+      ],
+      "quadratureRelativeForceChange": 0.00002574874206605246,
+      "coarseGridError": 0.00001440422142024148,
+      "fineGridError": 0.0000011485786316905667,
+      "gridRelativeForceChange": 0.000015430415445750907,
+      "gradientRelativeError": 3.2075317995287077e-10
+    },
+    {
+      "R": 20,
+      "z": 0.28,
+      "component": 1,
+      "analyticAcceleration": [
+        -0.0007328251239824199,
+        0,
+        -0.00008798739392453012
+      ],
+      "convolution": [
+        -0.0007324396630245792,
+        0,
+        -0.00008187816418266081
+      ],
+      "quadratureRelativeForceChange": 0.000019763890915353867,
+      "coarseGridError": 0.000021396820796487174,
+      "fineGridError": 2.54437441886699e-7,
+      "gridRelativeForceChange": 0.000021142508655088073,
+      "gradientRelativeError": 6.784584327317096e-9
+    },
+    {
+      "R": 20,
+      "z": 0.28,
+      "component": 2,
+      "analyticAcceleration": [
+        -0.0015961391591761127,
+        0,
+        -0.000022345948228465582
+      ],
+      "convolution": [
+        -0.0015958574109935547,
+        0,
+        -0.00002234200375387648
+      ],
+      "quadratureRelativeForceChange": 0.000008571675987823377,
+      "coarseGridError": 0.000007823227220176064,
+      "fineGridError": 0.0000011775883547945623,
+      "gridRelativeForceChange": 0.000008663529228188306,
+      "gradientRelativeError": 2.5951749424238037e-10
+    },
+    {
+      "R": 20,
+      "z": 1,
+      "component": 0,
+      "analyticAcceleration": [
+        -0.00005081879722258015,
+        0,
+        -0.0000025409398611290075
+      ],
+      "convolution": [
+        -0.00005081590071776361,
+        0,
+        -0.000002540795035851015
+      ],
+      "quadratureRelativeForceChange": 0.000025823456106997948,
+      "coarseGridError": 0.000024676413910575762,
+      "fineGridError": 0.000006538552697008729,
+      "gridRelativeForceChange": 0.000019368668785787392,
+      "gradientRelativeError": 1.508946133474034e-10
+    },
+    {
+      "R": 20,
+      "z": 1,
+      "component": 1,
+      "analyticAcceleration": [
+        -0.0007202493699837629,
+        0,
+        -0.0001400486027766138
+      ],
+      "convolution": [
+        -0.0007201335194185673,
+        0,
+        -0.00013923759103260012
+      ],
+      "quadratureRelativeForceChange": 0.0000025277491534794095,
+      "coarseGridError": 0.00003640988217233157,
+      "fineGridError": 0.00001004293880646143,
+      "gridRelativeForceChange": 0.000027355048404934546,
+      "gradientRelativeError": 1.6734761643596173e-10
+    },
+    {
+      "R": 20,
+      "z": 1,
+      "component": 2,
+      "analyticAcceleration": [
+        -0.0015928355126698741,
+        0,
+        -0.0000796417756334937
+      ],
+      "convolution": [
+        -0.0015925549052441367,
+        0,
+        -0.00007962774526211531
+      ],
+      "quadratureRelativeForceChange": 0.000008468800680487746,
+      "coarseGridError": 0.000019439591322564442,
+      "fineGridError": 0.0000029682136173036134,
+      "gridRelativeForceChange": 0.000016847101830753407,
+      "gradientRelativeError": 1.759105836922183e-10
+    },
+    {
+      "R": 100,
+      "z": 0,
+      "component": 0,
+      "analyticAcceleration": [
+        -0.0000022049319436670683,
+        0,
+        0
+      ],
+      "convolution": [
+        -0.000002204931280719482,
+        0,
+        0
+      ],
+      "quadratureRelativeForceChange": 7.646952424067874e-8,
+      "coarseGridError": 0.000012947860337172187,
+      "fineGridError": 0.0000016517623935753965,
+      "gridRelativeForceChange": 0.000014599622730747584,
+      "gradientRelativeError": 4.2848909984561013e-11
+    },
+    {
+      "R": 100,
+      "z": 0,
+      "component": 1,
+      "analyticAcceleration": [
+        -0.00003054051631305278,
+        0,
+        0
+      ],
+      "convolution": [
+        -0.00003053953778638827,
+        0,
+        0
+      ],
+      "quadratureRelativeForceChange": 7.228236884694365e-8,
+      "coarseGridError": 0.000014385432904039983,
+      "fineGridError": 0.0000018239564247368858,
+      "gridRelativeForceChange": 0.00001620938932877687,
+      "gradientRelativeError": 4.6281426909058203e-11
+    },
+    {
+      "R": 100,
+      "z": 0,
+      "component": 2,
+      "analyticAcceleration": [
+        -0.00027616370037251254,
+        0,
+        0
+      ],
+      "convolution": [
+        -0.00027616190034508963,
+        0,
+        0
+      ],
+      "quadratureRelativeForceChange": 0.0000014134849773633728,
+      "coarseGridError": 0.000004801725858847071,
+      "fineGridError": 6.346628084966103e-7,
+      "gridRelativeForceChange": 0.000005436388667343681,
+      "gradientRelativeError": 2.372264826921172e-12
+    },
+    {
+      "R": 100,
+      "z": 0.05,
+      "component": 0,
+      "analyticAcceleration": [
+        -0.0000022049311222755973,
+        0,
+        -1.1024655611377988e-9
+      ],
+      "convolution": [
+        -0.0000022049304593285233,
+        0,
+        -1.1024652296566064e-9
+      ],
+      "quadratureRelativeForceChange": 7.646949203285923e-8,
+      "coarseGridError": 0.000012946969031969023,
+      "fineGridError": 0.0000016515958425851672,
+      "gridRelativeForceChange": 0.000014598542862929847,
+      "gradientRelativeError": 4.0700949825704995e-9
+    },
+    {
+      "R": 100,
+      "z": 0.05,
+      "component": 1,
+      "analyticAcceleration": [
+        -0.00003054038325947911,
+        0,
+        -1.7633159581132263e-7
+      ],
+      "convolution": [
+        -0.00003053942358752646,
+        0,
+        -1.51725709100993e-7
+      ],
+      "quadratureRelativeForceChange": 0.000002305658997927214,
+      "coarseGridError": 0.000014388979408533413,
+      "fineGridError": 0.0000018264903581445025,
+      "gridRelativeForceChange": 0.00001620591601796555,
+      "gradientRelativeError": 5.2030922212337355e-8
+    },
+    {
+      "R": 100,
+      "z": 0.05,
+      "component": 2,
+      "analyticAcceleration": [
+        -0.00027616361952578197,
+        0,
+        -1.3808180976289097e-7
+      ],
+      "convolution": [
+        -0.0002761618194994177,
+        0,
+        -1.3808090974951917e-7
+      ],
+      "quadratureRelativeForceChange": 0.0000014134845243043572,
+      "coarseGridError": 0.000004802430904676945,
+      "fineGridError": 6.352187887921194e-7,
+      "gridRelativeForceChange": 0.000005437307155179712,
+      "gradientRelativeError": 3.742957662538541e-9
+    },
+    {
+      "R": 100,
+      "z": 0.28,
+      "component": 0,
+      "analyticAcceleration": [
+        -0.0000022049061850736264,
+        0,
+        -6.173737318206154e-9
+      ],
+      "convolution": [
+        -0.0000022049055221420637,
+        0,
+        -6.1737354619549325e-9
+      ],
+      "quadratureRelativeForceChange": 7.646840695728605e-8,
+      "coarseGridError": 0.000012955961661808074,
+      "fineGridError": 0.000001657887963331307,
+      "gridRelativeForceChange": 0.000014612092084684723,
+      "gradientRelativeError": 1.4938632704963395e-9
+    },
+    {
+      "R": 100,
+      "z": 0.28,
+      "component": 1,
+      "analyticAcceleration": [
+        -0.0000305369734364415,
+        0,
+        -7.332905554366738e-7
+      ],
+      "convolution": [
+        -0.00003053635108442021,
+        0,
+        -6.828944445801027e-7
+      ],
+      "quadratureRelativeForceChange": 0.0000034719921404676048,
+      "coarseGridError": 0.000014524163929961167,
+      "fineGridError": 0.0000018169669467346216,
+      "gridRelativeForceChange": 0.000016300658143479412,
+      "gradientRelativeError": 3.3990222038767156e-8
+    },
+    {
+      "R": 100,
+      "z": 0.28,
+      "component": 2,
+      "analyticAcceleration": [
+        -0.0002761611650394055,
+        0,
+        -7.732512621103355e-7
+      ],
+      "convolution": [
+        -0.00027615936504518375,
+        0,
+        -7.732462221254589e-7
+      ],
+      "quadratureRelativeForceChange": 0.000001413470741476676,
+      "coarseGridError": 0.000004833359849721747,
+      "fineGridError": 6.682122148216793e-7,
+      "gridRelativeForceChange": 0.000005489325035802328,
+      "gradientRelativeError": 1.380181731496123e-9
+    },
+    {
+      "R": 100,
+      "z": 1,
+      "component": 0,
+      "analyticAcceleration": [
+        -0.000002204603427824607,
+        0,
+        -2.204603427824607e-8
+      ],
+      "convolution": [
+        -0.00000220460276508136,
+        0,
+        -2.204602765066199e-8
+      ],
+      "quadratureRelativeForceChange": 7.645520947259566e-8,
+      "coarseGridError": 0.000013436967634169363,
+      "fineGridError": 0.000002196716848649035,
+      "gridRelativeForceChange": 0.000014736583968512394,
+      "gradientRelativeError": 1.9863454047816872e-8
+    },
+    {
+      "R": 100,
+      "z": 1,
+      "component": 1,
+      "analyticAcceleration": [
+        -0.000030515132762350164,
+        0,
+        -0.0000011867005748318405
+      ],
+      "convolution": [
+        -0.000030514962877220904,
+        0,
+        -0.0000011800702393028512
+      ],
+      "quadratureRelativeForceChange": 0.0000013624926036096471,
+      "coarseGridError": 0.000015044401751765302,
+      "fineGridError": 0.0000032385239157846977,
+      "gridRelativeForceChange": 0.000016084361849824512,
+      "gradientRelativeError": 3.27273192507912e-8
+    },
+    {
+      "R": 100,
+      "z": 1,
+      "component": 2,
+      "analyticAcceleration": [
+        -0.000276131365093644,
+        0,
+        -0.00000276131365093644
+      ],
+      "convolution": [
+        -0.0002761295654896637,
+        0,
+        -0.000002761295654892921
+      ],
+      "quadratureRelativeForceChange": 0.0000014133033509368705,
+      "coarseGridError": 0.000005920535719002559,
+      "fineGridError": 0.0000011492708855430249,
+      "gridRelativeForceChange": 0.00000598338853690696,
+      "gradientRelativeError": 1.3287564291325922e-8
+    },
+    {
+      "R": 220,
+      "z": 0,
+      "component": 0,
+      "analyticAcceleration": [
+        -4.605251890286391e-7,
+        0,
+        0
+      ],
+      "convolution": [
+        -4.6052517678452565e-7,
+        0,
+        0
+      ],
+      "quadratureRelativeForceChange": 5.431099279980197e-9,
+      "coarseGridError": 0.00001107768951792135,
+      "fineGridError": 0.000005014918398923022,
+      "gridRelativeForceChange": 0.00001609260791684437,
+      "gradientRelativeError": 4.2868582641441715e-11
+    },
+    {
+      "R": 220,
+      "z": 0,
+      "component": 1,
+      "analyticAcceleration": [
+        -0.0000063181029259602,
+        0,
+        0
+      ],
+      "convolution": [
+        -0.000006318061235918318,
+        0,
+        0
+      ],
+      "quadratureRelativeForceChange": 4.299231046394464e-9,
+      "coarseGridError": 0.000011751043110149324,
+      "fineGridError": 0.000005295658007233535,
+      "gridRelativeForceChange": 0.00001704670111738286,
+      "gradientRelativeError": 4.440391110775094e-11
+    },
+    {
+      "R": 220,
+      "z": 0,
+      "component": 2,
+      "analyticAcceleration": [
+        -0.00008918567403712865,
+        0,
+        0
+      ],
+      "convolution": [
+        -0.00008918544827720941,
+        0,
+        0
+      ],
+      "quadratureRelativeForceChange": 2.985287529849726e-7,
+      "coarseGridError": 0.0003352811890120322,
+      "fineGridError": 0.00009524235584605487,
+      "gridRelativeForceChange": 0.00043052354485808707,
+      "gradientRelativeError": 3.309118898456369e-11
+    },
+    {
+      "R": 220,
+      "z": 0.05,
+      "component": 0,
+      "analyticAcceleration": [
+        -4.605251534550899e-7,
+        0,
+        -1.0466480760342952e-10
+      ],
+      "convolution": [
+        -4.6052514121097644e-7,
+        0,
+        -1.0466480482067681e-10
+      ],
+      "quadratureRelativeForceChange": 5.431098664915876e-9,
+      "coarseGridError": 0.000011077476320264261,
+      "fineGridError": 0.000005014960449668658,
+      "gridRelativeForceChange": 0.000016092388354280277,
+      "gradientRelativeError": 8.343051138128462e-9
+    },
+    {
+      "R": 220,
+      "z": 0.05,
+      "component": 1,
+      "analyticAcceleration": [
+        -0.0000063180972339822365,
+        0,
+        -1.6581326827226428e-8
+      ],
+      "convolution": [
+        -0.000006318056350218464,
+        0,
+        -1.4268067422381746e-8
+      ],
+      "quadratureRelativeForceChange": 0.0000010468273602189525,
+      "coarseGridError": 0.000011749782916075809,
+      "fineGridError": 0.000005301953745967558,
+      "gridRelativeForceChange": 0.000017045213745611363,
+      "gradientRelativeError": 1.086602526361959e-7
+    },
+    {
+      "R": 220,
+      "z": 0.05,
+      "component": 2,
+      "analyticAcceleration": [
+        -0.00008918566804268753,
+        0,
+        -2.0269470009701712e-8
+      ],
+      "convolution": [
+        -0.00008918544228211959,
+        0,
+        -2.0269418695941813e-8
+      ],
+      "quadratureRelativeForceChange": 2.985284653336281e-7,
+      "coarseGridError": 0.0003352811905127256,
+      "fineGridError": 0.00009524200937846532,
+      "gridRelativeForceChange": 0.0004305231897469115,
+      "gradientRelativeError": 7.993900503010372e-9
+    },
+    {
+      "R": 220,
+      "z": 0.28,
+      "component": 0,
+      "analyticAcceleration": [
+        -4.60524073444314e-7,
+        0,
+        -5.861215480200361e-10
+      ],
+      "convolution": [
+        -4.605240612002609e-7,
+        0,
+        -5.861215324366998e-10
+      ],
+      "quadratureRelativeForceChange": 5.431084387353984e-9,
+      "coarseGridError": 0.000011078761676516848,
+      "fineGridError": 0.000005014927435538467,
+      "gridRelativeForceChange": 0.000016093542985047323,
+      "gradientRelativeError": 4.056837616774512e-9
+    },
+    {
+      "R": 220,
+      "z": 0.28,
+      "component": 1,
+      "analyticAcceleration": [
+        -0.000006317951351948034,
+        0,
+        -6.896102323205891e-8
+      ],
+      "convolution": [
+        -0.000006317924892665637,
+        0,
+        -6.422326379869908e-8
+      ],
+      "quadratureRelativeForceChange": 0.0000015759536506585931,
+      "coarseGridError": 0.00001177301345967476,
+      "fineGridError": 0.000005292496509161722,
+      "gridRelativeForceChange": 0.000017053525056681223,
+      "gradientRelativeError": 7.78365110313664e-8
+    },
+    {
+      "R": 220,
+      "z": 0.28,
+      "component": 2,
+      "analyticAcceleration": [
+        -0.00008918548605180088,
+        0,
+        -1.1350880042956477e-7
+      ],
+      "convolution": [
+        -0.00008918526027146502,
+        0,
+        -1.1350851305226321e-7
+      ],
+      "quadratureRelativeForceChange": 2.9852052781298456e-7,
+      "coarseGridError": 0.0003352859517608155,
+      "fineGridError": 0.00009523136716301688,
+      "gridRelativeForceChange": 0.0004305171481558549,
+      "gradientRelativeError": 3.6692765902176414e-9
+    },
+    {
+      "R": 220,
+      "z": 1,
+      "component": 0,
+      "analyticAcceleration": [
+        -4.6051095997459555e-7,
+        0,
+        -2.0932316362481615e-9
+      ],
+      "convolution": [
+        -4.6051094773124315e-7,
+        0,
+        -2.093231580596553e-9
+      ],
+      "quadratureRelativeForceChange": 5.430919573474051e-9,
+      "coarseGridError": 0.000011190296269033567,
+      "fineGridError": 0.000005126352699535753,
+      "gridRelativeForceChange": 0.000016094952066644986,
+      "gradientRelativeError": 4.685291235252938e-8
+    },
+    {
+      "R": 220,
+      "z": 1,
+      "component": 1,
+      "analyticAcceleration": [
+        -0.000006317016434129247,
+        0,
+        -1.1166452294617356e-7
+      ],
+      "convolution": [
+        -0.000006317009320171673,
+        0,
+        -1.1104142467449093e-7
+      ],
+      "quadratureRelativeForceChange": 6.244469009422061e-7,
+      "coarseGridError": 0.000011922706256469738,
+      "fineGridError": 0.000005597162982453295,
+      "gridRelativeForceChange": 0.000016984393049952965,
+      "gradientRelativeError": 7.63460379865458e-8
+    },
+    {
+      "R": 220,
+      "z": 1,
+      "component": 2,
+      "analyticAcceleration": [
+        -0.00008918327631867377,
+        0,
+        -4.0537852872124443e-7
+      ],
+      "convolution": [
+        -0.00008918305029439776,
+        0,
+        -4.053775013040011e-7
+      ],
+      "quadratureRelativeForceChange": 2.984531883533824e-7,
+      "coarseGridError": 0.00033536091155177887,
+      "fineGridError": 0.00009511555693870525,
+      "gridRelativeForceChange": 0.00043045903914255287,
+      "gradientRelativeError": 3.620181059268453e-8
+    }
+  ],
+  "frequencies": [
+    {
+      "R": 1,
+      "omega2": 0.017224804567696525,
+      "kappa2": 0.051898605719748775,
+      "nu2": 0.08225918699480265,
+      "vcKpcMyr": 0.1312433029441751,
+      "periodMyr": 47.87433085139716,
+      "verticalPeriodMyr": 21.90723978986538
+    },
+    {
+      "R": 3,
+      "omega2": 0.0051884053383304245,
+      "kappa2": 0.013403496084092529,
+      "nu2": 0.03574141658702099,
+      "vcKpcMyr": 0.21609175839206318,
+      "periodMyr": 87.2294069047248,
+      "verticalPeriodMyr": 33.23487025030139
+    },
+    {
+      "R": 8.2,
+      "omega2": 0.0008166077966946783,
+      "kappa2": 0.0015325767324375914,
+      "nu2": 0.004802013630062897,
+      "vcKpcMyr": 0.23432607249247825,
+      "periodMyr": 219.87361018277826,
+      "verticalPeriodMyr": 90.67095168983155
+    },
+    {
+      "R": 16,
+      "omega2": 0.00019311100725599592,
+      "kappa2": 0.0003542093130703386,
+      "nu2": 0.000824869129112626,
+      "vcKpcMyr": 0.22234301845917032,
+      "periodMyr": 452.1435645317294,
+      "verticalPeriodMyr": 218.76978660643988
+    },
+    {
+      "R": 30,
+      "omega2": 0.00004916641049439662,
+      "kappa2": 0.00008853125138538564,
+      "nu2": 0.00014921670435441946,
+      "vcKpcMyr": 0.2103562916695314,
+      "periodMyr": 896.0775915916654,
+      "verticalPeriodMyr": 514.3646886688696
+    },
+    {
+      "R": 100,
+      "omega2": 0.0000030890625348732012,
+      "kappa2": 0.00000490787685398981,
+      "nu2": 0.000005738187192431981,
+      "vcKpcMyr": 0.1757572910258121,
+      "periodMyr": 3574.9215696871565,
+      "verticalPeriodMyr": 2622.9651021787763
+    },
+    {
+      "R": 220,
+      "omega2": 4.3623893040864075e-7,
+      "kappa2": 5.933671465236793e-7,
+      "nu2": 6.543470550837351e-7,
+      "vcKpcMyr": 0.145306449381224,
+      "periodMyr": 9513.003541590393,
+      "verticalPeriodMyr": 7767.402173850425
+    }
+  ],
+  "maxQuadratureRelativeForceChange": 0.0010087410084535602,
+  "maxFineGridRelativeForceError": 0.00011021216707868419,
+  "maxGradientRelativeError": 1.086602526361959e-7,
+  "qualification": "Measured differences, not a formal error bound or equilibrium acceptance. Field approximation must be carried into density/stationarity assessment."
+}

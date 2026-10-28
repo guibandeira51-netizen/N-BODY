@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "budgetControlRejected": true,
+  "n": 16,
+  "steps": 2,
+  "timeMyr": 0.20000000298023224,
+  "memoryPolicy": "adapter-limits-only",
+  "budgetBytes": null,
+  "effectiveParameters": {
+    "dt": 0.10000000149011612,
+    "epsilonSquared": 0.009999999776482582,
+    "G": 0.04498502239584923,
+    "precision": "f32"
+  }
+}

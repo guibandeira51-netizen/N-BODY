@@ -1,0 +1,35 @@
+{
+  "schema": "conditional-model-data-comparison-106",
+  "models": [
+    {
+      "field": "baryons",
+      "n": 38,
+      "parametersFittedHere": 0,
+      "conditionalNominalDOF": 38,
+      "rmsResidualKmS": 71.58642547935327,
+      "meanResidualKmS": 69.97862720613645,
+      "QStatisticalDiagonal": 263799.7763025896,
+      "QStatPlusJiaoDiagonal": 66738.91469885767,
+      "QWithAssumedCommon2PercentCovariance": 1667.1123857702507,
+      "maxAbsResidualKmS": 100.64294195916946
+    },
+    {
+      "field": "halo",
+      "n": 38,
+      "parametersFittedHere": 0,
+      "conditionalNominalDOF": 38,
+      "rmsResidualKmS": 8.771879111526523,
+      "meanResidualKmS": -4.791097898612869,
+      "QStatisticalDiagonal": 822.5988662403162,
+      "QStatPlusJiaoDiagonal": 145.13007515097866,
+      "QWithAssumedCommon2PercentCovariance": 54.48175229035808,
+      "maxAbsResidualKmS": 30.842586239971496
+    }
+  ],
+  "statisticalDefinition": "sigma_stat=(sigma_minus+sigma_plus)/2; Q=sum((vobs-vmodel)^2/sigma^2). Asymmetric original errors remain in plots and data.",
+  "systematicDefinition": "Sensitivity scenario sigma_i^2=sigma_stat^2+(fraction_Jiao*vobs)^2; not a measured full covariance. Additional correlated scenario C=D+outer(0.02*vobs,0.02*vobs), explicitly assumed coherent scale mode motivated by Jiao section2.1. Neither is asserted as unique covariance.",
+  "interpretation": "Conditional residual diagnostics, not calibrated chi-square hypothesis tests, Bayes factors, sigma detections or formal evidence of a unique halo. No parameter fitted here; historical observational calibration and missing gas/CGM prevent claiming38 independent out-of-sample degrees of freedom.",
+  "baryonicSensitivity": "Both models retain identical fixed baryons; neither halo nor baryons fitted freely. A baryon-only refit, gas or other density family would be a separate model and is not silently introduced.",
+  "fittedParameters": [],
+  "observationalCovarianceAvailable": false
+}

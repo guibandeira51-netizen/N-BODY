@@ -1,0 +1,2207 @@
+{
+  "schemaVersion": 2,
+  "files": [
+    {
+      "url": "src/compute/capability.js",
+      "name": "src/compute/capability.js",
+      "bytes": 6362,
+      "sha256": "637aa622654cb378ec9f5a4374481a62acd9f60744d5a8986c479d41de2fd46e"
+    },
+    {
+      "url": "src/compute/equilibrium-worker.js",
+      "name": "src/compute/equilibrium-worker.js",
+      "bytes": 1311,
+      "sha256": "80846ea48e65737315e12e026dfb2f8531127134864de97d6bb0ce9bc2b5e0df"
+    },
+    {
+      "url": "src/compute/gpu-external-grid.js",
+      "name": "src/compute/gpu-external-grid.js",
+      "bytes": 3209,
+      "sha256": "82c7267f53c8a2f4a8595ea82ba13f280d9b3692ed103358ca5e2169febbd9b4"
+    },
+    {
+      "url": "src/compute/gpu-external-polynomial.js",
+      "name": "src/compute/gpu-external-polynomial.js",
+      "bytes": 3068,
+      "sha256": "cd7bed0cf447558a08940009382c3e31d2882c38548473780532bcdc42fe7dff"
+    },
+    {
+      "url": "src/compute/gpu-fixed-halo.js",
+      "name": "src/compute/gpu-fixed-halo.js",
+      "bytes": 3078,
+      "sha256": "6b06535c53e2361253edbf08ea0afa9c15036d88dac69fd18663a606a139f6ed"
+    },
+    {
+      "url": "src/compute/gpu.js",
+      "name": "src/compute/gpu.js",
+      "bytes": 27408,
+      "sha256": "7ee6706d635a797f8a8546f96968466c8d8f9dbb67d3bd2aadd6f46ea00a7967"
+    },
+    {
+      "url": "src/compute/pair-energy-worker.js",
+      "name": "src/compute/pair-energy-worker.js",
+      "bytes": 245,
+      "sha256": "923409cd818d5f5874358eb1469e3f444e8cc61c34cb6a988c40f46c55b5bc48"
+    },
+    {
+      "url": "src/compute/parallel-energy.js",
+      "name": "src/compute/parallel-energy.js",
+      "bytes": 1221,
+      "sha256": "f204b19fbb512c63f6c36aa9e1bf862e201624c4a808f77f53097f0c13bcfd15"
+    },
+    {
+      "url": "src/compute/scheduling.js",
+      "name": "src/compute/scheduling.js",
+      "bytes": 341,
+      "sha256": "60e7bd7f5f570229ce198c47c0b900913d3ad5317c56edf7b530542f8430d1c4"
+    },
+    {
+      "url": "src/compute/worker.js",
+      "name": "src/compute/worker.js",
+      "bytes": 4101,
+      "sha256": "70c4778002892e73746106955e3e17c1faf28c849b0f3acf42f688e7b99179dc"
+    },
+    {
+      "url": "src/correction-102-page.js",
+      "name": "src/correction-102-page.js",
+      "bytes": 1780,
+      "sha256": "904053f1aec4ac5ab8dc4be4a67b52b7ebe001791715234143801017449ce4b7"
+    },
+    {
+      "url": "src/equilibrium-page.js",
+      "name": "src/equilibrium-page.js",
+      "bytes": 16415,
+      "sha256": "77bfbd51debcf54f6eb85a12e8c013f4388891f0b7fa3630e55f8b84f563cfa9"
+    },
+    {
+      "url": "src/export/review.js",
+      "name": "src/export/review.js",
+      "bytes": 6270,
+      "sha256": "a7f6407875098fc4e4714f4a82b1a341a3894851c7b12b8fb57870383e56579f"
+    },
+    {
+      "url": "src/export/state.js",
+      "name": "src/export/state.js",
+      "bytes": 592,
+      "sha256": "0ec67fb03f648f8a446e228cc152c6b9d2313e69ba2b66a7c4eb77afb2055f4c"
+    },
+    {
+      "url": "src/export/zip.js",
+      "name": "src/export/zip.js",
+      "bytes": 2489,
+      "sha256": "ecf658fc7efeaff9fde346092bbde4884959419a021b52ae159c4531ce3fa9db"
+    },
+    {
+      "url": "src/granularity-page.js",
+      "name": "src/granularity-page.js",
+      "bytes": 2030,
+      "sha256": "65e95c9a7cdbb1f6f0f3ba72ea07ebc9e59afaf8d263bb8107d2cb5bcbb1f7aa"
+    },
+    {
+      "url": "src/laboratory-panel.js",
+      "name": "src/laboratory-panel.js",
+      "bytes": 26028,
+      "sha256": "fdccf3fa2b78fdce6aa877975f8a15c59ee801dd2f2e5b396b7610eb777207bf"
+    },
+    {
+      "url": "src/main.js",
+      "name": "src/main.js",
+      "bytes": 24924,
+      "sha256": "a724af555eddcb2798a4459ecade744637abdac708601bcf19e4567272ad5050"
+    },
+    {
+      "url": "src/physics/constants.js",
+      "name": "src/physics/constants.js",
+      "bytes": 774,
+      "sha256": "4b1c2a1d96453b95c8e57a45f46443083e77d54e1714aadc7d060de0d9aa22ca"
+    },
+    {
+      "url": "src/physics/diagnostics.js",
+      "name": "src/physics/diagnostics.js",
+      "bytes": 3991,
+      "sha256": "d385ce21d018390f63210c8e8975276f1696656de69b25bc8e5017db5ef14765"
+    },
+    {
+      "url": "src/physics/disk-analysis.js",
+      "name": "src/physics/disk-analysis.js",
+      "bytes": 11537,
+      "sha256": "ecd700024436712b55152cb4bf64463ea70ee5bb9e93a6cc7750a8a1057219f7"
+    },
+    {
+      "url": "src/physics/equilibrium-analysis.js",
+      "name": "src/physics/equilibrium-analysis.js",
+      "bytes": 3642,
+      "sha256": "21eb7a098144724e3d537d4f6c01bc3308683148522e0f97d5907d2be3661998"
+    },
+    {
+      "url": "src/physics/external-grid-polynomial.js",
+      "name": "src/physics/external-grid-polynomial.js",
+      "bytes": 1443,
+      "sha256": "fcc5185e99acd25c6f35078a9c2b42d103c2fbc9b65606c4873b2184682ddcbf"
+    },
+    {
+      "url": "src/physics/external-grid.js",
+      "name": "src/physics/external-grid.js",
+      "bytes": 3499,
+      "sha256": "9e9dcf0b32c2864a8f8c8e08a0e909c4e306771126e5df17d3b90c240a9d6540"
+    },
+    {
+      "url": "src/physics/fixed-halo.js",
+      "name": "src/physics/fixed-halo.js",
+      "bytes": 4343,
+      "sha256": "e351183ed13436395f59ead258d73c99a55c6bfe4a75cece12b11ba51f2bb31c"
+    },
+    {
+      "url": "src/physics/forces.js",
+      "name": "src/physics/forces.js",
+      "bytes": 14253,
+      "sha256": "9532d4286c6481d49995ece96e48bd595145c2e2c8a22897520cafa45f862444"
+    },
+    {
+      "url": "src/physics/granularity-analysis.js",
+      "name": "src/physics/granularity-analysis.js",
+      "bytes": 3188,
+      "sha256": "4a5edbd3ff27f0df4a98818c5118a4cfc678a8f84fc1db8b66df2aa4c0200b35"
+    },
+    {
+      "url": "src/physics/halo-experiments.js",
+      "name": "src/physics/halo-experiments.js",
+      "bytes": 2533,
+      "sha256": "a5a0169b5d8b38c56db0229a83a5b7ba4a940968dd7572bf26f52f37dc9fbcdb"
+    },
+    {
+      "url": "src/physics/hamiltonian-bounds-105.js",
+      "name": "src/physics/hamiltonian-bounds-105.js",
+      "bytes": 1374,
+      "sha256": "8344ca6dd1d98b157613e7225356029dc58143850e14875a6bbf189fc429e73d"
+    },
+    {
+      "url": "src/physics/initial-allocated.js",
+      "name": "src/physics/initial-allocated.js",
+      "bytes": 6937,
+      "sha256": "f62b945334f7cfd062aa5eda6a3964aca59eb977985d7ffe73a8c8cce04ed378"
+    },
+    {
+      "url": "src/physics/initial-legacy.js",
+      "name": "src/physics/initial-legacy.js",
+      "bytes": 6554,
+      "sha256": "93ca8666ff188863b947dc8535ca23244d67c20ab2a177cb12e494cf566eeefa"
+    },
+    {
+      "url": "src/physics/initial.js",
+      "name": "src/physics/initial.js",
+      "bytes": 3416,
+      "sha256": "5a6bbdb6cfe562776c6a408271c26d8a29183e92d2021914e2eb0f34230ef66a"
+    },
+    {
+      "url": "src/physics/integrator.js",
+      "name": "src/physics/integrator.js",
+      "bytes": 2379,
+      "sha256": "433880162ae754dd3bada1fad9e2538239b42d3d43f20f96f7e1465135a1ce6f"
+    },
+    {
+      "url": "src/physics/iterative-initial.js",
+      "name": "src/physics/iterative-initial.js",
+      "bytes": 8281,
+      "sha256": "bf6216a55950684589f697a36bd122584ae5817a6afb00eab0705746f98cc164"
+    },
+    {
+      "url": "src/physics/jeans-axisymmetric.js",
+      "name": "src/physics/jeans-axisymmetric.js",
+      "bytes": 1470,
+      "sha256": "903331d3c5643c122e63bcb3778bce3a29e5a4d713c09c0a79a6dea178b9698d"
+    },
+    {
+      "url": "src/physics/laboratory.js",
+      "name": "src/physics/laboratory.js",
+      "bytes": 8084,
+      "sha256": "3f36f219449d053c7756147c3b312464123c8b4242e65f428a8c1a5cbf528f2d"
+    },
+    {
+      "url": "src/physics/mass-audit.js",
+      "name": "src/physics/mass-audit.js",
+      "bytes": 4465,
+      "sha256": "99f3722ec0027a3c51b3183a440ec02a52b773aa9e9b53482631777b0a9353f2"
+    },
+    {
+      "url": "src/physics/models.js",
+      "name": "src/physics/models.js",
+      "bytes": 3657,
+      "sha256": "2215cd8332d06b4d18b3ef707c5000992b5db730d104c654ef7ddba7ac9102f3"
+    },
+    {
+      "url": "src/physics/pair-energy-partition.js",
+      "name": "src/physics/pair-energy-partition.js",
+      "bytes": 966,
+      "sha256": "22a2f43c0bbdb67c7959dcef72f185e2f3e0814cf9a6fd0baa135ea29e3ba688"
+    },
+    {
+      "url": "src/physics/snapshot-model.js",
+      "name": "src/physics/snapshot-model.js",
+      "bytes": 2195,
+      "sha256": "681327ebbc656b4fd702bd02b0bd42c5c58f7b5e06643de121669350684d53ba"
+    },
+    {
+      "url": "src/physics/softened-model.js",
+      "name": "src/physics/softened-model.js",
+      "bytes": 1208,
+      "sha256": "2f407e9a9ee2aa28beeb52fec6c892c00ae23a77de8e0c6b83d592ad9cce81aa"
+    },
+    {
+      "url": "src/physics/stationarity-105.js",
+      "name": "src/physics/stationarity-105.js",
+      "bytes": 3047,
+      "sha256": "2c75946a5def93159e19aa5d4fe31daa419dc786d29940d513c72644d0cc563b"
+    },
+    {
+      "url": "src/physics/structure-diagnostics.js",
+      "name": "src/physics/structure-diagnostics.js",
+      "bytes": 13655,
+      "sha256": "e94593e700e77bf95392b949bf2891652b87b224000ec1ab584e586dbb871440"
+    },
+    {
+      "url": "src/physics/validation-101.js",
+      "name": "src/physics/validation-101.js",
+      "bytes": 19977,
+      "sha256": "c6e0f58068bf585bdb43fb71db77edad6197d7d62f29afb7223cec761c409275"
+    },
+    {
+      "url": "src/refinement-page.js",
+      "name": "src/refinement-page.js",
+      "bytes": 2973,
+      "sha256": "cc5418e1f1a839c6b124ea046afefbfb1d8663b2c805e3888d0501c5a616063a"
+    },
+    {
+      "url": "src/render/camera.js",
+      "name": "src/render/camera.js",
+      "bytes": 5619,
+      "sha256": "faaa725427d1c78a3efbc0bd5ba63db2b4c31f7e0d121156f81f1032bb18cc83"
+    },
+    {
+      "url": "src/render/gpu-renderer.js",
+      "name": "src/render/gpu-renderer.js",
+      "bytes": 6871,
+      "sha256": "0837ecd1dea9361f7de01641cd8985b37e747ad63712a0f321ba75bc8f86de33"
+    },
+    {
+      "url": "src/render/particle-style.js",
+      "name": "src/render/particle-style.js",
+      "bytes": 3335,
+      "sha256": "aa45e5469be99a31c1438b1fb05c3881b44cc8e015c016efb623a0acffacd6a5"
+    },
+    {
+      "url": "src/render/webgl-renderer.js",
+      "name": "src/render/webgl-renderer.js",
+      "bytes": 8271,
+      "sha256": "856dad630b3ba50420d3be836dbf55af837983087ffa0f6d4ae747f8bfe58e80"
+    },
+    {
+      "url": "src/stationarity-page.js",
+      "name": "src/stationarity-page.js",
+      "bytes": 5286,
+      "sha256": "44c89e221c81ee11c2f0e2b7cf8b4b3134fed8a458ded9d3d132f55b68007e17"
+    },
+    {
+      "url": "src/validation-assessment.js",
+      "name": "src/validation-assessment.js",
+      "bytes": 2420,
+      "sha256": "d4f68a43a078cb6c537011720690248a62871e5b3b9f9e39caccf4542a3eb7c2"
+    },
+    {
+      "url": "reports/v1.0.0/artifact-audit.json",
+      "name": "reports/v1.0.0/artifact-audit.json",
+      "bytes": 170876,
+      "sha256": "bf0d63d018436282f579ca1005166f0d68657542452d769bf7a40cfc27db87ff"
+    },
+    {
+      "url": "reports/v1.0.0/assessment.json",
+      "name": "reports/v1.0.0/assessment.json",
+      "bytes": 98986,
+      "sha256": "3da7f25229ffe437c75280a00ab44724f7d63095992ee6c76c715719520db3f4"
+    },
+    {
+      "url": "reports/v1.0.0/attempts.json",
+      "name": "reports/v1.0.0/attempts.json",
+      "bytes": 3636,
+      "sha256": "15039d9cccbba748107ec3ec8ca30102d5af6490339d84155d93c6c1d1bb75f8"
+    },
+    {
+      "url": "reports/v1.0.0/comparison.pdf",
+      "name": "reports/v1.0.0/comparison.pdf",
+      "bytes": 61662,
+      "sha256": "0c9a8f88c7c7777e3b5cf8f046d125e8162cad7e9a3451a38c517890e0779211"
+    },
+    {
+      "url": "reports/v1.0.0/comparison.png",
+      "name": "reports/v1.0.0/comparison.png",
+      "bytes": 544118,
+      "sha256": "f8100a606932b663d34576c96769a38aa5da8b76b47a3e3a0e6aa6853cd0793c"
+    },
+    {
+      "url": "reports/v1.0.0/dependencies.json",
+      "name": "reports/v1.0.0/dependencies.json",
+      "bytes": 3701,
+      "sha256": "234fb3258ea914e5df7b541e83c9db4e65f9832a0c730a3ea9314cd87beb3538"
+    },
+    {
+      "url": "reports/v1.0.0/environment-restart.json",
+      "name": "reports/v1.0.0/environment-restart.json",
+      "bytes": 1532,
+      "sha256": "584493c7ad3304f4d9558876dce95c76bc144b3e47b9d28e837d0656829bd7c8"
+    },
+    {
+      "url": "reports/v1.0.0/initial-model.pdf",
+      "name": "reports/v1.0.0/initial-model.pdf",
+      "bytes": 33707,
+      "sha256": "84931bec322a411c828fb1b965b0c5455d9730ceaa7fa0cd8b78ecda8df8efd7"
+    },
+    {
+      "url": "reports/v1.0.0/initial-model.png",
+      "name": "reports/v1.0.0/initial-model.png",
+      "bytes": 258536,
+      "sha256": "3473d072416aee267be9f5ba9dd886ae7891d1347f724a7685d0911e3eedfd01"
+    },
+    {
+      "url": "reports/v1.0.0/numerical-sensitivity.png",
+      "name": "reports/v1.0.0/numerical-sensitivity.png",
+      "bytes": 255104,
+      "sha256": "ca668093a33872247dc7ed7151bf167904a0b30252d57422dde2b8ea3189e372"
+    },
+    {
+      "url": "reports/v1.0.0/scm-convergence.png",
+      "name": "reports/v1.0.0/scm-convergence.png",
+      "bytes": 70151,
+      "sha256": "5948860e970bc0be15f30f7925d9a4c406c445401868ea67323f74ac1361208c"
+    },
+    {
+      "url": "reports/v1.0.0/series.csv",
+      "name": "reports/v1.0.0/series.csv",
+      "bytes": 549087,
+      "sha256": "3584e4599f028308837b0880764888cbc07e7e27bf1bb6e1525f1326cb62fad9"
+    },
+    {
+      "url": "reports/v1.0.0/summary.csv",
+      "name": "reports/v1.0.0/summary.csv",
+      "bytes": 18111,
+      "sha256": "13e2d12b06c546fe64f5437bcefcfd730878400a509418ab741766ae7b493722"
+    },
+    {
+      "url": "downloads/equilibrio-1.0.0.zip",
+      "name": "downloads/equilibrio-1.0.0.zip",
+      "bytes": 61493950,
+      "sha256": "321e285536ed08e6887fc3e95e315a9e014f83c7c08e9cfbbc0e53d2fb943f11"
+    },
+    {
+      "url": "downloads/equilibrio-1.0.0.sha256",
+      "name": "downloads/equilibrio-1.0.0.sha256",
+      "bytes": 87,
+      "sha256": "cddc29e2e86f30e47c74542e5fa517c7c13387f3c3c3862fb14a726fb49f17f5"
+    },
+    {
+      "url": "downloads/ensaios-1.0.0.zip",
+      "name": "downloads/ensaios-1.0.0.zip",
+      "bytes": 61615261,
+      "sha256": "22089bba89672b1f8248746b70f801c7e8320d40daf04655e89899272d85418c"
+    },
+    {
+      "url": "downloads/validacao-1.0.1.zip",
+      "name": "downloads/validacao-1.0.1.zip",
+      "bytes": 255852824,
+      "sha256": "f548d12bd17460737f3278d174835d0832740b475afe949dad049ecbea78614c"
+    },
+    {
+      "url": "downloads/validacao-1.0.1.sha256",
+      "name": "downloads/validacao-1.0.1.sha256",
+      "bytes": 87,
+      "sha256": "f6db988210c3347fe063b863f41c1c3e051f25bdf7f1e3d4ec27272c01cbd1ca"
+    },
+    {
+      "url": "reports/v1.0.1/assessment.json",
+      "name": "reports/v1.0.1/assessment.json",
+      "bytes": 24071,
+      "sha256": "ca9874ab25446e09806a6fcb127e987de594c98d6c36bb7bdc699e962cca9a77"
+    },
+    {
+      "url": "reports/v1.0.1/summary.json",
+      "name": "reports/v1.0.1/summary.json",
+      "bytes": 59759,
+      "sha256": "582c66937aee14b3c4a2c2e62d9c0e7955363b7cd359b322a05746edb3b63ca0"
+    },
+    {
+      "url": "reports/v1.0.1/energy-series.csv",
+      "name": "reports/v1.0.1/energy-series.csv",
+      "bytes": 8405614,
+      "sha256": "db2d29761c2d4f21438501f87be64530d79c71773de4f7dfc326a285a369aa85"
+    },
+    {
+      "url": "reports/v1.0.1/structure-series.csv",
+      "name": "reports/v1.0.1/structure-series.csv",
+      "bytes": 1982308,
+      "sha256": "6329434282342b9292f5e95125c805b6786325d6ba27a2b0feb4e8712fa6f942"
+    },
+    {
+      "url": "downloads/correcao-equilibrio-1.0.2.zip",
+      "name": "downloads/correcao-equilibrio-1.0.2.zip",
+      "bytes": 87843344,
+      "sha256": "e5ecfbc9eca698015e5b24a0bbf3ae9134dbdb7e53900ffe04260e59cf6cdb6f"
+    },
+    {
+      "url": "downloads/correcao-equilibrio-1.0.2.sha256",
+      "name": "downloads/correcao-equilibrio-1.0.2.sha256",
+      "bytes": 97,
+      "sha256": "c18fff1047d87af04e71cd292b674f8c894397aa10f496169256d8af09d4d824"
+    },
+    {
+      "url": "reports/v1.0.2/assessment.json",
+      "name": "reports/v1.0.2/assessment.json",
+      "bytes": 51016,
+      "sha256": "1af2323c2d07755a80c50fbf51719458c9623f99f311bb7433af9521954e5f34"
+    },
+    {
+      "url": "correcao102.html",
+      "name": "correcao102.html",
+      "bytes": 5775,
+      "sha256": "b3ee99cdbfcfec0b8dd56a85435a4ce1b0eda863aa4f8f84fc2f8ce83db14d24"
+    },
+    {
+      "url": "downloads/granularidade-1.0.3.zip",
+      "name": "downloads/granularidade-1.0.3.zip",
+      "bytes": 424996478,
+      "sha256": "4cd1f70d0669eae8602b0d2c6aba5dcd54684e8d2581bd4f89617b5f82862dcb"
+    },
+    {
+      "url": "downloads/granularidade-1.0.3.sha256",
+      "name": "downloads/granularidade-1.0.3.sha256",
+      "bytes": 91,
+      "sha256": "cbeff7ec54b43cfaa616f58069dc19c9f2b6dcf7097e39f3aad90ab39aa763b3"
+    },
+    {
+      "url": "reports/v1.0.3/assessment.json",
+      "name": "reports/v1.0.3/assessment.json",
+      "bytes": 232355,
+      "sha256": "d6350f5f599aa474db5cd0eb0edcadd45ed9c948b01467ea81b2b7900d93cb07"
+    },
+    {
+      "url": "granularidade103.html",
+      "name": "granularidade103.html",
+      "bytes": 6377,
+      "sha256": "a6492493f36eecf7c64c9b7b83284655fed9d8637f0d8a85cd3b4172baf37394"
+    },
+    {
+      "url": "downloads/refinamento-1.0.4.zip",
+      "name": "downloads/refinamento-1.0.4.zip",
+      "bytes": 493858633,
+      "sha256": "27a216f5e7765370ad398bfe8ebbe896331a4f809926166f946310ef58845305"
+    },
+    {
+      "url": "downloads/refinamento-1.0.4.sha256",
+      "name": "downloads/refinamento-1.0.4.sha256",
+      "bytes": 89,
+      "sha256": "5f4f577d430d8d677343dec3b2a3f24a7e59c459b10c6257817d7ddd041c3bac"
+    },
+    {
+      "url": "reports/v1.0.4/assessment.json",
+      "name": "reports/v1.0.4/assessment.json",
+      "bytes": 88252,
+      "sha256": "bac58e1a8e4db4eb8bb0f9c05af0fba285e1dcafd54b50d8925a271c2a6a07f2"
+    },
+    {
+      "url": "refinamento104.html",
+      "name": "refinamento104.html",
+      "bytes": 7297,
+      "sha256": "410f9232cda4f9f24d976378a2e9e8c1dd53f277d5244bd8b7ad87233c19defd"
+    },
+    {
+      "url": "downloads/source/scripts/analyze-halos-09.mjs",
+      "name": "scripts/analyze-halos-09.mjs",
+      "bytes": 7200,
+      "sha256": "4ebb5c4fa4e306c82cd3d57b61bd8865708c4fddbd90a8ab30ab4938e97bbb2d"
+    },
+    {
+      "url": "downloads/source/scripts/analyze-historical-09.mjs",
+      "name": "scripts/analyze-historical-09.mjs",
+      "bytes": 1377,
+      "sha256": "04b2c99c10915929ef24ca7aaed08f85842c9570eb6243a08ccb94454351277e"
+    },
+    {
+      "url": "downloads/source/scripts/archive-execution-source-09.mjs",
+      "name": "scripts/archive-execution-source-09.mjs",
+      "bytes": 1032,
+      "sha256": "96be92208a9b4268e0ed51ad145f1f31620e147d807511536c71a93d5d53c262"
+    },
+    {
+      "url": "downloads/source/scripts/audit-initial-states-09.mjs",
+      "name": "scripts/audit-initial-states-09.mjs",
+      "bytes": 2154,
+      "sha256": "82d02e7842762158d3387baf71cfbb1c6996a0fefc8312bb10fdb64def1f3d59"
+    },
+    {
+      "url": "downloads/source/scripts/audit-initial.mjs",
+      "name": "scripts/audit-initial.mjs",
+      "bytes": 7632,
+      "sha256": "93393d98903f01b16d3ab7e7a5893375732dcff4a8368666f4a50cb9a944fd36"
+    },
+    {
+      "url": "downloads/source/scripts/audit-masses-08.mjs",
+      "name": "scripts/audit-masses-08.mjs",
+      "bytes": 2822,
+      "sha256": "5aeb8e140207ed3b5ac974b0832ffc031ae7d22f2d98b54900a5fdba4e330c33"
+    },
+    {
+      "url": "downloads/source/scripts/audit-spatial-independent.py",
+      "name": "scripts/audit-spatial-independent.py",
+      "bytes": 10263,
+      "sha256": "bcf5ada78b90e8777e3e3259878b26f1a74557c8ae70a17aa655ebd194eed093"
+    },
+    {
+      "url": "downloads/source/scripts/audit-spatial.mjs",
+      "name": "scripts/audit-spatial.mjs",
+      "bytes": 5520,
+      "sha256": "27bd8b67666185ce54c674717581281d9adad9876f95e1b4944857670981e6d3"
+    },
+    {
+      "url": "downloads/source/scripts/benchmark.mjs",
+      "name": "scripts/benchmark.mjs",
+      "bytes": 5292,
+      "sha256": "369386cd2d1d627239a472444d05795427574c93f34cf04b0ed82a9dc8c897a0"
+    },
+    {
+      "url": "downloads/source/scripts/build.mjs",
+      "name": "scripts/build.mjs",
+      "bytes": 5876,
+      "sha256": "a57fe07bb34767b1df9e6bc403ffd516e6eba883af8ea77b6f8367462988603d"
+    },
+    {
+      "url": "downloads/source/scripts/compare-campaign-history-09.mjs",
+      "name": "scripts/compare-campaign-history-09.mjs",
+      "bytes": 1548,
+      "sha256": "35a7bfdd3ace65e87a7c65ca4a262506d5979a399809f2bb320510a294591567"
+    },
+    {
+      "url": "downloads/source/scripts/equilibrium/analyze-frozen.mjs",
+      "name": "scripts/equilibrium/analyze-frozen.mjs",
+      "bytes": 2060,
+      "sha256": "02d4b749e52f65bec12c62d494877c0e8573b0e315c5c0f8135f56559abdf884"
+    },
+    {
+      "url": "downloads/source/scripts/equilibrium/audit_artifacts.py",
+      "name": "scripts/equilibrium/audit_artifacts.py",
+      "bytes": 5057,
+      "sha256": "f00c47261a1e0e009a4f7e307c22d31d06c197c459c00fb9065a002bd9bad791"
+    },
+    {
+      "url": "downloads/source/scripts/equilibrium/audit_states.mjs",
+      "name": "scripts/equilibrium/audit_states.mjs",
+      "bytes": 3187,
+      "sha256": "7cc32deb0dca57ed187f446122ea3a521788e47a871400ce4af82bebd9efad3a"
+    },
+    {
+      "url": "downloads/source/scripts/equilibrium/calibrate_vertical_df.py",
+      "name": "scripts/equilibrium/calibrate_vertical_df.py",
+      "bytes": 3416,
+      "sha256": "3cf55a0f0e15d20b0cd1182c82ff6f731da8d7f4617a647b2b880fc779f6247c"
+    },
+    {
+      "url": "downloads/source/scripts/equilibrium/check_df_consistency.py",
+      "name": "scripts/equilibrium/check_df_consistency.py",
+      "bytes": 3416,
+      "sha256": "0b476f4b97a3d5801748779b4be9c25f9fc02cbbc0a84876da37b79e1ce46a25"
+    },
+    {
+      "url": "downloads/source/scripts/equilibrium/collector.mjs",
+      "name": "scripts/equilibrium/collector.mjs",
+      "bytes": 2806,
+      "sha256": "09d4a8f92597fab9f960ebdd296d5d6ecc7f4973eae6eefce3bf06f222fa01db"
+    },
+    {
+      "url": "downloads/source/scripts/equilibrium/export_tables.py",
+      "name": "scripts/equilibrium/export_tables.py",
+      "bytes": 7095,
+      "sha256": "3f617f03a495e2bf29bc25d01e6a3072a056b09fa4f9c55f58b7d7752fe7d16a"
+    },
+    {
+      "url": "downloads/source/scripts/equilibrium/generate_agama.py",
+      "name": "scripts/equilibrium/generate_agama.py",
+      "bytes": 15566,
+      "sha256": "3e7a5ec567999b637350e463f57d400fa45a86016b8c39b89abf4b706e429f5e"
+    },
+    {
+      "url": "downloads/source/scripts/equilibrium/model-c20-calibrated.json",
+      "name": "scripts/equilibrium/model-c20-calibrated.json",
+      "bytes": 3564,
+      "sha256": "5b8be4b0476fb82dcfac9ff2a1f67829d2a35e8dbc5738810c11f382fcd9c70b"
+    },
+    {
+      "url": "downloads/source/scripts/equilibrium/model-c20.json",
+      "name": "scripts/equilibrium/model-c20.json",
+      "bytes": 2175,
+      "sha256": "cdc79e933623f6c4f6fee7f07fd21178fb01c510437e7223f795be59dd3c49a5"
+    },
+    {
+      "url": "downloads/source/scripts/equilibrium/plot_evolution.py",
+      "name": "scripts/equilibrium/plot_evolution.py",
+      "bytes": 3082,
+      "sha256": "27a4387769c23fdffabacac03448eb2dc43719df01da979fefad54e50e9388fb"
+    },
+    {
+      "url": "downloads/source/scripts/equilibrium/plot_initial_model.py",
+      "name": "scripts/equilibrium/plot_initial_model.py",
+      "bytes": 2677,
+      "sha256": "f5fa5c85c70abd8ebf83c034253fc2480afea51e0e1b6a2930670130cdad4dde"
+    },
+    {
+      "url": "downloads/source/scripts/equilibrium/prepare_controls.py",
+      "name": "scripts/equilibrium/prepare_controls.py",
+      "bytes": 8517,
+      "sha256": "962e8a6ae8027dbfd27ef9ad84fe9c436414a3a0681fbf52b98335aaa16045f1"
+    },
+    {
+      "url": "downloads/source/scripts/equilibrium/protocol-calibrated.json",
+      "name": "scripts/equilibrium/protocol-calibrated.json",
+      "bytes": 3592,
+      "sha256": "70549c63524fc20ee7be693fb87217b508247540ac6c0b6e30106f7fa044fb8c"
+    },
+    {
+      "url": "downloads/source/scripts/equilibrium/protocol.json",
+      "name": "scripts/equilibrium/protocol.json",
+      "bytes": 2300,
+      "sha256": "5df5fac1499212656ad8fcbbb502976676fbce70bff33d47755dae72d2607078"
+    },
+    {
+      "url": "downloads/source/scripts/equilibrium/refine_scm.py",
+      "name": "scripts/equilibrium/refine_scm.py",
+      "bytes": 3648,
+      "sha256": "cca4fb7de84cb72942401719c1506216f1f7902ff124868c8752308abe78ebc9"
+    },
+    {
+      "url": "downloads/source/scripts/equilibrium/summarize_results.py",
+      "name": "scripts/equilibrium/summarize_results.py",
+      "bytes": 9360,
+      "sha256": "112eb95a6fc44063723b71e50ef9a60b6d215b7fbfd6eafaf455735214c8ad2e"
+    },
+    {
+      "url": "downloads/source/scripts/equilibrium/validate_profiles.py",
+      "name": "scripts/equilibrium/validate_profiles.py",
+      "bytes": 3806,
+      "sha256": "93eaefe8f2ab4363d6b9e8423135a538280f33ca9ab9eb0fedf270c79d7b2585"
+    },
+    {
+      "url": "downloads/source/scripts/equilibrium/write_reports.py",
+      "name": "scripts/equilibrium/write_reports.py",
+      "bytes": 15658,
+      "sha256": "9719115f14778bd8bd2264d93c645ced8a41d3bb2d4a981a57a2df1defa74967"
+    },
+    {
+      "url": "downloads/source/scripts/equilibrium-102/analyze_short.mjs",
+      "name": "scripts/equilibrium-102/analyze_short.mjs",
+      "bytes": 5496,
+      "sha256": "a724c735f88cc4399e89eeefa40e4750009805353aee388ae16237fc841e8fe2"
+    },
+    {
+      "url": "downloads/source/scripts/equilibrium-102/browser-minimum.mjs",
+      "name": "scripts/equilibrium-102/browser-minimum.mjs",
+      "bytes": 3972,
+      "sha256": "5a4d160cc25dcecc7ef1c43de506dc8c7b05f14d8237454bce4dc612b86535e4"
+    },
+    {
+      "url": "downloads/source/scripts/equilibrium-102/capture_generation_epoch.py",
+      "name": "scripts/equilibrium-102/capture_generation_epoch.py",
+      "bytes": 1982,
+      "sha256": "f7c0717f9c745eab2ea2fab3569175123cea058931220610ddfaab94a2293cbd"
+    },
+    {
+      "url": "downloads/source/scripts/equilibrium-102/collector.mjs",
+      "name": "scripts/equilibrium-102/collector.mjs",
+      "bytes": 1892,
+      "sha256": "17b9a344e4fb0fcd497321560dd1a4a2f9d8bb60ac9980795eea1bfa6470aead"
+    },
+    {
+      "url": "downloads/source/scripts/equilibrium-102/generate_softened.py",
+      "name": "scripts/equilibrium-102/generate_softened.py",
+      "bytes": 9604,
+      "sha256": "55b41413b44164552ebec3e729ee0bc513ac4350a8f33751f7fddaeb57891033"
+    },
+    {
+      "url": "downloads/source/scripts/equilibrium-102/package.py",
+      "name": "scripts/equilibrium-102/package.py",
+      "bytes": 2735,
+      "sha256": "68d76e472f727a699c0e87456f98af6566ebe101f5b5b8672b8e1529a3f828b9"
+    },
+    {
+      "url": "downloads/source/scripts/equilibrium-102/plot.py",
+      "name": "scripts/equilibrium-102/plot.py",
+      "bytes": 12187,
+      "sha256": "97743115e41f95e32254d7ebaf945fc2bececd231c719e53af1479339899020f"
+    },
+    {
+      "url": "downloads/source/scripts/equilibrium-102/plummer_mean.py",
+      "name": "scripts/equilibrium-102/plummer_mean.py",
+      "bytes": 4918,
+      "sha256": "4bba8cf8cf8c91943f4a27b0c9b4e7a54fe3f82301508dcf865089a2d04d2eed"
+    },
+    {
+      "url": "downloads/source/scripts/equilibrium-102/prepare_baseline.py",
+      "name": "scripts/equilibrium-102/prepare_baseline.py",
+      "bytes": 1434,
+      "sha256": "d27afccfd12b351bb273ed3a2993d6c13987557da1753a1092dc4d144f1ee689"
+    },
+    {
+      "url": "downloads/source/scripts/equilibrium-102/preserve.mjs",
+      "name": "scripts/equilibrium-102/preserve.mjs",
+      "bytes": 2494,
+      "sha256": "b4e3b27ae49306cdc83a40585c0ad11e91a54926bd76aa5e967402234bbd2fb7"
+    },
+    {
+      "url": "downloads/source/scripts/equilibrium-102/probe_field.py",
+      "name": "scripts/equilibrium-102/probe_field.py",
+      "bytes": 2345,
+      "sha256": "c4cb19fc0d87c9ffc626ebf53983862309b67eb096fd39bde212c2d2ccaae07b"
+    },
+    {
+      "url": "downloads/source/scripts/equilibrium-102/release-audit.mjs",
+      "name": "scripts/equilibrium-102/release-audit.mjs",
+      "bytes": 3423,
+      "sha256": "54ab873cebc71648e3c77a0386191336cc772fae09fb887dad5ea3012e62c354"
+    },
+    {
+      "url": "downloads/source/scripts/equilibrium-102/report.py",
+      "name": "scripts/equilibrium-102/report.py",
+      "bytes": 29871,
+      "sha256": "63a9a0f77f57bc97d21aaa9e3ca01f9ec8593339585e0c89d721673042cce255"
+    },
+    {
+      "url": "downloads/source/scripts/equilibrium-102/run_minimum.mjs",
+      "name": "scripts/equilibrium-102/run_minimum.mjs",
+      "bytes": 5193,
+      "sha256": "f57e3271f86da2f8f6b8402652cb185b7e48ae2d7e3e6fbd60de834747af5661"
+    },
+    {
+      "url": "downloads/source/scripts/equilibrium-102/run_smooth.py",
+      "name": "scripts/equilibrium-102/run_smooth.py",
+      "bytes": 2524,
+      "sha256": "acd1e2649d364f83ee7da5f297812f8153965811c4eda0a6055bd94eec3b1d08"
+    },
+    {
+      "url": "downloads/source/scripts/equilibrium-102/test_plummer_mean.py",
+      "name": "scripts/equilibrium-102/test_plummer_mean.py",
+      "bytes": 2464,
+      "sha256": "4238b76c84d4f8b0634870f4bf8c1a24095c92f225c5e93c5522ab8f6db2d386"
+    },
+    {
+      "url": "downloads/source/scripts/equilibrium-102/validate_df.py",
+      "name": "scripts/equilibrium-102/validate_df.py",
+      "bytes": 3917,
+      "sha256": "5cffd100ceaa2dda0fd6c456fd95932836a0c46fbdc85ee632d111defd801173"
+    },
+    {
+      "url": "downloads/source/scripts/equilibrium-102/validate_field.py",
+      "name": "scripts/equilibrium-102/validate_field.py",
+      "bytes": 6147,
+      "sha256": "b63624840c2b3e3de5b9361dd622676fddadf0ca8fb7dcd725bc4df25627819d"
+    },
+    {
+      "url": "downloads/source/scripts/equilibrium-105/analyze-continuous.mjs",
+      "name": "scripts/equilibrium-105/analyze-continuous.mjs",
+      "bytes": 3091,
+      "sha256": "def1fdef5d7f2e13285f3d9bd783ec4ef407d453c05f5275868f2ab49cab1645"
+    },
+    {
+      "url": "downloads/source/scripts/equilibrium-105/analyze.mjs",
+      "name": "scripts/equilibrium-105/analyze.mjs",
+      "bytes": 8217,
+      "sha256": "9118b9ac9349d1a5524603095166768998a00b0426c09846e6aa75b6208352d8"
+    },
+    {
+      "url": "downloads/source/scripts/equilibrium-105/audit.mjs",
+      "name": "scripts/equilibrium-105/audit.mjs",
+      "bytes": 7068,
+      "sha256": "eb5bdd2a07002af795a821bfa011fea5f6f5e43356789e53da2d57660e854a61"
+    },
+    {
+      "url": "downloads/source/scripts/equilibrium-105/browser-runner.mjs",
+      "name": "scripts/equilibrium-105/browser-runner.mjs",
+      "bytes": 9514,
+      "sha256": "c5e4b57143cc09aa2ac8035de8f4069baf2d5a873fb07b8a887c76c17144421f"
+    },
+    {
+      "url": "downloads/source/scripts/equilibrium-105/build-audit.mjs",
+      "name": "scripts/equilibrium-105/build-audit.mjs",
+      "bytes": 3086,
+      "sha256": "eceec8f470b186a9a2ff4331c531a05cd259c1dc1628148082b38d5ffb780399"
+    },
+    {
+      "url": "downloads/source/scripts/equilibrium-105/collective.mjs",
+      "name": "scripts/equilibrium-105/collective.mjs",
+      "bytes": 5449,
+      "sha256": "1c1fc577660af6d0ecb944b9d7eb47a23ffe80d2d92d4d52debca9e1e386b9ab"
+    },
+    {
+      "url": "downloads/source/scripts/equilibrium-105/collector.mjs",
+      "name": "scripts/equilibrium-105/collector.mjs",
+      "bytes": 2312,
+      "sha256": "8ef8c3406bf61dc1f95f7255befb74cd2000c89f612e314b57775538302f0e19"
+    },
+    {
+      "url": "downloads/source/scripts/equilibrium-105/continuous.py",
+      "name": "scripts/equilibrium-105/continuous.py",
+      "bytes": 2586,
+      "sha256": "affe722d80bc3311e4e62ff391e70a76a628741e313b41b366f269c67f2efc50"
+    },
+    {
+      "url": "downloads/source/scripts/equilibrium-105/cpu-pilot.mjs",
+      "name": "scripts/equilibrium-105/cpu-pilot.mjs",
+      "bytes": 2269,
+      "sha256": "935985c4908b3c1e73c2d5771af208b183a1997e794858de67c970428372b3ba"
+    },
+    {
+      "url": "downloads/source/scripts/equilibrium-105/decision.mjs",
+      "name": "scripts/equilibrium-105/decision.mjs",
+      "bytes": 4693,
+      "sha256": "3a661bb6ab3a1adce009508075d4cccf87f34df091004a148870c43c2570f2a9"
+    },
+    {
+      "url": "downloads/source/scripts/equilibrium-105/force-audit.mjs",
+      "name": "scripts/equilibrium-105/force-audit.mjs",
+      "bytes": 2563,
+      "sha256": "07b06d28daf88c197871e0f1768a7614da701b8026c361dacb38dab03cd70452"
+    },
+    {
+      "url": "downloads/source/scripts/equilibrium-105/force-components.mjs",
+      "name": "scripts/equilibrium-105/force-components.mjs",
+      "bytes": 1969,
+      "sha256": "99ea4d4e2c2f0e69a37b2797fd5dd5bf5eb6937d69bbd11689f19d279d1d47b1"
+    },
+    {
+      "url": "downloads/source/scripts/equilibrium-105/ic-audit.py",
+      "name": "scripts/equilibrium-105/ic-audit.py",
+      "bytes": 4855,
+      "sha256": "9a2ff1ebf943245934c3643998c81127862a608ce5323b729f09ff61292d4aea"
+    },
+    {
+      "url": "downloads/source/scripts/equilibrium-105/identity.mjs",
+      "name": "scripts/equilibrium-105/identity.mjs",
+      "bytes": 1176,
+      "sha256": "33cb5f990fb41c635d6dbea308aaca2fe7aab60ff84cb0c7f5e10d196b1c9949"
+    },
+    {
+      "url": "downloads/source/scripts/equilibrium-105/jeans-qmc.py",
+      "name": "scripts/equilibrium-105/jeans-qmc.py",
+      "bytes": 4325,
+      "sha256": "dd63e07d9066a02cfe3eedf3a0eb66f8e7105f13f507bbd5444a18d007fbe50e"
+    },
+    {
+      "url": "downloads/source/scripts/equilibrium-105/kinetic-contrast.mjs",
+      "name": "scripts/equilibrium-105/kinetic-contrast.mjs",
+      "bytes": 2426,
+      "sha256": "823006d42bb0e4ea38be80dd0b82945d78e408780e7f05a85761d0584239f09b"
+    },
+    {
+      "url": "downloads/source/scripts/equilibrium-105/migration.mjs",
+      "name": "scripts/equilibrium-105/migration.mjs",
+      "bytes": 2823,
+      "sha256": "b3f3e96ab68f22c972a4b2b1389c7c73552bbc0ef197aa1760e2c5b1b1efb9fa"
+    },
+    {
+      "url": "downloads/source/scripts/equilibrium-105/native-vertical.mjs",
+      "name": "scripts/equilibrium-105/native-vertical.mjs",
+      "bytes": 1693,
+      "sha256": "47e0ced6dcfa526f53418d056cef73ecd9e3614c660363f2ffd9cc086d3c6c56"
+    },
+    {
+      "url": "downloads/source/scripts/equilibrium-105/package.py",
+      "name": "scripts/equilibrium-105/package.py",
+      "bytes": 5026,
+      "sha256": "ef4135cf7dc4202c9251c76542c888a5fe00df34676b8a53b127b2651e246714"
+    },
+    {
+      "url": "downloads/source/scripts/equilibrium-105/parameters.mjs",
+      "name": "scripts/equilibrium-105/parameters.mjs",
+      "bytes": 1727,
+      "sha256": "e67d9da706fcf544c36f9b8ed5952a9ea7ac03997b698be148658b8152c36237"
+    },
+    {
+      "url": "downloads/source/scripts/equilibrium-105/phase-a.mjs",
+      "name": "scripts/equilibrium-105/phase-a.mjs",
+      "bytes": 4586,
+      "sha256": "4119f0d6b43aa8a387bb5a29026a03516837fe405d239e2bfd18c713c8ca3796"
+    },
+    {
+      "url": "downloads/source/scripts/equilibrium-105/phase-mix.py",
+      "name": "scripts/equilibrium-105/phase-mix.py",
+      "bytes": 4680,
+      "sha256": "13afb856c7fd5e8893cd8ec7a49b5005a80d89d598488f079d3390134076555f"
+    },
+    {
+      "url": "downloads/source/scripts/equilibrium-105/pilot-decision.mjs",
+      "name": "scripts/equilibrium-105/pilot-decision.mjs",
+      "bytes": 1619,
+      "sha256": "8dcc10ac51fb8733c2257cd36aa7ac2a6963f7cf894d3801179d038ceebebb56"
+    },
+    {
+      "url": "downloads/source/scripts/equilibrium-105/playback.mjs",
+      "name": "scripts/equilibrium-105/playback.mjs",
+      "bytes": 1821,
+      "sha256": "798c27bc0dcd557bd192d46e4887fddd552d8951829bf5dee54b5f391b3af20e"
+    },
+    {
+      "url": "downloads/source/scripts/equilibrium-105/plot.py",
+      "name": "scripts/equilibrium-105/plot.py",
+      "bytes": 17245,
+      "sha256": "47f1ef5b3f5bd92b8f4000165f1baa738e40ac82c8b93e8b58886310a641dfa8"
+    },
+    {
+      "url": "downloads/source/scripts/equilibrium-105/preparation-decision.mjs",
+      "name": "scripts/equilibrium-105/preparation-decision.mjs",
+      "bytes": 2223,
+      "sha256": "31921726c45bbaa1e6d7c4b90f48daf13e205bff0b7f4db5b7066b423d8ea538"
+    },
+    {
+      "url": "downloads/source/scripts/equilibrium-105/prepare-resolution.py",
+      "name": "scripts/equilibrium-105/prepare-resolution.py",
+      "bytes": 4896,
+      "sha256": "d0391f4a3d7bf8b7f015c28c42527d0d4292a599adc6ad969f7a0c0f54ae940a"
+    },
+    {
+      "url": "downloads/source/scripts/equilibrium-105/prepare.mjs",
+      "name": "scripts/equilibrium-105/prepare.mjs",
+      "bytes": 2072,
+      "sha256": "023a26481e00f8b9074cbe3a119246c0b85c2a630e7f7d96f9954a6799085ef8"
+    },
+    {
+      "url": "downloads/source/scripts/equilibrium-105/preserve.mjs",
+      "name": "scripts/equilibrium-105/preserve.mjs",
+      "bytes": 1813,
+      "sha256": "979a80285a5ddd24096ee0a315fd69e93192b9756c9e8ecac79e31df4eab6de9"
+    },
+    {
+      "url": "downloads/source/scripts/equilibrium-105/protocol.mjs",
+      "name": "scripts/equilibrium-105/protocol.mjs",
+      "bytes": 3250,
+      "sha256": "5c9e8d844e7f77086d145f016188e627602a18de787e1a4392dc3c54ddbd9930"
+    },
+    {
+      "url": "downloads/source/scripts/equilibrium-105/reference-energy-bound.mjs",
+      "name": "scripts/equilibrium-105/reference-energy-bound.mjs",
+      "bytes": 1770,
+      "sha256": "7f1961edbcad0d87ae76949066eb1fb44a585ab35be8be2ff26f2e141e6231a6"
+    },
+    {
+      "url": "downloads/source/scripts/equilibrium-105/register.mjs",
+      "name": "scripts/equilibrium-105/register.mjs",
+      "bytes": 1325,
+      "sha256": "bdd8d6b2961260f164ec532bd2c8d617ca1144b4ca14e8cb4cd1c9669de5170e"
+    },
+    {
+      "url": "downloads/source/scripts/equilibrium-105/report.py",
+      "name": "scripts/equilibrium-105/report.py",
+      "bytes": 44907,
+      "sha256": "ce47e5cf8322968abf93868897f8da5e8958de096a89e3e4608f0b8bcb6c8e8b"
+    },
+    {
+      "url": "downloads/source/scripts/equilibrium-105/reproduce.mjs",
+      "name": "scripts/equilibrium-105/reproduce.mjs",
+      "bytes": 1659,
+      "sha256": "488e5b4eff1edb3bf6e5f3e442e49e6f4689503adfc7cb6b10cacc154a5ca85a"
+    },
+    {
+      "url": "downloads/source/scripts/equilibrium-105/scheduling-check.mjs",
+      "name": "scripts/equilibrium-105/scheduling-check.mjs",
+      "bytes": 1612,
+      "sha256": "9dc01ecac6c69303cd36d0c17d84e0b32977a946dbc784e938f2ac4e4367cbbc"
+    },
+    {
+      "url": "downloads/source/scripts/equilibrium-105/status.mjs",
+      "name": "scripts/equilibrium-105/status.mjs",
+      "bytes": 661,
+      "sha256": "1a03b9c9283c6a97a7bd9e95482fa36188c0b2850d0041312041d6af54b569b1"
+    },
+    {
+      "url": "downloads/source/scripts/equilibrium-105/velocity-distributions.py",
+      "name": "scripts/equilibrium-105/velocity-distributions.py",
+      "bytes": 2771,
+      "sha256": "cc3b77619c55a572fa693ba08b4a48452216b9210dc27318e75c170139ed89bb"
+    },
+    {
+      "url": "downloads/source/scripts/equilibrium-assets.mjs",
+      "name": "scripts/equilibrium-assets.mjs",
+      "bytes": 6209,
+      "sha256": "30d15ada9105c0d1da85de5ee4cc800f6042564dfbf87834f5d0578c3be8516b"
+    },
+    {
+      "url": "downloads/source/scripts/equilibrium-controls.mjs",
+      "name": "scripts/equilibrium-controls.mjs",
+      "bytes": 11433,
+      "sha256": "dff88e82b52a416d5e06924e3e8666266e3f495be1abd3af96de61887c0d27d8"
+    },
+    {
+      "url": "downloads/source/scripts/granularity-103/analyze-continuum.mjs",
+      "name": "scripts/granularity-103/analyze-continuum.mjs",
+      "bytes": 3030,
+      "sha256": "fc94b854836f61a5f2f1df47d2b2a9e7c796b8ee604e6868e7466acac7f18deb"
+    },
+    {
+      "url": "downloads/source/scripts/granularity-103/analyze.mjs",
+      "name": "scripts/granularity-103/analyze.mjs",
+      "bytes": 5175,
+      "sha256": "dd61ac66af2b296089e36e8a55ca1da1096e92bfb9ac07408cc15092b4199370"
+    },
+    {
+      "url": "downloads/source/scripts/granularity-103/append-200.mjs",
+      "name": "scripts/granularity-103/append-200.mjs",
+      "bytes": 3832,
+      "sha256": "0f31d7879d43c118b082eec8e58f9f42c1173e7c9937b152489720d6dc1937fa"
+    },
+    {
+      "url": "downloads/source/scripts/granularity-103/append-baryons.mjs",
+      "name": "scripts/granularity-103/append-baryons.mjs",
+      "bytes": 1981,
+      "sha256": "d4a9d5a48037a6c338d515b25907e88d78fb37b731dd171d590dd2c4c46cc2d5"
+    },
+    {
+      "url": "downloads/source/scripts/granularity-103/audit.mjs",
+      "name": "scripts/granularity-103/audit.mjs",
+      "bytes": 6585,
+      "sha256": "4f97e0a812f65eb53a2b3dcbfa849743239d019f017cc0fcaa3794989de43f00"
+    },
+    {
+      "url": "downloads/source/scripts/granularity-103/browser-runner.mjs",
+      "name": "scripts/granularity-103/browser-runner.mjs",
+      "bytes": 6670,
+      "sha256": "7499a7348ca907b0cbbe45946b69e70e3d57f86ecb3ed6cfce41f2c4f7291e1e"
+    },
+    {
+      "url": "downloads/source/scripts/granularity-103/campaign.mjs",
+      "name": "scripts/granularity-103/campaign.mjs",
+      "bytes": 1033,
+      "sha256": "c77053e038a493a2c00111e87b775cf41822723900c8fd9a2e67f6a5bf29773d"
+    },
+    {
+      "url": "downloads/source/scripts/granularity-103/collective.mjs",
+      "name": "scripts/granularity-103/collective.mjs",
+      "bytes": 2846,
+      "sha256": "f8eadf56fb978985310e879394fbc0709229128d5664fbb90474a45cccbb8e8a"
+    },
+    {
+      "url": "downloads/source/scripts/granularity-103/collector.mjs",
+      "name": "scripts/granularity-103/collector.mjs",
+      "bytes": 2308,
+      "sha256": "96c97c28cf9bb3caae74a7235d1746fcc8e15caa83924b56ed9edd54bef9700e"
+    },
+    {
+      "url": "downloads/source/scripts/granularity-103/continuum.py",
+      "name": "scripts/granularity-103/continuum.py",
+      "bytes": 3081,
+      "sha256": "419fc917f235b33e92060fd3e330cfbd4db9cf9ed11b9a35e1076a91896e701a"
+    },
+    {
+      "url": "downloads/source/scripts/granularity-103/diagnose.mjs",
+      "name": "scripts/granularity-103/diagnose.mjs",
+      "bytes": 2966,
+      "sha256": "2c9132e108f87244dd1c7a557114b5dc6ad48b051235c19aad9377b49f59faef"
+    },
+    {
+      "url": "downloads/source/scripts/granularity-103/extend-baryons-200.mjs",
+      "name": "scripts/granularity-103/extend-baryons-200.mjs",
+      "bytes": 1919,
+      "sha256": "188f8de2c0231753d526d36793f6f29741c453d94348137e30d5b471aa478556"
+    },
+    {
+      "url": "downloads/source/scripts/granularity-103/field_components.py",
+      "name": "scripts/granularity-103/field_components.py",
+      "bytes": 2632,
+      "sha256": "d04499b77df395a9fe811dd4c9bad169e2f006b3966b1b64c6e7c77b698b9370"
+    },
+    {
+      "url": "downloads/source/scripts/granularity-103/field_statistics.py",
+      "name": "scripts/granularity-103/field_statistics.py",
+      "bytes": 2668,
+      "sha256": "ab897a69eec1d444e1530f2bfd861445e72c43273d046c9c938665b88e5838ce"
+    },
+    {
+      "url": "downloads/source/scripts/granularity-103/force-audit.mjs",
+      "name": "scripts/granularity-103/force-audit.mjs",
+      "bytes": 2548,
+      "sha256": "a4e88095173f3fef54181246fc269e439f3e04a9755881909a82888929c58dd2"
+    },
+    {
+      "url": "downloads/source/scripts/granularity-103/identity.mjs",
+      "name": "scripts/granularity-103/identity.mjs",
+      "bytes": 1172,
+      "sha256": "2745a4954076284337912c2568c8469b4b07327aca093cbcd91fa6e99d9b1ee2"
+    },
+    {
+      "url": "downloads/source/scripts/granularity-103/package.py",
+      "name": "scripts/granularity-103/package.py",
+      "bytes": 3909,
+      "sha256": "04d4014101667303ab39d40525be903e472e5e1b34cc537e27f93676682a18ec"
+    },
+    {
+      "url": "downloads/source/scripts/granularity-103/plot.py",
+      "name": "scripts/granularity-103/plot.py",
+      "bytes": 15030,
+      "sha256": "e337c2034c9607e99a670dcd73e5a772c23e6f597bfac71f9bac1d505e27f512"
+    },
+    {
+      "url": "downloads/source/scripts/granularity-103/prepare.py",
+      "name": "scripts/granularity-103/prepare.py",
+      "bytes": 6489,
+      "sha256": "d2e68e165612a4b241bf998edcab793c5e54137b0b11e8f586862f46717490c3"
+    },
+    {
+      "url": "downloads/source/scripts/granularity-103/prepare_field.py",
+      "name": "scripts/granularity-103/prepare_field.py",
+      "bytes": 4951,
+      "sha256": "5604d65510a4887c2601ebea4030e8fe807dbaccae8af191f6a20ba74c04676c"
+    },
+    {
+      "url": "downloads/source/scripts/granularity-103/preserve.mjs",
+      "name": "scripts/granularity-103/preserve.mjs",
+      "bytes": 2361,
+      "sha256": "e0bce7744c62ea45411add50128b94c7832436998aa977340978b1460fc1da81"
+    },
+    {
+      "url": "downloads/source/scripts/granularity-103/report.py",
+      "name": "scripts/granularity-103/report.py",
+      "bytes": 30843,
+      "sha256": "b634b7501051bf51fdb3b5d1af09634e7c3a4b93506e25be1963ae081a5c0009"
+    },
+    {
+      "url": "downloads/source/scripts/initial-mode-summary-09.mjs",
+      "name": "scripts/initial-mode-summary-09.mjs",
+      "bytes": 986,
+      "sha256": "c068c95d7ee704d040e16c60e7eecd67992927bf52cfac591c943e23326c33d5"
+    },
+    {
+      "url": "downloads/source/scripts/initial-modes-09.mjs",
+      "name": "scripts/initial-modes-09.mjs",
+      "bytes": 1118,
+      "sha256": "85db2261dfd7e5286cfe77c7b2a16fe98cc0b6b797c42c1fa70cf3801cd8caf2"
+    },
+    {
+      "url": "downloads/source/scripts/investigation-assets.mjs",
+      "name": "scripts/investigation-assets.mjs",
+      "bytes": 4360,
+      "sha256": "9c45bdf51f3219ca77159912b1597e1b1f09f79bc035c116524442de3179ecbf"
+    },
+    {
+      "url": "downloads/source/scripts/laboratory-convergence.mjs",
+      "name": "scripts/laboratory-convergence.mjs",
+      "bytes": 4608,
+      "sha256": "9f31c4a40202acb928a2cc659b504b1c5f92d0e1dda543500c25b5237402f1b3"
+    },
+    {
+      "url": "downloads/source/scripts/mean-field-control-09.mjs",
+      "name": "scripts/mean-field-control-09.mjs",
+      "bytes": 2609,
+      "sha256": "7eedf47175ae4b91814ae507d81914aebbd0fe8aa9837c165ca115d2385306bb"
+    },
+    {
+      "url": "downloads/source/scripts/pack-snapshots-08.mjs",
+      "name": "scripts/pack-snapshots-08.mjs",
+      "bytes": 1311,
+      "sha256": "5bb43ee1b53d8bd1f2d6b5b155abfb06967d0d2218f5d4cb791c84032435ee76"
+    },
+    {
+      "url": "downloads/source/scripts/plot-investigation-09.py",
+      "name": "scripts/plot-investigation-09.py",
+      "bytes": 6192,
+      "sha256": "c1550c30602f10d8ad5947f1dacef74ca58dc4d68e30895e610d330e8d59b487"
+    },
+    {
+      "url": "downloads/source/scripts/plot-laboratory.py",
+      "name": "scripts/plot-laboratory.py",
+      "bytes": 7543,
+      "sha256": "5ab393ad85c1376deba391390bbd1cf76edf6a223ba2f98e204a557e0172212d"
+    },
+    {
+      "url": "downloads/source/scripts/prepare-equilibrium.mjs",
+      "name": "scripts/prepare-equilibrium.mjs",
+      "bytes": 1654,
+      "sha256": "afbeb0ccb426b6e1ab7d94df40d813e31f7d4065f8a4a0e2431b5aa13f906a73"
+    },
+    {
+      "url": "downloads/source/scripts/refinement-104/advance.mjs",
+      "name": "scripts/refinement-104/advance.mjs",
+      "bytes": 1247,
+      "sha256": "e1da12c26507d4393f6eee3c27625122e88e1c9553fc1e2a3f192ff2ce5e49e6"
+    },
+    {
+      "url": "downloads/source/scripts/refinement-104/analyze-continuous-g.mjs",
+      "name": "scripts/refinement-104/analyze-continuous-g.mjs",
+      "bytes": 3003,
+      "sha256": "5b7b5af5739c08f0ec4ffb9ef2c702aaf14cba0155a8d6ebed358532362edf38"
+    },
+    {
+      "url": "downloads/source/scripts/refinement-104/analyze.mjs",
+      "name": "scripts/refinement-104/analyze.mjs",
+      "bytes": 6985,
+      "sha256": "29c8022bc7dfb1f1e8892a71ce7620e0ff359724c432ba58c97927feeeb71fa8"
+    },
+    {
+      "url": "downloads/source/scripts/refinement-104/audit.mjs",
+      "name": "scripts/refinement-104/audit.mjs",
+      "bytes": 6236,
+      "sha256": "0fd079759836012dfd41c2f85604c84a00e6dcd2484644b2559b4c5704b8c005"
+    },
+    {
+      "url": "downloads/source/scripts/refinement-104/browser-runner.mjs",
+      "name": "scripts/refinement-104/browser-runner.mjs",
+      "bytes": 8245,
+      "sha256": "2222c23fc399c8258e87c60b42f61754c48d16cb32d1acddf542ab04a1b7314a"
+    },
+    {
+      "url": "downloads/source/scripts/refinement-104/collective.mjs",
+      "name": "scripts/refinement-104/collective.mjs",
+      "bytes": 2847,
+      "sha256": "4d259791028d56b8d3473e3e815e4f5f7ac189c90fa99c889e994f4eb5f83238"
+    },
+    {
+      "url": "downloads/source/scripts/refinement-104/collector.mjs",
+      "name": "scripts/refinement-104/collector.mjs",
+      "bytes": 2310,
+      "sha256": "5e9320508160d47e08e97caa00d88f403cd5380325bda7e12bdcdddab8a406fd"
+    },
+    {
+      "url": "downloads/source/scripts/refinement-104/continuous-g.py",
+      "name": "scripts/refinement-104/continuous-g.py",
+      "bytes": 2404,
+      "sha256": "b2267ecbe53e27a1f42152c6fcec9548387a844722088b9e8c44603588631733"
+    },
+    {
+      "url": "downloads/source/scripts/refinement-104/controls.mjs",
+      "name": "scripts/refinement-104/controls.mjs",
+      "bytes": 2092,
+      "sha256": "972ced81aff79e15907307532c53d263a33ec56aa41b623524505c1eaa10f218"
+    },
+    {
+      "url": "downloads/source/scripts/refinement-104/core-decision.mjs",
+      "name": "scripts/refinement-104/core-decision.mjs",
+      "bytes": 1453,
+      "sha256": "48805e2df360f7a4002882a8a810a89c3cd076913ec861cefb66ab335bafc788"
+    },
+    {
+      "url": "downloads/source/scripts/refinement-104/field-audit.py",
+      "name": "scripts/refinement-104/field-audit.py",
+      "bytes": 2571,
+      "sha256": "249b7e9c6fbc1c3fafb36799c2693b968d2a2d1946bc3bbb06fbbfb02849d875"
+    },
+    {
+      "url": "downloads/source/scripts/refinement-104/final-checks.mjs",
+      "name": "scripts/refinement-104/final-checks.mjs",
+      "bytes": 4319,
+      "sha256": "412706245f2a797775db7198abc0beb34d04df32886365ece20988411ab43ed9"
+    },
+    {
+      "url": "downloads/source/scripts/refinement-104/final-decision.mjs",
+      "name": "scripts/refinement-104/final-decision.mjs",
+      "bytes": 3752,
+      "sha256": "d9ecbb74185ea1d6e71653425b591c46cb0acd49dd35f567af6d33592e2328e6"
+    },
+    {
+      "url": "downloads/source/scripts/refinement-104/force-audit.mjs",
+      "name": "scripts/refinement-104/force-audit.mjs",
+      "bytes": 2549,
+      "sha256": "870a40b5d67a6443626859680c0dce8c42d7e396b5dff0703485023ab711e5b6"
+    },
+    {
+      "url": "downloads/source/scripts/refinement-104/force-components.mjs",
+      "name": "scripts/refinement-104/force-components.mjs",
+      "bytes": 1967,
+      "sha256": "b87c3ab5c08cffb24dc488d7193b72c5c53b95b6b2c02d147fbf8bd4f4c335af"
+    },
+    {
+      "url": "downloads/source/scripts/refinement-104/ic-audit.py",
+      "name": "scripts/refinement-104/ic-audit.py",
+      "bytes": 3517,
+      "sha256": "9917ea75d46d76e76a6026f11eee20ce62e092d6010a4f36dfea2f87f72b8218"
+    },
+    {
+      "url": "downloads/source/scripts/refinement-104/ic-diagnosis.mjs",
+      "name": "scripts/refinement-104/ic-diagnosis.mjs",
+      "bytes": 1775,
+      "sha256": "c1ae294a5d087b6e4f201cd1f311d5d73563a23ba5b89ea68883e4df76c2ad36"
+    },
+    {
+      "url": "downloads/source/scripts/refinement-104/identity.mjs",
+      "name": "scripts/refinement-104/identity.mjs",
+      "bytes": 1173,
+      "sha256": "f62b3a5f9e3b7fe8713ca5454af57107c7ac04bde44f9fe1a1fbbf32f4199b23"
+    },
+    {
+      "url": "downloads/source/scripts/refinement-104/mechanisms.mjs",
+      "name": "scripts/refinement-104/mechanisms.mjs",
+      "bytes": 2961,
+      "sha256": "5a85e39cd82aedb579fa93dd3774a003b1717e7770bf9c8d5d630dc97aa302c4"
+    },
+    {
+      "url": "downloads/source/scripts/refinement-104/migration.mjs",
+      "name": "scripts/refinement-104/migration.mjs",
+      "bytes": 2821,
+      "sha256": "3c7ba82c4214d0442840d82615e7fe66c00eaf3e2b48945d1166d2326e24901c"
+    },
+    {
+      "url": "downloads/source/scripts/refinement-104/native-df.py",
+      "name": "scripts/refinement-104/native-df.py",
+      "bytes": 3425,
+      "sha256": "3f2a744cd4b3c8771c3eeb0cab7a63c777004f6400b982fae02f5a6817c4d731"
+    },
+    {
+      "url": "downloads/source/scripts/refinement-104/package.py",
+      "name": "scripts/refinement-104/package.py",
+      "bytes": 4733,
+      "sha256": "5ffb595c434936936ecc40fe859a48e0f00a78404647abaa2106369979c5e587"
+    },
+    {
+      "url": "downloads/source/scripts/refinement-104/plot.py",
+      "name": "scripts/refinement-104/plot.py",
+      "bytes": 14222,
+      "sha256": "7a935956473bd3b8c172a9742516d2f5ce1419b5c6c6d16184a882e3a49d0ce6"
+    },
+    {
+      "url": "downloads/source/scripts/refinement-104/prepare-higher.py",
+      "name": "scripts/refinement-104/prepare-higher.py",
+      "bytes": 4092,
+      "sha256": "ec0d9c0f526be0e7abac4019b82eebd8acb95db9cdfb7cb08e2e4206160bb1c1"
+    },
+    {
+      "url": "downloads/source/scripts/refinement-104/prepare.mjs",
+      "name": "scripts/refinement-104/prepare.mjs",
+      "bytes": 4346,
+      "sha256": "4d209482790bcfc5f04a40d3619630db27eaac52781f6b1f91c032fc8b4c0abf"
+    },
+    {
+      "url": "downloads/source/scripts/refinement-104/preserve.mjs",
+      "name": "scripts/refinement-104/preserve.mjs",
+      "bytes": 2379,
+      "sha256": "48c8241cf110140f72ba386c096c565432d45032c853a7b7aedd23bc16355df7"
+    },
+    {
+      "url": "downloads/source/scripts/refinement-104/register.mjs",
+      "name": "scripts/refinement-104/register.mjs",
+      "bytes": 1811,
+      "sha256": "92ed2f8b044b35b0a9da82dc71b32e64c8de540790616e259609975b23ca4882"
+    },
+    {
+      "url": "downloads/source/scripts/refinement-104/report.py",
+      "name": "scripts/refinement-104/report.py",
+      "bytes": 30391,
+      "sha256": "867d0a8bfd021bc8164b4f30a636710f48c9f16357262bf2e96b752125bb4992"
+    },
+    {
+      "url": "downloads/source/scripts/review-assets.mjs",
+      "name": "scripts/review-assets.mjs",
+      "bytes": 4400,
+      "sha256": "26dae4724e76d589706e34231acc52a3dfd21446ede09c74add32c95d6bfd7f1"
+    },
+    {
+      "url": "downloads/source/scripts/serve.mjs",
+      "name": "scripts/serve.mjs",
+      "bytes": 1248,
+      "sha256": "e425396a6128201c901e8695f7180927b2040129c0d156bf67de946983150776"
+    },
+    {
+      "url": "downloads/source/scripts/summarize-equilibrium-08.mjs",
+      "name": "scripts/summarize-equilibrium-08.mjs",
+      "bytes": 11454,
+      "sha256": "0394f1ba9d1d5bb569e3aa1caf76e8c8a3a710118b66629087ec77536172fcee"
+    },
+    {
+      "url": "downloads/source/scripts/summarize-masses-08.mjs",
+      "name": "scripts/summarize-masses-08.mjs",
+      "bytes": 5141,
+      "sha256": "dcf7c477fe2ca653008d25f182a3e434605176ab3083c9203817e508c4e16453"
+    },
+    {
+      "url": "downloads/source/scripts/test.mjs",
+      "name": "scripts/test.mjs",
+      "bytes": 557,
+      "sha256": "110a4306adcfab3102a506c2f99c3c9692d763cc70f55b44e6afab76e62407f7"
+    },
+    {
+      "url": "downloads/source/scripts/validate-campaign-09.mjs",
+      "name": "scripts/validate-campaign-09.mjs",
+      "bytes": 2515,
+      "sha256": "8864d5fe409d4028cb573cf9e36d96298aba81374b70a944730aa6b82ebc618d"
+    },
+    {
+      "url": "downloads/source/scripts/validate-galaxy.mjs",
+      "name": "scripts/validate-galaxy.mjs",
+      "bytes": 2589,
+      "sha256": "e2389e4a02a4484637aa6efbbfbe6ea921588991a3030d592df5cfbc41a24acf"
+    },
+    {
+      "url": "downloads/source/scripts/validate-snapshot.mjs",
+      "name": "scripts/validate-snapshot.mjs",
+      "bytes": 1290,
+      "sha256": "5d8b0d44f23714b94fee6a4564416e037ee8f73f4b3fd56daea67d32b65fda6f"
+    },
+    {
+      "url": "downloads/source/scripts/validation-101/analyze-continuum.mjs",
+      "name": "scripts/validation-101/analyze-continuum.mjs",
+      "bytes": 3270,
+      "sha256": "ceb8ac8d51af8022613cab58a8ac50891e41ea667e82a2d4dd137f7ab03111c2"
+    },
+    {
+      "url": "downloads/source/scripts/validation-101/analyze-gpu.mjs",
+      "name": "scripts/validation-101/analyze-gpu.mjs",
+      "bytes": 13221,
+      "sha256": "2353d009248aba08638f9b7df52fe2d5170f4adac5dc6776be729e593ee87f43"
+    },
+    {
+      "url": "downloads/source/scripts/validation-101/browser-gpu.mjs",
+      "name": "scripts/validation-101/browser-gpu.mjs",
+      "bytes": 4786,
+      "sha256": "13bf32cb25af1628cd72f1fa56dc2e0db19287353c702b3496b978d0ecbc31ee"
+    },
+    {
+      "url": "downloads/source/scripts/validation-101/collector.mjs",
+      "name": "scripts/validation-101/collector.mjs",
+      "bytes": 1800,
+      "sha256": "d43f22d78a90893f8b454fbcc6c1e497df108a5f8ea5b9f796ebdb6fa20718d3"
+    },
+    {
+      "url": "downloads/source/scripts/validation-101/common.mjs",
+      "name": "scripts/validation-101/common.mjs",
+      "bytes": 4793,
+      "sha256": "1088b278856a67acaff54353ff4641cbfe2e5cd37a5b085c30138821e7cb2455"
+    },
+    {
+      "url": "downloads/source/scripts/validation-101/package.py",
+      "name": "scripts/validation-101/package.py",
+      "bytes": 3156,
+      "sha256": "1d96777c68de03f854ee807c777307f94b14123f22d6acebd89594f1f66c74b0"
+    },
+    {
+      "url": "downloads/source/scripts/validation-101/plot.py",
+      "name": "scripts/validation-101/plot.py",
+      "bytes": 29549,
+      "sha256": "3a7c4469c5ddcc2a14b5e10b9589318865a04b47d0ffb79a4f54b89e29e252ee"
+    },
+    {
+      "url": "downloads/source/scripts/validation-101/prepare-continuum.py",
+      "name": "scripts/validation-101/prepare-continuum.py",
+      "bytes": 2800,
+      "sha256": "c26a52b823c668b5457da673f4d7dbe860f8c1da0f3c05d9e21c6c39a79124bd"
+    },
+    {
+      "url": "downloads/source/scripts/validation-101/preserve.mjs",
+      "name": "scripts/validation-101/preserve.mjs",
+      "bytes": 1311,
+      "sha256": "666827276db275c122f598f64ee01071ef76427094b30325a98a2270a2016ca4"
+    },
+    {
+      "url": "downloads/source/scripts/validation-101/reanalyze-history.mjs",
+      "name": "scripts/validation-101/reanalyze-history.mjs",
+      "bytes": 11668,
+      "sha256": "9484d47da9aca0a647dc9c02fb8874798f4a86f5f9a6e411862d5363a5d5e054"
+    },
+    {
+      "url": "downloads/source/scripts/validation-101/run-cpu.mjs",
+      "name": "scripts/validation-101/run-cpu.mjs",
+      "bytes": 6557,
+      "sha256": "a71c933816925090571bdf3928864679efc81764a80e4794119723743b31ddd1"
+    },
+    {
+      "url": "downloads/source/scripts/validation-101/summarize.mjs",
+      "name": "scripts/validation-101/summarize.mjs",
+      "bytes": 9974,
+      "sha256": "770489ffdbf8d0172e408ec15d652a18f7b33051d86370940643f7805e239c8a"
+    },
+    {
+      "url": "downloads/source/scripts/validation-101/verify.mjs",
+      "name": "scripts/validation-101/verify.mjs",
+      "bytes": 2957,
+      "sha256": "a64d7ae489a61cb6d79de5c7ef52f5f066faf6d415cf51e10b4d75e7d84bb429"
+    },
+    {
+      "url": "downloads/source/scripts/verify-artifacts-09.py",
+      "name": "scripts/verify-artifacts-09.py",
+      "bytes": 1732,
+      "sha256": "8ab7b69dc06f21b9946c25c68dfeeb9d47cf6997a900fb0fe608c20ec687c9fa"
+    },
+    {
+      "url": "downloads/source/scripts/verify-investigation-09.mjs",
+      "name": "scripts/verify-investigation-09.mjs",
+      "bytes": 2656,
+      "sha256": "f3b3325090901d51b606d21144b73ef8f78d8c3ad02e3d21b886b40a2834fff6"
+    },
+    {
+      "url": "downloads/source/scripts/write-investigation-docs-09.mjs",
+      "name": "scripts/write-investigation-docs-09.mjs",
+      "bytes": 34139,
+      "sha256": "290c2330209bcf0488bbbf74433cffac8beb8c82aaf8e9afea706855f6e59978"
+    },
+    {
+      "url": "downloads/source/tests/browser-equilibrium-08.html",
+      "name": "tests/browser-equilibrium-08.html",
+      "bytes": 4594,
+      "sha256": "f1d42c4adaf8ffe1290642aa1eb30894c47cb1d4f43e9b8e78a794d59ec8d4a3"
+    },
+    {
+      "url": "downloads/source/tests/browser-equilibrium-105.html",
+      "name": "tests/browser-equilibrium-105.html",
+      "bytes": 577,
+      "sha256": "55d040b841246d558745b5b4a21d84d505d93940b8c11c85f2ac8190be52c008"
+    },
+    {
+      "url": "downloads/source/tests/browser-equilibrium-backends-calibrated-v1.html",
+      "name": "tests/browser-equilibrium-backends-calibrated-v1.html",
+      "bytes": 3332,
+      "sha256": "bb9d13ef94651d8114fd3613f2005b74a888ba9eda953a6fce61aba80d3057b5"
+    },
+    {
+      "url": "downloads/source/tests/browser-equilibrium-backends-v1.html",
+      "name": "tests/browser-equilibrium-backends-v1.html",
+      "bytes": 3300,
+      "sha256": "e28f20bc8ed548b22d15131ecda4a49d261ec180db6ba8d42e133d3bc19e3f82"
+    },
+    {
+      "url": "downloads/source/tests/browser-equilibrium-batch-calibrated-v1.html",
+      "name": "tests/browser-equilibrium-batch-calibrated-v1.html",
+      "bytes": 3848,
+      "sha256": "53898924270dd0772ac53f19c60525e52b94bbe264f2900c471665268bed8128"
+    },
+    {
+      "url": "downloads/source/tests/browser-equilibrium-batch-v1.html",
+      "name": "tests/browser-equilibrium-batch-v1.html",
+      "bytes": 3348,
+      "sha256": "519834b31e74a149605c8fc0f579439e571eed897587888d2391c1c521b8815d"
+    },
+    {
+      "url": "downloads/source/tests/browser-equilibrium-calibrated-v1.html",
+      "name": "tests/browser-equilibrium-calibrated-v1.html",
+      "bytes": 8026,
+      "sha256": "4f018bcf89b1cf1b102a2df8c4d53884bca0088687d1a96f192eb205fc80b923"
+    },
+    {
+      "url": "downloads/source/tests/browser-equilibrium-refinement-08.html",
+      "name": "tests/browser-equilibrium-refinement-08.html",
+      "bytes": 4123,
+      "sha256": "413346d83e67283b03ec54222198871c9b089388f0a002c3b4a365998f638cd7"
+    },
+    {
+      "url": "downloads/source/tests/browser-equilibrium-resume-v1.html",
+      "name": "tests/browser-equilibrium-resume-v1.html",
+      "bytes": 3641,
+      "sha256": "745310eedd35987c878d58742ddd4a373f68dcaa04216ff1c22cc103cba8b1c7"
+    },
+    {
+      "url": "downloads/source/tests/browser-equilibrium-v1.html",
+      "name": "tests/browser-equilibrium-v1.html",
+      "bytes": 7578,
+      "sha256": "70698b309abb236fd04b182dbcf2d3163703a66a9c48febb93fa972645924a64"
+    },
+    {
+      "url": "downloads/source/tests/browser-export-09.html",
+      "name": "tests/browser-export-09.html",
+      "bytes": 1902,
+      "sha256": "4a6979ede18cc43af05cbc694321fda9faa6128391d4d0031df58fab06cdf547"
+    },
+    {
+      "url": "downloads/source/tests/browser-fixed-halo-09.html",
+      "name": "tests/browser-fixed-halo-09.html",
+      "bytes": 2196,
+      "sha256": "079c6efe8fbc96aa48b53a85e32bd5d048dbc074f3b47f22fbb49b5a159bc41c"
+    },
+    {
+      "url": "downloads/source/tests/browser-gpu.html",
+      "name": "tests/browser-gpu.html",
+      "bytes": 6869,
+      "sha256": "1bf64e544088d5bd4d2d69b622f0dad014deb99a13b3327bc6547e86d328d24f"
+    },
+    {
+      "url": "downloads/source/tests/browser-granularity-103.html",
+      "name": "tests/browser-granularity-103.html",
+      "bytes": 573,
+      "sha256": "6d94addb31c5b37b817383625e3e60b4d68d15ae349ad3d79d6c927970df27b0"
+    },
+    {
+      "url": "downloads/source/tests/browser-granularity-force-103.html",
+      "name": "tests/browser-granularity-force-103.html",
+      "bytes": 2740,
+      "sha256": "6ba4a263d25b89cd841592141eb47bc3d2e5430f360c714cf688cb4cdbb69693"
+    },
+    {
+      "url": "downloads/source/tests/browser-halos-09.html",
+      "name": "tests/browser-halos-09.html",
+      "bytes": 8227,
+      "sha256": "912cd40f45cc7bb986c261c3373132208e08864f2721917dd46fcb46df60c42b"
+    },
+    {
+      "url": "downloads/source/tests/browser-halos-continuation-09.html",
+      "name": "tests/browser-halos-continuation-09.html",
+      "bytes": 9089,
+      "sha256": "b42286cbdb5d7b5039926679eed5a3ddc20433f1e910cca02d65f4c16cdb3a57"
+    },
+    {
+      "url": "downloads/source/tests/browser-halos-resume-09.html",
+      "name": "tests/browser-halos-resume-09.html",
+      "bytes": 9217,
+      "sha256": "207e6de0a64f0aaa9e0d0acfc651df109b6eefd437422b2d9d9db0e45c8a6c5f"
+    },
+    {
+      "url": "downloads/source/tests/browser-high-dt-09.html",
+      "name": "tests/browser-high-dt-09.html",
+      "bytes": 6953,
+      "sha256": "0d28b0f0f7fd21e49d2682e5202c55d160e1977d915e823885d9ec8b398ea8b6"
+    },
+    {
+      "url": "downloads/source/tests/browser-initial-audit-09.html",
+      "name": "tests/browser-initial-audit-09.html",
+      "bytes": 2166,
+      "sha256": "1d4187f042f5ee04224cbf1413f173cd5749573fd9d7e361ff442b49fe21f815"
+    },
+    {
+      "url": "downloads/source/tests/browser-laboratory.html",
+      "name": "tests/browser-laboratory.html",
+      "bytes": 4518,
+      "sha256": "190526994afd3f8f82fcf5cb254f76ffd8caa2f36440f4605888b385d47cdd01"
+    },
+    {
+      "url": "downloads/source/tests/browser-mass.html",
+      "name": "tests/browser-mass.html",
+      "bytes": 1583,
+      "sha256": "f67e97378bf755e2ec6758ee21ff0349f79dd4b7824664b758d1885c5d94404f"
+    },
+    {
+      "url": "downloads/source/tests/browser-refinement-104.html",
+      "name": "tests/browser-refinement-104.html",
+      "bytes": 574,
+      "sha256": "2a0f8f3b10cf826574607121a86022da9d9001ee393f6a806699c2843f1e4010"
+    },
+    {
+      "url": "downloads/source/tests/browser-reproduce-09.html",
+      "name": "tests/browser-reproduce-09.html",
+      "bytes": 2813,
+      "sha256": "2d40343beb1703a26f66519edfd80ab7a71173022ca5f6ce1efb0f75782bb508"
+    },
+    {
+      "url": "downloads/source/tests/browser-softened-minimum-102.html",
+      "name": "tests/browser-softened-minimum-102.html",
+      "bytes": 570,
+      "sha256": "e279eb2c4d2d9fa68d3654b3a450f2f494ef36e2dcc15874db4063b6b89a2159"
+    },
+    {
+      "url": "downloads/source/tests/browser-validation-101.html",
+      "name": "tests/browser-validation-101.html",
+      "bytes": 542,
+      "sha256": "a9bc366c5bf7bcd87ef5297aea9770f4434fdc6e213251d31a8c84866a00d0e0"
+    },
+    {
+      "url": "downloads/source/tests/capability.test.mjs.txt",
+      "name": "tests/capability.test.mjs",
+      "bytes": 2909,
+      "sha256": "1b3ea402cf54929db0500850bb4b14d2521ec680dcf98c0d817f721f7aaced04"
+    },
+    {
+      "url": "downloads/source/tests/core.test.mjs.txt",
+      "name": "tests/core.test.mjs",
+      "bytes": 14887,
+      "sha256": "8a3c6d70a8ee2b26b6a35064ec004107c127ec0bfc10928eeef51570c38362e5"
+    },
+    {
+      "url": "downloads/source/tests/disk-analysis.test.mjs.txt",
+      "name": "tests/disk-analysis.test.mjs",
+      "bytes": 4165,
+      "sha256": "d9dd265dfa4e953c424325b850b1993d35fad37afd2a7052abeec69fbe79a62a"
+    },
+    {
+      "url": "downloads/source/tests/equilibrium-v1.test.mjs.txt",
+      "name": "tests/equilibrium-v1.test.mjs",
+      "bytes": 4465,
+      "sha256": "60fbd4c8f2e012749f51544e225865fde38cb271878361dd54a58b666b163dca"
+    },
+    {
+      "url": "downloads/source/tests/external-polynomial-103.test.mjs.txt",
+      "name": "tests/external-polynomial-103.test.mjs",
+      "bytes": 1469,
+      "sha256": "e00d9a6c7af161f6385088c2b709bf27abacccde0f4f79b1b5558ee8c8c0b6b6"
+    },
+    {
+      "url": "downloads/source/tests/fixed-halo.test.mjs.txt",
+      "name": "tests/fixed-halo.test.mjs",
+      "bytes": 2931,
+      "sha256": "f8c41ec1185bd0feab18aa25a0b7c9836ea3b9c28fa6eea4e28443baad884fe1"
+    },
+    {
+      "url": "downloads/source/tests/granularity-analysis.test.mjs.txt",
+      "name": "tests/granularity-analysis.test.mjs",
+      "bytes": 1978,
+      "sha256": "b9b83ea8f36711a95a7d8cc3c9fed259dd7ba97220af057bd7d7215f8bd3b806"
+    },
+    {
+      "url": "downloads/source/tests/hamiltonian-bounds-105.test.mjs.txt",
+      "name": "tests/hamiltonian-bounds-105.test.mjs",
+      "bytes": 1300,
+      "sha256": "a7bf74f10deea2be7f03f571c8fa2023d5a61d9a9af7d158a308184f0a2bb9d9"
+    },
+    {
+      "url": "downloads/source/tests/iterative-initial.test.mjs.txt",
+      "name": "tests/iterative-initial.test.mjs",
+      "bytes": 4198,
+      "sha256": "6f2f8627f54b643893cfe1bc4d4eff5f924348c088bab8c7a1b6b2af611b798c"
+    },
+    {
+      "url": "downloads/source/tests/laboratory.test.mjs.txt",
+      "name": "tests/laboratory.test.mjs",
+      "bytes": 3638,
+      "sha256": "009d4e3f9ce13edddf809c430936e1dabc430d12a8f9a2cf66c1a1b15bf392a4"
+    },
+    {
+      "url": "downloads/source/tests/mass-audit.test.mjs.txt",
+      "name": "tests/mass-audit.test.mjs",
+      "bytes": 3485,
+      "sha256": "3aeadf1400cb30027f1f4acb26e538c5e9f514e719eb5f77d38574b29b4fac0a"
+    },
+    {
+      "url": "downloads/source/tests/models.test.mjs.txt",
+      "name": "tests/models.test.mjs",
+      "bytes": 3145,
+      "sha256": "89bfbea9bd61de31edcb287494a17cfbae8ea45b7d3d925ffba1020de80855bb"
+    },
+    {
+      "url": "downloads/source/tests/pair-energy-104.test.mjs.txt",
+      "name": "tests/pair-energy-104.test.mjs",
+      "bytes": 971,
+      "sha256": "21311b1bd822c9d577d9090a03745fb8dfcf04443b60f16ced12505190d4d346"
+    },
+    {
+      "url": "downloads/source/tests/render.test.mjs.txt",
+      "name": "tests/render.test.mjs",
+      "bytes": 3231,
+      "sha256": "2bbf0ee6340d7015d64845ff50e9b859221d1158844a9aa86a7fd46d72e16fa3"
+    },
+    {
+      "url": "downloads/source/tests/reproduction-105.test.mjs.txt",
+      "name": "tests/reproduction-105.test.mjs",
+      "bytes": 985,
+      "sha256": "dcca338076d465853e6576c718799f69bec0f6db993df3e858019c059d2e666f"
+    },
+    {
+      "url": "downloads/source/tests/review-export.test.mjs.txt",
+      "name": "tests/review-export.test.mjs",
+      "bytes": 1465,
+      "sha256": "27d47edfbdb3502a0078396450c44ac9a2e80f5a43752122a4126f3307bf8e6f"
+    },
+    {
+      "url": "downloads/source/tests/softened-model.test.mjs.txt",
+      "name": "tests/softened-model.test.mjs",
+      "bytes": 1800,
+      "sha256": "d39163a40c1fdd169fe655616037e256b18d5545445316be947d3a3577921964"
+    },
+    {
+      "url": "downloads/source/tests/stationarity-105.test.mjs.txt",
+      "name": "tests/stationarity-105.test.mjs",
+      "bytes": 1902,
+      "sha256": "ba555b95387a025ee108ea834867ed5d9c4f2b313f5c4bd6d24144282242fe02"
+    },
+    {
+      "url": "downloads/source/tests/structure-diagnostics.test.mjs.txt",
+      "name": "tests/structure-diagnostics.test.mjs",
+      "bytes": 5050,
+      "sha256": "73245eeca2b0d7c0a82a304eb117414c7f2997ac5dc9cf0f4e446a6977824b30"
+    },
+    {
+      "url": "downloads/source/tests/validation-101.test.mjs.txt",
+      "name": "tests/validation-101.test.mjs",
+      "bytes": 12698,
+      "sha256": "54b578f8232bf035f5f571ad5d5d41b886a9564044be442a38f5fd87e863ded4"
+    },
+    {
+      "url": "downloads/source/tests/validation-assessment.test.mjs.txt",
+      "name": "tests/validation-assessment.test.mjs",
+      "bytes": 2424,
+      "sha256": "f2f7f4a006471c565c1f778e68a07d18015f6ae951ba8043f8516c8b754d7dc2"
+    },
+    {
+      "url": "AQUECIMENTO_DISCO.md",
+      "name": "AQUECIMENTO_DISCO.md",
+      "bytes": 8871,
+      "sha256": "0189197e7f891095bfcae3388627019d910c06d4840384faa05273dd10e675dd"
+    },
+    {
+      "url": "AQUECIMENTO_NUMERICO_1_0_5.md",
+      "name": "AQUECIMENTO_NUMERICO_1_0_5.md",
+      "bytes": 11435,
+      "sha256": "b62a95f3fa60ea7d62b9b6ff02eee6bc9dc83dafe7fea63c14d9ce7e961a95ba"
+    },
+    {
+      "url": "AUDITORIA_ENERGIA_1_0_1.md",
+      "name": "AUDITORIA_ENERGIA_1_0_1.md",
+      "bytes": 21515,
+      "sha256": "9d7ade27e0dc37abec7de038f69296cc0d16c97d87c2bc4c3a5a356b8dfd9b0e"
+    },
+    {
+      "url": "AUDITORIA_MASSAS.md",
+      "name": "AUDITORIA_MASSAS.md",
+      "bytes": 8277,
+      "sha256": "7fe6c2ad02986bf08a1ab20609638f958951fb19b23132f14f1c03122c9086fb"
+    },
+    {
+      "url": "AUDITORIA_MOTOR.md",
+      "name": "AUDITORIA_MOTOR.md",
+      "bytes": 10779,
+      "sha256": "cae841119182a6c016a78e2a31b00691d029d62e52ea22de2e80e2a776335333"
+    },
+    {
+      "url": "COMPARACAO_07_08.md",
+      "name": "COMPARACAO_07_08.md",
+      "bytes": 7722,
+      "sha256": "fb4a74772cff35cdae82aa741b730e020d3c7707d3b65380cfa1bccd301eb5e2"
+    },
+    {
+      "url": "COMPARACAO_09_10.md",
+      "name": "COMPARACAO_09_10.md",
+      "bytes": 5498,
+      "sha256": "142ff74d7a40128d4028690a016cd1608efccd55525b5e17488d79092068ee07"
+    },
+    {
+      "url": "COMPARACAO_AGAMA_1_0_1.md",
+      "name": "COMPARACAO_AGAMA_1_0_1.md",
+      "bytes": 13253,
+      "sha256": "d64edf214fdd4f59164a307e154cae76be7ff54741c629d22a5b2a72daed6e8a"
+    },
+    {
+      "url": "COMPARACAO_ESTABILIDADE_1_0_2.md",
+      "name": "COMPARACAO_ESTABILIDADE_1_0_2.md",
+      "bytes": 6333,
+      "sha256": "a38cd4cf8da9d13bfa96c2bbc136a6c0e2a16ad126c600d3dc92e5b3bb8a7854"
+    },
+    {
+      "url": "COMPARACAO_HALOS.md",
+      "name": "COMPARACAO_HALOS.md",
+      "bytes": 11090,
+      "sha256": "b9a93577c487484326900aced141d47f96e93d75598d56d0b2cffa43359cef0b"
+    },
+    {
+      "url": "COMPARACAO_VERSOES_1_0_3.md",
+      "name": "COMPARACAO_VERSOES_1_0_3.md",
+      "bytes": 3039,
+      "sha256": "6c19dd2b853de8572b0cf7f1fc485b20734a27edc9bcf8e4dc3d19e37b337f3f"
+    },
+    {
+      "url": "COMPATIBILIDADE_CAMPO_SUAVIZADO.md",
+      "name": "COMPATIBILIDADE_CAMPO_SUAVIZADO.md",
+      "bytes": 6017,
+      "sha256": "15deffaa1e108bd29af07430fa21d594371c93844cd0ee86c190c41a2d552594"
+    },
+    {
+      "url": "COMPATIBILIDADE_E_EQUILIBRIO_1_0_3.md",
+      "name": "COMPATIBILIDADE_E_EQUILIBRIO_1_0_3.md",
+      "bytes": 5147,
+      "sha256": "e25c1e770a29807cd22c7dc3e2df2aa89b2341bf34e1da8b5a73b05d63cd2ce6"
+    },
+    {
+      "url": "CONDICOES_INICIAIS_1_0.md",
+      "name": "CONDICOES_INICIAIS_1_0.md",
+      "bytes": 8925,
+      "sha256": "448446d7d6c4392f0e93e57df293d774bdcddc3963868f14f6156409ea9ffd88"
+    },
+    {
+      "url": "CONDICOES_INICIAIS_1_0_4.md",
+      "name": "CONDICOES_INICIAIS_1_0_4.md",
+      "bytes": 4357,
+      "sha256": "02cb6007475b82a6a2f33ffd4ffd6ebeec3a4df0c0c4e15cf6d4aaeae801f34a"
+    },
+    {
+      "url": "CONSERVACAO_E_CUSTO_1_0_3.md",
+      "name": "CONSERVACAO_E_CUSTO_1_0_3.md",
+      "bytes": 6544,
+      "sha256": "ce8348cfa80bb940b27019f13898eb53ddd4823314bd274f1c5574ee8e04317f"
+    },
+    {
+      "url": "CONSERVACAO_E_CUSTO_1_0_4.md",
+      "name": "CONSERVACAO_E_CUSTO_1_0_4.md",
+      "bytes": 4074,
+      "sha256": "5e9933bb2857301bde7bae95274b8afa315fe236c1416f029219e785ff894c50"
+    },
+    {
+      "url": "CONVERGENCIA_1_0_4.md",
+      "name": "CONVERGENCIA_1_0_4.md",
+      "bytes": 4222,
+      "sha256": "01ff3ee0301bd657148ad61acd7922962a78c1542a21e8f41e21f39849e8c1fc"
+    },
+    {
+      "url": "CONVERGENCIA_E_ESTABILIDADE_1_0_5.md",
+      "name": "CONVERGENCIA_E_ESTABILIDADE_1_0_5.md",
+      "bytes": 8737,
+      "sha256": "ace7552e1d270a9581922e31c76072680a9674038e78683667bba3e8c9ff17ad"
+    },
+    {
+      "url": "CONVERGENCIA_NUMERICA_1_0_1.md",
+      "name": "CONVERGENCIA_NUMERICA_1_0_1.md",
+      "bytes": 13960,
+      "sha256": "35430c2a9cb28dc3c4c3f1f510004ce9091e4ea0e0a142d2a1ba52c0dde68e08"
+    },
+    {
+      "url": "CORRECAO_EQUILIBRIO_1_0_2.md",
+      "name": "CORRECAO_EQUILIBRIO_1_0_2.md",
+      "bytes": 5115,
+      "sha256": "412ba9d149e2a52b95af3584d1c3f736b6c981d121bf6a3d9f674f1554dfb7ba"
+    },
+    {
+      "url": "DIAGNOSTICO_EQUILIBRIO_1_0_5.md",
+      "name": "DIAGNOSTICO_EQUILIBRIO_1_0_5.md",
+      "bytes": 8324,
+      "sha256": "e3da800fb57a2e1995ed88d8b44bd9e4f9ce9c3cb37fa1e8e0b508d9b9b52f95"
+    },
+    {
+      "url": "EQUILIBRIO_AXISIMETRICO_1_0_1.md",
+      "name": "EQUILIBRIO_AXISIMETRICO_1_0_1.md",
+      "bytes": 13161,
+      "sha256": "c2617b560667ac2f4d701bbe8736d77a842425a6614980baaf06012c564f8e5e"
+    },
+    {
+      "url": "EQUILIBRIO_INICIAL.md",
+      "name": "EQUILIBRIO_INICIAL.md",
+      "bytes": 8484,
+      "sha256": "9e0b0e588a5ee35daa9039100a432300762f021c09b4c4946d8db1b41454b099"
+    },
+    {
+      "url": "ESTABILIDADE_E_CONSERVACAO_TCC.md",
+      "name": "ESTABILIDADE_E_CONSERVACAO_TCC.md",
+      "bytes": 25636,
+      "sha256": "e368528755c29303b5423a1c44d3aba6c2a1b0189c2ffaacf4600c42b0a348aa"
+    },
+    {
+      "url": "ESTABILIDADE_GALACTICA.md",
+      "name": "ESTABILIDADE_GALACTICA.md",
+      "bytes": 20162,
+      "sha256": "2e07f6fa12f108d379cf9250717c4b57e337bfed6bd00e2755331d5737ff90ca"
+    },
+    {
+      "url": "ESTRUTURA_ESPIRAL.md",
+      "name": "ESTRUTURA_ESPIRAL.md",
+      "bytes": 9480,
+      "sha256": "b50eccbab90eb7e51495be0fbdf426fcbe0b7e592c534752f3777b80410036b8"
+    },
+    {
+      "url": "LIMITACOES_FISICAS.md",
+      "name": "LIMITACOES_FISICAS.md",
+      "bytes": 5049,
+      "sha256": "f88a90c82e9a74648c43bb590b3a691513e8779269de1c56112f19871facb2a6"
+    },
+    {
+      "url": "MASSAS_VIA_LACTEA_1_0.md",
+      "name": "MASSAS_VIA_LACTEA_1_0.md",
+      "bytes": 6434,
+      "sha256": "fd29d93df5c7f1392ff0ee80ab6446da27b8a245be345bc722b27d71bbaa19e6"
+    },
+    {
+      "url": "MODOS_COLETIVOS_1_0_3.md",
+      "name": "MODOS_COLETIVOS_1_0_3.md",
+      "bytes": 6134,
+      "sha256": "021cb4018cafcf546529a261bd9c9be8264a48efb24d97b3d80167a2af1c2f12"
+    },
+    {
+      "url": "MODOS_E_MIGRACAO_1_0_4.md",
+      "name": "MODOS_E_MIGRACAO_1_0_4.md",
+      "bytes": 2975,
+      "sha256": "dab2b00373d68131e97bde5032438b835321b5cbc1347d7d395b66b0d7be3349"
+    },
+    {
+      "url": "PARAMETROS_E_FONTES.md",
+      "name": "PARAMETROS_E_FONTES.md",
+      "bytes": 18181,
+      "sha256": "b0249557ece9c895154bdeca7c3546b47d46b768ef0f4ae5c4aea588483000df"
+    },
+    {
+      "url": "README.md",
+      "name": "README.md",
+      "bytes": 21577,
+      "sha256": "9ad7e42f9098e6145fdf6db19dcc48a0a36b16e7196c9383b1f5ee25333bd3e2"
+    },
+    {
+      "url": "REFERENCIAS_MODELOS_EQUILIBRIO.md",
+      "name": "REFERENCIAS_MODELOS_EQUILIBRIO.md",
+      "bytes": 3859,
+      "sha256": "5800c8510a1065b556e2893323e1b918b951f46277676cda24b8cd93a9673e8a"
+    },
+    {
+      "url": "REFINAMENTO_BARIONS_1_0_2.md",
+      "name": "REFINAMENTO_BARIONS_1_0_2.md",
+      "bytes": 1815,
+      "sha256": "698352e2339645b3875c58d3fb1922d2963743e23c222321b86f333a942bb375"
+    },
+    {
+      "url": "REFINAMENTO_BARIONS_1_0_3.md",
+      "name": "REFINAMENTO_BARIONS_1_0_3.md",
+      "bytes": 6543,
+      "sha256": "514608856a81aa8128e8aefa22e29d53b71ac7be46f0991da2fa6449a5c8a9fb"
+    },
+    {
+      "url": "REFINAMENTO_COMBINADO_1_0_4.md",
+      "name": "REFINAMENTO_COMBINADO_1_0_4.md",
+      "bytes": 5100,
+      "sha256": "156d7608475c70c47f0aca1fdae883737d268f5651aa4fcbaf00366e6be446b6"
+    },
+    {
+      "url": "REFINAMENTO_HALO_1_0_2.md",
+      "name": "REFINAMENTO_HALO_1_0_2.md",
+      "bytes": 2217,
+      "sha256": "85a5b3cc50a04c279668d0b762088783dc9fab045f18ba4e89f1cab023a25ba3"
+    },
+    {
+      "url": "REFINAMENTO_HALO_1_0_3.md",
+      "name": "REFINAMENTO_HALO_1_0_3.md",
+      "bytes": 7153,
+      "sha256": "9cb3ec121697851e7b69633cf2c1d087f3f352805b6afa1aabfffb1dc50590d6"
+    },
+    {
+      "url": "REPRODUCAO_1_0_3.md",
+      "name": "REPRODUCAO_1_0_3.md",
+      "bytes": 5294,
+      "sha256": "957f5a96d3b96fe8d7264f305ed7c8ff3c05d1f6378321952587318f1058a120"
+    },
+    {
+      "url": "REPRODUCAO_1_0_4.md",
+      "name": "REPRODUCAO_1_0_4.md",
+      "bytes": 4309,
+      "sha256": "abb448d0521c4646af790dfbb302939ceca80e9157cf08837ef6448811bbf39e"
+    },
+    {
+      "url": "REPRODUCAO_1_0_5.md",
+      "name": "REPRODUCAO_1_0_5.md",
+      "bytes": 10339,
+      "sha256": "40c15914f73b1ee4d59aafcb3802ac3f232e7792f5f8b139a2a1262375d98ec1"
+    },
+    {
+      "url": "REPRODUCAO_AGAMA_WINDOWS.md",
+      "name": "REPRODUCAO_AGAMA_WINDOWS.md",
+      "bytes": 4292,
+      "sha256": "e8ca2bb0fe4cef372143b0b79f15d108c007fb8ab1d6a3fb9e999cd68a7c11b5"
+    },
+    {
+      "url": "VALIDACAO.md",
+      "name": "VALIDACAO.md",
+      "bytes": 15135,
+      "sha256": "3f9a6b0752b63bcd0508bc80663fa1779e02e283453f6f9806a4e4664cf9c899"
+    },
+    {
+      "url": "VALIDACAO_08.md",
+      "name": "VALIDACAO_08.md",
+      "bytes": 5228,
+      "sha256": "f87925ae27c65aa40f5d2332fbbef834f2376c3c1fb89cf32fe02801ae6273d3"
+    },
+    {
+      "url": "VALIDACAO_09.md",
+      "name": "VALIDACAO_09.md",
+      "bytes": 9093,
+      "sha256": "15fbb8a007f1c478a042a6c58a60a9e8cadd8936694a4fe4a3502d9757950528"
+    },
+    {
+      "url": "VALIDACAO_ATUAL.md",
+      "name": "VALIDACAO_ATUAL.md",
+      "bytes": 14914,
+      "sha256": "0ac6a2cf0a7ee6038b2931dc1ed966b04935f4d1ec55df6e507a0edf5de08d91"
+    },
+    {
+      "url": "VALIDACAO_CONDICOES_INICIAIS_1_0_5.md",
+      "name": "VALIDACAO_CONDICOES_INICIAIS_1_0_5.md",
+      "bytes": 8692,
+      "sha256": "2c0dfe9214dd9a977d4952d3196e13fdfd784dd52da0d701448b35aa2af6f269"
+    },
+    {
+      "url": "VALIDACAO_EQUILIBRIO_1_0.md",
+      "name": "VALIDACAO_EQUILIBRIO_1_0.md",
+      "bytes": 13838,
+      "sha256": "2ead96074105606466583a19579c344d7b301424eea9cf07bf72a09f705bf08f"
+    },
+    {
+      "url": "VALIDACAO_FINAL_1_0_2.md",
+      "name": "VALIDACAO_FINAL_1_0_2.md",
+      "bytes": 3651,
+      "sha256": "ece0b2b3976557c0f825bc5301f1c2499fea77391c6575014e5d9c00ca9e2720"
+    },
+    {
+      "url": "VALIDACAO_FINAL_1_0_3.md",
+      "name": "VALIDACAO_FINAL_1_0_3.md",
+      "bytes": 4878,
+      "sha256": "56e6b6636ba6a6a5298f4f4914a32d9a26bdf8a6a6fae6d13b14b1d38a50aa18"
+    },
+    {
+      "url": "VALIDACAO_FINAL_1_0_4.md",
+      "name": "VALIDACAO_FINAL_1_0_4.md",
+      "bytes": 4252,
+      "sha256": "12029902c34f31dad0197d3ffe8ad2c627e92c20ea384967b0c628dbaf2631be"
+    },
+    {
+      "url": "VALIDACAO_FINAL_1_0_5.md",
+      "name": "VALIDACAO_FINAL_1_0_5.md",
+      "bytes": 10524,
+      "sha256": "6dcd307d22badeccd8ef75fef9b4e2d6b53091f5fe695ce915cac8070ed878ac"
+    },
+    {
+      "url": "downloads/code-identity.json",
+      "name": "downloads/code-identity.json",
+      "bytes": 6077,
+      "sha256": "a1b642634dceb75416501a7ce48547cb6335c4f6c0223bc7062a9f2327018aeb"
+    },
+    {
+      "url": "index.html",
+      "name": "index.html",
+      "bytes": 12089,
+      "sha256": "23181d3e14b8fab9f524363cc05dd38d130e7885e954ff91d05ade8434e195dc"
+    },
+    {
+      "url": "equilibrio.html",
+      "name": "equilibrio.html",
+      "bytes": 13083,
+      "sha256": "cba611ffd21d859bb67f461b86943fd3288bb0c1c7e88cda2e8bd54286739104"
+    },
+    {
+      "url": "style.css",
+      "name": "style.css",
+      "bytes": 28533,
+      "sha256": "a5d981c1a847050c6e54e0f3c20bbfaacde14102b801e0064ac887743215a4cf"
+    },
+    {
+      "url": "package.json",
+      "name": "package.json",
+      "bytes": 456,
+      "sha256": "a95ffecc030bda63bd3b977a3227045dea056f4c204c84cfd15e64d368d67577"
+    },
+    {
+      "url": "vercel.json",
+      "name": "vercel.json",
+      "bytes": 252,
+      "sha256": "fe60947332c6276ffd6809d7f635c8de5d2b54170426f4a2bd7d38a99f2b617c"
+    },
+    {
+      "url": "INICIAR_WINDOWS.cmd",
+      "name": "INICIAR_WINDOWS.cmd",
+      "bytes": 562,
+      "sha256": "cff9b5b8e442a9e41a6f892d9d1faaed80dcac7b5293e6e758156da03d263517"
+    },
+    {
+      "url": "assets/uems.png",
+      "name": "assets/uems.png",
+      "bytes": 157824,
+      "sha256": "c76e47a6e54df98014906d0652f0c5a275f10fb3d17b228d2450ec40e0927c36"
+    },
+    {
+      "url": "downloads/equilibrio-1.0.5.zip",
+      "name": "downloads/equilibrio-1.0.5.zip",
+      "bytes": 557985523,
+      "sha256": "19d0559be8dd111b5b53bd23c5bf07b38f1cc8a98004892ef6cffcd97019ea35"
+    },
+    {
+      "url": "downloads/equilibrio-1.0.5.sha256",
+      "name": "downloads/equilibrio-1.0.5.sha256",
+      "bytes": 88,
+      "sha256": "221b4e19731fb7bbe9f9077cfb4cec0b84fa87d56e44217bd7f7d9b0ae2bbe3b"
+    },
+    {
+      "url": "reports/v1.0.5/assessment.json",
+      "name": "reports/v1.0.5/assessment.json",
+      "bytes": 66224,
+      "sha256": "b38ff3d2688de2ecae54027aa2b1fde7bf96648f621a5f994266163223cc7475"
+    },
+    {
+      "url": "equilibrio105.html",
+      "name": "equilibrio105.html",
+      "bytes": 7107,
+      "sha256": "004a7da7aef8813424427e3d9b101b2142474c77eefbedb5f2b29516096a87be"
+    }
+  ]
+}

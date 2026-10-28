@@ -1,0 +1,155 @@
+{
+  "UTC": "2026-10-16T15:14:33.286Z",
+  "priorEvidence": "runs/FD-b2026-h2026-t20.json",
+  "runs": [
+    {
+      "id": "FE-b2026-h2026-higher-pilot20",
+      "family": "E",
+      "file": "initial/FE-b2026-h2026.json",
+      "sha256": "1135f8befba3d425bf831069ff1f4f803526cfcf1439e0280b5cc76a333f33bf",
+      "n": 89546,
+      "nh": 80000,
+      "baryonSeed": 2026,
+      "haloSeed": 2026,
+      "refinedPopulation": 1,
+      "counts": [
+        1500,
+        7092,
+        954,
+        80000
+      ],
+      "haloParticleMassMsun": 13114115.151481958,
+      "haloToThinParticleMass": 2.3368166998570357,
+      "parent": {
+        "id": "FD-b2026-h2026",
+        "family": "D",
+        "file": "initial/FD-b2026-h2026.json",
+        "sha256": "e7e3d74beb1158d4bb8f51987cfd2f2d9ee51dfdc483083924b6d058a9ad1656",
+        "n": 49546,
+        "nh": 40000,
+        "baryonSeed": 2026,
+        "haloSeed": 2026,
+        "refinedPopulation": 1,
+        "counts": [
+          1500,
+          7092,
+          954,
+          40000
+        ],
+        "populationSHA256": [
+          "9b0671f103d8e60a30dc637a494585cdb8e8063098f5afebee68082c1aa5f632",
+          "228917a3c87810f4dbfb7f215d15119cd8d2afad0b3709179702b4f616316241",
+          "4fe8f92a9f44ff83867c49818536e112c299d7adb24d6d79788c264e3ffb1916",
+          "14abed89442ac23b0f05225a26bcae575647f068adcb1b174245dda480b1fe16"
+        ],
+        "parents": [
+          {
+            "source": "reports/v1.0.3/initial/baryons/B-thin2-s2026.json",
+            "sha256": "c8aad60e099d43d181265dc866b4557a58fc279361ea7f2bbe7bf2a00b1831f4"
+          },
+          {
+            "source": "reports/v1.0.3/initial/halo/H-nh40000-b2026-h2026.json",
+            "sha256": "ea1a899a3ab5e45a4e5b500ab74c2f75e5b6258eb44a050efe0702ce9c743fa4"
+          }
+        ],
+        "haloParticleMassMsun": 26228230.302963916,
+        "haloToThinParticleMass": 4.673633399714071
+      },
+      "samplingChecks": [
+        {
+          "population": 3,
+          "seed": 302035,
+          "pool": 40000,
+          "independentPairs": 40000,
+          "negativeDF": 0,
+          "unbound": 0
+        }
+      ],
+      "stage": "higher-pilot20",
+      "model": "C",
+      "kind": "live",
+      "source": "reports/v1.0.4/initial/FE-b2026-h2026.json",
+      "sourceSHA256": "1135f8befba3d425bf831069ff1f4f803526cfcf1439e0280b5cc76a333f33bf",
+      "dt": 0.05,
+      "epsilon": 0.1,
+      "durationMyr": 20,
+      "cadenceMyr": 2,
+      "workers": 6
+    },
+    {
+      "id": "FG-b2026-h2026-higher-pilot20",
+      "family": "G",
+      "file": "initial/FG-b2026-h2026.json",
+      "sha256": "35473be92eee11afd726a95c5325d4931f3e0124096d2cbe5715db023c28b409",
+      "n": 56638,
+      "nh": 40000,
+      "baryonSeed": 2026,
+      "haloSeed": 2026,
+      "refinedPopulation": 1,
+      "counts": [
+        1500,
+        14184,
+        954,
+        40000
+      ],
+      "haloParticleMassMsun": 26228230.302963916,
+      "haloToThinParticleMass": 9.347266799428143,
+      "parent": {
+        "id": "FD-b2026-h2026",
+        "family": "D",
+        "file": "initial/FD-b2026-h2026.json",
+        "sha256": "e7e3d74beb1158d4bb8f51987cfd2f2d9ee51dfdc483083924b6d058a9ad1656",
+        "n": 49546,
+        "nh": 40000,
+        "baryonSeed": 2026,
+        "haloSeed": 2026,
+        "refinedPopulation": 1,
+        "counts": [
+          1500,
+          7092,
+          954,
+          40000
+        ],
+        "populationSHA256": [
+          "9b0671f103d8e60a30dc637a494585cdb8e8063098f5afebee68082c1aa5f632",
+          "228917a3c87810f4dbfb7f215d15119cd8d2afad0b3709179702b4f616316241",
+          "4fe8f92a9f44ff83867c49818536e112c299d7adb24d6d79788c264e3ffb1916",
+          "14abed89442ac23b0f05225a26bcae575647f068adcb1b174245dda480b1fe16"
+        ],
+        "parents": [
+          {
+            "source": "reports/v1.0.3/initial/baryons/B-thin2-s2026.json",
+            "sha256": "c8aad60e099d43d181265dc866b4557a58fc279361ea7f2bbe7bf2a00b1831f4"
+          },
+          {
+            "source": "reports/v1.0.3/initial/halo/H-nh40000-b2026-h2026.json",
+            "sha256": "ea1a899a3ab5e45a4e5b500ab74c2f75e5b6258eb44a050efe0702ce9c743fa4"
+          }
+        ],
+        "haloParticleMassMsun": 26228230.302963916,
+        "haloToThinParticleMass": 4.673633399714071
+      },
+      "samplingChecks": [
+        {
+          "population": 1,
+          "seed": 102029,
+          "pool": 7092,
+          "independentPairs": 7092,
+          "negativeDF": 0,
+          "unbound": 0
+        }
+      ],
+      "stage": "higher-pilot20",
+      "model": "C",
+      "kind": "live",
+      "source": "reports/v1.0.4/initial/FG-b2026-h2026.json",
+      "sourceSHA256": "35473be92eee11afd726a95c5325d4931f3e0124096d2cbe5715db023c28b409",
+      "dt": 0.05,
+      "epsilon": 0.1,
+      "durationMyr": 20,
+      "cadenceMyr": 2,
+      "workers": 6
+    }
+  ],
+  "qualification": "Registered before evolution. Higher pilots sample every2 Myr; higher200 every10 Myr to limit diagnostic cost; main factorial200 and time200 every5 Myr. Maxima are sampled only. Timesteps and physical horizon explicit; no change to force law or preparation."
+}

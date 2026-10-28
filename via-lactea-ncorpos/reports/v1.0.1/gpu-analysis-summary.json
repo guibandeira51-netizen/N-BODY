@@ -1,0 +1,891 @@
+{
+  "schema": "gpu-analysis-summary-101",
+  "origin": "new-integration-1.0.1",
+  "analyzedRuns": 5,
+  "analyzedStates": 12,
+  "runs": [
+    {
+      "id": "GPU-1000-dt0.025",
+      "path": "gpu-analysis-GPU-1000-dt0.025.json",
+      "origin": "new-integration-1.0.1",
+      "config": {
+        "id": "GPU-1000-dt0.025",
+        "n": 1000,
+        "dt": 0.025,
+        "duration": 20,
+        "cadence": 0.025,
+        "epsilon": 0.1,
+        "theta": 0.5,
+        "precision": "Float32",
+        "algorithm": "gpu-f32",
+        "seed": 2026
+      },
+      "directSummary": {
+        "samples": 2,
+        "initialTime": 0,
+        "finalTime": 20,
+        "sampleIntervalMax": 20,
+        "finalEnergyError": -6.7785832389427436e-9,
+        "maxAbsEnergyError": 6.7785832389427436e-9,
+        "minEnergyError": -6.7785832389427436e-9,
+        "maxEnergyError": 0,
+        "meanEnergyError": -3.3892916194713718e-9,
+        "energyErrorPeakToPeak": 6.7785832389427436e-9,
+        "energyErrorRmsAboutMean": 3.3892916194713718e-9,
+        "maxAbsEnergyScaledError": 2.1383349716361963e-9,
+        "maxAngularMomentumScaledError": 7.772640574164163e-7,
+        "maxAbsLzRelativeError": 0.000005880108633063287,
+        "maxAbsLzScaledError": 6.935615092270857e-8,
+        "maxMomentumScaledError": 1.8742573490097458e-9,
+        "maxCenterOfMassDisplacement": 5.00579121090477e-9,
+        "maxCenterOfMassBallisticResidual": 5.00579121090477e-9,
+        "energyApproximate": false,
+        "externalExtrapolatedMax": 0,
+        "scope": "sampled instants only; conservation does not establish structural equilibrium"
+      },
+      "effectiveParameters": {
+        "GNominal": 0.04498502151469553,
+        "GFloat32": 0.04498502239584923,
+        "epsilonNominal": 0.1,
+        "epsilonSquaredFloat32": 0.009999999776482582,
+        "dtFloat32": 0.02500000037252903,
+        "nominalDurationMyr": 20,
+        "sumOfFloat32StepParametersMyr": 20.000000298023224
+      },
+      "effectiveDirectSummary": {
+        "samples": 2,
+        "initialTime": 0,
+        "finalTime": 20,
+        "sampleIntervalMax": 20,
+        "finalEnergyError": -5.741649842630023e-9,
+        "maxAbsEnergyError": 5.741649842630023e-9,
+        "minEnergyError": -5.741649842630023e-9,
+        "maxEnergyError": 0,
+        "meanEnergyError": -2.8708249213150114e-9,
+        "energyErrorPeakToPeak": 5.741649842630023e-9,
+        "energyErrorRmsAboutMean": 2.8708249213150114e-9,
+        "maxAbsEnergyScaledError": 1.811229657286455e-9,
+        "maxAngularMomentumScaledError": 7.772640574164163e-7,
+        "maxAbsLzRelativeError": 0.000005880108633063287,
+        "maxAbsLzScaledError": 6.935615092270857e-8,
+        "maxMomentumScaledError": 1.8742573490097458e-9,
+        "maxCenterOfMassDisplacement": 5.00579121090477e-9,
+        "maxCenterOfMassBallisticResidual": 5.00579121090477e-9,
+        "energyApproximate": false,
+        "externalExtrapolatedMax": 0,
+        "scope": "sampled instants only; conservation does not establish structural equilibrium"
+      },
+      "denseEnergySummary": {
+        "samples": 801,
+        "initialTime": 0,
+        "finalTime": 20,
+        "sampleIntervalMax": 0.02500000000000213,
+        "finalEnergyError": -6.7785832389427436e-9,
+        "maxAbsEnergyError": 6.189034453142881e-7,
+        "minEnergyError": -6.189034453142881e-7,
+        "maxEnergyError": 5.240156413113689e-7,
+        "meanEnergyError": 2.0227014066540045e-7,
+        "energyErrorPeakToPeak": 0.000001142919086625657,
+        "energyErrorRmsAboutMean": 1.995494372348678e-7,
+        "maxAbsEnergyScaledError": 1.9523591206767961e-7,
+        "maxAngularMomentumScaledError": 0.0000012201358346642063,
+        "maxAbsLzRelativeError": 0.00009291042118175873,
+        "maxAbsLzScaledError": 0.0000010958826776670407,
+        "maxMomentumScaledError": 2.5177439179244303e-9,
+        "maxCenterOfMassDisplacement": 6.213102547408142e-9,
+        "maxCenterOfMassBallisticResidual": 6.213102547408142e-9,
+        "energyApproximate": false,
+        "externalExtrapolatedMax": 0,
+        "scope": "sampled instants only; conservation does not establish structural equilibrium"
+      },
+      "denseEnergyKind": "direct-Float64-Hamiltonian-every-GPU-step",
+      "stateComparison": {
+        "cpuId": "C-f64-dt0.025",
+        "cpuConfig": {
+          "n": 1000,
+          "dt": 0.025,
+          "epsilon": 0.1,
+          "theta": 0.5,
+          "durationMyr": 20,
+          "algorithm": "direct",
+          "precision": "Float64",
+          "externalField": "none",
+          "seed": 2026
+        },
+        "cpuRunPath": "reports/v1.0.1/runs/C-f64-dt0.025.json",
+        "cpuRunSHA256": "5e5fd292c4a92b9f566078f1bca2c6a590c06bf90c77211251ecd6be3ddabf16",
+        "cpuSnapshotsPath": "reports/v1.0.1/snapshots/C-f64-dt0.025.json",
+        "cpuSnapshotsSHA256": "e16f907a4587c2afe3459cbc40a345f2abcd735958dcf4b503a12c221103d9f8",
+        "sameSourceSHA256": true,
+        "sameDtAndEpsilon": true,
+        "initialUploadQuantization": {
+          "timeMyr": 0,
+          "positionsKpc": {
+            "count": 1000,
+            "vectorRms": 0.0000024125687350522223,
+            "maximumVectorDifference": 0.00001622448600977502,
+            "relativeVectorRms": 2.5064070925922924e-8,
+            "maximumDifferenceOverMaximumReference": 3.219961391633497e-8
+          },
+          "velocitiesKpcPerMyr": {
+            "count": 1000,
+            "vectorRms": 4.939873224819549e-9,
+            "maximumVectorDifference": 1.6182979729358468e-8,
+            "relativeVectorRms": 2.5094660328776214e-8,
+            "maximumDifferenceOverMaximumReference": 3.198276561407766e-8
+          },
+          "masses1e10Msun": {
+            "count": 1000,
+            "vectorRms": 5.626236621585838e-9,
+            "maximumVectorDifference": 8.886712143940656e-9,
+            "relativeVectorRms": 3.387878330745612e-8,
+            "maximumDifferenceOverMaximumReference": 3.388224078136303e-8
+          }
+        },
+        "finalStateDifference": {
+          "timeMyr": 20,
+          "positionsKpc": {
+            "count": 1000,
+            "vectorRms": 0.0007270779931599442,
+            "maximumVectorDifference": 0.010711069500336151,
+            "relativeVectorRms": 0.000007553272790428746,
+            "maximumDifferenceOverMaximumReference": 0.000021235927196368832
+          },
+          "velocitiesKpcPerMyr": {
+            "count": 1000,
+            "vectorRms": 0.0000016286655644557795,
+            "maximumVectorDifference": 0.00004538553767067751,
+            "relativeVectorRms": 0.000008791712828263397,
+            "maximumDifferenceOverMaximumReference": 0.00010034762016093928
+          },
+          "masses1e10Msun": {
+            "count": 1000,
+            "vectorRms": 5.626236621585838e-9,
+            "maximumVectorDifference": 8.886712143940656e-9,
+            "relativeVectorRms": 3.387878330745612e-8,
+            "maximumDifferenceOverMaximumReference": 3.388224078136303e-8
+          }
+        },
+        "checkpoints": [
+          {
+            "timeMyr": 0,
+            "positionsKpc": {
+              "count": 1000,
+              "vectorRms": 0.0000024125687350522223,
+              "maximumVectorDifference": 0.00001622448600977502,
+              "relativeVectorRms": 2.5064070925922924e-8,
+              "maximumDifferenceOverMaximumReference": 3.219961391633497e-8
+            },
+            "velocitiesKpcPerMyr": {
+              "count": 1000,
+              "vectorRms": 4.939873224819549e-9,
+              "maximumVectorDifference": 1.6182979729358468e-8,
+              "relativeVectorRms": 2.5094660328776214e-8,
+              "maximumDifferenceOverMaximumReference": 3.198276561407766e-8
+            },
+            "masses1e10Msun": {
+              "count": 1000,
+              "vectorRms": 5.626236621585838e-9,
+              "maximumVectorDifference": 8.886712143940656e-9,
+              "relativeVectorRms": 3.387878330745612e-8,
+              "maximumDifferenceOverMaximumReference": 3.388224078136303e-8
+            }
+          },
+          {
+            "timeMyr": 20,
+            "positionsKpc": {
+              "count": 1000,
+              "vectorRms": 0.0007270779931599442,
+              "maximumVectorDifference": 0.010711069500336151,
+              "relativeVectorRms": 0.000007553272790428746,
+              "maximumDifferenceOverMaximumReference": 0.000021235927196368832
+            },
+            "velocitiesKpcPerMyr": {
+              "count": 1000,
+              "vectorRms": 0.0000016286655644557795,
+              "maximumVectorDifference": 0.00004538553767067751,
+              "relativeVectorRms": 0.000008791712828263397,
+              "maximumDifferenceOverMaximumReference": 0.00010034762016093928
+            },
+            "masses1e10Msun": {
+              "count": 1000,
+              "vectorRms": 5.626236621585838e-9,
+              "maximumVectorDifference": 8.886712143940656e-9,
+              "relativeVectorRms": 3.387878330745612e-8,
+              "maximumDifferenceOverMaximumReference": 3.388224078136303e-8
+            }
+          }
+        ],
+        "definition": "vectorRms=sqrt(sum_i |qGPU_i-qCPU_i|^2/N); relativeVectorRms=sqrt(sum_i |difference|^2/sum_i |qCPU_i|^2); particles retain identical source order.",
+        "qualification": "Initial difference measures Float32 upload quantization. Final difference combines different rounded initial states, masses/constants and accumulated GPU force/integration roundoff. It does not isolate trajectory precision at identical rounded initial states."
+      },
+      "initialPopulationH50": {
+        "thin": 0.17608205803646076,
+        "thick": 0.5372841775271558
+      },
+      "finalPopulationH50": {
+        "thin": 0.3495277576492932,
+        "thick": 0.7265583199020681
+      }
+    },
+    {
+      "id": "GPU-1000-dt0.05",
+      "path": "gpu-analysis-GPU-1000-dt0.05.json",
+      "origin": "new-integration-1.0.1",
+      "config": {
+        "id": "GPU-1000-dt0.05",
+        "n": 1000,
+        "dt": 0.05,
+        "duration": 20,
+        "cadence": 0.05,
+        "epsilon": 0.1,
+        "theta": 0.5,
+        "precision": "Float32",
+        "algorithm": "gpu-f32",
+        "seed": 2026
+      },
+      "directSummary": {
+        "samples": 2,
+        "initialTime": 0,
+        "finalTime": 20,
+        "sampleIntervalMax": 20,
+        "finalEnergyError": 0.0000013079879148143777,
+        "maxAbsEnergyError": 0.0000013079879148143777,
+        "minEnergyError": 0,
+        "maxEnergyError": 0.0000013079879148143777,
+        "meanEnergyError": 6.539939574071889e-7,
+        "energyErrorPeakToPeak": 0.0000013079879148143777,
+        "energyErrorRmsAboutMean": 6.539939574071889e-7,
+        "maxAbsEnergyScaledError": 4.126107480183905e-7,
+        "maxAngularMomentumScaledError": 6.556142823867192e-7,
+        "maxAbsLzRelativeError": 0.00002803016808525188,
+        "maxAbsLzScaledError": 3.306171177141745e-7,
+        "maxMomentumScaledError": 1.2689206967070879e-9,
+        "maxCenterOfMassDisplacement": 4.511323549614993e-9,
+        "maxCenterOfMassBallisticResidual": 4.511323549614993e-9,
+        "energyApproximate": false,
+        "externalExtrapolatedMax": 0,
+        "scope": "sampled instants only; conservation does not establish structural equilibrium"
+      },
+      "effectiveParameters": {
+        "GNominal": 0.04498502151469553,
+        "GFloat32": 0.04498502239584923,
+        "epsilonNominal": 0.1,
+        "epsilonSquaredFloat32": 0.009999999776482582,
+        "dtFloat32": 0.05000000074505806,
+        "nominalDurationMyr": 20,
+        "sumOfFloat32StepParametersMyr": 20.000000298023224
+      },
+      "effectiveDirectSummary": {
+        "samples": 2,
+        "initialTime": 0,
+        "finalTime": 20,
+        "sampleIntervalMax": 20,
+        "finalEnergyError": 0.0000013090248109557307,
+        "maxAbsEnergyError": 0.0000013090248109557307,
+        "minEnergyError": 0,
+        "maxEnergyError": 0.0000013090248109557307,
+        "meanEnergyError": 6.545124054778653e-7,
+        "energyErrorPeakToPeak": 0.0000013090248109557307,
+        "energyErrorRmsAboutMean": 6.545124054778653e-7,
+        "maxAbsEnergyScaledError": 4.129378531799805e-7,
+        "maxAngularMomentumScaledError": 6.556142823867192e-7,
+        "maxAbsLzRelativeError": 0.00002803016808525188,
+        "maxAbsLzScaledError": 3.306171177141745e-7,
+        "maxMomentumScaledError": 1.2689206967070879e-9,
+        "maxCenterOfMassDisplacement": 4.511323549614993e-9,
+        "maxCenterOfMassBallisticResidual": 4.511323549614993e-9,
+        "energyApproximate": false,
+        "externalExtrapolatedMax": 0,
+        "scope": "sampled instants only; conservation does not establish structural equilibrium"
+      },
+      "denseEnergySummary": {
+        "samples": 401,
+        "initialTime": 0,
+        "finalTime": 20,
+        "sampleIntervalMax": 0.05000000000000071,
+        "finalEnergyError": 0.0000013079879148143777,
+        "maxAbsEnergyError": 0.0000018500092116729365,
+        "minEnergyError": -0.0000018500092116729365,
+        "maxEnergyError": 0.000001325833690364105,
+        "meanEnergyError": 7.445804334578652e-7,
+        "energyErrorPeakToPeak": 0.0000031758429020370417,
+        "energyErrorRmsAboutMean": 5.642874988528166e-7,
+        "maxAbsEnergyScaledError": 5.835938360161465e-7,
+        "maxAngularMomentumScaledError": 7.232643989911794e-7,
+        "maxAbsLzRelativeError": 0.00003163189099552247,
+        "maxAbsLzScaledError": 3.730996045753684e-7,
+        "maxMomentumScaledError": 1.343036175115201e-9,
+        "maxCenterOfMassDisplacement": 4.7235509638772565e-9,
+        "maxCenterOfMassBallisticResidual": 4.7235509638772565e-9,
+        "energyApproximate": false,
+        "externalExtrapolatedMax": 0,
+        "scope": "sampled instants only; conservation does not establish structural equilibrium"
+      },
+      "denseEnergyKind": "direct-Float64-Hamiltonian-every-GPU-step",
+      "stateComparison": {
+        "cpuId": "C-f64-dt0.05",
+        "cpuConfig": {
+          "n": 1000,
+          "dt": 0.05,
+          "epsilon": 0.1,
+          "theta": 0.5,
+          "durationMyr": 20,
+          "algorithm": "direct",
+          "precision": "Float64",
+          "externalField": "none",
+          "seed": 2026
+        },
+        "cpuRunPath": "reports/v1.0.1/runs/C-f64-dt0.05.json",
+        "cpuRunSHA256": "1f38605d4953c087da2f789d930bf7e33d017c15d0d2035173c1d22758b5a363",
+        "cpuSnapshotsPath": "reports/v1.0.1/snapshots/C-f64-dt0.05.json",
+        "cpuSnapshotsSHA256": "b35ff95ff9e0f75e8bc338f27e22a7e4d3d9a547298b20e1d3bf1a609d9fcba3",
+        "sameSourceSHA256": true,
+        "sameDtAndEpsilon": true,
+        "initialUploadQuantization": {
+          "timeMyr": 0,
+          "positionsKpc": {
+            "count": 1000,
+            "vectorRms": 0.0000024125687350522223,
+            "maximumVectorDifference": 0.00001622448600977502,
+            "relativeVectorRms": 2.5064070925922924e-8,
+            "maximumDifferenceOverMaximumReference": 3.219961391633497e-8
+          },
+          "velocitiesKpcPerMyr": {
+            "count": 1000,
+            "vectorRms": 4.939873224819549e-9,
+            "maximumVectorDifference": 1.6182979729358468e-8,
+            "relativeVectorRms": 2.5094660328776214e-8,
+            "maximumDifferenceOverMaximumReference": 3.198276561407766e-8
+          },
+          "masses1e10Msun": {
+            "count": 1000,
+            "vectorRms": 5.626236621585838e-9,
+            "maximumVectorDifference": 8.886712143940656e-9,
+            "relativeVectorRms": 3.387878330745612e-8,
+            "maximumDifferenceOverMaximumReference": 3.388224078136303e-8
+          }
+        },
+        "finalStateDifference": {
+          "timeMyr": 20,
+          "positionsKpc": {
+            "count": 1000,
+            "vectorRms": 0.00023898393295737725,
+            "maximumVectorDifference": 0.003462503100343032,
+            "relativeVectorRms": 0.0000024826921698233095,
+            "maximumDifferenceOverMaximumReference": 0.000006864810629207493
+          },
+          "velocitiesKpcPerMyr": {
+            "count": 1000,
+            "vectorRms": 0.0000031788432400639604,
+            "maximumVectorDifference": 0.00007007147117013776,
+            "relativeVectorRms": 0.00001715977854211962,
+            "maximumDifferenceOverMaximumReference": 0.000154928319448962
+          },
+          "masses1e10Msun": {
+            "count": 1000,
+            "vectorRms": 5.626236621585838e-9,
+            "maximumVectorDifference": 8.886712143940656e-9,
+            "relativeVectorRms": 3.387878330745612e-8,
+            "maximumDifferenceOverMaximumReference": 3.388224078136303e-8
+          }
+        },
+        "checkpoints": [
+          {
+            "timeMyr": 0,
+            "positionsKpc": {
+              "count": 1000,
+              "vectorRms": 0.0000024125687350522223,
+              "maximumVectorDifference": 0.00001622448600977502,
+              "relativeVectorRms": 2.5064070925922924e-8,
+              "maximumDifferenceOverMaximumReference": 3.219961391633497e-8
+            },
+            "velocitiesKpcPerMyr": {
+              "count": 1000,
+              "vectorRms": 4.939873224819549e-9,
+              "maximumVectorDifference": 1.6182979729358468e-8,
+              "relativeVectorRms": 2.5094660328776214e-8,
+              "maximumDifferenceOverMaximumReference": 3.198276561407766e-8
+            },
+            "masses1e10Msun": {
+              "count": 1000,
+              "vectorRms": 5.626236621585838e-9,
+              "maximumVectorDifference": 8.886712143940656e-9,
+              "relativeVectorRms": 3.387878330745612e-8,
+              "maximumDifferenceOverMaximumReference": 3.388224078136303e-8
+            }
+          },
+          {
+            "timeMyr": 20,
+            "positionsKpc": {
+              "count": 1000,
+              "vectorRms": 0.00023898393295737725,
+              "maximumVectorDifference": 0.003462503100343032,
+              "relativeVectorRms": 0.0000024826921698233095,
+              "maximumDifferenceOverMaximumReference": 0.000006864810629207493
+            },
+            "velocitiesKpcPerMyr": {
+              "count": 1000,
+              "vectorRms": 0.0000031788432400639604,
+              "maximumVectorDifference": 0.00007007147117013776,
+              "relativeVectorRms": 0.00001715977854211962,
+              "maximumDifferenceOverMaximumReference": 0.000154928319448962
+            },
+            "masses1e10Msun": {
+              "count": 1000,
+              "vectorRms": 5.626236621585838e-9,
+              "maximumVectorDifference": 8.886712143940656e-9,
+              "relativeVectorRms": 3.387878330745612e-8,
+              "maximumDifferenceOverMaximumReference": 3.388224078136303e-8
+            }
+          }
+        ],
+        "definition": "vectorRms=sqrt(sum_i |qGPU_i-qCPU_i|^2/N); relativeVectorRms=sqrt(sum_i |difference|^2/sum_i |qCPU_i|^2); particles retain identical source order.",
+        "qualification": "Initial difference measures Float32 upload quantization. Final difference combines different rounded initial states, masses/constants and accumulated GPU force/integration roundoff. It does not isolate trajectory precision at identical rounded initial states."
+      },
+      "initialPopulationH50": {
+        "thin": 0.17608205803646076,
+        "thick": 0.5372841775271558
+      },
+      "finalPopulationH50": {
+        "thin": 0.3495118845199204,
+        "thick": 0.7265484143459481
+      }
+    },
+    {
+      "id": "GPU-1000-dt0.1",
+      "path": "gpu-analysis-GPU-1000-dt0.1.json",
+      "origin": "new-integration-1.0.1",
+      "config": {
+        "id": "GPU-1000-dt0.1",
+        "n": 1000,
+        "dt": 0.1,
+        "duration": 20,
+        "cadence": 0.1,
+        "epsilon": 0.1,
+        "theta": 0.5,
+        "precision": "Float32",
+        "algorithm": "gpu-f32",
+        "seed": 2026
+      },
+      "directSummary": {
+        "samples": 2,
+        "initialTime": 0,
+        "finalTime": 20,
+        "sampleIntervalMax": 20,
+        "finalEnergyError": 0.000004408211130211818,
+        "maxAbsEnergyError": 0.000004408211130211818,
+        "minEnergyError": 0,
+        "maxEnergyError": 0.000004408211130211818,
+        "meanEnergyError": 0.000002204105565105909,
+        "energyErrorPeakToPeak": 0.000004408211130211818,
+        "energyErrorRmsAboutMean": 0.000002204105565105909,
+        "maxAbsEnergyScaledError": 0.0000013905902885332219,
+        "maxAngularMomentumScaledError": 1.7769589337092636e-7,
+        "maxAbsLzRelativeError": 6.047832255051552e-8,
+        "maxAbsLzScaledError": 7.133445873398131e-10,
+        "maxMomentumScaledError": 1.889013678743915e-9,
+        "maxCenterOfMassDisplacement": 4.255000133605552e-9,
+        "maxCenterOfMassBallisticResidual": 4.255000133605552e-9,
+        "energyApproximate": false,
+        "externalExtrapolatedMax": 0,
+        "scope": "sampled instants only; conservation does not establish structural equilibrium"
+      },
+      "effectiveParameters": {
+        "GNominal": 0.04498502151469553,
+        "GFloat32": 0.04498502239584923,
+        "epsilonNominal": 0.1,
+        "epsilonSquaredFloat32": 0.009999999776482582,
+        "dtFloat32": 0.10000000149011612,
+        "nominalDurationMyr": 20,
+        "sumOfFloat32StepParametersMyr": 20.000000298023224
+      },
+      "effectiveDirectSummary": {
+        "samples": 2,
+        "initialTime": 0,
+        "finalTime": 20,
+        "sampleIntervalMax": 20,
+        "finalEnergyError": 0.000004409247920931262,
+        "maxAbsEnergyError": 0.000004409247920931262,
+        "minEnergyError": 0,
+        "maxEnergyError": 0.000004409247920931262,
+        "meanEnergyError": 0.000002204623960465631,
+        "energyErrorPeakToPeak": 0.000004409247920931262,
+        "energyErrorRmsAboutMean": 0.000002204623960465631,
+        "maxAbsEnergyScaledError": 0.0000013909173877906146,
+        "maxAngularMomentumScaledError": 1.7769589337092636e-7,
+        "maxAbsLzRelativeError": 6.047832255051552e-8,
+        "maxAbsLzScaledError": 7.133445873398131e-10,
+        "maxMomentumScaledError": 1.889013678743915e-9,
+        "maxCenterOfMassDisplacement": 4.255000133605552e-9,
+        "maxCenterOfMassBallisticResidual": 4.255000133605552e-9,
+        "energyApproximate": false,
+        "externalExtrapolatedMax": 0,
+        "scope": "sampled instants only; conservation does not establish structural equilibrium"
+      },
+      "denseEnergySummary": {
+        "samples": 201,
+        "initialTime": 0,
+        "finalTime": 20,
+        "sampleIntervalMax": 0.10000000000000142,
+        "finalEnergyError": 0.000004408211130211818,
+        "maxAbsEnergyError": 0.000008012896146794462,
+        "minEnergyError": -0.000008012896146794462,
+        "maxEnergyError": 0.0000048184481790680505,
+        "meanEnergyError": 0.000002314895969418717,
+        "energyErrorPeakToPeak": 0.000012831344325862513,
+        "energyErrorRmsAboutMean": 0.000002134981215088698,
+        "maxAbsEnergyScaledError": 0.000002527704602983079,
+        "maxAngularMomentumScaledError": 2.1071062147035725e-7,
+        "maxAbsLzRelativeError": 0.000002647701274353468,
+        "maxAbsLzScaledError": 3.1229757924836366e-8,
+        "maxMomentumScaledError": 2.135548415551899e-9,
+        "maxCenterOfMassDisplacement": 4.587011656499752e-9,
+        "maxCenterOfMassBallisticResidual": 4.587011656499752e-9,
+        "energyApproximate": false,
+        "externalExtrapolatedMax": 0,
+        "scope": "sampled instants only; conservation does not establish structural equilibrium"
+      },
+      "denseEnergyKind": "direct-Float64-Hamiltonian-every-GPU-step",
+      "stateComparison": {
+        "cpuId": "C-f64-dt0.1",
+        "cpuConfig": {
+          "n": 1000,
+          "dt": 0.1,
+          "epsilon": 0.1,
+          "theta": 0.5,
+          "durationMyr": 20,
+          "algorithm": "direct",
+          "precision": "Float64",
+          "externalField": "none",
+          "seed": 2026
+        },
+        "cpuRunPath": "reports/v1.0.1/runs/C-f64-dt0.1.json",
+        "cpuRunSHA256": "2e34c6e145314a78b22e35c738199e9797cfc5b868d6c6fe6d27b2e95962caca",
+        "cpuSnapshotsPath": "reports/v1.0.1/snapshots/C-f64-dt0.1.json",
+        "cpuSnapshotsSHA256": "7f8a5174dc6b9cba5eb9816ea61c8f7a30b3d08d2f4ff6e3c777d32808c707f3",
+        "sameSourceSHA256": true,
+        "sameDtAndEpsilon": true,
+        "initialUploadQuantization": {
+          "timeMyr": 0,
+          "positionsKpc": {
+            "count": 1000,
+            "vectorRms": 0.0000024125687350522223,
+            "maximumVectorDifference": 0.00001622448600977502,
+            "relativeVectorRms": 2.5064070925922924e-8,
+            "maximumDifferenceOverMaximumReference": 3.219961391633497e-8
+          },
+          "velocitiesKpcPerMyr": {
+            "count": 1000,
+            "vectorRms": 4.939873224819549e-9,
+            "maximumVectorDifference": 1.6182979729358468e-8,
+            "relativeVectorRms": 2.5094660328776214e-8,
+            "maximumDifferenceOverMaximumReference": 3.198276561407766e-8
+          },
+          "masses1e10Msun": {
+            "count": 1000,
+            "vectorRms": 5.626236621585838e-9,
+            "maximumVectorDifference": 8.886712143940656e-9,
+            "relativeVectorRms": 3.387878330745612e-8,
+            "maximumDifferenceOverMaximumReference": 3.388224078136303e-8
+          }
+        },
+        "finalStateDifference": {
+          "timeMyr": 20,
+          "positionsKpc": {
+            "count": 1000,
+            "vectorRms": 0.000047392209770499666,
+            "maximumVectorDifference": 0.0006362844892830098,
+            "relativeVectorRms": 4.923354773672001e-7,
+            "maximumDifferenceOverMaximumReference": 0.000001261507180974815
+          },
+          "velocitiesKpcPerMyr": {
+            "count": 1000,
+            "vectorRms": 0.00000104088447322432,
+            "maximumVectorDifference": 0.000029566601265432382,
+            "relativeVectorRms": 0.000005618871647581625,
+            "maximumDifferenceOverMaximumReference": 0.00006537186988090632
+          },
+          "masses1e10Msun": {
+            "count": 1000,
+            "vectorRms": 5.626236621585838e-9,
+            "maximumVectorDifference": 8.886712143940656e-9,
+            "relativeVectorRms": 3.387878330745612e-8,
+            "maximumDifferenceOverMaximumReference": 3.388224078136303e-8
+          }
+        },
+        "checkpoints": [
+          {
+            "timeMyr": 0,
+            "positionsKpc": {
+              "count": 1000,
+              "vectorRms": 0.0000024125687350522223,
+              "maximumVectorDifference": 0.00001622448600977502,
+              "relativeVectorRms": 2.5064070925922924e-8,
+              "maximumDifferenceOverMaximumReference": 3.219961391633497e-8
+            },
+            "velocitiesKpcPerMyr": {
+              "count": 1000,
+              "vectorRms": 4.939873224819549e-9,
+              "maximumVectorDifference": 1.6182979729358468e-8,
+              "relativeVectorRms": 2.5094660328776214e-8,
+              "maximumDifferenceOverMaximumReference": 3.198276561407766e-8
+            },
+            "masses1e10Msun": {
+              "count": 1000,
+              "vectorRms": 5.626236621585838e-9,
+              "maximumVectorDifference": 8.886712143940656e-9,
+              "relativeVectorRms": 3.387878330745612e-8,
+              "maximumDifferenceOverMaximumReference": 3.388224078136303e-8
+            }
+          },
+          {
+            "timeMyr": 20,
+            "positionsKpc": {
+              "count": 1000,
+              "vectorRms": 0.000047392209770499666,
+              "maximumVectorDifference": 0.0006362844892830098,
+              "relativeVectorRms": 4.923354773672001e-7,
+              "maximumDifferenceOverMaximumReference": 0.000001261507180974815
+            },
+            "velocitiesKpcPerMyr": {
+              "count": 1000,
+              "vectorRms": 0.00000104088447322432,
+              "maximumVectorDifference": 0.000029566601265432382,
+              "relativeVectorRms": 0.000005618871647581625,
+              "maximumDifferenceOverMaximumReference": 0.00006537186988090632
+            },
+            "masses1e10Msun": {
+              "count": 1000,
+              "vectorRms": 5.626236621585838e-9,
+              "maximumVectorDifference": 8.886712143940656e-9,
+              "relativeVectorRms": 3.387878330745612e-8,
+              "maximumDifferenceOverMaximumReference": 3.388224078136303e-8
+            }
+          }
+        ],
+        "definition": "vectorRms=sqrt(sum_i |qGPU_i-qCPU_i|^2/N); relativeVectorRms=sqrt(sum_i |difference|^2/sum_i |qCPU_i|^2); particles retain identical source order.",
+        "qualification": "Initial difference measures Float32 upload quantization. Final difference combines different rounded initial states, masses/constants and accumulated GPU force/integration roundoff. It does not isolate trajectory precision at identical rounded initial states."
+      },
+      "initialPopulationH50": {
+        "thin": 0.17608205803646076,
+        "thick": 0.5372841775271558
+      },
+      "finalPopulationH50": {
+        "thin": 0.34944021132152436,
+        "thick": 0.7265095828553463
+      }
+    },
+    {
+      "id": "GPU-10000-200Myr",
+      "path": "gpu-analysis-GPU-10000-200Myr.json",
+      "origin": "new-integration-1.0.1",
+      "config": {
+        "id": "GPU-10000-200Myr",
+        "n": 10000,
+        "dt": 0.1,
+        "duration": 200,
+        "cadence": 1,
+        "epsilon": 0.1,
+        "theta": 0.5,
+        "precision": "Float32",
+        "algorithm": "gpu-f32",
+        "seed": 2026
+      },
+      "directSummary": {
+        "samples": 3,
+        "initialTime": 0,
+        "finalTime": 200,
+        "sampleIntervalMax": 180,
+        "finalEnergyError": 9.45281062513646e-8,
+        "maxAbsEnergyError": 1.907764928203036e-7,
+        "minEnergyError": -1.907764928203036e-7,
+        "maxEnergyError": 9.45281062513646e-8,
+        "meanEnergyError": -3.208279552297967e-8,
+        "energyErrorPeakToPeak": 2.853045990716682e-7,
+        "energyErrorRmsAboutMean": 1.1866383298851234e-7,
+        "maxAbsEnergyScaledError": 6.20061275795928e-8,
+        "maxAngularMomentumScaledError": 2.5897509699540205e-7,
+        "maxAbsLzRelativeError": 0.000030369431359412304,
+        "maxAbsLzScaledError": 1.9144784516382176e-7,
+        "maxMomentumScaledError": 7.581152314602341e-9,
+        "maxCenterOfMassDisplacement": 3.0042495798193955e-8,
+        "maxCenterOfMassBallisticResidual": 3.0042495798193955e-8,
+        "energyApproximate": false,
+        "externalExtrapolatedMax": 0,
+        "scope": "sampled instants only; conservation does not establish structural equilibrium"
+      },
+      "effectiveParameters": {
+        "GNominal": 0.04498502151469553,
+        "GFloat32": 0.04498502239584923,
+        "epsilonNominal": 0.1,
+        "epsilonSquaredFloat32": 0.009999999776482582,
+        "dtFloat32": 0.10000000149011612,
+        "nominalDurationMyr": 200,
+        "sumOfFloat32StepParametersMyr": 200.00000298023224
+      },
+      "effectiveDirectSummary": {
+        "samples": 3,
+        "initialTime": 0,
+        "finalTime": 200,
+        "sampleIntervalMax": 180,
+        "finalEnergyError": 9.490709963729275e-8,
+        "maxAbsEnergyError": 1.909616366906338e-7,
+        "minEnergyError": -1.909616366906338e-7,
+        "maxEnergyError": 9.490709963729275e-8,
+        "meanEnergyError": -3.2018179017780357e-8,
+        "energyErrorPeakToPeak": 2.8586873632792655e-7,
+        "energyErrorRmsAboutMean": 1.1888119123209348e-7,
+        "maxAbsEnergyScaledError": 6.206630466688301e-8,
+        "maxAngularMomentumScaledError": 2.5897509699540205e-7,
+        "maxAbsLzRelativeError": 0.000030369431359412304,
+        "maxAbsLzScaledError": 1.9144784516382176e-7,
+        "maxMomentumScaledError": 7.581152314602341e-9,
+        "maxCenterOfMassDisplacement": 3.0042495798193955e-8,
+        "maxCenterOfMassBallisticResidual": 3.0042495798193955e-8,
+        "energyApproximate": false,
+        "externalExtrapolatedMax": 0,
+        "scope": "sampled instants only; conservation does not establish structural equilibrium"
+      },
+      "denseEnergySummary": {
+        "samples": 201,
+        "initialTime": 0,
+        "finalTime": 200,
+        "sampleIntervalMax": 1,
+        "finalEnergyError": -0.0004050538126241688,
+        "maxAbsEnergyError": 0.0005737923756515106,
+        "minEnergyError": -0.0005737923756515106,
+        "maxEnergyError": 0.00035721191689837425,
+        "meanEnergyError": -0.00006143662355955799,
+        "energyErrorPeakToPeak": 0.0009310042925498848,
+        "energyErrorRmsAboutMean": 0.00018591675062440869,
+        "maxAbsEnergyScaledError": 0.00018641660200164345,
+        "maxAngularMomentumScaledError": 2.5897509699540205e-7,
+        "maxAbsLzRelativeError": 0.000030369431359412304,
+        "maxAbsLzScaledError": 1.9144784516382176e-7,
+        "maxMomentumScaledError": 9.14274692452227e-9,
+        "maxCenterOfMassDisplacement": 3.8365576274670965e-8,
+        "maxCenterOfMassBallisticResidual": 3.8365576274670965e-8,
+        "energyApproximate": true,
+        "externalExtrapolatedMax": 0,
+        "scope": "sampled instants only; conservation does not establish structural equilibrium"
+      },
+      "denseEnergyKind": "Barnes-Hut-Float64-estimate-at-recorded-cadence",
+      "stateComparison": null,
+      "initialPopulationH50": {
+        "thin": 0.1940086910672636,
+        "thick": 0.6093213699817785
+      },
+      "finalPopulationH50": {
+        "thin": 0.41221444869653645,
+        "thick": 0.711574702269425
+      }
+    },
+    {
+      "id": "GPU-50000-200Myr",
+      "path": "gpu-analysis-GPU-50000-200Myr.json",
+      "origin": "new-integration-1.0.1",
+      "config": {
+        "id": "GPU-50000-200Myr",
+        "n": 50000,
+        "dt": 0.1,
+        "duration": 200,
+        "cadence": 2,
+        "epsilon": 0.1,
+        "theta": 0.5,
+        "precision": "Float32",
+        "algorithm": "gpu-f32",
+        "seed": 2026
+      },
+      "directSummary": {
+        "samples": 3,
+        "initialTime": 0,
+        "finalTime": 200,
+        "sampleIntervalMax": 180,
+        "finalEnergyError": -2.3307799947126835e-8,
+        "maxAbsEnergyError": 2.2607038172867655e-7,
+        "minEnergyError": -2.3307799947126835e-8,
+        "maxEnergyError": 2.2607038172867655e-7,
+        "meanEnergyError": 6.758752726051658e-8,
+        "energyErrorPeakToPeak": 2.493781816758034e-7,
+        "energyErrorRmsAboutMean": 1.1246755014929359e-7,
+        "maxAbsEnergyScaledError": 7.486895073429105e-8,
+        "maxAngularMomentumScaledError": 7.974277037418043e-8,
+        "maxAbsLzRelativeError": 0.000002055333552724594,
+        "maxAbsLzScaledError": 2.8197479890415283e-8,
+        "maxMomentumScaledError": 1.3405621069802496e-9,
+        "maxCenterOfMassDisplacement": 2.2267152268991888e-8,
+        "maxCenterOfMassBallisticResidual": 2.2267152268991888e-8,
+        "energyApproximate": false,
+        "externalExtrapolatedMax": 0,
+        "scope": "sampled instants only; conservation does not establish structural equilibrium"
+      },
+      "effectiveParameters": {
+        "GNominal": 0.04498502151469553,
+        "GFloat32": 0.04498502239584923,
+        "epsilonNominal": 0.1,
+        "epsilonSquaredFloat32": 0.009999999776482582,
+        "dtFloat32": 0.10000000149011612,
+        "nominalDurationMyr": 200,
+        "sumOfFloat32StepParametersMyr": 200.00000298023224
+      },
+      "effectiveDirectSummary": {
+        "samples": 3,
+        "initialTime": 0,
+        "finalTime": 200,
+        "sampleIntervalMax": 180,
+        "finalEnergyError": -2.3150807376107154e-8,
+        "maxAbsEnergyError": 2.2613106511869727e-7,
+        "minEnergyError": -2.3150807376107154e-8,
+        "maxEnergyError": 2.2613106511869727e-7,
+        "meanEnergyError": 6.76600859141967e-8,
+        "energyErrorPeakToPeak": 2.4928187249480444e-7,
+        "energyErrorRmsAboutMean": 1.1245377838047163e-7,
+        "maxAbsEnergyScaledError": 7.488904955312574e-8,
+        "maxAngularMomentumScaledError": 7.974277037418043e-8,
+        "maxAbsLzRelativeError": 0.000002055333552724594,
+        "maxAbsLzScaledError": 2.8197479890415283e-8,
+        "maxMomentumScaledError": 1.3405621069802496e-9,
+        "maxCenterOfMassDisplacement": 2.2267152268991888e-8,
+        "maxCenterOfMassBallisticResidual": 2.2267152268991888e-8,
+        "energyApproximate": false,
+        "externalExtrapolatedMax": 0,
+        "scope": "sampled instants only; conservation does not establish structural equilibrium"
+      },
+      "denseEnergySummary": {
+        "samples": 101,
+        "initialTime": 0,
+        "finalTime": 200,
+        "sampleIntervalMax": 2,
+        "finalEnergyError": -0.00007868312807832162,
+        "maxAbsEnergyError": 0.00019497302388179257,
+        "minEnergyError": -0.00019497302388179257,
+        "maxEnergyError": 0.00008099403639402429,
+        "meanEnergyError": -0.00006700877052078222,
+        "energyErrorPeakToPeak": 0.00027596706027581684,
+        "energyErrorRmsAboutMean": 0.00006126184312442826,
+        "maxAbsEnergyScaledError": 0.00006454855488312405,
+        "maxAngularMomentumScaledError": 1.2522319637089215e-7,
+        "maxAbsLzRelativeError": 0.000006187381058520823,
+        "maxAbsLzScaledError": 8.488576111682607e-8,
+        "maxMomentumScaledError": 2.1654985328755345e-9,
+        "maxCenterOfMassDisplacement": 2.2267152268991888e-8,
+        "maxCenterOfMassBallisticResidual": 2.2267152268991888e-8,
+        "energyApproximate": true,
+        "externalExtrapolatedMax": 0,
+        "scope": "sampled instants only; conservation does not establish structural equilibrium"
+      },
+      "denseEnergyKind": "Barnes-Hut-Float64-estimate-at-recorded-cadence",
+      "stateComparison": null,
+      "initialPopulationH50": {
+        "thin": 0.20262916907961423,
+        "thick": 0.5773857457881592
+      },
+      "finalPopulationH50": {
+        "thin": 0.2706699566220783,
+        "thick": 0.6654777935613301
+      }
+    }
+  ],
+  "wallMs": 71374.8554
+}

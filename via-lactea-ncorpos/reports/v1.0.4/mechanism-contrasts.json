@@ -1,0 +1,618 @@
+{
+  "schema": "paired-mechanisms-104",
+  "rows": [
+    {
+      "family": "A",
+      "seed": 2026,
+      "live": "FA-b2026-h2026-t200",
+      "fixed": "B-base-s2026-t200",
+      "continuous": "A-base-s2026-t200",
+      "liveHeightGrowth": 97.04144275877529,
+      "fixedHeightGrowth": 20.31231643363145,
+      "continuousHeightGrowth": 1.9511365192280694,
+      "liveVariance": 1326.5154271373892,
+      "fixedVariance": 292.3743044851383,
+      "continuousVariance": 166.81428467345427,
+      "liveMinusFixedVariance": 1034.141122652251,
+      "fixedMinusContinuousVariance": 125.56001981168401
+    },
+    {
+      "family": "B",
+      "seed": 2026,
+      "live": "FB-b2026-h2026-t200",
+      "fixed": "B-base-s2026-t200",
+      "continuous": "A-base-s2026-t200",
+      "liveHeightGrowth": 27.850965135616246,
+      "fixedHeightGrowth": 20.31231643363145,
+      "continuousHeightGrowth": 1.9511365192280694,
+      "liveVariance": 458.23047830630355,
+      "fixedVariance": 292.3743044851383,
+      "continuousVariance": 166.81428467345427,
+      "liveMinusFixedVariance": 165.85617382116527,
+      "fixedMinusContinuousVariance": 125.56001981168401
+    },
+    {
+      "family": "C",
+      "seed": 2026,
+      "live": "FC-b2026-h2026-t200",
+      "fixed": "B-thin2-s2026-t200",
+      "continuous": "A-thin2-s2026-t200",
+      "liveHeightGrowth": 94.23927100191136,
+      "fixedHeightGrowth": 13.5670247126207,
+      "continuousHeightGrowth": 2.7797053384476467,
+      "liveVariance": 1691.7614424055332,
+      "fixedVariance": 320.3333284980177,
+      "continuousVariance": 95.87246772686946,
+      "liveMinusFixedVariance": 1371.4281139075156,
+      "fixedMinusContinuousVariance": 224.46086077114825
+    },
+    {
+      "family": "D",
+      "seed": 2026,
+      "live": "FD-b2026-h2026-t200",
+      "fixed": "B-thin2-s2026-t200",
+      "continuous": "A-thin2-s2026-t200",
+      "liveHeightGrowth": 22.31580837746794,
+      "fixedHeightGrowth": 13.5670247126207,
+      "continuousHeightGrowth": 2.7797053384476467,
+      "liveVariance": 492.85996393310484,
+      "fixedVariance": 320.3333284980177,
+      "continuousVariance": 95.87246772686946,
+      "liveMinusFixedVariance": 172.52663543508714,
+      "fixedMinusContinuousVariance": 224.46086077114825
+    },
+    {
+      "family": "E",
+      "seed": 2026,
+      "live": "FE-b2026-h2026-higher200",
+      "fixed": "B-thin2-s2026-t200",
+      "continuous": "A-thin2-s2026-t200",
+      "liveHeightGrowth": 18.571267730939734,
+      "fixedHeightGrowth": 13.5670247126207,
+      "continuousHeightGrowth": 2.7797053384476467,
+      "liveVariance": 365.94392242807265,
+      "fixedVariance": 320.3333284980177,
+      "continuousVariance": 95.87246772686946,
+      "liveMinusFixedVariance": 45.61059393005496,
+      "fixedMinusContinuousVariance": 224.46086077114825
+    },
+    {
+      "family": "A",
+      "seed": 2027,
+      "live": "FA-b2027-h2027-t200",
+      "fixed": "B-base-s2027-t200",
+      "continuous": "A-base-s2027-t200",
+      "liveHeightGrowth": 94.53523319178467,
+      "fixedHeightGrowth": 22.376102918169295,
+      "continuousHeightGrowth": 5.387978949958683,
+      "liveVariance": 1374.7524834638432,
+      "fixedVariance": 209.7737833743418,
+      "continuousVariance": -91.25331585623151,
+      "liveMinusFixedVariance": 1164.9787000895014,
+      "fixedMinusContinuousVariance": 301.0270992305733
+    },
+    {
+      "family": "B",
+      "seed": 2027,
+      "live": "FB-b2027-h2027-t200",
+      "fixed": "B-base-s2027-t200",
+      "continuous": "A-base-s2027-t200",
+      "liveHeightGrowth": 24.96697082417989,
+      "fixedHeightGrowth": 22.376102918169295,
+      "continuousHeightGrowth": 5.387978949958683,
+      "liveVariance": 365.02515249678044,
+      "fixedVariance": 209.7737833743418,
+      "continuousVariance": -91.25331585623151,
+      "liveMinusFixedVariance": 155.25136912243863,
+      "fixedMinusContinuousVariance": 301.0270992305733
+    },
+    {
+      "family": "C",
+      "seed": 2027,
+      "live": "FC-b2027-h2027-t200",
+      "fixed": "B-thin2-s2027-t200",
+      "continuous": "A-thin2-s2027-t200",
+      "liveHeightGrowth": 94.79526377976943,
+      "fixedHeightGrowth": 8.41396409922801,
+      "continuousHeightGrowth": 0.15419717249944842,
+      "liveVariance": 1154.6863378750893,
+      "fixedVariance": 185.56191484133834,
+      "continuousVariance": 26.52784871647426,
+      "liveMinusFixedVariance": 969.124423033751,
+      "fixedMinusContinuousVariance": 159.03406612486407
+    },
+    {
+      "family": "D",
+      "seed": 2027,
+      "live": "FD-b2027-h2027-t200",
+      "fixed": "B-thin2-s2027-t200",
+      "continuous": "A-thin2-s2027-t200",
+      "liveHeightGrowth": 21.58784772322062,
+      "fixedHeightGrowth": 8.41396409922801,
+      "continuousHeightGrowth": 0.15419717249944842,
+      "liveVariance": 357.0177759967795,
+      "fixedVariance": 185.56191484133834,
+      "continuousVariance": 26.52784871647426,
+      "liveMinusFixedVariance": 171.45586115544117,
+      "fixedMinusContinuousVariance": 159.03406612486407
+    },
+    {
+      "family": "E",
+      "seed": 2027,
+      "live": "FE-b2027-h2027-higher200",
+      "fixed": "B-thin2-s2027-t200",
+      "continuous": "A-thin2-s2027-t200",
+      "liveHeightGrowth": 16.992431710522983,
+      "fixedHeightGrowth": 8.41396409922801,
+      "continuousHeightGrowth": 0.15419717249944842,
+      "liveVariance": 357.73703593338666,
+      "fixedVariance": 185.56191484133834,
+      "continuousVariance": 26.52784871647426,
+      "liveMinusFixedVariance": 172.17512109204833,
+      "fixedMinusContinuousVariance": 159.03406612486407
+    },
+    {
+      "family": "A",
+      "seed": 2028,
+      "live": "FA-b2028-h2028-t200",
+      "fixed": "B-base-s2028-t200",
+      "continuous": "A-base-s2028-t200",
+      "liveHeightGrowth": 117.63313855443616,
+      "fixedHeightGrowth": 3.2278944134527032,
+      "continuousHeightGrowth": 0.751191996999756,
+      "liveVariance": 1907.4291226409605,
+      "fixedVariance": 327.9340076597392,
+      "continuousVariance": 101.52076038513083,
+      "liveMinusFixedVariance": 1579.4951149812214,
+      "fixedMinusContinuousVariance": 226.4132472746084
+    },
+    {
+      "family": "B",
+      "seed": 2028,
+      "live": "FB-b2028-h2028-t200",
+      "fixed": "B-base-s2028-t200",
+      "continuous": "A-base-s2028-t200",
+      "liveHeightGrowth": 26.295469023506367,
+      "fixedHeightGrowth": 3.2278944134527032,
+      "continuousHeightGrowth": 0.751191996999756,
+      "liveVariance": 370.981794746848,
+      "fixedVariance": 327.9340076597392,
+      "continuousVariance": 101.52076038513083,
+      "liveMinusFixedVariance": 43.04778708710876,
+      "fixedMinusContinuousVariance": 226.4132472746084
+    },
+    {
+      "family": "C",
+      "seed": 2028,
+      "live": "FC-b2028-h2028-t200",
+      "fixed": "B-thin2-s2028-t200",
+      "continuous": "A-thin2-s2028-t200",
+      "liveHeightGrowth": 127.24592547847115,
+      "fixedHeightGrowth": 11.489675195753835,
+      "continuousHeightGrowth": 0.7972459575637858,
+      "liveVariance": 2194.6225005263714,
+      "fixedVariance": 221.29456366296014,
+      "continuousVariance": 93.28558149225896,
+      "liveMinusFixedVariance": 1973.3279368634112,
+      "fixedMinusContinuousVariance": 128.0089821707012
+    },
+    {
+      "family": "D",
+      "seed": 2028,
+      "live": "FD-b2028-h2028-t200",
+      "fixed": "B-thin2-s2028-t200",
+      "continuous": "A-thin2-s2028-t200",
+      "liveHeightGrowth": 25.955475056126698,
+      "fixedHeightGrowth": 11.489675195753835,
+      "continuousHeightGrowth": 0.7972459575637858,
+      "liveVariance": 305.80572746385724,
+      "fixedVariance": 221.29456366296014,
+      "continuousVariance": 93.28558149225896,
+      "liveMinusFixedVariance": 84.5111638008971,
+      "fixedMinusContinuousVariance": 128.0089821707012
+    },
+    {
+      "family": "E",
+      "seed": 2028,
+      "live": "FE-b2028-h2028-higher200",
+      "fixed": "B-thin2-s2028-t200",
+      "continuous": "A-thin2-s2028-t200",
+      "liveHeightGrowth": 18.116696082828977,
+      "fixedHeightGrowth": 11.489675195753835,
+      "continuousHeightGrowth": 0.7972459575637858,
+      "liveVariance": 386.0451885184116,
+      "fixedVariance": 221.29456366296014,
+      "continuousVariance": 93.28558149225896,
+      "liveMinusFixedVariance": 164.75062485545143,
+      "fixedMinusContinuousVariance": 128.0089821707012
+    }
+  ],
+  "groups": [
+    {
+      "family": "A",
+      "metrics": {
+        "liveHeightGrowth": {
+          "mean": 103.06993816833203,
+          "sd": 12.674201186378028,
+          "values": [
+            97.04144275877529,
+            94.53523319178467,
+            117.63313855443616
+          ]
+        },
+        "fixedHeightGrowth": {
+          "mean": 15.30543792175115,
+          "sd": 10.510237702334413,
+          "values": [
+            20.31231643363145,
+            22.376102918169295,
+            3.2278944134527032
+          ]
+        },
+        "continuousHeightGrowth": {
+          "mean": 2.696769155395503,
+          "sd": 2.406641712609301,
+          "values": [
+            1.9511365192280694,
+            5.387978949958683,
+            0.751191996999756
+          ]
+        },
+        "liveVariance": {
+          "mean": 1536.2323444140645,
+          "sd": 322.3693371356541,
+          "values": [
+            1326.5154271373892,
+            1374.7524834638432,
+            1907.4291226409605
+          ]
+        },
+        "fixedVariance": {
+          "mean": 276.6940318397398,
+          "sd": 60.620647171317636,
+          "values": [
+            292.3743044851383,
+            209.7737833743418,
+            327.9340076597392
+          ]
+        },
+        "continuousVariance": {
+          "mean": 59.027243067451195,
+          "sd": 134.1789695567391,
+          "values": [
+            166.81428467345427,
+            -91.25331585623151,
+            101.52076038513083
+          ]
+        },
+        "liveMinusFixedVariance": {
+          "mean": 1259.5383125743247,
+          "sd": 284.7084200936928,
+          "values": [
+            1034.141122652251,
+            1164.9787000895014,
+            1579.4951149812214
+          ]
+        },
+        "fixedMinusContinuousVariance": {
+          "mean": 217.66678877228856,
+          "sd": 88.05991932882009,
+          "values": [
+            125.56001981168401,
+            301.0270992305733,
+            226.4132472746084
+          ]
+        }
+      }
+    },
+    {
+      "family": "B",
+      "metrics": {
+        "liveHeightGrowth": {
+          "mean": 26.37113499443417,
+          "sd": 1.4434852965883138,
+          "values": [
+            27.850965135616246,
+            24.96697082417989,
+            26.295469023506367
+          ]
+        },
+        "fixedHeightGrowth": {
+          "mean": 15.30543792175115,
+          "sd": 10.510237702334413,
+          "values": [
+            20.31231643363145,
+            22.376102918169295,
+            3.2278944134527032
+          ]
+        },
+        "continuousHeightGrowth": {
+          "mean": 2.696769155395503,
+          "sd": 2.406641712609301,
+          "values": [
+            1.9511365192280694,
+            5.387978949958683,
+            0.751191996999756
+          ]
+        },
+        "liveVariance": {
+          "mean": 398.0791418499773,
+          "sd": 52.17765666293805,
+          "values": [
+            458.23047830630355,
+            365.02515249678044,
+            370.981794746848
+          ]
+        },
+        "fixedVariance": {
+          "mean": 276.6940318397398,
+          "sd": 60.620647171317636,
+          "values": [
+            292.3743044851383,
+            209.7737833743418,
+            327.9340076597392
+          ]
+        },
+        "continuousVariance": {
+          "mean": 59.027243067451195,
+          "sd": 134.1789695567391,
+          "values": [
+            166.81428467345427,
+            -91.25331585623151,
+            101.52076038513083
+          ]
+        },
+        "liveMinusFixedVariance": {
+          "mean": 121.38511001023755,
+          "sd": 68.04900875653115,
+          "values": [
+            165.85617382116527,
+            155.25136912243863,
+            43.04778708710876
+          ]
+        },
+        "fixedMinusContinuousVariance": {
+          "mean": 217.66678877228856,
+          "sd": 88.05991932882009,
+          "values": [
+            125.56001981168401,
+            301.0270992305733,
+            226.4132472746084
+          ]
+        }
+      }
+    },
+    {
+      "family": "C",
+      "metrics": {
+        "liveHeightGrowth": {
+          "mean": 105.42682008671731,
+          "sd": 18.897944387276716,
+          "values": [
+            94.23927100191136,
+            94.79526377976943,
+            127.24592547847115
+          ]
+        },
+        "fixedHeightGrowth": {
+          "mean": 11.156888002534181,
+          "sd": 2.5925988714614183,
+          "values": [
+            13.5670247126207,
+            8.41396409922801,
+            11.489675195753835
+          ]
+        },
+        "continuousHeightGrowth": {
+          "mean": 1.2437161561702936,
+          "sd": 1.368511969640006,
+          "values": [
+            2.7797053384476467,
+            0.15419717249944842,
+            0.7972459575637858
+          ]
+        },
+        "liveVariance": {
+          "mean": 1680.356760268998,
+          "sd": 520.0618767785666,
+          "values": [
+            1691.7614424055332,
+            1154.6863378750893,
+            2194.6225005263714
+          ]
+        },
+        "fixedVariance": {
+          "mean": 242.3966023341054,
+          "sd": 69.81980744612396,
+          "values": [
+            320.3333284980177,
+            185.56191484133834,
+            221.29456366296014
+          ]
+        },
+        "continuousVariance": {
+          "mean": 71.89529931186756,
+          "sd": 39.31064964156396,
+          "values": [
+            95.87246772686946,
+            26.52784871647426,
+            93.28558149225896
+          ]
+        },
+        "liveMinusFixedVariance": {
+          "mean": 1437.9601579348928,
+          "sd": 505.39693208289737,
+          "values": [
+            1371.4281139075156,
+            969.124423033751,
+            1973.3279368634112
+          ]
+        },
+        "fixedMinusContinuousVariance": {
+          "mean": 170.50130302223783,
+          "sd": 49.23783466943091,
+          "values": [
+            224.46086077114825,
+            159.03406612486407,
+            128.0089821707012
+          ]
+        }
+      }
+    },
+    {
+      "family": "D",
+      "metrics": {
+        "liveHeightGrowth": {
+          "mean": 23.28637705227175,
+          "sd": 2.339988203852722,
+          "values": [
+            22.31580837746794,
+            21.58784772322062,
+            25.955475056126698
+          ]
+        },
+        "fixedHeightGrowth": {
+          "mean": 11.156888002534181,
+          "sd": 2.5925988714614183,
+          "values": [
+            13.5670247126207,
+            8.41396409922801,
+            11.489675195753835
+          ]
+        },
+        "continuousHeightGrowth": {
+          "mean": 1.2437161561702936,
+          "sd": 1.368511969640006,
+          "values": [
+            2.7797053384476467,
+            0.15419717249944842,
+            0.7972459575637858
+          ]
+        },
+        "liveVariance": {
+          "mean": 385.22782246458047,
+          "sd": 96.66528273666776,
+          "values": [
+            492.85996393310484,
+            357.0177759967795,
+            305.80572746385724
+          ]
+        },
+        "fixedVariance": {
+          "mean": 242.3966023341054,
+          "sd": 69.81980744612396,
+          "values": [
+            320.3333284980177,
+            185.56191484133834,
+            221.29456366296014
+          ]
+        },
+        "continuousVariance": {
+          "mean": 71.89529931186756,
+          "sd": 39.31064964156396,
+          "values": [
+            95.87246772686946,
+            26.52784871647426,
+            93.28558149225896
+          ]
+        },
+        "liveMinusFixedVariance": {
+          "mean": 142.83122013047512,
+          "sd": 50.50948789191348,
+          "values": [
+            172.52663543508714,
+            171.45586115544117,
+            84.5111638008971
+          ]
+        },
+        "fixedMinusContinuousVariance": {
+          "mean": 170.50130302223783,
+          "sd": 49.23783466943091,
+          "values": [
+            224.46086077114825,
+            159.03406612486407,
+            128.0089821707012
+          ]
+        }
+      }
+    },
+    {
+      "family": "E",
+      "metrics": {
+        "liveHeightGrowth": {
+          "mean": 17.8934651747639,
+          "sd": 0.8127452390374373,
+          "values": [
+            18.571267730939734,
+            16.992431710522983,
+            18.116696082828977
+          ]
+        },
+        "fixedHeightGrowth": {
+          "mean": 11.156888002534181,
+          "sd": 2.5925988714614183,
+          "values": [
+            13.5670247126207,
+            8.41396409922801,
+            11.489675195753835
+          ]
+        },
+        "continuousHeightGrowth": {
+          "mean": 1.2437161561702936,
+          "sd": 1.368511969640006,
+          "values": [
+            2.7797053384476467,
+            0.15419717249944842,
+            0.7972459575637858
+          ]
+        },
+        "liveVariance": {
+          "mean": 369.90871562662363,
+          "sd": 14.564599703552455,
+          "values": [
+            365.94392242807265,
+            357.73703593338666,
+            386.0451885184116
+          ]
+        },
+        "fixedVariance": {
+          "mean": 242.3966023341054,
+          "sd": 69.81980744612396,
+          "values": [
+            320.3333284980177,
+            185.56191484133834,
+            221.29456366296014
+          ]
+        },
+        "continuousVariance": {
+          "mean": 71.89529931186756,
+          "sd": 39.31064964156396,
+          "values": [
+            95.87246772686946,
+            26.52784871647426,
+            93.28558149225896
+          ]
+        },
+        "liveMinusFixedVariance": {
+          "mean": 127.51211329251824,
+          "sd": 71.0258751547756,
+          "values": [
+            45.61059393005496,
+            172.17512109204833,
+            164.75062485545143
+          ]
+        },
+        "fixedMinusContinuousVariance": {
+          "mean": 170.50130302223783,
+          "sd": 49.23783466943091,
+          "values": [
+            224.46086077114825,
+            159.03406612486407,
+            128.0089821707012
+          ]
+        }
+      }
+    }
+  ],
+  "qualification": "Same uploaded initial baryons, n=3 paired seeds. Live−fixed removes halo response as well as granularity. Fixed−continuous changes baryon self gravity and collective response. Continuous changes include phase-sampling oscillations and limitations of the prepared DF/actions. These contrasts are not a unique causal split into collisional heating fractions."
+}

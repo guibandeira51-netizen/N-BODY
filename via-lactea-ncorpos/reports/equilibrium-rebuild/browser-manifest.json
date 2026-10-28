@@ -1,0 +1,61 @@
+{
+  "runs": [
+    {
+      "n": 400,
+      "seed": 2026,
+      "counts": [
+        60,
+        180,
+        160
+      ],
+      "dt": 0.05,
+      "duration": 40,
+      "stride": 2,
+      "matchCPU": true,
+      "snapshot": "reports/equilibrium-rebuild/orbits-1024-s44-p8-2026-10-21T03-42-28-070Z/gpu-n400-s2026.json"
+    },
+    {
+      "n": 2800,
+      "seed": 2026,
+      "counts": [
+        60,
+        180,
+        2560
+      ],
+      "dt": 0.05,
+      "duration": 200,
+      "stride": 10,
+      "matchCPU": false,
+      "snapshot": "reports/equilibrium-rebuild/orbits-1024-s44-p8-2026-10-21T03-42-28-070Z/gpu-n2800-s2026.json"
+    },
+    {
+      "n": 2800,
+      "seed": 2027,
+      "counts": [
+        60,
+        180,
+        2560
+      ],
+      "dt": 0.05,
+      "duration": 200,
+      "stride": 10,
+      "matchCPU": false,
+      "snapshot": "reports/equilibrium-rebuild/orbits-1024-s44-p8-2026-10-21T03-42-28-070Z/gpu-n2800-s2027.json"
+    },
+    {
+      "n": 2800,
+      "seed": 2028,
+      "counts": [
+        60,
+        180,
+        2560
+      ],
+      "dt": 0.05,
+      "duration": 200,
+      "stride": 10,
+      "matchCPU": false,
+      "snapshot": "reports/equilibrium-rebuild/orbits-1024-s44-p8-2026-10-21T03-42-28-070Z/gpu-n2800-s2028.json"
+    }
+  ],
+  "libraryId": "orbits-1024-s44-p8-2026-10-21T03-42-28-070Z"
+}

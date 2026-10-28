@@ -1,0 +1,413 @@
+{
+  "createdUTC": "2026-10-21T03:08:44.132Z",
+  "sampling": "Legacy generator unchanged; three seeds and 9000 disk bodies each; pressure evaluated independently. Pair correlations included in approximate variance of sum(vz²).",
+  "cbeScope": "Stationarity of the ideal local Gaussian closure associated with independently refined Jeans moments, not a recovery of a global DF or a numerical diagnostic of every sampled point. Nonzero residual is not cured by matching second moments.",
+  "cbe": [
+    {
+      "R": 2,
+      "z": 0.1,
+      "vKpcMyr": [
+        0.05096111322899417,
+        0.174449081822014,
+        0.025480556614497087
+      ],
+      "sigmaZKmS": 49.829380123504464,
+      "termsPerMyr": [
+        -0.0058369577056586455,
+        -0.10904182993976162,
+        0.04262916074942744,
+        0,
+        0.06133044742944062
+      ],
+      "logDistributionStationarityResidualPerMyr": -0.0109191794665522,
+      "residualTimesCrossingTime": -0.11710402218713425
+    },
+    {
+      "R": 2,
+      "z": 0.28,
+      "vKpcMyr": [
+        0.05767285400464284,
+        0.16694432475205284,
+        0.02883642700232142
+      ],
+      "sigmaZKmS": 56.39206804787151,
+      "termsPerMyr": [
+        -0.00727551876753939,
+        -0.1934048063882839,
+        0.04665471335316734,
+        0,
+        0.11207886308675236
+      ],
+      "logDistributionStationarityResidualPerMyr": -0.04194674871590359,
+      "residualTimesCrossingTime": -0.46006641843991547
+    },
+    {
+      "R": 4,
+      "z": 0.1,
+      "vKpcMyr": [
+        0.03388861284966831,
+        0.2220356767182959,
+        0.016944306424834157
+      ],
+      "sigmaZKmS": 33.13602204795732,
+      "termsPerMyr": [
+        -0.004099392083916006,
+        -0.07456722943996043,
+        0.03006455352688851,
+        0,
+        0.03761308872007017
+      ],
+      "logDistributionStationarityResidualPerMyr": -0.010988979276917749,
+      "residualTimesCrossingTime": -0.19025999591735782
+    },
+    {
+      "R": 4,
+      "z": 0.28,
+      "vKpcMyr": [
+        0.039251735828349114,
+        0.21617214832577827,
+        0.019625867914174557
+      ],
+      "sigmaZKmS": 38.380041980428906,
+      "termsPerMyr": [
+        -0.0054223469582197325,
+        -0.13592874503679897,
+        0.0339393548056497,
+        0,
+        0.06882155413026017
+      ],
+      "logDistributionStationarityResidualPerMyr": -0.03859018305910883,
+      "residualTimesCrossingTime": -0.6765321686713052
+    },
+    {
+      "R": 8.2,
+      "z": 0.1,
+      "vKpcMyr": [
+        0.01620326525234859,
+        0.23167401177740635,
+        0.008101632626174296
+      ],
+      "sigmaZKmS": 15.843426729577061,
+      "termsPerMyr": [
+        -0.0011123120708044802,
+        -0.03712972631126461,
+        0.009953291169738662,
+        0,
+        0.016320079103981873
+      ],
+      "logDistributionStationarityResidualPerMyr": -0.011968668108348554,
+      "residualTimesCrossingTime": -0.4185013386980995
+    },
+    {
+      "R": 8.2,
+      "z": 0.28,
+      "vKpcMyr": [
+        0.019332529598633238,
+        0.2296636746634069,
+        0.009666264799316619
+      ],
+      "sigmaZKmS": 18.90319706695721,
+      "termsPerMyr": [
+        -0.001490871350329786,
+        -0.0704754070457197,
+        0.01170599077376777,
+        0,
+        0.02988544606166212
+      ],
+      "logDistributionStationarityResidualPerMyr": -0.03037484156061959,
+      "residualTimesCrossingTime": -1.065926142707994
+    },
+    {
+      "R": 16,
+      "z": 0.1,
+      "vKpcMyr": [
+        0.006975196747453101,
+        0.22178120024775083,
+        0.0034875983737265503
+      ],
+      "sigmaZKmS": 6.820293124352781,
+      "termsPerMyr": [
+        -0.0002748671509438919,
+        -0.01651745009560019,
+        0.0023956752493820527,
+        0,
+        0.006459700601924314
+      ],
+      "logDistributionStationarityResidualPerMyr": -0.007936941395237714,
+      "residualTimesCrossingTime": -0.57104624143482
+    },
+    {
+      "R": 16,
+      "z": 0.28,
+      "vKpcMyr": [
+        0.008519905491564353,
+        0.22132834416067546,
+        0.0042599527457821765
+      ],
+      "sigmaZKmS": 8.330697319107063,
+      "termsPerMyr": [
+        -0.000368199970160414,
+        -0.032323711607764205,
+        0.0028914620605916203,
+        0,
+        0.011872305963808973
+      ],
+      "logDistributionStationarityResidualPerMyr": -0.01792814355352403,
+      "residualTimesCrossingTime": -1.2908566634604584
+    }
+  ],
+  "sampled": [
+    {
+      "seed": 2026,
+      "n": 20000,
+      "diskCount": 9000,
+      "bins": [
+        {
+          "lo": 0,
+          "hi": 2,
+          "n": 1562,
+          "observedSum": 6.363824248947874,
+          "expectedSum": 6.919641244948465,
+          "varianceOfSum": 0.14047611333763502,
+          "observedSigmaZKmS": 62.41157636380162,
+          "expectedSigmaZKmS": 65.08004621846045,
+          "approximateZScore": -1.4829639076241246
+        },
+        {
+          "lo": 2,
+          "hi": 4,
+          "n": 2002,
+          "observedSum": 4.999793083675349,
+          "expectedSum": 4.8664154945004885,
+          "varianceOfSum": 0.06005328152751488,
+          "observedSigmaZKmS": 48.86417348593605,
+          "expectedSigmaZKmS": 48.20800225934458,
+          "approximateZScore": 0.544270118434409
+        },
+        {
+          "lo": 4,
+          "hi": 8,
+          "n": 2368,
+          "observedSum": 2.2075140628671592,
+          "expectedSum": 2.2107812078262494,
+          "varianceOfSum": 0.013906408016994696,
+          "observedSigmaZKmS": 29.854339590188083,
+          "expectedSigmaZKmS": 29.876423796564335,
+          "approximateZScore": -0.027705176435684938
+        },
+        {
+          "lo": 8,
+          "hi": 12,
+          "n": 1002,
+          "observedSum": 0.31049625772722345,
+          "expectedSum": 0.3105040812317539,
+          "varianceOfSum": 0.0012533779672733556,
+          "observedSigmaZKmS": 17.21237908730364,
+          "expectedSigmaZKmS": 17.21259593416439,
+          "approximateZScore": -0.00022098373536773714
+        },
+        {
+          "lo": 12,
+          "hi": 20,
+          "n": 808,
+          "observedSum": 0.11843929581697157,
+          "expectedSum": 0.11442089169307829,
+          "varianceOfSum": 0.0007274643923096029,
+          "observedSigmaZKmS": 11.838285406263296,
+          "expectedSigmaZKmS": 11.635728032549641,
+          "approximateZScore": 0.1489867822685411
+        },
+        {
+          "lo": 20,
+          "hi": 30,
+          "n": 394,
+          "observedSum": 0.054117315352065626,
+          "expectedSum": 0.03159287397784466,
+          "varianceOfSum": 0.0004518000760832874,
+          "observedSigmaZKmS": 11.459524283155275,
+          "expectedSigmaZKmS": 8.755743588321383,
+          "approximateZScore": 1.0596949849970103
+        },
+        {
+          "lo": 30,
+          "hi": null,
+          "n": 864,
+          "observedSum": 0.014643092514672442,
+          "expectedSum": 0.009996431629993549,
+          "varianceOfSum": 0.000019733222064641126,
+          "observedSigmaZKmS": 4.02537282167783,
+          "expectedSigmaZKmS": 3.3259231260081648,
+          "approximateZScore": 1.0460247898615926
+        }
+      ]
+    },
+    {
+      "seed": 2027,
+      "n": 20000,
+      "diskCount": 9000,
+      "bins": [
+        {
+          "lo": 0,
+          "hi": 2,
+          "n": 1448,
+          "observedSum": 6.440831512710254,
+          "expectedSum": 6.146094653978828,
+          "varianceOfSum": 0.11696938579328076,
+          "observedSigmaZKmS": 65.21286288927567,
+          "expectedSigmaZKmS": 63.70329836897868,
+          "approximateZScore": 0.861783839626343
+        },
+        {
+          "lo": 2,
+          "hi": 4,
+          "n": 2102,
+          "observedSum": 4.7131229217010935,
+          "expectedSum": 5.00382513530329,
+          "varianceOfSum": 0.05966644152058753,
+          "observedSigmaZKmS": 46.30038535146992,
+          "expectedSigmaZKmS": 47.70690961105521,
+          "approximateZScore": -1.1900994926430744
+        },
+        {
+          "lo": 4,
+          "hi": 8,
+          "n": 2296,
+          "observedSum": 2.2826235234158987,
+          "expectedSum": 2.391467595174338,
+          "varianceOfSum": 0.018574122219389897,
+          "observedSigmaZKmS": 30.830302116572923,
+          "expectedSigmaZKmS": 31.5567948509008,
+          "approximateZScore": -0.7986392136930802
+        },
+        {
+          "lo": 8,
+          "hi": 12,
+          "n": 984,
+          "observedSum": 0.3624494285049124,
+          "expectedSum": 0.3388917203375951,
+          "varianceOfSum": 0.0021477965618678556,
+          "observedSigmaZKmS": 18.766044359206656,
+          "expectedSigmaZKmS": 18.145941571649153,
+          "approximateZScore": 0.508319143865911
+        },
+        {
+          "lo": 12,
+          "hi": 20,
+          "n": 792,
+          "observedSum": 0.11772015504571057,
+          "expectedSum": 0.157393605817931,
+          "varianceOfSum": 0.0015067162441632703,
+          "observedSigmaZKmS": 11.920909749771095,
+          "expectedSigmaZKmS": 13.78407190115026,
+          "approximateZScore": -1.022078473595204
+        },
+        {
+          "lo": 20,
+          "hi": 30,
+          "n": 468,
+          "observedSum": 0.019090358621588612,
+          "expectedSum": 0.027287706769393894,
+          "varianceOfSum": 0.00017064887808575062,
+          "observedSigmaZKmS": 6.244974869328329,
+          "expectedSigmaZKmS": 7.466329831990183,
+          "approximateZScore": -0.6275114600411054
+        },
+        {
+          "lo": 30,
+          "hi": null,
+          "n": 910,
+          "observedSum": 0.008609683047813644,
+          "expectedSum": 0.00771132354369187,
+          "varianceOfSum": 0.000010045672561039252,
+          "observedSigmaZKmS": 3.007595760059857,
+          "expectedSigmaZKmS": 2.846363388028274,
+          "approximateZScore": 0.283439685631231
+        }
+      ]
+    },
+    {
+      "seed": 2028,
+      "n": 20000,
+      "diskCount": 9000,
+      "bins": [
+        {
+          "lo": 0,
+          "hi": 2,
+          "n": 1416,
+          "observedSum": 6.774428313427635,
+          "expectedSum": 6.040786970360343,
+          "varianceOfSum": 0.11716986689094792,
+          "observedSigmaZKmS": 67.6318515448795,
+          "expectedSigmaZKmS": 63.86482282951353,
+          "approximateZScore": 2.1432647882194
+        },
+        {
+          "lo": 2,
+          "hi": 4,
+          "n": 2126,
+          "observedSum": 5.277961865190349,
+          "expectedSum": 5.267290082566839,
+          "varianceOfSum": 0.0684596311845227,
+          "observedSigmaZKmS": 48.71896708605453,
+          "expectedSigmaZKmS": 48.669688470742756,
+          "approximateZScore": 0.04078680559011443
+        },
+        {
+          "lo": 4,
+          "hi": 8,
+          "n": 2188,
+          "observedSum": 2.2618326021655433,
+          "expectedSum": 2.191791638359563,
+          "varianceOfSum": 0.016150770990134924,
+          "observedSigmaZKmS": 31.437872563854828,
+          "expectedSigmaZKmS": 30.947284839403764,
+          "approximateZScore": 0.5511318174591225
+        },
+        {
+          "lo": 8,
+          "hi": 12,
+          "n": 1014,
+          "observedSum": 0.4497164526593987,
+          "expectedSum": 0.38323881025314765,
+          "varianceOfSum": 0.0025843795839219676,
+          "observedSigmaZKmS": 20.5919269449802,
+          "expectedSigmaZKmS": 19.00913444298004,
+          "approximateZScore": 1.3076678856708406
+        },
+        {
+          "lo": 12,
+          "hi": 20,
+          "n": 940,
+          "observedSum": 0.16476864216433287,
+          "expectedSum": 0.13318522345784412,
+          "varianceOfSum": 0.0009736782170283576,
+          "observedSigmaZKmS": 12.945532898216841,
+          "expectedSigmaZKmS": 11.638866135826943,
+          "approximateZScore": 1.0121652218128303
+        },
+        {
+          "lo": 20,
+          "hi": 30,
+          "n": 436,
+          "observedSum": 0.020713208796084154,
+          "expectedSum": 0.0345938048923045,
+          "varianceOfSum": 0.00031575565555354225,
+          "observedSigmaZKmS": 6.739489872307166,
+          "expectedSigmaZKmS": 8.709686023250725,
+          "approximateZScore": -0.78114660232772
+        },
+        {
+          "lo": 30,
+          "hi": null,
+          "n": 880,
+          "observedSum": 0.0037034903513183844,
+          "expectedSum": 0.004175938406795744,
+          "varianceOfSum": 3.6747546804998747e-7,
+          "observedSigmaZKmS": 2.0059072627934094,
+          "expectedSigmaZKmS": 2.130013148139723,
+          "approximateZScore": -0.7793631902512123
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "energy": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 680 300\" role=\"img\" aria-label=\"Erro relativo de energia × tempo\"><rect width=\"680\" height=\"300\" fill=\"white\"></rect><g font-family=\"Arial,sans-serif\" fill=\"#172b30\" font-size=\"11\"><text x=\"18\" y=\"23\" font-size=\"15\">Erro relativo de energia × tempo</text><path d=\"M85 220H640\" stroke=\"#e1e8e9\"></path><text x=\"78\" y=\"224\" text-anchor=\"end\">-0.00206</text><text x=\"85\" y=\"240\" text-anchor=\"middle\">0.00</text><path d=\"M85 181.25H640\" stroke=\"#e1e8e9\"></path><text x=\"78\" y=\"185.25\" text-anchor=\"end\">0.00307</text><text x=\"223.75\" y=\"240\" text-anchor=\"middle\">281</text><path d=\"M85 142.5H640\" stroke=\"#e1e8e9\"></path><text x=\"78\" y=\"146.5\" text-anchor=\"end\">0.00820</text><text x=\"362.5\" y=\"240\" text-anchor=\"middle\">562</text><path d=\"M85 103.75H640\" stroke=\"#e1e8e9\"></path><text x=\"78\" y=\"107.75\" text-anchor=\"end\">0.0133</text><text x=\"501.25\" y=\"240\" text-anchor=\"middle\">843</text><path d=\"M85 65H640\" stroke=\"#e1e8e9\"></path><text x=\"78\" y=\"69\" text-anchor=\"end\">0.0185</text><text x=\"640\" y=\"240\" text-anchor=\"middle\">1.12e+3</text><path d=\"M85 65V220H640\" fill=\"none\" stroke=\"#456\"></path><text x=\"360\" y=\"260\" text-anchor=\"middle\">Tempo físico (Myr)</text><text transform=\"translate(17 155) rotate(-90)\" text-anchor=\"middle\">ΔE / |E₀| [%]</text><path d=\"M85.00 204.43 L150.09 220.00 L222.59 204.91 L292.92 166.82 L363.09 114.63 L441.31 137.68 L582.31 65.00 L640.00 164.22 \" fill=\"none\" stroke=\"#318a67\" stroke-width=\"1.8\"></path><circle cx=\"85\" cy=\"204.43204060808534\" r=\"2.6\" fill=\"#318a67\"><title>ΔE / |E₀|: x=0, y=0</title></circle><circle cx=\"150.09381113284144\" cy=\"220\" r=\"2.6\" fill=\"#318a67\"><title>ΔE / |E₀|: x=131.8999999999968, y=-0.0020624421679939836</title></circle><circle cx=\"222.5902543126331\" cy=\"204.91465445408326\" r=\"2.6\" fill=\"#318a67\"><title>ΔE / |E₀|: x=278.7999999999949, y=-0.00006393664845765342</title></circle><circle cx=\"292.9152587586698\" cy=\"166.82217107154017\" r=\"2.6\" fill=\"#318a67\"><title>ΔE / |E₀|: x=421.3000000000273, y=0.00498255287749586</title></circle><circle cx=\"363.0922105637674\" cy=\"114.62556738048161\" r=\"2.6\" fill=\"#318a67\"><title>ΔE / |E₀|: x=563.5000000000596, y=0.011897555272377474</title></circle><circle cx=\"441.31335585988546\" cy=\"137.68406984798628\" r=\"2.6\" fill=\"#318a67\"><title>ΔE / |E₀|: x=722.0000000000956, y=0.00884276648326527</title></circle><circle cx=\"582.3088209141499\" cy=\"65\" r=\"2.6\" fill=\"#318a67\"><title>ΔE / |E₀|: x=1007.7000000001606, y=0.01847194695721757</title></circle><circle cx=\"640\" cy=\"164.2151267221592\" r=\"2.6\" fill=\"#318a67\"><title>ΔE / |E₀|: x=1124.6000000000727, y=0.005327933929991813</title></circle><text x=\"85\" y=\"47\" fill=\"#318a67\">ΔE / |E₀|</text><text x=\"85\" y=\"285\" fill=\"#65777b\">Fonte: partículas integradas · Guilherme Aleixo Bandeira · UEMS</text></g></svg>",
+  "epoch": "Medição em 1.124,6 Myr · 8 estados medidos · energia aproximada por Barnes–Hut; erro da árvore não calibrado.",
+  "inputs": [
+    {
+      "id": "mode",
+      "value": "manual"
+    },
+    {
+      "id": "n",
+      "value": "80000"
+    },
+    {
+      "id": "force-method",
+      "value": "auto"
+    },
+    {
+      "id": "backend",
+      "value": "auto"
+    },
+    {
+      "id": "dt",
+      "value": "0.1"
+    },
+    {
+      "id": "epsilon",
+      "value": "0.1"
+    },
+    {
+      "id": "theta",
+      "value": "0.5"
+    },
+    {
+      "id": "seed",
+      "value": "2026"
+    },
+    {
+      "id": "budget",
+      "value": "512"
+    },
+    {
+      "id": "model",
+      "value": "halo"
+    },
+    {
+      "id": "show-bulge",
+      "value": "on"
+    },
+    {
+      "id": "show-disk",
+      "value": "on"
+    },
+    {
+      "id": "show-halo",
+      "value": "on"
+    }
+  ]
+}

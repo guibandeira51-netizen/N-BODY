@@ -1,0 +1,49 @@
+{
+  "UTC": "2026-10-17T05:50:45.778522+00:00",
+  "status": "passed",
+  "scope": "Functional browser checks, not an equilibrium or CPU/GPU precision comparison",
+  "cpuExport": "ui-cpu-session.json",
+  "cpuResetVerified": true,
+  "gpuObserved": {
+    "N": 1000,
+    "timeMyr": 29,
+    "relativeEnergyRounded": -8.54e-07,
+    "h50KpcRounded": 0.5196,
+    "method": "Actual browser UI, WebGPU Float32; direct Float64 diagnostic",
+    "notAFullCheckpoint": true
+  },
+  "controls": [
+    "start",
+    "pause",
+    "reset",
+    "camera",
+    "halo visibility",
+    "CPU JSON export"
+  ],
+  "orbits": [
+    "same initial vectors",
+    "22 kpc unbound baryonic apocentre undefined",
+    "1200 Myr",
+    "xz projection",
+    "inclined case",
+    "playback",
+    "reset"
+  ],
+  "archive": {
+    "total": 83,
+    "conservationFiltered": 9,
+    "expandedVersions": 0,
+    "automaticallyInsertedHistoricalImages": 0
+  },
+  "responsive": {
+    "measuredViewportWidth": 390,
+    "documentScrollWidth": 375,
+    "pages": [
+      "index.html",
+      "experimento-ncorpos.html",
+      "materia-escura.html"
+    ]
+  },
+  "consoleErrorsOnScientificPage": [],
+  "newScientificNBodyCampaigns": 0
+}

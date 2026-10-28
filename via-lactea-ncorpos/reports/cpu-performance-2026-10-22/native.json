@@ -1,0 +1,465 @@
+{
+  "createdUTC": "2026-10-22T05:54:29.184Z",
+  "options": {
+    "seed": 2026,
+    "withHalo": true,
+    "dt": 0.1,
+    "epsilon": 0.1,
+    "theta": 0.5,
+    "algorithm": "barnes-hut",
+    "energyAuditCadenceMyr": 200,
+    "G": 0.04498502151469553
+  },
+  "binarySha256": "a1626051b67d463294cbbea122ecce8699cc929d979ea9ad06c0755fa3bb72a0",
+  "nativeSource": "scripts/halo-5gyr/falcon-reference.cpp; official falcON core, kernel 0 Plummer and sizeof(real)==8 checked at runtime",
+  "caution": "Different approximate force algorithm (mutual multipole falcON); theta numbers are not equivalent accuracy settings across solvers. Same Plummer kernel, masses and KDK form. Accuracy is measured against direct Float64, not inferred from speed.",
+  "results": [
+    {
+      "n": 1000,
+      "baseN": 1000,
+      "haloRefinement": 1,
+      "initialHashes": {
+        "positions": "7fb66980238046ad79270eb155ee20f44f47f63d4c7d2ae099c5851b248745b5",
+        "velocities": "a9fa9bb07a0a645d9f6cb3e86395b0d111b56bbc395227726c4fb016c903aaa8",
+        "masses": "2e063e3624939023938c95d04bd70fd15f1a769d4d2e965e147912c74548b661"
+      },
+      "inputWriteMs": 1.5251000000000658,
+      "directReferenceMs": 6.617999999999938,
+      "originalBHInitialForceMs": 16.437400000000025,
+      "bhError": {
+        "targets": 1000,
+        "relativeL2": 0.002577573825692648,
+        "maximumTargetRelative": 0.01826956202433508,
+        "scope": "all targets"
+      },
+      "nativeError": {
+        "targets": 1000,
+        "relativeL2": 0.00943246220889092,
+        "maximumTargetRelative": 0.11462364361189127,
+        "scope": "all targets"
+      },
+      "nativeForceOnlyWallMs": 17.903299999999945,
+      "nativeInitialAndThreeStepsWallMs": 22.106400000000008,
+      "nativeComputeAndWriteThreeMs": 6.0375,
+      "energy": {
+        "initial": -1.8651361182841328,
+        "final": -1.8651374831622514,
+        "signedPercent": -0.0000731784723455831,
+        "qualification": "Only start and end of 0.3 Myr; not a maximum trajectory error or long-term validation."
+      },
+      "runs": [
+        {
+          "n": 1000,
+          "precisionBytes": 8,
+          "kernel": 0,
+          "theta": 0.5,
+          "G": 0.044985,
+          "epsilon": 0.1,
+          "steps": 0,
+          "dt": 0.1,
+          "computeAndWriteMs": 2.2049,
+          "stderr": "",
+          "wallMs": 78.90109999999993
+        },
+        {
+          "n": 1000,
+          "precisionBytes": 8,
+          "kernel": 0,
+          "theta": 0.5,
+          "G": 0.044985,
+          "epsilon": 0.1,
+          "steps": 0,
+          "dt": 0.1,
+          "computeAndWriteMs": 1.9241,
+          "stderr": "",
+          "wallMs": 17.903299999999945
+        },
+        {
+          "n": 1000,
+          "precisionBytes": 8,
+          "kernel": 0,
+          "theta": 0.5,
+          "G": 0.044985,
+          "epsilon": 0.1,
+          "steps": 0,
+          "dt": 0.1,
+          "computeAndWriteMs": 1.8483,
+          "stderr": "",
+          "wallMs": 17.601800000000026
+        },
+        {
+          "n": 1000,
+          "precisionBytes": 8,
+          "kernel": 0,
+          "theta": 0.5,
+          "G": 0.044985,
+          "epsilon": 0.1,
+          "steps": 3,
+          "dt": 0.1,
+          "computeAndWriteMs": 6.2093,
+          "stderr": "",
+          "wallMs": 24.560799999999972
+        },
+        {
+          "n": 1000,
+          "precisionBytes": 8,
+          "kernel": 0,
+          "theta": 0.5,
+          "G": 0.044985,
+          "epsilon": 0.1,
+          "steps": 3,
+          "dt": 0.1,
+          "computeAndWriteMs": 6.0209,
+          "stderr": "",
+          "wallMs": 22.033900000000017
+        },
+        {
+          "n": 1000,
+          "precisionBytes": 8,
+          "kernel": 0,
+          "theta": 0.5,
+          "G": 0.044985,
+          "epsilon": 0.1,
+          "steps": 3,
+          "dt": 0.1,
+          "computeAndWriteMs": 6.0375,
+          "stderr": "",
+          "wallMs": 22.106400000000008
+        }
+      ]
+    },
+    {
+      "n": 10000,
+      "baseN": 10000,
+      "haloRefinement": 1,
+      "initialHashes": {
+        "positions": "c373669fc30ad6b2d9b58795507e6419d0f336a4ca32dd8c5f7ece215c2a5715",
+        "velocities": "251728ccd3ab09edd2ce1a704121bc58046a018842d07d7d45e516140032c9fb",
+        "masses": "a1c13572184085d68d0fcd39841bc26323fc6d1cc40684b441dd1541351b7912"
+      },
+      "inputWriteMs": 4.024099999999976,
+      "directReferenceMs": 695.4276,
+      "originalBHInitialForceMs": 199.3223999999998,
+      "bhError": {
+        "targets": 10000,
+        "relativeL2": 0.005596371353898364,
+        "maximumTargetRelative": 0.13564399637331032,
+        "scope": "all targets"
+      },
+      "nativeError": {
+        "targets": 10000,
+        "relativeL2": 0.01147451569790847,
+        "maximumTargetRelative": 0.22509097278562903,
+        "scope": "all targets"
+      },
+      "nativeForceOnlyWallMs": 34.83259999999996,
+      "nativeInitialAndThreeStepsWallMs": 84.88490000000002,
+      "nativeComputeAndWriteThreeMs": 66.0886,
+      "energy": {
+        "initial": -1.857862760819376,
+        "final": -1.8578654009978306,
+        "signedPercent": -0.00014210836829318488,
+        "qualification": "Only start and end of 0.3 Myr; not a maximum trajectory error or long-term validation."
+      },
+      "runs": [
+        {
+          "n": 10000,
+          "precisionBytes": 8,
+          "kernel": 0,
+          "theta": 0.5,
+          "G": 0.044985,
+          "epsilon": 0.1,
+          "steps": 0,
+          "dt": 0.1,
+          "computeAndWriteMs": 17.4335,
+          "stderr": "",
+          "wallMs": 37.60760000000005
+        },
+        {
+          "n": 10000,
+          "precisionBytes": 8,
+          "kernel": 0,
+          "theta": 0.5,
+          "G": 0.044985,
+          "epsilon": 0.1,
+          "steps": 0,
+          "dt": 0.1,
+          "computeAndWriteMs": 17.537,
+          "stderr": "",
+          "wallMs": 34.83259999999996
+        },
+        {
+          "n": 10000,
+          "precisionBytes": 8,
+          "kernel": 0,
+          "theta": 0.5,
+          "G": 0.044985,
+          "epsilon": 0.1,
+          "steps": 0,
+          "dt": 0.1,
+          "computeAndWriteMs": 17.7374,
+          "stderr": "",
+          "wallMs": 34.778099999999995
+        },
+        {
+          "n": 10000,
+          "precisionBytes": 8,
+          "kernel": 0,
+          "theta": 0.5,
+          "G": 0.044985,
+          "epsilon": 0.1,
+          "steps": 3,
+          "dt": 0.1,
+          "computeAndWriteMs": 65.8625,
+          "stderr": "",
+          "wallMs": 85.38799999999992
+        },
+        {
+          "n": 10000,
+          "precisionBytes": 8,
+          "kernel": 0,
+          "theta": 0.5,
+          "G": 0.044985,
+          "epsilon": 0.1,
+          "steps": 3,
+          "dt": 0.1,
+          "computeAndWriteMs": 67.686,
+          "stderr": "",
+          "wallMs": 84.88490000000002
+        },
+        {
+          "n": 10000,
+          "precisionBytes": 8,
+          "kernel": 0,
+          "theta": 0.5,
+          "G": 0.044985,
+          "epsilon": 0.1,
+          "steps": 3,
+          "dt": 0.1,
+          "computeAndWriteMs": 66.0886,
+          "stderr": "",
+          "wallMs": 83.07200000000012
+        }
+      ]
+    },
+    {
+      "n": 80000,
+      "baseN": 80000,
+      "haloRefinement": 1,
+      "initialHashes": {
+        "positions": "76ee2644bc0f396dee752b0ca85e6aed5de039a940a962e1a1b36a4926f32e13",
+        "velocities": "a095bb51d4c6b142777278ee772b8ccd8f15324d172b55bcd0da881f5e86418c",
+        "masses": "a3cd796214f69302c6208aa5a64a3bbb8717e1f6a06e8e1639ccf43a3dcc7792"
+      },
+      "inputWriteMs": 51.99420000000009,
+      "directReferenceMs": 55.695100000000366,
+      "originalBHInitialForceMs": 2338.9194999999995,
+      "bhError": {
+        "targets": 96,
+        "relativeL2": 0.004730500471638004,
+        "maximumTargetRelative": 0.008755775194047008,
+        "scope": "96 stratified target probes; no global bound"
+      },
+      "nativeError": {
+        "targets": 96,
+        "relativeL2": 0.007637793392901649,
+        "maximumTargetRelative": 0.027073790820813477,
+        "scope": "96 stratified target probes; no global bound"
+      },
+      "nativeForceOnlyWallMs": 157.77010000000064,
+      "nativeInitialAndThreeStepsWallMs": 522.0788999999995,
+      "nativeComputeAndWriteThreeMs": 500.437,
+      "energy": null,
+      "runs": [
+        {
+          "n": 80000,
+          "precisionBytes": 8,
+          "kernel": 0,
+          "theta": 0.5,
+          "G": 0.044985,
+          "epsilon": 0.1,
+          "steps": 0,
+          "dt": 0.1,
+          "computeAndWriteMs": 134.175,
+          "stderr": "",
+          "wallMs": 157.77010000000064
+        },
+        {
+          "n": 80000,
+          "precisionBytes": 8,
+          "kernel": 0,
+          "theta": 0.5,
+          "G": 0.044985,
+          "epsilon": 0.1,
+          "steps": 0,
+          "dt": 0.1,
+          "computeAndWriteMs": 134.136,
+          "stderr": "",
+          "wallMs": 155.38990000000013
+        },
+        {
+          "n": 80000,
+          "precisionBytes": 8,
+          "kernel": 0,
+          "theta": 0.5,
+          "G": 0.044985,
+          "epsilon": 0.1,
+          "steps": 0,
+          "dt": 0.1,
+          "computeAndWriteMs": 137.858,
+          "stderr": "",
+          "wallMs": 159.58209999999963
+        },
+        {
+          "n": 80000,
+          "precisionBytes": 8,
+          "kernel": 0,
+          "theta": 0.5,
+          "G": 0.044985,
+          "epsilon": 0.1,
+          "steps": 3,
+          "dt": 0.1,
+          "computeAndWriteMs": 505.011,
+          "stderr": "",
+          "wallMs": 527.8131000000003
+        },
+        {
+          "n": 80000,
+          "precisionBytes": 8,
+          "kernel": 0,
+          "theta": 0.5,
+          "G": 0.044985,
+          "epsilon": 0.1,
+          "steps": 3,
+          "dt": 0.1,
+          "computeAndWriteMs": 500.437,
+          "stderr": "",
+          "wallMs": 522.0788999999995
+        },
+        {
+          "n": 80000,
+          "precisionBytes": 8,
+          "kernel": 0,
+          "theta": 0.5,
+          "G": 0.044985,
+          "epsilon": 0.1,
+          "steps": 3,
+          "dt": 0.1,
+          "computeAndWriteMs": 498.148,
+          "stderr": "",
+          "wallMs": 519.5792000000001
+        }
+      ]
+    },
+    {
+      "n": 536000,
+      "baseN": 40000,
+      "haloRefinement": 32,
+      "initialHashes": {
+        "positions": "d0003d7227bf56bfda4b0f80628d93327dfccfc9ad0d5416cf431e0c08789736",
+        "velocities": "76e3c03d776c9e971851528b3522f9f08daded3b25802b67977a55fbfd855c04",
+        "masses": "3b4b0e37c0f1b96b359a47fdb8045742485264498eea8988e9a81171f8058889"
+      },
+      "inputWriteMs": 61.26649999999972,
+      "directReferenceMs": 593.6208000000006,
+      "originalBHInitialForceMs": 15298.565999999999,
+      "bhError": {
+        "targets": 96,
+        "relativeL2": 0.004175242632819738,
+        "maximumTargetRelative": 0.010298391081256504,
+        "scope": "96 stratified target probes; no global bound"
+      },
+      "nativeError": {
+        "targets": 96,
+        "relativeL2": 0.008484200532838798,
+        "maximumTargetRelative": 0.022038030210067044,
+        "scope": "96 stratified target probes; no global bound"
+      },
+      "nativeForceOnlyWallMs": 845.5628999999972,
+      "nativeInitialAndThreeStepsWallMs": 2975.3548999999985,
+      "nativeComputeAndWriteThreeMs": 2926.56,
+      "energy": null,
+      "runs": [
+        {
+          "n": 536000,
+          "precisionBytes": 8,
+          "kernel": 0,
+          "theta": 0.5,
+          "G": 0.044985,
+          "epsilon": 0.1,
+          "steps": 0,
+          "dt": 0.1,
+          "computeAndWriteMs": 811.482,
+          "stderr": "",
+          "wallMs": 865.913700000001
+        },
+        {
+          "n": 536000,
+          "precisionBytes": 8,
+          "kernel": 0,
+          "theta": 0.5,
+          "G": 0.044985,
+          "epsilon": 0.1,
+          "steps": 0,
+          "dt": 0.1,
+          "computeAndWriteMs": 795.585,
+          "stderr": "",
+          "wallMs": 845.5628999999972
+        },
+        {
+          "n": 536000,
+          "precisionBytes": 8,
+          "kernel": 0,
+          "theta": 0.5,
+          "G": 0.044985,
+          "epsilon": 0.1,
+          "steps": 0,
+          "dt": 0.1,
+          "computeAndWriteMs": 779.31,
+          "stderr": "",
+          "wallMs": 829.7263999999996
+        },
+        {
+          "n": 536000,
+          "precisionBytes": 8,
+          "kernel": 0,
+          "theta": 0.5,
+          "G": 0.044985,
+          "epsilon": 0.1,
+          "steps": 3,
+          "dt": 0.1,
+          "computeAndWriteMs": 2982.75,
+          "stderr": "",
+          "wallMs": 3034.5636000000013
+        },
+        {
+          "n": 536000,
+          "precisionBytes": 8,
+          "kernel": 0,
+          "theta": 0.5,
+          "G": 0.044985,
+          "epsilon": 0.1,
+          "steps": 3,
+          "dt": 0.1,
+          "computeAndWriteMs": 2910.69,
+          "stderr": "",
+          "wallMs": 2960.925299999999
+        },
+        {
+          "n": 536000,
+          "precisionBytes": 8,
+          "kernel": 0,
+          "theta": 0.5,
+          "G": 0.044985,
+          "epsilon": 0.1,
+          "steps": 3,
+          "dt": 0.1,
+          "computeAndWriteMs": 2926.56,
+          "stderr": "",
+          "wallMs": 2975.3548999999985
+        }
+      ]
+    }
+  ],
+  "completedUTC": "2026-10-22T05:55:05.747Z"
+}

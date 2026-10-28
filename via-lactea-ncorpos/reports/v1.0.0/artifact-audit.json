@@ -1,0 +1,3152 @@
+{
+  "schema": "equilibrium-artifact-audit-v1",
+  "snapshots": [
+    {
+      "dataset": "agama",
+      "file": "c20-agama-n10000-nb1500-nd4500-nh4000-s2026-h2026.json",
+      "sha256": "64320fada258c7b039ebe294f26d26ed66a853570cf8abd255a087ddf18b155f",
+      "n": 10000,
+      "componentSumsMsun": [
+        9200015467.282349,
+        50499999999.99974,
+        1049129212118.4979
+      ],
+      "maxMassDeclarationRelativeError": 5.595524044110789e-14,
+      "stellarHashes": [
+        "816455b6c56a2e715fdef479bb838fa93a7a2d7fb0fd591c0d718477f5068651",
+        "ba1adc3e3d27cdfe73c044bfffe6dbb7e723dec1ddeade1490f4edaaff7532a6",
+        "bc08ac1b425b9a52eeb2cb1937ceb83d34cb97fa95339cfd8038c3b0f37970e3"
+      ],
+      "potentialSHA256": "73c02e37de59262201bc1855eea4e4acfeaaac40a1a25085f8d8734907b11a3b",
+      "DFsampleAdmissible": true,
+      "counts": [
+        1500,
+        4500,
+        4000
+      ],
+      "subpopulationCounts": [
+        1500,
+        3546,
+        954,
+        4000
+      ]
+    },
+    {
+      "dataset": "agama",
+      "file": "c20-agama-n10000-nb1500-nd4500-nh4000-s2026-h2027.json",
+      "sha256": "0f18a840f860c4af7a8d4e9995002f0639b387d35897a687629475cea47b3d1d",
+      "n": 10000,
+      "componentSumsMsun": [
+        9200015467.282349,
+        50499999999.99974,
+        1049129212118.4979
+      ],
+      "maxMassDeclarationRelativeError": 5.595524044110789e-14,
+      "stellarHashes": [
+        "816455b6c56a2e715fdef479bb838fa93a7a2d7fb0fd591c0d718477f5068651",
+        "ba1adc3e3d27cdfe73c044bfffe6dbb7e723dec1ddeade1490f4edaaff7532a6",
+        "bc08ac1b425b9a52eeb2cb1937ceb83d34cb97fa95339cfd8038c3b0f37970e3"
+      ],
+      "potentialSHA256": "73c02e37de59262201bc1855eea4e4acfeaaac40a1a25085f8d8734907b11a3b",
+      "DFsampleAdmissible": true,
+      "counts": [
+        1500,
+        4500,
+        4000
+      ],
+      "subpopulationCounts": [
+        1500,
+        3546,
+        954,
+        4000
+      ]
+    },
+    {
+      "dataset": "agama",
+      "file": "c20-agama-n10000-nb1500-nd4500-nh4000-s2027-h2027.json",
+      "sha256": "ee378c6007e58cb6600566f7dbcc84a7306c96afd0b9ee835a430e25e778c454",
+      "n": 10000,
+      "componentSumsMsun": [
+        9200015467.282349,
+        50499999999.99974,
+        1049129212118.4979
+      ],
+      "maxMassDeclarationRelativeError": 5.595524044110789e-14,
+      "stellarHashes": [
+        "a486e92c3e07b1ec56cd495610cc3da2b840810f66ab52684885e7c1fa3fb007",
+        "80013a3b70a81969829cb7f4f9e652caa3e6e0091e78becdb42a3912e59c097f",
+        "bc08ac1b425b9a52eeb2cb1937ceb83d34cb97fa95339cfd8038c3b0f37970e3"
+      ],
+      "potentialSHA256": "73c02e37de59262201bc1855eea4e4acfeaaac40a1a25085f8d8734907b11a3b",
+      "DFsampleAdmissible": true,
+      "counts": [
+        1500,
+        4500,
+        4000
+      ],
+      "subpopulationCounts": [
+        1500,
+        3546,
+        954,
+        4000
+      ]
+    },
+    {
+      "dataset": "agama",
+      "file": "c20-agama-n14000-nb1500-nd4500-nh8000-s2026-h2026.json",
+      "sha256": "e0ef65534271128be5e633659463261b4e0dd9531de77e587f8ce330a9df6d1c",
+      "n": 14000,
+      "componentSumsMsun": [
+        9200015467.282349,
+        50499999999.99974,
+        1049129212118.4926
+      ],
+      "maxMassDeclarationRelativeError": 6.106226635438361e-14,
+      "stellarHashes": [
+        "816455b6c56a2e715fdef479bb838fa93a7a2d7fb0fd591c0d718477f5068651",
+        "ba1adc3e3d27cdfe73c044bfffe6dbb7e723dec1ddeade1490f4edaaff7532a6",
+        "bc08ac1b425b9a52eeb2cb1937ceb83d34cb97fa95339cfd8038c3b0f37970e3"
+      ],
+      "potentialSHA256": "73c02e37de59262201bc1855eea4e4acfeaaac40a1a25085f8d8734907b11a3b",
+      "DFsampleAdmissible": true,
+      "counts": [
+        1500,
+        4500,
+        8000
+      ],
+      "subpopulationCounts": [
+        1500,
+        3546,
+        954,
+        8000
+      ]
+    },
+    {
+      "dataset": "agama",
+      "file": "c20-agama-n14000-nb1500-nd4500-nh8000-s2026-h2027.json",
+      "sha256": "40ebf18efd3665022fa7b4bf071b15592aad120ff579203bc82a4e691f1b4dc5",
+      "n": 14000,
+      "componentSumsMsun": [
+        9200015467.282349,
+        50499999999.99974,
+        1049129212118.4926
+      ],
+      "maxMassDeclarationRelativeError": 6.106226635438361e-14,
+      "stellarHashes": [
+        "816455b6c56a2e715fdef479bb838fa93a7a2d7fb0fd591c0d718477f5068651",
+        "ba1adc3e3d27cdfe73c044bfffe6dbb7e723dec1ddeade1490f4edaaff7532a6",
+        "bc08ac1b425b9a52eeb2cb1937ceb83d34cb97fa95339cfd8038c3b0f37970e3"
+      ],
+      "potentialSHA256": "73c02e37de59262201bc1855eea4e4acfeaaac40a1a25085f8d8734907b11a3b",
+      "DFsampleAdmissible": true,
+      "counts": [
+        1500,
+        4500,
+        8000
+      ],
+      "subpopulationCounts": [
+        1500,
+        3546,
+        954,
+        8000
+      ]
+    },
+    {
+      "dataset": "agama",
+      "file": "c20-agama-n14000-nb1500-nd4500-nh8000-s2027-h2027.json",
+      "sha256": "173614058a43cbf7092662902a4c95d41712dc7330e593bb02e3a48d7a910b4a",
+      "n": 14000,
+      "componentSumsMsun": [
+        9200015467.282349,
+        50499999999.99974,
+        1049129212118.4926
+      ],
+      "maxMassDeclarationRelativeError": 6.106226635438361e-14,
+      "stellarHashes": [
+        "a486e92c3e07b1ec56cd495610cc3da2b840810f66ab52684885e7c1fa3fb007",
+        "80013a3b70a81969829cb7f4f9e652caa3e6e0091e78becdb42a3912e59c097f",
+        "bc08ac1b425b9a52eeb2cb1937ceb83d34cb97fa95339cfd8038c3b0f37970e3"
+      ],
+      "potentialSHA256": "73c02e37de59262201bc1855eea4e4acfeaaac40a1a25085f8d8734907b11a3b",
+      "DFsampleAdmissible": true,
+      "counts": [
+        1500,
+        4500,
+        8000
+      ],
+      "subpopulationCounts": [
+        1500,
+        3546,
+        954,
+        8000
+      ]
+    },
+    {
+      "dataset": "agama",
+      "file": "c20-agama-n26000-nb1500-nd4500-nh20000-s2026-h2026.json",
+      "sha256": "3fdf7d6211faa77332de1224833b64679b05fa8d40aef173bb98bba2fdce0743",
+      "n": 26000,
+      "componentSumsMsun": [
+        9200015467.282349,
+        50499999999.99974,
+        1049129212118.1754
+      ],
+      "maxMassDeclarationRelativeError": 3.6337599595981374e-13,
+      "stellarHashes": [
+        "816455b6c56a2e715fdef479bb838fa93a7a2d7fb0fd591c0d718477f5068651",
+        "ba1adc3e3d27cdfe73c044bfffe6dbb7e723dec1ddeade1490f4edaaff7532a6",
+        "bc08ac1b425b9a52eeb2cb1937ceb83d34cb97fa95339cfd8038c3b0f37970e3"
+      ],
+      "potentialSHA256": "73c02e37de59262201bc1855eea4e4acfeaaac40a1a25085f8d8734907b11a3b",
+      "DFsampleAdmissible": true,
+      "counts": [
+        1500,
+        4500,
+        20000
+      ],
+      "subpopulationCounts": [
+        1500,
+        3546,
+        954,
+        20000
+      ]
+    },
+    {
+      "dataset": "agama",
+      "file": "c20-agama-n26000-nb1500-nd4500-nh20000-s2026-h2027.json",
+      "sha256": "ba41abb572b7584afe7a806ab02b3316f220f18c6eab320b65a69d8fb114b588",
+      "n": 26000,
+      "componentSumsMsun": [
+        9200015467.282349,
+        50499999999.99974,
+        1049129212118.1754
+      ],
+      "maxMassDeclarationRelativeError": 3.6337599595981374e-13,
+      "stellarHashes": [
+        "816455b6c56a2e715fdef479bb838fa93a7a2d7fb0fd591c0d718477f5068651",
+        "ba1adc3e3d27cdfe73c044bfffe6dbb7e723dec1ddeade1490f4edaaff7532a6",
+        "bc08ac1b425b9a52eeb2cb1937ceb83d34cb97fa95339cfd8038c3b0f37970e3"
+      ],
+      "potentialSHA256": "73c02e37de59262201bc1855eea4e4acfeaaac40a1a25085f8d8734907b11a3b",
+      "DFsampleAdmissible": true,
+      "counts": [
+        1500,
+        4500,
+        20000
+      ],
+      "subpopulationCounts": [
+        1500,
+        3546,
+        954,
+        20000
+      ]
+    },
+    {
+      "dataset": "agama",
+      "file": "c20-agama-n26000-nb1500-nd4500-nh20000-s2027-h2027.json",
+      "sha256": "f11fc312633cba02a81bc943f195722f311ca74fade7b2ed0ec263db06513495",
+      "n": 26000,
+      "componentSumsMsun": [
+        9200015467.282349,
+        50499999999.99974,
+        1049129212118.1754
+      ],
+      "maxMassDeclarationRelativeError": 3.6337599595981374e-13,
+      "stellarHashes": [
+        "a486e92c3e07b1ec56cd495610cc3da2b840810f66ab52684885e7c1fa3fb007",
+        "80013a3b70a81969829cb7f4f9e652caa3e6e0091e78becdb42a3912e59c097f",
+        "bc08ac1b425b9a52eeb2cb1937ceb83d34cb97fa95339cfd8038c3b0f37970e3"
+      ],
+      "potentialSHA256": "73c02e37de59262201bc1855eea4e4acfeaaac40a1a25085f8d8734907b11a3b",
+      "DFsampleAdmissible": true,
+      "counts": [
+        1500,
+        4500,
+        20000
+      ],
+      "subpopulationCounts": [
+        1500,
+        3546,
+        954,
+        20000
+      ]
+    },
+    {
+      "dataset": "agama",
+      "file": "c20-agama-n50000-nb7500-nd22500-nh20000-s2026-h2026.json",
+      "sha256": "b9fe566d563887b7e2e3814c61dc5621254a85a0f563046701b1ece54285c2ae",
+      "n": 50000,
+      "componentSumsMsun": [
+        9200015467.28125,
+        50499999999.99572,
+        1049129212118.1754
+      ],
+      "maxMassDeclarationRelativeError": 3.6337599595981374e-13,
+      "stellarHashes": [
+        "c183a921d5e097a128346295c527f68072d6dc518cb3896c68e836d22d0ef6da",
+        "faf185fc2ee8825760d96ac058ed321ae816e658eecfa77eeed2b52fbea31add",
+        "0945bb7e9d6241c61dc15e2703892e2f074189fb4f7d1a6e3c122adcaa9c1fd6"
+      ],
+      "potentialSHA256": "73c02e37de59262201bc1855eea4e4acfeaaac40a1a25085f8d8734907b11a3b",
+      "DFsampleAdmissible": true,
+      "counts": [
+        7500,
+        22500,
+        20000
+      ],
+      "subpopulationCounts": [
+        7500,
+        17732,
+        4768,
+        20000
+      ]
+    },
+    {
+      "dataset": "agama",
+      "file": "c20-agama-n1000-nb150-nd450-nh400-s2026-h2026.json",
+      "sha256": "5a4237cdc813b8d0c296a93b8c2a17bbb132fc92e88798907e9336db13bc64b8",
+      "n": 1000,
+      "componentSumsMsun": [
+        9200015467.282108,
+        50499999999.99974,
+        1049129212118.5481
+      ],
+      "maxMassDeclarationRelativeError": 8.104628079763643e-15,
+      "stellarHashes": [
+        "d6a905d3b38ba73f7480c916a332eedfc8d810321e44e54f4868a62780d1fba5",
+        "32b9e6d578e7b5c85e1da4c01f5910a6c76715d2059d9293c06ae3b94d260595",
+        "c595fc079240ffe678219ec224344836f222917f90dee7f70fa25499e6944341"
+      ],
+      "potentialSHA256": "73c02e37de59262201bc1855eea4e4acfeaaac40a1a25085f8d8734907b11a3b",
+      "DFsampleAdmissible": true,
+      "counts": [
+        150,
+        450,
+        400
+      ],
+      "subpopulationCounts": [
+        150,
+        354,
+        96,
+        400
+      ]
+    },
+    {
+      "dataset": "agama-calibrated",
+      "file": "c20-agama-n10000-nb1500-nd4500-nh4000-s2026-h2026.json",
+      "sha256": "12c37416a6457685e4ee3e119355479858a171ce9d42702eac7805510e5183bf",
+      "n": 10000,
+      "componentSumsMsun": [
+        9200015467.282349,
+        50499999999.99974,
+        1049129212118.4979
+      ],
+      "maxMassDeclarationRelativeError": 5.595524044110789e-14,
+      "stellarHashes": [
+        "8338130e36664e684baf7ab5885200596d3ca903d4f8fc0c2b5a8910f53aae92",
+        "295aacc4085da9087d7755688a057d68e131d3b35b03b310b290c509d6a26c1a",
+        "6a39fc2dca1a954b7a121bf4637744f57c758cab8df5fdc22d5bf8058be84991"
+      ],
+      "potentialSHA256": "4f3c8d8d156abeaaa1050e8cedddaa05320f0cc96cf51fc6a5d16e5d2fccd955",
+      "DFsampleAdmissible": true,
+      "counts": [
+        1500,
+        4500,
+        4000
+      ],
+      "subpopulationCounts": [
+        1500,
+        3546,
+        954,
+        4000
+      ]
+    },
+    {
+      "dataset": "agama-calibrated",
+      "file": "c20-agama-n10000-nb1500-nd4500-nh4000-s2026-h2027.json",
+      "sha256": "95d0782d110dbcf7873c5a74b6f281c63b0aa1c8f8e333f190ff6baa72cd0ec8",
+      "n": 10000,
+      "componentSumsMsun": [
+        9200015467.282349,
+        50499999999.99974,
+        1049129212118.4979
+      ],
+      "maxMassDeclarationRelativeError": 5.595524044110789e-14,
+      "stellarHashes": [
+        "8338130e36664e684baf7ab5885200596d3ca903d4f8fc0c2b5a8910f53aae92",
+        "295aacc4085da9087d7755688a057d68e131d3b35b03b310b290c509d6a26c1a",
+        "6a39fc2dca1a954b7a121bf4637744f57c758cab8df5fdc22d5bf8058be84991"
+      ],
+      "potentialSHA256": "4f3c8d8d156abeaaa1050e8cedddaa05320f0cc96cf51fc6a5d16e5d2fccd955",
+      "DFsampleAdmissible": true,
+      "counts": [
+        1500,
+        4500,
+        4000
+      ],
+      "subpopulationCounts": [
+        1500,
+        3546,
+        954,
+        4000
+      ]
+    },
+    {
+      "dataset": "agama-calibrated",
+      "file": "c20-agama-n10000-nb1500-nd4500-nh4000-s2027-h2027.json",
+      "sha256": "e5555638e652d57298028e47306c1625a34b2b6581ae1a0ad64e34d8162931ff",
+      "n": 10000,
+      "componentSumsMsun": [
+        9200015467.282349,
+        50499999999.99974,
+        1049129212118.4979
+      ],
+      "maxMassDeclarationRelativeError": 5.595524044110789e-14,
+      "stellarHashes": [
+        "974963d54e245637b8b6937f50125ab27ef3395160c6ac1d7b8c9620e84f5c07",
+        "f461810238fa9b27e7ee0f97abd1fb3c4876ee7e3d49c2920ea577eccabb878e",
+        "6a39fc2dca1a954b7a121bf4637744f57c758cab8df5fdc22d5bf8058be84991"
+      ],
+      "potentialSHA256": "4f3c8d8d156abeaaa1050e8cedddaa05320f0cc96cf51fc6a5d16e5d2fccd955",
+      "DFsampleAdmissible": true,
+      "counts": [
+        1500,
+        4500,
+        4000
+      ],
+      "subpopulationCounts": [
+        1500,
+        3546,
+        954,
+        4000
+      ]
+    },
+    {
+      "dataset": "agama-calibrated",
+      "file": "c20-agama-n14000-nb1500-nd4500-nh8000-s2026-h2026.json",
+      "sha256": "983ca0d827e48985ecce5e661e73a0470f8884902dfd95d63cc11cb5ac0a0eea",
+      "n": 14000,
+      "componentSumsMsun": [
+        9200015467.282349,
+        50499999999.99974,
+        1049129212118.4926
+      ],
+      "maxMassDeclarationRelativeError": 6.106226635438361e-14,
+      "stellarHashes": [
+        "8338130e36664e684baf7ab5885200596d3ca903d4f8fc0c2b5a8910f53aae92",
+        "295aacc4085da9087d7755688a057d68e131d3b35b03b310b290c509d6a26c1a",
+        "6a39fc2dca1a954b7a121bf4637744f57c758cab8df5fdc22d5bf8058be84991"
+      ],
+      "potentialSHA256": "4f3c8d8d156abeaaa1050e8cedddaa05320f0cc96cf51fc6a5d16e5d2fccd955",
+      "DFsampleAdmissible": true,
+      "counts": [
+        1500,
+        4500,
+        8000
+      ],
+      "subpopulationCounts": [
+        1500,
+        3546,
+        954,
+        8000
+      ]
+    },
+    {
+      "dataset": "agama-calibrated",
+      "file": "c20-agama-n14000-nb1500-nd4500-nh8000-s2026-h2027.json",
+      "sha256": "74e78c7ca0dbadeb957bfe5baf3c17f5f99af021db00a8ff00ad43f13a4bd94a",
+      "n": 14000,
+      "componentSumsMsun": [
+        9200015467.282349,
+        50499999999.99974,
+        1049129212118.4926
+      ],
+      "maxMassDeclarationRelativeError": 6.106226635438361e-14,
+      "stellarHashes": [
+        "8338130e36664e684baf7ab5885200596d3ca903d4f8fc0c2b5a8910f53aae92",
+        "295aacc4085da9087d7755688a057d68e131d3b35b03b310b290c509d6a26c1a",
+        "6a39fc2dca1a954b7a121bf4637744f57c758cab8df5fdc22d5bf8058be84991"
+      ],
+      "potentialSHA256": "4f3c8d8d156abeaaa1050e8cedddaa05320f0cc96cf51fc6a5d16e5d2fccd955",
+      "DFsampleAdmissible": true,
+      "counts": [
+        1500,
+        4500,
+        8000
+      ],
+      "subpopulationCounts": [
+        1500,
+        3546,
+        954,
+        8000
+      ]
+    },
+    {
+      "dataset": "agama-calibrated",
+      "file": "c20-agama-n14000-nb1500-nd4500-nh8000-s2027-h2027.json",
+      "sha256": "d80f399eace12a1960b9d55051220bc0a5341c5fe1249cd856cb7d487ebb3751",
+      "n": 14000,
+      "componentSumsMsun": [
+        9200015467.282349,
+        50499999999.99974,
+        1049129212118.4926
+      ],
+      "maxMassDeclarationRelativeError": 6.106226635438361e-14,
+      "stellarHashes": [
+        "974963d54e245637b8b6937f50125ab27ef3395160c6ac1d7b8c9620e84f5c07",
+        "f461810238fa9b27e7ee0f97abd1fb3c4876ee7e3d49c2920ea577eccabb878e",
+        "6a39fc2dca1a954b7a121bf4637744f57c758cab8df5fdc22d5bf8058be84991"
+      ],
+      "potentialSHA256": "4f3c8d8d156abeaaa1050e8cedddaa05320f0cc96cf51fc6a5d16e5d2fccd955",
+      "DFsampleAdmissible": true,
+      "counts": [
+        1500,
+        4500,
+        8000
+      ],
+      "subpopulationCounts": [
+        1500,
+        3546,
+        954,
+        8000
+      ]
+    },
+    {
+      "dataset": "agama-calibrated",
+      "file": "c20-agama-n26000-nb1500-nd4500-nh20000-s2026-h2026.json",
+      "sha256": "e23ee6217a40cbb7e1c80863b29da2171d3aecb6d8a46ecca093f2018f80b47d",
+      "n": 26000,
+      "componentSumsMsun": [
+        9200015467.282349,
+        50499999999.99974,
+        1049129212118.1754
+      ],
+      "maxMassDeclarationRelativeError": 3.6337599595981374e-13,
+      "stellarHashes": [
+        "8338130e36664e684baf7ab5885200596d3ca903d4f8fc0c2b5a8910f53aae92",
+        "295aacc4085da9087d7755688a057d68e131d3b35b03b310b290c509d6a26c1a",
+        "6a39fc2dca1a954b7a121bf4637744f57c758cab8df5fdc22d5bf8058be84991"
+      ],
+      "potentialSHA256": "4f3c8d8d156abeaaa1050e8cedddaa05320f0cc96cf51fc6a5d16e5d2fccd955",
+      "DFsampleAdmissible": true,
+      "counts": [
+        1500,
+        4500,
+        20000
+      ],
+      "subpopulationCounts": [
+        1500,
+        3546,
+        954,
+        20000
+      ]
+    },
+    {
+      "dataset": "agama-calibrated",
+      "file": "c20-agama-n26000-nb1500-nd4500-nh20000-s2026-h2027.json",
+      "sha256": "72e3d8fb83ee4d4cd722ca2d4d0743a0ce6bbb8379e746e9a8a972e5bbbef4fc",
+      "n": 26000,
+      "componentSumsMsun": [
+        9200015467.282349,
+        50499999999.99974,
+        1049129212118.1754
+      ],
+      "maxMassDeclarationRelativeError": 3.6337599595981374e-13,
+      "stellarHashes": [
+        "8338130e36664e684baf7ab5885200596d3ca903d4f8fc0c2b5a8910f53aae92",
+        "295aacc4085da9087d7755688a057d68e131d3b35b03b310b290c509d6a26c1a",
+        "6a39fc2dca1a954b7a121bf4637744f57c758cab8df5fdc22d5bf8058be84991"
+      ],
+      "potentialSHA256": "4f3c8d8d156abeaaa1050e8cedddaa05320f0cc96cf51fc6a5d16e5d2fccd955",
+      "DFsampleAdmissible": true,
+      "counts": [
+        1500,
+        4500,
+        20000
+      ],
+      "subpopulationCounts": [
+        1500,
+        3546,
+        954,
+        20000
+      ]
+    },
+    {
+      "dataset": "agama-calibrated",
+      "file": "c20-agama-n26000-nb1500-nd4500-nh20000-s2027-h2027.json",
+      "sha256": "93006ef441bc8c5cd017c0987dd51fe123fe25c7d49f8eeedac76408a5de7695",
+      "n": 26000,
+      "componentSumsMsun": [
+        9200015467.282349,
+        50499999999.99974,
+        1049129212118.1754
+      ],
+      "maxMassDeclarationRelativeError": 3.6337599595981374e-13,
+      "stellarHashes": [
+        "974963d54e245637b8b6937f50125ab27ef3395160c6ac1d7b8c9620e84f5c07",
+        "f461810238fa9b27e7ee0f97abd1fb3c4876ee7e3d49c2920ea577eccabb878e",
+        "6a39fc2dca1a954b7a121bf4637744f57c758cab8df5fdc22d5bf8058be84991"
+      ],
+      "potentialSHA256": "4f3c8d8d156abeaaa1050e8cedddaa05320f0cc96cf51fc6a5d16e5d2fccd955",
+      "DFsampleAdmissible": true,
+      "counts": [
+        1500,
+        4500,
+        20000
+      ],
+      "subpopulationCounts": [
+        1500,
+        3546,
+        954,
+        20000
+      ]
+    },
+    {
+      "dataset": "agama-calibrated",
+      "file": "c20-agama-n50000-nb7500-nd22500-nh20000-s2026-h2026.json",
+      "sha256": "1a2d0d519db6819d4122697f082ef0cb9132503e73303ee3112a347666d63048",
+      "n": 50000,
+      "componentSumsMsun": [
+        9200015467.28125,
+        50499999999.99572,
+        1049129212118.1754
+      ],
+      "maxMassDeclarationRelativeError": 3.6337599595981374e-13,
+      "stellarHashes": [
+        "949e1f7daac26d26e0331652936ead8a53fd8c8c473d7accde0fa878bc500c15",
+        "d2437649d8ace232c46a6d396593797bdcffdc45d22b7bde931ab4d334f1726d",
+        "abf7591517d61a56dbd05b4c0cb849810e1fa76aabaf5ae5efed21714fa8b829"
+      ],
+      "potentialSHA256": "4f3c8d8d156abeaaa1050e8cedddaa05320f0cc96cf51fc6a5d16e5d2fccd955",
+      "DFsampleAdmissible": true,
+      "counts": [
+        7500,
+        22500,
+        20000
+      ],
+      "subpopulationCounts": [
+        7500,
+        17732,
+        4768,
+        20000
+      ]
+    },
+    {
+      "dataset": "agama-calibrated",
+      "file": "c20-agama-n1000-nb150-nd450-nh400-s2026-h2026.json",
+      "sha256": "d69b46e64f200785e3adfc6131dd2b5fac218445f2b2480c0dd24635ff16662f",
+      "n": 1000,
+      "componentSumsMsun": [
+        9200015467.282108,
+        50499999999.99974,
+        1049129212118.5481
+      ],
+      "maxMassDeclarationRelativeError": 8.104628079763643e-15,
+      "stellarHashes": [
+        "0296b7132c73d0a24119658dc57bfbdef5fe95026ef130db0bb383b69d087d88",
+        "7dfa3bcc0643eb06f1b67c10719dac30795694ccfab33ccae2ee6b761eef43c6",
+        "071450d27bae7ddcec0e7c56e3669b9a4de9d0c9562b6fa6d8682861f85dcee1"
+      ],
+      "potentialSHA256": "4f3c8d8d156abeaaa1050e8cedddaa05320f0cc96cf51fc6a5d16e5d2fccd955",
+      "DFsampleAdmissible": true,
+      "counts": [
+        150,
+        450,
+        400
+      ],
+      "subpopulationCounts": [
+        150,
+        354,
+        96,
+        400
+      ]
+    }
+  ],
+  "completedRuns": [
+    {
+      "id": "calibrated-A-10k",
+      "status": "completed",
+      "lastTimeMyr": 1000,
+      "sha256": "6448f8dd3120a6d067f6e50c2da9052dddc69596c06c9441317abab44662cdb3",
+      "sources": [
+        {
+          "path": "src/physics/constants.js",
+          "sha256": "4b1c2a1d96453b95c8e57a45f46443083e77d54e1714aadc7d060de0d9aa22ca",
+          "archive": "reports/v1.0.0/executed-source/4b1c2a1d96453b95c8e57a45f46443083e77d54e1714aadc7d060de0d9aa22ca/src/physics/constants.js"
+        },
+        {
+          "path": "src/physics/models.js",
+          "sha256": "2215cd8332d06b4d18b3ef707c5000992b5db730d104c654ef7ddba7ac9102f3",
+          "archive": "reports/v1.0.0/executed-source/2215cd8332d06b4d18b3ef707c5000992b5db730d104c654ef7ddba7ac9102f3/src/physics/models.js"
+        },
+        {
+          "path": "src/physics/initial.js",
+          "sha256": "5a6bbdb6cfe562776c6a408271c26d8a29183e92d2021914e2eb0f34230ef66a",
+          "archive": "reports/v1.0.0/executed-source/5a6bbdb6cfe562776c6a408271c26d8a29183e92d2021914e2eb0f34230ef66a/src/physics/initial.js"
+        },
+        {
+          "path": "src/physics/initial-legacy.js",
+          "sha256": "93ca8666ff188863b947dc8535ca23244d67c20ab2a177cb12e494cf566eeefa",
+          "archive": "reports/v1.0.0/executed-source/93ca8666ff188863b947dc8535ca23244d67c20ab2a177cb12e494cf566eeefa/src/physics/initial-legacy.js"
+        },
+        {
+          "path": "src/physics/initial-allocated.js",
+          "sha256": "f62b945334f7cfd062aa5eda6a3964aca59eb977985d7ffe73a8c8cce04ed378",
+          "archive": "reports/v1.0.0/executed-source/f62b945334f7cfd062aa5eda6a3964aca59eb977985d7ffe73a8c8cce04ed378/src/physics/initial-allocated.js"
+        },
+        {
+          "path": "src/physics/halo-experiments.js",
+          "sha256": "a5a0169b5d8b38c56db0229a83a5b7ba4a940968dd7572bf26f52f37dc9fbcdb",
+          "archive": "reports/v1.0.0/executed-source/a5a0169b5d8b38c56db0229a83a5b7ba4a940968dd7572bf26f52f37dc9fbcdb/src/physics/halo-experiments.js"
+        },
+        {
+          "path": "src/physics/forces.js",
+          "sha256": "9532d4286c6481d49995ece96e48bd595145c2e2c8a22897520cafa45f862444",
+          "archive": "reports/v1.0.0/executed-source/9532d4286c6481d49995ece96e48bd595145c2e2c8a22897520cafa45f862444/src/physics/forces.js"
+        },
+        {
+          "path": "src/physics/integrator.js",
+          "sha256": "433880162ae754dd3bada1fad9e2538239b42d3d43f20f96f7e1465135a1ce6f",
+          "archive": "reports/v1.0.0/executed-source/433880162ae754dd3bada1fad9e2538239b42d3d43f20f96f7e1465135a1ce6f/src/physics/integrator.js"
+        },
+        {
+          "path": "src/physics/snapshot-model.js",
+          "sha256": "681327ebbc656b4fd702bd02b0bd42c5c58f7b5e06643de121669350684d53ba",
+          "archive": "reports/v1.0.0/executed-source/681327ebbc656b4fd702bd02b0bd42c5c58f7b5e06643de121669350684d53ba/src/physics/snapshot-model.js"
+        },
+        {
+          "path": "src/physics/mass-audit.js",
+          "sha256": "99f3722ec0027a3c51b3183a440ec02a52b773aa9e9b53482631777b0a9353f2",
+          "archive": "reports/v1.0.0/executed-source/99f3722ec0027a3c51b3183a440ec02a52b773aa9e9b53482631777b0a9353f2/src/physics/mass-audit.js"
+        },
+        {
+          "path": "src/physics/equilibrium-analysis.js",
+          "sha256": "35c75d97e4c172fba424bc58002f43cd98812824be8b601e79a4f983fe8eca1d",
+          "archive": "reports/v1.0.0/executed-source/35c75d97e4c172fba424bc58002f43cd98812824be8b601e79a4f983fe8eca1d/src/physics/equilibrium-analysis.js"
+        },
+        {
+          "path": "src/physics/structure-diagnostics.js",
+          "sha256": "e94593e700e77bf95392b949bf2891652b87b224000ec1ab584e586dbb871440",
+          "archive": "reports/v1.0.0/executed-source/e94593e700e77bf95392b949bf2891652b87b224000ec1ab584e586dbb871440/src/physics/structure-diagnostics.js"
+        },
+        {
+          "path": "src/physics/disk-analysis.js",
+          "sha256": "ecd700024436712b55152cb4bf64463ea70ee5bb9e93a6cc7750a8a1057219f7",
+          "archive": "reports/v1.0.0/executed-source/ecd700024436712b55152cb4bf64463ea70ee5bb9e93a6cc7750a8a1057219f7/src/physics/disk-analysis.js"
+        },
+        {
+          "path": "src/physics/external-grid.js",
+          "sha256": "91601c0cf72fec057e97bc00114785b88d0abac10cf389ea13adf5b57257c9e4",
+          "archive": "reports/v1.0.0/executed-source/91601c0cf72fec057e97bc00114785b88d0abac10cf389ea13adf5b57257c9e4/src/physics/external-grid.js"
+        },
+        {
+          "path": "src/compute/gpu.js",
+          "sha256": "7ee6706d635a797f8a8546f96968466c8d8f9dbb67d3bd2aadd6f46ea00a7967",
+          "archive": "reports/v1.0.0/executed-source/7ee6706d635a797f8a8546f96968466c8d8f9dbb67d3bd2aadd6f46ea00a7967/src/compute/gpu.js"
+        },
+        {
+          "path": "src/compute/gpu-external-grid.js",
+          "sha256": "82c7267f53c8a2f4a8595ea82ba13f280d9b3692ed103358ca5e2169febbd9b4",
+          "archive": "reports/v1.0.0/executed-source/82c7267f53c8a2f4a8595ea82ba13f280d9b3692ed103358ca5e2169febbd9b4/src/compute/gpu-external-grid.js"
+        },
+        {
+          "path": "tests/browser-equilibrium-calibrated-v1.html",
+          "sha256": "4f018bcf89b1cf1b102a2df8c4d53884bca0088687d1a96f192eb205fc80b923",
+          "archive": "reports/v1.0.0/executed-source/4f018bcf89b1cf1b102a2df8c4d53884bca0088687d1a96f192eb205fc80b923/tests/browser-equilibrium-calibrated-v1.html"
+        },
+        {
+          "path": "scripts/equilibrium/protocol-calibrated.json",
+          "sha256": "70549c63524fc20ee7be693fb87217b508247540ac6c0b6e30106f7fa044fb8c",
+          "archive": "reports/v1.0.0/executed-source/70549c63524fc20ee7be693fb87217b508247540ac6c0b6e30106f7fa044fb8c/scripts/equilibrium/protocol-calibrated.json"
+        },
+        {
+          "path": "src/physics/laboratory.js",
+          "sha256": "3f36f219449d053c7756147c3b312464123c8b4242e65f428a8c1a5cbf528f2d",
+          "archive": "reports/v1.0.0/executed-source/3f36f219449d053c7756147c3b312464123c8b4242e65f428a8c1a5cbf528f2d/src/physics/laboratory.js"
+        },
+        {
+          "path": "src/physics/iterative-initial.js",
+          "sha256": "bf6216a55950684589f697a36bd122584ae5817a6afb00eab0705746f98cc164",
+          "archive": "reports/v1.0.0/executed-source/bf6216a55950684589f697a36bd122584ae5817a6afb00eab0705746f98cc164/src/physics/iterative-initial.js"
+        },
+        {
+          "path": "src/physics/jeans-axisymmetric.js",
+          "sha256": "903331d3c5643c122e63bcb3778bce3a29e5a4d713c09c0a79a6dea178b9698d",
+          "archive": "reports/v1.0.0/executed-source/903331d3c5643c122e63bcb3778bce3a29e5a4d713c09c0a79a6dea178b9698d/src/physics/jeans-axisymmetric.js"
+        }
+      ]
+    },
+    {
+      "id": "calibrated-A-50k",
+      "status": "completed",
+      "lastTimeMyr": 200,
+      "sha256": "54a9c5b7c3489a93e9df1b42921b789001881aadd89cbe490a344cdb9ed850d5",
+      "sources": [
+        {
+          "path": "src/physics/constants.js",
+          "sha256": "4b1c2a1d96453b95c8e57a45f46443083e77d54e1714aadc7d060de0d9aa22ca",
+          "archive": "reports/v1.0.0/executed-source/4b1c2a1d96453b95c8e57a45f46443083e77d54e1714aadc7d060de0d9aa22ca/src/physics/constants.js"
+        },
+        {
+          "path": "src/physics/models.js",
+          "sha256": "2215cd8332d06b4d18b3ef707c5000992b5db730d104c654ef7ddba7ac9102f3",
+          "archive": "reports/v1.0.0/executed-source/2215cd8332d06b4d18b3ef707c5000992b5db730d104c654ef7ddba7ac9102f3/src/physics/models.js"
+        },
+        {
+          "path": "src/physics/initial.js",
+          "sha256": "5a6bbdb6cfe562776c6a408271c26d8a29183e92d2021914e2eb0f34230ef66a",
+          "archive": "reports/v1.0.0/executed-source/5a6bbdb6cfe562776c6a408271c26d8a29183e92d2021914e2eb0f34230ef66a/src/physics/initial.js"
+        },
+        {
+          "path": "src/physics/initial-legacy.js",
+          "sha256": "93ca8666ff188863b947dc8535ca23244d67c20ab2a177cb12e494cf566eeefa",
+          "archive": "reports/v1.0.0/executed-source/93ca8666ff188863b947dc8535ca23244d67c20ab2a177cb12e494cf566eeefa/src/physics/initial-legacy.js"
+        },
+        {
+          "path": "src/physics/initial-allocated.js",
+          "sha256": "f62b945334f7cfd062aa5eda6a3964aca59eb977985d7ffe73a8c8cce04ed378",
+          "archive": "reports/v1.0.0/executed-source/f62b945334f7cfd062aa5eda6a3964aca59eb977985d7ffe73a8c8cce04ed378/src/physics/initial-allocated.js"
+        },
+        {
+          "path": "src/physics/halo-experiments.js",
+          "sha256": "a5a0169b5d8b38c56db0229a83a5b7ba4a940968dd7572bf26f52f37dc9fbcdb",
+          "archive": "reports/v1.0.0/executed-source/a5a0169b5d8b38c56db0229a83a5b7ba4a940968dd7572bf26f52f37dc9fbcdb/src/physics/halo-experiments.js"
+        },
+        {
+          "path": "src/physics/forces.js",
+          "sha256": "9532d4286c6481d49995ece96e48bd595145c2e2c8a22897520cafa45f862444",
+          "archive": "reports/v1.0.0/executed-source/9532d4286c6481d49995ece96e48bd595145c2e2c8a22897520cafa45f862444/src/physics/forces.js"
+        },
+        {
+          "path": "src/physics/integrator.js",
+          "sha256": "433880162ae754dd3bada1fad9e2538239b42d3d43f20f96f7e1465135a1ce6f",
+          "archive": "reports/v1.0.0/executed-source/433880162ae754dd3bada1fad9e2538239b42d3d43f20f96f7e1465135a1ce6f/src/physics/integrator.js"
+        },
+        {
+          "path": "src/physics/snapshot-model.js",
+          "sha256": "681327ebbc656b4fd702bd02b0bd42c5c58f7b5e06643de121669350684d53ba",
+          "archive": "reports/v1.0.0/executed-source/681327ebbc656b4fd702bd02b0bd42c5c58f7b5e06643de121669350684d53ba/src/physics/snapshot-model.js"
+        },
+        {
+          "path": "src/physics/mass-audit.js",
+          "sha256": "99f3722ec0027a3c51b3183a440ec02a52b773aa9e9b53482631777b0a9353f2",
+          "archive": "reports/v1.0.0/executed-source/99f3722ec0027a3c51b3183a440ec02a52b773aa9e9b53482631777b0a9353f2/src/physics/mass-audit.js"
+        },
+        {
+          "path": "src/physics/equilibrium-analysis.js",
+          "sha256": "35c75d97e4c172fba424bc58002f43cd98812824be8b601e79a4f983fe8eca1d",
+          "archive": "reports/v1.0.0/executed-source/35c75d97e4c172fba424bc58002f43cd98812824be8b601e79a4f983fe8eca1d/src/physics/equilibrium-analysis.js"
+        },
+        {
+          "path": "src/physics/structure-diagnostics.js",
+          "sha256": "e94593e700e77bf95392b949bf2891652b87b224000ec1ab584e586dbb871440",
+          "archive": "reports/v1.0.0/executed-source/e94593e700e77bf95392b949bf2891652b87b224000ec1ab584e586dbb871440/src/physics/structure-diagnostics.js"
+        },
+        {
+          "path": "src/physics/disk-analysis.js",
+          "sha256": "ecd700024436712b55152cb4bf64463ea70ee5bb9e93a6cc7750a8a1057219f7",
+          "archive": "reports/v1.0.0/executed-source/ecd700024436712b55152cb4bf64463ea70ee5bb9e93a6cc7750a8a1057219f7/src/physics/disk-analysis.js"
+        },
+        {
+          "path": "src/physics/external-grid.js",
+          "sha256": "91601c0cf72fec057e97bc00114785b88d0abac10cf389ea13adf5b57257c9e4",
+          "archive": "reports/v1.0.0/executed-source/91601c0cf72fec057e97bc00114785b88d0abac10cf389ea13adf5b57257c9e4/src/physics/external-grid.js"
+        },
+        {
+          "path": "src/compute/gpu.js",
+          "sha256": "7ee6706d635a797f8a8546f96968466c8d8f9dbb67d3bd2aadd6f46ea00a7967",
+          "archive": "reports/v1.0.0/executed-source/7ee6706d635a797f8a8546f96968466c8d8f9dbb67d3bd2aadd6f46ea00a7967/src/compute/gpu.js"
+        },
+        {
+          "path": "src/compute/gpu-external-grid.js",
+          "sha256": "82c7267f53c8a2f4a8595ea82ba13f280d9b3692ed103358ca5e2169febbd9b4",
+          "archive": "reports/v1.0.0/executed-source/82c7267f53c8a2f4a8595ea82ba13f280d9b3692ed103358ca5e2169febbd9b4/src/compute/gpu-external-grid.js"
+        },
+        {
+          "path": "tests/browser-equilibrium-calibrated-v1.html",
+          "sha256": "4f018bcf89b1cf1b102a2df8c4d53884bca0088687d1a96f192eb205fc80b923",
+          "archive": "reports/v1.0.0/executed-source/4f018bcf89b1cf1b102a2df8c4d53884bca0088687d1a96f192eb205fc80b923/tests/browser-equilibrium-calibrated-v1.html"
+        },
+        {
+          "path": "scripts/equilibrium/protocol-calibrated.json",
+          "sha256": "70549c63524fc20ee7be693fb87217b508247540ac6c0b6e30106f7fa044fb8c",
+          "archive": "reports/v1.0.0/executed-source/70549c63524fc20ee7be693fb87217b508247540ac6c0b6e30106f7fa044fb8c/scripts/equilibrium/protocol-calibrated.json"
+        },
+        {
+          "path": "src/physics/laboratory.js",
+          "sha256": "3f36f219449d053c7756147c3b312464123c8b4242e65f428a8c1a5cbf528f2d",
+          "archive": "reports/v1.0.0/executed-source/3f36f219449d053c7756147c3b312464123c8b4242e65f428a8c1a5cbf528f2d/src/physics/laboratory.js"
+        },
+        {
+          "path": "src/physics/iterative-initial.js",
+          "sha256": "bf6216a55950684589f697a36bd122584ae5817a6afb00eab0705746f98cc164",
+          "archive": "reports/v1.0.0/executed-source/bf6216a55950684589f697a36bd122584ae5817a6afb00eab0705746f98cc164/src/physics/iterative-initial.js"
+        },
+        {
+          "path": "src/physics/jeans-axisymmetric.js",
+          "sha256": "903331d3c5643c122e63bcb3778bce3a29e5a4d713c09c0a79a6dea178b9698d",
+          "archive": "reports/v1.0.0/executed-source/903331d3c5643c122e63bcb3778bce3a29e5a4d713c09c0a79a6dea178b9698d/src/physics/jeans-axisymmetric.js"
+        }
+      ]
+    },
+    {
+      "id": "calibrated-A-s27",
+      "status": "completed",
+      "lastTimeMyr": 200,
+      "sha256": "b27243b77ebf414b800c4a0d3bf1f32659289bb8080d79309bf2dae7e9af7f42",
+      "sources": [
+        {
+          "path": "src/physics/constants.js",
+          "sha256": "4b1c2a1d96453b95c8e57a45f46443083e77d54e1714aadc7d060de0d9aa22ca",
+          "archive": "reports/v1.0.0/executed-source/4b1c2a1d96453b95c8e57a45f46443083e77d54e1714aadc7d060de0d9aa22ca/src/physics/constants.js"
+        },
+        {
+          "path": "src/physics/models.js",
+          "sha256": "2215cd8332d06b4d18b3ef707c5000992b5db730d104c654ef7ddba7ac9102f3",
+          "archive": "reports/v1.0.0/executed-source/2215cd8332d06b4d18b3ef707c5000992b5db730d104c654ef7ddba7ac9102f3/src/physics/models.js"
+        },
+        {
+          "path": "src/physics/initial.js",
+          "sha256": "5a6bbdb6cfe562776c6a408271c26d8a29183e92d2021914e2eb0f34230ef66a",
+          "archive": "reports/v1.0.0/executed-source/5a6bbdb6cfe562776c6a408271c26d8a29183e92d2021914e2eb0f34230ef66a/src/physics/initial.js"
+        },
+        {
+          "path": "src/physics/initial-legacy.js",
+          "sha256": "93ca8666ff188863b947dc8535ca23244d67c20ab2a177cb12e494cf566eeefa",
+          "archive": "reports/v1.0.0/executed-source/93ca8666ff188863b947dc8535ca23244d67c20ab2a177cb12e494cf566eeefa/src/physics/initial-legacy.js"
+        },
+        {
+          "path": "src/physics/initial-allocated.js",
+          "sha256": "f62b945334f7cfd062aa5eda6a3964aca59eb977985d7ffe73a8c8cce04ed378",
+          "archive": "reports/v1.0.0/executed-source/f62b945334f7cfd062aa5eda6a3964aca59eb977985d7ffe73a8c8cce04ed378/src/physics/initial-allocated.js"
+        },
+        {
+          "path": "src/physics/halo-experiments.js",
+          "sha256": "a5a0169b5d8b38c56db0229a83a5b7ba4a940968dd7572bf26f52f37dc9fbcdb",
+          "archive": "reports/v1.0.0/executed-source/a5a0169b5d8b38c56db0229a83a5b7ba4a940968dd7572bf26f52f37dc9fbcdb/src/physics/halo-experiments.js"
+        },
+        {
+          "path": "src/physics/forces.js",
+          "sha256": "9532d4286c6481d49995ece96e48bd595145c2e2c8a22897520cafa45f862444",
+          "archive": "reports/v1.0.0/executed-source/9532d4286c6481d49995ece96e48bd595145c2e2c8a22897520cafa45f862444/src/physics/forces.js"
+        },
+        {
+          "path": "src/physics/integrator.js",
+          "sha256": "433880162ae754dd3bada1fad9e2538239b42d3d43f20f96f7e1465135a1ce6f",
+          "archive": "reports/v1.0.0/executed-source/433880162ae754dd3bada1fad9e2538239b42d3d43f20f96f7e1465135a1ce6f/src/physics/integrator.js"
+        },
+        {
+          "path": "src/physics/snapshot-model.js",
+          "sha256": "681327ebbc656b4fd702bd02b0bd42c5c58f7b5e06643de121669350684d53ba",
+          "archive": "reports/v1.0.0/executed-source/681327ebbc656b4fd702bd02b0bd42c5c58f7b5e06643de121669350684d53ba/src/physics/snapshot-model.js"
+        },
+        {
+          "path": "src/physics/mass-audit.js",
+          "sha256": "99f3722ec0027a3c51b3183a440ec02a52b773aa9e9b53482631777b0a9353f2",
+          "archive": "reports/v1.0.0/executed-source/99f3722ec0027a3c51b3183a440ec02a52b773aa9e9b53482631777b0a9353f2/src/physics/mass-audit.js"
+        },
+        {
+          "path": "src/physics/equilibrium-analysis.js",
+          "sha256": "35c75d97e4c172fba424bc58002f43cd98812824be8b601e79a4f983fe8eca1d",
+          "archive": "reports/v1.0.0/executed-source/35c75d97e4c172fba424bc58002f43cd98812824be8b601e79a4f983fe8eca1d/src/physics/equilibrium-analysis.js"
+        },
+        {
+          "path": "src/physics/structure-diagnostics.js",
+          "sha256": "e94593e700e77bf95392b949bf2891652b87b224000ec1ab584e586dbb871440",
+          "archive": "reports/v1.0.0/executed-source/e94593e700e77bf95392b949bf2891652b87b224000ec1ab584e586dbb871440/src/physics/structure-diagnostics.js"
+        },
+        {
+          "path": "src/physics/disk-analysis.js",
+          "sha256": "ecd700024436712b55152cb4bf64463ea70ee5bb9e93a6cc7750a8a1057219f7",
+          "archive": "reports/v1.0.0/executed-source/ecd700024436712b55152cb4bf64463ea70ee5bb9e93a6cc7750a8a1057219f7/src/physics/disk-analysis.js"
+        },
+        {
+          "path": "src/physics/external-grid.js",
+          "sha256": "91601c0cf72fec057e97bc00114785b88d0abac10cf389ea13adf5b57257c9e4",
+          "archive": "reports/v1.0.0/executed-source/91601c0cf72fec057e97bc00114785b88d0abac10cf389ea13adf5b57257c9e4/src/physics/external-grid.js"
+        },
+        {
+          "path": "src/compute/gpu.js",
+          "sha256": "7ee6706d635a797f8a8546f96968466c8d8f9dbb67d3bd2aadd6f46ea00a7967",
+          "archive": "reports/v1.0.0/executed-source/7ee6706d635a797f8a8546f96968466c8d8f9dbb67d3bd2aadd6f46ea00a7967/src/compute/gpu.js"
+        },
+        {
+          "path": "src/compute/gpu-external-grid.js",
+          "sha256": "82c7267f53c8a2f4a8595ea82ba13f280d9b3692ed103358ca5e2169febbd9b4",
+          "archive": "reports/v1.0.0/executed-source/82c7267f53c8a2f4a8595ea82ba13f280d9b3692ed103358ca5e2169febbd9b4/src/compute/gpu-external-grid.js"
+        },
+        {
+          "path": "tests/browser-equilibrium-calibrated-v1.html",
+          "sha256": "4f018bcf89b1cf1b102a2df8c4d53884bca0088687d1a96f192eb205fc80b923",
+          "archive": "reports/v1.0.0/executed-source/4f018bcf89b1cf1b102a2df8c4d53884bca0088687d1a96f192eb205fc80b923/tests/browser-equilibrium-calibrated-v1.html"
+        },
+        {
+          "path": "scripts/equilibrium/protocol-calibrated.json",
+          "sha256": "70549c63524fc20ee7be693fb87217b508247540ac6c0b6e30106f7fa044fb8c",
+          "archive": "reports/v1.0.0/executed-source/70549c63524fc20ee7be693fb87217b508247540ac6c0b6e30106f7fa044fb8c/scripts/equilibrium/protocol-calibrated.json"
+        },
+        {
+          "path": "src/physics/laboratory.js",
+          "sha256": "3f36f219449d053c7756147c3b312464123c8b4242e65f428a8c1a5cbf528f2d",
+          "archive": "reports/v1.0.0/executed-source/3f36f219449d053c7756147c3b312464123c8b4242e65f428a8c1a5cbf528f2d/src/physics/laboratory.js"
+        },
+        {
+          "path": "src/physics/iterative-initial.js",
+          "sha256": "bf6216a55950684589f697a36bd122584ae5817a6afb00eab0705746f98cc164",
+          "archive": "reports/v1.0.0/executed-source/bf6216a55950684589f697a36bd122584ae5817a6afb00eab0705746f98cc164/src/physics/iterative-initial.js"
+        },
+        {
+          "path": "src/physics/jeans-axisymmetric.js",
+          "sha256": "903331d3c5643c122e63bcb3778bce3a29e5a4d713c09c0a79a6dea178b9698d",
+          "archive": "reports/v1.0.0/executed-source/903331d3c5643c122e63bcb3778bce3a29e5a4d713c09c0a79a6dea178b9698d/src/physics/jeans-axisymmetric.js"
+        }
+      ]
+    },
+    {
+      "id": "calibrated-B-14k",
+      "status": "completed",
+      "lastTimeMyr": 1000,
+      "sha256": "59385180fb6ce2cbfabe6ed227f5d623d67b8a9fb7d1b8592210159c2296e447",
+      "sources": [
+        {
+          "path": "src/physics/constants.js",
+          "sha256": "4b1c2a1d96453b95c8e57a45f46443083e77d54e1714aadc7d060de0d9aa22ca",
+          "archive": "reports/v1.0.0/executed-source/4b1c2a1d96453b95c8e57a45f46443083e77d54e1714aadc7d060de0d9aa22ca/src/physics/constants.js"
+        },
+        {
+          "path": "src/physics/models.js",
+          "sha256": "2215cd8332d06b4d18b3ef707c5000992b5db730d104c654ef7ddba7ac9102f3",
+          "archive": "reports/v1.0.0/executed-source/2215cd8332d06b4d18b3ef707c5000992b5db730d104c654ef7ddba7ac9102f3/src/physics/models.js"
+        },
+        {
+          "path": "src/physics/initial.js",
+          "sha256": "5a6bbdb6cfe562776c6a408271c26d8a29183e92d2021914e2eb0f34230ef66a",
+          "archive": "reports/v1.0.0/executed-source/5a6bbdb6cfe562776c6a408271c26d8a29183e92d2021914e2eb0f34230ef66a/src/physics/initial.js"
+        },
+        {
+          "path": "src/physics/initial-legacy.js",
+          "sha256": "93ca8666ff188863b947dc8535ca23244d67c20ab2a177cb12e494cf566eeefa",
+          "archive": "reports/v1.0.0/executed-source/93ca8666ff188863b947dc8535ca23244d67c20ab2a177cb12e494cf566eeefa/src/physics/initial-legacy.js"
+        },
+        {
+          "path": "src/physics/initial-allocated.js",
+          "sha256": "f62b945334f7cfd062aa5eda6a3964aca59eb977985d7ffe73a8c8cce04ed378",
+          "archive": "reports/v1.0.0/executed-source/f62b945334f7cfd062aa5eda6a3964aca59eb977985d7ffe73a8c8cce04ed378/src/physics/initial-allocated.js"
+        },
+        {
+          "path": "src/physics/halo-experiments.js",
+          "sha256": "a5a0169b5d8b38c56db0229a83a5b7ba4a940968dd7572bf26f52f37dc9fbcdb",
+          "archive": "reports/v1.0.0/executed-source/a5a0169b5d8b38c56db0229a83a5b7ba4a940968dd7572bf26f52f37dc9fbcdb/src/physics/halo-experiments.js"
+        },
+        {
+          "path": "src/physics/forces.js",
+          "sha256": "9532d4286c6481d49995ece96e48bd595145c2e2c8a22897520cafa45f862444",
+          "archive": "reports/v1.0.0/executed-source/9532d4286c6481d49995ece96e48bd595145c2e2c8a22897520cafa45f862444/src/physics/forces.js"
+        },
+        {
+          "path": "src/physics/integrator.js",
+          "sha256": "433880162ae754dd3bada1fad9e2538239b42d3d43f20f96f7e1465135a1ce6f",
+          "archive": "reports/v1.0.0/executed-source/433880162ae754dd3bada1fad9e2538239b42d3d43f20f96f7e1465135a1ce6f/src/physics/integrator.js"
+        },
+        {
+          "path": "src/physics/snapshot-model.js",
+          "sha256": "681327ebbc656b4fd702bd02b0bd42c5c58f7b5e06643de121669350684d53ba",
+          "archive": "reports/v1.0.0/executed-source/681327ebbc656b4fd702bd02b0bd42c5c58f7b5e06643de121669350684d53ba/src/physics/snapshot-model.js"
+        },
+        {
+          "path": "src/physics/mass-audit.js",
+          "sha256": "99f3722ec0027a3c51b3183a440ec02a52b773aa9e9b53482631777b0a9353f2",
+          "archive": "reports/v1.0.0/executed-source/99f3722ec0027a3c51b3183a440ec02a52b773aa9e9b53482631777b0a9353f2/src/physics/mass-audit.js"
+        },
+        {
+          "path": "src/physics/equilibrium-analysis.js",
+          "sha256": "35c75d97e4c172fba424bc58002f43cd98812824be8b601e79a4f983fe8eca1d",
+          "archive": "reports/v1.0.0/executed-source/35c75d97e4c172fba424bc58002f43cd98812824be8b601e79a4f983fe8eca1d/src/physics/equilibrium-analysis.js"
+        },
+        {
+          "path": "src/physics/structure-diagnostics.js",
+          "sha256": "e94593e700e77bf95392b949bf2891652b87b224000ec1ab584e586dbb871440",
+          "archive": "reports/v1.0.0/executed-source/e94593e700e77bf95392b949bf2891652b87b224000ec1ab584e586dbb871440/src/physics/structure-diagnostics.js"
+        },
+        {
+          "path": "src/physics/disk-analysis.js",
+          "sha256": "ecd700024436712b55152cb4bf64463ea70ee5bb9e93a6cc7750a8a1057219f7",
+          "archive": "reports/v1.0.0/executed-source/ecd700024436712b55152cb4bf64463ea70ee5bb9e93a6cc7750a8a1057219f7/src/physics/disk-analysis.js"
+        },
+        {
+          "path": "src/physics/external-grid.js",
+          "sha256": "91601c0cf72fec057e97bc00114785b88d0abac10cf389ea13adf5b57257c9e4",
+          "archive": "reports/v1.0.0/executed-source/91601c0cf72fec057e97bc00114785b88d0abac10cf389ea13adf5b57257c9e4/src/physics/external-grid.js"
+        },
+        {
+          "path": "src/compute/gpu.js",
+          "sha256": "7ee6706d635a797f8a8546f96968466c8d8f9dbb67d3bd2aadd6f46ea00a7967",
+          "archive": "reports/v1.0.0/executed-source/7ee6706d635a797f8a8546f96968466c8d8f9dbb67d3bd2aadd6f46ea00a7967/src/compute/gpu.js"
+        },
+        {
+          "path": "src/compute/gpu-external-grid.js",
+          "sha256": "82c7267f53c8a2f4a8595ea82ba13f280d9b3692ed103358ca5e2169febbd9b4",
+          "archive": "reports/v1.0.0/executed-source/82c7267f53c8a2f4a8595ea82ba13f280d9b3692ed103358ca5e2169febbd9b4/src/compute/gpu-external-grid.js"
+        },
+        {
+          "path": "tests/browser-equilibrium-calibrated-v1.html",
+          "sha256": "4f018bcf89b1cf1b102a2df8c4d53884bca0088687d1a96f192eb205fc80b923",
+          "archive": "reports/v1.0.0/executed-source/4f018bcf89b1cf1b102a2df8c4d53884bca0088687d1a96f192eb205fc80b923/tests/browser-equilibrium-calibrated-v1.html"
+        },
+        {
+          "path": "scripts/equilibrium/protocol-calibrated.json",
+          "sha256": "70549c63524fc20ee7be693fb87217b508247540ac6c0b6e30106f7fa044fb8c",
+          "archive": "reports/v1.0.0/executed-source/70549c63524fc20ee7be693fb87217b508247540ac6c0b6e30106f7fa044fb8c/scripts/equilibrium/protocol-calibrated.json"
+        },
+        {
+          "path": "src/physics/laboratory.js",
+          "sha256": "3f36f219449d053c7756147c3b312464123c8b4242e65f428a8c1a5cbf528f2d",
+          "archive": "reports/v1.0.0/executed-source/3f36f219449d053c7756147c3b312464123c8b4242e65f428a8c1a5cbf528f2d/src/physics/laboratory.js"
+        },
+        {
+          "path": "src/physics/iterative-initial.js",
+          "sha256": "bf6216a55950684589f697a36bd122584ae5817a6afb00eab0705746f98cc164",
+          "archive": "reports/v1.0.0/executed-source/bf6216a55950684589f697a36bd122584ae5817a6afb00eab0705746f98cc164/src/physics/iterative-initial.js"
+        },
+        {
+          "path": "src/physics/jeans-axisymmetric.js",
+          "sha256": "903331d3c5643c122e63bcb3778bce3a29e5a4d713c09c0a79a6dea178b9698d",
+          "archive": "reports/v1.0.0/executed-source/903331d3c5643c122e63bcb3778bce3a29e5a4d713c09c0a79a6dea178b9698d/src/physics/jeans-axisymmetric.js"
+        }
+      ]
+    },
+    {
+      "id": "calibrated-B-26k",
+      "status": "completed",
+      "lastTimeMyr": 200,
+      "sha256": "46459dddf4f7d7393099c86a6423784ffa1df5a2b308d61d8ce5ea38668662bc",
+      "sources": [
+        {
+          "path": "src/physics/constants.js",
+          "sha256": "4b1c2a1d96453b95c8e57a45f46443083e77d54e1714aadc7d060de0d9aa22ca",
+          "archive": "reports/v1.0.0/executed-source/4b1c2a1d96453b95c8e57a45f46443083e77d54e1714aadc7d060de0d9aa22ca/src/physics/constants.js"
+        },
+        {
+          "path": "src/physics/models.js",
+          "sha256": "2215cd8332d06b4d18b3ef707c5000992b5db730d104c654ef7ddba7ac9102f3",
+          "archive": "reports/v1.0.0/executed-source/2215cd8332d06b4d18b3ef707c5000992b5db730d104c654ef7ddba7ac9102f3/src/physics/models.js"
+        },
+        {
+          "path": "src/physics/initial.js",
+          "sha256": "5a6bbdb6cfe562776c6a408271c26d8a29183e92d2021914e2eb0f34230ef66a",
+          "archive": "reports/v1.0.0/executed-source/5a6bbdb6cfe562776c6a408271c26d8a29183e92d2021914e2eb0f34230ef66a/src/physics/initial.js"
+        },
+        {
+          "path": "src/physics/initial-legacy.js",
+          "sha256": "93ca8666ff188863b947dc8535ca23244d67c20ab2a177cb12e494cf566eeefa",
+          "archive": "reports/v1.0.0/executed-source/93ca8666ff188863b947dc8535ca23244d67c20ab2a177cb12e494cf566eeefa/src/physics/initial-legacy.js"
+        },
+        {
+          "path": "src/physics/initial-allocated.js",
+          "sha256": "f62b945334f7cfd062aa5eda6a3964aca59eb977985d7ffe73a8c8cce04ed378",
+          "archive": "reports/v1.0.0/executed-source/f62b945334f7cfd062aa5eda6a3964aca59eb977985d7ffe73a8c8cce04ed378/src/physics/initial-allocated.js"
+        },
+        {
+          "path": "src/physics/halo-experiments.js",
+          "sha256": "a5a0169b5d8b38c56db0229a83a5b7ba4a940968dd7572bf26f52f37dc9fbcdb",
+          "archive": "reports/v1.0.0/executed-source/a5a0169b5d8b38c56db0229a83a5b7ba4a940968dd7572bf26f52f37dc9fbcdb/src/physics/halo-experiments.js"
+        },
+        {
+          "path": "src/physics/forces.js",
+          "sha256": "9532d4286c6481d49995ece96e48bd595145c2e2c8a22897520cafa45f862444",
+          "archive": "reports/v1.0.0/executed-source/9532d4286c6481d49995ece96e48bd595145c2e2c8a22897520cafa45f862444/src/physics/forces.js"
+        },
+        {
+          "path": "src/physics/integrator.js",
+          "sha256": "433880162ae754dd3bada1fad9e2538239b42d3d43f20f96f7e1465135a1ce6f",
+          "archive": "reports/v1.0.0/executed-source/433880162ae754dd3bada1fad9e2538239b42d3d43f20f96f7e1465135a1ce6f/src/physics/integrator.js"
+        },
+        {
+          "path": "src/physics/snapshot-model.js",
+          "sha256": "681327ebbc656b4fd702bd02b0bd42c5c58f7b5e06643de121669350684d53ba",
+          "archive": "reports/v1.0.0/executed-source/681327ebbc656b4fd702bd02b0bd42c5c58f7b5e06643de121669350684d53ba/src/physics/snapshot-model.js"
+        },
+        {
+          "path": "src/physics/mass-audit.js",
+          "sha256": "99f3722ec0027a3c51b3183a440ec02a52b773aa9e9b53482631777b0a9353f2",
+          "archive": "reports/v1.0.0/executed-source/99f3722ec0027a3c51b3183a440ec02a52b773aa9e9b53482631777b0a9353f2/src/physics/mass-audit.js"
+        },
+        {
+          "path": "src/physics/equilibrium-analysis.js",
+          "sha256": "35c75d97e4c172fba424bc58002f43cd98812824be8b601e79a4f983fe8eca1d",
+          "archive": "reports/v1.0.0/executed-source/35c75d97e4c172fba424bc58002f43cd98812824be8b601e79a4f983fe8eca1d/src/physics/equilibrium-analysis.js"
+        },
+        {
+          "path": "src/physics/structure-diagnostics.js",
+          "sha256": "e94593e700e77bf95392b949bf2891652b87b224000ec1ab584e586dbb871440",
+          "archive": "reports/v1.0.0/executed-source/e94593e700e77bf95392b949bf2891652b87b224000ec1ab584e586dbb871440/src/physics/structure-diagnostics.js"
+        },
+        {
+          "path": "src/physics/disk-analysis.js",
+          "sha256": "ecd700024436712b55152cb4bf64463ea70ee5bb9e93a6cc7750a8a1057219f7",
+          "archive": "reports/v1.0.0/executed-source/ecd700024436712b55152cb4bf64463ea70ee5bb9e93a6cc7750a8a1057219f7/src/physics/disk-analysis.js"
+        },
+        {
+          "path": "src/physics/external-grid.js",
+          "sha256": "91601c0cf72fec057e97bc00114785b88d0abac10cf389ea13adf5b57257c9e4",
+          "archive": "reports/v1.0.0/executed-source/91601c0cf72fec057e97bc00114785b88d0abac10cf389ea13adf5b57257c9e4/src/physics/external-grid.js"
+        },
+        {
+          "path": "src/compute/gpu.js",
+          "sha256": "7ee6706d635a797f8a8546f96968466c8d8f9dbb67d3bd2aadd6f46ea00a7967",
+          "archive": "reports/v1.0.0/executed-source/7ee6706d635a797f8a8546f96968466c8d8f9dbb67d3bd2aadd6f46ea00a7967/src/compute/gpu.js"
+        },
+        {
+          "path": "src/compute/gpu-external-grid.js",
+          "sha256": "82c7267f53c8a2f4a8595ea82ba13f280d9b3692ed103358ca5e2169febbd9b4",
+          "archive": "reports/v1.0.0/executed-source/82c7267f53c8a2f4a8595ea82ba13f280d9b3692ed103358ca5e2169febbd9b4/src/compute/gpu-external-grid.js"
+        },
+        {
+          "path": "tests/browser-equilibrium-calibrated-v1.html",
+          "sha256": "4f018bcf89b1cf1b102a2df8c4d53884bca0088687d1a96f192eb205fc80b923",
+          "archive": "reports/v1.0.0/executed-source/4f018bcf89b1cf1b102a2df8c4d53884bca0088687d1a96f192eb205fc80b923/tests/browser-equilibrium-calibrated-v1.html"
+        },
+        {
+          "path": "scripts/equilibrium/protocol-calibrated.json",
+          "sha256": "70549c63524fc20ee7be693fb87217b508247540ac6c0b6e30106f7fa044fb8c",
+          "archive": "reports/v1.0.0/executed-source/70549c63524fc20ee7be693fb87217b508247540ac6c0b6e30106f7fa044fb8c/scripts/equilibrium/protocol-calibrated.json"
+        },
+        {
+          "path": "src/physics/laboratory.js",
+          "sha256": "3f36f219449d053c7756147c3b312464123c8b4242e65f428a8c1a5cbf528f2d",
+          "archive": "reports/v1.0.0/executed-source/3f36f219449d053c7756147c3b312464123c8b4242e65f428a8c1a5cbf528f2d/src/physics/laboratory.js"
+        },
+        {
+          "path": "src/physics/iterative-initial.js",
+          "sha256": "bf6216a55950684589f697a36bd122584ae5817a6afb00eab0705746f98cc164",
+          "archive": "reports/v1.0.0/executed-source/bf6216a55950684589f697a36bd122584ae5817a6afb00eab0705746f98cc164/src/physics/iterative-initial.js"
+        },
+        {
+          "path": "src/physics/jeans-axisymmetric.js",
+          "sha256": "903331d3c5643c122e63bcb3778bce3a29e5a4d713c09c0a79a6dea178b9698d",
+          "archive": "reports/v1.0.0/executed-source/903331d3c5643c122e63bcb3778bce3a29e5a4d713c09c0a79a6dea178b9698d/src/physics/jeans-axisymmetric.js"
+        }
+      ]
+    },
+    {
+      "id": "calibrated-dt-half",
+      "status": "completed",
+      "lastTimeMyr": 200,
+      "sha256": "7f0d912219e73807f006def4333150db4b5243e31f77caea1bc02c6f29ab5951",
+      "sources": [
+        {
+          "path": "src/physics/constants.js",
+          "sha256": "4b1c2a1d96453b95c8e57a45f46443083e77d54e1714aadc7d060de0d9aa22ca",
+          "archive": "reports/v1.0.0/executed-source/4b1c2a1d96453b95c8e57a45f46443083e77d54e1714aadc7d060de0d9aa22ca/src/physics/constants.js"
+        },
+        {
+          "path": "src/physics/models.js",
+          "sha256": "2215cd8332d06b4d18b3ef707c5000992b5db730d104c654ef7ddba7ac9102f3",
+          "archive": "reports/v1.0.0/executed-source/2215cd8332d06b4d18b3ef707c5000992b5db730d104c654ef7ddba7ac9102f3/src/physics/models.js"
+        },
+        {
+          "path": "src/physics/initial.js",
+          "sha256": "5a6bbdb6cfe562776c6a408271c26d8a29183e92d2021914e2eb0f34230ef66a",
+          "archive": "reports/v1.0.0/executed-source/5a6bbdb6cfe562776c6a408271c26d8a29183e92d2021914e2eb0f34230ef66a/src/physics/initial.js"
+        },
+        {
+          "path": "src/physics/initial-legacy.js",
+          "sha256": "93ca8666ff188863b947dc8535ca23244d67c20ab2a177cb12e494cf566eeefa",
+          "archive": "reports/v1.0.0/executed-source/93ca8666ff188863b947dc8535ca23244d67c20ab2a177cb12e494cf566eeefa/src/physics/initial-legacy.js"
+        },
+        {
+          "path": "src/physics/initial-allocated.js",
+          "sha256": "f62b945334f7cfd062aa5eda6a3964aca59eb977985d7ffe73a8c8cce04ed378",
+          "archive": "reports/v1.0.0/executed-source/f62b945334f7cfd062aa5eda6a3964aca59eb977985d7ffe73a8c8cce04ed378/src/physics/initial-allocated.js"
+        },
+        {
+          "path": "src/physics/halo-experiments.js",
+          "sha256": "a5a0169b5d8b38c56db0229a83a5b7ba4a940968dd7572bf26f52f37dc9fbcdb",
+          "archive": "reports/v1.0.0/executed-source/a5a0169b5d8b38c56db0229a83a5b7ba4a940968dd7572bf26f52f37dc9fbcdb/src/physics/halo-experiments.js"
+        },
+        {
+          "path": "src/physics/forces.js",
+          "sha256": "9532d4286c6481d49995ece96e48bd595145c2e2c8a22897520cafa45f862444",
+          "archive": "reports/v1.0.0/executed-source/9532d4286c6481d49995ece96e48bd595145c2e2c8a22897520cafa45f862444/src/physics/forces.js"
+        },
+        {
+          "path": "src/physics/integrator.js",
+          "sha256": "433880162ae754dd3bada1fad9e2538239b42d3d43f20f96f7e1465135a1ce6f",
+          "archive": "reports/v1.0.0/executed-source/433880162ae754dd3bada1fad9e2538239b42d3d43f20f96f7e1465135a1ce6f/src/physics/integrator.js"
+        },
+        {
+          "path": "src/physics/snapshot-model.js",
+          "sha256": "681327ebbc656b4fd702bd02b0bd42c5c58f7b5e06643de121669350684d53ba",
+          "archive": "reports/v1.0.0/executed-source/681327ebbc656b4fd702bd02b0bd42c5c58f7b5e06643de121669350684d53ba/src/physics/snapshot-model.js"
+        },
+        {
+          "path": "src/physics/mass-audit.js",
+          "sha256": "99f3722ec0027a3c51b3183a440ec02a52b773aa9e9b53482631777b0a9353f2",
+          "archive": "reports/v1.0.0/executed-source/99f3722ec0027a3c51b3183a440ec02a52b773aa9e9b53482631777b0a9353f2/src/physics/mass-audit.js"
+        },
+        {
+          "path": "src/physics/equilibrium-analysis.js",
+          "sha256": "35c75d97e4c172fba424bc58002f43cd98812824be8b601e79a4f983fe8eca1d",
+          "archive": "reports/v1.0.0/executed-source/35c75d97e4c172fba424bc58002f43cd98812824be8b601e79a4f983fe8eca1d/src/physics/equilibrium-analysis.js"
+        },
+        {
+          "path": "src/physics/structure-diagnostics.js",
+          "sha256": "e94593e700e77bf95392b949bf2891652b87b224000ec1ab584e586dbb871440",
+          "archive": "reports/v1.0.0/executed-source/e94593e700e77bf95392b949bf2891652b87b224000ec1ab584e586dbb871440/src/physics/structure-diagnostics.js"
+        },
+        {
+          "path": "src/physics/disk-analysis.js",
+          "sha256": "ecd700024436712b55152cb4bf64463ea70ee5bb9e93a6cc7750a8a1057219f7",
+          "archive": "reports/v1.0.0/executed-source/ecd700024436712b55152cb4bf64463ea70ee5bb9e93a6cc7750a8a1057219f7/src/physics/disk-analysis.js"
+        },
+        {
+          "path": "src/physics/external-grid.js",
+          "sha256": "91601c0cf72fec057e97bc00114785b88d0abac10cf389ea13adf5b57257c9e4",
+          "archive": "reports/v1.0.0/executed-source/91601c0cf72fec057e97bc00114785b88d0abac10cf389ea13adf5b57257c9e4/src/physics/external-grid.js"
+        },
+        {
+          "path": "src/compute/gpu.js",
+          "sha256": "7ee6706d635a797f8a8546f96968466c8d8f9dbb67d3bd2aadd6f46ea00a7967",
+          "archive": "reports/v1.0.0/executed-source/7ee6706d635a797f8a8546f96968466c8d8f9dbb67d3bd2aadd6f46ea00a7967/src/compute/gpu.js"
+        },
+        {
+          "path": "src/compute/gpu-external-grid.js",
+          "sha256": "82c7267f53c8a2f4a8595ea82ba13f280d9b3692ed103358ca5e2169febbd9b4",
+          "archive": "reports/v1.0.0/executed-source/82c7267f53c8a2f4a8595ea82ba13f280d9b3692ed103358ca5e2169febbd9b4/src/compute/gpu-external-grid.js"
+        },
+        {
+          "path": "tests/browser-equilibrium-calibrated-v1.html",
+          "sha256": "4f018bcf89b1cf1b102a2df8c4d53884bca0088687d1a96f192eb205fc80b923",
+          "archive": "reports/v1.0.0/executed-source/4f018bcf89b1cf1b102a2df8c4d53884bca0088687d1a96f192eb205fc80b923/tests/browser-equilibrium-calibrated-v1.html"
+        },
+        {
+          "path": "scripts/equilibrium/protocol-calibrated.json",
+          "sha256": "70549c63524fc20ee7be693fb87217b508247540ac6c0b6e30106f7fa044fb8c",
+          "archive": "reports/v1.0.0/executed-source/70549c63524fc20ee7be693fb87217b508247540ac6c0b6e30106f7fa044fb8c/scripts/equilibrium/protocol-calibrated.json"
+        },
+        {
+          "path": "src/physics/laboratory.js",
+          "sha256": "3f36f219449d053c7756147c3b312464123c8b4242e65f428a8c1a5cbf528f2d",
+          "archive": "reports/v1.0.0/executed-source/3f36f219449d053c7756147c3b312464123c8b4242e65f428a8c1a5cbf528f2d/src/physics/laboratory.js"
+        },
+        {
+          "path": "src/physics/iterative-initial.js",
+          "sha256": "bf6216a55950684589f697a36bd122584ae5817a6afb00eab0705746f98cc164",
+          "archive": "reports/v1.0.0/executed-source/bf6216a55950684589f697a36bd122584ae5817a6afb00eab0705746f98cc164/src/physics/iterative-initial.js"
+        },
+        {
+          "path": "src/physics/jeans-axisymmetric.js",
+          "sha256": "903331d3c5643c122e63bcb3778bce3a29e5a4d713c09c0a79a6dea178b9698d",
+          "archive": "reports/v1.0.0/executed-source/903331d3c5643c122e63bcb3778bce3a29e5a4d713c09c0a79a6dea178b9698d/src/physics/jeans-axisymmetric.js"
+        }
+      ]
+    },
+    {
+      "id": "calibrated-epsilon-double",
+      "status": "completed",
+      "lastTimeMyr": 200,
+      "sha256": "88436ab2e3a93ee0128018620b42d826254ed4fee923008e9dc41ed09acd2e0e",
+      "sources": [
+        {
+          "path": "src/physics/constants.js",
+          "sha256": "4b1c2a1d96453b95c8e57a45f46443083e77d54e1714aadc7d060de0d9aa22ca",
+          "archive": "reports/v1.0.0/executed-source/4b1c2a1d96453b95c8e57a45f46443083e77d54e1714aadc7d060de0d9aa22ca/src/physics/constants.js"
+        },
+        {
+          "path": "src/physics/models.js",
+          "sha256": "2215cd8332d06b4d18b3ef707c5000992b5db730d104c654ef7ddba7ac9102f3",
+          "archive": "reports/v1.0.0/executed-source/2215cd8332d06b4d18b3ef707c5000992b5db730d104c654ef7ddba7ac9102f3/src/physics/models.js"
+        },
+        {
+          "path": "src/physics/initial.js",
+          "sha256": "5a6bbdb6cfe562776c6a408271c26d8a29183e92d2021914e2eb0f34230ef66a",
+          "archive": "reports/v1.0.0/executed-source/5a6bbdb6cfe562776c6a408271c26d8a29183e92d2021914e2eb0f34230ef66a/src/physics/initial.js"
+        },
+        {
+          "path": "src/physics/initial-legacy.js",
+          "sha256": "93ca8666ff188863b947dc8535ca23244d67c20ab2a177cb12e494cf566eeefa",
+          "archive": "reports/v1.0.0/executed-source/93ca8666ff188863b947dc8535ca23244d67c20ab2a177cb12e494cf566eeefa/src/physics/initial-legacy.js"
+        },
+        {
+          "path": "src/physics/initial-allocated.js",
+          "sha256": "f62b945334f7cfd062aa5eda6a3964aca59eb977985d7ffe73a8c8cce04ed378",
+          "archive": "reports/v1.0.0/executed-source/f62b945334f7cfd062aa5eda6a3964aca59eb977985d7ffe73a8c8cce04ed378/src/physics/initial-allocated.js"
+        },
+        {
+          "path": "src/physics/halo-experiments.js",
+          "sha256": "a5a0169b5d8b38c56db0229a83a5b7ba4a940968dd7572bf26f52f37dc9fbcdb",
+          "archive": "reports/v1.0.0/executed-source/a5a0169b5d8b38c56db0229a83a5b7ba4a940968dd7572bf26f52f37dc9fbcdb/src/physics/halo-experiments.js"
+        },
+        {
+          "path": "src/physics/forces.js",
+          "sha256": "9532d4286c6481d49995ece96e48bd595145c2e2c8a22897520cafa45f862444",
+          "archive": "reports/v1.0.0/executed-source/9532d4286c6481d49995ece96e48bd595145c2e2c8a22897520cafa45f862444/src/physics/forces.js"
+        },
+        {
+          "path": "src/physics/integrator.js",
+          "sha256": "433880162ae754dd3bada1fad9e2538239b42d3d43f20f96f7e1465135a1ce6f",
+          "archive": "reports/v1.0.0/executed-source/433880162ae754dd3bada1fad9e2538239b42d3d43f20f96f7e1465135a1ce6f/src/physics/integrator.js"
+        },
+        {
+          "path": "src/physics/snapshot-model.js",
+          "sha256": "681327ebbc656b4fd702bd02b0bd42c5c58f7b5e06643de121669350684d53ba",
+          "archive": "reports/v1.0.0/executed-source/681327ebbc656b4fd702bd02b0bd42c5c58f7b5e06643de121669350684d53ba/src/physics/snapshot-model.js"
+        },
+        {
+          "path": "src/physics/mass-audit.js",
+          "sha256": "99f3722ec0027a3c51b3183a440ec02a52b773aa9e9b53482631777b0a9353f2",
+          "archive": "reports/v1.0.0/executed-source/99f3722ec0027a3c51b3183a440ec02a52b773aa9e9b53482631777b0a9353f2/src/physics/mass-audit.js"
+        },
+        {
+          "path": "src/physics/equilibrium-analysis.js",
+          "sha256": "35c75d97e4c172fba424bc58002f43cd98812824be8b601e79a4f983fe8eca1d",
+          "archive": "reports/v1.0.0/executed-source/35c75d97e4c172fba424bc58002f43cd98812824be8b601e79a4f983fe8eca1d/src/physics/equilibrium-analysis.js"
+        },
+        {
+          "path": "src/physics/structure-diagnostics.js",
+          "sha256": "e94593e700e77bf95392b949bf2891652b87b224000ec1ab584e586dbb871440",
+          "archive": "reports/v1.0.0/executed-source/e94593e700e77bf95392b949bf2891652b87b224000ec1ab584e586dbb871440/src/physics/structure-diagnostics.js"
+        },
+        {
+          "path": "src/physics/disk-analysis.js",
+          "sha256": "ecd700024436712b55152cb4bf64463ea70ee5bb9e93a6cc7750a8a1057219f7",
+          "archive": "reports/v1.0.0/executed-source/ecd700024436712b55152cb4bf64463ea70ee5bb9e93a6cc7750a8a1057219f7/src/physics/disk-analysis.js"
+        },
+        {
+          "path": "src/physics/external-grid.js",
+          "sha256": "91601c0cf72fec057e97bc00114785b88d0abac10cf389ea13adf5b57257c9e4",
+          "archive": "reports/v1.0.0/executed-source/91601c0cf72fec057e97bc00114785b88d0abac10cf389ea13adf5b57257c9e4/src/physics/external-grid.js"
+        },
+        {
+          "path": "src/compute/gpu.js",
+          "sha256": "7ee6706d635a797f8a8546f96968466c8d8f9dbb67d3bd2aadd6f46ea00a7967",
+          "archive": "reports/v1.0.0/executed-source/7ee6706d635a797f8a8546f96968466c8d8f9dbb67d3bd2aadd6f46ea00a7967/src/compute/gpu.js"
+        },
+        {
+          "path": "src/compute/gpu-external-grid.js",
+          "sha256": "82c7267f53c8a2f4a8595ea82ba13f280d9b3692ed103358ca5e2169febbd9b4",
+          "archive": "reports/v1.0.0/executed-source/82c7267f53c8a2f4a8595ea82ba13f280d9b3692ed103358ca5e2169febbd9b4/src/compute/gpu-external-grid.js"
+        },
+        {
+          "path": "tests/browser-equilibrium-calibrated-v1.html",
+          "sha256": "4f018bcf89b1cf1b102a2df8c4d53884bca0088687d1a96f192eb205fc80b923",
+          "archive": "reports/v1.0.0/executed-source/4f018bcf89b1cf1b102a2df8c4d53884bca0088687d1a96f192eb205fc80b923/tests/browser-equilibrium-calibrated-v1.html"
+        },
+        {
+          "path": "scripts/equilibrium/protocol-calibrated.json",
+          "sha256": "70549c63524fc20ee7be693fb87217b508247540ac6c0b6e30106f7fa044fb8c",
+          "archive": "reports/v1.0.0/executed-source/70549c63524fc20ee7be693fb87217b508247540ac6c0b6e30106f7fa044fb8c/scripts/equilibrium/protocol-calibrated.json"
+        },
+        {
+          "path": "src/physics/laboratory.js",
+          "sha256": "3f36f219449d053c7756147c3b312464123c8b4242e65f428a8c1a5cbf528f2d",
+          "archive": "reports/v1.0.0/executed-source/3f36f219449d053c7756147c3b312464123c8b4242e65f428a8c1a5cbf528f2d/src/physics/laboratory.js"
+        },
+        {
+          "path": "src/physics/iterative-initial.js",
+          "sha256": "bf6216a55950684589f697a36bd122584ae5817a6afb00eab0705746f98cc164",
+          "archive": "reports/v1.0.0/executed-source/bf6216a55950684589f697a36bd122584ae5817a6afb00eab0705746f98cc164/src/physics/iterative-initial.js"
+        },
+        {
+          "path": "src/physics/jeans-axisymmetric.js",
+          "sha256": "903331d3c5643c122e63bcb3778bce3a29e5a4d713c09c0a79a6dea178b9698d",
+          "archive": "reports/v1.0.0/executed-source/903331d3c5643c122e63bcb3778bce3a29e5a4d713c09c0a79a6dea178b9698d/src/physics/jeans-axisymmetric.js"
+        }
+      ]
+    },
+    {
+      "id": "calibrated-epsilon-half",
+      "status": "completed",
+      "lastTimeMyr": 200,
+      "sha256": "1ee1c2bcbca1a9f343e9f59e1e1f4698e3addb0213a23216674b2322addc200a",
+      "sources": [
+        {
+          "path": "src/physics/constants.js",
+          "sha256": "4b1c2a1d96453b95c8e57a45f46443083e77d54e1714aadc7d060de0d9aa22ca",
+          "archive": "reports/v1.0.0/executed-source/4b1c2a1d96453b95c8e57a45f46443083e77d54e1714aadc7d060de0d9aa22ca/src/physics/constants.js"
+        },
+        {
+          "path": "src/physics/models.js",
+          "sha256": "2215cd8332d06b4d18b3ef707c5000992b5db730d104c654ef7ddba7ac9102f3",
+          "archive": "reports/v1.0.0/executed-source/2215cd8332d06b4d18b3ef707c5000992b5db730d104c654ef7ddba7ac9102f3/src/physics/models.js"
+        },
+        {
+          "path": "src/physics/initial.js",
+          "sha256": "5a6bbdb6cfe562776c6a408271c26d8a29183e92d2021914e2eb0f34230ef66a",
+          "archive": "reports/v1.0.0/executed-source/5a6bbdb6cfe562776c6a408271c26d8a29183e92d2021914e2eb0f34230ef66a/src/physics/initial.js"
+        },
+        {
+          "path": "src/physics/initial-legacy.js",
+          "sha256": "93ca8666ff188863b947dc8535ca23244d67c20ab2a177cb12e494cf566eeefa",
+          "archive": "reports/v1.0.0/executed-source/93ca8666ff188863b947dc8535ca23244d67c20ab2a177cb12e494cf566eeefa/src/physics/initial-legacy.js"
+        },
+        {
+          "path": "src/physics/initial-allocated.js",
+          "sha256": "f62b945334f7cfd062aa5eda6a3964aca59eb977985d7ffe73a8c8cce04ed378",
+          "archive": "reports/v1.0.0/executed-source/f62b945334f7cfd062aa5eda6a3964aca59eb977985d7ffe73a8c8cce04ed378/src/physics/initial-allocated.js"
+        },
+        {
+          "path": "src/physics/halo-experiments.js",
+          "sha256": "a5a0169b5d8b38c56db0229a83a5b7ba4a940968dd7572bf26f52f37dc9fbcdb",
+          "archive": "reports/v1.0.0/executed-source/a5a0169b5d8b38c56db0229a83a5b7ba4a940968dd7572bf26f52f37dc9fbcdb/src/physics/halo-experiments.js"
+        },
+        {
+          "path": "src/physics/forces.js",
+          "sha256": "9532d4286c6481d49995ece96e48bd595145c2e2c8a22897520cafa45f862444",
+          "archive": "reports/v1.0.0/executed-source/9532d4286c6481d49995ece96e48bd595145c2e2c8a22897520cafa45f862444/src/physics/forces.js"
+        },
+        {
+          "path": "src/physics/integrator.js",
+          "sha256": "433880162ae754dd3bada1fad9e2538239b42d3d43f20f96f7e1465135a1ce6f",
+          "archive": "reports/v1.0.0/executed-source/433880162ae754dd3bada1fad9e2538239b42d3d43f20f96f7e1465135a1ce6f/src/physics/integrator.js"
+        },
+        {
+          "path": "src/physics/snapshot-model.js",
+          "sha256": "681327ebbc656b4fd702bd02b0bd42c5c58f7b5e06643de121669350684d53ba",
+          "archive": "reports/v1.0.0/executed-source/681327ebbc656b4fd702bd02b0bd42c5c58f7b5e06643de121669350684d53ba/src/physics/snapshot-model.js"
+        },
+        {
+          "path": "src/physics/mass-audit.js",
+          "sha256": "99f3722ec0027a3c51b3183a440ec02a52b773aa9e9b53482631777b0a9353f2",
+          "archive": "reports/v1.0.0/executed-source/99f3722ec0027a3c51b3183a440ec02a52b773aa9e9b53482631777b0a9353f2/src/physics/mass-audit.js"
+        },
+        {
+          "path": "src/physics/equilibrium-analysis.js",
+          "sha256": "35c75d97e4c172fba424bc58002f43cd98812824be8b601e79a4f983fe8eca1d",
+          "archive": "reports/v1.0.0/executed-source/35c75d97e4c172fba424bc58002f43cd98812824be8b601e79a4f983fe8eca1d/src/physics/equilibrium-analysis.js"
+        },
+        {
+          "path": "src/physics/structure-diagnostics.js",
+          "sha256": "e94593e700e77bf95392b949bf2891652b87b224000ec1ab584e586dbb871440",
+          "archive": "reports/v1.0.0/executed-source/e94593e700e77bf95392b949bf2891652b87b224000ec1ab584e586dbb871440/src/physics/structure-diagnostics.js"
+        },
+        {
+          "path": "src/physics/disk-analysis.js",
+          "sha256": "ecd700024436712b55152cb4bf64463ea70ee5bb9e93a6cc7750a8a1057219f7",
+          "archive": "reports/v1.0.0/executed-source/ecd700024436712b55152cb4bf64463ea70ee5bb9e93a6cc7750a8a1057219f7/src/physics/disk-analysis.js"
+        },
+        {
+          "path": "src/physics/external-grid.js",
+          "sha256": "91601c0cf72fec057e97bc00114785b88d0abac10cf389ea13adf5b57257c9e4",
+          "archive": "reports/v1.0.0/executed-source/91601c0cf72fec057e97bc00114785b88d0abac10cf389ea13adf5b57257c9e4/src/physics/external-grid.js"
+        },
+        {
+          "path": "src/compute/gpu.js",
+          "sha256": "7ee6706d635a797f8a8546f96968466c8d8f9dbb67d3bd2aadd6f46ea00a7967",
+          "archive": "reports/v1.0.0/executed-source/7ee6706d635a797f8a8546f96968466c8d8f9dbb67d3bd2aadd6f46ea00a7967/src/compute/gpu.js"
+        },
+        {
+          "path": "src/compute/gpu-external-grid.js",
+          "sha256": "82c7267f53c8a2f4a8595ea82ba13f280d9b3692ed103358ca5e2169febbd9b4",
+          "archive": "reports/v1.0.0/executed-source/82c7267f53c8a2f4a8595ea82ba13f280d9b3692ed103358ca5e2169febbd9b4/src/compute/gpu-external-grid.js"
+        },
+        {
+          "path": "tests/browser-equilibrium-calibrated-v1.html",
+          "sha256": "4f018bcf89b1cf1b102a2df8c4d53884bca0088687d1a96f192eb205fc80b923",
+          "archive": "reports/v1.0.0/executed-source/4f018bcf89b1cf1b102a2df8c4d53884bca0088687d1a96f192eb205fc80b923/tests/browser-equilibrium-calibrated-v1.html"
+        },
+        {
+          "path": "scripts/equilibrium/protocol-calibrated.json",
+          "sha256": "70549c63524fc20ee7be693fb87217b508247540ac6c0b6e30106f7fa044fb8c",
+          "archive": "reports/v1.0.0/executed-source/70549c63524fc20ee7be693fb87217b508247540ac6c0b6e30106f7fa044fb8c/scripts/equilibrium/protocol-calibrated.json"
+        },
+        {
+          "path": "src/physics/laboratory.js",
+          "sha256": "3f36f219449d053c7756147c3b312464123c8b4242e65f428a8c1a5cbf528f2d",
+          "archive": "reports/v1.0.0/executed-source/3f36f219449d053c7756147c3b312464123c8b4242e65f428a8c1a5cbf528f2d/src/physics/laboratory.js"
+        },
+        {
+          "path": "src/physics/iterative-initial.js",
+          "sha256": "bf6216a55950684589f697a36bd122584ae5817a6afb00eab0705746f98cc164",
+          "archive": "reports/v1.0.0/executed-source/bf6216a55950684589f697a36bd122584ae5817a6afb00eab0705746f98cc164/src/physics/iterative-initial.js"
+        },
+        {
+          "path": "src/physics/jeans-axisymmetric.js",
+          "sha256": "903331d3c5643c122e63bcb3778bce3a29e5a4d713c09c0a79a6dea178b9698d",
+          "archive": "reports/v1.0.0/executed-source/903331d3c5643c122e63bcb3778bce3a29e5a4d713c09c0a79a6dea178b9698d/src/physics/jeans-axisymmetric.js"
+        }
+      ]
+    },
+    {
+      "id": "calibrated-fixed",
+      "status": "completed",
+      "lastTimeMyr": 1000,
+      "sha256": "3b68787eb62ac482ba7d778940683668bac90e32921441c7b3623502378bb7c4",
+      "sources": [
+        {
+          "path": "src/physics/constants.js",
+          "sha256": "4b1c2a1d96453b95c8e57a45f46443083e77d54e1714aadc7d060de0d9aa22ca",
+          "archive": "reports/v1.0.0/executed-source/4b1c2a1d96453b95c8e57a45f46443083e77d54e1714aadc7d060de0d9aa22ca/src/physics/constants.js"
+        },
+        {
+          "path": "src/physics/models.js",
+          "sha256": "2215cd8332d06b4d18b3ef707c5000992b5db730d104c654ef7ddba7ac9102f3",
+          "archive": "reports/v1.0.0/executed-source/2215cd8332d06b4d18b3ef707c5000992b5db730d104c654ef7ddba7ac9102f3/src/physics/models.js"
+        },
+        {
+          "path": "src/physics/initial.js",
+          "sha256": "5a6bbdb6cfe562776c6a408271c26d8a29183e92d2021914e2eb0f34230ef66a",
+          "archive": "reports/v1.0.0/executed-source/5a6bbdb6cfe562776c6a408271c26d8a29183e92d2021914e2eb0f34230ef66a/src/physics/initial.js"
+        },
+        {
+          "path": "src/physics/initial-legacy.js",
+          "sha256": "93ca8666ff188863b947dc8535ca23244d67c20ab2a177cb12e494cf566eeefa",
+          "archive": "reports/v1.0.0/executed-source/93ca8666ff188863b947dc8535ca23244d67c20ab2a177cb12e494cf566eeefa/src/physics/initial-legacy.js"
+        },
+        {
+          "path": "src/physics/initial-allocated.js",
+          "sha256": "f62b945334f7cfd062aa5eda6a3964aca59eb977985d7ffe73a8c8cce04ed378",
+          "archive": "reports/v1.0.0/executed-source/f62b945334f7cfd062aa5eda6a3964aca59eb977985d7ffe73a8c8cce04ed378/src/physics/initial-allocated.js"
+        },
+        {
+          "path": "src/physics/halo-experiments.js",
+          "sha256": "a5a0169b5d8b38c56db0229a83a5b7ba4a940968dd7572bf26f52f37dc9fbcdb",
+          "archive": "reports/v1.0.0/executed-source/a5a0169b5d8b38c56db0229a83a5b7ba4a940968dd7572bf26f52f37dc9fbcdb/src/physics/halo-experiments.js"
+        },
+        {
+          "path": "src/physics/forces.js",
+          "sha256": "9532d4286c6481d49995ece96e48bd595145c2e2c8a22897520cafa45f862444",
+          "archive": "reports/v1.0.0/executed-source/9532d4286c6481d49995ece96e48bd595145c2e2c8a22897520cafa45f862444/src/physics/forces.js"
+        },
+        {
+          "path": "src/physics/integrator.js",
+          "sha256": "433880162ae754dd3bada1fad9e2538239b42d3d43f20f96f7e1465135a1ce6f",
+          "archive": "reports/v1.0.0/executed-source/433880162ae754dd3bada1fad9e2538239b42d3d43f20f96f7e1465135a1ce6f/src/physics/integrator.js"
+        },
+        {
+          "path": "src/physics/snapshot-model.js",
+          "sha256": "681327ebbc656b4fd702bd02b0bd42c5c58f7b5e06643de121669350684d53ba",
+          "archive": "reports/v1.0.0/executed-source/681327ebbc656b4fd702bd02b0bd42c5c58f7b5e06643de121669350684d53ba/src/physics/snapshot-model.js"
+        },
+        {
+          "path": "src/physics/mass-audit.js",
+          "sha256": "99f3722ec0027a3c51b3183a440ec02a52b773aa9e9b53482631777b0a9353f2",
+          "archive": "reports/v1.0.0/executed-source/99f3722ec0027a3c51b3183a440ec02a52b773aa9e9b53482631777b0a9353f2/src/physics/mass-audit.js"
+        },
+        {
+          "path": "src/physics/equilibrium-analysis.js",
+          "sha256": "35c75d97e4c172fba424bc58002f43cd98812824be8b601e79a4f983fe8eca1d",
+          "archive": "reports/v1.0.0/executed-source/35c75d97e4c172fba424bc58002f43cd98812824be8b601e79a4f983fe8eca1d/src/physics/equilibrium-analysis.js"
+        },
+        {
+          "path": "src/physics/structure-diagnostics.js",
+          "sha256": "e94593e700e77bf95392b949bf2891652b87b224000ec1ab584e586dbb871440",
+          "archive": "reports/v1.0.0/executed-source/e94593e700e77bf95392b949bf2891652b87b224000ec1ab584e586dbb871440/src/physics/structure-diagnostics.js"
+        },
+        {
+          "path": "src/physics/disk-analysis.js",
+          "sha256": "ecd700024436712b55152cb4bf64463ea70ee5bb9e93a6cc7750a8a1057219f7",
+          "archive": "reports/v1.0.0/executed-source/ecd700024436712b55152cb4bf64463ea70ee5bb9e93a6cc7750a8a1057219f7/src/physics/disk-analysis.js"
+        },
+        {
+          "path": "src/physics/external-grid.js",
+          "sha256": "91601c0cf72fec057e97bc00114785b88d0abac10cf389ea13adf5b57257c9e4",
+          "archive": "reports/v1.0.0/executed-source/91601c0cf72fec057e97bc00114785b88d0abac10cf389ea13adf5b57257c9e4/src/physics/external-grid.js"
+        },
+        {
+          "path": "src/compute/gpu.js",
+          "sha256": "7ee6706d635a797f8a8546f96968466c8d8f9dbb67d3bd2aadd6f46ea00a7967",
+          "archive": "reports/v1.0.0/executed-source/7ee6706d635a797f8a8546f96968466c8d8f9dbb67d3bd2aadd6f46ea00a7967/src/compute/gpu.js"
+        },
+        {
+          "path": "src/compute/gpu-external-grid.js",
+          "sha256": "82c7267f53c8a2f4a8595ea82ba13f280d9b3692ed103358ca5e2169febbd9b4",
+          "archive": "reports/v1.0.0/executed-source/82c7267f53c8a2f4a8595ea82ba13f280d9b3692ed103358ca5e2169febbd9b4/src/compute/gpu-external-grid.js"
+        },
+        {
+          "path": "tests/browser-equilibrium-calibrated-v1.html",
+          "sha256": "4f018bcf89b1cf1b102a2df8c4d53884bca0088687d1a96f192eb205fc80b923",
+          "archive": "reports/v1.0.0/executed-source/4f018bcf89b1cf1b102a2df8c4d53884bca0088687d1a96f192eb205fc80b923/tests/browser-equilibrium-calibrated-v1.html"
+        },
+        {
+          "path": "scripts/equilibrium/protocol-calibrated.json",
+          "sha256": "70549c63524fc20ee7be693fb87217b508247540ac6c0b6e30106f7fa044fb8c",
+          "archive": "reports/v1.0.0/executed-source/70549c63524fc20ee7be693fb87217b508247540ac6c0b6e30106f7fa044fb8c/scripts/equilibrium/protocol-calibrated.json"
+        },
+        {
+          "path": "src/physics/laboratory.js",
+          "sha256": "3f36f219449d053c7756147c3b312464123c8b4242e65f428a8c1a5cbf528f2d",
+          "archive": "reports/v1.0.0/executed-source/3f36f219449d053c7756147c3b312464123c8b4242e65f428a8c1a5cbf528f2d/src/physics/laboratory.js"
+        },
+        {
+          "path": "src/physics/iterative-initial.js",
+          "sha256": "bf6216a55950684589f697a36bd122584ae5817a6afb00eab0705746f98cc164",
+          "archive": "reports/v1.0.0/executed-source/bf6216a55950684589f697a36bd122584ae5817a6afb00eab0705746f98cc164/src/physics/iterative-initial.js"
+        },
+        {
+          "path": "src/physics/jeans-axisymmetric.js",
+          "sha256": "903331d3c5643c122e63bcb3778bce3a29e5a4d713c09c0a79a6dea178b9698d",
+          "archive": "reports/v1.0.0/executed-source/903331d3c5643c122e63bcb3778bce3a29e5a4d713c09c0a79a6dea178b9698d/src/physics/jeans-axisymmetric.js"
+        }
+      ]
+    },
+    {
+      "id": "calibrated-gaussian-same-density",
+      "status": "completed",
+      "lastTimeMyr": 200,
+      "sha256": "14d8f7d1b486e219a71e9f8cab31d7747ce73de9499482dec9772f65bbefd499",
+      "sources": [
+        {
+          "path": "src/physics/constants.js",
+          "sha256": "4b1c2a1d96453b95c8e57a45f46443083e77d54e1714aadc7d060de0d9aa22ca",
+          "archive": "reports/v1.0.0/executed-source/4b1c2a1d96453b95c8e57a45f46443083e77d54e1714aadc7d060de0d9aa22ca/src/physics/constants.js"
+        },
+        {
+          "path": "src/physics/models.js",
+          "sha256": "2215cd8332d06b4d18b3ef707c5000992b5db730d104c654ef7ddba7ac9102f3",
+          "archive": "reports/v1.0.0/executed-source/2215cd8332d06b4d18b3ef707c5000992b5db730d104c654ef7ddba7ac9102f3/src/physics/models.js"
+        },
+        {
+          "path": "src/physics/initial.js",
+          "sha256": "5a6bbdb6cfe562776c6a408271c26d8a29183e92d2021914e2eb0f34230ef66a",
+          "archive": "reports/v1.0.0/executed-source/5a6bbdb6cfe562776c6a408271c26d8a29183e92d2021914e2eb0f34230ef66a/src/physics/initial.js"
+        },
+        {
+          "path": "src/physics/initial-legacy.js",
+          "sha256": "93ca8666ff188863b947dc8535ca23244d67c20ab2a177cb12e494cf566eeefa",
+          "archive": "reports/v1.0.0/executed-source/93ca8666ff188863b947dc8535ca23244d67c20ab2a177cb12e494cf566eeefa/src/physics/initial-legacy.js"
+        },
+        {
+          "path": "src/physics/initial-allocated.js",
+          "sha256": "f62b945334f7cfd062aa5eda6a3964aca59eb977985d7ffe73a8c8cce04ed378",
+          "archive": "reports/v1.0.0/executed-source/f62b945334f7cfd062aa5eda6a3964aca59eb977985d7ffe73a8c8cce04ed378/src/physics/initial-allocated.js"
+        },
+        {
+          "path": "src/physics/halo-experiments.js",
+          "sha256": "a5a0169b5d8b38c56db0229a83a5b7ba4a940968dd7572bf26f52f37dc9fbcdb",
+          "archive": "reports/v1.0.0/executed-source/a5a0169b5d8b38c56db0229a83a5b7ba4a940968dd7572bf26f52f37dc9fbcdb/src/physics/halo-experiments.js"
+        },
+        {
+          "path": "src/physics/forces.js",
+          "sha256": "9532d4286c6481d49995ece96e48bd595145c2e2c8a22897520cafa45f862444",
+          "archive": "reports/v1.0.0/executed-source/9532d4286c6481d49995ece96e48bd595145c2e2c8a22897520cafa45f862444/src/physics/forces.js"
+        },
+        {
+          "path": "src/physics/integrator.js",
+          "sha256": "433880162ae754dd3bada1fad9e2538239b42d3d43f20f96f7e1465135a1ce6f",
+          "archive": "reports/v1.0.0/executed-source/433880162ae754dd3bada1fad9e2538239b42d3d43f20f96f7e1465135a1ce6f/src/physics/integrator.js"
+        },
+        {
+          "path": "src/physics/snapshot-model.js",
+          "sha256": "681327ebbc656b4fd702bd02b0bd42c5c58f7b5e06643de121669350684d53ba",
+          "archive": "reports/v1.0.0/executed-source/681327ebbc656b4fd702bd02b0bd42c5c58f7b5e06643de121669350684d53ba/src/physics/snapshot-model.js"
+        },
+        {
+          "path": "src/physics/mass-audit.js",
+          "sha256": "99f3722ec0027a3c51b3183a440ec02a52b773aa9e9b53482631777b0a9353f2",
+          "archive": "reports/v1.0.0/executed-source/99f3722ec0027a3c51b3183a440ec02a52b773aa9e9b53482631777b0a9353f2/src/physics/mass-audit.js"
+        },
+        {
+          "path": "src/physics/equilibrium-analysis.js",
+          "sha256": "35c75d97e4c172fba424bc58002f43cd98812824be8b601e79a4f983fe8eca1d",
+          "archive": "reports/v1.0.0/executed-source/35c75d97e4c172fba424bc58002f43cd98812824be8b601e79a4f983fe8eca1d/src/physics/equilibrium-analysis.js"
+        },
+        {
+          "path": "src/physics/structure-diagnostics.js",
+          "sha256": "e94593e700e77bf95392b949bf2891652b87b224000ec1ab584e586dbb871440",
+          "archive": "reports/v1.0.0/executed-source/e94593e700e77bf95392b949bf2891652b87b224000ec1ab584e586dbb871440/src/physics/structure-diagnostics.js"
+        },
+        {
+          "path": "src/physics/disk-analysis.js",
+          "sha256": "ecd700024436712b55152cb4bf64463ea70ee5bb9e93a6cc7750a8a1057219f7",
+          "archive": "reports/v1.0.0/executed-source/ecd700024436712b55152cb4bf64463ea70ee5bb9e93a6cc7750a8a1057219f7/src/physics/disk-analysis.js"
+        },
+        {
+          "path": "src/physics/external-grid.js",
+          "sha256": "91601c0cf72fec057e97bc00114785b88d0abac10cf389ea13adf5b57257c9e4",
+          "archive": "reports/v1.0.0/executed-source/91601c0cf72fec057e97bc00114785b88d0abac10cf389ea13adf5b57257c9e4/src/physics/external-grid.js"
+        },
+        {
+          "path": "src/compute/gpu.js",
+          "sha256": "7ee6706d635a797f8a8546f96968466c8d8f9dbb67d3bd2aadd6f46ea00a7967",
+          "archive": "reports/v1.0.0/executed-source/7ee6706d635a797f8a8546f96968466c8d8f9dbb67d3bd2aadd6f46ea00a7967/src/compute/gpu.js"
+        },
+        {
+          "path": "src/compute/gpu-external-grid.js",
+          "sha256": "82c7267f53c8a2f4a8595ea82ba13f280d9b3692ed103358ca5e2169febbd9b4",
+          "archive": "reports/v1.0.0/executed-source/82c7267f53c8a2f4a8595ea82ba13f280d9b3692ed103358ca5e2169febbd9b4/src/compute/gpu-external-grid.js"
+        },
+        {
+          "path": "tests/browser-equilibrium-calibrated-v1.html",
+          "sha256": "4f018bcf89b1cf1b102a2df8c4d53884bca0088687d1a96f192eb205fc80b923",
+          "archive": "reports/v1.0.0/executed-source/4f018bcf89b1cf1b102a2df8c4d53884bca0088687d1a96f192eb205fc80b923/tests/browser-equilibrium-calibrated-v1.html"
+        },
+        {
+          "path": "scripts/equilibrium/protocol-calibrated.json",
+          "sha256": "70549c63524fc20ee7be693fb87217b508247540ac6c0b6e30106f7fa044fb8c",
+          "archive": "reports/v1.0.0/executed-source/70549c63524fc20ee7be693fb87217b508247540ac6c0b6e30106f7fa044fb8c/scripts/equilibrium/protocol-calibrated.json"
+        },
+        {
+          "path": "src/physics/laboratory.js",
+          "sha256": "3f36f219449d053c7756147c3b312464123c8b4242e65f428a8c1a5cbf528f2d",
+          "archive": "reports/v1.0.0/executed-source/3f36f219449d053c7756147c3b312464123c8b4242e65f428a8c1a5cbf528f2d/src/physics/laboratory.js"
+        },
+        {
+          "path": "src/physics/iterative-initial.js",
+          "sha256": "bf6216a55950684589f697a36bd122584ae5817a6afb00eab0705746f98cc164",
+          "archive": "reports/v1.0.0/executed-source/bf6216a55950684589f697a36bd122584ae5817a6afb00eab0705746f98cc164/src/physics/iterative-initial.js"
+        },
+        {
+          "path": "src/physics/jeans-axisymmetric.js",
+          "sha256": "903331d3c5643c122e63bcb3778bce3a29e5a4d713c09c0a79a6dea178b9698d",
+          "archive": "reports/v1.0.0/executed-source/903331d3c5643c122e63bcb3778bce3a29e5a4d713c09c0a79a6dea178b9698d/src/physics/jeans-axisymmetric.js"
+        }
+      ]
+    },
+    {
+      "id": "df-A-10k",
+      "status": "completed",
+      "lastTimeMyr": 1000,
+      "sha256": "cd040ff77d54092a14bd24c726ece01d19881fed382ae711cc009fbc64fc2b1a",
+      "sources": [
+        {
+          "path": "src/physics/constants.js",
+          "sha256": "4b1c2a1d96453b95c8e57a45f46443083e77d54e1714aadc7d060de0d9aa22ca",
+          "archive": "reports/v1.0.0/executed-source/4b1c2a1d96453b95c8e57a45f46443083e77d54e1714aadc7d060de0d9aa22ca/src/physics/constants.js"
+        },
+        {
+          "path": "src/physics/models.js",
+          "sha256": "2215cd8332d06b4d18b3ef707c5000992b5db730d104c654ef7ddba7ac9102f3",
+          "archive": "reports/v1.0.0/executed-source/2215cd8332d06b4d18b3ef707c5000992b5db730d104c654ef7ddba7ac9102f3/src/physics/models.js"
+        },
+        {
+          "path": "src/physics/initial.js",
+          "sha256": "5a6bbdb6cfe562776c6a408271c26d8a29183e92d2021914e2eb0f34230ef66a",
+          "archive": "reports/v1.0.0/executed-source/5a6bbdb6cfe562776c6a408271c26d8a29183e92d2021914e2eb0f34230ef66a/src/physics/initial.js"
+        },
+        {
+          "path": "src/physics/initial-legacy.js",
+          "sha256": "93ca8666ff188863b947dc8535ca23244d67c20ab2a177cb12e494cf566eeefa",
+          "archive": "reports/v1.0.0/executed-source/93ca8666ff188863b947dc8535ca23244d67c20ab2a177cb12e494cf566eeefa/src/physics/initial-legacy.js"
+        },
+        {
+          "path": "src/physics/initial-allocated.js",
+          "sha256": "f62b945334f7cfd062aa5eda6a3964aca59eb977985d7ffe73a8c8cce04ed378",
+          "archive": "reports/v1.0.0/executed-source/f62b945334f7cfd062aa5eda6a3964aca59eb977985d7ffe73a8c8cce04ed378/src/physics/initial-allocated.js"
+        },
+        {
+          "path": "src/physics/halo-experiments.js",
+          "sha256": "a5a0169b5d8b38c56db0229a83a5b7ba4a940968dd7572bf26f52f37dc9fbcdb",
+          "archive": "reports/v1.0.0/executed-source/a5a0169b5d8b38c56db0229a83a5b7ba4a940968dd7572bf26f52f37dc9fbcdb/src/physics/halo-experiments.js"
+        },
+        {
+          "path": "src/physics/forces.js",
+          "sha256": "9532d4286c6481d49995ece96e48bd595145c2e2c8a22897520cafa45f862444",
+          "archive": "reports/v1.0.0/executed-source/9532d4286c6481d49995ece96e48bd595145c2e2c8a22897520cafa45f862444/src/physics/forces.js"
+        },
+        {
+          "path": "src/physics/integrator.js",
+          "sha256": "433880162ae754dd3bada1fad9e2538239b42d3d43f20f96f7e1465135a1ce6f",
+          "archive": "reports/v1.0.0/executed-source/433880162ae754dd3bada1fad9e2538239b42d3d43f20f96f7e1465135a1ce6f/src/physics/integrator.js"
+        },
+        {
+          "path": "src/physics/snapshot-model.js",
+          "sha256": "681327ebbc656b4fd702bd02b0bd42c5c58f7b5e06643de121669350684d53ba",
+          "archive": "reports/v1.0.0/executed-source/681327ebbc656b4fd702bd02b0bd42c5c58f7b5e06643de121669350684d53ba/src/physics/snapshot-model.js"
+        },
+        {
+          "path": "src/physics/mass-audit.js",
+          "sha256": "99f3722ec0027a3c51b3183a440ec02a52b773aa9e9b53482631777b0a9353f2",
+          "archive": "reports/v1.0.0/executed-source/99f3722ec0027a3c51b3183a440ec02a52b773aa9e9b53482631777b0a9353f2/src/physics/mass-audit.js"
+        },
+        {
+          "path": "src/physics/equilibrium-analysis.js",
+          "sha256": "35c75d97e4c172fba424bc58002f43cd98812824be8b601e79a4f983fe8eca1d",
+          "archive": "reports/v1.0.0/executed-source/35c75d97e4c172fba424bc58002f43cd98812824be8b601e79a4f983fe8eca1d/src/physics/equilibrium-analysis.js"
+        },
+        {
+          "path": "src/physics/structure-diagnostics.js",
+          "sha256": "e94593e700e77bf95392b949bf2891652b87b224000ec1ab584e586dbb871440",
+          "archive": "reports/v1.0.0/executed-source/e94593e700e77bf95392b949bf2891652b87b224000ec1ab584e586dbb871440/src/physics/structure-diagnostics.js"
+        },
+        {
+          "path": "src/physics/disk-analysis.js",
+          "sha256": "ecd700024436712b55152cb4bf64463ea70ee5bb9e93a6cc7750a8a1057219f7",
+          "archive": "reports/v1.0.0/executed-source/ecd700024436712b55152cb4bf64463ea70ee5bb9e93a6cc7750a8a1057219f7/src/physics/disk-analysis.js"
+        },
+        {
+          "path": "src/physics/external-grid.js",
+          "sha256": "91601c0cf72fec057e97bc00114785b88d0abac10cf389ea13adf5b57257c9e4",
+          "archive": "reports/v1.0.0/executed-source/91601c0cf72fec057e97bc00114785b88d0abac10cf389ea13adf5b57257c9e4/src/physics/external-grid.js"
+        },
+        {
+          "path": "src/compute/gpu.js",
+          "sha256": "7ee6706d635a797f8a8546f96968466c8d8f9dbb67d3bd2aadd6f46ea00a7967",
+          "archive": "reports/v1.0.0/executed-source/7ee6706d635a797f8a8546f96968466c8d8f9dbb67d3bd2aadd6f46ea00a7967/src/compute/gpu.js"
+        },
+        {
+          "path": "src/compute/gpu-external-grid.js",
+          "sha256": "82c7267f53c8a2f4a8595ea82ba13f280d9b3692ed103358ca5e2169febbd9b4",
+          "archive": "reports/v1.0.0/executed-source/82c7267f53c8a2f4a8595ea82ba13f280d9b3692ed103358ca5e2169febbd9b4/src/compute/gpu-external-grid.js"
+        },
+        {
+          "path": "tests/browser-equilibrium-v1.html",
+          "sha256": "70698b309abb236fd04b182dbcf2d3163703a66a9c48febb93fa972645924a64",
+          "archive": "reports/v1.0.0/executed-source/70698b309abb236fd04b182dbcf2d3163703a66a9c48febb93fa972645924a64/tests/browser-equilibrium-v1.html"
+        },
+        {
+          "path": "scripts/equilibrium/protocol.json",
+          "sha256": "5df5fac1499212656ad8fcbbb502976676fbce70bff33d47755dae72d2607078",
+          "archive": "reports/v1.0.0/executed-source/5df5fac1499212656ad8fcbbb502976676fbce70bff33d47755dae72d2607078/scripts/equilibrium/protocol.json"
+        },
+        {
+          "path": "src/physics/laboratory.js",
+          "sha256": "3f36f219449d053c7756147c3b312464123c8b4242e65f428a8c1a5cbf528f2d",
+          "archive": "reports/v1.0.0/executed-source/3f36f219449d053c7756147c3b312464123c8b4242e65f428a8c1a5cbf528f2d/src/physics/laboratory.js"
+        },
+        {
+          "path": "src/physics/iterative-initial.js",
+          "sha256": "bf6216a55950684589f697a36bd122584ae5817a6afb00eab0705746f98cc164",
+          "archive": "reports/v1.0.0/executed-source/bf6216a55950684589f697a36bd122584ae5817a6afb00eab0705746f98cc164/src/physics/iterative-initial.js"
+        },
+        {
+          "path": "src/physics/jeans-axisymmetric.js",
+          "sha256": "903331d3c5643c122e63bcb3778bce3a29e5a4d713c09c0a79a6dea178b9698d",
+          "archive": "reports/v1.0.0/executed-source/903331d3c5643c122e63bcb3778bce3a29e5a4d713c09c0a79a6dea178b9698d/src/physics/jeans-axisymmetric.js"
+        }
+      ]
+    },
+    {
+      "id": "df-A-50k",
+      "status": "completed",
+      "lastTimeMyr": 200,
+      "sha256": "f3d8104e6e3a9d1ae1f059059dcca0fd9bea378dc6b18d0d6cb410fdd526a033",
+      "sources": [
+        {
+          "path": "src/physics/constants.js",
+          "sha256": "4b1c2a1d96453b95c8e57a45f46443083e77d54e1714aadc7d060de0d9aa22ca",
+          "archive": "reports/v1.0.0/executed-source/4b1c2a1d96453b95c8e57a45f46443083e77d54e1714aadc7d060de0d9aa22ca/src/physics/constants.js"
+        },
+        {
+          "path": "src/physics/models.js",
+          "sha256": "2215cd8332d06b4d18b3ef707c5000992b5db730d104c654ef7ddba7ac9102f3",
+          "archive": "reports/v1.0.0/executed-source/2215cd8332d06b4d18b3ef707c5000992b5db730d104c654ef7ddba7ac9102f3/src/physics/models.js"
+        },
+        {
+          "path": "src/physics/initial.js",
+          "sha256": "5a6bbdb6cfe562776c6a408271c26d8a29183e92d2021914e2eb0f34230ef66a",
+          "archive": "reports/v1.0.0/executed-source/5a6bbdb6cfe562776c6a408271c26d8a29183e92d2021914e2eb0f34230ef66a/src/physics/initial.js"
+        },
+        {
+          "path": "src/physics/initial-legacy.js",
+          "sha256": "93ca8666ff188863b947dc8535ca23244d67c20ab2a177cb12e494cf566eeefa",
+          "archive": "reports/v1.0.0/executed-source/93ca8666ff188863b947dc8535ca23244d67c20ab2a177cb12e494cf566eeefa/src/physics/initial-legacy.js"
+        },
+        {
+          "path": "src/physics/initial-allocated.js",
+          "sha256": "f62b945334f7cfd062aa5eda6a3964aca59eb977985d7ffe73a8c8cce04ed378",
+          "archive": "reports/v1.0.0/executed-source/f62b945334f7cfd062aa5eda6a3964aca59eb977985d7ffe73a8c8cce04ed378/src/physics/initial-allocated.js"
+        },
+        {
+          "path": "src/physics/halo-experiments.js",
+          "sha256": "a5a0169b5d8b38c56db0229a83a5b7ba4a940968dd7572bf26f52f37dc9fbcdb",
+          "archive": "reports/v1.0.0/executed-source/a5a0169b5d8b38c56db0229a83a5b7ba4a940968dd7572bf26f52f37dc9fbcdb/src/physics/halo-experiments.js"
+        },
+        {
+          "path": "src/physics/forces.js",
+          "sha256": "9532d4286c6481d49995ece96e48bd595145c2e2c8a22897520cafa45f862444",
+          "archive": "reports/v1.0.0/executed-source/9532d4286c6481d49995ece96e48bd595145c2e2c8a22897520cafa45f862444/src/physics/forces.js"
+        },
+        {
+          "path": "src/physics/integrator.js",
+          "sha256": "433880162ae754dd3bada1fad9e2538239b42d3d43f20f96f7e1465135a1ce6f",
+          "archive": "reports/v1.0.0/executed-source/433880162ae754dd3bada1fad9e2538239b42d3d43f20f96f7e1465135a1ce6f/src/physics/integrator.js"
+        },
+        {
+          "path": "src/physics/snapshot-model.js",
+          "sha256": "681327ebbc656b4fd702bd02b0bd42c5c58f7b5e06643de121669350684d53ba",
+          "archive": "reports/v1.0.0/executed-source/681327ebbc656b4fd702bd02b0bd42c5c58f7b5e06643de121669350684d53ba/src/physics/snapshot-model.js"
+        },
+        {
+          "path": "src/physics/mass-audit.js",
+          "sha256": "99f3722ec0027a3c51b3183a440ec02a52b773aa9e9b53482631777b0a9353f2",
+          "archive": "reports/v1.0.0/executed-source/99f3722ec0027a3c51b3183a440ec02a52b773aa9e9b53482631777b0a9353f2/src/physics/mass-audit.js"
+        },
+        {
+          "path": "src/physics/equilibrium-analysis.js",
+          "sha256": "35c75d97e4c172fba424bc58002f43cd98812824be8b601e79a4f983fe8eca1d",
+          "archive": "reports/v1.0.0/executed-source/35c75d97e4c172fba424bc58002f43cd98812824be8b601e79a4f983fe8eca1d/src/physics/equilibrium-analysis.js"
+        },
+        {
+          "path": "src/physics/structure-diagnostics.js",
+          "sha256": "e94593e700e77bf95392b949bf2891652b87b224000ec1ab584e586dbb871440",
+          "archive": "reports/v1.0.0/executed-source/e94593e700e77bf95392b949bf2891652b87b224000ec1ab584e586dbb871440/src/physics/structure-diagnostics.js"
+        },
+        {
+          "path": "src/physics/disk-analysis.js",
+          "sha256": "ecd700024436712b55152cb4bf64463ea70ee5bb9e93a6cc7750a8a1057219f7",
+          "archive": "reports/v1.0.0/executed-source/ecd700024436712b55152cb4bf64463ea70ee5bb9e93a6cc7750a8a1057219f7/src/physics/disk-analysis.js"
+        },
+        {
+          "path": "src/physics/external-grid.js",
+          "sha256": "91601c0cf72fec057e97bc00114785b88d0abac10cf389ea13adf5b57257c9e4",
+          "archive": "reports/v1.0.0/executed-source/91601c0cf72fec057e97bc00114785b88d0abac10cf389ea13adf5b57257c9e4/src/physics/external-grid.js"
+        },
+        {
+          "path": "src/compute/gpu.js",
+          "sha256": "7ee6706d635a797f8a8546f96968466c8d8f9dbb67d3bd2aadd6f46ea00a7967",
+          "archive": "reports/v1.0.0/executed-source/7ee6706d635a797f8a8546f96968466c8d8f9dbb67d3bd2aadd6f46ea00a7967/src/compute/gpu.js"
+        },
+        {
+          "path": "src/compute/gpu-external-grid.js",
+          "sha256": "82c7267f53c8a2f4a8595ea82ba13f280d9b3692ed103358ca5e2169febbd9b4",
+          "archive": "reports/v1.0.0/executed-source/82c7267f53c8a2f4a8595ea82ba13f280d9b3692ed103358ca5e2169febbd9b4/src/compute/gpu-external-grid.js"
+        },
+        {
+          "path": "tests/browser-equilibrium-v1.html",
+          "sha256": "70698b309abb236fd04b182dbcf2d3163703a66a9c48febb93fa972645924a64",
+          "archive": "reports/v1.0.0/executed-source/70698b309abb236fd04b182dbcf2d3163703a66a9c48febb93fa972645924a64/tests/browser-equilibrium-v1.html"
+        },
+        {
+          "path": "scripts/equilibrium/protocol.json",
+          "sha256": "5df5fac1499212656ad8fcbbb502976676fbce70bff33d47755dae72d2607078",
+          "archive": "reports/v1.0.0/executed-source/5df5fac1499212656ad8fcbbb502976676fbce70bff33d47755dae72d2607078/scripts/equilibrium/protocol.json"
+        },
+        {
+          "path": "src/physics/laboratory.js",
+          "sha256": "3f36f219449d053c7756147c3b312464123c8b4242e65f428a8c1a5cbf528f2d",
+          "archive": "reports/v1.0.0/executed-source/3f36f219449d053c7756147c3b312464123c8b4242e65f428a8c1a5cbf528f2d/src/physics/laboratory.js"
+        },
+        {
+          "path": "src/physics/iterative-initial.js",
+          "sha256": "bf6216a55950684589f697a36bd122584ae5817a6afb00eab0705746f98cc164",
+          "archive": "reports/v1.0.0/executed-source/bf6216a55950684589f697a36bd122584ae5817a6afb00eab0705746f98cc164/src/physics/iterative-initial.js"
+        },
+        {
+          "path": "src/physics/jeans-axisymmetric.js",
+          "sha256": "903331d3c5643c122e63bcb3778bce3a29e5a4d713c09c0a79a6dea178b9698d",
+          "archive": "reports/v1.0.0/executed-source/903331d3c5643c122e63bcb3778bce3a29e5a4d713c09c0a79a6dea178b9698d/src/physics/jeans-axisymmetric.js"
+        }
+      ]
+    },
+    {
+      "id": "df-A-h27",
+      "status": "completed",
+      "lastTimeMyr": 1000,
+      "sha256": "2c33a7c37eeb0dd021cd707e20206986b5a60d0ce90136c94d37ad1e08fa9b18",
+      "sources": [
+        {
+          "path": "src/physics/constants.js",
+          "sha256": "4b1c2a1d96453b95c8e57a45f46443083e77d54e1714aadc7d060de0d9aa22ca",
+          "archive": "reports/v1.0.0/executed-source/4b1c2a1d96453b95c8e57a45f46443083e77d54e1714aadc7d060de0d9aa22ca/src/physics/constants.js"
+        },
+        {
+          "path": "src/physics/models.js",
+          "sha256": "2215cd8332d06b4d18b3ef707c5000992b5db730d104c654ef7ddba7ac9102f3",
+          "archive": "reports/v1.0.0/executed-source/2215cd8332d06b4d18b3ef707c5000992b5db730d104c654ef7ddba7ac9102f3/src/physics/models.js"
+        },
+        {
+          "path": "src/physics/initial.js",
+          "sha256": "5a6bbdb6cfe562776c6a408271c26d8a29183e92d2021914e2eb0f34230ef66a",
+          "archive": "reports/v1.0.0/executed-source/5a6bbdb6cfe562776c6a408271c26d8a29183e92d2021914e2eb0f34230ef66a/src/physics/initial.js"
+        },
+        {
+          "path": "src/physics/initial-legacy.js",
+          "sha256": "93ca8666ff188863b947dc8535ca23244d67c20ab2a177cb12e494cf566eeefa",
+          "archive": "reports/v1.0.0/executed-source/93ca8666ff188863b947dc8535ca23244d67c20ab2a177cb12e494cf566eeefa/src/physics/initial-legacy.js"
+        },
+        {
+          "path": "src/physics/initial-allocated.js",
+          "sha256": "f62b945334f7cfd062aa5eda6a3964aca59eb977985d7ffe73a8c8cce04ed378",
+          "archive": "reports/v1.0.0/executed-source/f62b945334f7cfd062aa5eda6a3964aca59eb977985d7ffe73a8c8cce04ed378/src/physics/initial-allocated.js"
+        },
+        {
+          "path": "src/physics/halo-experiments.js",
+          "sha256": "a5a0169b5d8b38c56db0229a83a5b7ba4a940968dd7572bf26f52f37dc9fbcdb",
+          "archive": "reports/v1.0.0/executed-source/a5a0169b5d8b38c56db0229a83a5b7ba4a940968dd7572bf26f52f37dc9fbcdb/src/physics/halo-experiments.js"
+        },
+        {
+          "path": "src/physics/forces.js",
+          "sha256": "9532d4286c6481d49995ece96e48bd595145c2e2c8a22897520cafa45f862444",
+          "archive": "reports/v1.0.0/executed-source/9532d4286c6481d49995ece96e48bd595145c2e2c8a22897520cafa45f862444/src/physics/forces.js"
+        },
+        {
+          "path": "src/physics/integrator.js",
+          "sha256": "433880162ae754dd3bada1fad9e2538239b42d3d43f20f96f7e1465135a1ce6f",
+          "archive": "reports/v1.0.0/executed-source/433880162ae754dd3bada1fad9e2538239b42d3d43f20f96f7e1465135a1ce6f/src/physics/integrator.js"
+        },
+        {
+          "path": "src/physics/snapshot-model.js",
+          "sha256": "681327ebbc656b4fd702bd02b0bd42c5c58f7b5e06643de121669350684d53ba",
+          "archive": "reports/v1.0.0/executed-source/681327ebbc656b4fd702bd02b0bd42c5c58f7b5e06643de121669350684d53ba/src/physics/snapshot-model.js"
+        },
+        {
+          "path": "src/physics/mass-audit.js",
+          "sha256": "99f3722ec0027a3c51b3183a440ec02a52b773aa9e9b53482631777b0a9353f2",
+          "archive": "reports/v1.0.0/executed-source/99f3722ec0027a3c51b3183a440ec02a52b773aa9e9b53482631777b0a9353f2/src/physics/mass-audit.js"
+        },
+        {
+          "path": "src/physics/equilibrium-analysis.js",
+          "sha256": "35c75d97e4c172fba424bc58002f43cd98812824be8b601e79a4f983fe8eca1d",
+          "archive": "reports/v1.0.0/executed-source/35c75d97e4c172fba424bc58002f43cd98812824be8b601e79a4f983fe8eca1d/src/physics/equilibrium-analysis.js"
+        },
+        {
+          "path": "src/physics/structure-diagnostics.js",
+          "sha256": "e94593e700e77bf95392b949bf2891652b87b224000ec1ab584e586dbb871440",
+          "archive": "reports/v1.0.0/executed-source/e94593e700e77bf95392b949bf2891652b87b224000ec1ab584e586dbb871440/src/physics/structure-diagnostics.js"
+        },
+        {
+          "path": "src/physics/disk-analysis.js",
+          "sha256": "ecd700024436712b55152cb4bf64463ea70ee5bb9e93a6cc7750a8a1057219f7",
+          "archive": "reports/v1.0.0/executed-source/ecd700024436712b55152cb4bf64463ea70ee5bb9e93a6cc7750a8a1057219f7/src/physics/disk-analysis.js"
+        },
+        {
+          "path": "src/physics/external-grid.js",
+          "sha256": "91601c0cf72fec057e97bc00114785b88d0abac10cf389ea13adf5b57257c9e4",
+          "archive": "reports/v1.0.0/executed-source/91601c0cf72fec057e97bc00114785b88d0abac10cf389ea13adf5b57257c9e4/src/physics/external-grid.js"
+        },
+        {
+          "path": "src/compute/gpu.js",
+          "sha256": "7ee6706d635a797f8a8546f96968466c8d8f9dbb67d3bd2aadd6f46ea00a7967",
+          "archive": "reports/v1.0.0/executed-source/7ee6706d635a797f8a8546f96968466c8d8f9dbb67d3bd2aadd6f46ea00a7967/src/compute/gpu.js"
+        },
+        {
+          "path": "src/compute/gpu-external-grid.js",
+          "sha256": "82c7267f53c8a2f4a8595ea82ba13f280d9b3692ed103358ca5e2169febbd9b4",
+          "archive": "reports/v1.0.0/executed-source/82c7267f53c8a2f4a8595ea82ba13f280d9b3692ed103358ca5e2169febbd9b4/src/compute/gpu-external-grid.js"
+        },
+        {
+          "path": "tests/browser-equilibrium-v1.html",
+          "sha256": "70698b309abb236fd04b182dbcf2d3163703a66a9c48febb93fa972645924a64",
+          "archive": "reports/v1.0.0/executed-source/70698b309abb236fd04b182dbcf2d3163703a66a9c48febb93fa972645924a64/tests/browser-equilibrium-v1.html"
+        },
+        {
+          "path": "scripts/equilibrium/protocol.json",
+          "sha256": "5df5fac1499212656ad8fcbbb502976676fbce70bff33d47755dae72d2607078",
+          "archive": "reports/v1.0.0/executed-source/5df5fac1499212656ad8fcbbb502976676fbce70bff33d47755dae72d2607078/scripts/equilibrium/protocol.json"
+        },
+        {
+          "path": "src/physics/laboratory.js",
+          "sha256": "3f36f219449d053c7756147c3b312464123c8b4242e65f428a8c1a5cbf528f2d",
+          "archive": "reports/v1.0.0/executed-source/3f36f219449d053c7756147c3b312464123c8b4242e65f428a8c1a5cbf528f2d/src/physics/laboratory.js"
+        },
+        {
+          "path": "src/physics/iterative-initial.js",
+          "sha256": "bf6216a55950684589f697a36bd122584ae5817a6afb00eab0705746f98cc164",
+          "archive": "reports/v1.0.0/executed-source/bf6216a55950684589f697a36bd122584ae5817a6afb00eab0705746f98cc164/src/physics/iterative-initial.js"
+        },
+        {
+          "path": "src/physics/jeans-axisymmetric.js",
+          "sha256": "903331d3c5643c122e63bcb3778bce3a29e5a4d713c09c0a79a6dea178b9698d",
+          "archive": "reports/v1.0.0/executed-source/903331d3c5643c122e63bcb3778bce3a29e5a4d713c09c0a79a6dea178b9698d/src/physics/jeans-axisymmetric.js"
+        }
+      ]
+    },
+    {
+      "id": "df-A-s27",
+      "status": "completed",
+      "lastTimeMyr": 200,
+      "sha256": "b388f0f1ce371a5fbff3b69703c399a6ac7d14aa36b01cce50c64bc1cce81928",
+      "sources": [
+        {
+          "path": "src/physics/constants.js",
+          "sha256": "4b1c2a1d96453b95c8e57a45f46443083e77d54e1714aadc7d060de0d9aa22ca",
+          "archive": "reports/v1.0.0/executed-source/4b1c2a1d96453b95c8e57a45f46443083e77d54e1714aadc7d060de0d9aa22ca/src/physics/constants.js"
+        },
+        {
+          "path": "src/physics/models.js",
+          "sha256": "2215cd8332d06b4d18b3ef707c5000992b5db730d104c654ef7ddba7ac9102f3",
+          "archive": "reports/v1.0.0/executed-source/2215cd8332d06b4d18b3ef707c5000992b5db730d104c654ef7ddba7ac9102f3/src/physics/models.js"
+        },
+        {
+          "path": "src/physics/initial.js",
+          "sha256": "5a6bbdb6cfe562776c6a408271c26d8a29183e92d2021914e2eb0f34230ef66a",
+          "archive": "reports/v1.0.0/executed-source/5a6bbdb6cfe562776c6a408271c26d8a29183e92d2021914e2eb0f34230ef66a/src/physics/initial.js"
+        },
+        {
+          "path": "src/physics/initial-legacy.js",
+          "sha256": "93ca8666ff188863b947dc8535ca23244d67c20ab2a177cb12e494cf566eeefa",
+          "archive": "reports/v1.0.0/executed-source/93ca8666ff188863b947dc8535ca23244d67c20ab2a177cb12e494cf566eeefa/src/physics/initial-legacy.js"
+        },
+        {
+          "path": "src/physics/initial-allocated.js",
+          "sha256": "f62b945334f7cfd062aa5eda6a3964aca59eb977985d7ffe73a8c8cce04ed378",
+          "archive": "reports/v1.0.0/executed-source/f62b945334f7cfd062aa5eda6a3964aca59eb977985d7ffe73a8c8cce04ed378/src/physics/initial-allocated.js"
+        },
+        {
+          "path": "src/physics/halo-experiments.js",
+          "sha256": "a5a0169b5d8b38c56db0229a83a5b7ba4a940968dd7572bf26f52f37dc9fbcdb",
+          "archive": "reports/v1.0.0/executed-source/a5a0169b5d8b38c56db0229a83a5b7ba4a940968dd7572bf26f52f37dc9fbcdb/src/physics/halo-experiments.js"
+        },
+        {
+          "path": "src/physics/forces.js",
+          "sha256": "9532d4286c6481d49995ece96e48bd595145c2e2c8a22897520cafa45f862444",
+          "archive": "reports/v1.0.0/executed-source/9532d4286c6481d49995ece96e48bd595145c2e2c8a22897520cafa45f862444/src/physics/forces.js"
+        },
+        {
+          "path": "src/physics/integrator.js",
+          "sha256": "433880162ae754dd3bada1fad9e2538239b42d3d43f20f96f7e1465135a1ce6f",
+          "archive": "reports/v1.0.0/executed-source/433880162ae754dd3bada1fad9e2538239b42d3d43f20f96f7e1465135a1ce6f/src/physics/integrator.js"
+        },
+        {
+          "path": "src/physics/snapshot-model.js",
+          "sha256": "681327ebbc656b4fd702bd02b0bd42c5c58f7b5e06643de121669350684d53ba",
+          "archive": "reports/v1.0.0/executed-source/681327ebbc656b4fd702bd02b0bd42c5c58f7b5e06643de121669350684d53ba/src/physics/snapshot-model.js"
+        },
+        {
+          "path": "src/physics/mass-audit.js",
+          "sha256": "99f3722ec0027a3c51b3183a440ec02a52b773aa9e9b53482631777b0a9353f2",
+          "archive": "reports/v1.0.0/executed-source/99f3722ec0027a3c51b3183a440ec02a52b773aa9e9b53482631777b0a9353f2/src/physics/mass-audit.js"
+        },
+        {
+          "path": "src/physics/equilibrium-analysis.js",
+          "sha256": "35c75d97e4c172fba424bc58002f43cd98812824be8b601e79a4f983fe8eca1d",
+          "archive": "reports/v1.0.0/executed-source/35c75d97e4c172fba424bc58002f43cd98812824be8b601e79a4f983fe8eca1d/src/physics/equilibrium-analysis.js"
+        },
+        {
+          "path": "src/physics/structure-diagnostics.js",
+          "sha256": "e94593e700e77bf95392b949bf2891652b87b224000ec1ab584e586dbb871440",
+          "archive": "reports/v1.0.0/executed-source/e94593e700e77bf95392b949bf2891652b87b224000ec1ab584e586dbb871440/src/physics/structure-diagnostics.js"
+        },
+        {
+          "path": "src/physics/disk-analysis.js",
+          "sha256": "ecd700024436712b55152cb4bf64463ea70ee5bb9e93a6cc7750a8a1057219f7",
+          "archive": "reports/v1.0.0/executed-source/ecd700024436712b55152cb4bf64463ea70ee5bb9e93a6cc7750a8a1057219f7/src/physics/disk-analysis.js"
+        },
+        {
+          "path": "src/physics/external-grid.js",
+          "sha256": "91601c0cf72fec057e97bc00114785b88d0abac10cf389ea13adf5b57257c9e4",
+          "archive": "reports/v1.0.0/executed-source/91601c0cf72fec057e97bc00114785b88d0abac10cf389ea13adf5b57257c9e4/src/physics/external-grid.js"
+        },
+        {
+          "path": "src/compute/gpu.js",
+          "sha256": "7ee6706d635a797f8a8546f96968466c8d8f9dbb67d3bd2aadd6f46ea00a7967",
+          "archive": "reports/v1.0.0/executed-source/7ee6706d635a797f8a8546f96968466c8d8f9dbb67d3bd2aadd6f46ea00a7967/src/compute/gpu.js"
+        },
+        {
+          "path": "src/compute/gpu-external-grid.js",
+          "sha256": "82c7267f53c8a2f4a8595ea82ba13f280d9b3692ed103358ca5e2169febbd9b4",
+          "archive": "reports/v1.0.0/executed-source/82c7267f53c8a2f4a8595ea82ba13f280d9b3692ed103358ca5e2169febbd9b4/src/compute/gpu-external-grid.js"
+        },
+        {
+          "path": "tests/browser-equilibrium-v1.html",
+          "sha256": "70698b309abb236fd04b182dbcf2d3163703a66a9c48febb93fa972645924a64",
+          "archive": "reports/v1.0.0/executed-source/70698b309abb236fd04b182dbcf2d3163703a66a9c48febb93fa972645924a64/tests/browser-equilibrium-v1.html"
+        },
+        {
+          "path": "scripts/equilibrium/protocol.json",
+          "sha256": "5df5fac1499212656ad8fcbbb502976676fbce70bff33d47755dae72d2607078",
+          "archive": "reports/v1.0.0/executed-source/5df5fac1499212656ad8fcbbb502976676fbce70bff33d47755dae72d2607078/scripts/equilibrium/protocol.json"
+        },
+        {
+          "path": "src/physics/laboratory.js",
+          "sha256": "3f36f219449d053c7756147c3b312464123c8b4242e65f428a8c1a5cbf528f2d",
+          "archive": "reports/v1.0.0/executed-source/3f36f219449d053c7756147c3b312464123c8b4242e65f428a8c1a5cbf528f2d/src/physics/laboratory.js"
+        },
+        {
+          "path": "src/physics/iterative-initial.js",
+          "sha256": "bf6216a55950684589f697a36bd122584ae5817a6afb00eab0705746f98cc164",
+          "archive": "reports/v1.0.0/executed-source/bf6216a55950684589f697a36bd122584ae5817a6afb00eab0705746f98cc164/src/physics/iterative-initial.js"
+        },
+        {
+          "path": "src/physics/jeans-axisymmetric.js",
+          "sha256": "903331d3c5643c122e63bcb3778bce3a29e5a4d713c09c0a79a6dea178b9698d",
+          "archive": "reports/v1.0.0/executed-source/903331d3c5643c122e63bcb3778bce3a29e5a4d713c09c0a79a6dea178b9698d/src/physics/jeans-axisymmetric.js"
+        }
+      ]
+    },
+    {
+      "id": "df-B-14k",
+      "status": "completed",
+      "lastTimeMyr": 1000,
+      "sha256": "cbdb8ba0305cfb5379b4b01d6834e6eae03da27c2d5c38362b6df2a2421c6c2c",
+      "sources": [
+        {
+          "path": "src/physics/constants.js",
+          "sha256": "4b1c2a1d96453b95c8e57a45f46443083e77d54e1714aadc7d060de0d9aa22ca",
+          "archive": "reports/v1.0.0/executed-source/4b1c2a1d96453b95c8e57a45f46443083e77d54e1714aadc7d060de0d9aa22ca/src/physics/constants.js"
+        },
+        {
+          "path": "src/physics/models.js",
+          "sha256": "2215cd8332d06b4d18b3ef707c5000992b5db730d104c654ef7ddba7ac9102f3",
+          "archive": "reports/v1.0.0/executed-source/2215cd8332d06b4d18b3ef707c5000992b5db730d104c654ef7ddba7ac9102f3/src/physics/models.js"
+        },
+        {
+          "path": "src/physics/initial.js",
+          "sha256": "5a6bbdb6cfe562776c6a408271c26d8a29183e92d2021914e2eb0f34230ef66a",
+          "archive": "reports/v1.0.0/executed-source/5a6bbdb6cfe562776c6a408271c26d8a29183e92d2021914e2eb0f34230ef66a/src/physics/initial.js"
+        },
+        {
+          "path": "src/physics/initial-legacy.js",
+          "sha256": "93ca8666ff188863b947dc8535ca23244d67c20ab2a177cb12e494cf566eeefa",
+          "archive": "reports/v1.0.0/executed-source/93ca8666ff188863b947dc8535ca23244d67c20ab2a177cb12e494cf566eeefa/src/physics/initial-legacy.js"
+        },
+        {
+          "path": "src/physics/initial-allocated.js",
+          "sha256": "f62b945334f7cfd062aa5eda6a3964aca59eb977985d7ffe73a8c8cce04ed378",
+          "archive": "reports/v1.0.0/executed-source/f62b945334f7cfd062aa5eda6a3964aca59eb977985d7ffe73a8c8cce04ed378/src/physics/initial-allocated.js"
+        },
+        {
+          "path": "src/physics/halo-experiments.js",
+          "sha256": "a5a0169b5d8b38c56db0229a83a5b7ba4a940968dd7572bf26f52f37dc9fbcdb",
+          "archive": "reports/v1.0.0/executed-source/a5a0169b5d8b38c56db0229a83a5b7ba4a940968dd7572bf26f52f37dc9fbcdb/src/physics/halo-experiments.js"
+        },
+        {
+          "path": "src/physics/forces.js",
+          "sha256": "9532d4286c6481d49995ece96e48bd595145c2e2c8a22897520cafa45f862444",
+          "archive": "reports/v1.0.0/executed-source/9532d4286c6481d49995ece96e48bd595145c2e2c8a22897520cafa45f862444/src/physics/forces.js"
+        },
+        {
+          "path": "src/physics/integrator.js",
+          "sha256": "433880162ae754dd3bada1fad9e2538239b42d3d43f20f96f7e1465135a1ce6f",
+          "archive": "reports/v1.0.0/executed-source/433880162ae754dd3bada1fad9e2538239b42d3d43f20f96f7e1465135a1ce6f/src/physics/integrator.js"
+        },
+        {
+          "path": "src/physics/snapshot-model.js",
+          "sha256": "681327ebbc656b4fd702bd02b0bd42c5c58f7b5e06643de121669350684d53ba",
+          "archive": "reports/v1.0.0/executed-source/681327ebbc656b4fd702bd02b0bd42c5c58f7b5e06643de121669350684d53ba/src/physics/snapshot-model.js"
+        },
+        {
+          "path": "src/physics/mass-audit.js",
+          "sha256": "99f3722ec0027a3c51b3183a440ec02a52b773aa9e9b53482631777b0a9353f2",
+          "archive": "reports/v1.0.0/executed-source/99f3722ec0027a3c51b3183a440ec02a52b773aa9e9b53482631777b0a9353f2/src/physics/mass-audit.js"
+        },
+        {
+          "path": "src/physics/equilibrium-analysis.js",
+          "sha256": "35c75d97e4c172fba424bc58002f43cd98812824be8b601e79a4f983fe8eca1d",
+          "archive": "reports/v1.0.0/executed-source/35c75d97e4c172fba424bc58002f43cd98812824be8b601e79a4f983fe8eca1d/src/physics/equilibrium-analysis.js"
+        },
+        {
+          "path": "src/physics/structure-diagnostics.js",
+          "sha256": "e94593e700e77bf95392b949bf2891652b87b224000ec1ab584e586dbb871440",
+          "archive": "reports/v1.0.0/executed-source/e94593e700e77bf95392b949bf2891652b87b224000ec1ab584e586dbb871440/src/physics/structure-diagnostics.js"
+        },
+        {
+          "path": "src/physics/disk-analysis.js",
+          "sha256": "ecd700024436712b55152cb4bf64463ea70ee5bb9e93a6cc7750a8a1057219f7",
+          "archive": "reports/v1.0.0/executed-source/ecd700024436712b55152cb4bf64463ea70ee5bb9e93a6cc7750a8a1057219f7/src/physics/disk-analysis.js"
+        },
+        {
+          "path": "src/physics/external-grid.js",
+          "sha256": "91601c0cf72fec057e97bc00114785b88d0abac10cf389ea13adf5b57257c9e4",
+          "archive": "reports/v1.0.0/executed-source/91601c0cf72fec057e97bc00114785b88d0abac10cf389ea13adf5b57257c9e4/src/physics/external-grid.js"
+        },
+        {
+          "path": "src/compute/gpu.js",
+          "sha256": "7ee6706d635a797f8a8546f96968466c8d8f9dbb67d3bd2aadd6f46ea00a7967",
+          "archive": "reports/v1.0.0/executed-source/7ee6706d635a797f8a8546f96968466c8d8f9dbb67d3bd2aadd6f46ea00a7967/src/compute/gpu.js"
+        },
+        {
+          "path": "src/compute/gpu-external-grid.js",
+          "sha256": "82c7267f53c8a2f4a8595ea82ba13f280d9b3692ed103358ca5e2169febbd9b4",
+          "archive": "reports/v1.0.0/executed-source/82c7267f53c8a2f4a8595ea82ba13f280d9b3692ed103358ca5e2169febbd9b4/src/compute/gpu-external-grid.js"
+        },
+        {
+          "path": "tests/browser-equilibrium-v1.html",
+          "sha256": "70698b309abb236fd04b182dbcf2d3163703a66a9c48febb93fa972645924a64",
+          "archive": "reports/v1.0.0/executed-source/70698b309abb236fd04b182dbcf2d3163703a66a9c48febb93fa972645924a64/tests/browser-equilibrium-v1.html"
+        },
+        {
+          "path": "scripts/equilibrium/protocol.json",
+          "sha256": "5df5fac1499212656ad8fcbbb502976676fbce70bff33d47755dae72d2607078",
+          "archive": "reports/v1.0.0/executed-source/5df5fac1499212656ad8fcbbb502976676fbce70bff33d47755dae72d2607078/scripts/equilibrium/protocol.json"
+        },
+        {
+          "path": "src/physics/laboratory.js",
+          "sha256": "3f36f219449d053c7756147c3b312464123c8b4242e65f428a8c1a5cbf528f2d",
+          "archive": "reports/v1.0.0/executed-source/3f36f219449d053c7756147c3b312464123c8b4242e65f428a8c1a5cbf528f2d/src/physics/laboratory.js"
+        },
+        {
+          "path": "src/physics/iterative-initial.js",
+          "sha256": "bf6216a55950684589f697a36bd122584ae5817a6afb00eab0705746f98cc164",
+          "archive": "reports/v1.0.0/executed-source/bf6216a55950684589f697a36bd122584ae5817a6afb00eab0705746f98cc164/src/physics/iterative-initial.js"
+        },
+        {
+          "path": "src/physics/jeans-axisymmetric.js",
+          "sha256": "903331d3c5643c122e63bcb3778bce3a29e5a4d713c09c0a79a6dea178b9698d",
+          "archive": "reports/v1.0.0/executed-source/903331d3c5643c122e63bcb3778bce3a29e5a4d713c09c0a79a6dea178b9698d/src/physics/jeans-axisymmetric.js"
+        }
+      ]
+    },
+    {
+      "id": "df-B-26k",
+      "status": "completed",
+      "lastTimeMyr": 200,
+      "sha256": "912862b4b451d6a99f97a7df7a025b949a03ae7213b2ccc98fa70c8de040d159",
+      "sources": [
+        {
+          "path": "src/physics/constants.js",
+          "sha256": "4b1c2a1d96453b95c8e57a45f46443083e77d54e1714aadc7d060de0d9aa22ca",
+          "archive": "reports/v1.0.0/executed-source/4b1c2a1d96453b95c8e57a45f46443083e77d54e1714aadc7d060de0d9aa22ca/src/physics/constants.js"
+        },
+        {
+          "path": "src/physics/models.js",
+          "sha256": "2215cd8332d06b4d18b3ef707c5000992b5db730d104c654ef7ddba7ac9102f3",
+          "archive": "reports/v1.0.0/executed-source/2215cd8332d06b4d18b3ef707c5000992b5db730d104c654ef7ddba7ac9102f3/src/physics/models.js"
+        },
+        {
+          "path": "src/physics/initial.js",
+          "sha256": "5a6bbdb6cfe562776c6a408271c26d8a29183e92d2021914e2eb0f34230ef66a",
+          "archive": "reports/v1.0.0/executed-source/5a6bbdb6cfe562776c6a408271c26d8a29183e92d2021914e2eb0f34230ef66a/src/physics/initial.js"
+        },
+        {
+          "path": "src/physics/initial-legacy.js",
+          "sha256": "93ca8666ff188863b947dc8535ca23244d67c20ab2a177cb12e494cf566eeefa",
+          "archive": "reports/v1.0.0/executed-source/93ca8666ff188863b947dc8535ca23244d67c20ab2a177cb12e494cf566eeefa/src/physics/initial-legacy.js"
+        },
+        {
+          "path": "src/physics/initial-allocated.js",
+          "sha256": "f62b945334f7cfd062aa5eda6a3964aca59eb977985d7ffe73a8c8cce04ed378",
+          "archive": "reports/v1.0.0/executed-source/f62b945334f7cfd062aa5eda6a3964aca59eb977985d7ffe73a8c8cce04ed378/src/physics/initial-allocated.js"
+        },
+        {
+          "path": "src/physics/halo-experiments.js",
+          "sha256": "a5a0169b5d8b38c56db0229a83a5b7ba4a940968dd7572bf26f52f37dc9fbcdb",
+          "archive": "reports/v1.0.0/executed-source/a5a0169b5d8b38c56db0229a83a5b7ba4a940968dd7572bf26f52f37dc9fbcdb/src/physics/halo-experiments.js"
+        },
+        {
+          "path": "src/physics/forces.js",
+          "sha256": "9532d4286c6481d49995ece96e48bd595145c2e2c8a22897520cafa45f862444",
+          "archive": "reports/v1.0.0/executed-source/9532d4286c6481d49995ece96e48bd595145c2e2c8a22897520cafa45f862444/src/physics/forces.js"
+        },
+        {
+          "path": "src/physics/integrator.js",
+          "sha256": "433880162ae754dd3bada1fad9e2538239b42d3d43f20f96f7e1465135a1ce6f",
+          "archive": "reports/v1.0.0/executed-source/433880162ae754dd3bada1fad9e2538239b42d3d43f20f96f7e1465135a1ce6f/src/physics/integrator.js"
+        },
+        {
+          "path": "src/physics/snapshot-model.js",
+          "sha256": "681327ebbc656b4fd702bd02b0bd42c5c58f7b5e06643de121669350684d53ba",
+          "archive": "reports/v1.0.0/executed-source/681327ebbc656b4fd702bd02b0bd42c5c58f7b5e06643de121669350684d53ba/src/physics/snapshot-model.js"
+        },
+        {
+          "path": "src/physics/mass-audit.js",
+          "sha256": "99f3722ec0027a3c51b3183a440ec02a52b773aa9e9b53482631777b0a9353f2",
+          "archive": "reports/v1.0.0/executed-source/99f3722ec0027a3c51b3183a440ec02a52b773aa9e9b53482631777b0a9353f2/src/physics/mass-audit.js"
+        },
+        {
+          "path": "src/physics/equilibrium-analysis.js",
+          "sha256": "35c75d97e4c172fba424bc58002f43cd98812824be8b601e79a4f983fe8eca1d",
+          "archive": "reports/v1.0.0/executed-source/35c75d97e4c172fba424bc58002f43cd98812824be8b601e79a4f983fe8eca1d/src/physics/equilibrium-analysis.js"
+        },
+        {
+          "path": "src/physics/structure-diagnostics.js",
+          "sha256": "e94593e700e77bf95392b949bf2891652b87b224000ec1ab584e586dbb871440",
+          "archive": "reports/v1.0.0/executed-source/e94593e700e77bf95392b949bf2891652b87b224000ec1ab584e586dbb871440/src/physics/structure-diagnostics.js"
+        },
+        {
+          "path": "src/physics/disk-analysis.js",
+          "sha256": "ecd700024436712b55152cb4bf64463ea70ee5bb9e93a6cc7750a8a1057219f7",
+          "archive": "reports/v1.0.0/executed-source/ecd700024436712b55152cb4bf64463ea70ee5bb9e93a6cc7750a8a1057219f7/src/physics/disk-analysis.js"
+        },
+        {
+          "path": "src/physics/external-grid.js",
+          "sha256": "91601c0cf72fec057e97bc00114785b88d0abac10cf389ea13adf5b57257c9e4",
+          "archive": "reports/v1.0.0/executed-source/91601c0cf72fec057e97bc00114785b88d0abac10cf389ea13adf5b57257c9e4/src/physics/external-grid.js"
+        },
+        {
+          "path": "src/compute/gpu.js",
+          "sha256": "7ee6706d635a797f8a8546f96968466c8d8f9dbb67d3bd2aadd6f46ea00a7967",
+          "archive": "reports/v1.0.0/executed-source/7ee6706d635a797f8a8546f96968466c8d8f9dbb67d3bd2aadd6f46ea00a7967/src/compute/gpu.js"
+        },
+        {
+          "path": "src/compute/gpu-external-grid.js",
+          "sha256": "82c7267f53c8a2f4a8595ea82ba13f280d9b3692ed103358ca5e2169febbd9b4",
+          "archive": "reports/v1.0.0/executed-source/82c7267f53c8a2f4a8595ea82ba13f280d9b3692ed103358ca5e2169febbd9b4/src/compute/gpu-external-grid.js"
+        },
+        {
+          "path": "tests/browser-equilibrium-v1.html",
+          "sha256": "70698b309abb236fd04b182dbcf2d3163703a66a9c48febb93fa972645924a64",
+          "archive": "reports/v1.0.0/executed-source/70698b309abb236fd04b182dbcf2d3163703a66a9c48febb93fa972645924a64/tests/browser-equilibrium-v1.html"
+        },
+        {
+          "path": "scripts/equilibrium/protocol.json",
+          "sha256": "5df5fac1499212656ad8fcbbb502976676fbce70bff33d47755dae72d2607078",
+          "archive": "reports/v1.0.0/executed-source/5df5fac1499212656ad8fcbbb502976676fbce70bff33d47755dae72d2607078/scripts/equilibrium/protocol.json"
+        },
+        {
+          "path": "src/physics/laboratory.js",
+          "sha256": "3f36f219449d053c7756147c3b312464123c8b4242e65f428a8c1a5cbf528f2d",
+          "archive": "reports/v1.0.0/executed-source/3f36f219449d053c7756147c3b312464123c8b4242e65f428a8c1a5cbf528f2d/src/physics/laboratory.js"
+        },
+        {
+          "path": "src/physics/iterative-initial.js",
+          "sha256": "bf6216a55950684589f697a36bd122584ae5817a6afb00eab0705746f98cc164",
+          "archive": "reports/v1.0.0/executed-source/bf6216a55950684589f697a36bd122584ae5817a6afb00eab0705746f98cc164/src/physics/iterative-initial.js"
+        },
+        {
+          "path": "src/physics/jeans-axisymmetric.js",
+          "sha256": "903331d3c5643c122e63bcb3778bce3a29e5a4d713c09c0a79a6dea178b9698d",
+          "archive": "reports/v1.0.0/executed-source/903331d3c5643c122e63bcb3778bce3a29e5a4d713c09c0a79a6dea178b9698d/src/physics/jeans-axisymmetric.js"
+        }
+      ]
+    },
+    {
+      "id": "df-dt-half",
+      "status": "completed",
+      "lastTimeMyr": 200,
+      "sha256": "a212ebd0c71d5a45b366caa834e678da4b2195878c3b151916721cee0d956d76",
+      "sources": [
+        {
+          "path": "src/physics/constants.js",
+          "sha256": "4b1c2a1d96453b95c8e57a45f46443083e77d54e1714aadc7d060de0d9aa22ca",
+          "archive": "reports/v1.0.0/executed-source/4b1c2a1d96453b95c8e57a45f46443083e77d54e1714aadc7d060de0d9aa22ca/src/physics/constants.js"
+        },
+        {
+          "path": "src/physics/models.js",
+          "sha256": "2215cd8332d06b4d18b3ef707c5000992b5db730d104c654ef7ddba7ac9102f3",
+          "archive": "reports/v1.0.0/executed-source/2215cd8332d06b4d18b3ef707c5000992b5db730d104c654ef7ddba7ac9102f3/src/physics/models.js"
+        },
+        {
+          "path": "src/physics/initial.js",
+          "sha256": "5a6bbdb6cfe562776c6a408271c26d8a29183e92d2021914e2eb0f34230ef66a",
+          "archive": "reports/v1.0.0/executed-source/5a6bbdb6cfe562776c6a408271c26d8a29183e92d2021914e2eb0f34230ef66a/src/physics/initial.js"
+        },
+        {
+          "path": "src/physics/initial-legacy.js",
+          "sha256": "93ca8666ff188863b947dc8535ca23244d67c20ab2a177cb12e494cf566eeefa",
+          "archive": "reports/v1.0.0/executed-source/93ca8666ff188863b947dc8535ca23244d67c20ab2a177cb12e494cf566eeefa/src/physics/initial-legacy.js"
+        },
+        {
+          "path": "src/physics/initial-allocated.js",
+          "sha256": "f62b945334f7cfd062aa5eda6a3964aca59eb977985d7ffe73a8c8cce04ed378",
+          "archive": "reports/v1.0.0/executed-source/f62b945334f7cfd062aa5eda6a3964aca59eb977985d7ffe73a8c8cce04ed378/src/physics/initial-allocated.js"
+        },
+        {
+          "path": "src/physics/halo-experiments.js",
+          "sha256": "a5a0169b5d8b38c56db0229a83a5b7ba4a940968dd7572bf26f52f37dc9fbcdb",
+          "archive": "reports/v1.0.0/executed-source/a5a0169b5d8b38c56db0229a83a5b7ba4a940968dd7572bf26f52f37dc9fbcdb/src/physics/halo-experiments.js"
+        },
+        {
+          "path": "src/physics/forces.js",
+          "sha256": "9532d4286c6481d49995ece96e48bd595145c2e2c8a22897520cafa45f862444",
+          "archive": "reports/v1.0.0/executed-source/9532d4286c6481d49995ece96e48bd595145c2e2c8a22897520cafa45f862444/src/physics/forces.js"
+        },
+        {
+          "path": "src/physics/integrator.js",
+          "sha256": "433880162ae754dd3bada1fad9e2538239b42d3d43f20f96f7e1465135a1ce6f",
+          "archive": "reports/v1.0.0/executed-source/433880162ae754dd3bada1fad9e2538239b42d3d43f20f96f7e1465135a1ce6f/src/physics/integrator.js"
+        },
+        {
+          "path": "src/physics/snapshot-model.js",
+          "sha256": "681327ebbc656b4fd702bd02b0bd42c5c58f7b5e06643de121669350684d53ba",
+          "archive": "reports/v1.0.0/executed-source/681327ebbc656b4fd702bd02b0bd42c5c58f7b5e06643de121669350684d53ba/src/physics/snapshot-model.js"
+        },
+        {
+          "path": "src/physics/mass-audit.js",
+          "sha256": "99f3722ec0027a3c51b3183a440ec02a52b773aa9e9b53482631777b0a9353f2",
+          "archive": "reports/v1.0.0/executed-source/99f3722ec0027a3c51b3183a440ec02a52b773aa9e9b53482631777b0a9353f2/src/physics/mass-audit.js"
+        },
+        {
+          "path": "src/physics/equilibrium-analysis.js",
+          "sha256": "35c75d97e4c172fba424bc58002f43cd98812824be8b601e79a4f983fe8eca1d",
+          "archive": "reports/v1.0.0/executed-source/35c75d97e4c172fba424bc58002f43cd98812824be8b601e79a4f983fe8eca1d/src/physics/equilibrium-analysis.js"
+        },
+        {
+          "path": "src/physics/structure-diagnostics.js",
+          "sha256": "e94593e700e77bf95392b949bf2891652b87b224000ec1ab584e586dbb871440",
+          "archive": "reports/v1.0.0/executed-source/e94593e700e77bf95392b949bf2891652b87b224000ec1ab584e586dbb871440/src/physics/structure-diagnostics.js"
+        },
+        {
+          "path": "src/physics/disk-analysis.js",
+          "sha256": "ecd700024436712b55152cb4bf64463ea70ee5bb9e93a6cc7750a8a1057219f7",
+          "archive": "reports/v1.0.0/executed-source/ecd700024436712b55152cb4bf64463ea70ee5bb9e93a6cc7750a8a1057219f7/src/physics/disk-analysis.js"
+        },
+        {
+          "path": "src/physics/external-grid.js",
+          "sha256": "91601c0cf72fec057e97bc00114785b88d0abac10cf389ea13adf5b57257c9e4",
+          "archive": "reports/v1.0.0/executed-source/91601c0cf72fec057e97bc00114785b88d0abac10cf389ea13adf5b57257c9e4/src/physics/external-grid.js"
+        },
+        {
+          "path": "src/compute/gpu.js",
+          "sha256": "7ee6706d635a797f8a8546f96968466c8d8f9dbb67d3bd2aadd6f46ea00a7967",
+          "archive": "reports/v1.0.0/executed-source/7ee6706d635a797f8a8546f96968466c8d8f9dbb67d3bd2aadd6f46ea00a7967/src/compute/gpu.js"
+        },
+        {
+          "path": "src/compute/gpu-external-grid.js",
+          "sha256": "82c7267f53c8a2f4a8595ea82ba13f280d9b3692ed103358ca5e2169febbd9b4",
+          "archive": "reports/v1.0.0/executed-source/82c7267f53c8a2f4a8595ea82ba13f280d9b3692ed103358ca5e2169febbd9b4/src/compute/gpu-external-grid.js"
+        },
+        {
+          "path": "tests/browser-equilibrium-v1.html",
+          "sha256": "70698b309abb236fd04b182dbcf2d3163703a66a9c48febb93fa972645924a64",
+          "archive": "reports/v1.0.0/executed-source/70698b309abb236fd04b182dbcf2d3163703a66a9c48febb93fa972645924a64/tests/browser-equilibrium-v1.html"
+        },
+        {
+          "path": "scripts/equilibrium/protocol.json",
+          "sha256": "5df5fac1499212656ad8fcbbb502976676fbce70bff33d47755dae72d2607078",
+          "archive": "reports/v1.0.0/executed-source/5df5fac1499212656ad8fcbbb502976676fbce70bff33d47755dae72d2607078/scripts/equilibrium/protocol.json"
+        },
+        {
+          "path": "src/physics/laboratory.js",
+          "sha256": "3f36f219449d053c7756147c3b312464123c8b4242e65f428a8c1a5cbf528f2d",
+          "archive": "reports/v1.0.0/executed-source/3f36f219449d053c7756147c3b312464123c8b4242e65f428a8c1a5cbf528f2d/src/physics/laboratory.js"
+        },
+        {
+          "path": "src/physics/iterative-initial.js",
+          "sha256": "bf6216a55950684589f697a36bd122584ae5817a6afb00eab0705746f98cc164",
+          "archive": "reports/v1.0.0/executed-source/bf6216a55950684589f697a36bd122584ae5817a6afb00eab0705746f98cc164/src/physics/iterative-initial.js"
+        },
+        {
+          "path": "src/physics/jeans-axisymmetric.js",
+          "sha256": "903331d3c5643c122e63bcb3778bce3a29e5a4d713c09c0a79a6dea178b9698d",
+          "archive": "reports/v1.0.0/executed-source/903331d3c5643c122e63bcb3778bce3a29e5a4d713c09c0a79a6dea178b9698d/src/physics/jeans-axisymmetric.js"
+        }
+      ]
+    },
+    {
+      "id": "df-epsilon-double",
+      "status": "completed",
+      "lastTimeMyr": 200,
+      "sha256": "1b613d9642ed23f466461b658926b8473c3bd2e90f0604c4fc28bdc9a0e7f193",
+      "sources": [
+        {
+          "path": "src/physics/constants.js",
+          "sha256": "4b1c2a1d96453b95c8e57a45f46443083e77d54e1714aadc7d060de0d9aa22ca",
+          "archive": "reports/v1.0.0/executed-source/4b1c2a1d96453b95c8e57a45f46443083e77d54e1714aadc7d060de0d9aa22ca/src/physics/constants.js"
+        },
+        {
+          "path": "src/physics/models.js",
+          "sha256": "2215cd8332d06b4d18b3ef707c5000992b5db730d104c654ef7ddba7ac9102f3",
+          "archive": "reports/v1.0.0/executed-source/2215cd8332d06b4d18b3ef707c5000992b5db730d104c654ef7ddba7ac9102f3/src/physics/models.js"
+        },
+        {
+          "path": "src/physics/initial.js",
+          "sha256": "5a6bbdb6cfe562776c6a408271c26d8a29183e92d2021914e2eb0f34230ef66a",
+          "archive": "reports/v1.0.0/executed-source/5a6bbdb6cfe562776c6a408271c26d8a29183e92d2021914e2eb0f34230ef66a/src/physics/initial.js"
+        },
+        {
+          "path": "src/physics/initial-legacy.js",
+          "sha256": "93ca8666ff188863b947dc8535ca23244d67c20ab2a177cb12e494cf566eeefa",
+          "archive": "reports/v1.0.0/executed-source/93ca8666ff188863b947dc8535ca23244d67c20ab2a177cb12e494cf566eeefa/src/physics/initial-legacy.js"
+        },
+        {
+          "path": "src/physics/initial-allocated.js",
+          "sha256": "f62b945334f7cfd062aa5eda6a3964aca59eb977985d7ffe73a8c8cce04ed378",
+          "archive": "reports/v1.0.0/executed-source/f62b945334f7cfd062aa5eda6a3964aca59eb977985d7ffe73a8c8cce04ed378/src/physics/initial-allocated.js"
+        },
+        {
+          "path": "src/physics/halo-experiments.js",
+          "sha256": "a5a0169b5d8b38c56db0229a83a5b7ba4a940968dd7572bf26f52f37dc9fbcdb",
+          "archive": "reports/v1.0.0/executed-source/a5a0169b5d8b38c56db0229a83a5b7ba4a940968dd7572bf26f52f37dc9fbcdb/src/physics/halo-experiments.js"
+        },
+        {
+          "path": "src/physics/forces.js",
+          "sha256": "9532d4286c6481d49995ece96e48bd595145c2e2c8a22897520cafa45f862444",
+          "archive": "reports/v1.0.0/executed-source/9532d4286c6481d49995ece96e48bd595145c2e2c8a22897520cafa45f862444/src/physics/forces.js"
+        },
+        {
+          "path": "src/physics/integrator.js",
+          "sha256": "433880162ae754dd3bada1fad9e2538239b42d3d43f20f96f7e1465135a1ce6f",
+          "archive": "reports/v1.0.0/executed-source/433880162ae754dd3bada1fad9e2538239b42d3d43f20f96f7e1465135a1ce6f/src/physics/integrator.js"
+        },
+        {
+          "path": "src/physics/snapshot-model.js",
+          "sha256": "681327ebbc656b4fd702bd02b0bd42c5c58f7b5e06643de121669350684d53ba",
+          "archive": "reports/v1.0.0/executed-source/681327ebbc656b4fd702bd02b0bd42c5c58f7b5e06643de121669350684d53ba/src/physics/snapshot-model.js"
+        },
+        {
+          "path": "src/physics/mass-audit.js",
+          "sha256": "99f3722ec0027a3c51b3183a440ec02a52b773aa9e9b53482631777b0a9353f2",
+          "archive": "reports/v1.0.0/executed-source/99f3722ec0027a3c51b3183a440ec02a52b773aa9e9b53482631777b0a9353f2/src/physics/mass-audit.js"
+        },
+        {
+          "path": "src/physics/equilibrium-analysis.js",
+          "sha256": "35c75d97e4c172fba424bc58002f43cd98812824be8b601e79a4f983fe8eca1d",
+          "archive": "reports/v1.0.0/executed-source/35c75d97e4c172fba424bc58002f43cd98812824be8b601e79a4f983fe8eca1d/src/physics/equilibrium-analysis.js"
+        },
+        {
+          "path": "src/physics/structure-diagnostics.js",
+          "sha256": "e94593e700e77bf95392b949bf2891652b87b224000ec1ab584e586dbb871440",
+          "archive": "reports/v1.0.0/executed-source/e94593e700e77bf95392b949bf2891652b87b224000ec1ab584e586dbb871440/src/physics/structure-diagnostics.js"
+        },
+        {
+          "path": "src/physics/disk-analysis.js",
+          "sha256": "ecd700024436712b55152cb4bf64463ea70ee5bb9e93a6cc7750a8a1057219f7",
+          "archive": "reports/v1.0.0/executed-source/ecd700024436712b55152cb4bf64463ea70ee5bb9e93a6cc7750a8a1057219f7/src/physics/disk-analysis.js"
+        },
+        {
+          "path": "src/physics/external-grid.js",
+          "sha256": "91601c0cf72fec057e97bc00114785b88d0abac10cf389ea13adf5b57257c9e4",
+          "archive": "reports/v1.0.0/executed-source/91601c0cf72fec057e97bc00114785b88d0abac10cf389ea13adf5b57257c9e4/src/physics/external-grid.js"
+        },
+        {
+          "path": "src/compute/gpu.js",
+          "sha256": "7ee6706d635a797f8a8546f96968466c8d8f9dbb67d3bd2aadd6f46ea00a7967",
+          "archive": "reports/v1.0.0/executed-source/7ee6706d635a797f8a8546f96968466c8d8f9dbb67d3bd2aadd6f46ea00a7967/src/compute/gpu.js"
+        },
+        {
+          "path": "src/compute/gpu-external-grid.js",
+          "sha256": "82c7267f53c8a2f4a8595ea82ba13f280d9b3692ed103358ca5e2169febbd9b4",
+          "archive": "reports/v1.0.0/executed-source/82c7267f53c8a2f4a8595ea82ba13f280d9b3692ed103358ca5e2169febbd9b4/src/compute/gpu-external-grid.js"
+        },
+        {
+          "path": "tests/browser-equilibrium-v1.html",
+          "sha256": "70698b309abb236fd04b182dbcf2d3163703a66a9c48febb93fa972645924a64",
+          "archive": "reports/v1.0.0/executed-source/70698b309abb236fd04b182dbcf2d3163703a66a9c48febb93fa972645924a64/tests/browser-equilibrium-v1.html"
+        },
+        {
+          "path": "scripts/equilibrium/protocol.json",
+          "sha256": "5df5fac1499212656ad8fcbbb502976676fbce70bff33d47755dae72d2607078",
+          "archive": "reports/v1.0.0/executed-source/5df5fac1499212656ad8fcbbb502976676fbce70bff33d47755dae72d2607078/scripts/equilibrium/protocol.json"
+        },
+        {
+          "path": "src/physics/laboratory.js",
+          "sha256": "3f36f219449d053c7756147c3b312464123c8b4242e65f428a8c1a5cbf528f2d",
+          "archive": "reports/v1.0.0/executed-source/3f36f219449d053c7756147c3b312464123c8b4242e65f428a8c1a5cbf528f2d/src/physics/laboratory.js"
+        },
+        {
+          "path": "src/physics/iterative-initial.js",
+          "sha256": "bf6216a55950684589f697a36bd122584ae5817a6afb00eab0705746f98cc164",
+          "archive": "reports/v1.0.0/executed-source/bf6216a55950684589f697a36bd122584ae5817a6afb00eab0705746f98cc164/src/physics/iterative-initial.js"
+        },
+        {
+          "path": "src/physics/jeans-axisymmetric.js",
+          "sha256": "903331d3c5643c122e63bcb3778bce3a29e5a4d713c09c0a79a6dea178b9698d",
+          "archive": "reports/v1.0.0/executed-source/903331d3c5643c122e63bcb3778bce3a29e5a4d713c09c0a79a6dea178b9698d/src/physics/jeans-axisymmetric.js"
+        }
+      ]
+    },
+    {
+      "id": "df-epsilon-half",
+      "status": "completed",
+      "lastTimeMyr": 200,
+      "sha256": "00b3ea8602b3bd0709a5b322c2586c90e07e168474e96049c52471d6de731079",
+      "sources": [
+        {
+          "path": "src/physics/constants.js",
+          "sha256": "4b1c2a1d96453b95c8e57a45f46443083e77d54e1714aadc7d060de0d9aa22ca",
+          "archive": "reports/v1.0.0/executed-source/4b1c2a1d96453b95c8e57a45f46443083e77d54e1714aadc7d060de0d9aa22ca/src/physics/constants.js"
+        },
+        {
+          "path": "src/physics/models.js",
+          "sha256": "2215cd8332d06b4d18b3ef707c5000992b5db730d104c654ef7ddba7ac9102f3",
+          "archive": "reports/v1.0.0/executed-source/2215cd8332d06b4d18b3ef707c5000992b5db730d104c654ef7ddba7ac9102f3/src/physics/models.js"
+        },
+        {
+          "path": "src/physics/initial.js",
+          "sha256": "5a6bbdb6cfe562776c6a408271c26d8a29183e92d2021914e2eb0f34230ef66a",
+          "archive": "reports/v1.0.0/executed-source/5a6bbdb6cfe562776c6a408271c26d8a29183e92d2021914e2eb0f34230ef66a/src/physics/initial.js"
+        },
+        {
+          "path": "src/physics/initial-legacy.js",
+          "sha256": "93ca8666ff188863b947dc8535ca23244d67c20ab2a177cb12e494cf566eeefa",
+          "archive": "reports/v1.0.0/executed-source/93ca8666ff188863b947dc8535ca23244d67c20ab2a177cb12e494cf566eeefa/src/physics/initial-legacy.js"
+        },
+        {
+          "path": "src/physics/initial-allocated.js",
+          "sha256": "f62b945334f7cfd062aa5eda6a3964aca59eb977985d7ffe73a8c8cce04ed378",
+          "archive": "reports/v1.0.0/executed-source/f62b945334f7cfd062aa5eda6a3964aca59eb977985d7ffe73a8c8cce04ed378/src/physics/initial-allocated.js"
+        },
+        {
+          "path": "src/physics/halo-experiments.js",
+          "sha256": "a5a0169b5d8b38c56db0229a83a5b7ba4a940968dd7572bf26f52f37dc9fbcdb",
+          "archive": "reports/v1.0.0/executed-source/a5a0169b5d8b38c56db0229a83a5b7ba4a940968dd7572bf26f52f37dc9fbcdb/src/physics/halo-experiments.js"
+        },
+        {
+          "path": "src/physics/forces.js",
+          "sha256": "9532d4286c6481d49995ece96e48bd595145c2e2c8a22897520cafa45f862444",
+          "archive": "reports/v1.0.0/executed-source/9532d4286c6481d49995ece96e48bd595145c2e2c8a22897520cafa45f862444/src/physics/forces.js"
+        },
+        {
+          "path": "src/physics/integrator.js",
+          "sha256": "433880162ae754dd3bada1fad9e2538239b42d3d43f20f96f7e1465135a1ce6f",
+          "archive": "reports/v1.0.0/executed-source/433880162ae754dd3bada1fad9e2538239b42d3d43f20f96f7e1465135a1ce6f/src/physics/integrator.js"
+        },
+        {
+          "path": "src/physics/snapshot-model.js",
+          "sha256": "681327ebbc656b4fd702bd02b0bd42c5c58f7b5e06643de121669350684d53ba",
+          "archive": "reports/v1.0.0/executed-source/681327ebbc656b4fd702bd02b0bd42c5c58f7b5e06643de121669350684d53ba/src/physics/snapshot-model.js"
+        },
+        {
+          "path": "src/physics/mass-audit.js",
+          "sha256": "99f3722ec0027a3c51b3183a440ec02a52b773aa9e9b53482631777b0a9353f2",
+          "archive": "reports/v1.0.0/executed-source/99f3722ec0027a3c51b3183a440ec02a52b773aa9e9b53482631777b0a9353f2/src/physics/mass-audit.js"
+        },
+        {
+          "path": "src/physics/equilibrium-analysis.js",
+          "sha256": "35c75d97e4c172fba424bc58002f43cd98812824be8b601e79a4f983fe8eca1d",
+          "archive": "reports/v1.0.0/executed-source/35c75d97e4c172fba424bc58002f43cd98812824be8b601e79a4f983fe8eca1d/src/physics/equilibrium-analysis.js"
+        },
+        {
+          "path": "src/physics/structure-diagnostics.js",
+          "sha256": "e94593e700e77bf95392b949bf2891652b87b224000ec1ab584e586dbb871440",
+          "archive": "reports/v1.0.0/executed-source/e94593e700e77bf95392b949bf2891652b87b224000ec1ab584e586dbb871440/src/physics/structure-diagnostics.js"
+        },
+        {
+          "path": "src/physics/disk-analysis.js",
+          "sha256": "ecd700024436712b55152cb4bf64463ea70ee5bb9e93a6cc7750a8a1057219f7",
+          "archive": "reports/v1.0.0/executed-source/ecd700024436712b55152cb4bf64463ea70ee5bb9e93a6cc7750a8a1057219f7/src/physics/disk-analysis.js"
+        },
+        {
+          "path": "src/physics/external-grid.js",
+          "sha256": "91601c0cf72fec057e97bc00114785b88d0abac10cf389ea13adf5b57257c9e4",
+          "archive": "reports/v1.0.0/executed-source/91601c0cf72fec057e97bc00114785b88d0abac10cf389ea13adf5b57257c9e4/src/physics/external-grid.js"
+        },
+        {
+          "path": "src/compute/gpu.js",
+          "sha256": "7ee6706d635a797f8a8546f96968466c8d8f9dbb67d3bd2aadd6f46ea00a7967",
+          "archive": "reports/v1.0.0/executed-source/7ee6706d635a797f8a8546f96968466c8d8f9dbb67d3bd2aadd6f46ea00a7967/src/compute/gpu.js"
+        },
+        {
+          "path": "src/compute/gpu-external-grid.js",
+          "sha256": "82c7267f53c8a2f4a8595ea82ba13f280d9b3692ed103358ca5e2169febbd9b4",
+          "archive": "reports/v1.0.0/executed-source/82c7267f53c8a2f4a8595ea82ba13f280d9b3692ed103358ca5e2169febbd9b4/src/compute/gpu-external-grid.js"
+        },
+        {
+          "path": "tests/browser-equilibrium-v1.html",
+          "sha256": "70698b309abb236fd04b182dbcf2d3163703a66a9c48febb93fa972645924a64",
+          "archive": "reports/v1.0.0/executed-source/70698b309abb236fd04b182dbcf2d3163703a66a9c48febb93fa972645924a64/tests/browser-equilibrium-v1.html"
+        },
+        {
+          "path": "scripts/equilibrium/protocol.json",
+          "sha256": "5df5fac1499212656ad8fcbbb502976676fbce70bff33d47755dae72d2607078",
+          "archive": "reports/v1.0.0/executed-source/5df5fac1499212656ad8fcbbb502976676fbce70bff33d47755dae72d2607078/scripts/equilibrium/protocol.json"
+        },
+        {
+          "path": "src/physics/laboratory.js",
+          "sha256": "3f36f219449d053c7756147c3b312464123c8b4242e65f428a8c1a5cbf528f2d",
+          "archive": "reports/v1.0.0/executed-source/3f36f219449d053c7756147c3b312464123c8b4242e65f428a8c1a5cbf528f2d/src/physics/laboratory.js"
+        },
+        {
+          "path": "src/physics/iterative-initial.js",
+          "sha256": "bf6216a55950684589f697a36bd122584ae5817a6afb00eab0705746f98cc164",
+          "archive": "reports/v1.0.0/executed-source/bf6216a55950684589f697a36bd122584ae5817a6afb00eab0705746f98cc164/src/physics/iterative-initial.js"
+        },
+        {
+          "path": "src/physics/jeans-axisymmetric.js",
+          "sha256": "903331d3c5643c122e63bcb3778bce3a29e5a4d713c09c0a79a6dea178b9698d",
+          "archive": "reports/v1.0.0/executed-source/903331d3c5643c122e63bcb3778bce3a29e5a4d713c09c0a79a6dea178b9698d/src/physics/jeans-axisymmetric.js"
+        }
+      ]
+    },
+    {
+      "id": "df-fixed",
+      "status": "completed",
+      "lastTimeMyr": 1000,
+      "sha256": "8edd3d37ffcd40928a2f5e9ef5c2f098bd05d2e52214eb9b0fd7ef93e452a73f",
+      "sources": [
+        {
+          "path": "src/physics/constants.js",
+          "sha256": "4b1c2a1d96453b95c8e57a45f46443083e77d54e1714aadc7d060de0d9aa22ca",
+          "archive": "reports/v1.0.0/executed-source/4b1c2a1d96453b95c8e57a45f46443083e77d54e1714aadc7d060de0d9aa22ca/src/physics/constants.js"
+        },
+        {
+          "path": "src/physics/models.js",
+          "sha256": "2215cd8332d06b4d18b3ef707c5000992b5db730d104c654ef7ddba7ac9102f3",
+          "archive": "reports/v1.0.0/executed-source/2215cd8332d06b4d18b3ef707c5000992b5db730d104c654ef7ddba7ac9102f3/src/physics/models.js"
+        },
+        {
+          "path": "src/physics/initial.js",
+          "sha256": "5a6bbdb6cfe562776c6a408271c26d8a29183e92d2021914e2eb0f34230ef66a",
+          "archive": "reports/v1.0.0/executed-source/5a6bbdb6cfe562776c6a408271c26d8a29183e92d2021914e2eb0f34230ef66a/src/physics/initial.js"
+        },
+        {
+          "path": "src/physics/initial-legacy.js",
+          "sha256": "93ca8666ff188863b947dc8535ca23244d67c20ab2a177cb12e494cf566eeefa",
+          "archive": "reports/v1.0.0/executed-source/93ca8666ff188863b947dc8535ca23244d67c20ab2a177cb12e494cf566eeefa/src/physics/initial-legacy.js"
+        },
+        {
+          "path": "src/physics/initial-allocated.js",
+          "sha256": "f62b945334f7cfd062aa5eda6a3964aca59eb977985d7ffe73a8c8cce04ed378",
+          "archive": "reports/v1.0.0/executed-source/f62b945334f7cfd062aa5eda6a3964aca59eb977985d7ffe73a8c8cce04ed378/src/physics/initial-allocated.js"
+        },
+        {
+          "path": "src/physics/halo-experiments.js",
+          "sha256": "a5a0169b5d8b38c56db0229a83a5b7ba4a940968dd7572bf26f52f37dc9fbcdb",
+          "archive": "reports/v1.0.0/executed-source/a5a0169b5d8b38c56db0229a83a5b7ba4a940968dd7572bf26f52f37dc9fbcdb/src/physics/halo-experiments.js"
+        },
+        {
+          "path": "src/physics/forces.js",
+          "sha256": "9532d4286c6481d49995ece96e48bd595145c2e2c8a22897520cafa45f862444",
+          "archive": "reports/v1.0.0/executed-source/9532d4286c6481d49995ece96e48bd595145c2e2c8a22897520cafa45f862444/src/physics/forces.js"
+        },
+        {
+          "path": "src/physics/integrator.js",
+          "sha256": "433880162ae754dd3bada1fad9e2538239b42d3d43f20f96f7e1465135a1ce6f",
+          "archive": "reports/v1.0.0/executed-source/433880162ae754dd3bada1fad9e2538239b42d3d43f20f96f7e1465135a1ce6f/src/physics/integrator.js"
+        },
+        {
+          "path": "src/physics/snapshot-model.js",
+          "sha256": "681327ebbc656b4fd702bd02b0bd42c5c58f7b5e06643de121669350684d53ba",
+          "archive": "reports/v1.0.0/executed-source/681327ebbc656b4fd702bd02b0bd42c5c58f7b5e06643de121669350684d53ba/src/physics/snapshot-model.js"
+        },
+        {
+          "path": "src/physics/mass-audit.js",
+          "sha256": "99f3722ec0027a3c51b3183a440ec02a52b773aa9e9b53482631777b0a9353f2",
+          "archive": "reports/v1.0.0/executed-source/99f3722ec0027a3c51b3183a440ec02a52b773aa9e9b53482631777b0a9353f2/src/physics/mass-audit.js"
+        },
+        {
+          "path": "src/physics/equilibrium-analysis.js",
+          "sha256": "35c75d97e4c172fba424bc58002f43cd98812824be8b601e79a4f983fe8eca1d",
+          "archive": "reports/v1.0.0/executed-source/35c75d97e4c172fba424bc58002f43cd98812824be8b601e79a4f983fe8eca1d/src/physics/equilibrium-analysis.js"
+        },
+        {
+          "path": "src/physics/structure-diagnostics.js",
+          "sha256": "e94593e700e77bf95392b949bf2891652b87b224000ec1ab584e586dbb871440",
+          "archive": "reports/v1.0.0/executed-source/e94593e700e77bf95392b949bf2891652b87b224000ec1ab584e586dbb871440/src/physics/structure-diagnostics.js"
+        },
+        {
+          "path": "src/physics/disk-analysis.js",
+          "sha256": "ecd700024436712b55152cb4bf64463ea70ee5bb9e93a6cc7750a8a1057219f7",
+          "archive": "reports/v1.0.0/executed-source/ecd700024436712b55152cb4bf64463ea70ee5bb9e93a6cc7750a8a1057219f7/src/physics/disk-analysis.js"
+        },
+        {
+          "path": "src/physics/external-grid.js",
+          "sha256": "91601c0cf72fec057e97bc00114785b88d0abac10cf389ea13adf5b57257c9e4",
+          "archive": "reports/v1.0.0/executed-source/91601c0cf72fec057e97bc00114785b88d0abac10cf389ea13adf5b57257c9e4/src/physics/external-grid.js"
+        },
+        {
+          "path": "src/compute/gpu.js",
+          "sha256": "7ee6706d635a797f8a8546f96968466c8d8f9dbb67d3bd2aadd6f46ea00a7967",
+          "archive": "reports/v1.0.0/executed-source/7ee6706d635a797f8a8546f96968466c8d8f9dbb67d3bd2aadd6f46ea00a7967/src/compute/gpu.js"
+        },
+        {
+          "path": "src/compute/gpu-external-grid.js",
+          "sha256": "82c7267f53c8a2f4a8595ea82ba13f280d9b3692ed103358ca5e2169febbd9b4",
+          "archive": "reports/v1.0.0/executed-source/82c7267f53c8a2f4a8595ea82ba13f280d9b3692ed103358ca5e2169febbd9b4/src/compute/gpu-external-grid.js"
+        },
+        {
+          "path": "tests/browser-equilibrium-v1.html",
+          "sha256": "70698b309abb236fd04b182dbcf2d3163703a66a9c48febb93fa972645924a64",
+          "archive": "reports/v1.0.0/executed-source/70698b309abb236fd04b182dbcf2d3163703a66a9c48febb93fa972645924a64/tests/browser-equilibrium-v1.html"
+        },
+        {
+          "path": "scripts/equilibrium/protocol.json",
+          "sha256": "5df5fac1499212656ad8fcbbb502976676fbce70bff33d47755dae72d2607078",
+          "archive": "reports/v1.0.0/executed-source/5df5fac1499212656ad8fcbbb502976676fbce70bff33d47755dae72d2607078/scripts/equilibrium/protocol.json"
+        },
+        {
+          "path": "src/physics/laboratory.js",
+          "sha256": "3f36f219449d053c7756147c3b312464123c8b4242e65f428a8c1a5cbf528f2d",
+          "archive": "reports/v1.0.0/executed-source/3f36f219449d053c7756147c3b312464123c8b4242e65f428a8c1a5cbf528f2d/src/physics/laboratory.js"
+        },
+        {
+          "path": "src/physics/iterative-initial.js",
+          "sha256": "bf6216a55950684589f697a36bd122584ae5817a6afb00eab0705746f98cc164",
+          "archive": "reports/v1.0.0/executed-source/bf6216a55950684589f697a36bd122584ae5817a6afb00eab0705746f98cc164/src/physics/iterative-initial.js"
+        },
+        {
+          "path": "src/physics/jeans-axisymmetric.js",
+          "sha256": "903331d3c5643c122e63bcb3778bce3a29e5a4d713c09c0a79a6dea178b9698d",
+          "archive": "reports/v1.0.0/executed-source/903331d3c5643c122e63bcb3778bce3a29e5a4d713c09c0a79a6dea178b9698d/src/physics/jeans-axisymmetric.js"
+        }
+      ]
+    },
+    {
+      "id": "gaussian-same-density",
+      "status": "completed",
+      "lastTimeMyr": 200,
+      "sha256": "5d084f10b2abad1cfbe3f439bbc3390bb7d6387d6977113d4eff9335c83867e4",
+      "sources": [
+        {
+          "path": "src/physics/constants.js",
+          "sha256": "4b1c2a1d96453b95c8e57a45f46443083e77d54e1714aadc7d060de0d9aa22ca",
+          "archive": "reports/v1.0.0/executed-source/4b1c2a1d96453b95c8e57a45f46443083e77d54e1714aadc7d060de0d9aa22ca/src/physics/constants.js"
+        },
+        {
+          "path": "src/physics/models.js",
+          "sha256": "2215cd8332d06b4d18b3ef707c5000992b5db730d104c654ef7ddba7ac9102f3",
+          "archive": "reports/v1.0.0/executed-source/2215cd8332d06b4d18b3ef707c5000992b5db730d104c654ef7ddba7ac9102f3/src/physics/models.js"
+        },
+        {
+          "path": "src/physics/initial.js",
+          "sha256": "5a6bbdb6cfe562776c6a408271c26d8a29183e92d2021914e2eb0f34230ef66a",
+          "archive": "reports/v1.0.0/executed-source/5a6bbdb6cfe562776c6a408271c26d8a29183e92d2021914e2eb0f34230ef66a/src/physics/initial.js"
+        },
+        {
+          "path": "src/physics/initial-legacy.js",
+          "sha256": "93ca8666ff188863b947dc8535ca23244d67c20ab2a177cb12e494cf566eeefa",
+          "archive": "reports/v1.0.0/executed-source/93ca8666ff188863b947dc8535ca23244d67c20ab2a177cb12e494cf566eeefa/src/physics/initial-legacy.js"
+        },
+        {
+          "path": "src/physics/initial-allocated.js",
+          "sha256": "f62b945334f7cfd062aa5eda6a3964aca59eb977985d7ffe73a8c8cce04ed378",
+          "archive": "reports/v1.0.0/executed-source/f62b945334f7cfd062aa5eda6a3964aca59eb977985d7ffe73a8c8cce04ed378/src/physics/initial-allocated.js"
+        },
+        {
+          "path": "src/physics/halo-experiments.js",
+          "sha256": "a5a0169b5d8b38c56db0229a83a5b7ba4a940968dd7572bf26f52f37dc9fbcdb",
+          "archive": "reports/v1.0.0/executed-source/a5a0169b5d8b38c56db0229a83a5b7ba4a940968dd7572bf26f52f37dc9fbcdb/src/physics/halo-experiments.js"
+        },
+        {
+          "path": "src/physics/forces.js",
+          "sha256": "9532d4286c6481d49995ece96e48bd595145c2e2c8a22897520cafa45f862444",
+          "archive": "reports/v1.0.0/executed-source/9532d4286c6481d49995ece96e48bd595145c2e2c8a22897520cafa45f862444/src/physics/forces.js"
+        },
+        {
+          "path": "src/physics/integrator.js",
+          "sha256": "433880162ae754dd3bada1fad9e2538239b42d3d43f20f96f7e1465135a1ce6f",
+          "archive": "reports/v1.0.0/executed-source/433880162ae754dd3bada1fad9e2538239b42d3d43f20f96f7e1465135a1ce6f/src/physics/integrator.js"
+        },
+        {
+          "path": "src/physics/snapshot-model.js",
+          "sha256": "681327ebbc656b4fd702bd02b0bd42c5c58f7b5e06643de121669350684d53ba",
+          "archive": "reports/v1.0.0/executed-source/681327ebbc656b4fd702bd02b0bd42c5c58f7b5e06643de121669350684d53ba/src/physics/snapshot-model.js"
+        },
+        {
+          "path": "src/physics/mass-audit.js",
+          "sha256": "99f3722ec0027a3c51b3183a440ec02a52b773aa9e9b53482631777b0a9353f2",
+          "archive": "reports/v1.0.0/executed-source/99f3722ec0027a3c51b3183a440ec02a52b773aa9e9b53482631777b0a9353f2/src/physics/mass-audit.js"
+        },
+        {
+          "path": "src/physics/equilibrium-analysis.js",
+          "sha256": "35c75d97e4c172fba424bc58002f43cd98812824be8b601e79a4f983fe8eca1d",
+          "archive": "reports/v1.0.0/executed-source/35c75d97e4c172fba424bc58002f43cd98812824be8b601e79a4f983fe8eca1d/src/physics/equilibrium-analysis.js"
+        },
+        {
+          "path": "src/physics/structure-diagnostics.js",
+          "sha256": "e94593e700e77bf95392b949bf2891652b87b224000ec1ab584e586dbb871440",
+          "archive": "reports/v1.0.0/executed-source/e94593e700e77bf95392b949bf2891652b87b224000ec1ab584e586dbb871440/src/physics/structure-diagnostics.js"
+        },
+        {
+          "path": "src/physics/disk-analysis.js",
+          "sha256": "ecd700024436712b55152cb4bf64463ea70ee5bb9e93a6cc7750a8a1057219f7",
+          "archive": "reports/v1.0.0/executed-source/ecd700024436712b55152cb4bf64463ea70ee5bb9e93a6cc7750a8a1057219f7/src/physics/disk-analysis.js"
+        },
+        {
+          "path": "src/physics/external-grid.js",
+          "sha256": "91601c0cf72fec057e97bc00114785b88d0abac10cf389ea13adf5b57257c9e4",
+          "archive": "reports/v1.0.0/executed-source/91601c0cf72fec057e97bc00114785b88d0abac10cf389ea13adf5b57257c9e4/src/physics/external-grid.js"
+        },
+        {
+          "path": "src/compute/gpu.js",
+          "sha256": "7ee6706d635a797f8a8546f96968466c8d8f9dbb67d3bd2aadd6f46ea00a7967",
+          "archive": "reports/v1.0.0/executed-source/7ee6706d635a797f8a8546f96968466c8d8f9dbb67d3bd2aadd6f46ea00a7967/src/compute/gpu.js"
+        },
+        {
+          "path": "src/compute/gpu-external-grid.js",
+          "sha256": "82c7267f53c8a2f4a8595ea82ba13f280d9b3692ed103358ca5e2169febbd9b4",
+          "archive": "reports/v1.0.0/executed-source/82c7267f53c8a2f4a8595ea82ba13f280d9b3692ed103358ca5e2169febbd9b4/src/compute/gpu-external-grid.js"
+        },
+        {
+          "path": "tests/browser-equilibrium-v1.html",
+          "sha256": "70698b309abb236fd04b182dbcf2d3163703a66a9c48febb93fa972645924a64",
+          "archive": "reports/v1.0.0/executed-source/70698b309abb236fd04b182dbcf2d3163703a66a9c48febb93fa972645924a64/tests/browser-equilibrium-v1.html"
+        },
+        {
+          "path": "scripts/equilibrium/protocol.json",
+          "sha256": "5df5fac1499212656ad8fcbbb502976676fbce70bff33d47755dae72d2607078",
+          "archive": "reports/v1.0.0/executed-source/5df5fac1499212656ad8fcbbb502976676fbce70bff33d47755dae72d2607078/scripts/equilibrium/protocol.json"
+        },
+        {
+          "path": "src/physics/laboratory.js",
+          "sha256": "3f36f219449d053c7756147c3b312464123c8b4242e65f428a8c1a5cbf528f2d",
+          "archive": "reports/v1.0.0/executed-source/3f36f219449d053c7756147c3b312464123c8b4242e65f428a8c1a5cbf528f2d/src/physics/laboratory.js"
+        },
+        {
+          "path": "src/physics/iterative-initial.js",
+          "sha256": "bf6216a55950684589f697a36bd122584ae5817a6afb00eab0705746f98cc164",
+          "archive": "reports/v1.0.0/executed-source/bf6216a55950684589f697a36bd122584ae5817a6afb00eab0705746f98cc164/src/physics/iterative-initial.js"
+        },
+        {
+          "path": "src/physics/jeans-axisymmetric.js",
+          "sha256": "903331d3c5643c122e63bcb3778bce3a29e5a4d713c09c0a79a6dea178b9698d",
+          "archive": "reports/v1.0.0/executed-source/903331d3c5643c122e63bcb3778bce3a29e5a4d713c09c0a79a6dea178b9698d/src/physics/jeans-axisymmetric.js"
+        }
+      ]
+    },
+    {
+      "id": "legacy-10k",
+      "status": "completed",
+      "lastTimeMyr": 1000,
+      "sha256": "d09351d5d5896163b391b2765439ca027531f19e9639e143bcdcbf4f1001d761",
+      "sources": [
+        {
+          "path": "src/physics/constants.js",
+          "sha256": "4b1c2a1d96453b95c8e57a45f46443083e77d54e1714aadc7d060de0d9aa22ca",
+          "archive": "reports/v1.0.0/executed-source/4b1c2a1d96453b95c8e57a45f46443083e77d54e1714aadc7d060de0d9aa22ca/src/physics/constants.js"
+        },
+        {
+          "path": "src/physics/models.js",
+          "sha256": "2215cd8332d06b4d18b3ef707c5000992b5db730d104c654ef7ddba7ac9102f3",
+          "archive": "reports/v1.0.0/executed-source/2215cd8332d06b4d18b3ef707c5000992b5db730d104c654ef7ddba7ac9102f3/src/physics/models.js"
+        },
+        {
+          "path": "src/physics/initial.js",
+          "sha256": "5a6bbdb6cfe562776c6a408271c26d8a29183e92d2021914e2eb0f34230ef66a",
+          "archive": "reports/v1.0.0/executed-source/5a6bbdb6cfe562776c6a408271c26d8a29183e92d2021914e2eb0f34230ef66a/src/physics/initial.js"
+        },
+        {
+          "path": "src/physics/initial-legacy.js",
+          "sha256": "93ca8666ff188863b947dc8535ca23244d67c20ab2a177cb12e494cf566eeefa",
+          "archive": "reports/v1.0.0/executed-source/93ca8666ff188863b947dc8535ca23244d67c20ab2a177cb12e494cf566eeefa/src/physics/initial-legacy.js"
+        },
+        {
+          "path": "src/physics/initial-allocated.js",
+          "sha256": "f62b945334f7cfd062aa5eda6a3964aca59eb977985d7ffe73a8c8cce04ed378",
+          "archive": "reports/v1.0.0/executed-source/f62b945334f7cfd062aa5eda6a3964aca59eb977985d7ffe73a8c8cce04ed378/src/physics/initial-allocated.js"
+        },
+        {
+          "path": "src/physics/halo-experiments.js",
+          "sha256": "a5a0169b5d8b38c56db0229a83a5b7ba4a940968dd7572bf26f52f37dc9fbcdb",
+          "archive": "reports/v1.0.0/executed-source/a5a0169b5d8b38c56db0229a83a5b7ba4a940968dd7572bf26f52f37dc9fbcdb/src/physics/halo-experiments.js"
+        },
+        {
+          "path": "src/physics/forces.js",
+          "sha256": "9532d4286c6481d49995ece96e48bd595145c2e2c8a22897520cafa45f862444",
+          "archive": "reports/v1.0.0/executed-source/9532d4286c6481d49995ece96e48bd595145c2e2c8a22897520cafa45f862444/src/physics/forces.js"
+        },
+        {
+          "path": "src/physics/integrator.js",
+          "sha256": "433880162ae754dd3bada1fad9e2538239b42d3d43f20f96f7e1465135a1ce6f",
+          "archive": "reports/v1.0.0/executed-source/433880162ae754dd3bada1fad9e2538239b42d3d43f20f96f7e1465135a1ce6f/src/physics/integrator.js"
+        },
+        {
+          "path": "src/physics/snapshot-model.js",
+          "sha256": "681327ebbc656b4fd702bd02b0bd42c5c58f7b5e06643de121669350684d53ba",
+          "archive": "reports/v1.0.0/executed-source/681327ebbc656b4fd702bd02b0bd42c5c58f7b5e06643de121669350684d53ba/src/physics/snapshot-model.js"
+        },
+        {
+          "path": "src/physics/mass-audit.js",
+          "sha256": "99f3722ec0027a3c51b3183a440ec02a52b773aa9e9b53482631777b0a9353f2",
+          "archive": "reports/v1.0.0/executed-source/99f3722ec0027a3c51b3183a440ec02a52b773aa9e9b53482631777b0a9353f2/src/physics/mass-audit.js"
+        },
+        {
+          "path": "src/physics/equilibrium-analysis.js",
+          "sha256": "35c75d97e4c172fba424bc58002f43cd98812824be8b601e79a4f983fe8eca1d",
+          "archive": "reports/v1.0.0/executed-source/35c75d97e4c172fba424bc58002f43cd98812824be8b601e79a4f983fe8eca1d/src/physics/equilibrium-analysis.js"
+        },
+        {
+          "path": "src/physics/structure-diagnostics.js",
+          "sha256": "e94593e700e77bf95392b949bf2891652b87b224000ec1ab584e586dbb871440",
+          "archive": "reports/v1.0.0/executed-source/e94593e700e77bf95392b949bf2891652b87b224000ec1ab584e586dbb871440/src/physics/structure-diagnostics.js"
+        },
+        {
+          "path": "src/physics/disk-analysis.js",
+          "sha256": "ecd700024436712b55152cb4bf64463ea70ee5bb9e93a6cc7750a8a1057219f7",
+          "archive": "reports/v1.0.0/executed-source/ecd700024436712b55152cb4bf64463ea70ee5bb9e93a6cc7750a8a1057219f7/src/physics/disk-analysis.js"
+        },
+        {
+          "path": "src/physics/external-grid.js",
+          "sha256": "91601c0cf72fec057e97bc00114785b88d0abac10cf389ea13adf5b57257c9e4",
+          "archive": "reports/v1.0.0/executed-source/91601c0cf72fec057e97bc00114785b88d0abac10cf389ea13adf5b57257c9e4/src/physics/external-grid.js"
+        },
+        {
+          "path": "src/compute/gpu.js",
+          "sha256": "7ee6706d635a797f8a8546f96968466c8d8f9dbb67d3bd2aadd6f46ea00a7967",
+          "archive": "reports/v1.0.0/executed-source/7ee6706d635a797f8a8546f96968466c8d8f9dbb67d3bd2aadd6f46ea00a7967/src/compute/gpu.js"
+        },
+        {
+          "path": "src/compute/gpu-external-grid.js",
+          "sha256": "82c7267f53c8a2f4a8595ea82ba13f280d9b3692ed103358ca5e2169febbd9b4",
+          "archive": "reports/v1.0.0/executed-source/82c7267f53c8a2f4a8595ea82ba13f280d9b3692ed103358ca5e2169febbd9b4/src/compute/gpu-external-grid.js"
+        },
+        {
+          "path": "tests/browser-equilibrium-v1.html",
+          "sha256": "18ce4b9e06ee77fdd5bfd193d9f850f02dbd935faa3846ae99daca5464fc1c7a",
+          "archive": "reports/v1.0.0/executed-source/18ce4b9e06ee77fdd5bfd193d9f850f02dbd935faa3846ae99daca5464fc1c7a/tests/browser-equilibrium-v1.html"
+        },
+        {
+          "path": "scripts/equilibrium/protocol.json",
+          "sha256": "5df5fac1499212656ad8fcbbb502976676fbce70bff33d47755dae72d2607078",
+          "archive": "reports/v1.0.0/executed-source/5df5fac1499212656ad8fcbbb502976676fbce70bff33d47755dae72d2607078/scripts/equilibrium/protocol.json"
+        }
+      ]
+    }
+  ],
+  "unchangedHistoricalPhysicsAndRenderers": {
+    "src/physics/constants.js": true,
+    "src/physics/models.js": true,
+    "src/physics/initial-legacy.js": true,
+    "src/physics/forces.js": true,
+    "src/physics/integrator.js": true,
+    "src/compute/gpu.js": true,
+    "src/render/camera.js": true,
+    "src/render/gpu-renderer.js": true,
+    "src/render/particle-style.js": true,
+    "src/render/webgl-renderer.js": true
+  },
+  "stellarPairingGroupsVerified": 8,
+  "qualification": "Hashes verify data/code identity and numerical bookkeeping; they do not certify physical equilibrium."
+}

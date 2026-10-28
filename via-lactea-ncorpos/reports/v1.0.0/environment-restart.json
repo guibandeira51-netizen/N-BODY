@@ -1,0 +1,44 @@
+{
+  "event": "Execution environment and browser restarted during permission update; in-memory runs and processes lost",
+  "preservedCompletedRuns": [
+    {
+      "id": "df-A-10k",
+      "status": "completed",
+      "timeMyr": 1000,
+      "sha256": "cd040ff77d54092a14bd24c726ece01d19881fed382ae711cc009fbc64fc2b1a"
+    },
+    {
+      "id": "df-A-h27",
+      "status": "completed",
+      "timeMyr": 1000,
+      "sha256": "2c33a7c37eeb0dd021cd707e20206986b5a60d0ce90136c94d37ad1e08fa9b18"
+    },
+    {
+      "id": "df-A-s27",
+      "status": "completed",
+      "timeMyr": 200,
+      "sha256": "b388f0f1ce371a5fbff3b69703c399a6ac7d14aa36b01cce50c64bc1cce81928"
+    },
+    {
+      "id": "df-B-14k",
+      "status": "completed",
+      "timeMyr": 1000,
+      "sha256": "cbdb8ba0305cfb5379b4b01d6834e6eae03da27c2d5c38362b6df2a2421c6c2c"
+    },
+    {
+      "id": "df-B-26k",
+      "status": "completed",
+      "timeMyr": 200,
+      "sha256": "912862b4b451d6a99f97a7df7a025b949a03ae7213b2ccc98fa70c8de040d159"
+    },
+    {
+      "id": "legacy-10k",
+      "status": "completed",
+      "timeMyr": 1000,
+      "sha256": "d09351d5d5896163b391b2765439ca027531f19e9639e143bcdcbf4f1001d761"
+    }
+  ],
+  "resumeFromProtocolIndex": 6,
+  "preparation": "Initial calibrated SCM attempt had not completed its first iteration; restarted with per-iteration checkpoints",
+  "qualification": "No unsaved or partial run is counted as completed. Remaining experiments rerun from the same saved initial snapshots."
+}

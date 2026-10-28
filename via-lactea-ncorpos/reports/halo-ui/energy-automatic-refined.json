@@ -1,0 +1,324 @@
+{
+  "source": "Actual browser Save chart SVG, not reconstructed particle data",
+  "svg": "energy-automatic-refined.svg",
+  "sha256": "29d7b62ad12957e6ae00a22f7e228f936056c944024240a7bdee715601633b81",
+  "realizationId": "481d7768-f6f4-4367-88c5-5165fcda0d32",
+  "configuration": {
+    "baseN": 23218,
+    "baseCounts": [
+      3482,
+      10449,
+      9287
+    ],
+    "counts": [
+      3482,
+      10449,
+      297184
+    ],
+    "n": 311115,
+    "haloRefinement": 32,
+    "dt": 1,
+    "epsilon": 0.1,
+    "theta": 0.5,
+    "budgetBytes": 536870912,
+    "seed": 2026,
+    "energyAuditCadenceMyr": 200,
+    "withHalo": true,
+    "requestedAlgorithm": "direct",
+    "requestedBackend": "gpu",
+    "energyReferenceBudgetBytes": 367002122,
+    "selected": "gpu",
+    "diagnosticOptions": {
+      "dt": 1,
+      "energyAuditCadenceMyr": 200,
+      "energyReferenceBudgetBytes": 367002122,
+      "withHalo": true,
+      "forceMethod": "GPU direct f32",
+      "algorithm": "barnes-hut",
+      "epsilon": 0.1,
+      "theta": 0.5
+    }
+  },
+  "direct": [
+    {
+      "timeMyr": 0,
+      "n": 311115,
+      "mass": 104.93157752821571,
+      "effectiveDt": 1,
+      "treeTheta": 0.5,
+      "diagnosticCostMs": 50252.175000000745,
+      "K": 1.8766881473311245,
+      "U": -3.7268081712694965,
+      "E": -1.850120023938372,
+      "G": 0.04498502239584923,
+      "epsilonSquared": 0.009999999776482582,
+      "forceAlgorithm": "GPU direct f32",
+      "trajectoryPrecision": "Float32",
+      "evaluationPrecision": "Float64 compensated CPU evaluation",
+      "velocityEpoch": "full-step, after final KDK kick",
+      "externalPotential": 0,
+      "method": "Pares diretos Float64 · CPU compensada",
+      "relative": {
+        "signed": 0,
+        "absolute": 0,
+        "percent": 0,
+        "denominator": 1.850120023938372,
+        "normalization": "|E0|"
+      },
+      "origin": "automatic",
+      "configuration": {
+        "baseN": 23218,
+        "baseCounts": [
+          3482,
+          10449,
+          9287
+        ],
+        "counts": [
+          3482,
+          10449,
+          297184
+        ],
+        "n": 311115,
+        "haloRefinement": 32,
+        "dt": 1,
+        "epsilon": 0.1,
+        "theta": 0.5,
+        "budgetBytes": 536870912,
+        "seed": 2026,
+        "energyAuditCadenceMyr": 200,
+        "withHalo": true,
+        "requestedAlgorithm": "direct",
+        "requestedBackend": "gpu",
+        "energyReferenceBudgetBytes": 367002122,
+        "selected": "gpu",
+        "diagnosticOptions": {
+          "dt": 1,
+          "energyAuditCadenceMyr": 200,
+          "energyReferenceBudgetBytes": 367002122,
+          "withHalo": true,
+          "forceMethod": "GPU direct f32",
+          "algorithm": "barnes-hut",
+          "epsilon": 0.1,
+          "theta": 0.5
+        }
+      },
+      "backend": "WebGPU",
+      "requestedTimeMyr": 0,
+      "samplingCadenceMyr": 200
+    },
+    {
+      "timeMyr": 200,
+      "n": 311115,
+      "mass": 104.93157752821571,
+      "effectiveDt": 1,
+      "treeTheta": 0.5,
+      "diagnosticCostMs": 50784.20499999821,
+      "K": 1.92845768804795,
+      "U": -3.7783500651545143,
+      "E": -1.8498923771065643,
+      "G": 0.04498502239584923,
+      "epsilonSquared": 0.009999999776482582,
+      "forceAlgorithm": "GPU direct f32",
+      "trajectoryPrecision": "Float32",
+      "evaluationPrecision": "Float64 compensated CPU evaluation",
+      "velocityEpoch": "full-step, after final KDK kick",
+      "externalPotential": 0,
+      "method": "Pares diretos Float64 · CPU compensada",
+      "relative": {
+        "signed": 0.00012304435866979815,
+        "absolute": 0.00012304435866979815,
+        "percent": 0.012304435866979815,
+        "denominator": 1.850120023938372,
+        "normalization": "|E0|"
+      },
+      "origin": "automatic",
+      "configuration": {
+        "baseN": 23218,
+        "baseCounts": [
+          3482,
+          10449,
+          9287
+        ],
+        "counts": [
+          3482,
+          10449,
+          297184
+        ],
+        "n": 311115,
+        "haloRefinement": 32,
+        "dt": 1,
+        "epsilon": 0.1,
+        "theta": 0.5,
+        "budgetBytes": 536870912,
+        "seed": 2026,
+        "energyAuditCadenceMyr": 200,
+        "withHalo": true,
+        "requestedAlgorithm": "direct",
+        "requestedBackend": "gpu",
+        "energyReferenceBudgetBytes": 367002122,
+        "selected": "gpu",
+        "diagnosticOptions": {
+          "dt": 1,
+          "energyAuditCadenceMyr": 200,
+          "energyReferenceBudgetBytes": 367002122,
+          "withHalo": true,
+          "forceMethod": "GPU direct f32",
+          "algorithm": "barnes-hut",
+          "epsilon": 0.1,
+          "theta": 0.5
+        }
+      },
+      "backend": "WebGPU",
+      "requestedTimeMyr": 200,
+      "samplingCadenceMyr": 200
+    },
+    {
+      "timeMyr": 325,
+      "n": 311115,
+      "mass": 104.93157752821571,
+      "effectiveDt": 1,
+      "treeTheta": 0.5,
+      "diagnosticCostMs": 50952,
+      "K": 1.9453743369761158,
+      "U": -3.7949724369436657,
+      "E": -1.8495980999675499,
+      "G": 0.04498502239584923,
+      "epsilonSquared": 0.009999999776482582,
+      "forceAlgorithm": "GPU direct Float32",
+      "trajectoryPrecision": "Float32",
+      "evaluationPrecision": "Float64 compensated CPU evaluation",
+      "velocityEpoch": "full-step, after final KDK kick",
+      "externalPotential": 0,
+      "method": "Pares diretos Float64 · CPU compensada",
+      "relative": {
+        "signed": 0.000282102763101306,
+        "absolute": 0.000282102763101306,
+        "percent": 0.0282102763101306,
+        "denominator": 1.850120023938372,
+        "normalization": "|E0|"
+      },
+      "origin": "manual",
+      "configuration": {
+        "baseN": 23218,
+        "baseCounts": [
+          3482,
+          10449,
+          9287
+        ],
+        "counts": [
+          3482,
+          10449,
+          297184
+        ],
+        "n": 311115,
+        "haloRefinement": 32,
+        "dt": 1,
+        "epsilon": 0.1,
+        "theta": 0.5,
+        "budgetBytes": 536870912,
+        "seed": 2026,
+        "energyAuditCadenceMyr": 200,
+        "withHalo": true,
+        "requestedAlgorithm": "direct",
+        "requestedBackend": "gpu",
+        "energyReferenceBudgetBytes": 367002122,
+        "selected": "gpu",
+        "diagnosticOptions": {
+          "dt": 1,
+          "energyAuditCadenceMyr": 200,
+          "energyReferenceBudgetBytes": 367002122,
+          "withHalo": true,
+          "forceMethod": "GPU direct f32",
+          "algorithm": "barnes-hut",
+          "epsilon": 0.1,
+          "theta": 0.5
+        }
+      },
+      "backend": "WebGPU",
+      "samplingCadenceMyr": null
+    }
+  ],
+  "summary": {
+    "bhMaxAbsolutePercent": 0.0341071656217098,
+    "bhLastPercent": 0.0341071656217098,
+    "directMaxAbsolutePercent": 0.0282102763101306,
+    "directLastPercent": 0.0282102763101306
+  },
+  "plot": {
+    "kind": "direct",
+    "mode": "relative",
+    "color": "#e9ab55",
+    "xDomain": [
+      0,
+      325
+    ],
+    "yDomain": {
+      "min": -0.002256822104810448,
+      "max": 0.03046709841494105,
+      "minimal": false,
+      "minimumDisplaySpan": 2.8421709430404007e-12,
+      "empty": false
+    },
+    "axisOffset": 0,
+    "referenceValue": 0,
+    "guide": {
+      "segments": [
+        {
+          "fromTimeMyr": 0,
+          "toTimeMyr": 200,
+          "fromValue": 0,
+          "toValue": 0.012304435866979815
+        },
+        {
+          "fromTimeMyr": 200,
+          "toTimeMyr": 325,
+          "fromValue": 0.012304435866979815,
+          "toValue": 0.0282102763101306
+        }
+      ],
+      "gaps": [],
+      "nominalCadenceMyr": 200,
+      "cadenceSource": "recorded",
+      "gapFactor": 1.5,
+      "visualGuideOnly": true,
+      "interpolatedMeasurements": false
+    },
+    "interpolated": false,
+    "plottedTimes": [
+      0,
+      200,
+      325
+    ]
+  },
+  "directSampling": {
+    "cadenceMyr": 200,
+    "events": [
+      {
+        "type": "completed",
+        "timeMyr": 0,
+        "reason": "Referência direta Float64 calculada no snapshot preservado."
+      },
+      {
+        "type": "completed",
+        "timeMyr": 200,
+        "reason": "Referência direta Float64 calculada no snapshot preservado."
+      },
+      {
+        "type": "cancelled",
+        "timeMyr": 325,
+        "reason": "Avaliação direta cancelada."
+      }
+    ]
+  },
+  "normalization": {
+    "BH": {
+      "value": 1.8497441312418308,
+      "reason": null
+    },
+    "direct": {
+      "value": 1.850120023938372,
+      "reason": null
+    },
+    "comparison": "B = E_BH - E_dir; ΔB = B - B0; η = 100 ΔB / |E_dir(0)|. Native percentages with different denominators are not subtracted."
+  }
+}

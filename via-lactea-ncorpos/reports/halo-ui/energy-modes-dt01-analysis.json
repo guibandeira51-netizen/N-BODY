@@ -1,0 +1,51 @@
+{
+  "realizationId": "32378a4d-e167-4c79-a1f4-ba8595b67d25",
+  "n": 343578,
+  "dtMyr": 0.1,
+  "referenceCount": 7,
+  "firstTimeMyr": 0,
+  "lastAuditedTimeMyr": 300.00000447034836,
+  "maximum": {
+    "timeMyr": 250.0000037252903,
+    "errorPercent": -0.00005095390285944929,
+    "absoluteFraction": 5.095390285944929e-7,
+    "partsPerMillion": 0.5095390285944928
+  },
+  "selector": {
+    "mode": "total",
+    "axisOffset": -1.8840509973998674,
+    "yDomain": {
+      "min": -1.8840520341971836,
+      "max": -1.8840509206000662,
+      "minimal": false,
+      "minimumDisplaySpan": 5.354797728493231e-14,
+      "empty": false
+    },
+    "explanation": "Total energy values are plotted. Ticks use an explicit E0 offset. Relative percentage and total energy are affine transforms; automatic zoom preserves curve shape."
+  },
+  "comparisonNear200Myr": {
+    "prior": {
+      "timeMyr": 200,
+      "dtMyr": 1,
+      "errorPercent": 0.011316182728844585
+    },
+    "current": {
+      "timeMyr": 200.00000298023224,
+      "dtMyr": 0.1,
+      "errorPercent": -0.000039435579307470725
+    },
+    "ratioOfAbsoluteSampledErrors": 286.9536324194642,
+    "matchingRecordedParameters": {
+      "n": true,
+      "seed": true,
+      "counts": true,
+      "epsilon": true,
+      "G": true,
+      "epsilonSquared": true,
+      "initialK": true,
+      "initialU": true,
+      "initialEnergy": true
+    },
+    "qualification": "Same recorded N, seed, masses allocation, G, softening and initial K/U; full particle snapshots were not compared here. Times differ by Float32 timestep representation. One two-step comparison is not a convergence order measurement."
+  }
+}

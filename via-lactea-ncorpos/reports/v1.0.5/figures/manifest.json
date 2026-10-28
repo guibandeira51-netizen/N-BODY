@@ -1,0 +1,238 @@
+{
+  "schema": "stationarity-figures-105",
+  "figures": [
+    {
+      "id": "01-espessura-tempo",
+      "title": "Espessura vertical ao longo do tempo",
+      "description": "Dados efetivamente medidos; fontes, unidades e sementes constam nos CSV e no manifesto. Não houve correção de espessura ou de velocidades durante a evolução. Faixas: média ± desvio padrão, não intervalos de confiança. E/F fixam bárions2026 e variam três halos; A/B/E104 usam três realizações bariônicas.",
+      "png": "figures/01-espessura-tempo.png",
+      "svg": "figures/01-espessura-tempo.svg",
+      "csv": "figures/01-espessura-tempo.csv",
+      "sha256": {
+        "png": "fc81fb33ba9a1016993b8061e06c2923626cabee0789494764ae46bf8ea95866",
+        "svg": "f0904b45234344b32b063f7eb063ffb89a59471ed7b10d726a9cbee92bca08fa",
+        "csv": "e3a68574867a820b94116e856207ed2fe4bbc21814e671777c17b581541190c4"
+      }
+    },
+    {
+      "id": "02-espessura-aneis",
+      "title": "Espessura por anel galáctico",
+      "description": "Dados efetivamente medidos; fontes, unidades e sementes constam nos CSV e no manifesto. Não houve correção de espessura ou de velocidades durante a evolução. Uma realização pareada, semente 2026. Anéis com menos de 60 partículas omitidos do desenho; permanecem nos CSV.",
+      "png": "figures/02-espessura-aneis.png",
+      "svg": "figures/02-espessura-aneis.svg",
+      "csv": "figures/02-espessura-aneis.csv",
+      "sha256": {
+        "png": "6d2b66c338cd96a9b57ca77f472b5968b8682c0dc417d3e799dac0acb8c26d23",
+        "svg": "639b2cf2342af0277d64a413875b3893ef8ba8ffa71d6710e1123b87571b0db6",
+        "csv": "e507b53cfeb73ad55dbfd24b7c7f821358b8114d6a726b7e8d99127a952d8233"
+      }
+    },
+    {
+      "id": "03-dispersao-vertical",
+      "title": "Dispersão vertical e evolução cinemática",
+      "description": "Dados efetivamente medidos; fontes, unidades e sementes constam nos CSV e no manifesto. Não houve correção de espessura ou de velocidades durante a evolução. Faixas: média ± desvio padrão, não intervalos de confiança. E/F fixam bárions2026 e variam três halos; A/B/E104 usam três realizações bariônicas. σz usa o eixo cartesiano fixo, complementar à projeção no plano próprio.",
+      "png": "figures/03-dispersao-vertical.png",
+      "svg": "figures/03-dispersao-vertical.svg",
+      "csv": "figures/03-dispersao-vertical.csv",
+      "sha256": {
+        "png": "f05cae4e10ff6b77c3ec72005768869e17531a24b2dbb9ab864ff3e7d428c3cf",
+        "svg": "6fb8b4b265a6244bca410ae2e2b124b77630e71dd8e6df643109798ee02f12c9",
+        "csv": "56042150e8ad0a162474f8ee9fa6303e14257ca72ec53d0bc58b5a3faa936e03"
+      }
+    },
+    {
+      "id": "04-dispersoes-radial-azimutal",
+      "title": "Dispersões radial e azimutal",
+      "description": "Dados efetivamente medidos; fontes, unidades e sementes constam nos CSV e no manifesto. Não houve correção de espessura ou de velocidades durante a evolução. Seleção instantânea por anel; migração muda sua composição.",
+      "png": "figures/04-dispersoes-radial-azimutal.png",
+      "svg": "figures/04-dispersoes-radial-azimutal.svg",
+      "csv": "figures/04-dispersoes-radial-azimutal.csv",
+      "sha256": {
+        "png": "dd23a9310770bc197318701979e6cfd88ea5a7e7bf1f6029e8496a2de67c0823",
+        "svg": "1bb0d70134a5ab86fe1bc91a435cc55c28a5f54498b19b19c486f8e143413f33",
+        "csv": "ae96451da8a4bfb9e95077ce6ec64dfdd530e9d7b54f5b7e0940f673d8dc4f2d"
+      }
+    },
+    {
+      "id": "05-perfil-vertical",
+      "title": "Perfis verticais de densidade",
+      "description": "Dados efetivamente medidos; fontes, unidades e sementes constam nos CSV e no manifesto. Não houve correção de espessura ou de velocidades durante a evolução. Perfis verticais usam abertura R<30 kpc; disk reúne fino e espesso. Sem ajuste observacional novo. Overflow sem densidade finita não é desenhado.",
+      "png": "figures/05-perfil-vertical.png",
+      "svg": "figures/05-perfil-vertical.svg",
+      "csv": "figures/05-perfil-vertical.csv",
+      "sha256": {
+        "png": "2e344a28359e3bcd9b327bd2c4e0d040cbdf2890ce4d6f94483d897a6f8e7a37",
+        "svg": "fd2cafb43e824af1facbe5e7462c63864fde9bddb8ede07d7d469ad0f7d1fd8e",
+        "csv": "47af80a48689cecb4695d3b8c4c50d7819bdded96364c8a692b5c97e6ad643aa"
+      }
+    },
+    {
+      "id": "06-perfil-radial",
+      "title": "Perfis radiais de massa e densidade",
+      "description": "Dados efetivamente medidos; fontes, unidades e sementes constam nos CSV e no manifesto. Não houve correção de espessura ou de velocidades durante a evolução. Perfis verticais usam abertura R<30 kpc; disk reúne fino e espesso. Sem ajuste observacional novo. Overflow sem densidade finita não é desenhado.",
+      "png": "figures/06-perfil-radial.png",
+      "svg": "figures/06-perfil-radial.svg",
+      "csv": "figures/06-perfil-radial.csv",
+      "sha256": {
+        "png": "33ca82e296bb704ea929026f6aaf7ef4ed58163637e566fa6ceacb228d48a73e",
+        "svg": "91b281de563c1471b98a7d931dc142ad389f4193900f99e26edc2d55c1180cf1",
+        "csv": "dc3c0ccec0c13dd81fe377a27b56872cab5039a6e03b3b9fcde3c8b5cd050cbe"
+      }
+    },
+    {
+      "id": "07-energia",
+      "title": "Energia total e erro energético",
+      "description": "Dados efetivamente medidos; fontes, unidades e sementes constam nos CSV e no manifesto. Não houve correção de espessura ou de velocidades durante a evolução. Zero aparece no piso gráfico 10⁻¹⁶; CSV preserva zero. Novos ensaios usam G e ε² efetivos f32 no Hamiltoniano Float64; controles históricos mantêm sua convenção nominal. Máximos são amostrados.",
+      "png": "figures/07-energia.png",
+      "svg": "figures/07-energia.svg",
+      "csv": "figures/07-energia.csv",
+      "sha256": {
+        "png": "e810bfc6cd9b805bd7f0611b1a1242a76619cf4329d7be878abb70a3f6939db4",
+        "svg": "2a65facdfb52f9859c5e5aa1f7b4da1a3ae39dfeaf19872006a3c2aee46e6f6f",
+        "csv": "07bf18fc1003821a19c005274a6b9ecb96c2936b615cdeef8e24512fd59ae26f"
+      }
+    },
+    {
+      "id": "08-fourier",
+      "title": "Modos de Fourier: amplitude e fase",
+      "description": "Dados efetivamente medidos; fontes, unidades e sementes constam nos CSV e no manifesto. Não houve correção de espessura ou de velocidades durante a evolução. F, disco fino 4–6 kpc, semente 2026. Fases em baixa amplitude não identificam padrões; fases são principais, sem velocidade de padrão inferida. Início antipodal suprime modos ímpares de densidade.",
+      "png": "figures/08-fourier.png",
+      "svg": "figures/08-fourier.svg",
+      "csv": "figures/08-fourier.csv",
+      "sha256": {
+        "png": "fd029dae5f6b6f93bd44e7ebfde6566c18da6b77e17d9ae831364898a2b51f20",
+        "svg": "3511599453575f2c49091196d940630baf9dcb8fc58884c0579de13c5a399662",
+        "csv": "ed863b869736b0b7ff005b9c907a7435aa7ea9a6745a4d2814f5646d0003d215"
+      }
+    },
+    {
+      "id": "09-plano-respiracao",
+      "title": "Plano médio, flexão e respiração vertical",
+      "description": "Dados efetivamente medidos; fontes, unidades e sementes constam nos CSV e no manifesto. Não houve correção de espessura ou de velocidades durante a evolução. Anel fixo 4–6 kpc, semente 2026. Momentos descritivos, sem prova de instabilidade. Fluxo linear removido apenas no diagnóstico; velocidades integradas nunca são alteradas.",
+      "png": "figures/09-plano-respiracao.png",
+      "svg": "figures/09-plano-respiracao.svg",
+      "csv": "figures/09-plano-respiracao.csv",
+      "sha256": {
+        "png": "2d3705f27fd028e2a6c873f20859f3416328e68de2d3822126495f92c55445be",
+        "svg": "9435db08a4a4b5df0008a7db4fc0faba9a16a63ec202160b595fafddbb122344",
+        "csv": "41e66c8318c3a5b4096e8dc00424f2103d6b3e32a29a0914ab3e127ce0a57da4"
+      }
+    },
+    {
+      "id": "10-massa-aquecimento",
+      "title": "Massa das macro partículas e aquecimento medido",
+      "description": "Dados efetivamente medidos; fontes, unidades e sementes constam nos CSV e no manifesto. Não houve correção de espessura ou de velocidades durante a evolução. Pontos são realizações, não uma lei ajustada de relaxação. Duas resoluções não demonstram limite assintótico.",
+      "png": "figures/10-massa-aquecimento.png",
+      "svg": "figures/10-massa-aquecimento.svg",
+      "csv": "figures/10-massa-aquecimento.csv",
+      "sha256": {
+        "png": "73eb07560aac1efdc57c855bbce19667b45e2a44107560abeaa0c6b584cf0f9f",
+        "svg": "807423b20db1563f5f716f663a7f8abfc720a5d7995b25f34e997bc54d9b66c4",
+        "csv": "149cfe3edd2ea64c5fcd3055c268ce165731f87b5773e4fa8979e6c0bbec61f7"
+      }
+    },
+    {
+      "id": "11-continuo-vivo",
+      "title": "Campo contínuo, bárions vivos e halo vivo",
+      "description": "Dados efetivamente medidos; fontes, unidades e sementes constam nos CSV e no manifesto. Não houve correção de espessura ou de velocidades durante a evolução. Faixas: média±SD de três realizações pareadas de bárions.  Nove controles históricos, mesmas fases bariônicas por semente, verificados por hash. Diferenças também incluem resposta coletiva e não são frações causais puras de encontros.",
+      "png": "figures/11-continuo-vivo.png",
+      "svg": "figures/11-continuo-vivo.svg",
+      "csv": "figures/11-continuo-vivo.csv",
+      "sha256": {
+        "png": "eb28c8aaafd763e54a74c63738d4c4072aaa063308e3e5a4d0e094ea86b1b7d6",
+        "svg": "763b948932b189c4313e1b5fadbcfff50bc46a7c40f880ec7051c165f42d67a7",
+        "csv": "04755dca9699357fd50e83bf737738af45f0848c418e87103d9f36016f353371"
+      }
+    },
+    {
+      "id": "12-preparacao",
+      "title": "Preparação original e tentativa de fases orbitais",
+      "description": "Dados efetivamente medidos; fontes, unidades e sementes constam nos CSV e no manifesto. Não houve correção de espessura ou de velocidades durante a evolução. Faixas: média±SD das três realizações.  MIX é uma tentativa nova que não demonstrou melhoria global; não foi promovida. Campo total fixo, integrações independentes de 200 Myr. A janela de 1 Gyr usada para sortear fases não é uma validação viva de 1 Gyr.",
+      "png": "figures/12-preparacao.png",
+      "svg": "figures/12-preparacao.svg",
+      "csv": "figures/12-preparacao.csv",
+      "sha256": {
+        "png": "f7cd9229ffb223f75f0910a576001c4b151ce2ffb6b9c254296ee52fe4a6305b",
+        "svg": "f04cc2a12858985bfedac47847704a5a47b84c2d8cb282e3f98f812264734fc1",
+        "csv": "4e38741c0bb9aaf47095920694f8fd07b5306c5a3f4692738bb7b792eec9d9b6"
+      }
+    },
+    {
+      "id": "13-convergencia",
+      "title": "Resolução e deriva estrutural tardia",
+      "description": "Dados efetivamente medidos; fontes, unidades e sementes constam nos CSV e no manifesto. Não houve correção de espessura ou de velocidades durante a evolução. Mesmos bárions e sementes pareadas de halo. Convergência exige equivalência e tendências controladas; proximidade de dois pontos não basta.",
+      "png": "figures/13-convergencia.png",
+      "svg": "figures/13-convergencia.svg",
+      "csv": "figures/13-convergencia.csv",
+      "sha256": {
+        "png": "778c9270ad6cd9a686d4a51aaf9a726961d586830d9f51ce3bbe5ec6bb586558",
+        "svg": "3e0579d6e34c4c1c53273f5b0ae41d36b1db75630e004f2d07b9f6b4af06a528",
+        "csv": "aec901af731805b079b5ceab3cb8c49cb984ba18c59874a422685cdb9ec2f753"
+      }
+    },
+    {
+      "id": "14-dominio-orbital",
+      "title": "Domínio efetivamente integrado em períodos orbitais",
+      "description": "Dados efetivamente medidos; fontes, unidades e sementes constam nos CSV e no manifesto. Não houve correção de espessura ou de velocidades durante a evolução. Faixas: média ± desvio padrão, não intervalos de confiança. E/F fixam bárions2026 e variam três halos; A/B/E104 usam três realizações bariônicas. Este gráfico não inventa múltiplas órbitas: os dados terminam no horizonte executado. Campanhas de 400, 600 e 1000 Myr dependem da decisão científica registrada; janela de preparação não é evolução autogravitante.",
+      "png": "figures/14-dominio-orbital.png",
+      "svg": "figures/14-dominio-orbital.svg",
+      "csv": "figures/14-dominio-orbital.csv",
+      "sha256": {
+        "png": "580fb7f97dcecc23cf22e6365ebf0d99efac6323490af228c467881224621185",
+        "svg": "8fa07b1e8c3a8cf9ebc9ede482b9814b3a0877fbb1d3b2f4117d9a1e3e744c78",
+        "csv": "40d904c12da8cd390412e43ca7d59229e316fb8a5609b0b34c3568940a47ad0e"
+      }
+    },
+    {
+      "id": "15-jeans",
+      "title": "Resíduos espaciais das equações de Jeans",
+      "description": "z=0,2 kpc, h=0,01 kpc; todos os termos e passos 0,04/0,02/0,01 estão no JSON. Densidades muito pequenas, quadratura dos momentos e ações aproximadas limitam a interpretação; resíduo normalizado não é uma porcentagem exata de desequilíbrio físico.",
+      "png": "figures/15-jeans.png",
+      "svg": "figures/15-jeans.svg",
+      "csv": "figures/15-jeans.csv",
+      "sha256": {
+        "png": "65f1165dea9ec768757c0217ffe52e7f1a5bfc4ea82a8ac1ee7e70b07f0ad5c7",
+        "svg": "662b7ca69c6a70111c04471835d79d08bbf1208465d90239b76d30375b0387f9",
+        "csv": "befd4298962ce7e371e33f5280e4ac0d2910e5f0e25369d0b570b4a379c0fb1c"
+      }
+    },
+    {
+      "id": "16-resolucao-barionica",
+      "title": "Refinamento isolado de bojo e discos",
+      "description": "Dados efetivamente medidos; fontes, unidades e sementes constam nos CSV e no manifesto. Não houve correção de espessura ou de velocidades durante a evolução. Faixas: média±SD de três realizações por refinamento.  Halo contínuo Plummer compatível; uma população ressampleada por vez, massas preservadas. Thin2 aqui dobra 7092 para 14184; nomes das versões anteriores não são intercambiáveis.",
+      "png": "figures/16-resolucao-barionica.png",
+      "svg": "figures/16-resolucao-barionica.svg",
+      "csv": "figures/16-resolucao-barionica.csv",
+      "sha256": {
+        "png": "75e79e9e761d50f3b1c531f7ad90c0bfeb2693c753d253adc5bf344b6f0991bb",
+        "svg": "9ae95a522085293d6f368b3f56f1e5fbf13c2c2c19191af96a10210d7e8ee3ce",
+        "csv": "d84faa79ccf788663094e2f286150ec032603a554aed0fad36036ef1fdb2f8f2"
+      }
+    },
+    {
+      "id": "17-jeans-independente",
+      "title": "Quadratura independente dos momentos de Jeans",
+      "description": "Mesma DF e mesmo potencial, z=0,2kpc e h=0,01kpc. Barras: desvio entre quatro scrambles de Sobol, não entre galáxias. Duas resoluções de integração em velocidade e diferenças finitas comuns; limites de caudas/quadratura e de ações aproximadas permanecem. Bojo em R solar tem densidade muito baixa; não determina sozinho a qualificação global.",
+      "png": "figures/17-jeans-independente.png",
+      "svg": "figures/17-jeans-independente.svg",
+      "csv": "figures/17-jeans-independente.csv",
+      "sha256": {
+        "png": "698ba9558763c889d9d10f4f74ae7b0964fd5e7d976e77863603c1feff042f9f",
+        "svg": "90433a1b8d936610d468030d91098660f757a4e8bb305b3409f1ab3e0636edf0",
+        "csv": "e663e20495682a6eeb24952f0573106ea54df58ad36a1acb593874ed1283c79a"
+      }
+    }
+  ],
+  "sources": {
+    "reports/v1.0.5/analysis.json": "ca0d8208783406f3196ac3e51bc259e2f003b97159dfb3c3920714a4d0ce6e24",
+    "reports/v1.0.5/time-series.csv": "0e5e45ccaccbe391ef602a2d68a5e50a016259fdd8f13dae1d94379d824e1e19",
+    "reports/v1.0.5/ring-series.csv": "3b79868a11a58eeee0997ee89a389d48118999f72c78b380032f91b84ed468e3",
+    "reports/v1.0.5/density-profiles.csv": "3ba6af97c728b5564a2a59646367a45538bcecc57dcbb96d1523294f95ab4543",
+    "reports/v1.0.5/energy-series.csv": "35022fc864fed4da35ccf20fa77d79b7880768e5039b28fc7213edd961a1b45b",
+    "reports/v1.0.5/fourier-series.csv": "78962ddf1ec98846771d27adf3cd9b8df517690dd0f7d862996eee2a57ce1007",
+    "reports/v1.0.5/vertical-series.csv": "ae0685e9c63514d8466c8a0d7f01d8af8ca900c02d3cbc5c9a2c097ca7aa58b5",
+    "reports/v1.0.5/ic-audit.json": "aa4288655a76ba0d458e5a27b43aea5c96fa8baba620843224ecda18acf65e8e",
+    "reports/v1.0.5/jeans-qmc.json": "049d94659f3782efcf1306e7b78c9517491c1e421a98c2b539f33fe261c68a39",
+    "scripts/equilibrium-105/plot.py": "47f1ef5b3f5bd92b8f4000165f1baa738e40ac82c8b93e8b58886310a641dfa8"
+  }
+}

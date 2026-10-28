@@ -1,0 +1,107 @@
+{
+  "dateUTC": "2026-10-23T14:01:27.129Z",
+  "tests": {
+    "passed": 245,
+    "failed": 0,
+    "log": "tests.tap"
+  },
+  "preservation": {
+    "allExistingPhysicsFilesInPriorManifestUnchanged": true,
+    "previousManifestFiles": 52,
+    "changedPreviousFiles": [
+      "experimento-ncorpos.html",
+      "src/ncorpos-live-entry.js",
+      "src/live-diagnostics.js",
+      "src/compute/gpu-live.js",
+      "scripts/build.mjs",
+      "tests/interface-106.test.mjs"
+    ],
+    "unchangedExistingCharts": 4,
+    "addedCharts": 4,
+    "totalCharts": 8
+  },
+  "browser": {
+    "firstEpochMyr": 1001.0000149160624,
+    "lastEpochMyr": 7400.000110268593,
+    "liveUpdated": true,
+    "bitwiseIdenticalTrajectories": [
+      {
+        "representation": "particles",
+        "shape": null,
+        "n": 2048,
+        "passed": true
+      },
+      {
+        "representation": "geometry",
+        "shape": {
+          "type": "spherical"
+        },
+        "n": 2048,
+        "passed": true
+      },
+      {
+        "representation": "geometry",
+        "shape": {
+          "type": "triaxial",
+          "p": 0.85,
+          "q": 0.7,
+          "yaw": 25,
+          "pitch": 12,
+          "roll": 7
+        },
+        "n": 2048,
+        "passed": true
+      }
+    ],
+    "downloadTest": "SVG saved by the page button; metadata and epoch inspected",
+    "source": "browser-results.json",
+    "scope": "Functional and precision controls; no equilibrium or observational fit claim.",
+    "downloadChecks": [
+      {
+        "id": "live-residuals",
+        "path": "C:\\Users\\PC\\Downloads\\residuos-rotacao.svg",
+        "metadata": true,
+        "codeVersion": true,
+        "time": 0
+      },
+      {
+        "id": "live-vertical-force",
+        "path": "C:\\Users\\PC\\Downloads\\forca-vertical (1).svg",
+        "metadata": true,
+        "codeVersion": true,
+        "time": 0
+      },
+      {
+        "id": "live-escape",
+        "path": "C:\\Users\\PC\\Downloads\\velocidade-escape.svg",
+        "metadata": true,
+        "codeVersion": true,
+        "time": 0
+      },
+      {
+        "id": "live-enclosed-mass",
+        "path": "C:\\Users\\PC\\Downloads\\massa-acumulada.svg",
+        "metadata": true,
+        "codeVersion": true,
+        "time": 0
+      }
+    ],
+    "finalScreenshot": "interface-final.png",
+    "finalPreparedState": {
+      "n": 8192,
+      "timeMyr": 0,
+      "paused": true,
+      "codeVersion": "live-observational-v6",
+      "consoleErrors": []
+    }
+  },
+  "build": {
+    "status": "passed",
+    "log": "build.txt",
+    "identity": "f43279bf91bc56adcd19434712743a03821051a9c671d289c595c1432022967d",
+    "sourceFilesChecked": 62,
+    "buildFilesChecked": 62,
+    "hashMismatches": [],
+    "duplicateHtmlIds": []
+  }
+}

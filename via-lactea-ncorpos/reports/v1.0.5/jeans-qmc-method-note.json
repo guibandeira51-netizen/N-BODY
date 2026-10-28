@@ -1,0 +1,9 @@
+{
+  "schema": "metadata-clarification-105",
+  "rawData": "reports/v1.0.5/jeans-qmc.json",
+  "rawSHA256": "049d94659f3782efcf1306e7b78c9517491c1e421a98c2b539f33fe261c68a39",
+  "originalScriptSHA256": "90e49dce95c678ac3d142376d05c388d20cc3b0e7903cfc390c7b44e244042ca",
+  "implementation": "scipy1.18.1 scipy.stats.qmc.Sobol(scramble=True): left linear matrix scramble plus digital random shift (LMS+shift), verified against installed official class documentation.",
+  "correction": "Original protocol uses the generic Owen-scrambled name. LMS+shift is the precise implementation used; this note clarifies nomenclature without rewriting original protocol or numerical rows. Future generator wording corrected; original executed source remains archived.",
+  "dataChanged": false
+}

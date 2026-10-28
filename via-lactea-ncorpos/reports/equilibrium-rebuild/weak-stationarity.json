@@ -1,0 +1,233 @@
+{
+  "schema": "weak-orbit-stationarity-v1",
+  "libraryId": "orbits-1024-s44-p8-2026-10-21T03-42-28-070Z",
+  "identity": "For continuous Hamiltonian trajectories, mean {g,H} over finite T = [g(T)-g(0)]/T. Stationarity requires appropriate weak residuals to vanish as numerical/library/time resolution is refined.",
+  "components": [
+    {
+      "component": 0,
+      "totalProbability": 0.9999999999998097,
+      "weakTests": [
+        {
+          "g": "z^2",
+          "meanPoissonBracketUnreversed": 0.005956775572448956,
+          "meanPoissonBracketRepresented": 0,
+          "finiteOrbitEndpointRateUnreversed": 0.005817940137708997,
+          "normalizedResidualUnreversed": 0.009390789600759345,
+          "normalizedResidual": 0,
+          "normalization": 0.6343210555976345,
+          "qualification": "Finite stored-phase quadrature; endpoint identity exact for continuous orbit, not for sparse quadrature or finite-step KDK. Nonzero residual need not be purely physical."
+        },
+        {
+          "g": "z*vz",
+          "meanPoissonBracketUnreversed": 0.000008395780470282373,
+          "meanPoissonBracketRepresented": 0.000008395780470282373,
+          "finiteOrbitEndpointRateUnreversed": 0.000005199476953013288,
+          "normalizedResidualUnreversed": 0.000294541522757112,
+          "normalizedResidual": 0.000294541522757112,
+          "normalization": 0.02850457345263945,
+          "qualification": "Finite stored-phase quadrature; endpoint identity exact for continuous orbit, not for sparse quadrature or finite-step KDK. Nonzero residual need not be purely physical."
+        },
+        {
+          "g": "x^2+y^2",
+          "meanPoissonBracketUnreversed": 0.035781298783228756,
+          "meanPoissonBracketRepresented": 0,
+          "finiteOrbitEndpointRateUnreversed": 0.03585263284137804,
+          "normalizedResidualUnreversed": 0.028219635054606892,
+          "normalizedResidual": 0,
+          "normalization": 1.2679575307756297,
+          "qualification": "Finite stored-phase quadrature; endpoint identity exact for continuous orbit, not for sparse quadrature or finite-step KDK. Nonzero residual need not be purely physical."
+        },
+        {
+          "g": "x*vx+y*vy",
+          "meanPoissonBracketUnreversed": 0.000015017845533551402,
+          "meanPoissonBracketRepresented": 0.000015017845533551402,
+          "finiteOrbitEndpointRateUnreversed": 0.000019310996143257664,
+          "normalizedResidualUnreversed": 0.00037522895555801235,
+          "normalizedResidual": 0.00037522895555801235,
+          "normalization": 0.04002315202785454,
+          "qualification": "Finite stored-phase quadrature; endpoint identity exact for continuous orbit, not for sparse quadrature or finite-step KDK. Nonzero residual need not be purely physical."
+        }
+      ],
+      "moments": {
+        "unreversedMeanCylindrical": [
+          0.0006253311244523891,
+          0.0012005293828446233,
+          -0.00036908397181248343
+        ],
+        "meanCylindrical": [
+          0,
+          0,
+          0
+        ],
+        "secondCylindrical": [
+          0.010200090197957356,
+          0.00981899473873691,
+          0.014256484616554715
+        ],
+        "dispersionCylindrical": [
+          0.10099549592906287,
+          0.09909084084180994,
+          0.11940052184372862
+        ],
+        "crossSecondMoments": {
+          "Rz": -0.000020825397285028397,
+          "Rphi": -0.000012527330097684545,
+          "zphi": 1.443601339616709e-7
+        },
+        "units": "kpc/Myr, squared for second moments",
+        "qualification": "Orbit-library moments, before equal-mass particle resampling; spheroid time reversal makes all first velocity moments zero in the represented mixture, while second moments remain. Cylindrical moments do not impose sigmaR=sigmaz."
+      }
+    },
+    {
+      "component": 1,
+      "totalProbability": 1.0000000000002436,
+      "weakTests": [
+        {
+          "g": "z^2",
+          "meanPoissonBracketUnreversed": 0.00012420863827880047,
+          "meanPoissonBracketRepresented": 0.00012420863827880047,
+          "finiteOrbitEndpointRateUnreversed": 0.00012477658396065796,
+          "normalizedResidualUnreversed": 0.00777756476295775,
+          "normalizedResidual": 0.00777756476295775,
+          "normalization": 0.015970119447975495,
+          "qualification": "Finite stored-phase quadrature; endpoint identity exact for continuous orbit, not for sparse quadrature or finite-step KDK. Nonzero residual need not be purely physical."
+        },
+        {
+          "g": "z*vz",
+          "meanPoissonBracketUnreversed": 4.2330917536136704e-7,
+          "meanPoissonBracketRepresented": 4.2330917536136704e-7,
+          "finiteOrbitEndpointRateUnreversed": 9.589582959248876e-7,
+          "normalizedResidualUnreversed": 0.00014474251592614632,
+          "normalizedResidual": 0.00014474251592614632,
+          "normalization": 0.0029245669294387356,
+          "qualification": "Finite stored-phase quadrature; endpoint identity exact for continuous orbit, not for sparse quadrature or finite-step KDK. Nonzero residual need not be purely physical."
+        },
+        {
+          "g": "x^2+y^2",
+          "meanPoissonBracketUnreversed": 0.0008880831107567984,
+          "meanPoissonBracketRepresented": 0.0008880831107567984,
+          "finiteOrbitEndpointRateUnreversed": 0.0008972680561278009,
+          "normalizedResidualUnreversed": 0.00023601882014110965,
+          "normalizedResidual": 0.00023601882014110965,
+          "normalization": 3.762763961898615,
+          "qualification": "Finite stored-phase quadrature; endpoint identity exact for continuous orbit, not for sparse quadrature or finite-step KDK. Nonzero residual need not be purely physical."
+        },
+        {
+          "g": "x*vx+y*vy",
+          "meanPoissonBracketUnreversed": -0.0000024127709518112164,
+          "meanPoissonBracketRepresented": -0.0000024127709518112164,
+          "finiteOrbitEndpointRateUnreversed": -0.0000013913843153849395,
+          "normalizedResidualUnreversed": -0.000027964417080135747,
+          "normalizedResidual": -0.000027964417080135747,
+          "normalization": 0.08628003740958022,
+          "qualification": "Finite stored-phase quadrature; endpoint identity exact for continuous orbit, not for sparse quadrature or finite-step KDK. Nonzero residual need not be purely physical."
+        }
+      ],
+      "moments": {
+        "unreversedMeanCylindrical": [
+          0.00004598966967568688,
+          0.19675491954049237,
+          0.00008994736894461183
+        ],
+        "meanCylindrical": [
+          0.00004598966967568688,
+          0.19675491954049237,
+          0.00008994736894461183
+        ],
+        "secondCylindrical": [
+          0.0017884137867811554,
+          0.04135039853253202,
+          0.0014624951193070632
+        ],
+        "dispersionCylindrical": [
+          0.04228961659475572,
+          0.05136049229852063,
+          0.038242476760506544
+        ],
+        "crossSecondMoments": {
+          "Rz": -0.00002274959222443545,
+          "Rphi": 0.000008127406901372394,
+          "zphi": 0.000006035296829154075
+        },
+        "units": "kpc/Myr, squared for second moments",
+        "qualification": "Orbit-library moments, before equal-mass particle resampling; spheroid time reversal makes all first velocity moments zero in the represented mixture, while second moments remain. Cylindrical moments do not impose sigmaR=sigmaz."
+      }
+    },
+    {
+      "component": 2,
+      "totalProbability": 1.0000000000003817,
+      "weakTests": [
+        {
+          "g": "z^2",
+          "meanPoissonBracketUnreversed": 0.2053443966570909,
+          "meanPoissonBracketRepresented": 0,
+          "finiteOrbitEndpointRateUnreversed": 0.20502216471027204,
+          "normalizedResidualUnreversed": 0.035437440054651624,
+          "normalizedResidual": 0,
+          "normalization": 5.794560677645133,
+          "qualification": "Finite stored-phase quadrature; endpoint identity exact for continuous orbit, not for sparse quadrature or finite-step KDK. Nonzero residual need not be purely physical."
+        },
+        {
+          "g": "z*vz",
+          "meanPoissonBracketUnreversed": 0.000041373799198157846,
+          "meanPoissonBracketRepresented": 0.000041373799198157846,
+          "finiteOrbitEndpointRateUnreversed": 0.000044503405227827575,
+          "normalizedResidualUnreversed": 0.0017546311552948757,
+          "normalizedResidual": 0.0017546311552948757,
+          "normalization": 0.02357977006922845,
+          "qualification": "Finite stored-phase quadrature; endpoint identity exact for continuous orbit, not for sparse quadrature or finite-step KDK. Nonzero residual need not be purely physical."
+        },
+        {
+          "g": "x^2+y^2",
+          "meanPoissonBracketUnreversed": 0.3287158738935589,
+          "meanPoissonBracketRepresented": 0,
+          "finiteOrbitEndpointRateUnreversed": 0.3291103530044882,
+          "normalizedResidualUnreversed": 0.027669704782075942,
+          "normalizedResidual": 0,
+          "normalization": 11.879992088187965,
+          "qualification": "Finite stored-phase quadrature; endpoint identity exact for continuous orbit, not for sparse quadrature or finite-step KDK. Nonzero residual need not be purely physical."
+        },
+        {
+          "g": "x*vx+y*vy",
+          "meanPoissonBracketUnreversed": 0.00015669095176439868,
+          "meanPoissonBracketRepresented": 0.00015669095176439868,
+          "finiteOrbitEndpointRateUnreversed": 0.0001630777069815635,
+          "normalizedResidualUnreversed": 0.0033737421048676106,
+          "normalizedResidual": 0.0033737421048676106,
+          "normalization": 0.04644425889528607,
+          "qualification": "Finite stored-phase quadrature; endpoint identity exact for continuous orbit, not for sparse quadrature or finite-step KDK. Nonzero residual need not be purely physical."
+        }
+      ],
+      "moments": {
+        "unreversedMeanCylindrical": [
+          0.0020690042966364313,
+          -0.0069232953174781136,
+          -0.00017314471505049288
+        ],
+        "meanCylindrical": [
+          0,
+          0,
+          0
+        ],
+        "secondCylindrical": [
+          0.010242425121515674,
+          0.013058049802009418,
+          0.011810571934213452
+        ],
+        "dispersionCylindrical": [
+          0.10120486708412631,
+          0.11427182418255787,
+          0.10867645528914463
+        ],
+        "crossSecondMoments": {
+          "Rz": 0.0000708295871950064,
+          "Rphi": -0.000014642983461354488,
+          "zphi": -0.000014934632185363218
+        },
+        "units": "kpc/Myr, squared for second moments",
+        "qualification": "Orbit-library moments, before equal-mass particle resampling; spheroid time reversal makes all first velocity moments zero in the represented mixture, while second moments remain. Cylindrical moments do not impose sigmaR=sigmaz."
+      }
+    }
+  ],
+  "equilibriumValidated": false
+}

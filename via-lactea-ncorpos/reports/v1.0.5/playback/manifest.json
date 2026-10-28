@@ -1,0 +1,279 @@
+{
+  "schema": "recorded-particle-playback-105",
+  "units": "kpc; Float32 x,y,z,component; original Cartesian coordinates, no vertical scaling or interpolation",
+  "models": [
+    {
+      "label": "E104",
+      "n": 89546,
+      "counts": [
+        1500,
+        7092,
+        954,
+        80000
+      ],
+      "seed": 2026,
+      "source": "reports/v1.0.4/runs/FE-b2026-h2026-higher200.json",
+      "sourceSHA256": "182c173bffea204daad701f23c02b53ea508410aa5a5c2fc516fcafe10fdb3a8",
+      "preparation": "original104",
+      "algorithm": "direct GPU Float32 KDK",
+      "dt": 0.05,
+      "epsilon": 0.1,
+      "effectiveParameters": {
+        "dt": 0.05000000074505806,
+        "epsilonSquared": 0.009999999776482582,
+        "G": 0.04498502239584923,
+        "precision": "f32"
+      },
+      "externalHalo": false,
+      "status": "Experimental; estacionariedade estrutural não demonstrada",
+      "states": [
+        {
+          "timeMyr": 0,
+          "file": "playback/E104-s2026-t0.bin",
+          "sha256": "49ca5233a0e80e4078852f293f142ec01fd1d7cde8fe1c721ff5002bb6b28c3b",
+          "bytes": 1432736
+        },
+        {
+          "timeMyr": 200,
+          "file": "playback/E104-s2026-t200.bin",
+          "sha256": "9c5cf45b7088a9dbb0dd52d69db778acab3cc6fb0382321146795714617dedb8",
+          "bytes": 1432736
+        }
+      ]
+    },
+    {
+      "label": "E",
+      "n": 89546,
+      "counts": [
+        1500,
+        7092,
+        954,
+        80000
+      ],
+      "seed": 2026,
+      "source": "reports/v1.0.4/runs/FE-b2026-h2026-higher200.json",
+      "sourceSHA256": "182c173bffea204daad701f23c02b53ea508410aa5a5c2fc516fcafe10fdb3a8",
+      "preparation": "original104",
+      "algorithm": "direct GPU Float32 KDK",
+      "dt": 0.05,
+      "epsilon": 0.1,
+      "effectiveParameters": {
+        "dt": 0.05000000074505806,
+        "epsilonSquared": 0.009999999776482582,
+        "G": 0.04498502239584923,
+        "precision": "f32"
+      },
+      "externalHalo": false,
+      "status": "Experimental; estacionariedade estrutural não demonstrada",
+      "states": [
+        {
+          "timeMyr": 0,
+          "file": "playback/E-s2026-t0.bin",
+          "sha256": "49ca5233a0e80e4078852f293f142ec01fd1d7cde8fe1c721ff5002bb6b28c3b",
+          "bytes": 1432736
+        },
+        {
+          "timeMyr": 200,
+          "file": "playback/E-s2026-t200.bin",
+          "sha256": "9c5cf45b7088a9dbb0dd52d69db778acab3cc6fb0382321146795714617dedb8",
+          "bytes": 1432736
+        }
+      ]
+    },
+    {
+      "label": "F",
+      "n": 169546,
+      "counts": [
+        1500,
+        7092,
+        954,
+        160000
+      ],
+      "seed": 2026,
+      "source": "reports/v1.0.5/runs/F-b2026-h2026-halo-F200.json",
+      "sourceSHA256": "6e4a96bde43a566c83444afdcb9b666f06369dff91154a7fa0346123e2ac5a3f",
+      "preparation": "original104",
+      "algorithm": "direct GPU Float32 KDK",
+      "dt": 0.05,
+      "epsilon": 0.1,
+      "effectiveParameters": {
+        "dt": 0.05000000074505806,
+        "epsilonSquared": 0.009999999776482582,
+        "G": 0.04498502239584923,
+        "precision": "f32"
+      },
+      "externalHalo": false,
+      "status": "Experimental; estacionariedade estrutural não demonstrada",
+      "states": [
+        {
+          "timeMyr": 0,
+          "file": "playback/F-s2026-t0.bin",
+          "sha256": "2788a999b27a515960822f044ccf7b33f671cf1949f3edec66e090a7b8b9e098",
+          "bytes": 2712736
+        },
+        {
+          "timeMyr": 200,
+          "file": "playback/F-s2026-t200.bin",
+          "sha256": "6317293bb62f0e8072ea69e28a1e2520dd2cebe41170c8df719fb3cc3978c865",
+          "bytes": 2712736
+        }
+      ]
+    },
+    {
+      "label": "B-original",
+      "n": 9546,
+      "counts": [
+        1500,
+        7092,
+        954,
+        0
+      ],
+      "seed": 2026,
+      "source": "reports/v1.0.3/runs/B-thin2-s2026-t200.json",
+      "sourceSHA256": "4489aa9e50b60da17837c6354f3e9d0bd7e61a7ff15484640a6ab26ae1ccf83f",
+      "preparation": "original104",
+      "algorithm": "direct GPU Float32 KDK",
+      "dt": 0.05,
+      "epsilon": 0.1,
+      "effectiveParameters": {
+        "dt": 0.05000000074505806,
+        "epsilonSquared": 0.009999999776482582,
+        "G": 0.04498502239584923,
+        "precision": "f32"
+      },
+      "externalHalo": true,
+      "status": "Experimental; estacionariedade estrutural não demonstrada",
+      "states": [
+        {
+          "timeMyr": 0,
+          "file": "playback/B-original-s2026-t0.bin",
+          "sha256": "008e9104c38abdf8640efbc8fe082fb37ac5edcdaf807a4cbf4e00d2c3963d6a",
+          "bytes": 152736
+        },
+        {
+          "timeMyr": 200,
+          "file": "playback/B-original-s2026-t200.bin",
+          "sha256": "1b538437336e6ca55c1d03b4fee1daaccdf249ec44c497cecd825ed11bd043ca",
+          "bytes": 152736
+        }
+      ]
+    },
+    {
+      "label": "B-bulge2",
+      "n": 11046,
+      "counts": [
+        3000,
+        7092,
+        954,
+        0
+      ],
+      "seed": 2026,
+      "source": "reports/v1.0.5/runs/B-bulge2-s2026-baryon200.json",
+      "sourceSHA256": "342cb95b2634af5c267921485fd721015ffbb37777ce52911480a4c7f2ec867b",
+      "preparation": "original104",
+      "algorithm": "direct GPU Float32 KDK",
+      "dt": 0.05,
+      "epsilon": 0.1,
+      "effectiveParameters": {
+        "dt": 0.05000000074505806,
+        "epsilonSquared": 0.009999999776482582,
+        "G": 0.04498502239584923,
+        "precision": "f32"
+      },
+      "externalHalo": true,
+      "status": "Experimental; estacionariedade estrutural não demonstrada",
+      "states": [
+        {
+          "timeMyr": 0,
+          "file": "playback/B-bulge2-s2026-t0.bin",
+          "sha256": "e579cc2fa487e29a7ca8ee136df5d8e6043196360477dd82a9ec7e2dedfd29b6",
+          "bytes": 176736
+        },
+        {
+          "timeMyr": 200,
+          "file": "playback/B-bulge2-s2026-t200.bin",
+          "sha256": "70d55a60beca99aebef5948be439c8e4ee46f2a6fede9fb704c2cb8756776b7c",
+          "bytes": 176736
+        }
+      ]
+    },
+    {
+      "label": "B-thin2",
+      "n": 16638,
+      "counts": [
+        1500,
+        14184,
+        954,
+        0
+      ],
+      "seed": 2026,
+      "source": "reports/v1.0.5/runs/B-thin2-s2026-baryon200.json",
+      "sourceSHA256": "7481b3f684030821468596df60b83996ab9b7a8bbd48980959c73e17e1309c04",
+      "preparation": "original104",
+      "algorithm": "direct GPU Float32 KDK",
+      "dt": 0.05,
+      "epsilon": 0.1,
+      "effectiveParameters": {
+        "dt": 0.05000000074505806,
+        "epsilonSquared": 0.009999999776482582,
+        "G": 0.04498502239584923,
+        "precision": "f32"
+      },
+      "externalHalo": true,
+      "status": "Experimental; estacionariedade estrutural não demonstrada",
+      "states": [
+        {
+          "timeMyr": 0,
+          "file": "playback/B-thin2-s2026-t0.bin",
+          "sha256": "ded66a03d0ab8c4e321b77b810f4f146d66717ac94e8638e9ffdbb8484618364",
+          "bytes": 266208
+        },
+        {
+          "timeMyr": 200,
+          "file": "playback/B-thin2-s2026-t200.bin",
+          "sha256": "7bbd7da60a2ca77e590e1fc255b0e4b7f37ffc1eabd63742e26715e6ecdadd85",
+          "bytes": 266208
+        }
+      ]
+    },
+    {
+      "label": "B-thick2",
+      "n": 10500,
+      "counts": [
+        1500,
+        7092,
+        1908,
+        0
+      ],
+      "seed": 2026,
+      "source": "reports/v1.0.5/runs/B-thick2-s2026-baryon200.json",
+      "sourceSHA256": "4d805ea6f828f64297e6aa851941b60f95fe6680eac47cfbde42ac09e5a09dac",
+      "preparation": "original104",
+      "algorithm": "direct GPU Float32 KDK",
+      "dt": 0.05,
+      "epsilon": 0.1,
+      "effectiveParameters": {
+        "dt": 0.05000000074505806,
+        "epsilonSquared": 0.009999999776482582,
+        "G": 0.04498502239584923,
+        "precision": "f32"
+      },
+      "externalHalo": true,
+      "status": "Experimental; estacionariedade estrutural não demonstrada",
+      "states": [
+        {
+          "timeMyr": 0,
+          "file": "playback/B-thick2-s2026-t0.bin",
+          "sha256": "5177da00d74b398331cdcc0942f5d064c8c6078727367e08f127c885dd7022d5",
+          "bytes": 168000
+        },
+        {
+          "timeMyr": 200,
+          "file": "playback/B-thick2-s2026-t200.bin",
+          "sha256": "5b0657c0db44bbe8e322892dda4063b548cdcfd9e300e61bae3f3e66c9c08c87",
+          "bytes": 168000
+        }
+      ]
+    }
+  ]
+}

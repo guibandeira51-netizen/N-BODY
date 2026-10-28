@@ -1,0 +1,8 @@
+{
+  "createdUTC": "2026-10-15T05:22:55.288Z",
+  "completedRunsRetained": 11,
+  "change": "All remaining high-resolution durations changed from1000 to200Myr. MatchedN,baryonseed,haloseed,dt,epsilon unchanged. Subsequent dt/2 validation also200Myr.",
+  "reason": "Computational cost of direct GPU high-N repeated runs; lowN fullGyr and historical highN2.5404Gyr already measured. Decision taken without inspecting highN outcomes. Partial highN run discarded, not used as final.",
+  "scope": "Does not establish highN1Gyr convergence or stability",
+  "scheduling": "Continuation uses MessageChannel task yielding to avoid background timer throttling; no change to equations or integration timestep."
+}

@@ -1,0 +1,23 @@
+{
+  "id": "A-MIX-s2028-t200",
+  "source": "reports/v1.0.5/initial/MIX-E-b2028-h2028.json",
+  "sourceSHA256": "4cd230cef9bbce5279bcb1ef0b2e920ee461c0428dfa832707a64b8fc278a858",
+  "potentialSHA256": "1074a9a28555ad253907b7e6f4b7aba406be33b9efc63ff7794e08110ea707d1",
+  "scriptSHA256": "affe722d80bc3311e4e62ff391e70a76a628741e313b41b366f269c67f2efc50",
+  "n": 9546,
+  "counts": [
+    1500,
+    7092,
+    954,
+    0
+  ],
+  "seed": 2028,
+  "durationMyr": 200,
+  "cadenceMyr": 5,
+  "algorithm": "AGAMA DOP853 Float64 accuracy1e-10",
+  "selfGravity": false,
+  "model": "A",
+  "preparation": "MIX-105-trial",
+  "qualification": "New full same uploaded baryons, no self gravity. Fixed original total Plummer mean; density/force closure must be checked separately.",
+  "wallSeconds": 5.428825800001505
+}

@@ -1,0 +1,27 @@
+{
+  "backendOptions": [
+    {
+      "label": "Automático · ensaio local",
+      "value": "auto"
+    },
+    {
+      "label": "GPU · WebGPU direto f32",
+      "value": "gpu"
+    }
+  ],
+  "forceOptions": [
+    {
+      "label": "Automático · ensaio local",
+      "value": "auto"
+    },
+    {
+      "label": "Direto O(N²)",
+      "value": "direct"
+    }
+  ],
+  "n0": "39155",
+  "policy": "gpu-only",
+  "status": "GPU avaliada: N=10.000, 3.02 ms/passo · N=30.000, 9.51 ms/passo · N=39.155, 14.52 ms/passo. N automático verificado antes de iniciar; alvo de cálculo ~20 ms/passo.",
+  "time": "0 Myr",
+  "url": "http://localhost:4180/experimento-ncorpos.html"
+}

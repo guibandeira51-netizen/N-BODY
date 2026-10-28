@@ -1,0 +1,1084 @@
+{
+  "schema": "softened-stage1-figures-102",
+  "figures": [
+    {
+      "id": "01-force-compatibility",
+      "requestedNumber": 1,
+      "title": "Compatibilidade do campo de preparação",
+      "path": "reports/v1.0.2/figures/01-force-compatibility.png",
+      "svgPath": "reports/v1.0.2/figures/01-force-compatibility.svg",
+      "dataPath": "reports/v1.0.2/figures/01-force-compatibility.csv",
+      "limitations": "A densidade também se reajusta na solução nova. Ajuste nativo e referência refinada usam a MESMA densidade física; seus erros não incluem toda a incerteza da DF/malha.",
+      "sources": [
+        {
+          "path": "reports/v1.0.2/gpu/GPU-C-baseline-10000-s2026.json",
+          "sha256": "7c0325629f0244192679c63dbd8071b72e24716b815b2af5f61357c770ef6677"
+        },
+        {
+          "path": "reports/v1.0.2/gpu/GPU-C-baseline-10000-s2027.json",
+          "sha256": "e054a34ad4e53cd8f96e7e4addc06f545ccedc89f47f8e0751a55cd2663f3547"
+        },
+        {
+          "path": "reports/v1.0.2/gpu/GPU-C-baseline-10000-s2028.json",
+          "sha256": "ad5fafd762cc7650075056d07c495df150e3f94afe34dd7619f86df881de250b"
+        },
+        {
+          "path": "reports/v1.0.2/gpu/GPU-C-corrected-10000-s2026.json",
+          "sha256": "b999ca14d29666c59c4cbf6e8e0556b46cdb7102618ab6f2e72ab6bce7e46141"
+        },
+        {
+          "path": "reports/v1.0.2/gpu/GPU-C-corrected-10000-s2027.json",
+          "sha256": "f76e752fe9570122263f24b75a2aafa352886f3ebf6e24f5d5728f4574d4650d"
+        },
+        {
+          "path": "reports/v1.0.2/gpu/GPU-C-corrected-10000-s2028.json",
+          "sha256": "447e9547a80d3537d7abbf59a98c134ed4f24cee8fa7c50beab7800c105eb81e"
+        },
+        {
+          "path": "reports/v1.0.2/runs/A-baseline-1000-s2026.json",
+          "sha256": "1bf2879ad42abb06983cac87b3da3505ca237854d9d5414a0b803226cd56a1e0"
+        },
+        {
+          "path": "reports/v1.0.2/runs/A-baseline-1000-s2027.json",
+          "sha256": "d0f6924bac2b99d54bd6c76d7a341e8637f745a1d8aedd061b113d5042db355b"
+        },
+        {
+          "path": "reports/v1.0.2/runs/A-baseline-1000-s2028.json",
+          "sha256": "3cc970ab1759089344d0fd2afc9981b4560f264d255b98ff87993334fbd05651"
+        },
+        {
+          "path": "reports/v1.0.2/runs/A-baseline-softened-1000-s2026.json",
+          "sha256": "1eb0297135bf4ecad3b4cbacb3f62907f06ae501880897500651b1a31255e0b2"
+        },
+        {
+          "path": "reports/v1.0.2/runs/A-baseline-softened-1000-s2027.json",
+          "sha256": "09393730da4ab57713dc803137e3de9ea2473f423d6a22adf83781197aeb246d"
+        },
+        {
+          "path": "reports/v1.0.2/runs/A-baseline-softened-1000-s2028.json",
+          "sha256": "73205f0f7b1789eb2f8d3eb2202054f4d7443538ff482a4cd6b816a5321c62c0"
+        },
+        {
+          "path": "reports/v1.0.2/runs/A-corrected-1000-s2026.json",
+          "sha256": "f557e3d3d979fdc2b026d14208bb1815d2bd3fa19fe1f9ca059f760c9a4cdc54"
+        },
+        {
+          "path": "reports/v1.0.2/runs/A-corrected-1000-s2027.json",
+          "sha256": "783c43ccd7d41b47e7d2038ff0d94308e3c738dc7a0460d4502694466352f566"
+        },
+        {
+          "path": "reports/v1.0.2/runs/A-corrected-1000-s2028.json",
+          "sha256": "54081a094cb366d883efe2bc8e4bd8b14523e633ed7035c6a27b86af7fc812d1"
+        },
+        {
+          "path": "reports/v1.0.2/runs/C-baseline-1000-s2026.json",
+          "sha256": "b45563d7eb3d3e843def7253acbc78d2393752c96c11029c33e969c4df9353d2"
+        },
+        {
+          "path": "reports/v1.0.2/runs/C-baseline-1000-s2027.json",
+          "sha256": "f79fba6b0c3d407ca2fea5697eb02c8782e269eb48e63b62bd9631b4929238e9"
+        },
+        {
+          "path": "reports/v1.0.2/runs/C-baseline-1000-s2028.json",
+          "sha256": "7c917e303238d678f7c871f5d58ac65c26a8c602a588a2a793dae77f7164275c"
+        },
+        {
+          "path": "reports/v1.0.2/runs/C-corrected-1000-s2026.json",
+          "sha256": "3025b4ca3f889fdbca6cee531d90309c7aa216003cc2f96ce03ff30a31afb0b5"
+        },
+        {
+          "path": "reports/v1.0.2/runs/C-corrected-1000-s2027.json",
+          "sha256": "73177777fff8ce832a62a7052fc67c14123fdf61ecbb9dcd1d7cc4a2fb769706"
+        },
+        {
+          "path": "reports/v1.0.2/runs/C-corrected-1000-s2028.json",
+          "sha256": "e3de9e78389de4810a13d42794986775e6fa2783a822c10c28da0709be9583b7"
+        },
+        {
+          "path": "reports/v1.0.2/field-proof/proof.json",
+          "sha256": "2aba4a85b0ea54018a3375c867ff8518f1083d12b6b320707f36b10a0ae1a055"
+        },
+        {
+          "path": "reports/v1.0.2/field-validation/field.json",
+          "sha256": "47b0dc5c5c4584822115da3f4fc10317185fca0ae0940dcce7ebfefc0120bea2"
+        },
+        {
+          "path": "reports/v1.0.2/field-validation/frequencies.json",
+          "sha256": "b9ea0badb3c8a1b1ee48c33ea186b515d4e49a57e4146b8706a08121957da3e7"
+        },
+        {
+          "path": "reports/v1.0.2/field-validation/ensemble.json",
+          "sha256": "4adee00d5ddc6495cd00b7087bef34be7029c0c0c9cadb28cab0529ff1c69571"
+        },
+        {
+          "path": "reports/v1.0.2/corrected/preparation.json",
+          "sha256": "6471bace89388756be5c8d718321977aaead151094eeaec7bd7ec06acdc3dcbf"
+        }
+      ]
+    },
+    {
+      "id": "02-global-thickness",
+      "requestedNumber": 2,
+      "title": "Disco global: anterior e campo corrigido",
+      "path": "reports/v1.0.2/figures/02-global-thickness.png",
+      "svgPath": "reports/v1.0.2/figures/02-global-thickness.svg",
+      "dataPath": "reports/v1.0.2/figures/02-global-thickness.csv",
+      "limitations": "N = 10.000; dt = 0,05 Myr; ε = 0,1 kpc; GPU direta Float32. Mesmas funções em ações/massas, novas amostras de fase. Sementes não tornam as posições iniciais idênticas.",
+      "sources": [
+        {
+          "path": "reports/v1.0.2/gpu/GPU-C-baseline-10000-s2026.json",
+          "sha256": "7c0325629f0244192679c63dbd8071b72e24716b815b2af5f61357c770ef6677"
+        },
+        {
+          "path": "reports/v1.0.2/gpu/GPU-C-baseline-10000-s2027.json",
+          "sha256": "e054a34ad4e53cd8f96e7e4addc06f545ccedc89f47f8e0751a55cd2663f3547"
+        },
+        {
+          "path": "reports/v1.0.2/gpu/GPU-C-baseline-10000-s2028.json",
+          "sha256": "ad5fafd762cc7650075056d07c495df150e3f94afe34dd7619f86df881de250b"
+        },
+        {
+          "path": "reports/v1.0.2/gpu/GPU-C-corrected-10000-s2026.json",
+          "sha256": "b999ca14d29666c59c4cbf6e8e0556b46cdb7102618ab6f2e72ab6bce7e46141"
+        },
+        {
+          "path": "reports/v1.0.2/gpu/GPU-C-corrected-10000-s2027.json",
+          "sha256": "f76e752fe9570122263f24b75a2aafa352886f3ebf6e24f5d5728f4574d4650d"
+        },
+        {
+          "path": "reports/v1.0.2/gpu/GPU-C-corrected-10000-s2028.json",
+          "sha256": "447e9547a80d3537d7abbf59a98c134ed4f24cee8fa7c50beab7800c105eb81e"
+        },
+        {
+          "path": "reports/v1.0.2/runs/A-baseline-1000-s2026.json",
+          "sha256": "1bf2879ad42abb06983cac87b3da3505ca237854d9d5414a0b803226cd56a1e0"
+        },
+        {
+          "path": "reports/v1.0.2/runs/A-baseline-1000-s2027.json",
+          "sha256": "d0f6924bac2b99d54bd6c76d7a341e8637f745a1d8aedd061b113d5042db355b"
+        },
+        {
+          "path": "reports/v1.0.2/runs/A-baseline-1000-s2028.json",
+          "sha256": "3cc970ab1759089344d0fd2afc9981b4560f264d255b98ff87993334fbd05651"
+        },
+        {
+          "path": "reports/v1.0.2/runs/A-baseline-softened-1000-s2026.json",
+          "sha256": "1eb0297135bf4ecad3b4cbacb3f62907f06ae501880897500651b1a31255e0b2"
+        },
+        {
+          "path": "reports/v1.0.2/runs/A-baseline-softened-1000-s2027.json",
+          "sha256": "09393730da4ab57713dc803137e3de9ea2473f423d6a22adf83781197aeb246d"
+        },
+        {
+          "path": "reports/v1.0.2/runs/A-baseline-softened-1000-s2028.json",
+          "sha256": "73205f0f7b1789eb2f8d3eb2202054f4d7443538ff482a4cd6b816a5321c62c0"
+        },
+        {
+          "path": "reports/v1.0.2/runs/A-corrected-1000-s2026.json",
+          "sha256": "f557e3d3d979fdc2b026d14208bb1815d2bd3fa19fe1f9ca059f760c9a4cdc54"
+        },
+        {
+          "path": "reports/v1.0.2/runs/A-corrected-1000-s2027.json",
+          "sha256": "783c43ccd7d41b47e7d2038ff0d94308e3c738dc7a0460d4502694466352f566"
+        },
+        {
+          "path": "reports/v1.0.2/runs/A-corrected-1000-s2028.json",
+          "sha256": "54081a094cb366d883efe2bc8e4bd8b14523e633ed7035c6a27b86af7fc812d1"
+        },
+        {
+          "path": "reports/v1.0.2/runs/C-baseline-1000-s2026.json",
+          "sha256": "b45563d7eb3d3e843def7253acbc78d2393752c96c11029c33e969c4df9353d2"
+        },
+        {
+          "path": "reports/v1.0.2/runs/C-baseline-1000-s2027.json",
+          "sha256": "f79fba6b0c3d407ca2fea5697eb02c8782e269eb48e63b62bd9631b4929238e9"
+        },
+        {
+          "path": "reports/v1.0.2/runs/C-baseline-1000-s2028.json",
+          "sha256": "7c917e303238d678f7c871f5d58ac65c26a8c602a588a2a793dae77f7164275c"
+        },
+        {
+          "path": "reports/v1.0.2/runs/C-corrected-1000-s2026.json",
+          "sha256": "3025b4ca3f889fdbca6cee531d90309c7aa216003cc2f96ce03ff30a31afb0b5"
+        },
+        {
+          "path": "reports/v1.0.2/runs/C-corrected-1000-s2027.json",
+          "sha256": "73177777fff8ce832a62a7052fc67c14123fdf61ecbb9dcd1d7cc4a2fb769706"
+        },
+        {
+          "path": "reports/v1.0.2/runs/C-corrected-1000-s2028.json",
+          "sha256": "e3de9e78389de4810a13d42794986775e6fa2783a822c10c28da0709be9583b7"
+        },
+        {
+          "path": "reports/v1.0.2/field-proof/proof.json",
+          "sha256": "2aba4a85b0ea54018a3375c867ff8518f1083d12b6b320707f36b10a0ae1a055"
+        },
+        {
+          "path": "reports/v1.0.2/field-validation/field.json",
+          "sha256": "47b0dc5c5c4584822115da3f4fc10317185fca0ae0940dcce7ebfefc0120bea2"
+        },
+        {
+          "path": "reports/v1.0.2/field-validation/frequencies.json",
+          "sha256": "b9ea0badb3c8a1b1ee48c33ea186b515d4e49a57e4146b8706a08121957da3e7"
+        },
+        {
+          "path": "reports/v1.0.2/field-validation/ensemble.json",
+          "sha256": "4adee00d5ddc6495cd00b7087bef34be7029c0c0c9cadb28cab0529ff1c69571"
+        },
+        {
+          "path": "reports/v1.0.2/corrected/preparation.json",
+          "sha256": "6471bace89388756be5c8d718321977aaead151094eeaec7bd7ec06acdc3dcbf"
+        }
+      ]
+    },
+    {
+      "id": "03-population-thickness",
+      "requestedNumber": 3,
+      "title": "Disco fino e espesso separados",
+      "path": "reports/v1.0.2/figures/03-population-thickness.png",
+      "svgPath": "reports/v1.0.2/figures/03-population-thickness.svg",
+      "dataPath": "reports/v1.0.2/figures/03-population-thickness.csv",
+      "limitations": "Etiquetas iniciais preservadas. As populações GPU têm estados próprios completos somente em 0 e 20 Myr: pontos sem interpolar uma trajetória populacional não capturada.",
+      "sources": [
+        {
+          "path": "reports/v1.0.2/gpu/GPU-C-baseline-10000-s2026.json",
+          "sha256": "7c0325629f0244192679c63dbd8071b72e24716b815b2af5f61357c770ef6677"
+        },
+        {
+          "path": "reports/v1.0.2/gpu/GPU-C-baseline-10000-s2027.json",
+          "sha256": "e054a34ad4e53cd8f96e7e4addc06f545ccedc89f47f8e0751a55cd2663f3547"
+        },
+        {
+          "path": "reports/v1.0.2/gpu/GPU-C-baseline-10000-s2028.json",
+          "sha256": "ad5fafd762cc7650075056d07c495df150e3f94afe34dd7619f86df881de250b"
+        },
+        {
+          "path": "reports/v1.0.2/gpu/GPU-C-corrected-10000-s2026.json",
+          "sha256": "b999ca14d29666c59c4cbf6e8e0556b46cdb7102618ab6f2e72ab6bce7e46141"
+        },
+        {
+          "path": "reports/v1.0.2/gpu/GPU-C-corrected-10000-s2027.json",
+          "sha256": "f76e752fe9570122263f24b75a2aafa352886f3ebf6e24f5d5728f4574d4650d"
+        },
+        {
+          "path": "reports/v1.0.2/gpu/GPU-C-corrected-10000-s2028.json",
+          "sha256": "447e9547a80d3537d7abbf59a98c134ed4f24cee8fa7c50beab7800c105eb81e"
+        },
+        {
+          "path": "reports/v1.0.2/runs/A-baseline-1000-s2026.json",
+          "sha256": "1bf2879ad42abb06983cac87b3da3505ca237854d9d5414a0b803226cd56a1e0"
+        },
+        {
+          "path": "reports/v1.0.2/runs/A-baseline-1000-s2027.json",
+          "sha256": "d0f6924bac2b99d54bd6c76d7a341e8637f745a1d8aedd061b113d5042db355b"
+        },
+        {
+          "path": "reports/v1.0.2/runs/A-baseline-1000-s2028.json",
+          "sha256": "3cc970ab1759089344d0fd2afc9981b4560f264d255b98ff87993334fbd05651"
+        },
+        {
+          "path": "reports/v1.0.2/runs/A-baseline-softened-1000-s2026.json",
+          "sha256": "1eb0297135bf4ecad3b4cbacb3f62907f06ae501880897500651b1a31255e0b2"
+        },
+        {
+          "path": "reports/v1.0.2/runs/A-baseline-softened-1000-s2027.json",
+          "sha256": "09393730da4ab57713dc803137e3de9ea2473f423d6a22adf83781197aeb246d"
+        },
+        {
+          "path": "reports/v1.0.2/runs/A-baseline-softened-1000-s2028.json",
+          "sha256": "73205f0f7b1789eb2f8d3eb2202054f4d7443538ff482a4cd6b816a5321c62c0"
+        },
+        {
+          "path": "reports/v1.0.2/runs/A-corrected-1000-s2026.json",
+          "sha256": "f557e3d3d979fdc2b026d14208bb1815d2bd3fa19fe1f9ca059f760c9a4cdc54"
+        },
+        {
+          "path": "reports/v1.0.2/runs/A-corrected-1000-s2027.json",
+          "sha256": "783c43ccd7d41b47e7d2038ff0d94308e3c738dc7a0460d4502694466352f566"
+        },
+        {
+          "path": "reports/v1.0.2/runs/A-corrected-1000-s2028.json",
+          "sha256": "54081a094cb366d883efe2bc8e4bd8b14523e633ed7035c6a27b86af7fc812d1"
+        },
+        {
+          "path": "reports/v1.0.2/runs/C-baseline-1000-s2026.json",
+          "sha256": "b45563d7eb3d3e843def7253acbc78d2393752c96c11029c33e969c4df9353d2"
+        },
+        {
+          "path": "reports/v1.0.2/runs/C-baseline-1000-s2027.json",
+          "sha256": "f79fba6b0c3d407ca2fea5697eb02c8782e269eb48e63b62bd9631b4929238e9"
+        },
+        {
+          "path": "reports/v1.0.2/runs/C-baseline-1000-s2028.json",
+          "sha256": "7c917e303238d678f7c871f5d58ac65c26a8c602a588a2a793dae77f7164275c"
+        },
+        {
+          "path": "reports/v1.0.2/runs/C-corrected-1000-s2026.json",
+          "sha256": "3025b4ca3f889fdbca6cee531d90309c7aa216003cc2f96ce03ff30a31afb0b5"
+        },
+        {
+          "path": "reports/v1.0.2/runs/C-corrected-1000-s2027.json",
+          "sha256": "73177777fff8ce832a62a7052fc67c14123fdf61ecbb9dcd1d7cc4a2fb769706"
+        },
+        {
+          "path": "reports/v1.0.2/runs/C-corrected-1000-s2028.json",
+          "sha256": "e3de9e78389de4810a13d42794986775e6fa2783a822c10c28da0709be9583b7"
+        },
+        {
+          "path": "reports/v1.0.2/field-proof/proof.json",
+          "sha256": "2aba4a85b0ea54018a3375c867ff8518f1083d12b6b320707f36b10a0ae1a055"
+        },
+        {
+          "path": "reports/v1.0.2/field-validation/field.json",
+          "sha256": "47b0dc5c5c4584822115da3f4fc10317185fca0ae0940dcce7ebfefc0120bea2"
+        },
+        {
+          "path": "reports/v1.0.2/field-validation/frequencies.json",
+          "sha256": "b9ea0badb3c8a1b1ee48c33ea186b515d4e49a57e4146b8706a08121957da3e7"
+        },
+        {
+          "path": "reports/v1.0.2/field-validation/ensemble.json",
+          "sha256": "4adee00d5ddc6495cd00b7087bef34be7029c0c0c9cadb28cab0529ff1c69571"
+        },
+        {
+          "path": "reports/v1.0.2/corrected/preparation.json",
+          "sha256": "6471bace89388756be5c8d718321977aaead151094eeaec7bd7ec06acdc3dcbf"
+        },
+        {
+          "path": "reports/v1.0.2/gpu-populations/GPU-C-baseline-10000-s2026.json",
+          "sha256": "0313e04cb999fcf9b6dfe84107822cb69a6bd337bbe5a1e6af67f3820c9ba9fa"
+        },
+        {
+          "path": "reports/v1.0.2/gpu-populations/GPU-C-baseline-10000-s2027.json",
+          "sha256": "10457cfc823db505e9cfb6bab29790f37d8a38aa6f9624bd55764edb2a6a3ea8"
+        },
+        {
+          "path": "reports/v1.0.2/gpu-populations/GPU-C-baseline-10000-s2028.json",
+          "sha256": "741148debd60059a4da9ecb872ca3c5b7664da265e0c7a8d88afe0aa4de8a5cf"
+        },
+        {
+          "path": "reports/v1.0.2/gpu-populations/GPU-C-corrected-10000-s2026.json",
+          "sha256": "1c8d50588bade74a106d7617307728a7e26acfc99eee51b4ea5b7a73416d2821"
+        },
+        {
+          "path": "reports/v1.0.2/gpu-populations/GPU-C-corrected-10000-s2027.json",
+          "sha256": "ad6adf9045e6c3fc172a7b9678fb42542b438192417a6c11a3edbe096d35b328"
+        },
+        {
+          "path": "reports/v1.0.2/gpu-populations/GPU-C-corrected-10000-s2028.json",
+          "sha256": "a3bea54d645ca693d3703dd8a6bcc1187f0c4d488f0d9c4663342e6ed4e56caf"
+        }
+      ]
+    },
+    {
+      "id": "06-energy",
+      "requestedNumber": 6,
+      "title": "Conservação da Hamiltoniana discreta de Plummer",
+      "path": "reports/v1.0.2/figures/06-energy.png",
+      "svgPath": "reports/v1.0.2/figures/06-energy.svg",
+      "dataPath": "reports/v1.0.2/figures/06-energy.csv",
+      "limitations": "Diagnóstico direto Float64: CPU a cada 0,05 Myr, GPU a cada 0,5 Myr. Máximos amostrados podem omitir picos; sementes com erros maiores permanecem visíveis.",
+      "sources": [
+        {
+          "path": "reports/v1.0.2/gpu/GPU-C-baseline-10000-s2026.json",
+          "sha256": "7c0325629f0244192679c63dbd8071b72e24716b815b2af5f61357c770ef6677"
+        },
+        {
+          "path": "reports/v1.0.2/gpu/GPU-C-baseline-10000-s2027.json",
+          "sha256": "e054a34ad4e53cd8f96e7e4addc06f545ccedc89f47f8e0751a55cd2663f3547"
+        },
+        {
+          "path": "reports/v1.0.2/gpu/GPU-C-baseline-10000-s2028.json",
+          "sha256": "ad5fafd762cc7650075056d07c495df150e3f94afe34dd7619f86df881de250b"
+        },
+        {
+          "path": "reports/v1.0.2/gpu/GPU-C-corrected-10000-s2026.json",
+          "sha256": "b999ca14d29666c59c4cbf6e8e0556b46cdb7102618ab6f2e72ab6bce7e46141"
+        },
+        {
+          "path": "reports/v1.0.2/gpu/GPU-C-corrected-10000-s2027.json",
+          "sha256": "f76e752fe9570122263f24b75a2aafa352886f3ebf6e24f5d5728f4574d4650d"
+        },
+        {
+          "path": "reports/v1.0.2/gpu/GPU-C-corrected-10000-s2028.json",
+          "sha256": "447e9547a80d3537d7abbf59a98c134ed4f24cee8fa7c50beab7800c105eb81e"
+        },
+        {
+          "path": "reports/v1.0.2/runs/A-baseline-1000-s2026.json",
+          "sha256": "1bf2879ad42abb06983cac87b3da3505ca237854d9d5414a0b803226cd56a1e0"
+        },
+        {
+          "path": "reports/v1.0.2/runs/A-baseline-1000-s2027.json",
+          "sha256": "d0f6924bac2b99d54bd6c76d7a341e8637f745a1d8aedd061b113d5042db355b"
+        },
+        {
+          "path": "reports/v1.0.2/runs/A-baseline-1000-s2028.json",
+          "sha256": "3cc970ab1759089344d0fd2afc9981b4560f264d255b98ff87993334fbd05651"
+        },
+        {
+          "path": "reports/v1.0.2/runs/A-baseline-softened-1000-s2026.json",
+          "sha256": "1eb0297135bf4ecad3b4cbacb3f62907f06ae501880897500651b1a31255e0b2"
+        },
+        {
+          "path": "reports/v1.0.2/runs/A-baseline-softened-1000-s2027.json",
+          "sha256": "09393730da4ab57713dc803137e3de9ea2473f423d6a22adf83781197aeb246d"
+        },
+        {
+          "path": "reports/v1.0.2/runs/A-baseline-softened-1000-s2028.json",
+          "sha256": "73205f0f7b1789eb2f8d3eb2202054f4d7443538ff482a4cd6b816a5321c62c0"
+        },
+        {
+          "path": "reports/v1.0.2/runs/A-corrected-1000-s2026.json",
+          "sha256": "f557e3d3d979fdc2b026d14208bb1815d2bd3fa19fe1f9ca059f760c9a4cdc54"
+        },
+        {
+          "path": "reports/v1.0.2/runs/A-corrected-1000-s2027.json",
+          "sha256": "783c43ccd7d41b47e7d2038ff0d94308e3c738dc7a0460d4502694466352f566"
+        },
+        {
+          "path": "reports/v1.0.2/runs/A-corrected-1000-s2028.json",
+          "sha256": "54081a094cb366d883efe2bc8e4bd8b14523e633ed7035c6a27b86af7fc812d1"
+        },
+        {
+          "path": "reports/v1.0.2/runs/C-baseline-1000-s2026.json",
+          "sha256": "b45563d7eb3d3e843def7253acbc78d2393752c96c11029c33e969c4df9353d2"
+        },
+        {
+          "path": "reports/v1.0.2/runs/C-baseline-1000-s2027.json",
+          "sha256": "f79fba6b0c3d407ca2fea5697eb02c8782e269eb48e63b62bd9631b4929238e9"
+        },
+        {
+          "path": "reports/v1.0.2/runs/C-baseline-1000-s2028.json",
+          "sha256": "7c917e303238d678f7c871f5d58ac65c26a8c602a588a2a793dae77f7164275c"
+        },
+        {
+          "path": "reports/v1.0.2/runs/C-corrected-1000-s2026.json",
+          "sha256": "3025b4ca3f889fdbca6cee531d90309c7aa216003cc2f96ce03ff30a31afb0b5"
+        },
+        {
+          "path": "reports/v1.0.2/runs/C-corrected-1000-s2027.json",
+          "sha256": "73177777fff8ce832a62a7052fc67c14123fdf61ecbb9dcd1d7cc4a2fb769706"
+        },
+        {
+          "path": "reports/v1.0.2/runs/C-corrected-1000-s2028.json",
+          "sha256": "e3de9e78389de4810a13d42794986775e6fa2783a822c10c28da0709be9583b7"
+        },
+        {
+          "path": "reports/v1.0.2/field-proof/proof.json",
+          "sha256": "2aba4a85b0ea54018a3375c867ff8518f1083d12b6b320707f36b10a0ae1a055"
+        },
+        {
+          "path": "reports/v1.0.2/field-validation/field.json",
+          "sha256": "47b0dc5c5c4584822115da3f4fc10317185fca0ae0940dcce7ebfefc0120bea2"
+        },
+        {
+          "path": "reports/v1.0.2/field-validation/frequencies.json",
+          "sha256": "b9ea0badb3c8a1b1ee48c33ea186b515d4e49a57e4146b8706a08121957da3e7"
+        },
+        {
+          "path": "reports/v1.0.2/field-validation/ensemble.json",
+          "sha256": "4adee00d5ddc6495cd00b7087bef34be7029c0c0c9cadb28cab0529ff1c69571"
+        },
+        {
+          "path": "reports/v1.0.2/corrected/preparation.json",
+          "sha256": "6471bace89388756be5c8d718321977aaead151094eeaec7bd7ec06acdc3dcbf"
+        },
+        {
+          "path": "reports/v1.0.2/gpu-populations/GPU-C-baseline-10000-s2026.json",
+          "sha256": "0313e04cb999fcf9b6dfe84107822cb69a6bd337bbe5a1e6af67f3820c9ba9fa"
+        },
+        {
+          "path": "reports/v1.0.2/gpu-populations/GPU-C-baseline-10000-s2027.json",
+          "sha256": "10457cfc823db505e9cfb6bab29790f37d8a38aa6f9624bd55764edb2a6a3ea8"
+        },
+        {
+          "path": "reports/v1.0.2/gpu-populations/GPU-C-baseline-10000-s2028.json",
+          "sha256": "741148debd60059a4da9ecb872ca3c5b7664da265e0c7a8d88afe0aa4de8a5cf"
+        },
+        {
+          "path": "reports/v1.0.2/gpu-populations/GPU-C-corrected-10000-s2026.json",
+          "sha256": "1c8d50588bade74a106d7617307728a7e26acfc99eee51b4ea5b7a73416d2821"
+        },
+        {
+          "path": "reports/v1.0.2/gpu-populations/GPU-C-corrected-10000-s2027.json",
+          "sha256": "ad6adf9045e6c3fc172a7b9678fb42542b438192417a6c11a3edbe096d35b328"
+        },
+        {
+          "path": "reports/v1.0.2/gpu-populations/GPU-C-corrected-10000-s2028.json",
+          "sha256": "a3bea54d645ca693d3703dd8a6bcc1187f0c4d488f0d9c4663342e6ed4e56caf"
+        }
+      ]
+    },
+    {
+      "id": "07-vertical-dispersion",
+      "requestedNumber": 7,
+      "title": "Dispersão vertical: medir além da espessura",
+      "path": "reports/v1.0.2/figures/07-vertical-dispersion.png",
+      "svgPath": "reports/v1.0.2/figures/07-vertical-dispersion.svg",
+      "dataPath": "reports/v1.0.2/figures/07-vertical-dispersion.csv",
+      "limitations": "Velocidade projetada na normal do plano ajustado, média removida. Mudança de espessura e dispersão são observáveis distintos; o ajuste não remove todo movimento coerente.",
+      "sources": [
+        {
+          "path": "reports/v1.0.2/gpu/GPU-C-baseline-10000-s2026.json",
+          "sha256": "7c0325629f0244192679c63dbd8071b72e24716b815b2af5f61357c770ef6677"
+        },
+        {
+          "path": "reports/v1.0.2/gpu/GPU-C-baseline-10000-s2027.json",
+          "sha256": "e054a34ad4e53cd8f96e7e4addc06f545ccedc89f47f8e0751a55cd2663f3547"
+        },
+        {
+          "path": "reports/v1.0.2/gpu/GPU-C-baseline-10000-s2028.json",
+          "sha256": "ad5fafd762cc7650075056d07c495df150e3f94afe34dd7619f86df881de250b"
+        },
+        {
+          "path": "reports/v1.0.2/gpu/GPU-C-corrected-10000-s2026.json",
+          "sha256": "b999ca14d29666c59c4cbf6e8e0556b46cdb7102618ab6f2e72ab6bce7e46141"
+        },
+        {
+          "path": "reports/v1.0.2/gpu/GPU-C-corrected-10000-s2027.json",
+          "sha256": "f76e752fe9570122263f24b75a2aafa352886f3ebf6e24f5d5728f4574d4650d"
+        },
+        {
+          "path": "reports/v1.0.2/gpu/GPU-C-corrected-10000-s2028.json",
+          "sha256": "447e9547a80d3537d7abbf59a98c134ed4f24cee8fa7c50beab7800c105eb81e"
+        },
+        {
+          "path": "reports/v1.0.2/runs/A-baseline-1000-s2026.json",
+          "sha256": "1bf2879ad42abb06983cac87b3da3505ca237854d9d5414a0b803226cd56a1e0"
+        },
+        {
+          "path": "reports/v1.0.2/runs/A-baseline-1000-s2027.json",
+          "sha256": "d0f6924bac2b99d54bd6c76d7a341e8637f745a1d8aedd061b113d5042db355b"
+        },
+        {
+          "path": "reports/v1.0.2/runs/A-baseline-1000-s2028.json",
+          "sha256": "3cc970ab1759089344d0fd2afc9981b4560f264d255b98ff87993334fbd05651"
+        },
+        {
+          "path": "reports/v1.0.2/runs/A-baseline-softened-1000-s2026.json",
+          "sha256": "1eb0297135bf4ecad3b4cbacb3f62907f06ae501880897500651b1a31255e0b2"
+        },
+        {
+          "path": "reports/v1.0.2/runs/A-baseline-softened-1000-s2027.json",
+          "sha256": "09393730da4ab57713dc803137e3de9ea2473f423d6a22adf83781197aeb246d"
+        },
+        {
+          "path": "reports/v1.0.2/runs/A-baseline-softened-1000-s2028.json",
+          "sha256": "73205f0f7b1789eb2f8d3eb2202054f4d7443538ff482a4cd6b816a5321c62c0"
+        },
+        {
+          "path": "reports/v1.0.2/runs/A-corrected-1000-s2026.json",
+          "sha256": "f557e3d3d979fdc2b026d14208bb1815d2bd3fa19fe1f9ca059f760c9a4cdc54"
+        },
+        {
+          "path": "reports/v1.0.2/runs/A-corrected-1000-s2027.json",
+          "sha256": "783c43ccd7d41b47e7d2038ff0d94308e3c738dc7a0460d4502694466352f566"
+        },
+        {
+          "path": "reports/v1.0.2/runs/A-corrected-1000-s2028.json",
+          "sha256": "54081a094cb366d883efe2bc8e4bd8b14523e633ed7035c6a27b86af7fc812d1"
+        },
+        {
+          "path": "reports/v1.0.2/runs/C-baseline-1000-s2026.json",
+          "sha256": "b45563d7eb3d3e843def7253acbc78d2393752c96c11029c33e969c4df9353d2"
+        },
+        {
+          "path": "reports/v1.0.2/runs/C-baseline-1000-s2027.json",
+          "sha256": "f79fba6b0c3d407ca2fea5697eb02c8782e269eb48e63b62bd9631b4929238e9"
+        },
+        {
+          "path": "reports/v1.0.2/runs/C-baseline-1000-s2028.json",
+          "sha256": "7c917e303238d678f7c871f5d58ac65c26a8c602a588a2a793dae77f7164275c"
+        },
+        {
+          "path": "reports/v1.0.2/runs/C-corrected-1000-s2026.json",
+          "sha256": "3025b4ca3f889fdbca6cee531d90309c7aa216003cc2f96ce03ff30a31afb0b5"
+        },
+        {
+          "path": "reports/v1.0.2/runs/C-corrected-1000-s2027.json",
+          "sha256": "73177777fff8ce832a62a7052fc67c14123fdf61ecbb9dcd1d7cc4a2fb769706"
+        },
+        {
+          "path": "reports/v1.0.2/runs/C-corrected-1000-s2028.json",
+          "sha256": "e3de9e78389de4810a13d42794986775e6fa2783a822c10c28da0709be9583b7"
+        },
+        {
+          "path": "reports/v1.0.2/field-proof/proof.json",
+          "sha256": "2aba4a85b0ea54018a3375c867ff8518f1083d12b6b320707f36b10a0ae1a055"
+        },
+        {
+          "path": "reports/v1.0.2/field-validation/field.json",
+          "sha256": "47b0dc5c5c4584822115da3f4fc10317185fca0ae0940dcce7ebfefc0120bea2"
+        },
+        {
+          "path": "reports/v1.0.2/field-validation/frequencies.json",
+          "sha256": "b9ea0badb3c8a1b1ee48c33ea186b515d4e49a57e4146b8706a08121957da3e7"
+        },
+        {
+          "path": "reports/v1.0.2/field-validation/ensemble.json",
+          "sha256": "4adee00d5ddc6495cd00b7087bef34be7029c0c0c9cadb28cab0529ff1c69571"
+        },
+        {
+          "path": "reports/v1.0.2/corrected/preparation.json",
+          "sha256": "6471bace89388756be5c8d718321977aaead151094eeaec7bd7ec06acdc3dcbf"
+        },
+        {
+          "path": "reports/v1.0.2/gpu-populations/GPU-C-baseline-10000-s2026.json",
+          "sha256": "0313e04cb999fcf9b6dfe84107822cb69a6bd337bbe5a1e6af67f3820c9ba9fa"
+        },
+        {
+          "path": "reports/v1.0.2/gpu-populations/GPU-C-baseline-10000-s2027.json",
+          "sha256": "10457cfc823db505e9cfb6bab29790f37d8a38aa6f9624bd55764edb2a6a3ea8"
+        },
+        {
+          "path": "reports/v1.0.2/gpu-populations/GPU-C-baseline-10000-s2028.json",
+          "sha256": "741148debd60059a4da9ecb872ca3c5b7664da265e0c7a8d88afe0aa4de8a5cf"
+        },
+        {
+          "path": "reports/v1.0.2/gpu-populations/GPU-C-corrected-10000-s2026.json",
+          "sha256": "1c8d50588bade74a106d7617307728a7e26acfc99eee51b4ea5b7a73416d2821"
+        },
+        {
+          "path": "reports/v1.0.2/gpu-populations/GPU-C-corrected-10000-s2027.json",
+          "sha256": "ad6adf9045e6c3fc172a7b9678fb42542b438192417a6c11a3edbe096d35b328"
+        },
+        {
+          "path": "reports/v1.0.2/gpu-populations/GPU-C-corrected-10000-s2028.json",
+          "sha256": "a3bea54d645ca693d3703dd8a6bcc1187f0c4d488f0d9c4663342e6ed4e56caf"
+        }
+      ]
+    },
+    {
+      "id": "08-density",
+      "requestedNumber": 8,
+      "title": "Perfis inicial e final: população fina",
+      "path": "reports/v1.0.2/figures/08-density.png",
+      "svgPath": "reports/v1.0.2/figures/08-density.svg",
+      "dataPath": "reports/v1.0.2/figures/08-density.csv",
+      "limitations": "N=10.000, semente 2026. Perfis de contagem em bordas fixas; bins sem massa não viram densidades artificiais. O perfil vertical usa o plano inicial, complementar às espessuras no plano próprio.",
+      "sources": [
+        {
+          "path": "reports/v1.0.2/gpu/GPU-C-baseline-10000-s2026.json",
+          "sha256": "7c0325629f0244192679c63dbd8071b72e24716b815b2af5f61357c770ef6677"
+        },
+        {
+          "path": "reports/v1.0.2/gpu/GPU-C-baseline-10000-s2027.json",
+          "sha256": "e054a34ad4e53cd8f96e7e4addc06f545ccedc89f47f8e0751a55cd2663f3547"
+        },
+        {
+          "path": "reports/v1.0.2/gpu/GPU-C-baseline-10000-s2028.json",
+          "sha256": "ad5fafd762cc7650075056d07c495df150e3f94afe34dd7619f86df881de250b"
+        },
+        {
+          "path": "reports/v1.0.2/gpu/GPU-C-corrected-10000-s2026.json",
+          "sha256": "b999ca14d29666c59c4cbf6e8e0556b46cdb7102618ab6f2e72ab6bce7e46141"
+        },
+        {
+          "path": "reports/v1.0.2/gpu/GPU-C-corrected-10000-s2027.json",
+          "sha256": "f76e752fe9570122263f24b75a2aafa352886f3ebf6e24f5d5728f4574d4650d"
+        },
+        {
+          "path": "reports/v1.0.2/gpu/GPU-C-corrected-10000-s2028.json",
+          "sha256": "447e9547a80d3537d7abbf59a98c134ed4f24cee8fa7c50beab7800c105eb81e"
+        },
+        {
+          "path": "reports/v1.0.2/runs/A-baseline-1000-s2026.json",
+          "sha256": "1bf2879ad42abb06983cac87b3da3505ca237854d9d5414a0b803226cd56a1e0"
+        },
+        {
+          "path": "reports/v1.0.2/runs/A-baseline-1000-s2027.json",
+          "sha256": "d0f6924bac2b99d54bd6c76d7a341e8637f745a1d8aedd061b113d5042db355b"
+        },
+        {
+          "path": "reports/v1.0.2/runs/A-baseline-1000-s2028.json",
+          "sha256": "3cc970ab1759089344d0fd2afc9981b4560f264d255b98ff87993334fbd05651"
+        },
+        {
+          "path": "reports/v1.0.2/runs/A-baseline-softened-1000-s2026.json",
+          "sha256": "1eb0297135bf4ecad3b4cbacb3f62907f06ae501880897500651b1a31255e0b2"
+        },
+        {
+          "path": "reports/v1.0.2/runs/A-baseline-softened-1000-s2027.json",
+          "sha256": "09393730da4ab57713dc803137e3de9ea2473f423d6a22adf83781197aeb246d"
+        },
+        {
+          "path": "reports/v1.0.2/runs/A-baseline-softened-1000-s2028.json",
+          "sha256": "73205f0f7b1789eb2f8d3eb2202054f4d7443538ff482a4cd6b816a5321c62c0"
+        },
+        {
+          "path": "reports/v1.0.2/runs/A-corrected-1000-s2026.json",
+          "sha256": "f557e3d3d979fdc2b026d14208bb1815d2bd3fa19fe1f9ca059f760c9a4cdc54"
+        },
+        {
+          "path": "reports/v1.0.2/runs/A-corrected-1000-s2027.json",
+          "sha256": "783c43ccd7d41b47e7d2038ff0d94308e3c738dc7a0460d4502694466352f566"
+        },
+        {
+          "path": "reports/v1.0.2/runs/A-corrected-1000-s2028.json",
+          "sha256": "54081a094cb366d883efe2bc8e4bd8b14523e633ed7035c6a27b86af7fc812d1"
+        },
+        {
+          "path": "reports/v1.0.2/runs/C-baseline-1000-s2026.json",
+          "sha256": "b45563d7eb3d3e843def7253acbc78d2393752c96c11029c33e969c4df9353d2"
+        },
+        {
+          "path": "reports/v1.0.2/runs/C-baseline-1000-s2027.json",
+          "sha256": "f79fba6b0c3d407ca2fea5697eb02c8782e269eb48e63b62bd9631b4929238e9"
+        },
+        {
+          "path": "reports/v1.0.2/runs/C-baseline-1000-s2028.json",
+          "sha256": "7c917e303238d678f7c871f5d58ac65c26a8c602a588a2a793dae77f7164275c"
+        },
+        {
+          "path": "reports/v1.0.2/runs/C-corrected-1000-s2026.json",
+          "sha256": "3025b4ca3f889fdbca6cee531d90309c7aa216003cc2f96ce03ff30a31afb0b5"
+        },
+        {
+          "path": "reports/v1.0.2/runs/C-corrected-1000-s2027.json",
+          "sha256": "73177777fff8ce832a62a7052fc67c14123fdf61ecbb9dcd1d7cc4a2fb769706"
+        },
+        {
+          "path": "reports/v1.0.2/runs/C-corrected-1000-s2028.json",
+          "sha256": "e3de9e78389de4810a13d42794986775e6fa2783a822c10c28da0709be9583b7"
+        },
+        {
+          "path": "reports/v1.0.2/field-proof/proof.json",
+          "sha256": "2aba4a85b0ea54018a3375c867ff8518f1083d12b6b320707f36b10a0ae1a055"
+        },
+        {
+          "path": "reports/v1.0.2/field-validation/field.json",
+          "sha256": "47b0dc5c5c4584822115da3f4fc10317185fca0ae0940dcce7ebfefc0120bea2"
+        },
+        {
+          "path": "reports/v1.0.2/field-validation/frequencies.json",
+          "sha256": "b9ea0badb3c8a1b1ee48c33ea186b515d4e49a57e4146b8706a08121957da3e7"
+        },
+        {
+          "path": "reports/v1.0.2/field-validation/ensemble.json",
+          "sha256": "4adee00d5ddc6495cd00b7087bef34be7029c0c0c9cadb28cab0529ff1c69571"
+        },
+        {
+          "path": "reports/v1.0.2/corrected/preparation.json",
+          "sha256": "6471bace89388756be5c8d718321977aaead151094eeaec7bd7ec06acdc3dcbf"
+        },
+        {
+          "path": "reports/v1.0.2/gpu-populations/GPU-C-baseline-10000-s2026.json",
+          "sha256": "0313e04cb999fcf9b6dfe84107822cb69a6bd337bbe5a1e6af67f3820c9ba9fa"
+        },
+        {
+          "path": "reports/v1.0.2/gpu-populations/GPU-C-baseline-10000-s2027.json",
+          "sha256": "10457cfc823db505e9cfb6bab29790f37d8a38aa6f9624bd55764edb2a6a3ea8"
+        },
+        {
+          "path": "reports/v1.0.2/gpu-populations/GPU-C-baseline-10000-s2028.json",
+          "sha256": "741148debd60059a4da9ecb872ca3c5b7664da265e0c7a8d88afe0aa4de8a5cf"
+        },
+        {
+          "path": "reports/v1.0.2/gpu-populations/GPU-C-corrected-10000-s2026.json",
+          "sha256": "1c8d50588bade74a106d7617307728a7e26acfc99eee51b4ea5b7a73416d2821"
+        },
+        {
+          "path": "reports/v1.0.2/gpu-populations/GPU-C-corrected-10000-s2027.json",
+          "sha256": "ad6adf9045e6c3fc172a7b9678fb42542b438192417a6c11a3edbe096d35b328"
+        },
+        {
+          "path": "reports/v1.0.2/gpu-populations/GPU-C-corrected-10000-s2028.json",
+          "sha256": "a3bea54d645ca693d3703dd8a6bcc1187f0c4d488f0d9c4663342e6ed4e56caf"
+        }
+      ]
+    },
+    {
+      "id": "09-model-comparison",
+      "requestedNumber": 9,
+      "title": "Campo contínuo e evolução N-corpos",
+      "path": "reports/v1.0.2/figures/09-model-comparison.png",
+      "svgPath": "reports/v1.0.2/figures/09-model-comparison.svg",
+      "dataPath": "reports/v1.0.2/figures/09-model-comparison.csv",
+      "limitations": "baseline-softened: MESMAS condições antigas no campo Plummer da densidade antiga, isolando o desajuste. A usa DOP853, C usa KDK. Halo fixo e refinado da 1.0.2 aguardam a etapa seguinte.",
+      "sources": [
+        {
+          "path": "reports/v1.0.2/gpu/GPU-C-baseline-10000-s2026.json",
+          "sha256": "7c0325629f0244192679c63dbd8071b72e24716b815b2af5f61357c770ef6677"
+        },
+        {
+          "path": "reports/v1.0.2/gpu/GPU-C-baseline-10000-s2027.json",
+          "sha256": "e054a34ad4e53cd8f96e7e4addc06f545ccedc89f47f8e0751a55cd2663f3547"
+        },
+        {
+          "path": "reports/v1.0.2/gpu/GPU-C-baseline-10000-s2028.json",
+          "sha256": "ad5fafd762cc7650075056d07c495df150e3f94afe34dd7619f86df881de250b"
+        },
+        {
+          "path": "reports/v1.0.2/gpu/GPU-C-corrected-10000-s2026.json",
+          "sha256": "b999ca14d29666c59c4cbf6e8e0556b46cdb7102618ab6f2e72ab6bce7e46141"
+        },
+        {
+          "path": "reports/v1.0.2/gpu/GPU-C-corrected-10000-s2027.json",
+          "sha256": "f76e752fe9570122263f24b75a2aafa352886f3ebf6e24f5d5728f4574d4650d"
+        },
+        {
+          "path": "reports/v1.0.2/gpu/GPU-C-corrected-10000-s2028.json",
+          "sha256": "447e9547a80d3537d7abbf59a98c134ed4f24cee8fa7c50beab7800c105eb81e"
+        },
+        {
+          "path": "reports/v1.0.2/runs/A-baseline-1000-s2026.json",
+          "sha256": "1bf2879ad42abb06983cac87b3da3505ca237854d9d5414a0b803226cd56a1e0"
+        },
+        {
+          "path": "reports/v1.0.2/runs/A-baseline-1000-s2027.json",
+          "sha256": "d0f6924bac2b99d54bd6c76d7a341e8637f745a1d8aedd061b113d5042db355b"
+        },
+        {
+          "path": "reports/v1.0.2/runs/A-baseline-1000-s2028.json",
+          "sha256": "3cc970ab1759089344d0fd2afc9981b4560f264d255b98ff87993334fbd05651"
+        },
+        {
+          "path": "reports/v1.0.2/runs/A-baseline-softened-1000-s2026.json",
+          "sha256": "1eb0297135bf4ecad3b4cbacb3f62907f06ae501880897500651b1a31255e0b2"
+        },
+        {
+          "path": "reports/v1.0.2/runs/A-baseline-softened-1000-s2027.json",
+          "sha256": "09393730da4ab57713dc803137e3de9ea2473f423d6a22adf83781197aeb246d"
+        },
+        {
+          "path": "reports/v1.0.2/runs/A-baseline-softened-1000-s2028.json",
+          "sha256": "73205f0f7b1789eb2f8d3eb2202054f4d7443538ff482a4cd6b816a5321c62c0"
+        },
+        {
+          "path": "reports/v1.0.2/runs/A-corrected-1000-s2026.json",
+          "sha256": "f557e3d3d979fdc2b026d14208bb1815d2bd3fa19fe1f9ca059f760c9a4cdc54"
+        },
+        {
+          "path": "reports/v1.0.2/runs/A-corrected-1000-s2027.json",
+          "sha256": "783c43ccd7d41b47e7d2038ff0d94308e3c738dc7a0460d4502694466352f566"
+        },
+        {
+          "path": "reports/v1.0.2/runs/A-corrected-1000-s2028.json",
+          "sha256": "54081a094cb366d883efe2bc8e4bd8b14523e633ed7035c6a27b86af7fc812d1"
+        },
+        {
+          "path": "reports/v1.0.2/runs/C-baseline-1000-s2026.json",
+          "sha256": "b45563d7eb3d3e843def7253acbc78d2393752c96c11029c33e969c4df9353d2"
+        },
+        {
+          "path": "reports/v1.0.2/runs/C-baseline-1000-s2027.json",
+          "sha256": "f79fba6b0c3d407ca2fea5697eb02c8782e269eb48e63b62bd9631b4929238e9"
+        },
+        {
+          "path": "reports/v1.0.2/runs/C-baseline-1000-s2028.json",
+          "sha256": "7c917e303238d678f7c871f5d58ac65c26a8c602a588a2a793dae77f7164275c"
+        },
+        {
+          "path": "reports/v1.0.2/runs/C-corrected-1000-s2026.json",
+          "sha256": "3025b4ca3f889fdbca6cee531d90309c7aa216003cc2f96ce03ff30a31afb0b5"
+        },
+        {
+          "path": "reports/v1.0.2/runs/C-corrected-1000-s2027.json",
+          "sha256": "73177777fff8ce832a62a7052fc67c14123fdf61ecbb9dcd1d7cc4a2fb769706"
+        },
+        {
+          "path": "reports/v1.0.2/runs/C-corrected-1000-s2028.json",
+          "sha256": "e3de9e78389de4810a13d42794986775e6fa2783a822c10c28da0709be9583b7"
+        },
+        {
+          "path": "reports/v1.0.2/field-proof/proof.json",
+          "sha256": "2aba4a85b0ea54018a3375c867ff8518f1083d12b6b320707f36b10a0ae1a055"
+        },
+        {
+          "path": "reports/v1.0.2/field-validation/field.json",
+          "sha256": "47b0dc5c5c4584822115da3f4fc10317185fca0ae0940dcce7ebfefc0120bea2"
+        },
+        {
+          "path": "reports/v1.0.2/field-validation/frequencies.json",
+          "sha256": "b9ea0badb3c8a1b1ee48c33ea186b515d4e49a57e4146b8706a08121957da3e7"
+        },
+        {
+          "path": "reports/v1.0.2/field-validation/ensemble.json",
+          "sha256": "4adee00d5ddc6495cd00b7087bef34be7029c0c0c9cadb28cab0529ff1c69571"
+        },
+        {
+          "path": "reports/v1.0.2/corrected/preparation.json",
+          "sha256": "6471bace89388756be5c8d718321977aaead151094eeaec7bd7ec06acdc3dcbf"
+        },
+        {
+          "path": "reports/v1.0.2/gpu-populations/GPU-C-baseline-10000-s2026.json",
+          "sha256": "0313e04cb999fcf9b6dfe84107822cb69a6bd337bbe5a1e6af67f3820c9ba9fa"
+        },
+        {
+          "path": "reports/v1.0.2/gpu-populations/GPU-C-baseline-10000-s2027.json",
+          "sha256": "10457cfc823db505e9cfb6bab29790f37d8a38aa6f9624bd55764edb2a6a3ea8"
+        },
+        {
+          "path": "reports/v1.0.2/gpu-populations/GPU-C-baseline-10000-s2028.json",
+          "sha256": "741148debd60059a4da9ecb872ca3c5b7664da265e0c7a8d88afe0aa4de8a5cf"
+        },
+        {
+          "path": "reports/v1.0.2/gpu-populations/GPU-C-corrected-10000-s2026.json",
+          "sha256": "1c8d50588bade74a106d7617307728a7e26acfc99eee51b4ea5b7a73416d2821"
+        },
+        {
+          "path": "reports/v1.0.2/gpu-populations/GPU-C-corrected-10000-s2027.json",
+          "sha256": "ad6adf9045e6c3fc172a7b9678fb42542b438192417a6c11a3edbe096d35b328"
+        },
+        {
+          "path": "reports/v1.0.2/gpu-populations/GPU-C-corrected-10000-s2028.json",
+          "sha256": "a3bea54d645ca693d3703dd8a6bcc1187f0c4d488f0d9c4663342e6ed4e56caf"
+        }
+      ]
+    },
+    {
+      "id": "10-convergence",
+      "requestedNumber": 10,
+      "title": "Convergência do campo e ruído de amostragem",
+      "path": "reports/v1.0.2/figures/10-convergence.png",
+      "svgPath": "reports/v1.0.2/figures/10-convergence.svg",
+      "dataPath": "reports/v1.0.2/figures/10-convergence.csv",
+      "limitations": "A convergência da iteração não certifica estabilidade. Dispersão entre três sementes, em sondas fixas: o ruído discreto persiste. Não há uma campanha longa de convergência N/ε/método nesta etapa.",
+      "sources": [
+        {
+          "path": "reports/v1.0.2/gpu/GPU-C-baseline-10000-s2026.json",
+          "sha256": "7c0325629f0244192679c63dbd8071b72e24716b815b2af5f61357c770ef6677"
+        },
+        {
+          "path": "reports/v1.0.2/gpu/GPU-C-baseline-10000-s2027.json",
+          "sha256": "e054a34ad4e53cd8f96e7e4addc06f545ccedc89f47f8e0751a55cd2663f3547"
+        },
+        {
+          "path": "reports/v1.0.2/gpu/GPU-C-baseline-10000-s2028.json",
+          "sha256": "ad5fafd762cc7650075056d07c495df150e3f94afe34dd7619f86df881de250b"
+        },
+        {
+          "path": "reports/v1.0.2/gpu/GPU-C-corrected-10000-s2026.json",
+          "sha256": "b999ca14d29666c59c4cbf6e8e0556b46cdb7102618ab6f2e72ab6bce7e46141"
+        },
+        {
+          "path": "reports/v1.0.2/gpu/GPU-C-corrected-10000-s2027.json",
+          "sha256": "f76e752fe9570122263f24b75a2aafa352886f3ebf6e24f5d5728f4574d4650d"
+        },
+        {
+          "path": "reports/v1.0.2/gpu/GPU-C-corrected-10000-s2028.json",
+          "sha256": "447e9547a80d3537d7abbf59a98c134ed4f24cee8fa7c50beab7800c105eb81e"
+        },
+        {
+          "path": "reports/v1.0.2/runs/A-baseline-1000-s2026.json",
+          "sha256": "1bf2879ad42abb06983cac87b3da3505ca237854d9d5414a0b803226cd56a1e0"
+        },
+        {
+          "path": "reports/v1.0.2/runs/A-baseline-1000-s2027.json",
+          "sha256": "d0f6924bac2b99d54bd6c76d7a341e8637f745a1d8aedd061b113d5042db355b"
+        },
+        {
+          "path": "reports/v1.0.2/runs/A-baseline-1000-s2028.json",
+          "sha256": "3cc970ab1759089344d0fd2afc9981b4560f264d255b98ff87993334fbd05651"
+        },
+        {
+          "path": "reports/v1.0.2/runs/A-baseline-softened-1000-s2026.json",
+          "sha256": "1eb0297135bf4ecad3b4cbacb3f62907f06ae501880897500651b1a31255e0b2"
+        },
+        {
+          "path": "reports/v1.0.2/runs/A-baseline-softened-1000-s2027.json",
+          "sha256": "09393730da4ab57713dc803137e3de9ea2473f423d6a22adf83781197aeb246d"
+        },
+        {
+          "path": "reports/v1.0.2/runs/A-baseline-softened-1000-s2028.json",
+          "sha256": "73205f0f7b1789eb2f8d3eb2202054f4d7443538ff482a4cd6b816a5321c62c0"
+        },
+        {
+          "path": "reports/v1.0.2/runs/A-corrected-1000-s2026.json",
+          "sha256": "f557e3d3d979fdc2b026d14208bb1815d2bd3fa19fe1f9ca059f760c9a4cdc54"
+        },
+        {
+          "path": "reports/v1.0.2/runs/A-corrected-1000-s2027.json",
+          "sha256": "783c43ccd7d41b47e7d2038ff0d94308e3c738dc7a0460d4502694466352f566"
+        },
+        {
+          "path": "reports/v1.0.2/runs/A-corrected-1000-s2028.json",
+          "sha256": "54081a094cb366d883efe2bc8e4bd8b14523e633ed7035c6a27b86af7fc812d1"
+        },
+        {
+          "path": "reports/v1.0.2/runs/C-baseline-1000-s2026.json",
+          "sha256": "b45563d7eb3d3e843def7253acbc78d2393752c96c11029c33e969c4df9353d2"
+        },
+        {
+          "path": "reports/v1.0.2/runs/C-baseline-1000-s2027.json",
+          "sha256": "f79fba6b0c3d407ca2fea5697eb02c8782e269eb48e63b62bd9631b4929238e9"
+        },
+        {
+          "path": "reports/v1.0.2/runs/C-baseline-1000-s2028.json",
+          "sha256": "7c917e303238d678f7c871f5d58ac65c26a8c602a588a2a793dae77f7164275c"
+        },
+        {
+          "path": "reports/v1.0.2/runs/C-corrected-1000-s2026.json",
+          "sha256": "3025b4ca3f889fdbca6cee531d90309c7aa216003cc2f96ce03ff30a31afb0b5"
+        },
+        {
+          "path": "reports/v1.0.2/runs/C-corrected-1000-s2027.json",
+          "sha256": "73177777fff8ce832a62a7052fc67c14123fdf61ecbb9dcd1d7cc4a2fb769706"
+        },
+        {
+          "path": "reports/v1.0.2/runs/C-corrected-1000-s2028.json",
+          "sha256": "e3de9e78389de4810a13d42794986775e6fa2783a822c10c28da0709be9583b7"
+        },
+        {
+          "path": "reports/v1.0.2/field-proof/proof.json",
+          "sha256": "2aba4a85b0ea54018a3375c867ff8518f1083d12b6b320707f36b10a0ae1a055"
+        },
+        {
+          "path": "reports/v1.0.2/field-validation/field.json",
+          "sha256": "47b0dc5c5c4584822115da3f4fc10317185fca0ae0940dcce7ebfefc0120bea2"
+        },
+        {
+          "path": "reports/v1.0.2/field-validation/frequencies.json",
+          "sha256": "b9ea0badb3c8a1b1ee48c33ea186b515d4e49a57e4146b8706a08121957da3e7"
+        },
+        {
+          "path": "reports/v1.0.2/field-validation/ensemble.json",
+          "sha256": "4adee00d5ddc6495cd00b7087bef34be7029c0c0c9cadb28cab0529ff1c69571"
+        },
+        {
+          "path": "reports/v1.0.2/corrected/preparation.json",
+          "sha256": "6471bace89388756be5c8d718321977aaead151094eeaec7bd7ec06acdc3dcbf"
+        },
+        {
+          "path": "reports/v1.0.2/gpu-populations/GPU-C-baseline-10000-s2026.json",
+          "sha256": "0313e04cb999fcf9b6dfe84107822cb69a6bd337bbe5a1e6af67f3820c9ba9fa"
+        },
+        {
+          "path": "reports/v1.0.2/gpu-populations/GPU-C-baseline-10000-s2027.json",
+          "sha256": "10457cfc823db505e9cfb6bab29790f37d8a38aa6f9624bd55764edb2a6a3ea8"
+        },
+        {
+          "path": "reports/v1.0.2/gpu-populations/GPU-C-baseline-10000-s2028.json",
+          "sha256": "741148debd60059a4da9ecb872ca3c5b7664da265e0c7a8d88afe0aa4de8a5cf"
+        },
+        {
+          "path": "reports/v1.0.2/gpu-populations/GPU-C-corrected-10000-s2026.json",
+          "sha256": "1c8d50588bade74a106d7617307728a7e26acfc99eee51b4ea5b7a73416d2821"
+        },
+        {
+          "path": "reports/v1.0.2/gpu-populations/GPU-C-corrected-10000-s2027.json",
+          "sha256": "ad6adf9045e6c3fc172a7b9678fb42542b438192417a6c11a3edbe096d35b328"
+        },
+        {
+          "path": "reports/v1.0.2/gpu-populations/GPU-C-corrected-10000-s2028.json",
+          "sha256": "a3bea54d645ca693d3703dd8a6bcc1187f0c4d488f0d9c4663342e6ed4e56caf"
+        },
+        {
+          "path": "reports/v1.0.2/corrected/iterations.json",
+          "sha256": "10d706f518b0342ef7aee628f996af5889da48783ac9337498f9eca475c0713e"
+        }
+      ]
+    }
+  ],
+  "pendingRequestedFigures": [
+    {
+      "number": 4,
+      "reason": "Novos halos refinados ainda não evoluídos: não inventar curva de aquecimento por massa."
+    },
+    {
+      "number": 5,
+      "reason": "Novo controle de refinamento bariônico com halo fixo ainda não executado."
+    }
+  ],
+  "scriptSHA256": "97743115e41f95e32254d7ebaf945fc2bececd231c719e53af1479339899020f"
+}

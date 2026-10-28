@@ -1,0 +1,414 @@
+{
+  "schema": "resolution-scientific-decision-v1",
+  "createdUTC": "2026-10-21T14:12:47.016Z",
+  "originalRealization": "1ca8f265-4da8-49e8-9694-df20f8edc2fa",
+  "productionGenerator": "legacy",
+  "promoteCandidate": false,
+  "equilibriumDemonstrated": false,
+  "requiredParticleCountDetermined": false,
+  "gpuRuns": 54,
+  "cpuRuns": 16,
+  "maximumNewDurationMyr": 200,
+  "originalH50": [
+    0.16487250830671857,
+    4.470348179159905
+  ],
+  "haloRefinementPairs": [
+    {
+      "generator": "legacy",
+      "nd": 512,
+      "comparison": "Nh8192-minus-Nh2048",
+      "meanDeltaHeatKpc": -0.2671881162920373,
+      "minimum": -0.29208095417782465,
+      "maximum": -0.24901383884338685,
+      "seeds": 3
+    },
+    {
+      "generator": "legacy",
+      "nd": 2048,
+      "comparison": "Nh8192-minus-Nh2048",
+      "meanDeltaHeatKpc": -0.31510112980859317,
+      "minimum": -0.43671470403220747,
+      "maximum": -0.2515644265979954,
+      "seeds": 3
+    },
+    {
+      "generator": "legacy",
+      "nd": 8192,
+      "comparison": "Nh8192-minus-Nh2048",
+      "meanDeltaHeatKpc": -0.30236781337496177,
+      "minimum": -0.3524746330049259,
+      "maximum": -0.26196068850908877,
+      "seeds": 3
+    },
+    {
+      "generator": "candidate",
+      "nd": 512,
+      "comparison": "Nh8192-minus-Nh2048",
+      "meanDeltaHeatKpc": -0.19005442589746568,
+      "minimum": -0.24755490625445647,
+      "maximum": -0.15533509862783523,
+      "seeds": 3
+    },
+    {
+      "generator": "candidate",
+      "nd": 2048,
+      "comparison": "Nh8192-minus-Nh2048",
+      "meanDeltaHeatKpc": -0.22887994269705447,
+      "minimum": -0.2612756443961397,
+      "maximum": -0.20726075344058786,
+      "seeds": 3
+    },
+    {
+      "generator": "candidate",
+      "nd": 8192,
+      "comparison": "Nh8192-minus-Nh2048",
+      "meanDeltaHeatKpc": -0.29850367857999355,
+      "minimum": -0.3466708233004464,
+      "maximum": -0.2210861108022335,
+      "seeds": 3
+    }
+  ],
+  "factorial": [
+    {
+      "generator": "legacy",
+      "nd": 512,
+      "nh": 2048,
+      "seeds": 3,
+      "hMean": 0.6957686096595106,
+      "hMin": 0.678526586964495,
+      "hMax": 0.7120612639829672,
+      "deltaHMean": 0.519322027273163,
+      "sigmaNormalMeanKmS": 75.36954995751913,
+      "sigmaRMeanKmS": 95.67661542617645
+    },
+    {
+      "generator": "legacy",
+      "nd": 512,
+      "nh": 8192,
+      "seeds": 3,
+      "hMean": 0.4285804933674733,
+      "hMin": 0.40463702385324507,
+      "hMax": 0.4515917081280668,
+      "deltaHMean": 0.25213391098112575,
+      "sigmaNormalMeanKmS": 58.21340172294207,
+      "sigmaRMeanKmS": 81.21623737444814
+    },
+    {
+      "generator": "legacy",
+      "nd": 2048,
+      "nh": 2048,
+      "seeds": 3,
+      "hMean": 0.6803582520497495,
+      "hMin": 0.5999491625616594,
+      "hMax": 0.8085884279764161,
+      "deltaHMean": 0.5114120840595,
+      "sigmaNormalMeanKmS": 63.62239223834009,
+      "sigmaRMeanKmS": 80.54416621254582
+    },
+    {
+      "generator": "legacy",
+      "nd": 2048,
+      "nh": 8192,
+      "seeds": 3,
+      "hMean": 0.3652571222411563,
+      "hMin": 0.34292490376608276,
+      "hMax": 0.3809727390131777,
+      "deltaHMean": 0.19631095425090683,
+      "sigmaNormalMeanKmS": 50.982894015254736,
+      "sigmaRMeanKmS": 73.3423775867865
+    },
+    {
+      "generator": "legacy",
+      "nd": 8192,
+      "nh": 2048,
+      "seeds": 3,
+      "hMean": 0.6707790335629875,
+      "hMin": 0.6221344750271687,
+      "hMax": 0.742396074454416,
+      "deltaHMean": 0.5017474368489246,
+      "sigmaNormalMeanKmS": 64.47493983837762,
+      "sigmaRMeanKmS": 84.87906129764225
+    },
+    {
+      "generator": "legacy",
+      "nd": 8192,
+      "nh": 8192,
+      "seeds": 3,
+      "hMean": 0.36841122018802586,
+      "hMin": 0.35513843259650735,
+      "hMax": 0.3899214414494902,
+      "deltaHMean": 0.1993796234739629,
+      "sigmaNormalMeanKmS": 49.314237633035084,
+      "sigmaRMeanKmS": 70.41858656820914
+    },
+    {
+      "generator": "candidate",
+      "nd": 512,
+      "nh": 2048,
+      "seeds": 3,
+      "hMean": 0.6506932151561909,
+      "hMin": 0.5839651246970906,
+      "hMax": 0.7266196832680422,
+      "deltaHMean": 0.4792877510145303,
+      "sigmaNormalMeanKmS": 75.64501089209124,
+      "sigmaRMeanKmS": 90.17782006841993
+    },
+    {
+      "generator": "candidate",
+      "nd": 512,
+      "nh": 8192,
+      "seeds": 3,
+      "hMean": 0.4606387892587252,
+      "hMin": 0.4166918518869853,
+      "hMax": 0.4861597388756047,
+      "deltaHMean": 0.2892333251170646,
+      "sigmaNormalMeanKmS": 61.51896650410831,
+      "sigmaRMeanKmS": 80.69835773274663
+    },
+    {
+      "generator": "candidate",
+      "nd": 2048,
+      "nh": 2048,
+      "seeds": 3,
+      "hMean": 0.6094029398313322,
+      "hMin": 0.5841175490766812,
+      "hMax": 0.6467153487366314,
+      "deltaHMean": 0.4433325787448195,
+      "sigmaNormalMeanKmS": 66.82180665888482,
+      "sigmaRMeanKmS": 88.74686636875386
+    },
+    {
+      "generator": "candidate",
+      "nd": 2048,
+      "nh": 8192,
+      "seeds": 3,
+      "hMean": 0.3805229971342777,
+      "hMin": 0.3660141188222453,
+      "hMax": 0.390115168240096,
+      "deltaHMean": 0.21445263604776507,
+      "sigmaNormalMeanKmS": 49.77257514993241,
+      "sigmaRMeanKmS": 75.60043894759856
+    },
+    {
+      "generator": "candidate",
+      "nd": 8192,
+      "nh": 2048,
+      "seeds": 3,
+      "hMean": 0.6495130977543503,
+      "hMin": 0.6135895673624172,
+      "hMax": 0.7127099266007764,
+      "deltaHMean": 0.48962176490642767,
+      "sigmaNormalMeanKmS": 65.62317692353524,
+      "sigmaRMeanKmS": 85.22526775484296
+    },
+    {
+      "generator": "candidate",
+      "nd": 8192,
+      "nh": 8192,
+      "seeds": 3,
+      "hMean": 0.35100941917435663,
+      "hMin": 0.2858354657251164,
+      "hMax": 0.4011536884976237,
+      "deltaHMean": 0.19111808632643412,
+      "sigmaNormalMeanKmS": 50.27327299885989,
+      "sigmaRMeanKmS": 79.31787113848279
+    }
+  ],
+  "controls": [
+    {
+      "generator": "legacy",
+      "control": "A",
+      "seeds": 3,
+      "h0Mean": 0.17644658238634758,
+      "h200Mean": 0.19915540323598055,
+      "deltaHMean": 0.022708820849632938,
+      "sigmaNormalMeanKmS": 39.29636876454446
+    },
+    {
+      "generator": "legacy",
+      "control": "B",
+      "seeds": 3,
+      "h0Mean": 0.17644658238634758,
+      "h200Mean": 0.3376317449587294,
+      "deltaHMean": 0.16118516257238177,
+      "sigmaNormalMeanKmS": 52.38906949311564
+    },
+    {
+      "generator": "legacy",
+      "control": "C",
+      "seeds": 3,
+      "h0Mean": 0.17644658238634758,
+      "h200Mean": 0.4285804933674733,
+      "deltaHMean": 0.25213391098112575,
+      "sigmaNormalMeanKmS": 58.21340172294207
+    },
+    {
+      "generator": "candidate",
+      "control": "A",
+      "seeds": 3,
+      "h0Mean": 0.1714054641416607,
+      "h200Mean": 0.1745750731533574,
+      "deltaHMean": 0.0031696090116967446,
+      "sigmaNormalMeanKmS": 35.980219187152954
+    },
+    {
+      "generator": "candidate",
+      "control": "B",
+      "seeds": 3,
+      "h0Mean": 0.1714054641416607,
+      "h200Mean": 0.3068448533607721,
+      "deltaHMean": 0.13543938921911144,
+      "sigmaNormalMeanKmS": 51.30055450481782
+    },
+    {
+      "generator": "candidate",
+      "control": "C",
+      "seeds": 3,
+      "h0Mean": 0.1714054641416607,
+      "h200Mean": 0.4606387892587252,
+      "deltaHMean": 0.2892333251170646,
+      "sigmaNormalMeanKmS": 61.51896650410831
+    }
+  ],
+  "highResolution": [
+    {
+      "config": {
+        "id": "legacy-s2026-high-resolution-200",
+        "generator": "legacy",
+        "seed": 2026,
+        "counts": [
+          512,
+          16384,
+          32768
+        ],
+        "dt": 0.05,
+        "epsilon": 0.1,
+        "duration": 200,
+        "epochs": [
+          0,
+          40,
+          100,
+          200
+        ],
+        "control": "C",
+        "qualification": "One seed at high resolution; not a convergence certification."
+      },
+      "initial": {
+        "count": 16384,
+        "mass": 6.800000190734863,
+        "h50": 0.1658779453431411,
+        "medianSignedHeight": -0.00003062977197769586,
+        "meanHeight": 0,
+        "meanNormalVelocity": 0,
+        "sigmaNormal": 0.04024088885260981
+      },
+      "final": {
+        "count": 16384,
+        "mass": 6.800000190734863,
+        "h50": 0.23688933783881086,
+        "medianSignedHeight": -0.000009147865272229883,
+        "meanHeight": 0.00007899185924976177,
+        "meanNormalVelocity": -3.497362405439944e-7,
+        "sigmaNormal": 0.044358392535638114
+      },
+      "maxEnergyPercent": 0.00004057469385469816,
+      "computeMs": 45508.39999999991,
+      "diagnosticMs": 27308.799999999814
+    },
+    {
+      "config": {
+        "id": "candidate-s2026-high-resolution-200",
+        "generator": "candidate",
+        "seed": 2026,
+        "counts": [
+          512,
+          16384,
+          32768
+        ],
+        "dt": 0.05,
+        "epsilon": 0.1,
+        "duration": 200,
+        "epochs": [
+          0,
+          40,
+          100,
+          200
+        ],
+        "control": "C",
+        "qualification": "One seed at high resolution; not a convergence certification."
+      },
+      "initial": {
+        "count": 16384,
+        "mass": 6.800000190734863,
+        "h50": 0.16331541316317325,
+        "medianSignedHeight": -0.0000034599472490438876,
+        "meanHeight": 0,
+        "meanNormalVelocity": 0,
+        "sigmaNormal": 0.03764230353181545
+      },
+      "final": {
+        "count": 16384,
+        "mass": 6.800000190734863,
+        "h50": 0.22373942955108514,
+        "medianSignedHeight": -0.000035246263923705,
+        "meanHeight": 2.274018242726366e-7,
+        "meanNormalVelocity": -2.7409647190123465e-7,
+        "sigmaNormal": 0.04175870320137798
+      },
+      "maxEnergyPercent": 0.000014410345022276473,
+      "computeMs": 45475.86500000022,
+      "diagnosticMs": 22360.84499999974
+    }
+  ],
+  "hardware": {
+    "vendor": "amd",
+    "architecture": "rdna-3",
+    "device": "",
+    "description": "",
+    "logicalProcessors": 16
+  },
+  "costProjection": [
+    {
+      "N": 50000,
+      "estimatedMsPerStep": 12.74249162187764,
+      "estimatedHours200MyrAtDt005": 0.01415832402430849,
+      "estimatedHours1000MyrAtDt005": 0.07079162012154244,
+      "qualification": "quadratic extrapolation of measured high-N GPU integration cost; not a measurement or accuracy target"
+    },
+    {
+      "N": 100000,
+      "estimatedMsPerStep": 50.970476197369635,
+      "estimatedHours200MyrAtDt005": 0.05663386244152182,
+      "estimatedHours1000MyrAtDt005": 0.2831693122076091,
+      "qualification": "quadratic extrapolation of measured high-N GPU integration cost; not a measurement or accuracy target"
+    },
+    {
+      "N": 300000,
+      "estimatedMsPerStep": 458.7373440354811,
+      "estimatedHours200MyrAtDt005": 0.5097081600394234,
+      "estimatedHours1000MyrAtDt005": 2.548540800197117,
+      "qualification": "quadratic extrapolation of measured high-N GPU integration cost; not a measurement or accuracy target"
+    },
+    {
+      "N": 1000000,
+      "estimatedMsPerStep": 5097.093493624279,
+      "estimatedHours200MyrAtDt005": 5.663437215138088,
+      "estimatedHours1000MyrAtDt005": 28.317186075690444,
+      "qualification": "quadratic extrapolation of measured high-N GPU integration cost; not a measurement or accuracy target"
+    }
+  ],
+  "unchangedProductionSources": {
+    "src/physics/initial.js": true,
+    "src/physics/initial-legacy.js": true,
+    "src/physics/initial-allocated.js": true,
+    "src/physics/forces.js": true,
+    "src/physics/integrator.js": true,
+    "src/physics/models.js": true,
+    "src/physics/constants.js": true,
+    "src/compute/gpu.js": true,
+    "src/physics/disk-analysis.js": true,
+    "src/physics/orbit-equilibrium.js": true
+  },
+  "qualification": "Halo resolution has a strong paired effect. A/B/C differences also contain disk discreteness, changing mean-field response and collective modes; they do not isolate a unique microscopic mechanism or a required N. Bulge held at 512 in main factorial; two short bulge refinement controls do not close that axis. Candidate has independent density/support/kinematic limitations. No run beyond 200 Myr and no physical correction or solver replacement."
+}

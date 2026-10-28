@@ -1,0 +1,48 @@
+{
+  "computedUTC": "2026-10-23T01:53:56.072Z",
+  "runs": [
+    {
+      "mode": "particles",
+      "input": 4096,
+      "n": 4096,
+      "referenceN0": 4096,
+      "counts": [
+        614,
+        1844,
+        1638
+      ],
+      "time": 0.4000000059604645,
+      "steps": 4,
+      "physicalStateExact": true,
+      "energyExact": true,
+      "cameraExact": true,
+      "offVersusZeroChangedBytes": 0,
+      "offVersusOnChangedBytes": 0,
+      "densityAllocated": false,
+      "width": 600,
+      "height": 400
+    },
+    {
+      "mode": "geometry",
+      "input": 4096,
+      "n": 4096,
+      "referenceN0": 6826,
+      "counts": [
+        1023,
+        3073,
+        0
+      ],
+      "time": 0.4000000059604645,
+      "steps": 4,
+      "physicalStateExact": true,
+      "energyExact": true,
+      "cameraExact": true,
+      "offVersusZeroChangedBytes": 0,
+      "offVersusOnChangedBytes": 716054,
+      "densityAllocated": true,
+      "width": 600,
+      "height": 400
+    }
+  ],
+  "passed": true
+}

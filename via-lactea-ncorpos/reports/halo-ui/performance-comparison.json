@@ -1,0 +1,40 @@
+{
+  "createdUTC": "2026-10-22T03:02:55.603Z",
+  "baseN": 24648,
+  "factor": 32,
+  "n": 330277,
+  "counts": [
+    3697,
+    11092,
+    315488
+  ],
+  "dtMyr": 0.1,
+  "epsilonKpc": 0.1,
+  "before": {
+    "backend": "CPU Worker",
+    "algorithm": "Barnes-Hut",
+    "precision": "Float64",
+    "theta": 0.5,
+    "steps": 9,
+    "timeMyr": 0.9,
+    "stepMs": 11245.35
+  },
+  "after": {
+    "backend": "GPU WebGPU",
+    "algorithm": "direct",
+    "precision": "Float32",
+    "steps": 67,
+    "timeMyr": 6.70000009983778,
+    "stepMs": 412.48,
+    "paused": true
+  },
+  "timedRunWindow": {
+    "elapsedMs": 27735,
+    "timeAtPauseRequestMyr": 6.6,
+    "excludes": "preparation and final paused diagnostic; a pending step completed afterwards"
+  },
+  "stepTimeRatio": 27.262776377036463,
+  "integrationOnlyProjectedHoursFor5Gyr": 5.728888888888889,
+  "orderedPairContributionsPerForce": 109082566452,
+  "qualification": "UI observations in different windows and with different algorithms/precisions. Not a matched precision benchmark or a completed 5-Gyr campaign."
+}

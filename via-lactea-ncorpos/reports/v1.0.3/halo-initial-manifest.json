@@ -1,0 +1,398 @@
+[
+  {
+    "id": "H-nh4000-b2026-h2026",
+    "file": "initial/halo/H-nh4000-b2026-h2026.json",
+    "sha256": "de372309638cab3840ac0a4ef23b993d0980d6e623c0038ce28d05b85393ec78",
+    "n": 10000,
+    "baryonSeed": 2026,
+    "haloSeed": 2026,
+    "nh": 4000,
+    "counts": [
+      1500,
+      3546,
+      954,
+      4000
+    ],
+    "fixedPopulationSHA256": "cd73b5c6ad76dfdcb47fc9ec97658622044ca587394b1f17b84c5df47d00eb10",
+    "haloParticleMassMsun": 262282303.02963915,
+    "haloToThinParticleMass": 23.36816699857036,
+    "stage": "halo",
+    "refinedPopulation": null,
+    "samplingChecks": [
+      {
+        "population": 3,
+        "seed": 302035,
+        "independentPairs": 2000,
+        "samplePool": 4096,
+        "negativeDF": 0,
+        "unbound": 0,
+        "massMsun": 1049129212118.5566,
+        "particleMassMsun": 262282303.02963915,
+        "monteCarloMassMsun": 1049117651851.7284
+      }
+    ]
+  },
+  {
+    "id": "H-nh4000-b2026-h2027",
+    "file": "initial/halo/H-nh4000-b2026-h2027.json",
+    "sha256": "0654f7e3529094da0c46636ea014bd878f508a24884a42b957bd164f03ffff6a",
+    "n": 10000,
+    "baryonSeed": 2026,
+    "haloSeed": 2027,
+    "nh": 4000,
+    "counts": [
+      1500,
+      3546,
+      954,
+      4000
+    ],
+    "fixedPopulationSHA256": "cd73b5c6ad76dfdcb47fc9ec97658622044ca587394b1f17b84c5df47d00eb10",
+    "haloParticleMassMsun": 262282303.02963915,
+    "haloToThinParticleMass": 23.36816699857036,
+    "stage": "halo",
+    "refinedPopulation": null,
+    "samplingChecks": [
+      {
+        "population": 3,
+        "seed": 302036,
+        "independentPairs": 2000,
+        "samplePool": 4096,
+        "negativeDF": 0,
+        "unbound": 0,
+        "massMsun": 1049129212118.5566,
+        "particleMassMsun": 262282303.02963915,
+        "monteCarloMassMsun": 1049107177931.3046
+      }
+    ]
+  },
+  {
+    "id": "H-nh4000-b2026-h2028",
+    "file": "initial/halo/H-nh4000-b2026-h2028.json",
+    "sha256": "bf080d4bfa771c89c128bcac34198453f1d9fd653b6b7b296e5bca7fc5326a46",
+    "n": 10000,
+    "baryonSeed": 2026,
+    "haloSeed": 2028,
+    "nh": 4000,
+    "counts": [
+      1500,
+      3546,
+      954,
+      4000
+    ],
+    "fixedPopulationSHA256": "cd73b5c6ad76dfdcb47fc9ec97658622044ca587394b1f17b84c5df47d00eb10",
+    "haloParticleMassMsun": 262282303.02963915,
+    "haloToThinParticleMass": 23.36816699857036,
+    "stage": "halo",
+    "refinedPopulation": null,
+    "samplingChecks": [
+      {
+        "population": 3,
+        "seed": 302037,
+        "independentPairs": 2000,
+        "samplePool": 4096,
+        "negativeDF": 0,
+        "unbound": 0,
+        "massMsun": 1049129212118.5566,
+        "particleMassMsun": 262282303.02963915,
+        "monteCarloMassMsun": 1049031445057.035
+      }
+    ]
+  },
+  {
+    "id": "H-nh8000-b2026-h2026",
+    "file": "initial/halo/H-nh8000-b2026-h2026.json",
+    "sha256": "e62aab91ec235698ef043a519ec585b57a797c5fa49b7b77ddc355fe62d31790",
+    "n": 14000,
+    "baryonSeed": 2026,
+    "haloSeed": 2026,
+    "nh": 8000,
+    "counts": [
+      1500,
+      3546,
+      954,
+      8000
+    ],
+    "fixedPopulationSHA256": "cd73b5c6ad76dfdcb47fc9ec97658622044ca587394b1f17b84c5df47d00eb10",
+    "haloParticleMassMsun": 131141151.51481958,
+    "haloToThinParticleMass": 11.68408349928518,
+    "stage": "halo",
+    "refinedPopulation": null,
+    "samplingChecks": [
+      {
+        "population": 3,
+        "seed": 302035,
+        "independentPairs": 4000,
+        "samplePool": 4096,
+        "negativeDF": 0,
+        "unbound": 0,
+        "massMsun": 1049129212118.5566,
+        "particleMassMsun": 131141151.51481958,
+        "monteCarloMassMsun": 1049117651851.7284
+      }
+    ]
+  },
+  {
+    "id": "H-nh8000-b2026-h2027",
+    "file": "initial/halo/H-nh8000-b2026-h2027.json",
+    "sha256": "6e4e3a1ed7ee0d5d9c1ae967c5007aeb408d0169079d86dd974a1d2c6eae185a",
+    "n": 14000,
+    "baryonSeed": 2026,
+    "haloSeed": 2027,
+    "nh": 8000,
+    "counts": [
+      1500,
+      3546,
+      954,
+      8000
+    ],
+    "fixedPopulationSHA256": "cd73b5c6ad76dfdcb47fc9ec97658622044ca587394b1f17b84c5df47d00eb10",
+    "haloParticleMassMsun": 131141151.51481958,
+    "haloToThinParticleMass": 11.68408349928518,
+    "stage": "halo",
+    "refinedPopulation": null,
+    "samplingChecks": [
+      {
+        "population": 3,
+        "seed": 302036,
+        "independentPairs": 4000,
+        "samplePool": 4096,
+        "negativeDF": 0,
+        "unbound": 0,
+        "massMsun": 1049129212118.5566,
+        "particleMassMsun": 131141151.51481958,
+        "monteCarloMassMsun": 1049107177931.3046
+      }
+    ]
+  },
+  {
+    "id": "H-nh8000-b2026-h2028",
+    "file": "initial/halo/H-nh8000-b2026-h2028.json",
+    "sha256": "7faa4ed686944832730fc13a33dc3523726dcef9d01a8a16420f3f13792220c5",
+    "n": 14000,
+    "baryonSeed": 2026,
+    "haloSeed": 2028,
+    "nh": 8000,
+    "counts": [
+      1500,
+      3546,
+      954,
+      8000
+    ],
+    "fixedPopulationSHA256": "cd73b5c6ad76dfdcb47fc9ec97658622044ca587394b1f17b84c5df47d00eb10",
+    "haloParticleMassMsun": 131141151.51481958,
+    "haloToThinParticleMass": 11.68408349928518,
+    "stage": "halo",
+    "refinedPopulation": null,
+    "samplingChecks": [
+      {
+        "population": 3,
+        "seed": 302037,
+        "independentPairs": 4000,
+        "samplePool": 4096,
+        "negativeDF": 0,
+        "unbound": 0,
+        "massMsun": 1049129212118.5566,
+        "particleMassMsun": 131141151.51481958,
+        "monteCarloMassMsun": 1049031445057.035
+      }
+    ]
+  },
+  {
+    "id": "H-nh20000-b2026-h2026",
+    "file": "initial/halo/H-nh20000-b2026-h2026.json",
+    "sha256": "e8a0e5eb73320ac1c795967889bb10f9c6e762c02b86c57b0f4363c3aa70dc51",
+    "n": 26000,
+    "baryonSeed": 2026,
+    "haloSeed": 2026,
+    "nh": 20000,
+    "counts": [
+      1500,
+      3546,
+      954,
+      20000
+    ],
+    "fixedPopulationSHA256": "cd73b5c6ad76dfdcb47fc9ec97658622044ca587394b1f17b84c5df47d00eb10",
+    "haloParticleMassMsun": 52456460.60592783,
+    "haloToThinParticleMass": 4.673633399714071,
+    "stage": "halo",
+    "refinedPopulation": null,
+    "samplingChecks": [
+      {
+        "population": 3,
+        "seed": 302035,
+        "independentPairs": 10000,
+        "samplePool": 10000,
+        "negativeDF": 0,
+        "unbound": 0,
+        "massMsun": 1049129212118.5566,
+        "particleMassMsun": 52456460.60592783,
+        "monteCarloMassMsun": 1049331668788.83
+      }
+    ]
+  },
+  {
+    "id": "H-nh20000-b2026-h2027",
+    "file": "initial/halo/H-nh20000-b2026-h2027.json",
+    "sha256": "dac268649afd15d32423e29ac0f2b9bfd19aae86debc4224194f4f174c9a053c",
+    "n": 26000,
+    "baryonSeed": 2026,
+    "haloSeed": 2027,
+    "nh": 20000,
+    "counts": [
+      1500,
+      3546,
+      954,
+      20000
+    ],
+    "fixedPopulationSHA256": "cd73b5c6ad76dfdcb47fc9ec97658622044ca587394b1f17b84c5df47d00eb10",
+    "haloParticleMassMsun": 52456460.60592783,
+    "haloToThinParticleMass": 4.673633399714071,
+    "stage": "halo",
+    "refinedPopulation": null,
+    "samplingChecks": [
+      {
+        "population": 3,
+        "seed": 302036,
+        "independentPairs": 10000,
+        "samplePool": 10000,
+        "negativeDF": 0,
+        "unbound": 0,
+        "massMsun": 1049129212118.5566,
+        "particleMassMsun": 52456460.60592783,
+        "monteCarloMassMsun": 1049665068858.2684
+      }
+    ]
+  },
+  {
+    "id": "H-nh20000-b2026-h2028",
+    "file": "initial/halo/H-nh20000-b2026-h2028.json",
+    "sha256": "1a6e3b0233644784bad553cde196f19409e133ee9ab655fa01d77038e57fb7a6",
+    "n": 26000,
+    "baryonSeed": 2026,
+    "haloSeed": 2028,
+    "nh": 20000,
+    "counts": [
+      1500,
+      3546,
+      954,
+      20000
+    ],
+    "fixedPopulationSHA256": "cd73b5c6ad76dfdcb47fc9ec97658622044ca587394b1f17b84c5df47d00eb10",
+    "haloParticleMassMsun": 52456460.60592783,
+    "haloToThinParticleMass": 4.673633399714071,
+    "stage": "halo",
+    "refinedPopulation": null,
+    "samplingChecks": [
+      {
+        "population": 3,
+        "seed": 302037,
+        "independentPairs": 10000,
+        "samplePool": 10000,
+        "negativeDF": 0,
+        "unbound": 0,
+        "massMsun": 1049129212118.5566,
+        "particleMassMsun": 52456460.60592783,
+        "monteCarloMassMsun": 1049343200199.359
+      }
+    ]
+  },
+  {
+    "id": "H-nh40000-b2026-h2026",
+    "file": "initial/halo/H-nh40000-b2026-h2026.json",
+    "sha256": "ea1a899a3ab5e45a4e5b500ab74c2f75e5b6258eb44a050efe0702ce9c743fa4",
+    "n": 46000,
+    "baryonSeed": 2026,
+    "haloSeed": 2026,
+    "nh": 40000,
+    "counts": [
+      1500,
+      3546,
+      954,
+      40000
+    ],
+    "fixedPopulationSHA256": "cd73b5c6ad76dfdcb47fc9ec97658622044ca587394b1f17b84c5df47d00eb10",
+    "haloParticleMassMsun": 26228230.302963916,
+    "haloToThinParticleMass": 2.3368166998570357,
+    "stage": "halo",
+    "refinedPopulation": null,
+    "samplingChecks": [
+      {
+        "population": 3,
+        "seed": 302035,
+        "independentPairs": 20000,
+        "samplePool": 20000,
+        "negativeDF": 0,
+        "unbound": 0,
+        "massMsun": 1049129212118.5566,
+        "particleMassMsun": 26228230.302963916,
+        "monteCarloMassMsun": 1049441894390.0272
+      }
+    ]
+  },
+  {
+    "id": "H-nh40000-b2026-h2027",
+    "file": "initial/halo/H-nh40000-b2026-h2027.json",
+    "sha256": "cdfebb83d187b7bba15d2fd41f2a6c8553e571f7b46f9165d7a7d3bce5574568",
+    "n": 46000,
+    "baryonSeed": 2026,
+    "haloSeed": 2027,
+    "nh": 40000,
+    "counts": [
+      1500,
+      3546,
+      954,
+      40000
+    ],
+    "fixedPopulationSHA256": "cd73b5c6ad76dfdcb47fc9ec97658622044ca587394b1f17b84c5df47d00eb10",
+    "haloParticleMassMsun": 26228230.302963916,
+    "haloToThinParticleMass": 2.3368166998570357,
+    "stage": "halo",
+    "refinedPopulation": null,
+    "samplingChecks": [
+      {
+        "population": 3,
+        "seed": 302036,
+        "independentPairs": 20000,
+        "samplePool": 20000,
+        "negativeDF": 0,
+        "unbound": 0,
+        "massMsun": 1049129212118.5566,
+        "particleMassMsun": 26228230.302963916,
+        "monteCarloMassMsun": 1049629242553.7227
+      }
+    ]
+  },
+  {
+    "id": "H-nh40000-b2026-h2028",
+    "file": "initial/halo/H-nh40000-b2026-h2028.json",
+    "sha256": "c92aee88b1aa660326b68f346479c0cb004dd363bbe114a2514b32eeed43e1dc",
+    "n": 46000,
+    "baryonSeed": 2026,
+    "haloSeed": 2028,
+    "nh": 40000,
+    "counts": [
+      1500,
+      3546,
+      954,
+      40000
+    ],
+    "fixedPopulationSHA256": "cd73b5c6ad76dfdcb47fc9ec97658622044ca587394b1f17b84c5df47d00eb10",
+    "haloParticleMassMsun": 26228230.302963916,
+    "haloToThinParticleMass": 2.3368166998570357,
+    "stage": "halo",
+    "refinedPopulation": null,
+    "samplingChecks": [
+      {
+        "population": 3,
+        "seed": 302037,
+        "independentPairs": 20000,
+        "samplePool": 20000,
+        "negativeDF": 0,
+        "unbound": 0,
+        "massMsun": 1049129212118.5566,
+        "particleMassMsun": 26228230.302963916,
+        "monteCarloMassMsun": 1049542216313.8473
+      }
+    ]
+  }
+]

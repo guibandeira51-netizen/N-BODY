@@ -1,0 +1,196 @@
+{
+  "schema": "equilibrium-rebuild-controls-v1",
+  "createdUTC": "2026-10-21T03:48:10.413Z",
+  "library": {
+    "id": "orbits-1024-s44-p8-2026-10-21T03-42-28-070Z",
+    "path": "reports/equilibrium-rebuild/orbits-1024-s44-p8-2026-10-21T03-42-28-070Z",
+    "library": "reports/equilibrium-rebuild/orbits-1024-s44-p8-2026-10-21T03-42-28-070Z/library.json",
+    "sha256": "425e78d31d701d7c1c91e8b10e8fcf1757dd9278e0232fb79fc31ea97b320737"
+  },
+  "field": "reports/equilibrium-rebuild/2026-10-21T03-39-56-668Z/field-grid.json",
+  "epsilon": 0.1,
+  "backend": "CPU direct Float64",
+  "qualification": "Rejection/characterization controls. Candidate density/stationarity not certified; no automatic promotion. N/halo studies short, epsilon convergence requires rebuilding the DF and remains gated.",
+  "runs": [
+    {
+      "id": "legacy-all-live-c60-180-160-s2026-dt0.05-t200",
+      "file": "legacy-all-live-c60-180-160-s2026-dt0.05-t200.json",
+      "config": {
+        "seed": 2026,
+        "generator": "legacy",
+        "control": "all-live",
+        "counts": [
+          60,
+          180,
+          160
+        ],
+        "dt": 0.05,
+        "duration": 200,
+        "stride": 10
+      },
+      "wallMs": 3092.9981000000002,
+      "initialH50": 0.2324855209890173,
+      "finalH50": 3.0646149712382846,
+      "maxSampledEnergyPercent": 0.0017773597231588128
+    },
+    {
+      "id": "legacy-all-live-c60-180-160-s2026-dt0.025-t200",
+      "file": "legacy-all-live-c60-180-160-s2026-dt0.025-t200.json",
+      "config": {
+        "seed": 2026,
+        "generator": "legacy",
+        "control": "all-live",
+        "counts": [
+          60,
+          180,
+          160
+        ],
+        "dt": 0.025,
+        "duration": 200,
+        "stride": 10
+      },
+      "wallMs": 4937.3964000000005,
+      "initialH50": 0.2324855209890173,
+      "finalH50": 2.729561037973051,
+      "maxSampledEnergyPercent": 0.002150976251724844
+    },
+    {
+      "id": "candidate-all-live-c60-180-160-s2026-dt0.05-t200",
+      "file": "candidate-all-live-c60-180-160-s2026-dt0.05-t200.json",
+      "config": {
+        "seed": 2026,
+        "generator": "candidate",
+        "control": "all-live",
+        "counts": [
+          60,
+          180,
+          160
+        ],
+        "dt": 0.05,
+        "duration": 200,
+        "stride": 10
+      },
+      "wallMs": 2531.514799999999,
+      "initialH50": 0.17908872813532034,
+      "finalH50": 1.4022407000392296,
+      "maxSampledEnergyPercent": 0.008022007630475945
+    },
+    {
+      "id": "candidate-all-live-c60-180-160-s2026-dt0.025-t200",
+      "file": "candidate-all-live-c60-180-160-s2026-dt0.025-t200.json",
+      "config": {
+        "seed": 2026,
+        "generator": "candidate",
+        "control": "all-live",
+        "counts": [
+          60,
+          180,
+          160
+        ],
+        "dt": 0.025,
+        "duration": 200,
+        "stride": 10
+      },
+      "wallMs": 4765.291499999999,
+      "initialH50": 0.17908872813532034,
+      "finalH50": 1.8062724636036767,
+      "maxSampledEnergyPercent": 0.002074960330384356
+    },
+    {
+      "id": "candidate-all-live-c120-360-320-s2026-dt0.05-t200",
+      "file": "candidate-all-live-c120-360-320-s2026-dt0.05-t200.json",
+      "config": {
+        "seed": 2026,
+        "generator": "candidate",
+        "control": "all-live",
+        "counts": [
+          120,
+          360,
+          320
+        ],
+        "dt": 0.05,
+        "duration": 200,
+        "stride": 10
+      },
+      "wallMs": 9520.4595,
+      "initialH50": 0.15994248750135104,
+      "finalH50": 1.9445116674765774,
+      "maxSampledEnergyPercent": 0.0036568008731264787
+    },
+    {
+      "id": "candidate-all-live-c120-360-320-s2027-dt0.05-t200",
+      "file": "candidate-all-live-c120-360-320-s2027-dt0.05-t200.json",
+      "config": {
+        "seed": 2027,
+        "generator": "candidate",
+        "control": "all-live",
+        "counts": [
+          120,
+          360,
+          320
+        ],
+        "dt": 0.05,
+        "duration": 200,
+        "stride": 10
+      },
+      "wallMs": 9826.207900000001,
+      "initialH50": 0.19049445657139744,
+      "finalH50": 1.3408284660535639,
+      "maxSampledEnergyPercent": 0.010124467038504162
+    },
+    {
+      "id": "candidate-all-live-c120-360-320-s2028-dt0.05-t200",
+      "file": "candidate-all-live-c120-360-320-s2028-dt0.05-t200.json",
+      "config": {
+        "seed": 2028,
+        "generator": "candidate",
+        "control": "all-live",
+        "counts": [
+          120,
+          360,
+          320
+        ],
+        "dt": 0.05,
+        "duration": 200,
+        "stride": 10
+      },
+      "wallMs": 9414.268199999999,
+      "initialH50": 0.16593929252493173,
+      "finalH50": 1.7823482971324662,
+      "maxSampledEnergyPercent": 0.00792058343955533
+    },
+    {
+      "id": "candidate-all-live-c60-180-2560-s2026-dt0.05-t40",
+      "file": "candidate-all-live-c60-180-2560-s2026-dt0.05-t40.json",
+      "config": {
+        "seed": 2026,
+        "generator": "candidate",
+        "control": "all-live",
+        "counts": [
+          60,
+          180,
+          2560
+        ],
+        "dt": 0.05,
+        "duration": 40,
+        "stride": 2
+      },
+      "wallMs": 24424.542700000005,
+      "initialH50": 0.17908872813532034,
+      "finalH50": 0.22873391904491083,
+      "maxSampledEnergyPercent": 0.00017386631730697134
+    }
+  ],
+  "sourceHashes": {
+    "src/physics/equilibrium-field.js": "034752a5d363fbdf596a827b25ccc0b6d4d24ce6a74f14df1e00228377321a30",
+    "src/physics/orbit-equilibrium.js": "2e0c062cafb2c23d96665f67b017325acc2c71cb1f5040fa0e990bf7e70f8ff0",
+    "src/physics/integrator.js": "5a83b4dcad749e13d438cdde561c7ee19ac6418823cfa5f06257eee3b268b04f",
+    "src/physics/forces.js": "9532d4286c6481d49995ece96e48bd595145c2e2c8a22897520cafa45f862444",
+    "src/physics/constants.js": "4b1c2a1d96453b95c8e57a45f46443083e77d54e1714aadc7d060de0d9aa22ca",
+    "src/compute/gpu.js": "443ab660dbaed0c47e84fc8675ded0c44c8c726852b5315dad84d26037ae58d5",
+    "scripts/equilibrium-rebuild/prepare.mjs": "cde5832bf2b023b1ea227fbb8baaa78031f79c4af66337522852d54bc504d4f9",
+    "scripts/equilibrium-rebuild/run.mjs": "dd152e91ac3430d653308ac65381505a1642194c43ff0349890da90b3eb3f11f",
+    "scripts/equilibrium-rebuild/controls.mjs": "1fdcfb47a4775519f8147793ad499203231f7b607766121273bde833e8fb90c5"
+  },
+  "completedUTC": "2026-10-21T03:49:19.097Z"
+}

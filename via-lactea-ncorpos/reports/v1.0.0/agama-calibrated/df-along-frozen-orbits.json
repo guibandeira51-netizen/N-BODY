@@ -1,0 +1,421 @@
+{
+  "checks": [
+    {
+      "seed": 2026,
+      "subpopulation": 0,
+      "timeMyr": 0,
+      "independentOrbits": 128,
+      "invalidOrNonpositiveF": 0,
+      "absLogFChangeQuantiles50_90_99_Max": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "seed": 2026,
+      "subpopulation": 1,
+      "timeMyr": 0,
+      "independentOrbits": 128,
+      "invalidOrNonpositiveF": 0,
+      "absLogFChangeQuantiles50_90_99_Max": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "seed": 2026,
+      "subpopulation": 2,
+      "timeMyr": 0,
+      "independentOrbits": 128,
+      "invalidOrNonpositiveF": 0,
+      "absLogFChangeQuantiles50_90_99_Max": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "seed": 2026,
+      "subpopulation": 3,
+      "timeMyr": 0,
+      "independentOrbits": 128,
+      "invalidOrNonpositiveF": 0,
+      "absLogFChangeQuantiles50_90_99_Max": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "seed": 2026,
+      "subpopulation": 0,
+      "timeMyr": 20,
+      "independentOrbits": 128,
+      "invalidOrNonpositiveF": 0,
+      "absLogFChangeQuantiles50_90_99_Max": [
+        0.021482623180076783,
+        0.0894852690324853,
+        0.19648653218599238,
+        0.20906029527848793
+      ]
+    },
+    {
+      "seed": 2026,
+      "subpopulation": 1,
+      "timeMyr": 20,
+      "independentOrbits": 128,
+      "invalidOrNonpositiveF": 0,
+      "absLogFChangeQuantiles50_90_99_Max": [
+        0.003835422020014952,
+        0.0739407311662597,
+        0.29608400573497484,
+        0.4869406168333463
+      ]
+    },
+    {
+      "seed": 2026,
+      "subpopulation": 2,
+      "timeMyr": 20,
+      "independentOrbits": 128,
+      "invalidOrNonpositiveF": 0,
+      "absLogFChangeQuantiles50_90_99_Max": [
+        0.004288798167992446,
+        0.028599040117857976,
+        0.10726749183394996,
+        0.11172418734720033
+      ]
+    },
+    {
+      "seed": 2026,
+      "subpopulation": 3,
+      "timeMyr": 20,
+      "independentOrbits": 128,
+      "invalidOrNonpositiveF": 0,
+      "absLogFChangeQuantiles50_90_99_Max": [
+        2.9652374003384784e-05,
+        0.001343262843881905,
+        0.009434169383792297,
+        0.04069897966774413
+      ]
+    },
+    {
+      "seed": 2026,
+      "subpopulation": 0,
+      "timeMyr": 200,
+      "independentOrbits": 128,
+      "invalidOrNonpositiveF": 0,
+      "absLogFChangeQuantiles50_90_99_Max": [
+        0.022786782161247136,
+        0.11898774599434193,
+        0.4749066394011615,
+        0.6472396925190161
+      ]
+    },
+    {
+      "seed": 2026,
+      "subpopulation": 1,
+      "timeMyr": 200,
+      "independentOrbits": 128,
+      "invalidOrNonpositiveF": 0,
+      "absLogFChangeQuantiles50_90_99_Max": [
+        0.006331539596644438,
+        0.10219736118070058,
+        0.7422033367991516,
+        3.04365841855703
+      ]
+    },
+    {
+      "seed": 2026,
+      "subpopulation": 2,
+      "timeMyr": 200,
+      "independentOrbits": 128,
+      "invalidOrNonpositiveF": 0,
+      "absLogFChangeQuantiles50_90_99_Max": [
+        0.005145443583918186,
+        0.04227288548185326,
+        0.13444681822284335,
+        0.2577329074746536
+      ]
+    },
+    {
+      "seed": 2026,
+      "subpopulation": 3,
+      "timeMyr": 200,
+      "independentOrbits": 128,
+      "invalidOrNonpositiveF": 0,
+      "absLogFChangeQuantiles50_90_99_Max": [
+        0.00027715220462813715,
+        0.007421996742174401,
+        0.03571581546119993,
+        0.10828808299489709
+      ]
+    },
+    {
+      "seed": 2026,
+      "subpopulation": 0,
+      "timeMyr": 1000,
+      "independentOrbits": 128,
+      "invalidOrNonpositiveF": 0,
+      "absLogFChangeQuantiles50_90_99_Max": [
+        0.028422440975652184,
+        0.1109792358724337,
+        0.2749412427999072,
+        0.29912087411728994
+      ]
+    },
+    {
+      "seed": 2026,
+      "subpopulation": 1,
+      "timeMyr": 1000,
+      "independentOrbits": 128,
+      "invalidOrNonpositiveF": 0,
+      "absLogFChangeQuantiles50_90_99_Max": [
+        0.006037633525061703,
+        0.15287826503999344,
+        0.8988677962486751,
+        1.4152008272982353
+      ]
+    },
+    {
+      "seed": 2026,
+      "subpopulation": 2,
+      "timeMyr": 1000,
+      "independentOrbits": 128,
+      "invalidOrNonpositiveF": 0,
+      "absLogFChangeQuantiles50_90_99_Max": [
+        0.004147772889442777,
+        0.05380397542116143,
+        0.1616390444336553,
+        0.21186436439382578
+      ]
+    },
+    {
+      "seed": 2026,
+      "subpopulation": 3,
+      "timeMyr": 1000,
+      "independentOrbits": 128,
+      "invalidOrNonpositiveF": 0,
+      "absLogFChangeQuantiles50_90_99_Max": [
+        0.0007406076465406057,
+        0.009508638375010916,
+        0.030015455582370582,
+        0.053417735553471984
+      ]
+    },
+    {
+      "seed": 2027,
+      "subpopulation": 0,
+      "timeMyr": 0,
+      "independentOrbits": 128,
+      "invalidOrNonpositiveF": 0,
+      "absLogFChangeQuantiles50_90_99_Max": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "seed": 2027,
+      "subpopulation": 1,
+      "timeMyr": 0,
+      "independentOrbits": 128,
+      "invalidOrNonpositiveF": 0,
+      "absLogFChangeQuantiles50_90_99_Max": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "seed": 2027,
+      "subpopulation": 2,
+      "timeMyr": 0,
+      "independentOrbits": 128,
+      "invalidOrNonpositiveF": 0,
+      "absLogFChangeQuantiles50_90_99_Max": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "seed": 2027,
+      "subpopulation": 3,
+      "timeMyr": 0,
+      "independentOrbits": 128,
+      "invalidOrNonpositiveF": 0,
+      "absLogFChangeQuantiles50_90_99_Max": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "seed": 2027,
+      "subpopulation": 0,
+      "timeMyr": 20,
+      "independentOrbits": 128,
+      "invalidOrNonpositiveF": 0,
+      "absLogFChangeQuantiles50_90_99_Max": [
+        0.026329141927052952,
+        0.10142171410600602,
+        0.228896069870737,
+        0.31949221693744434
+      ]
+    },
+    {
+      "seed": 2027,
+      "subpopulation": 1,
+      "timeMyr": 20,
+      "independentOrbits": 128,
+      "invalidOrNonpositiveF": 0,
+      "absLogFChangeQuantiles50_90_99_Max": [
+        0.0032865870765434336,
+        0.04740410697738845,
+        0.24701834627848698,
+        0.37011827414640974
+      ]
+    },
+    {
+      "seed": 2027,
+      "subpopulation": 2,
+      "timeMyr": 20,
+      "independentOrbits": 128,
+      "invalidOrNonpositiveF": 0,
+      "absLogFChangeQuantiles50_90_99_Max": [
+        0.003196736638901409,
+        0.01858480921505603,
+        0.13568566815645164,
+        0.2890741483747026
+      ]
+    },
+    {
+      "seed": 2027,
+      "subpopulation": 3,
+      "timeMyr": 20,
+      "independentOrbits": 128,
+      "invalidOrNonpositiveF": 0,
+      "absLogFChangeQuantiles50_90_99_Max": [
+        2.9167395114228652e-05,
+        0.001436552809910362,
+        0.032858486118814395,
+        0.07242235484862371
+      ]
+    },
+    {
+      "seed": 2027,
+      "subpopulation": 0,
+      "timeMyr": 200,
+      "independentOrbits": 128,
+      "invalidOrNonpositiveF": 0,
+      "absLogFChangeQuantiles50_90_99_Max": [
+        0.02442492230253496,
+        0.12593655830421607,
+        0.27759255919328474,
+        0.47952220228478193
+      ]
+    },
+    {
+      "seed": 2027,
+      "subpopulation": 1,
+      "timeMyr": 200,
+      "independentOrbits": 128,
+      "invalidOrNonpositiveF": 0,
+      "absLogFChangeQuantiles50_90_99_Max": [
+        0.0068247854542943225,
+        0.10672613802797391,
+        0.7416716384023456,
+        1.811285131885029
+      ]
+    },
+    {
+      "seed": 2027,
+      "subpopulation": 2,
+      "timeMyr": 200,
+      "independentOrbits": 128,
+      "invalidOrNonpositiveF": 0,
+      "absLogFChangeQuantiles50_90_99_Max": [
+        0.00396283677188293,
+        0.029393284902213424,
+        0.18050537043666084,
+        0.2662159311373335
+      ]
+    },
+    {
+      "seed": 2027,
+      "subpopulation": 3,
+      "timeMyr": 200,
+      "independentOrbits": 128,
+      "invalidOrNonpositiveF": 0,
+      "absLogFChangeQuantiles50_90_99_Max": [
+        0.0002264882976268536,
+        0.0068765276187903795,
+        0.06488241569857095,
+        0.11580324137851405
+      ]
+    },
+    {
+      "seed": 2027,
+      "subpopulation": 0,
+      "timeMyr": 1000,
+      "independentOrbits": 128,
+      "invalidOrNonpositiveF": 0,
+      "absLogFChangeQuantiles50_90_99_Max": [
+        0.022206811788898467,
+        0.13151938412127467,
+        0.3311946721152738,
+        0.538441945113787
+      ]
+    },
+    {
+      "seed": 2027,
+      "subpopulation": 1,
+      "timeMyr": 1000,
+      "independentOrbits": 128,
+      "invalidOrNonpositiveF": 0,
+      "absLogFChangeQuantiles50_90_99_Max": [
+        0.006646450478130575,
+        0.12501824511233278,
+        0.6123687315356886,
+        2.4662653418966616
+      ]
+    },
+    {
+      "seed": 2027,
+      "subpopulation": 2,
+      "timeMyr": 1000,
+      "independentOrbits": 128,
+      "invalidOrNonpositiveF": 0,
+      "absLogFChangeQuantiles50_90_99_Max": [
+        0.004278082783302749,
+        0.037014351598154846,
+        0.2650543529048363,
+        0.3904046222833023
+      ]
+    },
+    {
+      "seed": 2027,
+      "subpopulation": 3,
+      "timeMyr": 1000,
+      "independentOrbits": 128,
+      "invalidOrNonpositiveF": 0,
+      "absLogFChangeQuantiles50_90_99_Max": [
+        0.00046669547766513666,
+        0.0067154317660413545,
+        0.05927955559591273,
+        0.10711086858226178
+      ]
+    }
+  ],
+  "qualification": "f(J) changes along true numerical orbits quantify limits of the approximate action finder and construction. A nonzero variation is not a velocity correction. Only 128 independent orbits per subpopulation and seed are probed."
+}

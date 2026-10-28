@@ -1,0 +1,816 @@
+{
+  "schema": "refinement-ic-diagnosis-104",
+  "native": [
+    {
+      "seed": 2026,
+      "checksAt200Myr": [
+        {
+          "population": 0,
+          "timeMyr": 200,
+          "independentOrbits": 128,
+          "invalid": 0,
+          "absLogFChangeQ50_90_99_Max": [
+            0.018488387659230623,
+            0.10138675626859744,
+            0.22765756182689695,
+            0.3404309923154881
+          ],
+          "maxRelativeSpecificEnergyError": 4.380102211984425e-8
+        },
+        {
+          "population": 1,
+          "timeMyr": 200,
+          "independentOrbits": 128,
+          "invalid": 0,
+          "absLogFChangeQ50_90_99_Max": [
+            0.009159863568255556,
+            0.09967927156789626,
+            0.6599289052515442,
+            0.8302952906703537
+          ],
+          "maxRelativeSpecificEnergyError": 2.0635179033393447e-8
+        },
+        {
+          "population": 2,
+          "timeMyr": 200,
+          "independentOrbits": 128,
+          "invalid": 0,
+          "absLogFChangeQ50_90_99_Max": [
+            0.00460778445272244,
+            0.04565418860345202,
+            0.11561636238245727,
+            0.15721566655596256
+          ],
+          "maxRelativeSpecificEnergyError": 1.485701697334465e-8
+        },
+        {
+          "population": 3,
+          "timeMyr": 200,
+          "independentOrbits": 128,
+          "invalid": 0,
+          "absLogFChangeQ50_90_99_Max": [
+            0.0003090497578809439,
+            0.006238229820958888,
+            0.10147340975106242,
+            0.16677106519918183
+          ],
+          "maxRelativeSpecificEnergyError": 4.2446423979736045e-8
+        }
+      ],
+      "maximumRelativeSpecificEnergyError": 6.811645912248349e-8
+    },
+    {
+      "seed": 2027,
+      "checksAt200Myr": [
+        {
+          "population": 0,
+          "timeMyr": 200,
+          "independentOrbits": 128,
+          "invalid": 0,
+          "absLogFChangeQ50_90_99_Max": [
+            0.018189422043006602,
+            0.10047133431530254,
+            0.30757590959541864,
+            0.5594543099607331
+          ],
+          "maxRelativeSpecificEnergyError": 3.5098138752679226e-8
+        },
+        {
+          "population": 1,
+          "timeMyr": 200,
+          "independentOrbits": 128,
+          "invalid": 0,
+          "absLogFChangeQ50_90_99_Max": [
+            0.008191908732550393,
+            0.19354428783742444,
+            0.9171131710196541,
+            1.9646512303981936
+          ],
+          "maxRelativeSpecificEnergyError": 8.876464201878058e-9
+        },
+        {
+          "population": 2,
+          "timeMyr": 200,
+          "independentOrbits": 128,
+          "invalid": 0,
+          "absLogFChangeQ50_90_99_Max": [
+            0.0053713583445563675,
+            0.035714010732492946,
+            0.11691665793133736,
+            0.19887322265543253
+          ],
+          "maxRelativeSpecificEnergyError": 1.6171327222915836e-8
+        },
+        {
+          "population": 3,
+          "timeMyr": 200,
+          "independentOrbits": 128,
+          "invalid": 0,
+          "absLogFChangeQ50_90_99_Max": [
+            0.0002271774358417076,
+            0.00694946503416369,
+            0.02083112479764812,
+            0.07006712014809766
+          ],
+          "maxRelativeSpecificEnergyError": 4.4628392503102876e-8
+        }
+      ],
+      "maximumRelativeSpecificEnergyError": 6.933866811423212e-8
+    },
+    {
+      "seed": 2028,
+      "checksAt200Myr": [
+        {
+          "population": 0,
+          "timeMyr": 200,
+          "independentOrbits": 128,
+          "invalid": 0,
+          "absLogFChangeQ50_90_99_Max": [
+            0.017848620003485048,
+            0.12886947951351987,
+            0.5616461745006096,
+            0.7121137062046924
+          ],
+          "maxRelativeSpecificEnergyError": 2.7963977617665704e-8
+        },
+        {
+          "population": 1,
+          "timeMyr": 200,
+          "independentOrbits": 128,
+          "invalid": 0,
+          "absLogFChangeQ50_90_99_Max": [
+            0.004887431673336079,
+            0.20140030313214516,
+            2.129036240912455,
+            2.5354541239513604
+          ],
+          "maxRelativeSpecificEnergyError": 1.2787022036701638e-8
+        },
+        {
+          "population": 2,
+          "timeMyr": 200,
+          "independentOrbits": 128,
+          "invalid": 0,
+          "absLogFChangeQ50_90_99_Max": [
+            0.004394713004942662,
+            0.042704945067044434,
+            0.09634375073837083,
+            0.09989684746547418
+          ],
+          "maxRelativeSpecificEnergyError": 2.764135178817496e-8
+        },
+        {
+          "population": 3,
+          "timeMyr": 200,
+          "independentOrbits": 128,
+          "invalid": 0,
+          "absLogFChangeQ50_90_99_Max": [
+            0.0002945461744995571,
+            0.00719357810324508,
+            0.021826170364453615,
+            0.02594665347790415
+          ],
+          "maxRelativeSpecificEnergyError": 3.5617926939153866e-8
+        }
+      ],
+      "maximumRelativeSpecificEnergyError": 5.61928884843995e-8
+    }
+  ],
+  "Jeans": [
+    {
+      "population": 0,
+      "coordinate": "radial",
+      "rows": [
+        {
+          "Rkpc": 1,
+          "zkpc": 0.1,
+          "densityMsunKpc3": 367632011.0468678,
+          "residualAt001": 0.0008907811796772168,
+          "residualAt002": 0.0007047920178563492,
+          "absoluteStepSensitivity": 0.0001859891618208676
+        },
+        {
+          "Rkpc": 1,
+          "zkpc": 0.4,
+          "densityMsunKpc3": 294275401.54355,
+          "residualAt001": -0.007571124866820792,
+          "residualAt002": -0.007675562336577004,
+          "absoluteStepSensitivity": 0.00010443746975621199
+        },
+        {
+          "Rkpc": 3,
+          "zkpc": 0.1,
+          "densityMsunKpc3": 15501260.361867955,
+          "residualAt001": 0.01825495890810077,
+          "residualAt002": 0.018421082132460576,
+          "absoluteStepSensitivity": 0.0001661232243598057
+        },
+        {
+          "Rkpc": 3,
+          "zkpc": 0.4,
+          "densityMsunKpc3": 13633426.94707245,
+          "residualAt001": 0.01694503096779765,
+          "residualAt002": 0.016821463968888548,
+          "absoluteStepSensitivity": 0.0001235669989091033
+        },
+        {
+          "Rkpc": 8.122,
+          "zkpc": 0.1,
+          "densityMsunKpc3": 12.216347922862914,
+          "residualAt001": -0.0041861847339615035,
+          "residualAt002": -0.0046393041511747475,
+          "absoluteStepSensitivity": 0.0004531194172132441
+        },
+        {
+          "Rkpc": 8.122,
+          "zkpc": 0.4,
+          "densityMsunKpc3": 10.768369904149068,
+          "residualAt001": 0.0014409208486279843,
+          "residualAt002": 0.0011721683202450851,
+          "absoluteStepSensitivity": 0.0002687525283828992
+        },
+        {
+          "Rkpc": 15,
+          "zkpc": 0.1,
+          "densityMsunKpc3": 5.131815823168558e-13,
+          "residualAt001": -0.18560577672062906,
+          "residualAt002": -0.18581666491775223,
+          "absoluteStepSensitivity": 0.0002108881971231713
+        },
+        {
+          "Rkpc": 15,
+          "zkpc": 0.4,
+          "densityMsunKpc3": 4.498002094334201e-13,
+          "residualAt001": -0.17506579688503218,
+          "residualAt002": -0.17687402120291423,
+          "absoluteStepSensitivity": 0.0018082243178820512
+        }
+      ]
+    },
+    {
+      "population": 0,
+      "coordinate": "vertical",
+      "rows": [
+        {
+          "Rkpc": 1,
+          "zkpc": 0.1,
+          "densityMsunKpc3": 367632011.0468678,
+          "residualAt001": 0.07099019891181106,
+          "residualAt002": 0.0720500444865438,
+          "absoluteStepSensitivity": 0.0010598455747327373
+        },
+        {
+          "Rkpc": 1,
+          "zkpc": 0.4,
+          "densityMsunKpc3": 294275401.54355,
+          "residualAt001": 0.030277396051596794,
+          "residualAt002": 0.030544079118795593,
+          "absoluteStepSensitivity": 0.0002666830671987988
+        },
+        {
+          "Rkpc": 3,
+          "zkpc": 0.1,
+          "densityMsunKpc3": 15501260.361867955,
+          "residualAt001": -0.15006213181125383,
+          "residualAt002": -0.14770655119312148,
+          "absoluteStepSensitivity": 0.002355580618132347
+        },
+        {
+          "Rkpc": 3,
+          "zkpc": 0.4,
+          "densityMsunKpc3": 13633426.94707245,
+          "residualAt001": -0.11010806935903604,
+          "residualAt002": -0.10994403773592742,
+          "absoluteStepSensitivity": 0.0001640316231086153
+        },
+        {
+          "Rkpc": 8.122,
+          "zkpc": 0.1,
+          "densityMsunKpc3": 12.216347922862914,
+          "residualAt001": -0.43963529787858174,
+          "residualAt002": -0.44260258928857876,
+          "absoluteStepSensitivity": 0.0029672914099970193
+        },
+        {
+          "Rkpc": 8.122,
+          "zkpc": 0.4,
+          "densityMsunKpc3": 10.768369904149068,
+          "residualAt001": -0.36011311074558316,
+          "residualAt002": -0.36038448123143957,
+          "absoluteStepSensitivity": 0.00027137048585640366
+        },
+        {
+          "Rkpc": 15,
+          "zkpc": 0.1,
+          "densityMsunKpc3": 5.131815823168558e-13,
+          "residualAt001": -0.8326508826424854,
+          "residualAt002": -0.8376014511732989,
+          "absoluteStepSensitivity": 0.004950568530813437
+        },
+        {
+          "Rkpc": 15,
+          "zkpc": 0.4,
+          "densityMsunKpc3": 4.498002094334201e-13,
+          "residualAt001": -0.8034513482401581,
+          "residualAt002": -0.80638082029927,
+          "absoluteStepSensitivity": 0.0029294720591119816
+        }
+      ]
+    },
+    {
+      "population": 1,
+      "coordinate": "radial",
+      "rows": [
+        {
+          "Rkpc": 1,
+          "zkpc": 0.1,
+          "densityMsunKpc3": 745059565.856454,
+          "residualAt001": -0.0016012681150284263,
+          "residualAt002": -0.0016928441846495634,
+          "absoluteStepSensitivity": 0.0000915760696211371
+        },
+        {
+          "Rkpc": 1,
+          "zkpc": 0.4,
+          "densityMsunKpc3": 294241691.67306584,
+          "residualAt001": 0.0018792912205917865,
+          "residualAt002": 0.002092650038644901,
+          "absoluteStepSensitivity": 0.00021335881805311426
+        },
+        {
+          "Rkpc": 3,
+          "zkpc": 0.1,
+          "densityMsunKpc3": 344696175.392846,
+          "residualAt001": 0.010315250166471597,
+          "residualAt002": 0.010260855809972639,
+          "absoluteStepSensitivity": 0.0000543943564989581
+        },
+        {
+          "Rkpc": 3,
+          "zkpc": 0.4,
+          "densityMsunKpc3": 150512592.53492126,
+          "residualAt001": -0.009041139070727894,
+          "residualAt002": -0.008880468426397484,
+          "absoluteStepSensitivity": 0.00016067064433041012
+        },
+        {
+          "Rkpc": 8.122,
+          "zkpc": 0.1,
+          "densityMsunKpc3": 58095055.32115606,
+          "residualAt001": 0.0003881369709944623,
+          "residualAt002": 0.00037039043139970937,
+          "absoluteStepSensitivity": 0.000017746539594752956
+        },
+        {
+          "Rkpc": 8.122,
+          "zkpc": 0.4,
+          "densityMsunKpc3": 23441777.37032947,
+          "residualAt001": -0.0008432116822957186,
+          "residualAt002": -0.0008179277716734209,
+          "absoluteStepSensitivity": 0.000025283910622297696
+        },
+        {
+          "Rkpc": 15,
+          "zkpc": 0.1,
+          "densityMsunKpc3": 3026185.9131460553,
+          "residualAt001": -0.00011643036138547003,
+          "residualAt002": -0.0001169533313700438,
+          "absoluteStepSensitivity": 5.229699845737609e-7
+        },
+        {
+          "Rkpc": 15,
+          "zkpc": 0.4,
+          "densityMsunKpc3": 1131204.481392137,
+          "residualAt001": 0.00013828897044112972,
+          "residualAt002": 0.00013944308171979196,
+          "absoluteStepSensitivity": 0.0000011541112786622384
+        }
+      ]
+    },
+    {
+      "population": 1,
+      "coordinate": "vertical",
+      "rows": [
+        {
+          "Rkpc": 1,
+          "zkpc": 0.1,
+          "densityMsunKpc3": 745059565.856454,
+          "residualAt001": 0.013123139992522698,
+          "residualAt002": 0.014342046017494763,
+          "absoluteStepSensitivity": 0.0012189060249720648
+        },
+        {
+          "Rkpc": 1,
+          "zkpc": 0.4,
+          "densityMsunKpc3": 294241691.67306584,
+          "residualAt001": 0.002598454310133882,
+          "residualAt002": 0.0027279017764447115,
+          "absoluteStepSensitivity": 0.00012944746631082934
+        },
+        {
+          "Rkpc": 3,
+          "zkpc": 0.1,
+          "densityMsunKpc3": 344696175.392846,
+          "residualAt001": 0.0011962724282818624,
+          "residualAt002": 0.002175428957216155,
+          "absoluteStepSensitivity": 0.0009791565289342925
+        },
+        {
+          "Rkpc": 3,
+          "zkpc": 0.4,
+          "densityMsunKpc3": 150512592.53492126,
+          "residualAt001": -0.0035395683546112504,
+          "residualAt002": -0.003363390608580761,
+          "absoluteStepSensitivity": 0.00017617774603048957
+        },
+        {
+          "Rkpc": 8.122,
+          "zkpc": 0.1,
+          "densityMsunKpc3": 58095055.32115606,
+          "residualAt001": -0.0025856628433988016,
+          "residualAt002": -0.0016266242147095734,
+          "absoluteStepSensitivity": 0.0009590386286892282
+        },
+        {
+          "Rkpc": 8.122,
+          "zkpc": 0.4,
+          "densityMsunKpc3": 23441777.37032947,
+          "residualAt001": -0.0028909860429790586,
+          "residualAt002": -0.002688373667802317,
+          "absoluteStepSensitivity": 0.0002026123751767417
+        },
+        {
+          "Rkpc": 15,
+          "zkpc": 0.1,
+          "densityMsunKpc3": 3026185.9131460553,
+          "residualAt001": 0.0013783952022367965,
+          "residualAt002": 0.002112041839005072,
+          "absoluteStepSensitivity": 0.0007336466367682754
+        },
+        {
+          "Rkpc": 15,
+          "zkpc": 0.4,
+          "densityMsunKpc3": 1131204.481392137,
+          "residualAt001": 0.0013817036190254288,
+          "residualAt002": 0.001600235672804905,
+          "absoluteStepSensitivity": 0.00021853205377947633
+        }
+      ]
+    },
+    {
+      "population": 2,
+      "coordinate": "radial",
+      "rows": [
+        {
+          "Rkpc": 1,
+          "zkpc": 0.1,
+          "densityMsunKpc3": 32591289.73937517,
+          "residualAt001": -0.008317099469161614,
+          "residualAt002": -0.008337216356093274,
+          "absoluteStepSensitivity": 0.000020116886931660638
+        },
+        {
+          "Rkpc": 1,
+          "zkpc": 0.4,
+          "densityMsunKpc3": 27852464.21753377,
+          "residualAt001": -0.009506176018325093,
+          "residualAt002": -0.009571248395314955,
+          "absoluteStepSensitivity": 0.00006507237698986229
+        },
+        {
+          "Rkpc": 3,
+          "zkpc": 0.1,
+          "densityMsunKpc3": 20142589.315421987,
+          "residualAt001": 0.004316169448971885,
+          "residualAt002": 0.004284751418113164,
+          "absoluteStepSensitivity": 0.00003141803085872103
+        },
+        {
+          "Rkpc": 3,
+          "zkpc": 0.4,
+          "densityMsunKpc3": 17386486.03260663,
+          "residualAt001": 0.0010690696019402203,
+          "residualAt002": 0.0010605010913514,
+          "absoluteStepSensitivity": 0.000008568510588820386
+        },
+        {
+          "Rkpc": 8.122,
+          "zkpc": 0.1,
+          "densityMsunKpc3": 7188005.743116715,
+          "residualAt001": 0.0003935711597855135,
+          "residualAt002": 0.00038701220078760155,
+          "absoluteStepSensitivity": 0.000006558958997911939
+        },
+        {
+          "Rkpc": 8.122,
+          "zkpc": 0.4,
+          "densityMsunKpc3": 6156448.49386703,
+          "residualAt001": -0.0003333156496003553,
+          "residualAt002": -0.0003340262844535335,
+          "absoluteStepSensitivity": 7.106348531781773e-7
+        },
+        {
+          "Rkpc": 15,
+          "zkpc": 0.1,
+          "densityMsunKpc3": 1288575.2681859399,
+          "residualAt001": -0.0007612640360101795,
+          "residualAt002": -0.0007619222224768062,
+          "absoluteStepSensitivity": 6.58186466626705e-7
+        },
+        {
+          "Rkpc": 15,
+          "zkpc": 0.4,
+          "densityMsunKpc3": 1117340.9958900004,
+          "residualAt001": -0.0005229790048469232,
+          "residualAt002": -0.0005265555722149222,
+          "absoluteStepSensitivity": 0.0000035765673679989717
+        }
+      ]
+    },
+    {
+      "population": 2,
+      "coordinate": "vertical",
+      "rows": [
+        {
+          "Rkpc": 1,
+          "zkpc": 0.1,
+          "densityMsunKpc3": 32591289.73937517,
+          "residualAt001": 0.10414247382591248,
+          "residualAt002": 0.10487869309231126,
+          "absoluteStepSensitivity": 0.0007362192663987882
+        },
+        {
+          "Rkpc": 1,
+          "zkpc": 0.4,
+          "densityMsunKpc3": 27852464.21753377,
+          "residualAt001": 0.03568813183568299,
+          "residualAt002": 0.035052647625656665,
+          "absoluteStepSensitivity": 0.0006354842100263283
+        },
+        {
+          "Rkpc": 3,
+          "zkpc": 0.1,
+          "densityMsunKpc3": 20142589.315421987,
+          "residualAt001": 0.01638741334659172,
+          "residualAt002": 0.015123541711132091,
+          "absoluteStepSensitivity": 0.001263871635459629
+        },
+        {
+          "Rkpc": 3,
+          "zkpc": 0.4,
+          "densityMsunKpc3": 17386486.03260663,
+          "residualAt001": 0.0015795472443594972,
+          "residualAt002": 0.002163977219925377,
+          "absoluteStepSensitivity": 0.0005844299755658798
+        },
+        {
+          "Rkpc": 8.122,
+          "zkpc": 0.1,
+          "densityMsunKpc3": 7188005.743116715,
+          "residualAt001": -0.014514095029148034,
+          "residualAt002": -0.014154637370876326,
+          "absoluteStepSensitivity": 0.0003594576582717085
+        },
+        {
+          "Rkpc": 8.122,
+          "zkpc": 0.4,
+          "densityMsunKpc3": 6156448.49386703,
+          "residualAt001": -0.012524352067057877,
+          "residualAt002": -0.012297182315387506,
+          "absoluteStepSensitivity": 0.00022716975167037107
+        },
+        {
+          "Rkpc": 15,
+          "zkpc": 0.1,
+          "densityMsunKpc3": 1288575.2681859399,
+          "residualAt001": 0.0024270360590428713,
+          "residualAt002": 0.0027104565109015103,
+          "absoluteStepSensitivity": 0.000283420451858639
+        },
+        {
+          "Rkpc": 15,
+          "zkpc": 0.4,
+          "densityMsunKpc3": 1117340.9958900004,
+          "residualAt001": 0.003831762352323735,
+          "residualAt002": 0.003929890145056716,
+          "absoluteStepSensitivity": 0.00009812779273298076
+        }
+      ]
+    },
+    {
+      "population": 3,
+      "coordinate": "radial",
+      "rows": [
+        {
+          "Rkpc": 1,
+          "zkpc": 0.1,
+          "densityMsunKpc3": 161094326.22567353,
+          "residualAt001": -0.0058653150678728465,
+          "residualAt002": -0.007511317280534177,
+          "absoluteStepSensitivity": 0.00164600221266133
+        },
+        {
+          "Rkpc": 1,
+          "zkpc": 0.4,
+          "densityMsunKpc3": 143150308.32956475,
+          "residualAt001": -0.012806451080805999,
+          "residualAt002": -0.012831810746457607,
+          "absoluteStepSensitivity": 0.00002535966565160759
+        },
+        {
+          "Rkpc": 3,
+          "zkpc": 0.1,
+          "densityMsunKpc3": 47290056.67864895,
+          "residualAt001": 0.008528426782913297,
+          "residualAt002": 0.008960090469600251,
+          "absoluteStepSensitivity": 0.00043166368668695436
+        },
+        {
+          "Rkpc": 3,
+          "zkpc": 0.4,
+          "densityMsunKpc3": 45811213.04599206,
+          "residualAt001": 0.005737210846376777,
+          "residualAt002": 0.005552692255472182,
+          "absoluteStepSensitivity": 0.00018451859090459505
+        },
+        {
+          "Rkpc": 8.122,
+          "zkpc": 0.1,
+          "densityMsunKpc3": 10628981.92934801,
+          "residualAt001": 0.004654410856143151,
+          "residualAt002": 0.004333865754086791,
+          "absoluteStepSensitivity": 0.00032054510205635923
+        },
+        {
+          "Rkpc": 8.122,
+          "zkpc": 0.4,
+          "densityMsunKpc3": 10532051.043711344,
+          "residualAt001": 0.0036144949910484683,
+          "residualAt002": 0.0037475281712359768,
+          "absoluteStepSensitivity": 0.00013303318018750843
+        },
+        {
+          "Rkpc": 15,
+          "zkpc": 0.1,
+          "densityMsunKpc3": 3110520.6305848574,
+          "residualAt001": -0.004924574451362366,
+          "residualAt002": -0.0038616699166765804,
+          "absoluteStepSensitivity": 0.0010629045346857856
+        },
+        {
+          "Rkpc": 15,
+          "zkpc": 0.4,
+          "densityMsunKpc3": 3105973.435599208,
+          "residualAt001": -0.003882295348043697,
+          "residualAt002": -0.003385141604038597,
+          "absoluteStepSensitivity": 0.0004971537440051003
+        }
+      ]
+    },
+    {
+      "population": 3,
+      "coordinate": "vertical",
+      "rows": [
+        {
+          "Rkpc": 1,
+          "zkpc": 0.1,
+          "densityMsunKpc3": 161094326.22567353,
+          "residualAt001": 0.0989027061905552,
+          "residualAt002": 0.11402063287729967,
+          "absoluteStepSensitivity": 0.01511792668674447
+        },
+        {
+          "Rkpc": 1,
+          "zkpc": 0.4,
+          "densityMsunKpc3": 143150308.32956475,
+          "residualAt001": 0.02103543072850546,
+          "residualAt002": 0.027916295682276528,
+          "absoluteStepSensitivity": 0.006880864953771066
+        },
+        {
+          "Rkpc": 3,
+          "zkpc": 0.1,
+          "densityMsunKpc3": 47290056.67864895,
+          "residualAt001": 0.06709254067605452,
+          "residualAt002": 0.08693521205562227,
+          "absoluteStepSensitivity": 0.019842671379567745
+        },
+        {
+          "Rkpc": 3,
+          "zkpc": 0.4,
+          "densityMsunKpc3": 45811213.04599206,
+          "residualAt001": 0.03480780803522938,
+          "residualAt002": 0.036269527798115896,
+          "absoluteStepSensitivity": 0.001461719762886518
+        },
+        {
+          "Rkpc": 8.122,
+          "zkpc": 0.1,
+          "densityMsunKpc3": 10628981.92934801,
+          "residualAt001": -0.05544732812237708,
+          "residualAt002": -0.053109268785859566,
+          "absoluteStepSensitivity": 0.0023380593365175117
+        },
+        {
+          "Rkpc": 8.122,
+          "zkpc": 0.4,
+          "densityMsunKpc3": 10532051.043711344,
+          "residualAt001": -0.10536579998992425,
+          "residualAt002": -0.07670153799566766,
+          "absoluteStepSensitivity": 0.02866426199425659
+        },
+        {
+          "Rkpc": 15,
+          "zkpc": 0.1,
+          "densityMsunKpc3": 3110520.6305848574,
+          "residualAt001": -0.03167813104716595,
+          "residualAt002": -0.042071900451005825,
+          "absoluteStepSensitivity": 0.010393769403839875
+        },
+        {
+          "Rkpc": 15,
+          "zkpc": 0.4,
+          "densityMsunKpc3": 3105973.435599208,
+          "residualAt001": -0.021341457497836162,
+          "residualAt002": -0.0221189653864939,
+          "absoluteStepSensitivity": 0.0007775078886577379
+        }
+      ]
+    }
+  ],
+  "frequencies": [
+    {
+      "Rkpc": 0.5,
+      "omega2Myr2": 0.05031553283006904,
+      "kappa2Myr2": 0.14946356417150014,
+      "nu2Myr2": 0.09363085359928913,
+      "circularPeriodMyr": 28.011013980947673,
+      "verticalPeriodMyr": 20.53384961373949
+    },
+    {
+      "Rkpc": 1,
+      "omega2Myr2": 0.022529493067217698,
+      "kappa2Myr2": 0.06144553473177642,
+      "nu2Myr2": 0.056474416095892134,
+      "circularPeriodMyr": 41.86047561433758,
+      "verticalPeriodMyr": 26.43954601183324
+    },
+    {
+      "Rkpc": 2,
+      "omega2Myr2": 0.008695589754158725,
+      "kappa2Myr2": 0.021957819060592902,
+      "nu2Myr2": 0.03205448285602933,
+      "circularPeriodMyr": 67.37989770115531,
+      "verticalPeriodMyr": 35.09421084774218
+    },
+    {
+      "Rkpc": 3,
+      "omega2Myr2": 0.004672894694446927,
+      "kappa2Myr2": 0.011295091345560736,
+      "nu2Myr2": 0.021740867213536845,
+      "circularPeriodMyr": 91.91510153668948,
+      "verticalPeriodMyr": 42.61293391993249
+    },
+    {
+      "Rkpc": 5,
+      "omega2Myr2": 0.002042219795485176,
+      "kappa2Myr2": 0.0047841344388722335,
+      "nu2Myr2": 0.011593707694238372,
+      "circularPeriodMyr": 139.03643627379392,
+      "verticalPeriodMyr": 58.35373987489211
+    },
+    {
+      "Rkpc": 8.122,
+      "omega2Myr2": 0.0008566955235444687,
+      "kappa2Myr2": 0.0017197177523833335,
+      "nu2Myr2": 0.004201993496761605,
+      "circularPeriodMyr": 214.66765866351278,
+      "verticalPeriodMyr": 96.92865365277962
+    },
+    {
+      "Rkpc": 12,
+      "omega2Myr2": 0.00036967591847532013,
+      "kappa2Myr2": 0.0006408949767299316,
+      "nu2Myr2": 0.0011154969385902666,
+      "circularPeriodMyr": 326.79039859474267,
+      "verticalPeriodMyr": 188.1246378913409
+    },
+    {
+      "Rkpc": 15,
+      "omega2Myr2": 0.0002225321976142935,
+      "kappa2Myr2": 0.0003839402995021094,
+      "nu2Myr2": 0.0004766954190712358,
+      "circularPeriodMyr": 421.19522588246514,
+      "verticalPeriodMyr": 287.7791855284808
+    },
+    {
+      "Rkpc": 20,
+      "omega2Myr2": 0.00011591545329019061,
+      "kappa2Myr2": 0.0002021128100174529,
+      "nu2Myr2": 0.00016354537228730626,
+      "circularPeriodMyr": 583.5918247161991,
+      "verticalPeriodMyr": 491.3158088758126
+    }
+  ],
+  "conclusion": "Numerically converged mean potential and positive orbital frequency squares in sampled grid are partial evidence. Approximate actions give nonzero f(J) drift even in a fixed field; Jeans derivatives have finite-difference and quadrature limitations. Initial stationarity of every population is not certified. No velocity alteration was applied."
+}

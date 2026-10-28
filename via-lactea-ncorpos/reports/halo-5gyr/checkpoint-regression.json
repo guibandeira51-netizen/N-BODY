@@ -1,0 +1,22 @@
+{
+  "schema": "halo-5gyr-checkpoint-regression-v1",
+  "n": 256,
+  "dtRequested": 0.1,
+  "parameters": {
+    "dt": 0.10000000149011612,
+    "epsilonSquared": 0.009999999776482582,
+    "G": 0.04498502239584923,
+    "precision": "f32"
+  },
+  "steps": 20,
+  "timeUninterrupted": 2.0000000298023224,
+  "timeResumed": 2.0000000298023224,
+  "maximumAbsoluteErrors": {
+    "positions": 0,
+    "velocities": 0,
+    "masses": 0,
+    "accelerations": 0
+  },
+  "bitwiseEqual": true,
+  "qualification": "Small actual GPU regression of synchronized KDK checkpoint resume, not a physical equilibrium test."
+}

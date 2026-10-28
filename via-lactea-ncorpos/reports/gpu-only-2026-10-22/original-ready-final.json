@@ -1,0 +1,16 @@
+{
+  "backendOptions": [
+    "auto",
+    "gpu"
+  ],
+  "estimate": "41.811 corpos físicos · ~11.6 MiB estimados · GPU avaliada; a realização será alocada ao iniciar.",
+  "forceOptions": [
+    "auto",
+    "direct"
+  ],
+  "n0": "41811",
+  "policy": "gpu-only",
+  "status": "GPU avaliada: N=10.000, 3.31 ms/passo · N=30.000, 8.34 ms/passo · N=41.811, 14.86 ms/passo. N automático verificado antes de iniciar; alvo de cálculo ~20 ms/passo.",
+  "time": "0 Myr",
+  "url": "http://localhost:4180/experimento-ncorpos.html"
+}

@@ -1,0 +1,33 @@
+{
+  "computedUTC": "2026-10-23T00:23:34.033Z",
+  "physics": {
+    "comparedFiles": 63,
+    "changed": [],
+    "unchanged": true
+  },
+  "ui": {
+    "amplifications": [
+      8,
+      50
+    ],
+    "cameraAndPhysicalClockExact": true,
+    "time": 524.3000078126788,
+    "steps": 5243,
+    "canvas": [
+      889,
+      490
+    ]
+  },
+  "gpuPassed": true,
+  "identity": "nfw-visual-independent-projection-v2",
+  "identitySha256": "f5b0b36ef4ed0ae651c2d08f09b04e9d88e97c35230363cb13eaf002eac0fe5b",
+  "tests": {
+    "total": 233,
+    "passed": true,
+    "failed": 0
+  },
+  "build": {
+    "passed": true,
+    "sourceAndDistIdentityMismatches": []
+  }
+}

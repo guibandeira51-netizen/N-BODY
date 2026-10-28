@@ -1,0 +1,20 @@
+{
+  "id": "A-thin2-s2026-t200",
+  "model": "A",
+  "stage": "continuous200",
+  "seed": 2026,
+  "n": 9546,
+  "source": "reports/v1.0.3/initial/baryons/B-thin2-s2026.json",
+  "sourceSHA256": "c8aad60e099d43d181265dc866b4557a58fc279361ea7f2bbe7bf2a00b1831f4",
+  "potentialSHA256": "1074a9a28555ad253907b7e6f4b7aba406be33b9efc63ff7794e08110ea707d1",
+  "scriptSHA256": "419fc917f235b33e92060fd3e330cfbd4db9cf9ed11b9a35e1076a91896e701a",
+  "durationMyr": 200,
+  "cadenceMyr": 5,
+  "algorithm": "actual AGAMA DOP853",
+  "accuracy": 1e-10,
+  "selfGravity": false,
+  "inputQuantization": "positions, velocities and weights rounded once to Float32 to match actual initial GPU uploads; evolution itself Float64",
+  "qualification": "A: test particles in complete fixed Plummer mean. B: self-gravitating baryons and fixed halo only. Same initial baryons do not make the Hamiltonians identical.",
+  "refinedPopulation": 1,
+  "wallSeconds": 5.5277639999985695
+}

@@ -1,0 +1,13 @@
+{
+  "family": "corrected",
+  "seed": 2026,
+  "source": "reports/v1.0.2/corrected/c20-agama-n1000-nb150-nd450-nh400-s2026-h2026.json",
+  "sourceSHA256": "df5aae849bf0b9aafddfe6eb110dfb370e10a0e2080f46d21b6cb42a51b937e3",
+  "potential": "reports\\v1.0.2\\corrected\\potential-final.ini",
+  "durationMyr": 20,
+  "cadenceMyr": 0.5,
+  "algorithm": "actual AGAMA DOP853 accuracy1e-10",
+  "selfGravity": false,
+  "wallSeconds": 0.31304739999904996,
+  "qualification": "A test-particle control, not N-body. baseline=old ICs in old preparation field; baseline-softened=SAME old ICs in Plummer mean of old density, isolates initial field mismatch; corrected=new ICs in new self-consistent Plummer mean."
+}

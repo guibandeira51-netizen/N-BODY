@@ -1,0 +1,50 @@
+{
+  "UTC": "2026-10-17T06:31:14.608624+00:00",
+  "status": "passed",
+  "scope": "Five gravitational component curves from current particles, replacing kinematic averages",
+  "curves": [
+    "disk",
+    "bulge",
+    "halo",
+    "disk+bulge",
+    "total"
+  ],
+  "cpu": {
+    "N": 1000,
+    "backend": "direct Float64",
+    "dtMyr": 0.05,
+    "sampleEpochMyr": 3.55,
+    "measuredStates": 3,
+    "curveValuesChangedAfterEvolution": true
+  },
+  "gpu": {
+    "N": 1000,
+    "backend": "direct Float32",
+    "dtMyr": 0.05,
+    "sampleEpochMyr": 49.65,
+    "effectiveForceParametersPassedToFieldDiagnostic": true,
+    "legendEntries": 5,
+    "consoleErrors": []
+  },
+  "haloHiddenInDrawingStillContributes": true,
+  "withoutHalo": {
+    "sourceCounts": [
+      250,
+      750,
+      0
+    ],
+    "haloCurveZero": true,
+    "totalPathEqualsDiskBulgePath": true
+  },
+  "field": {
+    "radii": 31,
+    "azimuthSamples": 32,
+    "planeZKpc": 0,
+    "force": "direct Float64 Plummer probes",
+    "speedRule": "vc_i^2=-R*mean(aR_i); combine signed v^2 before square root",
+    "angularConvergenceCertified": false,
+    "negativeComponentSupport": "signed v^2 retained; speed missing"
+  },
+  "newScientificNBodyCampaigns": 0,
+  "qualification": "Functional checks at unequal epochs; not an equilibrium or CPU/GPU precision comparison"
+}

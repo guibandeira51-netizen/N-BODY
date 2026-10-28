@@ -1,0 +1,2369 @@
+{
+  "schema": "method-pilot-105",
+  "rows": [
+    {
+      "theta": 0.5,
+      "n": 169546,
+      "seconds": 4.7952187,
+      "vectorQ50_90_99_Max": [
+        0.0028213644661222387,
+        0.0046508294528928825,
+        0.006994887608917231,
+        0.009082375921399263
+      ],
+      "verticalQ50_90_99_Max": [
+        0.0010085740476903982,
+        0.0030976245535606723,
+        0.003918184127072047,
+        0.006684085010106043
+      ],
+      "points": [
+        {
+          "particle": 0,
+          "population": 0,
+          "vectorRelative": 0.003175326461265007,
+          "verticalOverVectorNorm": 0.0005041103542673068
+        },
+        {
+          "particle": 46,
+          "population": 0,
+          "vectorRelative": 0.001401244892358206,
+          "verticalOverVectorNorm": 0.0012255838034675277
+        },
+        {
+          "particle": 93,
+          "population": 0,
+          "vectorRelative": 0.0013469688098367463,
+          "verticalOverVectorNorm": 0.0008606880833241654
+        },
+        {
+          "particle": 140,
+          "population": 0,
+          "vectorRelative": 0.000743181166059989,
+          "verticalOverVectorNorm": 0.0003832339342073346
+        },
+        {
+          "particle": 187,
+          "population": 0,
+          "vectorRelative": 0.0046508294528928825,
+          "verticalOverVectorNorm": 0.0036986145560407653
+        },
+        {
+          "particle": 234,
+          "population": 0,
+          "vectorRelative": 0.0006544670581818778,
+          "verticalOverVectorNorm": 0.0001417221557530223
+        },
+        {
+          "particle": 281,
+          "population": 0,
+          "vectorRelative": 0.001288815336336214,
+          "verticalOverVectorNorm": 0.0011702322425772571
+        },
+        {
+          "particle": 328,
+          "population": 0,
+          "vectorRelative": 0.002403339856584473,
+          "verticalOverVectorNorm": 0.0021341729666523894
+        },
+        {
+          "particle": 375,
+          "population": 0,
+          "vectorRelative": 0.002673393907290915,
+          "verticalOverVectorNorm": 0.0025011440114182126
+        },
+        {
+          "particle": 421,
+          "population": 0,
+          "vectorRelative": 0.002391439807634052,
+          "verticalOverVectorNorm": 0.0018263287786825738
+        },
+        {
+          "particle": 468,
+          "population": 0,
+          "vectorRelative": 0.00181636515154379,
+          "verticalOverVectorNorm": 0.001447549083546867
+        },
+        {
+          "particle": 515,
+          "population": 0,
+          "vectorRelative": 0.005258494350041849,
+          "verticalOverVectorNorm": 0.0006276391972488466
+        },
+        {
+          "particle": 562,
+          "population": 0,
+          "vectorRelative": 0.003719201468813533,
+          "verticalOverVectorNorm": 0.001757646705537331
+        },
+        {
+          "particle": 609,
+          "population": 0,
+          "vectorRelative": 0.002163121592155509,
+          "verticalOverVectorNorm": 0.0021341487280740175
+        },
+        {
+          "particle": 656,
+          "population": 0,
+          "vectorRelative": 0.0024618011491511103,
+          "verticalOverVectorNorm": 0.0024206684177768985
+        },
+        {
+          "particle": 703,
+          "population": 0,
+          "vectorRelative": 0.004116218896998779,
+          "verticalOverVectorNorm": 0.0037557335055423036
+        },
+        {
+          "particle": 750,
+          "population": 0,
+          "vectorRelative": 0.0019951643882859986,
+          "verticalOverVectorNorm": 0.00017815330662516467
+        },
+        {
+          "particle": 796,
+          "population": 0,
+          "vectorRelative": 0.0037226545099542643,
+          "verticalOverVectorNorm": 0.0037147905234579397
+        },
+        {
+          "particle": 843,
+          "population": 0,
+          "vectorRelative": 0.0003362690585328581,
+          "verticalOverVectorNorm": 0.00011728753850435836
+        },
+        {
+          "particle": 890,
+          "population": 0,
+          "vectorRelative": 0.003538812708941621,
+          "verticalOverVectorNorm": 0.0028890128073172233
+        },
+        {
+          "particle": 937,
+          "population": 0,
+          "vectorRelative": 0.002492008077060845,
+          "verticalOverVectorNorm": 0.002228341998680369
+        },
+        {
+          "particle": 984,
+          "population": 0,
+          "vectorRelative": 0.0015619145855602285,
+          "verticalOverVectorNorm": 0.00130927483267431
+        },
+        {
+          "particle": 1031,
+          "population": 0,
+          "vectorRelative": 0.009082375921399263,
+          "verticalOverVectorNorm": 0.006684085010106043
+        },
+        {
+          "particle": 1078,
+          "population": 0,
+          "vectorRelative": 0.0019524116420501817,
+          "verticalOverVectorNorm": 0.0007566209089998778
+        },
+        {
+          "particle": 1125,
+          "population": 0,
+          "vectorRelative": 0.0036590854805144553,
+          "verticalOverVectorNorm": 0.003099833023259139
+        },
+        {
+          "particle": 1171,
+          "population": 0,
+          "vectorRelative": 0.004393807897185819,
+          "verticalOverVectorNorm": 0.0038485269507359202
+        },
+        {
+          "particle": 1218,
+          "population": 0,
+          "vectorRelative": 0.0024108161788978775,
+          "verticalOverVectorNorm": 0.0005654096092102425
+        },
+        {
+          "particle": 1265,
+          "population": 0,
+          "vectorRelative": 0.0031077670129456103,
+          "verticalOverVectorNorm": 0.0030976245535606723
+        },
+        {
+          "particle": 1312,
+          "population": 0,
+          "vectorRelative": 0.0027232160969930383,
+          "verticalOverVectorNorm": 0.0014109233704208788
+        },
+        {
+          "particle": 1359,
+          "population": 0,
+          "vectorRelative": 0.004663182335155285,
+          "verticalOverVectorNorm": 0.0029888724953563463
+        },
+        {
+          "particle": 1406,
+          "population": 0,
+          "vectorRelative": 0.0023114431199004904,
+          "verticalOverVectorNorm": 0.00001803267307454405
+        },
+        {
+          "particle": 1453,
+          "population": 0,
+          "vectorRelative": 0.004528285383514978,
+          "verticalOverVectorNorm": 0.004458719868885373
+        },
+        {
+          "particle": 1500,
+          "population": 1,
+          "vectorRelative": 0.0030186702997704014,
+          "verticalOverVectorNorm": 0.0009608743391446711
+        },
+        {
+          "particle": 1721,
+          "population": 1,
+          "vectorRelative": 0.004786795401102063,
+          "verticalOverVectorNorm": 0.000341118763479331
+        },
+        {
+          "particle": 1943,
+          "population": 1,
+          "vectorRelative": 0.0027587552589612876,
+          "verticalOverVectorNorm": 0.000335978169771373
+        },
+        {
+          "particle": 2164,
+          "population": 1,
+          "vectorRelative": 0.003888223320634576,
+          "verticalOverVectorNorm": 0.0005294766050602437
+        },
+        {
+          "particle": 2386,
+          "population": 1,
+          "vectorRelative": 0.005680365530995888,
+          "verticalOverVectorNorm": 0.0014758736893030514
+        },
+        {
+          "particle": 2608,
+          "population": 1,
+          "vectorRelative": 0.0008338131108836906,
+          "verticalOverVectorNorm": 0.00020125960665240945
+        },
+        {
+          "particle": 2829,
+          "population": 1,
+          "vectorRelative": 0.005655723497788349,
+          "verticalOverVectorNorm": 0.0004931478006514757
+        },
+        {
+          "particle": 3051,
+          "population": 1,
+          "vectorRelative": 0.0034343410333281654,
+          "verticalOverVectorNorm": 0.0008128869495486005
+        },
+        {
+          "particle": 3273,
+          "population": 1,
+          "vectorRelative": 0.003858682176497939,
+          "verticalOverVectorNorm": 0.000030254333877261933
+        },
+        {
+          "particle": 3494,
+          "population": 1,
+          "vectorRelative": 0.004364394360749686,
+          "verticalOverVectorNorm": 0.0007456751849969664
+        },
+        {
+          "particle": 3716,
+          "population": 1,
+          "vectorRelative": 0.0021285563301930302,
+          "verticalOverVectorNorm": 0.0007564209883180163
+        },
+        {
+          "particle": 3937,
+          "population": 1,
+          "vectorRelative": 0.002047870480506984,
+          "verticalOverVectorNorm": 0.000553449139696794
+        },
+        {
+          "particle": 4159,
+          "population": 1,
+          "vectorRelative": 0.00405441506081512,
+          "verticalOverVectorNorm": 0.002441963400251419
+        },
+        {
+          "particle": 4381,
+          "population": 1,
+          "vectorRelative": 0.004085389433107295,
+          "verticalOverVectorNorm": 0.002331142920613341
+        },
+        {
+          "particle": 4602,
+          "population": 1,
+          "vectorRelative": 0.004082781636001567,
+          "verticalOverVectorNorm": 0.001264624550415245
+        },
+        {
+          "particle": 4824,
+          "population": 1,
+          "vectorRelative": 0.0036720097730032764,
+          "verticalOverVectorNorm": 0.0003319480475132382
+        },
+        {
+          "particle": 5046,
+          "population": 1,
+          "vectorRelative": 0.0025007767391853003,
+          "verticalOverVectorNorm": 0.0006605034986206144
+        },
+        {
+          "particle": 5267,
+          "population": 1,
+          "vectorRelative": 0.003915579087112946,
+          "verticalOverVectorNorm": 0.0021483955761805638
+        },
+        {
+          "particle": 5489,
+          "population": 1,
+          "vectorRelative": 0.004028557938719122,
+          "verticalOverVectorNorm": 0.0018244292522523638
+        },
+        {
+          "particle": 5710,
+          "population": 1,
+          "vectorRelative": 0.003561290735695495,
+          "verticalOverVectorNorm": 0.001343215358653889
+        },
+        {
+          "particle": 5932,
+          "population": 1,
+          "vectorRelative": 0.003065489723402129,
+          "verticalOverVectorNorm": 0.001465344425521164
+        },
+        {
+          "particle": 6154,
+          "population": 1,
+          "vectorRelative": 0.002345259456270857,
+          "verticalOverVectorNorm": 0.00019106055439598713
+        },
+        {
+          "particle": 6375,
+          "population": 1,
+          "vectorRelative": 0.006019063655713988,
+          "verticalOverVectorNorm": 0.003251356707330478
+        },
+        {
+          "particle": 6597,
+          "population": 1,
+          "vectorRelative": 0.003304694552529952,
+          "verticalOverVectorNorm": 0.0015277134174931407
+        },
+        {
+          "particle": 6819,
+          "population": 1,
+          "vectorRelative": 0.0008619071493269739,
+          "verticalOverVectorNorm": 0.00004341076392053933
+        },
+        {
+          "particle": 7040,
+          "population": 1,
+          "vectorRelative": 0.002726804165989576,
+          "verticalOverVectorNorm": 0.001934864969951074
+        },
+        {
+          "particle": 7262,
+          "population": 1,
+          "vectorRelative": 0.004072894236828101,
+          "verticalOverVectorNorm": 0.001145484242763776
+        },
+        {
+          "particle": 7483,
+          "population": 1,
+          "vectorRelative": 0.0057864859380213,
+          "verticalOverVectorNorm": 0.00009612834245851682
+        },
+        {
+          "particle": 7705,
+          "population": 1,
+          "vectorRelative": 0.0029217703321295554,
+          "verticalOverVectorNorm": 0.0006453237458857307
+        },
+        {
+          "particle": 7927,
+          "population": 1,
+          "vectorRelative": 0.003118878203696078,
+          "verticalOverVectorNorm": 0.00017002412932397707
+        },
+        {
+          "particle": 8148,
+          "population": 1,
+          "vectorRelative": 0.006994887608917231,
+          "verticalOverVectorNorm": 0.001933047112973524
+        },
+        {
+          "particle": 8370,
+          "population": 1,
+          "vectorRelative": 0.0026341805138595867,
+          "verticalOverVectorNorm": 0.00028243652260352296
+        },
+        {
+          "particle": 8592,
+          "population": 2,
+          "vectorRelative": 0.005560579665344292,
+          "verticalOverVectorNorm": 0.0013671972891439114
+        },
+        {
+          "particle": 8621,
+          "population": 2,
+          "vectorRelative": 0.0041721152851691675,
+          "verticalOverVectorNorm": 0.0011795623030534546
+        },
+        {
+          "particle": 8651,
+          "population": 2,
+          "vectorRelative": 0.0040902530306795,
+          "verticalOverVectorNorm": 0.003451254844251562
+        },
+        {
+          "particle": 8681,
+          "population": 2,
+          "vectorRelative": 0.003647428984507057,
+          "verticalOverVectorNorm": 0.0010587201990792047
+        },
+        {
+          "particle": 8711,
+          "population": 2,
+          "vectorRelative": 0.005519098705413623,
+          "verticalOverVectorNorm": 0.001364899233383058
+        },
+        {
+          "particle": 8741,
+          "population": 2,
+          "vectorRelative": 0.003885507346181806,
+          "verticalOverVectorNorm": 0.0010396450022171703
+        },
+        {
+          "particle": 8770,
+          "population": 2,
+          "vectorRelative": 0.0032047933228158475,
+          "verticalOverVectorNorm": 0.0005444046856868656
+        },
+        {
+          "particle": 8800,
+          "population": 2,
+          "vectorRelative": 0.004083547530562417,
+          "verticalOverVectorNorm": 0.00006247496177282945
+        },
+        {
+          "particle": 8830,
+          "population": 2,
+          "vectorRelative": 0.00206454118923928,
+          "verticalOverVectorNorm": 0.0020250657228888273
+        },
+        {
+          "particle": 8860,
+          "population": 2,
+          "vectorRelative": 0.004114441810020043,
+          "verticalOverVectorNorm": 0.0017881117658647304
+        },
+        {
+          "particle": 8890,
+          "population": 2,
+          "vectorRelative": 0.0032520353771280635,
+          "verticalOverVectorNorm": 0.0022764430332564986
+        },
+        {
+          "particle": 8919,
+          "population": 2,
+          "vectorRelative": 0.001778616427124745,
+          "verticalOverVectorNorm": 0.0005805659151726341
+        },
+        {
+          "particle": 8949,
+          "population": 2,
+          "vectorRelative": 0.003567824744123826,
+          "verticalOverVectorNorm": 0.0004757344108973281
+        },
+        {
+          "particle": 8979,
+          "population": 2,
+          "vectorRelative": 0.0064023114176609865,
+          "verticalOverVectorNorm": 0.00042243133771713537
+        },
+        {
+          "particle": 9009,
+          "population": 2,
+          "vectorRelative": 0.003155136262495117,
+          "verticalOverVectorNorm": 0.0009742001378353484
+        },
+        {
+          "particle": 9039,
+          "population": 2,
+          "vectorRelative": 0.001051312188903385,
+          "verticalOverVectorNorm": 0.00006265885829743805
+        },
+        {
+          "particle": 9069,
+          "population": 2,
+          "vectorRelative": 0.004314581947364456,
+          "verticalOverVectorNorm": 0.003918184127072047
+        },
+        {
+          "particle": 9098,
+          "population": 2,
+          "vectorRelative": 0.002709531605914049,
+          "verticalOverVectorNorm": 0.00012337527907442143
+        },
+        {
+          "particle": 9128,
+          "population": 2,
+          "vectorRelative": 0.004082640782017068,
+          "verticalOverVectorNorm": 0.0036108829427317717
+        },
+        {
+          "particle": 9158,
+          "population": 2,
+          "vectorRelative": 0.003347790767249124,
+          "verticalOverVectorNorm": 0.0005107454967062327
+        },
+        {
+          "particle": 9188,
+          "population": 2,
+          "vectorRelative": 0.003227824838855614,
+          "verticalOverVectorNorm": 0.0023857664470173347
+        },
+        {
+          "particle": 9218,
+          "population": 2,
+          "vectorRelative": 0.008956745709585249,
+          "verticalOverVectorNorm": 0.002116125657004554
+        },
+        {
+          "particle": 9247,
+          "population": 2,
+          "vectorRelative": 0.0018389965807766389,
+          "verticalOverVectorNorm": 0.0007965154704385622
+        },
+        {
+          "particle": 9277,
+          "population": 2,
+          "vectorRelative": 0.004052548691627317,
+          "verticalOverVectorNorm": 0.00025591566329410574
+        },
+        {
+          "particle": 9307,
+          "population": 2,
+          "vectorRelative": 0.0002817536295298995,
+          "verticalOverVectorNorm": 0.0001519976190277567
+        },
+        {
+          "particle": 9337,
+          "population": 2,
+          "vectorRelative": 0.003253849456427734,
+          "verticalOverVectorNorm": 0.0020003077272497914
+        },
+        {
+          "particle": 9367,
+          "population": 2,
+          "vectorRelative": 0.0026100174816589498,
+          "verticalOverVectorNorm": 0.0018972887089875364
+        },
+        {
+          "particle": 9396,
+          "population": 2,
+          "vectorRelative": 0.0014982233808215277,
+          "verticalOverVectorNorm": 0.0010101579281318915
+        },
+        {
+          "particle": 9426,
+          "population": 2,
+          "vectorRelative": 0.003406573621014316,
+          "verticalOverVectorNorm": 0.0023550031887589425
+        },
+        {
+          "particle": 9456,
+          "population": 2,
+          "vectorRelative": 0.0008659813443722218,
+          "verticalOverVectorNorm": 0.00011082024722383034
+        },
+        {
+          "particle": 9486,
+          "population": 2,
+          "vectorRelative": 0.0010126472788205682,
+          "verticalOverVectorNorm": 0.0009169707770155805
+        },
+        {
+          "particle": 9516,
+          "population": 2,
+          "vectorRelative": 0.0039039648077327203,
+          "verticalOverVectorNorm": 0.002758875812427111
+        },
+        {
+          "particle": 9546,
+          "population": 3,
+          "vectorRelative": 0.00045125514572248,
+          "verticalOverVectorNorm": 0.00035195743432287315
+        },
+        {
+          "particle": 14546,
+          "population": 3,
+          "vectorRelative": 0.0014749787943837333,
+          "verticalOverVectorNorm": 0.0011108721181932615
+        },
+        {
+          "particle": 19546,
+          "population": 3,
+          "vectorRelative": 0.004254772553829661,
+          "verticalOverVectorNorm": 0.0038198724062947177
+        },
+        {
+          "particle": 24546,
+          "population": 3,
+          "vectorRelative": 0.0025188524875285052,
+          "verticalOverVectorNorm": 0.002480953516544134
+        },
+        {
+          "particle": 29546,
+          "population": 3,
+          "vectorRelative": 0.0032589818274685366,
+          "verticalOverVectorNorm": 0.0005988635004366376
+        },
+        {
+          "particle": 34546,
+          "population": 3,
+          "vectorRelative": 0.0021059063340772744,
+          "verticalOverVectorNorm": 0.001168095474944656
+        },
+        {
+          "particle": 39546,
+          "population": 3,
+          "vectorRelative": 0.0027002534706443647,
+          "verticalOverVectorNorm": 0.00033425319249431374
+        },
+        {
+          "particle": 44546,
+          "population": 3,
+          "vectorRelative": 0.0037235929153349168,
+          "verticalOverVectorNorm": 0.0008609078477652231
+        },
+        {
+          "particle": 49546,
+          "population": 3,
+          "vectorRelative": 0.0027379461288775226,
+          "verticalOverVectorNorm": 0.0009599648217836804
+        },
+        {
+          "particle": 54546,
+          "population": 3,
+          "vectorRelative": 0.0017461309789088358,
+          "verticalOverVectorNorm": 0.0003366751499389098
+        },
+        {
+          "particle": 59546,
+          "population": 3,
+          "vectorRelative": 0.001562603695129639,
+          "verticalOverVectorNorm": 0.0015460556933407246
+        },
+        {
+          "particle": 64546,
+          "population": 3,
+          "vectorRelative": 0.0017342101342356074,
+          "verticalOverVectorNorm": 0.0017068359991036035
+        },
+        {
+          "particle": 69546,
+          "population": 3,
+          "vectorRelative": 0.0005177915074296172,
+          "verticalOverVectorNorm": 0.0004124625183911955
+        },
+        {
+          "particle": 74546,
+          "population": 3,
+          "vectorRelative": 0.0023832904323356674,
+          "verticalOverVectorNorm": 0.0004079489622061951
+        },
+        {
+          "particle": 79546,
+          "population": 3,
+          "vectorRelative": 0.00044328267949807757,
+          "verticalOverVectorNorm": 0.0001457447478221852
+        },
+        {
+          "particle": 84546,
+          "population": 3,
+          "vectorRelative": 0.0027298930999130433,
+          "verticalOverVectorNorm": 0.0011832996224674997
+        },
+        {
+          "particle": 89546,
+          "population": 3,
+          "vectorRelative": 0.003907134473064322,
+          "verticalOverVectorNorm": 0.003545542405297271
+        },
+        {
+          "particle": 94546,
+          "population": 3,
+          "vectorRelative": 0.0005774323518666878,
+          "verticalOverVectorNorm": 0.00020142502859629756
+        },
+        {
+          "particle": 99546,
+          "population": 3,
+          "vectorRelative": 0.00036574820014132094,
+          "verticalOverVectorNorm": 0.00013917780621629285
+        },
+        {
+          "particle": 104546,
+          "population": 3,
+          "vectorRelative": 0.004024472480271177,
+          "verticalOverVectorNorm": 0.002383895961413991
+        },
+        {
+          "particle": 109546,
+          "population": 3,
+          "vectorRelative": 0.0019389451056689342,
+          "verticalOverVectorNorm": 0.0015792566187641396
+        },
+        {
+          "particle": 114546,
+          "population": 3,
+          "vectorRelative": 0.003056454717260441,
+          "verticalOverVectorNorm": 0.0017275003150799889
+        },
+        {
+          "particle": 119546,
+          "population": 3,
+          "vectorRelative": 0.0010368823642137217,
+          "verticalOverVectorNorm": 0.0010085740476903982
+        },
+        {
+          "particle": 124546,
+          "population": 3,
+          "vectorRelative": 0.002510786984707685,
+          "verticalOverVectorNorm": 0.00022003038068683556
+        },
+        {
+          "particle": 129546,
+          "population": 3,
+          "vectorRelative": 0.0006942734158823938,
+          "verticalOverVectorNorm": 0.0006206827747501333
+        },
+        {
+          "particle": 134546,
+          "population": 3,
+          "vectorRelative": 0.0005481676726671647,
+          "verticalOverVectorNorm": 0.0005217344223993626
+        },
+        {
+          "particle": 139546,
+          "population": 3,
+          "vectorRelative": 0.0028213644661222387,
+          "verticalOverVectorNorm": 0.0008716368891656394
+        },
+        {
+          "particle": 144546,
+          "population": 3,
+          "vectorRelative": 0.000567731218634114,
+          "verticalOverVectorNorm": 0.00043466816983251365
+        },
+        {
+          "particle": 149546,
+          "population": 3,
+          "vectorRelative": 0.001738749439137527,
+          "verticalOverVectorNorm": 0.000014813662195687138
+        },
+        {
+          "particle": 154546,
+          "population": 3,
+          "vectorRelative": 0.002756338109436763,
+          "verticalOverVectorNorm": 0.0008789765512085064
+        },
+        {
+          "particle": 159546,
+          "population": 3,
+          "vectorRelative": 0.000839836170617639,
+          "verticalOverVectorNorm": 0.0007796951599815717
+        },
+        {
+          "particle": 164546,
+          "population": 3,
+          "vectorRelative": 0.0005850251537978374,
+          "verticalOverVectorNorm": 0.00037237844802564987
+        }
+      ]
+    },
+    {
+      "theta": 0.3,
+      "n": 169546,
+      "seconds": 16.1410344,
+      "vectorQ50_90_99_Max": [
+        0.0006423945037313803,
+        0.0011153888456560826,
+        0.0014766692229782514,
+        0.0017545501996468033
+      ],
+      "verticalQ50_90_99_Max": [
+        0.0002029931630460693,
+        0.0005873768917299844,
+        0.0009152460314853972,
+        0.0011862536267004905
+      ],
+      "points": [
+        {
+          "particle": 0,
+          "population": 0,
+          "vectorRelative": 0.0011529013589941161,
+          "verticalOverVectorNorm": 0.0004191798060792792
+        },
+        {
+          "particle": 46,
+          "population": 0,
+          "vectorRelative": 0.0007810701648800026,
+          "verticalOverVectorNorm": 0.0007582819474567379
+        },
+        {
+          "particle": 93,
+          "population": 0,
+          "vectorRelative": 0.0006493781859522161,
+          "verticalOverVectorNorm": 0.0006364674139905349
+        },
+        {
+          "particle": 140,
+          "population": 0,
+          "vectorRelative": 0.000281614431610473,
+          "verticalOverVectorNorm": 0.0002029931630460693
+        },
+        {
+          "particle": 187,
+          "population": 0,
+          "vectorRelative": 0.0009333357917123059,
+          "verticalOverVectorNorm": 0.0006395215323004876
+        },
+        {
+          "particle": 234,
+          "population": 0,
+          "vectorRelative": 0.0008317150597832361,
+          "verticalOverVectorNorm": 0.0007968781674202215
+        },
+        {
+          "particle": 281,
+          "population": 0,
+          "vectorRelative": 0.0008117732267580841,
+          "verticalOverVectorNorm": 0.00030197305525422625
+        },
+        {
+          "particle": 328,
+          "population": 0,
+          "vectorRelative": 0.0005964731995853038,
+          "verticalOverVectorNorm": 0.0001997510912684379
+        },
+        {
+          "particle": 375,
+          "population": 0,
+          "vectorRelative": 0.0007713635169526734,
+          "verticalOverVectorNorm": 0.00009319260061129317
+        },
+        {
+          "particle": 421,
+          "population": 0,
+          "vectorRelative": 0.0004169284314836093,
+          "verticalOverVectorNorm": 0.0004079962455111131
+        },
+        {
+          "particle": 468,
+          "population": 0,
+          "vectorRelative": 0.0010837432448890863,
+          "verticalOverVectorNorm": 0.00019783660767229075
+        },
+        {
+          "particle": 515,
+          "population": 0,
+          "vectorRelative": 0.0002895829079352344,
+          "verticalOverVectorNorm": 0.00023209615344778486
+        },
+        {
+          "particle": 562,
+          "population": 0,
+          "vectorRelative": 0.0009126923252753862,
+          "verticalOverVectorNorm": 0.00045080909142435885
+        },
+        {
+          "particle": 609,
+          "population": 0,
+          "vectorRelative": 0.0007626046363706482,
+          "verticalOverVectorNorm": 0.0006709369936633413
+        },
+        {
+          "particle": 656,
+          "population": 0,
+          "vectorRelative": 0.0005429447669400498,
+          "verticalOverVectorNorm": 0.00038811287604455366
+        },
+        {
+          "particle": 703,
+          "population": 0,
+          "vectorRelative": 0.0009804428132228979,
+          "verticalOverVectorNorm": 0.0008280939805403682
+        },
+        {
+          "particle": 750,
+          "population": 0,
+          "vectorRelative": 0.0007883350026003097,
+          "verticalOverVectorNorm": 0.00042006531589215684
+        },
+        {
+          "particle": 796,
+          "population": 0,
+          "vectorRelative": 0.00033487753316907874,
+          "verticalOverVectorNorm": 0.00017587457723334632
+        },
+        {
+          "particle": 843,
+          "population": 0,
+          "vectorRelative": 0.00030611601683372874,
+          "verticalOverVectorNorm": 0.00027804556248071433
+        },
+        {
+          "particle": 890,
+          "population": 0,
+          "vectorRelative": 0.0009472395031041821,
+          "verticalOverVectorNorm": 0.000052763260731176764
+        },
+        {
+          "particle": 937,
+          "population": 0,
+          "vectorRelative": 0.00031284375463099554,
+          "verticalOverVectorNorm": 0.000032607241927596854
+        },
+        {
+          "particle": 984,
+          "population": 0,
+          "vectorRelative": 0.0003703364046805774,
+          "verticalOverVectorNorm": 0.00015607596388440427
+        },
+        {
+          "particle": 1031,
+          "population": 0,
+          "vectorRelative": 0.0005885228710032556,
+          "verticalOverVectorNorm": 0.00039489970627973537
+        },
+        {
+          "particle": 1078,
+          "population": 0,
+          "vectorRelative": 0.0005299803663658672,
+          "verticalOverVectorNorm": 0.0004137760951083095
+        },
+        {
+          "particle": 1125,
+          "population": 0,
+          "vectorRelative": 0.0007251921362530663,
+          "verticalOverVectorNorm": 0.0005718699241297711
+        },
+        {
+          "particle": 1171,
+          "population": 0,
+          "vectorRelative": 0.0005711610535335131,
+          "verticalOverVectorNorm": 0.0005410369975670234
+        },
+        {
+          "particle": 1218,
+          "population": 0,
+          "vectorRelative": 0.0010988534428640027,
+          "verticalOverVectorNorm": 0.0000954990211293268
+        },
+        {
+          "particle": 1265,
+          "population": 0,
+          "vectorRelative": 0.00039280712109226367,
+          "verticalOverVectorNorm": 0.00013294379173569047
+        },
+        {
+          "particle": 1312,
+          "population": 0,
+          "vectorRelative": 0.00033958636031962343,
+          "verticalOverVectorNorm": 0.00011945674575100773
+        },
+        {
+          "particle": 1359,
+          "population": 0,
+          "vectorRelative": 0.0005543359716123185,
+          "verticalOverVectorNorm": 0.00015254608958025368
+        },
+        {
+          "particle": 1406,
+          "population": 0,
+          "vectorRelative": 0.0006121600614023147,
+          "verticalOverVectorNorm": 0.00012962308367475293
+        },
+        {
+          "particle": 1453,
+          "population": 0,
+          "vectorRelative": 0.000561967856935408,
+          "verticalOverVectorNorm": 0.0004763180525164966
+        },
+        {
+          "particle": 1500,
+          "population": 1,
+          "vectorRelative": 0.0006992225407125222,
+          "verticalOverVectorNorm": 0.00009462109846229615
+        },
+        {
+          "particle": 1721,
+          "population": 1,
+          "vectorRelative": 0.001647245112682455,
+          "verticalOverVectorNorm": 0.00016514531832315059
+        },
+        {
+          "particle": 1943,
+          "population": 1,
+          "vectorRelative": 0.0008358954470558314,
+          "verticalOverVectorNorm": 0.00021135088720099994
+        },
+        {
+          "particle": 2164,
+          "population": 1,
+          "vectorRelative": 0.0006738074515725646,
+          "verticalOverVectorNorm": 0.00019915197656946687
+        },
+        {
+          "particle": 2386,
+          "population": 1,
+          "vectorRelative": 0.0011583949285286573,
+          "verticalOverVectorNorm": 0.00011381269178264025
+        },
+        {
+          "particle": 2608,
+          "population": 1,
+          "vectorRelative": 0.0004569749981951925,
+          "verticalOverVectorNorm": 0.00008787400293061877
+        },
+        {
+          "particle": 2829,
+          "population": 1,
+          "vectorRelative": 0.0013487590759387437,
+          "verticalOverVectorNorm": 0.00019379214729323547
+        },
+        {
+          "particle": 3051,
+          "population": 1,
+          "vectorRelative": 0.0003866019292509318,
+          "verticalOverVectorNorm": 0.00003406423300132215
+        },
+        {
+          "particle": 3273,
+          "population": 1,
+          "vectorRelative": 0.00041247410867721775,
+          "verticalOverVectorNorm": 0.0003317401691189402
+        },
+        {
+          "particle": 3494,
+          "population": 1,
+          "vectorRelative": 0.0007703998238455503,
+          "verticalOverVectorNorm": 0.00039984520130076237
+        },
+        {
+          "particle": 3716,
+          "population": 1,
+          "vectorRelative": 0.001125082388059247,
+          "verticalOverVectorNorm": 0.0009152460314853972
+        },
+        {
+          "particle": 3937,
+          "population": 1,
+          "vectorRelative": 0.0011045687066659625,
+          "verticalOverVectorNorm": 0.00011989991967284393
+        },
+        {
+          "particle": 4159,
+          "population": 1,
+          "vectorRelative": 0.0013745220136093385,
+          "verticalOverVectorNorm": 0.0005528806260153775
+        },
+        {
+          "particle": 4381,
+          "population": 1,
+          "vectorRelative": 0.00018640123113213426,
+          "verticalOverVectorNorm": 0.0000918148270639877
+        },
+        {
+          "particle": 4602,
+          "population": 1,
+          "vectorRelative": 0.0011485374566885947,
+          "verticalOverVectorNorm": 0.00021468782356553264
+        },
+        {
+          "particle": 4824,
+          "population": 1,
+          "vectorRelative": 0.0010090298517540564,
+          "verticalOverVectorNorm": 0.00004326788944720474
+        },
+        {
+          "particle": 5046,
+          "population": 1,
+          "vectorRelative": 0.0004976980486711716,
+          "verticalOverVectorNorm": 0.0002844048329216855
+        },
+        {
+          "particle": 5267,
+          "population": 1,
+          "vectorRelative": 0.001149004165043568,
+          "verticalOverVectorNorm": 0.00026310935694763137
+        },
+        {
+          "particle": 5489,
+          "population": 1,
+          "vectorRelative": 0.00014267203526020883,
+          "verticalOverVectorNorm": 0.00008605843058848164
+        },
+        {
+          "particle": 5710,
+          "population": 1,
+          "vectorRelative": 0.0004379657990471731,
+          "verticalOverVectorNorm": 0.00032621999871711074
+        },
+        {
+          "particle": 5932,
+          "population": 1,
+          "vectorRelative": 0.0002584663685049555,
+          "verticalOverVectorNorm": 0.0002077998380155251
+        },
+        {
+          "particle": 6154,
+          "population": 1,
+          "vectorRelative": 0.000664183329150502,
+          "verticalOverVectorNorm": 0.00009214777168949033
+        },
+        {
+          "particle": 6375,
+          "population": 1,
+          "vectorRelative": 0.0007205681003377918,
+          "verticalOverVectorNorm": 0.00042426668446656336
+        },
+        {
+          "particle": 6597,
+          "population": 1,
+          "vectorRelative": 0.00044434388016237304,
+          "verticalOverVectorNorm": 0.000055725799574519224
+        },
+        {
+          "particle": 6819,
+          "population": 1,
+          "vectorRelative": 0.0005211897856003015,
+          "verticalOverVectorNorm": 0.0000367257591536387
+        },
+        {
+          "particle": 7040,
+          "population": 1,
+          "vectorRelative": 0.0009201068696625987,
+          "verticalOverVectorNorm": 0.0006238130741869209
+        },
+        {
+          "particle": 7262,
+          "population": 1,
+          "vectorRelative": 0.0006730583855779136,
+          "verticalOverVectorNorm": 0.0003804144776595339
+        },
+        {
+          "particle": 7483,
+          "population": 1,
+          "vectorRelative": 0.0013243076052647552,
+          "verticalOverVectorNorm": 0.0004805863826643579
+        },
+        {
+          "particle": 7705,
+          "population": 1,
+          "vectorRelative": 0.0014766692229782514,
+          "verticalOverVectorNorm": 0.0004880727192439195
+        },
+        {
+          "particle": 7927,
+          "population": 1,
+          "vectorRelative": 0.0006527909779123029,
+          "verticalOverVectorNorm": 0.00018011079092391873
+        },
+        {
+          "particle": 8148,
+          "population": 1,
+          "vectorRelative": 0.0011153888456560826,
+          "verticalOverVectorNorm": 0.0006295015341417285
+        },
+        {
+          "particle": 8370,
+          "population": 1,
+          "vectorRelative": 0.0009196031009477642,
+          "verticalOverVectorNorm": 0.0004061129403969674
+        },
+        {
+          "particle": 8592,
+          "population": 2,
+          "vectorRelative": 0.0009696017347549062,
+          "verticalOverVectorNorm": 0.0003138111590379706
+        },
+        {
+          "particle": 8621,
+          "population": 2,
+          "vectorRelative": 0.0008314648140198519,
+          "verticalOverVectorNorm": 0.00016158791787414137
+        },
+        {
+          "particle": 8651,
+          "population": 2,
+          "vectorRelative": 0.0009906983087319364,
+          "verticalOverVectorNorm": 0.0008057601614038819
+        },
+        {
+          "particle": 8681,
+          "population": 2,
+          "vectorRelative": 0.0010754459886263563,
+          "verticalOverVectorNorm": 0.000005888763448023181
+        },
+        {
+          "particle": 8711,
+          "population": 2,
+          "vectorRelative": 0.000806146748627974,
+          "verticalOverVectorNorm": 0.00043455928534062976
+        },
+        {
+          "particle": 8741,
+          "population": 2,
+          "vectorRelative": 0.0005563785525228241,
+          "verticalOverVectorNorm": 0.00038681269976298594
+        },
+        {
+          "particle": 8770,
+          "population": 2,
+          "vectorRelative": 0.0006691492010341289,
+          "verticalOverVectorNorm": 0.0002681807590301694
+        },
+        {
+          "particle": 8800,
+          "population": 2,
+          "vectorRelative": 0.0008696229027634338,
+          "verticalOverVectorNorm": 0.00012759814147639316
+        },
+        {
+          "particle": 8830,
+          "population": 2,
+          "vectorRelative": 0.00045276420983423135,
+          "verticalOverVectorNorm": 0.00031507770998101054
+        },
+        {
+          "particle": 8860,
+          "population": 2,
+          "vectorRelative": 0.0010277939514252525,
+          "verticalOverVectorNorm": 0.0004030541252312215
+        },
+        {
+          "particle": 8890,
+          "population": 2,
+          "vectorRelative": 0.0007867790872261497,
+          "verticalOverVectorNorm": 0.0005827368807565782
+        },
+        {
+          "particle": 8919,
+          "population": 2,
+          "vectorRelative": 0.0009280371529816217,
+          "verticalOverVectorNorm": 0.00021085357677909808
+        },
+        {
+          "particle": 8949,
+          "population": 2,
+          "vectorRelative": 0.0006517476592751228,
+          "verticalOverVectorNorm": 0.00015413048565593348
+        },
+        {
+          "particle": 8979,
+          "population": 2,
+          "vectorRelative": 0.0013241659009632918,
+          "verticalOverVectorNorm": 0.00028000020672665666
+        },
+        {
+          "particle": 9009,
+          "population": 2,
+          "vectorRelative": 0.0006394453301808626,
+          "verticalOverVectorNorm": 0.00015278949876102057
+        },
+        {
+          "particle": 9039,
+          "population": 2,
+          "vectorRelative": 0.0005990080867800194,
+          "verticalOverVectorNorm": 0.000156938168473084
+        },
+        {
+          "particle": 9069,
+          "population": 2,
+          "vectorRelative": 0.0009175874677817187,
+          "verticalOverVectorNorm": 0.0008276904657857773
+        },
+        {
+          "particle": 9098,
+          "population": 2,
+          "vectorRelative": 0.000928799147834991,
+          "verticalOverVectorNorm": 0.00002602442140040888
+        },
+        {
+          "particle": 9128,
+          "population": 2,
+          "vectorRelative": 0.0005938858265636023,
+          "verticalOverVectorNorm": 0.0004082646984036377
+        },
+        {
+          "particle": 9158,
+          "population": 2,
+          "vectorRelative": 0.0006856660547276739,
+          "verticalOverVectorNorm": 0.00004032226783500036
+        },
+        {
+          "particle": 9188,
+          "population": 2,
+          "vectorRelative": 0.0006430686305131597,
+          "verticalOverVectorNorm": 0.00014515209373041574
+        },
+        {
+          "particle": 9218,
+          "population": 2,
+          "vectorRelative": 0.0017545501996468033,
+          "verticalOverVectorNorm": 0.0004902874176303204
+        },
+        {
+          "particle": 9247,
+          "population": 2,
+          "vectorRelative": 0.0010495025479033255,
+          "verticalOverVectorNorm": 0.0005873768917299844
+        },
+        {
+          "particle": 9277,
+          "population": 2,
+          "vectorRelative": 0.0009743536321303404,
+          "verticalOverVectorNorm": 0.00010064895055062903
+        },
+        {
+          "particle": 9307,
+          "population": 2,
+          "vectorRelative": 0.0006423945037313803,
+          "verticalOverVectorNorm": 0.00032405460312060353
+        },
+        {
+          "particle": 9337,
+          "population": 2,
+          "vectorRelative": 0.0006866863479991664,
+          "verticalOverVectorNorm": 0.000520856876353298
+        },
+        {
+          "particle": 9367,
+          "population": 2,
+          "vectorRelative": 0.001000397644679094,
+          "verticalOverVectorNorm": 0.0009176864919644747
+        },
+        {
+          "particle": 9396,
+          "population": 2,
+          "vectorRelative": 0.0006308144932822662,
+          "verticalOverVectorNorm": 0.00038352629900623375
+        },
+        {
+          "particle": 9426,
+          "population": 2,
+          "vectorRelative": 0.0006564061863079309,
+          "verticalOverVectorNorm": 0.00030887813169186966
+        },
+        {
+          "particle": 9456,
+          "population": 2,
+          "vectorRelative": 0.0005937774302334406,
+          "verticalOverVectorNorm": 0.0001652479320580627
+        },
+        {
+          "particle": 9486,
+          "population": 2,
+          "vectorRelative": 0.00036598449798035267,
+          "verticalOverVectorNorm": 0.0001307049031365567
+        },
+        {
+          "particle": 9516,
+          "population": 2,
+          "vectorRelative": 0.0009263004854378385,
+          "verticalOverVectorNorm": 0.00005366869395065252
+        },
+        {
+          "particle": 9546,
+          "population": 3,
+          "vectorRelative": 0.0008038318702426047,
+          "verticalOverVectorNorm": 0.0002602740132857858
+        },
+        {
+          "particle": 14546,
+          "population": 3,
+          "vectorRelative": 0.00022057507559353806,
+          "verticalOverVectorNorm": 0.0001863282431736381
+        },
+        {
+          "particle": 19546,
+          "population": 3,
+          "vectorRelative": 0.00040404723650075,
+          "verticalOverVectorNorm": 0.0000062845053265757586
+        },
+        {
+          "particle": 24546,
+          "population": 3,
+          "vectorRelative": 0.00011414293883328776,
+          "verticalOverVectorNorm": 0.00004066398358668585
+        },
+        {
+          "particle": 29546,
+          "population": 3,
+          "vectorRelative": 0.00025427333728608134,
+          "verticalOverVectorNorm": 0.00008223545489764405
+        },
+        {
+          "particle": 34546,
+          "population": 3,
+          "vectorRelative": 0.0002615046325700388,
+          "verticalOverVectorNorm": 0.00023157916179698416
+        },
+        {
+          "particle": 39546,
+          "population": 3,
+          "vectorRelative": 0.000429480444619468,
+          "verticalOverVectorNorm": 0.00016895584349137596
+        },
+        {
+          "particle": 44546,
+          "population": 3,
+          "vectorRelative": 0.0006130978165734299,
+          "verticalOverVectorNorm": 0.000014656871719943732
+        },
+        {
+          "particle": 49546,
+          "population": 3,
+          "vectorRelative": 0.0003006588645644382,
+          "verticalOverVectorNorm": 0.0002087422483172377
+        },
+        {
+          "particle": 54546,
+          "population": 3,
+          "vectorRelative": 0.00024975665923764875,
+          "verticalOverVectorNorm": 0.00012529205812522479
+        },
+        {
+          "particle": 59546,
+          "population": 3,
+          "vectorRelative": 0.00025151345205722377,
+          "verticalOverVectorNorm": 0.00023383489593925205
+        },
+        {
+          "particle": 64546,
+          "population": 3,
+          "vectorRelative": 0.00019562896807061,
+          "verticalOverVectorNorm": 0.00011617495449572844
+        },
+        {
+          "particle": 69546,
+          "population": 3,
+          "vectorRelative": 0.0006143847998383834,
+          "verticalOverVectorNorm": 0.00015473894257726444
+        },
+        {
+          "particle": 74546,
+          "population": 3,
+          "vectorRelative": 0.0001663395977705074,
+          "verticalOverVectorNorm": 0.00011661635424013924
+        },
+        {
+          "particle": 79546,
+          "population": 3,
+          "vectorRelative": 0.0012363410375875444,
+          "verticalOverVectorNorm": 0.0011862536267004905
+        },
+        {
+          "particle": 84546,
+          "population": 3,
+          "vectorRelative": 0.00009804058647246841,
+          "verticalOverVectorNorm": 0.000027297374267663366
+        },
+        {
+          "particle": 89546,
+          "population": 3,
+          "vectorRelative": 0.00004977157359009171,
+          "verticalOverVectorNorm": 0.000015415132814937
+        },
+        {
+          "particle": 94546,
+          "population": 3,
+          "vectorRelative": 0.0006180762204634077,
+          "verticalOverVectorNorm": 0.0000063245504284322195
+        },
+        {
+          "particle": 99546,
+          "population": 3,
+          "vectorRelative": 0.00007136722963483393,
+          "verticalOverVectorNorm": 0.000029778447067919697
+        },
+        {
+          "particle": 104546,
+          "population": 3,
+          "vectorRelative": 0.0002714694562757089,
+          "verticalOverVectorNorm": 0.00020208382911528946
+        },
+        {
+          "particle": 109546,
+          "population": 3,
+          "vectorRelative": 0.0005207992739795315,
+          "verticalOverVectorNorm": 0.000168442676414076
+        },
+        {
+          "particle": 114546,
+          "population": 3,
+          "vectorRelative": 0.0004928734424583736,
+          "verticalOverVectorNorm": 0.00038200913540635897
+        },
+        {
+          "particle": 119546,
+          "population": 3,
+          "vectorRelative": 0.00012390986735105237,
+          "verticalOverVectorNorm": 0.00009458243130091794
+        },
+        {
+          "particle": 124546,
+          "population": 3,
+          "vectorRelative": 0.00019062295735272413,
+          "verticalOverVectorNorm": 0.00011385328319571874
+        },
+        {
+          "particle": 129546,
+          "population": 3,
+          "vectorRelative": 0.000807059106296504,
+          "verticalOverVectorNorm": 0.0003015280954350491
+        },
+        {
+          "particle": 134546,
+          "population": 3,
+          "vectorRelative": 0.00007612630407713203,
+          "verticalOverVectorNorm": 0.00004392634030604331
+        },
+        {
+          "particle": 139546,
+          "population": 3,
+          "vectorRelative": 0.0006059693139631926,
+          "verticalOverVectorNorm": 0.00008915539348266673
+        },
+        {
+          "particle": 144546,
+          "population": 3,
+          "vectorRelative": 0.00037558744793162564,
+          "verticalOverVectorNorm": 0.0000036200493831076127
+        },
+        {
+          "particle": 149546,
+          "population": 3,
+          "vectorRelative": 0.0007614199830612919,
+          "verticalOverVectorNorm": 0.0005026838230069246
+        },
+        {
+          "particle": 154546,
+          "population": 3,
+          "vectorRelative": 0.00021360619851747373,
+          "verticalOverVectorNorm": 0.00020749379913982961
+        },
+        {
+          "particle": 159546,
+          "population": 3,
+          "vectorRelative": 0.00011132009058453272,
+          "verticalOverVectorNorm": 0.00010033811120843534
+        },
+        {
+          "particle": 164546,
+          "population": 3,
+          "vectorRelative": 0.0004423760404035227,
+          "verticalOverVectorNorm": 0.000048133673225219693
+        }
+      ]
+    },
+    {
+      "theta": 0.2,
+      "n": 169546,
+      "seconds": 44.48670969999999,
+      "vectorQ50_90_99_Max": [
+        0.00022542742165645565,
+        0.00036321279152824233,
+        0.00042208545678672666,
+        0.0004516126273779962
+      ],
+      "verticalQ50_90_99_Max": [
+        0.00007353708708838134,
+        0.00018101574526550453,
+        0.00029014815468485943,
+        0.0003234635180594987
+      ],
+      "points": [
+        {
+          "particle": 0,
+          "population": 0,
+          "vectorRelative": 0.00027106527204958644,
+          "verticalOverVectorNorm": 0.00016487038948556816
+        },
+        {
+          "particle": 46,
+          "population": 0,
+          "vectorRelative": 0.00012490935628037332,
+          "verticalOverVectorNorm": 0.0001120608616285361
+        },
+        {
+          "particle": 93,
+          "population": 0,
+          "vectorRelative": 0.00032671198467423466,
+          "verticalOverVectorNorm": 0.00029014815468485943
+        },
+        {
+          "particle": 140,
+          "population": 0,
+          "vectorRelative": 0.0002031458454204326,
+          "verticalOverVectorNorm": 0.00012215944699940276
+        },
+        {
+          "particle": 187,
+          "population": 0,
+          "vectorRelative": 0.00016787883903616896,
+          "verticalOverVectorNorm": 0.00009348853893496648
+        },
+        {
+          "particle": 234,
+          "population": 0,
+          "vectorRelative": 0.0001431795115516123,
+          "verticalOverVectorNorm": 0.00001007393517370323
+        },
+        {
+          "particle": 281,
+          "population": 0,
+          "vectorRelative": 0.000296932985691685,
+          "verticalOverVectorNorm": 0.00020752274279733885
+        },
+        {
+          "particle": 328,
+          "population": 0,
+          "vectorRelative": 0.00009262958287683219,
+          "verticalOverVectorNorm": 0.00005891123473135711
+        },
+        {
+          "particle": 375,
+          "population": 0,
+          "vectorRelative": 0.00011102815240417635,
+          "verticalOverVectorNorm": 0.000048654463745110535
+        },
+        {
+          "particle": 421,
+          "population": 0,
+          "vectorRelative": 0.0002696564984658831,
+          "verticalOverVectorNorm": 0.00014173206274435349
+        },
+        {
+          "particle": 468,
+          "population": 0,
+          "vectorRelative": 0.0000484165046588165,
+          "verticalOverVectorNorm": 0.00003963473851404659
+        },
+        {
+          "particle": 515,
+          "population": 0,
+          "vectorRelative": 0.00009734890981913727,
+          "verticalOverVectorNorm": 0.0000661961584422873
+        },
+        {
+          "particle": 562,
+          "population": 0,
+          "vectorRelative": 0.0003062515945970886,
+          "verticalOverVectorNorm": 0.00010945185603043646
+        },
+        {
+          "particle": 609,
+          "population": 0,
+          "vectorRelative": 0.00037772903556442563,
+          "verticalOverVectorNorm": 0.0002457689324578335
+        },
+        {
+          "particle": 656,
+          "population": 0,
+          "vectorRelative": 0.000261066043245146,
+          "verticalOverVectorNorm": 0.00019680529314299646
+        },
+        {
+          "particle": 703,
+          "population": 0,
+          "vectorRelative": 0.00019798532485995198,
+          "verticalOverVectorNorm": 0.0001289080102014959
+        },
+        {
+          "particle": 750,
+          "population": 0,
+          "vectorRelative": 0.000235433450212247,
+          "verticalOverVectorNorm": 0.00017952046624523867
+        },
+        {
+          "particle": 796,
+          "population": 0,
+          "vectorRelative": 0.00015275988202312737,
+          "verticalOverVectorNorm": 0.00005233565544082216
+        },
+        {
+          "particle": 843,
+          "population": 0,
+          "vectorRelative": 0.00022542742165645565,
+          "verticalOverVectorNorm": 0.00015275449009324003
+        },
+        {
+          "particle": 890,
+          "population": 0,
+          "vectorRelative": 0.00023869414416718447,
+          "verticalOverVectorNorm": 0.00015536513711772971
+        },
+        {
+          "particle": 937,
+          "population": 0,
+          "vectorRelative": 0.00013842620004698316,
+          "verticalOverVectorNorm": 0.00004378834444242181
+        },
+        {
+          "particle": 984,
+          "population": 0,
+          "vectorRelative": 0.0001575630958065884,
+          "verticalOverVectorNorm": 0.00011011220512110404
+        },
+        {
+          "particle": 1031,
+          "population": 0,
+          "vectorRelative": 0.000048559586805708605,
+          "verticalOverVectorNorm": 0.00001744286365806659
+        },
+        {
+          "particle": 1078,
+          "population": 0,
+          "vectorRelative": 0.00015274911399894403,
+          "verticalOverVectorNorm": 0.000020758893413413725
+        },
+        {
+          "particle": 1125,
+          "population": 0,
+          "vectorRelative": 0.00026866426416927635,
+          "verticalOverVectorNorm": 0.00013591893305614614
+        },
+        {
+          "particle": 1171,
+          "population": 0,
+          "vectorRelative": 0.0001405500397225701,
+          "verticalOverVectorNorm": 0.000023494649985897617
+        },
+        {
+          "particle": 1218,
+          "population": 0,
+          "vectorRelative": 0.00019686044956514345,
+          "verticalOverVectorNorm": 0.00018469302234858917
+        },
+        {
+          "particle": 1265,
+          "population": 0,
+          "vectorRelative": 0.00020185669716151186,
+          "verticalOverVectorNorm": 0.00014629215699134913
+        },
+        {
+          "particle": 1312,
+          "population": 0,
+          "vectorRelative": 0.0002977154041352084,
+          "verticalOverVectorNorm": 0.00011969649938859387
+        },
+        {
+          "particle": 1359,
+          "population": 0,
+          "vectorRelative": 0.00010578157863545243,
+          "verticalOverVectorNorm": 0.000059821698365243844
+        },
+        {
+          "particle": 1406,
+          "population": 0,
+          "vectorRelative": 0.00011427547865585638,
+          "verticalOverVectorNorm": 0.000017088370499905203
+        },
+        {
+          "particle": 1453,
+          "population": 0,
+          "vectorRelative": 0.000247116790407006,
+          "verticalOverVectorNorm": 0.0001483573246435674
+        },
+        {
+          "particle": 1500,
+          "population": 1,
+          "vectorRelative": 0.00012930313933430545,
+          "verticalOverVectorNorm": 0.00010479802364122833
+        },
+        {
+          "particle": 1721,
+          "population": 1,
+          "vectorRelative": 0.00039373204197333837,
+          "verticalOverVectorNorm": 0.0000017788288304285711
+        },
+        {
+          "particle": 1943,
+          "population": 1,
+          "vectorRelative": 0.0000548455512408361,
+          "verticalOverVectorNorm": 0.000011168197063995802
+        },
+        {
+          "particle": 2164,
+          "population": 1,
+          "vectorRelative": 0.00005008375353505622,
+          "verticalOverVectorNorm": 0.0000015632032318162697
+        },
+        {
+          "particle": 2386,
+          "population": 1,
+          "vectorRelative": 0.0003124540240563094,
+          "verticalOverVectorNorm": 0.0000154711156699484
+        },
+        {
+          "particle": 2608,
+          "population": 1,
+          "vectorRelative": 0.0000754634003343994,
+          "verticalOverVectorNorm": 0.000050030034275576505
+        },
+        {
+          "particle": 2829,
+          "population": 1,
+          "vectorRelative": 0.0004516126273779962,
+          "verticalOverVectorNorm": 0.000029448231804036462
+        },
+        {
+          "particle": 3051,
+          "population": 1,
+          "vectorRelative": 0.00005255781259265482,
+          "verticalOverVectorNorm": 0.000008330567744529524
+        },
+        {
+          "particle": 3273,
+          "population": 1,
+          "vectorRelative": 0.00018688868192050774,
+          "verticalOverVectorNorm": 0.00017080655273273474
+        },
+        {
+          "particle": 3494,
+          "population": 1,
+          "vectorRelative": 0.0002376390338951383,
+          "verticalOverVectorNorm": 0.00009600338665155387
+        },
+        {
+          "particle": 3716,
+          "population": 1,
+          "vectorRelative": 0.00025935198414591326,
+          "verticalOverVectorNorm": 0.00008903941863807677
+        },
+        {
+          "particle": 3937,
+          "population": 1,
+          "vectorRelative": 0.0004057201016051596,
+          "verticalOverVectorNorm": 0.000041614881444143544
+        },
+        {
+          "particle": 4159,
+          "population": 1,
+          "vectorRelative": 0.00031082690067774224,
+          "verticalOverVectorNorm": 0.000020395927530633794
+        },
+        {
+          "particle": 4381,
+          "population": 1,
+          "vectorRelative": 0.00028259254946451585,
+          "verticalOverVectorNorm": 0.000046136182363588985
+        },
+        {
+          "particle": 4602,
+          "population": 1,
+          "vectorRelative": 0.00028591987801768117,
+          "verticalOverVectorNorm": 0.000004068829119427674
+        },
+        {
+          "particle": 4824,
+          "population": 1,
+          "vectorRelative": 0.0003380932922200414,
+          "verticalOverVectorNorm": 0.000024427685807047685
+        },
+        {
+          "particle": 5046,
+          "population": 1,
+          "vectorRelative": 0.00007792361701203919,
+          "verticalOverVectorNorm": 0.00001595711314135122
+        },
+        {
+          "particle": 5267,
+          "population": 1,
+          "vectorRelative": 0.00042208545678672666,
+          "verticalOverVectorNorm": 0.00007301033144962665
+        },
+        {
+          "particle": 5489,
+          "population": 1,
+          "vectorRelative": 0.00021076289853505222,
+          "verticalOverVectorNorm": 0.00009129694149717052
+        },
+        {
+          "particle": 5710,
+          "population": 1,
+          "vectorRelative": 0.00022093750046909668,
+          "verticalOverVectorNorm": 0.0000020714690336330968
+        },
+        {
+          "particle": 5932,
+          "population": 1,
+          "vectorRelative": 0.0003096591732083927,
+          "verticalOverVectorNorm": 0.00008415574272047636
+        },
+        {
+          "particle": 6154,
+          "population": 1,
+          "vectorRelative": 0.00024824701022604576,
+          "verticalOverVectorNorm": 0.00013384843901844133
+        },
+        {
+          "particle": 6375,
+          "population": 1,
+          "vectorRelative": 0.0002538227600232683,
+          "verticalOverVectorNorm": 0.000015853647261776903
+        },
+        {
+          "particle": 6597,
+          "population": 1,
+          "vectorRelative": 0.0002604005405334082,
+          "verticalOverVectorNorm": 0.00012689891355677538
+        },
+        {
+          "particle": 6819,
+          "population": 1,
+          "vectorRelative": 0.0002159544325294014,
+          "verticalOverVectorNorm": 0.00012669023765542875
+        },
+        {
+          "particle": 7040,
+          "population": 1,
+          "vectorRelative": 0.00018107357992554437,
+          "verticalOverVectorNorm": 0.00016709998290921548
+        },
+        {
+          "particle": 7262,
+          "population": 1,
+          "vectorRelative": 0.00023684580530586777,
+          "verticalOverVectorNorm": 0.00017179667725908737
+        },
+        {
+          "particle": 7483,
+          "population": 1,
+          "vectorRelative": 0.00028580624158409826,
+          "verticalOverVectorNorm": 0.00006467493433711047
+        },
+        {
+          "particle": 7705,
+          "population": 1,
+          "vectorRelative": 0.00044643766505763645,
+          "verticalOverVectorNorm": 0.00002580188964970031
+        },
+        {
+          "particle": 7927,
+          "population": 1,
+          "vectorRelative": 0.00025063457401679234,
+          "verticalOverVectorNorm": 0.000038761780097061774
+        },
+        {
+          "particle": 8148,
+          "population": 1,
+          "vectorRelative": 0.00036321279152824233,
+          "verticalOverVectorNorm": 0.00005860777501805238
+        },
+        {
+          "particle": 8370,
+          "population": 1,
+          "vectorRelative": 0.00010981752355799745,
+          "verticalOverVectorNorm": 0.00001887836248587575
+        },
+        {
+          "particle": 8592,
+          "population": 2,
+          "vectorRelative": 0.00028149200554419964,
+          "verticalOverVectorNorm": 0.00012813653683927653
+        },
+        {
+          "particle": 8621,
+          "population": 2,
+          "vectorRelative": 0.00032368150507824787,
+          "verticalOverVectorNorm": 0.00013534910895409783
+        },
+        {
+          "particle": 8651,
+          "population": 2,
+          "vectorRelative": 0.0003013332061854129,
+          "verticalOverVectorNorm": 0.00016937346632683192
+        },
+        {
+          "particle": 8681,
+          "population": 2,
+          "vectorRelative": 0.000316843111927454,
+          "verticalOverVectorNorm": 0.00008119166495929818
+        },
+        {
+          "particle": 8711,
+          "population": 2,
+          "vectorRelative": 0.0002620644824313642,
+          "verticalOverVectorNorm": 0.00008073077673807986
+        },
+        {
+          "particle": 8741,
+          "population": 2,
+          "vectorRelative": 0.0000801331203512273,
+          "verticalOverVectorNorm": 0.00006844579599664913
+        },
+        {
+          "particle": 8770,
+          "population": 2,
+          "vectorRelative": 0.0003300041367694126,
+          "verticalOverVectorNorm": 0.00006785452276893727
+        },
+        {
+          "particle": 8800,
+          "population": 2,
+          "vectorRelative": 0.0003444791836651323,
+          "verticalOverVectorNorm": 0.00007718488905599295
+        },
+        {
+          "particle": 8830,
+          "population": 2,
+          "vectorRelative": 0.0002698339171757848,
+          "verticalOverVectorNorm": 0.00011132466713726997
+        },
+        {
+          "particle": 8860,
+          "population": 2,
+          "vectorRelative": 0.00030982735802523304,
+          "verticalOverVectorNorm": 0.00016822244278469743
+        },
+        {
+          "particle": 8890,
+          "population": 2,
+          "vectorRelative": 0.0003705208426148863,
+          "verticalOverVectorNorm": 0.0002459516026382307
+        },
+        {
+          "particle": 8919,
+          "population": 2,
+          "vectorRelative": 0.00030071331262403417,
+          "verticalOverVectorNorm": 0.00003348296851671254
+        },
+        {
+          "particle": 8949,
+          "population": 2,
+          "vectorRelative": 0.00029173314402373973,
+          "verticalOverVectorNorm": 0.00008883363155762516
+        },
+        {
+          "particle": 8979,
+          "population": 2,
+          "vectorRelative": 0.0002737392850039364,
+          "verticalOverVectorNorm": 0.00012270650326780922
+        },
+        {
+          "particle": 9009,
+          "population": 2,
+          "vectorRelative": 0.0002613054768075657,
+          "verticalOverVectorNorm": 0.00005094282766361489
+        },
+        {
+          "particle": 9039,
+          "population": 2,
+          "vectorRelative": 0.00022693061738829332,
+          "verticalOverVectorNorm": 0.00004331315726142235
+        },
+        {
+          "particle": 9069,
+          "population": 2,
+          "vectorRelative": 0.00014773097048412516,
+          "verticalOverVectorNorm": 0.00008608637552118206
+        },
+        {
+          "particle": 9098,
+          "population": 2,
+          "vectorRelative": 0.00017022738932356837,
+          "verticalOverVectorNorm": 0.000011264408564820528
+        },
+        {
+          "particle": 9128,
+          "population": 2,
+          "vectorRelative": 0.0002642907486487815,
+          "verticalOverVectorNorm": 0.00012452118428773895
+        },
+        {
+          "particle": 9158,
+          "population": 2,
+          "vectorRelative": 0.00009543133825528083,
+          "verticalOverVectorNorm": 0.00007947890327769036
+        },
+        {
+          "particle": 9188,
+          "population": 2,
+          "vectorRelative": 0.00021363317306402326,
+          "verticalOverVectorNorm": 0.00007976464872223787
+        },
+        {
+          "particle": 9218,
+          "population": 2,
+          "vectorRelative": 0.00036766516828175635,
+          "verticalOverVectorNorm": 0.00009452797003266128
+        },
+        {
+          "particle": 9247,
+          "population": 2,
+          "vectorRelative": 0.0002819519409128659,
+          "verticalOverVectorNorm": 0.0001472754228955148
+        },
+        {
+          "particle": 9277,
+          "population": 2,
+          "vectorRelative": 0.0004157852721350067,
+          "verticalOverVectorNorm": 0.000015803316959957295
+        },
+        {
+          "particle": 9307,
+          "population": 2,
+          "vectorRelative": 0.0003024296710671279,
+          "verticalOverVectorNorm": 0.000033196676403214864
+        },
+        {
+          "particle": 9337,
+          "population": 2,
+          "vectorRelative": 0.00015769777645260134,
+          "verticalOverVectorNorm": 0.00010744132020954743
+        },
+        {
+          "particle": 9367,
+          "population": 2,
+          "vectorRelative": 0.00009215392629821438,
+          "verticalOverVectorNorm": 0.000004330097109079833
+        },
+        {
+          "particle": 9396,
+          "population": 2,
+          "vectorRelative": 0.0002863842878676586,
+          "verticalOverVectorNorm": 0.00018101574526550453
+        },
+        {
+          "particle": 9426,
+          "population": 2,
+          "vectorRelative": 0.0002245780180421263,
+          "verticalOverVectorNorm": 0.00015908710426137279
+        },
+        {
+          "particle": 9456,
+          "population": 2,
+          "vectorRelative": 0.00032343948024209627,
+          "verticalOverVectorNorm": 0.000047510285237299306
+        },
+        {
+          "particle": 9486,
+          "population": 2,
+          "vectorRelative": 0.00036800748497219657,
+          "verticalOverVectorNorm": 0.00024342151150056002
+        },
+        {
+          "particle": 9516,
+          "population": 2,
+          "vectorRelative": 0.0003613984375991047,
+          "verticalOverVectorNorm": 0.00003865176151411994
+        },
+        {
+          "particle": 9546,
+          "population": 3,
+          "vectorRelative": 0.000050870091549622456,
+          "verticalOverVectorNorm": 0.000029069666936558042
+        },
+        {
+          "particle": 14546,
+          "population": 3,
+          "vectorRelative": 0.00016371957812480207,
+          "verticalOverVectorNorm": 0.00013194739670438198
+        },
+        {
+          "particle": 19546,
+          "population": 3,
+          "vectorRelative": 0.00009294094791135323,
+          "verticalOverVectorNorm": 0.00005814679692893731
+        },
+        {
+          "particle": 24546,
+          "population": 3,
+          "vectorRelative": 0.0003531541048208737,
+          "verticalOverVectorNorm": 0.0003234635180594987
+        },
+        {
+          "particle": 29546,
+          "population": 3,
+          "vectorRelative": 0.00010625038285446198,
+          "verticalOverVectorNorm": 0.000016062854279556925
+        },
+        {
+          "particle": 34546,
+          "population": 3,
+          "vectorRelative": 0.00003355058751558247,
+          "verticalOverVectorNorm": 0.000027276043176174676
+        },
+        {
+          "particle": 39546,
+          "population": 3,
+          "vectorRelative": 0.000051761867404724905,
+          "verticalOverVectorNorm": 0.00004100393859363681
+        },
+        {
+          "particle": 44546,
+          "population": 3,
+          "vectorRelative": 0.00010157595045207448,
+          "verticalOverVectorNorm": 0.000032198816035933914
+        },
+        {
+          "particle": 49546,
+          "population": 3,
+          "vectorRelative": 0.00009052420828516433,
+          "verticalOverVectorNorm": 0.00005155484021312424
+        },
+        {
+          "particle": 54546,
+          "population": 3,
+          "vectorRelative": 0.00026197911088936146,
+          "verticalOverVectorNorm": 0.0002223332743211129
+        },
+        {
+          "particle": 59546,
+          "population": 3,
+          "vectorRelative": 0.00023893423908906953,
+          "verticalOverVectorNorm": 0.0000798625430523793
+        },
+        {
+          "particle": 64546,
+          "population": 3,
+          "vectorRelative": 0.0003221441239217451,
+          "verticalOverVectorNorm": 0.0003051645661781728
+        },
+        {
+          "particle": 69546,
+          "population": 3,
+          "vectorRelative": 0.00009813681279603573,
+          "verticalOverVectorNorm": 0.00007353708708838134
+        },
+        {
+          "particle": 74546,
+          "population": 3,
+          "vectorRelative": 0.00009084364093274027,
+          "verticalOverVectorNorm": 0.00004825933952052327
+        },
+        {
+          "particle": 79546,
+          "population": 3,
+          "vectorRelative": 0.00008509159131329485,
+          "verticalOverVectorNorm": 0.00007790003426513267
+        },
+        {
+          "particle": 84546,
+          "population": 3,
+          "vectorRelative": 0.00005698517236899684,
+          "verticalOverVectorNorm": 0.0000010370139026917775
+        },
+        {
+          "particle": 89546,
+          "population": 3,
+          "vectorRelative": 0.00040793425630800877,
+          "verticalOverVectorNorm": 0.0002621888212820605
+        },
+        {
+          "particle": 94546,
+          "population": 3,
+          "vectorRelative": 0.00012569200536117903,
+          "verticalOverVectorNorm": 0.0000317163246585049
+        },
+        {
+          "particle": 99546,
+          "population": 3,
+          "vectorRelative": 0.00005911558759594445,
+          "verticalOverVectorNorm": 0.0000020005839488085757
+        },
+        {
+          "particle": 104546,
+          "population": 3,
+          "vectorRelative": 0.00027276364378279365,
+          "verticalOverVectorNorm": 0.000059056211999904073
+        },
+        {
+          "particle": 109546,
+          "population": 3,
+          "vectorRelative": 0.00010972414480340785,
+          "verticalOverVectorNorm": 0.00006927657276065407
+        },
+        {
+          "particle": 114546,
+          "population": 3,
+          "vectorRelative": 0.00012016461131111876,
+          "verticalOverVectorNorm": 0.00009283546139720906
+        },
+        {
+          "particle": 119546,
+          "population": 3,
+          "vectorRelative": 0.0001000417408654925,
+          "verticalOverVectorNorm": 0.00008807164598245754
+        },
+        {
+          "particle": 124546,
+          "population": 3,
+          "vectorRelative": 0.00004775375864897384,
+          "verticalOverVectorNorm": 0.00002722377846999827
+        },
+        {
+          "particle": 129546,
+          "population": 3,
+          "vectorRelative": 0.000080276675982391,
+          "verticalOverVectorNorm": 0.000047017119798176994
+        },
+        {
+          "particle": 134546,
+          "population": 3,
+          "vectorRelative": 0.00039687094496510634,
+          "verticalOverVectorNorm": 0.000287416739184521
+        },
+        {
+          "particle": 139546,
+          "population": 3,
+          "vectorRelative": 0.00006751400526072456,
+          "verticalOverVectorNorm": 0.00005700671276897563
+        },
+        {
+          "particle": 144546,
+          "population": 3,
+          "vectorRelative": 0.00022260194831158264,
+          "verticalOverVectorNorm": 0.00011028823334871792
+        },
+        {
+          "particle": 149546,
+          "population": 3,
+          "vectorRelative": 0.0004042128278145915,
+          "verticalOverVectorNorm": 0.0002207641633840044
+        },
+        {
+          "particle": 154546,
+          "population": 3,
+          "vectorRelative": 0.000053865581379257406,
+          "verticalOverVectorNorm": 0.00001943534293366482
+        },
+        {
+          "particle": 159546,
+          "population": 3,
+          "vectorRelative": 0.00012263947467103635,
+          "verticalOverVectorNorm": 0.000010945928145766797
+        },
+        {
+          "particle": 164546,
+          "population": 3,
+          "vectorRelative": 0.00006872796886694942,
+          "verticalOverVectorNorm": 0.000048340660814233636
+        }
+      ]
+    }
+  ],
+  "GPU32ForceBatchSeconds": 3.6467649999931453,
+  "GPUForceMeanBatchSeconds": 0.11396140624978579,
+  "qualification": "Existing CPU Float64 Barnes-Hut, single thread, one full-force call per theta in native Node. Full actual F initial state, up to32 fixed IDs/pop against compensated direct Float64 oracle. Includes tree build and JIT; interactive machine and concurrent campaign, not an isolated benchmark. No BH evolution, energy conservation or structural validation is claimed. GPU batch includes queue/submission; comparison is an operational screen, not a universal speedup. No unvalidated accelerated method replaces direct GPU."
+}

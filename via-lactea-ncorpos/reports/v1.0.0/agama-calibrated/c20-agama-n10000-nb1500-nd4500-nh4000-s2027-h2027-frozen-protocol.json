@@ -1,0 +1,32 @@
+{
+  "schema": "frozen-orbit-control-v1",
+  "snapshot": "c20-agama-n10000-nb1500-nd4500-nh4000-s2027-h2027.json",
+  "records": [
+    {
+      "timeMyr": 0,
+      "file": "c20-agama-n10000-nb1500-nd4500-nh4000-s2027-h2027-frozen-0.json",
+      "sha256": "7b9c50ce629855d0f0becfc9db05fce95fc274f37575a97b28ea3ae10a17bf10"
+    },
+    {
+      "timeMyr": 20,
+      "file": "c20-agama-n10000-nb1500-nd4500-nh4000-s2027-h2027-frozen-20.json",
+      "sha256": "2c38de9296e40db01e63043918b4c3de89cd06733ce8aaf8c5de557ee1809d8c"
+    },
+    {
+      "timeMyr": 200,
+      "file": "c20-agama-n10000-nb1500-nd4500-nh4000-s2027-h2027-frozen-200.json",
+      "sha256": "9c54623b1abe26393850f84212692cff80d89ac0d73b47ae4cd07ebcb2425889"
+    },
+    {
+      "timeMyr": 1000,
+      "file": "c20-agama-n10000-nb1500-nd4500-nh4000-s2027-h2027-frozen-1000.json",
+      "sha256": "4bb9f7ee06060a7e3396487deaabdab45d63c95e7cb7c24dd268127ea8b3939a"
+    }
+  ],
+  "wallSeconds": 4.4258012999998755,
+  "integrator": "AGAMA orbit, adaptive DOP853, accuracy=1e-9, unsoftened frozen TOTAL converged potential; not a self-gravitating KDK run",
+  "timeConversion": 0.001022712164969474,
+  "trajsize": 501,
+  "seeds": 2027,
+  "qualification": "Tests action-DF stationarity in its own continuum field; excludes live self-response and granularity of all components. Cannot substitute for free N-body tests."
+}

@@ -1,0 +1,43 @@
+{
+  "schema": "equilibrium-protocol-105",
+  "registeredUTC": "2026-10-17T01:22:24.465Z",
+  "knowledge": "v104 outcomes known; criteria registered before new v105 outcomes. Engineering accuracy objectives, not universal galactic stability thresholds.",
+  "constants": {
+    "epsilonKpc": 0.1,
+    "dtMyr": 0.05,
+    "integrator": "KDK",
+    "liveForce": "direct GPU Float32",
+    "diagnostics": "direct Float64 compensated sum"
+  },
+  "phases": [
+    "A: hash/phase verified existing A/B/C controls and expanded IC/vertical diagnostics",
+    "B: investigate improved preparation; admit only with independent control and density/kinematic fidelity",
+    "C: controlled halo and individual baryon refinement after A/B decision",
+    "D: gated 400/600/1000 Myr; never launched on unresolved drift",
+    "E: evidence, uncertainty, reproducibility"
+  ],
+  "primaryCriteria": {
+    "durationMyr": 200,
+    "thinAndThickHeightTotalFraction": 0.05,
+    "verticalVarianceTotalFraction": 0.1,
+    "lateHeightFractionPer100Myr": 0.025,
+    "lateVarianceFractionPer100Myr": 0.05,
+    "componentHalfMassRadiusFraction": 0.05,
+    "radialMassDistributionTotalVariation": 0.05,
+    "energyMaximumSampledRelative": 0.00001,
+    "forceVectorRelativeQ99": 0.001,
+    "forceVerticalAbsoluteOverVectorNormQ99": 0.001
+  },
+  "justification": "Aim to distinguish structural changes of order ten percent from a model whose thickness is controlled to five percent, with half of this allowance per late 100 Myr. Budgets are prospective accuracy specifications for this TCC; stricter or weaker claims require separate justification. They are not observational uncertainties or universal thresholds.",
+  "inference": "Three halo seeds minimum. Report paired values, sample SD and t(2)=4.30265273 95% mean intervals. Failure to reject zero is not equivalence. Promotion requires mean interval inside budgets and consistent late trends, radial profiles, all populations, resolution and controls. Correlated epochs are not independent replicates. With one baryon realization conclusions are conditional on that realization.",
+  "pilots": {
+    "maxWallSecondsFor200Myr": 1200,
+    "maxEstimatedWallSecondsFor1000Myr": 6000,
+    "qualification": "Operational scheduling limits per realization, not scientific acceptance; memory feasibility and direct force accuracy required."
+  },
+  "newPreparation": {
+    "allowed": "New explicitly identified model only; physical DF/orbit methods, no cooling or trajectory corrections",
+    "admission": "Masses identical; density, moments, circular-force profiles and stationary controls audited before live promotion; any departure from priors stated."
+  },
+  "causalCaution": "A fixed total field removes all collective response; fixed halo removes its response and discrete forces. Differences do not uniquely measure collisional heating."
+}

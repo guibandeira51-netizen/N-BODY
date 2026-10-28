@@ -1,0 +1,448 @@
+{
+  "schema": "validation-101-assessment",
+  "version": "1.0.1",
+  "generatedAt": "2026-10-15T23:58:32.946Z",
+  "publicConclusion": "O KDK direto Float64 apresenta convergência de segunda ordem e erros de conservação quantificados no domínio de referência testado. A galáxia autogravitante permanece NÃO VALIDADA quanto ao equilíbrio estrutural e à convergência global. Os dados não autorizam declarar estabilidade prolongada.",
+  "domain": {
+    "description": "21 novas integrações (18 galácticas e 3 binárias), mais reanálise de 10 trajetórias históricas / 33 estados. Referência galáctica Float64: N=1000, 20 Myr; controle contínuo: 1 Gyr; GPU grande: até 200 Myr. Resultados históricos de 1 Gyr identificados separadamente."
+  },
+  "assessments": {
+    "energy": {
+      "status": "validated",
+      "scope": "Hamiltoniana de Plummer e KDK direto CPU Float64: binária por 200 Myr e mesmo snapshot AGAMA N=1000 por 20 Myr, ε=0,1 kpc, dt=0,1/0,05/0,025 Myr; não certifica todos os backends ou equilíbrio.",
+      "summary": "Conservação quantificada e consistência força–potencial verificadas no domínio de referência. O erro é aproximado e medido, nunca energia exatamente constante por aritmética real.",
+      "evidence": [
+        "N=1000, dt=0.1 Myr: max |δE|=8.05447e-6, medido em cada passo.",
+        "N=1000, dt=0.05 Myr: max |δE|=2.00562e-6, medido em cada passo.",
+        "N=1000, dt=0.025 Myr: max |δE|=5.01773e-7, medido em cada passo.",
+        "Energia externa entra como ΣmΦext, sem fator 1/2; referência direta soma somente pares i<j.",
+        "Estados grandes reanalisados por soma direta Float64; série Barnes–Hut mantida como estimativa separada."
+      ],
+      "limitations": [
+        "Máximos diretos de trajetórias históricas grandes são esparsos e podem omitir picos.",
+        "Força Barnes–Hut dirigida não herda automaticamente uma Hamiltoniana global; Float32 tem erros adicionais.",
+        "Reduzir ε para 0,05 kpc no histórico produz máximo direto amostrado 1,37435×10⁻⁴; não se generaliza o melhor caso."
+      ]
+    },
+    "stability": {
+      "status": "not-validated",
+      "scope": "Estrutura global, disco fino e espesso, anéis, bojo e halo nos intervalos efetivamente medidos.",
+      "summary": "O aquecimento estrutural persiste mesmo quando a energia direta é bem conservada. A inicialização contínua não foi certificada como equilíbrio do sistema discreto suavizado.",
+      "evidence": [
+        "N=1000, CPU direta, 20 Myr: h50 global cresce aproximadamente 86%, com max |δE|≈2×10⁻⁶.",
+        "Histórico 200 Myr: espessamento do disco fino ≈112,5% (10k) e ≈33,6% (50k), populações rastreadas por rótulos originais.",
+        "Controle contínuo de 1 Gyr mantém medidas globais muito melhor, mas a população espessa e a amostragem pequena impedem uma certificação geral."
+      ],
+      "limitations": [
+        "Não há limiar universal de espessamento ou correção artificial de velocidades.",
+        "N pequeno e poucos sorteios independentes na população espessa limitam inferência estatística.",
+        "Diferenças de força contínua/discreta combinam suavização e granularidade; não isolam uma causa única."
+      ]
+    },
+    "convergence": {
+      "status": "incomplete",
+      "scope": "Convergência temporal direta demonstrada no controle; convergência estrutural conjunta em N, dt, ε, precisão e sementes permanece aberta.",
+      "summary": "Ordens energéticas observadas na referência N=1000: 2.006 e 1.999. A melhora com resolução em parte das métricas não estabelece convergência global.",
+      "evidence": [
+        "Mesmo estado inicial e mesma ε nos três passos temporais; ordem estimada por log2 das razões dos erros máximos.",
+        "Ensaios separados de halo refinado e resolução bariônica preservam as massas físicas.",
+        "Comparação CPU Float64, Barnes–Hut Float64 e GPU Float32 usa estados iniciais identificados e mede o arredondamento de upload."
+      ],
+      "limitations": [
+        "Long Float64 direct galaxy at N=10000/50000 for 1 Gyr: not-executed. Quadratic cost; short Float64 reference and actual GPU long trajectories kept separate.",
+        "Full joint convergence in N, dt, epsilon and seed ensemble: incomplete. Available grid and seeds do not establish asymptotic structural convergence.",
+        "Self-consistent DF of the Plummer-convolved total density: not-executed. AGAMA preserved model is Newtonian continuum; scalar grid does not remove physical softening mismatch."
+      ]
+    }
+  },
+  "artifacts": {
+    "data": [
+      {
+        "title": "Pacote científico 1.0.1 · ZIP",
+        "path": "downloads/validacao-1.0.1.zip"
+      },
+      {
+        "title": "Séries de energia · CSV",
+        "path": "reports/v1.0.1/energy-series.csv"
+      },
+      {
+        "title": "Populações e estrutura · CSV",
+        "path": "reports/v1.0.1/structure-series.csv"
+      },
+      {
+        "title": "Resultados e pendências · JSON",
+        "path": "reports/v1.0.1/summary.json"
+      },
+      {
+        "title": "Auditoria histórica com energia direta",
+        "path": "reports/v1.0.1/historical-reanalysis-summary.json"
+      },
+      {
+        "title": "Força discreta versus campo contínuo",
+        "path": "reports/v1.0.1/continuum-discrete-field-mismatch.json"
+      },
+      {
+        "title": "Hashes de preservação histórica",
+        "path": "reports/v1.0.1/historical-verification.json"
+      }
+    ],
+    "figures": [
+      {
+        "id": "energy-terms",
+        "title": "Energia cinética, potencial e total",
+        "path": "reports/v1.0.1/figures/energy-terms.png",
+        "svgPath": "reports/v1.0.1/figures/energy-terms.svg",
+        "dataPath": "reports/v1.0.1/figures/energy-terms.csv",
+        "description": "Séries reais de K, U e E em Hamiltonianas distintas: isolada, halo fixo e campo contínuo.",
+        "limitations": "No halo fixo e no campo de teste, U externo entra sem fator 1/2. O controle A usa partículas de teste e DOP853; não é uma integração autogravitante KDK. Conservação energética não certifica equilíbrio estrutural.",
+        "plottedMeasurements": 6014,
+        "sources": [
+          {
+            "path": "reports/v1.0.1/gpu/GPU-1000-dt0.05.json",
+            "sha256": "29cb33f3e3b4bb73b75f9ed3cb0c35a1bf97296c9b49b8f2ef17655f7a12182c"
+          },
+          {
+            "path": "reports/v1.0.1/runs/A-continuum-agama-calibrated.json",
+            "sha256": "e32324b99f5fd3e7536e5a23a5a0cc4ff9480f5a1152e619bb7777a9d46d1368"
+          },
+          {
+            "path": "reports/v1.0.1/runs/B-fixed-f64.json",
+            "sha256": "7c45f5b2f93c94644c917b91a53a585a6347f33a2712afdfd766f3112d5c2559"
+          },
+          {
+            "path": "reports/v1.0.1/runs/C-f64-dt0.05.json",
+            "sha256": "1f38605d4953c087da2f789d930bf7e33d017c15d0d2035173c1d22758b5a363"
+          }
+        ]
+      },
+      {
+        "id": "energy-error",
+        "title": "Erro relativo assinado da energia",
+        "path": "reports/v1.0.1/figures/energy-error.png",
+        "svgPath": "reports/v1.0.1/figures/energy-error.svg",
+        "dataPath": "reports/v1.0.1/figures/energy-error.csv",
+        "description": "Comparação temporal de erros energéticos medidos em CPU, GPU e trajetória histórica.",
+        "limitations": "Os pontos diretos históricos não são unidos: foram calculados somente nos snapshots salvos. Seu máximo é um limite inferior do máximo entre snapshots. A curva BH histórica é uma estimativa aproximada e tem sua própria referência E(0).",
+        "plottedMeasurements": 3813,
+        "sources": [
+          {
+            "path": "reports/v1.0.1/gpu/GPU-1000-dt0.025.json",
+            "sha256": "de582f4c2b5be32e02ab6dc144c3e08d7ed079cbae10585cf8327ff224971bbb"
+          },
+          {
+            "path": "reports/v1.0.1/gpu/GPU-1000-dt0.05.json",
+            "sha256": "29cb33f3e3b4bb73b75f9ed3cb0c35a1bf97296c9b49b8f2ef17655f7a12182c"
+          },
+          {
+            "path": "reports/v1.0.1/gpu/GPU-1000-dt0.1.json",
+            "sha256": "47fc6086700b41551bed2fa4e422234e43069e4c41cd39d81e9bf94f5d008c7e"
+          },
+          {
+            "path": "reports/v1.0.1/historical-reanalysis-calibrated-A-10k.json",
+            "sha256": "ca3d6743e2e925ec393d10baf7f4b85e3f250cd8a4f854c51e75f310cac64ce2"
+          },
+          {
+            "path": "reports/v1.0.1/runs/C-bh-theta0.25.json",
+            "sha256": "00391489681d58fb5d5ccfe827d4b12c7e4db625f9ca6ad0f0d5756e7373ee35"
+          },
+          {
+            "path": "reports/v1.0.1/runs/C-bh-theta0.5.json",
+            "sha256": "68a12e05c175d570309b479e10700d9e59a37029015a1e0b9baaec6a4a6c9920"
+          },
+          {
+            "path": "reports/v1.0.1/runs/C-f64-dt0.025.json",
+            "sha256": "5e5fd292c4a92b9f566078f1bca2c6a590c06bf90c77211251ecd6be3ddabf16"
+          },
+          {
+            "path": "reports/v1.0.1/runs/C-f64-dt0.05.json",
+            "sha256": "1f38605d4953c087da2f789d930bf7e33d017c15d0d2035173c1d22758b5a363"
+          },
+          {
+            "path": "reports/v1.0.1/runs/C-f64-dt0.1.json",
+            "sha256": "2e34c6e145314a78b22e35c738199e9797cfc5b868d6c6fe6d27b2e95962caca"
+          }
+        ]
+      },
+      {
+        "id": "energy-dt",
+        "title": "Erro máximo da energia e passo temporal",
+        "path": "reports/v1.0.1/figures/energy-dt.png",
+        "svgPath": "reports/v1.0.1/figures/energy-dt.svg",
+        "dataPath": "reports/v1.0.1/figures/energy-dt.csv",
+        "description": "Máximos efetivamente medidos em três passos temporais, com separação entre o binário e a realização galáctica.",
+        "limitations": "CPU e GPU de N = 1.000 têm diagnóstico direto f64 a cada passo. O binário testa o integrador; sua ordem observada não pode ser transferida automaticamente ao problema galáctico. As linhas unem somente os máximos calculados; uma semente não permite estimar a dispersão estatística entre realizações.",
+        "plottedMeasurements": 9,
+        "sources": [
+          {
+            "path": "reports/v1.0.1/gpu/GPU-1000-dt0.025.json",
+            "sha256": "de582f4c2b5be32e02ab6dc144c3e08d7ed079cbae10585cf8327ff224971bbb"
+          },
+          {
+            "path": "reports/v1.0.1/gpu/GPU-1000-dt0.05.json",
+            "sha256": "29cb33f3e3b4bb73b75f9ed3cb0c35a1bf97296c9b49b8f2ef17655f7a12182c"
+          },
+          {
+            "path": "reports/v1.0.1/gpu/GPU-1000-dt0.1.json",
+            "sha256": "47fc6086700b41551bed2fa4e422234e43069e4c41cd39d81e9bf94f5d008c7e"
+          },
+          {
+            "path": "reports/v1.0.1/runs/C-f64-dt0.025.json",
+            "sha256": "5e5fd292c4a92b9f566078f1bca2c6a590c06bf90c77211251ecd6be3ddabf16"
+          },
+          {
+            "path": "reports/v1.0.1/runs/C-f64-dt0.05.json",
+            "sha256": "1f38605d4953c087da2f789d930bf7e33d017c15d0d2035173c1d22758b5a363"
+          },
+          {
+            "path": "reports/v1.0.1/runs/C-f64-dt0.1.json",
+            "sha256": "2e34c6e145314a78b22e35c738199e9797cfc5b868d6c6fe6d27b2e95962caca"
+          },
+          {
+            "path": "reports/v1.0.1/runs/binary-dt0.025.json",
+            "sha256": "8be2a0325d8ce07c2714943f90e1bccff548eb242e0b7b8b7de511243ddc3f56"
+          },
+          {
+            "path": "reports/v1.0.1/runs/binary-dt0.05.json",
+            "sha256": "04c2a4710bdbca81dce0e493100e1349fcfaca86f721f56c078bdda73f9d0963"
+          },
+          {
+            "path": "reports/v1.0.1/runs/binary-dt0.1.json",
+            "sha256": "e03d3ad6bb6e7d2706552ab9600b8bbeda9d1524b904d1c144c3dc0ea7693c5a"
+          }
+        ]
+      },
+      {
+        "id": "disk-thickness",
+        "title": "Espessura do disco durante a evolução",
+        "path": "reports/v1.0.1/figures/disk-thickness.png",
+        "svgPath": "reports/v1.0.1/figures/disk-thickness.svg",
+        "dataPath": "reports/v1.0.1/figures/disk-thickness.csv",
+        "description": "Espessuras global, fina e espessa medidas separadamente nos experimentos A–E novos.",
+        "limitations": "As identidades fino/espesso provêm do snapshot AGAMA original e não são inferidas da altura atual. Os planos são ajustados separadamente. O recorte comum de 20 Myr é curto: não estabelece estabilidade durante vários períodos orbitais.",
+        "plottedMeasurements": 525,
+        "sources": [
+          {
+            "path": "reports/v1.0.1/runs/A-continuum-agama-calibrated.json",
+            "sha256": "e32324b99f5fd3e7536e5a23a5a0cc4ff9480f5a1152e619bb7777a9d46d1368"
+          },
+          {
+            "path": "reports/v1.0.1/runs/B-fixed-f64.json",
+            "sha256": "7c45f5b2f93c94644c917b91a53a585a6347f33a2712afdfd766f3112d5c2559"
+          },
+          {
+            "path": "reports/v1.0.1/runs/C-f64-dt0.05.json",
+            "sha256": "1f38605d4953c087da2f789d930bf7e33d017c15d0d2035173c1d22758b5a363"
+          },
+          {
+            "path": "reports/v1.0.1/runs/D-halo-refined-f64.json",
+            "sha256": "86a7b6f62221893629b1b67c7edcb8157fbd8d831ba9aeb279932707b49407c5"
+          },
+          {
+            "path": "reports/v1.0.1/runs/E-baryons-refined-f64.json",
+            "sha256": "8f2dc2364d39733b3644880216060b43191c4ce12ac36f7f62d7c77c017fe157"
+          }
+        ]
+      },
+      {
+        "id": "velocity-dispersion",
+        "title": "Dispersões de velocidade das populações estelares",
+        "path": "reports/v1.0.1/figures/velocity-dispersion.png",
+        "svgPath": "reports/v1.0.1/figures/velocity-dispersion.svg",
+        "dataPath": "reports/v1.0.1/figures/velocity-dispersion.csv",
+        "description": "Séries independentes de σR, σφ e σz dos discos fino e espesso nos ensaios A–E.",
+        "limitations": "σz é a dispersão no eixo z fixo e não é automaticamente igual à dispersão normal do plano ajustado. A separação permite investigar aquecimento, inclinação e redistribuição sem alterar velocidades durante a evolução. Uma realização por configuração; sem incerteza entre sementes estimada.",
+        "plottedMeasurements": 1050,
+        "sources": [
+          {
+            "path": "reports/v1.0.1/runs/A-continuum-agama-calibrated.json",
+            "sha256": "e32324b99f5fd3e7536e5a23a5a0cc4ff9480f5a1152e619bb7777a9d46d1368"
+          },
+          {
+            "path": "reports/v1.0.1/runs/B-fixed-f64.json",
+            "sha256": "7c45f5b2f93c94644c917b91a53a585a6347f33a2712afdfd766f3112d5c2559"
+          },
+          {
+            "path": "reports/v1.0.1/runs/C-f64-dt0.05.json",
+            "sha256": "1f38605d4953c087da2f789d930bf7e33d017c15d0d2035173c1d22758b5a363"
+          },
+          {
+            "path": "reports/v1.0.1/runs/D-halo-refined-f64.json",
+            "sha256": "86a7b6f62221893629b1b67c7edcb8157fbd8d831ba9aeb279932707b49407c5"
+          },
+          {
+            "path": "reports/v1.0.1/runs/E-baryons-refined-f64.json",
+            "sha256": "8f2dc2364d39733b3644880216060b43191c4ce12ac36f7f62d7c77c017fe157"
+          }
+        ]
+      },
+      {
+        "id": "resolution-thickness",
+        "title": "Espessura e número de partículas",
+        "path": "reports/v1.0.1/figures/resolution-thickness.png",
+        "svgPath": "reports/v1.0.1/figures/resolution-thickness.svg",
+        "dataPath": "reports/v1.0.1/figures/resolution-thickness.csv",
+        "description": "Medições reais de h50 em realizações de 10 mil e 50 mil partículas, preservando a distinção entre campanhas.",
+        "limitations": "Realizações com sementes comuns não são estados de partículas idênticos ao mudar N. As linhas unem amostras estruturais registradas; o limite comum é 200 Myr. Esta comparação de uma semente não demonstra, sozinha, convergência estatística ou explica todo o aquecimento.",
+        "plottedMeasurements": 466,
+        "sources": [
+          {
+            "path": "reports/v1.0.0/runs/calibrated-A-10k.json",
+            "sha256": "6448f8dd3120a6d067f6e50c2da9052dddc69596c06c9441317abab44662cdb3"
+          },
+          {
+            "path": "reports/v1.0.0/runs/calibrated-A-50k.json",
+            "sha256": "54a9c5b7c3489a93e9df1b42921b789001881aadd89cbe490a344cdb9ed850d5"
+          },
+          {
+            "path": "reports/v1.0.0/runs/df-A-10k.json",
+            "sha256": "cd040ff77d54092a14bd24c726ece01d19881fed382ae711cc009fbc64fc2b1a"
+          },
+          {
+            "path": "reports/v1.0.0/runs/df-A-50k.json",
+            "sha256": "f3d8104e6e3a9d1ae1f059059dcca0fd9bea378dc6b18d0d6cb410fdd526a033"
+          },
+          {
+            "path": "reports/v1.0.1/gpu/GPU-10000-200Myr.json",
+            "sha256": "83fac68bc030ec58358103d36c1eb03345118d99bdf19a7b72a60aea0c5ba804"
+          },
+          {
+            "path": "reports/v1.0.1/gpu/GPU-50000-200Myr.json",
+            "sha256": "31150f5d21a315573cbdf0e4dd0bcc7bc0427437509a482a86a7a17d8bf8eead"
+          }
+        ]
+      },
+      {
+        "id": "half-mass",
+        "title": "Evolução dos raios de meia massa",
+        "path": "reports/v1.0.1/figures/half-mass.png",
+        "svgPath": "reports/v1.0.1/figures/half-mass.svg",
+        "dataPath": "reports/v1.0.1/figures/half-mass.csv",
+        "description": "Raios de meia massa do disco e bojo acompanhados separadamente, em intervalos novos e históricos.",
+        "limitations": "Cada curva termina no último instante registrado: algumas campanhas alcançam 200 Myr, outras 1 Gyr. Um raio de meia massa aproximadamente constante não exclui aquecimento vertical ou redistribuição dentro dos anéis.",
+        "plottedMeasurements": 1236,
+        "sources": [
+          {
+            "path": "reports/v1.0.0/runs/calibrated-A-10k.json",
+            "sha256": "6448f8dd3120a6d067f6e50c2da9052dddc69596c06c9441317abab44662cdb3"
+          },
+          {
+            "path": "reports/v1.0.0/runs/calibrated-A-50k.json",
+            "sha256": "54a9c5b7c3489a93e9df1b42921b789001881aadd89cbe490a344cdb9ed850d5"
+          },
+          {
+            "path": "reports/v1.0.0/runs/df-A-10k.json",
+            "sha256": "cd040ff77d54092a14bd24c726ece01d19881fed382ae711cc009fbc64fc2b1a"
+          },
+          {
+            "path": "reports/v1.0.1/runs/A-continuum-agama-calibrated.json",
+            "sha256": "e32324b99f5fd3e7536e5a23a5a0cc4ff9480f5a1152e619bb7777a9d46d1368"
+          },
+          {
+            "path": "reports/v1.0.1/runs/B-fixed-f64.json",
+            "sha256": "7c45f5b2f93c94644c917b91a53a585a6347f33a2712afdfd766f3112d5c2559"
+          },
+          {
+            "path": "reports/v1.0.1/runs/C-f64-dt0.05.json",
+            "sha256": "1f38605d4953c087da2f789d930bf7e33d017c15d0d2035173c1d22758b5a363"
+          },
+          {
+            "path": "reports/v1.0.1/runs/D-halo-refined-f64.json",
+            "sha256": "86a7b6f62221893629b1b67c7edcb8157fbd8d831ba9aeb279932707b49407c5"
+          },
+          {
+            "path": "reports/v1.0.1/runs/E-baryons-refined-f64.json",
+            "sha256": "8f2dc2364d39733b3644880216060b43191c4ce12ac36f7f62d7c77c017fe157"
+          }
+        ]
+      },
+      {
+        "id": "density-profiles",
+        "title": "Perfis de densidade inicial e final",
+        "path": "reports/v1.0.1/figures/density-profiles.png",
+        "svgPath": "reports/v1.0.1/figures/density-profiles.svg",
+        "dataPath": "reports/v1.0.1/figures/density-profiles.csv",
+        "description": "Perfis radiais e verticais medidos para bojo, disco e halo, com geometrias e unidades distintas.",
+        "limitations": "Os pontos são médias em bins finitos; bins vazios e de transbordamento sem densidade definida são omitidos da escala logarítmica. O perfil radial do disco é densidade superficial integrada em z; os demais são densidades volumétricas. Não há ajuste a um perfil teórico nem barras estatísticas inferidas.",
+        "plottedMeasurements": 127,
+        "sources": [
+          {
+            "path": "reports/v1.0.1/historical-reanalysis-calibrated-A-10k.json",
+            "sha256": "ca3d6743e2e925ec393d10baf7f4b85e3f250cd8a4f854c51e75f310cac64ce2"
+          }
+        ]
+      },
+      {
+        "id": "angular-momentum",
+        "title": "Evolução do momento angular",
+        "path": "reports/v1.0.1/figures/angular-momentum.png",
+        "svgPath": "reports/v1.0.1/figures/angular-momentum.svg",
+        "dataPath": "reports/v1.0.1/figures/angular-momentum.csv",
+        "description": "Componentes Lx, Ly, Lz, módulo e erros medidos em sistemas isolado e com halo externo fixo.",
+        "limitations": "O vetor L completo é uma invariante do sistema isolado com forças internas centrais. Um campo externo estacionário axisimétrico garante Lz; não garante em geral Lx, Ly, o vetor completo ou o momento linear. A normalização vetorial usa a escala inicial Σ m|r×v|, evitando componentes iniciais quase nulas.",
+        "plottedMeasurements": 5213,
+        "sources": [
+          {
+            "path": "reports/v1.0.1/gpu/GPU-1000-dt0.05.json",
+            "sha256": "29cb33f3e3b4bb73b75f9ed3cb0c35a1bf97296c9b49b8f2ef17655f7a12182c"
+          },
+          {
+            "path": "reports/v1.0.1/runs/B-fixed-f64.json",
+            "sha256": "7c45f5b2f93c94644c917b91a53a585a6347f33a2712afdfd766f3112d5c2559"
+          },
+          {
+            "path": "reports/v1.0.1/runs/C-bh-theta0.25.json",
+            "sha256": "00391489681d58fb5d5ccfe827d4b12c7e4db625f9ca6ad0f0d5756e7373ee35"
+          },
+          {
+            "path": "reports/v1.0.1/runs/C-bh-theta0.5.json",
+            "sha256": "68a12e05c175d570309b479e10700d9e59a37029015a1e0b9baaec6a4a6c9920"
+          },
+          {
+            "path": "reports/v1.0.1/runs/C-f64-dt0.05.json",
+            "sha256": "1f38605d4953c087da2f789d930bf7e33d017c15d0d2035173c1d22758b5a363"
+          }
+        ]
+      },
+      {
+        "id": "field-comparison",
+        "title": "Campo contínuo, halo fixo e halo dinâmico",
+        "path": "reports/v1.0.1/figures/field-comparison.png",
+        "svgPath": "reports/v1.0.1/figures/field-comparison.svg",
+        "dataPath": "reports/v1.0.1/figures/field-comparison.csv",
+        "description": "Comparação estrutural dos controles A, B e C, com identificação da campanha e do intervalo efetivamente calculado.",
+        "limitations": "O controle contínuo novo usa o AGAMA original sem suavização de Plummer e integração adaptativa DOP853; B/C usam o Hamiltoniano discreto suavizado e KDK. Sua comparação investiga a passagem contínuo–discreto, sem atribuir diferenças apenas ao integrador. Curvas não são extrapoladas após seu término.",
+        "plottedMeasurements": 1631,
+        "sources": [
+          {
+            "path": "reports/v1.0.0/runs/calibrated-A-10k.json",
+            "sha256": "6448f8dd3120a6d067f6e50c2da9052dddc69596c06c9441317abab44662cdb3"
+          },
+          {
+            "path": "reports/v1.0.0/runs/calibrated-A-50k.json",
+            "sha256": "54a9c5b7c3489a93e9df1b42921b789001881aadd89cbe490a344cdb9ed850d5"
+          },
+          {
+            "path": "reports/v1.0.0/runs/calibrated-fixed.json",
+            "sha256": "3b68787eb62ac482ba7d778940683668bac90e32921441c7b3623502378bb7c4"
+          },
+          {
+            "path": "reports/v1.0.1/runs/A-continuum-agama-calibrated.json",
+            "sha256": "e32324b99f5fd3e7536e5a23a5a0cc4ff9480f5a1152e619bb7777a9d46d1368"
+          },
+          {
+            "path": "reports/v1.0.1/runs/A-continuum-agama.json",
+            "sha256": "890a551a239bf38ed6e789ae26d83135216088744c2dda97f1f980b680936426"
+          },
+          {
+            "path": "reports/v1.0.1/runs/B-fixed-f64.json",
+            "sha256": "7c45f5b2f93c94644c917b91a53a585a6347f33a2712afdfd766f3112d5c2559"
+          },
+          {
+            "path": "reports/v1.0.1/runs/C-f64-dt0.05.json",
+            "sha256": "1f38605d4953c087da2f789d930bf7e33d017c15d0d2035173c1d22758b5a363"
+          }
+        ]
+      }
+    ]
+  }
+}

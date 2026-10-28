@@ -1,0 +1,139 @@
+{
+  "schema": "seven-figures-106",
+  "figures": [
+    {
+      "number": 1,
+      "title": "Curva de rotação: observações e modelos",
+      "description": "38 pontos publicados; curvas calculadas por vc²=−R aR(R,0). Modelo histórico reduzido, massas fixas, sem gás/CGM e sem ajuste novo. Os dados de Eilers também participaram das restrições de Cautun: comparação de consistência.",
+      "png": "figures/01-rotacao-observada.png",
+      "svg": "figures/01-rotacao-observada.svg",
+      "csv": "figures/01-rotacao-observada.csv",
+      "sources": [
+        "rotation.csv",
+        "observations/eilers2019-jiao2021.csv"
+      ],
+      "sha256": {
+        "png": "ecbe5f29ca518183dfe94a97431f37011b2a0d0e437b7aa4d0b408fe55a5535d",
+        "svg": "e28344d58149e676ef313671cfa7654642af761394dc077cce71e39c11e44e3c",
+        "csv": "e220939b800b7462684dd21fdefa856a6b90ded43c14c6e2b27ddaf8086c9987"
+      }
+    },
+    {
+      "number": 2,
+      "title": "Contribuições gravitacionais do mesmo modelo",
+      "description": "As forças radiais são somadas: vtotal²=vbojo²+vfino²+vespesso²+vhalo². Velocidades não são somadas linearmente. Os discos mantêm sua geometria achatada; não foi usada a aproximação esférica GM(<R)/R para sua força.",
+      "png": "figures/02-contribuicoes.png",
+      "svg": "figures/02-contribuicoes.svg",
+      "csv": "figures/02-contribuicoes.csv",
+      "sources": [
+        "rotation.csv"
+      ],
+      "sha256": {
+        "png": "00514008b46035bc65fd4dfa2640e79b869ff274bb08802c24b97e6cf8d164c3",
+        "svg": "111fe2957a138d5aa60d3fc62a705be274359d6c65136829d56d5812518f854b",
+        "csv": "54c23ec6c80eeb8e6a60947c4dc68af58164ea1efe4fe1ce508ef330573281a7"
+      }
+    },
+    {
+      "number": 3,
+      "title": "Resíduos: onde cada modelo se afasta dos dados",
+      "description": "Barras: estatística e sistemática fracionária Jiao em quadratura, hipótese explícita. Covariância observacional completa não fornecida. Escores condicionais e cenário de escala comum de 2% estão nos dados; não são significâncias de uma descoberta.",
+      "png": "figures/03-residuos.png",
+      "svg": "figures/03-residuos.svg",
+      "csv": "figures/03-residuos.csv",
+      "sources": [
+        "residuals.csv",
+        "comparison.json"
+      ],
+      "sha256": {
+        "png": "916f126068f7b740db9eefebdb2a9369270393d6986c42971d755bb83f30d336",
+        "svg": "a92b80a1c6d25664b060cdbea95902a5e9c565afd8154cf65cbee943432a61d0",
+        "csv": "473ae9582c68c795bb8a7635e2adcfae1e875fcae2d442e7cb7a3586fc976f9e"
+      }
+    },
+    {
+      "number": 4,
+      "title": "Massa acumulada e fração de matéria escura",
+      "description": "Todas as componentes são integradas no mesmo volume esférico, inclusive os discos achatados. Estas curvas são previsões do modelo adotado, não uma inferência observacional independente da massa.",
+      "png": "figures/04-massa-acumulada.png",
+      "svg": "figures/04-massa-acumulada.svg",
+      "csv": "figures/04-massa-acumulada.csv",
+      "sources": [
+        "enclosed-mass.csv",
+        "model.json"
+      ],
+      "sha256": {
+        "png": "c7e31128698b0ca73c2579a44843d57cb609e8cf0546be022045a2ea55213517",
+        "svg": "426b54d2ae343e58d304c91b76614fc9d4968cbca99e8511a7d02591429b5bed",
+        "csv": "32575e662d7d2a506b52b73e9a18b6c9bc9b3606038c2ae10f07f97d1d29b775"
+      }
+    },
+    {
+      "number": 5,
+      "title": "Mesma partícula-teste em dois campos gravitacionais",
+      "description": "R inicial 8,122 kpc; exatamente os mesmos vetores de posição e velocidade. Trajetórias DOP853 Float64 medidas até 1200 Myr, verificadas por KDK e tolerância mais estrita. Campo fixo: este tempo não é estabilidade de uma galáxia viva.",
+      "png": "figures/05-orbitas.png",
+      "svg": "figures/05-orbitas.svg",
+      "csv": "figures/05-orbitas.csv",
+      "sources": [
+        "orbits.json",
+        "orbits.csv",
+        "orbit-protocol.json"
+      ],
+      "sha256": {
+        "png": "35d6aa22437c24082f795b535c4c84e9553d03975dd956e0301844dbdfff774d",
+        "svg": "dee0f5a184b83b391c088936ada8d507053772cc0e754da7b2d3e36ba65ff589",
+        "csv": "0831b32fe0cd11212d2efada8f2633e877a04b00a94f435ee8a092705287a4d9"
+      }
+    },
+    {
+      "number": 6,
+      "title": "Estabilidade estrutural: avanço e limite medido",
+      "description": "Média±SD de três realizações. h50: mediana ponderada da distância ao plano próprio. F105: 169546 partículas, crescimento18,29%±3,14% em 200 Myr. E/F têm bárions2026 fixos; A/B variam bárions. Não demonstrada estacionariedade ou superioridade estatística de F.",
+      "png": "figures/06-estabilidade.png",
+      "svg": "figures/06-estabilidade.svg",
+      "csv": "figures/06-estabilidade.csv",
+      "sources": [
+        "stability.csv",
+        "validation.json"
+      ],
+      "sha256": {
+        "png": "6473106d09f6adc043bb8bce4ef37b00fa8e0ea3704fc690d8143ae0032940f9",
+        "svg": "cde88f19fcd5c4b0c97e195abb8e42f5fdf035229ecd1e7c4a8f29e4a096be78",
+        "csv": "cb7e72a396ce6043f4db2cdc9decad3dda22317bedb0a9f5f770dedf9fef781e"
+      }
+    },
+    {
+      "number": 7,
+      "title": "Conservação de energia nos ensaios F105",
+      "description": "Força direta GPU Float32; KDK dt0,05 Myr, Plummer ε0,1 kpc. Diagnóstico Hamiltoniano direto Float64, parâmetros efetivos f32. Zero desenhado no piso10⁻¹⁶; CSV original conserva zero. Conservação energética não implica estacionariedade estrutural.",
+      "png": "figures/07-energia.png",
+      "svg": "figures/07-energia.svg",
+      "csv": "figures/07-energia.csv",
+      "sources": [
+        "energy.csv",
+        "validation.json"
+      ],
+      "sha256": {
+        "png": "bbc0eb046be411989262595e254f6d43e618fc0f89ed1caeacf8492976db4519",
+        "svg": "8045644692f307a7644be0c16aaccb7faf7c282bd50c3cff5b931df7133036b2",
+        "csv": "e15358c4103051120bf5b538417b493fcfdc65e75e3b38df1b8f72e417259d8e"
+      }
+    }
+  ],
+  "sourceSHA256": {
+    "orbits.csv": "fc18964a2f5fd87d54043e50e28c705bc0b67a56b0700b7f0a234e2a3536b316",
+    "energy.csv": "a0fdf79a5cf93931b568ba8a9c2b85eb13d6e90f03d24ef20f1b99ec09b3c4e3",
+    "residuals.csv": "2a54c01ec6c2c03b9263a9513e376432fd850ba0c30e51345dcccb49d582eebd",
+    "comparison.json": "ac5ead8fbd7aeb378c7ee3fdea20848e979c67f2a3e4486c81ca8bf3d8eef493",
+    "orbit-protocol.json": "81923630bef96b19440866ce98e76704379a1531f5664cab2a2b9349528a0e00",
+    "enclosed-mass.csv": "7466de8046821d5eb7fd7d35ffaf233ba0c6f4766aab029dfca9f901126a553a",
+    "orbits.json": "4a7dfe5ad052c42400659d29e2cb12c7d52deb56f94f2f9f643bc619053c39a6",
+    "observations/eilers2019-jiao2021.csv": "8fb6a27609b387c5a5dea9de66cbc5f7e24bd117bef03d17e5f36af8561c34d3",
+    "model.json": "1eac6959d8806476f70e538edda2014f2431ea3e9d19ca1f609d8a5b3910c5b2",
+    "stability.csv": "950aadf3575a14139ef5d85a2c562c7c59e3929e2b5b92f63563898928fbcbe5",
+    "validation.json": "edb66c24df5a18628fd3c28127304d58055a831f92ce7a44989d1dfe7fd6344b",
+    "rotation.csv": "87c21b838073382d538c06d1be84e7e8b63fab53adb2f13a1e72217abee824c9"
+  },
+  "codeSHA256": "c662464b2127ee5a79e4fa838888a49e9cec0f4b60a95c4e8e4a7b575eec3ee5"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "via-lactea-ncorpos",
+  "version": "1.0.1",
+  "private": true,
+  "type": "module",
+  "description": "Simulador autogravitante local da Via Láctea",
+  "scripts": {
+    "dev": "node scripts/serve.mjs",
+    "start": "node scripts/serve.mjs",
+    "build": "node scripts/build.mjs",
+    "test": "node scripts/test.mjs",
+    "benchmark": "node scripts/benchmark.mjs"
+  },
+  "engines": {
+    "node": ">=20.11"
+  }
+}

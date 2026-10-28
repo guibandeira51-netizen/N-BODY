@@ -1,0 +1,106 @@
+{
+  "id": "binary-dt0.05",
+  "config": {
+    "n": 2,
+    "dt": 0.05,
+    "epsilon": 0.1,
+    "theta": 0.5,
+    "durationMyr": 200,
+    "algorithm": "direct",
+    "precision": "Float64",
+    "externalField": "none",
+    "seed": 2026
+  },
+  "states": [
+    {
+      "schema": "nbody-state-101",
+      "units": "kpc,Myr,1e10 nominal Msun",
+      "n": 2,
+      "timeMyr": 0,
+      "positions": [
+        -0.5,
+        0,
+        0,
+        0.5,
+        0,
+        0
+      ],
+      "velocities": [
+        0,
+        -0.1042019816297957,
+        0,
+        0,
+        0.1042019816297957,
+        0
+      ],
+      "accelerations": [
+        0.04431858357378075,
+        0,
+        0,
+        -0.04431858357378075,
+        0,
+        0
+      ],
+      "masses": [
+        1,
+        1
+      ],
+      "components": [
+        0,
+        0
+      ],
+      "subpopulations": [
+        0,
+        0
+      ],
+      "meta": {
+        "method": "softened eccentric binary regression; not a galaxy"
+      }
+    },
+    {
+      "schema": "nbody-state-101",
+      "units": "kpc,Myr,1e10 nominal Msun",
+      "n": 2,
+      "timeMyr": 200,
+      "positions": [
+        -0.25957273571249473,
+        0.17143603255023762,
+        0,
+        0.25957273571249473,
+        -0.17143603255023762,
+        0
+      ],
+      "velocities": [
+        -0.1733544889012108,
+        -0.08622548493571418,
+        0,
+        0.1733544889012108,
+        0.08622548493571418,
+        0
+      ],
+      "accelerations": [
+        0.09333639398640683,
+        -0.061644459822230914,
+        0,
+        -0.09333639398640683,
+        0.061644459822230914,
+        0
+      ],
+      "masses": [
+        1,
+        1
+      ],
+      "components": [
+        0,
+        0
+      ],
+      "subpopulations": [
+        0,
+        0
+      ],
+      "meta": {
+        "method": "softened eccentric binary regression; not a galaxy"
+      }
+    }
+  ]
+}

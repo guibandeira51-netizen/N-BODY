@@ -1,0 +1,97 @@
+{
+  "referenceConfig": {
+    "dt": 0.1,
+    "epsilon": 0.1,
+    "theta": 0.5,
+    "withHalo": true,
+    "baseN": 50000,
+    "baryonSeed": 2026,
+    "haloSeed": 2026,
+    "haloCount": 20000,
+    "haloMode": "live",
+    "duration": 200,
+    "label": "A",
+    "n": 50000
+  },
+  "comparisons": [
+    {
+      "timeMyr": 0,
+      "energyDifference": 0,
+      "frameH50Difference": 0,
+      "sigmaNormalDifference": 0,
+      "components": [
+        {
+          "id": 0,
+          "r50Difference": 0,
+          "R50Difference": 0,
+          "fixedH50Difference": 0
+        },
+        {
+          "id": 1,
+          "r50Difference": 0,
+          "R50Difference": 0,
+          "fixedH50Difference": 0
+        },
+        {
+          "id": 2,
+          "r50Difference": 0,
+          "R50Difference": 0,
+          "fixedH50Difference": 0
+        }
+      ]
+    },
+    {
+      "timeMyr": 20,
+      "energyDifference": 0,
+      "frameH50Difference": 0,
+      "sigmaNormalDifference": 0,
+      "components": [
+        {
+          "id": 0,
+          "r50Difference": 0,
+          "R50Difference": 0,
+          "fixedH50Difference": 0
+        },
+        {
+          "id": 1,
+          "r50Difference": 0,
+          "R50Difference": 0,
+          "fixedH50Difference": 0
+        },
+        {
+          "id": 2,
+          "r50Difference": 0,
+          "R50Difference": 0,
+          "fixedH50Difference": 0
+        }
+      ]
+    },
+    {
+      "timeMyr": 200,
+      "energyDifference": 0,
+      "frameH50Difference": 0,
+      "sigmaNormalDifference": 0,
+      "components": [
+        {
+          "id": 0,
+          "r50Difference": 0,
+          "R50Difference": 0,
+          "fixedH50Difference": 0
+        },
+        {
+          "id": 1,
+          "r50Difference": 0,
+          "R50Difference": 0,
+          "fixedH50Difference": 0
+        },
+        {
+          "id": 2,
+          "r50Difference": 0,
+          "R50Difference": 0,
+          "fixedH50Difference": 0
+        }
+      ]
+    }
+  ],
+  "scope": "Original physical evolution repeated with additional nondestructive disk analysis; equal measurements confirm no physical-state correction or hidden damping"
+}

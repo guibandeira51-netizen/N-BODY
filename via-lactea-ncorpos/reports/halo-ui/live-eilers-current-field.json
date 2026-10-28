@@ -1,0 +1,573 @@
+{
+  "schema": "live-component-rotation-comparison-v1",
+  "units": {
+    "radius": "kpc",
+    "speed": "km/s"
+  },
+  "field": {
+    "schema": "preserved-rendered-component-field-v1",
+    "timeMyr": 309.80000461637974,
+    "azimuthSamples": 32,
+    "rows": [
+      {
+        "R_kpc": 0.5,
+        "vc_km_s": {
+          "disk": 126.77617148189854,
+          "bulge": 59.477684622507596,
+          "halo": 45.00489095902574,
+          "diskBulge": 140.034969288611,
+          "total": 147.0892002626162
+        }
+      },
+      {
+        "R_kpc": 1,
+        "vc_km_s": {
+          "disk": 173.191148448498,
+          "bulge": 75.99113679682917,
+          "halo": 67.48807270430619,
+          "diskBulge": 189.1291272453402,
+          "total": 200.8095284838989
+        }
+      },
+      {
+        "R_kpc": 2,
+        "vc_km_s": {
+          "disk": 186.8074281741394,
+          "bulge": 70.93860421098583,
+          "halo": 94.36702568338085,
+          "diskBulge": 199.8231738023374,
+          "total": 220.98514955708453
+        }
+      },
+      {
+        "R_kpc": 3,
+        "vc_km_s": {
+          "disk": 186.54662308019232,
+          "bulge": 63.66944998088024,
+          "halo": 113.6221873837315,
+          "diskBulge": 197.11276326887398,
+          "total": 227.51580804277083
+        }
+      },
+      {
+        "R_kpc": 4,
+        "vc_km_s": {
+          "disk": 178.81170372946693,
+          "bulge": 58.886399030500684,
+          "halo": 124.83940482159167,
+          "diskBulge": 188.25842180740284,
+          "total": 225.88959776320655
+        }
+      },
+      {
+        "R_kpc": 5,
+        "vc_km_s": {
+          "disk": 169.86221301624045,
+          "bulge": 55.28794216167312,
+          "halo": 133.917913375408,
+          "diskBulge": 178.63350178297227,
+          "total": 223.25755414334904
+        }
+      },
+      {
+        "R_kpc": 6,
+        "vc_km_s": {
+          "disk": 161.76687853193934,
+          "bulge": 52.05590008596799,
+          "halo": 142.7198667075736,
+          "diskBulge": 169.9362813637144,
+          "total": 221.91732712150954
+        }
+      },
+      {
+        "R_kpc": 7,
+        "vc_km_s": {
+          "disk": 160.45462532362566,
+          "bulge": 49.0638809067931,
+          "halo": 149.8362104335818,
+          "diskBulge": 167.78841198778022,
+          "total": 224.952975429261
+        }
+      },
+      {
+        "R_kpc": 8,
+        "vc_km_s": {
+          "disk": 150.34481866234492,
+          "bulge": 46.386336785436306,
+          "halo": 155.7683912045369,
+          "diskBulge": 157.33803335171476,
+          "total": 221.4024580654762
+        }
+      },
+      {
+        "R_kpc": 9,
+        "vc_km_s": {
+          "disk": 153.63360093646307,
+          "bulge": 44.94943196541695,
+          "halo": 160.00483712937077,
+          "diskBulge": 160.07415397470643,
+          "total": 226.3300304323633
+        }
+      },
+      {
+        "R_kpc": 10,
+        "vc_km_s": {
+          "disk": 159.81818867402686,
+          "bulge": 42.393708144692624,
+          "halo": 164.43806435263957,
+          "diskBulge": 165.345335347884,
+          "total": 233.1929607199734
+        }
+      },
+      {
+        "R_kpc": 11,
+        "vc_km_s": {
+          "disk": 153.48588866500899,
+          "bulge": 40.58547822927006,
+          "halo": 167.9769144403901,
+          "diskBulge": 158.76113838841698,
+          "total": 231.13057531901796
+        }
+      },
+      {
+        "R_kpc": 12,
+        "vc_km_s": {
+          "disk": 148.60140794215778,
+          "bulge": 39.17289949992169,
+          "halo": 170.51523417321576,
+          "diskBulge": 153.67789202622004,
+          "total": 229.54812040783332
+        }
+      },
+      {
+        "R_kpc": 13,
+        "vc_km_s": {
+          "disk": 143.85883936879983,
+          "bulge": 38.074693112202645,
+          "halo": 174.076267614807,
+          "diskBulge": 148.81212289368958,
+          "total": 229.01439881987437
+        }
+      },
+      {
+        "R_kpc": 14,
+        "vc_km_s": {
+          "disk": 140.9639655184743,
+          "bulge": 36.659277769511746,
+          "halo": 175.1446314689049,
+          "diskBulge": 145.6528139833757,
+          "total": 227.79460957988965
+        }
+      },
+      {
+        "R_kpc": 15,
+        "vc_km_s": {
+          "disk": 138.2145310171318,
+          "bulge": 35.532666321945676,
+          "halo": 177.59342275150496,
+          "diskBulge": 142.70888886202016,
+          "total": 227.82723885617182
+        }
+      },
+      {
+        "R_kpc": 16,
+        "vc_km_s": {
+          "disk": 134.29132068802463,
+          "bulge": 34.65040167725957,
+          "halo": 178.82258535496567,
+          "diskBulge": 138.68961442202263,
+          "total": 226.30140561110815
+        }
+      },
+      {
+        "R_kpc": 17,
+        "vc_km_s": {
+          "disk": 129.12556591851234,
+          "bulge": 33.84447080505437,
+          "halo": 179.84216562017662,
+          "diskBulge": 133.48730268400158,
+          "total": 223.96889184171377
+        }
+      },
+      {
+        "R_kpc": 18,
+        "vc_km_s": {
+          "disk": 132.45112719425768,
+          "bulge": 32.924395572616866,
+          "halo": 181.5501498438178,
+          "diskBulge": 136.48192890947718,
+          "total": 227.1294208753333
+        }
+      },
+      {
+        "R_kpc": 19,
+        "vc_km_s": {
+          "disk": 121.53999073167645,
+          "bulge": 32.082773620884765,
+          "halo": 182.81151921954202,
+          "diskBulge": 125.70311734505607,
+          "total": 221.8587957905251
+        }
+      },
+      {
+        "R_kpc": 20,
+        "vc_km_s": {
+          "disk": 120.88552416810894,
+          "bulge": 31.32077151017701,
+          "halo": 183.0139424876584,
+          "diskBulge": 124.87714234955558,
+          "total": 221.55903011673234
+        }
+      },
+      {
+        "R_kpc": 21,
+        "vc_km_s": {
+          "disk": 122.65666175220588,
+          "bulge": 30.630538464544625,
+          "halo": 183.87730430186556,
+          "diskBulge": 126.42344149256097,
+          "total": 223.14513124006058
+        }
+      },
+      {
+        "R_kpc": 22,
+        "vc_km_s": {
+          "disk": 114.99960653414124,
+          "bulge": 30.06352590173485,
+          "halo": 184.6326107352496,
+          "diskBulge": 118.86431378951204,
+          "total": 219.58580564227233
+        }
+      },
+      {
+        "R_kpc": 23,
+        "vc_km_s": {
+          "disk": 111.73500153428805,
+          "bulge": 29.466950346292606,
+          "halo": 184.77772562998902,
+          "diskBulge": 115.55523238078935,
+          "total": 217.93535651557264
+        }
+      },
+      {
+        "R_kpc": 24,
+        "vc_km_s": {
+          "disk": 108.46032861480198,
+          "bulge": 28.894081181816887,
+          "halo": 185.8043962914552,
+          "diskBulge": 112.24308803027586,
+          "total": 217.07552716002877
+        }
+      },
+      {
+        "R_kpc": 25,
+        "vc_km_s": {
+          "disk": 109.17670529647522,
+          "bulge": 28.353088159756915,
+          "halo": 185.53488139253068,
+          "diskBulge": 112.79827386794689,
+          "total": 217.13277689222505
+        }
+      },
+      {
+        "R_kpc": 26,
+        "vc_km_s": {
+          "disk": 105.00668788862363,
+          "bulge": 27.82603496514379,
+          "halo": 186.20353398340308,
+          "diskBulge": 108.63099338227659,
+          "total": 215.5746942271485
+        }
+      },
+      {
+        "R_kpc": 27,
+        "vc_km_s": {
+          "disk": 102.32536062227994,
+          "bulge": 27.31856945417827,
+          "halo": 186.74182407074872,
+          "diskBulge": 105.90931811461351,
+          "total": 214.68416923651563
+        }
+      },
+      {
+        "R_kpc": 28,
+        "vc_km_s": {
+          "disk": 103.5517001929633,
+          "bulge": 26.8357772660488,
+          "halo": 186.21641952587498,
+          "diskBulge": 106.97248970799144,
+          "total": 214.7549032161152
+        }
+      },
+      {
+        "R_kpc": 29,
+        "vc_km_s": {
+          "disk": 99.54266827240387,
+          "bulge": 26.37869615300791,
+          "halo": 185.18619870908216,
+          "diskBulge": 102.97853377050265,
+          "total": 211.89267710291975
+        }
+      },
+      {
+        "R_kpc": 30,
+        "vc_km_s": {
+          "disk": 98.14810753965031,
+          "bulge": 25.946483664928426,
+          "halo": 185.8927861518571,
+          "diskBulge": 101.51980608821688,
+          "total": 211.80745730849338
+        }
+      }
+    ],
+    "source": "Exact R/v pairs from existing simulation SVG tooltips; epoch from live-epoch DOM attribute. Not a new force evaluation or particle snapshot."
+  },
+  "observations": {
+    "citation": "Eilers et al. (2019)",
+    "title": "The Circular Velocity Curve of the Milky Way from 5 to 25 kpc",
+    "doi": "10.3847/1538-4357/aaf648",
+    "url": "https://arxiv.org/abs/1810.09466",
+    "table": "1, original PDF pages 8–9",
+    "sourceCsv": "reports/v1.0.6/observations/eilers2019-jiao2021.csv",
+    "sourceCsvSha256": "8fb6a27609b387c5a5dea9de66cbc5f7e24bd117bef03d17e5f36af8561c34d3",
+    "units": {
+      "radius": "kpc",
+      "speed": "km/s"
+    },
+    "errors": "Published asymmetric statistical error bars only; systematic uncertainties are not included.",
+    "inference": "Circular speed inferred using axisymmetric Jeans modelling; not raw mean stellar rotation.",
+    "comparison": "Consistency comparison. Historical model parameters used related rotation-curve constraints; not an independent out-of-sample test.",
+    "rows": [
+      {
+        "R_kpc": 5.27,
+        "vc_km_s": 226.83,
+        "stat_minus_km_s": 1.91,
+        "stat_plus_km_s": 1.9
+      },
+      {
+        "R_kpc": 5.74,
+        "vc_km_s": 230.8,
+        "stat_minus_km_s": 1.43,
+        "stat_plus_km_s": 1.35
+      },
+      {
+        "R_kpc": 6.23,
+        "vc_km_s": 231.2,
+        "stat_minus_km_s": 1.7,
+        "stat_plus_km_s": 1.1
+      },
+      {
+        "R_kpc": 6.73,
+        "vc_km_s": 229.88,
+        "stat_minus_km_s": 1.44,
+        "stat_plus_km_s": 1.32
+      },
+      {
+        "R_kpc": 7.22,
+        "vc_km_s": 229.61,
+        "stat_minus_km_s": 1.37,
+        "stat_plus_km_s": 1.11
+      },
+      {
+        "R_kpc": 7.82,
+        "vc_km_s": 229.91,
+        "stat_minus_km_s": 0.92,
+        "stat_plus_km_s": 0.88
+      },
+      {
+        "R_kpc": 8.19,
+        "vc_km_s": 228.86,
+        "stat_minus_km_s": 0.8,
+        "stat_plus_km_s": 0.67
+      },
+      {
+        "R_kpc": 8.78,
+        "vc_km_s": 226.5,
+        "stat_minus_km_s": 1.07,
+        "stat_plus_km_s": 0.95
+      },
+      {
+        "R_kpc": 9.27,
+        "vc_km_s": 226.2,
+        "stat_minus_km_s": 0.72,
+        "stat_plus_km_s": 0.62
+      },
+      {
+        "R_kpc": 9.76,
+        "vc_km_s": 225.94,
+        "stat_minus_km_s": 0.42,
+        "stat_plus_km_s": 0.52
+      },
+      {
+        "R_kpc": 10.26,
+        "vc_km_s": 225.68,
+        "stat_minus_km_s": 0.44,
+        "stat_plus_km_s": 0.4
+      },
+      {
+        "R_kpc": 10.75,
+        "vc_km_s": 224.73,
+        "stat_minus_km_s": 0.38,
+        "stat_plus_km_s": 0.41
+      },
+      {
+        "R_kpc": 11.25,
+        "vc_km_s": 224.02,
+        "stat_minus_km_s": 0.33,
+        "stat_plus_km_s": 0.54
+      },
+      {
+        "R_kpc": 11.75,
+        "vc_km_s": 223.86,
+        "stat_minus_km_s": 0.4,
+        "stat_plus_km_s": 0.39
+      },
+      {
+        "R_kpc": 12.25,
+        "vc_km_s": 222.23,
+        "stat_minus_km_s": 0.51,
+        "stat_plus_km_s": 0.37
+      },
+      {
+        "R_kpc": 12.74,
+        "vc_km_s": 220.77,
+        "stat_minus_km_s": 0.54,
+        "stat_plus_km_s": 0.46
+      },
+      {
+        "R_kpc": 13.23,
+        "vc_km_s": 220.92,
+        "stat_minus_km_s": 0.57,
+        "stat_plus_km_s": 0.4
+      },
+      {
+        "R_kpc": 13.74,
+        "vc_km_s": 217.47,
+        "stat_minus_km_s": 0.64,
+        "stat_plus_km_s": 0.51
+      },
+      {
+        "R_kpc": 14.24,
+        "vc_km_s": 217.31,
+        "stat_minus_km_s": 0.77,
+        "stat_plus_km_s": 0.66
+      },
+      {
+        "R_kpc": 14.74,
+        "vc_km_s": 217.6,
+        "stat_minus_km_s": 0.65,
+        "stat_plus_km_s": 0.68
+      },
+      {
+        "R_kpc": 15.22,
+        "vc_km_s": 217.07,
+        "stat_minus_km_s": 1.06,
+        "stat_plus_km_s": 0.8
+      },
+      {
+        "R_kpc": 15.74,
+        "vc_km_s": 217.38,
+        "stat_minus_km_s": 0.84,
+        "stat_plus_km_s": 1.07
+      },
+      {
+        "R_kpc": 16.24,
+        "vc_km_s": 216.14,
+        "stat_minus_km_s": 1.2,
+        "stat_plus_km_s": 1.48
+      },
+      {
+        "R_kpc": 16.74,
+        "vc_km_s": 212.52,
+        "stat_minus_km_s": 1.39,
+        "stat_plus_km_s": 1.43
+      },
+      {
+        "R_kpc": 17.25,
+        "vc_km_s": 216.41,
+        "stat_minus_km_s": 1.44,
+        "stat_plus_km_s": 1.85
+      },
+      {
+        "R_kpc": 17.75,
+        "vc_km_s": 213.7,
+        "stat_minus_km_s": 2.22,
+        "stat_plus_km_s": 1.65
+      },
+      {
+        "R_kpc": 18.24,
+        "vc_km_s": 207.89,
+        "stat_minus_km_s": 1.76,
+        "stat_plus_km_s": 1.88
+      },
+      {
+        "R_kpc": 18.74,
+        "vc_km_s": 209.6,
+        "stat_minus_km_s": 2.31,
+        "stat_plus_km_s": 2.77
+      },
+      {
+        "R_kpc": 19.22,
+        "vc_km_s": 206.45,
+        "stat_minus_km_s": 2.54,
+        "stat_plus_km_s": 2.36
+      },
+      {
+        "R_kpc": 19.71,
+        "vc_km_s": 201.91,
+        "stat_minus_km_s": 2.99,
+        "stat_plus_km_s": 2.26
+      },
+      {
+        "R_kpc": 20.27,
+        "vc_km_s": 199.84,
+        "stat_minus_km_s": 3.15,
+        "stat_plus_km_s": 2.89
+      },
+      {
+        "R_kpc": 20.78,
+        "vc_km_s": 198.14,
+        "stat_minus_km_s": 3.33,
+        "stat_plus_km_s": 3.37
+      },
+      {
+        "R_kpc": 21.24,
+        "vc_km_s": 195.3,
+        "stat_minus_km_s": 5.99,
+        "stat_plus_km_s": 6.5
+      },
+      {
+        "R_kpc": 21.8,
+        "vc_km_s": 213.67,
+        "stat_minus_km_s": 15.38,
+        "stat_plus_km_s": 12.18
+      },
+      {
+        "R_kpc": 22.14,
+        "vc_km_s": 176.97,
+        "stat_minus_km_s": 28.58,
+        "stat_plus_km_s": 18.57
+      },
+      {
+        "R_kpc": 22.73,
+        "vc_km_s": 193.11,
+        "stat_minus_km_s": 27.64,
+        "stat_plus_km_s": 19.05
+      },
+      {
+        "R_kpc": 23.66,
+        "vc_km_s": 176.63,
+        "stat_minus_km_s": 18.67,
+        "stat_plus_km_s": 16.74
+      },
+      {
+        "R_kpc": 24.82,
+        "vc_km_s": 198.42,
+        "stat_minus_km_s": 6.5,
+        "stat_plus_km_s": 6.12
+      }
+    ]
+  },
+  "observationInterpolation": false,
+  "modelFittedToObservations": false
+}

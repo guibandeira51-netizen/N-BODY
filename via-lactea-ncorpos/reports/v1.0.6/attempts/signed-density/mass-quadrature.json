@@ -1,0 +1,36 @@
+{
+  "definition": "M_i(<r)=4pi integral_0^r s^2 ds integral_0^1 rho_i(s sqrt(1−mu²),0,s mu) dmu, using reflection symmetry.",
+  "orders": [
+    24,
+    96
+  ],
+  "higherOrders": [
+    32,
+    160
+  ],
+  "method": "Gauss-Legendre independently in positive spherical shells. Disk angular variable uses mu=(.03/s)sinh(t) to resolve the equator. Monotonicity follows from nonnegative density and shell integrals; no clipping, cumulative max or visual smoothing.",
+  "checks": [
+    {
+      "population": 0,
+      "maxRelativeDifference": 3.3366642782084455e-12,
+      "finalMassRelativeToAdopted": -4.991387634767364e-06
+    },
+    {
+      "population": 1,
+      "maxRelativeDifference": 2.726439196631958e-08,
+      "finalMassRelativeToAdopted": 3.311239770376062e-06
+    },
+    {
+      "population": 2,
+      "maxRelativeDifference": 1.8124262279872738e-07,
+      "finalMassRelativeToAdopted": 1.9843474112768433e-06
+    },
+    {
+      "population": 3,
+      "maxRelativeDifference": 3.5689229349600282e-12,
+      "finalMassRelativeToAdopted": -0.00010741537826675085
+    }
+  ],
+  "supersededEstimate": "enclosed-mass-native-estimate.csv",
+  "normalization": "Same density normalization and adopted masses recorded in model.json; no fitted parameters changed."
+}

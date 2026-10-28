@@ -1,0 +1,10 @@
+{
+  "changed": "Only vertical axis minimum of enclosed mass plot is fixed to zero; upper padding stays automatic",
+  "dataUnchanged": true,
+  "dataEpochMyr": 7400.000110268593,
+  "n": 8192,
+  "zeroReferenceAtBottom": true,
+  "sourceIdentity": "a0b93b294e7069762d71c29f1a892871ea760e37e87201240766a3618ed12970",
+  "tests": "node --test tests/live-observational.test.mjs",
+  "build": "passed; source and dist hashes verified"
+}

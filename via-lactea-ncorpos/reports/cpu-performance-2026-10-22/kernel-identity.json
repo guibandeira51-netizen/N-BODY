@@ -1,0 +1,10 @@
+{
+  "originalPath": "src/physics/forces.js",
+  "sha256": "9532d4286c6481d49995ece96e48bd595145c2e2c8a22897520cafa45f862444",
+  "changes": [
+    "constant import path",
+    "optional first/last target bounds, default whole state",
+    "named exports for benchmark only"
+  ],
+  "unchanged": "Tree construction, acceptance, Plummer force, arithmetic order per target and Float64 representation"
+}

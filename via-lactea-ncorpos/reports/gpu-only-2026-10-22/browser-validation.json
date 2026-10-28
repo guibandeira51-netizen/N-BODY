@@ -1,0 +1,76 @@
+{
+  "status": "passed",
+  "options": {
+    "dt": 0.1,
+    "epsilon": 0.1,
+    "seed": 2026,
+    "budgetBytes": 536870912
+  },
+  "effectiveParameters": {
+    "dt": 0.10000000149011612,
+    "epsilonSquared": 0.009999999776482582,
+    "G": 0.04498502239584923,
+    "precision": "f32"
+  },
+  "records": [
+    {
+      "timeMyr": 0,
+      "n": 1024,
+      "potentialGPU": -3.4705527097748927,
+      "potentialDirect": -3.4705526716604083,
+      "relativePotentialError": 1.0982252126205915e-8,
+      "relativeRadialFieldL2": 1.5466795525070176e-7,
+      "fastE": -1.629442795467296,
+      "directE": -1.6294427573528116,
+      "sameForceAndStateBitwise": true
+    },
+    {
+      "timeMyr": 0.10000000149011612,
+      "n": 1024,
+      "potentialGPU": -3.4704090676918895,
+      "potentialDirect": -3.4704091207278522,
+      "relativePotentialError": 1.5282337294436096e-8,
+      "relativeRadialFieldL2": 1.497899907827004e-7,
+      "fastE": -1.6294423532521567,
+      "directE": -1.6294424062881194,
+      "sameForceAndStateBitwise": true
+    },
+    {
+      "timeMyr": 0.20000000298023224,
+      "n": 1024,
+      "potentialGPU": -3.4702614897614694,
+      "potentialDirect": -3.4702614394308378,
+      "relativePotentialError": 1.4503412074518278e-8,
+      "relativeRadialFieldL2": 2.222235317042518e-7,
+      "fastE": -1.6294414912873731,
+      "directE": -1.6294414409567415,
+      "sameForceAndStateBitwise": true
+    },
+    {
+      "timeMyr": 0.30000000447034836,
+      "n": 1024,
+      "potentialGPU": -3.470120296699406,
+      "potentialDirect": -3.47011996858672,
+      "relativePotentialError": 9.455370099024943e-8,
+      "relativeRadialFieldL2": 2.972074281779817e-7,
+      "fastE": -1.6294410972966258,
+      "directE": -1.6294407691839399,
+      "sameForceAndStateBitwise": true
+    },
+    {
+      "timeMyr": 0.4000000059604645,
+      "n": 1024,
+      "potentialGPU": -3.469992640327746,
+      "potentialDirect": -3.4699925313705835,
+      "relativePotentialError": 3.139982620092833e-8,
+      "relativeRadialFieldL2": 2.9257482256452665e-7,
+      "fastE": -1.6294405525523596,
+      "directE": -1.6294404435951972,
+      "sameForceAndStateBitwise": true
+    }
+  ],
+  "criterion": {
+    "gamma": 0.00006103888176768602,
+    "scope": "Conservative Float32 accumulation-scale regression envelope, not a formal interval; same state bitwise is separately required."
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "registeredUTC": "2026-10-16T03:43:16.890Z",
+  "shortControlsCompleted": 24,
+  "candidates": [
+    {
+      "population": 0,
+      "meanVarianceGrowthReduction": 0.0000066715647153348734,
+      "seedsWithReducedVarianceGrowth": 3,
+      "meanAbsRadialChange": 0.023578631103131003,
+      "maxEnergyError": 5.529553908501282e-8,
+      "paired": [
+        {
+          "seed": 2026,
+          "varianceGrowth": 0.00010867672485248732,
+          "baselineVarianceGrowth": 0.00011347330574455056,
+          "reduction": 0.0000047965808920632375,
+          "thinRadiusChange": -0.03674408173911836,
+          "maxAbsEnergyError": 5.0409475549961e-8
+        },
+        {
+          "seed": 2027,
+          "varianceGrowth": -0.00006964610802423217,
+          "baselineVarianceGrowth": -0.00006941837987719927,
+          "reduction": 2.277281470328997e-7,
+          "thinRadiusChange": -0.015418319010720327,
+          "maxAbsEnergyError": 5.529553908501282e-8
+        },
+        {
+          "seed": 2028,
+          "varianceGrowth": 0.000007361007763159039,
+          "baselineVarianceGrowth": 0.000022351392870067523,
+          "reduction": 0.000014990385106908484,
+          "thinRadiusChange": -0.018573492559554317,
+          "maxAbsEnergyError": 4.893041451986606e-8
+        }
+      ]
+    },
+    {
+      "population": 1,
+      "meanVarianceGrowthReduction": -0.00004565717000572906,
+      "seedsWithReducedVarianceGrowth": 1,
+      "meanAbsRadialChange": 0.020205812048083655,
+      "maxEnergyError": 9.272170785075397e-8,
+      "paired": [
+        {
+          "seed": 2026,
+          "varianceGrowth": 0.00010186766552045283,
+          "baselineVarianceGrowth": 0.00011347330574455056,
+          "reduction": 0.00001160564022409773,
+          "thinRadiusChange": -0.030421461929349136,
+          "maxAbsEnergyError": 3.2468913666311685e-8
+        },
+        {
+          "seed": 2027,
+          "varianceGrowth": 0.00005173791518926969,
+          "baselineVarianceGrowth": -0.00006941837987719927,
+          "reduction": -0.00012115629506646896,
+          "thinRadiusChange": -0.012283665601257931,
+          "maxAbsEnergyError": 5.445493370758855e-8
+        },
+        {
+          "seed": 2028,
+          "varianceGrowth": 0.00004977224804488347,
+          "baselineVarianceGrowth": 0.000022351392870067523,
+          "reduction": -0.00002742085517481595,
+          "thinRadiusChange": -0.0179123086136439,
+          "maxAbsEnergyError": 9.272170785075397e-8
+        }
+      ]
+    },
+    {
+      "population": 2,
+      "meanVarianceGrowthReduction": 0.000007527544505714617,
+      "seedsWithReducedVarianceGrowth": 3,
+      "meanAbsRadialChange": 0.022976096092628146,
+      "maxEnergyError": 8.289483207810487e-8,
+      "paired": [
+        {
+          "seed": 2026,
+          "varianceGrowth": 0.0001071681775881557,
+          "baselineVarianceGrowth": 0.00011347330574455056,
+          "reduction": 0.000006305128156394854,
+          "thinRadiusChange": -0.03421972254047556,
+          "maxAbsEnergyError": 6.222283227133437e-8
+        },
+        {
+          "seed": 2027,
+          "varianceGrowth": -0.00008541988098717296,
+          "baselineVarianceGrowth": -0.00006941837987719927,
+          "reduction": 0.00001600150110997369,
+          "thinRadiusChange": -0.014330383734550534,
+          "maxAbsEnergyError": 7.171228241423848e-8
+        },
+        {
+          "seed": 2028,
+          "varianceGrowth": 0.000022075388619292218,
+          "baselineVarianceGrowth": 0.000022351392870067523,
+          "reduction": 2.7600425077530487e-7,
+          "thinRadiusChange": -0.020378182002858347,
+          "maxAbsEnergyError": 8.289483207810487e-8
+        }
+      ]
+    }
+  ],
+  "chosenBaryonPopulation": 2,
+  "chosenByMeasuredKinematicReduction": true,
+  "haloContrasts": [
+    4000,
+    40000
+  ],
+  "reasonHalo": "Endpoints of a decade in halo macro-particle mass; maximum measured field-noise contrast, all three seeds. Not chosen by minimum h50. Direct force retained; timings show CPU energy diagnostics dominate cost.",
+  "reasonBaryons": "One variant with reduced thin-disc velocity-variance growth in at least two paired seeds and the largest mean reduction; radial changes and all energy peaks retained. This is a selection criterion, not a stability tolerance.",
+  "durationMyr": 200,
+  "cadenceMyr": 5,
+  "dt": 0.05,
+  "epsilon": 0.1,
+  "qualification": "Same integration step and physics. Direct Float64 energy every5Myr for the selected comparison; this does not bound unsampled short energy excursions. No1Gyr run authorized by this numerical selection alone."
+}

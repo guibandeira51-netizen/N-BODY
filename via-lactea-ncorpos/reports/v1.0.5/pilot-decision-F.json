@@ -1,0 +1,39 @@
+{
+  "family": "F",
+  "UTC": "2026-10-17T01:36:16.842Z",
+  "pilot": "F-b2026-h2026-pilot-F",
+  "n": 169546,
+  "durationMyr": 2,
+  "timing": {
+    "initializeSeconds": 0.1948800000026822,
+    "forceBatch32Seconds": 3.6467649999931453,
+    "stepSeconds": 4.75017499999702,
+    "readbackSeconds": 0.8046899999976158,
+    "diagnosticSeconds": 35.3543599999994,
+    "energySeconds": 32.48665500000119,
+    "structureSeconds": 2.867695000007749
+  },
+  "resources": {
+    "admissible": true,
+    "reasons": [],
+    "budgetBytes": 1073741824,
+    "estimate": {
+      "n": 169546,
+      "cpuStateBytes": 13733226,
+      "cpuCopies": 2,
+      "cpuScratchBytes": 5425472,
+      "gpuResidentBytes": 8138240,
+      "readbackBytes": 8138208,
+      "barnesHutBytes": 0,
+      "perStorageBufferBytes": 2712736,
+      "estimatedBytes": 49168372,
+      "approximate": true,
+      "includes": "duas cópias de estado CPU por padrão, packing f32, três buffers GPU, staging opcional; árvore BH estimada",
+      "excludes": "driver, canvas, navegador, fragmentação e outras aplicações"
+    }
+  },
+  "estimated200Seconds": 728.3256599997505,
+  "estimated1000Seconds": 3592.6367266654,
+  "admitted200": true,
+  "qualification": "Extrapolated pilot costs, not measured long runs. 32-force warm batch excluded. Must recheck actual force references before accepting precision. Memory is allocated/estimated buffers, not measured total VRAM. Scientific stationarity is not inferred from a2Myr pilot."
+}

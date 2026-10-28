@@ -1,0 +1,104 @@
+{
+  "schema": "direct-wide-target-chunk-validation-v1",
+  "createdUTC": "2026-10-21T16:15:06.290Z",
+  "results": [
+    {
+      "file": "reports/halo-5gyr/initial-halo-x16.bin.gz",
+      "n": 232033,
+      "steps": 10,
+      "timings": {
+        "original": 2577.0299999993294,
+        "wideChunk65536": 3347.9399999994785
+      },
+      "comparisons": {
+        "initial": {
+          "positions": {
+            "unequal": 0,
+            "maxAbsolute": 0
+          },
+          "velocities": {
+            "unequal": 0,
+            "maxAbsolute": 0
+          },
+          "masses": {
+            "unequal": 0,
+            "maxAbsolute": 0
+          },
+          "accelerations": {
+            "unequal": 0,
+            "maxAbsolute": 0
+          }
+        },
+        "final": {
+          "positions": {
+            "unequal": 0,
+            "maxAbsolute": 0
+          },
+          "velocities": {
+            "unequal": 0,
+            "maxAbsolute": 0
+          },
+          "masses": {
+            "unequal": 0,
+            "maxAbsolute": 0
+          },
+          "accelerations": {
+            "unequal": 0,
+            "maxAbsolute": 0
+          }
+        }
+      },
+      "bitwiseEqual": true
+    },
+    {
+      "file": "reports/halo-5gyr/state-halo-x8-s50000-2026-10-21T16-09-45-098Z.bin.gz",
+      "n": 125961,
+      "steps": 10,
+      "timings": {
+        "original": 973.3849999997765,
+        "wideChunk65536": 1325.7350000012666
+      },
+      "comparisons": {
+        "initial": {
+          "positions": {
+            "unequal": 0,
+            "maxAbsolute": 0
+          },
+          "velocities": {
+            "unequal": 0,
+            "maxAbsolute": 0
+          },
+          "masses": {
+            "unequal": 0,
+            "maxAbsolute": 0
+          },
+          "accelerations": {
+            "unequal": 0,
+            "maxAbsolute": 0
+          }
+        },
+        "final": {
+          "positions": {
+            "unequal": 0,
+            "maxAbsolute": 0
+          },
+          "velocities": {
+            "unequal": 0,
+            "maxAbsolute": 0
+          },
+          "masses": {
+            "unequal": 0,
+            "maxAbsolute": 0
+          },
+          "accelerations": {
+            "unequal": 0,
+            "maxAbsolute": 0
+          }
+        }
+      },
+      "bitwiseEqual": true
+    }
+  ],
+  "bitwiseEqual": true,
+  "qualification": "Scheduling experiment only, actual initial refined and evolved states. Timings include competition with a running independent GPU simulation; not an isolated hardware benchmark."
+}

@@ -1,0 +1,241 @@
+{
+  "schema": "equilibrium-state-export-audit-v1",
+  "checks": [
+    {
+      "id": "calibrated-A-10k",
+      "file": "calibrated-A-10k.json",
+      "sha256": "6448f8dd3120a6d067f6e50c2da9052dddc69596c06c9441317abab44662cdb3",
+      "checkpoints": [
+        {
+          "timeMyr": 0,
+          "n": 10000,
+          "recomputedThicknessDispersionRadiiAndCohorts": true
+        },
+        {
+          "timeMyr": 20,
+          "n": 10000,
+          "recomputedThicknessDispersionRadiiAndCohorts": true
+        },
+        {
+          "timeMyr": 200,
+          "n": 10000,
+          "recomputedThicknessDispersionRadiiAndCohorts": true
+        },
+        {
+          "timeMyr": 1000,
+          "n": 10000,
+          "recomputedThicknessDispersionRadiiAndCohorts": true
+        }
+      ]
+    },
+    {
+      "id": "calibrated-A-50k",
+      "file": "calibrated-A-50k.json",
+      "sha256": "54a9c5b7c3489a93e9df1b42921b789001881aadd89cbe490a344cdb9ed850d5",
+      "checkpoints": [
+        {
+          "timeMyr": 0,
+          "n": 50000,
+          "recomputedThicknessDispersionRadiiAndCohorts": true
+        },
+        {
+          "timeMyr": 20,
+          "n": 50000,
+          "recomputedThicknessDispersionRadiiAndCohorts": true
+        },
+        {
+          "timeMyr": 200,
+          "n": 50000,
+          "recomputedThicknessDispersionRadiiAndCohorts": true
+        }
+      ]
+    },
+    {
+      "id": "calibrated-A-s27",
+      "file": "calibrated-A-s27.json",
+      "sha256": "b27243b77ebf414b800c4a0d3bf1f32659289bb8080d79309bf2dae7e9af7f42",
+      "checkpoints": [
+        {
+          "timeMyr": 0,
+          "n": 10000,
+          "recomputedThicknessDispersionRadiiAndCohorts": true
+        },
+        {
+          "timeMyr": 20,
+          "n": 10000,
+          "recomputedThicknessDispersionRadiiAndCohorts": true
+        },
+        {
+          "timeMyr": 200,
+          "n": 10000,
+          "recomputedThicknessDispersionRadiiAndCohorts": true
+        }
+      ]
+    },
+    {
+      "id": "calibrated-B-14k",
+      "file": "calibrated-B-14k.json",
+      "sha256": "59385180fb6ce2cbfabe6ed227f5d623d67b8a9fb7d1b8592210159c2296e447",
+      "checkpoints": [
+        {
+          "timeMyr": 0,
+          "n": 14000,
+          "recomputedThicknessDispersionRadiiAndCohorts": true
+        },
+        {
+          "timeMyr": 20,
+          "n": 14000,
+          "recomputedThicknessDispersionRadiiAndCohorts": true
+        },
+        {
+          "timeMyr": 200,
+          "n": 14000,
+          "recomputedThicknessDispersionRadiiAndCohorts": true
+        },
+        {
+          "timeMyr": 1000,
+          "n": 14000,
+          "recomputedThicknessDispersionRadiiAndCohorts": true
+        }
+      ]
+    },
+    {
+      "id": "calibrated-B-26k",
+      "file": "calibrated-B-26k.json",
+      "sha256": "46459dddf4f7d7393099c86a6423784ffa1df5a2b308d61d8ce5ea38668662bc",
+      "checkpoints": [
+        {
+          "timeMyr": 0,
+          "n": 26000,
+          "recomputedThicknessDispersionRadiiAndCohorts": true
+        },
+        {
+          "timeMyr": 20,
+          "n": 26000,
+          "recomputedThicknessDispersionRadiiAndCohorts": true
+        },
+        {
+          "timeMyr": 200,
+          "n": 26000,
+          "recomputedThicknessDispersionRadiiAndCohorts": true
+        }
+      ]
+    },
+    {
+      "id": "calibrated-dt-half",
+      "file": "calibrated-dt-half.json",
+      "sha256": "7f0d912219e73807f006def4333150db4b5243e31f77caea1bc02c6f29ab5951",
+      "checkpoints": [
+        {
+          "timeMyr": 0,
+          "n": 10000,
+          "recomputedThicknessDispersionRadiiAndCohorts": true
+        },
+        {
+          "timeMyr": 20,
+          "n": 10000,
+          "recomputedThicknessDispersionRadiiAndCohorts": true
+        },
+        {
+          "timeMyr": 200,
+          "n": 10000,
+          "recomputedThicknessDispersionRadiiAndCohorts": true
+        }
+      ]
+    },
+    {
+      "id": "calibrated-epsilon-double",
+      "file": "calibrated-epsilon-double.json",
+      "sha256": "88436ab2e3a93ee0128018620b42d826254ed4fee923008e9dc41ed09acd2e0e",
+      "checkpoints": [
+        {
+          "timeMyr": 0,
+          "n": 10000,
+          "recomputedThicknessDispersionRadiiAndCohorts": true
+        },
+        {
+          "timeMyr": 20,
+          "n": 10000,
+          "recomputedThicknessDispersionRadiiAndCohorts": true
+        },
+        {
+          "timeMyr": 200,
+          "n": 10000,
+          "recomputedThicknessDispersionRadiiAndCohorts": true
+        }
+      ]
+    },
+    {
+      "id": "calibrated-epsilon-half",
+      "file": "calibrated-epsilon-half.json",
+      "sha256": "1ee1c2bcbca1a9f343e9f59e1e1f4698e3addb0213a23216674b2322addc200a",
+      "checkpoints": [
+        {
+          "timeMyr": 0,
+          "n": 10000,
+          "recomputedThicknessDispersionRadiiAndCohorts": true
+        },
+        {
+          "timeMyr": 20,
+          "n": 10000,
+          "recomputedThicknessDispersionRadiiAndCohorts": true
+        },
+        {
+          "timeMyr": 200,
+          "n": 10000,
+          "recomputedThicknessDispersionRadiiAndCohorts": true
+        }
+      ]
+    },
+    {
+      "id": "calibrated-fixed",
+      "file": "calibrated-fixed.json",
+      "sha256": "3b68787eb62ac482ba7d778940683668bac90e32921441c7b3623502378bb7c4",
+      "checkpoints": [
+        {
+          "timeMyr": 0,
+          "n": 6000,
+          "recomputedThicknessDispersionRadiiAndCohorts": true
+        },
+        {
+          "timeMyr": 20,
+          "n": 6000,
+          "recomputedThicknessDispersionRadiiAndCohorts": true
+        },
+        {
+          "timeMyr": 200,
+          "n": 6000,
+          "recomputedThicknessDispersionRadiiAndCohorts": true
+        },
+        {
+          "timeMyr": 1000,
+          "n": 6000,
+          "recomputedThicknessDispersionRadiiAndCohorts": true
+        }
+      ]
+    },
+    {
+      "id": "calibrated-gaussian-same-density",
+      "file": "calibrated-gaussian-same-density.json",
+      "sha256": "14d8f7d1b486e219a71e9f8cab31d7747ce73de9499482dec9772f65bbefd499",
+      "checkpoints": [
+        {
+          "timeMyr": 0,
+          "n": 10000,
+          "recomputedThicknessDispersionRadiiAndCohorts": true
+        },
+        {
+          "timeMyr": 20,
+          "n": 10000,
+          "recomputedThicknessDispersionRadiiAndCohorts": true
+        },
+        {
+          "timeMyr": 200,
+          "n": 10000,
+          "recomputedThicknessDispersionRadiiAndCohorts": true
+        }
+      ]
+    }
+  ],
+  "qualification": "Recomputation verifies serialized states against measured diagnostics. It does not certify physical equilibrium."
+}

@@ -1,0 +1,23 @@
+{
+  "schema": "equilibrium-protocol-v1",
+  "createdBeforeEvolution": true,
+  "status": "planned",
+  "default": {"dt": 0.1, "epsilon": 0.1, "theta": 0.5, "cadenceMyr": 5},
+  "epochsMyr": [0,20,200,1000],
+  "runs": [
+    {"id":"legacy-10k", "kind":"legacy", "n":10000,"seed":2026,"duration":1000},
+    {"id":"df-A-10k", "nb":1500,"nd":4500,"nh":4000,"seed":2026,"haloSeed":2026,"duration":1000},
+    {"id":"df-B-14k", "nb":1500,"nd":4500,"nh":8000,"seed":2026,"haloSeed":2026,"duration":1000},
+    {"id":"df-B-26k", "nb":1500,"nd":4500,"nh":20000,"seed":2026,"haloSeed":2026,"duration":200},
+    {"id":"df-A-h27", "nb":1500,"nd":4500,"nh":4000,"seed":2026,"haloSeed":2027,"duration":1000},
+    {"id":"df-A-s27", "nb":1500,"nd":4500,"nh":4000,"seed":2027,"haloSeed":2027,"duration":200},
+    {"id":"df-fixed", "nb":1500,"nd":4500,"nh":4000,"seed":2026,"haloSeed":2026,"haloMode":"fixed-axisymmetric","duration":1000},
+    {"id":"df-A-50k", "nb":7500,"nd":22500,"nh":20000,"seed":2026,"haloSeed":2026,"duration":200},
+    {"id":"df-dt-half", "nb":1500,"nd":4500,"nh":4000,"seed":2026,"haloSeed":2026,"dt":0.05,"duration":200},
+    {"id":"df-epsilon-half", "nb":1500,"nd":4500,"nh":4000,"seed":2026,"haloSeed":2026,"epsilon":0.05,"duration":200},
+    {"id":"df-epsilon-double", "nb":1500,"nd":4500,"nh":4000,"seed":2026,"haloSeed":2026,"epsilon":0.2,"duration":200},
+    {"id":"gaussian-same-density", "kind":"gaussian-control", "nb":1500,"nd":4500,"nh":4000,"seed":2026,"haloSeed":2026,"duration":200}
+  ],
+  "additionalChecks": ["same initial stellar bytes across halo resolution/seed", "initial Plummer direct f64 versus GPU f32 and BH theta 0.5/0.25 on force targets", "short KDK CPU f64 versus GPU f32 for same physical snapshot", "continuum frozen total-potential orbit control at 20,200,1000 Myr", "SCM force convergence and finite DF/sample mass audit", "axisymmetric frozen-halo interpolation and energy gradient consistency"],
+  "interpretation": "No universal percent-expansion acceptance. Report resolution sensitivity and confidence limits; unit tests do not certify equilibrium. Candidate profile/mass changes prevent attributing legacy-to-DF differences to initialization alone. Fixed unsoftened mean halo changes discreteness, response and smoothing relative to live Plummer particles."
+}

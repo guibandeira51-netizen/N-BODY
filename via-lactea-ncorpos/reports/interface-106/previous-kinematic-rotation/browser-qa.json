@@ -1,0 +1,39 @@
+{
+  "UTC": "2026-10-17T06:13:36.499051+00:00",
+  "status": "passed",
+  "scope": "Three live measured diagnostics in user-selected simulator layout",
+  "removedBlocks": [
+    "laboratory",
+    "review downloads",
+    "version 1.0.1",
+    "technical footer"
+  ],
+  "liveCharts": [
+    "thickness",
+    "signed relative energy",
+    "initial/current mean rotation and initial circular reference"
+  ],
+  "cpu": {
+    "N": 1000,
+    "force": "direct Float64",
+    "dtMyr": 0.05,
+    "lastEpochMyr": 197.8,
+    "measuredStates": 17,
+    "updatedWhileRunning": true
+  },
+  "reset": {
+    "timeMyr": 0,
+    "samples": 1,
+    "energyBaselineReset": true
+  },
+  "gpu": {
+    "N": 1000,
+    "force": "direct Float32",
+    "dtMyr": 0.05,
+    "lastEpochMyr": 48.45,
+    "samples": 2,
+    "consoleErrors": []
+  },
+  "newScientificNBodyCampaigns": 0,
+  "qualification": "Functional UI checks at distinct epochs, not equilibrium or CPU/GPU precision comparisons"
+}

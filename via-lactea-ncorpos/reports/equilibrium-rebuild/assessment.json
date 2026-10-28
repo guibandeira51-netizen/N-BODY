@@ -1,0 +1,959 @@
+{
+  "schema": "equilibrium-rebuild-assessment-v1",
+  "createdUTC": "2026-10-21T04:13:26.118Z",
+  "equilibriumValidated": false,
+  "promotedToProduction": false,
+  "cpuRuns": 34,
+  "gpuRuns": 4,
+  "selectedLibrary": {
+    "id": "orbits-1024-s44-p8-2026-10-21T03-42-28-070Z",
+    "path": "reports/equilibrium-rebuild/orbits-1024-s44-p8-2026-10-21T03-42-28-070Z",
+    "library": "reports/equilibrium-rebuild/orbits-1024-s44-p8-2026-10-21T03-42-28-070Z/library.json",
+    "sha256": "425e78d31d701d7c1c91e8b10e8fcf1757dd9278e0232fb79fc31ea97b320737"
+  },
+  "fieldAudit": {
+    "id": "2026-10-21T03-39-56-668Z",
+    "path": "reports/equilibrium-rebuild/2026-10-21T03-39-56-668Z",
+    "field": "reports/equilibrium-rebuild/2026-10-21T03-39-56-668Z/field-grid.json",
+    "sha256": "5e9b383d8d6fc48bf2d168ef23bc3fbe0afe5a596395605c16e3f9a7f9b72c12",
+    "audit": "reports/equilibrium-rebuild/2026-10-21T03-39-56-668Z/field-audit.json"
+  },
+  "fieldErrors": {
+    "quadrature": 0.0010087410084535602,
+    "grid": 0.00011021216707868419
+  },
+  "haloTail": {
+    "haloOuterRadiusKpc": 247.95095842704154,
+    "weightedOrbitPhaseMassFractionBeyondHaloOuterRadius": 0.004868710721894252,
+    "targetMassFractionBeyondOuterRadius": 0,
+    "qualification": "Independent spherical-boundary diagnostic not included explicitly in the coarse cylindrical training bins; nonzero support cannot certify the exact truncated target. No particle was clipped."
+  },
+  "libraries": [
+    {
+      "id": "orbits-1024-s44-p8-2026-10-21T03-42-28-070Z",
+      "seed": 44,
+      "wallMs": 110631.0507,
+      "numerics": {
+        "perComponent": 1024,
+        "uniqueProposals": 512,
+        "orbitEnergyGoal": 0.00001,
+        "maximumSteps": 65536,
+        "phases": 512,
+        "duration": "8 equatorial circular periods at each initial spherical radius; no claim that this mixes all orbits",
+        "periods": 8,
+        "targetSamples": 100000,
+        "fit": "KL density merit, 500 multiplicative iterations; no kinematic closure imposed"
+      },
+      "components": [
+        {
+          "component": 0,
+          "orbits": 487,
+          "attempted": 512,
+          "effectiveOrbits": 345.88988126336824,
+          "trainingL1": 0.01667044152009642,
+          "heldL1": 0.05373768956608757,
+          "targetNoiseL1": 0.027320000000002957,
+          "halfDifferenceL1": 0.0386510476616188
+        },
+        {
+          "component": 1,
+          "orbits": 511,
+          "attempted": 512,
+          "effectiveOrbits": 379.00489213884924,
+          "trainingL1": 0.020684768894766132,
+          "heldL1": 0.04173639081819184,
+          "targetNoiseL1": 0.02716000000000217,
+          "halfDifferenceL1": 0.012168158234956993
+        },
+        {
+          "component": 2,
+          "orbits": 323,
+          "attempted": 512,
+          "effectiveOrbits": 187.41457150276102,
+          "trainingL1": 0.00611955659786474,
+          "heldL1": 0.05066663597845185,
+          "targetNoiseL1": 0.02449999999999666,
+          "halfDifferenceL1": 0.04583010579276565
+        }
+      ]
+    },
+    {
+      "id": "orbits-128-s42-2026-10-21T03-41-01-427Z",
+      "seed": 42,
+      "wallMs": 844.6645000000001,
+      "numerics": {
+        "perComponent": 128,
+        "uniqueProposals": 64,
+        "orbitEnergyGoal": 0.00001,
+        "maximumSteps": 16384,
+        "phases": 128,
+        "duration": "four equatorial circular periods at each initial spherical radius; no claim that this mixes all orbits",
+        "targetSamples": 100000,
+        "fit": "KL density merit, 500 multiplicative iterations; no kinematic closure imposed"
+      },
+      "components": [
+        {
+          "component": 0,
+          "orbits": 60,
+          "attempted": 64,
+          "effectiveOrbits": 22.15203305089653,
+          "trainingL1": 0.14313648871472354,
+          "heldL1": 0.1861051067716893,
+          "targetNoiseL1": 0.027320000000002957,
+          "halfDifferenceL1": 0.14277137806742976
+        },
+        {
+          "component": 1,
+          "orbits": 64,
+          "attempted": 64,
+          "effectiveOrbits": 15.347674538560106,
+          "trainingL1": 0.1804969938217729,
+          "heldL1": 0.22682091288355535,
+          "targetNoiseL1": 0.02716000000000217,
+          "halfDifferenceL1": 0.09789502156344143
+        },
+        {
+          "component": 2,
+          "orbits": 27,
+          "attempted": 64,
+          "effectiveOrbits": 15.209728852550132,
+          "trainingL1": 0.11034349079453662,
+          "heldL1": 0.2829744045718871,
+          "targetNoiseL1": 0.02449999999999666,
+          "halfDifferenceL1": 0.267354468064458
+        }
+      ]
+    },
+    {
+      "id": "orbits-512-s43-p4-2026-10-21T03-41-41-171Z",
+      "seed": 43,
+      "wallMs": 5718.087799999999,
+      "numerics": {
+        "perComponent": 512,
+        "uniqueProposals": 256,
+        "orbitEnergyGoal": 0.00001,
+        "maximumSteps": 65536,
+        "phases": 512,
+        "duration": "4 equatorial circular periods at each initial spherical radius; no claim that this mixes all orbits",
+        "periods": 4,
+        "targetSamples": 100000,
+        "fit": "KL density merit, 500 multiplicative iterations; no kinematic closure imposed"
+      },
+      "components": [
+        {
+          "component": 0,
+          "orbits": 242,
+          "attempted": 256,
+          "effectiveOrbits": 110.13430642369991,
+          "trainingL1": 0.043257210728390075,
+          "heldL1": 0.08896807976680757,
+          "targetNoiseL1": 0.027320000000002957,
+          "halfDifferenceL1": 0.05592426680019163
+        },
+        {
+          "component": 1,
+          "orbits": 256,
+          "attempted": 256,
+          "effectiveOrbits": 102.04317854936896,
+          "trainingL1": 0.03949157265140943,
+          "heldL1": 0.06846679856618548,
+          "targetNoiseL1": 0.02716000000000217,
+          "halfDifferenceL1": 0.03186460819850934
+        },
+        {
+          "component": 2,
+          "orbits": 191,
+          "attempted": 256,
+          "effectiveOrbits": 102.73325654865715,
+          "trainingL1": 0.007763154963739933,
+          "heldL1": 0.07159820671101338,
+          "targetNoiseL1": 0.02449999999999666,
+          "halfDifferenceL1": 0.0705107637749365
+        }
+      ]
+    },
+    {
+      "id": "orbits-512-s43-p8-2026-10-21T03-42-19-346Z",
+      "seed": 43,
+      "wallMs": 7851.9626,
+      "numerics": {
+        "perComponent": 512,
+        "uniqueProposals": 256,
+        "orbitEnergyGoal": 0.00001,
+        "maximumSteps": 65536,
+        "phases": 512,
+        "duration": "8 equatorial circular periods at each initial spherical radius; no claim that this mixes all orbits",
+        "periods": 8,
+        "targetSamples": 100000,
+        "fit": "KL density merit, 500 multiplicative iterations; no kinematic closure imposed"
+      },
+      "components": [
+        {
+          "component": 0,
+          "orbits": 236,
+          "attempted": 256,
+          "effectiveOrbits": 105.0050695110751,
+          "trainingL1": 0.045280113448800965,
+          "heldL1": 0.07587047451147691,
+          "targetNoiseL1": 0.027320000000002957,
+          "halfDifferenceL1": 0.04902105663794369
+        },
+        {
+          "component": 1,
+          "orbits": 256,
+          "attempted": 256,
+          "effectiveOrbits": 116.00758955431458,
+          "trainingL1": 0.03948075921475992,
+          "heldL1": 0.06070224389384488,
+          "targetNoiseL1": 0.02716000000000217,
+          "halfDifferenceL1": 0.02200775589512718
+        },
+        {
+          "component": 2,
+          "orbits": 152,
+          "attempted": 256,
+          "effectiveOrbits": 90.43753900251663,
+          "trainingL1": 0.008849205922926583,
+          "heldL1": 0.06503792914504364,
+          "targetNoiseL1": 0.02449999999999666,
+          "halfDifferenceL1": 0.06248348841713903
+        }
+      ]
+    }
+  ],
+  "runs": [
+    {
+      "id": "legacy-fixed-total-c60-180-160-s2026-dt0.1-t200",
+      "file": "legacy-fixed-total-c60-180-160-s2026-dt0.1-t200.json",
+      "config": {
+        "seed": 2026,
+        "generator": "legacy",
+        "control": "fixed-total",
+        "counts": [
+          60,
+          180,
+          160
+        ],
+        "dt": 0.1,
+        "duration": 200,
+        "stride": 10
+      },
+      "wallMs": 12423.8737,
+      "initialH50": 0.2324855209890173,
+      "finalH50": 0.1905025736922644,
+      "maxSampledEnergyPercent": 0.00007667604049537517
+    },
+    {
+      "id": "legacy-disk-live-c60-180-160-s2026-dt0.1-t200",
+      "file": "legacy-disk-live-c60-180-160-s2026-dt0.1-t200.json",
+      "config": {
+        "seed": 2026,
+        "generator": "legacy",
+        "control": "disk-live",
+        "counts": [
+          60,
+          180,
+          160
+        ],
+        "dt": 0.1,
+        "duration": 200,
+        "stride": 10
+      },
+      "wallMs": 531.4603000000006,
+      "initialH50": 0.2324855209890173,
+      "finalH50": 0.3338709223100163,
+      "maxSampledEnergyPercent": 0.0021591057222843948
+    },
+    {
+      "id": "legacy-all-live-c60-180-160-s2026-dt0.1-t200",
+      "file": "legacy-all-live-c60-180-160-s2026-dt0.1-t200.json",
+      "config": {
+        "seed": 2026,
+        "generator": "legacy",
+        "control": "all-live",
+        "counts": [
+          60,
+          180,
+          160
+        ],
+        "dt": 0.1,
+        "duration": 200,
+        "stride": 10
+      },
+      "wallMs": 1359.9941999999992,
+      "initialH50": 0.2324855209890173,
+      "finalH50": 2.414987568330355,
+      "maxSampledEnergyPercent": 0.422205927941678
+    },
+    {
+      "id": "candidate-fixed-total-c60-180-160-s2026-dt0.1-t200",
+      "file": "candidate-fixed-total-c60-180-160-s2026-dt0.1-t200.json",
+      "config": {
+        "seed": 2026,
+        "generator": "candidate",
+        "control": "fixed-total",
+        "counts": [
+          60,
+          180,
+          160
+        ],
+        "dt": 0.1,
+        "duration": 200,
+        "stride": 10
+      },
+      "wallMs": 306.9940000000006,
+      "initialH50": 0.17908872813532034,
+      "finalH50": 0.17010046143114846,
+      "maxSampledEnergyPercent": 0.00016595958176949038
+    },
+    {
+      "id": "candidate-disk-live-c60-180-160-s2026-dt0.1-t200",
+      "file": "candidate-disk-live-c60-180-160-s2026-dt0.1-t200.json",
+      "config": {
+        "seed": 2026,
+        "generator": "candidate",
+        "control": "disk-live",
+        "counts": [
+          60,
+          180,
+          160
+        ],
+        "dt": 0.1,
+        "duration": 200,
+        "stride": 10
+      },
+      "wallMs": 469.3035,
+      "initialH50": 0.17908872813532034,
+      "finalH50": 0.4334274492424462,
+      "maxSampledEnergyPercent": 0.0030760975192981508
+    },
+    {
+      "id": "candidate-all-live-c60-180-160-s2026-dt0.1-t200",
+      "file": "candidate-all-live-c60-180-160-s2026-dt0.1-t200.json",
+      "config": {
+        "seed": 2026,
+        "generator": "candidate",
+        "control": "all-live",
+        "counts": [
+          60,
+          180,
+          160
+        ],
+        "dt": 0.1,
+        "duration": 200,
+        "stride": 10
+      },
+      "wallMs": 1321.4675000000007,
+      "initialH50": 0.17908872813532034,
+      "finalH50": 1.4665655268701259,
+      "maxSampledEnergyPercent": 0.39846834446589374
+    },
+    {
+      "id": "legacy-fixed-total-c60-180-160-s2027-dt0.1-t200",
+      "file": "legacy-fixed-total-c60-180-160-s2027-dt0.1-t200.json",
+      "config": {
+        "seed": 2027,
+        "generator": "legacy",
+        "control": "fixed-total",
+        "counts": [
+          60,
+          180,
+          160
+        ],
+        "dt": 0.1,
+        "duration": 200,
+        "stride": 10
+      },
+      "wallMs": 11795.39,
+      "initialH50": 0.18609194658501044,
+      "finalH50": 0.17439897130246584,
+      "maxSampledEnergyPercent": 0.000051412257503281185
+    },
+    {
+      "id": "legacy-disk-live-c60-180-160-s2027-dt0.1-t200",
+      "file": "legacy-disk-live-c60-180-160-s2027-dt0.1-t200.json",
+      "config": {
+        "seed": 2027,
+        "generator": "legacy",
+        "control": "disk-live",
+        "counts": [
+          60,
+          180,
+          160
+        ],
+        "dt": 0.1,
+        "duration": 200,
+        "stride": 10
+      },
+      "wallMs": 8206.062799999996,
+      "initialH50": 0.18609194658501044,
+      "finalH50": 0.42295895143938067,
+      "maxSampledEnergyPercent": 0.0031510878108323447
+    },
+    {
+      "id": "legacy-all-live-c60-180-160-s2027-dt0.1-t200",
+      "file": "legacy-all-live-c60-180-160-s2027-dt0.1-t200.json",
+      "config": {
+        "seed": 2027,
+        "generator": "legacy",
+        "control": "all-live",
+        "counts": [
+          60,
+          180,
+          160
+        ],
+        "dt": 0.1,
+        "duration": 200,
+        "stride": 10
+      },
+      "wallMs": 1299.4910000000018,
+      "initialH50": 0.18609194658501044,
+      "finalH50": 2.5224825718603046,
+      "maxSampledEnergyPercent": 0.379991586514504
+    },
+    {
+      "id": "candidate-fixed-total-c60-180-160-s2027-dt0.1-t200",
+      "file": "candidate-fixed-total-c60-180-160-s2027-dt0.1-t200.json",
+      "config": {
+        "seed": 2027,
+        "generator": "candidate",
+        "control": "fixed-total",
+        "counts": [
+          60,
+          180,
+          160
+        ],
+        "dt": 0.1,
+        "duration": 200,
+        "stride": 10
+      },
+      "wallMs": 267.50180000000546,
+      "initialH50": 0.1646371676908921,
+      "finalH50": 0.17857995196414386,
+      "maxSampledEnergyPercent": 0.00003504983092965012
+    },
+    {
+      "id": "candidate-disk-live-c60-180-160-s2027-dt0.1-t200",
+      "file": "candidate-disk-live-c60-180-160-s2027-dt0.1-t200.json",
+      "config": {
+        "seed": 2027,
+        "generator": "candidate",
+        "control": "disk-live",
+        "counts": [
+          60,
+          180,
+          160
+        ],
+        "dt": 0.1,
+        "duration": 200,
+        "stride": 10
+      },
+      "wallMs": 413.5965999999971,
+      "initialH50": 0.1646371676908921,
+      "finalH50": 0.41588509595285317,
+      "maxSampledEnergyPercent": 0.0017337304357999074
+    },
+    {
+      "id": "candidate-all-live-c60-180-160-s2027-dt0.1-t200",
+      "file": "candidate-all-live-c60-180-160-s2027-dt0.1-t200.json",
+      "config": {
+        "seed": 2027,
+        "generator": "candidate",
+        "control": "all-live",
+        "counts": [
+          60,
+          180,
+          160
+        ],
+        "dt": 0.1,
+        "duration": 200,
+        "stride": 10
+      },
+      "wallMs": 1320.0071000000025,
+      "initialH50": 0.1646371676908921,
+      "finalH50": 2.740205517625457,
+      "maxSampledEnergyPercent": 0.24075749456087644
+    },
+    {
+      "id": "legacy-fixed-total-c60-180-160-s2028-dt0.1-t200",
+      "file": "legacy-fixed-total-c60-180-160-s2028-dt0.1-t200.json",
+      "config": {
+        "seed": 2028,
+        "generator": "legacy",
+        "control": "fixed-total",
+        "counts": [
+          60,
+          180,
+          160
+        ],
+        "dt": 0.1,
+        "duration": 200,
+        "stride": 10
+      },
+      "wallMs": 11875.329099999995,
+      "initialH50": 0.13011153392091362,
+      "finalH50": 0.17184683847474175,
+      "maxSampledEnergyPercent": 0.00006607505097350018
+    },
+    {
+      "id": "legacy-disk-live-c60-180-160-s2028-dt0.1-t200",
+      "file": "legacy-disk-live-c60-180-160-s2028-dt0.1-t200.json",
+      "config": {
+        "seed": 2028,
+        "generator": "legacy",
+        "control": "disk-live",
+        "counts": [
+          60,
+          180,
+          160
+        ],
+        "dt": 0.1,
+        "duration": 200,
+        "stride": 10
+      },
+      "wallMs": 8333.076799999995,
+      "initialH50": 0.13011153392091362,
+      "finalH50": 0.4033608197812656,
+      "maxSampledEnergyPercent": 0.0018544320475609968
+    },
+    {
+      "id": "legacy-all-live-c60-180-160-s2028-dt0.1-t200",
+      "file": "legacy-all-live-c60-180-160-s2028-dt0.1-t200.json",
+      "config": {
+        "seed": 2028,
+        "generator": "legacy",
+        "control": "all-live",
+        "counts": [
+          60,
+          180,
+          160
+        ],
+        "dt": 0.1,
+        "duration": 200,
+        "stride": 10
+      },
+      "wallMs": 1266.4628000000012,
+      "initialH50": 0.13011153392091362,
+      "finalH50": 3.560702496374217,
+      "maxSampledEnergyPercent": 0.5720692386110835
+    },
+    {
+      "id": "candidate-fixed-total-c60-180-160-s2028-dt0.1-t200",
+      "file": "candidate-fixed-total-c60-180-160-s2028-dt0.1-t200.json",
+      "config": {
+        "seed": 2028,
+        "generator": "candidate",
+        "control": "fixed-total",
+        "counts": [
+          60,
+          180,
+          160
+        ],
+        "dt": 0.1,
+        "duration": 200,
+        "stride": 10
+      },
+      "wallMs": 257.50679999999556,
+      "initialH50": 0.13870278347972914,
+      "finalH50": 0.18393255620545657,
+      "maxSampledEnergyPercent": 0.00004847553455701657
+    },
+    {
+      "id": "candidate-disk-live-c60-180-160-s2028-dt0.1-t200",
+      "file": "candidate-disk-live-c60-180-160-s2028-dt0.1-t200.json",
+      "config": {
+        "seed": 2028,
+        "generator": "candidate",
+        "control": "disk-live",
+        "counts": [
+          60,
+          180,
+          160
+        ],
+        "dt": 0.1,
+        "duration": 200,
+        "stride": 10
+      },
+      "wallMs": 384.7698999999993,
+      "initialH50": 0.13870278347972914,
+      "finalH50": 0.41987255150058983,
+      "maxSampledEnergyPercent": 0.0014032018340749582
+    },
+    {
+      "id": "candidate-all-live-c60-180-160-s2028-dt0.1-t200",
+      "file": "candidate-all-live-c60-180-160-s2028-dt0.1-t200.json",
+      "config": {
+        "seed": 2028,
+        "generator": "candidate",
+        "control": "all-live",
+        "counts": [
+          60,
+          180,
+          160
+        ],
+        "dt": 0.1,
+        "duration": 200,
+        "stride": 10
+      },
+      "wallMs": 1288.3510000000024,
+      "initialH50": 0.13870278347972914,
+      "finalH50": 2.5958943602763895,
+      "maxSampledEnergyPercent": 0.5794333900528008
+    },
+    {
+      "id": "legacy-all-live-c60-180-160-s2026-dt0.05-t40",
+      "file": "legacy-all-live-c60-180-160-s2026-dt0.05-t40.json",
+      "config": {
+        "seed": 2026,
+        "generator": "legacy",
+        "control": "all-live",
+        "counts": [
+          60,
+          180,
+          160
+        ],
+        "dt": 0.05,
+        "duration": 40,
+        "stride": 2
+      },
+      "wallMs": 568.9391000000032,
+      "initialH50": 0.2324855209890173,
+      "finalH50": 0.9135430384685284,
+      "maxSampledEnergyPercent": 0.00392426255080777
+    },
+    {
+      "id": "legacy-all-live-c60-180-160-s2026-dt0.025-t40",
+      "file": "legacy-all-live-c60-180-160-s2026-dt0.025-t40.json",
+      "config": {
+        "seed": 2026,
+        "generator": "legacy",
+        "control": "all-live",
+        "counts": [
+          60,
+          180,
+          160
+        ],
+        "dt": 0.025,
+        "duration": 40,
+        "stride": 2
+      },
+      "wallMs": 1022.4424999999974,
+      "initialH50": 0.2324855209890173,
+      "finalH50": 0.9114050510245302,
+      "maxSampledEnergyPercent": 0.0009130349830328878
+    },
+    {
+      "id": "legacy-all-live-c120-360-320-s2026-dt0.1-t40",
+      "file": "legacy-all-live-c120-360-320-s2026-dt0.1-t40.json",
+      "config": {
+        "seed": 2026,
+        "generator": "legacy",
+        "control": "all-live",
+        "counts": [
+          120,
+          360,
+          320
+        ],
+        "dt": 0.1,
+        "duration": 40,
+        "stride": 2
+      },
+      "wallMs": 1260.311999999998,
+      "initialH50": 0.18851444520308308,
+      "finalH50": 0.4310665318275696,
+      "maxSampledEnergyPercent": 0.004789487009973206
+    },
+    {
+      "id": "legacy-all-live-c60-180-640-s2026-dt0.1-t40",
+      "file": "legacy-all-live-c60-180-640-s2026-dt0.1-t40.json",
+      "config": {
+        "seed": 2026,
+        "generator": "legacy",
+        "control": "all-live",
+        "counts": [
+          60,
+          180,
+          640
+        ],
+        "dt": 0.1,
+        "duration": 40,
+        "stride": 2
+      },
+      "wallMs": 1390.0980000000127,
+      "initialH50": 0.2324855209890173,
+      "finalH50": 0.40226455022845287,
+      "maxSampledEnergyPercent": 0.0025124648918154503
+    },
+    {
+      "id": "candidate-all-live-c60-180-160-s2026-dt0.05-t40",
+      "file": "candidate-all-live-c60-180-160-s2026-dt0.05-t40.json",
+      "config": {
+        "seed": 2026,
+        "generator": "candidate",
+        "control": "all-live",
+        "counts": [
+          60,
+          180,
+          160
+        ],
+        "dt": 0.05,
+        "duration": 40,
+        "stride": 2
+      },
+      "wallMs": 564.8757000000041,
+      "initialH50": 0.17908872813532034,
+      "finalH50": 0.5502640736965928,
+      "maxSampledEnergyPercent": 0.000259096869322697
+    },
+    {
+      "id": "candidate-all-live-c60-180-160-s2026-dt0.025-t40",
+      "file": "candidate-all-live-c60-180-160-s2026-dt0.025-t40.json",
+      "config": {
+        "seed": 2026,
+        "generator": "candidate",
+        "control": "all-live",
+        "counts": [
+          60,
+          180,
+          160
+        ],
+        "dt": 0.025,
+        "duration": 40,
+        "stride": 2
+      },
+      "wallMs": 1039.6363000000129,
+      "initialH50": 0.17908872813532034,
+      "finalH50": 0.5486692012371625,
+      "maxSampledEnergyPercent": 0.00006389169063822166
+    },
+    {
+      "id": "candidate-all-live-c120-360-320-s2026-dt0.1-t40",
+      "file": "candidate-all-live-c120-360-320-s2026-dt0.1-t40.json",
+      "config": {
+        "seed": 2026,
+        "generator": "candidate",
+        "control": "all-live",
+        "counts": [
+          120,
+          360,
+          320
+        ],
+        "dt": 0.1,
+        "duration": 40,
+        "stride": 2
+      },
+      "wallMs": 1330.4272000000055,
+      "initialH50": 0.15994248750135104,
+      "finalH50": 0.47208287154978007,
+      "maxSampledEnergyPercent": 0.00947901177107147
+    },
+    {
+      "id": "candidate-all-live-c60-180-640-s2026-dt0.1-t40",
+      "file": "candidate-all-live-c60-180-640-s2026-dt0.1-t40.json",
+      "config": {
+        "seed": 2026,
+        "generator": "candidate",
+        "control": "all-live",
+        "counts": [
+          60,
+          180,
+          640
+        ],
+        "dt": 0.1,
+        "duration": 40,
+        "stride": 2
+      },
+      "wallMs": 1397.9005000000034,
+      "initialH50": 0.17908872813532034,
+      "finalH50": 0.22764129677297879,
+      "maxSampledEnergyPercent": 0.0014267677555475592
+    },
+    {
+      "id": "legacy-all-live-c60-180-160-s2026-dt0.05-t200",
+      "file": "legacy-all-live-c60-180-160-s2026-dt0.05-t200.json",
+      "config": {
+        "seed": 2026,
+        "generator": "legacy",
+        "control": "all-live",
+        "counts": [
+          60,
+          180,
+          160
+        ],
+        "dt": 0.05,
+        "duration": 200,
+        "stride": 10
+      },
+      "wallMs": 3092.9981000000002,
+      "initialH50": 0.2324855209890173,
+      "finalH50": 3.0646149712382846,
+      "maxSampledEnergyPercent": 0.0017773597231588128
+    },
+    {
+      "id": "legacy-all-live-c60-180-160-s2026-dt0.025-t200",
+      "file": "legacy-all-live-c60-180-160-s2026-dt0.025-t200.json",
+      "config": {
+        "seed": 2026,
+        "generator": "legacy",
+        "control": "all-live",
+        "counts": [
+          60,
+          180,
+          160
+        ],
+        "dt": 0.025,
+        "duration": 200,
+        "stride": 10
+      },
+      "wallMs": 4937.3964000000005,
+      "initialH50": 0.2324855209890173,
+      "finalH50": 2.729561037973051,
+      "maxSampledEnergyPercent": 0.002150976251724844
+    },
+    {
+      "id": "candidate-all-live-c60-180-160-s2026-dt0.05-t200",
+      "file": "candidate-all-live-c60-180-160-s2026-dt0.05-t200.json",
+      "config": {
+        "seed": 2026,
+        "generator": "candidate",
+        "control": "all-live",
+        "counts": [
+          60,
+          180,
+          160
+        ],
+        "dt": 0.05,
+        "duration": 200,
+        "stride": 10
+      },
+      "wallMs": 2531.514799999999,
+      "initialH50": 0.17908872813532034,
+      "finalH50": 1.4022407000392296,
+      "maxSampledEnergyPercent": 0.008022007630475945
+    },
+    {
+      "id": "candidate-all-live-c60-180-160-s2026-dt0.025-t200",
+      "file": "candidate-all-live-c60-180-160-s2026-dt0.025-t200.json",
+      "config": {
+        "seed": 2026,
+        "generator": "candidate",
+        "control": "all-live",
+        "counts": [
+          60,
+          180,
+          160
+        ],
+        "dt": 0.025,
+        "duration": 200,
+        "stride": 10
+      },
+      "wallMs": 4765.291499999999,
+      "initialH50": 0.17908872813532034,
+      "finalH50": 1.8062724636036767,
+      "maxSampledEnergyPercent": 0.002074960330384356
+    },
+    {
+      "id": "candidate-all-live-c120-360-320-s2026-dt0.05-t200",
+      "file": "candidate-all-live-c120-360-320-s2026-dt0.05-t200.json",
+      "config": {
+        "seed": 2026,
+        "generator": "candidate",
+        "control": "all-live",
+        "counts": [
+          120,
+          360,
+          320
+        ],
+        "dt": 0.05,
+        "duration": 200,
+        "stride": 10
+      },
+      "wallMs": 9520.4595,
+      "initialH50": 0.15994248750135104,
+      "finalH50": 1.9445116674765774,
+      "maxSampledEnergyPercent": 0.0036568008731264787
+    },
+    {
+      "id": "candidate-all-live-c120-360-320-s2027-dt0.05-t200",
+      "file": "candidate-all-live-c120-360-320-s2027-dt0.05-t200.json",
+      "config": {
+        "seed": 2027,
+        "generator": "candidate",
+        "control": "all-live",
+        "counts": [
+          120,
+          360,
+          320
+        ],
+        "dt": 0.05,
+        "duration": 200,
+        "stride": 10
+      },
+      "wallMs": 9826.207900000001,
+      "initialH50": 0.19049445657139744,
+      "finalH50": 1.3408284660535639,
+      "maxSampledEnergyPercent": 0.010124467038504162
+    },
+    {
+      "id": "candidate-all-live-c120-360-320-s2028-dt0.05-t200",
+      "file": "candidate-all-live-c120-360-320-s2028-dt0.05-t200.json",
+      "config": {
+        "seed": 2028,
+        "generator": "candidate",
+        "control": "all-live",
+        "counts": [
+          120,
+          360,
+          320
+        ],
+        "dt": 0.05,
+        "duration": 200,
+        "stride": 10
+      },
+      "wallMs": 9414.268199999999,
+      "initialH50": 0.16593929252493173,
+      "finalH50": 1.7823482971324662,
+      "maxSampledEnergyPercent": 0.00792058343955533
+    },
+    {
+      "id": "candidate-all-live-c60-180-2560-s2026-dt0.05-t40",
+      "file": "candidate-all-live-c60-180-2560-s2026-dt0.05-t40.json",
+      "config": {
+        "seed": 2026,
+        "generator": "candidate",
+        "control": "all-live",
+        "counts": [
+          60,
+          180,
+          2560
+        ],
+        "dt": 0.05,
+        "duration": 40,
+        "stride": 2
+      },
+      "wallMs": 24424.542700000005,
+      "initialH50": 0.17908872813532034,
+      "finalH50": 0.22873391904491083,
+      "maxSampledEnergyPercent": 0.00017386631730697134
+    }
+  ],
+  "gates": {
+    "mass": "preserved per component",
+    "density": "pending: validation residual and nonzero halo mass beyond prescribed truncation",
+    "softenedField": "implemented; measured quadrature and interpolation residuals, no formal interval",
+    "stationarity": "pending: finite-orbit temporal-half differences and independent density residuals",
+    "liveStructure": "failed to demonstrate equilibrium in tested low-N controls",
+    "timeConvergence": "measured; finite-N encounter sensitivity and sampled maxima preclude blanket certification",
+    "resolution": "short N and halo refinements measured; no collisionless plateau",
+    "epsilonEvolution": "not executed: requires separate preparation, density gate already unresolved",
+    "longDuration": "not executed: short controls/density gates not satisfied",
+    "interface": "audited result selection only; no rejected candidate silently loaded in main simulator"
+  },
+  "sources": [
+    "https://arxiv.org/html/1402.1623v1",
+    "https://github.com/denisyurin/GALIC",
+    "https://arxiv.org/html/1802.08239v2",
+    "https://github.com/GalacticDynamics-Oxford/Agama/blob/master/py/example_self_consistent_model.py",
+    "https://arxiv.org/abs/1303.4919"
+  ]
+}

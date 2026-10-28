@@ -1,0 +1,30 @@
+{
+  "schema": "same-phase-G-continuum-104",
+  "rows": [
+    {
+      "id": "AG-thin4-s2026-t200",
+      "seed": 2026,
+      "thinGrowth": 0.5153815579577836,
+      "thickGrowth": 0.3187209609503805,
+      "maxAbsEnergyError": 1.1027380243880463e-10,
+      "analysisFile": "AG-thin4-s2026-t200-analysis.json"
+    },
+    {
+      "id": "AG-thin4-s2027-t200",
+      "seed": 2027,
+      "thinGrowth": 4.272893041295078,
+      "thickGrowth": -2.693413968748215,
+      "maxAbsEnergyError": 4.795603839201129e-11,
+      "analysisFile": "AG-thin4-s2027-t200-analysis.json"
+    },
+    {
+      "id": "AG-thin4-s2028-t200",
+      "seed": 2028,
+      "thinGrowth": 1.0380713910267847,
+      "thickGrowth": -8.19728609220891,
+      "maxAbsEnergyError": 4.265434743401457e-11,
+      "analysisFile": "AG-thin4-s2028-t200-analysis.json"
+    }
+  ],
+  "qualification": "Three newly integrated full-continuum controls; not GPU self-gravitating runs. Complete native trajectories included. Changes of collective response prevent interpreting live-minus-continuum as pure encounter heating."
+}
