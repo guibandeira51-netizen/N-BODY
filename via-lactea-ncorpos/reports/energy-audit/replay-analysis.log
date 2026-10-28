@@ -1,0 +1,9 @@
+theta 0 0.25
+theta 0 0.5
+theta 0 0.75
+theta 0 1
+theta 7 0.25
+theta 7 0.5
+theta 7 0.75
+theta 7 1
+{"exact":true,"maxDirectPercent":0.0001365554588738011,"lastDirectPercent":-0.00011462843919377231,"peak":{"time_Myr":1007.7000000000056,"n":80000,"steps":10077,"G":0.04498502239584923,"epsilonSquared":0.009999999776482582,"requestedDt":0.1,"effectiveDt":0.10000000149011612,"K":2.034168205930642,"U_direct":-3.894309851670252,"U_BH":-3.8935373277243137,"E_direct":-1.8601416457396098,"E_BH":-1.8593691217936716,"delta_direct_percent":-0.0001365554588738011,"delta_BH_effective_percent":0.01847177462899421,"delta_BH_historical_percent":0.01847194695721757,"deltaU":0.0007725239459381861,"relative_U_percent":0.01983724909836987,"estimator_change_common_scale_percent":0.018604095185214886,"fast_change_common_scale_percent":0.018467539726341083,"direct_cost_ms":3467.2099999999627,"BH_cost_ms":2986.475000000093,"angular_change_relative_scale":2.1782205037937295e-7,"kinetic_difference_original":0,"potential_difference_original":0,"stateSHA256":"fbcbe0e3f4a1b951686718948350fbb71d57f5fc7ec2c7fdb8ff00f64cc96ac8"},"wallMs":364993.93500000006}

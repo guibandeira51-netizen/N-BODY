@@ -1,0 +1,42 @@
+41 
+ 
+A escolha do número de partículas representa um compromisso entre 
+fidelidade física e custo computacional. Um maior valor de 𝑁 permite representar 
+de forma mais detalhada a estrutura da galáxia e reduzir os efeitos da 
+discretização, porém aumenta si gnificativamente o número de interações 
+gravitacionais a serem calculadas, cujo custo computacional cresce 
+aproximadamente com 𝑁2 quando se utiliza o método direto. Assim, o número 
+de partículas empregado neste trabalho foi selecionado de modo a proporcionar 
+uma representação adequada da Via Láctea, mantendo o tempo de 
+processamento compatível com os recursos computacionais disponíveis. 
+As simulações foram executadas em um computador equipado com um 
+processador AMD Ryzen 7 5700X, 16 GB de memória RAM DDR4 e uma placa 
+de vídeo AMD Radeon RX 7600 com 8 GB de memória dedicada . Essa 
+configuração oferece desempenho suficiente para a execução de simulações N-
+corpos de pequena e média escala, permitindo a análise da dinâmica 
+gravitacional do sistema sem a necessidade de infraestrutura computacional de 
+alto desempenho. Com as condições iniciais completamente definidas, o sistema 
+encontra-se preparado para a etapa de integração numérica, na qual as posições 
+e velocidades das partículas são atualizadas ao longo do tempo utilizando o 
+método Leapfrog, apresentado na próxima seção. 
+5.6 Integração Numérica 
+Após a definição das condições iniciais, torna -se necessário utilizar um 
+método numérico capaz de resolver as equações de movimento das partículas 
+ao longo do tempo. Como não existe solução analítica para um sistema 
+gravitacional composto por um grande número de corpos interagindo 
+simultaneamente, a evolução do sistema é obtida por integração numérica das 
+equações diferenciais que descrevem sua dinâmica. 
+Neste trabalho, foi empregado o método Leapfrog, amplamente utilizado 
+em simulações gravitacionais devido à sua simplicidade, estabilidade numérica 
+e bo a conservação da energia mecânica em integrações de longa duração. 
+Diferentemente de métodos convencionais, como o de Euler, o Leapfrog 
+apresenta menor acúmulo de erro ao longo do tempo, sendo especialmente 
+adequado para problemas de dinâmica orbital. 
+A aceleração de cada partícula é obtida a partir da soma das contribuições 
+gravitacionais de todas as demais partículas do sistema, conforme a Lei da 
+Gravitação Universal de Newton (92), o método Leapfrog atualiza as velocidades 
+e posições de forma alternada, utilizando um deslocamento temporal de meio 
+passo para as velocidades. Inicialmente, calcula -se a velocidade intermediária 
+por: 
+ 𝑣𝑖(𝑡 + 2Δ𝑡)= 𝑣𝑖(𝑡)+ 2Δ𝑡 𝑎𝑖(𝑡) (95) 
+Em seguida, as posições são atualizadas segundo: 

@@ -1,0 +1,9 @@
+test_gradient_matches_same_scalar (__main__.TestPlummerMean.test_gradient_matches_same_scalar) ... ok
+test_independent_density_convolution_oracle (__main__.TestPlummerMean.test_independent_density_convolution_oracle) ... ok
+test_kernel_normalization_and_axisymmetry (__main__.TestPlummerMean.test_kernel_normalization_and_axisymmetry) ... ok
+test_zero_epsilon_and_invalid_inputs (__main__.TestPlummerMean.test_zero_epsilon_and_invalid_inputs) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.852s
+
+OK

@@ -1,0 +1,20 @@
+Browser tab: 4, Title: "Guilherme Aleixo Bandeira · TCC UEMS · Dinâmica galáctica", URL: "http://localhost:4180/experimento-ncorpos.html".
+The following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
+Removed element IDs: 192, 214-217, 220, 224
+~		60 pop up button (collapsed, settable) Intervalo de auditoria Float64 · Myr, Value: 200 Myr, ID: energy-audit-cadence, Secondary Actions: Expand
+~		68 button ▶ Iniciar, ID: start
+~		69 button (disabled) Ⅱ Pausar, ID: pause
++		213 text Simulação pausada.
++			214 text 383.70 Myr
++			215 text 2.65 ms
++				216 text 75 FPS
++				217 text 0.00 Myr/s
++				218 text 3.837
++				219 text 10.66 s
++			220 text 1.28e-2 % (U árvore)
++			221 text 3.27e-16
++			222 text 2.24e-16
+~			223 text Diagnóstico em 383.700 Myr.
++			224 text Medição em 383,7 Myr · 13 estados medidos · energia estimada — Barnes–Hut.
+~			225 text Referência direta Float64: automática · última avaliação em 200,3 Myr · intervalo solicitado 200 Myr · efetivo 200 Myr.
+The focused UI element is 0 AXWebArea Guilherme Aleixo Bandeira · TCC UEMS · Dinâmica galáctica, URL: localhost:4180/experimento-ncorpos.html

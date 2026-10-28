@@ -1,0 +1,13 @@
+<!doctype html><html lang="pt-BR"><meta charset="utf-8"><title>Validação de escalonamento GPU</title><h1>Soma direta: blocos de 65.536 alvos</h1><button id="run">Verificar equivalência e custo</button><pre id="status">Aguardando.</pre><script type="module">
+import {GPUBackend as GPUChunkedDirectBackend} from '../src/compute/gpu.js';import {GPUWideChunkedDirectBackend as GPUTiledDirectBackend} from '../src/compute/gpu-wide-chunked-direct.js';import {unpackCheckpoint} from '../scripts/halo-5gyr/checkpoint.js';
+const $=id=>document.getElementById(id);$('run').onclick=async()=>{let e;try{$('run').disabled=true;const m=await(await fetch('../reports/halo-5gyr/manifest.json')).json(),config=m.runs.find(r=>r.factor===16),p=await(await fetch('../reports/halo-5gyr/latest.json')).json(),d=await(await fetch('../'+p.file)).json(),f=d.runs.find(r=>r.config.id==='halo-x8').finalSnapshot.file,results=[];
+for(const file of [config.file,f]){const response=await fetch('../'+file),bytes=await new Response(response.body.pipeThrough(new DecompressionStream('gzip'))).arrayBuffer(),{state}=unpackCheckpoint(bytes),comparisons={},timings={};let ref;
+ for(const [name,Type]of [['original',GPUChunkedDirectBackend],['wideChunk65536',GPUTiledDirectBackend]]){$('status').textContent=`${file}: ${name}, ${state.n} corpos`;e=await Type.create();await e.initialize(state,{dt:.1,epsilon:.1});const initial=await e.snapshot(),start=performance.now();await e.step(10);const ms=performance.now()-start,final=await e.snapshot();timings[name]=ms;
+  if(!ref)ref={initial,final};else for(const [epoch,s]of [['initial',initial],['final',final]]){comparisons[epoch]={};for(const key of ['positions','velocities','masses','accelerations']){let unequal=0,maxAbsolute=0;for(let i=0;i<s[key].length;i++){if(s[key][i]!==ref[epoch][key][i])unequal++;maxAbsolute=Math.max(maxAbsolute,Math.abs(s[key][i]-ref[epoch][key][i]));}comparisons[epoch][key]={unequal,maxAbsolute};}}
+  e.dispose();e=null;
+ }
+ results.push({file,n:state.n,steps:10,timings,comparisons,bitwiseEqual:Object.values(comparisons).every(s=>Object.values(s).every(x=>x.unequal===0))});
+}
+$('status').textContent=JSON.stringify({schema:'direct-wide-target-chunk-validation-v1',createdUTC:new Date().toISOString(),results,bitwiseEqual:results.every(r=>r.bitwiseEqual),qualification:'Scheduling experiment only, actual initial refined and evolved states. Timings include competition with a running independent GPU simulation; not an isolated hardware benchmark.'},null,2);
+}catch(err){$('status').textContent=err.stack??String(err);}finally{e?.dispose();$('run').disabled=false;}};
+</script></html>

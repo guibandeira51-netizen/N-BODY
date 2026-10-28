@@ -4,6 +4,7 @@ import { Leapfrog } from '../physics/integrator.js';
 import { createGalaxy } from '../physics/initial.js';
 import { diagnostics, conservationError } from '../physics/diagnostics.js';
 import { assessResources, defaultBudgetBytes, serializeLimits } from './capability.js';
+import {physicalEpoch} from '../physics/physical-time.js';
 
 export const WORKGROUP_SIZE = 64;
 export const FORCE_WGSL = /* wgsl */`
@@ -89,7 +90,7 @@ export class GPUBackend {
       maxStorageBufferBindingSize: limits.maxStorageBufferBindingSize,
       maxComputeWorkgroupsPerDimension: limits.maxComputeWorkgroupsPerDimension,
     } });
-    const backend = new GPUBackend(device, adapter, onLost);
+    const backend = new this(device, adapter, onLost);
     try { await backend.createPipelines(); }
     catch (error) { backend.dispose(); throw error; }
     return backend;
@@ -107,7 +108,7 @@ export class GPUBackend {
     const device = this.device;
     device.pushErrorScope('validation');
     try {
-      const force = await checkedShader(device, FORCE_WGSL, 'Força direta Plummer f32');
+      const force = await checkedShader(device, this.forceShader, 'Força direta Plummer f32');
       const integrate = await checkedShader(device, INTEGRATE_WGSL, 'Leapfrog KDK f32');
       this.forceLayout = device.createBindGroupLayout({ entries: [
         { binding: 0, visibility: GPUShaderStage.COMPUTE, buffer: { type: 'read-only-storage' } },
@@ -132,8 +133,10 @@ export class GPUBackend {
   }
 
   assertReady() { if (this.disposed) throw new Error('Motor GPU foi descartado.'); if (this.error) throw this.error; }
+  get forceShader(){return FORCE_WGSL;}
+  snapshotAuxiliary(state,p,v,a){}
 
-  async initialize(state, { epsilon = 0.1, dt = 0.05, G = DEFAULT_G, budgetBytes = defaultBudgetBytes() } = {}) {
+  async initialize(state, { epsilon = 0.1, dt = 0.05, G = DEFAULT_G, budgetBytes = defaultBudgetBytes(), enforceMemoryBudget = true } = {}) {
     this.assertReady();
     if (this.busy) throw new Error('Aguarde a operação GPU atual antes de reinicializar.');
     validateState(state);
@@ -145,7 +148,7 @@ export class GPUBackend {
       throw new RangeError('epsilon ≥ 0, dt > 0 e G > 0 precisam ser finitos.');
     if (!Number.isFinite(Math.fround(epsilon * epsilon)) || (epsilon > 0 && Math.fround(epsilon * epsilon) === 0) || !Number.isFinite(Math.fround(G)) || !Number.isFinite(Math.fround(dt)) || Math.fround(dt) <= 0 || Math.fround(G) <= 0)
       throw new RangeError('Parâmetros fora da faixa f32 representável.');
-    const admission = assessResources(state.n, { limits: this.limits }, { budgetBytes });
+    const admission = assessResources(state.n, { limits: this.limits }, { budgetBytes, enforceMemoryBudget });
     if (!admission.admissible) throw new RangeError(admission.reasons.join(' '));
     const p = new Float32Array(4 * state.n), v = new Float32Array(4 * state.n), coincident = epsilon === 0 ? new Set() : null;
     for (let i = 0; i < state.n; i++) {
@@ -157,9 +160,9 @@ export class GPUBackend {
       if (coincident) { const key = `${p[4 * i]},${p[4 * i + 1]},${p[4 * i + 2]}`; if (coincident.has(key)) throw new RangeError('Coincidência em f32 exige suavização positiva.'); coincident.add(key); }
     }
     this.releaseBuffers();
-    this.n = state.n; this.options = { epsilon, dt, G, budgetBytes }; this.dt = dt;
+    this.n = state.n; this.options = { epsilon, dt, G, budgetBytes: enforceMemoryBudget ? budgetBytes : null, enforceMemoryBudget }; this.dt = dt;
     this.effectiveParameters = { dt: Math.fround(dt), epsilonSquared: Math.fround(epsilon * epsilon), G: Math.fround(G), precision: 'f32' };
-    this.meta = state.meta ? structuredClone(state.meta) : null; this.time = time; this.steps = 0;
+    this.meta = state.meta ? structuredClone(state.meta) : null; this.time = time; this.initialTime = time; this.steps = 0;
     this.dispatchX = Math.min(Math.max(1, Math.ceil(this.n / 64)), this.limits.maxComputeWorkgroupsPerDimension);
     this.dispatchY = Math.max(1, Math.ceil(Math.ceil(this.n / 64) / this.dispatchX));
     const size = admission.estimate.perStorageBufferBytes, device = this.device;
@@ -176,7 +179,7 @@ export class GPUBackend {
       device.queue.writeBuffer(this.paramsBuffer, 0, params);
       if (this.n) { device.queue.writeBuffer(this.positionBuffer, 0, p); device.queue.writeBuffer(this.velocityBuffer, 0, v); }
       const entries = [this.positionBuffer, this.velocityBuffer, this.accelerationBuffer, this.paramsBuffer].map((buffer, binding) => ({ binding, resource: { buffer } }));
-      this.forceBindGroup = device.createBindGroup({ layout: this.forceLayout, entries });
+      this.forceBindGroup = device.createBindGroup({ layout: this.forceLayout, entries: this.forceEntries(entries) });
       this.integrateBindGroup = device.createBindGroup({ layout: this.integrateLayout, entries });
       const encoder = device.createCommandEncoder(); this.encodePass(encoder, this.forcePipeline, this.forceBindGroup);
       device.queue.submit([encoder.finish()]); await device.queue.onSubmittedWorkDone();
@@ -193,9 +196,13 @@ export class GPUBackend {
     pass.dispatchWorkgroups(this.dispatchX, this.dispatchY); pass.end();
   }
 
+  // Experimental external fields may add bindings; the ordinary backend is unchanged.
+  forceEntries(entries) { return entries; }
+
   async step(count = 1) {
     this.assertReady(); if (!this.initialized) throw new Error('Inicialize o motor GPU primeiro.');
     if (!Number.isSafeInteger(count) || count < 0) throw new RangeError('Quantidade de passos deve ser inteiro não negativo.');
+    physicalEpoch(this.initialTime,this.steps+count,this.effectiveParameters.dt);
     if (this.busy) throw new Error('Passos GPU concorrentes não são permitidos.');
     this.busy = true; const start = performance.now();
     this.device.pushErrorScope('validation');
@@ -209,7 +216,7 @@ export class GPUBackend {
           this.encodePass(encoder, this.finalKickPipeline, this.integrateBindGroup);
         }
         this.device.queue.submit([encoder.finish()]); await this.device.queue.onSubmittedWorkDone();
-        this.steps += batch; this.time += this.dt * batch; remaining -= batch;
+        this.steps += batch; this.time = physicalEpoch(this.initialTime,this.steps,this.effectiveParameters.dt); remaining -= batch;
       }
       this.assertReady();
     } catch (error) { await this.device.popErrorScope(); throw error; }
@@ -240,6 +247,7 @@ export class GPUBackend {
         state.masses[i] = p[4 * i + 3]; state.components[i] = v[4 * i + 3];
       }
       if (![state.positions, state.velocities, state.accelerations].every(array => array.every(Number.isFinite))) throw new Error('Estado GPU contém valor não finito; reduza dt ou aumente a suavização.');
+      this.snapshotAuxiliary(state,p,v,a);
       return state;
     } finally { for (const buffer of staging) { if (buffer.mapState === 'mapped') buffer.unmap(); buffer.destroy(); } this.busy = false; }
   }

@@ -1,0 +1,37 @@
+21 
+ 
+menores de a b correspondem a uma distribuição mais concentr ada, enquanto 
+valores maiores indicam um bojo mais estendido. 
+O fator 2 π no denominador surge da normalização da distribuição de 
+densidade, garantindo que, ao integrar ρb(r) sobre todo o espaço, o resultado 
+seja exatamente a massa total M b. Por fim, a dependência funcional r(r+ab)3 no 
+denominador determina o comportamento da densidade em diferentes regimes: 
+para pequenas distâncias, a densidade cresce rapidamente, refletindo a alta 
+concentração de massa no centro, enquanto para grandes distâncias ela deca i 
+aproximadamente como r −4, assegurando que a massa total do bojo seja finita 
+e que sua influência gravitacional diminua de forma significativa nas regiões 
+externas da galáxia. 
+A massa acumulada até um raio r, denotada por M(r), é obtida a partir da 
+integração da densidade volumétrica sobre um volume esfericamente simétrico: 
+ 𝑀(𝑟)= ∫ 4π𝑟′2ρb(𝑟′)
+𝑟
+0
+ 𝑑𝑟′ (32) 
+ 
+Substituindo a expressão da densidade do perfil de Hernquist, dada pela 
+equação (31), na definição da massa acumulada e efetuando diretamente a 
+integração ao longo do volume esfericamente simétrico, obtém -se a seguinte 
+expressão para a massa contida no interior de um raio r: 
+ 𝑀(𝑟)= 𝑀b
+𝑟2
+(𝑟+ 𝑎b)2 (33) 
+ 
+Essa expressão evidencia como a massa do bojo se distribui em função 
+da distância ao centro galáctico. Em regiões muito próximas ao centro, isto é, 
+para r≪ab, a massa cresce aproximadamente com o quadrado da distância, M(r) 
+∼ r2, indicando uma forte concentração de matéria nas regiões centrais. Por outro 
+lado, para distâncias muito maiores que o raio de escala, r  ≫ ab, a massa 
+acumulada tende assintoticamente ao valor total M b , o que mostra que 
+praticamente toda a massa do bojo já está contida nas regiões internas, fazendo 
+com que sua contribuição gravitacional se torne cada vez menos significativa em 
+grandes escalas. 

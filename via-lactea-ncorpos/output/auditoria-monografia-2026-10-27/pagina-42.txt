@@ -1,0 +1,33 @@
+42 
+ 
+A Equação (92) fornece a aceleração de cada partícula em função da 
+posição de todas as demais partículas do sistema. Observa-se que a aceleração 
+de uma única partícula depende simultaneamente da posição de todas as outras, 
+fazendo com que as equações de movimento sejam fortemente acopladas. 
+No contexto deste trabalho, essa formulação constitui a base matemática 
+da simulação computacional desenvolvida. Cada partícula representará uma 
+fração da massa pertencente ao bojo galáctico, ao disco ou ao halo de matéria 
+escura, distribuídas conforme os modelos físicos apresentados anteriormente. 
+Assim, a dinâm ica global da Via Láctea emergirá diretamente da interação 
+gravitacional entre essas partículas, sem a necessidade de impor previamente 
+um potencial gravitacional contínuo. 
+5.3 Representação discreta da Via Láctea 
+A modelagem computacional de sistemas grav itacionais em escala 
+galáctica apresenta um desafio fundamental: a enorme quantidade de objetos 
+que compõem uma galáxia. Estima -se que a Via Láctea contenha 
+aproximadamente 1011 estrelas, além de grandes quantidades de gás 
+interestelar, poeira e um halo de  matéria escura cuja massa total supera a da 
+matéria bariônica. A simulação individual de todos esses componentes exigiria 
+um poder computacional muito além das capacidades atualmente disponíveis, 
+tornando inviável uma abordagem que considere cada objeto r eal como uma 
+partícula independente. 
+Para contornar essa limitação, emprega -se uma representação discreta, 
+amplamente utilizada em simulações gravitacionais do tipo N -corpos. Nessa 
+abordagem, cada partícula da simulação não representa necessariamente uma 
+única estrela, mas sim um elemento de massa que corresponde a uma parcela 
+do sistema físico. Dessa forma, um conjunto relativamente pequeno de 
+partículas é capaz de reproduzir as principais características dinâmicas da 
+galáxia, preservando o comportamento gravitacional em grande escala. 
+Essa discretização permite transformar as distribuições contínuas de 
+massa descritas pelos modelos analíticos apresentados anteriormente em um 
+conjunto finito de partículas. Assim, os perfis de densidade deixam de ser 

@@ -1,0 +1,43 @@
+13 
+ 
+ 𝑑
+𝑑𝑡(𝑟2θ̇)= 0 (19) 
+ 
+Como 𝑟2θ ̇ pode ser escrita como 
+𝑙
+μ, sendo 𝜇 a massa reduzida do sistema 
+e 𝑙 o momento angular , conclui -se que 𝑙 permanece constante ao longo do 
+tempo. Isso ocorre porque não há torque atuando sobre o sistema e a interação 
+gravitacional é uma força central, sempre dirigida ao longo da linha que conecta 
+os dois corpos. 
+Essa conservação do momento angular tem uma consequência 
+geométrica importante, o movimento relativo entre os corpos fica restrito a um 
+único plano. Em outras palavras, embora o espaço seja tridimensional, a 
+dinâmica do sistema evolui como se estivesse “presa” a uma superfíci e plana 
+definida pelas condições iniciais de posição e velocidade. 
+No contexto de sistemas astronômicos  como planetas ao redor de uma 
+estrela, significa que as trajetórias tendem a se organizar em planos orbitais bem 
+definidos, a maior parte dos corpos se movimenta aproximadamente no mesmo 
+plano justamente porque herdaram condições iniciais semelhantes e estão 
+sujeitos a forças gravitacionais centrais dominantes. Assim, a conservação do 
+momento angular não só simplifica a análise matemática do pro blema, como 
+também explica uma característica observável em larga escala na estrutura de 
+sistemas planetários. 
+ 
+Além disso, ao projetarmos a equação (15) na direção radial, obtemos a 
+dinâmica na coordenada r: 
+ 𝑟̈ − 𝑙2
+μ2𝑟3 = −𝐺𝑀
+𝑟2  (20) 
+   
+   
+Nessa expressão, o termo 
+𝑙2
+𝜇2𝑟3 surge da contribuição do movimento 
+angular, enquanto o termo à direita representa a atração gravitacional. 
+ 
+Para simplificar a resolução dessa equação diferencial, é conveniente 
+realizar uma mudança de variável, definindo: 
+ 𝑢 = 1
+𝑟 (21) 
+ 

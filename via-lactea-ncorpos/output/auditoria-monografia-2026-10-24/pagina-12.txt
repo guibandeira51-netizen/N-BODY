@@ -1,0 +1,38 @@
+12 
+ 
+2.2 Sistemas keplerianos 
+Sendo o vetor aceleração 𝑟 ̈ escrito em coordenadas polares (CLINE,2021): 
+ 𝑟 ̈ = (𝑟̈ − 𝑟θ2̇ ) 𝑟̂+ (2𝑟θ̇̇ + 𝑟θ̈) θ̂  (14) 
+Para descrever o movimento de uma partícula em coordenadas polares, não 
+é suficiente considerar apenas a variação da distância (𝑟) em relação à origem, 
+uma vez que a posição da partícula também pode variar devido à mudança na 
+direção do vetor posição. Nes se sistema de coordenadas, essa orientação é 
+determinada pelo ângulo (𝜃), que representa a posição angular da partícula em 
+relação a uma direção de referência. Assim, enquanto (𝑟) caracteriza a distância 
+radial, (θ) determina a direção do vetor posição (𝑟). 
+ A variação temporal de (𝜃) é representada por (θ)̇ , correspondente à 
+velocidade angular, indicando a rapidez com que a direção do vetor posição se 
+altera. Por sua vez, θ̈ representa a aceleração angular, caracterizando a variação 
+da própria velocidade angular. Dessa forma, a descrição da aceleração da 
+partícula deve considerar simultaneamente as variações da distância radial e da 
+orientação angular, resultando em componentes radiais e tangenciais. A 
+componente radial da aceleração, (𝑟̈ − 𝑟θ2̇ )𝑟̂, está associada à variação do 
+movimento na direção radial e ao efeito da mudança de direção do vetor posição, 
+enquanto a componente tangencial, (2𝑟̇θ̇ + 𝑟θ̈)θ̂, está relacionada à variação do 
+movimento na direção angular. 
+ Substituindo na equação (13), com M = m1 + m2: 
+ −𝐺𝑀
+𝑟2  𝑟̂= (𝑟̈ − 𝑟θ2̇ ) 𝑟̂+ (2𝑟θ̇̇ + 𝑟θ̈) θ̂ (15) 
+ 
+De acordo com a equação acima a componente do versor teta é nula, esta 
+coordenada conduz diretamente à conservação do módulo do momento angular: 
+ 2𝑟̇ θ̇ + 𝑟 θ̈ = 0 (16) 
+ 
+Multiplicando a equação (16) por 𝑟 temos: 
+ 2𝑟𝑟̇ θ̇ + 𝑟2 θ̈ = 0 (17) 
+ 
+Reescrevendo a equação (17) temos: 
+ θ̇  𝑑(𝑟2)
+𝑑𝑡 + 𝑟2 θ̈ = 0 (18) 
+   
+E isso é exatamente a derivada de um produto: 

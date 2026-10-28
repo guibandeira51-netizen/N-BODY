@@ -1,5 +1,6 @@
 import { G as DEFAULT_G } from './constants.js';
 import { directAccelerations, barnesHutAccelerations, validateState } from './forces.js';
+import {physicalEpoch} from './physical-time.js';
 
 /** Fixed physical timestep, independent of render FPS: Kick–Drift–Kick. */
 export class Leapfrog {
@@ -19,6 +20,7 @@ export class Leapfrog {
     this.options = { epsilon, theta, G };
     this.dt = dt;
     this.time = time;
+    this.initialTime = time;
     this.steps = 0;
     this.lastStepMs = 0;
     this.initialized = false;
@@ -36,6 +38,7 @@ export class Leapfrog {
 
   step(count = 1) {
     if (!Number.isSafeInteger(count) || count < 0) throw new RangeError('Quantidade de passos deve ser um inteiro não negativo.');
+    const completedTime=physicalEpoch(this.initialTime,this.steps+count,this.dt);
     if (!this.initialized) this.initialize();
     const start = performance.now();
     const { positions: p, velocities: v, accelerations: a } = this.state;
@@ -49,7 +52,7 @@ export class Leapfrog {
       for (let k = 0; k < p.length; k++) v[k] += half * a[k];
       this.steps++;
     }
-    this.time += dt * count;
+    this.time = completedTime;
     this.state.time = this.time;
     this.lastStepMs = count ? (performance.now() - start) / count : 0;
     return this.state;

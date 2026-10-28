@@ -1,0 +1,14 @@
+import {readFile,writeFile} from 'node:fs/promises';
+import {directAccelerations,barnesHutAccelerations} from '../../src/physics/forces.js';
+const folder='reports/resolution-decision',runs=[];
+for(const epoch of ['initial','final']){
+ const raw=JSON.parse(await readFile(folder+`/session-snapshot-${epoch}.json`)),s={...raw,positions:Float64Array.from(raw.positions),velocities:Float64Array.from(raw.velocities),masses:Float64Array.from(raw.masses),components:Uint8Array.from(raw.components),accelerations:new Float64Array(3*raw.n)},options={G:raw.parameters.G,epsilon:Math.sqrt(raw.parameters.epsilonSquared)};
+ let start=performance.now();const exact=directAccelerations(s,options,new Float64Array(3*s.n)),directMs=performance.now()-start;
+ for(const theta of [.2,.35,.5,.8]){start=performance.now();const actual=barnesHutAccelerations(s,{...options,theta},new Float64Array(3*s.n)),treeMs=performance.now()-start,groups=[];
+  for(const component of [null,0,1,2]){let error=0,scale=0,maxRelative=0,force=[0,0,0],forceScale=0,torque=[0,0,0],torqueScale=0,count=0;
+   for(let i=0;i<s.n;i++)if(component===null||s.components[i]===component){count++;const k=3*i,m=s.masses[i],p=s.positions.subarray(k,k+3);let e=0,b=0;for(let j=0;j<3;j++){e+=(actual[k+j]-exact[k+j])**2;b+=exact[k+j]**2;force[j]+=m*actual[k+j];}error+=e;scale+=b;maxRelative=Math.max(maxRelative,b>0?Math.sqrt(e/b):0);forceScale+=m*Math.hypot(...actual.subarray(k,k+3));const t=[m*(p[1]*actual[k+2]-p[2]*actual[k+1]),m*(p[2]*actual[k]-p[0]*actual[k+2]),m*(p[0]*actual[k+1]-p[1]*actual[k])];for(let j=0;j<3;j++)torque[j]+=t[j];torqueScale+=Math.hypot(...t);}
+   groups.push({component,count,forceRmsRelative:Math.sqrt(error/scale),maxParticleForceRelative:maxRelative,totalForce:force,normalizedNetForce:Math.hypot(...force)/forceScale,totalTorque:torque,normalizedNetTorque:Math.hypot(...torque)/torqueScale,qualification:component===null?'Net force/torque should cancel for exact isolated symmetric pair force; tree need not preserve this.':'Individual component exchanges forces and torques; net does not measure total-system conservation.'});}
+  runs.push({epoch,timeMyr:raw.timeMyr,n:s.n,theta,algorithm:'Existing CPU Float64 monopole Barnes-Hut, 8-body leaves; unchanged solver',directMs,treeMs,options,groups});console.log(JSON.stringify({epoch,theta,directMs,treeMs,diskError:groups.find(g=>g.component===1).forceRmsRelative}));
+ }
+}
+await writeFile(folder+'/tree-force-calibration.json',JSON.stringify({schema:'resolution-tree-calibration-v1',runs,qualification:'Measured CPU snapshot force tests, not a Tree trajectory or GADGET-4 validation. Concurrent CPU/GPU audit work may affect timing. Force RMS is weighted by a^2 and hides local tails; maximum also reported. Same captured states, effective G and Plummer epsilon as GPU. No solver replacement.'},null,2));

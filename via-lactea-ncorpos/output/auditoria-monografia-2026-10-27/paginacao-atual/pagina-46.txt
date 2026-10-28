@@ -1,0 +1,27 @@
+46 
+ 
+5.4.2 Geração das partículas do disco 
+A componente de disco foi construída utilizando o modelo de Miyamoto –
+Nagai, que representa a distribuição achatada característica das galáxias 
+espirais. 
+Ao contrário do bojo, cuja distribuição é aproximadamente esférica, as 
+partículas do disco são posicionadas de modo a reproduzir uma estrutura 
+predominantemente concentrada no plano galáctico. A distribuição radial segue 
+a variação prevista pelo modelo, enquanto a espessura do disco é controlada 
+pelos parâmetros característicos da distribuição. 
+Cada partícula representa uma parcela da massa do disco e contribui para 
+o campo gravitacional total durante toda a evolução da simulação. 
+5.4.3 Geração das partículas do halo de matéria escura 
+O halo de matéria escura foi discretizado a partir do perfil de Navarro –
+Frenk–White (NFW), amplamente utilizado para representar halos formados em 
+simulações cosmológicas. 
+As partículas dessa componente são distribuídas em uma região muito 
+mais extensa que o disco e o bojo, formando uma estrutura aproximadamente 
+esférica que envolve toda a galáxia. Em comparação com o bojo, a densidade 
+de partículas d ecresce de forma mais gradual, refletindo a natureza difusa do 
+halo de matéria escura. 
+Embora invisíveis do ponto de vista observacional, essas partículas 
+exercem atração gravitacional sobre todos os demais componentes da 
+simulação, influenciando diretamen te a dinâmica global do sistema e 
+contribuindo para a manutenção das velocidades de rotação observadas nas 
+regiões externas da galáxia. 

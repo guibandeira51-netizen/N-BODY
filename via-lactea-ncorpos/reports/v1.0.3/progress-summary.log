@@ -1,0 +1,362 @@
+{
+  "completed": 51,
+  "groups": [
+    {
+      "stage": "continuous20",
+      "group": "null",
+      "nRuns": 3,
+      "ids": [
+        "A-base-s2026-t20",
+        "A-base-s2027-t20",
+        "A-base-s2028-t20"
+      ],
+      "nh": 0,
+      "refinedPopulation": null,
+      "globalGrowthMean": -0.3136241419407974,
+      "globalGrowthSD": 3.0862581854658364,
+      "thinGrowthMean": 2.1269552694365,
+      "thinGrowthSD": 3.731002531870024,
+      "thickGrowthMean": -3.40665606532408,
+      "thickGrowthSD": 9.18747769898468,
+      "thinSigmaZGrowthMean": -0.7535148721476981,
+      "thinSigmaZGrowthSD": 3.428366929016405,
+      "meanWallSeconds": 2.071054899999581
+    },
+    {
+      "stage": "continuous200",
+      "group": "null",
+      "nRuns": 3,
+      "ids": [
+        "A-base-s2026-t200",
+        "A-base-s2027-t200",
+        "A-base-s2028-t200"
+      ],
+      "nh": 0,
+      "refinedPopulation": null,
+      "globalGrowthMean": 2.9286734587415855,
+      "globalGrowthSD": 3.1504964714407424,
+      "thinGrowthMean": 2.696769155395503,
+      "thinGrowthSD": 2.406641712609301,
+      "thickGrowthMean": -3.523993033335582,
+      "thickGrowthSD": 4.318331879240271,
+      "thinSigmaZGrowthMean": 2.2157730830244784,
+      "thinSigmaZGrowthSD": 5.164643866272227,
+      "meanWallSeconds": 3.4849347666677204
+    },
+    {
+      "stage": "continuous200",
+      "group": "1",
+      "nRuns": 3,
+      "ids": [
+        "A-thin2-s2026-t200",
+        "A-thin2-s2027-t200",
+        "A-thin2-s2028-t200"
+      ],
+      "nh": 0,
+      "refinedPopulation": 1,
+      "globalGrowthMean": 1.455435206269251,
+      "globalGrowthSD": 0.0732229291309431,
+      "thinGrowthMean": 1.2437161561702936,
+      "thinGrowthSD": 1.368511969640006,
+      "thickGrowthMean": -3.523993033335582,
+      "thickGrowthSD": 4.318331879240271,
+      "thinSigmaZGrowthMean": 2.728715388452289,
+      "thinSigmaZGrowthSD": 1.4903470252636057,
+      "meanWallSeconds": 5.51833560000038
+    },
+    {
+      "stage": "baryons20",
+      "group": "null",
+      "nRuns": 3,
+      "ids": [
+        "B-base-s2026-t20",
+        "B-base-s2027-t20",
+        "B-base-s2028-t20"
+      ],
+      "nh": 0,
+      "refinedPopulation": null,
+      "globalGrowthMean": 1.7105690891173826,
+      "globalGrowthSD": 2.483753793619599,
+      "thinGrowthMean": 4.287224184043947,
+      "thinGrowthSD": 1.825730909026392,
+      "thickGrowthMean": -1.3480499657713885,
+      "thickGrowthSD": 9.63290889946515,
+      "thinSigmaZGrowthMean": 0.809065418174478,
+      "thinSigmaZGrowthSD": 3.384167335155331,
+      "meanWallSeconds": 10.264090000002334
+    },
+    {
+      "stage": "baryons20",
+      "group": "0",
+      "nRuns": 3,
+      "ids": [
+        "B-bulge2-s2026-t20",
+        "B-bulge2-s2027-t20",
+        "B-bulge2-s2028-t20"
+      ],
+      "nh": 0,
+      "refinedPopulation": 0,
+      "globalGrowthMean": 1.914607424669638,
+      "globalGrowthSD": 2.296869722988954,
+      "thinGrowthMean": 4.166353907224514,
+      "thinGrowthSD": 2.4752860547642768,
+      "thickGrowthMean": -1.2462624583708355,
+      "thickGrowthSD": 9.667957716846866,
+      "thinSigmaZGrowthMean": 0.5725867633465942,
+      "thinSigmaZGrowthSD": 3.308817029258051,
+      "meanWallSeconds": 12.659836666665973
+    },
+    {
+      "stage": "baryons20",
+      "group": "2",
+      "nRuns": 3,
+      "ids": [
+        "B-thick2-s2026-t20",
+        "B-thick2-s2027-t20",
+        "B-thick2-s2028-t20"
+      ],
+      "nh": 0,
+      "refinedPopulation": 2,
+      "globalGrowthMean": 2.0683379608883965,
+      "globalGrowthSD": 1.7937273979410264,
+      "thinGrowthMean": 4.324022198746132,
+      "thinGrowthSD": 1.7178057312673043,
+      "thickGrowthMean": -0.8031530032214574,
+      "thickGrowthSD": 5.588113288835057,
+      "thinSigmaZGrowthMean": 0.5350147392359358,
+      "thinSigmaZGrowthSD": 3.5859202444149854,
+      "meanWallSeconds": 12.433524999998511
+    },
+    {
+      "stage": "baryons20",
+      "group": "1",
+      "nRuns": 3,
+      "ids": [
+        "B-thin2-s2026-t20",
+        "B-thin2-s2027-t20",
+        "B-thin2-s2028-t20"
+      ],
+      "nh": 0,
+      "refinedPopulation": 1,
+      "globalGrowthMean": -0.6969795018588224,
+      "globalGrowthSD": 1.5982304572401569,
+      "thinGrowthMean": 2.245271218117136,
+      "thinGrowthSD": 1.5013027509516723,
+      "thickGrowthMean": -1.5304904779571322,
+      "thickGrowthSD": 8.690651504934616,
+      "thinSigmaZGrowthMean": 2.455855473378943,
+      "thinSigmaZGrowthSD": 1.068756774766977,
+      "meanWallSeconds": 20.44230499999722
+    },
+    {
+      "stage": "baryons200",
+      "group": "null",
+      "nRuns": 3,
+      "ids": [
+        "B-base-s2026-t200",
+        "B-base-s2027-t200",
+        "B-base-s2028-t200"
+      ],
+      "nh": 0,
+      "refinedPopulation": null,
+      "globalGrowthMean": 13.46105032055808,
+      "globalGrowthSD": 6.8217036094508305,
+      "thinGrowthMean": 15.30543792175115,
+      "thinGrowthSD": 10.510237702334413,
+      "thickGrowthMean": -4.502937601806981,
+      "thickGrowthSD": 0.8933576818562253,
+      "thinSigmaZGrowthMean": 10.158064196467246,
+      "thinSigmaZGrowthSD": 2.21501403718821,
+      "meanWallSeconds": 15.709524999996026
+    },
+    {
+      "stage": "baryons200",
+      "group": "0",
+      "nRuns": 3,
+      "ids": [
+        "B-bulge2-s2026-t200",
+        "B-bulge2-s2027-t200",
+        "B-bulge2-s2028-t200"
+      ],
+      "nh": 0,
+      "refinedPopulation": 0,
+      "globalGrowthMean": 13.591589531396084,
+      "globalGrowthSD": 2.539778097563539,
+      "thinGrowthMean": 14.549671949851431,
+      "thinGrowthSD": 3.6410645623373896,
+      "thickGrowthMean": -5.560153265599573,
+      "thickGrowthSD": 0.49822992617209216,
+      "thinSigmaZGrowthMean": 10.86868062148949,
+      "thinSigmaZGrowthSD": 3.728527343143368,
+      "meanWallSeconds": 19.572483333334326
+    },
+    {
+      "stage": "baryons200",
+      "group": "2",
+      "nRuns": 3,
+      "ids": [
+        "B-thick2-s2026-t200",
+        "B-thick2-s2027-t200",
+        "B-thick2-s2028-t200"
+      ],
+      "nh": 0,
+      "refinedPopulation": 2,
+      "globalGrowthMean": 13.923863715750356,
+      "globalGrowthSD": 6.101860530039893,
+      "thinGrowthMean": 15.618398821243415,
+      "thinGrowthSD": 7.713567792783236,
+      "thickGrowthMean": -1.2987558225572664,
+      "thickGrowthSD": 0.3020737745233428,
+      "thinSigmaZGrowthMean": 9.867380489833021,
+      "thinSigmaZGrowthSD": 2.1190848594925162,
+      "meanWallSeconds": 18.880801666667065
+    },
+    {
+      "stage": "baryons200",
+      "group": "1",
+      "nRuns": 3,
+      "ids": [
+        "B-thin2-s2026-t200",
+        "B-thin2-s2027-t200",
+        "B-thin2-s2028-t200"
+      ],
+      "nh": 0,
+      "refinedPopulation": 1,
+      "globalGrowthMean": 7.505860380187826,
+      "globalGrowthSD": 2.264295835652964,
+      "thinGrowthMean": 11.156888002534181,
+      "thinGrowthSD": 2.5925988714614183,
+      "thickGrowthMean": -9.004435096934964,
+      "thickGrowthSD": 0.3693931358916183,
+      "thinSigmaZGrowthMean": 8.922151921234468,
+      "thinSigmaZGrowthSD": 2.5238746273858257,
+      "meanWallSeconds": 30.472206666665773
+    },
+    {
+      "stage": "halo20",
+      "group": "20000",
+      "nRuns": 3,
+      "ids": [
+        "H-nh20000-b2026-h2026-t20",
+        "H-nh20000-b2026-h2027-t20",
+        "H-nh20000-b2026-h2028-t20"
+      ],
+      "nh": 20000,
+      "refinedPopulation": null,
+      "globalGrowthMean": 2.858329292833717,
+      "globalGrowthSD": 1.9198636389855217,
+      "thinGrowthMean": 5.470834459511448,
+      "thinGrowthSD": 2.8650857894447848,
+      "thickGrowthMean": 0.5807018359950159,
+      "thickGrowthSD": 1.065321187516402,
+      "thinSigmaZGrowthMean": 4.901802881066446,
+      "thinSigmaZGrowthSD": 0.7742491390687765,
+      "meanWallSeconds": 86.9452783333324
+    },
+    {
+      "stage": "halo20",
+      "group": "4000",
+      "nRuns": 3,
+      "ids": [
+        "H-nh4000-b2026-h2026-t20",
+        "H-nh4000-b2026-h2027-t20",
+        "H-nh4000-b2026-h2028-t20"
+      ],
+      "nh": 4000,
+      "refinedPopulation": null,
+      "globalGrowthMean": 3.7431392678659505,
+      "globalGrowthSD": 2.7970478475351612,
+      "thinGrowthMean": 4.6561077407344085,
+      "thinGrowthSD": 1.9023739604396674,
+      "thickGrowthMean": 1.8217529913812165,
+      "thickGrowthSD": 0.4669798316805308,
+      "thinSigmaZGrowthMean": 5.4727788768257355,
+      "thinSigmaZGrowthSD": 2.69111842255201,
+      "meanWallSeconds": 18.362149999999755
+    },
+    {
+      "stage": "halo20",
+      "group": "40000",
+      "nRuns": 3,
+      "ids": [
+        "H-nh40000-b2026-h2026-t20",
+        "H-nh40000-b2026-h2027-t20",
+        "H-nh40000-b2026-h2028-t20"
+      ],
+      "nh": 40000,
+      "refinedPopulation": null,
+      "globalGrowthMean": 2.225477234813944,
+      "globalGrowthSD": 2.2789516756332824,
+      "thinGrowthMean": 5.362884259563617,
+      "thinGrowthSD": 1.4195057634086785,
+      "thickGrowthMean": 0.9843286918492566,
+      "thickGrowthSD": 0.5769919030625293,
+      "thinSigmaZGrowthMean": 3.32037943069831,
+      "thinSigmaZGrowthSD": 0.9446459171445367,
+      "meanWallSeconds": 255.55270333333192
+    },
+    {
+      "stage": "halo20",
+      "group": "8000",
+      "nRuns": 3,
+      "ids": [
+        "H-nh8000-b2026-h2026-t20",
+        "H-nh8000-b2026-h2027-t20",
+        "H-nh8000-b2026-h2028-t20"
+      ],
+      "nh": 8000,
+      "refinedPopulation": null,
+      "globalGrowthMean": 1.9793106741468798,
+      "globalGrowthSD": 2.2658057606255113,
+      "thinGrowthMean": 4.643353360574731,
+      "thinGrowthSD": 2.2981837837575694,
+      "thickGrowthMean": 1.6294513446490206,
+      "thickGrowthSD": 1.602368784792852,
+      "thinSigmaZGrowthMean": 3.9047231641296123,
+      "thinSigmaZGrowthSD": 2.385780167009006,
+      "meanWallSeconds": 29.517284999998907
+    },
+    {
+      "stage": "halo200",
+      "group": "4000",
+      "nRuns": 3,
+      "ids": [
+        "H-nh4000-b2026-h2026-t200",
+        "H-nh4000-b2026-h2027-t200",
+        "H-nh4000-b2026-h2028-t200"
+      ],
+      "nh": 4000,
+      "refinedPopulation": null,
+      "globalGrowthMean": 93.09591338315693,
+      "globalGrowthSD": 13.657571122818618,
+      "thinGrowthMean": 105.72946300536277,
+      "thinGrowthSD": 17.44393548446436,
+      "thickGrowthMean": 39.061740856042434,
+      "thickGrowthSD": 3.834490249415125,
+      "thinSigmaZGrowthMean": 41.092723267830536,
+      "thinSigmaZGrowthSD": 5.917726844811315,
+      "meanWallSeconds": 27.34583000000318
+    },
+    {
+      "stage": "halo200",
+      "group": "40000",
+      "nRuns": 3,
+      "ids": [
+        "H-nh40000-b2026-h2026-t200",
+        "H-nh40000-b2026-h2027-t200",
+        "H-nh40000-b2026-h2028-t200"
+      ],
+      "nh": 40000,
+      "refinedPopulation": null,
+      "globalGrowthMean": 25.287738215347968,
+      "globalGrowthSD": 2.2829574452374137,
+      "thinGrowthMean": 29.48345612141731,
+      "thinGrowthSD": 1.5810685815732919,
+      "thickGrowthMean": 4.866523990993439,
+      "thickGrowthSD": 8.292657024319777,
+      "thinSigmaZGrowthMean": 17.598522062054347,
+      "thinSigmaZGrowthSD": 4.60933197240169,
+      "meanWallSeconds": 299.2746666666642
+    }
+  ]
+}

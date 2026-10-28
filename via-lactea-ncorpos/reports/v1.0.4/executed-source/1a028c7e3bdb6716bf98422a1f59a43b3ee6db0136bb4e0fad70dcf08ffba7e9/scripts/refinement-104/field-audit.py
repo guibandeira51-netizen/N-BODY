@@ -1,0 +1,12 @@
+from pathlib import Path
+import json,hashlib
+import numpy as np
+ROOT=Path(__file__).resolve().parents[2];BASE=ROOT/'reports/v1.0.4';reference=json.loads((ROOT/'reports/v1.0.2/field-validation/ensemble.json').read_text());ref=next(r for r in reference['ensembles']if r['family']=='corrected'and r['n']==10000);points=np.array(ref['pointsKpc']);expected=np.array(ref['expectedPlummerMean']);G=json.loads((ROOT/'reports/v1.0.2/corrected/preparation.json').read_text())['GAppKpc3Myr2Per1e10Msun'];rows=json.loads((BASE/'initial-manifest.json').read_text())
+if(BASE/'higher-initial-manifest.json').exists():rows+=json.loads((BASE/'higher-initial-manifest.json').read_text())
+draws=[]
+for row in rows:
+ d=json.loads((BASE/row['file']).read_text());p=np.array(d['positions']).reshape(-1,3);m=np.array(d['masses']);tags=np.array(d['subpopulations']);delta=p[None,:,:]-points[:,None,:];r2=np.sum(delta**2,axis=2)+.01;terms=G*delta*(m[None,:]/r2**1.5)[:,:,None];forces=np.array([terms[:,tags==i,:].sum(axis=1)for i in range(4)]);draws.append({'id':row['id'],'family':row['family'],'seed':row['baryonSeed'],'nh':row['nh'],'populationForces':forces.tolist(),'total':forces.sum(axis=0).tolist(),'normalizedResidual':float(np.linalg.norm(forces.sum(axis=0)-expected)/np.linalg.norm(expected)),'sourceSHA256':row['sha256']});print('FIELD',row['id'],flush=True)
+groups=[]
+for family in sorted(set(r['family']for r in draws)):
+ rr=[r for r in draws if r['family']==family];f=np.array([r['total']for r in rr]);hf=np.array([r['populationForces'][3]for r in rr]);groups.append({'family':family,'seeds':[r['seed']for r in rr],'normalizedTotalStd':float(np.linalg.norm(f.std(axis=0,ddof=1))/np.linalg.norm(expected))if len(rr)>1 else None,'normalizedHaloStd':float(np.linalg.norm(hf.std(axis=0,ddof=1))/np.linalg.norm(expected))if len(rr)>1 else None,'normalizedMeanResidual':float(np.linalg.norm(f.mean(axis=0)-expected)/np.linalg.norm(expected))})
+result={'schema':'refinement-field-audit-104','pointsKpc':points.tolist(),'expectedPlummerMean':expected.tolist(),'draws':draws,'groups':groups,'units':'kpc, Myr, 1e10 nominal Msun','arithmetic':'NumPy Float64 direct sum at fixed28 probes, epsilon .1; distinct from compensated GPU-upload force oracle.','qualification':'Diagonal seed triples vary baryons and halo together. Component forces separate halo fluctuations from baryon fluctuations; population phases remain paired. Three seeds do not define an asymptotic noise law. No velocity corrections.'};(BASE/'field-audit.json').write_text(json.dumps(result,indent=2)+'\n',encoding='utf8')

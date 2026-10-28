@@ -1,0 +1,28 @@
+<!doctype html><html lang="pt-BR"><meta charset="utf-8"><title>Retomada da campanha de equilíbrio 1.0</title>
+<h1>Campanha sequencial — equilíbrio 1.0</h1><p>Retoma os casos 6–11. Seis ensaios anteriores foram concluídos e preservados antes da reinicialização do ambiente. A seleção abaixo permite consultar cada resultado concluído.</p><button id="batch">Executar os ensaios restantes</button><p id="status" role="status">Aguardando.</p><label>Resultado concluído <select id="completed"></select></label><button id="download">Baixar resultados concluídos · ZIP</button><iframe id="experiment" title="Ensaio físico atual" src="./browser-equilibrium-v1.html" style="display:block;width:98%;height:260px;border:1px solid #ccc"></iframe><pre id="output">{}</pre>
+<script type="module">
+import {createZip} from '../src/export/zip.js';
+const $=id=>document.getElementById(id),results=new Map();let active=false;
+function show(){const r=results.get($('completed').value);$('output').textContent=JSON.stringify(r??{});}
+$('completed').onchange=show;
+$('download').onclick=()=>{const zip=createZip([...results].map(([id,r])=>({name:id+'.json',data:JSON.stringify(r)}))),u=URL.createObjectURL(zip),a=document.createElement('a');a.href=u;a.download='ensaios-equilibrio-1.0.zip';a.click();setTimeout(()=>URL.revokeObjectURL(u),1000);};
+$('batch').onclick=async()=>{
+ if(active)return;active=true;$('batch').disabled=true;const frame=$('experiment');let observer;
+ try{
+  const p=await(await fetch('../scripts/equilibrium/protocol.json')).json(),bytes=await(await fetch('./browser-equilibrium-resume-v1.html')).arrayBuffer(),sha=Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',bytes)),x=>x.toString(16).padStart(2,'0')).join('');
+  for(let i=6;i<p.runs.length;i++){
+   const doc=frame.contentDocument,button=doc?.getElementById('run'),select=doc?.getElementById('case');if(!button||!select||select.options.length!==p.runs.length||button.disabled)throw Error('Harness ainda não está pronto.');
+   select.value=String(i);select.dispatchEvent(new Event('change',{bubbles:true}));button.click();
+   const report=await new Promise((resolve,reject)=>{
+    observer=new MutationObserver(()=>{
+     $('status').textContent=`Caso ${i+1}/${p.runs.length}: ${doc.getElementById('status').textContent}`;
+     if(!button.disabled){try{const r=JSON.parse(doc.getElementById('output').textContent);if(['completed','failed'].includes(r.status)){observer.disconnect();resolve(r);}}catch(e){observer.disconnect();reject(e);}}
+    });observer.observe(doc.body,{subtree:true,childList:true,characterData:true,attributes:true,attributeFilter:['disabled']});
+   });
+   report.batchOrchestration={file:'tests/browser-equilibrium-resume-v1.html',sha256:sha,sequential:true};results.set(report.id,report);const option=document.createElement('option');option.value=report.id;option.textContent=report.id+' · '+report.status;$('completed').append(option);$('completed').value=report.id;show();
+   if(report.status!=='completed')throw Error('Ensaio falhou: '+report.id+'. Resultados anteriores preservados.');
+  }
+  $('status').textContent=`Concluído: ${results.size} ensaios sequenciais. Consulte cada resultado pela seleção.`;
+ }catch(e){$('status').textContent='Interrompido: '+e.message;}finally{observer?.disconnect();active=false;}
+};
+</script></html>

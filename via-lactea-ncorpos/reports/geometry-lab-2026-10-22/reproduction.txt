@@ -1,0 +1,23 @@
+{
+  "folder": "C:\\Users\\PC\\Documents\\Codex\\2026-10-10\\s-2\\outputs\\via-lactea-ncorpos\\reports\\geometry-lab-2026-10-22",
+  "near8": {
+    "R_kpc": 8,
+    "bulge_km_s": 46.08589548854268,
+    "disk_km_s": 170.16882076902803,
+    "halo_km_s": 147.40618333212842,
+    "baryons_km_s": 176.29899978418047,
+    "grLeading_km_s": 176.29899978418047,
+    "total_km_s": 229.80409093279326,
+    "absPhiBaryons_over_c2": 4.0294142915908367e-7,
+    "vBaryons2_over_c2": 3.4582651716774157e-7,
+    "halo_over_baryonic_acceleration": 0.6990877727495992
+  },
+  "convergence": {
+    "finalPositionDifference_dt_dt2_kpc": 0.0006447035731294671,
+    "finalPositionDifference_dt2_dt4_kpc": 0.00016117275312946283,
+    "ratio": 4.000077932599474,
+    "interpretation": "Second-order KDK suggests ratio approaching 4 in its asymptotic regime; this measured ratio is not an equilibrium criterion or an exact GR accuracy certificate."
+  },
+  "costMs": 49.6817,
+  "mainPhysicsAndControllerUnchanged": true
+}

@@ -1,0 +1,15 @@
+import{readFile,writeFile}from'node:fs/promises';import{createHash}from'node:crypto';
+const folder='reports/halo-camera-followup-2026-10-22/',sha=bytes=>createHash('sha256').update(bytes).digest('hex');
+const original=JSON.parse(await readFile('reports/halo-amplification-2026-10-22/physics-before.json','utf8')),changed=[];
+for(const[file,expected]of Object.entries(original))if(sha(await readFile(file))!==expected)changed.push(file);
+const physics={comparedFiles:Object.keys(original).length,changed,unchanged:changed.length===0};await writeFile(folder+'physics-integrity.json',JSON.stringify(physics,null,2));
+const states=JSON.parse(await readFile(folder+'ui-states.json','utf8')),{amplification:a,...s8}=states.state8,{amplification:b,...s50}=states.state50;
+const ui={amplifications:[a,b],cameraAndPhysicalClockExact:JSON.stringify(s8)===JSON.stringify(s50),time:s8.physicsTime,steps:s8.physicsSteps,canvas:s8.canvas};
+const gpu=JSON.parse(await readFile(folder+'gpu-results.json','utf8'));
+if(!physics.unchanged||!ui.cameraAndPhysicalClockExact||a!==8||b!==50||!gpu.passed||gpu.runs.some(r=>r.pixels.some(p=>!p.nonBackgroundPixels||p.changedBytes)))throw Error('Verification failed');
+const identityPath='reports/halo-geometry-integrated-2026-10-22/code-identity.json',identity=JSON.parse(await readFile(identityPath,'utf8'));
+for(const file of ['src/render/gpu-renderer.js','src/render/camera.js','src/render/halo-geometry-overlay.js','tests/halo-amplification.test.mjs','AUDITORIA_AMPLIFICACAO_MALHA_COMPLEMENTO.md'])identity.files[file]='';
+for(const file of Object.keys(identity.files))identity.files[file]=sha(await readFile(file));
+identity.version='nfw-visual-independent-projection-v2';identity.builtUTC=new Date().toISOString();identity.sha256=sha(JSON.stringify(identity.files));await writeFile(identityPath,JSON.stringify(identity,null,2));
+await writeFile(folder+'verification.json',JSON.stringify({computedUTC:new Date().toISOString(),physics,ui,gpuPassed:gpu.passed,identity:identity.version,identitySha256:identity.sha256},null,2));
+console.log(JSON.stringify({physics,ui,gpuPassed:gpu.passed},null,2));

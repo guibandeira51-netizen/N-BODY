@@ -1,0 +1,35 @@
+22 
+ 
+ 
+Para obter o potencial gravitacional associado ao bojo galáctico, parte-se 
+da descrição do campo gravitacional gerado por uma distri buição de massa 
+esfericamente simétrica. Nessa situação, o campo gravitacional em uma 
+distância r do centro depende apenas da massa contida no interior desse raio. 
+Dessa forma, utiliza -se a expressão do campo gravitacional newtoniano para 
+uma distribuição esfericamente simétrica, sendo dada pela equação abaixo. 
+ 𝑔(𝑟)= −𝐺𝑀(𝑟)
+𝑟2  (34) 
+ 
+Porém esse campo aponta para o centro, então vetorialmente: 
+ 𝑔 (𝑟)= −𝐺𝑀(𝑟)
+𝑟2  𝑟̂ (35) 
+ 
+A partir dessa expressão, observa -se que o campo gravitacional está 
+diretamente relacionado à variação espacial do potencial gravitacional. Como a 
+gravidade é uma força conservativa, é possível definir uma função escalar Φ(r) 
+tal que o campo seja obtido a partir de sua derivada radial. Dessa forma, a 
+relação entre essas grandezas é dada por: 
+ 𝑔 (𝑟)= −∇Φ(𝑟) (36) 
+ 
+No caso de simetria esférica, essa expressão se reduz apenas à 
+componente radial, resultando em: 
+ 𝑔(𝑟)= −𝑑Φ
+𝑑𝑟 (𝑟) (37) 
+ 
+ 
+  
+De forma equivalente, o potencial gravitacional pode ser obtido a partir do 
+campo por integração: 
+ Φ(𝑟)= −∫𝑔(𝑟) 𝑑𝑟 (38) 
+ 
+A integral acima é direta, resultando em: 

@@ -1,0 +1,41 @@
+<!doctype html><html lang="pt-BR"><meta charset="utf-8"><title>Validação do laboratório CPU e GPU</title><style>body{font:15px system-ui;background:#142125;color:#eee;padding:30px}button{padding:12px}pre{white-space:pre-wrap}</style>
+<h1>Laboratório — comparação real CPU Float64 × GPU Float32</h1><p>Três sementes, N=1000, força direta, dt=0,1 Myr, ε=0,1 kpc, duração 20 Myr. Mesma realização inicial por par. Métricas estruturais, energia direta e virial das forças reais.</p><button id="run">Executar ensaios</button><button id="resolution">Testar resolução GPU N=10000 e 50000</button><p id="status">Aguardando</p><pre id="output">Sem resultados</pre>
+<script type="module">
+import {createGalaxy} from '../src/physics/initial.js';
+import {Leapfrog} from '../src/physics/integrator.js';
+import {GPUBackend,compareCPUvsGPU,benchmarkGPU} from '../src/compute/gpu.js';
+import {diagnostics} from '../src/physics/diagnostics.js';
+import {laboratorySample,energyDrift} from '../src/physics/laboratory.js';
+import {detectCapabilities} from '../src/compute/capability.js';
+const $=id=>document.getElementById(id);
+$('run').onclick=async()=>{
+ $('run').disabled=true;const report={schema:'laboratory-gpu-v1',startedUTC:new Date().toISOString(),capabilities:await detectCapabilities(),runs:[],fixture:null,benchmarks:[]};let gpu;
+ try{
+  if(!report.capabilities.webgpu.available)throw Error('WebGPU indisponível: não executado');
+  report.fixture=await compareCPUvsGPU(undefined,{n:1024,steps:8});
+  for(const seed of [2026,2027,2028]){
+   $('status').textContent='Integrando semente '+seed;
+   const config={n:1000,seed,dt:.1,epsilon:.1,theta:.5,algorithm:'direct',withHalo:true},state=createGalaxy(config),cpu=new Leapfrog(state,config);cpu.initialize();
+   gpu=await GPUBackend.create();await gpu.initialize(state,config);const samples=[];
+   for(let t=0;t<=20;t+=5){if(t){cpu.step(50);await gpu.step(50);}const snapshot=await gpu.snapshot();samples.push({timeMyr:t,cpu:laboratorySample(state,diagnostics(state,config),config),gpu:laboratorySample(snapshot,diagnostics(snapshot,config),{...config,forceMethod:'GPU direct f32'})});}
+   const first=samples[0],last=samples.at(-1);report.runs.push({config,samples,energy:{cpu:energyDrift(last.cpu.conservation,first.cpu.conservation),gpu:energyDrift(last.gpu.conservation,first.gpu.conservation)}});gpu.dispose();gpu=null;
+   $('output').textContent=JSON.stringify(report,null,2);await new Promise(resolve=>setTimeout(resolve,0));
+  }
+  for(const n of [1000,10000])report.benchmarks.push(await benchmarkGPU({n,steps:3,batchSize:3}));
+  report.completedUTC=new Date().toISOString();report.status='completed';$('status').textContent='Concluído — 3 sementes e benchmark. Resultados medidos; sem certificação de estabilidade.';
+ }catch(e){report.status='failed';report.reason=e.message;$('status').textContent=e.message;}finally{gpu?.dispose();$('output').textContent=JSON.stringify(report,null,2);$('run').disabled=false;}
+};
+$('resolution').onclick=async()=>{
+ $('resolution').disabled=true;const report={schema:'laboratory-gpu-resolution-v1',startedUTC:new Date().toISOString(),capabilities:await detectCapabilities(),runs:[],energyMethod:'Barnes-Hut theta=.5 CPU f64 on GPU f32 snapshots; approximate, no calibrated per-sample uncertainty'};let gpu;
+ try {
+  for(const n of [10000,50000])for(const seed of [2026,2027,2028]){
+   const config={n,seed,dt:.1,epsilon:.1,theta:.5,algorithm:'direct',withHalo:true,durationMyr:20};
+   $('status').textContent=`Resolução: N=${n}, semente ${seed}`;
+   const state=createGalaxy(config);gpu=await GPUBackend.create();await gpu.initialize(state,config);const samples=[];
+   for(let t=0;t<=20;t+=5){if(t)await gpu.step(50);const snapshot=await gpu.snapshot(),d=diagnostics(snapshot,{...config,algorithm:'barnes-hut'});samples.push(laboratorySample(snapshot,d,{...config,forceMethod:'GPU direct f32'}));await new Promise(resolve=>setTimeout(resolve,0));}
+   report.runs.push({config,samples});gpu.dispose();gpu=null;$('output').textContent=JSON.stringify(report,null,2);
+  }
+  report.status='completed';report.completedUTC=new Date().toISOString();$('status').textContent='Resolução concluída: 6 execuções reais; U aproximada por árvore.';
+ }catch(e){report.status='failed';report.reason=e.message;$('status').textContent=e.message;}finally{gpu?.dispose();$('output').textContent=JSON.stringify(report,null,2);$('resolution').disabled=false;}
+};
+</script></html>

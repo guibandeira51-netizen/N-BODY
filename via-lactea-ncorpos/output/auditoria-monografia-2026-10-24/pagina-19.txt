@@ -1,0 +1,42 @@
+19 
+ 
+Essa expressão evidencia como a massa do bojo se distribui em função 
+da distância ao centro galáctico. Em regiões muito próximas ao centro, isto é, 
+para r≪ab, a massa cresce aproximadamente com o quadrado da distância, M(r) 
+∼ r2, indicando uma forte concentração de matéria nas regiões centrais. Por outro 
+lado, para distâncias muito maiores que o raio de escala, r  ≫ ab, a massa 
+acumulada tende assintoticamente ao valor total M b , o que mostra que 
+praticamente toda a massa do bojo já está contida nas regiões internas, fazendo 
+com que sua contribuição gravitacional se torne cada vez menos significativa em 
+grandes escalas. 
+ 
+Para obter o potencial gravitacional associado ao bojo galáctico, parte-se 
+da descrição do campo gravitacional gerado por uma distribuição de massa 
+esfericamente simétrica. Nessa situação, o campo gravitacional em uma 
+distância r do centro depende apenas da massa contida no interior desse raio. 
+Dessa forma, utiliza -se a expressão do campo gravitacional newtoniano para 
+uma distribuição esfericamente simétrica, sendo dada pela equação abaixo. 
+ 𝑔(𝑟)= −𝐺𝑀(𝑟)
+𝑟2  (34) 
+ 
+Porém esse campo aponta para o centro, então vetorialmente: 
+ 𝑔 (𝑟)= −𝐺𝑀(𝑟)
+𝑟2  𝑟̂ (35) 
+ 
+A partir dessa expressão, observa -se que o campo gravitacional está 
+diretamente relacionado à variação espacial do potencial gravitacional. Como a 
+gravidade é uma força conservativa, é possível definir uma função escalar Φ(r) 
+tal que o campo seja obtido a partir de sua derivada radial. Dessa forma, a 
+relação entre essas grandezas é dada por: 
+ 𝑔 (𝑟)= −∇Φ(𝑟) (36) 
+ 
+No caso de simetria esférica, essa expressão se reduz apenas à 
+componente radial, resultando em: 
+ 
+ 𝑔(𝑟)= −𝑑Φ
+𝑑𝑟 (𝑟) (37) 
+ 
+ 
+  
+De forma equivalente, o potencial gravitacional pode ser obtido a partir do 
+campo por integração: 

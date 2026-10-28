@@ -1,0 +1,14 @@
+<!doctype html><meta charset="utf-8"><title>Auditoria de massas 0.8.0</title>
+<h1>Teste de forças com massas diferentes</h1><button id="run">Executar teste GPU</button><pre id="output">Aguardando</pre>
+<script type="module">
+import {GPUBackend,compareCPUvsGPU} from '../src/compute/gpu.js';
+import {directAccelerations} from '../src/physics/forces.js';
+import {G} from '../src/physics/constants.js';
+document.getElementById('run').onclick=async()=>{let gpu;const report={dateUTC:new Date().toISOString(),tests:[]};try{
+ const s={n:3,positions:new Float64Array([-2,0,0,1,0,0,0,4,0]),velocities:new Float64Array(9),accelerations:new Float64Array(9),masses:new Float64Array([.5,6.8,97.6315764173288]),components:new Uint8Array([0,1,2])};
+ gpu=await GPUBackend.create();await gpu.initialize(s,{epsilon:.3,dt:.1});const f=await gpu.snapshot();directAccelerations(s,{epsilon:.3});let e2=0,r2=0;
+ s.accelerations.forEach((x,i)=>{e2+=(f.accelerations[i]-x)**2;r2+=x*x;});const relativeRMS=Math.sqrt(e2/r2);
+ report.tests.push({name:'three unequal masses',inputMasses:Array.from(s.masses),gpuMasses:Array.from(f.masses),cpuAccelerations:Array.from(s.accelerations),gpuAccelerations:Array.from(f.accelerations),relativeRMS,passed:relativeRMS<2e-6,tolerance:2e-6});gpu.dispose();gpu=null;
+ report.tests.push(await compareCPUvsGPU(undefined,{n:1025,steps:8}));report.passed=report.tests.every(t=>t.passed??t.status==='passed');
+ }catch(e){report.error=e.stack;report.passed=false;}finally{gpu?.dispose();document.getElementById('output').textContent=JSON.stringify(report,null,2);}};
+</script>

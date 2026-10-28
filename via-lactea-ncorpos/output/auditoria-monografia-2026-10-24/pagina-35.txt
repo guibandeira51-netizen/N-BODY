@@ -1,0 +1,54 @@
+35 
+ 
+5.2 Formulação matemática do problema de N-corpos 
+O problema de N -corpos consiste em determinar o movimento de um 
+conjunto de partículas que interagem mutuamente por meio da força 
+gravitacional descrita pela Lei da Gravitação Universal de Newton. 
+Diferentemente do problema de dois corpos, cuja solução analítica pode ser 
+obtida de forma exata, não existe uma solução analítica geral para sistemas 
+contendo três ou mais corpos em interação gravitacional. Dessa forma, torna-se 
+necessário recorrer a métodos numéricos para resolver as equações de 
+movimento. 
+Considere inicialmente duas partículas de massas 𝑚𝑖 e 𝑚𝑗, localizadas 
+nas posições 𝑟𝑖 e 𝑟𝑗, respectivamente. De acordo com a Lei da Gravitação 
+Universal, a força gravitacional exercida pela partícula 𝑗 sobre a partícula 𝑖 é 
+dada por: 
+ 𝐹𝑖𝑗⃗⃗⃗⃗ = 𝐺 𝑚𝑖𝑚𝑗
+|𝑟𝑗⃗⃗ − 𝑟𝑖⃗⃗ |
+3 (𝑟𝑗⃗⃗ − 𝑟𝑖⃗⃗ ) (89) 
+Em que G representa a constante da gravitação universal e  𝑟𝑗 − 𝑟𝑖 
+corresponde à distância entre as partículas.  Em um sistema composto por N 
+partículas, cada corpo sofre simultaneamente a ação gravitacional de todos os 
+demais. Assim, a força resultante atuando sobre a partícula 𝑖  pode ser obtida 
+pela soma vetorial de todas as contribuições gravitacionais, 
+ 
+Fi = ∑ Fij
+N
+j=1, j≠i
+ 
+(90) 
+ 
+Aplicando a Segunda Lei de Newton, obtém-se: 
+ 
+𝑚𝑖𝑟𝑖̈ = ∑ 𝐺 𝑚𝑖 𝑚𝑗
+|𝑟𝑗 − 𝑟𝑖|
+3 (𝑟𝑗 − 𝑟𝑖)
+𝑁
+𝑗=1, 𝑗≠𝑖
+ 
+(91) 
+ 
+Eliminando a massa 𝑚𝑖 presente em ambos os lados da equação, chega-
+se à equação geral do problema gravitacional de N-corpos: 
+ 
+𝑟𝑖̈ = 𝐺 ∑ 𝑚𝑗
+𝑟𝑗 − 𝑟𝑖
+|𝑟𝑗 − 𝑟𝑖|
+3
+𝑁
+𝑗=1, 𝑗≠𝑖
+ 
+(92) 
+Em que G é a constante gravitacional, 𝑀𝑗 representa a massa da partícula 
+𝑗, 𝑟𝑖⃗⃗  e 𝑟𝑗⃗⃗  são os vetores posição das partículas e 𝑁 corresponde ao número total 
+de partículas da simulação. 

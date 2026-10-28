@@ -3,6 +3,7 @@ import {MODEL} from './constants.js';
 import {HALO_TOTAL_MASS,analyticPotential} from './models.js';
 import {validateState} from './forces.js';
 import {massAudit} from './mass-audit.js';
+import {deserializeModelSnapshot} from './snapshot-model.js';
 
 /** Axisymmetric nearest-neighbour velocity transfer, Rodionov et al. 2009 §2.2.
  * Preparation only. No transfer, reset, cooling or constraints in free evolution.
@@ -61,8 +62,9 @@ export async function prepareIterative(config,{evolve,iterations=20,segmentMyr=1
   const frame=inertialFrame(current);current.meta={...original.meta,method:'iterative-density-transfer',initialization:'Candidato iterativo de densidade e transferência cilíndrica; Rodionov et al. (2009)',preparation:{iterations,segmentMyr,neighbours,antipodal,config,log,finalFrameShift:frame},equilibriumValidated:false,escape:escapeAudit(current),qualification:'Preparação com densidade prescrita; evolução livre obrigatória; não é GALIC/AGAMA nem DF analítica comprovada.'};
   return current;
 }
-export function serializeInitial(state){return {schema:'nbody-initial-v1',units:'kpc,Myr,1e10 nominal Msun',model:MODEL,haloTotalMass:HALO_TOTAL_MASS,n:state.n,positions:Array.from(state.positions),velocities:Array.from(state.velocities),masses:Array.from(state.masses),components:Array.from(state.components),meta:state.meta};}
+export function serializeInitial(state){return {schema:state.meta?.physicalModel?'nbody-initial-v2':'nbody-initial-v1',units:'kpc,Myr,1e10 nominal Msun',...(state.meta?.physicalModel?{}:{model:MODEL,haloTotalMass:HALO_TOTAL_MASS}),n:state.n,positions:Array.from(state.positions),velocities:Array.from(state.velocities),masses:Array.from(state.masses),components:Array.from(state.components),meta:state.meta};}
 export function deserializeInitial(data){
+  if(data?.schema==='nbody-initial-v2')return deserializeModelSnapshot(data);
   if(data.schema!=='nbody-initial-v1'||data.units!=='kpc,Myr,1e10 nominal Msun'||JSON.stringify(data.model)!==JSON.stringify(MODEL)||data.haloTotalMass!==HALO_TOTAL_MASS)throw Error('Modelo ou unidades incompatíveis.');
   const s={n:data.n,positions:Float64Array.from(data.positions),velocities:Float64Array.from(data.velocities),masses:Float64Array.from(data.masses),components:Uint8Array.from(data.components),accelerations:new Float64Array(3*data.n),meta:structuredClone(data.meta),time:0};validateState(s);
   if(data.components.length!==s.n||data.components.some(c=>![0,1,2].includes(c))||s.velocities.length!==3*s.n||!s.velocities.every(Number.isFinite))throw Error('Snapshot inválido.');

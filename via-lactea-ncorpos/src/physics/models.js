@@ -42,6 +42,23 @@ export function interpolate(xs,ys,x) {
   const t=(x-xs[a])/(xs[b]-xs[a]);return ys[a]+t*(ys[b]-ys[a]);
 }
 export function haloMass(r) {return r<=R200?P.haloMassScale*nfwFunction(r/P.haloScale):interpolate(haloTable.r,haloTable.mass,r);}
+// Integrate the SAME piecewise-linear enclosed mass used by the force.
+// For M(s)=A+B*s, integral_a^b M(s)/s² ds=A*(b-a)/(a*b)+B*log(b/a).
+// A separately interpolated shell potential had a different numerical gradient.
+const haloPotentialTail=new Float64Array(samples);
+haloPotentialTail[samples-1]=HALO_TOTAL_MASS/HALO_OUTER_RADIUS;
+function massIntervalIntegral(lo,hi,index){
+ const a=haloTable.r[index],b=haloTable.r[index+1],slope=(haloTable.mass[index+1]-haloTable.mass[index])/(b-a),intercept=haloTable.mass[index]-slope*a;
+ return intercept*(hi-lo)/(lo*hi)+slope*Math.log1p((hi-lo)/lo);
+}
+for(let i=samples-2;i>=0;i--)haloPotentialTail[i]=haloPotentialTail[i+1]+massIntervalIntegral(haloTable.r[i],haloTable.r[i+1],i);
+function outerHaloPotentialIntegral(r){
+ if(r>=HALO_OUTER_RADIUS)return HALO_TOTAL_MASS/r;
+ let lo=0,hi=samples-1;while(hi-lo>1){const m=(lo+hi)>>>1;if(haloTable.r[m]>r)hi=m;else lo=m;}
+ return haloPotentialTail[hi]+massIntervalIntegral(r,haloTable.r[hi],lo);
+}
+const innerHaloPotentialOffset=P.haloMassScale*Math.log1p(R200/P.haloScale)/R200-outerHaloPotentialIntegral(R200);
+export const HALO_POTENTIAL_REFERENCE_VERSION='mass-integral-consistent-v1';
 export function analyticAcceleration(x,y,z,withHalo=true,component=-1) {
   const r=Math.hypot(x,y,z), out=[0,0,0];
   if(r>0&&(component<0||component===0)) {const f=-G*P.bulgeMass/(r*(r+P.bulgeScale)**2);out[0]+=f*x;out[1]+=f*y;out[2]+=f*z;}
@@ -54,9 +71,8 @@ export function analyticPotential(x,y,z,withHalo=true) {
   if(withHalo) {
     if(r<=R200) {
       const raw=r>0?P.haloMassScale*Math.log1p(r/P.haloScale)/r:P.haloMassScale/P.haloScale;
-      const offset=P.haloMassScale/(P.haloScale+R200)-interpolate(haloTable.r,haloTable.shell,R200);
-      phi+=G*(offset-raw);
-    } else phi-=G*(haloMass(r)/r+interpolate(haloTable.r,haloTable.shell,r));
+      phi+=G*(innerHaloPotentialOffset-raw);
+    } else phi-=G*outerHaloPotentialIntegral(r);
   }
   return phi;
 }

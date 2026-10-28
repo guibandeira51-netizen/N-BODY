@@ -1,0 +1,16 @@
+grid validation {'seed': 20261015, 'testPoints': 4000, 'radiusRangeKpc': [0.02, 2000], 'forceRelativePercentiles': [1.4232778569255924e-06, 5.700670007339139e-06, 0.00014585564181774895, 0.0003376759362493638], 'potentialRelativePercentiles': [1.0256042681788813e-09, 2.0064719064016855e-08, 4.4721453230645e-08, 6.141028652262293e-08], 'reference': 'actual AGAMA final-halo Multipole evaluated at independent random meridional positions', 'GmatchFactor': 0.9999999999254715}
+Gaussian contrast prepared
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\outputs\via-lactea-ncorpos\scripts\equilibrium\prepare_controls.py:67: FutureWarning: Consider using separateTime=True, which would enable optimized output storage: timestamps for all orbits put into a single 2d numpy array, and trajectories - into a single 3d array (see docstring for details). This will become the default option in a future version. Or add separateTime=False if you want to keep the deprecated format and suppress this warning.
+  result=agama.orbit(potential=potential,ic=xv[::2],time=1000*conv,trajsize=501,accuracy=1e-9,dtype=float)
+1024/5000 orbits complete
+1896/5000 orbits complete
+2825/5000 orbits complete
+                          
+5000 orbits complete (1250 orbits/s)
+frozen c20-agama-n10000-nb1500-nd4500-nh4000-s2026-h2026.json
+696/5000 orbits complete
+1521/5000 orbits complete
+2375/5000 orbits complete
+                          
+5000 orbits complete (1250 orbits/s)
+frozen c20-agama-n10000-nb1500-nd4500-nh4000-s2027-h2027.json

@@ -1,0 +1,15 @@
+<!doctype html><meta charset="utf-8"><base href="/"><title>Verificação do ZIP do laboratório 0.9</title>
+<h1>Exportação do laboratório — teste com estado físico</h1><p>Fixture CPU direta, N=200, semente 2026, dt=0,1, ε=0,1. O link de download é interceptado somente nesta página de teste para conferir o arquivo gerado.</p><section class="review-downloads"></section><pre id="test-status">Preparando</pre><pre id="zip-bytes" hidden></pre>
+<script type="module">
+import {initializeLaboratory} from '../src/laboratory-panel.js';
+import {laboratorySample} from '../src/physics/laboratory.js';
+import {createGalaxy} from '../src/physics/initial.js';
+import {Leapfrog} from '../src/physics/integrator.js';
+import {diagnostics} from '../src/physics/diagnostics.js';
+const config={n:200,seed:2026,dt:.1,epsilon:.1,algorithm:'direct',selected:'cpu',withHalo:true},state=createGalaxy(config),engine=new Leapfrog(state,config);engine.initialize();
+const panel=initializeLaboratory({getRunReport:()=>({configuration:config,initial:state.meta}),capture:async()=>{}});
+panel.add(laboratorySample(state,diagnostics(state,config),config));engine.step(20);panel.add(laboratorySample(state,diagnostics(state,config),config));
+// Local test sink. Production still uses the ordinary browser download API.
+URL.createObjectURL=blob=>{blob.arrayBuffer().then(buffer=>{const bytes=new Uint8Array(buffer);let binary='';for(const b of bytes)binary+=String.fromCharCode(b);document.getElementById('zip-bytes').textContent=btoa(binary);document.getElementById('test-status').textContent=JSON.stringify({status:'captured',bytes:bytes.length,samples:panel.report().samples.length,timeMyr:state.time});});return 'blob:local-export-test';};URL.revokeObjectURL=()=>{};HTMLAnchorElement.prototype.click=function(){};
+document.getElementById('test-status').textContent='Pronto. Use Laboratório completo · ZIP.';
+</script>

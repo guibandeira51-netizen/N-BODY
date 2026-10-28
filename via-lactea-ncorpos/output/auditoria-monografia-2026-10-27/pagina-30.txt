@@ -1,0 +1,43 @@
+30 
+ 
+ 
+ 
+ϕ = −4π𝐺ρ0𝑟𝑠
+2 ∫
+ln(1 + 𝑥)− 𝑥
+1 + 𝑥
+𝑥2  𝑑𝑥 
+(58) 
+ 
+ 
+Separando a integral em dois termos, a expressão do potencial 
+gravitacional pode ser escrita como: 
+ ϕ = −4π𝐺ρ0𝑟𝑠
+2 [∫ln(1 + 𝑥)
+𝑥2  𝑑𝑥− ∫ 1
+𝑥(1 + 𝑥) 𝑑𝑥] (59) 
+ 
+ 
+A segunda integral pode ser resolvida por decomposição em frações 
+parciais, enquanto a primeira integral é resolvida por integração por partes. Após 
+a resolução das integrais e a simplificação algébrica dos termos obtidos, chega-
+se à expressão do potencial gravitacional do perfil NFW: 
+ ϕ(𝑥)= −4π𝐺ρ0𝑟𝑠
+2 ln(1 + 𝑥)
+𝑥  (60) 
+ 
+Lembrando que x está definido na equação (61), logo: 
+ ϕ(𝑟)= −4π𝐺ρ0𝑟𝑠
+3 ln(1 + 𝑟/𝑟𝑠)
+𝑟  (61) 
+ 
+A expressão (6 5) corresponde ao potencial gravitacional associado ao 
+perfil de densidade NFW. Essa formulação é amplamente utilizada na descrição 
+de halos de matéria escura em galáxias espirais e foi obtida a partir do perfil 
+proposto por Julio Navarro, Carlos Frenk e Simo n White em simulações 
+cosmológicas numéricas. 
+Nessa equação, G representa a constante gravitacional, ρ0 corresponde 
+à densidade característica do halo e rs define o raio de escala da distribuição de 
+matéria escura. O termo logarítmico indica que o potenci al varia de maneira 
+gradual nas regiões externas da galáxia, refletindo a natureza extensa do halo 
+de matéria escura. O sinal negativo evidencia o caráter atrativo da interação 

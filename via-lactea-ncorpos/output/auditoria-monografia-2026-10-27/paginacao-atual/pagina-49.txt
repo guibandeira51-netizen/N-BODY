@@ -1,0 +1,31 @@
+49 
+ 
+uma representação adequada da Via Láctea, mantendo o tempo de 
+processamento compatível com os recursos computacionais disponíveis. 
+As simulações foram executadas em um computador equipado com um 
+processador AMD Ryzen 7 5700X, 16 GB de memória RAM DDR4 e uma placa 
+de vídeo AMD Radeon RX 7600 com 8 GB de memória dedicada . Essa 
+configuração oferece desempenho suficiente para a execução de simulações N-
+corpos de pequena e média escala, permitindo a análise da dinâmica 
+gravitacional do sistema sem a necessidade de infraestrutura computacional de 
+alto desempenho. Com as condições iniciais completamente definidas, o sistema 
+encontra-se preparado para a etapa de integração numérica, na qual as posições 
+e velocidades das partículas são atualizadas ao longo do tempo utilizando o 
+método Leapfrog, apresentado na próxima seção. 
+5.6 Integração Numérica 
+Após a definição das condições iniciais, to rna-se necessário utilizar um 
+método numérico capaz de resolver as equações de movimento das partículas 
+ao longo do tempo. Como não existe solução analítica para um sistema 
+gravitacional composto por um grande número de corpos interagindo 
+simultaneamente, a evolução do sistema é obtida por integração numérica das 
+equações diferenciais que descrevem sua dinâmica. 
+Neste trabalho, foi empregado o método Leapfrog, amplamente utilizado 
+em simulações gravitacionais devido à sua simplicidade, estabilidade numérica  
+e boa conservação da energia mecânica em integrações de longa duração. 
+Diferentemente de métodos convencionais, como o de Euler, o Leapfrog 
+apresenta menor acúmulo de erro ao longo do tempo, sendo especialmente 
+adequado para problemas de dinâmica orbital. 
+A aceleração de cada partícula é obtida a partir da soma das contribuições 
+gravitacionais de todas as demais partículas do sistema, conforme a Lei da 
+Gravitação Universal de Newton (92), o método Leapfrog atualiza as velocidades 
+e posições de forma alternada, utilizando um deslocamento temporal de meio 

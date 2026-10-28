@@ -1,0 +1,15 @@
+# compilation flags for both the shared library and any programs that use it
+COMPILE_FLAGS_ALL = /std:c++17 /permissive-  /W3 -wd4244 -wd4267 /O2 /EHsc /nologo -Iextras/include /openmp
+# additional compilation flags for the library files only (src/*.cpp)
+COMPILE_FLAGS_LIB = -DHAVE_PYTHON -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\include -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\site-packages\numpy\_core\include -DHAVE_EIGEN -Iextras/include -DHAVE_CVXOPT
+# linking flags for both the shared library (agama.so) and any executable programs, regardless of how they are linked
+LINK_FLAGS_ALL = /LIBPATH:extras/lib
+# additional linking flags for the shared library only (agama.so)
+LINK_FLAGS_LIB = /LIBPATH:C:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\libs
+# additional linking flags for the shared library (agama.so) and executables that use the static library (agama.a)
+LINK_FLAGS_LIB_AND_EXE_STATIC = gsl.lib cblas.lib
+# additional linking flags for executables which use the shared library (agama.so)
+LINK_FLAGS_EXE_SHARED = 
+# additional linking flags for non-C++ executables (e.g. fortran programs) that use the static library (agama.a)
+LINK_FLAGS_EXE_STATIC_NONCPP = -lstdc++
+

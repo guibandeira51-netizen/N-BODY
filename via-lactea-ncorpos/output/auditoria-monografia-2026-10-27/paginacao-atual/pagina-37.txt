@@ -1,0 +1,47 @@
+37 
+ 
+ 
+𝑉halo(𝑟)= √𝐺𝑀halo(𝑟)
+𝑟  
+(82) 
+ 
+Para o perfil NFW , a massa acumulada no interior do raio r é dada por  (50), 
+substituindo essa expressão na equação da velocidade circular, obtém-se: 
+ 
+𝑉halo(𝑟)= √4π𝐺ρ0𝑟𝑠
+3
+𝑟 [ln(1 + 𝑟
+𝑟𝑠
+)−
+𝑟
+𝑟𝑠
+1 + 𝑟
+𝑟𝑠
+] 
+(83) 
+   
+Definindo a variável adimensional: 
+ 𝑥 = 𝑟
+𝑟𝑠
+ (84) 
+A expressão assume a forma mais compacta: 
+ 
+𝑉halo(𝑟)= √4π𝐺ρ0𝑟𝑠2 ⋅ 1
+𝑥(ln(1 + 𝑥)− 𝑥
+1 + 𝑥) 
+(85) 
+   
+Essa equação descreve a contribuição do halo de matéria escura para a 
+curva de rotação galáctica. O parâmetro ρ0 controla a densidade característica 
+do halo, enquanto rs determina a escala radial na qual ocorre a transição entre o 
+comportamento interno e externo da distribuição NFW. Assim, quanto maior a 
+densidade característica ou o raio de escala do halo, maior tende a ser sua 
+contribuição para a velocidade orbital em grandes distâncias. 
+O comportamento físico dessa equação pode ser analisado em dois 
+regimes principais. Para regiões próximas ao centro galáctico, isto é, quando r  
+≪ rs, tem -se x  ≪ 1. Nesse limite, a massa acumulada do halo cresce 
+aproximadamente com r 2, fazendo com que a velocidade orbital aumente 
+aproximadamente com a raiz quadrada do raio: 
+ 𝑉halo(𝑟)∝ √𝑟 (86) 
+Isso indica que, nas regiões internas, a contribuição do halo cresce 
+gradualmente com a distância ao centro, mas ainda não domina completamente 

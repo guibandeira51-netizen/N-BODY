@@ -1,0 +1,23 @@
+44 
+ 
+ 
+Após essa etapa de discretização, cada partícula passa a possuir 
+propriedades físicas bem definidas, como massa, posição e velocidade inicial. A 
+evolução temporal do sistema deixa então de ser determina da pelos potenciais 
+analíticos e passa a ser calculada exclusivamente por meio da interação 
+gravitacional entre todas as partículas da simulação, conforme a Lei da 
+Gravitação Universal de Newton. Em outras palavras, os modelos de Hernquist, 
+Miyamoto–Nagai e NFW são utilizados apenas para construir a configuração 
+inicial da galáxia, enquanto a dinâmica subsequente emerge naturalmente das 
+interações gravitacionais mútuas entre as partículas. 
+Essa mudança de abordagem representa a transição entre uma descrição 
+analítica do campo gravitacional e uma modelagem baseada em sistemas N -
+corpos. Dessa forma, torna-se possível investigar como a distribuição de matéria 
+escura influencia a evolução dinâmica da galáxia por meio das interações 
+gravitacionais entre seus dife rentes componentes, mantendo a coerência entre 
+a fundamentação teórica apresentada e a implementação computacional 
+desenvolvida neste trabalho. 
+5.4 Geração das Partículas 
+Após a definição dos modelos analíticos que descrevem os principais 
+componentes da Via Láctea, o passo seguinte consiste em converter essas 
+distribuições contínuas de massa em um conjunto discreto de partículas. Esse 

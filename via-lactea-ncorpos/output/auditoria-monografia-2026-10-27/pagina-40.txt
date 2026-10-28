@@ -1,0 +1,32 @@
+40 
+ 
+representado por uma distribuição contínua de massa. Des sa forma, o campo 
+gravitacional é previamente conhecido e a aceleração de uma partícula pode ser 
+obtida diretamente por meio do gradiente do potencial gravitacional. 
+Entretanto, uma galáxia não é formada por um meio contínuo, mas sim 
+por um conjunto extremamente grande de objetos individuais, incluindo estrelas, 
+nuvens de gás, aglomerados estelares e partículas de matéria escura. Cada um 
+desses corpos exerce influência gravitacional sobre todos os demais, fazendo 
+com que o campo gravitacional do sistema sej a consequência direta da 
+distribuição instantânea de massa e não uma quantidade previamente definida. 
+Essa característica torna a descrição analítica insuficiente para 
+representar toda a complexidade dinâmica de um sistema gravitacional 
+composto por bilhõe s de corpos. Em particular, quando se deseja investigar a 
+evolução temporal da distribuição de matéria ou analisar fenômenos coletivos 
+decorrentes da interação gravitacional entre partículas, torna -se necessário 
+abandonar a hipótese de campo contínuo e ado tar uma formulação discreta.  
+Nesse contexto surge o problema de N -corpos, cuja finalidade é determinar a 
+evolução temporal de um sistema composto por N partículas que interagem 
+exclusivamente por meio da gravitação. Diferentemente da abordagem 
+apresentada nos capítulos anteriores, na qual a aceleração é obtida a partir de 
+potenciais analíticos previamente estabelecidos, o método de N -corpos calcula 
+explicitamente as forças gravitacionais entre todas as partículas do sistema, 
+permitindo que o potencial gravi tacional emerja naturalmente da própria 
+distribuição de massa. 
+5.2 Formulação matemática do problema de N-corpos 
+O problema de N -corpos consiste em determinar o movimento de um 
+conjunto de partículas que interagem mutuamente por meio da força 
+gravitacional descrita pela Lei da Gravitação Universal de Newton. 
+Diferentemente do problema de dois corpos, cuja solução analítica pode ser 
+obtida de forma exata, não existe uma solução analítica geral para sistemas 
+contendo três ou mais corpos em interação gravitacional. Dessa forma, torna-se 

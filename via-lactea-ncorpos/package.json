@@ -1,14 +1,14 @@
 {
   "name": "via-lactea-ncorpos",
-  "version": "0.8.0",
+  "version": "1.0.6-experimental",
   "private": true,
   "type": "module",
-  "description": "Simulador autogravitante local da Via Láctea",
+  "description": "Laboratório científico da influência gravitacional do halo na Via Láctea",
   "scripts": {
     "dev": "node scripts/serve.mjs",
     "start": "node scripts/serve.mjs",
     "build": "node scripts/build.mjs",
-    "test": "node --test",
+    "test": "node scripts/test.mjs",
     "benchmark": "node scripts/benchmark.mjs"
   },
   "engines": {

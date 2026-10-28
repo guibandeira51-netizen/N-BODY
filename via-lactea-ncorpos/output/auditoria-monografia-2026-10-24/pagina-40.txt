@@ -1,0 +1,36 @@
+40 
+ 
+Cada partícula 𝑖 é representada pelo conjunto de parâmetros: 
+ 𝑃𝑖 = (𝑚𝑖,𝑟𝑖⃗⃗ ,𝑣𝑖⃗⃗⃗ ) (93) 
+Cada partícula 𝑖 é representada pelo conjunto de parâmetros  
+𝑃𝑖 = (𝑚𝑖,𝑟𝑖⃗⃗ ,𝑣𝑖⃗⃗⃗ ), em que 𝑚𝑖 representa a massa da partícula,  𝑟𝑖⃗⃗ = (𝑥𝑖,𝑦𝑖,𝑧𝑖) 
+corresponde ao vetor posição e 𝑣𝑖⃗⃗⃗ = (𝑣𝑥,𝑖,𝑣𝑦,𝑖,𝑣𝑧,𝑖)representa o vetor velocidade. 
+Variável Descrição Unidade 
+𝑚𝑖 Massa da partícula kg 
+𝑥𝑖 ,𝑦𝑖 ,𝑧𝑖 Coordenadas espaciais kpc 
+𝑣𝑥,𝑖, 𝑣𝑦,𝑖, 𝑣𝑧,𝑖 Componentes da velocidade 𝑘𝑚 𝑠−1 
+ 
+A distribuição espacial inicial das partículas é obtida conforme descrito na 
+Seção 5.4, sendo cada componente da galáxia gerado a partir do respectivo 
+perfil de densidade. Após essa etapa, todas as partículas são armazenadas em 
+uma única estrutura de dados que representa a configuração inicial completa da 
+Via Láctea. 
+As velocidades iniciais são atribuídas de forma co mpatível com a 
+dinâmica esperada para cada componente galáctico. As partículas pertencentes 
+ao disco recebem velocidades predominantemente tangenciais ao centro 
+galáctico, reproduzindo o movimento orbital característico dessa estrutura. Já as 
+partículas do bojo apresentam uma distribuição de velocidades mais isotrópica, 
+enquanto o halo de matéria escura é inicializado com velocidades consistentes 
+com sua distribuição aproximadamente esférica e seu comportamento dinâmico 
+esperado. 
+Embora essas velocidades in iciais representem um estado de equilíbrio 
+aproximado, a configuração do sistema evolui naturalmente ao longo da 
+simulação em resposta às interações gravitacionais entre todas as partículas. 
+Dessa forma, a dinâmica observada não é imposta pelos modelos ana líticos, 
+mas emerge da solução numérica das equações do movimento. 
+A configuração inicial da simulação pode ser representada pelo conjunto: 
+ 𝑆0 = {𝑃1,𝑃2,…,𝑃𝑁} (94) 
+Em que 𝑁 corresponde ao número total de partículas consideradas na 
+simulação. Esse conjunto constitui a entrada do algoritmo N-corpos, responsável 
+por calcular, a cada passo temporal, as forças gravitacionais entre as partículas 
+e atualizar suas posições e velocidades. 

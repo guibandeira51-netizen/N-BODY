@@ -1,0 +1,4 @@
+import{LiveGPUBackend}from'./gpu-live.js';import{GeometryHaloGPUBackend}from'./gpu-halo-geometry.js';
+export async function benchmarkLiveRepresentation(state,options={}){
+ let backend;try{const Backend=options.haloRepresentation==='geometry'?GeometryHaloGPUBackend:LiveGPUBackend;backend=await Backend.create();await backend.initialize(state,options);await backend.step(2);const samples=[];for(let k=0;k<3;k++)samples.push((await backend.step(1)).lastStepMs);const final=await backend.snapshot();return{backend:'gpu',algorithm:'direct',haloRepresentation:options.haloRepresentation??'particles',precision:'f32',status:'measured',n:state.n,stepMs:samples.slice().sort((a,b)=>a-b)[1],samples,warmupSteps:2,measuredSteps:3,finite:final.positions.every(Number.isFinite),effectiveParameters:backend.effectiveParameters,timing:'Median three actual full steps; readback, rendering and diagnostics excluded'};}finally{backend?.dispose();}
+}

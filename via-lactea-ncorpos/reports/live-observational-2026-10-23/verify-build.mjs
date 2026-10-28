@@ -1,0 +1,8 @@
+import{readFile,writeFile,copyFile,readdir}from'node:fs/promises';import{createHash}from'node:crypto';
+const root=new URL('../../',import.meta.url),folder=new URL('./',import.meta.url),identity=JSON.parse(await readFile(new URL('source-identity.json',folder))),mismatches=[];
+for(const[f,h]of Object.entries(identity.files))for(const prefix of['','dist/']){const actual=createHash('sha256').update(await readFile(new URL(prefix+f,root))).digest('hex');if(actual!==h)mismatches.push(prefix+f);}
+const html=await readFile(new URL('experimento-ncorpos.html',root),'utf8'),ids=[...html.matchAll(/id="([^"]+)"/g)].map(x=>x[1]),duplicates=ids.filter((x,i)=>ids.indexOf(x)!==i);if(mismatches.length||duplicates.length)throw Error(JSON.stringify({mismatches,duplicates}));
+const v=JSON.parse(await readFile(new URL('validation.json',folder)));v.build={status:'passed',log:'build.txt',identity:identity.sha256,sourceFilesChecked:Object.keys(identity.files).length,buildFilesChecked:Object.keys(identity.files).length,hashMismatches:mismatches,duplicateHtmlIds:duplicates};
+try{v.browser.downloadChecks=JSON.parse(await readFile(new URL('download-checks.json',folder)));v.browser.finalScreenshot='interface-final.png';v.browser.finalPreparedState={n:8192,timeMyr:0,paused:true,codeVersion:'live-observational-v6',consoleErrors:[]};}catch(error){if(error.code!=='ENOENT')throw error;}
+await writeFile(new URL('validation.json',folder),JSON.stringify(v,null,2));
+for(const f of await readdir(folder,{withFileTypes:true}))if(f.isFile())await copyFile(new URL(f.name,folder),new URL('dist/reports/live-observational-2026-10-23/'+f.name,root));console.log(JSON.stringify(v.build));

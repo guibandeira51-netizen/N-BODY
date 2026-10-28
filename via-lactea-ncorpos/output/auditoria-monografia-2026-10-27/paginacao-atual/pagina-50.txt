@@ -1,0 +1,37 @@
+50 
+ 
+passo para as velocidades. Inicialmente, calcula -se a velocidade intermediária 
+por: 
+ 𝑣𝑖
+𝑛+1/2 = 𝑣𝑖
+𝑛 + Δ𝑡
+2 𝑎𝑖(𝑟𝑛) (95) 
+Em seguida, as posições são atualizadas segundo: 
+ 𝑟𝑖
+𝑛+1 = 𝑟𝑖
+𝑛 + Δ𝑡 𝑣𝑖
+𝑛+1/2 (96) 
+Após o recálculo das acelerações na nova configuração espacial, 
+completa-se a atualização das velocidades por meio da expressão: 
+ 𝑣𝑖
+𝑛+1 = 𝑣𝑖
+𝑛+1/2 + Δ𝑡
+2 𝑎𝑖(𝑟𝑛+1). (97) 
+Essas três etapas são conhecidas como Kick–Drift–Kick (KDK) , pois 
+consistem em uma atualização parcial da velocidade ( Kick), seguida da 
+atualização da posição ( Drift) e, por fim, da conclusão da atualização da 
+velocidade (Kick). O processo é repetido sucessivamente para todos os instantes 
+de tempo da simulação, permitindo acompanhar a evolução dinâmica do sistema 
+gravitacional. A cada passo temporal, novas acelerações são calculadas 
+considerando as posições atualizadas das partículas, tornando  a dinâmica 
+completamente auto consistente. 
+A escolha do passo de tempo Δt  influencia diretamente a precisão e a 
+estabilidade da integração. Valores muito elevados podem introduzir erros 
+significativos na trajetória das partículas, enquanto valores muito p equenos 
+aumentam o tempo computacional necessário para completar a simulação. 
+Assim, o passo temporal foi escolhido de forma a equilibrar precisão numérica e 
+custo computacional, garantindo uma evolução estável do sistema durante todo 
+o intervalo simulado. 
+5.7 Suavização gravitacional e resolução de partículas. 
+Nas simulações gravitacionais de sistemas N -corpos, cada partícula 
+computacional representa uma determinada quantidade de massa distribuída no 

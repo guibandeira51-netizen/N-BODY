@@ -1,0 +1,34 @@
+[
+  {
+    "name": "energy-protocol-recovered-user",
+    "points": [
+      {
+        "t": 0,
+        "n": 311115,
+        "E": -1.850120023938372,
+        "errorPercent": 0,
+        "costMs": 51549.87000000104,
+        "dt": 1
+      },
+      {
+        "t": 1355,
+        "n": 311115,
+        "E": -1.8461892206482675,
+        "errorPercent": 0.2124620694465474,
+        "costMs": 55952.085000000894,
+        "dt": 1
+      }
+    ]
+  },
+  {
+    "name": "energy-protocol-fresh-page",
+    "source": "Rendered UI accessibility snapshot",
+    "purpose": "Reduced-N UI/protocol stress test only, not physical equilibrium or accuracy validation",
+    "n": 1000,
+    "dtMyr": 1,
+    "lastIntegratedTimeMyr": 7724,
+    "lastAutomaticReferenceTimeMyr": 7704,
+    "diagnosticStatesMeasured": 156,
+    "fullReferenceTableRetained": false
+  }
+]

@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Evidências e limites da validação de energia, equilíbrio e convergência de um modelo galáctico N-corpos.">
+  <title>Validação científica 1.0.1 · TCC UEMS</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body class="equilibrium-page">
+<a class="skip-link" href="#validation-title">Ir para a validação científica</a>
+<header class="app-header uems-header">
+  <div class="brand uems-brand">
+    <img class="uems-logo" src="./assets/uems.png" alt="UEMS — Universidade Estadual de Mato Grosso do Sul">
+    <div><p class="eyebrow">GUILHERME ALEIXO BANDEIRA · PROJETO DE TCC</p><h1>Estabilidade e conservação galáctica</h1><p class="project-author">Modelagem Computacional de Sistemas N-Corpos Aplicada ao Estudo da Matéria Escura.</p></div>
+  </div>
+  <div class="header-context"><span class="edition">Versão 1.0.1</span><span class="context-line">Evidências científicas · domínio medido</span></div>
+</header>
+<main class="equilibrium-layout">
+  <section class="performance-panel equilibrium-intro" aria-labelledby="intro-title">
+    <div class="panel-heading"><span class="section-number">01</span><h2 id="intro-title">Uma realização, três avaliações independentes</h2><span class="local-tag">1.0.1</span></div>
+    <p id="qualification" role="status">Carregando as evidências e o estado documentado da validação 1.0.1.</p>
+    <p>Uma boa conservação de energia, por si só, não demonstra equilíbrio estrutural. Cada avaliação abaixo informa seu próprio alcance, suas evidências e suas limitações. Nenhum limiar universal de espessamento é adotado.</p>
+    <nav class="equilibrium-nav" aria-label="Referências e versões"><a href="./">Simulador histórico 0.9</a><a href="./correcao102.html">Correção física 1.0.2 · experimental</a><a href="./refinamento104.html">Refinamento combinado 1.0.4</a><a href="./granularidade103.html">Refinamento 1.0.3 · experimental</a><a href="#candidate-title">Candidato AGAMA · evolução</a><a href="#validation-files-title">Relatórios e dados 1.0.1</a><a href="#historical-results-title">Resultados históricos 1.0</a></nav>
+  </section>
+
+  <section class="performance-panel validation-panel" aria-labelledby="validation-title" aria-describedby="validation-principle">
+    <div class="panel-heading"><span class="section-number">02</span><h2 id="validation-title">Validação científica · versão 1.0.1</h2></div>
+    <p id="validation-principle" class="validation-principle">As três conclusões são independentes e se aplicam somente às configurações, intervalos e referências efetivamente medidos.</p>
+    <p id="validation-domain" class="validation-domain">Domínio da campanha: aguardando o manifesto de resultados.</p>
+    <div class="validation-grid" id="validation-cards" aria-live="polite" aria-busy="true">
+      <article class="validation-card" data-assessment="energy" aria-labelledby="energy-title">
+        <p class="validation-number">01 / HAMILTONIANA</p><h3 id="energy-title">CONSERVAÇÃO DE ENERGIA</h3>
+        <p class="validation-badge" data-status="incomplete">DADOS INSUFICIENTES</p><p class="validation-summary">Aguardando as séries temporais e a identificação do método de energia.</p>
+        <p class="validation-scope"></p><ul class="validation-evidence"></ul><details class="validation-limitations"><summary>Limitações e pendências</summary><ul><li>Uma medição isolada não certifica conservação ao longo da evolução.</li></ul></details>
+      </article>
+      <article class="validation-card" data-assessment="stability" aria-labelledby="stability-title">
+        <p class="validation-number">02 / ESTRUTURA</p><h3 id="stability-title">ESTABILIDADE DINÂMICA</h3>
+        <p class="validation-badge" data-status="incomplete">DADOS INSUFICIENTES</p><p class="validation-summary">Aguardando as medidas estruturais e o alcance da comparação.</p>
+        <p class="validation-scope"></p><ul class="validation-evidence"></ul><details class="validation-limitations"><summary>Limitações e pendências</summary><ul><li>Conservação energética não substitui a validação do equilíbrio.</li></ul></details>
+      </article>
+      <article class="validation-card" data-assessment="convergence" aria-labelledby="convergence-title">
+        <p class="validation-number">03 / REFINAMENTO</p><h3 id="convergence-title">CONVERGÊNCIA NUMÉRICA</h3>
+        <p class="validation-badge" data-status="incomplete">DADOS INSUFICIENTES</p><p class="validation-summary">Aguardando as comparações controladas de dt, N, ε e precisão.</p>
+        <p class="validation-scope"></p><ul class="validation-evidence"></ul><details class="validation-limitations"><summary>Limitações e pendências</summary><ul><li>Uma execução individual não demonstra convergência.</li></ul></details>
+      </article>
+    </div>
+    <p id="validation-load-status" class="validation-load-status" role="status">Lendo reports/v1.0.1/assessment.json…</p>
+    <details class="validation-definitions"><summary>Como interpretar as classificações</summary><dl><div><dt>VALIDADO NUMERICAMENTE</dt><dd>Há evidências suficientes de conservação ou convergência dentro do domínio explicitamente testado.</dd></div><div><dt>PRÓXIMO DO EQUILÍBRIO</dt><dd>As propriedades estruturais permanecem aproximadamente estacionárias no intervalo estudado, com controles adequados.</dd></div><div><dt>NÃO VALIDADO / DADOS INSUFICIENTES</dt><dd>Há aquecimento, ausência de convergência ou evidências incompletas. As pendências de cada avaliação devem ser consultadas.</dd></div></dl></details>
+  </section>
+
+  <section class="performance-panel validation-files" aria-labelledby="validation-files-title">
+    <div class="panel-heading"><span class="section-number">03</span><h2 id="validation-files-title">Evidências reproduzíveis para a banca</h2></div>
+    <p>Os relatórios registram as equações, o método de medição, os resultados e o que permanece sem validação. Os dados e as figuras identificam o domínio físico e numérico de cada comparação.</p>
+    <ul class="validation-report-list">
+      <li><a href="./ESTABILIDADE_E_CONSERVACAO_TCC.md"><span>Fundamentação matemática</span><small>ESTABILIDADE_E_CONSERVACAO_TCC.md</small></a></li>
+      <li><a href="./AUDITORIA_ENERGIA_1_0_1.md"><span>Auditoria da energia</span><small>AUDITORIA_ENERGIA_1_0_1.md</small></a></li>
+      <li><a href="./EQUILIBRIO_AXISIMETRICO_1_0_1.md"><span>Equilíbrio axisimétrico</span><small>EQUILIBRIO_AXISIMETRICO_1_0_1.md</small></a></li>
+      <li><a href="./CONVERGENCIA_NUMERICA_1_0_1.md"><span>Convergência numérica</span><small>CONVERGENCIA_NUMERICA_1_0_1.md</small></a></li>
+      <li><a href="./COMPARACAO_AGAMA_1_0_1.md"><span>AGAMA contínuo e realizações discretas</span><small>COMPARACAO_AGAMA_1_0_1.md</small></a></li>
+    </ul>
+    <div id="validation-data-links" class="review-buttons validation-downloads"><a class="button secondary" href="./reports/v1.0.1/assessment.json" download>Manifesto de avaliação · JSON</a></div>
+    <p id="validation-artifact-status" class="validation-artifact-status">Os arquivos e as figuras serão apresentados conforme o manifesto disponível.</p>
+    <details id="validation-figures" class="validation-figure-details" hidden><summary>Gráficos científicos calculados · PNG e SVG</summary><div id="validation-figure-grid" class="validation-figure-grid"></div></details>
+  </section>
+
+  <section class="scene-panel" aria-labelledby="candidate-title">
+    <div class="scene-header"><div><p class="eyebrow">Candidato histórico 1.0 · execução interativa</p><h2 id="candidate-title">AGAMA · evolução experimental</h2></div><span class="scene-unit">kpc · Myr</span></div>
+    <p class="candidate-note">A preparação AGAMA é feita offline. Esta sessão usa o Leapfrog KDK e a gravidade entre partículas. Uma amostragem de função de distribuição e a evolução visual não certificam estabilidade.</p>
+    <div class="equilibrium-controls">
+      <label class="realization-control" for="realization">Realização<select id="realization"></select></label>
+      <label for="engine">Backend<select id="engine"><option value="gpu">GPU · direto f32</option><option value="cpu">CPU · Barnes–Hut f64</option></select></label>
+      <label for="dt-v1">dt · Myr<input id="dt-v1" type="number" min="0.001" step="0.05" value="0.1"></label>
+      <label for="epsilon-v1">ε · kpc<input id="epsilon-v1" type="number" min="0.001" step="0.05" value="0.1"></label>
+      <div class="equilibrium-actions"><button id="load-v1" class="button secondary">Carregar em t = 0</button><button id="start-v1" class="button primary" disabled>Iniciar</button><button id="pause-v1" class="button secondary" disabled>Pausar</button><button id="export-v1" class="button secondary" disabled>Baixar execução · ZIP</button></div>
+    </div>
+    <p id="status-v1" class="equilibrium-status" role="status">Selecione uma realização documentada.</p>
+    <div class="equilibrium-viewport"><canvas id="galaxy-v1" aria-label="Partículas físicas da realização AGAMA"></canvas></div>
+    <div class="equilibrium-camera"><div role="group" aria-label="Vista da galáxia"><button class="button camera" data-v1view="top">Superior</button><button class="button camera" data-v1view="side">Lateral</button><button class="button camera" data-v1view="free">Livre</button></div><p>Bojo e disco desenhados; o halo participa da gravitação. Arraste para girar.</p></div>
+  </section>
+
+  <section class="performance-panel equilibrium-diagnostics" aria-labelledby="diagnostics-title">
+    <h2 id="diagnostics-title">Diagnósticos da execução interativa</h2><p id="metrics-v1">Sem execução carregada.</p>
+    <p>Espessura, dispersão normal, inclinação, perfis, modos m = 1–4 e coortes radiais são medidos sem modificar as partículas. Q usa as frequências iniciais do próprio modelo e continua condicional. A energia por Barnes–Hut é aproximada; esta sessão não altera as conclusões da campanha controlada.</p>
+    <details><summary>Configuração, massas e última medição</summary><pre id="details-v1">—</pre></details>
+  </section>
+
+  <section class="performance-panel historical-results" aria-labelledby="historical-results-title">
+    <h2 id="historical-results-title">Resultados históricos preservados · versão 1.0</h2>
+    <p>Os 22 experimentos da campanha 1.0 permanecem disponíveis com seus parâmetros, sementes, fontes, falhas e limitações. O AGAMA original, a calibração vertical e as realizações com halo fixo e dinâmico conservam sua identificação histórica.</p>
+    <div class="review-buttons"><a class="button primary" href="./downloads/equilibrio-1.0.0.zip" download>Investigação 1.0 · ZIP</a><a class="button secondary" href="./reports/v1.0.0/summary.csv" download>Tabela histórica · CSV</a><a class="button secondary" href="./reports/v1.0.0/assessment.json" download>Avaliação histórica · JSON</a></div>
+    <nav class="equilibrium-nav" aria-label="Documentação histórica"><a href="./MASSAS_VIA_LACTEA_1_0.md">Massas e definições</a><a href="./CONDICOES_INICIAIS_1_0.md">Condições iniciais</a><a href="./VALIDACAO_EQUILIBRIO_1_0.md">Validação 1.0</a><a href="./REFERENCIAS_MODELOS_EQUILIBRIO.md">Referências de equilíbrio</a><a href="./COMPARACAO_09_10.md">Comparação 0.9 / 1.0</a><a href="./LIMITACOES_FISICAS.md">Limitações físicas</a></nav>
+    <figure><img id="v1-results-plot" src="./reports/v1.0.0/comparison.png" alt="Resultados históricos 1.0: evolução medida da espessura e dispersão do disco com controles de resolução" loading="lazy"><figcaption>Campanha histórica 1.0. O menor crescimento percentual de espessura, isoladamente, não certifica equilíbrio.</figcaption></figure>
+  </section>
+
+  <section class="performance-panel historical-results" aria-labelledby="historical-data-title">
+    <h2 id="historical-data-title">Tabelas e estados históricos para análise externa</h2>
+    <p>As tabelas incluem perfis, anéis, coortes e migração. Os estados contêm posições, velocidades, acelerações, massas e componentes capturados nos marcos da campanha calibrada. Extraia os pacotes na mesma pasta para recompor a investigação histórica.</p>
+    <div class="review-buttons"><a class="button primary" href="./downloads/tabelas-1.0.0.zip" download>Tabelas 1.0 · ZIP</a><a class="button secondary" href="./downloads/ensaios-1.0.0.zip" download>JSON brutos 1.0 · ZIP</a><a class="button secondary" href="./downloads/estados-1.0.0.zip" download>Estados 1.0 · ZIP</a></div>
+  </section>
+  <footer class="scientific-footer"><span>GUILHERME ALEIXO BANDEIRA · PROJETO DE TCC · UEMS</span><span>Realização sintética · evidências e limites documentados</span></footer>
+</main>
+<script type="module" src="./src/equilibrium-page.js"></script>
+</body>
+</html>
+
+
+

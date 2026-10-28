@@ -1,0 +1,34 @@
+8 
+ 
+da Via Láctea, por exemplo, a velocidade orbital do Sol em torno do centro 
+galáctico encontra-se aproximadamente no intervalo de 220 a 240 km/s, valor 
+que evidencia a necessidade de consi derar componentes adicionais de massa 
+na modelagem galáctica (REID et al., 2014). 
+Essa discrepância entre a previsão baseada apenas na matéria visível e 
+os valores observados está diretamente relacionada ao problema da matéria 
+escura. A matéria escura é um a componente que não emite radiação 
+eletromagnética detectável, mas cuja presença pode ser inferida por seus efeitos 
+gravitacionais. Em galáxias espirais, ela é frequentemente modelada como um 
+halo aproximadamente esférico e estendido, responsável por cont ribuir de 
+maneira significativa para a manutenção das velocidades orbitais nas regiões 
+externas. 
+Para representar a estrutura gravitacional de uma galáxia de forma mais 
+realista, torna -se necessário considerar modelos matemáticos capazes de 
+descrever suas principais componentes. O bojo galáctico pode ser representado 
+por perfis esfericamente simétricos, como o modelo de Hernquist, adequado 
+para regiões centrais de alta concentração de massa (HERNQUIST, 1990). O 
+disco, por sua vez, exige uma formulação compa tível com sua geometria 
+achatada, podendo ser descrito por potenciais como o de Miyamoto-Nagai. Já o 
+halo de matéria escura pode ser modelado por meio do perfil NFW, proposto a 
+partir de simulações cosmológicas de formação de estruturas (NAVARRO; 
+FRENK; WHITE, 1997). 
+Diante desse contexto, a modelagem computacional apresenta -se como 
+uma ferramenta fundamental para investigar a dinâmica de sistemas 
+gravitacionais. Por meio de simulações numéricas, é possível analisar o 
+comportamento orbital de dois, três e m últiplos corpos, bem como estudar a 
+influência de diferentes componentes galácticas sobre suas trajetórias. Essa 
+abordagem permite comparar modelos puramente keplerianos com modelos não 
+keplerianos que incluem a contribuição do bojo, do disco e do halo de matéria 
+escura. 
+O presente trabalho tem como objetivo modelar computacionalmente 
+sistemas gravitacionais de dois, três e múltiplos corpos, com aplicação ao estudo 

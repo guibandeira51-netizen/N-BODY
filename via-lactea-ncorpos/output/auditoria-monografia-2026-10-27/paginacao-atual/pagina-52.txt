@@ -1,0 +1,32 @@
+52 
+ 
+ Φ𝑗(𝑟𝑖)= − 𝐺𝑚𝑗
+√|𝑟𝑖 − 𝑟𝑗|
+2
++ ε2
+. (99) 
+A suavização constitui uma aproximação numérica e não uma 
+modificação da Lei da Gravitação Universal. Sua finalidade é permitir que a 
+distribuição discreta de macro partículas represente, com menor influência de 
+encontros próximos artificiais, o campo gravitacional coletivo da galáxia. 
+Entretanto, a escolha de ε exige cuidado. Valores excessivamente 
+pequenos podem intensificar flutuações das forças associadas à discre tização, 
+enquanto valores demasiadamente elevados podem suprimir artificialmente 
+estruturas e interações gravitacionais em pequenas escalas. Assim, a 
+suavização deve ser avaliada em conjunto com a resolução de partículas e com 
+os testes de convergência numérica (DEHNEN, 2001). 
+Nos experimentos N -corpos documentados das campanhas de 
+refinamento do halo, adotou-se o comprimento de suavização de Plummer: 
+ ε = 0,1 kpc. (100) 
+5.8 Parâmetros físicos e configuração dos experimentos 
+A definição dos parâmetros físicos e numéricos utilizados nas simulações 
+é fundamental para garantir a reprodutibilidade dos resultados. Neste trabalho, 
+a modelagem computacional da Via Láctea foi realizada considerando três 
+componentes gravitacionais: boj o, disco estelar e halo de matéria escura, 
+representados pelos modelos de Hernquist, Miyamoto–Nagai e Navarro–Frenk–
+White (NFW), respectivamente. 
+Os parâmetros físicos foram estabelecidos com base em modelos 
+galácticos disponíveis na literatura e adaptados à implementação computacional. 
+A configuração utilizada no código foi baseada na versão reduzida do modelo 
+MilkyWayPotential da biblioteca Gala, documentada no projeto com referência a 
+Marchetti (2021). Os valores apresentados correspondem às configuraçõe s 

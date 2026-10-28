@@ -1,0 +1,21 @@
+<!doctype html><meta charset="utf-8"><title>AGAMA — CPU/GPU e halo externo</title><h1>Validação de backends em snapshot físico</h1><button id="run">Executar verificações</button><p id="status">Aguardando</p><pre id="output">{}</pre>
+<script type="module">
+import {createGalaxy} from '../src/physics/initial.js';
+import {Leapfrog} from '../src/physics/integrator.js';
+import {GPUBackend} from '../src/compute/gpu.js';
+import {GPUExternalGridBackend} from '../src/compute/gpu-external-grid.js';
+import {externalGridAt,ExternalGridLeapfrog,externalGridDiagnostics} from '../src/physics/external-grid.js';
+import {diagnostics} from '../src/physics/diagnostics.js';
+const $=id=>document.getElementById(id),clone=s=>Object.fromEntries(Object.entries(s).map(([k,v])=>[k,ArrayBuffer.isView(v)?v.slice():structuredClone(v)]));
+function score(a,b){let err=0,den=0,max=0;for(let k=0;k<a.length;k++){err+=(a[k]-b[k])**2;den+=b[k]**2;max=Math.max(max,Math.abs(a[k]-b[k]));}return {rmsRelative:Math.sqrt(err/den),maxAbsolute:max};}
+$('run').onclick=async()=>{$('run').disabled=true;const report={schema:'equilibrium-backend-checks-v1',status:'running',cases:[]};let g;try{
+ const base='../reports/v1.0.0/agama-calibrated/',data=await(await fetch(base+'c20-agama-n1000-nb150-nd450-nh400-s2026-h2026.json')).json(),initial=createGalaxy({initialization:'snapshot',snapshot:data}),grid=await(await fetch(base+'halo-fixed-grid.json')).json(),options={dt:.05,epsilon:.1,algorithm:'direct'};
+ for(const external of [false,true]){
+  let s=clone(initial);if(external){const n=s.components.filter(c=>c!==2).length;s={...s,n,positions:s.positions.slice(0,3*n),velocities:s.velocities.slice(0,3*n),masses:s.masses.slice(0,n),components:s.components.slice(0,n),accelerations:new Float64Array(3*n)};s.meta.haloMode='fixed';}
+  const c=new(external?ExternalGridLeapfrog:Leapfrog)(clone(s),{...options,externalGrid:grid});c.initialize();g=await(external?GPUExternalGridBackend:GPUBackend).create();await g.initialize(s,{...options,externalGrid:grid});const first=await g.snapshot(),row={external,n:s.n,force:score(first.accelerations,c.state.accelerations),epochs:[]};
+  for(const t of [1,5,20]){const steps=Math.round((t-c.time)/options.dt);c.step(steps);await g.step(steps);const end=await g.snapshot(),d0=external?externalGridDiagnostics(c.state,options,grid):diagnostics(c.state,options),d1=external?externalGridDiagnostics(end,options,grid):diagnostics(end,options);row.epochs.push({timeMyr:t,positions:score(end.positions,c.state.positions),velocities:score(end.velocities,c.state.velocities),energyCPU:d0.energy,energyGPU:d1.energy});$('status').textContent=`${external?'Halo fixo':'Halo vivo'}: ${t} Myr`;$('output').textContent=JSON.stringify(report);}
+  report.cases.push(row);g.dispose();g=null;
+ }
+ const points=await(await fetch(base+'halo-grid-validation-points.json')).json();report.externalGridCPU=score(points.positions.flatMap(p=>externalGridAt(grid,...p).acceleration),points.acceleration.flat());report.status='completed';$('status').textContent='Concluído: força e 20 Myr CPU f64 × GPU f32, em halo vivo e fixo.';
+ }catch(e){report.status='failed';report.error=e.stack;$('status').textContent=e.message;}finally{g?.dispose();$('output').textContent=JSON.stringify(report);$('run').disabled=false;}};
+</script>

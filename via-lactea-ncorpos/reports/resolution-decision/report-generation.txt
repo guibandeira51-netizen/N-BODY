@@ -1,0 +1,48 @@
+{
+  "gpu": 54,
+  "cpu": 16,
+  "rows": 384,
+  "figures": 7,
+  "projection": [
+    {
+      "N": 50000,
+      "estimatedMsPerStep": 12.74249162187764,
+      "estimatedHours200MyrAtDt005": 0.01415832402430849,
+      "estimatedHours1000MyrAtDt005": 0.07079162012154244,
+      "qualification": "quadratic extrapolation of measured high-N GPU integration cost; not a measurement or accuracy target"
+    },
+    {
+      "N": 100000,
+      "estimatedMsPerStep": 50.970476197369635,
+      "estimatedHours200MyrAtDt005": 0.05663386244152182,
+      "estimatedHours1000MyrAtDt005": 0.2831693122076091,
+      "qualification": "quadratic extrapolation of measured high-N GPU integration cost; not a measurement or accuracy target"
+    },
+    {
+      "N": 300000,
+      "estimatedMsPerStep": 458.7373440354811,
+      "estimatedHours200MyrAtDt005": 0.5097081600394234,
+      "estimatedHours1000MyrAtDt005": 2.548540800197117,
+      "qualification": "quadratic extrapolation of measured high-N GPU integration cost; not a measurement or accuracy target"
+    },
+    {
+      "N": 1000000,
+      "estimatedMsPerStep": 5097.093493624279,
+      "estimatedHours200MyrAtDt005": 5.663437215138088,
+      "estimatedHours1000MyrAtDt005": 28.317186075690444,
+      "qualification": "quadratic extrapolation of measured high-N GPU integration cost; not a measurement or accuracy target"
+    }
+  ],
+  "unchanged": {
+    "src/physics/initial.js": true,
+    "src/physics/initial-legacy.js": true,
+    "src/physics/initial-allocated.js": true,
+    "src/physics/forces.js": true,
+    "src/physics/integrator.js": true,
+    "src/physics/models.js": true,
+    "src/physics/constants.js": true,
+    "src/compute/gpu.js": true,
+    "src/physics/disk-analysis.js": true,
+    "src/physics/orbit-equilibrium.js": true
+  }
+}

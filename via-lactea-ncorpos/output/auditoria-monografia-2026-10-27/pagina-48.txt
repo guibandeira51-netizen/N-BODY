@@ -1,0 +1,30 @@
+48 
+ 
+uma única estrutura de dados que representa a configuração inicial completa da 
+Via Láctea. 
+As velocidades iniciais são atribuídas de forma compatível com a 
+dinâmica esperada para cada componente galáctico. As partículas pertencentes 
+ao disco recebem velocidades predominantemente tangenciais ao centro 
+galáctico, reproduzindo o movimento orbital característico dessa estrutura. Já as 
+partículas do bojo apresentam uma distribuição de velocidades mais isotrópica, 
+enquanto o halo de matéria escura é inicializado com ve locidades consistentes 
+com sua distribuição aproximadamente esférica e seu comportamento dinâmico 
+esperado. 
+Embora essas velocidades iniciais representem um estado de equilíbrio 
+aproximado, a configuração do sistema evolui naturalmente ao longo da 
+simulação em resposta às interações gravitacionais entre todas as partículas. 
+Dessa forma, a dinâmica observada não é imposta pelos modelos analíticos, 
+mas emerge da solução numérica das equações do movimento. 
+A configuração inicial da simulação pode ser representada pelo conjunto: 
+ 𝑆0 = {𝑃1,𝑃2,…,𝑃𝑁} (94) 
+Em que 𝑁 corresponde ao número total de partículas consideradas na 
+simulação. Esse conjunto constitui a entrada do algoritmo N-corpos, responsável 
+por calcular, a cada passo temporal, as forças gravitacionais entre as partículas 
+e atualizar suas posições e velocidades. 
+A escolha do número de partículas representa um compromisso entre 
+fidelidade física e custo computacional. Um maior valor de 𝑁 permite representar 
+de forma mais detalhada a estrutura da galáxia e reduzir os efeitos da 
+discretização, porém aumenta si gnificativamente o número de interações 
+gravitacionais a serem calculadas, cujo custo computacional cresce 
+aproximadamente com 𝑁2 quando se utiliza o método direto. Assim, o número 
+de partículas empregado neste trabalho foi selecionado de modo a proporcionar 

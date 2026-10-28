@@ -1,0 +1,33 @@
+import {MODEL, SOLAR_GM_SI, KPC_METERS, MYR_SECONDS, G, KM_S_TO_KPC_MYR} from './constants.js';
+import {HALO_TOTAL_MASS, HALO_OUTER_RADIUS} from './models.js';
+import {validateState} from './forces.js';
+
+// Reporting conversion only: dynamics continues to use nominal solar GM.
+export const G_SI = 6.67430e-11;
+export const SOLAR_MASS_KG = SOLAR_GM_SI / G_SI;
+export const MASS_UNIT_KG = 1e10 * SOLAR_MASS_KG;
+export const UNIT_CONVERSIONS = Object.freeze({massMsun:1e10,massKg:MASS_UNIT_KG,
+  lengthMeters:KPC_METERS,timeSeconds:MYR_SECONDS,gyrToMyr:1000,
+  velocityMetersPerSecond:KPC_METERS/MYR_SECONDS,kmSToInternal:KM_S_TO_KPC_MYR,
+  accelerationMetersPerSecondSquared:KPC_METERS/MYR_SECONDS**2,
+  energyJoules:MASS_UNIT_KG*(KPC_METERS/MYR_SECONDS)**2,GInternal:G,
+  kgRelativeStandardUncertainty:1.5e-15/G_SI});
+export function massAudit(state,{withHalo=state.meta?.withHalo??true}={}) {
+  validateState(state);
+  if(!(state.components instanceof Uint8Array)||state.components.length!==state.n||state.components.some(c=>c>2))throw Error('Componentes de massa inválidas.');
+  const totals=[MODEL.bulgeMass,MODEL.diskMass,withHalo?HALO_TOTAL_MASS:0];
+  const rows=totals.map((target,c)=>({component:c,name:['bojo','disco','halo'][c],model:['Hernquist','Miyamoto–Nagai','NFW com taper'][c],count:0,sum:0,correction:0,min:Infinity,max:-Infinity,target}));
+  for(let i=0;i<state.n;i++){const r=rows[state.components[i]],m=state.masses[i],y=m-r.correction,t=r.sum+y;r.correction=(t-r.sum)-y;r.sum=t;r.count++;r.min=Math.min(r.min,m);r.max=Math.max(r.max,m);}
+  const components=rows.map(r=>({component:r.component,name:r.name,model:r.model,count:r.count,
+    targetMsun:r.target*1e10,sumMsun:r.sum*1e10,relativeDifferencePercent:r.target?100*(r.sum-r.target)/r.target:r.sum===0?0:null,
+    uniform:r.count>0?r.min===r.max:null,
+    particleMsun:r.count?{min:r.min*1e10,max:r.max*1e10,mean:r.sum/r.count*1e10}:null,
+    particleKg:r.count?{min:r.min*MASS_UNIT_KG,max:r.max*MASS_UNIT_KG,mean:r.sum/r.count*MASS_UNIT_KG}:null}));
+  return {schema:'mass-audit-v1',n:state.n,withHalo,components,
+    haloToDiskParticleMassRatio:rows[2].count&&rows[1].count?(rows[2].sum/rows[2].count)/(rows[1].sum/rows[1].count):null,
+    totalMsun:rows.reduce((s,r)=>s+r.sum,0)*1e10,haloOuterRadiusKpc:HALO_OUTER_RADIUS,
+    units:UNIT_CONVERSIONS,source:'PARAMETROS_E_FONTES.md: Gala MilkyWayPotential v1 reduzido; Marchetti (2021), tabela 2; valores não fornecidos numericamente no TCC',
+    kgConvention:'(GM)_solar nominal IAU 2015 / G CODATA 2022; kg possui incerteza de G, sem modificar G interno',
+    references:['https://doi.org/10.1093/mnras/stab599','https://arxiv.org/abs/1605.09788','https://physics.nist.gov/cuu/pdf/wall_2022.pdf']};
+}
+export function massAuditMarkdown(a){return `## Auditoria automática de massa\n\nUnidades internas: kpc, Myr, 10¹⁰ M☉. N=${a.n}. Total=${a.totalMsun} M☉.\n\n| Componente/modelo | N | Massa alvo M☉ | Soma M☉ | Diferença % | Massa individual min–max M☉ | Massa individual min–max kg |\n|---|---:|---:|---:|---:|---|---|\n${a.components.map(r=>`| ${r.name} / ${r.model} | ${r.count} | ${r.targetMsun} | ${r.sumMsun} | ${r.relativeDifferencePercent} | ${r.particleMsun?`${r.particleMsun.min} – ${r.particleMsun.max}`:'ausente'} | ${r.particleKg?`${r.particleKg.min} – ${r.particleKg.max}`:'ausente'} |`).join('\n')}\n\nRazão massa média halo/disco: ${a.haloToDiskParticleMassRatio}.\n${a.source}.\n${a.kgConvention}. Referências: ${a.references.join(', ')}.\n`;}

@@ -1,0 +1,49 @@
+25 
+ 
+Já para r ≫ rs, correspondente às regiões externas do halo, a densidade 
+decai aproximadamente com 1/r 3. Nesse caso, a massa passa a crescer de 
+forma logarítmica: 
+ 𝑀(𝑟)∝ ln(𝑟) (52) 
+ 
+Assim, a massa continua aumentando mesmo em grandes distâncias, 
+porém de maneira muito mais lenta. Para determinar o potencial gravitacional, 
+parte-se da relação entre a força gravitacional e o potencial, obtida por meio da 
+derivada do potencial em relação à distância radial. 
+ 𝑓(𝑟)= −𝑑Φ
+𝑑𝑟 (53) 
+ 
+Porém, integrando a equação (57) em relação à distância radial: 
+ Φ = −∫𝑓(𝑟) 𝑑𝑟 (54) 
+ 
+ A força gravitacional em simetria esférica é dada por: 
+ f(r)= GM(r)
+r2  (55) 
+ 
+Substituindo a equação (55), correspondente à massa M(r), na equação 
+(59), obtém -se a expressão da força gravitacional em função do raio. Em 
+seguida, substituindo a equação (59) na equação (58), torna -se possível 
+determinar o potencial gravitacional do halo de matéria escura descrito pelo perfil 
+NFW. 
+ ϕ = −𝐺 ∫4πρ0𝑟𝑠
+3
+𝑟2 [ln(1 + 𝑟
+𝑟𝑠
+)− 𝑟
+𝑟 + 𝑟𝑠
+]𝑑𝑟 (56) 
+ 
+A fim de simplificar a expressão matemática e facilitar o desenvolvimento 
+dos cálculos, realiza-se a substituição adimensional 
+ 𝑥 = 𝑟
+𝑟𝑠
+ (57) 
+ 
+Utilizando a equação (61) e realizando a substituição adimensional: 
+ 
+ 
+ϕ = −4π𝐺ρ0𝑟𝑠
+2 ∫
+ln(1 + 𝑥)− 𝑥
+1 + 𝑥
+𝑥2  𝑑𝑥 
+(58) 

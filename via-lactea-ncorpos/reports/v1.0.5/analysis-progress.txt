@@ -1,0 +1,541 @@
+{
+  "runs": 30,
+  "groups": [
+    {
+      "label": "A-original",
+      "n": 3,
+      "h": {
+        "n": 3,
+        "values": [
+          2.7797053384476467,
+          0.15419717249944842,
+          0.7972459575637858
+        ],
+        "mean": 1.2437161561702936,
+        "sd": 1.368511969640006,
+        "CI95": [
+          -2.1558560367921213,
+          4.643288349132709
+        ],
+        "assumption": "Independent realization means; Student t interval, small-n and approximate normality limitations. Epochs are not replicates."
+      },
+      "variance": {
+        "n": 3,
+        "values": [
+          95.87246772686946,
+          26.52784871647426,
+          93.28558149225896
+        ],
+        "mean": 71.89529931186756,
+        "sd": 39.31064964156396,
+        "CI95": [
+          -25.757767941832284,
+          169.5483665655674
+        ],
+        "assumption": "Independent realization means; Student t interval, small-n and approximate normality limitations. Epochs are not replicates."
+      }
+    },
+    {
+      "label": "B-original",
+      "n": 3,
+      "h": {
+        "n": 3,
+        "values": [
+          13.5670247126207,
+          8.41396409922801,
+          11.489675195753835
+        ],
+        "mean": 11.156888002534181,
+        "sd": 2.5925988714614183,
+        "CI95": [
+          4.716515374120511,
+          17.59726063094785
+        ],
+        "assumption": "Independent realization means; Student t interval, small-n and approximate normality limitations. Epochs are not replicates."
+      },
+      "variance": {
+        "n": 3,
+        "values": [
+          320.3333284980177,
+          185.56191484133834,
+          221.29456366296014
+        ],
+        "mean": 242.3966023341054,
+        "sd": 69.81980744612396,
+        "CI95": [
+          68.95458561994306,
+          415.8386190482678
+        ],
+        "assumption": "Independent realization means; Student t interval, small-n and approximate normality limitations. Epochs are not replicates."
+      }
+    },
+    {
+      "label": "E104",
+      "n": 3,
+      "h": {
+        "n": 3,
+        "values": [
+          18.571267730939734,
+          16.992431710522983,
+          18.116696082828977
+        ],
+        "mean": 17.8934651747639,
+        "sd": 0.8127452390374373,
+        "CI95": [
+          15.874494076307904,
+          19.912436273219896
+        ],
+        "assumption": "Independent realization means; Student t interval, small-n and approximate normality limitations. Epochs are not replicates."
+      },
+      "variance": {
+        "n": 3,
+        "values": [
+          365.94392242807265,
+          357.73703593338666,
+          386.0451885184116
+        ],
+        "mean": 369.90871562662363,
+        "sd": 14.564599703552455,
+        "CI95": [
+          333.72824424437454,
+          406.0891870088727
+        ],
+        "assumption": "Independent realization means; Student t interval, small-n and approximate normality limitations. Epochs are not replicates."
+      }
+    },
+    {
+      "label": "A-MIX",
+      "n": 3,
+      "h": {
+        "n": 3,
+        "values": [
+          0.09888572495906356,
+          -5.4398958251483105,
+          -0.7259754964155318
+        ],
+        "mean": -2.022328532201593,
+        "sd": 2.988297786365386,
+        "CI95": [
+          -9.445671757684131,
+          5.4010146932809455
+        ],
+        "assumption": "Independent realization means; Student t interval, small-n and approximate normality limitations. Epochs are not replicates."
+      },
+      "variance": {
+        "n": 3,
+        "values": [
+          12.268571920012334,
+          44.07414756860356,
+          -45.27198283350583
+        ],
+        "mean": 3.6902455517033537,
+        "sd": 45.28657104394859,
+        "CI95": [
+          -108.80783342098047,
+          116.18832452438718
+        ],
+        "assumption": "Independent realization means; Student t interval, small-n and approximate normality limitations. Epochs are not replicates."
+      }
+    },
+    {
+      "label": "B-bulge2",
+      "n": 3,
+      "h": {
+        "n": 3,
+        "values": [
+          11.961768735943323,
+          8.787858725398356,
+          8.169903056654304
+        ],
+        "mean": 9.639843505998662,
+        "sd": 2.0344458415557307,
+        "CI95": [
+          4.585999868182156,
+          14.693687143815168
+        ],
+        "assumption": "Independent realization means; Student t interval, small-n and approximate normality limitations. Epochs are not replicates."
+      },
+      "variance": {
+        "n": 3,
+        "values": [
+          226.50456382004123,
+          204.0313779744533,
+          212.8271792284664
+        ],
+        "mean": 214.45437367432032,
+        "sd": 11.324612215702869,
+        "CI95": [
+          186.3224773967063,
+          242.58626995193436
+        ],
+        "assumption": "Independent realization means; Student t interval, small-n and approximate normality limitations. Epochs are not replicates."
+      }
+    },
+    {
+      "label": "B-MIX",
+      "n": 3,
+      "h": {
+        "n": 3,
+        "values": [
+          12.140264396355228,
+          11.642356001157527,
+          10.570364666326793
+        ],
+        "mean": 11.45099502127985,
+        "sd": 0.802253425702033,
+        "CI95": [
+          9.458087031996493,
+          13.443903010563206
+        ],
+        "assumption": "Independent realization means; Student t interval, small-n and approximate normality limitations. Epochs are not replicates."
+      },
+      "variance": {
+        "n": 3,
+        "values": [
+          240.13849036847338,
+          263.9264780953905,
+          102.57180396366662
+        ],
+        "mean": 202.21225747584353,
+        "sd": 87.10701505681503,
+        "CI95": [
+          -14.173563597394377,
+          418.59807854908144
+        ],
+        "assumption": "Independent realization means; Student t interval, small-n and approximate normality limitations. Epochs are not replicates."
+      }
+    },
+    {
+      "label": "B-thick2",
+      "n": 3,
+      "h": {
+        "n": 3,
+        "values": [
+          11.486584417253143,
+          10.070686937161,
+          7.533346228743176
+        ],
+        "mean": 9.696872527719107,
+        "sd": 2.002954306344302,
+        "CI95": [
+          4.721258200126779,
+          14.672486855311433
+        ],
+        "assumption": "Independent realization means; Student t interval, small-n and approximate normality limitations. Epochs are not replicates."
+      },
+      "variance": {
+        "n": 3,
+        "values": [
+          298.0338609576912,
+          153.73809886887508,
+          328.2497215472762
+        ],
+        "mean": 260.0072271246142,
+        "sd": 93.26357956334482,
+        "CI95": [
+          28.32765198499152,
+          491.68680226423686
+        ],
+        "assumption": "Independent realization means; Student t interval, small-n and approximate normality limitations. Epochs are not replicates."
+      }
+    },
+    {
+      "label": "B-thin2",
+      "n": 3,
+      "h": {
+        "n": 3,
+        "values": [
+          10.341106017778179,
+          11.402883886187354,
+          6.981734371929904
+        ],
+        "mean": 9.57524142529848,
+        "sd": 2.307932448613974,
+        "CI95": [
+          3.8420193931903874,
+          15.308463457406571
+        ],
+        "assumption": "Independent realization means; Student t interval, small-n and approximate normality limitations. Epochs are not replicates."
+      },
+      "variance": {
+        "n": 3,
+        "values": [
+          79.23382356332338,
+          191.74588755032372,
+          320.65238922169317
+        ],
+        "mean": 197.21070011178008,
+        "sd": 120.80202437618767,
+        "CI95": [
+          -102.87816431436417,
+          497.2995645379243
+        ],
+        "assumption": "Independent realization means; Student t interval, small-n and approximate normality limitations. Epochs are not replicates."
+      }
+    },
+    {
+      "label": "E",
+      "n": 3,
+      "h": {
+        "n": 3,
+        "values": [
+          20.3073500690083,
+          18.35126330643597,
+          18.571267730939734
+        ],
+        "mean": 19.07662703546134,
+        "sd": 1.0714988920561663,
+        "CI95": [
+          16.41487622945093,
+          21.73837784147175
+        ],
+        "assumption": "Independent realization means; Student t interval, small-n and approximate normality limitations. Epochs are not replicates."
+      },
+      "variance": {
+        "n": 3,
+        "values": [
+          398.25485232582577,
+          393.4939167032706,
+          365.94392242807265
+        ],
+        "mean": 385.89756381905636,
+        "sd": 17.44355126029421,
+        "CI95": [
+          342.56538030398633,
+          429.2297473341264
+        ],
+        "assumption": "Independent realization means; Student t interval, small-n and approximate normality limitations. Epochs are not replicates."
+      }
+    },
+    {
+      "label": "F",
+      "n": 1,
+      "h": {
+        "n": 1,
+        "values": [
+          21.83819988771061
+        ],
+        "mean": 21.83819988771061,
+        "sd": null,
+        "CI95": null,
+        "assumption": "Independent realization means; Student t interval, small-n and approximate normality limitations. Epochs are not replicates."
+      },
+      "variance": {
+        "n": 1,
+        "values": [
+          369.0992457837736
+        ],
+        "mean": 369.0992457837736,
+        "sd": null,
+        "CI95": null,
+        "assumption": "Independent realization means; Student t interval, small-n and approximate normality limitations. Epochs are not replicates."
+      }
+    }
+  ],
+  "contrasts": [
+    {
+      "label": "B-bulge2",
+      "values": [
+        {
+          "seed": 2026,
+          "thinGrowthDifference": -1.6052559766773769,
+          "thinVarianceDifference": -93.82876467797647
+        },
+        {
+          "seed": 2027,
+          "thinGrowthDifference": 0.37389462617034575,
+          "thinVarianceDifference": 18.46946313311497
+        },
+        {
+          "seed": 2028,
+          "thinGrowthDifference": -3.3197721390995305,
+          "thinVarianceDifference": -8.467384434493738
+        }
+      ],
+      "height": {
+        "n": 3,
+        "values": [
+          -1.6052559766773769,
+          0.37389462617034575,
+          -3.3197721390995305
+        ],
+        "mean": -1.5170444965355205,
+        "sd": 1.8484126952973519,
+        "CI95": [
+          -6.108756180069114,
+          3.074667186998073
+        ],
+        "assumption": "Independent realization means; Student t interval, small-n and approximate normality limitations. Epochs are not replicates."
+      },
+      "variance": {
+        "n": 3,
+        "values": [
+          -93.82876467797647,
+          18.46946313311497,
+          -8.467384434493738
+        ],
+        "mean": -27.942228659785076,
+        "sd": 58.62742669244037,
+        "CI95": [
+          -173.5808302578345,
+          117.69637293826433
+        ],
+        "assumption": "Independent realization means; Student t interval, small-n and approximate normality limitations. Epochs are not replicates."
+      },
+      "qualification": "Paired unchanged populations, but the resampled population changes both granularity and finite-sample realization. Three seeds limit causal attribution."
+    },
+    {
+      "label": "B-MIX",
+      "values": [
+        {
+          "seed": 2026,
+          "thinGrowthDifference": -1.4267603162654723,
+          "thinVarianceDifference": -80.19483812954431
+        },
+        {
+          "seed": 2027,
+          "thinGrowthDifference": 3.228391901929516,
+          "thinVarianceDifference": 78.36456325405217
+        },
+        {
+          "seed": 2028,
+          "thinGrowthDifference": -0.9193105294270421,
+          "thinVarianceDifference": -118.72275969929352
+        }
+      ],
+      "height": {
+        "n": 3,
+        "values": [
+          -1.4267603162654723,
+          3.228391901929516,
+          -0.9193105294270421
+        ],
+        "mean": 0.2941070187456673,
+        "sd": 2.553800531228219,
+        "CI95": [
+          -6.049885189535781,
+          6.638099227027116
+        ],
+        "assumption": "Independent realization means; Student t interval, small-n and approximate normality limitations. Epochs are not replicates."
+      },
+      "variance": {
+        "n": 3,
+        "values": [
+          -80.19483812954431,
+          78.36456325405217,
+          -118.72275969929352
+        ],
+        "mean": -40.18434485826189,
+        "sd": 104.45804371175825,
+        "CI95": [
+          -299.6725105534147,
+          219.30382083689094
+        ],
+        "assumption": "Independent realization means; Student t interval, small-n and approximate normality limitations. Epochs are not replicates."
+      },
+      "qualification": "Paired unchanged populations, but the resampled population changes both granularity and finite-sample realization. Three seeds limit causal attribution."
+    },
+    {
+      "label": "B-thick2",
+      "values": [
+        {
+          "seed": 2026,
+          "thinGrowthDifference": -2.0804402953675574,
+          "thinVarianceDifference": -22.299467540326475
+        },
+        {
+          "seed": 2027,
+          "thinGrowthDifference": 1.656722837932989,
+          "thinVarianceDifference": -31.82381597246325
+        },
+        {
+          "seed": 2028,
+          "thinGrowthDifference": -3.9563289670106583,
+          "thinVarianceDifference": 106.95515788431604
+        }
+      ],
+      "height": {
+        "n": 3,
+        "values": [
+          -2.0804402953675574,
+          1.656722837932989,
+          -3.9563289670106583
+        ],
+        "mean": -1.4600154748150755,
+        "sd": 2.8574959072085244,
+        "CI95": [
+          -8.558428819497326,
+          5.638397869867174
+        ],
+        "assumption": "Independent realization means; Student t interval, small-n and approximate normality limitations. Epochs are not replicates."
+      },
+      "variance": {
+        "n": 3,
+        "values": [
+          -22.299467540326475,
+          -31.82381597246325,
+          106.95515788431604
+        ],
+        "mean": 17.61062479050877,
+        "sd": 77.52104552040693,
+        "CI95": [
+          -174.96232785226135,
+          210.1835774332789
+        ],
+        "assumption": "Independent realization means; Student t interval, small-n and approximate normality limitations. Epochs are not replicates."
+      },
+      "qualification": "Paired unchanged populations, but the resampled population changes both granularity and finite-sample realization. Three seeds limit causal attribution."
+    },
+    {
+      "label": "B-thin2",
+      "values": [
+        {
+          "seed": 2026,
+          "thinGrowthDifference": -3.2259186948425214,
+          "thinVarianceDifference": -241.09950493469432
+        },
+        {
+          "seed": 2027,
+          "thinGrowthDifference": 2.988919786959343,
+          "thinVarianceDifference": 6.1839727089853795
+        },
+        {
+          "seed": 2028,
+          "thinGrowthDifference": -4.5079408238239305,
+          "thinVarianceDifference": 99.35782555873303
+        }
+      ],
+      "height": {
+        "n": 3,
+        "values": [
+          -3.2259186948425214,
+          2.988919786959343,
+          -4.5079408238239305
+        ],
+        "mean": -1.581646577235703,
+        "sd": 4.00979461468201,
+        "CI95": [
+          -11.542528596520679,
+          8.379235442049271
+        ],
+        "assumption": "Independent realization means; Student t interval, small-n and approximate normality limitations. Epochs are not replicates."
+      },
+      "variance": {
+        "n": 3,
+        "values": [
+          -241.09950493469432,
+          6.1839727089853795,
+          99.35782555873303
+        ],
+        "mean": -45.1859022223253,
+        "sd": 175.94586243933554,
+        "CI95": [
+          -482.2596543597649,
+          391.8878499151143
+        ],
+        "assumption": "Independent realization means; Student t interval, small-n and approximate normality limitations. Epochs are not replicates."
+      },
+      "qualification": "Paired unchanged populations, but the resampled population changes both granularity and finite-sample realization. Three seeds limit causal attribution."
+    }
+  ]
+}

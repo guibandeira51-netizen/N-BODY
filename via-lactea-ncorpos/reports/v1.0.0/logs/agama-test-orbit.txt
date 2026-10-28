@@ -1,0 +1,19 @@
+'exact' orbit of length 16645, energy error=1.73817e-11
+regularly sampled orbit of length 10000, energy error=1.71293e-07
+naturally sampled orbit of length 2238, energy error at spline nodes=1.47677e-07, at interpolated times=1.53971e-05
+difference in position between interpolated and regularly sampled orbits=3.83358e-06
+difference in position between Python and C++ versions of Orbit interpolator: 1.04822e-14
+'exact' orbit of length 16645, energy error=1.73817e-11
+regularly sampled orbit of length 10000, energy error=6.33374e-09
+naturally sampled orbit of length 3933, energy error at spline nodes=6.36551e-09, at interpolated times=7.39808e-07
+difference in position between interpolated and regularly sampled orbits=1.20896e-07
+difference in position between Python and C++ versions of Orbit interpolator: 1.44867e-14
+Comparison of a slightly perturbed orbit with the deviation vectors from the variational equation:
+difference in position between original and perturbed orbit: 7.31272e-06
+difference between the perturbed orbit and the linear prediction: 6.1381e-09
+Orbit integration with dop853,  accuracy 0.0001:  13369 steps, time=0.121 s, energy error=0.000445668
+Orbit integration with hermite, accuracy 0.0001:  66765 steps, time=0.083 s, energy error=0.00493589
+Orbit integration with dop853,  accuracy 1e-06:  21470 steps, time=0.186 s, energy error=7.75906e-05
+Orbit integration with hermite, accuracy 1e-06: 168791 steps, time=0.212 s, energy error=3.3932e-05
+Run the script with a non-empty command-line argument to show a plot
+[1;32mALL TESTS PASSED[0m

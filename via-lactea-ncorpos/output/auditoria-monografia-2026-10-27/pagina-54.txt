@@ -1,0 +1,34 @@
+54 
+ 
+ Escala vertical (𝑏𝑑) 0,28 kpc 
+Halo — NFW Massa de escala (𝑀𝑠) 5,4 × 1011 𝑀⊙ 
+ Raio de escala (𝑟𝑠) 15,62 kpc 
+ Densidade de escala (𝜌𝑠) 1,1276× 107 𝑀⊙/kpc3 
+ Raio (𝑅200) 206,626 kpc 
+ Raio externo de 
+truncamento 
+247,951 kpc 
+ Massa total truncada 
+(𝑀ℎ) 
+9,76316× 1011 𝑀⊙ 
+Fonte: parâmetros da implementação computacional, fundamentados nos 
+modelos de Hernquist (1990), Miyamoto e Nagai (1975) e Navarro, Frenk e White 
+(1997). A densidade de escala foi calculada a partir dos parâmetros registrados. 
+É importante destacar que a m assa de escala (𝑀𝑠) não corresponde à 
+massa total do halo. O perfil NFW original apresenta massa acumulada 
+divergente quando integrado até uma distância infinita, tornando necessário 
+estabelecer um procedimento de truncamento para representar um sistema de 
+massa finita. 
+Na i mplementação considerada, o perfil mantém sua forma NFW até 
+(𝑅200), sendo aplicado um truncamento suave por uma função de transição 
+quíntica entre (𝑅200) e (1,2 𝑅200). Assim, a massa total integrada do halo é 
+aproximadamente (9,76316× 1011 𝑀⊙). 
+Os parâm etros apresentados definem o modelo de referência, sendo 
+mantidos separados das alterações numéricas realizadas durante os testes de 
+resolução e refinamento das partículas. 
+Tabela 2 — Configuração numérica dos experimentos registrados. 
+Parâmetro Halo vivo — 80.000 
+partículas 
+Quatro geometrias 
+Partículas do bojo Nb 12.000 20.000 
+Partículas do disco Nd 36.000 60.000 

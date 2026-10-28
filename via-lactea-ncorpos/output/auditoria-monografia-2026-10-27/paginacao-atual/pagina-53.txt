@@ -1,0 +1,29 @@
+53 
+ 
+efetivamente registradas nas simulações, não devendo ser interpretados como 
+determinações observacionais exatas das propriedades da Via Láctea. 
+Para simplificar os cálculos gravitacionais e evitar o uso de grandezas 
+numéricas com ordens de magnitude excessivamente elevadas, foram adotadas 
+as seguintes unidades internas: 
+ [𝑀] = 1010𝑀⊙,  [𝐿] = kpc,  [𝑇] = Myr. (101) 
+Consequentemente, as unidades derivadas de velocidade e aceleração 
+são: 
+ [𝑣] = kpc/Myr,  [𝑎] = kpc/Myr2 (102) 
+Nessas unidades, a constante gravitacional utilizada no código é: 
+ 
+𝐺 = 0,04498502151469553  kpc3
+(1010𝑀⊙) Myr2 
+(103) 
+Esse valor decorre da conversão do parâmetro gravitacional solar nominal 
+da União Astronômica Internacional para as unidades internas do simulador, não 
+constituindo um parâmetro livre de ajuste. Embora as velocidades sejam 
+calculadas internamente em kpc/Myr, os gráficos podem apresentar seus valores 
+em km/s, utilizando a conversão: 
+ 1 km/s = 0,001022712165 kpc/Myr. (104) 
+Tabela 2 – Parâmetros físicos adotados para os modelos de bojo, disco e 
+halo de matéria escura da Via Láctea. 
+Componente Parâmetro Valor utilizado 
+Bojo — Hernquist Massa (𝑀𝑏) 5,0 × 109 𝑀⊙ 
+ Escala radial (𝑎𝑏) 1,00 kpc 
+Disco — Miyamoto–Nagai Massa (𝑀𝑑) 6,8 × 1010 𝑀⊙ 
+ Escala radial (𝑎𝑑) 3,00 kpc 

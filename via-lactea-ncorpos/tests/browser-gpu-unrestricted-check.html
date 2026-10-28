@@ -1,0 +1,17 @@
+<!doctype html><html lang="pt-BR"><meta charset="utf-8"><title>Teste de admissão GPU sem orçamento</title>
+<style>body{font:16px system-ui;background:#101d23;color:#d8f4f6;padding:32px}button{padding:12px}pre{white-space:pre-wrap}</style>
+<h1>Admissão GPU sem orçamento artificial</h1><p>Teste real com 16 partículas. Confere a propagação da política sem executar uma realização grande.</p>
+<button id="run">Executar verificação GPU</button><pre id="result">Aguardando execução.</pre>
+<script type="module">
+import {LiveGPUBackend} from '../src/compute/gpu-live.js';
+import {createLiveGalaxy} from '../src/physics/live-initial.js';
+const button=document.querySelector('#run'),output=document.querySelector('#result');
+button.onclick=async()=>{button.disabled=true;let backend;try{
+ backend=await LiveGPUBackend.create();const state=createLiveGalaxy({n:16,seed:2026});let budgetRejected=false;
+ try{await backend.initialize(state,{budgetBytes:1});}catch(e){if(!e.message.includes('orçamento'))throw e;budgetRejected=true;}
+ if(!budgetRejected)throw Error('Controle com orçamento não rejeitou a solicitação.');
+ await backend.initialize(state,{dt:.1,epsilon:.1,budgetBytes:1,enforceMemoryBudget:false});await backend.step(2);const snapshot=await backend.snapshot();
+ const result={passed:budgetRejected&&snapshot.n===16&&snapshot.time>0&&snapshot.positions.every(Number.isFinite),budgetControlRejected:budgetRejected,n:snapshot.n,steps:backend.steps,timeMyr:snapshot.time,memoryPolicy:backend.resourceEstimate.memoryPolicy,budgetBytes:backend.resourceEstimate.budgetBytes,effectiveParameters:backend.effectiveParameters};
+ output.textContent=JSON.stringify(result,null,2);
+ }catch(e){output.textContent=JSON.stringify({passed:false,error:e.message},null,2);}finally{backend?.dispose();button.disabled=false;}};
+</script></html>

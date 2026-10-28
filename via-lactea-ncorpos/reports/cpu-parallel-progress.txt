@@ -1,0 +1,15 @@
+{"n":10000,"workers":1,"originalMs":200.19939999999997,"prototypeMs":196.63969999999972,"speedup":1.0181026517025822,"cores":1.0239683753473512,"bitwise":true}
+{"n":10000,"workers":2,"originalMs":200.19939999999997,"prototypeMs":103.25019999999995,"speedup":1.9389734838286035,"cores":1.8111345062769864,"bitwise":true}
+{"n":10000,"workers":4,"originalMs":200.19939999999997,"prototypeMs":53.49510000000009,"speedup":3.742387620548417,"cores":3.5010269054853915,"bitwise":true}
+{"n":10000,"workers":8,"originalMs":200.19939999999997,"prototypeMs":31.709299999999985,"speedup":6.313586234953155,"cores":7.884122323734681,"bitwise":true}
+{"n":10000,"workers":16,"originalMs":200.19939999999997,"prototypeMs":38.64140000000043,"speedup":5.180956176535989,"cores":11.344659841719261,"bitwise":true}
+{"n":24000,"workers":4,"originalMs":669.0853999999999,"prototypeMs":153.79559999999947,"speedup":4.350484669262334,"cores":3.764737092608644,"bitwise":true}
+{"n":24000,"workers":8,"originalMs":669.0853999999999,"prototypeMs":89.81890000000021,"speedup":7.449271812502696,"cores":7.162732702860049,"bitwise":true}
+{"n":80000,"workers":1,"originalMs":2690.2706,"prototypeMs":2379.3106000000007,"speedup":1.130693319316948,"cores":0.9981882987450227,"bitwise":true}
+{"n":80000,"workers":2,"originalMs":2690.2706,"prototypeMs":1163.6603000000032,"speedup":2.311903740292586,"cores":1.987693487523802,"bitwise":true}
+{"n":80000,"workers":4,"originalMs":2690.2706,"prototypeMs":608.0652999999947,"speedup":4.4243119941230376,"cores":3.830180738812131,"bitwise":true}
+{"n":80000,"workers":8,"originalMs":2690.2706,"prototypeMs":362.9753000000055,"speedup":7.411718097622508,"cores":7.36138244117426,"bitwise":true}
+{"n":80000,"workers":16,"originalMs":2690.2706,"prototypeMs":309.35889999999927,"speedup":8.696276719370305,"cores":13.717605734670613,"bitwise":true}
+{"n":536000,"workers":4,"originalMs":16930.201700000005,"prototypeMs":3776.56779999999,"speedup":4.482959818701004,"cores":3.7987405096365734,"bitwise":true}
+{"n":536000,"workers":8,"originalMs":16930.201700000005,"prototypeMs":2264.337599999999,"speedup":7.476889356074825,"cores":7.314280344061772,"bitwise":true}
+{"n":536000,"workers":16,"originalMs":16930.201700000005,"prototypeMs":1916.5547999999835,"speedup":8.833664291780309,"cores":13.594197535068828,"bitwise":true}

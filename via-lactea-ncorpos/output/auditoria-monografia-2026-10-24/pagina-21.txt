@@ -1,0 +1,40 @@
+21 
+ 
+ 
+Substituindo essa relação no potencial newtoniano, obtém-se: 
+        Φ(𝑅,𝑧)= − 𝐺𝑀
+√𝑅2 + 𝑧2 (42) 
+ 
+Essa expressão ainda representa um potencial esférico, pois depende 
+apenas da distância total até a origem. O problema é que, para um disco 
+galáctico, deseja-se uma expressão que diferencie a direção radial R da direção 
+vertical z, já que o disco é muito mais e xtenso no plano galáctico do que na 
+direção perpendicular a ele. 
+Para construir um potencial mais adequado para uma estrutura achatada, 
+parte-se da ideia de modificar a dependência vertical do potencial. Em vez de 
+usar diretamente z, introduz-se um parâmetro bd, associado à espessura vertical 
+do disco. Assim, considera-se a substituição: 
+ 𝑧 ⟶ √𝑧2 + 𝑏𝑑
+2 (43) 
+ 
+Isso evita que o potencial tenha comportamento singular no plano do disco 
+e permite representar uma distribuição de massa com espessura vertical finita. 
+O parâmetro bd, portanto, controla o quanto o disco é espesso na direção vertical. 
+Se b d for pequeno,  o disco se aproxima de um disco fino; se b d for maior, a 
+distribuição se torna mais espessa. 
+No entanto, somente modificar a coordenada vertical ainda não é 
+suficiente para representar a extensão radial do disco. O disco galáctico também 
+possui uma escala radial característica, associada ao fato de que a massa não 
+está concentrada apenas no centro, mas espalhada ao longo do plano. Para 
+representar essa extensão radial, introduz -se outro parâmetro, a d, chamado de 
+escala radial do disco. 
+Assim, a dependência vertical modificada passa a aparecer somada a ad: 
+ 
+ 𝑎𝑑 + √𝑧2 + 𝑏𝑑
+2 (44) 
+Esse termo representa uma espécie de distância vertical efetiva, ajustada 
+para levar em conta tanto a espessura quanto a extensão radial da distribuição 
+de massa. Com isso, a distância efetiva que aparece no potencial deixa de ser 
+simplesmente: 
+ √𝑅2 + 𝑧2 (45) 
+ 

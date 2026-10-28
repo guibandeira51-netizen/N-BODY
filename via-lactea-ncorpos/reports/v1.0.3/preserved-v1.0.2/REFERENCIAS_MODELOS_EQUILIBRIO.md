@@ -1,0 +1,18 @@
+# Métodos de equilíbrio e escolha para a versão 1.0
+
+Referências consultadas antes de escrever o gerador; fontes oficiais/artigos primários. A escolha é usar o AGAMA real, como preparação offline. O motor livre permanece KDK com gravidade suavizada. Instalar uma biblioteca ou passar testes de software não certifica a estabilidade de uma galáxia.
+
+| Trabalho | Contribuição e consequência para este projeto |
+|---|---|
+| [Widrow & Dubinski 2005](https://doi.org/10.1086/432710), [texto](https://arxiv.org/html/astro-ph/0506177) | DFs de disco, bojo e halo acopladas pela equação de Poisson. O disco usa uma terceira integral aproximada; modelos inicialmente equilibrados ainda podem formar barras. Reaproveitamos o princípio, sem copiar parâmetros históricos ou identificar o MN com seu disco exponencial. |
+| [Yurin & Springel 2014 — GALIC](https://doi.org/10.1093/mnras/stu1421), [texto](https://arxiv.org/html/1402.1623) | Minimiza a diferença entre massa alvo e densidade orbital média, com restrições de momentos cinemáticos. Mudanças estocásticas só são aceitas segundo essa função de mérito. O transferidor de velocidades experimental da 0.8/0.9 não implementa esse procedimento e não é GALIC. |
+| [Vasiliev 2019 — AGAMA](https://doi.org/10.1093/mnras/sty2672), [texto](https://arxiv.org/html/1802.08239v2) | DFs em ações; integra f sobre velocidades, resolve Poisson e reitera o potencial mantendo f(J) fixa. Ações pelo Stäckel fudge são aproximações. QuasiIsothermal admite σR diferente de σz; QuasiSpherical transporta uma DF esférica para ações e permite resposta achatada no potencial composto. Não é inversão esférica exata no potencial achatado. |
+| [Vasiliev & Athanassoula 2015](https://doi.org/10.1093/mnras/stv805), [texto](https://arxiv.org/html/1505.03148) | Schwarzschild ajusta pesos não negativos de órbitas para reproduzir densidade e restrições. Ajuste espacial não garante estabilidade secular; seus ensaios comparativos demonstram a importância de restrições cinemáticas apropriadas. Método alternativo, sem reimplementação simultânea nesta versão. |
+
+A condição procurada é {f,H} ≈ 0, com ∇²Φ = 4πGΣ∫f_c d³v. Para f(J), os erros nas ações, quadraturas e representação do potencial limitam essa igualdade. A autoconsistência será medida, não presumida. O modelo candidato muda massas e perfis, portanto a diferença 0.9 → 1.0 não isola o inicializador: controles com os mesmos perfis/massas são necessários.
+
+O repositório oficial [GalacticDynamics-Oxford/Agama](https://github.com/GalacticDynamics-Oxford/Agama), seu `INSTALL`, `doc/reference.tex` (DFs e SelfConsistentModel) e `py/example_self_consistent_model_bdh.py` orientam o uso da API. Foi compilada e executada a versão 1.0.161, commit `f302756b8af2b763db58e278e30478517dc8eea3`; os hashes e logs estão em dependencies.json e reproduction/. Não redistribuímos um pacote improvisado sob o nome AGAMA.
+
+[Hunt & Vasiliev 2025](https://doi.org/10.1016/j.newar.2024.101721), [preprint](https://arxiv.org/abs/2501.04075), descreve desequilíbrios reais da Via Láctea e incertezas do halo; um controle isolado quase estacionário continua útil, sem transformar a Via Láctea real em um sistema perfeitamente estacionário.
+
+As referências de aquecimento foram conferidas: [Mackereth et al. 2019, Dynamical heating across the Milky Way disc using APOGEE and Gaia](https://arxiv.org/abs/1901.04502) e [Thulasidharan et al. 2024, The Age-Thickness Relation of the Milky Way Disk: A Tracer of Galactic Merging History](https://arxiv.org/abs/2412.12304). Relações entre idade e dispersão/espessura de populações observadas hoje envolvem nascimento e história de perturbações; não definem uma taxa universal de expansão aceitável de um único disco collisionless isolado.

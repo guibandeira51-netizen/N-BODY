@@ -1,0 +1,118 @@
+import {LaboratoryHistory} from './physics/laboratory.js';
+import {plotSVG} from './laboratory-panel.js';
+import {componentRotationPlot} from './component-rotation-plot.js';
+import {relativeEnergy,compareEnergy} from './physics/live-energy.js';
+import {LiveEnergyReference} from './compute/live-energy-reference.js';
+import {directReferenceData,preserveEnergyCapture} from './energy-audit-session.js';
+
+const escape=value=>String(value).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;');
+const figure=(id,label,extra='')=>`<figure${extra}><div id="${id}"></div><div class="live-chart-actions"><button type="button" class="save-chart" data-save-chart="${id}" aria-label="Salvar gráfico ${label}" disabled>Salvar gráfico</button></div></figure>`;
+export const liveDiagnosticsView=()=>`<section class="live-diagnostics" aria-labelledby="live-title"><div class="panel-heading"><span class="section-number">05</span><h2 id="live-title">Diagnósticos em tempo real</h2><span class="measurement-tag">Estados medidos</span></div><p id="live-epoch" class="field-help" role="status">Inicie a simulação para medir os gráficos.</p><div class="live-chart-grid">${figure('live-height','de espessura do disco')}${figure('live-energy','de conservação da energia')}${figure('live-rotation','das curvas de rotação',' class="live-rotation"')}</div></section>`;
+
+// Read-only projection of diagnostics; never advances or modifies particles.
+export function liveChartData(samples){
+ const first=samples[0],last=samples.at(-1);
+ return {
+  height:samples.map(s=>[s.timeMyr,s.diskFrame?.available&&Number.isFinite(s.diskFrame.instant?.h50)?s.diskFrame.instant.h50:null]),
+  energy:samples.map(s=>[s.timeMyr,relativeEnergy(s.conservation,first?.conservation)?.percent??null]),
+  rotationField:last?.rotationField??null,
+  timeMyr:last?.timeMyr??null,energyApproximate:last?.conservation?.energyApproximate??null
+ };
+}
+
+export function energyChartEvidence(samples,references=[]){
+ const direct=directReferenceData(references),fastInitial=samples[0]?.conservation??null;
+ return {schema:'live-energy-chart-v1',units:'1e10 Msun kpc^2 Myr^-2',errorUnits:'percent',
+  normalization:'Independent E(0) for each method in the same realization; signed 100*(E(t)-E(0))/abs(E(0)); explicit K0+abs(U0) fallback near cancellation',
+  fastInitial,directInitial:direct.initial,
+  estimated:samples.map(s=>({timeMyr:s.timeMyr,energy:s.conservation?.energy,relative:relativeEnergy(s.conservation,fastInitial)})),
+  references:references.map(r=>({timeMyr:r.timeMyr,direct:r.direct,relative:relativeEnergy(r.direct,direct.initial),deltaU:r.deltaU,relativeU:r.relativeU,snapshot:r.snapshot?{n:r.snapshot.n,time:r.snapshot.time,parameters:r.snapshot.parameters,backend:r.snapshot.backend,configuration:r.snapshot.configuration}:null})),noInterpolatedReference:true};
+}
+
+export function energyPlot(samples,references=[]){
+ const fast=liveChartData(samples).energy,direct=directReferenceData(references);
+ let svg=plotSVG([{label:'Estimada · Barnes–Hut',points:fast},{label:'Direta · Float64',points:direct.points}],{title:'Conservação da energia × tempo físico',yLabel:'Desvio assinado [%]'});
+ const message=direct.initial?'':'<text x="85" y="297" font-family="Arial,sans-serif" font-size="9" fill="#65777b">Nenhuma referência direta calculada nesta execução.</text>';
+ return svg.replace('</svg>',`<desc>Energia Barnes–Hut aproximada; referência direta Float64 somente nos estados auditados, sem interpolação. Cada método usa sua própria energia inicial em t=0.</desc><metadata id="energy-chart-data">${escape(JSON.stringify(energyChartEvidence(samples,references)))}</metadata>${message}</svg>`);
+}
+
+export function initializeLiveDiagnostics({getRunReport,captureEnergy}){
+ const history=new LaboratoryHistory(512),$=id=>document.getElementById(id),pool=new LiveEnergyReference();
+ let context={},references=[],selected=null,token=0,maxFast=0,jobBusy=false,codeIdentity=null;
+ fetch('./reports/interface-106/code-identity.json').then(r=>r.ok?r.json():null).then(r=>codeIdentity=r).catch(()=>{});
+ const number=x=>Number.isFinite(x)?x.toLocaleString('pt-BR',{maximumSignificantDigits:12}):'indisponível';
+ const download=(name,data,type)=>{const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([data],{type}));a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000);};
+ const status=text=>$('energy-job').textContent=text;
+ function progress(value){$('energy-progress').value=value;$('energy-progress').setAttribute('aria-valuetext',number(100*value)+'%');}
+ function buttons(){
+  $('energy-estimate').disabled=jobBusy;
+  $('energy-reference').disabled=jobBusy||!selected||selected.states.every(x=>references.some(r=>r.timeMyr===x.state.time));
+  $('energy-cancel').disabled=!jobBusy;
+ }
+ function render(){
+  const samples=history.samples,data=liveChartData(samples),direct=directReferenceData(references),fast0=samples[0]?.conservation;
+  $('live-height').innerHTML=plotSVG([{label:'Disco · plano próprio',points:data.height}],{title:'Espessura do disco × tempo',yLabel:'h50 [kpc]'});
+  $('live-energy').innerHTML=energyPlot(samples,references);
+  $('live-rotation').innerHTML=componentRotationPlot(data.rotationField);
+  document.querySelectorAll('[data-save-chart]').forEach(button=>button.disabled=!samples.length);
+  const epoch=$('live-epoch');epoch.dataset.timeMyr=data.timeMyr??'';epoch.dataset.measurements=history.totalMeasurements;
+  epoch.textContent=samples.length?`Medição em ${number(data.timeMyr)} Myr · ${history.totalMeasurements} estados medidos · energia estimada — Barnes–Hut${history.failure?' · '+history.failure:''}.`:'Inicie a simulação para medir os gráficos.';
+  $('energy-availability').textContent=references.length?`${references.length} ${references.length===1?'estado auditado':'estados auditados'}: ${references.map(r=>number(r.timeMyr)+' Myr').join('; ')}.${references.length===1?' Somente t=0 foi auditado; a conservação temporal ainda não foi verificada.':''}`:'Nenhuma referência direta calculada nesta execução.';
+  $('energy-baselines').textContent=fast0?`E₀,BH = ${number(fast0.energy)}; E₀,direta = ${number(direct.initial?.energy)}. ${direct.initial?'Normalização direta: '+relativeEnergy(direct.initial,direct.initial)?.normalization+'.':'A referência direta inicial ainda não foi calculada.'}`:'';
+  $('energy-audited').innerHTML=references.map(r=>{const d=r.direct,e=relativeEnergy(d,direct.initial),s=r.snapshot;return `<tr data-audit-time="${r.timeMyr}"><td>${number(r.timeMyr)}</td><td>${s.n}</td><td>${number(d.energy)}</td><td>${number(e?.percent)}</td></tr><tr><td colspan="4"><details><summary>Snapshot em ${number(r.timeMyr)} Myr</summary><p>${escape(`${s.backend} · ${d.forceAlgorithm} · trajetória ${d.trajectoryPrecision}. G=${d.G}; ε²=${d.epsilonSquared} kpc²; dt efetivo=${d.effectiveDt} Myr; velocidades ${d.velocityEpoch}. Avaliação CPU Float64 compensada; ${number(d.diagnosticCostMs)} ms. Normalização: ${e?.normalization}.`)}</p></details></td></tr>`;}).join('');
+ }
+ for(const button of document.querySelectorAll('[data-save-chart]'))button.addEventListener('click',()=>{
+  const svg=$(button.dataset.saveChart)?.querySelector('svg');if(!svg||!history.samples.length)return;
+  const names={'live-height':'espessura-disco','live-energy':'conservacao-energia','live-rotation':'curvas-rotacao-componentes'};
+  download(names[button.dataset.saveChart]+'.svg',svg.outerHTML,'image/svg+xml;charset=utf-8');
+ });
+ function failure(error){
+  status(error.message);$('energy-restart').hidden=!/inicial|t=0|realizaç/.test(error.message);
+ }
+ $('energy-estimate').onclick=async()=>{
+  if(jobBusy)return;const mine=token;jobBusy=true;selected=null;buttons();progress(0);$('energy-restart').hidden=true;
+  status('Capturando estados sincronizados; a integração retoma se estava em execução.');
+  try{
+   const capture=await captureEnergy();if(mine!==token)return;
+   const job=preserveEnergyCapture(capture);selected=job;
+   const s=job.states.at(-1).state,n=Math.min(1000,s.n),pilot={...s,n,positions:s.positions.slice(0,3*n),velocities:s.velocities.slice(0,3*n),masses:s.masses.slice(0,n),components:s.components.slice(0,n)};
+   status('Medindo custo com até 1.000 corpos; o piloto não adiciona referências ao gráfico.');
+   await pool.evaluate(pilot,job.options,p=>{if(mine===token)progress(p);});if(mine!==token)return;
+   const count=job.states.filter(x=>!references.some(r=>r.timeMyr===x.state.time)).length;
+   status(`Snapshots preservados: ${job.states.map(x=>number(x.state.time)+' Myr').join('; ')}; N=${s.n}. ${count} avaliações pendentes; custo projetado ~${number(pool.estimate(s.n)*count/1000)} s. Estimativa sujeita à carga e à extrapolação do piloto. Calcular usa estes instantes, mesmo que a integração avance.`);
+  }catch(error){if(mine===token){selected=null;failure(error);}}
+  finally{if(mine===token){jobBusy=false;buttons();}}
+ };
+ $('energy-reference').onclick=async()=>{
+  if(jobBusy||!selected)return;jobBusy=true;const mine=token,job=selected;buttons();progress(0);
+  try{
+   for(let i=0;i<job.states.length;i++){
+    const {state,fast}=job.states[i];if(references.some(r=>r.timeMyr===state.time))continue;
+    status(`Referência direta em ${number(state.time)} Myr; N=${state.n}; ${pool.count} Workers CPU. Snapshot preservado; época independente do tempo atual da integração.`);
+    const direct=await pool.evaluate(state,job.options,p=>{if(mine===token)progress((i+p)/job.states.length);});if(mine!==token)return;
+    references.push({...compareEnergy(fast,direct),snapshot:{...state,parameters:job.parameters,configuration:job.configuration,backend:job.backend}});
+    references.sort((a,b)=>a.timeMyr-b.timeMyr);render();
+   }
+   status('Referências concluídas. Para outro instante, estime novamente e calcule os novos snapshots. Pontos sem interpolação.');progress(1);selected=null;
+  }catch(error){if(mine===token)failure(error);}
+  finally{if(mine===token){jobBusy=false;buttons();}}
+ };
+ $('energy-cancel').onclick=()=>{token++;pool.cancel();jobBusy=false;selected=null;buttons();progress(0);status('Referência cancelada. Pontos já concluídos foram preservados; nenhum ponto incompleto foi registrado.');};
+ $('energy-restart').onclick=()=>$('reset').click();
+ function energyReport(){return {schema:'legacy-energy-audit-v2',codeIdentity,configuration:context.configuration,fastSamples:history.samples.map(s=>({timeMyr:s.timeMyr,...s.conservation,relative:relativeEnergy(s.conservation,history.samples[0].conservation)})),references,maxFastAbsolute:maxFast,chart:energyChartEvidence(history.samples,references),noInterpolatedReference:true};}
+ $('energy-json').onclick=()=>download('energia-ncorpos.json',JSON.stringify(energyReport(),(_,v)=>ArrayBuffer.isView(v)?Array.from(v):v,2),'application/json');
+ $('energy-csv').onclick=()=>{
+  const rows=[['time_Myr','method','K','U','E','deltaE_signed','deltaE_percent','G','epsilonSquared','force','trajectory_precision','backend','n','initial_energy','normalization','cost_ms']],d0=directReferenceData(references).initial;
+  for(const s of energyReport().fastSamples)rows.push([s.timeMyr,'BH',s.kinetic,s.potential,s.energy,s.relative?.signed,s.relative?.percent,s.G,s.epsilonSquared,s.forceAlgorithm,s.trajectoryPrecision,s.trajectoryPrecision==='Float32'?'WebGPU':'CPU Worker',context.configuration?.n,history.samples[0].conservation.energy,s.relative?.normalization,s.diagnosticCostMs]);
+  for(const r of references){const d=r.direct,e=relativeEnergy(d,d0);rows.push([r.timeMyr,'direct-Float64',d.kinetic,d.potential,d.energy,e?.signed,e?.percent,d.G,d.epsilonSquared,d.forceAlgorithm,d.trajectoryPrecision,r.snapshot.backend,r.snapshot.n,d0?.energy,e?.normalization,d.diagnosticCostMs]);}
+  download('energia-ncorpos.csv',rows.map(r=>r.map(x=>'"'+String(x??'').replaceAll('"','""')+'"').join(',')).join('\n'),'text/csv');
+ };
+ render();buttons();
+ return {
+  add(sample){context=structuredClone(getRunReport());history.add(sample);maxFast=Math.max(maxFast,relativeEnergy(sample.conservation,history.samples[0].conservation)?.absolute??0);render();},
+  reset(){token++;pool.cancel();history.reset();context={};references=[];selected=null;maxFast=0;jobBusy=false;buttons();progress(0);$('energy-restart').hidden=true;status('Estime o custo para selecionar os snapshots antes de calcular.');render();},
+  fail(message){history.failure=message;render();},
+  cadence:()=>1,
+  report:()=>({schema:'live-nbody-diagnostics-v3',configuration:context.configuration,initial:context.initial,samples:history.samples,energyAudit:energyReport(),totalMeasurements:history.totalMeasurements,decimations:history.decimations,chartData:liveChartData(history.samples),qualification:'Read-only diagnostics of actual integrated states. Sparse direct references are not interpolated. Float64 energy evaluation does not upgrade Float32 trajectories.'})
+ };
+}

@@ -1,0 +1,40 @@
+51 
+ 
+sistema galáctico. Diferentemente de estrelas individuais ou partículas 
+fundamentais de matéria escura, essas entidades numéricas podem representar 
+grandes conjuntos de objetos físicos, sendo denominadas macropartículas. 
+A aplicação direta da Lei da Gravit ação Universal de Newton a essas 
+macropartículas pode produzir acelerações excessivamente elevadas durante 
+aproximações muito próximas. Esse comportamento decorre da divergência da 
+força gravitacional entre massas pontuais quando a distância entre elas tende a 
+zero. Em sistemas discretizados, tais encontros podem introduzir perturbações 
+numéricas que não representam adequadamente a dinâmica coletiva de uma 
+galáxia aproximadamente não colisional. 
+Para reduzir essas perturbações, emprega -se a técnica de suavi zação 
+gravitacional de Plummer, amplamente utilizada em simulações N -corpos 
+(DEHNEN, 2001; POWER et al., 2003). 
+Nesse procedimento, a aceleração gravitacional exercida pelas demais 
+partículas sobre a partícula "𝑖" é calculada por: 
+ 
+ai = G ∑ mj
+rj − ri
+(|rj − ri|
+2
++ ε2)
+3/2
+N
+j=1,j≠i
+ 
+(98) 
+Em que 𝐺 representa a constante gravitacional universal, 𝑚𝑗 corresponde 
+à massa da macropartícula 𝑗, 𝑟𝑖 e 𝑟𝑗 representam os vetores posição das 
+partículas 𝑖 e 𝑗, respectivamente, 𝑁 corresponde ao número total de partículas 
+gravitacionalmente interagentes e ε representa o comprimento de suavização 
+gravitacional empregado no cálculo das interações.  O parâmetro ε modifica o 
+comportamento da interação gravitacional em separações pequenas. Para 
+distâncias muito superiores a esse comprimento, a força suavizada aproxima-se 
+da interação newtoniana entre massas pontuais. Entretanto, quando a 
+separação entre as partículas se torna comparável ou inferior a ε, a intensidade 
+da interação é reduzida, evitando a divergência da aceleração.  
+O potencial gravitacional suavizado associado a uma macropartícula pode 
+ser expresso por: 

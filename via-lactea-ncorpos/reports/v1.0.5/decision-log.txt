@@ -1,0 +1,68 @@
+{
+  "best": "F",
+  "maxE": 3.970144544003712e-7,
+  "maxForce": 0.000026152615173206473,
+  "maxZ": 0.000018076241018643524,
+  "contrasts": {
+    "thinGrowthDifference": {
+      "n": 3,
+      "values": [
+        3.2669321567708742,
+        -4.445661720539018,
+        -1.1901638508811985
+      ],
+      "mean": -0.7896311382164475,
+      "sd": 3.8718659480301545,
+      "CI95": [
+        -10.407879355120158,
+        8.828617078687262
+      ],
+      "assumption": "Independent realization means; Student t interval, small-n and approximate normality limitations. Epochs are not replicates."
+    },
+    "thinVarianceDifference": {
+      "n": 3,
+      "values": [
+        3.1553233557009435,
+        -54.470465092373786,
+        38.80239760540775
+      ],
+      "mean": -4.170914710421698,
+      "sd": 47.06603926517431,
+      "CI95": [
+        -121.08943779857101,
+        112.74760837772762
+      ],
+      "assumption": "Independent realization means; Student t interval, small-n and approximate normality limitations. Epochs are not replicates."
+    },
+    "thinLateHeightDifference": {
+      "n": 3,
+      "values": [
+        0.07307094647807888,
+        -0.05175949283548607,
+        -0.002564975145058615
+      ],
+      "mean": 0.00624882616584473,
+      "sd": 0.06288021918668435,
+      "CI95": [
+        -0.14995429764802007,
+        0.16245194997970955
+      ],
+      "assumption": "Independent realization means; Student t interval, small-n and approximate normality limitations. Epochs are not replicates."
+    },
+    "thickGrowthDifference": {
+      "n": 3,
+      "values": [
+        1.963733089657571,
+        -0.6407956920966851,
+        -3.0459103638255884
+      ],
+      "mean": -0.5743243220882341,
+      "sd": 2.505483130062897,
+      "CI95": [
+        -6.798289451994147,
+        5.649640807817678
+      ],
+      "assumption": "Independent realization means; Student t interval, small-n and approximate normality limitations. Epochs are not replicates."
+    }
+  }
+}

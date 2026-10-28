@@ -1,0 +1,17 @@
+
+Microsoft (R) Program Maintenance Utility Version 14.44.35229.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+	C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64\cl.exe /std:c++17 /permissive-  /W3 -wd4244 -wd4267 /O2 /EHsc /nologo -Iextras/include /openmp -Isrc -DHAVE_PYTHON -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\include -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\site-packages\numpy\_core\include -DHAVE_EIGEN -Iextras/include -DHAVE_CVXOPT -c src\interface_python.cpp -Foobj/
+interface_python.cpp
+src\interface_python.cpp(7418): warning C4805: '&=': unsafe mix of type 'bool' and type 'int' in operation
+src\interface_python.cpp(7418): warning C4805: '&': unsafe mix of type 'bool' and type 'int' in operation
+	C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64\cl.exe /std:c++17 /permissive-  /W3 -wd4244 -wd4267 /O2 /EHsc /nologo -Iextras/include /openmp -Isrc -DHAVE_PYTHON -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\include -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\site-packages\numpy\_core\include -DHAVE_EIGEN -Iextras/include -DHAVE_CVXOPT -c src\math_core.cpp -Foobj/
+math_core.cpp
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_math.h(94): warning C4005: 'INFINITY': macro redefinition
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-research\Agama-master\src\math_base.h(13): note: see previous definition of 'INFINITY'
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_math.h(111): warning C4005: 'NAN': macro redefinition
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-research\Agama-master\src\math_base.h(17): note: see previous definition of 'NAN'
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-research\Agama-master\src\math_cubature.h(37): fatal error C1083: Cannot open include file: 'alloca.h': No such file or directory
+NMAKE : fatal error U1077: 'C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64\cl.exe /std:c++17 /permissive-  /W3 -wd4244 -wd4267 /O2 /EHsc /nologo -Iextras/include /openmp -Isrc -DHAVE_PYTHON -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\include -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\site-packages\numpy\_core\include -DHAVE_EIGEN -Iextras/include -DHAVE_CVXOPT -c src\math_core.cpp -Foobj/' : return code '0x2'
+Stop.

@@ -1,0 +1,42 @@
+8 
+ 
+Para representar a estrutura gravitacional de uma galáxia de forma m ais 
+realista, torna -se necessário considerar modelos matemáticos capazes de 
+descrever suas principais componentes. O bojo galáctico pode ser representado 
+por perfis esfericamente simétricos, como o modelo de Hernquist, adequado 
+para regiões centrais de alt a concentração de massa (HERNQUIST, 1990). O 
+disco, por sua vez, exige uma formulação compatível com sua geometria 
+achatada, podendo ser descrito por potenciais como o de Miyamoto-Nagai. Já o 
+halo de matéria escura pode ser modelado por meio do perfil NFW,  proposto a 
+partir de simulações cosmológicas de formação de estruturas (NAVARRO; 
+FRENK; WHITE, 1997). 
+Diante desse contexto, a modelagem computacional apresenta-se como uma 
+ferramenta fundamental para investigar a dinâmica de sistemas gravitacionais. 
+Por meio de simulações numéricas, é possível analisar o comportamento orbital 
+de dois, três e múltiplos corpos, bem como estudar a influência de diferentes 
+componentes galácticas sobre suas trajetórias. Essa abordagem permite 
+comparar modelos puramente kepleri anos com modelos não keplerianos que 
+incluem a contribuição do bojo, do disco e do halo de matéria escura. 
+O presente trabalho tem como objetivo modelar computacionalmente 
+sistemas gravitacionais de dois, três e múltiplos corpos, com aplicação ao estudo 
+da influência da matéria escura na dinâmica orbital galáctica. Inicialmente, 
+utiliza-se o problema de dois corpos como base teórica e como validação 
+numérica do modelo. Em seguida, analisa -se o problema de três corpos, 
+destacando sua instabilidade e sensibil idade às condições iniciais. 
+Posteriormente, o estudo é generalizado para sistemas de múltiplas partículas e 
+para órbitas submetidas a um potencial galáctico composto por bojo, disco e halo 
+de matéria escura. 
+A metodologia adotada consiste na formulação das equações de movimento, 
+na implementação computacional dos modelos gravitacionais e na análise dos 
+resultados obtidos a partir das simulações. São avaliadas grandezas como 
+trajetórias orbitais, curvas de rotação, energia mecânica e estabilidade numérica. 
+Com isso, busca -se compreender de que forma a inclusão do halo de matéria 
+escura altera a dinâmica orbital em comparação com modelos baseados apenas 
+na matéria visível. 
+Assim, este trabalho procura estabelecer uma conexão entre a teoria clássica 
+dos sistemas gravitacionais e a modelagem computacional aplicada à dinâmica 
+galáctica. A partir da comparação entre modelos keplerianos, sistemas de três 
+corpos e simulações com potenciais galácticos não keplerianos, pretende -se 
+evidenciar a importância da matéria e scura na descrição da estrutura dinâmica 
+de galáxias espirais. 
+ 

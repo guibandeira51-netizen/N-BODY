@@ -1,0 +1,15 @@
+100 actions times 1000 angles
+Torus(potential=CompositePotential{ Isochrone, MiyamotoNagai }, num_cached_tori=0)
+Torus(potential=CompositePotential{ Isochrone, MiyamotoNagai }, num_cached_tori=100)
+Action mapping with isochrone: 0.00654 s
+Action mapping with spherical: 0.308 s, rms error in posvel: 5.49e-06, frequencies: 8.93e-08
+Action mapping with torus, initial cost: 0.2 s, repeated: 0.0829 s, rms error in posvel: 0.000554, frequencies: 1.73e-05
+Action finding with isochrone: 0.00396 s, frequencies: 0.00319 s, actions+freq: 0.00372 s, act+ang+freq: 0.00714 s
+Isochrone (roundtrip), rms error in actions: 1.24e-14, angles: 9.93e-15, frequencies: 7.03e-16
+Action finding with spherical (interpolated): 0.0109 s, frequencies: 0.0132 s, actions+freq: 0.0075 s, act+ang+freq: 0.183 s
+Spherical (interpol.), rms error in actions: 2.32e-08, angles: 1.08e-06, frequencies: 8.99e-08
+Action finding with spherical (standalone):   0.12 s, frequencies: 0.164 s, actions+freq: 0.202 s, act+ang+freq: 0.301 s
+Spherical (st/alone),  rms error in actions: 1.13e-12, angles: 5.21e-12, frequencies: 3.49e-13
+Action finding with axisym. Staeckel fudge:  0.19 s, frequencies: 0.37 s, actions+freq: 0.501 s, act+ang+freq: 0.953 s
+Axisym Staeckel fudge, rms error in actions: 0.000162, angles: 0.0303, frequencies: 0.000101
+[1;32mALL TESTS PASSED[0m

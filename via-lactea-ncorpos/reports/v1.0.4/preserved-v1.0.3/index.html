@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#10191c">
+  <meta name="description" content="Protótipo científico de dinâmica galáctica: partículas autogravitantes, integração Leapfrog, CPU e WebGPU no seu dispositivo.">
+  <title>Guilherme Aleixo Bandeira · TCC UEMS · Dinâmica galáctica</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <a class="skip-link" href="#workspace">Ir para a visualização</a>
+  <header class="app-header uems-header">
+    <div class="brand uems-brand">
+      <img class="uems-logo" src="./assets/uems.png" alt="UEMS — Universidade Estadual de Mato Grosso do Sul">
+      <div><p class="eyebrow">PROJETO DE TCC</p><h1>Dinâmica galáctica e matéria escura</h1><p class="project-author">GUILHERME ALEIXO BANDEIRA</p></div>
+    </div>
+    <div class="header-context"><span class="edition">N-corpos · autogravitação</span><span class="context-line">Engenharia Física · UEMS</span></div>
+  </header>
+
+
+  <div class="app-layout">
+    <aside class="controls" aria-label="Configuração N-corpos">
+      <div class="panel-heading"><span class="section-number">01</span><h2>Simulação N-corpos</h2><span class="local-tag">Cálculo local</span></div>
+      <p class="intro">Bojo, disco e halo com massa. Forças calculadas entre as partículas no seu dispositivo.</p>
+      <div class="form-row"><div class="field"><label for="mode">Resolução</label><select id="mode"><option value="auto">Automática</option><option value="manual">Manual</option></select></div><div class="field"><label for="n">Corpos integrados · N</label><input id="n" type="number" value="1000" min="3" step="1"></div></div>
+      <div class="field"><label for="force-method">Algoritmo gravitacional</label><select id="force-method"><option value="auto">Automático · ensaio local</option><option value="barnes-hut">Barnes–Hut 3D</option><option value="direct">Direto O(N²)</option></select></div>
+      <div class="field"><label for="backend">Backend</label><select id="backend"><option value="auto">Automático · ensaio local</option><option value="cpu">CPU · Worker f64</option><option value="gpu">GPU · WebGPU direto f32</option></select></div>
+      <p id="estimate" class="estimate-box">Memória e custo verificados ao iniciar.</p>
+      <div class="form-row"><div class="field"><label for="dt">Passo físico · Myr</label><input id="dt" type="number" value="0.1" min="0.000001" step="0.01"></div><div class="field"><label for="epsilon">Suavização · kpc</label><input id="epsilon" type="number" value="0.1" min="0.000001" step="0.01"></div></div>
+      <details class="advanced"><summary>Resolução e reprodutibilidade</summary><div class="advanced-content"><div class="form-row"><div class="field"><label for="theta">Abertura da árvore · θ</label><input id="theta" type="number" value="0.5" min="0" step="0.05"></div><div class="field"><label for="seed">Semente</label><input id="seed" type="number" value="2026" step="1"></div></div><div class="field"><label for="budget">Orçamento de buffers · MiB</label><input id="budget" type="number" value="512" min="1" step="64"></div><div class="field"><label for="model">Distribuição de massa</label><select id="model"><option value="halo">Bojo + disco + halo</option><option value="baryons">Bojo + disco · sem halo</option></select></div><p class="field-help">Alterar N ou parâmetros prepara uma nova realização desde t=0. Não se acrescentam massas ao sistema em evolução. Aumentar N exige estudo de convergência.</p></div></details>
+      <div class="execution-controls"><button id="start" class="button primary">▶ Iniciar</button><button id="pause" class="button secondary" disabled>Ⅱ Pausar</button><button id="reset" class="button secondary">Reiniciar</button><button id="stop" class="button quiet" disabled>Encerrar</button></div>
+      <div class="status-box"><span class="status-dot" aria-hidden="true"></span><p id="status" role="status" aria-live="polite">Pronto para configurar.</p></div>
+      <div class="panel-divider"></div><div class="panel-heading"><span class="section-number">02</span><h2>Visualização</h2></div>
+      <fieldset class="component-filters"><legend class="sr-only">Componentes desenhadas</legend><label><input id="show-bulge" type="checkbox" checked><span class="color-dot bulge"></span>Bojo · Hernquist</label><label><input id="show-disk" type="checkbox" checked><span class="color-dot disk"></span>Disco · Miyamoto–Nagai</label><label><input id="show-halo" type="checkbox"><span class="color-dot halo"></span>Halo · NFW modelado</label></fieldset>
+      <p class="field-help">Ocultar altera apenas o desenho. O halo continua gravitacionalmente ativo e não representa emissão luminosa.</p>
+      <div class="camera-controls" role="group" aria-label="Orientação da câmera"><button class="button camera" data-view="top">Superior</button><button class="button camera" data-view="side">Lateral</button><button class="button camera" data-view="free">Livre</button></div><button id="halo-view" class="button text-button">Enquadrar halo ↗</button>
+      <details class="advanced"><summary>Dispositivo e validação</summary><div class="advanced-content"><p id="hardware" class="hardware-info">Consultando recursos…</p><div class="device-actions"><button id="benchmark" class="button secondary">Avaliar dispositivo</button><button id="validate-gpu" class="button quiet">Testar CPU × GPU</button><button id="export" class="button text-button">Exportar medição ↓</button></div><p class="field-help">WebGPU calcula força direta. Barnes–Hut roda em CPU f64. Os limites de buffers e o custo medido determinam a viabilidade de N.</p></div></details>
+      <a class="sources-link" href="./PARAMETROS_E_FONTES.md" target="_blank" rel="noopener">Parâmetros e fontes científicas ↗</a>
+    </aside>
+    <main id="workspace" class="workspace">
+      <section class="scene-panel" aria-labelledby="scene-title">
+        <div class="scene-header"><div><p class="eyebrow">Sistema isolado · Gravitação newtoniana</p><h2 id="scene-title">Via Láctea · N-corpos sintético</h2></div><span class="scene-unit">Espaço em kpc</span></div>
+        <div class="viewport">
+          <canvas id="galaxy" aria-label="Visualização tridimensional das partículas. Use arraste para girar e a roda de rolagem para aproximar."></canvas>
+          <div id="empty" class="empty-state">
+            <div class="empty-symbol" aria-hidden="true"><span></span><span></span><span></span><i></i></div>
+            <h3>Simulação N-corpos</h3><p>Selecione o modelo e a resolução. Pressione <strong>Iniciar</strong> para calcular a evolução gravitacional.</p>
+          </div>
+          <div class="scene-guidance"><span><i class="guide-cross" aria-hidden="true"></i>Arraste para girar</span><span>Role para aproximar</span></div>
+          <div class="scene-coordinate" aria-hidden="true">x / y / z<span>kpc</span></div>
+        </div>
+        <div class="scene-footer"><span><i class="color-dot disk" aria-hidden="true"></i>Partículas com massa gravitacional</span><span>Leapfrog · Kick–Drift–Kick</span></div>
+      </section>
+
+        <section class="performance-panel" aria-labelledby="performance-title">
+          <div class="panel-heading"><span class="section-number">04</span><h2 id="performance-title">Integração e precisão</h2><span class="measurement-tag">Medição real</span></div>
+          <div class="key-metrics"><div><span class="metric-label">Massivas integradas</span><strong id="count">—</strong></div><div><span class="metric-label">Tempo físico</span><strong id="time">0 <small>Myr</small></strong></div><div><span class="metric-label">Passo médio</span><strong id="step-ms">— <small>ms</small></strong></div></div>
+          <p class="field-help" id="render-count">Seleção visual: — corpos após filtros; a câmera pode recortar o campo.</p>
+          <dl class="metrics-grid"><div><dt>Bojo / disco / halo</dt><dd id="counts">— / — / —</dd></div><div><dt>Algoritmo</dt><dd id="algorithm">—</dd></div><div><dt>Backend</dt><dd id="backend-label">—</dd></div><div><dt>Renderização</dt><dd id="fps">— FPS</dd></div><div><dt>Avanço físico</dt><dd id="rate">— Myr/s</dd></div><div><dt>Passos concluídos</dt><dd id="steps">0</dd></div><div><dt>Tempo de cálculo</dt><dd id="compute-time">0.00 s</dd></div><div><dt>Memória estimada</dt><dd id="memory">— MiB</dd></div></dl>
+          <div class="conservation-row"><div><span>ΔE / |E₀|</span><strong id="error-energy">—</strong></div><div><span>Erro de P</span><strong id="error-momentum">—</strong></div><div><span>Erro de L</span><strong id="error-angular">—</strong></div></div>
+          <p id="diagnostic-time" class="field-help">Nenhum diagnóstico calculado.</p><p id="initial-info" class="initial-info">Os diagnósticos das condições iniciais aparecerão aqui. Conservação numérica e estabilidade do modelo exigem verificações separadas.</p>
+        </section>
+
+
+      <section class="rotation-panel review-downloads" aria-labelledby="review-title"><div class="panel-heading"><h2 id="review-title">Resultados para revisão do TCC</h2></div><p class="chart-note">Exporte configurações, diagnósticos e tabelas do estado sintético para análise. A captura pausa a simulação após o passo pendente.</p><div class="review-buttons"><button id="review-zip" class="button primary">Baixar resultados e código · ZIP</button><button id="review-json" class="button secondary">Resultados · JSON</button><button id="review-md" class="button secondary">Relatório · Markdown</button></div><label class="export-check"><input id="review-particles" type="checkbox" checked> Incluir posições, velocidades e massas em CSV</label><p id="review-status" class="field-help" role="status">Sem execução iniciada, o relatório informa a ausência de estado físico.</p></section>
+      <section class="rotation-panel review-downloads" aria-labelledby="equilibrium-title"><div class="panel-heading"><h2 id="equilibrium-title">Versão 1.0.1 · estabilidade, conservação e convergência</h2></div><p class="chart-note">O painel científico apresenta três avaliações independentes, com o domínio medido, as evidências e as pendências de cada uma. O candidato AGAMA e os resultados da campanha 1.0 continuam disponíveis para comparação com a realização histórica acima.</p><div class="review-buttons"><a class="button primary" href="./equilibrio.html">Abrir validação científica 1.0.1</a><a class="button secondary" href="./granularidade103.html">Granularidade e equilíbrio 1.0.3 · experimental</a><a class="button secondary" href="./reports/v1.0.1/assessment.json" download>Avaliações 1.0.1 · JSON</a><a class="button secondary" href="./downloads/equilibrio-1.0.0.zip" download>Investigação histórica 1.0 · ZIP</a><a class="button secondary" href="./reports/v1.0.0/summary.csv" download>Tabela histórica 1.0 · CSV</a></div><p class="field-help"><a href="./ESTABILIDADE_E_CONSERVACAO_TCC.md">Fundamentação e resultados 1.0.1</a> · <a href="./VALIDACAO_EQUILIBRIO_1_0.md">Validação histórica 1.0</a> · <a href="./MASSAS_VIA_LACTEA_1_0.md">Massas e incertezas</a> · <a href="./LIMITACOES_FISICAS.md">Limitações físicas</a></p></section>
+      <footer class="scientific-footer"><span>GUILHERME ALEIXO BANDEIRA · PROJETO DE TCC</span><span>Universidade Estadual de Mato Grosso do Sul · 2026</span></footer>
+    </main>
+  </div>
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>

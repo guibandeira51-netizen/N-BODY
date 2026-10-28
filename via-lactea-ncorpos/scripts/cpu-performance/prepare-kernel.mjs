@@ -1,0 +1,14 @@
+import {readFile,writeFile} from 'node:fs/promises';
+import {createHash} from 'node:crypto';
+import {resolve} from 'node:path';
+import assert from 'node:assert/strict';
+import {folder} from './baseline.mjs';
+const original=await readFile(resolve(import.meta.dirname,'../../src/physics/forces.js'),'utf8');
+const a=original.indexOf('function traverse('),b=original.indexOf('/** Real monopole',a);assert(a>0&&b>a);
+let block=original.slice(a,b);
+assert(block.includes('out, potentialOnly)'));assert(block.includes('for (let i = 0; i < n; i++)'));
+block=block.replace('out, potentialOnly)','out, potentialOnly, first=0, last=state.n)').replace('for (let i = 0; i < n; i++)','for (let i = first; i < last; i++)');
+const source=(original.slice(0,a)+block+original.slice(b)).replace("from './constants.js'","from '../../src/physics/constants.js'");
+const identity=createHash('sha256').update(original).digest('hex');
+await writeFile(resolve(folder,'range-kernel.mjs'),`// Audit-only copy of original forces.js SHA256 ${identity}.\n// Only import path, target-range bounds and explicit exports differ.\n${source}\nexport {Octree,traverse as traverseRange};\n`);
+await writeFile(resolve(folder,'kernel-identity.json'),JSON.stringify({originalPath:'src/physics/forces.js',sha256:identity,changes:['constant import path','optional first/last target bounds, default whole state','named exports for benchmark only'],unchanged:'Tree construction, acceptance, Plummer force, arithmetic order per target and Float64 representation'},null,2));

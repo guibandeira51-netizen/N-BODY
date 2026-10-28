@@ -1,3 +1,5 @@
+Versão atual **0.9.0**: [validação e reprodução](VALIDACAO_09.md), [aquecimento](AQUECIMENTO_DISCO.md), [halos A/B/C](COMPARACAO_HALOS.md) e [estrutura azimutal](ESTRUTURA_ESPIRAL.md). Diagnósticos no plano instantâneo e campanha controlada; equilíbrio global ainda não demonstrado. Os registros abaixo preservam a história do projeto.
+
 Versão 0.8.0: consulte AUDITORIA_MASSAS.md, EQUILIBRIO_INICIAL.md, COMPARACAO_07_08.md e VALIDACAO_08.md. Massas/forças verificadas; novo equilíbrio ainda não demonstrado.
 
 > Atualização 0.7.0: [Laboratório de Estabilidade Galáctica](ESTABILIDADE_GALACTICA.md). Consulte esse documento e `reports/laboratory/` para os ensaios atuais. O conteúdo abaixo registra a revisão anterior.

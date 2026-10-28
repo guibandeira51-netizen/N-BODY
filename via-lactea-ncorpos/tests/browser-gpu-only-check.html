@@ -1,0 +1,14 @@
+<!doctype html><html lang="pt-BR"><meta charset="utf-8"><title>Validação GPU direta</title><style>body{font:16px Arial;background:#102127;color:#d5e6e9;padding:32px}pre{white-space:pre-wrap}button{padding:12px}</style><h1>GPU direta — regressão de força, energia e campo radial</h1><p>Comparação entre o kernel GPU anterior, o kernel com potencial e referências CPU Float64 no mesmo snapshot. Nenhum Barnes–Hut.</p><button id="run">Executar validação</button><p id="status">Pronto.</p><pre id="results"></pre><script type="module">
+import{GPUBackend}from'../src/compute/gpu.js';import{LiveGPUBackend}from'../src/compute/gpu-live.js';import{createLiveGalaxy}from'../src/physics/live-initial.js';import{directEnergy}from'../src/physics/live-energy.js';import{gpuEnergy}from'../src/physics/gpu-energy.js';import{componentRotationField}from'../src/physics/rotation-field.js';
+document.querySelector('#run').onclick=async()=>{const button=document.querySelector('#run');button.disabled=true;let base,live;try{
+ const options={dt:.1,epsilon:.1,seed:2026,budgetBytes:512*1024**2},state=createLiveGalaxy({n:1024,seed:2026});base=await GPUBackend.create();live=await LiveGPUBackend.create();await base.initialize(state,options);await live.initialize(state,options);
+ const records=[];let bitwise=true;
+ for(let k=0;k<=4;k++){if(k){await base.step();await live.step();}const a=await base.snapshot(),b=await live.snapshot(),o={...options,effectiveParameters:live.effectiveParameters,forceMethod:'GPU direct f32'},ref=directEnergy(b,o),fast=gpuEnergy(b,o),cpuField=componentRotationField(b,live.effectiveParameters);let delta=0,norm=0;
+  for(let r=0;r<cpuField.rows.length;r++)for(const c of ['bulge','disk','halo']){const x=cpuField.rows[r].aR_kpc_Myr2[c],y=b.gpuRotationField.rows[r].aR_kpc_Myr2[c];delta+=(x-y)**2;norm+=x*x;}
+  for(const key of ['positions','velocities','accelerations','masses'])bitwise&&=a[key].every((x,i)=>Object.is(x,b[key][i]));
+  records.push({timeMyr:b.time,n:b.n,potentialGPU:fast.potential,potentialDirect:ref.potential,relativePotentialError:Math.abs(fast.potential-ref.potential)/Math.abs(ref.potential),relativeRadialFieldL2:Math.sqrt(delta/norm),fastE:fast.energy,directE:ref.energy,sameForceAndStateBitwise:bitwise});
+ }
+ const gamma=1024*2**-24/(1-1024*2**-24),passed=bitwise&&records.every(r=>r.relativePotentialError<16*gamma&&r.relativeRadialFieldL2<16*gamma);
+ document.querySelector('#results').textContent=JSON.stringify({status:passed?'passed':'failed',options,effectiveParameters:live.effectiveParameters,records,criterion:{gamma,scope:'Conservative Float32 accumulation-scale regression envelope, not a formal interval; same state bitwise is separately required.'}},null,2);document.querySelector('#status').textContent=passed?'Concluído e aprovado.':'Falha de regressão.';
+ }catch(e){document.querySelector('#status').textContent=e.message;}finally{base?.dispose();live?.dispose();button.disabled=false;}};
+</script></html>

@@ -1,0 +1,80 @@
+Assuming yes answers to all interactive questions
+
+    ==== Checking supported compiler options and available libraries ====
+
+test.cpp
+cl : Command line warning D9002 : ignoring unknown option '/LIBPATH:extras/lib'
+test.cpp
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64\cl.exe test.cpp /Fe: test.out /W3 -wd4244 -wd4267 /O2 /EHsc /nologo -Iextras/include
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64\cl.exe test.cpp /Fe: test.out /W3 -wd4244 -wd4267 /O2 /EHsc /nologo -Iextras/include /openmp /WX /LIBPATH:extras/lib
+    **** Compiling with OpenMP support ****
+test.cpp
+   Creating library agamatest.lib and object agamatest.exp
+test.cpp
+test.cpp
+test.cpp(1): fatal error C1083: Cannot open include file: 'Eigen/Core': No such file or directory
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64\cl.exe test.cpp /Fe: test.out /W3 -wd4244 -wd4267 /O2 /EHsc /nologo -Iextras/include /openmp -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\include -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\site-packages\numpy\_core\include /link /dll /out:agamatest.pyd /LIBPATH:C:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\libs
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64\cl.exe test.cpp /Fe: test.out /W3 -wd4244 -wd4267 /O2 /EHsc /nologo -Iextras/include /openmp -DHAVE_PYTHON -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\include -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\site-packages\numpy\_core\include /link gsl.lib cblas.lib /LIBPATH:extras/lib /LIBPATH:C:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\libs
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64\cl.exe test.cpp /Fe: test.out /W3 -wd4244 -wd4267 /O2 /EHsc /nologo -Iextras/include /openmp -DHAVE_PYTHON -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\include -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\site-packages\numpy\_core\include
+Eigen library (recommended) is not found
+Should we try to download it now (no compilation needed)? [Y/N] 
+y
+Downloading Eigen
+Unpacking Eigen
+CVXOPT library (needed only for Schwarzschild modelling) is not found
+Should we try to install it now? [Y/N] 
+y
+Collecting cvxopt
+  Downloading cvxopt-1.3.3-cp312-cp312-win_amd64.whl.metadata (44 kB)
+Downloading cvxopt-1.3.3-cp312-cp312-win_amd64.whl (13.6 MB)
+   ---------------------------------------- 13.6/13.6 MB 5.5 MB/s  0:00:02
+Installing collected packages: cvxopt
+Successfully installed cvxopt-1.3.3
+cl : Command line warning D9002 : ignoring unknown option '/LIBPATH:extras/lib'
+cl : Command line warning D9002 : ignoring unknown option '/LIBPATH:C:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\libs'
+test.cpp
+test.cpp(1): fatal error C1083: Cannot open include file: 'cvxopt.h': No such file or directory
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64\cl.exe test.cpp /Fe: test.out /W3 -wd4244 -wd4267 /O2 /EHsc /nologo -Iextras/include /openmp -DHAVE_PYTHON -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\include -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\site-packages\numpy\_core\include -DHAVE_EIGEN -Iextras/include /LIBPATH:extras/lib /LIBPATH:C:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\libs gsl.lib cblas.lib
+Downloading CVXOPT header files
+GLPK library (optional) is not found, ignored
+
+    ==== Compiling the C++ library ====
+
+
+Microsoft (R) Program Maintenance Utility Version 14.44.35229.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+	mkdir obj
+	mkdir exe
+	C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64\cl.exe /W3 -wd4244 -wd4267 /O2 /EHsc /nologo -Iextras/include /openmp -Isrc -DHAVE_PYTHON -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\include -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\site-packages\numpy\_core\include -DHAVE_EIGEN -Iextras/include -DHAVE_CVXOPT -c src\interface_c.cpp -Foobj/
+interface_c.cpp
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_math.h(94): warning C4005: 'INFINITY': macro redefinition
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-research\Agama-master\src\math_base.h(13): note: see previous definition of 'INFINITY'
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_math.h(111): warning C4005: 'NAN': macro redefinition
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-research\Agama-master\src\math_base.h(17): note: see previous definition of 'NAN'
+	C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64\cl.exe /W3 -wd4244 -wd4267 /O2 /EHsc /nologo -Iextras/include /openmp -Isrc -DHAVE_PYTHON -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\include -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\site-packages\numpy\_core\include -DHAVE_EIGEN -Iextras/include -DHAVE_CVXOPT -c src\interface_fortran.cpp -Foobj/
+interface_fortran.cpp
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_math.h(94): warning C4005: 'INFINITY': macro redefinition
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-research\Agama-master\src\math_base.h(13): note: see previous definition of 'INFINITY'
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_math.h(111): warning C4005: 'NAN': macro redefinition
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-research\Agama-master\src\math_base.h(17): note: see previous definition of 'NAN'
+	C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64\cl.exe /W3 -wd4244 -wd4267 /O2 /EHsc /nologo -Iextras/include /openmp -Isrc -DHAVE_PYTHON -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\include -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\site-packages\numpy\_core\include -DHAVE_EIGEN -Iextras/include -DHAVE_CVXOPT -c src\interface_nemo.cpp -Foobj/
+interface_nemo.cpp
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_math.h(94): warning C4005: 'INFINITY': macro redefinition
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-research\Agama-master\src\math_base.h(13): note: see previous definition of 'INFINITY'
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_math.h(111): warning C4005: 'NAN': macro redefinition
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-research\Agama-master\src\math_base.h(17): note: see previous definition of 'NAN'
+	C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64\cl.exe /W3 -wd4244 -wd4267 /O2 /EHsc /nologo -Iextras/include /openmp -Isrc -DHAVE_PYTHON -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\include -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\site-packages\numpy\_core\include -DHAVE_EIGEN -Iextras/include -DHAVE_CVXOPT -c src\interface_python.cpp -Foobj/
+interface_python.cpp
+src\interface_python.cpp(7214): error C2146: syntax error: missing ')' before identifier 'or'
+src\interface_python.cpp(7214): error C2065: 'or': undeclared identifier
+src\interface_python.cpp(7214): error C2146: syntax error: missing ';' before identifier 'type_str'
+src\interface_python.cpp(7214): error C2059: syntax error: ')'
+src\interface_python.cpp(7215): error C2146: syntax error: missing ';' before identifier 'self'
+src\interface_python.cpp(7214): warning C4553: '==': result of expression not used; did you intend '='?
+src\interface_python.cpp(7217): error C2181: illegal else without matching if
+src\interface_python.cpp(7418): warning C4805: '&=': unsafe mix of type 'bool' and type 'int' in operation
+src\interface_python.cpp(7418): warning C4805: '&': unsafe mix of type 'bool' and type 'int' in operation
+NMAKE : fatal error U1077: 'C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64\cl.exe /W3 -wd4244 -wd4267 /O2 /EHsc /nologo -Iextras/include /openmp -Isrc -DHAVE_PYTHON -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\include -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\site-packages\numpy\_core\include -DHAVE_EIGEN -Iextras/include -DHAVE_CVXOPT -c src\interface_python.cpp -Foobj/' : return code '0x2'
+Stop.
+error: Compilation failed

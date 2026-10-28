@@ -2,6 +2,7 @@ import {createGalaxy as legacyGalaxy,seededRandom} from './initial-legacy.js';
 import {axisymmetricMoments} from './jeans-axisymmetric.js';
 import {analyticPotential} from './models.js';
 import {deserializeInitial} from './iterative-initial.js';
+import {deserializeModelSnapshot} from './snapshot-model.js';
 export {seededRandom,sampleDisk,sampleHalo,sampleHernquist,componentCounts} from './initial-legacy.js';
 
 /** Candidate replaces spherical-monopole moments of bulge/halo. It is neither
@@ -9,7 +10,7 @@ export {seededRandom,sampleDisk,sampleHalo,sampleHernquist,componentCounts} from
 export function createGalaxy(options={}) {
   const method=options.initialization??'legacy';
   if(method==='snapshot'){
-    const state=deserializeInitial(options.snapshot);
+    const state=options.snapshot?.schema==='nbody-initial-v2'?deserializeModelSnapshot(options.snapshot):deserializeInitial(options.snapshot);
     if(options.n!==undefined&&options.n!==state.n)throw Error('N configurado não corresponde ao snapshot.');
     if(options.withHalo!==undefined&&options.withHalo!==(state.meta?.withHalo??true))throw Error('Componentes configuradas não correspondem ao snapshot.');
     return state;

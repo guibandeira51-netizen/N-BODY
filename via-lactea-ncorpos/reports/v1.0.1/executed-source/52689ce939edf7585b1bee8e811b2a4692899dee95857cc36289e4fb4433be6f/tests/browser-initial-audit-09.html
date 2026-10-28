@@ -1,0 +1,10 @@
+<!doctype html><meta charset="utf-8"><title>Auditoria dos estados iniciais 0.9</title><h1>Auditoria dos estados iniciais no mesmo navegador</h1><button id="run">Verificar estados da campanha concluída</button><p id="status">Aguardando</p><pre id="output"></pre>
+<script type="module">
+import {createHaloExperiment} from '../src/physics/halo-experiments.js';
+const hash=async array=>Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',new Uint8Array(array.buffer,array.byteOffset,array.byteLength))),b=>b.toString(16).padStart(2,'0')).join('');
+document.getElementById('run').onclick=async()=>{const report={createdUTC:new Date().toISOString(),checks:[],groups:{},status:'running'};try{
+ for(const file of ['halo-campaign.json','halo-high-dt.json']){const data=await(await fetch('../reports/v0.9.0/'+file)).json();if(data.status!=='completed')throw Error('Incomplete campaign');for(const run of data.runs){const s=createHaloExperiment(run.config),hashes={};for(const key of ['positions','velocities','masses']){hashes[key]=await hash(s[key]);if(hashes[key]!==run.initialHashes[key])throw Error('Physical initial hash changed in same engine: '+key);}
+ const count=s.meta.counts[0]+s.meta.counts[1],baryons={positions:await hash(s.positions.subarray(0,3*count)),velocities:await hash(s.velocities.subarray(0,3*count)),masses:await hash(s.masses.subarray(0,count))},group=run.config.baseN+':'+run.config.baryonSeed;if(report.groups[group]&&JSON.stringify(report.groups[group])!==JSON.stringify(baryons))throw Error('Baryons not identical');report.groups[group]=baryons;report.checks.push({file,id:run.id,n:s.n,hashes,recordedUnboundFlag:run.initialMeta.unbound,actualExperimentalUnbound:s.meta.unbound});document.getElementById('status').textContent='Verificados: '+report.checks.length;
+ }}report.status='completed';document.getElementById('status').textContent='Concluído: '+report.checks.length+' estados; arrays físicos e pareamento bariônico idênticos.';
+ }catch(e){report.status='failed';report.error=e.stack;document.getElementById('status').textContent=e.message;}document.getElementById('output').textContent=JSON.stringify(report);};
+</script>

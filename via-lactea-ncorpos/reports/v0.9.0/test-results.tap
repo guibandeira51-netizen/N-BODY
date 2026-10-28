@@ -1,0 +1,466 @@
+TAP version 13
+# Subtest: admission distinguishes buffer limits, configured budget, and missing hardware
+ok 1 - admission distinguishes buffer limits, configured budget, and missing hardware
+  ---
+  duration_ms: 1.9394
+  type: 'test'
+  ...
+# Subtest: 2D dispatch admission uses actual adapter dimensions, not a fixed particle ceiling
+ok 2 - 2D dispatch admission uses actual adapter dimensions, not a fixed particle ceiling
+  ---
+  duration_ms: 0.2179
+  type: 'test'
+  ...
+# Subtest: resource estimate includes simultaneous CPU snapshot, f32 packing, GPU and staging
+ok 3 - resource estimate includes simultaneous CPU snapshot, f32 packing, GPU and staging
+  ---
+  duration_ms: 1.3997
+  type: 'test'
+  ...
+# Subtest: automatic policy requires a measured benchmark for the requested N and available resources
+ok 4 - automatic policy requires a measured benchmark for the requested N and available resources
+  ---
+  duration_ms: 0.3892
+  type: 'test'
+  ...
+# Subtest: runtime report is serializable and memory policy is explicitly bounded
+ok 5 - runtime report is serializable and memory policy is explicitly bounded
+  ---
+  duration_ms: 3.5756
+  type: 'test'
+  ...
+# Subtest: direct pair force follows the 3D Plummer law and Newton third law
+ok 6 - direct pair force follows the 3D Plummer law and Newton third law
+  ---
+  duration_ms: 2.4263
+  type: 'test'
+  ...
+# Subtest: single particle has zero self force and zero self potential
+ok 7 - single particle has zero self force and zero self potential
+  ---
+  duration_ms: 1.2104
+  type: 'test'
+  ...
+# Subtest: exact potential matches the gradient of softened pair energy
+ok 8 - exact potential matches the gradient of softened pair energy
+  ---
+  duration_ms: 0.2666
+  type: 'test'
+  ...
+# Subtest: coincident positions stay finite with softening and reject singular unsoftened force
+ok 9 - coincident positions stay finite with softening and reject singular unsoftened force
+  ---
+  duration_ms: 0.9709
+  type: 'test'
+  ...
+# Subtest: softening sensitivity follows its analytic acceleration ratio
+ok 10 - softening sensitivity follows its analytic acceleration ratio
+  ---
+  duration_ms: 0.2964
+  type: 'test'
+  ...
+# Subtest: direct force is invariant under translations and scales linearly with source mass
+ok 11 - direct force is invariant under translations and scales linearly with source mass
+  ---
+  duration_ms: 0.3357
+  type: 'test'
+  ...
+# Subtest: KDK initializes acceleration and keeps physical time independent of batching
+ok 12 - KDK initializes acceleration and keeps physical time independent of batching
+  ---
+  duration_ms: 1.8035
+  type: 'test'
+  ...
+# Subtest: two-body circular orbit conserves energy, linear momentum and angular momentum over five periods
+ok 13 - two-body circular orbit conserves energy, linear momentum and angular momentum over five periods
+  ---
+  duration_ms: 12.2281
+  type: 'test'
+  ...
+# Subtest: global orbit error converges at second order when the timestep is halved
+ok 14 - global orbit error converges at second order when the timestep is halved
+  ---
+  duration_ms: 1.138
+  type: 'test'
+  ...
+# Subtest: KDK is time reversible when velocities are reversed
+ok 15 - KDK is time reversible when velocities are reversed
+  ---
+  duration_ms: 0.8239
+  type: 'test'
+  ...
+# Subtest: component diagnostics measure mass and size without changing the physical state
+ok 16 - component diagnostics measure mass and size without changing the physical state
+  ---
+  duration_ms: 0.2843
+  type: 'test'
+  ...
+# Subtest: invalid input fails before integration
+ok 17 - invalid input fails before integration
+  ---
+  duration_ms: 0.5354
+  type: 'test'
+  ...
+# Subtest: force output rejects overlapping views before changing any physical array
+ok 18 - force output rejects overlapping views before changing any physical array
+  ---
+  duration_ms: 0.7464
+  type: 'test'
+  ...
+# Subtest: force output permits disjoint views in the same buffer
+ok 19 - force output permits disjoint views in the same buffer
+  ---
+  duration_ms: 0.7818
+  type: 'test'
+  ...
+# Subtest: KDK rejects nonfinite velocities and epochs without mutating the state
+ok 20 - KDK rejects nonfinite velocities and epochs without mutating the state
+  ---
+  duration_ms: 0.7231
+  type: 'test'
+  ...
+# Subtest: GPU rejects a nonfinite epoch before accessing device resources
+ok 21 - GPU rejects a nonfinite epoch before accessing device resources
+  ---
+  duration_ms: 1.4466
+  type: 'test'
+  ...
+# Subtest: real 3D octree with theta=0 agrees with the exact particle force and potential
+ok 22 - real 3D octree with theta=0 agrees with the exact particle force and potential
+  ---
+  duration_ms: 32.1623
+  type: 'test'
+  ...
+# Subtest: Barnes–Hut normalized RMS force error decreases with opening angle
+ok 23 - Barnes–Hut normalized RMS force error decreases with opening angle
+  ---
+  duration_ms: 32.9175
+  type: 'test'
+  ...
+# Subtest: octree duplicate leaves are finite and exclude self force and self potential
+ok 24 - octree duplicate leaves are finite and exclude self force and self potential
+  ---
+  duration_ms: 1.0644
+  type: 'test'
+  ...
+# Subtest: octree excludes targets inside accepted nodes, including zero-mass tracers
+ok 25 - octree excludes targets inside accepted nodes, including zero-mass tracers
+  ---
+  duration_ms: 8.8761
+  type: 'test'
+  ...
+# Subtest: octree handles spatial subdivisions approaching machine precision
+ok 26 - octree handles spatial subdivisions approaching machine precision
+  ---
+  duration_ms: 1.0536
+  type: 'test'
+  ...
+# Subtest: Barnes–Hut forces are translation invariant and preserve masses and component labels
+ok 27 - Barnes–Hut forces are translation invariant and preserve masses and component labels
+  ---
+  duration_ms: 2.6907
+  type: 'test'
+  ...
+# Subtest: Barnes–Hut potential respects the same softening and is labeled approximate
+ok 28 - Barnes–Hut potential respects the same softening and is labeled approximate
+  ---
+  duration_ms: 8.6961
+  type: 'test'
+  ...
+# Subtest: Barnes–Hut KDK recalculates forces from evolving positions
+ok 29 - Barnes–Hut KDK recalculates forces from evolving positions
+  ---
+  duration_ms: 1.9145
+  type: 'test'
+  ...
+# Subtest: instantaneous plane removes rigid tilt and translation without altering true thickness or projected dispersion
+ok 30 - instantaneous plane removes rigid tilt and translation without altering true thickness or projected dispersion
+  ---
+  duration_ms: 29.3698
+  type: 'test'
+  ...
+# Subtest: mass quantile remains weighted and is not shifted by equal-mass floating accumulation
+ok 31 - mass quantile remains weighted and is not shifted by equal-mass floating accumulation
+  ---
+  duration_ms: 1.5462
+  type: 'test'
+  ...
+# Subtest: axisymmetric uniform ring has no m1..m4; antipodal pair noise differs from independent-particle noise
+ok 32 - axisymmetric uniform ring has no m1..m4; antipodal pair noise differs from independent-particle noise
+  ---
+  duration_ms: 14.2983
+  type: 'test'
+  ...
+# Subtest: known positive mass modulation recovers A2, logarithmic pitch and pattern speed; aliasing is rejected
+ok 33 - known positive mass modulation recovers A2, logarithmic pitch and pattern speed; aliasing is rejected
+  ---
+  duration_ms: 77.297
+  type: 'test'
+  ...
+# Subtest: local ring plane distinguishes warp orientation from local thickness
+ok 34 - local ring plane distinguishes warp orientation from local thickness
+  ---
+  duration_ms: 17.0512
+  type: 'test'
+  ...
+# Subtest: strong constant-phase bar is not assigned a spiral pitch
+ok 35 - strong constant-phase bar is not assigned a spiral pitch
+  ---
+  duration_ms: 34.67
+  type: 'test'
+  ...
+# Subtest: A/B/C preserve exactly the same initial baryonic particles; halo mass is not duplicated
+ok 36 - A/B/C preserve exactly the same initial baryonic particles; halo mass is not duplicated
+  ---
+  duration_ms: 1116.1653
+  type: 'test'
+  ...
+# Subtest: fixed finite NFW table follows original enclosed mass, potential gradient and exterior Kepler field
+ok 37 - fixed finite NFW table follows original enclosed mass, potential gradient and exterior Kepler field
+  ---
+  duration_ms: 1.7117
+  type: 'test'
+  ...
+# Subtest: external energy counts sum m Phi once, and KDK conserves a circular orbit in static field
+ok 38 - external energy counts sum m Phi once, and KDK conserves a circular orbit in static field
+  ---
+  duration_ms: 9.9345
+  type: 'test'
+  ...
+# Subtest: softened continuous halo quadrature converges and matches its potential derivative
+ok 39 - softened continuous halo quadrature converges and matches its potential derivative
+  ---
+  duration_ms: 682.8622
+  type: 'test'
+  ...
+# Subtest: snapshot entry point rejects modified component masses and loads consistent physical arrays
+ok 40 - snapshot entry point rejects modified component masses and loads consistent physical arrays
+  ---
+  duration_ms: 546.5242
+  type: 'test'
+  ...
+# Subtest: controlled allocation keeps historical arrays bit identical at default counts
+ok 41 - controlled allocation keeps historical arrays bit identical at default counts
+  ---
+  duration_ms: 455.1211
+  type: 'test'
+  ...
+# Subtest: halo refinement preserves baryonic particles and component total masses
+ok 42 - halo refinement preserves baryonic particles and component total masses
+  ---
+  duration_ms: 52.4676
+  type: 'test'
+  ...
+# Subtest: KD neighbours equal brute force, including ties and fewer than k donors
+ok 43 - KD neighbours equal brute force, including ties and fewer than k donors
+  ---
+  duration_ms: 0.9734
+  type: 'test'
+  ...
+# Subtest: cylindrical transfer rotates vector basis, preserves masses and donor state
+ok 44 - cylindrical transfer rotates vector basis, preserves masses and donor state
+  ---
+  duration_ms: 41.0145
+  type: 'test'
+  ...
+# Subtest: antipodal preparation preserves reflection symmetry and zero component bulk momentum
+ok 45 - antipodal preparation preserves reflection symmetry and zero component bulk momentum
+  ---
+  duration_ms: 4.3647
+  type: 'test'
+  ...
+# Subtest: preparation restores target density, has reproducible seeds, resets epoch and never claims equilibrium
+ok 46 - preparation restores target density, has reproducible seeds, resets epoch and never claims equilibrium
+  ---
+  duration_ms: 5.2719
+  type: 'test'
+  ...
+# Subtest: epicyclic derivative recovers Kepler, flat rotation, solid-body rotation
+ok 47 - epicyclic derivative recovers Kepler, flat rotation, solid-body rotation
+  ---
+  duration_ms: 1.3311
+  type: 'test'
+  ...
+# Subtest: energy drift keeps sign and refuses singular near-cancelled energy
+ok 48 - energy drift keeps sign and refuses singular near-cancelled energy
+  ---
+  duration_ms: 0.243
+  type: 'test'
+  ...
+# Subtest: Q reports missing populations and conditional approximation without certification
+ok 49 - Q reports missing populations and conditional approximation without certification
+  ---
+  duration_ms: 0.6416
+  type: 'test'
+  ...
+# Subtest: compact history preserves initial epoch and measured times, deduplicates pause, rejects stale states
+ok 50 - compact history preserves initial epoch and measured times, deduplicates pause, rejects stale states
+  ---
+  duration_ms: 2.7575
+  type: 'test'
+  ...
+# Subtest: historical realization stays bitwise identical and laboratory does not mutate integrated state
+ok 51 - historical realization stays bitwise identical and laboratory does not mutate integrated state
+  ---
+  duration_ms: 543.7534
+  type: 'test'
+  ...
+# Subtest: incompatible two-integral bulge closure is rejected rather than clipping a negative variance
+ok 52 - incompatible two-integral bulge closure is rejected rather than clipping a negative variance
+  ---
+  duration_ms: 13.0456
+  type: 'test'
+  ...
+# Subtest: A/B: N=10000 and 50000 preserve all physical masses and divide particle mass by five
+ok 53 - A/B: N=10000 and 50000 preserve all physical masses and divide particle mass by five
+  ---
+  duration_ms: 636.1446
+  type: 'test'
+  ...
+# Subtest: C/D/G: three unequal component masses give analytic Plummer acceleration with no extra background
+ok 54 - C/D/G: three unequal component masses give analytic Plummer acceleration with no extra background
+  ---
+  duration_ms: 0.5503
+  type: 'test'
+  ...
+# Subtest: F: distant unequal mass cluster uses weighted center and aggregated mass in Barnes-Hut
+ok 55 - F: distant unequal mass cluster uses weighted center and aggregated mass in Barnes-Hut
+  ---
+  duration_ms: 2.9007
+  type: 'test'
+  ...
+# Subtest: H: SI force, position, velocity, acceleration, energy and Gyr conversions close dimensionally
+ok 56 - H: SI force, position, velocity, acceleration, energy and Gyr conversions close dimensionally
+  ---
+  duration_ms: 0.1672
+  type: 'test'
+  ...
+# Subtest: unit conversion and nominal solar GM remain consistent
+ok 57 - unit conversion and nominal solar GM remain consistent
+  ---
+  duration_ms: 1.3141
+  type: 'test'
+  ...
+# Subtest: analytic acceleration is the negative potential gradient in full 3D
+ok 58 - analytic acceleration is the negative potential gradient in full 3D
+  ---
+  duration_ms: 0.5081
+  type: 'test'
+  ...
+# Subtest: rotation contributions add as v squared and disk formula is axisymmetric
+ok 59 - rotation contributions add as v squared and disk formula is axisymmetric
+  ---
+  duration_ms: 0.1933
+  type: 'test'
+  ...
+# Subtest: r200 is a derived mean density and NFW outer taper is finite and smooth
+ok 60 - r200 is a derived mean density and NFW outer taper is finite and smooth
+  ---
+  duration_ms: 0.2276
+  type: 'test'
+  ...
+# Subtest: NFW stable central series preserves small positive enclosed mass
+ok 61 - NFW stable central series preserves small positive enclosed mass
+  ---
+  duration_ms: 0.1786
+  type: 'test'
+  ...
+# Subtest: exact MN radial integration reproduces its vertical marginal
+ok 62 - exact MN radial integration reproduces its vertical marginal
+  ---
+  duration_ms: 13.3564
+  type: 'test'
+  ...
+# Subtest: spatial samplers follow cumulative profiles statistically
+ok 63 - spatial samplers follow cumulative profiles statistically
+  ---
+  duration_ms: 44.3347
+  type: 'test'
+  ...
+# Subtest: seed and masses are reproducible and remain fixed when N changes
+ok 64 - seed and masses are reproducible and remain fixed when N changes
+  ---
+  duration_ms: 863.5203
+  type: 'test'
+  ...
+# Subtest: visual exposure uses actual component counts without changing a realization
+ok 65 - visual exposure uses actual component counts without changing a realization
+  ---
+  duration_ms: 547.2781
+  type: 'test'
+  ...
+# Subtest: perspective display is bounded and zoom recovers individual point contrast
+ok 66 - perspective display is bounded and zoom recovers individual point contrast
+  ---
+  duration_ms: 0.2872
+  type: 'test'
+  ...
+# Subtest: camera views preserve the target, distance and physical particle coordinates
+ok 67 - camera views preserve the target, distance and physical particle coordinates
+  ---
+  duration_ms: 0.5965
+  type: 'test'
+  ...
+# Subtest: Review ZIP preserves CRC32, UTF-8, quoted CSV values and missing fields
+ok 68 - Review ZIP preserves CRC32, UTF-8, quoted CSV values and missing fields
+  ---
+  duration_ms: 4.0428
+  type: 'test'
+  ...
+# Subtest: Synthetic export copies are independent and CSV reports the actual massive state and epoch
+ok 69 - Synthetic export copies are independent and CSV reports the actual massive state and epoch
+  ---
+  duration_ms: 1.339
+  type: 'test'
+  ...
+# Subtest: structural quantiles distinguish enclosed mass from particle number and retain tails
+ok 70 - structural quantiles distinguish enclosed mass from particle number and retain tails
+  ---
+  duration_ms: 4.7689
+  type: 'test'
+  ...
+# Subtest: equal-mass half quantiles do not shift a rank due to floating summation order
+ok 71 - equal-mass half quantiles do not shift a rank due to floating summation order
+  ---
+  duration_ms: 14.2196
+  type: 'test'
+  ...
+# Subtest: component surface and folded vertical density integrate all included mass with explicit overflow
+ok 72 - component surface and folded vertical density integrate all included mass with explicit overflow
+  ---
+  duration_ms: 2.0222
+  type: 'test'
+  ...
+# Subtest: a cold circular ring has azimuthal streaming and zero random cylindrical dispersion
+ok 73 - a cold circular ring has azimuthal streaming and zero random cylindrical dispersion
+  ---
+  duration_ms: 0.9601
+  type: 'test'
+  ...
+# Subtest: force virial tensor and optional energy use supplied fields without equating softened W to U
+ok 74 - force virial tensor and optional energy use supplied fields without equating softened W to U
+  ---
+  duration_ms: 1.1203
+  type: 'test'
+  ...
+# Subtest: fixed frame diagnostics are invariant under matching coordinate and velocity translations
+ok 75 - fixed frame diagnostics are invariant under matching coordinate and velocity translations
+  ---
+  duration_ms: 0.4689
+  type: 'test'
+  ...
+# Subtest: diagnostics reject invalid measurements and preserve undefined potential and axis velocities
+ok 76 - diagnostics reject invalid measurements and preserve undefined potential and axis velocities
+  ---
+  duration_ms: 0.7457
+  type: 'test'
+  ...
+1..76
+# tests 76
+# suites 0
+# pass 76
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 2068.7362

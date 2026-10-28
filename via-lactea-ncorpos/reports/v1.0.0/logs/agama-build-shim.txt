@@ -1,0 +1,321 @@
+
+Microsoft (R) Program Maintenance Utility Version 14.44.35229.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+	C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64\cl.exe /std:c++17 /permissive-  /W3 -wd4244 -wd4267 /O2 /EHsc /nologo -Iextras/include /openmp -Isrc -DHAVE_PYTHON -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\include -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\site-packages\numpy\_core\include -DHAVE_EIGEN -Iextras/include -DHAVE_CVXOPT -c src\math_core.cpp -Foobj/
+math_core.cpp
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_math.h(94): warning C4005: 'INFINITY': macro redefinition
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-research\Agama-master\src\math_base.h(13): note: see previous definition of 'INFINITY'
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_math.h(111): warning C4005: 'NAN': macro redefinition
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-research\Agama-master\src\math_base.h(17): note: see previous definition of 'NAN'
+	C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64\cl.exe /std:c++17 /permissive-  /W3 -wd4244 -wd4267 /O2 /EHsc /nologo -Iextras/include /openmp -Isrc -DHAVE_PYTHON -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\include -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\site-packages\numpy\_core\include -DHAVE_EIGEN -Iextras/include -DHAVE_CVXOPT -c src\math_fit.cpp -Foobj/
+math_fit.cpp
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_math.h(94): warning C4005: 'INFINITY': macro redefinition
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-research\Agama-master\src\math_base.h(13): note: see previous definition of 'INFINITY'
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_math.h(111): warning C4005: 'NAN': macro redefinition
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-research\Agama-master\src\math_base.h(17): note: see previous definition of 'NAN'
+	C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64\cl.exe /std:c++17 /permissive-  /W3 -wd4244 -wd4267 /O2 /EHsc /nologo -Iextras/include /openmp -Isrc -DHAVE_PYTHON -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\include -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\site-packages\numpy\_core\include -DHAVE_EIGEN -Iextras/include -DHAVE_CVXOPT -c src\math_gausshermite.cpp -Foobj/
+math_gausshermite.cpp
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_math.h(94): warning C4005: 'INFINITY': macro redefinition
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-research\Agama-master\src\math_base.h(13): note: see previous definition of 'INFINITY'
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_math.h(111): warning C4005: 'NAN': macro redefinition
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-research\Agama-master\src\math_base.h(17): note: see previous definition of 'NAN'
+	C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64\cl.exe /std:c++17 /permissive-  /W3 -wd4244 -wd4267 /O2 /EHsc /nologo -Iextras/include /openmp -Isrc -DHAVE_PYTHON -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\include -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\site-packages\numpy\_core\include -DHAVE_EIGEN -Iextras/include -DHAVE_CVXOPT -c src\math_geometry.cpp -Foobj/
+math_geometry.cpp
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_math.h(94): warning C4005: 'INFINITY': macro redefinition
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-research\Agama-master\src\math_base.h(13): note: see previous definition of 'INFINITY'
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_math.h(111): warning C4005: 'NAN': macro redefinition
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-research\Agama-master\src\math_base.h(17): note: see previous definition of 'NAN'
+	C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64\cl.exe /std:c++17 /permissive-  /W3 -wd4244 -wd4267 /O2 /EHsc /nologo -Iextras/include /openmp -Isrc -DHAVE_PYTHON -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\include -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\site-packages\numpy\_core\include -DHAVE_EIGEN -Iextras/include -DHAVE_CVXOPT -c src\math_linalg.cpp -Foobj/
+math_linalg.cpp
+	C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64\cl.exe /std:c++17 /permissive-  /W3 -wd4244 -wd4267 /O2 /EHsc /nologo -Iextras/include /openmp -Isrc -DHAVE_PYTHON -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\include -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\site-packages\numpy\_core\include -DHAVE_EIGEN -Iextras/include -DHAVE_CVXOPT -c src\math_ode.cpp -Foobj/
+math_ode.cpp
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_math.h(94): warning C4005: 'INFINITY': macro redefinition
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-research\Agama-master\src\math_base.h(13): note: see previous definition of 'INFINITY'
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_math.h(111): warning C4005: 'NAN': macro redefinition
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-research\Agama-master\src\math_base.h(17): note: see previous definition of 'NAN'
+	C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64\cl.exe /std:c++17 /permissive-  /W3 -wd4244 -wd4267 /O2 /EHsc /nologo -Iextras/include /openmp -Isrc -DHAVE_PYTHON -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\include -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\site-packages\numpy\_core\include -DHAVE_EIGEN -Iextras/include -DHAVE_CVXOPT -c src\math_optimization.cpp -Foobj/
+math_optimization.cpp
+	C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64\cl.exe /std:c++17 /permissive-  /W3 -wd4244 -wd4267 /O2 /EHsc /nologo -Iextras/include /openmp -Isrc -DHAVE_PYTHON -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\include -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\site-packages\numpy\_core\include -DHAVE_EIGEN -Iextras/include -DHAVE_CVXOPT -c src\math_random.cpp -Foobj/
+math_random.cpp
+	C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64\cl.exe /std:c++17 /permissive-  /W3 -wd4244 -wd4267 /O2 /EHsc /nologo -Iextras/include /openmp -Isrc -DHAVE_PYTHON -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\include -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\site-packages\numpy\_core\include -DHAVE_EIGEN -Iextras/include -DHAVE_CVXOPT -c src\math_sample.cpp -Foobj/
+math_sample.cpp
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_math.h(94): warning C4005: 'INFINITY': macro redefinition
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-research\Agama-master\src\math_base.h(13): note: see previous definition of 'INFINITY'
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_math.h(111): warning C4005: 'NAN': macro redefinition
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-research\Agama-master\src\math_base.h(17): note: see previous definition of 'NAN'
+	C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64\cl.exe /std:c++17 /permissive-  /W3 -wd4244 -wd4267 /O2 /EHsc /nologo -Iextras/include /openmp -Isrc -DHAVE_PYTHON -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\include -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\site-packages\numpy\_core\include -DHAVE_EIGEN -Iextras/include -DHAVE_CVXOPT -c src\math_specfunc.cpp -Foobj/
+math_specfunc.cpp
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_math.h(94): warning C4005: 'INFINITY': macro redefinition
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-research\Agama-master\src\math_base.h(13): note: see previous definition of 'INFINITY'
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_math.h(111): warning C4005: 'NAN': macro redefinition
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-research\Agama-master\src\math_base.h(17): note: see previous definition of 'NAN'
+	C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64\cl.exe /std:c++17 /permissive-  /W3 -wd4244 -wd4267 /O2 /EHsc /nologo -Iextras/include /openmp -Isrc -DHAVE_PYTHON -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\include -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\site-packages\numpy\_core\include -DHAVE_EIGEN -Iextras/include -DHAVE_CVXOPT -c src\math_sphharm.cpp -Foobj/
+math_sphharm.cpp
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_math.h(94): warning C4005: 'INFINITY': macro redefinition
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-research\Agama-master\src\math_base.h(13): note: see previous definition of 'INFINITY'
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_math.h(111): warning C4005: 'NAN': macro redefinition
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-research\Agama-master\src\math_base.h(17): note: see previous definition of 'NAN'
+	C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64\cl.exe /std:c++17 /permissive-  /W3 -wd4244 -wd4267 /O2 /EHsc /nologo -Iextras/include /openmp -Isrc -DHAVE_PYTHON -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\include -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\site-packages\numpy\_core\include -DHAVE_EIGEN -Iextras/include -DHAVE_CVXOPT -c src\math_spline.cpp -Foobj/
+math_spline.cpp
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_math.h(94): warning C4005: 'INFINITY': macro redefinition
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-research\Agama-master\src\math_base.h(13): note: see previous definition of 'INFINITY'
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_math.h(111): warning C4005: 'NAN': macro redefinition
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-research\Agama-master\src\math_base.h(17): note: see previous definition of 'NAN'
+	C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64\cl.exe /std:c++17 /permissive-  /W3 -wd4244 -wd4267 /O2 /EHsc /nologo -Iextras/include /openmp -Isrc -DHAVE_PYTHON -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\include -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\site-packages\numpy\_core\include -DHAVE_EIGEN -Iextras/include -DHAVE_CVXOPT -c src\particles_io.cpp -Foobj/
+particles_io.cpp
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_math.h(94): warning C4005: 'INFINITY': macro redefinition
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-research\Agama-master\src\math_base.h(13): note: see previous definition of 'INFINITY'
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_math.h(111): warning C4005: 'NAN': macro redefinition
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-research\Agama-master\src\math_base.h(17): note: see previous definition of 'NAN'
+	C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64\cl.exe /std:c++17 /permissive-  /W3 -wd4244 -wd4267 /O2 /EHsc /nologo -Iextras/include /openmp -Isrc -DHAVE_PYTHON -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\include -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\site-packages\numpy\_core\include -DHAVE_EIGEN -Iextras/include -DHAVE_CVXOPT -c src\actions_factory.cpp -Foobj/
+actions_factory.cpp
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_math.h(94): warning C4005: 'INFINITY': macro redefinition
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-research\Agama-master\src\math_base.h(13): note: see previous definition of 'INFINITY'
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_math.h(111): warning C4005: 'NAN': macro redefinition
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-research\Agama-master\src\math_base.h(17): note: see previous definition of 'NAN'
+	C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64\cl.exe /std:c++17 /permissive-  /W3 -wd4244 -wd4267 /O2 /EHsc /nologo -Iextras/include /openmp -Isrc -DHAVE_PYTHON -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\include -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\site-packages\numpy\_core\include -DHAVE_EIGEN -Iextras/include -DHAVE_CVXOPT -c src\actions_focal_distance_finder.cpp -Foobj/
+actions_focal_distance_finder.cpp
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_math.h(94): warning C4005: 'INFINITY': macro redefinition
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-research\Agama-master\src\math_base.h(13): note: see previous definition of 'INFINITY'
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_math.h(111): warning C4005: 'NAN': macro redefinition
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-research\Agama-master\src\math_base.h(17): note: see previous definition of 'NAN'
+	C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64\cl.exe /std:c++17 /permissive-  /W3 -wd4244 -wd4267 /O2 /EHsc /nologo -Iextras/include /openmp -Isrc -DHAVE_PYTHON -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\include -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\site-packages\numpy\_core\include -DHAVE_EIGEN -Iextras/include -DHAVE_CVXOPT -c src\actions_isochrone.cpp -Foobj/
+actions_isochrone.cpp
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_math.h(94): warning C4005: 'INFINITY': macro redefinition
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-research\Agama-master\src\math_base.h(13): note: see previous definition of 'INFINITY'
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_math.h(111): warning C4005: 'NAN': macro redefinition
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-research\Agama-master\src\math_base.h(17): note: see previous definition of 'NAN'
+	C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64\cl.exe /std:c++17 /permissive-  /W3 -wd4244 -wd4267 /O2 /EHsc /nologo -Iextras/include /openmp -Isrc -DHAVE_PYTHON -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\include -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\site-packages\numpy\_core\include -DHAVE_EIGEN -Iextras/include -DHAVE_CVXOPT -c src\actions_spherical.cpp -Foobj/
+actions_spherical.cpp
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_math.h(94): warning C4005: 'INFINITY': macro redefinition
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-research\Agama-master\src\math_base.h(13): note: see previous definition of 'INFINITY'
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_math.h(111): warning C4005: 'NAN': macro redefinition
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-research\Agama-master\src\math_base.h(17): note: see previous definition of 'NAN'
+	C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64\cl.exe /std:c++17 /permissive-  /W3 -wd4244 -wd4267 /O2 /EHsc /nologo -Iextras/include /openmp -Isrc -DHAVE_PYTHON -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\include -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\site-packages\numpy\_core\include -DHAVE_EIGEN -Iextras/include -DHAVE_CVXOPT -c src\actions_staeckel.cpp -Foobj/
+actions_staeckel.cpp
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_math.h(94): warning C4005: 'INFINITY': macro redefinition
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-research\Agama-master\src\math_base.h(13): note: see previous definition of 'INFINITY'
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_math.h(111): warning C4005: 'NAN': macro redefinition
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-research\Agama-master\src\math_base.h(17): note: see previous definition of 'NAN'
+	C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64\cl.exe /std:c++17 /permissive-  /W3 -wd4244 -wd4267 /O2 /EHsc /nologo -Iextras/include /openmp -Isrc -DHAVE_PYTHON -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\include -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\site-packages\numpy\_core\include -DHAVE_EIGEN -Iextras/include -DHAVE_CVXOPT -c src\actions_torus.cpp -Foobj/
+actions_torus.cpp
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_math.h(94): warning C4005: 'INFINITY': macro redefinition
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-research\Agama-master\src\math_base.h(13): note: see previous definition of 'INFINITY'
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_math.h(111): warning C4005: 'NAN': macro redefinition
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-research\Agama-master\src\math_base.h(17): note: see previous definition of 'NAN'
+	C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64\cl.exe /std:c++17 /permissive-  /W3 -wd4244 -wd4267 /O2 /EHsc /nologo -Iextras/include /openmp -Isrc -DHAVE_PYTHON -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\include -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\site-packages\numpy\_core\include -DHAVE_EIGEN -Iextras/include -DHAVE_CVXOPT -c src\coord.cpp -Foobj/
+coord.cpp
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_math.h(94): warning C4005: 'INFINITY': macro redefinition
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-research\Agama-master\src\math_base.h(13): note: see previous definition of 'INFINITY'
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_math.h(111): warning C4005: 'NAN': macro redefinition
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-research\Agama-master\src\math_base.h(17): note: see previous definition of 'NAN'
+	C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64\cl.exe /std:c++17 /permissive-  /W3 -wd4244 -wd4267 /O2 /EHsc /nologo -Iextras/include /openmp -Isrc -DHAVE_PYTHON -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\include -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\site-packages\numpy\_core\include -DHAVE_EIGEN -Iextras/include -DHAVE_CVXOPT -c src\df_base.cpp -Foobj/
+df_base.cpp
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_math.h(94): warning C4005: 'INFINITY': macro redefinition
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-research\Agama-master\src\math_base.h(13): note: see previous definition of 'INFINITY'
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_math.h(111): warning C4005: 'NAN': macro redefinition
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-research\Agama-master\src\math_base.h(17): note: see previous definition of 'NAN'
+	C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64\cl.exe /std:c++17 /permissive-  /W3 -wd4244 -wd4267 /O2 /EHsc /nologo -Iextras/include /openmp -Isrc -DHAVE_PYTHON -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\include -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\site-packages\numpy\_core\include -DHAVE_EIGEN -Iextras/include -DHAVE_CVXOPT -c src\df_disk.cpp -Foobj/
+df_disk.cpp
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_math.h(94): warning C4005: 'INFINITY': macro redefinition
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-research\Agama-master\src\math_base.h(13): note: see previous definition of 'INFINITY'
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_math.h(111): warning C4005: 'NAN': macro redefinition
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-research\Agama-master\src\math_base.h(17): note: see previous definition of 'NAN'
+	C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64\cl.exe /std:c++17 /permissive-  /W3 -wd4244 -wd4267 /O2 /EHsc /nologo -Iextras/include /openmp -Isrc -DHAVE_PYTHON -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\include -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\site-packages\numpy\_core\include -DHAVE_EIGEN -Iextras/include -DHAVE_CVXOPT -c src\df_factory.cpp -Foobj/
+df_factory.cpp
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_math.h(94): warning C4005: 'INFINITY': macro redefinition
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-research\Agama-master\src\math_base.h(13): note: see previous definition of 'INFINITY'
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_math.h(111): warning C4005: 'NAN': macro redefinition
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-research\Agama-master\src\math_base.h(17): note: see previous definition of 'NAN'
+	C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64\cl.exe /std:c++17 /permissive-  /W3 -wd4244 -wd4267 /O2 /EHsc /nologo -Iextras/include /openmp -Isrc -DHAVE_PYTHON -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\include -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\site-packages\numpy\_core\include -DHAVE_EIGEN -Iextras/include -DHAVE_CVXOPT -c src\df_halo.cpp -Foobj/
+df_halo.cpp
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_math.h(94): warning C4005: 'INFINITY': macro redefinition
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-research\Agama-master\src\math_base.h(13): note: see previous definition of 'INFINITY'
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_math.h(111): warning C4005: 'NAN': macro redefinition
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-research\Agama-master\src\math_base.h(17): note: see previous definition of 'NAN'
+	C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64\cl.exe /std:c++17 /permissive-  /W3 -wd4244 -wd4267 /O2 /EHsc /nologo -Iextras/include /openmp -Isrc -DHAVE_PYTHON -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\include -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\site-packages\numpy\_core\include -DHAVE_EIGEN -Iextras/include -DHAVE_CVXOPT -c src\df_spherical.cpp -Foobj/
+df_spherical.cpp
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_math.h(94): warning C4005: 'INFINITY': macro redefinition
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-research\Agama-master\src\math_base.h(13): note: see previous definition of 'INFINITY'
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_math.h(111): warning C4005: 'NAN': macro redefinition
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-research\Agama-master\src\math_base.h(17): note: see previous definition of 'NAN'
+	C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64\cl.exe /std:c++17 /permissive-  /W3 -wd4244 -wd4267 /O2 /EHsc /nologo -Iextras/include /openmp -Isrc -DHAVE_PYTHON -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\include -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\site-packages\numpy\_core\include -DHAVE_EIGEN -Iextras/include -DHAVE_CVXOPT -c src\galaxymodel_base.cpp -Foobj/
+galaxymodel_base.cpp
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_math.h(94): warning C4005: 'INFINITY': macro redefinition
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-research\Agama-master\src\math_base.h(13): note: see previous definition of 'INFINITY'
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_math.h(111): warning C4005: 'NAN': macro redefinition
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-research\Agama-master\src\math_base.h(17): note: see previous definition of 'NAN'
+	C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64\cl.exe /std:c++17 /permissive-  /W3 -wd4244 -wd4267 /O2 /EHsc /nologo -Iextras/include /openmp -Isrc -DHAVE_PYTHON -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\include -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\site-packages\numpy\_core\include -DHAVE_EIGEN -Iextras/include -DHAVE_CVXOPT -c src\galaxymodel_densitygrid.cpp -Foobj/
+galaxymodel_densitygrid.cpp
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_math.h(94): warning C4005: 'INFINITY': macro redefinition
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-research\Agama-master\src\math_base.h(13): note: see previous definition of 'INFINITY'
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_math.h(111): warning C4005: 'NAN': macro redefinition
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-research\Agama-master\src\math_base.h(17): note: see previous definition of 'NAN'
+	C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64\cl.exe /std:c++17 /permissive-  /W3 -wd4244 -wd4267 /O2 /EHsc /nologo -Iextras/include /openmp -Isrc -DHAVE_PYTHON -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\include -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\site-packages\numpy\_core\include -DHAVE_EIGEN -Iextras/include -DHAVE_CVXOPT -c src\galaxymodel_fokkerplanck.cpp -Foobj/
+galaxymodel_fokkerplanck.cpp
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_math.h(94): warning C4005: 'INFINITY': macro redefinition
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-research\Agama-master\src\math_base.h(13): note: see previous definition of 'INFINITY'
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_math.h(111): warning C4005: 'NAN': macro redefinition
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-research\Agama-master\src\math_base.h(17): note: see previous definition of 'NAN'
+	C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64\cl.exe /std:c++17 /permissive-  /W3 -wd4244 -wd4267 /O2 /EHsc /nologo -Iextras/include /openmp -Isrc -DHAVE_PYTHON -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\include -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\site-packages\numpy\_core\include -DHAVE_EIGEN -Iextras/include -DHAVE_CVXOPT -c src\galaxymodel_jeans.cpp -Foobj/
+galaxymodel_jeans.cpp
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_math.h(94): warning C4005: 'INFINITY': macro redefinition
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-research\Agama-master\src\math_base.h(13): note: see previous definition of 'INFINITY'
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_math.h(111): warning C4005: 'NAN': macro redefinition
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-research\Agama-master\src\math_base.h(17): note: see previous definition of 'NAN'
+	C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64\cl.exe /std:c++17 /permissive-  /W3 -wd4244 -wd4267 /O2 /EHsc /nologo -Iextras/include /openmp -Isrc -DHAVE_PYTHON -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\include -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\site-packages\numpy\_core\include -DHAVE_EIGEN -Iextras/include -DHAVE_CVXOPT -c src\galaxymodel_losvd.cpp -Foobj/
+galaxymodel_losvd.cpp
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_math.h(94): warning C4005: 'INFINITY': macro redefinition
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-research\Agama-master\src\math_base.h(13): note: see previous definition of 'INFINITY'
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_math.h(111): warning C4005: 'NAN': macro redefinition
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-research\Agama-master\src\math_base.h(17): note: see previous definition of 'NAN'
+	C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64\cl.exe /std:c++17 /permissive-  /W3 -wd4244 -wd4267 /O2 /EHsc /nologo -Iextras/include /openmp -Isrc -DHAVE_PYTHON -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\include -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\site-packages\numpy\_core\include -DHAVE_EIGEN -Iextras/include -DHAVE_CVXOPT -c src\galaxymodel_selfconsistent.cpp -Foobj/
+galaxymodel_selfconsistent.cpp
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_math.h(94): warning C4005: 'INFINITY': macro redefinition
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-research\Agama-master\src\math_base.h(13): note: see previous definition of 'INFINITY'
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_math.h(111): warning C4005: 'NAN': macro redefinition
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-research\Agama-master\src\math_base.h(17): note: see previous definition of 'NAN'
+	C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64\cl.exe /std:c++17 /permissive-  /W3 -wd4244 -wd4267 /O2 /EHsc /nologo -Iextras/include /openmp -Isrc -DHAVE_PYTHON -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\include -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\site-packages\numpy\_core\include -DHAVE_EIGEN -Iextras/include -DHAVE_CVXOPT -c src\galaxymodel_spherical.cpp -Foobj/
+galaxymodel_spherical.cpp
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_math.h(94): warning C4005: 'INFINITY': macro redefinition
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-research\Agama-master\src\math_base.h(13): note: see previous definition of 'INFINITY'
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_math.h(111): warning C4005: 'NAN': macro redefinition
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-research\Agama-master\src\math_base.h(17): note: see previous definition of 'NAN'
+	C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64\cl.exe /std:c++17 /permissive-  /W3 -wd4244 -wd4267 /O2 /EHsc /nologo -Iextras/include /openmp -Isrc -DHAVE_PYTHON -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\include -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\site-packages\numpy\_core\include -DHAVE_EIGEN -Iextras/include -DHAVE_CVXOPT -c src\galaxymodel_velocitysampler.cpp -Foobj/
+galaxymodel_velocitysampler.cpp
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_math.h(94): warning C4005: 'INFINITY': macro redefinition
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-research\Agama-master\src\math_base.h(13): note: see previous definition of 'INFINITY'
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_math.h(111): warning C4005: 'NAN': macro redefinition
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-research\Agama-master\src\math_base.h(17): note: see previous definition of 'NAN'
+	C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64\cl.exe /std:c++17 /permissive-  /W3 -wd4244 -wd4267 /O2 /EHsc /nologo -Iextras/include /openmp -Isrc -DHAVE_PYTHON -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\include -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\site-packages\numpy\_core\include -DHAVE_EIGEN -Iextras/include -DHAVE_CVXOPT -c src\orbit.cpp -Foobj/
+orbit.cpp
+	C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64\cl.exe /std:c++17 /permissive-  /W3 -wd4244 -wd4267 /O2 /EHsc /nologo -Iextras/include /openmp -Isrc -DHAVE_PYTHON -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\include -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\site-packages\numpy\_core\include -DHAVE_EIGEN -Iextras/include -DHAVE_CVXOPT -c src\orbit_variational.cpp -Foobj/
+orbit_variational.cpp
+	C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64\cl.exe /std:c++17 /permissive-  /W3 -wd4244 -wd4267 /O2 /EHsc /nologo -Iextras/include /openmp -Isrc -DHAVE_PYTHON -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\include -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\site-packages\numpy\_core\include -DHAVE_EIGEN -Iextras/include -DHAVE_CVXOPT -c src\potential_analytic.cpp -Foobj/
+potential_analytic.cpp
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_math.h(94): warning C4005: 'INFINITY': macro redefinition
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-research\Agama-master\src\math_base.h(13): note: see previous definition of 'INFINITY'
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_math.h(111): warning C4005: 'NAN': macro redefinition
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-research\Agama-master\src\math_base.h(17): note: see previous definition of 'NAN'
+	C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64\cl.exe /std:c++17 /permissive-  /W3 -wd4244 -wd4267 /O2 /EHsc /nologo -Iextras/include /openmp -Isrc -DHAVE_PYTHON -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\include -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\site-packages\numpy\_core\include -DHAVE_EIGEN -Iextras/include -DHAVE_CVXOPT -c src\potential_base.cpp -Foobj/
+potential_base.cpp
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_math.h(94): warning C4005: 'INFINITY': macro redefinition
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-research\Agama-master\src\math_base.h(13): note: see previous definition of 'INFINITY'
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_math.h(111): warning C4005: 'NAN': macro redefinition
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-research\Agama-master\src\math_base.h(17): note: see previous definition of 'NAN'
+	C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64\cl.exe /std:c++17 /permissive-  /W3 -wd4244 -wd4267 /O2 /EHsc /nologo -Iextras/include /openmp -Isrc -DHAVE_PYTHON -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\include -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\site-packages\numpy\_core\include -DHAVE_EIGEN -Iextras/include -DHAVE_CVXOPT -c src\potential_composite.cpp -Foobj/
+potential_composite.cpp
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_math.h(94): warning C4005: 'INFINITY': macro redefinition
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-research\Agama-master\src\math_base.h(13): note: see previous definition of 'INFINITY'
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_math.h(111): warning C4005: 'NAN': macro redefinition
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-research\Agama-master\src\math_base.h(17): note: see previous definition of 'NAN'
+	C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64\cl.exe /std:c++17 /permissive-  /W3 -wd4244 -wd4267 /O2 /EHsc /nologo -Iextras/include /openmp -Isrc -DHAVE_PYTHON -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\include -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\site-packages\numpy\_core\include -DHAVE_EIGEN -Iextras/include -DHAVE_CVXOPT -c src\potential_cylspline.cpp -Foobj/
+potential_cylspline.cpp
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_math.h(94): warning C4005: 'INFINITY': macro redefinition
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-research\Agama-master\src\math_base.h(13): note: see previous definition of 'INFINITY'
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_math.h(111): warning C4005: 'NAN': macro redefinition
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-research\Agama-master\src\math_base.h(17): note: see previous definition of 'NAN'
+	C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64\cl.exe /std:c++17 /permissive-  /W3 -wd4244 -wd4267 /O2 /EHsc /nologo -Iextras/include /openmp -Isrc -DHAVE_PYTHON -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\include -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\site-packages\numpy\_core\include -DHAVE_EIGEN -Iextras/include -DHAVE_CVXOPT -c src\potential_dehnen.cpp -Foobj/
+potential_dehnen.cpp
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_math.h(94): warning C4005: 'INFINITY': macro redefinition
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-research\Agama-master\src\math_base.h(13): note: see previous definition of 'INFINITY'
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_math.h(111): warning C4005: 'NAN': macro redefinition
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-research\Agama-master\src\math_base.h(17): note: see previous definition of 'NAN'
+	C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64\cl.exe /std:c++17 /permissive-  /W3 -wd4244 -wd4267 /O2 /EHsc /nologo -Iextras/include /openmp -Isrc -DHAVE_PYTHON -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\include -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\site-packages\numpy\_core\include -DHAVE_EIGEN -Iextras/include -DHAVE_CVXOPT -c src\potential_disk.cpp -Foobj/
+potential_disk.cpp
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_math.h(94): warning C4005: 'INFINITY': macro redefinition
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-research\Agama-master\src\math_base.h(13): note: see previous definition of 'INFINITY'
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_math.h(111): warning C4005: 'NAN': macro redefinition
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-research\Agama-master\src\math_base.h(17): note: see previous definition of 'NAN'
+	C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64\cl.exe /std:c++17 /permissive-  /W3 -wd4244 -wd4267 /O2 /EHsc /nologo -Iextras/include /openmp -Isrc -DHAVE_PYTHON -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\include -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\site-packages\numpy\_core\include -DHAVE_EIGEN -Iextras/include -DHAVE_CVXOPT -c src\potential_factory.cpp -Foobj/
+potential_factory.cpp
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_math.h(94): warning C4005: 'INFINITY': macro redefinition
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-research\Agama-master\src\math_base.h(13): note: see previous definition of 'INFINITY'
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_math.h(111): warning C4005: 'NAN': macro redefinition
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-research\Agama-master\src\math_base.h(17): note: see previous definition of 'NAN'
+	C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64\cl.exe /std:c++17 /permissive-  /W3 -wd4244 -wd4267 /O2 /EHsc /nologo -Iextras/include /openmp -Isrc -DHAVE_PYTHON -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\include -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\site-packages\numpy\_core\include -DHAVE_EIGEN -Iextras/include -DHAVE_CVXOPT -c src\potential_ferrers.cpp -Foobj/
+potential_ferrers.cpp
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_math.h(94): warning C4005: 'INFINITY': macro redefinition
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-research\Agama-master\src\math_base.h(13): note: see previous definition of 'INFINITY'
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_math.h(111): warning C4005: 'NAN': macro redefinition
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-research\Agama-master\src\math_base.h(17): note: see previous definition of 'NAN'
+	C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64\cl.exe /std:c++17 /permissive-  /W3 -wd4244 -wd4267 /O2 /EHsc /nologo -Iextras/include /openmp -Isrc -DHAVE_PYTHON -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\include -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\site-packages\numpy\_core\include -DHAVE_EIGEN -Iextras/include -DHAVE_CVXOPT -c src\potential_king.cpp -Foobj/
+potential_king.cpp
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_math.h(94): warning C4005: 'INFINITY': macro redefinition
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-research\Agama-master\src\math_base.h(13): note: see previous definition of 'INFINITY'
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_math.h(111): warning C4005: 'NAN': macro redefinition
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-research\Agama-master\src\math_base.h(17): note: see previous definition of 'NAN'
+	C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64\cl.exe /std:c++17 /permissive-  /W3 -wd4244 -wd4267 /O2 /EHsc /nologo -Iextras/include /openmp -Isrc -DHAVE_PYTHON -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\include -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\site-packages\numpy\_core\include -DHAVE_EIGEN -Iextras/include -DHAVE_CVXOPT -c src\potential_multipole.cpp -Foobj/
+potential_multipole.cpp
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_math.h(94): warning C4005: 'INFINITY': macro redefinition
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-research\Agama-master\src\math_base.h(13): note: see previous definition of 'INFINITY'
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_math.h(111): warning C4005: 'NAN': macro redefinition
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-research\Agama-master\src\math_base.h(17): note: see previous definition of 'NAN'
+	C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64\cl.exe /std:c++17 /permissive-  /W3 -wd4244 -wd4267 /O2 /EHsc /nologo -Iextras/include /openmp -Isrc -DHAVE_PYTHON -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\include -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\site-packages\numpy\_core\include -DHAVE_EIGEN -Iextras/include -DHAVE_CVXOPT -c src\potential_perfect_ellipsoid.cpp -Foobj/
+potential_perfect_ellipsoid.cpp
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_math.h(94): warning C4005: 'INFINITY': macro redefinition
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-research\Agama-master\src\math_base.h(13): note: see previous definition of 'INFINITY'
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_math.h(111): warning C4005: 'NAN': macro redefinition
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-research\Agama-master\src\math_base.h(17): note: see previous definition of 'NAN'
+	C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64\cl.exe /std:c++17 /permissive-  /W3 -wd4244 -wd4267 /O2 /EHsc /nologo -Iextras/include /openmp -Isrc -DHAVE_PYTHON -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\include -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\site-packages\numpy\_core\include -DHAVE_EIGEN -Iextras/include -DHAVE_CVXOPT -c src\potential_spheroid.cpp -Foobj/
+potential_spheroid.cpp
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_math.h(94): warning C4005: 'INFINITY': macro redefinition
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-research\Agama-master\src\math_base.h(13): note: see previous definition of 'INFINITY'
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_math.h(111): warning C4005: 'NAN': macro redefinition
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-research\Agama-master\src\math_base.h(17): note: see previous definition of 'NAN'
+	C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64\cl.exe /std:c++17 /permissive-  /W3 -wd4244 -wd4267 /O2 /EHsc /nologo -Iextras/include /openmp -Isrc -DHAVE_PYTHON -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\include -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\site-packages\numpy\_core\include -DHAVE_EIGEN -Iextras/include -DHAVE_CVXOPT -c src\potential_utils.cpp -Foobj/
+potential_utils.cpp
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_math.h(94): warning C4005: 'INFINITY': macro redefinition
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-research\Agama-master\src\math_base.h(13): note: see previous definition of 'INFINITY'
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_math.h(111): warning C4005: 'NAN': macro redefinition
+C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-research\Agama-master\src\math_base.h(17): note: see previous definition of 'NAN'
+	C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64\cl.exe /std:c++17 /permissive-  /W3 -wd4244 -wd4267 /O2 /EHsc /nologo -Iextras/include /openmp -Isrc -DHAVE_PYTHON -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\include -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\site-packages\numpy\_core\include -DHAVE_EIGEN -Iextras/include -DHAVE_CVXOPT -c src\raga_core.cpp -Foobj/
+raga_core.cpp
+	C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64\cl.exe /std:c++17 /permissive-  /W3 -wd4244 -wd4267 /O2 /EHsc /nologo -Iextras/include /openmp -Isrc -DHAVE_PYTHON -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\include -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\site-packages\numpy\_core\include -DHAVE_EIGEN -Iextras/include -DHAVE_CVXOPT -c src\raga_binary.cpp -Foobj/
+raga_binary.cpp
+	C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64\cl.exe /std:c++17 /permissive-  /W3 -wd4244 -wd4267 /O2 /EHsc /nologo -Iextras/include /openmp -Isrc -DHAVE_PYTHON -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\include -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\site-packages\numpy\_core\include -DHAVE_EIGEN -Iextras/include -DHAVE_CVXOPT -c src\raga_losscone.cpp -Foobj/
+raga_losscone.cpp
+	C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64\cl.exe /std:c++17 /permissive-  /W3 -wd4244 -wd4267 /O2 /EHsc /nologo -Iextras/include /openmp -Isrc -DHAVE_PYTHON -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\include -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\site-packages\numpy\_core\include -DHAVE_EIGEN -Iextras/include -DHAVE_CVXOPT -c src\raga_potential.cpp -Foobj/
+raga_potential.cpp
+	C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64\cl.exe /std:c++17 /permissive-  /W3 -wd4244 -wd4267 /O2 /EHsc /nologo -Iextras/include /openmp -Isrc -DHAVE_PYTHON -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\include -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\site-packages\numpy\_core\include -DHAVE_EIGEN -Iextras/include -DHAVE_CVXOPT -c src\raga_relaxation.cpp -Foobj/
+raga_relaxation.cpp
+	C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64\cl.exe /std:c++17 /permissive-  /W3 -wd4244 -wd4267 /O2 /EHsc /nologo -Iextras/include /openmp -Isrc -DHAVE_PYTHON -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\include -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\site-packages\numpy\_core\include -DHAVE_EIGEN -Iextras/include -DHAVE_CVXOPT -c src\raga_trajectory.cpp -Foobj/
+raga_trajectory.cpp
+	C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64\cl.exe /std:c++17 /permissive-  /W3 -wd4244 -wd4267 /O2 /EHsc /nologo -Iextras/include /openmp -Isrc -DHAVE_PYTHON -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\include -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\site-packages\numpy\_core\include -DHAVE_EIGEN -Iextras/include -DHAVE_CVXOPT -c src\utils.cpp -Foobj/
+utils.cpp
+	C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64\cl.exe /std:c++17 /permissive-  /W3 -wd4244 -wd4267 /O2 /EHsc /nologo -Iextras/include /openmp -Isrc -DHAVE_PYTHON -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\include -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\site-packages\numpy\_core\include -DHAVE_EIGEN -Iextras/include -DHAVE_CVXOPT -c src\utils_config.cpp -Foobj/
+utils_config.cpp
+	C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64\cl.exe /std:c++17 /permissive-  /W3 -wd4244 -wd4267 /O2 /EHsc /nologo -Iextras/include /openmp -Isrc -DHAVE_PYTHON -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\include -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\site-packages\numpy\_core\include -DHAVE_EIGEN -Iextras/include -DHAVE_CVXOPT -c src/torus\CHB.cc -Foobj/
+CHB.cc
+	C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64\cl.exe /std:c++17 /permissive-  /W3 -wd4244 -wd4267 /O2 /EHsc /nologo -Iextras/include /openmp -Isrc -DHAVE_PYTHON -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\include -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\site-packages\numpy\_core\include -DHAVE_EIGEN -Iextras/include -DHAVE_CVXOPT -c src/torus\Fit.cc -Foobj/
+Fit.cc
+	C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64\cl.exe /std:c++17 /permissive-  /W3 -wd4244 -wd4267 /O2 /EHsc /nologo -Iextras/include /openmp -Isrc -DHAVE_PYTHON -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\include -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\site-packages\numpy\_core\include -DHAVE_EIGEN -Iextras/include -DHAVE_CVXOPT -c src/torus\Fit2.cc -Foobj/
+Fit2.cc
+	C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64\cl.exe /std:c++17 /permissive-  /W3 -wd4244 -wd4267 /O2 /EHsc /nologo -Iextras/include /openmp -Isrc -DHAVE_PYTHON -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\include -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\site-packages\numpy\_core\include -DHAVE_EIGEN -Iextras/include -DHAVE_CVXOPT -c src/torus\GeneratingFunction.cc -Foobj/
+GeneratingFunction.cc
+	C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64\cl.exe /std:c++17 /permissive-  /W3 -wd4244 -wd4267 /O2 /EHsc /nologo -Iextras/include /openmp -Isrc -DHAVE_PYTHON -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\include -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\site-packages\numpy\_core\include -DHAVE_EIGEN -Iextras/include -DHAVE_CVXOPT -c src/torus\Orb.cc -Foobj/
+Orb.cc
+	C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64\cl.exe /std:c++17 /permissive-  /W3 -wd4244 -wd4267 /O2 /EHsc /nologo -Iextras/include /openmp -Isrc -DHAVE_PYTHON -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\include -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\site-packages\numpy\_core\include -DHAVE_EIGEN -Iextras/include -DHAVE_CVXOPT -c src/torus\PJMNum.cc -Foobj/
+PJMNum.cc
+	C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64\cl.exe /std:c++17 /permissive-  /W3 -wd4244 -wd4267 /O2 /EHsc /nologo -Iextras/include /openmp -Isrc -DHAVE_PYTHON -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\include -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\site-packages\numpy\_core\include -DHAVE_EIGEN -Iextras/include -DHAVE_CVXOPT -c src/torus\Point_ClosedOrbitCheby.cc -Foobj/
+Point_ClosedOrbitCheby.cc
+	C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64\cl.exe /std:c++17 /permissive-  /W3 -wd4244 -wd4267 /O2 /EHsc /nologo -Iextras/include /openmp -Isrc -DHAVE_PYTHON -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\include -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\site-packages\numpy\_core\include -DHAVE_EIGEN -Iextras/include -DHAVE_CVXOPT -c src/torus\Point_None.cc -Foobj/
+Point_None.cc
+	C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64\cl.exe /std:c++17 /permissive-  /W3 -wd4244 -wd4267 /O2 /EHsc /nologo -Iextras/include /openmp -Isrc -DHAVE_PYTHON -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\include -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\site-packages\numpy\_core\include -DHAVE_EIGEN -Iextras/include -DHAVE_CVXOPT -c src/torus\Torus.cc -Foobj/
+Torus.cc
+	C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64\cl.exe /std:c++17 /permissive-  /W3 -wd4244 -wd4267 /O2 /EHsc /nologo -Iextras/include /openmp -Isrc -DHAVE_PYTHON -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\include -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\site-packages\numpy\_core\include -DHAVE_EIGEN -Iextras/include -DHAVE_CVXOPT -c src/torus\Toy_Isochrone.cc -Foobj/
+Toy_Isochrone.cc
+	C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-msvc\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64\cl.exe /std:c++17 /permissive-  /W3 -wd4244 -wd4267 /O2 /EHsc /nologo -Iextras/include /openmp -Isrc -DHAVE_PYTHON -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\include -IC:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\site-packages\numpy\_core\include -DHAVE_EIGEN -Iextras/include -DHAVE_CVXOPT -c src/torus\WD_Numerics.cc -Foobj/
+WD_Numerics.cc
+	lib.exe obj/interface_c.obj obj/interface_fortran.obj obj/interface_nemo.obj obj/interface_python.obj obj/math_core.obj obj/math_fit.obj obj/math_gausshermite.obj obj/math_geometry.obj obj/math_linalg.obj obj/math_ode.obj obj/math_optimization.obj obj/math_random.obj obj/math_sample.obj obj/math_specfunc.obj obj/math_sphharm.obj obj/math_spline.obj obj/particles_io.obj obj/actions_factory.obj obj/actions_focal_distance_finder.obj obj/actions_isochrone.obj obj/actions_spherical.obj obj/actions_staeckel.obj obj/actions_torus.obj obj/coord.obj obj/df_base.obj obj/df_disk.obj obj/df_factory.obj obj/df_halo.obj obj/df_spherical.obj obj/galaxymodel_base.obj obj/galaxymodel_densitygrid.obj obj/galaxymodel_fokkerplanck.obj obj/galaxymodel_jeans.obj obj/galaxymodel_losvd.obj obj/galaxymodel_selfconsistent.obj obj/galaxymodel_spherical.obj obj/galaxymodel_velocitysampler.obj obj/orbit.obj obj/orbit_variational.obj obj/potential_analytic.obj obj/potential_base.obj obj/potential_composite.obj obj/potential_cylspline.obj obj/potential_dehnen.obj obj/potential_disk.obj obj/potential_factory.obj obj/potential_ferrers.obj obj/potential_king.obj obj/potential_multipole.obj obj/potential_perfect_ellipsoid.obj obj/potential_spheroid.obj obj/potential_utils.obj obj/raga_core.obj obj/raga_binary.obj obj/raga_losscone.obj obj/raga_potential.obj obj/raga_relaxation.obj obj/raga_trajectory.obj obj/utils.obj obj/utils_config.obj obj/CHB.obj obj/Fit.obj obj/Fit2.obj obj/GeneratingFunction.obj obj/Orb.obj obj/PJMNum.obj obj/Point_ClosedOrbitCheby.obj obj/Point_None.obj obj/Torus.obj obj/Toy_Isochrone.obj obj/WD_Numerics.obj /out:agama.lib
+Microsoft (R) Library Manager Version 14.44.35229.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+	link.exe obj/interface_c.obj obj/interface_fortran.obj obj/interface_nemo.obj obj/interface_python.obj obj/math_core.obj obj/math_fit.obj obj/math_gausshermite.obj obj/math_geometry.obj obj/math_linalg.obj obj/math_ode.obj obj/math_optimization.obj obj/math_random.obj obj/math_sample.obj obj/math_specfunc.obj obj/math_sphharm.obj obj/math_spline.obj obj/particles_io.obj obj/actions_factory.obj obj/actions_focal_distance_finder.obj obj/actions_isochrone.obj obj/actions_spherical.obj obj/actions_staeckel.obj obj/actions_torus.obj obj/coord.obj obj/df_base.obj obj/df_disk.obj obj/df_factory.obj obj/df_halo.obj obj/df_spherical.obj obj/galaxymodel_base.obj obj/galaxymodel_densitygrid.obj obj/galaxymodel_fokkerplanck.obj obj/galaxymodel_jeans.obj obj/galaxymodel_losvd.obj obj/galaxymodel_selfconsistent.obj obj/galaxymodel_spherical.obj obj/galaxymodel_velocitysampler.obj obj/orbit.obj obj/orbit_variational.obj obj/potential_analytic.obj obj/potential_base.obj obj/potential_composite.obj obj/potential_cylspline.obj obj/potential_dehnen.obj obj/potential_disk.obj obj/potential_factory.obj obj/potential_ferrers.obj obj/potential_king.obj obj/potential_multipole.obj obj/potential_perfect_ellipsoid.obj obj/potential_spheroid.obj obj/potential_utils.obj obj/raga_core.obj obj/raga_binary.obj obj/raga_losscone.obj obj/raga_potential.obj obj/raga_relaxation.obj obj/raga_trajectory.obj obj/utils.obj obj/utils_config.obj obj/CHB.obj obj/Fit.obj obj/Fit2.obj obj/GeneratingFunction.obj obj/Orb.obj obj/PJMNum.obj obj/Point_ClosedOrbitCheby.obj obj/Point_None.obj obj/Torus.obj obj/Toy_Isochrone.obj obj/WD_Numerics.obj /LIBPATH:extras/lib /LIBPATH:C:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\libs gsl.lib cblas.lib /dll /out:agama.pyd /implib:agama_pyd.lib
+Microsoft (R) Incremental Linker Version 14.44.35229.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+   Creating library agama_pyd.lib and object agama_pyd.exp
+	del agama_pyd.lib
+	del agama_pyd.exp

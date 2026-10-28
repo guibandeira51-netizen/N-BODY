@@ -1,0 +1,8 @@
+import {readFile,writeFile} from 'node:fs/promises';import {createHash} from 'node:crypto';
+const dir='reports/halo-5gyr',m=JSON.parse(await readFile(dir+'/manifest.json')),hash=b=>createHash('sha256').update(b).digest('hex'),validation=await readFile(dir+'/wide-target-validation.json');
+if(!JSON.parse(validation).bitwiseEqual)throw Error('Wide scheduling regression not passed');
+for(const r of m.runs)if(r.factor>=32){r.backend='wide-chunked-direct';r.wideSchedulingValidationSHA256=hash(validation);r.qualification='Same ordered direct Plummer sum, 65536 independent target particles per dispatch; unchanged 64-source tile and KDK. Higher-N force error is measured against direct Float64 disk probes at initialization and completion.';}
+for(const file of ['src/compute/gpu-wide-chunked-direct.js','tests/browser-halo-5gyr-worker.js','scripts/halo-5gyr/verify-final.mjs','scripts/halo-5gyr/collector-v3.mjs'])m.sources[file]=hash(await readFile(file));
+m.pipeline={collectorPort:4193,runnerRevision:'v4-automatic-staged-direct-independent-final-check',stopAfterFirstIndependentPass:true,plannedHaloFactors:m.runs.filter(r=>r.mode==='live').map(r=>r.factor),qualification:'A finite staged campaign, not a guarantee that any halo resolution will meet the requested physical criterion. Unstarted levels have no measured outcomes; resource/device failure stops execution with preserved evidence.'};
+const pointer=JSON.parse(await readFile(dir+'/latest.json')),current=JSON.parse(await readFile(pointer.file));m.pipeline.validatedHardware=current.hardware;
+await writeFile(dir+'/manifest.json',JSON.stringify(m,null,2));console.log(JSON.stringify(m.pipeline,null,2));

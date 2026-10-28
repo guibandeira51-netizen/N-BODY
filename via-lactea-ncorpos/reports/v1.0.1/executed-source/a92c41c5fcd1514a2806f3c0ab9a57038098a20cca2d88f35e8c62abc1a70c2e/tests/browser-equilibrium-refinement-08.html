@@ -1,0 +1,43 @@
+<!doctype html><meta charset="utf-8"><title>Experimentos físicos 0.8.0</title>
+<h1>Comparação 0.7 / candidato 0.8 e controles de massa</h1>
+<p>Ensaios locais independentes da interface do produto. Preparação iterativa separada da evolução livre.</p>
+<button id="run">Executar campanha</button><p id="status">Aguardando</p><pre id="output">Sem resultados</pre>
+<details><summary>Snapshots iniciais reproduzíveis</summary><pre id="snapshots"></pre></details>
+<script type="module">
+import {createGalaxy} from '../src/physics/initial-legacy.js';
+import {createAllocatedGalaxy} from '../src/physics/initial-allocated.js';
+import {prepareIterative,serializeInitial} from '../src/physics/iterative-initial.js';
+import {GPUBackend} from '../src/compute/gpu.js';
+import {diagnostics} from '../src/physics/diagnostics.js';
+import {laboratorySample,energyDrift} from '../src/physics/laboratory.js';
+import {massAudit} from '../src/physics/mass-audit.js';
+import {detectCapabilities} from '../src/compute/capability.js';
+const $=id=>document.getElementById(id),yieldUI=()=>new Promise(r=>setTimeout(r,0));
+$('run').onclick=async()=>{
+ $('run').disabled=true;const snapshots=[],report={schema:'equilibrium-08-v1',startedUTC:new Date().toISOString(),status:'running',capabilities:await detectCapabilities(),runs:[],preparations:[],sourceHashes:{},protocol:{seeds:[2026,2027],N:[10000,50000],durationMyr:200,dtMyr:.1,epsilonKpc:.1,preparationIterations:20,preparationSegmentMyr:10,neighbours:10,antipodal:true,force:'GPU direct f32',energy:'CPU Barnes-Hut theta=.5 on f32 snapshots; approximate',noConstraintsInFreeEvolution:true}};let gpu;
+ const persist=()=>{$('output').textContent=JSON.stringify(report);$('snapshots').textContent=JSON.stringify(snapshots);};
+ try{
+  for(const path of ['src/physics/initial-legacy.js','src/physics/iterative-initial.js','src/physics/initial-allocated.js','src/physics/forces.js','src/compute/gpu.js','tests/browser-equilibrium-refinement-08.html']){const data=await (await fetch('../'+path)).arrayBuffer();report.sourceHashes[path]=Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',data)),b=>b.toString(16).padStart(2,'0')).join('');}
+  gpu=await GPUBackend.create();
+  async function run(state,config,label){
+   const begin=performance.now();state.time=0;const initial=serializeInitial(state);snapshots.push({label,config,state:initial});
+   await gpu.initialize(state,config);const samples=[];
+   for(const t of [0,5,10,15,20,50,100,150,200]){
+    $('status').textContent=`${label}: N=${state.n}, semente ${config.seed}, t=${t} Myr`;
+    if(t)await gpu.step(Math.round((t-(samples.at(-1)?.timeMyr??0))/config.dt));
+    const s=await gpu.snapshot();s.time=t;const d=diagnostics(s,{...config,algorithm:'barnes-hut'});samples.push(laboratorySample(s,d,{...config,forceMethod:'GPU direct f32'}));await yieldUI();
+   }
+   report.runs.push({label,config,initialMeta:state.meta,massAudit:massAudit(state),samples,wallMs:performance.now()-begin,energyDrift:energyDrift(samples.at(-1).conservation,samples[0].conservation)});persist();
+  }
+  // Reproduce historical 20 Myr states before constructing any candidate.
+  for(const n of [10000,50000])for(const seed of [2026,2027]){
+   const config={n,seed,dt:.1,epsilon:.1,theta:.5,withHalo:true};
+   const state=await prepareIterative(config,{iterations:20,segmentMyr:10,neighbours:10,antipodal:true,
+    evolve:async(s,t)=>{await gpu.initialize(s,config);await gpu.step(Math.round(t/config.dt));return gpu.snapshot();},
+    onIteration:async row=>{$('status').textContent=`Preparação N=${n}, semente ${seed}, iteração ${row.iteration}/20`;await yieldUI();}});
+   report.preparations.push({config,meta:state.meta});await run(state,config,'iterative-antipodal');
+  }
+  report.status='completed';report.completedUTC=new Date().toISOString();$('status').textContent='Concluído: 4 evoluções livres de 200 Myr; preparação separada. Não certifica equilíbrio.';
+ }catch(e){report.status='failed';report.error=e.stack;$('status').textContent='Falha: '+e.message;}finally{gpu?.dispose();persist();$('run').disabled=false;}
+};
+</script>

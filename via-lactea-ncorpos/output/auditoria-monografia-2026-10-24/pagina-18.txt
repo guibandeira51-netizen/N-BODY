@@ -1,0 +1,47 @@
+18 
+ 
+finita e comportamen to adequado tanto nas regiões internas quanto externas. 
+Nesse modelo, a densidade volumétrica do bojo é expressa por  (HERNQUIST, 
+1990): 
+ ρb(𝑟)= 𝑀b
+2π
+𝑎b
+𝑟(𝑟+ 𝑎b)3 (31) 
+ 
+A grandeza ρb(r) representa a densidade volumétrica de massa do bojo 
+em função da distância r ao centro galáctico, indicando como a matéria está 
+distribuída espacialmente nessa região. O parâmetro r corresponde à 
+coordenada radial medida a partir do centro da galáxia, sendo a variável que 
+determina como a densidade varia ao longo da estrutura do bojo. 
+A quantidade Mb denota a massa total do bojo galáctico, ou seja, a massa 
+integrada em todo o volume dessa componente. Esse parâmetro define a 
+intensidade global do campo gravitacional gerado pelo bojo, uma vez que está 
+diretamente relacionado à quantidade total de matéria presente nessa região. Já 
+o parâmetro ab é conhecido como raio de escala e caracteriza o tamanho típico 
+do bojo, controlando a taxa com que a densidade decai com a distância. Valores 
+menores de a b correspondem a uma dist ribuição mais concentrada, enquanto 
+valores maiores indicam um bojo mais estendido. 
+O fator 2π no denominador surge da normalização da distribuição de densidade, 
+garantindo que, ao integrar ρb(r) sobre todo o espaço, o resultado seja 
+exatamente a massa tot al M b. Por fim, a dependência funcional r(r+a b)3 no 
+denominador determina o comportamento da densidade em diferentes regimes: 
+para pequenas distâncias, a densidade cresce rapidamente, refletindo a alta 
+concentração de massa no centro, enquanto para grandes distâncias ela decai 
+aproximadamente como r −4, assegurando que a massa total do bojo seja finita 
+e que sua influência gravitacional diminua de forma significativa nas regiões 
+externas da galáxia. 
+A massa acumulada até um raio r, denotada por M(r), é obtida a partir da 
+integração da densidade volumétrica sobre um volume esfericamente simétrico: 
+ 𝑀(𝑟)= ∫ 4π𝑟′2ρb(𝑟′)
+𝑟
+0
+ 𝑑𝑟′ (32) 
+ 
+Substituindo a expressão da densidade do perfil de Hernquist, dada pela 
+equação (31), na definição da massa acumulada e efetuando diretamente a 
+integração ao longo do volume esfericamente simétrico, obtém -se a seguinte 
+expressão para a massa contida no interior de um raio r: 
+ 𝑀(𝑟)= 𝑀b
+𝑟2
+(𝑟+ 𝑎b)2 (33) 
+ 

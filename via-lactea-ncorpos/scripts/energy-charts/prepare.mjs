@@ -1,0 +1,15 @@
+import {readFile,writeFile,mkdir} from 'node:fs/promises';
+import {createHash} from 'node:crypto';
+import {energyPanelsData,energyPanelsCSV} from '../../src/energy-chart-data.js';
+import {energyPanelSVG} from '../../src/energy-charts.js';
+const source='reports/automatic-energy/gpu-80000-auditoria.json',raw=await readFile(source),a=JSON.parse(raw);
+const sha256=createHash('sha256').update(raw).digest('hex');
+const records={source,sourceSHA256:sha256,qualification:'Existing measured 80,000-particle GPU run; presentation reuses recorded data, not a new integration.',context:{realizationId:'recorded:gpu-80000:'+sha256,configuration:a.configuration,codeIdentity:a.codeIdentity,maxFastAbsolute:a.maxFastAbsolute},samples:a.fastSamples.map(s=>({timeMyr:s.timeMyr,conservation:s})),references:a.references.map(r=>({...r,snapshot:r.snapshot?{n:r.snapshot.n,time:r.snapshot.time,parameters:r.snapshot.parameters,configuration:r.snapshot.configuration,backend:r.snapshot.backend,rawArraysRetained:Boolean(r.snapshot.positions)}:null}))};
+await mkdir('reports/energy-charts',{recursive:true});
+const panels=energyPanelsData(records.samples,records.references,records.context);
+await writeFile('reports/energy-charts/recorded-80000.json',JSON.stringify(records,null,2));
+await writeFile('reports/energy-charts/recorded-80000-panels.json',JSON.stringify(panels,null,2));
+await writeFile('reports/energy-charts/recorded-80000.csv',energyPanelsCSV(panels));
+for(const kind of ['bh','direct','bias'])await writeFile(`reports/energy-charts/recorded-80000-${kind}.svg`,energyPanelSVG(panels,kind));
+await writeFile('reports/energy-charts/source-verification.json',JSON.stringify({source,sha256,configuration:a.configuration,references:panels.direct.map(r=>({timeMyr:r.timeMyr,E:r.E,errorPercent:r.relative?.percent})),sameSnapshotPairs:panels.comparison.length,rejectedTimes:panels.rejectedComparisonTimes,summary:panels.summary},null,2));
+console.log(JSON.stringify({references:panels.direct.length,pairs:panels.comparison.length,rejected:panels.rejectedComparisonTimes,summary:panels.summary}));

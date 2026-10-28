@@ -1,0 +1,43 @@
+15 
+ 
+Além disso, ao projetarmos a equação (15) na direção radial, obtemos a 
+dinâmica na coordenada r: 
+ 𝑟̈ − 𝑙2
+μ2𝑟3 = −𝐺𝑀
+𝑟2  (20) 
+   
+   
+Nessa expressão, o termo 
+𝑙2
+𝜇2𝑟3 surge da contribuição do movimento 
+angular, enquanto o termo à direita representa a atração gravitacional. 
+Para simplificar a resolução dessa equação diferencial, é conveniente 
+realizar uma mudança de variável, definindo: 
+ 𝑢 = 1
+𝑟 (21) 
+ 
+Essa substituição permite reescrever o problema em função do ângulo θ, 
+em vez do tempo t, o que é mais adequado para descrever órbitas.  
+Utilizando a relação entre 𝑟 e 𝜃, juntamente com a conservação do 
+momento angular  𝑟2θ̇ =
+𝑙
+μ podemos transformar as derivadas temporais em 
+derivadas em relação a θ. 
+Após essa mudança de variável e alguma manipulação algébrica, a 
+equação radial assume a forma:  
+ 𝑑2
+𝑑θ2 (1
+𝑟)+ 1
+𝑟 = 𝐺𝑀μ2
+𝑙2  (22) 
+   
+Essa equação diferencial possui solução conhecida, que descreve a 
+trajetória orbital em coordenadas polares: 
+ 𝑟(θ)= α
+1 + εcosθ (23) 
+em que α =
+𝑙2
+𝐺𝑀μ2 é uma constante relacionada aos parâmetros do 
+sistema, e ε é a excentricidade da órbita. 
+A equação (23) corresponde à forma polar geral das seções cônicas, que 
+descreve todas as possíveis trajetórias de um sistema sob uma força central 

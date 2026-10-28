@@ -1,0 +1,20 @@
+Browser tab: 7, Title: "Guilherme Aleixo Bandeira · TCC UEMS · Dinâmica galáctica", URL: "http://localhost:4180/experimento-ncorpos.html".
+The following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
+Removed element IDs: 194-195, 200, 202-203, 205-208, 210-215
+~		71 button ▶ Iniciar, ID: start
++			210 text 1.40 Myr
++			211 text 3.79 ms
++				212 text 75 FPS
++				213 text 14
++				214 text 0.07 s
++			215 text 8.65e-5 % (U GPU f32)
++			216 text 3.50e-9
++			217 text 1.61e-8
++			218 text Diagnóstico em 1.400 Myr.
++			219 text Medição em 1,40000002086 Myr · 2 estados medidos · Energia estimada — GPU direta Float32.
++			220 text Referência direta Float64: automática · última avaliação em 0 Myr · intervalo escolhido 50 Myr. Próxima coleta a partir de 50 Myr.
++				221 container Espessura do disco × tempo
++					222 container Description: Energia estimada — GPU Float32, Help: Pares diretos na GPU · potencial Float32; redução Float64. Escalas verticais independentes. Valores e limites disponíveis nos metadados.
++					223 container Description: Conservação energética — Referência direta Float64, Help: Snapshots auditados · guia tracejado · zoom automático. Escalas verticais independentes. Valores e limites disponíveis nos metadados.
++				224 container Description: Curvas de rotação · componentes e Eilers et al. (2019), Help: Linhas: campo gravitacional atual do modelo. Pontos pretos: 38 velocidades circulares publicadas por Eilers et al. (2019). Barras: erros estatísticos assimétricos; incertezas sistemáticas não incluídas.
+The focused UI element is 0 AXWebArea Guilherme Aleixo Bandeira · TCC UEMS · Dinâmica galáctica, URL: localhost:4180/experimento-ncorpos.html

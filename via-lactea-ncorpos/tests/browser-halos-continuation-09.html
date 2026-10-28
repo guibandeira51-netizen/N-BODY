@@ -1,0 +1,51 @@
+<!doctype html><meta charset="utf-8"><title>Campanha A/B/C — versão 0.9.0</title>
+<h1>Aquecimento do disco: halos A, B e C</h1><button id="run">Executar campanha controlada</button><p id="status">Aguardando</p><pre id="output">Sem resultados</pre>
+<script type="module">
+import {GPUBackend} from '../src/compute/gpu.js';
+import {GPUFixedHaloBackend} from '../src/compute/gpu-fixed-halo.js';
+import {createHaloExperiment} from '../src/physics/halo-experiments.js';
+import {fixedHaloTable,fixedHaloDiagnostics,tableValue} from '../src/physics/fixed-halo.js';
+import {G} from '../src/physics/constants.js';
+import {diagnostics} from '../src/physics/diagnostics.js';
+import {laboratorySample,toomreBin} from '../src/physics/laboratory.js';
+import {diskAnalysis} from '../src/physics/disk-analysis.js';
+import {detectCapabilities} from '../src/compute/capability.js';
+const $=id=>document.getElementById(id),yieldUI=()=>new Promise(r=>{const c=new MessageChannel();c.port1.onmessage=()=>{c.port1.close();c.port2.close();r();};c.port2.postMessage(null);});
+function compactDisk(a){if(!a.available)return a;return {available:true,plane:{normal:a.plane.normal,center:a.plane.center,tiltDegrees:a.plane.tiltDegrees,fitCount:a.plane.fitCount,eigenvalues:a.plane.eigenvalues},centerOfMass:a.centerOfMass,fixed:a.fixed,instant:a.instant,rings:a.rings.map(r=>({...r,modes:r.modes.map(({m,re,im,amplitude,phaseRadians,nullRms,independentGroups,approximateNullP})=>({m,re,im,amplitude,phaseRadians,nullRms,independentGroups,approximateNullP})),conditionalQ:toomreBin({lower:r.lower,upper:r.upper,mass:r.mass,effectiveCount:r.count,dispersion:[r.sigmaR,r.sigmaPhi,r.globalPlane.sigmaNormal],h50:r.globalPlane.h50})}))};}
+function compactLab(s){return {timeMyr:s.timeMyr,n:s.n,conservation:s.conservation,virial:s.virial,diskTiltDegrees:s.diskTiltDegrees,components:s.components.map(c=>({id:c.id,mass:c.mass,count:c.count,r50:c.r50,R50:c.R50,massMedianAbsZ:c.massMedianAbsZ,centerOfMass:c.centerOfMass,velocity:c.velocity,angularMomentum:c.angularMomentum,profiles:[0,20,200,1000].some(t=>Math.abs(t-s.timeMyr)<1e-6)?{spherical:c.profiles.spherical,cylindrical:c.profiles.cylindrical,vertical:c.profiles.vertical}:undefined}))};}
+const hash=async data=>Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',data)),b=>b.toString(16).padStart(2,'0')).join('');
+const configs=[];
+for(const haloCount of [4000,8000,20000])for(const haloSeed of [2026,2027])configs.push({baseN:10000,baryonSeed:2026,haloSeed,haloCount,haloMode:'live',duration:1000,label:haloCount===4000?'A':'B'});
+configs.push({baseN:10000,baryonSeed:2026,haloMode:'fixed',duration:1000,label:'C'},{baseN:10000,baryonSeed:2026,haloMode:'fixed',fieldSoftening:.1,duration:1000,label:'C-soft'});
+for(const variant of [{haloMode:'live',haloCount:4000,label:'A'},{haloMode:'live',haloCount:20000,label:'B'},{haloMode:'fixed',label:'C'}])configs.push({...variant,baseN:10000,baryonSeed:2027,haloSeed:2027,duration:200});
+for(const haloCount of [20000,40000])for(const haloSeed of [2026,2027])configs.push({baseN:50000,baryonSeed:2026,haloSeed,haloCount,haloMode:'live',duration:1000,label:haloCount===20000?'A':'B'});
+configs.push({baseN:50000,baryonSeed:2026,haloMode:'fixed',duration:1000,label:'C'},{baseN:50000,baryonSeed:2026,haloMode:'fixed',fieldSoftening:.1,duration:1000,label:'C-soft'});
+for(const variant of [{haloMode:'live',haloCount:4000,label:'A-dt'},{haloMode:'live',haloCount:20000,label:'B-dt'},{haloMode:'fixed',label:'C-dt'}])configs.push({...variant,baseN:10000,baryonSeed:2026,haloSeed:2026,dt:.05,duration:200});
+for(const haloCount of [4000,20000])configs.push({baseN:10000,baryonSeed:2026,haloSeed:2026,haloCount,haloMode:'live',epsilon:.3,duration:200,label:haloCount===4000?'A-epsilon':'B-epsilon'});
+for(const config of configs)if(config.baseN===50000)config.duration=200;
+$('run').onclick=async()=>{
+ $('run').disabled=true;const report={schema:'halo-comparison-09-v1',startedUTC:new Date().toISOString(),status:'running',capabilities:await detectCapabilities(),plannedRuns:configs.length,sourceHashes:{},runs:[],protocol:{units:'kpc,Myr,1e10 Msun',cadenceMyr:5,pairedBaryons:true,haloSeeds:[2026,2027],energy:'Barnes-Hut theta=.5 self potential; fixed halo adds sum m Phi_external once',diskPlane:'robust PCA core within 20 kpc; original plane retained',azimuthalNull:'random rotations of original antipodal label pairs; approximate P not global evidence',fixedHaloC:'same finite density; unsoftened analytic field, no response; C-soft controls Plummer smoothing of mean halo'}};let gpu;const selfCache=new Map();
+ try{
+  for(const path of ['src/physics/initial-legacy.js','src/physics/initial-allocated.js','src/physics/constants.js','src/physics/models.js','src/physics/diagnostics.js','src/physics/laboratory.js','src/physics/mass-audit.js','src/physics/halo-experiments.js','src/physics/fixed-halo.js','src/physics/disk-analysis.js','src/physics/forces.js','src/physics/integrator.js','src/compute/gpu.js','src/compute/gpu-fixed-halo.js','tests/browser-halos-continuation-09.html'])report.sourceHashes[path]=await hash(await(await fetch('../'+path)).arrayBuffer());
+  const previous=await(await fetch('../reports/v0.9.0/halo-campaign-prefix.json')).json();
+  if(previous.runs.length!==11)throw Error('Prefix requires exactly 11 completed runs');
+  for(let i=0;i<11;i++){const expected={dt:.1,epsilon:.1,theta:.5,withHalo:true,...configs[i]};for(const [key,value] of Object.entries(expected))if(previous.runs[i].config[key]!==value)throw Error('Prefix config mismatch: '+key);}
+  report.runs=previous.runs;report.originalStartedUTC=previous.startedUTC;report.continuationUTC=report.startedUTC;report.sourceEpochs=[{runIDs:[0,10],sourceHashes:previous.sourceHashes},{runIDs:[11,21],sourceHashes:report.sourceHashes}];report.protocol.amendment='Remaining high-resolution comparisons limited to common 200 Myr before inspecting their outcomes; low-resolution T1000 retained and historical A T2540.4 available separately. A partially integrated high run was discarded for runtime reasons; no partial data treated as final.';
+  for(let index=11;index<configs.length;index++){
+   const config={dt:.1,epsilon:.1,theta:.5,withHalo:true,...configs[index]},state=createHaloExperiment(config),table=fixedHaloTable({softening:config.fieldSoftening??0}),key=config.baseN+':'+config.baryonSeed+':'+config.epsilon;
+   if(!selfCache.has(key)){const baryons=createHaloExperiment({...config,haloMode:'fixed'}),g=await GPUBackend.create();await g.initialize(baryons,config);selfCache.set(key,(await g.snapshot()).accelerations);g.dispose();}
+   gpu=await(config.haloMode==='fixed'?GPUFixedHaloBackend:GPUBackend).create();await gpu.initialize(state,{...config,haloTable:table});
+   const run={id:index,config:{...config,n:state.n},initialMeta:state.meta,initialHashes:{positions:await hash(state.positions.buffer),velocities:await hash(state.velocities.buffer),masses:await hash(state.masses.buffer)},samples:[],initialField:[],wallStart:performance.now()},stepsPerSample=Math.round(5/config.dt);let first=true;
+   for(let t=0;t<=config.duration;t+=5){
+    $('status').textContent=`Ensaio ${index+1}/${configs.length}: ${config.label}, N=${state.n}, halo=${config.haloSeed??'fixo'}, t=${t}/${config.duration} Myr`;
+    if(t)await gpu.step(stepsPerSample);const s=await gpu.snapshot();s.time=t;
+    if(first){const self=selfCache.get(key);for(const [lo,hi] of [[0,2],[2,4],[4,8],[8,12],[12,20],[20,30]]){let M=0,E=0,D=0,B=0,count=0;for(let i=0;i<self.length/3;i++)if(s.components[i]===1){const k=3*i,R=Math.hypot(s.positions[k],s.positions[k+1]);if(R<lo||R>=hi)continue;const r=Math.hypot(...s.positions.subarray(k,k+3)),factor=r?-G*tableValue(fixedHaloTable(),r,'mass')/r**3:0,reference=[0,1,2].map(j=>factor*s.positions[k+j]),actual=[0,1,2].map(j=>s.accelerations[k+j]-self[k+j]),w=s.masses[i];M+=w;count++;for(let j=0;j<3;j++){E+=w*(actual[j]-reference[j])**2;D+=w*reference[j]**2;B+=w*(actual[j]-reference[j])*reference[j];}}run.initialField.push({lower:lo,upper:hi,count,rmsAbsolute:M?Math.sqrt(E/M):null,rmsRelative:D?Math.sqrt(E/D):null,projectedRelativeBias:D?B/D:null});}first=false;}
+    const d=config.haloMode==='fixed'?fixedHaloDiagnostics(s,{...config,algorithm:'barnes-hut'},table):diagnostics(s,{...config,algorithm:'barnes-hut'}),lab=laboratorySample(s,d,{...config,forceMethod:config.haloMode==='fixed'?'GPU direct baryons + fixed spherical halo':'GPU direct f32'});
+    run.samples.push({...compactLab(lab),disk:compactDisk(diskAnalysis(s))});await yieldUI();
+   }
+   run.wallMs=performance.now()-run.wallStart;delete run.wallStart;report.runs.push(run);gpu.dispose();gpu=null;$('output').textContent=JSON.stringify(report);await yieldUI();
+  }
+  report.status='completed';report.completedUTC=new Date().toISOString();$('status').textContent=`Concluído: ${report.runs.length} ensaios reais; sem certificação de equilíbrio.`;
+ }catch(e){report.status='failed';report.error=e.stack;$('status').textContent=e.message;}finally{gpu?.dispose();$('output').textContent=JSON.stringify(report);}
+};
+</script>

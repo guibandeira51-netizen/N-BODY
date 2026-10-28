@@ -1,0 +1,36 @@
+55 
+ 
+Partículas do halo Nh 32.000 0  
+Total N 80.000 80.000 
+Massa por partícula do 
+bojo 
+4,1667 × 10⁵ M☉ 2,50013× 105 𝑀⊙ 
+Massa por partícula do 
+disco 
+1,8889 × 10⁶ M☉ 1,13331× 106 𝑀⊙ 
+Massa por partícula do 
+halo 
+3,0510 × 10⁷ M☉ Não se aplica 
+Refinamento do halo 1x Não se aplica 
+Passo temporal Δt 0,1 Myr 0,1 Myr 
+Suavização ε 0,1 kpc 0,1 kpc 
+Semente aleatória 2026 2026 
+Duração registrada Até 2.000 Myr  Até 2.000 Myr 
+Integrador Leapfrog KDK Leapfrog KDK 
+Backend de integração WebGPU WebGPU 
+Precisão das trajetórias Float32 Float32 
+Referência energética CPU Float64 CPU Float64 
+Fonte: arquivos de resultados e auditoria de massa da simulação com 
+80.000 partículas. 
+Na simulação com halo vivo, todas as componentes participam 
+diretamente das interações gravitacionais. Por outro lado, na campanha de 
+comparação das quatro geometrias, o halo é representado por um campo 
+gravitacional contínuo e estático, sendo integradas apenas as partículas do disco 
+e do bojo. 
+As quatro geometrias avaliadas foram a esférica, oblata, prolata e triaxial, 
+utilizando as mesmas condições iniciais bariônicas. Essa estratégia permite 
+investigar a influência da distribuição espacial da matéria escura, embora não 
+garanta que todas as configurações representem estados de equilíbrio dinâmico. 
+Nos experimentos com halo formado por partículas, o aumento da 
+resolução foi realizado mantendo consta nte a massa total da componente.  
+Considerando um halo de matéria escura com massa total (𝑀ℎ), distribuída 

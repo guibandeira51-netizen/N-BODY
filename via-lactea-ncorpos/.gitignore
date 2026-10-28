@@ -3,3 +3,10 @@
 /node_modules/
 __pycache__/
 *.pyc
+# Ignorar arquivos JSON e JSONL grandes e pesados
+*.json
+*.jsonl
+
+# Ignorar pastas de ferramentas e executáveis
+**/tools/
+*.exe

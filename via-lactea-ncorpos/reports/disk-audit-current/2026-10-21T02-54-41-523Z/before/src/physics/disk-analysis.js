@@ -1,0 +1,81 @@
+import {validateState} from './forces.js';
+
+export const DISK_RINGS=[0,2,4,6,8,10,12,16,20,30];
+const dot=(a,b)=>a[0]*b[0]+a[1]*b[1]+a[2]*b[2];
+const cross=(a,b)=>[a[1]*b[2]-a[2]*b[1],a[2]*b[0]-a[0]*b[2],a[0]*b[1]-a[1]*b[0]];
+const norm=a=>Math.hypot(...a),sub=(a,b)=>a.map((x,i)=>x-b[i]);
+export function weightedQuantile(values,weights,q=.5){
+ if(!values.length)return null;const order=values.map((_,i)=>i).sort((a,b)=>values[a]-values[b]);let total=0,correction=0;for(const m of weights){const y=m-correction,t=total+y;correction=(t-total)-y;total=t;}if(!(total>0))return null;let s=0,c=0;for(const i of order){const y=weights[i]-c,t=s+y;c=(t-s)-y;s=t;if(s>=q*total-8*Number.EPSILON*total)return values[i];}return values[order.at(-1)];
+}
+// A plane intercept needs a symmetry-preserving location median: choose the
+// midpoint of the median interval when exactly half the mass lies on each side.
+function medianLocation(values,weights){
+ if(!values.length)return null;const order=values.map((_,i)=>i).sort((a,b)=>values[a]-values[b]),M=weights.reduce((a,b)=>a+b,0);let s=0;
+ for(let j=0;j<order.length;j++){const i=order[j];s+=weights[i];if(s>=M/2-8*Number.EPSILON*M)return Math.abs(s-M/2)<=8*Number.EPSILON*M&&j+1<order.length?(values[i]+values[order[j+1]])/2:values[i];}return values[order.at(-1)];
+}
+function smallestEigen(matrix){
+ const a=matrix.map(row=>row.slice()),v=[[1,0,0],[0,1,0],[0,0,1]];
+ for(let sweep=0;sweep<20;sweep++)for(const [p,q] of [[0,1],[0,2],[1,2]]){
+  const x=a[p][q];if(Math.abs(x)<Number.EPSILON*(Math.abs(a[p][p])+Math.abs(a[q][q])+1e-30))continue;
+  const tau=(a[q][q]-a[p][p])/(2*x),t=(tau>=0?1:-1)/(Math.abs(tau)+Math.hypot(1,tau)),c=1/Math.hypot(1,t),s=t*c;
+  a[p][p]-=t*x;a[q][q]+=t*x;a[p][q]=a[q][p]=0;
+  for(let k=0;k<3;k++)if(k!==p&&k!==q){const ap=a[k][p],aq=a[k][q];a[k][p]=a[p][k]=c*ap-s*aq;a[k][q]=a[q][k]=s*ap+c*aq;}
+  for(let k=0;k<3;k++){const vp=v[k][p],vq=v[k][q];v[k][p]=c*vp-s*vq;v[k][q]=s*vp+c*vq;}
+ }
+ const order=[0,1,2].sort((i,j)=>a[i][i]-a[j][j]),eigenvalues=order.map(i=>a[i][i]),normal=v.map(row=>row[order[0]]);if(normal[2]<0)for(let k=0;k<3;k++)normal[k]*=-1;
+ return {normal,eigenvalues};
+}
+function geometricMedian(records){
+ const weights=records.map(r=>r.m);let p=[0,1,2].map(k=>medianLocation(records.map(r=>r.p[k]),weights));
+ for(let step=0;step<24;step++){let W=0;const sum=[0,0,0];for(const r of records){const w=r.m/Math.max(1e-12,norm(sub(r.p,p)));W+=w;for(let k=0;k<3;k++)sum[k]+=w*r.p[k];}const next=sum.map(x=>x/W);if(norm(sub(next,p))<1e-10){p=next;break;}p=next;}return p;
+}
+export function fitDiskPlane(records,{aperture=20}={}){
+ if(records.length<3)return null;const geometricCenter=geometricMedian(records),core=records.filter(r=>norm(sub(r.p,geometricCenter))<aperture);if(core.length<3)return null;
+ let weights=core.map(r=>r.m),center=geometricCenter,fit;
+ for(let it=0;it<6;it++){
+  const W=weights.reduce((a,b)=>a+b,0);center=[0,1,2].map(k=>core.reduce((s,r,i)=>s+weights[i]*r.p[k],0)/W);const cov=Array.from({length:3},()=>[0,0,0]);
+  for(let i=0;i<core.length;i++){const p=sub(core[i].p,center);for(let j=0;j<3;j++)for(let k=0;k<3;k++)cov[j][k]+=weights[i]*p[j]*p[k]/W;}
+  fit=smallestEigen(cov);if(!(fit.eigenvalues[1]>64*Number.EPSILON*Math.max(1e-30,fit.eigenvalues[2])))return null;
+  const heights=core.map(r=>Math.abs(dot(sub(r.p,center),fit.normal))),scale=Math.max(1e-10,weightedQuantile(heights,core.map(r=>r.m))/.67448975);
+  weights=heights.map((h,i)=>core[i].m*Math.min(1,2.5*scale/Math.max(1e-30,h)));
+ }
+ const offset=medianLocation(core.map(r=>dot(sub(r.p,geometricCenter),fit.normal)),core.map(r=>r.m));center=geometricCenter.map((x,k)=>x+offset*fit.normal[k]);
+ const axis=Math.abs(fit.normal[0])<.9?[1,0,0]:[0,1,0],e1=sub(axis,fit.normal.map(x=>x*dot(axis,fit.normal))),u=e1.map(x=>x/norm(e1)),v=cross(fit.normal,u);
+ return {...fit,center,geometricCenter,u,v,tiltDegrees:Math.acos(Math.min(1,fit.normal[2]))*180/Math.PI,fitCount:core.length,apertureKpc:aperture,method:'6-step Huber IRLS PCA, 2.5 MAD-normal scales; geometric median center; spherical fit aperture; signed-height median intercept'};
+}
+function moments(records,normal,center){
+ if(!records.length)return {count:0,h50:null,sigmaNormal:null,meanNormalVelocity:null,meanHeight:null};const w=records.map(r=>r.m),M=w.reduce((a,b)=>a+b,0),h=records.map(r=>dot(sub(r.p,center),normal)),vn=records.map(r=>dot(r.v,normal)),mean=vn.reduce((s,x,i)=>s+w[i]*x/M,0);
+ return {count:records.length,mass:M,h50:weightedQuantile(h.map(Math.abs),w),medianSignedHeight:weightedQuantile(h,w),meanHeight:h.reduce((s,x,i)=>s+w[i]*x/M,0),meanNormalVelocity:mean,sigmaNormal:Math.sqrt(vn.reduce((s,x,i)=>s+w[i]*(x-mean)**2/M,0))};
+}
+export function diskAnalysis(state,{edges=DISK_RINGS,paired=true,fitAperture=20}={}){
+ validateState(state);const records=[];for(let i=0;i<state.n;i++)if(state.components[i]===1){const k=3*i;records.push({id:i,m:state.masses[i],p:Array.from(state.positions.subarray(k,k+3)),v:Array.from(state.velocities.subarray(k,k+3))});}
+ const plane=fitDiskPlane(records,{aperture:fitAperture});if(!plane)return {available:false,reason:'insufficient non-collinear disk positions'};
+ const firstID=records[0].id,w=records.map(r=>r.m),fixed=moments(records,[0,0,1],[0,0,0]),instant=moments(records,plane.normal,plane.center),M=w.reduce((a,b)=>a+b,0),centerOfMass=[0,1,2].map(k=>records.reduce((s,r)=>s+r.m*r.p[k]/M,0));
+ for(const r of records){const p=sub(r.p,plane.center);r.x=dot(p,plane.u);r.y=dot(p,plane.v);r.R=Math.hypot(r.x,r.y);r.phi=Math.atan2(r.y,r.x);r.vR=r.R?(r.x*dot(r.v,plane.u)+r.y*dot(r.v,plane.v))/r.R:null;r.vPhi=r.R?(r.x*dot(r.v,plane.v)-r.y*dot(r.v,plane.u))/r.R:null;}
+ const rings=edges.slice(0,-1).map((lo,index)=>{
+  const hi=edges[index+1],members=records.filter(r=>r.R>=lo&&r.R<hi),mass=members.reduce((s,r)=>s+r.m,0),localPlane=fitDiskPlane(members,{aperture:Infinity}),global=moments(members,plane.normal,plane.center),local=localPlane?moments(members,localPlane.normal,localPlane.center):null;
+  const means=['vR','vPhi'].map(key=>mass?members.reduce((s,r)=>s+r.m*(r[key]??0)/mass,0):null),sigmas=['vR','vPhi'].map((key,k)=>mass?Math.sqrt(members.reduce((s,r)=>s+r.m*((r[key]??0)-means[k])**2/mass,0)):null);
+  const modes=[1,2,3,4].map(m=>{
+   let re=0,im=0;const groups=new Map();for(const r of members){const x=r.m*Math.cos(m*r.phi),y=r.m*Math.sin(m*r.phi);re+=x;im+=y;const id=paired?Math.floor((r.id-firstID)/2):r.id,g=groups.get(id)??[0,0];g[0]+=x;g[1]+=y;groups.set(id,g);}
+   const amplitude=mass?Math.hypot(re,im)/mass:null,nullRms=mass?Math.sqrt([...groups.values()].reduce((s,g)=>s+g[0]**2+g[1]**2,0))/mass:null,independentParticleRms=mass?Math.sqrt(members.reduce((s,r)=>s+r.m*r.m,0))/mass:null,inferenceRms=mass?Math.max(nullRms,independentParticleRms):null;
+   return {m,re:mass?re/mass:null,im:mass?im/mass:null,amplitude,phaseRadians:mass?Math.atan2(im,re):null,orientationRadians:mass?Math.atan2(im,re)/m:null,nullRms,independentParticleRms,inferenceRms,independentGroups:groups.size,approximateNullP:groups.size>=30&&inferenceRms>32*Number.EPSILON?Math.exp(-((amplitude/inferenceRms)**2)):null,noiseModel:paired?'conservative maximum of randomized antipodal-pair RMS and independent-particle RMS':'independent random azimuths',qualification:'conditional sampling-noise reference; not proof of coherent spiral or calibrated temporal significance'};
+  });
+  return {lower:lo,upper:hi,radius:(lo+hi)/2,count:members.length,mass,surfaceDensity:mass/(Math.PI*(hi*hi-lo*lo)),globalPlane:global,localPlane:localPlane?{normal:localPlane.normal,tiltFromGlobalDegrees:Math.acos(Math.min(1,Math.max(-1,dot(localPlane.normal,plane.normal))))*180/Math.PI,...local}:null,meanRadialVelocity:means[0],meanAzimuthalVelocity:means[1],sigmaR:sigmas[0],sigmaPhi:sigmas[1],modes};
+ });
+ return {available:true,timeMyr:state.time??0,plane,centerOfMass,fixed,instant,rings,conventions:{positionUnits:'kpc',velocityUnits:'kpc/Myr',massUnits:'1e10 Msun',normalVelocity:'projected velocity minus population mean; no rotating-frame rate subtraction',rings:'instantaneous cylindrical selections in fitted global plane; not tracked cohorts',warp:'local median height and local normal versus fitted global plane',oddModes:'antipodal initialization suppresses odd modes; pair correlations retained in null reference',basis:'global x projected into fitted plane; possible geometric phase evolution under changing tilt'}};
+}
+export function spiralGeometry(analysis,m,{familyTests=36,alpha=.01}={}){
+ const candidates=analysis.rings.filter(r=>r.radius>=2&&r.radius<=20).filter(r=>{const a=r.modes.find(a=>a.m===m);return a.approximateNullP!=null&&a.approximateNullP<alpha/familyTests;});
+ let best=[],current=[];for(const r of candidates){if(current.length&&r.lower!==current.at(-1).upper)current=[];current.push(r);if(current.length>best.length)best=current.slice();}
+ if(best.length<3)return {available:false,reason:'no three adjacent radial bins above conditional multiple-test noise criterion',m};
+ let previous=null;const data=best.map(r=>{const mode=r.modes.find(a=>a.m===m);let phase=mode.phaseRadians;if(previous!=null)phase=previous+Math.atan2(Math.sin(phase-previous),Math.cos(phase-previous));previous=phase;const rms=mode.inferenceRms??Math.max(mode.nullRms,1/Math.sqrt(r.count));const phaseVariance=rms*rms/(2*mode.amplitude*mode.amplitude);return [Math.log(r.radius),phase,1/Math.max(phaseVariance,1e-30)];});
+ const W=data.reduce((s,r)=>s+r[2],0),mx=data.reduce((s,r)=>s+r[0]*r[2]/W,0),my=data.reduce((s,r)=>s+r[1]*r[2]/W,0),xx=data.reduce((s,r)=>s+r[2]*(r[0]-mx)**2,0),xy=data.reduce((s,r)=>s+r[2]*(r[0]-mx)*(r[1]-my),0),slope=xy/xx,intercept=my-slope*mx,residual=data.reduce((s,r)=>s+r[2]*(r[1]-intercept-slope*r[0])**2,0),slopeSE=Math.sqrt(residual/Math.max(1,data.length-2)/xx);
+ const dof=data.length-2,critical95=[0,3.841459,5.991465,7.814728,9.487729,11.070498,12.591587,14.067140][dof]??Infinity,phaseFitAccepted=residual<=critical95,uncertainty=Math.sqrt(1/xx),winding=phaseFitAccepted&&Math.abs(slope)>1.96*uncertainty;
+ return {available:winding,m,bins:best.length,radialRange:[best[0].lower,best.at(-1).upper],phaseSlope:slope,slopeSE:uncertainty,phaseFitChiSquared:residual,degreesOfFreedom:dof,phaseFitCritical95:critical95,phaseFitAccepted,pitchDegrees:winding?Math.atan(m/Math.abs(slope))*180/Math.PI:null,phaseFitRMS:Math.sqrt(residual/W),reason:!phaseFitAccepted?'single log-spiral phase model rejected under approximate noise model':!winding?'phase slope consistent with constant-phase bar/oval; no pitch estimate':null,qualification:'conditional principal-branch log-spiral phase fit; covariance, multiple patterns and radial aliasing may invalidate interpretation'};
+}
+export function patternSpeed(previous,current,dt,m,{maxReferenceOmega,familyTests=36,alpha=.01}={}){
+ if(!(dt>0)||!(maxReferenceOmega>0)||m*maxReferenceOmega*dt>=Math.PI)return {available:false,reason:'cadence cannot exclude phase aliasing under reference orbital frequency'};
+ const a=previous.modes.find(x=>x.m===m),b=current.modes.find(x=>x.m===m);if(a?.approximateNullP==null||b?.approximateNullP==null||a.approximateNullP>=alpha/familyTests||b.approximateNullP>=alpha/familyTests)return {available:false,reason:'conditional sampling-noise criterion not satisfied at both epochs'};
+ return {available:true,omegaRadiansPerMyr:Math.atan2(Math.sin(b.phaseRadians-a.phaseRadians),Math.cos(b.phaseRadians-a.phaseRadians))/(m*dt),qualification:'conditional wrapped phase difference; mode identification and reference cadence bound not guaranteed'};
+}
+

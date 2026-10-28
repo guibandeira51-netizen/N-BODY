@@ -1,0 +1,40 @@
+38 
+ 
+Essa mudança de abordagem representa a transição entre uma descrição 
+analítica do campo gravitacional e uma modelagem baseada em sistemas N -
+corpos. Dessa forma, torna-se possível investigar como a distribuição de matéria 
+escura influencia a evolução dinâmic a da galáxia por meio das interações 
+gravitacionais entre seus diferentes componentes, mantendo a coerência entre 
+a fundamentação teórica apresentada e a implementação computacional 
+desenvolvida neste trabalho. 
+5.4 Geração das Partículas 
+Após a definição dos modelos analíticos que descrevem os principais 
+componentes da Via Láctea, o passo seguinte consiste em converter essas 
+distribuições contínuas de massa em um conjunto discreto de partículas. Esse 
+procedimento estabelece as condições iniciais da simulação N -corpos, 
+permitindo que a evolução do sistema seja determinada exclusivamente pelas 
+interações gravitacionais entre as partículas. 
+Cada componente da galáxia é representado por um conjunto 
+independente de partículas, cuja distribuição espacia l é obtida a partir do 
+respectivo perfil de densidade. Dessa forma, preserva -se, em termos 
+estatísticos, a estrutura física descrita pelos modelos analíticos, ao mesmo 
+tempo em que se torna possível aplicar diretamente os métodos numéricos 
+utilizados em simulações gravitacionais. 
+A discretização foi realizada separadamente para o bojo, o disco galáctico 
+e o halo de matéria escura, conforme descrito nas subseções seguintes. 
+5.4.1 Geração das partículas do bojo 
+O bojo galáctico foi discretizado utilizando o p erfil de densidade de 
+Hernquist, apresentado na Seção 4.4. Esse perfil descreve uma distribuição 
+aproximadamente esférica, com elevada concentração de massa nas regiões 
+centrais da galáxia e decréscimo progressivo da densidade com o aumento da 
+distância ao centro. 
+Para construir essa componente, foram geradas partículas distribuídas 
+espacialmente de forma compatível com a densidade fornecida pelo modelo de 
+Hernquist. Cada partícula representa uma fração da massa total do bojo e recebe 
+uma posição tridimensional correspondente à distribuição esférica prevista pelo 
+modelo. 
+A quantidade de partículas utilizada pode ser ajustada conforme a 
+capacidade computacional disponível, mantendo -se a distribuição global de 
+massa inalterada. Dessa maneira, um maior número d e partículas proporciona 
+uma representação mais detalhada do sistema, enquanto um número menor 
+reduz o custo computacional da simulação. 

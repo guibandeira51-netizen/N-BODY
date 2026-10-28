@@ -1,0 +1,48 @@
+14 
+ 
+Essa substituição permite reescrever o problema em função do ângulo θ, 
+em vez do tempo t, o que é mais adequado para descrever órbitas.  
+Utilizando a relação entre 𝑟 e 𝜃, juntamente com a conservação do 
+momento angular  𝑟2θ̇ =
+μ
+𝑙 podemos transformar as derivadas temporais em 
+derivadas em relação a θ. 
+Após essa mudança de variável e alguma manipulação algébrica, a 
+equação radial assume a forma: 
+ 𝑑2
+𝑑θ2 (1
+𝑟)+ 1
+𝑟 = 𝐺𝑀μ2
+𝑙2  (22) 
+   
+Essa equação diferencial possui solução conhecida, que descreve a 
+trajetória orbital em coordenadas polares: 
+ 𝑟(θ)= α
+1 + εcosθ (23) 
+em que α =
+𝑙2
+𝐺𝑀μ2 é uma constante relacionada aos parâmetros do sistema, e ε 
+é a excentricidade da órbita. 
+A equação (23) corresponde à forma polar geral das seções cônicas, que 
+descreve todas as possíveis trajetórias de um sistema sob uma força central 
+gravitacional. O parâmetro fundamental que determina o tipo de órbita é a 
+excentricidade ε, que controla o formato da curva. 
+Quando ε=0, a solução reduz -se a um a circunferência, indicando uma 
+órbita perfeitamente circular, na qual a distância entre os corpos permanece 
+constante ao longo do tempo. Para valores no intervalo 0<ε<1, a trajetória passa 
+a ser uma elipse, sendo esse o caso mais comum em sistemas planetá rios. 
+Nessa situação, o centro de massa do sistema ocupa um dos focos da elipse, o 
+que implica que a distância entre os corpos varia periodicamente fenômeno 
+observado, por exemplo, na órbita dos planetas ao redor de suas estrelas. 
+No caso ε=1, a trajetória é parabólica. Esse tipo de órbita está associado 
+a um estado crítico de energia, no qual o corpo possui velocidade suficiente para 
+escapar da atração gravitacional, mas com velocidade assintótica nula. Já para 
+ε>1, a trajetória é hiperbólica, caracterizan do um encontro não ligado 
+gravitacionalmente: o corpo passa pela região de influência gravitacional e se 
+afasta indefinidamente, como ocorre com alguns cometas ou objetos 
+interestelares que atravessam sistemas estelares. 
+Do ponto de vista físico e astronômico, essa classificação é essencial para 
+compreender a dinâmica de sistemas planetários e galácticos. No Sistema Solar, 
+por exemplo, os planetas seguem órbitas aproximadamente elípticas, em 
+concordância com as leis de Kepler, enquanto cometas podem apresen tar 
+órbitas altamente excêntricas. 

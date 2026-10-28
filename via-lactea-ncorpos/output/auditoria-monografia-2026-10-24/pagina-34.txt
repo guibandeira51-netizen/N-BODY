@@ -1,0 +1,44 @@
+34 
+ 
+5. Modelagem Computacional  
+Neste capítulo é apresentada a metodologia computacional empregada 
+para modelar a dinâmica gravitacional da Via Láctea por meio de um sistema de 
+N-corpos. Inicialmente é apresentada a formulação matemática utilizada para 
+descrever a interação gravitacional entre as partículas. Em seguida, são 
+descritos os procedimentos adotados para rep resentar computacionalmente os 
+diferentes componentes da galáxia, o método numérico empregado para 
+integração temporal das equações de movimento e, por fim, a implementação 
+computacional desenvolvida neste trabalho. 
+ 
+5.1 Do modelo analítico ao problema de N-corpos 
+Nos capítulos anteriores foram apresentados os principais componentes 
+estruturais da Via Láctea , bojo galáctico, disco e halo de matéria escura , bem 
+como os modelos analíticos empregados para descrever suas distribuições de 
+massa e seus respectivos potenciais gravitacionais. A partir desses modelos foi 
+possível determinar o comportamento das velocidades orbitais e compreender a 
+influência da matér ia escura na dinâmica galáctica.  Embora essa abordagem 
+reproduza adequadamente diversas propriedades observacionais da Via Láctea, 
+ela baseia -se na hipótese de que cada componente da galáxia pode ser 
+representado por uma distribuição contínua de massa. Des sa forma, o campo 
+gravitacional é previamente conhecido e a aceleração de uma partícula pode ser 
+obtida diretamente por meio do gradiente do potencial gravitacional. 
+Entretanto, uma galáxia não é formada por um meio contínuo, mas sim 
+por um conjunto extremamente grande de objetos individuais, incluindo estrelas, 
+nuvens de gás, aglomerados estelares e partículas de matéria escura. Cada um 
+desses corpos exerce influência gravitacional sobre todos os demais, fazendo 
+com que o campo gravitacional do sistema sej a consequência direta da 
+distribuição instantânea de massa e não uma quantidade previamente definida. 
+Essa característica torna a descrição analítica insuficiente para 
+representar toda a complexidade dinâmica de um sistema gravitacional 
+composto por bilhõe s de corpos. Em particular, quando se deseja investigar a 
+evolução temporal da distribuição de matéria ou analisar fenômenos coletivos 
+decorrentes da interação gravitacional entre partículas, torna -se necessário 
+abandonar a hipótese de campo contínuo e ado tar uma formulação discreta.  
+Nesse contexto surge o problema de N -corpos, cuja finalidade é determinar a 
+evolução temporal de um sistema composto por N partículas que interagem 
+exclusivamente por meio da gravitação. Diferentemente da abordagem 
+apresentada nos capítulos anteriores, na qual a aceleração é obtida a partir de 
+potenciais analíticos previamente estabelecidos, o método de N -corpos calcula 
+explicitamente as forças gravitacionais entre todas as partículas do sistema, 
+permitindo que o potencial gravi tacional emerja naturalmente da própria 
+distribuição de massa. 

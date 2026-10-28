@@ -1,0 +1,11 @@
+Browser tab: 4, Title: "Guilherme Aleixo Bandeira · TCC UEMS · Dinâmica galáctica", URL: "http://localhost:4180/experimento-ncorpos.html".
+The following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
+Removed element IDs: 202-203, 252
+~		30 pop up button (disabled, collapsed, settable) Refinamento do halo · matéria escura, Value: ×16, ID: halo-refinement, Secondary Actions: Expand
++		252 text Nova realização: bojo 16 · disco 48 · halo 0. Total: 64. Sem halo; refinamento não aplicado.
++		253 text 64 corpos físicos · ~0.0 MiB estimados · alocação e desempenho ainda precisam de teste.
+~			247 pop up button (collapsed, settable) Distribuição de massa, Value: Bojo + disco · sem halo, ID: model, Secondary Actions: Expand
+~					249 Bojo + disco + halo
+~					250 (selected) Bojo + disco · sem halo
++				254 text 75 FPS
+The focused UI element is 238 button (expanded) Resolução e reprodutibilidade, Secondary Actions: Collapse

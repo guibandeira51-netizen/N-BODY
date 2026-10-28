@@ -1,0 +1,3 @@
+case,n,baseN,haloFactor,backend,forceAlgorithm,precision,dtMyr,epsilonKpc,observedStepMs,observedSteps,timeMyr
+before,330277,24648,32,CPU,Barnes-Hut,Float64,0.1,0.1,11245.35,9,0.9
+after,330277,24648,32,GPU,direct,Float32,0.1,0.1,412.48,67,6.70000009983778

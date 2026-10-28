@@ -1,0 +1,30 @@
+47 
+ 
+ 
+5.5 Condições Iniciais da Simulação 
+A definição das condições iniciais constitui uma etapa fundamental em 
+qualquer simulação de sistemas N -corpos, uma vez que determina o estado 
+físico do sistema no instante inicial ( 𝑡 = 0). Após a discretização dos 
+componentes da Via Láctea, cada partícula passa a representar um elemento de 
+massa cuja evolução será determinada  pelas interações gravitacionais com 
+todas as demais partículas do sistema. 
+Neste trabalho, as condições iniciais são definidas por três grandezas 
+fundamentais: massa, posição e velocidade. Essas informações são suficientes 
+para caracterizar completamente o estado dinâmico de cada partícula e permitir 
+a integração temporal das equações de movimento. 
+Cada partícula 𝑖 é representada pelo conjunto de parâmetros: 
+ 𝑃𝑖 = (𝑚𝑖,𝑟𝑖⃗⃗ ,𝑣𝑖⃗⃗⃗ ) (93) 
+Cada partícula 𝑖 é representada pelo conjunto de parâmetros  
+𝑃𝑖 = (𝑚𝑖,𝑟𝑖⃗⃗ ,𝑣𝑖⃗⃗⃗ ), em que 𝑚𝑖 representa a massa da partícula,  𝑟𝑖⃗⃗ = (𝑥𝑖,𝑦𝑖,𝑧𝑖) 
+corresponde ao vetor posição e 𝑣𝑖⃗⃗⃗ = (𝑣𝑥,𝑖,𝑣𝑦,𝑖,𝑣𝑧,𝑖)representa o vetor velocidade. 
+Tabela 1 – Variáveis físicas utilizadas na representação das partículas do 
+sistema N-corpos. 
+Variável Descrição Unidade 
+𝑚𝑖 Massa da partícula kg 
+𝑥𝑖 ,𝑦𝑖 ,𝑧𝑖 Coordenadas espaciais kpc 
+𝑣𝑥,𝑖, 𝑣𝑦,𝑖, 𝑣𝑧,𝑖 Componentes da velocidade 𝑘𝑚 𝑠−1 
+Fonte: Próprio Autor. 
+ 
+A distribuição espacial inicial das partículas é obtida conforme descrito na 
+Seção 5.4, sendo cada componente da galáxia gerado a partir do respectivo 
+perfil de densidade. Após essa etapa, todas as partículas são armazenadas em 

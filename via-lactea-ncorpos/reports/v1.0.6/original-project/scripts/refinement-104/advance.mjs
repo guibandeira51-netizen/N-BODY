@@ -1,0 +1,6 @@
+import{readFile,writeFile}from'node:fs/promises';import{resolve}from'node:path';
+const base=resolve(import.meta.dirname,'../../reports/v1.0.4'),c=JSON.parse(await readFile(resolve(base,'campaign.json'),'utf8'));
+if(c.runs.some(r=>r.stage==='factorial200'))throw Error('Already registered');
+const evidence=[];for(const p of c.runs.filter(r=>r.stage==='factorial20')){const r=JSON.parse(await readFile(resolve(base,'runs',p.id+'.json'),'utf8'));if(r.status!=='completed'||r.conservation.maxAbsEnergyError>1e-4)throw Error('Investigate short control first');evidence.push({id:r.id,conservation:r.conservation,wallSeconds:r.wallSeconds,precisionAudit:r.precisionAudit});}
+await writeFile(resolve(base,'short-to-medium-decision.json'),JSON.stringify({registeredUTC:new Date().toISOString(),evidence,decision:'All 12 measured short controls completed without a conservation failure. Advance the same four families to 200 Myr. No claim of structural stability.'},null,2));
+c.runs.push(...c.runs.filter(r=>r.stage==='factorial20').map(r=>({...r,id:r.id.replace('-t20','-t200'),stage:'factorial200',durationMyr:200,cadenceMyr:5})));await writeFile(resolve(base,'campaign.json'),JSON.stringify(c,null,2)+'\n');console.log('Registered 12 medium controls');

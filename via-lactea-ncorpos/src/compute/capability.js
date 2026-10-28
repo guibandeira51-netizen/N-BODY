@@ -6,7 +6,7 @@ export function defaultBudgetBytes(memoryGiB = globalThis.navigator?.deviceMemor
   return Number.isFinite(memoryGiB) && memoryGiB > 0 ? Math.min(memoryGiB * 1024 ** 3 / 8, 1024 * MiB) : 256 * MiB;
 }
 
-export function estimateResources(n, { backend = 'gpu', readback = true, cpuCopies = 2 } = {}) {
+export function estimateResources(n, { backend = 'gpu', readback = true, cpuCopies = 2, cpuWorkers = 1,gpuDiagnostics=false } = {}) {
   if (!Number.isSafeInteger(n) || n < 0) throw new RangeError('N deve ser um inteiro seguro não negativo.');
   // CPU reference: xyz position/velocity/acceleration Float64 + mass Float64 + component Uint8.
   const cpuStateBytes = 81 * n;
@@ -15,8 +15,11 @@ export function estimateResources(n, { backend = 'gpu', readback = true, cpuCopi
   const readbackBytes = backend === 'gpu' && readback ? 3 * perStorageBufferBytes : 0;
   const cpuScratchBytes = backend === 'gpu' ? 32 * n : 0; // f32 packing may overlap a later snapshot before GC
   const barnesHutBytes = backend === 'cpu-bh' ? 384 * n : 0; // conservative tree/work arrays estimate
-  const estimatedBytes = cpuStateBytes * cpuCopies + cpuScratchBytes + gpuResidentBytes + readbackBytes + barnesHutBytes;
-  return { n, cpuStateBytes, cpuCopies, cpuScratchBytes, gpuResidentBytes, readbackBytes, barnesHutBytes, perStorageBufferBytes, estimatedBytes,
+  const parallelTreeBytes=backend==='cpu-bh'&&cpuWorkers>1?384*n:0; // owner tree + read-only publication, no per-worker particle clones
+  const workerOverheadBytes=backend==='cpu-bh'&&cpuWorkers>1?Math.min(16,cpuWorkers)*1024**2:0; // stated estimate; engine/JIT memory varies
+  const gpuDiagnosticBytes=backend==='gpu'&&gpuDiagnostics?48*31*32:0;
+  const estimatedBytes = cpuStateBytes * cpuCopies + cpuScratchBytes + gpuResidentBytes + readbackBytes + barnesHutBytes+parallelTreeBytes+workerOverheadBytes+gpuDiagnosticBytes;
+  return { n, cpuStateBytes, cpuCopies, cpuScratchBytes, gpuResidentBytes, readbackBytes, barnesHutBytes,parallelTreeBytes,workerOverheadBytes,cpuWorkers,gpuDiagnosticBytes,perStorageBufferBytes, estimatedBytes,
     approximate: true, includes: 'duas cópias de estado CPU por padrão, packing f32, três buffers GPU, staging opcional; árvore BH estimada',
     excludes: 'driver, canvas, navegador, fragmentação e outras aplicações' };
 }
@@ -24,10 +27,11 @@ export function estimateResources(n, { backend = 'gpu', readback = true, cpuCopi
 export function assessResources(n, capabilities = {}, options = {}) {
   const backend = options.backend ?? 'gpu';
   const estimate = estimateResources(n, { ...options, backend });
-  const budgetBytes = options.budgetBytes ?? capabilities.safetyBudgetBytes ?? defaultBudgetBytes(capabilities.memoryGiB);
-  if (!Number.isFinite(budgetBytes) || budgetBytes <= 0) throw new RangeError('Orçamento de memória deve ser positivo.');
+  const enforceMemoryBudget = options.enforceMemoryBudget !== false;
+  const budgetBytes = enforceMemoryBudget ? (options.budgetBytes ?? capabilities.safetyBudgetBytes ?? defaultBudgetBytes(capabilities.memoryGiB)) : null;
+  if (enforceMemoryBudget && (!Number.isFinite(budgetBytes) || budgetBytes <= 0)) throw new RangeError('Orçamento de memória deve ser positivo.');
   const reasons = [];
-  if (estimate.estimatedBytes > budgetBytes) reasons.push('Estimativa de memória excede o orçamento de segurança configurado.');
+  if (enforceMemoryBudget && estimate.estimatedBytes > budgetBytes) reasons.push('Estimativa de memória excede o orçamento de segurança configurado.');
   if (backend === 'gpu') {
     const limits = capabilities.webgpu?.limits ?? capabilities.limits;
     const available = capabilities.webgpu?.available ?? Boolean(limits);
@@ -42,7 +46,7 @@ export function assessResources(n, capabilities = {}, options = {}) {
       if (n > 0xffffffff) reasons.push('Índices de partículas excedem a faixa u32 do shader.');
     }
   }
-  return { admissible: reasons.length === 0, reasons, budgetBytes, estimate };
+  return { admissible: reasons.length === 0, reasons, budgetBytes, enforceMemoryBudget, memoryPolicy: enforceMemoryBudget ? 'configured-budget' : 'adapter-limits-only', estimate };
 }
 
 export function serializeLimits(limits) {

@@ -1,0 +1,49 @@
+24 
+ 
+O perfil NFW (Navarro –Frenk–White) é um modelo matemático uti lizado 
+para descrever a distribuição de densidade da matéria escura em halos 
+galácticos. Esse perfil foi proposto por Julio Navarro, Carlos Frenk e Simon White 
+a partir de simulações cosmológicas numéricas. A equação do perfil NFW é dada 
+por: 
+ ρ(r)= ρ0
+r
+rs
+(1 + r
+rs
+)
+2 (48) 
+ 
+Na equação do perfil NFW, ρ(r) representa a densidade da matéria escura 
+em função da distância ao centro da galáxia, enquanto ρ0 corresponde a uma 
+densidade característica do halo. O termo rs define o raio de escala do halo de 
+matéria escura, e r representa a distância radial em relação ao centro galáctico. 
+É possível determinar a massa acumulada dentro de um raio r. Para isso, integra-
+se a densidade sobre o volume esférico do halo: 
+ 
+ 𝑀(𝑟)= 4π∫ ρ(𝑟′)𝑟′2
+𝑟
+0
+ 𝑑𝑟′ (49) 
+ 
+Substituindo o perfil NFW (53) na integral (54) e resolvendo, obtém-se: 
+ 
+ 𝑀(𝑟)= 4πρ0𝑟𝑠
+3 [ln(1 + 𝑟
+𝑟𝑠
+)− 𝑟/𝑟𝑠
+1 + 𝑟/𝑟𝑠
+] (50) 
+ 
+Essa expressão fornece a massa total de matéria escura contida até uma 
+distância r do centro da galáxia. Ela é muito utilizada em estudos de curvas de 
+rotação, pois permite relacionar a distribuição de matéria escura com as 
+velocidades orbitais observadas nas regiões externas das galáxias espirais. 
+Para o perfil NFW, o comportamento da massa M(r) pode ser analisado 
+em dois casos principais. 
+Quando r ≪ rs, ou seja, em regiões muito próximas ao centro da galáxia, 
+a densidade apresenta comportamento aproximadamente inversamente 
+proporcional ao raio. Nesse limite, a massa cresce aproximadamente como: 
+ 𝑀(𝑟)∝ 𝑟2 (51) 
+ 
+Isso indica que, nas regiões centrais, a massa aumenta rapidamente com 
+a distância ao centro. 

@@ -1,0 +1,41 @@
+import {requireEnergyAuditCadence} from '../energy-audit-cadence.js';
+import {copyEnergySnapshot} from '../physics/live-energy.js';
+
+export function automaticEnergyPolicy(n,workers=4,requestedCadenceMyr=200,memoryBudgetBytes=96*1024*1024,{enforceMemoryBudget=true}={}){
+ requestedCadenceMyr=requireEnergyAuditCadence(requestedCadenceMyr);
+ if(enforceMemoryBudget&&(!Number.isFinite(memoryBudgetBytes)||memoryBudgetBytes<0))throw Error('Orçamento da referência energética inválido.');
+ const snapshotBytes=57*n,estimatedWorkingBytes=snapshotBytes*(workers+7);
+ // Physical sampling is chosen by the user. Bound cost with one active job
+ // and one pending snapshot, not an unrequested N-squared physical interval.
+ const resolutionCadenceMyr=requestedCadenceMyr;
+ return {requestedCadenceMyr,resolutionCadenceMyr,cadenceMyr:resolutionCadenceMyr,snapshotBytes,estimatedWorkingBytes,memoryBudgetBytes:enforceMemoryBudget?memoryBudgetBytes:null,enforceMemoryBudget,
+  allowed:Number.isSafeInteger(n)&&n>0&&(!enforceMemoryBudget||estimatedWorkingBytes<=memoryBudgetBytes),maxEvaluationMs:null,slowWarningMs:60000,maxReferences:4096};
+}
+
+export function energyCadenceForCost(policy){
+ // Slow jobs can omit real epochs through the bounded queue; never promise
+ // reconstructed measurements, nor silently change the requested cadence.
+ return policy.requestedCadenceMyr;
+}
+
+// Runs only at actual diagnostic states. No additional integration, pause or force.
+export class EnergySnapshotSampler{
+ constructor(){this.requestedCadenceMyr=null;this.memoryBudgetBytes=undefined;this.enforceMemoryBudget=true;this.next=0;this.started=false;this.disabled=false;}
+ due(time,n){return !this.disabled&&automaticEnergyPolicy(n,4,this.requestedCadenceMyr??200,this.memoryBudgetBytes,{enforceMemoryBudget:this.enforceMemoryBudget}).allowed&&time>=this.next;}
+ capture(state,fast,options){
+  if(this.disabled)return null;
+  const requested=requireEnergyAuditCadence(options?.energyAuditCadenceMyr??200);
+  if(this.requestedCadenceMyr!==null&&requested!==this.requestedCadenceMyr)throw Error('A cadência pertence à realização. Reinicie para aplicar outro intervalo.');
+  this.requestedCadenceMyr=requested;
+  this.memoryBudgetBytes=options?.energyReferenceBudgetBytes;
+  this.enforceMemoryBudget=options?.enforceEnergyReferenceBudget!==false;
+  const policy=automaticEnergyPolicy(state.n,4,requested,this.memoryBudgetBytes,{enforceMemoryBudget:this.enforceMemoryBudget});
+  if(!policy.allowed){this.disabled=true;return {unavailable:true,timeMyr:state.time??0,reason:'Orçamento de memória da referência automática excedido; a simulação continua.',policy};}
+  const time=state.time??0;
+  if(!this.started&&time!==0){this.disabled=true;return {unavailable:true,timeMyr:time,reason:'Estado inicial não preservado. A referência automática começará corretamente na próxima execução.',policy};}
+  if(time<this.next||this.started&&time===0)return null;
+  const requestedTimeMyr=this.next;
+  this.started=true;this.next=(Math.floor(time/policy.cadenceMyr)+1)*policy.cadenceMyr;
+  return {state:copyEnergySnapshot(state),fast:structuredClone(fast),options:structuredClone(options),requestedTimeMyr,nextCaptureMyr:this.next,policy};
+ }
+}

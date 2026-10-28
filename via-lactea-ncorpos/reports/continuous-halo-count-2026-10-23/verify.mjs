@@ -1,0 +1,11 @@
+import{readFile,writeFile}from'node:fs/promises';import{createHash}from'node:crypto';
+const folder='reports/continuous-halo-count-2026-10-23/',sha=b=>createHash('sha256').update(b).digest('hex'),baseline=JSON.parse(await readFile('reports/halo-amplification-2026-10-22/physics-before.json','utf8')),changed=[];
+for(const[file,hash]of Object.entries(baseline))if(sha(await readFile(file))!==hash)changed.push(file);
+const gpu=JSON.parse(await readFile(folder+'gpu-check.json','utf8')),tests=await readFile(folder+'tests.tap','utf8');
+if(changed.length||!gpu.passed||!tests.includes('pass 236')||!tests.includes('fail 0'))throw Error('Physics, GPU or test regression');
+const path='reports/halo-geometry-integrated-2026-10-22/code-identity.json',id=JSON.parse(await readFile(path,'utf8'));
+for(const file of ['src/live-particle-input.js','src/render/continuous-halo-density.js','tests/continuous-halo-input.test.mjs',folder+'README.md',folder+'density-profile.csv',folder+'density-parameters.json'])id.files[file]='';
+for(const file of Object.keys(id.files))id.files[file]=sha(await readFile(file));
+id.version='continuous-active-count-density-v4';id.builtUTC=new Date().toISOString();id.sha256=sha(JSON.stringify(id.files));await writeFile(path,JSON.stringify(id,null,2));
+await writeFile(folder+'verification.json',JSON.stringify({physicsFiles:Object.keys(baseline).length,changedPhysicsFiles:changed,tests:236,gpuCheckPassed:gpu.passed,identity:id.version,sha256:id.sha256},null,2));
+console.log('Verified original physics files, visual GPU test and 236 software tests.');

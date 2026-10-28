@@ -1,0 +1,10 @@
+import{readFile,writeFile}from'node:fs/promises';import{resolve}from'node:path';import{createHash}from'node:crypto';
+const root=resolve(import.meta.dirname,'../..'),base=resolve(root,'reports/v1.0.4'),hash=b=>createHash('sha256').update(b).digest('hex'),manifest=JSON.parse(await readFile(resolve(base,'initial-manifest.json'),'utf8')),references=[];
+for(const seed of[2026,2027,2028])for(const fine of[false,true])for(const kind of['fixed-halo','full-continuum']){
+ const ident=kind==='fixed-halo'?`B-${fine?'thin2':'base'}-s${seed}-t200`:`A-${fine?'thin2':'base'}-s${seed}-t200`,path=`reports/v1.0.3/runs/${ident}.json`,bytes=await readFile(resolve(root,path)),r=JSON.parse(bytes),row=manifest.find(r=>r.family===(fine?'D':'B')&&r.baryonSeed===seed),d=JSON.parse(await readFile(resolve(base,row.file),'utf8')),q=r.particleStates[0],m=r.particleConstants.masses,n=m.length;
+ for(const key of['positions','velocities'])for(let i=0;i<3*n;i++)if(Math.abs(Math.fround(d[key][i])-q[key][i])>1e-13*Math.max(1,Math.abs(q[key][i])))throw Error('Control phase differs '+ident);
+ for(let i=0;i<n;i++)if(Math.fround(d.masses[i])!==m[i]||d.subpopulations[i]!==r.particleConstants.subpopulations[i])throw Error('Control mass/tag differs');
+ references.push({kind,refinedThin:fine,seed,path,sha256:hash(bytes),id:ident,n,matchingNewInput:row.id,phaseVerified:true,initialNativeRoundoffTolerance:1e-13,maxDurationMyr:200,qualification:'Measured preserved v1.0.3 control with exactly matching uploaded baryons. Reused evidence, not a new integration. Fixed halo changes halo response as well as granularity. Full continuum removes all self-gravitating response.'});
+}
+await writeFile(resolve(base,'control-references.json'),JSON.stringify({references,externalHaloGrid:{path:'reports/v1.0.3/halo-fixed-grid.json',sha256:hash(await readFile(resolve(root,'reports/v1.0.3/halo-fixed-grid.json')))},qualification:'Letters A-D in1.0.4 name the four live factorial families, not the A/B/C model codes in1.0.3.'},null,2)+'\n');console.log('Verified',references.length,'same-phase fixed and continuous controls');
+

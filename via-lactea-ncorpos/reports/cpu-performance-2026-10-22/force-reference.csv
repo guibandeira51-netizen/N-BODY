@@ -1,0 +1,8 @@
+"N","targets","scope","BH_relative_L2","native_relative_L2","GPU_relative_L2","BH_max_target_relative","native_max_target_relative","GPU_max_target_relative","native_initial_and_three_steps_wall_ms","native_initial_force_wall_ms"
+"1000","1000","all targets","0.002577573825692648","0.00943246220889092","","0.01826956202433508","0.11462364361189127","","22.106400000000008","17.903299999999945"
+"10000","10000","all targets","0.005596371353898364","0.01147451569790847","","0.13564399637331032","0.22509097278562903","","84.88490000000002","34.83259999999996"
+"80000","96","96 stratified target probes; no global bound","0.004730500471638004","0.007637793392901649","","0.008755775194047008","0.027073790820813477","","522.0788999999995","157.77010000000064"
+"536000","96","96 stratified target probes; no global bound","0.004175242632819738","0.008484200532838798","","0.010298391081256504","0.022038030210067044","","2975.3548999999985","845.5628999999972"
+"10000","96","96 stratified direct Float64 target probes on the same GPU-quantized initial state, effective G and epsilon²; no global bound","","","0.000001972906991974777","","","0.000005595783686791277","",""
+"80000","96","96 stratified direct Float64 target probes on the same GPU-quantized initial state, effective G and epsilon²; no global bound","","","0.000010773333032967489","","","0.00002171658230162051","",""
+"536000","96","96 stratified direct Float64 target probes on the same GPU-quantized initial state, effective G and epsilon²; no global bound","","","0.000041300002467582366","","","0.00012820219686369573","",""

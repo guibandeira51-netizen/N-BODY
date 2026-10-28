@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-research\Agama-master\py\test_coordinates.py", line 87, in <module>
+    if test(
+       ^^^^^
+  File "C:\Users\PC\Documents\Codex\2026-10-10\s-2\work\v1-research\Agama-master\py\test_coordinates.py", line 41, in test
+    l, b, pml, pmb = agama.transformCelestialCoords(agama.fromICRStoGalactic, ra, dec, pmra, pmdec)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'agama' has no attribute 'transformCelestialCoords'

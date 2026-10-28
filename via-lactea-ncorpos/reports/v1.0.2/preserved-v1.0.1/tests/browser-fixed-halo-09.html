@@ -1,0 +1,14 @@
+<!doctype html><meta charset="utf-8"><title>Validação do halo fixo</title><h1>CPU/GPU — halo finito</h1><button id="run">Executar testes</button><p id="status">Aguardando</p><pre id="output">Sem resultados</pre>
+<script type="module">
+import {GPUBackend,compareCPUvsGPU} from '../src/compute/gpu.js';
+import {GPUFixedHaloBackend} from '../src/compute/gpu-fixed-halo.js';
+import {createHaloExperiment} from '../src/physics/halo-experiments.js';
+import {FixedHaloLeapfrog,fixedHaloTable,fixedHaloDiagnostics,addFixedHaloAccelerations} from '../src/physics/fixed-halo.js';
+import {energyDrift} from '../src/physics/laboratory.js';
+const $=id=>document.getElementById(id),err=(a,b)=>Math.sqrt(a.reduce((s,x,i)=>s+(x-b[i])**2,0)/Math.max(1e-30,a.reduce((s,x)=>s+x*x,0)));
+$('run').onclick=async()=>{let gpu;const report={dateUTC:new Date().toISOString(),tests:[]};try{
+report.liveKernel=await compareCPUvsGPU(undefined,{n:1025,steps:8});
+for(const softening of [0,.1]){const config={dt:.1,epsilon:.1,haloMode:'fixed',haloTable:fixedHaloTable({softening})},s=createHaloExperiment({baseN:1000,haloMode:'fixed'}),cpu=new FixedHaloLeapfrog(s,config);cpu.initialize();gpu=await GPUFixedHaloBackend.create();await gpu.initialize(s,config);const gs0=await gpu.snapshot(),forceRMS=err(s.accelerations,gs0.accelerations),d0=fixedHaloDiagnostics(s,config,config.haloTable),g0=fixedHaloDiagnostics(gs0,config,config.haloTable);cpu.step(200);await gpu.step(200);const gs=await gpu.snapshot(),d=fixedHaloDiagnostics(s,config,config.haloTable),g=fixedHaloDiagnostics(gs,config,config.haloTable),positionRMS=err(s.positions,gs.positions),velocityRMS=err(s.velocities,gs.velocities);report.tests.push({softening,forceRMS,positionRMS,velocityRMS,cpuEnergyDrift:energyDrift(d,d0),gpuEnergyDrift:energyDrift(g,g0),passed:forceRMS<3e-5&&positionRMS<3e-5&&velocityRMS<3e-4});gpu.dispose();gpu=null;}
+report.passed=report.liveKernel.status==='passed'&&report.tests.every(t=>t.passed);$('status').textContent=report.passed?'Aprovado':'Falha';
+}catch(e){report.error=e.stack;report.passed=false;$('status').textContent=e.message;}finally{gpu?.dispose();$('output').textContent=JSON.stringify(report,null,2);}};
+</script>

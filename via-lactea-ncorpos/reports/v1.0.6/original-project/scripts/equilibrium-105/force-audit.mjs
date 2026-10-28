@@ -1,0 +1,14 @@
+import{readFile,writeFile,readdir}from'node:fs/promises';import{resolve}from'node:path';import{externalGridAt}from'../../src/physics/external-grid.js';
+const base=resolve(import.meta.dirname,'../../reports/v1.0.5'),norm=a=>Math.hypot(...a),quantile=(a,q)=>a.slice().sort((a,b)=>a-b)[Math.floor((a.length-1)*q)],records=[];let grid;
+for(const f of(await readdir(resolve(base,'runs'))).filter(f=>f.endsWith('.json')).sort()){
+ const r=JSON.parse(await readFile(resolve(base,'runs',f),'utf8'));if(r.model==='A')continue;const s=r.particleStates[0],m=r.particleConstants.masses,tags=r.particleConstants.subpopulations,n=m.length,ids=[];if(r.model==='B')grid??=JSON.parse(await readFile(resolve(base,'../v1.0.3/halo-fixed-grid.json'),'utf8'));
+ for(const pop of [0,1,2,3]){const members=tags.map((t,i)=>t===pop?i:-1).filter(i=>i>=0);for(let j=0;j<Math.min(32,members.length);j++)ids.push(members[Math.floor(j*members.length/Math.min(32,members.length))]);}
+ const points=[],G=r.effectiveParameters.G,eps2=r.effectiveParameters.epsilonSquared;
+ for(const i of ids){const k=3*i,sum=[0,0,0],correction=[0,0,0];for(let j=0;j<n;j++){if(j===i)continue;const b=3*j,delta=[s.positions[b]-s.positions[k],s.positions[b+1]-s.positions[k+1],s.positions[b+2]-s.positions[k+2]],d2=delta.reduce((s,v)=>s+v*v,eps2),factor=G*m[j]/(d2*Math.sqrt(d2));for(let a=0;a<3;a++){const term=factor*delta[a],next=sum[a]+term;correction[a]+=Math.abs(sum[a])>=Math.abs(term)?sum[a]-next+term:term-next+sum[a];sum[a]=next;}}
+  const ref=sum.map((v,k)=>v+correction[k]);if(r.model==='B'){const ext=externalGridAt(grid,...s.positions.slice(k,k+3)).acceleration;for(let a=0;a<3;a++)ref[a]+=ext[a];}const actual=s.accelerations.slice(k,k+3),relative=norm(actual.map((v,a)=>v-ref[a]))/Math.max(norm(ref),1e-30);points.push({particle:i,population:tags[i],position:s.positions.slice(k,k+3),reference:ref,actual,relative});
+ }
+ records.push({id:r.id,n,model:r.model,points,relativeForceQuantiles50_90_99_Max:[.5,.9,.99,1].map(q=>quantile(points.map(p=>p.relative),q)),qualification:'Direct compensated Float64 force at up to32 fixed IDs per population of actual initial Float32 readback. Pair parameters match effective GPU G/epsilonSquared; frozen scalar field evaluated Float64 for B. Does not establish long-trajectory precision.'});
+}
+await writeFile(resolve(base,'force-audit.json'),JSON.stringify({schema:'stationarity-force-audit-105',runs:records},null,2)+'\n');console.log('Initial-force references',records.length,'runs; maximum',Math.max(...records.flatMap(r=>r.points.map(p=>p.relative))));
+
+

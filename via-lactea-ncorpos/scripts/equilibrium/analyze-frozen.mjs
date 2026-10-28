@@ -1,0 +1,10 @@
+import {readFile,writeFile,readdir} from 'node:fs/promises';
+import {resolve} from 'node:path';
+import {equilibriumSample,ringMembership} from '../../src/physics/equilibrium-analysis.js';
+const dir=resolve(process.argv[2]??'reports/v1.0.0/agama');
+function frozenDiagnostic(s,phi){const d={mass:0,kinetic:0,potential:0,momentum:[0,0,0],angularMomentum:[0,0,0],centerOfMass:[0,0,0],momentumScale:0,angularMomentumScale:0,energyApproximate:false,algorithm:'AGAMA frozen total continuum potential; orbital energy, not N-body self energy'};for(let i=0;i<s.n;i++){const k=3*i,m=s.masses[i],p=Array.from(s.positions.subarray(k,k+3)),v=Array.from(s.velocities.subarray(k,k+3)),L=[p[1]*v[2]-p[2]*v[1],p[2]*v[0]-p[0]*v[2],p[0]*v[1]-p[1]*v[0]];d.mass+=m;d.kinetic+=m*v.reduce((a,x)=>a+x*x,0)/2;d.potential+=m*phi[i];d.momentumScale+=m*Math.hypot(...v);d.angularMomentumScale+=m*Math.hypot(...L);for(let j=0;j<3;j++){d.momentum[j]+=m*v[j];d.angularMomentum[j]+=m*L[j];d.centerOfMass[j]+=m*p[j];}}d.centerOfMass=d.centerOfMass.map(x=>x/d.mass);d.energy=d.kinetic+d.potential;return d;}
+for(const file of (await readdir(dir)).filter(x=>x.endsWith('-frozen-protocol.json'))){
+ const p=JSON.parse(await readFile(resolve(dir,file),'utf8')),samples=[];let base=null,labels=null;
+ for(const row of p.records){const a=JSON.parse(await readFile(resolve(dir,row.file),'utf8')),s={...a,time:a.timeMyr,positions:Float64Array.from(a.positions),velocities:Float64Array.from(a.velocities),accelerations:Float64Array.from(a.accelerations),masses:Float64Array.from(a.masses),components:Uint8Array.from(a.components)};const d=frozenDiagnostic(s,a.specificPotential);base??=d;labels??=ringMembership(s);samples.push(equilibriumSample(s,{diagnostic:d,baseline:base,initialMembership:labels}));}
+ await writeFile(resolve(dir,file.replace('-protocol.json','-analysis.json')),JSON.stringify({schema:'frozen-continuum-analysis-v1',protocol:p,samples},null,2));console.log(file,samples.map(s=>({T:s.timeMyr,h:s.disk.instant.h50,sigma:s.disk.instant.sigmaNormal,energyError:s.errors.energy})));
+}

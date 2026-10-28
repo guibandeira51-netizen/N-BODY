@@ -1,0 +1,16 @@
+<!doctype html><meta charset="utf-8"><title>Reprodução histórica 0.9.0</title>
+<h1>Modelo A — reprodução controlada</h1><p>N=50000, semente padrão 2026, dt=0,1 Myr, ε=0,1 kpc; GPU direto f32. Os parâmetros ausentes da execução relatada são hipóteses explícitas.</p>
+<button id="run">Executar reprodução</button><p id="status">Aguardando</p><pre id="output">Sem resultados</pre><details><summary>Estados físicos selecionados</summary><pre id="states"></pre></details>
+<script type="module">
+import {createGalaxy} from '../reports/history/v0.8.0/source/src/physics/initial-legacy.js';
+import {GPUBackend} from '../reports/history/v0.8.0/source/src/compute/gpu.js';
+import {diagnostics} from '../reports/history/v0.8.0/source/src/physics/diagnostics.js';
+import {laboratorySample} from '../reports/history/v0.8.0/source/src/physics/laboratory.js';
+import {detectCapabilities} from '../reports/history/v0.8.0/source/src/compute/capability.js';
+const $=id=>document.getElementById(id);
+$('run').onclick=async()=>{let gpu;const config={n:50000,seed:2026,dt:.1,epsilon:.1,theta:.5,withHalo:true},states=[],report={schema:'historical-reproduction-09-v1',startedUTC:new Date().toISOString(),config,status:'running',capabilities:await detectCapabilities(),historicalClaim:{timeMyr:2540.4,diskHeightChangePercent:483.8,bulgeRadiusChangePercent:47.1,tiltDegrees:2.9,seed:null,epsilon:null,rawFileAvailable:false},samples:[],sourceIdentity:await (await fetch('../reports/v0.9.0/baseline-identity.json')).json()};
+try{const initial=createGalaxy(config);gpu=await GPUBackend.create();await gpu.initialize(initial,config);let last=0;const times=[0,5,10,15,20,...Array.from({length:50},(_,i)=>(i+1)*50),2540.4];
+for(const t of times){$('status').textContent=`Integrando ${t} / 2540,4 Myr`;if(t)await gpu.step(Math.round((t-last)/config.dt));const s=await gpu.snapshot();s.time=t;report.samples.push(laboratorySample(s,diagnostics(s,{...config,algorithm:'barnes-hut'}),{...config,forceMethod:'GPU direct f32'}));if([0,20,200,1000,2540.4].includes(t))states.push({timeMyr:t,n:s.n,positions:Array.from(s.positions),velocities:Array.from(s.velocities),masses:Array.from(s.masses),components:Array.from(s.components)});last=t;$('output').textContent=JSON.stringify(report);$('states').textContent=JSON.stringify(states);await new Promise(r=>setTimeout(r,0));}
+report.status='completed';report.completedUTC=new Date().toISOString();$('status').textContent='Concluído — reprodução dos parâmetros assumidos; compare com os dados originais antes de afirmar identidade.';
+}catch(e){report.status='failed';report.error=e.stack;$('status').textContent=e.message;}finally{gpu?.dispose();$('output').textContent=JSON.stringify(report);$('states').textContent=JSON.stringify(states);$('run').disabled=false;}};
+</script>

@@ -1,0 +1,48 @@
+12 
+ 
+ 𝑟 2̈ = −𝐺 𝑚1
+𝑟3 𝑟  (6) 
+ 
+Obtêm-se, dessa forma, duas equações diferenciais ordinárias acopladas, 
+cujo objetivo é descrever a evolução temporal das posições de cada corpo.  
+Ao definir o vetor 𝑅⃗  como aquele que descreve a posição do centro de 
+massa do sistema (MOEBS; LING; SANNY , 2016): 
+ 𝑅⃗ = 𝑚1𝑟1⃗⃗⃗ + 𝑚2𝑟2⃗⃗⃗ 
+𝑚1 + 𝑚2
+ (7) 
+ 
+Usando a equação (1) como referência, é possível expressar os vetores 
+posição de cada um dos corpos em função dessa relação: 
+ 𝑟1⃗⃗⃗ = 𝑅⃗ − 𝑚2
+𝑚1 + 𝑚2
+ 𝑟  
+ 
+(8) 
+ 𝑟2⃗⃗⃗ = 𝑅⃗ + 𝑚1
+𝑚1 + 𝑚2
+ 𝑟  (9) 
+ 
+  A partir de (8) e (9) em (5) e (6), obtemos as seguintes equações: 
+ 𝑅⃗ ̈ − 𝑚2
+𝑚1 + 𝑚2
+ 𝑟 ̈ = 𝐺𝑚2
+𝑟3  𝑟  
+ 
+(10) 
+ 𝑅⃗ ̈ + 𝑚1
+𝑚1 + 𝑚2
+ 𝑟 ̈ = −𝐺𝑚1
+𝑟3  𝑟  (11) 
+ 
+Somando as equações (10) e (11) obtemos:  
+ (𝑚1 + 𝑚2) 𝑅⃗ ̈ = 0 
+ 
+(12) 
+ 𝑟 ̈ = −𝐺(𝑚1 + 𝑚2)
+𝑟3  𝑟  (13) 
+ 
+Essas relações matemáticas permitem extrair dois resultados 
+fundamentais. Em primeiro lugar, observa-se que o centro de massa se comporta 
+como um referencial inercial, uma vez que a segunda derivada temporal de seu 
+vetor posição é nula. Além disso, o sistema de dois corpos pode ser 
+reinterpretado de forma equivalente como o movimento de uma única partícula 

@@ -1,0 +1,76 @@
+[
+  {
+    family: 'A',
+    haloContrast: {
+      mean: 1259.5383125743247,
+      sd: 284.7084200936928,
+      values: [Array]
+    },
+    baryonContrast: {
+      mean: 217.66678877228856,
+      sd: 88.05991932882009,
+      values: [Array]
+    },
+    continuous: {
+      mean: 59.027243067451195,
+      sd: 134.1789695567391,
+      values: [Array]
+    }
+  },
+  {
+    family: 'B',
+    haloContrast: {
+      mean: 121.38511001023755,
+      sd: 68.04900875653115,
+      values: [Array]
+    },
+    baryonContrast: {
+      mean: 217.66678877228856,
+      sd: 88.05991932882009,
+      values: [Array]
+    },
+    continuous: {
+      mean: 59.027243067451195,
+      sd: 134.1789695567391,
+      values: [Array]
+    }
+  },
+  {
+    family: 'C',
+    haloContrast: {
+      mean: 1437.9601579348928,
+      sd: 505.39693208289737,
+      values: [Array]
+    },
+    baryonContrast: {
+      mean: 170.50130302223783,
+      sd: 49.23783466943091,
+      values: [Array]
+    },
+    continuous: { mean: 71.89529931186756, sd: 39.31064964156396, values: [Array] }
+  },
+  {
+    family: 'D',
+    haloContrast: {
+      mean: 142.83122013047512,
+      sd: 50.50948789191348,
+      values: [Array]
+    },
+    baryonContrast: {
+      mean: 170.50130302223783,
+      sd: 49.23783466943091,
+      values: [Array]
+    },
+    continuous: { mean: 71.89529931186756, sd: 39.31064964156396, values: [Array] }
+  },
+  {
+    family: 'E',
+    haloContrast: { mean: 127.51211329251824, sd: 71.0258751547756, values: [Array] },
+    baryonContrast: {
+      mean: 170.50130302223783,
+      sd: 49.23783466943091,
+      values: [Array]
+    },
+    continuous: { mean: 71.89529931186756, sd: 39.31064964156396, values: [Array] }
+  }
+]

@@ -1,0 +1,35 @@
+56 
+ 
+uniformemente entre (𝑁ℎ) macropartículas de mesma massa, a massa individual 
+de cada partícula é determinada pela expressão: 
+ 𝑚ℎ = 𝑀ℎ
+𝑁ℎ
+. (105) 
+Em que (𝑚ℎ) representa a massa individual de cada macropartícula do 
+halo, (𝑀ℎ) corresponde à massa total do halo de matéria escura e (𝑁ℎ) 
+representa o número de macropartículas utilizadas em sua discretização. 
+O refinamento é realizado multiplicando -se a quantidade original de 
+partículas por um fator \(f\), denominado fator de refinamento, conforme: 
+ 𝑁ℎ
+′ = 𝑓𝑁ℎ (106) 
+Como a massa total do halo deve permanecer constante, a massa 
+individual das novas partículas é reduzida na mesma proporção: 
+ 
+ 𝑚ℎ
+′ = 𝑚ℎ
+𝑓  (107) 
+Nessas expressões, (𝑁ℎ
+′) corresponde ao número de partículas após o 
+refinamento, (𝑚ℎ
+′ ) representa a nova massa individual de cada macropartícula e 
+(𝑓) indica quantas vezes a quantidade original de partículas foi aumentada. 
+Por exemplo, um refinamento de fator (𝑓 = 10) significa que o halo passa 
+a ser representado por dez vezes mais partículas, cada uma contendo um 
+décimo da massa individual original, enquanto a massa total permanece 
+inalterada. 
+Esse procedimento é importante porque macropartículas excessivamente 
+massivas podem pr oduzir perturbações gravitacionais artificiais durante sua 
+interação com as estrelas do disco galáctico. Ao aumentar a quantidade de 
+partículas e reduzir suas massas individuais, busca -se diminuir os efeitos da 
+granularidade gravitacional, permitindo uma r epresentação mais detalhada da 
+distribuição de matéria escura. 

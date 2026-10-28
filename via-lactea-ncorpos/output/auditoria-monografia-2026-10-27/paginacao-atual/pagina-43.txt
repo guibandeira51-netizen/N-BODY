@@ -1,0 +1,26 @@
+43 
+ 
+utilizados diretamente para calcular a aceleração sobre um corpo de prova e 
+passam a definir a distribuição espacial inicial das partículas que compõem a 
+simulação. 
+No presente trabalho, os três principais componentes estruturais da Via 
+Láctea são representados p or distribuições discretas derivadas de seus 
+respectivos modelos analíticos. 
+O bojo galáctico  é construído a partir do perfil de Hernquist, cuja 
+distribuição de densidade descreve adequadamente a concentração de massa 
+na região central da galáxia. As partí culas geradas segundo esse perfil 
+representam a componente esferoidal responsável por uma parcela significativa 
+do potencial gravitacional nas regiões internas. 
+O disco galáctico é representado utilizando o modelo de Miyamoto–Nagai. 
+Esse perfil fornece uma distribuição achatada de massa, compatível com a 
+estrutura observada da Via Láctea, permitindo posicionar partículas de forma 
+coerente com a geometria do disco estelar. 
+Já o halo de matéria escura  é construído a partir do perfil de Navarro –
+Frenk–White (NFW), amplamente empregado em estudos cosmológicos para 
+descrever a distribuição de matéria escura em halos galácticos. As partículas 
+geradas por esse modelo representam a componente invisível responsável por 
+grande parte da massa total da galáxia  e exercem papel fundamental na 
+dinâmica gravitacional em regiões mais afastadas do centro. 
+A Figura 4 ilustra conceitualmente essa transformação, em que 
+distribuições contínuas de densidade são convertidas em conjuntos discretos de 
+partículas que servirão como condições iniciais para a simulação N-corpos. 

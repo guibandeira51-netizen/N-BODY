@@ -1,0 +1,3 @@
+# Tabelas científicas 1.0
+
+Somente ensaios concluídos. JSON bruto e metadados são a fonte completa. Massas são ponderadas; frequência de partícula não substitui massa. `upper` vazio denota overflow, com densidade indefinida. Q e P de modos são condicionais. `h50_global_plane` usa o plano instantâneo global; `h50_local_plane` usa o plano local. Coortes retêm a seleção radial inicial, enquanto rings usa seleções instantâneas. Energia dos ensaios GPU é diagnosticada por Barnes–Hut e é aproximada; frozen-continuum contém energia orbital no potencial total congelado e outro integrador. Unidades constam dos cabeçalhos.

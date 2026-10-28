@@ -1,0 +1,7 @@
+import test from 'node:test';import assert from 'node:assert/strict';
+import {allocation,roundedState} from '../scripts/resolution-decision/common.js';
+import {COMPONENT_MASSES} from '../src/physics/equilibrium-field.js';
+const pool={counts:[4,8,12],n:24,positions:Array.from({length:72},(_,i)=>i+.01),velocities:Array.from({length:72},(_,i)=>-i*.01),meta:{method:'fixture'}};
+test('resolution allocation changes only component count and particle mass; fixed blocks remain identical',()=>{const a=allocation(pool,[4,4,4]),b=allocation(pool,[4,4,12]);assert.deepEqual(a.positions.subarray(0,24),b.positions.subarray(0,24));assert.deepEqual(a.velocities.subarray(0,24),b.velocities.subarray(0,24));assert.deepEqual(a.masses.subarray(0,8),b.masses.subarray(0,8));for(const s of [a,b])for(let c=0;c<3;c++){let mass=0;for(let i=0;i<s.n;i++)if(s.components[i]===c)mass+=s.masses[i];assert.ok(Math.abs(mass-COMPONENT_MASSES[c])<1e-12);}});
+test('disk-only A/B retain exactly the disk phases and masses of all-live C',()=>{const c=roundedState(allocation(pool,[4,8,12])),d=roundedState(allocation(pool,[4,8,12],{diskOnly:true}));assert.equal(d.n,8);assert.ok(d.components.every(x=>x===1));assert.deepEqual(d.positions,c.positions.slice(12,36));assert.deepEqual(d.velocities,c.velocities.slice(12,36));assert.deepEqual(d.masses,c.masses.slice(4,12));});
+test('allocation rejects odd and unsupported counts rather than inventing new phases',()=>{assert.throws(()=>allocation(pool,[4,7,12]));assert.throws(()=>allocation(pool,[4,16,12]));});

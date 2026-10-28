@@ -1,0 +1,18 @@
+✔ energy panels use independent negative initial denominators and common bias normalization (1.4099ms)
+✔ no direct states means no markers; absent initial direct energy never reuses BH initial (0.9684ms)
+✔ normalization refuses cancellation while absolute total energy remains available (13.3404ms)
+✔ comparison rejects mismatched epochs, K, mass, G, softening, N and external terms (0.3852ms)
+✔ independent energy axes retain a common time interval, direct guide and unchanged isolated historical bias markers (4.6579ms)
+✔ small signed values and flat scales remain readable without pretending numerical certainty (1.0007ms)
+✔ same-state bias modes and CSV retain exact measured values and realization (4.458ms)
+✔ existing 80000-particle observations keep all six exact reference epochs and source values (6.4896ms)
+✔ energy timeline preserves every measured epoch beyond structural history retention and resets (3.8735ms)
+✔ exact zero total energy still has a finite display domain without relative normalization (0.486ms)
+ℹ tests 10
+ℹ suites 0
+ℹ pass 10
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 99.0623

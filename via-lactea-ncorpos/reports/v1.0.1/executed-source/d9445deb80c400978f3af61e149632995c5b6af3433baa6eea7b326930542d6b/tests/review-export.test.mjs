@@ -1,0 +1,7 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {crc32,csv,createZip} from '../src/export/zip.js';
+import {copyState} from '../src/export/state.js';
+import {stateTables} from '../src/export/review.js';
+test('Review ZIP preserves CRC32, UTF-8, quoted CSV values and missing fields',async()=>{assert.equal(crc32(new TextEncoder().encode('123456789')),0xcbf43926);const table=csv(['indice','descrição','valor'],[[42,'ação, "medida"',NaN]]);assert.ok(table.includes('"ação, ""medida"""'));assert.ok(!table.includes('NaN'));const zip=await createZip([{name:'tabelas/partículas.csv',data:table}]).arrayBuffer(),v=new DataView(zip);assert.equal(v.getUint32(0,true),0x04034b50);assert.equal(v.getUint32(zip.byteLength-22,true),0x06054b50);assert.throws(()=>createZip([{name:'../fora.csv',data:''}]));});
+test('Synthetic export copies are independent and CSV reports the actual massive state and epoch',()=>{const original={n:1,positions:new Float64Array([1,2,3]),velocities:new Float64Array([.1,.2,.3]),accelerations:new Float64Array([.01,.02,.03]),masses:new Float64Array([.5]),components:new Uint8Array([1])},state=copyState(original);state.positions[0]=9;assert.equal(original.positions[0],1);const tables=stateTables({massiveState:state,time:12});assert.equal(tables.length,1);assert.ok(tables[0].data.includes('"disco","0.5","5000000000","9"'));assert.ok(tables[0].data.includes('"12"'));assert.deepEqual(stateTables(null),[]);});

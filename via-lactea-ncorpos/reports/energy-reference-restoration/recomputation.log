@@ -1,0 +1,60 @@
+{
+  "status": "passed",
+  "scope": "Restoration workflow, not a new equilibrium campaign",
+  "N": 2048,
+  "backend": "CPU Worker",
+  "force": "direct Float64",
+  "dtMyr": 0.1,
+  "epsilonKpc": 0.1,
+  "seed": 2026,
+  "normalization": "independent direct energy computed at t=0",
+  "results": [
+    {
+      "timeMyr": 0,
+      "n": 2048,
+      "energy": -1.9518018861826163,
+      "recomputedEnergy": -1.9518018861826159,
+      "absoluteRecomputationDifference": 4.440892098500626e-16,
+      "signedPercent": 0,
+      "denominator": 1.9518018861826163,
+      "costMs": 42.59999999962747
+    },
+    {
+      "timeMyr": 24.900000000000084,
+      "n": 2048,
+      "energy": -1.95183466010358,
+      "recomputedEnergy": -1.95183466010358,
+      "absoluteRecomputationDifference": 0,
+      "signedPercent": -0.0016791622754239281,
+      "denominator": 1.9518018861826163,
+      "costMs": 43.12999999988824
+    },
+    {
+      "timeMyr": 73.10000000000012,
+      "n": 2048,
+      "energy": -1.951809144137617,
+      "recomputedEnergy": -1.951809144137617,
+      "absoluteRecomputationDifference": 0,
+      "signedPercent": -0.000371859206211687,
+      "denominator": 1.9518018861826163,
+      "costMs": 46.299999999813735
+    }
+  ],
+  "exportedSVG": "energia-2048-baixada.svg",
+  "directPoints": 3,
+  "interpolatedDirectSegments": 0,
+  "versionTraceability": {
+    "energySourcesMatchEmbeddedManifest": [
+      "src/physics/live-energy.js",
+      "src/physics/pair-energy-partition.js",
+      "src/physics/validation-101.js",
+      "src/compute/live-energy-reference.js",
+      "src/compute/energy-reference-worker.js",
+      "src/physics/forces.js",
+      "src/physics/integrator.js",
+      "src/physics/initial.js"
+    ],
+    "embeddedManifest": "d0b1ac3bff606a87890247289594eb4f69939f059875c28a75b4f3949b378992",
+    "note": "The browser fetched the previously served UI manifest before the final rebuild. It is preserved in the raw export, not relabelled as the final UI version. The energy evaluation, force, initial state and integrator sources listed here match that manifest byte for byte. Final interface identity is in reports/interface-106/code-identity.json."
+  }
+}

@@ -1,0 +1,41 @@
+34 
+ 
+ 𝑎 = −∇⃗⃗ ϕ (72) 
+   
+Como estamos interessados na velocidade circular no plano do disco, 
+usamos apenas a componente radial do campo gravitacional. Em coordenadas 
+cilíndricas, essa componente é dada por: 
+ aR = −∂Φ
+∂R (73) 
+Para uma órbita circular, a aceleração centrípeta necessária para manter 
+a estrela em movimento ao redor do centro galáctico é: 
+ 𝑎𝑐 = −𝑣𝑐
+2
+𝑅  (74) 
+Igualando a aceleração gravitacional radial à aceleração centrípeta, 
+temos: 
+ 𝑣𝑐
+2
+𝑅 = ∂Φ
+∂𝑅 (75) 
+Multiplicando ambos os lados por R, obtemos a relação geral para a 
+velocidade circular em um potencial axissimétrico: 
+ 𝑣𝑐
+2(𝑅)= 𝑅 ∂Φ
+∂𝑅 (76) 
+Agora aplicamos essa relação ao potencial do disco de Miyamoto–Nagai, 
+mas para simplificar a derivada, definimos: 
+ 𝐵 = 𝑎𝑑 + √𝑧2 + 𝑏𝑑
+2 (77) 
+Assim, o potencial pode ser escrito como: 
+ Φ𝑑(𝑅,𝑧)= −𝐺𝑀𝑑(𝑅2 + 𝐵2)−1/2 (78) 
+Agora derivamos em relação a R. 
+ ∂Φ𝑑
+∂𝑅 = −𝐺𝑀𝑑
+∂
+∂𝑅(𝑅2 + 𝐵2)−1/2 (79) 
+Usando a regra da cadeia: 
+ ∂Φ𝑑
+∂𝑅 = 𝐺𝑀𝑑𝑅
+(𝑅2 + 𝐵2)3/2 (80) 
+   

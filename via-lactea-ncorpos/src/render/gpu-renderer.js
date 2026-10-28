@@ -1,10 +1,11 @@
 import { checkedShader } from '../compute/gpu.js';
+import {ContinuousHaloDensity} from './continuous-halo-density.js';
 import { ALL_VISIBLE, PARTICLE_STYLE, componentExposure, renderPixelRatio, shaderFloat } from './particle-style.js';
 
 const styles = PARTICLE_STYLE.components;
 
 const RENDER_WGSL = /* wgsl */`
-struct Camera { matrix: mat4x4<f32>, viewport: vec2<f32>, pointSize: f32, pad: f32, visible: vec4<f32>, exposure: vec4<f32> };
+struct Camera { matrix: mat4x4<f32>, viewport: vec2<f32>, pointSize: f32, pad: f32, visible: vec4<f32>, exposure: vec4<f32>, eyeDepth: vec4<f32> };
 @group(0) @binding(0) var<uniform> camera: Camera;
 struct Vertex { @builtin(position) position: vec4<f32>, @location(0) color: vec4<f32>, @location(1) corner: vec2<f32>, @interpolate(flat) @location(2) component: u32 };
 @vertex fn vertex(@builtin(vertex_index) index: u32, @location(0) position: vec4<f32>, @location(1) velocity: vec4<f32>) -> Vertex {
@@ -14,7 +15,9 @@ struct Vertex { @builtin(position) position: vec4<f32>, @location(0) color: vec4
   var diameters = array<f32,3>(${styles.map(s => shaderFloat(s.diameter)).join(',')});
   let component = min(u32(velocity.w),2u);
   var clip = camera.matrix * vec4<f32>(position.xyz, 1.0);
-  let depthRatio = ${shaderFloat(PARTICLE_STYLE.depthReference)} / max(clip.w, 0.05);
+  // clip.w is 1 in orthographic projection: it is not a physical eye distance.
+  let eyeDepth = dot(camera.eyeDepth, vec4<f32>(position.xyz,1.0));
+  let depthRatio = ${shaderFloat(PARTICLE_STYLE.depthReference)} / max(eyeDepth, 0.05);
   let depthScale = clamp(sqrt(depthRatio), ${shaderFloat(PARTICLE_STYLE.minDepthScale)}, ${shaderFloat(PARTICLE_STYLE.maxDepthScale)});
   let normalized = min(1.0, camera.exposure[component] * max(1.0, depthRatio * depthRatio));
   let diameter = camera.pointSize * diameters[component] * depthScale;
@@ -46,7 +49,7 @@ export class GPURenderer {
     if (!this.context) throw new Error('Canvas WebGPU indisponível.');
     this.format = navigator.gpu.getPreferredCanvasFormat();
     this.ready = false; this.disposed = false;
-    this.uniform = new Float32Array(28);
+    this.uniform = new Float32Array(32);
     this._countsMetadata = undefined;
     this._countsN = -1;
   }
@@ -66,6 +69,7 @@ export class GPURenderer {
       });
       this.uniformBuffer = device.createBuffer({ size: this.uniform.byteLength, usage: GPUBufferUsage.UNIFORM | GPUBufferUsage.COPY_DST });
       this.bindGroup = device.createBindGroup({ layout: this.pipeline.getBindGroupLayout(0), entries: [{ binding: 0, resource: { buffer: this.uniformBuffer } }] });
+      if(this.backend.meta?.haloRepresentation==='geometry'&&this.backend.meta?.haloField){this.continuousHalo=new ContinuousHaloDensity(device,this.format,this.uniformBuffer,this.backend.meta.haloField);await this.continuousHalo.initialize();}
       this.context.configure({ device, format: this.format, alphaMode: 'opaque' });
     } catch (error) { await device.popErrorScope(); this.dispose(); throw error; }
     const validation = await device.popErrorScope(); if (validation) { this.dispose(); throw new Error(`Render WebGPU: ${validation.message}`); }
@@ -78,14 +82,19 @@ export class GPURenderer {
     const width = Math.min(limit, Math.max(1, Math.round(this.canvas.clientWidth * dpr))), height = Math.min(limit, Math.max(1, Math.round(this.canvas.clientHeight * dpr)));
     if (this.canvas.width !== width || this.canvas.height !== height) { this.canvas.width = width; this.canvas.height = height; }
   }
-  draw(cameraMatrix, visibleComponents = ALL_VISIBLE, pointSize = PARTICLE_STYLE.pointSize) {
+  draw(cameraMatrix, visibleComponents = ALL_VISIBLE, pointSize = PARTICLE_STYLE.pointSize, {eyeDepth=null,showContinuousHalo=true,haloOpacity=.55,showHaloIsodensity=false}={}) {
     if (!this.ready || this.disposed) return;
     this.backend.assertReady();
     if (!this.backend.initialized) return;
     if (!cameraMatrix || cameraMatrix.length !== 16) throw new TypeError('A matriz da câmera precisa ter 16 valores.');
     this.resize();
     const width = this.canvas.width, height = this.canvas.height, uniform = this.uniform;
-    uniform.set(cameraMatrix, 0); uniform[16] = width; uniform[17] = height; uniform[18] = pointSize * this.pixelRatio;
+    uniform.set(cameraMatrix, 0); uniform[16] = width; uniform[17] = height; uniform[18] = pointSize * this.pixelRatio;uniform[19]=0;
+    // Older perspective callers can use the homogeneous-w row unchanged.
+    // Orthographic callers supply the actual view-space depth row explicitly.
+    if(eyeDepth)uniform.set(eyeDepth,28);
+    else if(cameraMatrix[15]!==1||cameraMatrix[3]||cameraMatrix[7]||cameraMatrix[11])uniform.set([cameraMatrix[3],cameraMatrix[7],cameraMatrix[11],cameraMatrix[15]],28);
+    else throw new TypeError('Projeção ortográfica exige a profundidade real da câmera.');
     for (let c = 0; c < 3; c++) uniform[20 + c] = visibleComponents[c] ? 1 : 0;
     const counts = this.backend.meta?.counts;
     if (counts !== this._countsMetadata || this.backend.n !== this._countsN) {
@@ -96,9 +105,10 @@ export class GPURenderer {
     const encoder = this.device.createCommandEncoder(), pass = encoder.beginRenderPass({ colorAttachments: [{
       view: this.context.getCurrentTexture().createView(), clearValue: { r: 0.015, g: 0.021, b: 0.037, a: 1 }, loadOp: 'clear', storeOp: 'store',
     }] });
+    if(showContinuousHalo&&haloOpacity>0||showHaloIsodensity)this.continuousHalo?.draw(pass,haloOpacity,{density:showContinuousHalo&&haloOpacity>0,surface:showHaloIsodensity});
     pass.setPipeline(this.pipeline); pass.setBindGroup(0, this.bindGroup);
     pass.setVertexBuffer(0, this.backend.positionBuffer); pass.setVertexBuffer(1, this.backend.velocityBuffer);
     pass.draw(6, this.backend.n); pass.end(); this.device.queue.submit([encoder.finish()]);
   }
-  dispose() { this.disposed = true; this.ready = false; this.uniformBuffer?.destroy(); this.context.unconfigure(); }
+  dispose() { this.disposed = true; this.ready = false; this.continuousHalo?.dispose();this.uniformBuffer?.destroy(); this.context.unconfigure(); }
 }

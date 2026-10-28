@@ -1,0 +1,6 @@
+import{readFile,writeFile}from'node:fs/promises';import{resolve}from'node:path';
+const base=resolve(import.meta.dirname,'../../reports/v1.0.5'),load=async f=>JSON.parse(await readFile(resolve(base,f),'utf8')),c=await load('campaign.json'),rows=await load('resolution-manifest.json'),mode=process.argv[2]??'baryons',family=process.argv[3];let plan;
+if(mode==='baryons')plan=rows.filter(r=>r.stage==='baryons').map(r=>({...r,stage:'baryon200',model:'B',kind:'fixed-halo',durationMyr:200,cadenceMyr:5}));
+else{await load('preparation-decision.json');const pilot=mode==='pilot',durationMyr=pilot?2:200;if(!pilot)await load('pilot-decision-'+family+'.json');plan=rows.filter(r=>r.stage==='halo'&&r.family===family&&(pilot?r.haloSeed===2026:(family!=='E'||r.haloSeed!==2026))).map(r=>({...r,stage:pilot?'pilot-'+family:'halo-'+family+'200',model:'C',kind:'live',durationMyr,cadenceMyr:pilot?1:10}));}
+for(const r of plan){const id=r.id+'-'+r.stage;if(c.runs.some(p=>p.id===id))continue;c.runs.push({...r,id,source:'reports/v1.0.5/'+r.file,sourceSHA256:r.sha256,dt:.05,epsilon:.1,workers:6});}await writeFile(resolve(base,'campaign.json'),JSON.stringify(c,null,2));console.log('Registered',plan.length,'protocols, total',c.runs.length);
+

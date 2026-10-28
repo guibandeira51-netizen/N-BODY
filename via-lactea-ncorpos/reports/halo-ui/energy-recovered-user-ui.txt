@@ -1,0 +1,246 @@
+Browser tab: 1, Title: "Guilherme Aleixo Bandeira · TCC UEMS · Dinâmica galáctica", URL: "http://localhost:4180/experimento-ncorpos.html".
+0 AXWebArea Guilherme Aleixo Bandeira · TCC UEMS · Dinâmica galáctica, URL: localhost:4180/experimento-ncorpos.html
+	1 container Navegação principal
+		2 link Description: Apresentação, Value: localhost:4180/index.html
+		3 link Description: Experimento N-corpos, Value: localhost:4180/experimento-ncorpos.html
+		4 link Description: Matéria Escura, Value: localhost:4180/materia-escura.html
+	5 link Description: Arquivo científico, Value: localhost:4180/arquivo-cientifico.html
+	6 container Campanha científica atual
+		7 link Description: Equilíbrio dinâmico · versão 1.0.5, Value: localhost:4180/equilibrio105.html
+		8 link Description: Condições iniciais · resultados experimentais auditados ↗, Value: localhost:4180/equilibrio-candidato.html
+	9 link Description: Ir para a visualização, Value: localhost:4180/experimento-ncorpos.html#workspace
+	10 container
+		11 image UEMS — Universidade Estadual de Mato Grosso do Sul
+		12 text PROJETO DE TCC
+		13 heading Dinâmica galáctica e matéria escura, Value: 1
+			14 text Dinâmica galáctica e matéria escura
+		15 text GUILHERME ALEIXO BANDEIRA N-CORPOS · AUTOGRAVITAÇÃO Engenharia Física · UEMS
+	16 container Configuração N-corpos
+		17 text 01
+		18 heading Simulação N-corpos, Value: 2
+			19 text Simulação N-corpos
+		20 text Cálculo local
+		21 text Bojo, disco e halo com massa. Forças calculadas entre as partículas no seu dispositivo.
+		22 text Resolução de base
+		23 pop up button (collapsed, settable) Resolução de base, Value: Automática, ID: mode, Secondary Actions: Expand
+			24 menu
+				25 (selected) Automática
+				26 Manual
+		27 text Partículas de base · N₀
+		28 stepper (disabled, settable, integer) Partículas de base · N₀, Value: 23218, ID: n
+		29 text Refinamento do halo · matéria escura
+		30 pop up button (collapsed, settable) Refinamento do halo · matéria escura, Value: ×32, ID: halo-refinement, Secondary Actions: Expand
+			31 menu
+				32 ×1 · original
+				33 ×2
+				34 ×4
+				35 ×8
+				36 ×16
+				37 (selected) ×32
+		38 text Multiplica somente as partículas do halo, mantendo sua massa total. N₀ e a semente preservam o bojo e o disco entre refinamentos. Alterar a escolha prepara uma nova realização em t=0.
+		39 text Execução atual: bojo 3.482 · disco 10.449 · halo 297.184. Total: 311.115. Halo ×32.
+		40 text Algoritmo gravitacional
+		41 pop up button (collapsed, settable) Algoritmo gravitacional, Value: Automático · ensaio local, ID: force-method, Secondary Actions: Expand
+			42 menu
+				43 (selected) Automático · ensaio local
+				44 Barnes–Hut 3D
+				45 Direto O(N²)
+		46 text Backend
+		47 pop up button (collapsed, settable) Backend, Value: Automático · ensaio local, ID: backend, Secondary Actions: Expand
+			48 menu
+				49 (selected) Automático · ensaio local
+				50 CPU · Worker f64
+				51 GPU · WebGPU direto f32
+		52 text 311.115 corpos físicos · ~86.0 MiB estimados · buffers alocados nesta execução. Cálculo efetivo: GPU WebGPU · f32.
+		53 text Passo físico · Myr
+		54 stepper (settable, integer) Passo físico · Myr, Value: 1, ID: dt
+		55 text Suavização · kpc
+		56 stepper (settable, float) Suavização · kpc, Value: 0.10000000149011612, Details: 0,1, ID: epsilon
+		57 button (collapsed) Resolução e reprodutibilidade, Secondary Actions: Expand
+			58 text Resolução e reprodutibilidade
+		59 text Intervalo de auditoria Float64 · Myr
+		60 pop up button (collapsed, settable) Intervalo de auditoria Float64 · Myr, Value: 200 Myr, ID: energy-audit-cadence, Secondary Actions: Expand
+			61 menu
+				62 (disabled) Selecione o intervalo
+				63 50 Myr
+				64 100 Myr
+				65 150 Myr
+				66 (selected) 200 Myr
+		67 text Escolha obrigatória antes de iniciar. Alterações valem para uma nova realização. Tempo físico entre auditorias; o intervalo efetivo pode aumentar conforme o custo.
+		68 button ▶ Iniciar, ID: start
+		69 button (disabled) Ⅱ Pausar, ID: pause
+		70 button Reiniciar, ID: reset
+		71 button (disabled) Encerrar, ID: stop
+		72 text Cálculos encerrados; gráficos da sessão preservados.
+		73 text 02
+		74 heading Visualização, Value: 2
+			75 text Visualização
+		76 container Componentes desenhadas
+			77 text Componentes desenhadas
+			78 container
+				79 checkbox (settable, integer) Description: Bojo · Hernquist, Value: 1, ID: show-bulge
+				80 text Bojo · Hernquist
+			81 container
+				82 checkbox (settable, integer) Description: Disco · Miyamoto–Nagai, Value: 1, ID: show-disk
+				83 text Disco · Miyamoto–Nagai
+			84 container
+				85 checkbox (settable, integer) Description: Halo · NFW modelado, Value: 0, ID: show-halo
+				86 text Halo · NFW modelado
+		87 text Ocultar altera apenas o desenho. O halo continua gravitacionalmente ativo e não representa emissão luminosa.
+		88 container Orientação da câmera
+			89 button Superior
+			90 button Lateral
+			91 button Livre
+		92 button Enquadrar halo ↗, ID: halo-view
+		178 container
+			179 button (expanded) Dispositivo e validação, Secondary Actions: Collapse
+				180 text Dispositivo e validação
+			181 text 16 processadores lógicos · WebGPU disponível · WASM sim / SIMD sim · Worker sim. amd rdna-3. RAM/VRAM exatas não são reveladas.
+			182 button Avaliar dispositivo, ID: benchmark
+			183 button Testar CPU × GPU, ID: validate-gpu
+			184 button Exportar medição ↓, ID: export
+			185 text WebGPU calcula força direta. Barnes–Hut roda em CPU f64. Os limites de buffers e o custo medido determinam a viabilidade de N.
+			186 container energy-validation
+				187 button (expanded) Validação de energia, Secondary Actions: Collapse
+					188 text Validação de energia
+				189 text Energia estimada — Barnes–Hut: aproximação numérica. Referência direta: CPU Float64 paralela e automática. Os controles abaixo são opcionais para medir um instante adicional.
+				190 text Cada série usa sua própria E₀ em t=0, na mesma realização. Desvios assinados em %. A integração pode continuar enquanto o snapshot preservado é avaliado.
+				191 button Estimar custo da referência direta, ID: energy-estimate
+				192 button (disabled) Calcular referência direta Float64, ID: energy-reference
+				193 button (disabled) Cancelar cálculo, ID: energy-cancel
+				194 progress indicator Description: Progresso da referência energética, Value: 1, ID: energy-progress
+				202 text Referências concluídas. Para outro instante, estime novamente e calcule os novos snapshots. Pontos sem interpolação.
+				203 text 2 estados auditados: 0 Myr; 1.268 Myr.
+				204 text E₀,BH = -1,84974413124; E₀,direta = -1,85012002394. Normalização direta: |E0|.
+				210 container
+					211 button (expanded) Instantes auditados e parâmetros, Secondary Actions: Collapse
+						212 text Instantes auditados e parâmetros
+					213 table
+						214 row
+							215 cell
+								216 text t [Myr]
+							217 cell
+								218 text N
+							219 cell
+								220 text E direta
+							221 cell
+								222 text δE [%]
+						223 container energy-audited
+							224 row
+								225 cell
+									226 text 0
+								227 cell
+									228 text 311115
+								229 cell
+									230 text -1,85012002394
+								231 cell
+									232 text 0
+							233 row
+								234 cell
+									251 container
+										252 button (expanded) Snapshot em 0 Myr, Secondary Actions: Collapse
+											253 text Snapshot em 0 Myr
+										254 text WebGPU · GPU direct Float32 · trajetória Float32. G=0.04498502239584923; ε²=0.009999999776482582 kpc²; dt efetivo=1 Myr; velocidades full-step, after final KDK kick. Avaliação CPU Float64 compensada; 51.295,85 ms. Normalização: |E0|.
+							237 row
+								238 cell
+									239 text 1.268
+								240 cell
+									241 text 311115
+								242 cell
+									243 text -1,84644362987
+								244 cell
+									245 text 0,198711111664
+							246 row
+								247 cell
+									255 container
+										256 button (expanded) Snapshot em 1.268 Myr, Secondary Actions: Collapse
+											257 text Snapshot em 1.268 Myr
+										258 text WebGPU · GPU direct Float32 · trajetória Float32. G=0.04498502239584923; ε²=0.009999999776482582 kpc²; dt efetivo=1 Myr; velocidades full-step, after final KDK kick. Avaliação CPU Float64 compensada; 51.666,835 ms. Normalização: |E0|.
+					250 text Energia em 10¹⁰ M☉ kpc²/Myr². Cada linha permite consultar os parâmetros do snapshot. Referências diretas não são interpoladas e não certificam estabilidade estrutural.
+				200 button (collapsed) Dados da auditoria, Secondary Actions: Expand
+					201 text Dados da auditoria
+	95 container workspace
+		96 container Via Láctea · N-corpos sintético
+			97 text SISTEMA ISOLADO · GRAVITAÇÃO NEWTONIANA
+			98 heading Via Láctea · N-corpos sintético, Value: 2, ID: scene-title
+				99 text Via Láctea · N-corpos sintético
+			100 text Espaço em kpc
+			101 container
+				102 image ID: galaxy, Description: Visualização tridimensional das partículas. Use arraste para girar e a roda de rolagem para aproximar.
+				103 container empty
+					104 heading Simulação N-corpos, Value: 3
+						105 text Simulação N-corpos
+					106 container
+						107 text Selecione o modelo e a resolução. Pressione  Iniciar  para calcular a evolução gravitacional.
+				108 text Arraste para girar Role para aproximar
+			109 text Partículas com massa gravitacional Leapfrog · Kick–Drift–Kick
+		110 container Integração e precisão
+			111 text 04
+			112 heading Integração e precisão, Value: 2, ID: performance-title
+				113 text Integração e precisão
+			114 text Massivas integradas
+			115 text 0
+			116 text Tempo físico
+			117 text 0.00 Myr
+			118 text Passo médio
+			119 text —
+			120 text Seleção visual: 0 corpos após filtros; a câmera pode recortar o campo.
+			121 definition list
+				122 container Bojo / disco / halo
+					123 text Bojo / disco / halo
+				124 text —
+				125 container Algoritmo
+					126 text Algoritmo
+				127 text —
+				128 container Backend
+					129 text Backend
+				130 text —
+				131 container Renderização
+					132 text Renderização
+				133 text 0 FPS
+				134 container Avanço físico
+					135 text Avanço físico
+				136 text 0.00 Myr/s
+				137 container Passos concluídos
+					138 text Passos concluídos
+				139 text 0
+				140 container Tempo de cálculo
+					141 text Tempo de cálculo
+				142 text 0.00 s
+				143 container Memória estimada
+					144 text Memória estimada
+				145 text — MiB
+			146 text ΔE / |E₀|
+			147 text —
+			148 text Erro de P
+			149 text —
+			150 text Erro de L
+			151 text —
+			152 text Sem diagnóstico.
+			153 text Os diagnósticos das condições iniciais aparecerão aqui. Conservação numérica e estabilidade do modelo exigem verificações separadas.
+		154 container Diagnósticos em tempo real
+			155 text 05
+			156 heading Diagnósticos em tempo real, Value: 2, ID: live-title
+				157 text Diagnósticos em tempo real
+			205 text Medição em 1.268 Myr · 5 estados medidos · energia estimada — Barnes–Hut.
+			159 text Referência direta indisponível neste instante. Custo direto estimado acima do limite automático de 60 s por estado; a simulação continua sem substituir a referência por aproximação.
+			160 container
+				206 container Espessura do disco × tempo
+				162 button Salvar gráfico de espessura do disco
+			163 container Description: Diagnóstico energético, ID: live-energy
+				164 container
+					207 container Description: Energia estimada — Barnes–Hut, Help: Aproximação monopolar · valores medidos, sem suavização. Escalas verticais independentes. Valores e limites disponíveis nos metadados.
+					166 button Salvar gráfico da energia estimada Barnes–Hut
+				167 container
+					168 text Referência direta
+					169 pop up button (collapsed, settable) Referência direta, Value: Variação relativa [%], ID: energy-direct-mode, Secondary Actions: Expand
+						170 menu
+							171 (selected) Variação relativa [%]
+							172 Energia total E(t)
+					208 container Description: Conservação energética — Referência direta Float64, Help: Snapshots auditados · guia tracejado · zoom automático. Escalas verticais independentes. Valores e limites disponíveis nos metadados.
+					174 button Salvar gráfico da energia direta Float64
+			175 container
+				209 container Curvas de rotação · componentes
+				177 button Salvar gráfico das curvas de rotação
+
+The focused UI element is 256 button (expanded) Snapshot em 1.268 Myr, Secondary Actions: Collapse
