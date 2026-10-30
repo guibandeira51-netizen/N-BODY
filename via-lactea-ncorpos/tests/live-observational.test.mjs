@@ -24,5 +24,5 @@ test('new plots retain observations, units, epoch and all original-plus-new save
  for(const svg of Object.values(observationalPlots()))assert(!/NaN|Infinity/.test(svg));
  const waiting=observationalPlots()['live-escape'];assert(waiting.includes('Aguardando primeira medição.'));assert(!waiting.includes('data-observational-point='));assert(!waiting.includes('data-model-series='));
  const plan=scienceProbePlan(),s=state(),data=observationalDiagnostics(s,directProbeValues(s,plan.probes,{G}),{G,epsilonSquared:.01}),plots=observationalPlots(data);assert.equal(Object.keys(plots).length,4);assert.equal((plots['live-vertical-force'].match(/data-observational-point=/g)||[]).length,43);assert.equal((plots['live-escape'].match(/data-observational-point=/g)||[]).length,2);assert(plots['live-residuals'].includes('data-zero-reference'));assert(plots['live-enclosed-mass'].includes('true enclosed spheres'));assert.equal((observationalChartsView().match(/data-save-chart=/g)||[]).length,4);
- assert(plots['live-enclosed-mass'].includes('data-zero-reference="true" d="M90 320H710"'));assert(plots['live-enclosed-mass'].includes('x="82" y="324" text-anchor="end">0</text>'));
+ assert(plots['live-enclosed-mass'].includes('data-zero-reference="true" d="M110 320H710"'));assert(plots['live-enclosed-mass'].includes('x="102" y="324" text-anchor="end">0</text>'));
 });

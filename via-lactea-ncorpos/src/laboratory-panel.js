@@ -1,3 +1,4 @@
+import {linearAxis,axisLabel} from './chart-axis.js';
 import {LaboratoryHistory,energyDrift,relativeChange,LAB_RADII} from './physics/laboratory.js';
 import {MODEL,G,KM_S_TO_KPC_MYR} from './physics/constants.js';
 import {download} from './export/review.js';
@@ -13,15 +14,21 @@ const sources=[['Hernquist (1990)','https://doi.org/10.1086/168845'],['Miyamoto 
 
 // SVG is both the interactive screen plot (point tooltips) and a standalone
 // vector figure. No smoothing, extrapolation or fabricated samples.
-export function plotSVG(series,{title,xLabel='Tempo físico (Myr)',yLabel='',logY=false}={}) {
+export function plotSVG(series,{title,xLabel='Tempo físico (Myr)',yLabel='',logY=false,clean=false}={}) {
   const points=series.flatMap(s=>s.points.filter(p=>Number.isFinite(p[0])&&Number.isFinite(p[1])&&(!logY||p[1]>0)));
   const y=x=>logY?Math.log10(x):x;
   if(!points.length)return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" role="img" aria-label="${escape(title)}"><rect width="680" height="300" fill="white"/><text x="30" y="40" fill="#172b30">${escape(title)}</text><text x="30" y="145" fill="#465e65">Sem medições disponíveis.</text></svg>`;
   let xmin=Math.min(...points.map(p=>p[0])),xmax=Math.max(...points.map(p=>p[0])),ymin=Math.min(...points.map(p=>y(p[1]))),ymax=Math.max(...points.map(p=>y(p[1])));
   if(xmax===xmin)xmax=xmin+1;if(ymax===ymin){ymax+=Math.max(1e-6,Math.abs(ymin)*0.1);ymin-=Math.max(1e-6,Math.abs(ymin)*0.1);}
+  const xa=linearAxis(xmin,xmax),ya=linearAxis(ymin,ymax);if(clean){xmin=xa.min;xmax=xa.max;ymin=ya.min;ymax=ya.max;}
   const X=x=>85+555*(x-xmin)/(xmax-xmin),Y=v=>220-155*(y(v)-ymin)/(ymax-ymin);
   let body=`<rect width="680" height="300" fill="white"/><g font-family="Arial,sans-serif" fill="#172b30" font-size="11"><text x="18" y="23" font-size="15">${escape(title)}</text>`;
+  if(clean){
+    for(const v of ya.ticks){const yy=Y(v);body+=`<path d="M85 ${yy}H640" stroke="#e1e8e9"/><text x="78" y="${yy+4}" text-anchor="end">${axisLabel(v,ya.step)}</text>`;}
+    for(const x of xa.ticks)body+=`<text x="${X(x)}" y="240" text-anchor="middle">${axisLabel(x,xa.step)}</text>`;
+  }else{
   for(let i=0;i<=4;i++){const x=xmin+(xmax-xmin)*i/4,v=ymin+(ymax-ymin)*i/4,yy=220-155*i/4;body+=`<path d="M85 ${yy}H640" stroke="#e1e8e9"/><text x="78" y="${yy+4}" text-anchor="end">${(logY?10**v:v).toPrecision(3)}</text><text x="${X(x)}" y="240" text-anchor="middle">${x.toPrecision(3)}</text>`;}
+  }
   body+=`<path d="M85 65V220H640" fill="none" stroke="#456"/><text x="360" y="260" text-anchor="middle">${escape(xLabel)}</text><text transform="translate(17 155) rotate(-90)" text-anchor="middle">${escape(yLabel)}</text>`;
   series.forEach((s,j)=>{const color=colors[j%colors.length];let path='',open=false;
     for(const p of s.points){if(!Number.isFinite(p[0])||!Number.isFinite(p[1])||(logY&&p[1]<=0)){open=false;continue;}path+=`${open?'L':'M'}${X(p[0]).toFixed(2)} ${Y(p[1]).toFixed(2)} `;open=true;}
@@ -29,8 +36,10 @@ export function plotSVG(series,{title,xLabel='Tempo físico (Myr)',yLabel='',log
     for(const p of s.points)if(Number.isFinite(p[1])&&(!logY||p[1]>0))body+=`<circle cx="${X(p[0])}" cy="${Y(p[1])}" r="2.6" fill="${color}"><title>${escape(s.label)}: x=${p[0]}, y=${p[1]}</title></circle>`;
     body+=`<text x="${85+j*175}" y="47" fill="${color}">${escape(s.label)}</text>`;
   });
-  body+='<text x="85" y="285" fill="#65777b">Fonte: partículas integradas · Guilherme Aleixo Bandeira · UEMS</text></g>';
-  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" role="img" aria-label="${escape(title)}">${body}</svg>`;
+  if(!clean)body+='<text x="85" y="285" fill="#65777b">Fonte: partículas integradas · Guilherme Aleixo Bandeira · UEMS</text>';
+  body+='</g>';
+  if(clean)body=body.replace('height="300"','height="278"');
+  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 ${clean?278:300}" role="img" aria-label="${escape(title)}">${clean?'<desc>Fonte: partículas integradas · Guilherme Aleixo Bandeira · UEMS. Pontos nos tempos físicos efetivamente medidos.</desc>':''}${body}</svg>`;
 }
 
 export function initializeLaboratory({getRunReport,capture}) {

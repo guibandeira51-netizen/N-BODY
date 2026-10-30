@@ -71,7 +71,7 @@ export function initializeLiveDiagnostics({getRunReport,captureEnergy}){
  }
  function render(){
   const samples=history.samples,data=liveChartData(samples),direct=directReferenceData(references),fast0=samples[0]?.conservation;
-  $('live-height').innerHTML=plotSVG([{label:'Disco · plano próprio',points:data.height}],{title:'Espessura do disco × tempo',yLabel:'h50 [kpc]'});
+  $('live-height').innerHTML=plotSVG([{label:'Disco · plano próprio',points:data.height}],{title:'Espessura do disco × tempo',yLabel:'h₅₀ [kpc]',clean:true});
   renderEnergyPanels(document,panelsData());
   $('live-rotation').innerHTML=componentRotationPlot(data.rotationField);
   for(const[id,svg]of Object.entries(observationalPlots(samples.at(-1)?.observational)))if($(id))$(id).innerHTML=svg;

@@ -1,3 +1,4 @@
+import {linearAxis,axisLabel} from './chart-axis.js';
 import {directEnergyGuide} from './energy-direct-guide.js';
 import {ENERGY_UNITS,numericFormat as num,zoomDomain} from './energy-chart-data.js';
 const esc=x=>String(x).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;');
@@ -14,7 +15,7 @@ function rowTooltip(row,kind){
 }
 
 export function energyPanelSVG(data,kind,{directMode='relative',biasMode='absolute',compact=false}={}){
- const wide=kind==='bias',W=wide&&!compact?1040:560,H=400,L=100,R=W-22,T=132,B=285;
+ const wide=kind==='bias',W=wide&&!compact?1040:560,H=350,L=120,R=W-22,T=132,B=285;
  let rows,color,titleLines,yLabel,info,summary,mode,relativeAxis=true,reference=0;
  if(kind==='bh'){
   mode='relative';color='#67c59e';titleLines=[data.estimator==='gpu'?'Energia estimada — GPU Float32':'Energia estimada — Barnes–Hut'];yLabel='Variação relativa da energia [%]';
@@ -22,22 +23,22 @@ export function energyPanelSVG(data,kind,{directMode='relative',biasMode='absolu
   summary=`Maior |desvio|: ${percent(data.summary.bhMaxAbsolutePercent)} · último: ${percent(data.summary.bhLastPercent)}`;
  }else if(kind==='direct'){
   mode=directMode;color='#e9ab55';titleLines=['Conservação energética —','Referência direta Float64'];relativeAxis=mode!=='total';
-  rows=data.direct.map(r=>({...r,value:relativeAxis?r.relative?.percent??null:r.E})).sort((a,b)=>a.timeMyr-b.timeMyr);yLabel=relativeAxis?'Variação relativa da energia direta [%]':'E(t) [unid. internas]';
-  info='Snapshots auditados · guia tracejado · zoom automático';summary=`Maior erro direto amostrado: ${percent(data.summary.directMaxAbsolutePercent)}`;reference=relativeAxis?0:data.directInitial?.energy;
+  rows=data.direct.map(r=>({...r,value:relativeAxis?r.relative?.percent??null:r.E})).sort((a,b)=>a.timeMyr-b.timeMyr);yLabel=relativeAxis?'Variação relativa da energia direta [%]':'E(t) [10¹⁰ M☉ kpc²/Myr²]';
+  info='Pontos: Float64 · tracejado: guia visual';summary=`Maior erro direto amostrado: ${percent(data.summary.directMaxAbsolutePercent)}`;reference=relativeAxis?0:data.directInitial?.energy;
  }else{
   mode=biasMode;color='#85a9df';titleLines=compact?['Erro de estimativa energética —','Barnes–Hut versus Float64']:['Erro de estimativa energética — Barnes–Hut versus Float64'];
   const fields={absolute:'B',instant:'epsilonPercent',change:'deltaB',common:'etaPercent'};
   rows=data.comparison.map(r=>({...r,value:r[fields[mode]??'B']}));relativeAxis=mode==='instant'||mode==='common';
-  yLabel=mode==='instant'?'Erro instantâneo do estimador ε_BH [%]':mode==='common'?'η = 100 ΔB / |E_dir(0)| [%]':`${mode==='change'?'ΔB = B − B(0)':'B = E_BH − E_dir'} [unid. internas]`;
+  yLabel=mode==='instant'?'Erro instantâneo do estimador ε_BH [%]':mode==='common'?'η = 100 ΔB / |E_dir(0)| [%]':`${mode==='change'?'ΔB = B − B(0)':'B = E_BH − E_dir'} [10¹⁰ M☉ kpc²/Myr²]`;
   info='Comparação no mesmo snapshot · mede o estimador, não a integração';
   summary='A árvore, o critério de abertura e a distribuição de partículas podem variar o viés.';
  }
  const valid=rows.filter(r=>Number.isFinite(r.value)),domain=zoomDomain(valid.map(r=>r.value),{includeZero:kind!=='direct'||relativeAxis,absoluteEnergy:kind==='direct'&&!relativeAxis});
- if(data.bhInitial?.haloRepresentation==='geometry')info=kind==='bh'?'Pares GPU Float32 + ΣmΦ NFW Float64 · halo estático':kind==='direct'?'Snapshots Float64 · ΣmΦ NFW incluído · zoom automático':info+' · inclui ΣmΦ do NFW estático';
+ if(data.bhInitial?.haloRepresentation==='geometry')info=kind==='bh'?'Pares GPU Float32 + ΣmΦ NFW Float64 · halo estático':kind==='direct'?'Pontos: Float64 · tracejado: guia visual · halo estático':info+' · inclui ΣmΦ do NFW estático';
  const [xmin,xmax]=data.xDomain,X=t=>L+(R-L)*(t-xmin)/(xmax-xmin),Y=v=>B-(B-T)*(v-domain.min)/(domain.max-domain.min);
  // For tightly clustered total energies, show an explicit affine axis offset.
  const axisOffset=kind==='direct'&&!relativeAxis&&Math.abs(reference)/(domain.max-domain.min)>1e5?reference:0;
- if(axisOffset)yLabel='E(t) − E₀ [unid. internas]';
+ if(axisOffset)yLabel='E(t) − E₀ [10¹⁰ M☉ kpc²/Myr²]';
  const guide=kind==='direct'?directEnergyGuide(rows,{...data.directSampling,xDomain:data.xDomain}):null;
  const meta={...data,plot:{kind,mode,color,xDomain:data.xDomain,yDomain:domain,axisOffset,referenceValue:reference,...(guide?{guide}:{}),interpolated:kind==='bh'?'straight segments between retained measured samples':false,plottedTimes:valid.map(r=>r.timeMyr)}};
  let body=`<rect width="${W}" height="${H}" fill="#102127"/><style>.energy-point:hover,.energy-point:focus{stroke:#fff;stroke-width:1.5;outline:none}</style><g font-family="Arial,sans-serif" fill="#d2e1e6" font-size="13">`;
@@ -48,10 +49,9 @@ export function energyPanelSVG(data,kind,{directMode='relative',biasMode='absolu
   const message=hasMeasured?'Normalização relativa indisponível: módulo da energia de referência inadequado.':kind==='bh'?'Aguardando estados medidos.':data.direct.length&&kind==='bias'?'Comparação indisponível: energias consistentes do mesmo snapshot não disponíveis.':'Aguardando referência direta Float64.';
   body+=`<text x="${L}" y="205" font-size="13">${esc(message)}</text>`;
  }else{
-  for(let i=0;i<=4;i++){
-   const value=domain.min+(domain.max-domain.min)*i/4,yy=Y(value),time=xmin+(xmax-xmin)*i/4;
-   body+=`<path d="M${L} ${yy}H${R}" stroke="#30474f"/><text x="${L-9}" y="${yy+4}" text-anchor="end">${esc(axisNum(value-axisOffset))}</text><text x="${X(time)}" y="${B+23}" text-anchor="middle">${esc(num(time))}</text>`;
-  }
+  const ya=linearAxis(domain.min-axisOffset,domain.max-axisOffset,{expand:false}),xa=linearAxis(xmin,xmax,{expand:false});
+  for(const value of ya.ticks){const yy=Y(value+axisOffset);body+=`<path d="M${L} ${yy}H${R}" stroke="#30474f"/><text x="${L-9}" y="${yy+4}" text-anchor="end" font-size="11">${esc(axisLabel(value,ya.step))}</text>`;}
+  for(const time of xa.ticks)body+=`<text x="${X(time)}" y="${B+23}" text-anchor="middle">${esc(axisLabel(time,xa.step))}</text>`;
   if(Number.isFinite(reference)&&reference>=domain.min&&reference<=domain.max)body+=`<line data-reference="${relativeAxis||kind!=='direct'?'zero':'initial-energy'}" x1="${L}" x2="${R}" y1="${Y(reference)}" y2="${Y(reference)}" stroke="#d1dfe3" stroke-width="1.4" stroke-dasharray="5 4"/><text x="${R-3}" y="${Math.max(T+12,Y(reference)-5)}" text-anchor="end" font-size="11">${kind==='direct'&&!relativeAxis?'E₀':'0'}</text>`;
   if(guide){
    for(const gap of guide.gaps){const x=X(gap.fromTimeMyr),width=X(gap.toTimeMyr)-x;body+=`<g data-energy-gap="true" data-from-time-myr="${gap.fromTimeMyr}" data-to-time-myr="${gap.toTimeMyr}"><title>${esc(`Lacuna de auditoria entre ${exact(gap.fromTimeMyr)} e ${exact(gap.toTimeMyr)} Myr. ${gap.reasons.join(' ')} Nenhuma energia intermediária foi medida.`)}</title><rect x="${x}" y="${T}" width="${width}" height="${B-T}" fill="${color}" opacity="0.07"/><text x="${x+width/2}" y="${T+13}" text-anchor="middle" font-size="10" fill="${color}">Lacuna</text></g>`;}
@@ -77,12 +77,12 @@ export function energyPanelSVG(data,kind,{directMode='relative',biasMode='absolu
  else notes.push(mode==='common'?'Denominador comum |E_dir(0)|; não subtrai percentuais nativos.':'Viés do diagnóstico; não representa sozinho energia física perdida ou adquirida.');
  if(domain.minimal)notes.push(`Escala mínima de exibição: ${num(domain.minimumDisplaySpan)} ${relativeAxis?'%':ENERGY_UNITS}; não é incerteza.`);
  if(!relativeAxis)notes.push(`Unidades internas: ${ENERGY_UNITS}.`);
- const noteLines=notes.flatMap(note=>wrap(note,Math.floor((W-40)/5.5)));
- noteLines.forEach((note,i)=>body+=`<text x="20" y="${355+i*17}" font-size="11" fill="#9cb7c1">${esc(note)}</text>`);
- const finalH=Math.max(H,365+17*noteLines.length);
- body=body.replace(`height="${H}" fill="#102127"`,`height="${finalH}" fill="#102127"`);
+ // Notes remain accessible and exported as metadata, not as a figure footer.
+ if(axisOffset)body+=`<text x="${L}" y="122" font-size="11">${esc(`E₀ = ${String(reference)}; eixo mostra E(t) − E₀`)}</text>`;
+ meta.plot.notes=notes;
+ const finalH=H;
  body+='</g>';
- return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${finalH}" role="img" aria-label="${esc(titleLines.join(' '))}" data-energy-kind="${kind}"><desc>${esc(info)}. Escalas verticais independentes. Valores e limites disponíveis nos metadados.</desc>${body}<metadata id="energy-${kind}-data">${esc(JSON.stringify(meta))}</metadata></svg>`;
+ return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${finalH}" role="img" aria-label="${esc(titleLines.join(' '))}" data-energy-kind="${kind}"><desc>${esc(info)}. ${esc(notes.join(" "))} Escalas verticais independentes. Valores e limites disponíveis nos metadados.</desc>${body}<metadata id="energy-${kind}-data">${esc(JSON.stringify(meta))}</metadata></svg>`;
 }
 
 export function renderEnergyPanels(root,data){
